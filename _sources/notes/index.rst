@@ -6,4 +6,4 @@ Class Notes
    :caption: Contents:
 
    SET_THEORY
-   VENN_DIAGRAMS
+   graphics/index
