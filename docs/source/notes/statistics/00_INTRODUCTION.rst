@@ -5,11 +5,14 @@ Introduction
 Definitions
 ===========
 
-.. _population: 
+Terminology
+-----------
 
+.. _population: 
 Population
     The *population* is the set of all possible individuals that can be observed in a given experiment.  
 
+.. _observation_methods:
 Methods of Observation
 ----------------------
 
@@ -19,8 +22,78 @@ Census
 Sample 
     A *sample* is a type of statistical study where a subset of the population is observed *at random*.
 
-Various
--------
+.. _data_classification:
+Classifications of Data
+-----------------------
+
+.. _dimensionality:
+Dimensionality
+
+    The *dimension* of a dataset are the number of values associated with a single observation.
+
+    Univariate
+
+        *Univariate* data consists of observations that each contain a single value.
+
+        :math:`\{ x_1, x_2, x_3 \}`
+
+    Bivariate
+        *Bivariate* data consists of observations that each contain two values (i.e. an *pair*)
+
+        :math:`\{ (x_1, y_1), (x_2, y_2), ... , (x_n, y_n)\}`
+
+    Multivariate 
+        *Multivariate* data consists of observations that each contain an arbitrary number of values (i.e. a *vector*)
+
+        :math:`\{ (x_{1}^1, x_{2}^1, ... , x_{n}^1 ), (x_{1}^2, x_{2}^2, ... , x_{n}^2 ), ... ,(x_{1}^m, x_{2}^m, ... , x_{n}^m )`
+
+.. _characteristic:
+Characteristic
+
+    The *characteristic* of a dataset is the *type* of data being observed.
+
+    Qualitative
+        Qualitative data are categorical.
+
+        Ex. 
+            :math:`\{ "Red", "Blue", "Yellow"\}`
+
+    Quantitative
+        Quantitative data are numerical. 
+
+        Discrete 
+            Discrete quantitative data is countable.
+
+            Ex.
+                :math:`\{ 1, 2, 3, 4, 5, ... \}`
+
+        Continuous
+            Continuous quantitative data  is infinitely divisible 
+
+            Ex.
+
+                :math:`\{ 1.0, 1.01, 1.001, 1.0001, 1.00001, ... \}`
+
+.. _scale:
+Scale 
+    Nominal Level
+        Unordered, categorical data.
+
+        Ex.
+
+            TODO
+
+    Ordinal Level
+        Ordered, categorical data.
+
+        Ex. 
+
+            TODO
+    Interval/Ratio Level 
+        Ordered, numerical data.
+        
+Types of Statistics
+-------------------
 
 .. _sample_statistic:
 Sample Statistic
