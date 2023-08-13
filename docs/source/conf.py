@@ -36,7 +36,7 @@ html_static_path = [
 ]
 
 html_css_files = [
-    'css/styles.css',
+    'css/style.css',
 ]
 
 
