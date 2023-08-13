@@ -21,10 +21,55 @@ Summation
 Definitions
 -----------
 
-Terms
-    Experiment
-        An *uncertain* event.
-    Mutual Exclusivity
-        Two sets, **A** and **B**, are *mutually exclusive* if they are disjoint.
-        
-        :math:`A \cap B = \varnothing \implies` A and B are mutually exclusive. 
+Experiment
+    An *uncertain* event.    
+
+Mutual Exclusivity
+    :math:`A \cap B = \varnothing \implies` **A** and **B** are mutually exclusive. 
+    Two sets, **A** and **B**, are *mutually exclusive* if they are disjoint.
+
+Outcomes 
+    :math:`x, y, z` (*lower case letters*)
+    A possible way an experiment might occur.
+    
+Sample Space 
+    :math:`S`
+    The set of all possible outcomes for an experiment.
+
+Events 
+    :math:`A, B, C` (*upper-case letters*)
+    :math:`A_1, A_2, A_3, ..., A_{n-1}, A_n` (*upper-case letters with subscripts*)
+    A subset of the sample space, i.e. a set of outcomes. 
+    :math:`A \subseteq S \implies` **A** is an event
+
+Probability
+    :math:`P(A)`
+    A numerical measure of the *likelihood*, or *chance*, that event **A** occurs.
+
+.. _axioms_of_probability:
+
+Axioms of Probability
+---------------------
+
+*Axiom 1*: :math:`P(A)>=A`
+    All probabilities are positive; No probabilities are negative.
+
+*Axiom 2*: :math:`P(S)=1`
+    The probability of *some* outcome from the sample space **S** occuring is equal to 1.
+
+*Axiom 3*: :math:`forall i <> j: A_i \cap A_j = \varnothing \implies P(\bigcup\limits_{i=1}^{n} A_i) = sum_{i=1}^n P(A_i)`
+    If each event :sub:`i` **A** in the sample space **S** is *mutually exclusive* with every other event :math:`forall i<>j: A_i`, then the probability of the union of all of these events is equal to the sum of the probabilities of each individual event.
+
+Corollaries
+-----------
+
+**The Law of Complements** :math:`P(A) + P(A^C) = 1` 
+    *Proof*
+    1. :math:`A \cup A^C = S`
+        By Complement Theorem 12 (Put Link)
+    2. :math:`A \cap A^C = \varnothing` 
+        By Complement Theorem 13 (Put Link)
+    3. :math:`P(A \cap A^C) = P(A) + P(A^C)`
+        By *2.* and Axiom 3. 
+    **Conclusion** :math:`P(A) + P(A^C) = 1`
+        By *1.*, Axiom 2 and *3* 
