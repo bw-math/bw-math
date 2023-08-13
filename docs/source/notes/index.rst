@@ -6,4 +6,5 @@ Class Notes
    :caption: Contents:
 
    SET_THEORY
+   PROBABILITY_INTRODUCTION
    graphics/index
