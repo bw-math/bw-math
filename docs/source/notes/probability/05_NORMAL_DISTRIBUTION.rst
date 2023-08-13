@@ -3,4 +3,4 @@
 Normal Distribution
 ===================
 
-The **Normal Distribution** is the foundation of :ref:`inferential` (TODO inferential statistics link). 
+The **Normal Distribution** is the foundation of :doc:`inferential statistics</notes/statistics/00_INTRODUCTION#inferential>`.
