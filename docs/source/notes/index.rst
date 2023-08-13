@@ -5,6 +5,8 @@ Class Notes
    :maxdepth: 2
    :caption: Contents:
 
+   graphics/index
    SET_THEORY
-   PROBABILITY_INTRODUCTION
+   probability/index
+   statistics/index
    graphics/index

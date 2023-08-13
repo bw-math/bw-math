@@ -1,5 +1,5 @@
-Probability
-===========
+Introduction
+============
 
 Probability is the study of the properties of random events.
 
