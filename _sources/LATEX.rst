@@ -83,3 +83,7 @@ Sets
 
 .. math:: 
         \mathbb{N}
+
+Quantifiers
+-----------
+**Universal Quantifier**: ``\forall``
