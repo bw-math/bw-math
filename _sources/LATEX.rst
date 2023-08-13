@@ -6,56 +6,57 @@ The equations on this site were created using [LaTeX](https://www.latex-project.
 Arithmetic
 ----------
 1. **Fractions**: ``\frac{numerator}{denominator}``
-   .. math ::
+.. math::
         \frac{numerator}{denominator}
 
 Relations
 ---------
 
 1. **Inclusion**: ``\in``
-.. math ::
+.. math::
         \in 
+
 2. **Exclusion**: ``\notin``
-.. math ::
+.. math::
         \notin
 3. **Subset**: ``\subset``
-.. math ::
+.. math::
         \subset
 4. **Proper Subset**: ``\subseteq``
-.. math ::
+.. math::
         \subseteq
 5. **Less Than Or Equal To**: ``\leq``
-.. math ::
+.. math::
         \leq
 6. **Greater Than Or Equal TO**: ``\geq``
-.. math ::
+.. math::
         \geq
 7. **Equivalence**: ``\equiv``
-.. math ::
+.. math::
         \equiv
 8. **Implication**: ``\implies``
-.. math ::
+.. math::
         \implies
 
 
 Operations
 ----------
 1. **Union**: ``\cup``
-.. math ::
+.. math::
         \cup 
 2. **Intersection**: ``\cap``
-.. math ::
+.. math::
         \cap
 3. **Sum**: ``\sum_{i=0}``
-.. math ::
+.. math::
         \sum_{i=0}^n i
 
 Sets
 ----
 
 1. **Null Set** : ``\varnothing``
-.. math :: 
+.. math:: 
         \varnothing
 2. **Natural Numbers** : ``\mathbb{N}``
-.. math ::
+.. math::
         \mathbb{N}
