@@ -300,8 +300,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#terminology">Terminology</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-of-observation">Methods of Observation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#various">Various</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-statistics">Types of Statistics</a></li>
 </ul>
 </li>
 </ul>
@@ -319,10 +321,13 @@ document.write(`
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
 <section id="definitions">
 <h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
-<dl class="simple" id="population">
+<section id="terminology">
+<h3>Terminology<a class="headerlink" href="#terminology" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
 <dt>Population</dt><dd><p>The <em>population</em> is the set of all possible individuals that can be observed in a given experiment.</p>
 </dd>
 </dl>
+</section>
 <section id="methods-of-observation">
 <h3>Methods of Observation<a class="headerlink" href="#methods-of-observation" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
@@ -332,8 +337,75 @@ document.write(`
 </dd>
 </dl>
 </section>
-<section id="various">
-<h3>Various<a class="headerlink" href="#various" title="Permalink to this headline">#</a></h3>
+<section id="classifications-of-data">
+<h3>Classifications of Data<a class="headerlink" href="#classifications-of-data" title="Permalink to this headline">#</a></h3>
+<p>Dimensionality</p>
+<blockquote>
+<div><p>The <em>dimension</em> of a dataset are the number of values associated with a single observation.</p>
+<p>Univariate</p>
+<blockquote>
+<div><p><em>Univariate</em> data consists of observations that each contain a single value.</p>
+<p><img class="math" src="../../_images/math/02ff3586e2dbe8a38e918ae4cbfbae022878a4e2.png" alt="\{ x_1, x_2, x_3 \}"/></p>
+</div></blockquote>
+<dl>
+<dt>Bivariate</dt><dd><p><em>Bivariate</em> data consists of observations that each contain two values (i.e. an <em>pair</em>)</p>
+<p><img class="math" src="../../_images/math/167e4d5ca72db146183c8baacc90e6f72eff7044.png" alt="\{ (x_1, y_1), (x_2, y_2), ... , (x_n, y_n)\}"/></p>
+</dd>
+<dt>Multivariate</dt><dd><p><em>Multivariate</em> data consists of observations that each contain an arbitrary number of values (i.e. a <em>vector</em>)</p>
+<p><img class="math" src="../../_images/math/fbbdfa3f3d502368b86e9fae2abae1163ef1f8b8.png" alt="\{ (x_{1}^1, x_{2}^1, ... , x_{n}^1 ), (x_{1}^2, x_{2}^2, ... , x_{n}^2 ), ... ,(x_{1}^m, x_{2}^m, ... , x_{n}^m )"/></p>
+</dd>
+</dl>
+</div></blockquote>
+<p>Characteristic</p>
+<blockquote>
+<div><p>The <em>characteristic</em> of a dataset is the <em>type</em> of data being observed.</p>
+<dl>
+<dt>Qualitative</dt><dd><p>Qualitative data are categorical.</p>
+<dl class="simple">
+<dt>Ex.</dt><dd><p><img class="math" src="../../_images/math/afb50e7c84c0301e9bb66513d9ece99daf282a69.png" alt="\{ &quot;Red&quot;, &quot;Blue&quot;, &quot;Yellow&quot;\}"/></p>
+</dd>
+</dl>
+</dd>
+<dt>Quantitative</dt><dd><p>Quantitative data are numerical.</p>
+<dl>
+<dt>Discrete</dt><dd><p>Discrete quantitative data is countable.</p>
+<dl class="simple">
+<dt>Ex.</dt><dd><p><img class="math" src="../../_images/math/dff2242d6d91fa1f3c6719f5c232e81e9f532fd9.png" alt="\{ 1, 2, 3, 4, 5, ... \}"/></p>
+</dd>
+</dl>
+</dd>
+<dt>Continuous</dt><dd><p>Continuous quantitative data  is infinitely divisible</p>
+<p>Ex.</p>
+<blockquote>
+<div><p><img class="math" src="../../_images/math/b939635cce776f2bf5a93b9770b88ddc1ac8e084.png" alt="\{ 1.0, 1.01, 1.001, 1.0001, 1.00001, ... \}"/></p>
+</div></blockquote>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<dl>
+<dt>Scale</dt><dd><dl>
+<dt>Nominal Level</dt><dd><p>Unordered, categorical data.</p>
+<p>Ex.</p>
+<blockquote>
+<div><p>TODO</p>
+</div></blockquote>
+</dd>
+<dt>Ordinal Level</dt><dd><p>Ordered, categorical data.</p>
+<p>Ex.</p>
+<blockquote>
+<div><p>TODO</p>
+</div></blockquote>
+</dd>
+<dt>Interval/Ratio Level</dt><dd><p>Ordered, numerical data.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+<section id="types-of-statistics">
+<h3>Types of Statistics<a class="headerlink" href="#types-of-statistics" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
 <dt>Sample Statistic</dt><dd><p>A piece of information that characterizes the shape and spread of a sample.</p>
 </dd>
@@ -399,8 +471,10 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#terminology">Terminology</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-of-observation">Methods of Observation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#various">Various</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-statistics">Types of Statistics</a></li>
 </ul>
 </li>
 </ul>
