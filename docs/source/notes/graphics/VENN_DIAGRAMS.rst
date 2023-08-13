@@ -1,46 +1,41 @@
+=============
 Venn Diagrams
 =============
 
+Set Operations and Relations
+============================
+
 Behold, my beautiful creations.
 
+
+Complementary Sets
+------------------
+
 .. image:: ../../imgs/sets_complement.jpg
-   :height: 100px
-   :width: 200 px
-   :scale: 50 %
-   :alt: alternate text
-   :align: right
+
+Subsets
+-------
 
 .. image:: ../../imgs/sets_subset.jpg
-   :height: 100px
-   :width: 200 px
-   :scale: 50 %
-   :alt: alternate text
-   :align: right
+
+Union of Disjoint Sets
+----------------------
 
 .. image:: ../../imgs/sets_union_disjoint.jpg
-   :height: 100px
-   :width: 200 px
-   :scale: 50 %
-   :alt: alternate text
-   :align: right
+
+Union of Overlapping Sets
+-------------------------
 
 .. image:: ../../imgs/sets_union_overlapping.jpg
-   :height: 100px
-   :width: 200 px
-   :scale: 50 %
-   :alt: alternate text
-   :align: right
+
+Probability Operations and Relations
+
+Partition of Sample Space
+-------------------------
 
 .. image:: ../../imgs/sets_partition.jpg
-   :height: 100px
-   :width: 200 px
-   :scale: 50 %
-   :alt: alternate text
-   :align: right
+
+Even Partition of Sample Space
+------------------------------
 
 .. image:: ../../imgs/sets_even_partition.jpg
-   :height: 100px
-   :width: 200 px
-   :scale: 50 %
-   :alt: alternate text
-   :align: right
