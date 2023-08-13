@@ -59,7 +59,7 @@ Axioms of Probability
 *Axiom 2*: :math:`P(S)=1`
     The probability of *some* outcome from the sample space **S** occuring is equal to 1.
 
-*Axiom 3*: :math:`\forall i <> j: A_i \cap A_j = \varnothing \implies P(\bigcup\limits_{i=1}^{n} A_i) = sum_{i=1}^n P(A_i)`
+*Axiom 3*: :math:`\forall i <> j: A_i \cap A_j = \varnothing \implies P(\bigcup\limits_{i=1}^{n} A_i) = \sum_{i=1}^n P(A_i)`
     If each event :sub:`i` **A** in the sample space **S** is *mutually exclusive* with every other event :math:`\forall i<>j: A_i`, then the probability of the union of all of these events is equal to the sum of the probabilities of each individual event.
 
 Corollaries
