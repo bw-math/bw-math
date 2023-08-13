@@ -10,3 +10,4 @@ Bishop Walsh A.P Statistics
    RESOURCES
    notes/index
    LATEX
+   REFERENCES

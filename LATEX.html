@@ -44,6 +44,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'LATEX';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="References" href="REFERENCES.html" />
     <link rel="prev" title="Venn Diagrams" href="notes/VENN_DIAGRAMS.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
@@ -126,12 +127,13 @@
 <li class="toctree-l1"><a class="reference internal" href="SPLASH.html">Bishop Walsh AP Statistics 2023 - 2024</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SCHEDULES.html">Homework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="RESOURCES.html">Textbooks</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="notes/index.html">Bishop Walsh A.P Statistics: Class Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="notes/index.html">Class Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="notes/SET_THEORY.html">Set Theory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="notes/VENN_DIAGRAMS.html">Venn Diagrams</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">LaTex Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="REFERENCES.html">References</a></li>
 </ul>
 
     </div>
@@ -278,7 +280,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetic">Arithmetic</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations">Relations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operations">Operations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sets">Sets</a></li>
 </ul>
             </nav>
@@ -294,51 +298,90 @@ document.write(`
   <section id="latex-reference">
 <h1>LaTex Reference<a class="headerlink" href="#latex-reference" title="Permalink to this headline">#</a></h1>
 <p>The equations on this site were created using [LaTeX](<a class="reference external" href="https://www.latex-project.org/">https://www.latex-project.org/</a>), a type-setting program for rendering complex symbols. On this page you will find the syntax for creating symbols that frequently occur in this class.</p>
-<section id="relations">
-<h2>Relations<a class="headerlink" href="#relations" title="Permalink to this headline">#</a></h2>
+<section id="arithmetic">
+<h2>Arithmetic<a class="headerlink" href="#arithmetic" title="Permalink to this headline">#</a></h2>
 <ol class="arabic">
-<li><p><strong>Inclusion</strong>: <code class="docutils literal notranslate"><span class="pre">\in</span></code>
+<li><p><strong>Fractions</strong>: <code class="docutils literal notranslate"><span class="pre">\frac{numerator}{denominator}</span></code>
 .. math</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="ow">in</span>
-</pre></div>
-</div>
-</li>
-<li><p><strong>Exclusion</strong>: <code class="docutils literal notranslate"><span class="pre">\notin</span></code>
-.. math</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">notin</span>
-</pre></div>
-</div>
-</li>
-<li><p><strong>Subset</strong>: <code class="docutils literal notranslate"><span class="pre">\subset</span></code>
-.. math</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">subset</span>
-</pre></div>
-</div>
-</li>
-<li><p><strong>Proper Subset</strong>: <code class="docutils literal notranslate"><span class="pre">\subseteq</span></code>
-.. math</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">subseteq</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">frac</span><span class="p">{</span><span class="n">numerator</span><span class="p">}{</span><span class="n">denominator</span><span class="p">}</span>
 </pre></div>
 </div>
 </li>
 </ol>
 </section>
+<section id="relations">
+<h2>Relations<a class="headerlink" href="#relations" title="Permalink to this headline">#</a></h2>
+<p>1. <strong>Inclusion</strong>: <code class="docutils literal notranslate"><span class="pre">\in</span></code>
+.. math</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="ow">in</span>
+</pre></div>
+</div>
+<p>2. <strong>Exclusion</strong>: <code class="docutils literal notranslate"><span class="pre">\notin</span></code>
+.. math</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">notin</span>
+</pre></div>
+</div>
+<p>3. <strong>Subset</strong>: <code class="docutils literal notranslate"><span class="pre">\subset</span></code>
+.. math</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">subset</span>
+</pre></div>
+</div>
+<p>4. <strong>Proper Subset</strong>: <code class="docutils literal notranslate"><span class="pre">\subseteq</span></code>
+.. math</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">subseteq</span>
+</pre></div>
+</div>
+<p>5. <strong>Less Than Or Equal To</strong>: <code class="docutils literal notranslate"><span class="pre">\leq</span></code>
+.. math</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">leq</span>
+</pre></div>
+</div>
+<p>6. <strong>Greater Than Or Equal TO</strong>: <code class="docutils literal notranslate"><span class="pre">\geq</span></code>
+.. math</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">geq</span>
+</pre></div>
+</div>
+<p>7. <strong>Equivalence</strong>: <code class="docutils literal notranslate"><span class="pre">\equiv</span></code>
+.. math</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">equiv</span>
+</pre></div>
+</div>
+<p>8. <strong>Implication</strong>: <code class="docutils literal notranslate"><span class="pre">\implies</span></code>
+.. math</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">implies</span>
+</pre></div>
+</div>
+</section>
+<section id="operations">
+<h2>Operations<a class="headerlink" href="#operations" title="Permalink to this headline">#</a></h2>
+<p>1. <strong>Union</strong>: <code class="docutils literal notranslate"><span class="pre">\cup</span></code>
+.. math</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">cup</span>
+</pre></div>
+</div>
+<p>2. <strong>Intersection</strong>: <code class="docutils literal notranslate"><span class="pre">\cap</span></code>
+.. math</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">cap</span>
+</pre></div>
+</div>
+<p>3. <strong>Sum</strong>: <code class="docutils literal notranslate"><span class="pre">\sum_{i=0}</span></code>
+.. math</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">sum_</span><span class="p">{</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">}</span><span class="o">^</span><span class="n">n</span> <span class="n">i</span>
+</pre></div>
+</div>
+</section>
 <section id="sets">
 <h2>Sets<a class="headerlink" href="#sets" title="Permalink to this headline">#</a></h2>
-<ol class="arabic">
-<li><dl>
-<dt><strong>Null Set</strong><span class="classifier"><code class="docutils literal notranslate"><span class="pre">\varnothing</span></code></span></dt><dd><div class="math">
-<p><img src="_images/math/bf55cbc72ad1c5a5b2236eedb1e465f140017ebc.png" alt="\varnothing"/></p>
-</div></dd>
-</dl>
-</li>
-<li><p><strong>Natural Numbers</strong> : <code class="docutils literal notranslate"><span class="pre">\mathbb{N}</span></code>
+<p>1. <strong>Null Set</strong> : <code class="docutils literal notranslate"><span class="pre">\varnothing</span></code>
+.. math</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">varnothing</span>
+</pre></div>
+</div>
+<p>2. <strong>Natural Numbers</strong> : <code class="docutils literal notranslate"><span class="pre">\mathbb{N}</span></code>
 .. math</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">mathbb</span><span class="p">{</span><span class="n">N</span><span class="p">}</span>
 </pre></div>
 </div>
-</li>
-</ol>
 </section>
 </section>
 
@@ -363,6 +406,15 @@ document.write(`
         <p class="prev-next-title">Venn Diagrams</p>
       </div>
     </a>
+    <a class="right-next"
+       href="REFERENCES.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">References</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
@@ -381,7 +433,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetic">Arithmetic</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations">Relations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operations">Operations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sets">Sets</a></li>
 </ul>
   </nav></div>
