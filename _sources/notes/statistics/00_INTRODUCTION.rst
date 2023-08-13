@@ -9,10 +9,12 @@ Terminology
 -----------
 
 .. _population: 
+
 Population
     The *population* is the set of all possible individuals that can be observed in a given experiment.  
 
 .. _observation_methods:
+
 Methods of Observation
 ----------------------
 
@@ -22,11 +24,35 @@ Census
 Sample 
     A *sample* is a type of statistical study where a subset of the population is observed *at random*.
 
+.. _sampling_techniques:
+
+Sampling Techniques
+-------------------
+
+Random
+
+    TODO
+
+    Ex.
+
+        TODO 
+
+Systematic
+
+    TODO 
+
+    Ex.
+
+        TODO
+
+Stratified
+
+Cluster
 .. _data_classification:
+
 Classifications of Data
 -----------------------
 
-.. _dimensionality:
 Dimensionality
 
     The *dimension* of a dataset are the number of values associated with a single observation.
@@ -47,7 +73,6 @@ Dimensionality
 
         :math:`\{ (x_{1}^1, x_{2}^1, ... , x_{n}^1 ), (x_{1}^2, x_{2}^2, ... , x_{n}^2 ), ... ,(x_{1}^m, x_{2}^m, ... , x_{n}^m )`
 
-.. _characteristic:
 Characteristic
 
     The *characteristic* of a dataset is the *type* of data being observed.
@@ -74,7 +99,6 @@ Characteristic
 
                 :math:`\{ 1.0, 1.01, 1.001, 1.0001, 1.00001, ... \}`
 
-.. _scale:
 Scale 
     Nominal Level
         Unordered, categorical data.
@@ -89,20 +113,24 @@ Scale
         Ex. 
 
             TODO
+
     Interval/Ratio Level 
         Ordered, numerical data.
-        
+
+        Ex.
+
+            TODO
+
+.. _statistics_defintions:
+
 Types of Statistics
 -------------------
 
-.. _sample_statistic:
 Sample Statistic
     A piece of information that characterizes the shape and spread of a sample.
 
-.. _descriptive:
 Descriptive Statistic 
     A sample statisic used to visualize and approximate the shape and spread of a population.
 
-.. _inferential:
 Inferential Statistic
     A sample statistic used to make inferences about the population.
