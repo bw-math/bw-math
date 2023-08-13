@@ -7,8 +7,6 @@ Bishop Walsh A.P Statistics
 
    SPLASH
    SCHEDULES
-   notes/index
-   VENN_DIAGRAMS
    RESOURCES
+   notes/index
    LATEX
-   TEST

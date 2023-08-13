@@ -6,3 +6,4 @@ Bishop Walsh A.P Statistics: Class Notes
    :caption: Contents:
 
    SET_THEORY
+   VENN_DIAGRAMS

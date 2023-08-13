@@ -1,6 +1,8 @@
 LaTex Reference
 ===============
 
+The equations on this site were created using [LaTeX](https://www.latex-project.org/), a type-setting program for rendering complex symbols. On this page you will find the syntax for creating symbols that frequently occur in this class.
+
 Relations
 ---------
 
