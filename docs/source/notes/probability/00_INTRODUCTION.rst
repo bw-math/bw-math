@@ -67,31 +67,38 @@ Corollaries
 
 **The Law of Complements** :math:`P(A) + P(A^C) = 1` 
 
-*Proof*
+Proof
 
-By Complement Theorem 12 (Put Link), the union of complements is the sample space **S**.
+    By Complement Theorem 12 (Put Link), the union of complements is the sample space **S**.
+        
     .. math::
         A \cup A^C = S
 
     .. math::
         \implies P(A \cup A^C) = P(S)
 
-By Axiom 2, the probability of the entire sample space **S** is 1.
+    By Axiom 2, the probability of the entire sample space **S** is 1.
+        
     .. math:: 
         \implies P(A \cup A^C) = 1
 
-By Complement Theorem 13 (Put Link), the intersection of complements is the empty set.
+    By Complement Theorem 13 (Put Link), the intersection of complements is the empty set.
+
     .. math::
         A \cap A^C = \varnothing
 
-By Axiom 3, if the intersection of two sets is empty, the probability of their union is equal to the sum of the individual probabilities,
+    By Axiom 3, if the intersection of two sets is empty, the probability of their union is equal to the sum of the individual probabilities,
+
     .. math::
         A \cap A^C = \varnothing \implies P(A \cup A^C) = P(A) + P(A^C)
 
-Therefore, putting the results together,
+    Therefore, putting the results together,
+
     .. math::
         P(A \cup A^C) = 1
+
     .. math::
         P(A \cup A^C) = P(A) + P(A^C)
+        
     .. math::
         \implies P(A) + P(A^C) = 1
