@@ -367,37 +367,37 @@ document.write(`
 </dd>
 <dt><em>Axiom 2</em>: <img class="math" src="../../_images/math/7e54cdab4f141cf48960cbaee92eccf6a3748b43.png" alt="P(S)=1"/></dt><dd><p>The probability of <em>some</em> outcome from the sample space <strong>S</strong> occuring is equal to 1.</p>
 </dd>
-<dt><em>Axiom 3</em>: <img class="math" src="../../_images/math/899155ca719d48da9252d8cac779ec24172084d4.png" alt="\forall i &lt;&gt; j: A_i \cap A_j = \varnothing \implies P(\bigcup\limits_{i=1}^{n} A_i) = sum_{i=1}^n P(A_i)"/></dt><dd><p>If each event <sub>i</sub> <strong>A</strong> in the sample space <strong>S</strong> is <em>mutually exclusive</em> with every other event <img class="math" src="../../_images/math/331507dc59a607b9f47cc53964e90bb3a2e8578f.png" alt="\forall i&lt;&gt;j: A_i"/>, then the probability of the union of all of these events is equal to the sum of the probabilities of each individual event.</p>
+<dt><em>Axiom 3</em>: <img class="math" src="../../_images/math/229ec44a1a9b0856e37209c8589a3409ac603dbc.png" alt="\forall i &lt;&gt; j: A_i \cap A_j = \varnothing \implies P(\bigcup\limits_{i=1}^{n} A_i) = \sum_{i=1}^n P(A_i)"/></dt><dd><p>If each event <sub>i</sub> <strong>A</strong> in the sample space <strong>S</strong> is <em>mutually exclusive</em> with every other event <img class="math" src="../../_images/math/331507dc59a607b9f47cc53964e90bb3a2e8578f.png" alt="\forall i&lt;&gt;j: A_i"/>, then the probability of the union of all of these events is equal to the sum of the probabilities of each individual event.</p>
 </dd>
 </dl>
 </section>
 <section id="corollaries">
 <h2>Corollaries<a class="headerlink" href="#corollaries" title="Permalink to this headline">#</a></h2>
 <p><strong>The Law of Complements</strong> <img class="math" src="../../_images/math/3f3e023d0a6002d8a156ab9b9f082a0c0ba56be6.png" alt="P(A) + P(A^C) = 1"/></p>
-<p><em>Proof</em></p>
-<dl>
-<dt>By Complement Theorem 12 (Put Link), the union of complements is the sample space <strong>S</strong>.</dt><dd><div class="math">
+<p>Proof</p>
+<blockquote>
+<div><p>By Complement Theorem 12 (Put Link), the union of complements is the sample space <strong>S</strong>.</p>
+<div class="math">
 <p><img src="../../_images/math/99df2f5db71e321e7f7e761345487d4a58a80db1.png" alt="A \cup A^C = S"/></p>
 </div><div class="math">
 <p><img src="../../_images/math/814cbbbb39828fe799467c46aa5e47317d238826.png" alt="\implies P(A \cup A^C) = P(S)"/></p>
-</div></dd>
-<dt>By Axiom 2, the probability of the entire sample space <strong>S</strong> is 1.</dt><dd><div class="math">
+</div><p>By Axiom 2, the probability of the entire sample space <strong>S</strong> is 1.</p>
+<div class="math">
 <p><img src="../../_images/math/e9564902f01faec85ee0f71ac2ab31bd77089ae3.png" alt="\implies P(A \cup A^C) = 1"/></p>
-</div></dd>
-<dt>By Complement Theorem 13 (Put Link), the intersection of complements is the empty set.</dt><dd><div class="math">
+</div><p>By Complement Theorem 13 (Put Link), the intersection of complements is the empty set.</p>
+<div class="math">
 <p><img src="../../_images/math/0e05648010e8f62f929d7b15db9c50af35940e94.png" alt="A \cap A^C = \varnothing"/></p>
-</div></dd>
-<dt>By Axiom 3, if the intersection of two sets is empty, the probability of their union is equal to the sum of the individual probabilities,</dt><dd><div class="math">
+</div><p>By Axiom 3, if the intersection of two sets is empty, the probability of their union is equal to the sum of the individual probabilities,</p>
+<div class="math">
 <p><img src="../../_images/math/9e13dbe667ca0774191456e848ef99f4e7ea6271.png" alt="A \cap A^C = \varnothing \implies P(A \cup A^C) = P(A) + P(A^C)"/></p>
-</div></dd>
-<dt>Therefore, putting the results together,</dt><dd><div class="math">
+</div><p>Therefore, putting the results together,</p>
+<div class="math">
 <p><img src="../../_images/math/525b8e3f3aadb16304d523948378b856715d0ec8.png" alt="P(A \cup A^C) = 1"/></p>
 </div><div class="math">
 <p><img src="../../_images/math/6e6d9f20582a41c12fbdd9420e459db0e52db62e.png" alt="P(A \cup A^C) = P(A) + P(A^C)"/></p>
 </div><div class="math">
 <p><img src="../../_images/math/0837b2848db50ddb719635691f8c2af286e7fe40.png" alt="\implies P(A) + P(A^C) = 1"/></p>
-</div></dd>
-</dl>
+</div></div></blockquote>
 </section>
 </section>
 
