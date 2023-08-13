@@ -47,7 +47,20 @@ Systematic
 
 Stratified
 
+    TODO
+
+    Ex. 
+
+        TODO
+
 Cluster
+
+    TODO
+
+    Ex.
+
+        TODO 
+        
 .. _data_classification:
 
 Classifications of Data

@@ -19,5 +19,5 @@ Site
    :maxdepth: 1
    :caption: Appendices
 
-   LATEX
+   notes/latex
    REFERENCES
