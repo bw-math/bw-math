@@ -5,38 +5,27 @@ The equations on this site were created using [LaTeX](https://www.latex-project.
 
 Arithmetic
 ----------
-1. **Fractions**: ``\frac{numerator}{denominator}``
-.. math::
-        \frac{numerator}{denominator}
+1. **Fractions**: ``\frac{a}{b}``
+.. math:: \frac{a}{b}
 
 Relations
 ---------
-
-1. **Inclusion**: ``\in``
-.. math::
-        \in 
-
-2. **Exclusion**: ``\notin``
-.. math::
-        \notin
-3. **Subset**: ``\subset``
-.. math::
-        \subset
-4. **Proper Subset**: ``\subseteq``
-.. math::
-        \subseteq
-5. **Less Than Or Equal To**: ``\leq``
-.. math::
-        \leq
-6. **Greater Than Or Equal TO**: ``\geq``
-.. math::
-        \geq
-7. **Equivalence**: ``\equiv``
-.. math::
-        \equiv
-8. **Implication**: ``\implies``
-.. math::
-        \implies
+**Inclusion**: ``\in``
+.. math:: \in 
+**Exclusion**: ``\notin``
+.. math:: \notin
+**Subset**: ``\subset``
+.. math:: \subset
+**Proper Subset**: ``\subseteq``
+.. math:: \subseteq
+**Less Than Or Equal To**: ``\leq``
+.. math:: \leq
+**Greater Than Or Equal TO**: ``\geq``
+.. math:: \geq
+**Equivalence**: ``\equiv``
+.. math:: \equiv
+**Implication**: ``\implies``
+.. math:: \implies
 
 
 Operations
