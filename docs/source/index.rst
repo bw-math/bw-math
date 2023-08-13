@@ -11,4 +11,4 @@ Bishop Walsh A.P Statistics
    VENN_DIAGRAMS
    RESOURCES
    LATEX
-   latex.tex
+   TEST
