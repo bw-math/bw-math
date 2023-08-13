@@ -1,5 +1,5 @@
-Bishop Walsh A.P Statistics: Class Notes
-========================================
+Class Notes
+===========
 
 .. toctree::
    :maxdepth: 2
