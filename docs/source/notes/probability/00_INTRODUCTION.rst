@@ -26,6 +26,5 @@ Terms
         An *uncertain* event.
     Mutual Exclusivity
         Two sets, **A** and **B**, are *mutually exclusive* if they are disjoint.
-
-        .. math::
-            A \cap B = \varnothing \implies "A and B are mutually exclusive"
+        
+        :math:`A \cap B = \varnothing \implies` A and B are mutually exclusive. 
