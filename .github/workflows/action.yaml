@@ -1,4 +1,4 @@
-name: terraform workflows
+name: site build
 
 on:
   push:
