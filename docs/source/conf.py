@@ -32,11 +32,12 @@ exclude_patterns = []
 html_theme = "sphinx_book_theme"
 
 html_static_path = [
-    'imgs'
+    'imgs',
+    'css'
 ]
 
 html_css_files = [
-    'css/style.css',
+    'stylesheet.css',
 ]
 
 
