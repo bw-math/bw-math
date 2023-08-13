@@ -1,13 +1,12 @@
-Being and Death
-===============
+Bishop Walsh A.P Statistics
+===========================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    SPLASH
-   SCHEDULE
-   CLASSNOTES
-   HOMEWORK
+   SCHEDULES
+   notes/index
    VENN_DIAGRAMS
    RESOURCES
