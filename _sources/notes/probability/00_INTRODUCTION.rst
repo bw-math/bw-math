@@ -26,25 +26,27 @@ Experiment
 
 Mutual Exclusivity
     :math:`A \cap B = \varnothing \implies` **A** and **B** are mutually exclusive. 
-    Two sets, **A** and **B**, are *mutually exclusive* if they are disjoint.
+        Two sets, **A** and **B**, are *mutually exclusive* if they are disjoint.
 
 Outcomes 
     :math:`x, y, z` (*lower case letters*)
-    A possible way an experiment might occur.
+        A possible way an experiment might occur.
     
 Sample Space 
     :math:`S`
-    The set of all possible outcomes for an experiment.
+        The set of all possible outcomes for an experiment.
 
 Events 
     :math:`A, B, C` (*upper-case letters*)
     :math:`A_1, A_2, A_3, ..., A_{n-1}, A_n` (*upper-case letters with subscripts*)
+        
     A subset of the sample space, i.e. a set of outcomes. 
+    
     :math:`A \subseteq S \implies` **A** is an event
 
 Probability
     :math:`P(A)`
-    A numerical measure of the *likelihood*, or *chance*, that event **A** occurs.
+        A numerical measure of the *likelihood*, or *chance*, that event **A** occurs.
 
 .. _axioms_of_probability:
 
