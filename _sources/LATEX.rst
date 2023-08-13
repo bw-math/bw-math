@@ -1,7 +1,7 @@
 LaTex Reference
 ===============
 
-The equations on this site were created using `LaTex <https://www.latex-project.org/>`_ a type-setting program for rendering complex symbols. On this page you will find the syntax for creating symbols that frequently occur in this class. 
+The equations on this site were created using `LaTex <https://www.latex-project.org/>`_, a type-setting program for rendering mathematical symbols. On this page you will find the syntax for creating symbols that frequently occur in this class. 
 
 
 Arithmetic
@@ -33,7 +33,7 @@ Relations
 
 .. math:: 
         \subseteq
-        
+
 **Less Than Or Equal To**: ``\leq``
 
 .. math:: 
