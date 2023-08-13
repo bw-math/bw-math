@@ -10,3 +10,4 @@ Bishop Walsh A.P Statistics
    notes/index
    VENN_DIAGRAMS
    RESOURCES
+   LATEX
