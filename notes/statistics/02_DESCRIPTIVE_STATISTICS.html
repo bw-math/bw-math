@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Statistics &#8212; bishop-walsh-ap-stats  documentation</title>
+    <title>Point Estimation &#8212; bishop-walsh-ap-stats  documentation</title>
   
   
   
@@ -42,11 +42,11 @@
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'notes/statistics/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notes/statistics/02_DESCRIPTIVE_STATISTICS';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Introduction" href="00_INTRODUCTION.html" />
-    <link rel="prev" title="Normal Distribution" href="../probability/05_NORMAL_DISTRIBUTION.html" />
+    <link rel="next" title="&lt;no title&gt;" href="03_SAMPLING_DISTRIBUTIONS.html" />
+    <link rel="prev" title="Graphical Representations of Data" href="01_GRAPHICAL_REPRESENTATIONS.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -143,10 +143,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../probability/05_NORMAL_DISTRIBUTION.html">Normal Distribution</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Statistics</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Statistics</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="00_INTRODUCTION.html">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="01_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Point Estimation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="04_CENTRAL_LIMIT_THEOREM.html">Central Limit Theorem</a></li>
 </ul>
 </li>
@@ -212,7 +212,7 @@
       
       
       
-      <li><a href="../../_sources/notes/statistics/index.rst" target="_blank"
+      <li><a href="../../_sources/notes/statistics/02_DESCRIPTIVE_STATISTICS.rst" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -281,7 +281,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -292,11 +294,24 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Statistics</h1>
+    <h1>Point Estimation</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminaries">Preliminaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-location">Measures of Location</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-dispersion">Measures of Dispersion</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -306,27 +321,55 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="statistics">
-<h1>Statistics<a class="headerlink" href="#statistics" title="Permalink to this headline">#</a></h1>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="00_INTRODUCTION.html">Introduction</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="00_INTRODUCTION.html#definitions">Definitions</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="01_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html">Point Estimation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html#preliminaries">Preliminaries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html#definitions">Definitions</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="04_CENTRAL_LIMIT_THEOREM.html">Central Limit Theorem</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="04_CENTRAL_LIMIT_THEOREM.html#motivation">Motivation</a></li>
-</ul>
-</li>
-</ul>
-</div>
+  <section id="point-estimation">
+<h1>Point Estimation<a class="headerlink" href="#point-estimation" title="Permalink to this headline">#</a></h1>
+<section id="preliminaries">
+<h2>Preliminaries<a class="headerlink" href="#preliminaries" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
+<section id="measures-of-location">
+<h3>Measures of Location<a class="headerlink" href="#measures-of-location" title="Permalink to this headline">#</a></h3>
+<dl>
+<dt>Mean</dt><dd><p>Arithmetic Mean</p>
+<blockquote>
+<div><p>TODO</p>
+</div></blockquote>
+<p>Geometric Mean</p>
+<blockquote>
+<div><p>TODO</p>
+</div></blockquote>
+</dd>
+</dl>
+<p>Mode</p>
+<blockquote>
+<div><p>TODO</p>
+</div></blockquote>
+<p>Median</p>
+<blockquote>
+<div><p>TODO</p>
+</div></blockquote>
+<p>Percentiles</p>
+<blockquote>
+<div><p>TODO</p>
+<p>Quartiles</p>
+<blockquote>
+<div><p>TODO</p>
+</div></blockquote>
+</div></blockquote>
+</section>
+<section id="measures-of-dispersion">
+<h3>Measures of Dispersion<a class="headerlink" href="#measures-of-dispersion" title="Permalink to this headline">#</a></h3>
+<p>Interquartile Range</p>
+<blockquote>
+<div><p>TODO</p>
+</div></blockquote>
+<p>Variance/Standard Deviation</p>
+<blockquote>
+<div><p>TODO</p>
+</div></blockquote>
+</section>
+</section>
 </section>
 
 
@@ -342,20 +385,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../probability/05_NORMAL_DISTRIBUTION.html"
+       href="01_GRAPHICAL_REPRESENTATIONS.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Normal Distribution</p>
+        <p class="prev-next-title">Graphical Representations of Data</p>
       </div>
     </a>
     <a class="right-next"
-       href="00_INTRODUCTION.html"
+       href="03_SAMPLING_DISTRIBUTIONS.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introduction</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -368,6 +411,25 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminaries">Preliminaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-location">Measures of Location</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-dispersion">Measures of Dispersion</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
