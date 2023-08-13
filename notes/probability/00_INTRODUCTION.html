@@ -365,29 +365,30 @@ A numerical measure of the <em>likelihood</em>, or <em>chance</em>, that event <
 </section>
 <section id="corollaries">
 <h2>Corollaries<a class="headerlink" href="#corollaries" title="Permalink to this headline">#</a></h2>
+<p><strong>The Law of Complements</strong> <img class="math" src="../../_images/math/3f3e023d0a6002d8a156ab9b9f082a0c0ba56be6.png" alt="P(A) + P(A^C) = 1"/></p>
+<p><em>Proof</em></p>
 <dl>
-<dt><strong>The Law of Complements</strong> <img class="math" src="../../_images/math/3f3e023d0a6002d8a156ab9b9f082a0c0ba56be6.png" alt="P(A) + P(A^C) = 1"/></dt><dd><p><em>Proof</em>
-1. <img class="math" src="../../_images/math/ee135d7696a23b556296b4160d99d459eb5350b4.png" alt="A \cup A^C = S"/></p>
-<blockquote>
-<div><p>By Complement Theorem 12 (Put Link)</p>
-</div></blockquote>
-<ol class="arabic simple" start="2">
-<li><dl class="simple">
-<dt><img class="math" src="../../_images/math/60712b5d4251c1ac7af2bef8595a1a290f1fd204.png" alt="A \cap A^C = \varnothing"/></dt><dd><p>By Complement Theorem 13 (Put Link)</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><img class="math" src="../../_images/math/0929f0b0c5a822cd409712188e4ebf6b2910e6fc.png" alt="P(A \cap A^C) = P(A) + P(A^C)"/></dt><dd><p>By <em>2.</em> and Axiom 3.</p>
-</dd>
-</dl>
-</li>
-</ol>
-<dl class="simple">
-<dt><strong>Conclusion</strong> <img class="math" src="../../_images/math/3f3e023d0a6002d8a156ab9b9f082a0c0ba56be6.png" alt="P(A) + P(A^C) = 1"/></dt><dd><p>By <em>1.</em>, Axiom 2 and <em>3</em></p>
-</dd>
-</dl>
-</dd>
+<dt>By Complement Theorem 12 (Put Link), the union of complements is the sample space <strong>S</strong>.</dt><dd><div class="math">
+<p><img src="../../_images/math/99df2f5db71e321e7f7e761345487d4a58a80db1.png" alt="A \cup A^C = S"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/814cbbbb39828fe799467c46aa5e47317d238826.png" alt="\implies P(A \cup A^C) = P(S)"/></p>
+</div></dd>
+<dt>By Axiom 2, the probability of the entire sample space <strong>S</strong> is 1.</dt><dd><div class="math">
+<p><img src="../../_images/math/e9564902f01faec85ee0f71ac2ab31bd77089ae3.png" alt="\implies P(A \cup A^C) = 1"/></p>
+</div></dd>
+<dt>By Complement Theorem 13 (Put Link), the intersection of complements is the empty set.</dt><dd><div class="math">
+<p><img src="../../_images/math/0e05648010e8f62f929d7b15db9c50af35940e94.png" alt="A \cap A^C = \varnothing"/></p>
+</div></dd>
+<dt>By Axiom 3, if the intersection of two sets is empty, the probability of their union is equal to the sum of the individual probabilities,</dt><dd><div class="math">
+<p><img src="../../_images/math/9e13dbe667ca0774191456e848ef99f4e7ea6271.png" alt="A \cap A^C = \varnothing \implies P(A \cup A^C) = P(A) + P(A^C)"/></p>
+</div></dd>
+<dt>Therefore, putting the results together,</dt><dd><div class="math">
+<p><img src="../../_images/math/525b8e3f3aadb16304d523948378b856715d0ec8.png" alt="P(A \cup A^C) = 1"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/6e6d9f20582a41c12fbdd9420e459db0e52db62e.png" alt="P(A \cup A^C) = P(A) + P(A^C)"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/0837b2848db50ddb719635691f8c2af286e7fe40.png" alt="\implies P(A) + P(A^C) = 1"/></p>
+</div></dd>
 </dl>
 </section>
 </section>
