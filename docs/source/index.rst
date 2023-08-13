@@ -1,3 +1,4 @@
+===========================
 Bishop Walsh A.P Statistics
 ===========================
 
@@ -9,5 +10,14 @@ Bishop Walsh A.P Statistics
    SCHEDULES
    RESOURCES
    notes/index
+   TI84
+
+Site
+----
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Appendices
+
    LATEX
    REFERENCES
