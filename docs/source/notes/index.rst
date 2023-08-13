@@ -9,4 +9,3 @@ Class Notes
    SET_THEORY
    probability/index
    statistics/index
-   graphics/index
