@@ -1,4 +1,4 @@
-.. _norm:
+.. _normal:
 
 Normal Distribution
 ===================
