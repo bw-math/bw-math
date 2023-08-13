@@ -299,6 +299,8 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminaries">Preliminaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#axioms-of-probability">Axioms of Probability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
 </ul>
             </nav>
         </div>
@@ -328,12 +330,61 @@ document.write(`
 </section>
 <section id="definitions">
 <h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
-<dl>
-<dt>Terms</dt><dd><dl>
+<dl class="simple">
 <dt>Experiment</dt><dd><p>An <em>uncertain</em> event.</p>
 </dd>
-<dt>Mutual Exclusivity</dt><dd><p>Two sets, <strong>A</strong> and <strong>B</strong>, are <em>mutually exclusive</em> if they are disjoint.</p>
-<p><img class="math" src="../../_images/math/22cc67f94154ff59616ab29daaf5a55fdb2dc8d6.png" alt="A \cap B = \varnothing \implies"/> A and B are mutually exclusive.</p>
+<dt>Mutual Exclusivity</dt><dd><p><img class="math" src="../../_images/math/22cc67f94154ff59616ab29daaf5a55fdb2dc8d6.png" alt="A \cap B = \varnothing \implies"/> <strong>A</strong> and <strong>B</strong> are mutually exclusive.
+Two sets, <strong>A</strong> and <strong>B</strong>, are <em>mutually exclusive</em> if they are disjoint.</p>
+</dd>
+<dt>Outcomes</dt><dd><p><img class="math" src="../../_images/math/53a3c36fbb3fbc5476f3207913f5a0a04c4b1dc2.png" alt="x, y, z"/> (<em>lower case letters</em>)
+A possible way an experiment might occur.</p>
+</dd>
+<dt>Sample Space</dt><dd><p><img class="math" src="../../_images/math/23298f92ca8dc2a1ce6332eb7a21d5f2e9ae0bd8.png" alt="S"/>
+The set of all possible outcomes for an experiment.</p>
+</dd>
+<dt>Events</dt><dd><p><img class="math" src="../../_images/math/21eefc1439fd0281617bf99294383d62e3b03e06.png" alt="A, B, C"/> (<em>upper-case letters</em>)
+<img class="math" src="../../_images/math/3220c1071706a1ca4009deb0e760f28b5e0ec955.png" alt="A_1, A_2, A_3, ..., A_{n-1}, A_n"/> (<em>upper-case letters with subscripts</em>)
+A subset of the sample space, i.e. a set of outcomes.
+<img class="math" src="../../_images/math/75179a0b3e22275d33d8c20fe09cde6823ed658d.png" alt="A \subseteq S \implies"/> <strong>A</strong> is an event</p>
+</dd>
+<dt>Probability</dt><dd><p><img class="math" src="../../_images/math/0fb5c3fd8b5f12426f9ce700fdf2d4e704905cd2.png" alt="P(A)"/>
+A numerical measure of the <em>likelihood</em>, or <em>chance</em>, that event <strong>A</strong> occurs.</p>
+</dd>
+</dl>
+</section>
+<section id="axioms-of-probability">
+<span id="id1"></span><h2>Axioms of Probability<a class="headerlink" href="#axioms-of-probability" title="Permalink to this headline">#</a></h2>
+<dl class="simple">
+<dt><em>Axiom 1</em>: <img class="math" src="../../_images/math/990f4f85432bee35c95011016ec8c7c2f2ac906a.png" alt="P(A)&gt;=A"/></dt><dd><p>All probabilities are positive; No probabilities are negative.</p>
+</dd>
+<dt><em>Axiom 2</em>: <img class="math" src="../../_images/math/7e54cdab4f141cf48960cbaee92eccf6a3748b43.png" alt="P(S)=1"/></dt><dd><p>The probability of <em>some</em> outcome from the sample space <strong>S</strong> occuring is equal to 1.</p>
+</dd>
+<dt><em>Axiom 3</em>: <img class="math" src="../../_images/math/244f2a3e4ee00c3ed37f07c882a1e0c42a0d500e.png" alt="forall i &lt;&gt; j: A_i \cap A_j = \varnothing \implies P(\bigcup\limits_{i=1}^{n} A_i) = sum_{i=1}^n P(A_i)"/></dt><dd><p>If each event <sub>i</sub> <strong>A</strong> in the sample space <strong>S</strong> is <em>mutually exclusive</em> with every other event <img class="math" src="../../_images/math/42de9957c961977a8f68571d1d1a8875b3c62094.png" alt="forall i&lt;&gt;j: A_i"/>, then the probability of the union of all of these events is equal to the sum of the probabilities of each individual event.</p>
+</dd>
+</dl>
+</section>
+<section id="corollaries">
+<h2>Corollaries<a class="headerlink" href="#corollaries" title="Permalink to this headline">#</a></h2>
+<dl>
+<dt><strong>The Law of Complements</strong> <img class="math" src="../../_images/math/3f3e023d0a6002d8a156ab9b9f082a0c0ba56be6.png" alt="P(A) + P(A^C) = 1"/></dt><dd><p><em>Proof</em>
+1. <img class="math" src="../../_images/math/ee135d7696a23b556296b4160d99d459eb5350b4.png" alt="A \cup A^C = S"/></p>
+<blockquote>
+<div><p>By Complement Theorem 12 (Put Link)</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><dl class="simple">
+<dt><img class="math" src="../../_images/math/60712b5d4251c1ac7af2bef8595a1a290f1fd204.png" alt="A \cap A^C = \varnothing"/></dt><dd><p>By Complement Theorem 13 (Put Link)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><img class="math" src="../../_images/math/0929f0b0c5a822cd409712188e4ebf6b2910e6fc.png" alt="P(A \cap A^C) = P(A) + P(A^C)"/></dt><dd><p>By <em>2.</em> and Axiom 3.</p>
+</dd>
+</dl>
+</li>
+</ol>
+<dl class="simple">
+<dt><strong>Conclusion</strong> <img class="math" src="../../_images/math/3f3e023d0a6002d8a156ab9b9f082a0c0ba56be6.png" alt="P(A) + P(A^C) = 1"/></dt><dd><p>By <em>1.</em>, Axiom 2 and <em>3</em></p>
 </dd>
 </dl>
 </dd>
@@ -391,6 +442,8 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminaries">Preliminaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#axioms-of-probability">Axioms of Probability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
 </ul>
   </nav></div>
 
