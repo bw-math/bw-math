@@ -11,3 +11,4 @@ jobs:
     with:
       TF_DOCS: false
       NO_CACHE: true
+      LATEX: true
