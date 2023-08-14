@@ -91,11 +91,21 @@ Logic
 .. math:: 
         \forall
 
+**Existential Quantifier**: ``\exists``
+
+.. math:: 
+        \exists
+         
 **AND**: ``\land``
 
 .. math:: 
         \land
 
+**NOT**: ``\neg``
+
+.. math:: 
+        \neg 
+        
 **OR**: ``\lor``
 
 .. math:: 

@@ -29,7 +29,7 @@ Definitions
             In English, "for all *B*, if *B* is a subset of *A*, then *B* belongs to the *Power Set of A*"
 
 
-Fundamental Counting Principles
+Counting Principles
 ===============================
 
 Motivation
@@ -71,8 +71,8 @@ Before toggling the solution below, try and figure out the answer by drawing arr
 
 .. _counting_principle:
 
-The Counting Principle
-----------------------
+The Fundamental Counting Principle
+----------------------------------
 
 We now generalize the example in the previous section into the *Counting Principle* in three steps: first, we give an intuitive explanation fo the *Counting Principle*, then we state it in :ref:`propositional <proposition>` form using the language of :ref:`Set Theory<set_theory>` and finally, we state it entirely symbolically.
 
@@ -146,3 +146,19 @@ Three of your friends, Aletheia, Bertha and Cornelius, are running a foot race t
 .. collapse:: Solution
 
     TODO
+
+**Example**
+
+.. collapse:: Solution 
+
+    TODO 
+
+Combinations
+============
+
+Motivation
+----------
+
+TODO
+
+
