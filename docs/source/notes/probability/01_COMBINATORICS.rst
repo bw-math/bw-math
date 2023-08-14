@@ -61,11 +61,11 @@ Before toggling the solution below, try and figure out the answer by drawing arr
 
     We may also see the solution by enumerating every possible choice in :ref:`list_notation`,
 
-    .. :math::
+    .. math::
         
         G = \{ {a_1}{b_1}, {a_1}{b_2}, {a_1}{b_3}, {a_2}{b_1}, {a_2}{b_2}, {a_2}{b_3} \}
 
-    .. :math::
+    .. math::
 
         \implies n(G) = 6
 
@@ -112,11 +112,11 @@ You are trying to figure out what to outfit to wear. In your closet, you have a 
 
     We state the hypothesis and conclusion of the **Counting Principle** in precise symbols below,
 
-        .. :math::
+        .. math::
             n(E) = n \land n(F) = m
-        .. :math::
+        .. math::
             G = \{ \forall x \in E \land y \in F: xy \}
-        .. :math::
+        .. math::
             \implies n(G) = n(E) \cdot n(F)
 
 .. _tree_diagrams:

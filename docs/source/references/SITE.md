@@ -1,4 +1,4 @@
-# References
+# Maintence
 
 References for updating and maintaing this site. This page has nothing to do with the content of the course; you may ignore it.
 
