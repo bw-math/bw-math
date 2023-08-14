@@ -353,38 +353,37 @@ document.write(`
 <section id="motivation">
 <h3>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h3>
 <p>Suppose you live in the aptly named <em>Town A</em> and are planing a road trip to the similarly uninspired <em>Town C</em>. You plan on stopping at <em>Town B</em> to fill up your gas tank before proceeding to <em>Town C</em>.</p>
-<p>Suppose further there are two routes from <em>Town A</em> to <em>Town B</em>, and there are three routes from <em>Town B</em> to <em>Town C</em>, depicted below.</p>
+<p>Suppose further there are two routes from <em>Town A</em> to <em>Town B</em>, and there are three routes from <em>Town B</em> to <em>Town C</em>. Let us call the routes from <em>Town A</em> to <em>Town B</em> <em>a</em> <sub>1</sub> and <em>a</em> <sub>2</sub>, respectively. Let us call the routes from <em>Town B</em> to <em>Town C</em> <em>b</em> <sub>1</sub>, <em>b</em> <sub>2</sub>, and <em>b</em> <sub>3</sub>, respectively. This setup is depicted in the following diagram,</p>
 <a class="reference internal image-reference" href="../../_images/combinatorics_road_trip.png"><img alt="../../_images/combinatorics_road_trip.png" class="align-center" src="../../_images/combinatorics_road_trip.png" style="width: 60%;" /></a>
-<p>How many routes can you take from <em>Town A</em> to <em>Town B</em>, and then from <em>Town B</em> to <em>Town C</em>?</p>
-<p>Before toggling the answer below, try and figure out the answer by drawing arrows from <em>Town A</em> to <em>Town B</em>, and then from <em>Town B</em> to <em>Town C</em> that represent the possible routes you could take, and counting up all possible answers. In other worlds, generate a <span class="xref std std-ref">sample_space</span> for this “experiment”.</p>
+<p>How many different routes can you take from <em>Town A</em> to <em>Town C</em>, by way of <em>Town B</em>?</p>
+<p>Before toggling the solution below, try and figure out the answer by drawing arrows from <em>Town A</em> to <em>Town B</em>, and then from <em>Town B</em> to <em>Town C</em> that represent the possible routes you can take. Count up all possible route. In other worlds, generate a <span class="xref std std-ref">sample_space</span> for this “experiment”.</p>
 <details class="summary-solution">
-<summary>Solution</summary><p>We start by breaking down the problem into the choices we are making. Starting in <em>Town A</em>, we have two possible routes from which we can choose to get to <em>Town B</em>. Once we arrive in <em>Town B</em>, regardless of the route we took to get there, we then have three possible routes to choose from that lead from*Town B* to <em>Town C</em>.</p>
-<p>Each choice represents a branch. Every time we make a choice, we are narrowing down the set of possible outcomes. We need a way of visualizing the space of possible routes that captures this feature. We can represent each choice as a <em>branch</em> in a tree, as in the following example.</p>
+<summary>Solution</summary><p>We start by breaking down the problem into the choices we are making. Starting in <em>Town A</em>, we have two possible routes from which we can choose to get to <em>Town B</em>. Once we arrive in <em>Town B</em>, regardless of the route we took to get there, we then have three possible routes to choose from that lead from <em>Town B</em> to <em>Town C</em>. To put it a different way, for each route from <em>Town A</em> to <em>Town B</em>, there are three routes from <em>Town B</em> to <em>Town C</em>.</p>
+<p>Each choice represents a branch. Every time we make a choice, we are narrowing down the set of possible outcomes. We can represent each choice as a <em>branch</em> in a tree, as in the following example.</p>
 <a class="reference internal image-reference" href="../../_images/combinatorics_tree_diagram.png"><img alt="../../_images/combinatorics_tree_diagram.png" class="align-center" src="../../_images/combinatorics_tree_diagram.png" style="width: 60%;" /></a>
-<p>The number of possible routes is equal to the number of endpoints in graph pictured above. In this case, 8.</p>
-<p>These types of graphs are called <a class="reference internal" href="#tree-diagrams"><span class="std std-ref">tree diagrams</span></a>. They are very useful for visualizing the sample spaces of experiments that are composed of successive, independent choices, as in this example.</p>
+<p>The number of possible routes is equal to the number of endpoints in graph pictured above. In this case, there are 6 possible routes we can take, where each route is represent a particular branch of the tree. These types of graphs are called <a class="reference internal" href="#tree-diagrams"><span class="std std-ref">tree diagrams</span></a>. They are very useful for visualizing the sample spaces of experiments that are composed of successive, independent choices, as in this example.</p>
+<p>We may also see the solution by enumerating every possible choice,</p>
 </details></section>
 <section id="the-counting-principle">
 <span id="counting-principle"></span><h3>The Counting Principle<a class="headerlink" href="#the-counting-principle" title="Permalink to this headline">#</a></h3>
 <p>We now generalize the example in the previous section into the <em>Counting Principle</em>, using the language of <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">Set Theory</span></a>.</p>
-<p>Proposition</p>
+<p><strong>Proposition</strong></p>
 <blockquote>
 <div><p>Let the sets <strong>E</strong> and <strong>F</strong> have cardinalities <em>n</em> and <em>m</em>. Let <strong>G</strong> be the set of sequences <em>xy</em> formed by first selecting an element <em>x</em> from <strong>E</strong> and then an element <em>y</em> from <strong>F</strong>. Then, the cardinality of <strong>G</strong> is <img class="math" src="../../_images/math/c3f792b23189837f537c0ae56b96ee1e34796058.png" alt="n \cdot m"/></p>
 </div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Careful!
-The element <em>xy</em> is <strong>not</strong> the product of <em>x</em> and <em>y</em>, i.e <em>x</em> times <em>y</em>. It is a <em>sequence</em> of letters <em>xy</em>. That becomes more obvious if we let <img class="math" src="../../_images/math/3fbbe20b4ceff86de9929141f5975c1ba78ff898.png" alt="E = \{ a, b, c \}"/> and <img class="math" src="../../_images/math/35deafaed6eb5947d93fc67d4bdfa52ecdaa2822.png" alt="F=\{d, e , f\}"/>; then <strong>G</strong> is the set of sequences <img class="math" src="../../_images/math/7d97e6f69011a940bc6c7787400f04e665564140.png" alt="G = \{ ad, ae, af, bd, be, bf, cd, ce, cf \}"/>. Take note that <img class="math" src="../../_images/math/421108f7519f1f7d2af632960dce3280257fbca3.png" alt="n(E)=3"/>, <img class="math" src="../../_images/math/126a1264373470ad099a88efc976eada811b6f48.png" alt="n(F)=3"/>, so therefore <img class="math" src="../../_images/math/485430dd8c4daae28c534a8efe9e381f4eb36432.png" alt="n(G) = n(E) \cdot n(F) = 3 \cdot 3 = 9"/></p>
+<p>Careful!</p>
+<p>The element <em>xy</em> is <strong>not</strong> the product of <em>x</em> and <em>y</em>, i.e <em>x</em> times <em>y</em>. It is a <em>sequence</em> of the letters <em>xy</em>.</p>
+<p>This becomes more obvious if we let <img class="math" src="../../_images/math/3fbbe20b4ceff86de9929141f5975c1ba78ff898.png" alt="E = \{ a, b, c \}"/> and <img class="math" src="../../_images/math/35deafaed6eb5947d93fc67d4bdfa52ecdaa2822.png" alt="F=\{d, e , f\}"/>; then <strong>G</strong> is the set of sequences <img class="math" src="../../_images/math/7d97e6f69011a940bc6c7787400f04e665564140.png" alt="G = \{ ad, ae, af, bd, be, bf, cd, ce, cf \}"/>.</p>
+<p>Take note that <img class="math" src="../../_images/math/421108f7519f1f7d2af632960dce3280257fbca3.png" alt="n(E)=3"/>, <img class="math" src="../../_images/math/126a1264373470ad099a88efc976eada811b6f48.png" alt="n(F)=3"/>, so therefore <img class="math" src="../../_images/math/485430dd8c4daae28c534a8efe9e381f4eb36432.png" alt="n(G) = n(E) \cdot n(F) = 3 \cdot 3 = 9"/></p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Try It Yourself</p>
+<p><strong>Example</strong></p>
 <p>You are trying to figure out what to outfit to wear. In your closet, you have a red, green, blue and orange shirt. In your dresser, you have a pair of blue jeans, a pair of khakis and a pair of sweat pants. How many possible choices do you have for your outfit?</p>
-</div>
 <details class="summary-solution">
 <summary>Solution</summary><p>We have two sets in this problem: the set of shirts in our closet, and the set of pants in our dresser.</p>
 <a class="reference internal image-reference" href="../../_images/combinatorics_example.png"><img alt="../../_images/combinatorics_example.png" class="align-center" src="../../_images/combinatorics_example.png" style="width: 60%;" /></a>
-<p>The first set contains four elements and the second set contains three elements. Therefore,</p>
+<p>The outfits we can pick are formed by first picking a shirt from the set of shirts, and then picking a pair of pants from the set of pants. The first set contains four elements and the second set contains three elements. Therefore, by the <strong>Counting Principle</strong>, the total number of outfits is the product of the two cardinalities, <img class="math" src="../../_images/math/a42af35ef1d9232ad1a42cdebc4592c322515b48.png" alt="4 \cdot 3 = 12"/>.</p>
 </details><div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>We state the hypothesis and conclusion of the <strong>Counting Principle</strong> in precise symbols below,</p>
