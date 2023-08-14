@@ -13,10 +13,10 @@ Definitions
 
 .. glossary::
     Power Set
-        The *Power Set* of a set **A**, denoted :math:`PS(A)`, is the set of all subsets of **A**.
+        The *Power Set* of a set **A**, denoted :math:`\mathcal{P}(A)`, is the set of all subsets of **A**.
 
         .. warning::
-            :math:`\forall B: B \subseteq A \implies B \in PS(A)`
+            :math:`\forall B: B \subseteq A \implies B \in \mathcal{P}(A)`
 
     Sequences
         An ordered set of numerical elements. The i:sup:`th` element of a sequence is called the i:sup:`th` term of the sequence
@@ -35,25 +35,28 @@ Suppose you live in the aptly named *Town A* and are planing a road trip to the 
 
 Suppose further there are two routes from *Town A* to *Town B*, and there are four routes from *Town B* to *Town C*, depicted below.
 
-INSERT PICTURE HERE
+.. image:: ../../imgs/sets_partition.jpg
+   :width: 60%
+   :align: center
 
 How many routes can you take from *Town A* to *Town B*, and then from *Town B* to *Town C*?
 
 .. collapse:: Try It Yourself 
+    
     The answer becomes obvious if we label the graphic pictured above appropriately. Use a *directed arrow* starting from each point to show each route taken. 
 
     INSERT PICTURE HERE
 
     The number of possible routes is equal to the number of endpoints in graph pictured above. In this case, 8. 
     
-    These types of graphs are called `tree diagrams <tree_diagrams>` and they are very useful for visualizing the sample spaces of experiments that are composed successive, independent choices, as in this example. 
+    These types of graphs are called :ref:`tree diagrams <tree_diagrams>` and they are very useful for visualizing the sample spaces of experiments that are composed successive, independent choices, as in this example. 
 
 .. _counting_principle:
 
 The Counting Principle
 ----------------------
 
-We now generalize the example in the previous section into the *Counting Principle*, using the language of `Set Theory</notes/SET_THEORY>.
+We now generalize the example in the previous section into the *Counting Principle*, using the language of :ref:`Set Theory<set_theory>`.
 
 Proposition
 
@@ -66,14 +69,17 @@ Proposition
     TODO
 
 .. collapse:: Solution
+    
     TODO
 
 .. warning::
 
     We state the Counting Principle rigorously below
 
-        :math:`n(E) = n \and n(F) = m`
-        :math:``
+        .. :math::
+            n(E) = n \land n(F) = m
+        .. :math::
+            G = \{ \forall x \in E \land y \in F: xy \}
 
 .. _tree_diagrams:
 
