@@ -306,14 +306,18 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Fundamental Counting Principles</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-principles">Counting Principles</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-counting-principle">The Counting Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fundamental-counting-principle">The Fundamental Counting Principle</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tree-diagrams">Tree Diagrams</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalized-counting-principle">Generalized Counting Principle</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations">Permutations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Motivation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations">Combinations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Motivation</a></li>
 </ul>
 </li>
@@ -349,8 +353,8 @@ document.write(`
 </dd>
 </dl>
 </section>
-<section id="id2">
-<h2>Fundamental Counting Principles<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<section id="counting-principles">
+<h2>Counting Principles<a class="headerlink" href="#counting-principles" title="Permalink to this headline">#</a></h2>
 <section id="motivation">
 <h3>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h3>
 <p>Suppose you live in the aptly named <em>Town A</em> and are planing a road trip to the similarly uninspired <em>Town C</em>. You plan on stopping at <em>Town B</em> to fill up your gas tank before proceeding to <em>Town C</em>.</p>
@@ -365,8 +369,8 @@ document.write(`
 <p>The number of possible routes is equal to the number of endpoints in this graph. In this case, there are 6 possible routes we can take, where each route is represented by a particular branch of the tree. These types of graphs are called <a class="reference internal" href="#tree-diagrams"><span class="std std-ref">tree diagrams</span></a>, for this reason. They are very useful for visualizing the sample spaces of experiments that are composed of successive, independent choices, as in this example.</p>
 <p>We may also see the solution by enumerating every possible choice in <span class="xref std std-ref">list_notation</span>,</p>
 </details></section>
-<section id="the-counting-principle">
-<span id="counting-principle"></span><h3>The Counting Principle<a class="headerlink" href="#the-counting-principle" title="Permalink to this headline">#</a></h3>
+<section id="the-fundamental-counting-principle">
+<span id="counting-principle"></span><h3>The Fundamental Counting Principle<a class="headerlink" href="#the-fundamental-counting-principle" title="Permalink to this headline">#</a></h3>
 <p>We now generalize the example in the previous section into the <em>Counting Principle</em> in three steps: first, we give an intuitive explanation fo the <em>Counting Principle</em>, then we state it in <span class="xref std std-ref">propositional</span> form using the language of <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">Set Theory</span></a> and finally, we state it entirely symbolically.</p>
 <p><strong>Heuristic</strong></p>
 <blockquote>
@@ -398,23 +402,33 @@ document.write(`
 </div>
 </section>
 <section id="tree-diagrams">
-<span id="id3"></span><h3>Tree Diagrams<a class="headerlink" href="#tree-diagrams" title="Permalink to this headline">#</a></h3>
+<span id="id2"></span><h3>Tree Diagrams<a class="headerlink" href="#tree-diagrams" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
 </section>
 <section id="generalized-counting-principle">
-<span id="id4"></span><h3>Generalized Counting Principle<a class="headerlink" href="#generalized-counting-principle" title="Permalink to this headline">#</a></h3>
+<span id="id3"></span><h3>Generalized Counting Principle<a class="headerlink" href="#generalized-counting-principle" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
 </section>
 </section>
 <section id="permutations">
 <h2>Permutations<a class="headerlink" href="#permutations" title="Permalink to this headline">#</a></h2>
-<section id="id5">
-<h3>Motivation<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
+<section id="id4">
+<h3>Motivation<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
 <p>Three of your friends, Aletheia, Bertha and Cornelius, are running a foot race to determine who is the fastest. As a diligent statistician, rather than participate in the festitivities, you decide to turn into a bookie and take bets from your other friends on who is going to win the race. In order to assign odds to each outcome, you first have to know <em>how many ways</em> the race can finish.</p>
 <p><em>Well</em>, my fellow statistician, how many ways <em>can</em> this race between Aletheia, Bertha and Cornelius finish? Before toggling the solution below, try and figure out the answer by listing each possible outcome and then totaling the number of results.</p>
 <details class="summary-solution">
 <summary>Solution</summary><p>TODO</p>
+</details><p><strong>Example</strong></p>
+<details class="summary-solution">
+<summary>Solution</summary><p>TODO</p>
 </details></section>
+</section>
+<section id="combinations">
+<h2>Combinations<a class="headerlink" href="#combinations" title="Permalink to this headline">#</a></h2>
+<section id="id5">
+<h3>Motivation<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
+</section>
 </section>
 </section>
 
@@ -467,14 +481,18 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Fundamental Counting Principles</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-principles">Counting Principles</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-counting-principle">The Counting Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fundamental-counting-principle">The Fundamental Counting Principle</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tree-diagrams">Tree Diagrams</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalized-counting-principle">Generalized Counting Principle</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations">Permutations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Motivation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations">Combinations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Motivation</a></li>
 </ul>
 </li>
