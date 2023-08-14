@@ -7,28 +7,73 @@ Set Theory
 Preliminaries
 =============
 
-In order to develop the theory of sets precisely, we will need to use a few concepts from *logic*. 
+.. _symbolic_logic:
 
-.. glossary:: 
+Logic
+-----
 
-    .. _proposition::
+In order to develop the theory of sets precisely, we will first need a few concepts from *logic*. 
 
-    Proposition
-        :math:`p, q, r`
+.. _proposition:
 
-        A sentence that can be judged either *true* or *false*.
+Proposition
+    :math:`p, q, r`
 
-    Implication
-       A symbolic representation of a *conditional* relationship
+    A sentence that can be judged either *true* or *false*.
+
+.. _implication:
+
+Implication
+    :math:`p \implies q`
+
+    A symbolic representation of a *conditional* relationship between two *propositions*. This type of proposition can be translated into English in the following ways,
+        1. "if *p*, then *q*"
+        2. "whenever *p*, then *q*"
+        3. "*p* implies *q*"
+        4. "*q* follows from *p*"
+   
+Universal Quantification
+    :math:`\forall p: q`
+
+    A symbolic representation of a universal proposition. This type of proposition can be translated into English in the following ways,
+        1. "for all *p*, *q*"
+        2. "for every *p*, *q*"
+        3. "for each *p*, *q*"
 
 Definitions
 ===========
 
+.. _domain_of_discourse:
+
+Domain of Discourse
+    The *domain of discourse* is subject matter we are treating. 
+
+.. _elements:
+
+Elements
+    :math:`x,y,x` (*lowercase letters*)
+    
+    :math:`x_1, x_2, ... , x_n` (*lowercase letters with subscripts*)
+    
+    TODO
+
+.. _sets:
+
+Sets
+    :math:`A,B,C` (*upper case letters*)
+
+    :math:`A_1, A_2, ... , A_n` (*uppercase letters with subscripts*)
+
+    TODO
+
 .. _universal_set:
 
 Universal Set 
+    :math:`S`
 
-    TODO
+    The universal set *S* is set of all elements in the *domain of discourse*. 
+
+.. _null_set:
 
 Null Set
 
@@ -65,7 +110,6 @@ Relations
 =========
 
 Subset 
-
     .. math::
         A \subseteq B
 
@@ -76,7 +120,6 @@ Subset
         x \in A \implies x \in B
 
 Proper Subset 
-
     .. math:: 
         A \subset B
 
