@@ -305,7 +305,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminaries">Preliminaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminaries">Preliminaries</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logic">Logic</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">Notation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
@@ -325,22 +328,63 @@ document.write(`
 <span id="id1"></span><h1>Set Theory<a class="headerlink" href="#set-theory" title="Permalink to this headline">#</a></h1>
 <section id="preliminaries">
 <h2>Preliminaries<a class="headerlink" href="#preliminaries" title="Permalink to this headline">#</a></h2>
-<p>In order to develop the theory of sets precisely, we will need to use a few concepts from <em>logic</em>.</p>
-<dl class="glossary">
-<dt id="term-Proposition">Proposition<a class="headerlink" href="#term-Proposition" title="Permalink to this term">#</a></dt><dd><p><img class="math" src="../_images/math/329a4059b6588ddc5291a9958408e7158452bc53.png" alt="p, q, r"/></p>
+<section id="logic">
+<span id="symbolic-logic"></span><h3>Logic<a class="headerlink" href="#logic" title="Permalink to this headline">#</a></h3>
+<p>In order to develop the theory of sets precisely, we will first need a few concepts from <em>logic</em>.</p>
+<dl id="proposition">
+<dt>Proposition</dt><dd><p><img class="math" src="../_images/math/329a4059b6588ddc5291a9958408e7158452bc53.png" alt="p, q, r"/></p>
 <p>A sentence that can be judged either <em>true</em> or <em>false</em>.</p>
 </dd>
-<dt id="term-Implication">Implication<a class="headerlink" href="#term-Implication" title="Permalink to this term">#</a></dt><dd><p>A symbolic representation of a <em>conditional</em> relationship</p>
+</dl>
+<dl id="implication">
+<dt>Implication</dt><dd><p><img class="math" src="../_images/math/149848db043cfb0a5e9cb8d3f76888f81894e6a5.png" alt="p \implies q"/></p>
+<dl class="simple">
+<dt>A symbolic representation of a <em>conditional</em> relationship between two <em>propositions</em>. This type of proposition can be translated into English in the following ways,</dt><dd><ol class="arabic simple">
+<li><p>“if <em>p</em>, then <em>q</em>”</p></li>
+<li><p>“whenever <em>p</em>, then <em>q</em>”</p></li>
+<li><p>“<em>p</em> implies <em>q</em>”</p></li>
+<li><p>“<em>q</em> follows from <em>p</em>”</p></li>
+</ol>
+</dd>
+</dl>
+</dd>
+<dt>Universal Quantification</dt><dd><p><img class="math" src="../_images/math/6c690fd3b495a4f8d1680f489d2e1e172274cd48.png" alt="\forall p: q"/></p>
+<dl class="simple">
+<dt>A symbolic representation of a universal proposition. This type of proposition can be translated into English in the following ways,</dt><dd><ol class="arabic simple">
+<li><p>“for all <em>p</em>, <em>q</em>”</p></li>
+<li><p>“for every <em>p</em>, <em>q</em>”</p></li>
+<li><p>“for each <em>p</em>, <em>q</em>”</p></li>
+</ol>
+</dd>
+</dl>
 </dd>
 </dl>
 </section>
+</section>
 <section id="definitions">
 <h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
-<p id="universal-set">Universal Set</p>
-<blockquote>
-<div><p>TODO</p>
-</div></blockquote>
-<p>Null Set</p>
+<dl class="simple" id="domain-of-discourse">
+<dt>Domain of Discourse</dt><dd><p>The <em>domain of discourse</em> is subject matter we are treating.</p>
+</dd>
+</dl>
+<dl id="elements">
+<dt>Elements</dt><dd><p><img class="math" src="../_images/math/20d6a1c77137e7fc63db49a2186054b269af01c1.png" alt="x,y,x"/> (<em>lowercase letters</em>)</p>
+<p><img class="math" src="../_images/math/3b27c6bfd0a0830505b6509e8b3e867ba65cea30.png" alt="x_1, x_2, ... , x_n"/> (<em>lowercase letters with subscripts</em>)</p>
+<p>TODO</p>
+</dd>
+</dl>
+<dl id="sets">
+<dt>Sets</dt><dd><p><img class="math" src="../_images/math/c1aa5e31bee7731e9792fb0b9760c002197de969.png" alt="A,B,C"/> (<em>upper case letters</em>)</p>
+<p><img class="math" src="../_images/math/ee2574d3596b3553624606616f77d378b51dea21.png" alt="A_1, A_2, ... , A_n"/> (<em>uppercase letters with subscripts</em>)</p>
+<p>TODO</p>
+</dd>
+</dl>
+<dl id="universal-set">
+<dt>Universal Set</dt><dd><p><img class="math" src="../_images/math/23298f92ca8dc2a1ce6332eb7a21d5f2e9ae0bd8.png" alt="S"/></p>
+<p>The universal set <em>S</em> is set of all elements in the <em>domain of discourse</em>.</p>
+</dd>
+</dl>
+<p id="null-set">Null Set</p>
 <blockquote>
 <div><p>TODO</p>
 </div></blockquote>
@@ -369,17 +413,14 @@ document.write(`
 </section>
 <section id="relations">
 <h2>Relations<a class="headerlink" href="#relations" title="Permalink to this headline">#</a></h2>
-<p>Subset</p>
-<blockquote>
-<div><div class="math">
+<dl>
+<dt>Subset</dt><dd><div class="math">
 <p><img src="../_images/math/de2b893138da1f4032fea64eade1533eed5eb60e.png" alt="A \subseteq B"/></p>
 </div><p>All of <strong>A</strong>’s elements are contained in <strong>B</strong>. To say the same thing in a different way, if the element <em>x</em> belongs to <strong>A</strong>, then the element <em>x</em> also belongs to <strong>B</strong></p>
 <div class="math">
 <p><img src="../_images/math/bfa52cdd8942b099dd53859d6ddc5ac0e6ca35e6.png" alt="x \in A \implies x \in B"/></p>
-</div></div></blockquote>
-<p>Proper Subset</p>
-<blockquote>
-<div><div class="math">
+</div></dd>
+<dt>Proper Subset</dt><dd><div class="math">
 <p><img src="../_images/math/b0130aeceff05f789b654788662dc910994114ca.png" alt="A \subset B"/></p>
 </div><p><strong>A</strong> is a subset of <strong>B</strong> and <img class="math" src="../_images/math/0e1ac9039591736dc2d721dcac6dd0372721ca48.png" alt="A \neq B"/>. To say the same thing in a different way, <strong>A</strong> is wholly contained in <strong>B</strong>.</p>
 <div class="math">
@@ -388,7 +429,8 @@ document.write(`
 <div class="math">
 <p><img src="../_images/math/568c0ba417503a1fbfba15f4011dfe92042e7810.png" alt="x \in A \implies x \in B \land n(A) &lt; n(B)"/></p>
 </div><p>This is an equivalent formulation between saying the cardinality of <strong>A</strong> is less than the cardinality of <strong>B</strong> is logically equivalent to saying <strong>A</strong> is no the same as <strong>B</strong>.</p>
-</div></blockquote>
+</dd>
+</dl>
 </section>
 </section>
 
@@ -440,7 +482,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminaries">Preliminaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminaries">Preliminaries</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logic">Logic</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">Notation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
