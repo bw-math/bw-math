@@ -1,0 +1,25 @@
+=====
+TI-84
+=====
+
+Basic Operations
+================
+
+.. image:: https://img.youtube.com/vi/RUGIsQ8Xluk/maxresdefault.jpg
+    :alt: Creating Lists
+    :target: https://www.youtube.com/watch?v=RUGIsQ8Xluk
+
+Statistics
+==========
+
+.. image:: https://img.youtube.com/vi/5TXzhpTnk4Q/maxresdefault.jpg
+    :alt: Sample Percentiles
+    :target: https://www.youtube.com/watch?v=5TXzhpTnk4Q
+
+.. image:: https://img.youtube.com/vi/5TXzhpTnk4Q/maxresdefault.jpg
+    :alt: Sample Percentiles
+    :target: https://www.youtube.com/watch?v=5TXzhpTnk4Q
+
+.. image:: https://img.youtube.com/vi/zrfFdfODW7k/maxresdefault.jpg
+    :alt: Sample Percentiles
+    :target: https://www.youtube.com/watch?v=zrfFdfODW7k
