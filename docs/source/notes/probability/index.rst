@@ -2,7 +2,7 @@ Probability
 ===========
 
 .. warning:: 
-    Anything highlighted in yellow like this message is a *formal* definition, and may be skipped at the reader's discretion. They are included here for completeness sake, and for anyone that is curious about learning more about the rigorous foundations of probability. 
+    Anything highlighted in yellow like this message is either a *formal* definition or a *proof*, and may be skipped at the reader's discretion. Each such section is included here for completeness sake, so that anyone curious about the rigorous foundation of probability may explore at further on their own time. 
 
 .. toctree::
    :maxdepth: 2
