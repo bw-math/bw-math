@@ -353,21 +353,23 @@ document.write(`
 <section id="motivation">
 <h3>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h3>
 <p>Suppose you live in the aptly named <em>Town A</em> and are planing a road trip to the similarly uninspired <em>Town C</em>. You plan on stopping at <em>Town B</em> to fill up your gas tank before proceeding to <em>Town C</em>.</p>
-<p>Suppose further there are two routes from <em>Town A</em> to <em>Town B</em>, and there are four routes from <em>Town B</em> to <em>Town C</em>, depicted below.</p>
-<a class="reference internal image-reference" href="../../_images/sets_partition.jpg"><img alt="../../_images/sets_partition.jpg" class="align-center" src="../../_images/sets_partition.jpg" style="width: 60%;" /></a>
+<p>Suppose further there are two routes from <em>Town A</em> to <em>Town B</em>, and there are three routes from <em>Town B</em> to <em>Town C</em>, depicted below.</p>
+<a class="reference internal image-reference" href="../../_images/combinatorics_road_trip.png"><img alt="../../_images/combinatorics_road_trip.png" class="align-center" src="../../_images/combinatorics_road_trip.png" style="width: 60%;" /></a>
 <p>How many routes can you take from <em>Town A</em> to <em>Town B</em>, and then from <em>Town B</em> to <em>Town C</em>?</p>
+<p>Before toggling the answer below, try and figure out the answer by drawing arrows from <em>Town A</em> to <em>Town B</em>, and then from <em>Town B</em> to <em>Town C</em> that represent the possible routes you could take, and counting up all possible answers. In other worlds, generate a <span class="xref std std-ref">sample_space</span> for this “experiment”.</p>
 <details class="summary-try-it-yourself">
-<summary>Try It Yourself</summary><p>The answer becomes obvious if we label the graphic pictured above appropriately. Use a <em>directed arrow</em> starting from each point to show each route taken.</p>
-<p>INSERT PICTURE HERE</p>
+<summary>Try It Yourself</summary><p>We start by breaking down the problem into the choices we are making. Starting in <em>Town A</em>, we have two possible routes from which we can choose to get to <em>Town B</em>. Once we arrive in <em>Town B</em>, regardless of the route we took to get there, we then have three possible routes to choose from that lead from*Town B* to <em>Town C</em>.</p>
+<p>Each choice represents a branch. Every time we make a choice, we are narrowing down the set of possible outcomes. We need a way of visualizing the space of possible routes that captures this feature. We can represent each choice as a <em>branch</em> in a tree, as in the following example.</p>
+<a class="reference internal image-reference" href="../../_images/combinatorics_road_trip.png"><img alt="../../_images/combinatorics_road_trip.png" class="align-center" src="../../_images/combinatorics_road_trip.png" style="width: 60%;" /></a>
 <p>The number of possible routes is equal to the number of endpoints in graph pictured above. In this case, 8.</p>
-<p>These types of graphs are called <a class="reference internal" href="#tree-diagrams"><span class="std std-ref">tree diagrams</span></a> and they are very useful for visualizing the sample spaces of experiments that are composed successive, independent choices, as in this example.</p>
+<p>These types of graphs are called <a class="reference internal" href="#tree-diagrams"><span class="std std-ref">tree diagrams</span></a>. They are very useful for visualizing the sample spaces of experiments that are composed of successive, independent choices, as in this example.</p>
 </details></section>
 <section id="the-counting-principle">
 <span id="counting-principle"></span><h3>The Counting Principle<a class="headerlink" href="#the-counting-principle" title="Permalink to this headline">#</a></h3>
 <p>We now generalize the example in the previous section into the <em>Counting Principle</em>, using the language of <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">Set Theory</span></a>.</p>
 <p>Proposition</p>
 <blockquote>
-<div><p>Let the sets <strong>E</strong> and <strong>F</strong> have cardinalities <em>n</em> and <em>m</em>. Let <strong>G</strong> of sequences <em>xy</em> formed by first selecting an element from <strong>E</strong></p>
+<div><p>Let the sets <strong>E</strong> and <strong>F</strong> have cardinalities <em>n</em> and <em>m</em>. Let <strong>G</strong> be the set of sequences <em>xy</em> formed by first selecting an element <em>x</em> from <strong>E</strong> and then an element <em>y</em> from <strong>F</strong>. Then, the cardinality of <strong>G</strong> is <img class="math" src="../../_images/math/c3f792b23189837f537c0ae56b96ee1e34796058.png" alt="n \cdot m"/></p>
 </div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
