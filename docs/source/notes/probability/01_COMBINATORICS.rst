@@ -13,16 +13,20 @@ Definitions
 
 .. glossary::
     Power Set
-        The *Power Set* of a set **A**, denoted :math:`\mathcal{P}(A)`, is the set of all subsets of **A**.
+        The *Power Set* of a set **A**, or more simply the *Power Set of A*, denoted :math:`\mathcal{P}(A)`, is the set of all subsets of **A**.
+
+        .. note::
+            If :math:`A = \{ a, b \}`
+
+            Then :math: `\mathcal{P}(A) = \{ \{\}, \{a\}, \{b\}, \{a, b\} \}`
 
         .. warning::
+
+            We can define the *Power Set* of a set **A** formally by quantifying over all sets in the `sample_space` (`universal_set`) and imposing the condition we only look at subsets of a given set **A**
+
             :math:`\forall B: B \subseteq A \implies B \in \mathcal{P}(A)`
 
-    Sequences
-        An ordered set of numerical elements. The i :sup:`th` element of a sequence is called the i :sup:`th` term of the sequence
-
-        .. warning::
-            :math:`G = \{ \forall x \in E, y \in F: xy \}` 
+            In English, "for all *B*, if *B* is a subset of *A*, then *B* belongs to the *Power Set of A*"
 
 
 Fundamental Counting Principles
@@ -70,19 +74,25 @@ Before toggling the solution below, try and figure out the answer by drawing arr
 The Counting Principle
 ----------------------
 
-We now generalize the example in the previous section into the *Counting Principle*, using the language of :ref:`Set Theory<set_theory>`.
+We now generalize the example in the previous section into the *Counting Principle* in three steps: first, we give an intuitive explanation fo the *Counting Principle*, then we state it in :ref:`propositional <proposition>` form using the language of :ref:`Set Theory<set_theory>` and finally, we state it entirely symbolically.
 
+**Heuristic**
+
+    If the object **E** may be chosen in *n* ways, and thereafter the object **F** may be chosen in *m* ways, **E** and **F** may be chosen, in that order, :math:`n \cdot m` ways.
+ 
 **Proposition**
 
-    Let the sets **E** and **F** have cardinalities *n* and *m*. Let **G** be the set of sequences *xy* formed by first selecting an element *x* from **E** and then an element *y* from **F**. Then, the cardinality of **G** is :math:`n \cdot m`
+    Let the sets **E** and **F** have cardinalities *n* and *m*, respectively. Let **G** be the set of sequences *xy* formed by first selecting an element *x* from **E** and then an element *y* from **F**. If these two conditions are met, then the cardinality of **G** is :math:`n \cdot m`
 
 .. note:: Careful! 
 
-    The element *xy* is **not** the product of *x* and *y*, i.e *x* times *y*. It is a *sequence* of the letters *xy*. 
+    The element :math:`xy \in G` is **not** the product of *x* and *y*, i.e the number *x* times the number *y*. It is a *sequence* of the characters *xy*. 
     
     This becomes more obvious if we let :math:`E = \{ a, b, c \}` and :math:`F=\{d, e , f\}`; then **G** is the set of sequences :math:`G = \{ ad, ae, af, bd, be, bf, cd, ce, cf \}`. 
     
     Take note that :math:`n(E)=3`, :math:`n(F)=3`, so therefore :math:`n(G) = n(E) \cdot n(F) = 3 \cdot 3 = 9`
+
+Before stating the *Counting Principle* formally, we will take a look at one more example.
 
 **Example**
     
@@ -131,7 +141,7 @@ Motivation
 
 Three of your friends, Aletheia, Bertha and Cornelius, are running a foot race to determine who is the fastest. As a diligent statistician, rather than participate in the festitivities, you decide to turn into a bookie and take bets from your other friends on who is going to win the race. In order to assign odds to each outcome, you first have to know *how many ways* the race can finish.   
 
-How many ways can this race between Aletheia, Bertha and Cornelius finish? Before toggling the solution below, try and figure out the answer by listing each possible outcome and then totaling the results.
+*Well*, my fellow statistician, how many ways *can* this race between Aletheia, Bertha and Cornelius finish? Before toggling the solution below, try and figure out the answer by listing each possible outcome and then totaling the number of results.
 
 .. collapse:: Solution
 
