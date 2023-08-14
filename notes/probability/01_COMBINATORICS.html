@@ -340,7 +340,7 @@ document.write(`
 <p><img class="math" src="../../_images/math/6016d27460786b62b43d30c0788c97ac57733957.png" alt="\forall B: B \subseteq A \implies B \in \mathcal{P}(A)"/></p>
 </div>
 </dd>
-<dt id="term-Sequences">Sequences<a class="headerlink" href="#term-Sequences" title="Permalink to this term">#</a></dt><dd><p>An ordered set of numerical elements. The i:sup:<cite>th</cite> element of a sequence is called the i:sup:<cite>th</cite> term of the sequence</p>
+<dt id="term-Sequences">Sequences<a class="headerlink" href="#term-Sequences" title="Permalink to this term">#</a></dt><dd><p>An ordered set of numerical elements. The i <sup>th</sup> element of a sequence is called the i <sup>th</sup> term of the sequence</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><img class="math" src="../../_images/math/cf34d58a8164b02b7f75bb130fa1b829fc5fb95b.png" alt="G = \{ \forall x \in E, y \in F: xy \}"/></p>
@@ -357,10 +357,10 @@ document.write(`
 <a class="reference internal image-reference" href="../../_images/combinatorics_road_trip.png"><img alt="../../_images/combinatorics_road_trip.png" class="align-center" src="../../_images/combinatorics_road_trip.png" style="width: 60%;" /></a>
 <p>How many routes can you take from <em>Town A</em> to <em>Town B</em>, and then from <em>Town B</em> to <em>Town C</em>?</p>
 <p>Before toggling the answer below, try and figure out the answer by drawing arrows from <em>Town A</em> to <em>Town B</em>, and then from <em>Town B</em> to <em>Town C</em> that represent the possible routes you could take, and counting up all possible answers. In other worlds, generate a <span class="xref std std-ref">sample_space</span> for this “experiment”.</p>
-<details class="summary-try-it-yourself">
-<summary>Try It Yourself</summary><p>We start by breaking down the problem into the choices we are making. Starting in <em>Town A</em>, we have two possible routes from which we can choose to get to <em>Town B</em>. Once we arrive in <em>Town B</em>, regardless of the route we took to get there, we then have three possible routes to choose from that lead from*Town B* to <em>Town C</em>.</p>
+<details class="summary-solution">
+<summary>Solution</summary><p>We start by breaking down the problem into the choices we are making. Starting in <em>Town A</em>, we have two possible routes from which we can choose to get to <em>Town B</em>. Once we arrive in <em>Town B</em>, regardless of the route we took to get there, we then have three possible routes to choose from that lead from*Town B* to <em>Town C</em>.</p>
 <p>Each choice represents a branch. Every time we make a choice, we are narrowing down the set of possible outcomes. We need a way of visualizing the space of possible routes that captures this feature. We can represent each choice as a <em>branch</em> in a tree, as in the following example.</p>
-<a class="reference internal image-reference" href="../../_images/combinatorics_road_trip.png"><img alt="../../_images/combinatorics_road_trip.png" class="align-center" src="../../_images/combinatorics_road_trip.png" style="width: 60%;" /></a>
+<a class="reference internal image-reference" href="../../_images/combinatorics_tree_diagram.png"><img alt="../../_images/combinatorics_tree_diagram.png" class="align-center" src="../../_images/combinatorics_tree_diagram.png" style="width: 60%;" /></a>
 <p>The number of possible routes is equal to the number of endpoints in graph pictured above. In this case, 8.</p>
 <p>These types of graphs are called <a class="reference internal" href="#tree-diagrams"><span class="std std-ref">tree diagrams</span></a>. They are very useful for visualizing the sample spaces of experiments that are composed of successive, independent choices, as in this example.</p>
 </details></section>
@@ -373,35 +373,43 @@ document.write(`
 </div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Example
-TODO</p>
+<p>Careful!
+The element <em>xy</em> is <strong>not</strong> the product of <em>x</em> and <em>y</em>, i.e <em>x</em> times <em>y</em>. It is a <em>sequence</em> of letters <em>xy</em>. That becomes more obvious if we let <img class="math" src="../../_images/math/3fbbe20b4ceff86de9929141f5975c1ba78ff898.png" alt="E = \{ a, b, c \}"/> and <img class="math" src="../../_images/math/35deafaed6eb5947d93fc67d4bdfa52ecdaa2822.png" alt="F=\{d, e , f\}"/>; then <strong>G</strong> is the set of sequences <img class="math" src="../../_images/math/7d97e6f69011a940bc6c7787400f04e665564140.png" alt="G = \{ ad, ae, af, bd, be, bf, cd, ce, cf \}"/>. Take note that <img class="math" src="../../_images/math/421108f7519f1f7d2af632960dce3280257fbca3.png" alt="n(E)=3"/>, <img class="math" src="../../_images/math/126a1264373470ad099a88efc976eada811b6f48.png" alt="n(F)=3"/>, so therefore <img class="math" src="../../_images/math/485430dd8c4daae28c534a8efe9e381f4eb36432.png" alt="n(G) = n(E) \cdot n(F) = 3 \cdot 3 = 9"/></p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Try It Yourself
-TODO</p>
+<p>Try It Yourself</p>
+<p>You are trying to figure out what to outfit to wear. In your closet, you have a red, green, blue and orange shirt. In your dresser, you have a pair of blue jeans, a pair of khakis and a pair of sweat pants. How many possible choices do you have for your outfit?</p>
 </div>
 <details class="summary-solution">
-<summary>Solution</summary><p>TODO</p>
+<summary>Solution</summary><p>We have two sets in this problem: the set of shirts in our closet, and the set of pants in our dresser.</p>
+<a class="reference internal image-reference" href="../../_images/combinatorics_example.png"><img alt="../../_images/combinatorics_example.png" class="align-center" src="../../_images/combinatorics_example.png" style="width: 60%;" /></a>
+<p>The first set contains four elements and the second set contains three elements. Therefore,</p>
 </details><div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>We state the Counting Principle rigorously below</p>
+<p>We state the hypothesis and conclusion of the <strong>Counting Principle</strong> in precise symbols below,</p>
 <blockquote>
 <div></div></blockquote>
 </div>
 </section>
 <section id="tree-diagrams">
 <span id="id3"></span><h3>Tree Diagrams<a class="headerlink" href="#tree-diagrams" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
 </section>
 <section id="generalized-counting-principle">
 <span id="id4"></span><h3>Generalized Counting Principle<a class="headerlink" href="#generalized-counting-principle" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
 </section>
 </section>
 <section id="permutations">
 <h2>Permutations<a class="headerlink" href="#permutations" title="Permalink to this headline">#</a></h2>
 <section id="id5">
 <h3>Motivation<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
-</section>
+<p>Three of your friends, Aletheia, Bertha and Cornelius, are running a foot race to determine who is the fastest. As a diligent statistician, rather than participate in the festitivities, you decide to turn into a bookie and take bets from your other friends on who is going to win the race. In order to assign odds to each outcome, you first have to know <em>how many ways</em> the race can finish.</p>
+<p>How many ways can this race between Aletheia, Bertha and Cornelius finish? Before toggling the solution below, try and figure out the answer by listing each possible outcome and then totaling the results.</p>
+<details class="summary-solution">
+<summary>Solution</summary><p>TODO</p>
+</details></section>
 </section>
 </section>
 

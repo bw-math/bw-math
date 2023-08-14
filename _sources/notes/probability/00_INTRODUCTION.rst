@@ -25,6 +25,8 @@ Definitions
 Experiment
     An *uncertain* event.    
 
+.. _mutual_exclusion:
+
 Mutual Exclusivity
     :math:`A \cap B = \varnothing \implies` **A** and **B** are mutually exclusive. 
         Two sets, **A** and **B**, are *mutually exclusive* if they are disjoint.
@@ -33,9 +35,13 @@ Outcomes
     :math:`x, y, z` (*lower case letters*)
         A possible way an experiment might occur.
     
+.. _sample_space: 
+
 Sample Space 
     :math:`S`
         The set of all possible outcomes for an experiment.
+
+.. _event:
 
 Events 
     :math:`A, B, C` (*upper-case letters*)
@@ -50,9 +56,12 @@ Probability
     :math:`P(A)`
         A numerical measure of the *likelihood*, or *chance*, that event **A** occurs.
 
+.. _sample_spaces:
+
 Sample Spaces
 =============
 
+TODO 
 
 .. _axioms_of_probability:
 
