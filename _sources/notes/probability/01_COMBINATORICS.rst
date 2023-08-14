@@ -18,11 +18,11 @@ Definitions
         .. note::
             If :math:`A = \{ a, b \}`
 
-            Then :math: `\mathcal{P}(A) = \{ \{\}, \{a\}, \{b\}, \{a, b\} \}`
+            Then :math:`\mathcal{P}(A) = \{ \{\}, \{a\}, \{b\}, \{a, b\} \}`
 
         .. warning::
 
-            We can define the *Power Set* of a set **A** formally by quantifying over all sets in the `sample_space` (`universal_set`) and imposing the condition we only look at subsets of a given set **A**
+            We can define the *Power Set* of a set **A** formally by quantifying over all sets in the :ref:`Sample Space<sample_space>` (:ref:`Universal Set <universal_set>`) and imposing the condition we only look at subsets of a given set **A**
 
             :math:`\forall B: B \subseteq A \implies B \in \mathcal{P}(A)`
 
@@ -45,7 +45,7 @@ Suppose further there are two routes from *Town A* to *Town B*, and there are th
 
 How many different routes can you take from *Town A* to *Town C*, by way of *Town B*?
 
-Before toggling the solution below, try and figure out the answer by drawing arrows from *Town A* to *Town B*, and then from *Town B* to *Town C* that represent the possible routes you can take and then count up each distinct route. In other worlds, generate a :ref:`sample_space` for this "experiment".
+Before toggling the solution below, try and figure out the answer by drawing arrows from *Town A* to *Town B*, and then from *Town B* to *Town C* that represent the possible routes you can take and then count up each distinct route. In other worlds, generate a :ref:`Sample Space<sample_space>` for this "experiment".
 
 .. collapse:: Solution
 

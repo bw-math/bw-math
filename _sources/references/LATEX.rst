@@ -44,17 +44,6 @@ Relations
 .. math:: 
         \geq
 
-**Equivalence**: ``\equiv``
-
-.. math:: 
-        \equiv
-
-**Implication**: ``\implies``
-
-.. math:: 
-        \implies
-
-
 Operations
 ----------
 **Union**: ``\cup``
@@ -67,7 +56,7 @@ Operations
 .. math:: 
         \cap
 
-**Sum**: ``\sum_{i=0}``
+**Sum**: ``\sum_{i=0}^n i``
 
 .. math:: 
         \sum_{i=0}^n i
@@ -84,6 +73,30 @@ Sets
 .. math:: 
         \mathbb{N}
 
-Quantifiers
------------
+Logic 
+-----
+
+**Equivalence**: ``\equiv``
+
+.. math:: 
+        \equiv
+
+**Implication**: ``\implies``
+
+.. math:: 
+        \implies
+
 **Universal Quantifier**: ``\forall``
+
+.. math:: 
+        \forall
+
+**AND**: ``\land``
+
+.. math:: 
+        \land
+
+**OR**: ``\lor``
+
+.. math:: 
+        \lor

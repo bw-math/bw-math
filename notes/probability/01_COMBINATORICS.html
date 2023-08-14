@@ -338,11 +338,11 @@ document.write(`
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If <img class="math" src="../../_images/math/22313652080b25140335d4ad923c9a01fb60238c.png" alt="A = \{ a, b \}"/></p>
-<p>Then :math: <cite>mathcal{P}(A) = { {}, {a}, {b}, {a, b} }</cite></p>
+<p>Then <img class="math" src="../../_images/math/eac6fc6b4cf7128be4e1b2f9c8c3fd11faa94f23.png" alt="\mathcal{P}(A) = \{ \{\}, \{a\}, \{b\}, \{a, b\} \}"/></p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>We can define the <em>Power Set</em> of a set <strong>A</strong> formally by quantifying over all sets in the <cite>sample_space</cite> (<cite>universal_set</cite>) and imposing the condition we only look at subsets of a given set <strong>A</strong></p>
+<p>We can define the <em>Power Set</em> of a set <strong>A</strong> formally by quantifying over all sets in the <a class="reference internal" href="00_INTRODUCTION.html#sample-space"><span class="std std-ref">Sample Space</span></a> (<a class="reference internal" href="../SET_THEORY.html#universal-set"><span class="std std-ref">Universal Set</span></a>) and imposing the condition we only look at subsets of a given set <strong>A</strong></p>
 <p><img class="math" src="../../_images/math/6016d27460786b62b43d30c0788c97ac57733957.png" alt="\forall B: B \subseteq A \implies B \in \mathcal{P}(A)"/></p>
 <p>In English, “for all <em>B</em>, if <em>B</em> is a subset of <em>A</em>, then <em>B</em> belongs to the <em>Power Set of A</em>”</p>
 </div>
@@ -357,7 +357,7 @@ document.write(`
 <p>Suppose further there are two routes from <em>Town A</em> to <em>Town B</em>, and there are three routes from <em>Town B</em> to <em>Town C</em>. Let us call the routes from <em>Town A</em> to <em>Town B</em> <em>a</em> <sub>1</sub> and <em>a</em> <sub>2</sub>, respectively. Let us call the routes from <em>Town B</em> to <em>Town C</em> <em>b</em> <sub>1</sub>, <em>b</em> <sub>2</sub>, and <em>b</em> <sub>3</sub>, respectively. This setup is depicted in the following diagram,</p>
 <a class="reference internal image-reference" href="../../_images/combinatorics_road_trip.png"><img alt="../../_images/combinatorics_road_trip.png" class="align-center" src="../../_images/combinatorics_road_trip.png" style="width: 60%;" /></a>
 <p>How many different routes can you take from <em>Town A</em> to <em>Town C</em>, by way of <em>Town B</em>?</p>
-<p>Before toggling the solution below, try and figure out the answer by drawing arrows from <em>Town A</em> to <em>Town B</em>, and then from <em>Town B</em> to <em>Town C</em> that represent the possible routes you can take and then count up each distinct route. In other worlds, generate a <span class="xref std std-ref">sample_space</span> for this “experiment”.</p>
+<p>Before toggling the solution below, try and figure out the answer by drawing arrows from <em>Town A</em> to <em>Town B</em>, and then from <em>Town B</em> to <em>Town C</em> that represent the possible routes you can take and then count up each distinct route. In other worlds, generate a <a class="reference internal" href="00_INTRODUCTION.html#sample-space"><span class="std std-ref">Sample Space</span></a> for this “experiment”.</p>
 <details class="summary-solution">
 <summary>Solution</summary><p>We start by breaking down the problem into the choices we are making at each stage of the road trip. Starting in <em>Town A</em>, we have two possible routes from which we can choose to get to <em>Town B</em>. Once we arrive in <em>Town B</em>, regardless of the route we took to get there, we then have three possible routes to choose from that lead from <em>Town B</em> to <em>Town C</em>. To put it a different way, for each route from <em>Town A</em> to <em>Town B</em>, there are three routes from <em>Town B</em> to <em>Town C</em>.</p>
 <p>Each choice represents a branch. Every time we make a choice, we are narrowing down the set of possible outcomes. With that in mind, we can represent each choice as a <em>branch</em> in a tree, as in the following diagram,</p>

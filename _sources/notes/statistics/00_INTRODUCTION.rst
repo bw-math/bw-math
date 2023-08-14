@@ -67,11 +67,9 @@ Classifications of Data
 -----------------------
 
 Dimensionality
-
-    The *dimension* of a dataset are the number of values associated with a single observation.
+    The *dimension* of a dataset is the number of values associated with a single observation.
 
     Univariate
-
         *Univariate* data consists of observations that each contain a single value.
 
         :math:`\{ x_1, x_2, x_3 \}`
@@ -87,7 +85,6 @@ Dimensionality
         :math:`\{ (x_{1}^1, x_{2}^1, ... , x_{n}^1 ), (x_{1}^2, x_{2}^2, ... , x_{n}^2 ), ... ,(x_{1}^m, x_{2}^m, ... , x_{n}^m )`
 
 Characteristic
-
     The *characteristic* of a dataset is the *type* of data being observed.
 
     Qualitative
@@ -109,10 +106,10 @@ Characteristic
             Continuous quantitative data  is infinitely divisible 
 
             Ex.
-
                 :math:`\{ 1.0, 1.01, 1.001, 1.0001, 1.00001, ... \}`
 
 Scale 
+
     Nominal Level
         Unordered, categorical data.
 
@@ -156,7 +153,6 @@ Other Terminology
 With Replacement
     An observation has been made *with replacement*, if after its selection, it is placed back into the population. 
 
-    .. note::
         Consider drawing a single card from a deck of cards, shuffling it back into the deck and then selecting another card. The event of getting the same card on both draws is a possible event because the card selected on the first draw is returned to the population of possible observation before making the second draw.
 
 .. _without_replacement:
@@ -164,5 +160,4 @@ With Replacement
 Without Replacement 
     An observation has been made *without replacement*, if after its selection, it is removed from the population and is no longer a possible observation.
 
-    .. note:: 
         Consider drawing a single card from a deck of cards, setting it aside and then selecting another card. The event of getting the same card on both draws is an impossible event because the card selected on the first draw is no longer in the population of possible observation, and therefore cannot possible be selected again. In other words, when we sample data *without replacement*, we affect the *sample space* of subsequent experiments.

@@ -382,15 +382,12 @@ document.write(`
 </section>
 <section id="classifications-of-data">
 <span id="data-classification"></span><h3>Classifications of Data<a class="headerlink" href="#classifications-of-data" title="Permalink to this headline">#</a></h3>
-<p>Dimensionality</p>
-<blockquote>
-<div><p>The <em>dimension</em> of a dataset are the number of values associated with a single observation.</p>
-<p>Univariate</p>
-<blockquote>
-<div><p><em>Univariate</em> data consists of observations that each contain a single value.</p>
-<p><img class="math" src="../../_images/math/02ff3586e2dbe8a38e918ae4cbfbae022878a4e2.png" alt="\{ x_1, x_2, x_3 \}"/></p>
-</div></blockquote>
 <dl>
+<dt>Dimensionality</dt><dd><p>The <em>dimension</em> of a dataset is the number of values associated with a single observation.</p>
+<dl>
+<dt>Univariate</dt><dd><p><em>Univariate</em> data consists of observations that each contain a single value.</p>
+<p><img class="math" src="../../_images/math/02ff3586e2dbe8a38e918ae4cbfbae022878a4e2.png" alt="\{ x_1, x_2, x_3 \}"/></p>
+</dd>
 <dt>Bivariate</dt><dd><p><em>Bivariate</em> data consists of observations that each contain two values (i.e. an <em>pair</em>)</p>
 <p><img class="math" src="../../_images/math/167e4d5ca72db146183c8baacc90e6f72eff7044.png" alt="\{ (x_1, y_1), (x_2, y_2), ... , (x_n, y_n)\}"/></p>
 </dd>
@@ -398,10 +395,8 @@ document.write(`
 <p><img class="math" src="../../_images/math/fbbdfa3f3d502368b86e9fae2abae1163ef1f8b8.png" alt="\{ (x_{1}^1, x_{2}^1, ... , x_{n}^1 ), (x_{1}^2, x_{2}^2, ... , x_{n}^2 ), ... ,(x_{1}^m, x_{2}^m, ... , x_{n}^m )"/></p>
 </dd>
 </dl>
-</div></blockquote>
-<p>Characteristic</p>
-<blockquote>
-<div><p>The <em>characteristic</em> of a dataset is the <em>type</em> of data being observed.</p>
+</dd>
+<dt>Characteristic</dt><dd><p>The <em>characteristic</em> of a dataset is the <em>type</em> of data being observed.</p>
 <dl>
 <dt>Qualitative</dt><dd><p>Qualitative data are categorical.</p>
 <dl class="simple">
@@ -418,17 +413,19 @@ document.write(`
 </dl>
 </dd>
 <dt>Continuous</dt><dd><p>Continuous quantitative data  is infinitely divisible</p>
-<p>Ex.</p>
+<dl class="simple">
+<dt>Ex.</dt><dd><p><img class="math" src="../../_images/math/b939635cce776f2bf5a93b9770b88ddc1ac8e084.png" alt="\{ 1.0, 1.01, 1.001, 1.0001, 1.00001, ... \}"/></p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>Scale</p>
 <blockquote>
-<div><p><img class="math" src="../../_images/math/b939635cce776f2bf5a93b9770b88ddc1ac8e084.png" alt="\{ 1.0, 1.01, 1.001, 1.0001, 1.00001, ... \}"/></p>
-</div></blockquote>
-</dd>
-</dl>
-</dd>
-</dl>
-</div></blockquote>
-<dl>
-<dt>Scale</dt><dd><dl>
+<div><dl>
 <dt>Nominal Level</dt><dd><p>Unordered, categorical data.</p>
 <p>Ex.</p>
 <blockquote>
@@ -448,8 +445,7 @@ document.write(`
 </div></blockquote>
 </dd>
 </dl>
-</dd>
-</dl>
+</div></blockquote>
 </section>
 <section id="types-of-statistics">
 <span id="statistics-defintions"></span><h3>Types of Statistics<a class="headerlink" href="#types-of-statistics" title="Permalink to this headline">#</a></h3>
@@ -466,18 +462,16 @@ document.write(`
 <h3>Other Terminology<a class="headerlink" href="#other-terminology" title="Permalink to this headline">#</a></h3>
 <dl id="with-replacement">
 <dt>With Replacement</dt><dd><p>An observation has been made <em>with replacement</em>, if after its selection, it is placed back into the population.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Consider drawing a single card from a deck of cards, shuffling it back into the deck and then selecting another card. The event of getting the same card on both draws is a possible event because the card selected on the first draw is returned to the population of possible observation before making the second draw.</p>
-</div>
+<blockquote>
+<div><p>Consider drawing a single card from a deck of cards, shuffling it back into the deck and then selecting another card. The event of getting the same card on both draws is a possible event because the card selected on the first draw is returned to the population of possible observation before making the second draw.</p>
+</div></blockquote>
 </dd>
 </dl>
 <dl id="without-replacement">
 <dt>Without Replacement</dt><dd><p>An observation has been made <em>without replacement</em>, if after its selection, it is removed from the population and is no longer a possible observation.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Consider drawing a single card from a deck of cards, setting it aside and then selecting another card. The event of getting the same card on both draws is an impossible event because the card selected on the first draw is no longer in the population of possible observation, and therefore cannot possible be selected again. In other words, when we sample data <em>without replacement</em>, we affect the <em>sample space</em> of subsequent experiments.</p>
-</div>
+<blockquote>
+<div><p>Consider drawing a single card from a deck of cards, setting it aside and then selecting another card. The event of getting the same card on both draws is an impossible event because the card selected on the first draw is no longer in the population of possible observation, and therefore cannot possible be selected again. In other words, when we sample data <em>without replacement</em>, we affect the <em>sample space</em> of subsequent experiments.</p>
+</div></blockquote>
 </dd>
 </dl>
 </section>
