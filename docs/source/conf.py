@@ -16,7 +16,8 @@ author = 'Grant Moore'
 extensions = [
     'myst_parser',
     'sphinx.ext.githubpages',
-    'sphinx.ext.imgmath'
+    'sphinx.ext.imgmath',
+    'sphinx_toolbox.collapse'
 ]
 
 templates_path = [
