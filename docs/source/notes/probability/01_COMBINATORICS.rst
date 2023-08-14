@@ -45,21 +45,21 @@ Suppose further there are two routes from *Town A* to *Town B*, and there are th
 
 How many different routes can you take from *Town A* to *Town C*, by way of *Town B*?
 
-Before toggling the solution below, try and figure out the answer by drawing arrows from *Town A* to *Town B*, and then from *Town B* to *Town C* that represent the possible routes you can take. Count up all possible route. In other worlds, generate a :ref:`sample_space` for this "experiment".
+Before toggling the solution below, try and figure out the answer by drawing arrows from *Town A* to *Town B*, and then from *Town B* to *Town C* that represent the possible routes you can take and then count up each distinct route. In other worlds, generate a :ref:`sample_space` for this "experiment".
 
 .. collapse:: Solution
 
-    We start by breaking down the problem into the choices we are making. Starting in *Town A*, we have two possible routes from which we can choose to get to *Town B*. Once we arrive in *Town B*, regardless of the route we took to get there, we then have three possible routes to choose from that lead from *Town B* to *Town C*. To put it a different way, for each route from *Town A* to *Town B*, there are three routes from *Town B* to *Town C*.
+    We start by breaking down the problem into the choices we are making at each stage of the road trip. Starting in *Town A*, we have two possible routes from which we can choose to get to *Town B*. Once we arrive in *Town B*, regardless of the route we took to get there, we then have three possible routes to choose from that lead from *Town B* to *Town C*. To put it a different way, for each route from *Town A* to *Town B*, there are three routes from *Town B* to *Town C*.
 
-    Each choice represents a branch. Every time we make a choice, we are narrowing down the set of possible outcomes. We can represent each choice as a *branch* in a tree, as in the following example.
+    Each choice represents a branch. Every time we make a choice, we are narrowing down the set of possible outcomes. With that in mind, we can represent each choice as a *branch* in a tree, as in the following diagram,
 
     .. image:: ../../imgs/combinatorics_tree_diagram.png
         :width: 60%
         :align: center
 
-    The number of possible routes is equal to the number of endpoints in graph pictured above. In this case, there are 6 possible routes we can take, where each route is represent a particular branch of the tree. These types of graphs are called :ref:`tree diagrams <tree_diagrams>`. They are very useful for visualizing the sample spaces of experiments that are composed of successive, independent choices, as in this example. 
+    The number of possible routes is equal to the number of endpoints in this graph. In this case, there are 6 possible routes we can take, where each route is represented by a particular branch of the tree. These types of graphs are called :ref:`tree diagrams <tree_diagrams>`, for this reason. They are very useful for visualizing the sample spaces of experiments that are composed of successive, independent choices, as in this example. 
 
-    We may also see the solution by enumerating every possible choice,
+    We may also see the solution by enumerating every possible choice in :ref:`list_notation`,
 
     .. :math::
         
