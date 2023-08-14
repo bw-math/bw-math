@@ -8,16 +8,5 @@ Bishop Walsh A.P Statistics
 
    SPLASH
    SCHEDULES
-   RESOURCES
    notes/index
-   TI84
-
-Site
-----
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Appendices
-
-   notes/latex
-   REFERENCES
+   references/index
