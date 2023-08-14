@@ -5,8 +5,8 @@ Introduction
 Definitions
 ===========
 
-Terminology
------------
+Foundation
+----------
 
 .. _population: 
 
@@ -147,3 +147,22 @@ Descriptive Statistic
 
 Inferential Statistic
     A sample statistic used to make inferences about the population.
+
+Other Terminology
+-----------------
+
+.. _with_replacement:
+
+With Replacement
+    An observation has been made *with replacement*, if after its selection, it is placed back into the population. 
+
+    .. note::
+        Consider drawing a single card from a deck of cards, shuffling it back into the deck and then selecting another card. The event of getting the same card on both draws is a possible event because the card selected on the first draw is returned to the population of possible observation before making the second draw.
+
+.. _without_replacement:
+
+Without Replacement 
+    An observation has been made *without replacement*, if after its selection, it is removed from the population and is no longer a possible observation.
+
+    .. note:: 
+        Consider drawing a single card from a deck of cards, setting it aside and then selecting another card. The event of getting the same card on both draws is an impossible event because the card selected on the first draw is no longer in the population of possible observation, and therefore cannot possible be selected again. In other words, when we sample data *without replacement*, we affect the *sample space* of subsequent experiments.

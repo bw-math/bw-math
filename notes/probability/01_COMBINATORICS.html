@@ -334,16 +334,17 @@ document.write(`
 <section id="definitions">
 <span id="fundamental-counting-principles"></span><h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
 <dl class="glossary">
-<dt id="term-Power-Set">Power Set<a class="headerlink" href="#term-Power-Set" title="Permalink to this term">#</a></dt><dd><p>The <em>Power Set</em> of a set <strong>A</strong>, denoted <img class="math" src="../../_images/math/61f9d38fb54ff541f7a0d570f34e4da2c7847931.png" alt="\mathcal{P}(A)"/>, is the set of all subsets of <strong>A</strong>.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><img class="math" src="../../_images/math/6016d27460786b62b43d30c0788c97ac57733957.png" alt="\forall B: B \subseteq A \implies B \in \mathcal{P}(A)"/></p>
+<dt id="term-Power-Set">Power Set<a class="headerlink" href="#term-Power-Set" title="Permalink to this term">#</a></dt><dd><p>The <em>Power Set</em> of a set <strong>A</strong>, or more simply the <em>Power Set of A</em>, denoted <img class="math" src="../../_images/math/61f9d38fb54ff541f7a0d570f34e4da2c7847931.png" alt="\mathcal{P}(A)"/>, is the set of all subsets of <strong>A</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If <img class="math" src="../../_images/math/22313652080b25140335d4ad923c9a01fb60238c.png" alt="A = \{ a, b \}"/></p>
+<p>Then :math: <cite>mathcal{P}(A) = { {}, {a}, {b}, {a, b} }</cite></p>
 </div>
-</dd>
-<dt id="term-Sequences">Sequences<a class="headerlink" href="#term-Sequences" title="Permalink to this term">#</a></dt><dd><p>An ordered set of numerical elements. The i <sup>th</sup> element of a sequence is called the i <sup>th</sup> term of the sequence</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><img class="math" src="../../_images/math/cf34d58a8164b02b7f75bb130fa1b829fc5fb95b.png" alt="G = \{ \forall x \in E, y \in F: xy \}"/></p>
+<p>We can define the <em>Power Set</em> of a set <strong>A</strong> formally by quantifying over all sets in the <cite>sample_space</cite> (<cite>universal_set</cite>) and imposing the condition we only look at subsets of a given set <strong>A</strong></p>
+<p><img class="math" src="../../_images/math/6016d27460786b62b43d30c0788c97ac57733957.png" alt="\forall B: B \subseteq A \implies B \in \mathcal{P}(A)"/></p>
+<p>In English, “for all <em>B</em>, if <em>B</em> is a subset of <em>A</em>, then <em>B</em> belongs to the <em>Power Set of A</em>”</p>
 </div>
 </dd>
 </dl>
@@ -366,18 +367,23 @@ document.write(`
 </details></section>
 <section id="the-counting-principle">
 <span id="counting-principle"></span><h3>The Counting Principle<a class="headerlink" href="#the-counting-principle" title="Permalink to this headline">#</a></h3>
-<p>We now generalize the example in the previous section into the <em>Counting Principle</em>, using the language of <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">Set Theory</span></a>.</p>
+<p>We now generalize the example in the previous section into the <em>Counting Principle</em> in three steps: first, we give an intuitive explanation fo the <em>Counting Principle</em>, then we state it in <span class="xref std std-ref">propositional</span> form using the language of <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">Set Theory</span></a> and finally, we state it entirely symbolically.</p>
+<p><strong>Heuristic</strong></p>
+<blockquote>
+<div><p>If the object <strong>E</strong> may be chosen in <em>n</em> ways, and thereafter the object <strong>F</strong> may be chosen in <em>m</em> ways, <strong>E</strong> and <strong>F</strong> may be chosen, in that order, <img class="math" src="../../_images/math/c3f792b23189837f537c0ae56b96ee1e34796058.png" alt="n \cdot m"/> ways.</p>
+</div></blockquote>
 <p><strong>Proposition</strong></p>
 <blockquote>
-<div><p>Let the sets <strong>E</strong> and <strong>F</strong> have cardinalities <em>n</em> and <em>m</em>. Let <strong>G</strong> be the set of sequences <em>xy</em> formed by first selecting an element <em>x</em> from <strong>E</strong> and then an element <em>y</em> from <strong>F</strong>. Then, the cardinality of <strong>G</strong> is <img class="math" src="../../_images/math/c3f792b23189837f537c0ae56b96ee1e34796058.png" alt="n \cdot m"/></p>
+<div><p>Let the sets <strong>E</strong> and <strong>F</strong> have cardinalities <em>n</em> and <em>m</em>, respectively. Let <strong>G</strong> be the set of sequences <em>xy</em> formed by first selecting an element <em>x</em> from <strong>E</strong> and then an element <em>y</em> from <strong>F</strong>. If these two conditions are met, then the cardinality of <strong>G</strong> is <img class="math" src="../../_images/math/c3f792b23189837f537c0ae56b96ee1e34796058.png" alt="n \cdot m"/></p>
 </div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Careful!</p>
-<p>The element <em>xy</em> is <strong>not</strong> the product of <em>x</em> and <em>y</em>, i.e <em>x</em> times <em>y</em>. It is a <em>sequence</em> of the letters <em>xy</em>.</p>
+<p>The element <img class="math" src="../../_images/math/fb7e03fe139be07b57b27cfcfa118142cb5f65db.png" alt="xy \in G"/> is <strong>not</strong> the product of <em>x</em> and <em>y</em>, i.e the number <em>x</em> times the number <em>y</em>. It is a <em>sequence</em> of the characters <em>xy</em>.</p>
 <p>This becomes more obvious if we let <img class="math" src="../../_images/math/3fbbe20b4ceff86de9929141f5975c1ba78ff898.png" alt="E = \{ a, b, c \}"/> and <img class="math" src="../../_images/math/35deafaed6eb5947d93fc67d4bdfa52ecdaa2822.png" alt="F=\{d, e , f\}"/>; then <strong>G</strong> is the set of sequences <img class="math" src="../../_images/math/7d97e6f69011a940bc6c7787400f04e665564140.png" alt="G = \{ ad, ae, af, bd, be, bf, cd, ce, cf \}"/>.</p>
 <p>Take note that <img class="math" src="../../_images/math/421108f7519f1f7d2af632960dce3280257fbca3.png" alt="n(E)=3"/>, <img class="math" src="../../_images/math/126a1264373470ad099a88efc976eada811b6f48.png" alt="n(F)=3"/>, so therefore <img class="math" src="../../_images/math/485430dd8c4daae28c534a8efe9e381f4eb36432.png" alt="n(G) = n(E) \cdot n(F) = 3 \cdot 3 = 9"/></p>
 </div>
+<p>Before stating the <em>Counting Principle</em> formally, we will take a look at one more example.</p>
 <p><strong>Example</strong></p>
 <p>You are trying to figure out what to outfit to wear. In your closet, you have a red, green, blue and orange shirt. In your dresser, you have a pair of blue jeans, a pair of khakis and a pair of sweat pants. How many possible choices do you have for your outfit?</p>
 <details class="summary-solution">
@@ -405,7 +411,7 @@ document.write(`
 <section id="id5">
 <h3>Motivation<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
 <p>Three of your friends, Aletheia, Bertha and Cornelius, are running a foot race to determine who is the fastest. As a diligent statistician, rather than participate in the festitivities, you decide to turn into a bookie and take bets from your other friends on who is going to win the race. In order to assign odds to each outcome, you first have to know <em>how many ways</em> the race can finish.</p>
-<p>How many ways can this race between Aletheia, Bertha and Cornelius finish? Before toggling the solution below, try and figure out the answer by listing each possible outcome and then totaling the results.</p>
+<p><em>Well</em>, my fellow statistician, how many ways <em>can</em> this race between Aletheia, Bertha and Cornelius finish? Before toggling the solution below, try and figure out the answer by listing each possible outcome and then totaling the number of results.</p>
 <details class="summary-solution">
 <summary>Solution</summary><p>TODO</p>
 </details></section>
