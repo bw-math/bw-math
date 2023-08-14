@@ -389,7 +389,7 @@ document.write(`
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Proof</p>
-<p>By Complement Theorem 12 (Put Link), the union of complements is the sample space <strong>S</strong>.</p>
+<p>By Complement Theorem 12 (Put Link), the union of complements is the sample space <strong>S</strong>. Therefore, the <em>probability</em> of the union is equal to the probability of the entire sample space <strong>S</strong>.</p>
 <blockquote>
 <div><div class="math">
 <p><img src="../../_images/math/99df2f5db71e321e7f7e761345487d4a58a80db1.png" alt="A \cup A^C = S"/></p>
@@ -402,11 +402,16 @@ document.write(`
 <p><img src="../../_images/math/e9564902f01faec85ee0f71ac2ab31bd77089ae3.png" alt="\implies P(A \cup A^C) = 1"/></p>
 </div></div></blockquote>
 <p>By Complement Theorem 13 (Put Link), the intersection of complements is the empty set.</p>
+</div>
+<p>By Axiom 2, the probability of the entire sample space <strong>S</strong> is 1.</p>
 <blockquote>
 <div><div class="math">
-<p><img src="../../_images/math/0e05648010e8f62f929d7b15db9c50af35940e94.png" alt="A \cap A^C = \varnothing"/></p>
-</div></div></blockquote>
-<p>By Axiom 3, if the intersection of two sets is empty, the probability of their union is equal to the sum of the individual probabilities,</p>
+<p><img src="../../_images/math/d8b887a8e830618af32e4f820a6d0c4823382c9f.png" alt="P(S) = 1"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/58f6f40a483ee383515b049034dc9aac776b46a5.png" alt="\implies P(A \cup A^C) = 1
+.. math::
+    A \cap A^C = \varnothing"/></p>
+</div><p>By Axiom 3, if the intersection of two sets is empty, the probability of their union is equal to the sum of the individual probabilities,</p>
 <blockquote>
 <div><div class="math">
 <p><img src="../../_images/math/9e13dbe667ca0774191456e848ef99f4e7ea6271.png" alt="A \cap A^C = \varnothing \implies P(A \cup A^C) = P(A) + P(A^C)"/></p>
@@ -420,7 +425,7 @@ document.write(`
 </div><div class="math">
 <p><img src="../../_images/math/0837b2848db50ddb719635691f8c2af286e7fe40.png" alt="\implies P(A) + P(A^C) = 1"/></p>
 </div></div></blockquote>
-</div>
+</div></blockquote>
 </section>
 </section>
 

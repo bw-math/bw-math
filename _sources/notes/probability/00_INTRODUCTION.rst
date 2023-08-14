@@ -76,7 +76,7 @@ Corollaries
 .. warning::
     Proof
 
-    By Complement Theorem 12 (Put Link), the union of complements is the sample space **S**.
+    By Complement Theorem 12 (Put Link), the union of complements is the sample space **S**. Therefore, the *probability* of the union is equal to the probability of the entire sample space **S**.
             
         .. math::
             A \cup A^C = S
@@ -91,6 +91,13 @@ Corollaries
 
     By Complement Theorem 13 (Put Link), the intersection of complements is the empty set.
 
+By Axiom 2, the probability of the entire sample space **S** is 1.
+        
+    .. math::
+        P(S) = 1
+
+    .. math:: 
+        \implies P(A \cup A^C) = 1
         .. math::
             A \cap A^C = \varnothing
 
