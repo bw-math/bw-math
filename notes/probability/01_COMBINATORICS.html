@@ -282,7 +282,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -298,6 +300,25 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Fundamental Counting Principles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-counting-principle">The Counting Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tree-diagrams">Tree Diagrams</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalized-counting-principle">Generalized Counting Principle</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations">Permutations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Motivation</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -308,7 +329,217 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="combinatorics">
-<h1>Combinatorics<a class="headerlink" href="#combinatorics" title="Permalink to this headline">#</a></h1>
+<span id="id1"></span><h1>Combinatorics<a class="headerlink" href="#combinatorics" title="Permalink to this headline">#</a></h1>
+<p><strong>Combinatorics</strong> is the study of sequences and the order in which they occur.</p>
+<section id="definitions">
+<span id="fundamental-counting-principles"></span><h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
+<dl class="glossary">
+<dt id="term-Power-Set">Power Set<a class="headerlink" href="#term-Power-Set" title="Permalink to this term">#</a></dt><dd><p>The <em>Power Set</em> of a set <strong>A</strong>, denoted <img class="math" src="../../_images/math/c44a0b85b67a875725723639f6e3c6ed3ee612a7.png" alt="PS(A)"/>, is the set of all subsets of <strong>A</strong>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><img class="math" src="../../_images/math/a999b951d2f9ed628cda84a31ce72562e21e198e.png" alt="\forall B: B \subseteq A \implies B \in PS(A)"/></p>
+</div>
+</dd>
+<dt id="term-Sequences">Sequences<a class="headerlink" href="#term-Sequences" title="Permalink to this term">#</a></dt><dd><p>An ordered set of numerical elements. The i:sup:<cite>th</cite> element of a sequence is called the i:sup:<cite>th</cite> term of the sequence</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><img class="math" src="../../_images/math/cf34d58a8164b02b7f75bb130fa1b829fc5fb95b.png" alt="G = \{ \forall x \in E, y \in F: xy \}"/></p>
+</div>
+</dd>
+</dl>
+</section>
+<section id="id2">
+<h2>Fundamental Counting Principles<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<section id="motivation">
+<h3>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h3>
+<p>Suppose you live in the aptly named <em>Town A</em> and are planing a road trip to the similarly uninspired <em>Town C</em>. You plan on stopping at <em>Town B</em> to fill up your gas tank before proceeding to <em>Town C</em>.</p>
+<p>Suppose further there are two routes from <em>Town A</em> to <em>Town B</em>, and there are four routes from <em>Town B</em> to <em>Town C</em>, depicted below.</p>
+<p>INSERT PICTURE HERE</p>
+<p>How many routes can you take from <em>Town A</em> to <em>Town B</em>, and then from <em>Town B</em> to <em>Town C</em>?</p>
+<details class="summary-try-it-yourself-the-answer-becomes-obvious-if-we-label-the-graphic-pictured-above-appropriately-use-a-directed-arrow-starting-from-each-point-to-show-each-route-taken">
+<summary>Try It Yourself
+The answer becomes obvious if we label the graphic pictured above appropriately. Use a *directed arrow* starting from each point to show each route taken.</summary><p>INSERT PICTURE HERE</p>
+<p>The number of possible routes is equal to the number of endpoints in graph pictured above. In this case, 8.</p>
+<p>These types of graphs are called <cite>tree diagrams &lt;tree_diagrams&gt;</cite> and they are very useful for visualizing the sample spaces of experiments that are composed successive, independent choices, as in this example.</p>
+</details></section>
+<section id="the-counting-principle">
+<span id="counting-principle"></span><h3>The Counting Principle<a class="headerlink" href="#the-counting-principle" title="Permalink to this headline">#</a></h3>
+<p>We now generalize the example in the previous section into the <em>Counting Principle</em>, using the language of <a href="#id3"><span class="problematic" id="id4">`</span></a>Set Theory&lt;/notes/SET_THEORY&gt;.</p>
+<p>Proposition</p>
+<blockquote>
+<div><p>Let the sets <strong>E</strong> and <strong>F</strong> have cardinalities <em>n</em> and <em>m</em>. Let <strong>G</strong> of sequences <em>xy</em> formed by first selecting an element from <strong>E</strong></p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Example
+TODO</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Try It Yourself
+TODO</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>We state the Counting Principle rigorously below</p>
+<blockquote>
+<div><p><div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">n(E) = n \and n(F) = m</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Misplaced \crcr.
+\endtabular -&gt;\crcr 
+                    \egroup \egroup $\egroup 
+l.15 \fontsize{12}{14}\selectfont $n(E) = n \and
+                                                 n(F) = m$
+! Extra }, or forgotten $.
+\endtabular -&gt;\crcr \egroup 
+                            \egroup $\egroup 
+l.15 \fontsize{12}{14}\selectfont $n(E) = n \and
+                                                 n(F) = m$
+! Extra }, or forgotten $.
+\endtabular -&gt;\crcr \egroup \egroup 
+                                    $\egroup 
+l.15 \fontsize{12}{14}\selectfont $n(E) = n \and
+                                                 n(F) = m$
+! Too many }'s.
+\endtabular -&gt;\crcr \egroup \egroup $\egroup 
+                                             
+l.15 \fontsize{12}{14}\selectfont $n(E) = n \and
+                                                 n(F) = m$
+
+! LaTeX Error: \begin{document} ended by \end{tabular}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H &lt;return&gt;  for immediate help.
+ ...                                              
+                                                  
+l.15 \fontsize{12}{14}\selectfont $n(E) = n \and
+                                                 n(F) = m$
+! Extra \endgroup.
+&lt;recently read&gt; \endgroup 
+                          
+l.15 \fontsize{12}{14}\selectfont $n(E) = n \and
+                                                 n(F) = m$
+
+! LaTeX Error: \begin{tabular} on input line 15 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H &lt;return&gt;  for immediate help.
+ ...                                              
+                                                  
+l.16 \end{document}
+                   
+! Improper \prevdepth.
+\newpage ...everypar {}\fi \par \ifdim \prevdepth 
+                                                  &gt;\z&#64; \vskip -\ifdim \prevd...
+l.16 \end{document}
+                   
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 \end{document}
+                   
+! Missing { inserted.
+&lt;inserted text&gt; 
+                {
+l.16 \end{document}
+                   
+(./math.aux)
+! You can't use `\end' in internal vertical mode.
+\enddocument ...cument/end}\deadcycles \z&#64; \&#64;&#64;end 
+                                                  
+l.16 \end{document}
+                   
+
+! LaTeX Error: \begin{tabular} on input line 15 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H &lt;return&gt;  for immediate help.
+ ...                                              
+                                                  
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+)
+! Emergency stop.
+&lt;*&gt; math.tex
+            
+No pages of output.
+Transcript written on math.log.
+</p>
+</div>
+
+:math:``</p>
+</div></blockquote>
+</div>
+</section>
+<section id="tree-diagrams">
+<span id="id5"></span><h3>Tree Diagrams<a class="headerlink" href="#tree-diagrams" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="generalized-counting-principle">
+<span id="id6"></span><h3>Generalized Counting Principle<a class="headerlink" href="#generalized-counting-principle" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="permutations">
+<h2>Permutations<a class="headerlink" href="#permutations" title="Permalink to this headline">#</a></h2>
+<section id="id7">
+<h3>Motivation<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
 </section>
 
 
@@ -350,6 +581,31 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Fundamental Counting Principles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-counting-principle">The Counting Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tree-diagrams">Tree Diagrams</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalized-counting-principle">Generalized Counting Principle</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations">Permutations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Motivation</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

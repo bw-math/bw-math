@@ -307,6 +307,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminaries">Preliminaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-spaces">Sample Spaces</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#axioms-of-probability">Axioms of Probability</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
 </ul>
@@ -356,8 +357,8 @@ document.write(`
 </dd>
 </dl>
 </dd>
-<dt>Events</dt><dd><p><img class="math" src="../../_images/math/21eefc1439fd0281617bf99294383d62e3b03e06.png" alt="A, B, C"/> (<em>upper-case letters</em>)
-<img class="math" src="../../_images/math/3220c1071706a1ca4009deb0e760f28b5e0ec955.png" alt="A_1, A_2, A_3, ..., A_{n-1}, A_n"/> (<em>upper-case letters with subscripts</em>)</p>
+<dt>Events</dt><dd><p><img class="math" src="../../_images/math/21eefc1439fd0281617bf99294383d62e3b03e06.png" alt="A, B, C"/> (<em>upper-case letters</em>)</p>
+<p><img class="math" src="../../_images/math/3220c1071706a1ca4009deb0e760f28b5e0ec955.png" alt="A_1, A_2, A_3, ..., A_{n-1}, A_n"/> (<em>upper-case letters with subscripts</em>)</p>
 <p>A subset of the sample space, i.e. a set of outcomes.</p>
 <p><img class="math" src="../../_images/math/75179a0b3e22275d33d8c20fe09cde6823ed658d.png" alt="A \subseteq S \implies"/> <strong>A</strong> is an event</p>
 </dd>
@@ -368,20 +369,25 @@ document.write(`
 </dd>
 </dl>
 </section>
+<section id="sample-spaces">
+<h2>Sample Spaces<a class="headerlink" href="#sample-spaces" title="Permalink to this headline">#</a></h2>
+</section>
 <section id="axioms-of-probability">
 <span id="id1"></span><h2>Axioms of Probability<a class="headerlink" href="#axioms-of-probability" title="Permalink to this headline">#</a></h2>
 <dl class="simple">
-<dt><em>Axiom 1</em>: <img class="math" src="../../_images/math/990f4f85432bee35c95011016ec8c7c2f2ac906a.png" alt="P(A)&gt;=A"/></dt><dd><p>All probabilities are positive; No probabilities are negative.</p>
+<dt><strong>Axiom 1</strong>: <img class="math" src="../../_images/math/990f4f85432bee35c95011016ec8c7c2f2ac906a.png" alt="P(A)&gt;=A"/></dt><dd><p>All probabilities are positive; No probabilities are negative.</p>
 </dd>
-<dt><em>Axiom 2</em>: <img class="math" src="../../_images/math/7e54cdab4f141cf48960cbaee92eccf6a3748b43.png" alt="P(S)=1"/></dt><dd><p>The probability of <em>some</em> outcome from the sample space <strong>S</strong> occuring is equal to 1.</p>
+<dt><strong>Axiom 2</strong>: <img class="math" src="../../_images/math/7e54cdab4f141cf48960cbaee92eccf6a3748b43.png" alt="P(S)=1"/></dt><dd><p>The probability of <em>some</em> outcome from the sample space <strong>S</strong> occuring is equal to 1.</p>
 </dd>
-<dt><em>Axiom 3</em>: <img class="math" src="../../_images/math/229ec44a1a9b0856e37209c8589a3409ac603dbc.png" alt="\forall i &lt;&gt; j: A_i \cap A_j = \varnothing \implies P(\bigcup\limits_{i=1}^{n} A_i) = \sum_{i=1}^n P(A_i)"/></dt><dd><p>If each event <sub>i</sub> <strong>A</strong> in the sample space <strong>S</strong> is <em>mutually exclusive</em> with every other event <img class="math" src="../../_images/math/331507dc59a607b9f47cc53964e90bb3a2e8578f.png" alt="\forall i&lt;&gt;j: A_i"/>, then the probability of the union of all of these events is equal to the sum of the probabilities of each individual event.</p>
+<dt><strong>Axiom 3</strong>: <img class="math" src="../../_images/math/229ec44a1a9b0856e37209c8589a3409ac603dbc.png" alt="\forall i &lt;&gt; j: A_i \cap A_j = \varnothing \implies P(\bigcup\limits_{i=1}^{n} A_i) = \sum_{i=1}^n P(A_i)"/></dt><dd><p>If each event <sub>i</sub> <strong>A</strong> in the sample space <strong>S</strong> is <em>mutually exclusive</em> with every other event <img class="math" src="../../_images/math/331507dc59a607b9f47cc53964e90bb3a2e8578f.png" alt="\forall i&lt;&gt;j: A_i"/>, then the probability of the union of all of these events is equal to the sum of the probabilities of each individual event.</p>
 </dd>
 </dl>
 </section>
 <section id="corollaries">
 <h2>Corollaries<a class="headerlink" href="#corollaries" title="Permalink to this headline">#</a></h2>
 <p><strong>The Law of Complements</strong> <img class="math" src="../../_images/math/3f3e023d0a6002d8a156ab9b9f082a0c0ba56be6.png" alt="P(A) + P(A^C) = 1"/></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p>Proof</p>
 <p>By Complement Theorem 12 (Put Link), the union of complements is the sample space <strong>S</strong>.</p>
 <blockquote>
@@ -414,6 +420,7 @@ document.write(`
 </div><div class="math">
 <p><img src="../../_images/math/0837b2848db50ddb719635691f8c2af286e7fe40.png" alt="\implies P(A) + P(A^C) = 1"/></p>
 </div></div></blockquote>
+</div>
 </section>
 </section>
 
@@ -467,6 +474,7 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminaries">Preliminaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-spaces">Sample Spaces</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#axioms-of-probability">Axioms of Probability</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
 </ul>
