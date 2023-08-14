@@ -156,7 +156,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../references/TEXTBOOKS.html">Textbooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../references/TI84.html">TI-84</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../references/LATEX.html">LaTex Reference</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../references/SITE.html">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../references/SITE.html">Maintence</a></li>
 </ul>
 </li>
 </ul>
@@ -368,7 +368,11 @@ document.write(`
 <a class="reference internal image-reference" href="../../_images/combinatorics_tree_diagram.png"><img alt="../../_images/combinatorics_tree_diagram.png" class="align-center" src="../../_images/combinatorics_tree_diagram.png" style="width: 60%;" /></a>
 <p>The number of possible routes is equal to the number of endpoints in this graph. In this case, there are 6 possible routes we can take, where each route is represented by a particular branch of the tree. These types of graphs are called <a class="reference internal" href="#tree-diagrams"><span class="std std-ref">tree diagrams</span></a>, for this reason. They are very useful for visualizing the sample spaces of experiments that are composed of successive, independent choices, as in this example.</p>
 <p>We may also see the solution by enumerating every possible choice in <span class="xref std std-ref">list_notation</span>,</p>
-</details></section>
+<div class="math">
+<p><img src="../../_images/math/90a917b23054be5d7ded2bee093c6225700a9507.png" alt="G = \{ {a_1}{b_1}, {a_1}{b_2}, {a_1}{b_3}, {a_2}{b_1}, {a_2}{b_2}, {a_2}{b_3} \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/b8afb34da241ddaa347f79047308ffa6231f8f4a.png" alt="\implies n(G) = 6"/></p>
+</div></details></section>
 <section id="the-fundamental-counting-principle">
 <span id="counting-principle"></span><h3>The Fundamental Counting Principle<a class="headerlink" href="#the-fundamental-counting-principle" title="Permalink to this headline">#</a></h3>
 <p>We now generalize the example in the previous section into the <em>Counting Principle</em> in three steps: first, we give an intuitive explanation fo the <em>Counting Principle</em>, then we state it in <span class="xref std std-ref">propositional</span> form using the language of <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">Set Theory</span></a> and finally, we state it entirely symbolically.</p>
@@ -398,7 +402,13 @@ document.write(`
 <p class="admonition-title">Warning</p>
 <p>We state the hypothesis and conclusion of the <strong>Counting Principle</strong> in precise symbols below,</p>
 <blockquote>
-<div></div></blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/8a67517248996a828c12d0285b77613c2bab4cf4.png" alt="n(E) = n \land n(F) = m"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/2983b717cc7384f8fecb542923e90be8aaa7f4b0.png" alt="G = \{ \forall x \in E \land y \in F: xy \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/39eb05dd460540b01081df376d43d2bd0b3c520c.png" alt="\implies n(G) = n(E) \cdot n(F)"/></p>
+</div></div></blockquote>
 </div>
 </section>
 <section id="tree-diagrams">

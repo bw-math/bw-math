@@ -58,7 +58,7 @@ Corollaries
 :math:`\forall x: x \notin \varnothing`
     Nothing belongs to the *null set*
 
-:math: `\forall x: x \in S`
+:math:`\forall x: x \in S`
     Everything belongs to the *unverisal set*
 
 Relations
@@ -66,12 +66,12 @@ Relations
 
 Subset 
 
-    .. :math::
+    .. math::
         A \subseteq B
 
     All of **A**'s elements are contained in **B**. To say the same thing in a different way, if the element *x* belongs to **A**, then the element *x* also belongs to **B**
 
-    .. :math::
+    .. math::
         
         x \in A \implies x \in B
 
@@ -80,14 +80,14 @@ Proper Subset
     .. math:: 
         A \subset B
 
-    **A** is a subset of **B** and :math:`A \neg B`. To say the same thing in a different way, **A** is wholly contained in **B**.
+    **A** is a subset of **B** and :math:`A \neq B`. To say the same thing in a different way, **A** is wholly contained in **B**.
 
-    .. :math::
-        x \in A \implies x \in B \land A \neg B 
+    .. math::
+        x \in A \implies x \in B \land A \neq B 
 
     An equivalent way of defining a *proper subset* is given by,
 
-    .. :math::
+    .. math::
         x \in A \implies x \in B \land n(A) < n(B)
 
     This is an equivalent formulation between saying the cardinality of **A** is less than the cardinality of **B** is logically equivalent to saying **A** is no the same as **B**.
