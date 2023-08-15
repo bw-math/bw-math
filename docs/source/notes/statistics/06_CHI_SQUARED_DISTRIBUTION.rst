@@ -1,3 +1,3 @@
 ============================
-:math:`\uchi^2` Distribution
+:math:`\chi^2` Distribution
 ============================
