@@ -76,8 +76,7 @@ Universal Set
 .. _null_set:
 
 Null Set
-
-    TODO
+    :math:`\varnothing`
 
 Notation
 ========
