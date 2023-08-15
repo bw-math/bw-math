@@ -22,6 +22,8 @@ Summation
 Definitions
 ===========
 
+.. _experiment:
+
 Experiment
     An *uncertain* event.    
 
@@ -30,6 +32,8 @@ Experiment
 Mutual Exclusivity
     :math:`A \cap B = \varnothing \implies` **A** and **B** are mutually exclusive. 
         Two sets, **A** and **B**, are *mutually exclusive* if they are disjoint.
+
+.. _outcome:
 
 Outcomes 
     :math:`x, y, z` (*lower case letters*)
@@ -58,10 +62,53 @@ Probability
 
 .. _sample_spaces:
 
-Sample Spaces
-=============
+Sample Spaces and Events
+========================
 
-TODO 
+The *sample space* for an experiment is the set of everything that could possibly happen.
+
+Motivation
+----------
+
+.. note:: 
+    By "*fair*", we mean the probability of either outcome, heads or tails, is *equally likely*.
+
+Consider flipping a fair, two-sided coin. The only possible outcomes to this experiment are heads or tails. If we let *h* represent the outcome of a head for a single flip and *t* represent the outcome of a tail for a single flip, then the sample space is given by the set **S**,
+
+.. math:: 
+    S = \{ h, t \}
+
+Events can be defined as :ref:`subsets` of the sample space. If we let **H** represent the event of a head and if we let **T** represent the event of a tail, then clearly,
+
+.. math:: 
+    H = \{ h \}
+    
+.. math:: 
+    T = \{ t \}
+
+Be careful not to confuse the outcome *h* with the event **H**, and likewise the outcome *t* with the event **T**. They have different, but related, meanings. The outcomes *h* and *t* are individual observables; they are physically measured by flipping a coin and observing on which side it lands. An event, on the other hand, is a :ref:`set <sets>`, and *sets* are abstract collections of individual. In this case, the sets are *singletons*, i.e. the sets **H** and **T** only contain one element each, which can lead to confusion. Let us extend this example further, to put a finer point on this subtlety.   
+
+Consider now flipping the same fair, two-sided coin twice. A :ref:`tree diagram <tree_diagrams>` can help visualize the sample space for this experiment,
+
+.. image:: ../../imgs/sample_space_coin_flip.png
+    :width: 60%
+    :align: center
+
+The outcomes of the sample space are found by tracing each possible path of the :ref:`tree diagram <tree_diagrams>` and then collecting them into a set,
+
+.. math::
+    S = \{ hh, ht, th, tt \}
+
+In this example, there is no simple correspondence between the events defined on the sample space and the outcomes within those events, as in the previous example. Take note, the sequence of outcomes *ht* is different than the sequence of outcomes *th*. In the first case, we get a head and *then* we get a tail. In the second case, we get a head and *then* we get a tail. Therefore, *ht* and *th* represent two different *outcomes* that correspond to the same *event*. Let us call that event the set **HT**. **HT** represents event of getting one head and one tail, regardless of order. Then, **HT** has exactly two outcomes (elements), for the reasons just discussed,
+
+.. math:: 
+    HT = \{ ht, th \}
+
+Classical Definition of Probability
+-----------------------------------
+
+.. math:: 
+    P(A) = \frac{n(A)}/{n(S)}
 
 .. _axioms_of_probability:
 
@@ -81,6 +128,8 @@ Corollaries
 ===========
 
 **The Law of Complements** :math:`P(A) + P(A^C) = 1` 
+
+Example
 
 .. warning::
     Proof
