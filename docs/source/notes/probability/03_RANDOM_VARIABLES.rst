@@ -8,10 +8,10 @@ Definition
 ==========
 
 Random Variable
-
     A *random variable* is a quantity whose value is *uncertain*; A *random variable* depends on a random event.
 
 .. :collapse:: Scenario
+
     A friend flips a fair, two-sided coin. If it lands on heads, he will pay you five dollars. If it lands on tails, you have to pay him five dollars. 
 
     The sample space for this simple game is given by,
@@ -36,6 +36,7 @@ Random Variable
     +------+--------+
 
 .. :collapse:: Scenario
+
     Suppose you own a car that gets 30 miles per gallon of gasoline. Due to your commute, you drive your car approximately 120 miles every week. Then, your weekly cost of keeping your tank full is given by the expression
 
         (Weekly Cost of Gas) = (Price per Gallon of Gasoline) :math:`\cdot` (Gallons Used)
@@ -50,4 +51,32 @@ Random Variable
 
         :math:`4X`
        
-    where **X** is the price of gasoline measured in dollars. 
+    where **X** is the price of gasoline measured in dollars.
+
+.. :warning:: 
+
+    A random variable is a function from the sample space **S** to the real numbers between 0 and 1. 
+
+    TODO
+
+Probability Mass Function 
+    TODO 
+
+Distribution Function
+    TODO 
+
+Expectation
+===========
+
+TODO
+
+Expectation of a Sum
+--------------------
+
+:math:`E(X+Y)=E(X) + E(Y)`
+    TODO
+
+Variance
+========
+
+TODO 
