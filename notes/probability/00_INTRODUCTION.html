@@ -318,7 +318,11 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminaries">Preliminaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-spaces">Sample Spaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-spaces-and-events">Sample Spaces and Events</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-definition-of-probability">Classical Definition of Probability</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#axioms-of-probability">Axioms of Probability</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
 </ul>
@@ -350,7 +354,7 @@ document.write(`
 </section>
 <section id="definitions">
 <h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
-<dl class="simple">
+<dl class="simple" id="experiment">
 <dt>Experiment</dt><dd><p>An <em>uncertain</em> event.</p>
 </dd>
 </dl>
@@ -360,6 +364,8 @@ document.write(`
 </dd>
 </dl>
 </dd>
+</dl>
+<dl class="simple" id="outcome">
 <dt>Outcomes</dt><dd><dl class="simple">
 <dt><img class="math" src="../../_images/math/53a3c36fbb3fbc5476f3207913f5a0a04c4b1dc2.png" alt="x, y, z"/> (<em>lower case letters</em>)</dt><dd><p>A possible way an experiment might occur.</p>
 </dd>
@@ -386,12 +392,41 @@ document.write(`
 </dd>
 </dl>
 </section>
-<section id="sample-spaces">
-<span id="id1"></span><h2>Sample Spaces<a class="headerlink" href="#sample-spaces" title="Permalink to this headline">#</a></h2>
-<p>TODO</p>
+<section id="sample-spaces-and-events">
+<span id="sample-spaces"></span><h2>Sample Spaces and Events<a class="headerlink" href="#sample-spaces-and-events" title="Permalink to this headline">#</a></h2>
+<p>The <em>sample space</em> for an experiment is the set of everything that could possibly happen.</p>
+<section id="motivation">
+<h3>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By “<em>fair</em>”, we mean the probability of either outcome, heads or tails, is <em>equally likely</em>.</p>
+</div>
+<p>Consider flipping a fair, two-sided coin. The only possible outcomes to this experiment are heads or tails. If we let <em>h</em> represent the outcome of a head for a single flip and <em>t</em> represent the outcome of a tail for a single flip, then the sample space is given by the set <strong>S</strong>,</p>
+<div class="math">
+<p><img src="../../_images/math/7302e9835f241c03dd9de7319669b28b9a9fd614.png" alt="S = \{ h, t \}"/></p>
+</div><p>Events can be defined as <span class="xref std std-ref">subsets</span> of the sample space. If we let <strong>H</strong> represent the event of a head and if we let <strong>T</strong> represent the event of a tail, then clearly,</p>
+<div class="math">
+<p><img src="../../_images/math/d7256a9ea5ea2135b3544a77896c0be0226a8fcc.png" alt="H = \{ h \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/273039c3f5f5fcd47277c9156ab52565b713fe3c.png" alt="T = \{ t \}"/></p>
+</div><p>Be careful not to confuse the outcome <em>h</em> with the event <strong>H</strong>, and likewise the outcome <em>t</em> with the event <strong>T</strong>. They have different, but related, meanings. The outcomes <em>h</em> and <em>t</em> are individual observables; they are physically measured by flipping a coin and observing on which side it lands. An event, on the other hand, is a <a class="reference internal" href="../SET_THEORY.html#sets"><span class="std std-ref">set</span></a>, and <em>sets</em> are abstract collections of individual. In this case, the sets are <em>singletons</em>, i.e. the sets <strong>H</strong> and <strong>T</strong> only contain one element each, which can lead to confusion. Let us extend this example further, to put a finer point on this subtlety.</p>
+<p>Consider now flipping the same fair, two-sided coin twice. A <a class="reference internal" href="01_COMBINATORICS.html#tree-diagrams"><span class="std std-ref">tree diagram</span></a> can help visualize the sample space for this experiment,</p>
+<a class="reference internal image-reference" href="../../_images/sample_space_coin_flip.png"><img alt="../../_images/sample_space_coin_flip.png" class="align-center" src="../../_images/sample_space_coin_flip.png" style="width: 60%;" /></a>
+<p>The outcomes of the sample space are found by tracing each possible path of the <a class="reference internal" href="01_COMBINATORICS.html#tree-diagrams"><span class="std std-ref">tree diagram</span></a> and then collecting them into a set,</p>
+<div class="math">
+<p><img src="../../_images/math/993583dab40286afb32b98c177bd667c879cace1.png" alt="S = \{ hh, ht, th, tt \}"/></p>
+</div><p>In this example, there is no simple correspondence between the events defined on the sample space and the outcomes within those events, as in the previous example. Take note, the sequence of outcomes <em>ht</em> is different than the sequence of outcomes <em>th</em>. In the first case, we get a head and <em>then</em> we get a tail. In the second case, we get a head and <em>then</em> we get a tail. Therefore, <em>ht</em> and <em>th</em> represent two different <em>outcomes</em> that correspond to the same <em>event</em>. Let us call that event the set <strong>HT</strong>. <strong>HT</strong> represents event of getting one head and one tail, regardless of order. Then, <strong>HT</strong> has exactly two outcomes (elements), for the reasons just discussed,</p>
+<div class="math">
+<p><img src="../../_images/math/b8244207d8ea4d5f6e7f427f45d0a42bf0624ce3.png" alt="HT = \{ ht, th \}"/></p>
+</div></section>
+<section id="classical-definition-of-probability">
+<h3>Classical Definition of Probability<a class="headerlink" href="#classical-definition-of-probability" title="Permalink to this headline">#</a></h3>
+<div class="math">
+<p><img src="../../_images/math/2fb362ccfd9f359442ef896b41e2cbf18ac593e0.png" alt="P(A) = \frac{n(A)}/{n(S)}"/></p>
+</div></section>
 </section>
 <section id="axioms-of-probability">
-<span id="id2"></span><h2>Axioms of Probability<a class="headerlink" href="#axioms-of-probability" title="Permalink to this headline">#</a></h2>
+<span id="id1"></span><h2>Axioms of Probability<a class="headerlink" href="#axioms-of-probability" title="Permalink to this headline">#</a></h2>
 <dl class="simple">
 <dt><strong>Axiom 1</strong>: <img class="math" src="../../_images/math/990f4f85432bee35c95011016ec8c7c2f2ac906a.png" alt="P(A)&gt;=A"/></dt><dd><p>All probabilities are positive; No probabilities are negative.</p>
 </dd>
@@ -404,6 +439,7 @@ document.write(`
 <section id="corollaries">
 <h2>Corollaries<a class="headerlink" href="#corollaries" title="Permalink to this headline">#</a></h2>
 <p><strong>The Law of Complements</strong> <img class="math" src="../../_images/math/3f3e023d0a6002d8a156ab9b9f082a0c0ba56be6.png" alt="P(A) + P(A^C) = 1"/></p>
+<p>Example</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Proof</p>
@@ -474,7 +510,11 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminaries">Preliminaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-spaces">Sample Spaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-spaces-and-events">Sample Spaces and Events</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-definition-of-probability">Classical Definition of Probability</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#axioms-of-probability">Axioms of Probability</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
 </ul>
