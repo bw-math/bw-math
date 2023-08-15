@@ -7,7 +7,7 @@ Probability is the study of the properties of random events.
 Preliminaries
 =============
 
-Extended Union 
+Compound Union 
     A symbol that represents the union of a sequence of sets.
 
     .. math:: 
