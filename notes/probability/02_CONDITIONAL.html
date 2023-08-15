@@ -298,7 +298,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -314,6 +316,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reduction-of-sample-space">Reduction of Sample Space</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplication-rule">Multiplication Rule</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -325,6 +337,49 @@ document.write(`
                   
   <section id="conditional-probability">
 <h1>Conditional Probability<a class="headerlink" href="#conditional-probability" title="Permalink to this headline">#</a></h1>
+<section id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h2>
+<p>TODO</p>
+</section>
+<section id="reduction-of-sample-space">
+<h2>Reduction of Sample Space<a class="headerlink" href="#reduction-of-sample-space" title="Permalink to this headline">#</a></h2>
+<p>TODO</p>
+</section>
+<section id="multiplication-rule">
+<h2>Multiplication Rule<a class="headerlink" href="#multiplication-rule" title="Permalink to this headline">#</a></h2>
+<p>TODO</p>
+<p>The following example illustrates the simplification affected by the introduction of <em>conditional probability</em> into combinatorial problems. This example can be solved in one of two ways. The first solution uses the techniques from the <a class="reference internal" href="01_COMBINATORICS.html#combinatorics"><span class="std std-ref">Combinatorics section</span></a>. The second solution uses the techniques of the <em>Multiplication Rule</em> and <em>Reduction of the Sample Space</em> just discussed. The reader will observe, while both methods yield the same answer, the second method is substantially easier, both from a calculation perpsective and from a conceptual perspective (i.e., it’s easier to understand).</p>
+<dl class="simple">
+<dt>Example</dt><dd><p>Two cards are drawn without replacement from a standard deck of 52 playing cards. What is the probability both cards are red?</p>
+</dd>
+</dl>
+<details class="summary-solution-1-combinatorics">
+<summary>Solution 1: Combinatorics</summary><p>A hand of two cards dealt from a deck of 52 cards is equivalent to one of the combinations of 52 distinct objects taken 2 at a time. To find the total number of such combinations, <a class="reference internal" href="01_COMBINATORICS.html#combination-formula"><span class="std std-ref">Formula</span></a> is used,</p>
+<div class="math">
+<p><img src="../../_images/math/b0b1045fc1eb6cd8e8604633917299d403c5726b.png" alt="C_2^{52} = \frac{52!}{2! \cdot 50!} = \frac{52 \cdot 51}{2} = 1326"/></p>
+</div><p>Therefore, there are a total of <em>1326</em> hands that can be dealt.</p>
+<p>The same logic can be used to find the number of ways to pick two red cards. Note there are <img class="math" src="../../_images/math/39fe413a0d1391d2dfc76eb51f44f3c7763430d0.png" alt="\frac{52}/{2}=26"/> red cards in a standard deck of playing cards. Therefore, the number of combinations of 26 distinct objects taken 2 at a time is,</p>
+<div class="math">
+<p><img src="../../_images/math/d7c2558f3151db3e121711942b2a0cc07b5c7bc5.png" alt="C_2^{26} = \frac{26!}{2! \cdot 24!} = \frac{26 \cdot 25}{2} = 325"/></p>
+</div><p>Therefore, the desired probability can be found using the <a class="reference internal" href="00_INTRODUCTION.html#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a>,</p>
+<div class="math">
+<p><img src="../../_images/math/7865db8b05585ebbbceb9730b9ef74d37d1f521a.png" alt="P(&quot;two red cards&quot;) = \frac{325}{1326} \approx 0.2451"/></p>
+</div></details><details class="summary-solution-2-conditional-probability">
+<summary>Solution #2: Conditional Probability</summary><p>Let <strong>R</strong> <sub>1</sub> represent the event the first card drawn is red. Let <strong>R</strong> <sub>2</sub> represent the event the second card drawn is red. Then the event <img class="math" src="../../_images/math/c1bfaf18291a24f69c027444243f192309d2a254.png" alt="R_1 \cap R_2"/> represents the event the first card is red <em>and</em> the second card is red. The <em>Multiplication Rule</em> states the probability of an intersection can be expressed as,</p>
+<div class="math">
+<p><img src="../../_images/math/4f93ba3eb35b38f65b96ae0da0b53aa0fcd510f5.png" alt="P(R_1 \cap R_2) = P(R_2 \mid R_1 ) \cdot P(R_1)"/></p>
+</div><p>The term <img class="math" src="../../_images/math/bae33eacb093d06da3e60774fd3d5755dc9df51b.png" alt="P(R_1)"/> is the probability of selecting a red card on the first draw. This can be calculated easily with the <a class="reference internal" href="00_INTRODUCTION.html#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a>,</p>
+<div class="math">
+<p><img src="../../_images/math/c000a23520229d2d304939d54d0202dd012140ad.png" alt="P(R_1) = \frac{26}{52}"/></p>
+</div><p>The term <img class="math" src="../../_images/math/62c3ae1155a1d243260170a474116b6af3301ca1.png" alt="P(R_2 \mid R_1)"/> can likewise be quickly decomposed by noticing the event <strong>R</strong> <sub>1</sub> <em>reduces the sample space</em> to <em>51</em> cards, <em>25</em> of which are red. Using the <a class="reference internal" href="00_INTRODUCTION.html#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a> once again, the conditional probability of <strong>R</strong> <sub>2</sub> given the occurrence of <strong>R</strong> <sub>1</sub> is,</p>
+<div class="math">
+<p><img src="../../_images/math/c8216e62c6bf7142b2e9d472bf52d76a0772ebab.png" alt="P(R_2 \mid R_1) = \frac{25}{51}"/></p>
+</div><p>Therefore,</p>
+<div class="math">
+<p><img src="../../_images/math/412568abe5d7b1015720ec4b876744a44a6f0015.png" alt="P(R_1 \cap R_2) = \frac{26}{52} \cdot \frac{25}{51} = \frac{26 \cdot 25}{52 \cdot 51}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/7dad30d5aa75960df77d8abf0b5aa59b7dbfac7c.png" alt="P(R_1 \cap R_2) = \frac{650}{2652} \approx 0.2451"/></p>
+</div></details></section>
 </section>
 
 
@@ -366,6 +421,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reduction-of-sample-space">Reduction of Sample Space</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplication-rule">Multiplication Rule</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
