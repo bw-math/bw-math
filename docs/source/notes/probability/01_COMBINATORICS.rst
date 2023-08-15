@@ -243,10 +243,18 @@ Three friends, Aletheia, Bertha and Cornelius, are running a foot race to determ
 
     TODO 
 
+.. _permutation_formula: 
+
 Formula
 -------
 
 TODO 
+
+.. math::
+    P_r^n = \frac{n!}{(n-r)!}
+
+
+.. _combination:
 
 Combinations
 ============
@@ -264,6 +272,8 @@ The same three friends from the permutation section, Aletheia, Bertha and Cornel
     TODO
 
 **Example**
+
+.. _combination_formula:
 
 Formula
 -------

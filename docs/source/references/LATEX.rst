@@ -44,6 +44,11 @@ Relations
 .. math:: 
         \geq
 
+**Approximately**: ``\approx``
+
+.. math:: 
+        \approx
+        
 Operations
 ----------
 **Union**: ``\cup``
@@ -110,3 +115,11 @@ Logic
 
 .. math:: 
         \lor
+
+Grammatical
+-----------
+
+**Vertical Delimiter**: ``\mid``
+
+.. math:: 
+        \mid
