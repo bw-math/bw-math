@@ -6,27 +6,26 @@ Combinatorics
 
 **Combinatorics** is the study of sequences and the order in which they occur.
 
-.. _fundamental_counting_principles:
-
 Definitions
 =============
 
-.. glossary::
-    Power Set
-        The *Power Set* of a set **A**, or more simply the *Power Set of A*, denoted :math:`\mathcal{P}(A)`, is the set of all subsets of **A**.
+.. _power_set:
 
-        .. note::
-            If :math:`A = \{ a, b \}`
+Power Set
+    The *Power Set* of a set **A**, or more simply the *Power Set of A*, denoted :math:`\mathcal{P}(A)`, is the set of all subsets of **A**.
 
-            Then :math:`\mathcal{P}(A) = \{ \{\}, \{a\}, \{b\}, \{a, b\} \}`
+    .. note::
+        If :math:`A = \{ a, b \}`
 
-        .. warning::
+        Then :math:`\mathcal{P}(A) = \{ \{\}, \{a\}, \{b\}, \{a, b\} \}`
 
-            We can define the *Power Set* of a set **A** formally by quantifying over all sets in the :ref:`Sample Space<sample_space>` (:ref:`Universal Set <universal_set>`) and imposing the condition we only look at subsets of a given set **A**
+    .. warning::
 
-            :math:`\forall B: B \subseteq A \implies B \in \mathcal{P}(A)`
+        We can define the *Power Set* of a set **A** formally by quantifying over all sets in the :ref:`Sample Space<sample_space>` (:ref:`Universal Set <universal_set>`) and imposing the condition we only look at subsets of a given set **A**
 
-            In English, "for all *B*, if *B* is a subset of *A*, then *B* belongs to the *Power Set of A*"
+        :math:`\forall B: B \subseteq A \implies B \in \mathcal{P}(A)`
+
+        In English, "for all *B*, if *B* is a subset of *A*, then *B* belongs to the *Power Set of A*"
 
 
 Counting Principles
@@ -132,6 +131,42 @@ Generalized Counting Principle
 ------------------------------
 
 TODO 
+
+Corollaries 
+-----------
+
+Before stating the first important corollary that follows from the *Generalized Counting Principle*, we look at an instructive example.
+
+**Example**
+    A pizza shop lets their customers make any kind of pizza they want from the following ingredients: pepperoni, sausage, green peppers, mushrooms and onions. 
+
+    How many different pizzas can you order from this restaurant? Try listing out every possible sequence of toppings a customer could order. Once you think you have the answer, toggle the solution below and review the solution in detail.
+
+.. :collapse:: Solution
+
+    Let us represent the set of pizza topping as :math:`A = \{ s, p, g, m, o \}`, where *s = sausage*, *p = pepperoni*, *g = green peppers*, *m = mushroom* and *o = onions*.
+
+    Notice the customer ordering pizza does not have to include *every* topping nor does the customer have to include *any* topping, if they so choose. For example, one customer might get a pepperoni, mushrooms and onions pizza (corresponding to the set :math:`\{ p, m, o \}`), while another customer might get a sausage, green peppers, mushrooms and onions pizza (corresponding to the set :math:`\{s, g, m, o \}`), while another still might get a pizza with *no* toppings at all (corresponding to the *empty set* :math:`\varnothing = \{\}`). 
+
+    The choices being made in this problem consist of whether or not to include each ingredient. There are five ingredients, therefore there are five choices. For each ingredient and therefore for each choice, we have two options: include it or exclude it. A tree diagram helps visualize this,
+
+    (INSERT PICTURE HERE)
+
+    Thus, from inspection of tree diagram, we see solution is given by,
+
+    :math:`2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 2^5 = 32`
+
+    Notice the power of 2 on the left hand side of the equation is equal to the *cardinality of* **A**, :math:`n(A)`. 
+    
+    This example can be rephrased in a more general way using the language of :ref:`Set Theory<set_theory>`: *how many subsets can be formed from the set* **A**? 
+    
+    In other words, what is the *cardinality* of the *Power Set of A*?
+
+    This leads directly to the first corollary of Combinatorics.
+
+**Power Set Theorem**
+    :math:`n(A)=n \implies n(\mathcal{P}(A))=2^n`
+
 
 Permutations
 ============

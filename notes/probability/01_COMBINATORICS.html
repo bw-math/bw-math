@@ -138,7 +138,7 @@
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Combinatorics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="02_CONDITIONAL.html">Conditional Probability</a></li>
 <li class="toctree-l3"><a class="reference internal" href="03_RANDOM_VARIABLES.html">Random Variables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="04_BINOMIAL_DISTRIBUTION.html">Probability Distributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_BINOMIAL_DISTRIBUTION.html">Binomial Distribution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="05_NORMAL_DISTRIBUTION.html">Normal Distribution</a></li>
 </ul>
 </li>
@@ -148,11 +148,22 @@
 <li class="toctree-l3"><a class="reference internal" href="../statistics/02_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../statistics/03_SAMPLING_DISTRIBUTIONS.html">Sampling Distributions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../statistics/04_CENTRAL_LIMIT_THEOREM.html">Central Limit Theorem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../statistics/05_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../hypotheses/01_MEAN_TESTS.html">Hypothesis Tests for the Population Mean</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../regression/index.html">Linear Regression</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../regression/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../regression/03_LINEAR_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../regression/04_RESIDUAL_ANALYSIS.html">Residual Analysis</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../references/index.html">References</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../references/index.html">References</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../references/TEXTBOOKS.html">Textbooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../references/TI84.html">TI-84</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../references/LATEX.html">LaTex Reference</a></li>
@@ -311,6 +322,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fundamental-counting-principle">The Fundamental Counting Principle</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tree-diagrams">Tree Diagrams</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalized-counting-principle">Generalized Counting Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations">Permutations</a><ul class="nav section-nav flex-column">
@@ -336,9 +348,9 @@ document.write(`
 <span id="id1"></span><h1>Combinatorics<a class="headerlink" href="#combinatorics" title="Permalink to this headline">#</a></h1>
 <p><strong>Combinatorics</strong> is the study of sequences and the order in which they occur.</p>
 <section id="definitions">
-<span id="fundamental-counting-principles"></span><h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
-<dl class="glossary">
-<dt id="term-Power-Set">Power Set<a class="headerlink" href="#term-Power-Set" title="Permalink to this term">#</a></dt><dd><p>The <em>Power Set</em> of a set <strong>A</strong>, or more simply the <em>Power Set of A</em>, denoted <img class="math" src="../../_images/math/61f9d38fb54ff541f7a0d570f34e4da2c7847931.png" alt="\mathcal{P}(A)"/>, is the set of all subsets of <strong>A</strong>.</p>
+<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
+<dl id="power-set">
+<dt>Power Set</dt><dd><p>The <em>Power Set</em> of a set <strong>A</strong>, or more simply the <em>Power Set of A</em>, denoted <img class="math" src="../../_images/math/61f9d38fb54ff541f7a0d570f34e4da2c7847931.png" alt="\mathcal{P}(A)"/>, is the set of all subsets of <strong>A</strong>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If <img class="math" src="../../_images/math/22313652080b25140335d4ad923c9a01fb60238c.png" alt="A = \{ a, b \}"/></p>
@@ -419,6 +431,19 @@ document.write(`
 <span id="id3"></span><h3>Generalized Counting Principle<a class="headerlink" href="#generalized-counting-principle" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
 </section>
+<section id="corollaries">
+<h3>Corollaries<a class="headerlink" href="#corollaries" title="Permalink to this headline">#</a></h3>
+<p>Before stating the first important corollary that follows from the <em>Generalized Counting Principle</em>, we look at an instructive example.</p>
+<dl>
+<dt><strong>Example</strong></dt><dd><p>A pizza shop lets their customers make any kind of pizza they want from the following ingredients: pepperoni, sausage, green peppers, mushrooms and onions.</p>
+<p>How many different pizzas can you order from this restaurant? Try listing out every possible sequence of toppings a customer could order. Once you think you have the answer, toggle the solution below and review the solution in detail.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt><strong>Power Set Theorem</strong></dt><dd><p><img class="math" src="../../_images/math/7d226ed925e7255d89fb70fee9fb56db9f34592b.png" alt="n(A)=n \implies n(\mathcal{P}(A))=2^n"/></p>
+</dd>
+</dl>
+</section>
 </section>
 <section id="permutations">
 <h2>Permutations<a class="headerlink" href="#permutations" title="Permalink to this headline">#</a></h2>
@@ -496,6 +521,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fundamental-counting-principle">The Fundamental Counting Principle</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tree-diagrams">Tree Diagrams</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalized-counting-principle">Generalized Counting Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations">Permutations</a><ul class="nav section-nav flex-column">

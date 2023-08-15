@@ -1,3 +1,3 @@
-Probability Distributions
-=========================
+Binomial Distribution
+=====================
 

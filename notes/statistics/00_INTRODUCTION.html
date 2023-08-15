@@ -138,7 +138,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../probability/01_COMBINATORICS.html">Combinatorics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../probability/02_CONDITIONAL.html">Conditional Probability</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../probability/04_BINOMIAL_DISTRIBUTION.html">Probability Distributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../probability/04_BINOMIAL_DISTRIBUTION.html">Binomial Distribution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../probability/05_NORMAL_DISTRIBUTION.html">Normal Distribution</a></li>
 </ul>
 </li>
@@ -148,11 +148,22 @@
 <li class="toctree-l3"><a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="03_SAMPLING_DISTRIBUTIONS.html">Sampling Distributions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="04_CENTRAL_LIMIT_THEOREM.html">Central Limit Theorem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../hypotheses/01_MEAN_TESTS.html">Hypothesis Tests for the Population Mean</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../regression/index.html">Linear Regression</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../regression/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../regression/03_LINEAR_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../regression/04_RESIDUAL_ANALYSIS.html">Residual Analysis</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../references/index.html">References</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../references/index.html">References</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../references/TEXTBOOKS.html">Textbooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../references/TI84.html">TI-84</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../references/LATEX.html">LaTex Reference</a></li>
@@ -306,7 +317,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#foundation">Foundation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key">Key</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-of-observation">Methods of Observation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-techniques">Sampling Techniques</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a></li>
@@ -329,8 +340,8 @@ document.write(`
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
 <section id="definitions">
 <h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
-<section id="foundation">
-<h3>Foundation<a class="headerlink" href="#foundation" title="Permalink to this headline">#</a></h3>
+<section id="key">
+<h3>Key<a class="headerlink" href="#key" title="Permalink to this headline">#</a></h3>
 <dl class="simple" id="population">
 <dt>Population</dt><dd><p>The <em>population</em> is the set of all possible individuals that can be observed in a given experiment.</p>
 </dd>
@@ -531,7 +542,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#foundation">Foundation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key">Key</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-of-observation">Methods of Observation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-techniques">Sampling Techniques</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a></li>

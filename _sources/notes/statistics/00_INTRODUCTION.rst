@@ -5,8 +5,8 @@ Introduction
 Definitions
 ===========
 
-Foundation
-----------
+Key
+---
 
 .. _population: 
 

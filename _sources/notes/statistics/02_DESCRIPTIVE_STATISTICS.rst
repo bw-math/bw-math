@@ -2,9 +2,6 @@
 Point Estimation
 ================
 
-Preliminaries
-=============
-
 Definitions
 ===========
 
