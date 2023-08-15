@@ -176,10 +176,26 @@ Axioms
 Corollaries
 ===========
 
-We can use these *axioms*, along with the `theorems of set theory <set_theorems>`
+We can use these *axioms*, along with the `theorems of set theory <set_theorems>` to prove various things about probability.
+
+.. _law_of_complements:
+
 **The Law of Complements** :math:`P(A) + P(A^C) = 1` 
+    This corollary should be intuitively obvious, considering the Venn Diagramm of complementary sets,
+
+        .. image:: ../../imgs/sets_complement.jpg
+            :width: 60%
+            :align: center
+
+    If the entire rectangle encompassing set **A** in the above diagram is identified as the sample space **S**, then the theorem follows immediately from Axiom 2, namely, :math:`P(S)=1`. 
 
 Example
+    Find the probability of atleast getting at least one head if you flip a coin 3 three times. 
+
+.. collapse::
+    TODO
+
+The formal proof of the **Law of Complements** follows from the properties of :ref:`sets <set_theory>`.
 
 .. warning::
     Proof

@@ -200,13 +200,12 @@ Combinations
 ============
 
 Combination
-    An *r*-element combination of *n* things is an unordered selectiion of *r* of them.
+    An *r*-element combination of *n* things is an unordered selection of *r* of them.
 
 Motivation
 ----------
 
-
-The same three friends, Aletheia, Bertha and Cornelius, have tossed their sneakers aside and decided their talents would be better served enriching the school culture. They each put their names into the running for Prom Committee. Unfortunately, there are only two open positions on the committee. How many ways can these open positions be filled by the three friends?
+The same three friends from the permutation section, Aletheia, Bertha and Cornelius, have tossed their sneakers aside and decided their talents would be better served enriching the school culture. They each put their names into the running for Prom Committee. Unfortunately, there are only two open positions on the committee. How many ways can these open positions be filled by the three friends?
 
 .. collapse:: Solution
 
