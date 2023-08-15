@@ -337,6 +337,7 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations">Combinations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Formula</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-connection-between-permutations-and-combinations">The Connection Between Permutations and Combinations</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#combined-permutations">Combined Permutations</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#permuted-combinations">Permuted Combinations</a></li>
@@ -360,6 +361,11 @@ document.write(`
 <p><strong>Combinatorics</strong> is the study of sequences and the order in which they occur.</p>
 <section id="definitions">
 <h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/ac800dc35d6d9127658de6bf42b57fb470a57548.png" alt="n! = n \cdot (n-1) \cdot (n-2) \cdot ... \cdot 2 \cdot 1"/></p>
+</div><p><em>0!</em> is undefined and taken to be <em>1</em> by convention.</p>
+</div></blockquote>
 <dl id="power-set">
 <dt>Power Set</dt><dd><p>The <em>Power Set</em> of a set <strong>A</strong>, or more simply the <em>Power Set of A</em>, denoted <img class="math" src="../../_images/math/61f9d38fb54ff541f7a0d570f34e4da2c7847931.png" alt="\mathcal{P}(A)"/>, is the set of all subsets of <strong>A</strong>.</p>
 <div class="admonition note">
@@ -426,7 +432,9 @@ document.write(`
 <p>We state the hypothesis and conclusion of the <strong>Counting Principle</strong> in precise symbols below,</p>
 <blockquote>
 <div><div class="math">
-<p><img src="../../_images/math/8a67517248996a828c12d0285b77613c2bab4cf4.png" alt="n(E) = n \land n(F) = m"/></p>
+<p><img src="../../_images/math/a17d5b6fd7ecdb7c76860c627559457c39999d24.png" alt="n(E) = n"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/281140b01c4afb17a546ce6e329e650b6744be0b.png" alt="n(F) = m"/></p>
 </div><div class="math">
 <p><img src="../../_images/math/2983b717cc7384f8fecb542923e90be8aaa7f4b0.png" alt="G = \{ \forall x \in E \land y \in F: xy \}"/></p>
 </div><div class="math">
@@ -447,12 +455,41 @@ document.write(`
 <p>Before stating the first important corollary that follows from the <em>Generalized Counting Principle</em>, we look at an instructive example.</p>
 <dl>
 <dt><strong>Example</strong></dt><dd><p>A pizza shop lets their customers make any kind of pizza they want from the following ingredients: pepperoni, sausage, green peppers, mushrooms and onions.</p>
-<p>How many different pizzas can you order from this restaurant? Try listing out every possible sequence of toppings a customer could order. Once you think you have the answer, toggle the solution below and review the solution in detail.</p>
+<p>How many different pizzas can you order from this restaurant? Try listing out every possible sequence of toppings a customer could order.</p>
 </dd>
 </dl>
-<dl class="simple">
-<dt><strong>Power Set Theorem</strong></dt><dd><p><img class="math" src="../../_images/math/7d226ed925e7255d89fb70fee9fb56db9f34592b.png" alt="n(A)=n \implies n(\mathcal{P}(A))=2^n"/></p>
-</dd>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This example can be rephrased in a more general way using the language of <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">Set Theory</span></a>: <em>how many subsets can be formed from the set</em> <strong>A</strong>?</p>
+<p>In other words, what is the <em>cardinality</em> of the <em>Power Set of A</em>, <img class="math" src="../../_images/math/e5b26613bbc9dfacc7eac2401be719cb39fc72b8.png" alt="n(\mathcal{P}(A))"/>?</p>
+</div>
+<details class="summary-solution">
+<summary>Solution</summary><p>Let <strong>A</strong> represent the set of pizza topping,</p>
+<div class="math">
+<p><img src="../../_images/math/a09475e68a3ad9b777524a97cea3b10a43173242.png" alt="A = \{ s, p, g, m, o \}"/></p>
+</div><p>where <em>s = sausage</em>, <em>p = pepperoni</em>, <em>g = green peppers</em>, <em>m = mushroom</em> and <em>o = onions</em>.</p>
+<p>Notice the customer ordering pizza does not have to include <em>every</em> topping nor does the customer have to include <em>any</em> topping, if they so choose. For example, one customer might get a pepperoni, mushrooms and onions pizza (corresponding to the set <img class="math" src="../../_images/math/c3604159358c4f7532f8b3eac81d56fe4ad06e62.png" alt="\{ p, m, o \}"/>), while another customer might get a sausage, green peppers, mushrooms and onions pizza (corresponding to the set <img class="math" src="../../_images/math/0b0fba20b361747f5a39e820c710c728e2a3ca76.png" alt="\{s, g, m, o \}"/>), while another still might get a pizza with <em>no</em> toppings at all (corresponding to the <em>empty set</em> <img class="math" src="../../_images/math/086f15ce953bde9668a5af4336931e4db0e8b996.png" alt="\varnothing = \{\}"/>).</p>
+<p>The choices being made in this problem consist of whether or not to include each ingredient. There are five ingredients, therefore there are five choices. For each ingredient and therefore for each choice, we have two options: include it or exclude it.</p>
+<p>Letting <em>i</em> represent inclusion and <em>e</em> represent <em>exclusion</em>, the set of options for each topping is given by</p>
+<div class="math">
+<p><img src="../../_images/math/a08ebb771748f6a91cfd490c115c443a0e434c92.png" alt="O_s = { i, e }"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/cfab2f9bc298e8593e4a10130aac19e7fcd928e2.png" alt="O_p = { i, e }"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/49e1cf7792cad47baf37fefc42aee6ffdaccc79d.png" alt="O_g = { i, e }"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/2fc2740023c0a4dbe493bbb60593b952519911f1.png" alt="O_m = { i, e }"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/efeacc02adabd4b06aa46305e6032572ee747d04.png" alt="O_o = { i, e }"/></p>
+</div><p>Where O:sub:<cite>s</cite> is the set options available for sausage, O:sub:<cite>p</cite> is the set of options available for pepperoni, etc.</p>
+<div class="math">
+<p><img src="../../_images/math/e9de138461b48d004e0a831bb13836ae68f0be4a.png" alt="2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 2^5 = 32"/></p>
+</div><p>Notice the power of 2 on the left hand side of the equation is equal to the <em>cardinality of</em> <strong>A</strong>, <img class="math" src="../../_images/math/534ec862789190f4e1c0ee776c13e4f478f5e83f.png" alt="n(A)"/>.</p>
+</details><p>This leads directly to the first corollary of Combinatorics.</p>
+<dl>
+<dt><strong>Power Set Theorem</strong></dt><dd><div class="math">
+<p><img src="../../_images/math/7ed926605d837c905e20d3c211dc738710f5e5a4.png" alt="n(A)=n \implies n(\mathcal{P}(A))=2^n"/></p>
+</div></dd>
 </dl>
 </section>
 </section>
@@ -466,8 +503,21 @@ document.write(`
 <h3>Motivation<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
 <p>Three friends, Aletheia, Bertha and Cornelius, are running a foot race to determine who is the fastest. As a diligent statistician, rather than participate in the festitivities, you decide to turn bookie and take bets from your other friends on who is going to win the race. In order to assign odds to each outcome, you first have to know <em>how many ways</em> the race can finish.</p>
 <p><em>Well</em>, my fellow statistician, how many ways <em>can</em> this race between Aletheia, Bertha and Cornelius finish? Before toggling the solution below, try and figure out the answer by listing each possible outcome and then totaling the number of results.</p>
-<details class="summary-solution">
-<summary>Solution</summary><p>TODO</p>
+<details class="summary-solution-the-key-to-understanding-this-problem-is-to-recognize-the-order-in-which-these-three-friends-finish-the-race-matters-if-we-let-a-represent-aletheia-finishing-the-race-b-represent-bertha-finishing-the-race-and-c-represent-cornelius-finishing-the-face-we-can-enumerate-the-possible-outcomes-of-the-race-as-permutations-of-the-sequence-abc">
+<summary>Solution
+The key to understanding this problem is to recognize the *order* in which these three friends finish the race matters. If we let *a* represent Aletheia finishing the race, *b* represent Bertha finishing the race and *c* represent Cornelius finishing the face, we can enumerate the possible outcomes of the race as *permutations* of the sequence *abc*,</summary><blockquote>
+<div><p>abc acb bac bca cab cab</p>
+</div></blockquote>
+<p>For example, <em>abc</em> represents the outcome of Alethia finishing first, Bertha second and Cornelius third, whereas <em>cab</em> would represent Cornelius finishing first, Bertha finishing second and Alethia finishing third, etc. From this we see there are 6 ways to <em>permute</em> the sequence <em>abc</em>.</p>
+<p>By applying the <a class="reference internal" href="#generalized-counting-principle"><span class="std std-ref">Generalized Counting Principle</span></a>, we can arrive at the same solution through another means. In the race, there are three positions to fill (1 <sup>st</sup> Place, 2 <sup>nd</sup> Place, 3 <sup>rd</sup> Place). According to the counting principle, the number of ways to pick how the race will end is equal to the number of ways to pick 1 <sup>st</sup> Place, times the number of ways to pick 2 <sup>nd</sup> Place, times the number of ways to pick 3 <sup>rd</sup> Place.</p>
+<p>However, the choice we make for 1 <sup>st</sup> Place affects the choice we make for 2 <sup>nd</sup> Place, and the choice we make for 2 <sup>nd</sup> Place affects the choice we make for 3 <sup>rd</sup> Place. In other words, if Aletheia comes in 1 <sup>st</sup> Place, she is unable to also come in 2 <sup>nd</sup> or 3 <sup>rd</sup> place. By selecting someone to fill one place, we remove the possibility of them filling any of the other places in the sequence.</p>
+<p>This can be visualized through a modified <a class="reference internal" href="#tree-diagrams"><span class="std std-ref">tree diagram</span></a>, where subsequent branches in the tree diagram are affected by the value of the current branch,</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../_images/combinatorics_permuted_tree_diagram.png"><img alt="../../_images/combinatorics_permuted_tree_diagram.png" class="align-center" src="../../_images/combinatorics_permuted_tree_diagram.png" style="width: 60%;" /></a>
+</div></blockquote>
+<p>Notice at each step of the diagram, a choice is lost, representing the selection of an individual to fill the given position along the given branch. This type of selection is called <a class="reference internal" href="../statistics/00_INTRODUCTION.html#without-replacement"><span class="std std-ref">selection without replacement</span></a>.</p>
+<p>By counting up the endpoints of the graph, the answer is again found to be there are <em>6</em> ways to finish the race.</p>
+<p>This can be rephrased with the new terminology introduced in this section: <em>there are 6 permutations of 3 objects taken 3 at time</em>.</p>
 </details><p><strong>Example</strong></p>
 <details class="summary-solution">
 <summary>Solution</summary><p>TODO</p>
@@ -489,9 +539,41 @@ document.write(`
 <details class="summary-solution">
 <summary>Solution</summary><p>TODO</p>
 </details><p><strong>Example</strong></p>
-<details class="summary-solution">
-<summary>Solution</summary><p>TODO</p>
-</details></section>
+</section>
+<section id="id6">
+<h3>Formula<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
+<div class="math">
+<p><img src="../../_images/math/8c18c5a5c4934f8a0c72e3222ce17e3829d3c872.png" alt="{C}_{r}^n = \frac{n!}{r! \cdot (n-r)!}"/></p>
+</div><p><img class="math" src="../../_images/math/07c5d19012c72a6d0f708ff09b8bad9853ce846d.png" alt="{n \atop r}"/> is another notation you will often encounter for combinations of <em>n</em> objects taken <em>r</em> at a time..</p>
+<p><strong>Example</strong></p>
+<blockquote>
+<div><p>In Maryland’s lottery, players pick six different (<em>natural</em>) numbers between 1 and 49, order of selection being irrelevant. The lottery commission then randomly selects six of these as the <em>winning numbers</em>. A player wins the grand prize if all six numbers that he or she has selected match the winning numbers. He or she wins the second prize if exactly five match, and the third prize if exactly four of the six numbers chosen match with the winning ones. Find the probability that a certain choice of a bettor wins the grand prize, the second prize and the third prize.</p>
+</div></blockquote>
+<details class="summary-solution-let-z-represent-the-event-of-selecting-all-six-winning-numbers-let-y-represent-the-event-of-selecting-five-winning-numbers-let-x-represent-the-event-of-selecting-four-winning-numbers">
+<summary>Solution
+Let **Z** represent the event of selecting all six winning numbers. Let **Y** represent the event of selecting five winning numbers. Let **X** represent the event of selecting four winning numbers.</summary><p>The <a class="reference internal" href="00_INTRODUCTION.html#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a> states,</p>
+<div class="math">
+<p><img src="../../_images/math/34ba842f8e489b81065ff45c7d6371927e8b6a51.png" alt="P(A) = \frac{n(A)}{n(S)}"/></p>
+</div><p>In the context of the given problem, this translates to,</p>
+<blockquote>
+<div><p>P(Z) = (# of ways to match a 6-element sequence with 6 elements) / (# of 6-element sequences)</p>
+<p>P(Y) = (# of ways to match a 6-element sequence with 5 elements) / (# of 6-element sequences)</p>
+<p>P(X) = (# of ways to match a 6-element sequence with 4 elements) / (# of 6-element sequences)</p>
+</div></blockquote>
+<p>In order to calculate the desired probability, each calculation requires the total number of 6-element sequences, where each element of the sequence is an integer between 1 and 49. Furthermore, the selection of one element in the sequence removes it from the pool of possible selections. In other words, there can be no repetitions of any of the integers between 1 and 49 in any sequence of winning numbers. For instance the sequence <code class="docutils literal notranslate"><span class="pre">15</span> <span class="pre">15</span> <span class="pre">37</span> <span class="pre">42</span> <span class="pre">32</span> <span class="pre">27</span></code> is not allowed, because <em>15</em> occurs twice. This is what is meant by the phrase “<em>pick six different integers</em>”. This is an example of <a class="reference internal" href="../statistics/00_INTRODUCTION.html#without-replacement"><span class="std std-ref">selection without replacement</span></a>.</p>
+<p>TODO</p>
+<p>Notice first there is only one to select all six of the winning numbers. If, for instance, the lottery commission selected the numbers</p>
+<blockquote>
+<div><p>10 11 12 13 14 15</p>
+</div></blockquote>
+<p>It does not matter if you chose the numbers in a different order, as in the following combination,</p>
+<blockquote>
+<div><p>14 13 11 15 10 12</p>
+</div></blockquote>
+<p>Your choice is still considered <em>matching</em>; That is what is meant in the example by the phrase “<em>order of selection being irrelevant</em>”. Therefore the probability of selecting all six winning numbers is simply,</p>
+<div class="math">
+<p><img src="../../_images/math/9758a1e4a86e139d948288893155dc0113832517.png" alt="P(A)"/></p>
+</div></details></section>
 <section id="the-connection-between-permutations-and-combinations">
 <h3>The Connection Between Permutations and Combinations<a class="headerlink" href="#the-connection-between-permutations-and-combinations" title="Permalink to this headline">#</a></h3>
 <section id="combined-permutations">
@@ -521,6 +603,7 @@ document.write(`
 <blockquote>
 <div><p>ab ac ad bc bd cd</p>
 </div></blockquote>
+<p>TODO</p>
 <a class="reference internal image-reference" href="../../_images/combinatorics_connection.png"><img alt="../../_images/combinatorics_connection.png" class="align-center" src="../../_images/combinatorics_connection.png" style="width: 60%;" /></a>
 </section>
 </section>
@@ -591,6 +674,7 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations">Combinations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Formula</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-connection-between-permutations-and-combinations">The Connection Between Permutations and Combinations</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#combined-permutations">Combined Permutations</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#permuted-combinations">Permuted Combinations</a></li>

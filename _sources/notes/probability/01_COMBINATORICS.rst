@@ -7,7 +7,15 @@ Combinatorics
 **Combinatorics** is the study of sequences and the order in which they occur.
 
 Definitions
-=============
+===========
+
+.. _factorial:
+    The factorial of a number *n*, denoted *n!*, is the product of all the numbers up to *n*
+
+    .. math::
+        n! = n \cdot (n-1) \cdot (n-2) \cdot ... \cdot 2 \cdot 1
+
+    *0!* is undefined and taken to be *1* by convention.
 
 .. _power_set:
 
@@ -29,7 +37,7 @@ Power Set
 
 
 Counting Principles
-===============================
+===================
 
 Motivation
 ----------
@@ -112,7 +120,9 @@ You are trying to figure out what to outfit to wear. In your closet, you have a 
     We state the hypothesis and conclusion of the **Counting Principle** in precise symbols below,
 
         .. math::
-            n(E) = n \land n(F) = m
+            n(E) = n
+        .. math::
+            n(F) = m
         .. math::
             G = \{ \forall x \in E \land y \in F: xy \}
         .. math::
@@ -140,32 +150,55 @@ Before stating the first important corollary that follows from the *Generalized 
 **Example**
     A pizza shop lets their customers make any kind of pizza they want from the following ingredients: pepperoni, sausage, green peppers, mushrooms and onions. 
 
-    How many different pizzas can you order from this restaurant? Try listing out every possible sequence of toppings a customer could order. Once you think you have the answer, toggle the solution below and review the solution in detail.
+    How many different pizzas can you order from this restaurant? Try listing out every possible sequence of toppings a customer could order. 
 
-.. :collapse:: Solution
+.. note:: 
+    This example can be rephrased in a more general way using the language of :ref:`Set Theory<set_theory>`: *how many subsets can be formed from the set* **A**? 
+    
+    In other words, what is the *cardinality* of the *Power Set of A*, :math:`n(\mathcal{P}(A))`?
 
-    Let us represent the set of pizza topping as :math:`A = \{ s, p, g, m, o \}`, where *s = sausage*, *p = pepperoni*, *g = green peppers*, *m = mushroom* and *o = onions*.
+.. collapse:: Solution
+
+    Let **A** represent the set of pizza topping,
+    
+    .. math::
+        A = \{ s, p, g, m, o \}
+    
+    where *s = sausage*, *p = pepperoni*, *g = green peppers*, *m = mushroom* and *o = onions*.
 
     Notice the customer ordering pizza does not have to include *every* topping nor does the customer have to include *any* topping, if they so choose. For example, one customer might get a pepperoni, mushrooms and onions pizza (corresponding to the set :math:`\{ p, m, o \}`), while another customer might get a sausage, green peppers, mushrooms and onions pizza (corresponding to the set :math:`\{s, g, m, o \}`), while another still might get a pizza with *no* toppings at all (corresponding to the *empty set* :math:`\varnothing = \{\}`). 
 
-    The choices being made in this problem consist of whether or not to include each ingredient. There are five ingredients, therefore there are five choices. For each ingredient and therefore for each choice, we have two options: include it or exclude it. A tree diagram helps visualize this,
+    The choices being made in this problem consist of whether or not to include each ingredient. There are five ingredients, therefore there are five choices. For each ingredient and therefore for each choice, we have two options: include it or exclude it.
 
-    (INSERT PICTURE HERE)
+    Letting *i* represent inclusion and *e* represent *exclusion*, the set of options for each topping is given by 
+        
+    .. math::
+        O_s = { i, e }
 
-    Thus, from inspection of tree diagram, we see solution is given by,
+    .. math::
+        O_p = { i, e } 
 
-    :math:`2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 2^5 = 32`
+    .. math::
+        O_g = { i, e }
+
+    .. math::
+        O_m = { i, e } 
+
+    .. math::
+        O_o = { i, e }
+
+    Where O:sub:`s` is the set options available for sausage, O:sub:`p` is the set of options available for pepperoni, etc. 
+
+    .. math::
+        2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 2^5 = 32
 
     Notice the power of 2 on the left hand side of the equation is equal to the *cardinality of* **A**, :math:`n(A)`. 
-    
-    This example can be rephrased in a more general way using the language of :ref:`Set Theory<set_theory>`: *how many subsets can be formed from the set* **A**? 
-    
-    In other words, what is the *cardinality* of the *Power Set of A*?
 
-    This leads directly to the first corollary of Combinatorics.
+This leads directly to the first corollary of Combinatorics.
 
 **Power Set Theorem**
-    :math:`n(A)=n \implies n(\mathcal{P}(A))=2^n`
+    .. math:: 
+        n(A)=n \implies n(\mathcal{P}(A))=2^n
 
 
 Permutations
@@ -182,8 +215,27 @@ Three friends, Aletheia, Bertha and Cornelius, are running a foot race to determ
 *Well*, my fellow statistician, how many ways *can* this race between Aletheia, Bertha and Cornelius finish? Before toggling the solution below, try and figure out the answer by listing each possible outcome and then totaling the number of results.
 
 .. collapse:: Solution
+    The key to understanding this problem is to recognize the *order* in which these three friends finish the race matters. If we let *a* represent Aletheia finishing the race, *b* represent Bertha finishing the race and *c* represent Cornelius finishing the face, we can enumerate the possible outcomes of the race as *permutations* of the sequence *abc*,
 
-    TODO
+        abc acb bac bca cab cab
+
+    For example, *abc* represents the outcome of Alethia finishing first, Bertha second and Cornelius third, whereas *cab* would represent Cornelius finishing first, Bertha finishing second and Alethia finishing third, etc. From this we see there are 6 ways to *permute* the sequence *abc*. 
+
+    By applying the :ref:`generalized_counting_principle`, we can arrive at the same solution through another means. In the race, there are three positions to fill (1 :sup:`st` Place, 2 :sup:`nd` Place, 3 :sup:`rd` Place). According to the counting principle, the number of ways to pick how the race will end is equal to the number of ways to pick 1 :sup:`st` Place, times the number of ways to pick 2 :sup:`nd` Place, times the number of ways to pick 3 :sup:`rd` Place. 
+    
+    However, the choice we make for 1 :sup:`st` Place affects the choice we make for 2 :sup:`nd` Place, and the choice we make for 2 :sup:`nd` Place affects the choice we make for 3 :sup:`rd` Place. In other words, if Aletheia comes in 1 :sup:`st` Place, she is unable to also come in 2 :sup:`nd` or 3 :sup:`rd` place. By selecting someone to fill one place, we remove the possibility of them filling any of the other places in the sequence.
+
+    This can be visualized through a modified :ref:`tree diagram <tree_diagrams>`, where subsequent branches in the tree diagram are affected by the value of the current branch,
+
+        .. image:: ../../imgs/combinatorics_permuted_tree_diagram.png
+            :width: 60%
+            :align: center
+
+    Notice at each step of the diagram, a choice is lost, representing the selection of an individual to fill the given position along the given branch. This type of selection is called :ref:`selection without replacement <without_replacement>`.
+
+    By counting up the endpoints of the graph, the answer is again found to be there are *6* ways to finish the race.
+
+    This can be rephrased with the new terminology introduced in this section: *there are 6 permutations of 3 objects taken 3 at time*. 
 
 **Example**
 
@@ -213,9 +265,50 @@ The same three friends from the permutation section, Aletheia, Bertha and Cornel
 
 **Example**
 
+Formula
+-------
+
+.. math:: 
+    {C}_{r}^n = \frac{n!}{r! \cdot (n-r)!}
+
+:math:`{n \atop r}` is another notation you will often encounter for combinations of *n* objects taken *r* at a time.. 
+
+**Example**
+
+    In Maryland's lottery, players pick six different (*natural*) numbers between 1 and 49, order of selection being irrelevant. The lottery commission then randomly selects six of these as the *winning numbers*. A player wins the grand prize if all six numbers that he or she has selected match the winning numbers. He or she wins the second prize if exactly five match, and the third prize if exactly four of the six numbers chosen match with the winning ones. Find the probability that a certain choice of a bettor wins the grand prize, the second prize and the third prize. 
+
 .. collapse:: Solution 
+    Let **Z** represent the event of selecting all six winning numbers. Let **Y** represent the event of selecting five winning numbers. Let **X** represent the event of selecting four winning numbers.  
+
+    The :ref:`Classical Definition of Probability <classical_definition>` states,
+
+    .. math::
+        P(A) = \frac{n(A)}{n(S)}
+
+    In the context of the given problem, this translates to,
+
+        P(Z) = (# of ways to match a 6-element sequence with 6 elements) / (# of 6-element sequences)
+
+        P(Y) = (# of ways to match a 6-element sequence with 5 elements) / (# of 6-element sequences)
+
+        P(X) = (# of ways to match a 6-element sequence with 4 elements) / (# of 6-element sequences)
+
+    In order to calculate the desired probability, each calculation requires the total number of 6-element sequences, where each element of the sequence is an integer between 1 and 49. Furthermore, the selection of one element in the sequence removes it from the pool of possible selections. In other words, there can be no repetitions of any of the integers between 1 and 49 in any sequence of winning numbers. For instance the sequence ``15 15 37 42 32 27`` is not allowed, because *15* occurs twice. This is what is meant by the phrase "*pick six different integers*". This is an example of :ref:`selection without replacement<without_replacement>`.
 
     TODO 
+
+    Notice first there is only one to select all six of the winning numbers. If, for instance, the lottery commission selected the numbers 
+
+        10 11 12 13 14 15
+
+    It does not matter if you chose the numbers in a different order, as in the following combination,
+    
+        14 13 11 15 10 12 
+
+    Your choice is still considered *matching*; That is what is meant in the example by the phrase "*order of selection being irrelevant*". Therefore the probability of selecting all six winning numbers is simply,
+
+    .. math::
+        P(A)
 
 The Connection Between Permutations and Combinations
 ----------------------------------------------------
@@ -248,7 +341,7 @@ and all two-element *combinations* (not *permutations*) are required, that is to
 
     ab ac ad bc bd cd 
 
-
+TODO 
 
 .. image:: ../../imgs/combinatorics_connection.png
         :width: 60%
