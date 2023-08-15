@@ -171,10 +171,13 @@ Before stating the first important corollary that follows from the *Generalized 
 Permutations
 ============
 
+Permutation
+    An *r*-element permutation of *n* things is an ordered selection or arrangement of *r* of them.
+
 Motivation
 ----------
 
-Three of your friends, Aletheia, Bertha and Cornelius, are running a foot race to determine who is the fastest. As a diligent statistician, rather than participate in the festitivities, you decide to turn into a bookie and take bets from your other friends on who is going to win the race. In order to assign odds to each outcome, you first have to know *how many ways* the race can finish.   
+Three friends, Aletheia, Bertha and Cornelius, are running a foot race to determine who is the fastest. As a diligent statistician, rather than participate in the festitivities, you decide to turn bookie and take bets from your other friends on who is going to win the race. In order to assign odds to each outcome, you first have to know *how many ways* the race can finish.   
 
 *Well*, my fellow statistician, how many ways *can* this race between Aletheia, Bertha and Cornelius finish? Before toggling the solution below, try and figure out the answer by listing each possible outcome and then totaling the number of results.
 
@@ -188,12 +191,66 @@ Three of your friends, Aletheia, Bertha and Cornelius, are running a foot race t
 
     TODO 
 
+Formula
+-------
+
+TODO 
+
 Combinations
 ============
+
+Combination
+    An *r*-element combination of *n* things is an unordered selectiion of *r* of them.
 
 Motivation
 ----------
 
-TODO
+
+The same three friends, Aletheia, Bertha and Cornelius, have tossed their sneakers aside and decided their talents would be better served enriching the school culture. They each put their names into the running for Prom Committee. Unfortunately, there are only two open positions on the committee. How many ways can these open positions be filled by the three friends?
+
+.. collapse:: Solution
+
+    TODO
+
+**Example**
+
+.. collapse:: Solution 
+
+    TODO 
+
+The Connection Between Permutations and Combinations
+----------------------------------------------------
+
+Combined Permutations
+*********************
+
+Let **O** be the set of objects,
+
+    .. math::
+        O = \{ a, b, c \}
+
+and consider all the two-element permutations that can be formed from this set, that is to say, all the possible ways two objects can be selected from this set, where the order of elements is important,
+
+    ab ac bc ba ca cb 
+
+If the condition that order is important is removed, then the permutation *ab* and *ba* are considered the same *combination*. Likewise for *ac* and *ca*, and then again for *bc* and *cb*. The number of distinct sequences becomes,
+
+    ab ac bc
+
+Permuted Combinations
+*********************
+
+Suppose now a similar set of objects **P** is given as,
+
+    .. math::
+        P = \{ a, b, c, d \}
+
+and all two-element *combinations* (not *permutations*) are required, that is to say, all the possible ways two objects can be selected from this set, where order is important. Careful enumeration of every possibility yields the list of combination as follows,
+
+    ab ac ad bc bd cd 
 
 
+
+.. image:: ../../imgs/combinatorics_connection.png
+        :width: 60%
+        :align: center
