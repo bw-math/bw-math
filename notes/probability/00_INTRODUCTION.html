@@ -323,7 +323,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-definition-of-probability">Classical Definition of Probability</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#axioms-of-probability">Axioms of Probability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#axioms-of-probability">Axioms of Probability</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#axioms">Axioms</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
 </ul>
             </nav>
@@ -420,15 +423,87 @@ document.write(`
 <p><img src="../../_images/math/b8244207d8ea4d5f6e7f427f45d0a42bf0624ce3.png" alt="HT = \{ ht, th \}"/></p>
 </div></section>
 <section id="classical-definition-of-probability">
-<h3>Classical Definition of Probability<a class="headerlink" href="#classical-definition-of-probability" title="Permalink to this headline">#</a></h3>
+<span id="classical-definition"></span><h3>Classical Definition of Probability<a class="headerlink" href="#classical-definition-of-probability" title="Permalink to this headline">#</a></h3>
+<p>Returning to the experiment of flipping a fair coin once,  we have a sample space and two events, <strong>H</strong> and <strong>T</strong>, defined on that sample space,</p>
 <div class="math">
-<p><img src="../../_images/math/2fb362ccfd9f359442ef896b41e2cbf18ac593e0.png" alt="P(A) = \frac{n(A)}/{n(S)}"/></p>
-</div></section>
+<p><img src="../../_images/math/7302e9835f241c03dd9de7319669b28b9a9fd614.png" alt="S = \{ h, t \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/d7256a9ea5ea2135b3544a77896c0be0226a8fcc.png" alt="H = \{ h \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/273039c3f5f5fcd47277c9156ab52565b713fe3c.png" alt="T = \{ t \}"/></p>
+</div><p>The cardinalities of these sets are given by,</p>
+<div class="math">
+<p><img src="../../_images/math/65f10b6c1b1c747564d7b49309fc1568ada46bf0.png" alt="n(S) = 2"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/c8ebb6277a950d4b49f3261f24f9ca4422df0b34.png" alt="n(H) = n(T) = 1"/></p>
+</div><p>This leads to the following definition of <em>probability</em></p>
+<div class="math">
+<p><img src="../../_images/math/34ba842f8e489b81065ff45c7d6371927e8b6a51.png" alt="P(A) = \frac{n(A)}{n(S)}"/></p>
+</div><p>This is called the <em>classical definition of probability</em>, and it can be understood as saying, roughly speaking, the probability of an event <strong>A</strong> is equal to the ratio of the number of ways <strong>A</strong> can occur to the number of ways <strong>S</strong> can occur, or simply the ratio of the cardinalities of the sets <strong>A</strong> and <strong>S</strong>.</p>
+<p>Applying this definition to the events <strong>H</strong> and <strong>T</strong> in the first example, it can be seen to conform to the intuitive notions of probability, namely that <em>equally likely</em> events should have the same probability. Intuitively, if the coin being flipped is fair, the probability of either event <strong>H</strong> or <strong>T</strong> should be equal.</p>
+<div class="math">
+<p><img src="../../_images/math/1d2998aa0b44c1b9a51de1dbb153594796464fd8.png" alt="P(H) = \frac{n(H)}{n(S)} = \frac{1}{2}"/></p>
+</div><div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">P(T) = \frac{n(T){n(S)} = \frac{1}{2}
+
+</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd))
+Runaway argument?
+P(T) = \frac {n(T){n(S)} = \frac {1}{2}\end {split} \end {equation*} \ETC.
+! File ended while scanning use of \split.
+&lt;inserted text&gt; 
+                \par 
+&lt;*&gt; math.tex
+            
+! Emergency stop.
+&lt;*&gt; math.tex
+            
+No pages of output.
+Transcript written on math.log.
+</p>
+</div>
+</section>
 </section>
 <section id="axioms-of-probability">
 <span id="id1"></span><h2>Axioms of Probability<a class="headerlink" href="#axioms-of-probability" title="Permalink to this headline">#</a></h2>
+<p>The <em>classical definition of probability</em> suffices for a general understanding of probability, but there are cases where it fails to account for every feature we would expect a definition of probability to satisfy.</p>
+<p>To see this, consider the experiment of spinning a dial on a clock with radius <em>r</em>,</p>
+<p>(INSERT PICTURE)</p>
+<p>The dial can land at any point between 0 and the circumference of the clock, <img class="math" src="../../_images/math/bcac0b1eb28e8c805c61ab7d584074ae8e0d23af.png" alt="{2}{\cdot}{\pi}{\cdot}{r}"/>. Between 0 and <img class="math" src="../../_images/math/bcac0b1eb28e8c805c61ab7d584074ae8e0d23af.png" alt="{2}{\cdot}{\pi}{\cdot}{r}"/>, there are an <em>infinite</em> number of numbers (<em>0, 0.01, 0.001, 0.001, …, 1, 1.01, 1.001, …, etc., … ,</em> <img class="math" src="../../_images/math/bcac0b1eb28e8c805c61ab7d584074ae8e0d23af.png" alt="{2}{\cdot}{\pi}{\cdot}{r}"/>) ; What is <img class="math" src="../../_images/math/cf90e0c29ef4a62a7df7e7e01dc977d6d0f6b908.png" alt="n(S)"/> when the sample space of outcomes is infinitely large? The <em>classical definition of probability</em> is unable to answer this question.</p>
+<p>For this reason and other similar cases, the <em>classical definition of probability</em> is not sufficient to completely determine the nature of probability. This leads to the <em>axiomatization of probability</em>, which act as additional constraints any model of probability must satisfy in order to be considered a probability.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We will see in a subsequent section, when we discuss <a class="reference internal" href="03_RANDOM_VARIABLES.html#distribution-function"><span class="std std-ref">probability distributions</span></a>, that while we cannot calculate the probability of the dial exactly landing on a given number, we can calculate the probability the dial lands within a certain interval (that is to say, a certain <a href="#id2"><span class="problematic" id="id3">`arc length&lt;https://en.wikipedia.org/wiki/Arc_length&gt;`_</span></a> of the clock’s circumference)</p>
+</div>
+<section id="axioms">
+<h3>Axioms<a class="headerlink" href="#axioms" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
-<dt><strong>Axiom 1</strong>: <img class="math" src="../../_images/math/990f4f85432bee35c95011016ec8c7c2f2ac906a.png" alt="P(A)&gt;=A"/></dt><dd><p>All probabilities are positive; No probabilities are negative.</p>
+<dt><strong>Axiom 1</strong>: <img class="math" src="../../_images/math/c760f70670616c60a6fd2cc21b724ee5b1b12d9e.png" alt="P(A)&gt;=0"/></dt><dd><p>All probabilities are positive; No probabilities are negative.</p>
 </dd>
 <dt><strong>Axiom 2</strong>: <img class="math" src="../../_images/math/7e54cdab4f141cf48960cbaee92eccf6a3748b43.png" alt="P(S)=1"/></dt><dd><p>The probability of <em>some</em> outcome from the sample space <strong>S</strong> occuring is equal to 1.</p>
 </dd>
@@ -436,9 +511,11 @@ document.write(`
 </dd>
 </dl>
 </section>
+</section>
 <section id="corollaries">
 <h2>Corollaries<a class="headerlink" href="#corollaries" title="Permalink to this headline">#</a></h2>
-<p><strong>The Law of Complements</strong> <img class="math" src="../../_images/math/3f3e023d0a6002d8a156ab9b9f082a0c0ba56be6.png" alt="P(A) + P(A^C) = 1"/></p>
+<p>We can use these <em>axioms</em>, along with the <cite>theorems of set theory &lt;set_theorems&gt;</cite>
+<strong>The Law of Complements</strong> <img class="math" src="../../_images/math/3f3e023d0a6002d8a156ab9b9f082a0c0ba56be6.png" alt="P(A) + P(A^C) = 1"/></p>
 <p>Example</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -515,7 +592,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-definition-of-probability">Classical Definition of Probability</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#axioms-of-probability">Axioms of Probability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#axioms-of-probability">Axioms of Probability</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#axioms">Axioms</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
 </ul>
   </nav></div>

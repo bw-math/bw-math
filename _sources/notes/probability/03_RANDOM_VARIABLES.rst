@@ -7,6 +7,8 @@ Many things in life are *uncertain*. Nevertheless, *uncertainy* doesn't equate t
 Definition
 ==========
 
+.. _random_variable: 
+
 Random Variable
     A *random variable* is a quantity whose value is *uncertain*; A *random variable* depends on a random event.
 
@@ -59,8 +61,12 @@ Random Variable
 
     TODO
 
+.. _mass_function:
+
 Probability Mass Function 
     TODO 
+
+.. _distribution_function:
 
 Distribution Function
     TODO 

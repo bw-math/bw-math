@@ -109,6 +109,8 @@ Corollaries
 Relations
 =========
 
+.. _subset:
+
 Subset 
     .. math::
         A \subseteq B
@@ -118,6 +120,8 @@ Subset
     .. math::
         
         x \in A \implies x \in B
+
+.. _proper_subset:
 
 Proper Subset 
     .. math:: 
@@ -134,3 +138,11 @@ Proper Subset
         x \in A \implies x \in B \land n(A) < n(B)
 
     This is an equivalent formulation between saying the cardinality of **A** is less than the cardinality of **B** is logically equivalent to saying **A** is no the same as **B**.
+
+
+.. _set_theorems:
+
+Theorems
+========
+
+TODO

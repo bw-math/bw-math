@@ -104,18 +104,67 @@ In this example, there is no simple correspondence between the events defined on
 .. math:: 
     HT = \{ ht, th \}
 
+.. _classical_definition:
+
 Classical Definition of Probability
 -----------------------------------
 
+Returning to the experiment of flipping a fair coin once,  we have a sample space and two events, **H** and **T**, defined on that sample space,
+
 .. math:: 
-    P(A) = \frac{n(A)}/{n(S)}
+    S = \{ h, t \}
+
+.. math:: 
+    H = \{ h \}
+    
+.. math:: 
+    T = \{ t \}
+
+The cardinalities of these sets are given by,
+
+.. math:: 
+    n(S) = 2
+
+.. math:: 
+    n(H) = n(T) = 1
+
+This leads to the following definition of *probability*
+
+.. math:: 
+    P(A) = \frac{n(A)}{n(S)}
+
+This is called the *classical definition of probability*, and it can be understood as saying, roughly speaking, the probability of an event **A** is equal to the ratio of the number of ways **A** can occur to the number of ways **S** can occur, or simply the ratio of the cardinalities of the sets **A** and **S**.
+
+Applying this definition to the events **H** and **T** in the first example, it can be seen to conform to the intuitive notions of probability, namely that *equally likely* events should have the same probability. Intuitively, if the coin being flipped is fair, the probability of either event **H** or **T** should be equal.
+
+.. math:: 
+    P(H) = \frac{n(H)}{n(S)} = \frac{1}{2}
+
+.. math:: 
+    P(T) = \frac{n(T){n(S)} = \frac{1}{2}
 
 .. _axioms_of_probability:
 
 Axioms of Probability
 =====================
 
-**Axiom 1**: :math:`P(A)>=A`
+The *classical definition of probability* suffices for a general understanding of probability, but there are cases where it fails to account for every feature we would expect a definition of probability to satisfy. 
+
+To see this, consider the experiment of spinning a dial on a clock with radius *r*,
+
+(INSERT PICTURE)
+
+The dial can land at any point between 0 and the circumference of the clock, :math:`{2}{\cdot}{\pi}{\cdot}{r}`. Between 0 and :math:`{2}{\cdot}{\pi}{\cdot}{r}`, there are an *infinite* number of numbers (*0, 0.01, 0.001, 0.001, ..., 1, 1.01, 1.001, ..., etc., ... ,* :math:`{2}{\cdot}{\pi}{\cdot}{r}`) ; What is :math:`n(S)` when the sample space of outcomes is infinitely large? The *classical definition of probability* is unable to answer this question.
+
+For this reason and other similar cases, the *classical definition of probability* is not sufficient to completely determine the nature of probability. This leads to the *axiomatization of probability*, which act as additional constraints any model of probability must satisfy in order to be considered a probability. 
+
+.. note::
+    We will see in a subsequent section, when we discuss :ref:`probability distributions <distribution_function>`, that while we cannot calculate the probability of the dial exactly landing on a given number, we can calculate the probability the dial lands within a certain interval (that is to say, a certain `arc length<https://en.wikipedia.org/wiki/Arc_length>`_ of the clock's circumference)
+
+Axioms
+------
+
+**Axiom 1**: :math:`P(A)>=0`
     All probabilities are positive; No probabilities are negative.
 
 **Axiom 2**: :math:`P(S)=1`
@@ -127,6 +176,7 @@ Axioms of Probability
 Corollaries
 ===========
 
+We can use these *axioms*, along with the `theorems of set theory <set_theorems>`
 **The Law of Complements** :math:`P(A) + P(A^C) = 1` 
 
 Example

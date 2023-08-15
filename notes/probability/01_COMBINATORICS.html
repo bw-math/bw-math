@@ -327,10 +327,16 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations">Permutations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formula">Formula</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations">Combinations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-connection-between-permutations-and-combinations">The Connection Between Permutations and Combinations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#combined-permutations">Combined Permutations</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#permuted-combinations">Permuted Combinations</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -447,9 +453,13 @@ document.write(`
 </section>
 <section id="permutations">
 <h2>Permutations<a class="headerlink" href="#permutations" title="Permalink to this headline">#</a></h2>
+<dl class="simple">
+<dt>Permutation</dt><dd><p>An <em>r</em>-element permutation of <em>n</em> things is an ordered selection or arrangement of <em>r</em> of them.</p>
+</dd>
+</dl>
 <section id="id4">
 <h3>Motivation<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
-<p>Three of your friends, Aletheia, Bertha and Cornelius, are running a foot race to determine who is the fastest. As a diligent statistician, rather than participate in the festitivities, you decide to turn into a bookie and take bets from your other friends on who is going to win the race. In order to assign odds to each outcome, you first have to know <em>how many ways</em> the race can finish.</p>
+<p>Three friends, Aletheia, Bertha and Cornelius, are running a foot race to determine who is the fastest. As a diligent statistician, rather than participate in the festitivities, you decide to turn bookie and take bets from your other friends on who is going to win the race. In order to assign odds to each outcome, you first have to know <em>how many ways</em> the race can finish.</p>
 <p><em>Well</em>, my fellow statistician, how many ways <em>can</em> this race between Aletheia, Bertha and Cornelius finish? Before toggling the solution below, try and figure out the answer by listing each possible outcome and then totaling the number of results.</p>
 <details class="summary-solution">
 <summary>Solution</summary><p>TODO</p>
@@ -457,12 +467,57 @@ document.write(`
 <details class="summary-solution">
 <summary>Solution</summary><p>TODO</p>
 </details></section>
+<section id="formula">
+<h3>Formula<a class="headerlink" href="#formula" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
+</section>
 </section>
 <section id="combinations">
 <h2>Combinations<a class="headerlink" href="#combinations" title="Permalink to this headline">#</a></h2>
+<dl class="simple">
+<dt>Combination</dt><dd><p>An <em>r</em>-element combination of <em>n</em> things is an unordered selectiion of <em>r</em> of them.</p>
+</dd>
+</dl>
 <section id="id5">
 <h3>Motivation<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
-<p>TODO</p>
+<p>The same three friends, Aletheia, Bertha and Cornelius, have tossed their sneakers aside and decided their talents would be better served enriching the school culture. They each put their names into the running for Prom Committee. Unfortunately, there are only two open positions on the committee. How many ways can these open positions be filled by the three friends?</p>
+<details class="summary-solution">
+<summary>Solution</summary><p>TODO</p>
+</details><p><strong>Example</strong></p>
+<details class="summary-solution">
+<summary>Solution</summary><p>TODO</p>
+</details></section>
+<section id="the-connection-between-permutations-and-combinations">
+<h3>The Connection Between Permutations and Combinations<a class="headerlink" href="#the-connection-between-permutations-and-combinations" title="Permalink to this headline">#</a></h3>
+<section id="combined-permutations">
+<h4>Combined Permutations<a class="headerlink" href="#combined-permutations" title="Permalink to this headline">#</a></h4>
+<p>Let <strong>O</strong> be the set of objects,</p>
+<blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/d4b0d672a66dbc99bc38b3f4aeac6d81872aabc7.png" alt="O = \{ a, b, c \}"/></p>
+</div></div></blockquote>
+<p>and consider all the two-element permutations that can be formed from this set, that is to say, all the possible ways two objects can be selected from this set, where the order of elements is important,</p>
+<blockquote>
+<div><p>ab ac bc ba ca cb</p>
+</div></blockquote>
+<p>If the condition that order is important is removed, then the permutation <em>ab</em> and <em>ba</em> are considered the same <em>combination</em>. Likewise for <em>ac</em> and <em>ca</em>, and then again for <em>bc</em> and <em>cb</em>. The number of distinct sequences becomes,</p>
+<blockquote>
+<div><p>ab ac bc</p>
+</div></blockquote>
+</section>
+<section id="permuted-combinations">
+<h4>Permuted Combinations<a class="headerlink" href="#permuted-combinations" title="Permalink to this headline">#</a></h4>
+<p>Suppose now a similar set of objects <strong>P</strong> is given as,</p>
+<blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/5c6d4cd7a30cfeb4eaefbb3d3dd83bd29dcd7d3d.png" alt="P = \{ a, b, c, d \}"/></p>
+</div></div></blockquote>
+<p>and all two-element <em>combinations</em> (not <em>permutations</em>) are required, that is to say, all the possible ways two objects can be selected from this set, where order is important. Careful enumeration of every possibility yields the list of combination as follows,</p>
+<blockquote>
+<div><p>ab ac ad bc bd cd</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/combinatorics_connection.png"><img alt="../../_images/combinatorics_connection.png" class="align-center" src="../../_images/combinatorics_connection.png" style="width: 60%;" /></a>
+</section>
 </section>
 </section>
 </section>
@@ -526,10 +581,16 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations">Permutations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formula">Formula</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations">Combinations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-connection-between-permutations-and-combinations">The Connection Between Permutations and Combinations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#combined-permutations">Combined Permutations</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#permuted-combinations">Permuted Combinations</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
