@@ -325,6 +325,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key">Key</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-of-observation">Methods of Observation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-techniques">Sampling Techniques</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-fallacies">Statistical Fallacies</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-statistics">Types of Statistics</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-terminology">Other Terminology</a></li>
@@ -354,10 +355,12 @@ document.write(`
 </section>
 <section id="methods-of-observation">
 <span id="observation-methods"></span><h3>Methods of Observation<a class="headerlink" href="#methods-of-observation" title="Permalink to this headline">#</a></h3>
-<dl class="simple">
+<dl>
 <dt>Census</dt><dd><p>A <em>census</em> is a type of statistical study where each individual in the population is observed.</p>
+<p>A <em>census</em> may also refer to the entire population itself, rather than the method of observation.</p>
 </dd>
 <dt>Sample</dt><dd><p>A <em>sample</em> is a type of statistical study where a subset of the population is observed <em>at random</em>.</p>
+<p>A <em>sample</em> may also refer to the subset of the population being observed, rather than the method of observation.</p>
 </dd>
 </dl>
 </section>
@@ -395,6 +398,67 @@ document.write(`
 <div><p>TODO</p>
 </div></blockquote>
 </div></blockquote>
+</section>
+<section id="statistical-fallacies">
+<h3>Statistical Fallacies<a class="headerlink" href="#statistical-fallacies" title="Permalink to this headline">#</a></h3>
+<dl id="bias">
+<dt>Bias</dt><dd><p><em>Bias</em> is a type of systematic error that arises when the sample data that is used to draw conclusions about the population does not accurately represent a <em>random</em> sample.</p>
+<dl>
+<dt>Selection Bias</dt><dd><p><em>Selection bias</em> occurs when the sampling method is not representative of the entire population.</p>
+<p>As an extreme example, if you were interested in making assertions about the average height of a United States citizens, selecting a sample of 100 elementary schoolers would lead you to make wildly erroneous conclusions.</p>
+</dd>
+<dt>Response bias</dt><dd><p><em>Response bias</em> occurs when the sampling method is over-representative or under-representative of certain segments of the population.</p>
+<p>A typical example of this kind of bias can be found in cold-calling telephone surveys. Most people are likely to ignore to robo-calls for political polls, and the set of people who do answer the calls are likely not an accurate representation of the entire population.</p>
+<p>A famous example of this kind of bias is the <cite>1948 Election Between Thomas Dewey and Harry Truman &lt;https://en.wikipedia.org/wiki/Dewey_Defeats_Truman&gt;</cite>. The polling data the Chicago Tribune relied on showed Dewey winning by a huge margin <a class="reference internal" href="#dewey" id="id2"><span>[DEWEY]</span></a></p>
+<dl class="citation">
+<dt class="label" id="dewey"><span class="brackets"><a class="fn-backref" href="#id2">DEWEY</a></span></dt>
+<dd><p>The 1948 Presidential Election polls
+<a class="reference external" href="https://www.randomservices.org/random/data/Election1948.html">source</a></p>
+</dd>
+</dl>
+<table class="table">
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 24%" />
+<col style="width: 18%" />
+<col style="width: 15%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Candidate</p></th>
+<th class="head"><p>Crossley</p></th>
+<th class="head"><p>Gallup</p></th>
+<th class="head"><p>Roper</p></th>
+<th class="head"><p>Actual</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Truman</p></td>
+<td><p>45</p></td>
+<td><p>44</p></td>
+<td><p>38</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dewey</p></td>
+<td><p>50</p></td>
+<td><p>50</p></td>
+<td><p>53</p></td>
+<td><p>45</p></td>
+</tr>
+<tr class="row-even"><td><p>Other</p></td>
+<td><p>5</p></td>
+<td><p>6</p></td>
+<td><p>9</p></td>
+<td><p>5</p></td>
+</tr>
+</tbody>
+</table>
+<p>While polls will never agree 100% of the time with reality, the error in this case was extreme. The pollsters at the organizations of Crossley, Gallup and Roper were told to survey a certain number of people. Beyond that, they were free to choose who to include in the survey. This led to the data they collected being <em>biased</em>, leading to blunders such as,</p>
+<a class="reference internal image-reference" href="../../_images/dewey_defeats_truman.jpg"><img alt="../../_images/dewey_defeats_truman.jpg" class="align-center" src="../../_images/dewey_defeats_truman.jpg" style="width: 60%;" /></a>
+</dd>
+</dl>
+</dd>
+</dl>
 </section>
 <section id="classifications-of-data">
 <span id="data-classification"></span><h3>Classifications of Data<a class="headerlink" href="#classifications-of-data" title="Permalink to this headline">#</a></h3>
@@ -550,6 +614,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key">Key</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-of-observation">Methods of Observation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-techniques">Sampling Techniques</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-fallacies">Statistical Fallacies</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-statistics">Types of Statistics</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-terminology">Other Terminology</a></li>
