@@ -303,7 +303,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -319,6 +321,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -330,6 +340,50 @@ document.write(`
                   
   <section id="sampling-distributions">
 <h1>Sampling Distributions<a class="headerlink" href="#sampling-distributions" title="Permalink to this headline">#</a></h1>
+<section id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h2>
+<p>Consider a pop-quiz made up of two questions administered to a population of a 100 students. Suppose you conducted a census of how many questions each student got right on the pop-quiz. In other words, suppose you knew the probability distribution for the <em>population</em> was given by,</p>
+<table class="table">
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 58%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>x</p></th>
+<th class="head"><p>p(x)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0.20</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0.40</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>0.40</p></td>
+</tr>
+</tbody>
+</table>
+<p>It is important to keep in mind the meaning of this table. The right hand column represents the probability of selecting an individual with the left hand column number of answers correct. In other words, the probability a single randomly selected individual from the population got 0 answers correct is <em>0.20</em>, or <em>20%</em>. Similarly, the probability a single randomly selected individual from the population got 1 answer correct is <em>0.40</em>, or <em>40%</em>. Finally, the probability a single randomly selected individual from the population got both answers correct is again <em>0.40</em>, or <em>40%</em>.</p>
+<p>Since we are assuming we know the population distribution, we can see how sampling the population affects the value and distribution of the sample mean. This will provide insight into the more likely scenario of <em>not</em> knowing anything about the population and only having information about the sample. In other words, in what follows, the population distribution will be assumed to see what this implies about the sample mean. Then, the conclusions regarding the sample mean will be applied to scenarios where the population distribution is <em>unknown</em>.</p>
+<p>Suppose a random sample of 2 students are drawn from this population <em>with replacement</em>. Recall “<em>with replacement</em>” means the same student may be observed more than once, since every student is put back into the population for subsequenct selections.</p>
+<p>In drawing a sample of 2 students, an account must be taken of all possible ways this sample that might be drawn. Each student will have either gotten 2 answers correct, 1 answer correct or 0 answers correct. By the <a class="reference internal" href="../probability/01_COMBINATORICS.html#generalized-counting-principle"><span class="std std-ref">Generalized Counting Principle</span></a>, the total number of possible 2 person samples that can be drawn from this population is,</p>
+<div class="math">
+<p><img src="../../_images/math/4f80d9a834ab882b001165f1a640f1b302ae680e.png" alt="3 \cdot 3 = 9"/></p>
+</div><p>All possible samples <strong>S</strong><sub>i</sub> are enumerated below in <span class="xref std std-ref">list_notation</span></p>
+<blockquote>
+<div><p><img class="math" src="../../_images/math/6d9ca16974cd5c39d7fdd0daf03ee2734ecc5167.png" alt="S_1  = \{ 0, 0 \}"/></p>
+<p><img class="math" src="../../_images/math/1eacd195c6479de8d4d2f9e1d782a68ff8cf0350.png" alt="S_2 = \{ 0, 1 \}"/></p>
+<p><img class="math" src="../../_images/math/c9175b2c77ccdbcb59122c9830a63e73fdeabba4.png" alt="S_3 = \{ 0, 2 \}"/></p>
+<p><img class="math" src="../../_images/math/f4078b71fb5799a6ec9e56532569ade0bf840944.png" alt="S_4 = \{ 1, 0 \}"/></p>
+<p><img class="math" src="../../_images/math/5d9d1f742e6c3bed1b6f79435fce672368ed3f9b.png" alt="S_5 = \{ 1, 1 \}"/></p>
+<p><img class="math" src="../../_images/math/5e3b7b22adda17b57575f6868fa86de9589edb85.png" alt="S_6 = \{ 1, 2 \}"/></p>
+<p><img class="math" src="../../_images/math/c0dff99ecc7d03bcd681ef2ef11fdec94c71363f.png" alt="S_7 = \{ 2, 0 \}"/></p>
+<p><img class="math" src="../../_images/math/01dae06aff6ad8954b5a4d746fe98aaaa0054970.png" alt="S_8 = \{ 2, 1 \}"/></p>
+<p><img class="math" src="../../_images/math/48ced86a93450461e1f6455fc8a67b0ae105e771.png" alt="S_9 = \{ 2, 2 \}"/></p>
+</div></blockquote>
+</section>
 </section>
 
 
@@ -371,6 +425,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

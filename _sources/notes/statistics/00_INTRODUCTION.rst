@@ -2,6 +2,8 @@
 Introduction
 ============
 
+Statistics is the study of making general assertions from particular cases.
+
 Definitions
 ===========
 
