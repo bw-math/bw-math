@@ -43,7 +43,7 @@ Mean
             .. math::
                 x_i \cdot f(x_i)
 
-        This recognization leads the following formula that comes in handy when sample distributions are given in terms of :ref:`frequency distributions<frequency_distribution>`
+        This recognization leads the following formula that comes in handy when sample distributions are given in terms of :ref:`frequency distributions <frequency_distributions>`
 
         Frequency Formula
 

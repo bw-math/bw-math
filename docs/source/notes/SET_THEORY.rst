@@ -84,13 +84,11 @@ Notation
 .. _list_notation:
 
 List Notation
-    
     TODO
 
 .. _quantifier_notation:
 
 Quantifier Notation 
-
     TODO 
 
 Corollaries
