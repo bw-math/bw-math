@@ -101,9 +101,33 @@ Bias
         .. image:: ../../imgs/context/dewey_defeats_truman.jpg
             :width: 60%
             :align: center
-    
 
+    Observer Bias
+        *Observer Bias* occurs when the act of observation changes that which is being observed. Examples of this type of bias can crop up when pollsters ask leading questions, such as, "Do you *still* drink coffee?" versus the more neutral phrasing, "Do you drink coffee?". Depending on how the question is, a different answer might be given.
+
+        A more famous example of this type of bias is the `Milgram Experiment <https://en.wikipedia.org/wiki/Milgram_experiment>`_ conducted by Dr. Stanley Milgrim at Yale University. The *Milford Experiment* was a psychological study wherein participants were told they were testing the effects of phyiscal punishment in form of an electric shock on the memory. Participants were to be paired off as *teacher* and *learner*. The *learner* would be asked to memorize a series of words, and then asked to recite them. If they got the words wrong in the recitation, the *teacher* would administer an electric shock to the *learner*. Each time a wrong answer was given, the voltage of the electric shock was increased.
+
+        Unbeknownst to the participants of the study, this wasn't the actual experiment. In reality, the *learner* in every experiment was a paid actor and the electric shocks weren't real. The actor would intentionally get answers wrong and then pretend to be in pain when the teacher was administering the fake electric shocks. The *teacher* was the real object of study. Dr. Milgram was trying to see how much pain a randomly selected individual would inflict on someone else simply because they were told to do it. 
+
+        When participants expressed unease or concern, the researchers running the study, intentionally dressed in white lab coats, would give one of the following responses,
+
+        - Please continue.
+        - The experiment requires that you continue.
+        - It is absolutely essential that you continue.
+        - You have no other choice; you must go on.
     
+        The actor would get many questions wrong, forcing the *teacher* to increase the voltage of the shock. Most, but not all, participants would quit before reaching the maximum voltage. Dr. Milgrim found 14 of the 40 participants in the original study would increase the voltage of the shock all the way up to the maximum amount, as long as a researcher was there to instruct him to continue. 
+
+        Subsequent variations of this experiment have shown the *way* the researcher responds to the participant's concern significantly affects the results. In Dr. Milgram's original experiment, the responses were phrased in such a way as to imply the actor's pain was for the "*good of the experiment*". If instead of saying,
+            
+            The experiment requires that you continue.
+
+        Researcher instead said,
+
+            You are ordered to continue.
+
+        The results were nowhere near as large as in Dr. Milgrim's original experiment.
+
 
 .. _data_classification:
 
