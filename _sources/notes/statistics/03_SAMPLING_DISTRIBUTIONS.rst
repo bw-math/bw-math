@@ -47,3 +47,12 @@ All possible samples **S**:sub:`i` are enumerated below in :ref:`list_notation`
     :math:`S_8 = \{ 2, 1 \}`
 
     :math:`S_9 = \{ 2, 2 \}`
+
+.. _clt:
+
+Central Limit Theorem
+=====================
+
+The **Central Limit Theorem** is one of the most important theorems in statistics. The **Central Limit Theorem** is what allows us to use the :ref:`Normal Distribution<normal>` to make inferences about the :ref:`population <population>`
+
+TODO
