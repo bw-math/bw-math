@@ -96,3 +96,88 @@ Steps
             i = 1, 2, ... , n
 
     6. Sort the data set into classes and tally up the frequency of each class.
+
+Histograms
+==========
+
+TODO 
+
+Variations
+----------
+
+TODO 
+
+Bar Chart
+*********
+
+TODO 
+
+Pareto Charts
+*************
+
+TODO 
+
+Stem-Leaf Plots
+***************
+
+TODO 
+
+Relative Frequency Plots
+************************
+
+TODO 
+
+Distribution Shapes
+===================
+
+TODO 
+
+Uniform
+-------
+
+TODO 
+
+Normal
+------
+
+TODO 
+
+Bimodal
+-------
+
+TODO 
+
+Skewed
+------
+
+TODO 
+
+Fat-tailed
+----------
+
+TODO 
+
+Ogives
+======
+
+TODO 
+
+Construction
+------------
+
+TODO 
+
+Other Types of Graphs
+=====================
+
+TODO 
+
+Pie Chart
+---------
+
+TODO 
+
+Time Series
+-----------
+
+TODO 
