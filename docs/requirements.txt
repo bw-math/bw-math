@@ -1,6 +1,5 @@
-sphinx
-sphinx-toolbox
-sphinx-book-theme
-myst-parser
-numpy
-matplotlib
+sphinx==4.3.0
+sphinx-toolbox==3.5.0
+sphinx-book-theme==1.0.1
+myst-parser==0.15.2
+matplotlib==3.7.2
