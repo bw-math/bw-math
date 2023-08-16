@@ -141,7 +141,7 @@ Applying this definition to the events **H** and **T** in the first example, it 
     P(H) = \frac{n(H)}{n(S)} = \frac{1}{2}
 
 .. math:: 
-    P(T) = \frac{n(T){n(S)} = \frac{1}{2}
+    P(T) = \frac{n(T)}{n(S)} = \frac{1}{2}
 
 .. _axioms_of_probability:
 

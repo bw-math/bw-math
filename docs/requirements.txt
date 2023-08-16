@@ -2,3 +2,5 @@ sphinx
 sphinx-toolbox
 sphinx-book-theme
 myst-parser
+numpy
+matplotlib

@@ -17,7 +17,8 @@ extensions = [
     'myst_parser',
     'sphinx.ext.githubpages',
     'sphinx.ext.imgmath',
-    'sphinx_toolbox.collapse'
+    'sphinx_toolbox.collapse',
+    'matplotlib.sphinxext.plot_directive'
 ]
 
 templates_path = [
