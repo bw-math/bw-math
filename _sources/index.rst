@@ -8,5 +8,6 @@ Bishop Walsh A.P Statistics
 
    SPLASH
    SCHEDULES
+   projects/index
    notes/index
    references/index

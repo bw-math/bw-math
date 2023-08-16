@@ -1,0 +1,1210 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Graphical Analysis &#8212; bishop-walsh-ap-stats  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'projects/01_GRAPHICAL_ANALYSIS';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Notes" href="../notes/index.html" />
+    <link rel="prev" title="Projects" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">bishop-walsh-ap-stats  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../SPLASH.html">AP Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SCHEDULES.html">Homework</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Projects</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Graphical Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../notes/index.html">Class Notes</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../notes/graphics/index.html">Graphics</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../notes/graphics/VENN_DIAGRAMS.html">Venn Diagrams</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../notes/SET_THEORY.html">Set Theory</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../notes/probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../notes/probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../notes/probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../notes/probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../notes/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../notes/probability/04_BINOMIAL_DISTRIBUTION.html">Binomial Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../notes/probability/05_NORMAL_DISTRIBUTION.html">Normal Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../notes/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../notes/statistics/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../notes/statistics/01_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../notes/statistics/02_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../notes/statistics/03_SAMPLING_DISTRIBUTIONS.html">Sampling Distributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../notes/statistics/04_CENTRAL_LIMIT_THEOREM.html">Central Limit Theorem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../notes/statistics/05_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../notes/statistics/06_CHI_SQUARED_DISTRIBUTION.html"><img alt="\chi^2" class="math" src="../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../notes/statistics/07_T_DISTRIBUTION.html">T Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../notes/hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../notes/hypotheses/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../notes/hypotheses/01_MEAN_TESTS.html">Hypothesis Tests for the Population Mean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../notes/hypotheses/02_STDDEV_TESTS.html">Hypothesis Tests for the Population Standard Deviation</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../notes/regression/index.html">Linear Regression</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../notes/regression/01_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../notes/regression/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../notes/regression/03_LINEAR_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../notes/regression/04_RESIDUAL_ANALYSIS.html">Residual Analysis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../references/index.html">References</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../references/TEXTBOOKS.html">Textbooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../references/TI84.html">TI-84</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../references/EXCEL.html">Excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../references/LATEX.html">LaTex Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../references/SITE.html">Maintence</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/projects/01_GRAPHICAL_ANALYSIS.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Graphical Analysis</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="graphical-analysis">
+<h1>Graphical Analysis<a class="headerlink" href="#graphical-analysis" title="Permalink to this headline">#</a></h1>
+<p>In this project, you will perform some graphical analysis on a famous data set.</p>
+<section id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<p>In the years 1969, 1970, 1971 and 1972, the Selective Service System held a draft lottery for men born from January 1, 1944 to December 31, 1950 <a class="reference internal" href="#draft" id="id1"><span>[DRAFT]</span></a>.</p>
+<dl class="citation">
+<dt class="label" id="draft"><span class="brackets"><a class="fn-backref" href="#id1">DRAFT</a></span></dt>
+<dd><p>Vietnam War Draft Lottery
+<cite>source &lt;https://en.wikipedia.org/wiki/Draft_lottery_(1969)&gt;</cite></p>
+</dd>
+</dl>
+<p>In 1969, the first year they held the draft, the method used to select individuals for service was heavily flawed. 365 days of the year were printed on sheets of paper and placed in a shoebox.</p>
+<blockquote>
+<div><p>{ January 1, January 2, … , Feburary 1, February 2, … , December 30, December 31 }</p>
+</div></blockquote>
+<p>Slips of paper were then selected at random and anyone of eligible age who had a birthday on the date indicated would be drafted. The important point is <em>individuals who shared the same birth day</em> would be drafted at the same time. As example, two men who had the birthdays April 5 <sup>th</sup>, 1946 and April 5:sup:<cite>th</cite>, 1947 would both be drafted in the event a slip of paper for “April 5” was selected.</p>
+</section>
+<section id="data-set">
+<h2>Data Set<a class="headerlink" href="#data-set" title="Permalink to this headline">#</a></h2>
+<table class="table" id="id2">
+<caption><span class="caption-text">Vietnam Draft Lottery Data</span><a class="headerlink" href="#id2" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>M	D	N69	N70	N71	N72</p></td>
+</tr>
+<tr class="row-even"><td><p>1	1	305	133	207	150</p></td>
+</tr>
+<tr class="row-odd"><td><p>1	2	159	195	225	328</p></td>
+</tr>
+<tr class="row-even"><td><p>1	3	251	336	246	42</p></td>
+</tr>
+<tr class="row-odd"><td><p>1	4	215	99	264	28</p></td>
+</tr>
+<tr class="row-even"><td><p>1	5	101	33	265	338</p></td>
+</tr>
+<tr class="row-odd"><td><p>1	6	224	285	242	36</p></td>
+</tr>
+<tr class="row-even"><td><p>1	7	306	159	292	111</p></td>
+</tr>
+<tr class="row-odd"><td><p>1	8	199	116	287	206</p></td>
+</tr>
+<tr class="row-even"><td><p>1	9	194	53	338	197</p></td>
+</tr>
+<tr class="row-odd"><td><p>1	10	325	101	231	37</p></td>
+</tr>
+<tr class="row-even"><td><p>1	11	329	144	90	174</p></td>
+</tr>
+<tr class="row-odd"><td><p>1	12	221	152	228	126</p></td>
+</tr>
+<tr class="row-even"><td><p>1	13	318	330	183	298</p></td>
+</tr>
+<tr class="row-odd"><td><p>1	14	238	71	285	341</p></td>
+</tr>
+<tr class="row-even"><td><p>1	15	17	75	325	221</p></td>
+</tr>
+<tr class="row-odd"><td><p>1	16	121	136	74	309</p></td>
+</tr>
+<tr class="row-even"><td><p>1	17	235	54	9	231</p></td>
+</tr>
+<tr class="row-odd"><td><p>1	18	140	185	51	72</p></td>
+</tr>
+<tr class="row-even"><td><p>1	19	58	188	195	303</p></td>
+</tr>
+<tr class="row-odd"><td><p>1	20	280	211	310	161</p></td>
+</tr>
+<tr class="row-even"><td><p>1	21	186	129	206	99</p></td>
+</tr>
+<tr class="row-odd"><td><p>1	22	337	132	108	259</p></td>
+</tr>
+<tr class="row-even"><td><p>1	23	118	48	349	258</p></td>
+</tr>
+<tr class="row-odd"><td><p>1	24	59	177	337	62</p></td>
+</tr>
+<tr class="row-even"><td><p>1	25	52	57	2	243</p></td>
+</tr>
+<tr class="row-odd"><td><p>1	26	92	140	114	311</p></td>
+</tr>
+<tr class="row-even"><td><p>1	27	355	173	72	110</p></td>
+</tr>
+<tr class="row-odd"><td><p>1	28	77	346	357	304</p></td>
+</tr>
+<tr class="row-even"><td><p>1	29	349	277	266	283</p></td>
+</tr>
+<tr class="row-odd"><td><p>1	30	164	112	268	114</p></td>
+</tr>
+<tr class="row-even"><td><p>1	31	211	60	239	240</p></td>
+</tr>
+<tr class="row-odd"><td><p>2	1	86	335	306	112</p></td>
+</tr>
+<tr class="row-even"><td><p>2	2	144	354	28	278</p></td>
+</tr>
+<tr class="row-odd"><td><p>2	3	297	186	250	54</p></td>
+</tr>
+<tr class="row-even"><td><p>2	4	210	94	92	68</p></td>
+</tr>
+<tr class="row-odd"><td><p>2	5	214	97	233	96</p></td>
+</tr>
+<tr class="row-even"><td><p>2	6	347	16	148	271</p></td>
+</tr>
+<tr class="row-odd"><td><p>2	7	91	25	304	154</p></td>
+</tr>
+<tr class="row-even"><td><p>2	8	181	127	208	347</p></td>
+</tr>
+<tr class="row-odd"><td><p>2	9	338	187	130	136</p></td>
+</tr>
+<tr class="row-even"><td><p>2	10	216	46	276	361</p></td>
+</tr>
+<tr class="row-odd"><td><p>2	11	150	227	351	26</p></td>
+</tr>
+<tr class="row-even"><td><p>2	12	68	262	340	195</p></td>
+</tr>
+<tr class="row-odd"><td><p>2	13	152	13	118	263</p></td>
+</tr>
+<tr class="row-even"><td><p>2	14	4	260	64	348</p></td>
+</tr>
+<tr class="row-odd"><td><p>2	15	89	201	214	308</p></td>
+</tr>
+<tr class="row-even"><td><p>2	16	212	334	353	227</p></td>
+</tr>
+<tr class="row-odd"><td><p>2	17	189	345	198	46</p></td>
+</tr>
+<tr class="row-even"><td><p>2	18	292	337	189	11</p></td>
+</tr>
+<tr class="row-odd"><td><p>2	19	25	331	210	127</p></td>
+</tr>
+<tr class="row-even"><td><p>2	20	302	20	86	106</p></td>
+</tr>
+<tr class="row-odd"><td><p>2	21	363	213	15	316</p></td>
+</tr>
+<tr class="row-even"><td><p>2	22	290	271	13	20</p></td>
+</tr>
+<tr class="row-odd"><td><p>2	23	57	351	116	247</p></td>
+</tr>
+<tr class="row-even"><td><p>2	24	236	226	359	261</p></td>
+</tr>
+<tr class="row-odd"><td><p>2	25	179	325	335	260</p></td>
+</tr>
+<tr class="row-even"><td><p>2	26	365	86	136	51</p></td>
+</tr>
+<tr class="row-odd"><td><p>2	27	205	66	217	186</p></td>
+</tr>
+<tr class="row-even"><td><p>2	28	299	234	83	295</p></td>
+</tr>
+<tr class="row-odd"><td><p>2	29	285	*	305	*</p></td>
+</tr>
+<tr class="row-even"><td><p>3	1	108	14	364	203</p></td>
+</tr>
+<tr class="row-odd"><td><p>3	2	29	77	184	322</p></td>
+</tr>
+<tr class="row-even"><td><p>3	3	267	207	170	220</p></td>
+</tr>
+<tr class="row-odd"><td><p>3	4	275	117	283	47</p></td>
+</tr>
+<tr class="row-even"><td><p>3	5	293	299	172	266</p></td>
+</tr>
+<tr class="row-odd"><td><p>3	6	139	296	327	1</p></td>
+</tr>
+<tr class="row-even"><td><p>3	7	122	141	149	2</p></td>
+</tr>
+<tr class="row-odd"><td><p>3	8	213	79	229	153</p></td>
+</tr>
+<tr class="row-even"><td><p>3	9	317	278	77	321</p></td>
+</tr>
+<tr class="row-odd"><td><p>3	10	323	150	360	331</p></td>
+</tr>
+<tr class="row-even"><td><p>3	11	136	317	332	239</p></td>
+</tr>
+<tr class="row-odd"><td><p>3	12	300	24	258	44</p></td>
+</tr>
+<tr class="row-even"><td><p>3	13	259	241	173	244</p></td>
+</tr>
+<tr class="row-odd"><td><p>3	14	354	12	203	117</p></td>
+</tr>
+<tr class="row-even"><td><p>3	15	169	157	319	152</p></td>
+</tr>
+<tr class="row-odd"><td><p>3	16	166	258	347	94</p></td>
+</tr>
+<tr class="row-even"><td><p>3	17	33	220	117	363</p></td>
+</tr>
+<tr class="row-odd"><td><p>3	18	332	319	168	357</p></td>
+</tr>
+<tr class="row-even"><td><p>3	19	200	189	53	358</p></td>
+</tr>
+<tr class="row-odd"><td><p>3	20	239	170	200	262</p></td>
+</tr>
+<tr class="row-even"><td><p>3	21	334	246	280	300</p></td>
+</tr>
+<tr class="row-odd"><td><p>3	22	265	269	345	317</p></td>
+</tr>
+<tr class="row-even"><td><p>3	23	256	281	89	22</p></td>
+</tr>
+<tr class="row-odd"><td><p>3	24	258	203	133	71</p></td>
+</tr>
+<tr class="row-even"><td><p>3	25	343	298	219	65</p></td>
+</tr>
+<tr class="row-odd"><td><p>3	26	170	121	122	24</p></td>
+</tr>
+<tr class="row-even"><td><p>3	27	268	254	232	181</p></td>
+</tr>
+<tr class="row-odd"><td><p>3	28	223	95	215	45</p></td>
+</tr>
+<tr class="row-even"><td><p>3	29	362	147	343	21</p></td>
+</tr>
+<tr class="row-odd"><td><p>3	30	217	56	191	213</p></td>
+</tr>
+<tr class="row-even"><td><p>3	31	30	38	161	326</p></td>
+</tr>
+<tr class="row-odd"><td><p>4	1	32	224	96	12</p></td>
+</tr>
+<tr class="row-even"><td><p>4	2	271	216	129	108</p></td>
+</tr>
+<tr class="row-odd"><td><p>4	3	83	297	262	104</p></td>
+</tr>
+<tr class="row-even"><td><p>4	4	81	37	158	280</p></td>
+</tr>
+<tr class="row-odd"><td><p>4	5	269	124	294	254</p></td>
+</tr>
+<tr class="row-even"><td><p>4	6	253	312	297	88</p></td>
+</tr>
+<tr class="row-odd"><td><p>4	7	147	142	58	163</p></td>
+</tr>
+<tr class="row-even"><td><p>4	8	312	267	35	50</p></td>
+</tr>
+<tr class="row-odd"><td><p>4	9	219	223	289	234</p></td>
+</tr>
+<tr class="row-even"><td><p>4	10	218	165	194	272</p></td>
+</tr>
+<tr class="row-odd"><td><p>4	11	14	178	324	350</p></td>
+</tr>
+<tr class="row-even"><td><p>4	12	346	89	165	23</p></td>
+</tr>
+<tr class="row-odd"><td><p>4	13	124	143	271	169</p></td>
+</tr>
+<tr class="row-even"><td><p>4	14	231	202	248	81</p></td>
+</tr>
+<tr class="row-odd"><td><p>4	15	273	182	222	343</p></td>
+</tr>
+<tr class="row-even"><td><p>4	16	148	31	23	119</p></td>
+</tr>
+<tr class="row-odd"><td><p>4	17	260	264	251	183</p></td>
+</tr>
+<tr class="row-even"><td><p>4	18	90	138	139	242</p></td>
+</tr>
+<tr class="row-odd"><td><p>4	19	336	62	49	158</p></td>
+</tr>
+<tr class="row-even"><td><p>4	20	345	118	39	314</p></td>
+</tr>
+<tr class="row-odd"><td><p>4	21	62	8	342	4</p></td>
+</tr>
+<tr class="row-even"><td><p>4	22	316	256	126	264</p></td>
+</tr>
+<tr class="row-odd"><td><p>4	23	252	292	179	279</p></td>
+</tr>
+<tr class="row-even"><td><p>4	24	2	244	21	362</p></td>
+</tr>
+<tr class="row-odd"><td><p>4	25	351	328	238	255</p></td>
+</tr>
+<tr class="row-even"><td><p>4	26	340	137	45	233</p></td>
+</tr>
+<tr class="row-odd"><td><p>4	27	74	235	124	265</p></td>
+</tr>
+<tr class="row-even"><td><p>4	28	262	82	281	55</p></td>
+</tr>
+<tr class="row-odd"><td><p>4	29	191	111	109	93</p></td>
+</tr>
+<tr class="row-even"><td><p>4	30	208	358	29	69</p></td>
+</tr>
+<tr class="row-odd"><td><p>5	1	330	179	154	58</p></td>
+</tr>
+<tr class="row-even"><td><p>5	2	298	96	261	275</p></td>
+</tr>
+<tr class="row-odd"><td><p>5	3	40	171	177	166</p></td>
+</tr>
+<tr class="row-even"><td><p>5	4	276	240	137	172</p></td>
+</tr>
+<tr class="row-odd"><td><p>5	5	364	301	41	292</p></td>
+</tr>
+<tr class="row-even"><td><p>5	6	155	268	50	337</p></td>
+</tr>
+<tr class="row-odd"><td><p>5	7	35	29	106	145</p></td>
+</tr>
+<tr class="row-even"><td><p>5	8	321	105	216	201</p></td>
+</tr>
+<tr class="row-odd"><td><p>5	9	197	357	311	276</p></td>
+</tr>
+<tr class="row-even"><td><p>5	10	65	146	220	100</p></td>
+</tr>
+<tr class="row-odd"><td><p>5	11	37	293	107	307</p></td>
+</tr>
+<tr class="row-even"><td><p>5	12	133	210	52	115</p></td>
+</tr>
+<tr class="row-odd"><td><p>5	13	295	353	105	49</p></td>
+</tr>
+<tr class="row-even"><td><p>5	14	178	40	267	224</p></td>
+</tr>
+<tr class="row-odd"><td><p>5	15	130	344	162	165</p></td>
+</tr>
+<tr class="row-even"><td><p>5	16	55	175	205	101</p></td>
+</tr>
+<tr class="row-odd"><td><p>5	17	112	212	270	273</p></td>
+</tr>
+<tr class="row-even"><td><p>5	18	278	180	85	98</p></td>
+</tr>
+<tr class="row-odd"><td><p>5	19	75	155	55	148</p></td>
+</tr>
+<tr class="row-even"><td><p>5	20	183	242	119	274</p></td>
+</tr>
+<tr class="row-odd"><td><p>5	21	250	225	12	310</p></td>
+</tr>
+<tr class="row-even"><td><p>5	22	326	199	164	333</p></td>
+</tr>
+<tr class="row-odd"><td><p>5	23	319	222	197	216</p></td>
+</tr>
+<tr class="row-even"><td><p>5	24	31	22	60	246</p></td>
+</tr>
+<tr class="row-odd"><td><p>5	25	361	26	24	122</p></td>
+</tr>
+<tr class="row-even"><td><p>5	26	357	148	26	118</p></td>
+</tr>
+<tr class="row-odd"><td><p>5	27	296	122	241	293</p></td>
+</tr>
+<tr class="row-even"><td><p>5	28	308	9	91	18</p></td>
+</tr>
+<tr class="row-odd"><td><p>5	29	226	61	81	133</p></td>
+</tr>
+<tr class="row-even"><td><p>5	30	103	209	301	48</p></td>
+</tr>
+<tr class="row-odd"><td><p>5	31	313	350	18	67</p></td>
+</tr>
+<tr class="row-even"><td><p>6	1	249	65	274	15</p></td>
+</tr>
+<tr class="row-odd"><td><p>6	2	228	304	363	360</p></td>
+</tr>
+<tr class="row-even"><td><p>6	3	301	135	54	245</p></td>
+</tr>
+<tr class="row-odd"><td><p>6	4	20	42	187	207</p></td>
+</tr>
+<tr class="row-even"><td><p>6	5	28	233	78	230</p></td>
+</tr>
+<tr class="row-odd"><td><p>6	6	110	153	218	87</p></td>
+</tr>
+<tr class="row-even"><td><p>6	7	85	169	288	251</p></td>
+</tr>
+<tr class="row-odd"><td><p>6	8	366	7	84	282</p></td>
+</tr>
+<tr class="row-even"><td><p>6	9	335	352	140	83</p></td>
+</tr>
+<tr class="row-odd"><td><p>6	10	206	76	226	178</p></td>
+</tr>
+<tr class="row-even"><td><p>6	11	134	355	202	64</p></td>
+</tr>
+<tr class="row-odd"><td><p>6	12	272	51	273	190</p></td>
+</tr>
+<tr class="row-even"><td><p>6	13	69	342	47	318</p></td>
+</tr>
+<tr class="row-odd"><td><p>6	14	356	363	113	95</p></td>
+</tr>
+<tr class="row-even"><td><p>6	15	180	276	8	16</p></td>
+</tr>
+<tr class="row-odd"><td><p>6	16	274	229	68	32</p></td>
+</tr>
+<tr class="row-even"><td><p>6	17	73	289	193	91</p></td>
+</tr>
+<tr class="row-odd"><td><p>6	18	341	214	102	238</p></td>
+</tr>
+<tr class="row-even"><td><p>6	19	104	163	44	52</p></td>
+</tr>
+<tr class="row-odd"><td><p>6	20	360	43	30	77</p></td>
+</tr>
+<tr class="row-even"><td><p>6	21	60	113	296	315</p></td>
+</tr>
+<tr class="row-odd"><td><p>6	22	247	307	59	146</p></td>
+</tr>
+<tr class="row-even"><td><p>6	23	109	44	336	212</p></td>
+</tr>
+<tr class="row-odd"><td><p>6	24	358	236	328	61</p></td>
+</tr>
+<tr class="row-even"><td><p>6	25	137	327	213	143</p></td>
+</tr>
+<tr class="row-odd"><td><p>6	26	22	308	346	345</p></td>
+</tr>
+<tr class="row-even"><td><p>6	27	64	55	7	330</p></td>
+</tr>
+<tr class="row-odd"><td><p>6	28	222	215	57	53</p></td>
+</tr>
+<tr class="row-even"><td><p>6	29	353	154	196	75</p></td>
+</tr>
+<tr class="row-odd"><td><p>6	30	209	217	123	142</p></td>
+</tr>
+<tr class="row-even"><td><p>7	1	93	104	284	39</p></td>
+</tr>
+<tr class="row-odd"><td><p>7	2	350	322	61	297</p></td>
+</tr>
+<tr class="row-even"><td><p>7	3	115	30	103	109</p></td>
+</tr>
+<tr class="row-odd"><td><p>7	4	279	59	142	92</p></td>
+</tr>
+<tr class="row-even"><td><p>7	5	188	287	286	139</p></td>
+</tr>
+<tr class="row-odd"><td><p>7	6	327	164	185	132</p></td>
+</tr>
+<tr class="row-even"><td><p>7	7	50	365	354	285</p></td>
+</tr>
+<tr class="row-odd"><td><p>7	8	13	106	320	355</p></td>
+</tr>
+<tr class="row-even"><td><p>7	9	277	1	22	179</p></td>
+</tr>
+<tr class="row-odd"><td><p>7	10	284	158	234	89</p></td>
+</tr>
+<tr class="row-even"><td><p>7	11	248	174	223	202</p></td>
+</tr>
+<tr class="row-odd"><td><p>7	12	15	257	169	340</p></td>
+</tr>
+<tr class="row-even"><td><p>7	13	42	349	278	306</p></td>
+</tr>
+<tr class="row-odd"><td><p>7	14	331	156	307	305</p></td>
+</tr>
+<tr class="row-even"><td><p>7	15	322	273	88	359</p></td>
+</tr>
+<tr class="row-odd"><td><p>7	16	120	284	291	74</p></td>
+</tr>
+<tr class="row-even"><td><p>7	17	98	341	182	199</p></td>
+</tr>
+<tr class="row-odd"><td><p>7	18	190	90	131	121</p></td>
+</tr>
+<tr class="row-even"><td><p>7	19	227	316	100	332</p></td>
+</tr>
+<tr class="row-odd"><td><p>7	20	187	120	95	33</p></td>
+</tr>
+<tr class="row-even"><td><p>7	21	27	356	67	5</p></td>
+</tr>
+<tr class="row-odd"><td><p>7	22	153	282	132	286</p></td>
+</tr>
+<tr class="row-even"><td><p>7	23	172	172	151	365</p></td>
+</tr>
+<tr class="row-odd"><td><p>7	24	23	360	4	324</p></td>
+</tr>
+<tr class="row-even"><td><p>7	25	67	3	121	35</p></td>
+</tr>
+<tr class="row-odd"><td><p>7	26	303	47	350	204</p></td>
+</tr>
+<tr class="row-even"><td><p>7	27	289	85	235	60</p></td>
+</tr>
+<tr class="row-odd"><td><p>7	28	88	190	127	185</p></td>
+</tr>
+<tr class="row-even"><td><p>7	29	270	4	146	222</p></td>
+</tr>
+<tr class="row-odd"><td><p>7	30	287	15	112	200</p></td>
+</tr>
+<tr class="row-even"><td><p>7	31	193	221	315	253</p></td>
+</tr>
+<tr class="row-odd"><td><p>8	1	111	326	180	323</p></td>
+</tr>
+<tr class="row-even"><td><p>8	2	45	102	326	27</p></td>
+</tr>
+<tr class="row-odd"><td><p>8	3	261	279	176	3</p></td>
+</tr>
+<tr class="row-even"><td><p>8	4	145	300	272	313</p></td>
+</tr>
+<tr class="row-odd"><td><p>8	5	54	64	63	63</p></td>
+</tr>
+<tr class="row-even"><td><p>8	6	114	251	155	208</p></td>
+</tr>
+<tr class="row-odd"><td><p>8	7	168	263	355	57</p></td>
+</tr>
+<tr class="row-even"><td><p>8	8	48	49	157	131</p></td>
+</tr>
+<tr class="row-odd"><td><p>8	9	106	125	153	7</p></td>
+</tr>
+<tr class="row-even"><td><p>8	10	21	359	25	249</p></td>
+</tr>
+<tr class="row-odd"><td><p>8	11	324	230	34	125</p></td>
+</tr>
+<tr class="row-even"><td><p>8	12	142	320	269	198</p></td>
+</tr>
+<tr class="row-odd"><td><p>8	13	307	58	365	329</p></td>
+</tr>
+<tr class="row-even"><td><p>8	14	198	103	309	205</p></td>
+</tr>
+<tr class="row-odd"><td><p>8	15	102	270	20	241</p></td>
+</tr>
+<tr class="row-even"><td><p>8	16	44	329	358	19</p></td>
+</tr>
+<tr class="row-odd"><td><p>8	17	154	343	295	8</p></td>
+</tr>
+<tr class="row-even"><td><p>8	18	141	109	11	113</p></td>
+</tr>
+<tr class="row-odd"><td><p>8	19	311	83	150	105</p></td>
+</tr>
+<tr class="row-even"><td><p>8	20	344	69	115	162</p></td>
+</tr>
+<tr class="row-odd"><td><p>8	21	291	50	33	30</p></td>
+</tr>
+<tr class="row-even"><td><p>8	22	339	250	82	140</p></td>
+</tr>
+<tr class="row-odd"><td><p>8	23	116	10	143	302</p></td>
+</tr>
+<tr class="row-even"><td><p>8	24	36	274	256	138</p></td>
+</tr>
+<tr class="row-odd"><td><p>8	25	286	364	192	290</p></td>
+</tr>
+<tr class="row-even"><td><p>8	26	245	91	348	76</p></td>
+</tr>
+<tr class="row-odd"><td><p>8	27	352	232	352	34</p></td>
+</tr>
+<tr class="row-even"><td><p>8	28	167	248	37	40</p></td>
+</tr>
+<tr class="row-odd"><td><p>8	29	61	32	279	84</p></td>
+</tr>
+<tr class="row-even"><td><p>8	30	333	167	334	182</p></td>
+</tr>
+<tr class="row-odd"><td><p>8	31	11	275	111	218</p></td>
+</tr>
+<tr class="row-even"><td><p>9	1	225	283	302	219</p></td>
+</tr>
+<tr class="row-odd"><td><p>9	2	161	161	70	17</p></td>
+</tr>
+<tr class="row-even"><td><p>9	3	49	183	321	226</p></td>
+</tr>
+<tr class="row-odd"><td><p>9	4	232	231	32	356</p></td>
+</tr>
+<tr class="row-even"><td><p>9	5	82	295	147	354</p></td>
+</tr>
+<tr class="row-odd"><td><p>9	6	6	21	110	173</p></td>
+</tr>
+<tr class="row-even"><td><p>9	7	8	265	42	144</p></td>
+</tr>
+<tr class="row-odd"><td><p>9	8	184	108	43	97</p></td>
+</tr>
+<tr class="row-even"><td><p>9	9	263	313	199	364</p></td>
+</tr>
+<tr class="row-odd"><td><p>9	10	71	130	46	217</p></td>
+</tr>
+<tr class="row-even"><td><p>9	11	158	288	329	334</p></td>
+</tr>
+<tr class="row-odd"><td><p>9	12	242	314	308	43</p></td>
+</tr>
+<tr class="row-even"><td><p>9	13	175	238	94	229</p></td>
+</tr>
+<tr class="row-odd"><td><p>9	14	1	247	253	353</p></td>
+</tr>
+<tr class="row-even"><td><p>9	15	113	291	303	235</p></td>
+</tr>
+<tr class="row-odd"><td><p>9	16	207	139	243	225</p></td>
+</tr>
+<tr class="row-even"><td><p>9	17	255	200	178	189</p></td>
+</tr>
+<tr class="row-odd"><td><p>9	18	246	333	104	289</p></td>
+</tr>
+<tr class="row-even"><td><p>9	19	177	228	255	228</p></td>
+</tr>
+<tr class="row-odd"><td><p>9	20	63	261	313	141</p></td>
+</tr>
+<tr class="row-even"><td><p>9	21	204	68	16	123</p></td>
+</tr>
+<tr class="row-odd"><td><p>9	22	160	88	145	268</p></td>
+</tr>
+<tr class="row-even"><td><p>9	23	119	206	323	296</p></td>
+</tr>
+<tr class="row-odd"><td><p>9	24	195	237	277	236</p></td>
+</tr>
+<tr class="row-even"><td><p>9	25	149	107	224	291</p></td>
+</tr>
+<tr class="row-odd"><td><p>9	26	18	93	344	29</p></td>
+</tr>
+<tr class="row-even"><td><p>9	27	233	338	314	248</p></td>
+</tr>
+<tr class="row-odd"><td><p>9	28	257	309	5	70</p></td>
+</tr>
+<tr class="row-even"><td><p>9	29	151	303	48	196</p></td>
+</tr>
+<tr class="row-odd"><td><p>9	30	315	18	299	184</p></td>
+</tr>
+<tr class="row-even"><td><p>10	1	359	306	71	215</p></td>
+</tr>
+<tr class="row-odd"><td><p>10	2	125	191	76	128</p></td>
+</tr>
+<tr class="row-even"><td><p>10	3	244	134	144	103</p></td>
+</tr>
+<tr class="row-odd"><td><p>10	4	202	266	66	79</p></td>
+</tr>
+<tr class="row-even"><td><p>10	5	24	166	339	86</p></td>
+</tr>
+<tr class="row-odd"><td><p>10	6	87	78	6	41</p></td>
+</tr>
+<tr class="row-even"><td><p>10	7	234	131	80	129</p></td>
+</tr>
+<tr class="row-odd"><td><p>10	8	283	45	317	157</p></td>
+</tr>
+<tr class="row-even"><td><p>10	9	342	302	254	116</p></td>
+</tr>
+<tr class="row-odd"><td><p>10	10	220	160	312	342</p></td>
+</tr>
+<tr class="row-even"><td><p>10	11	237	84	201	319</p></td>
+</tr>
+<tr class="row-odd"><td><p>10	12	72	70	257	171</p></td>
+</tr>
+<tr class="row-even"><td><p>10	13	138	92	236	269</p></td>
+</tr>
+<tr class="row-odd"><td><p>10	14	294	115	36	14</p></td>
+</tr>
+<tr class="row-even"><td><p>10	15	171	310	75	277</p></td>
+</tr>
+<tr class="row-odd"><td><p>10	16	254	34	159	59</p></td>
+</tr>
+<tr class="row-even"><td><p>10	17	288	290	188	177</p></td>
+</tr>
+<tr class="row-odd"><td><p>10	18	5	340	134	192</p></td>
+</tr>
+<tr class="row-even"><td><p>10	19	241	74	163	167</p></td>
+</tr>
+<tr class="row-odd"><td><p>10	20	192	196	331	352</p></td>
+</tr>
+<tr class="row-even"><td><p>10	21	243	5	282	288</p></td>
+</tr>
+<tr class="row-odd"><td><p>10	22	117	36	263	191</p></td>
+</tr>
+<tr class="row-even"><td><p>10	23	201	339	152	193</p></td>
+</tr>
+<tr class="row-odd"><td><p>10	24	196	149	212	256</p></td>
+</tr>
+<tr class="row-even"><td><p>10	25	176	17	138	9</p></td>
+</tr>
+<tr class="row-odd"><td><p>10	26	7	184	69	78</p></td>
+</tr>
+<tr class="row-even"><td><p>10	27	264	318	98	325</p></td>
+</tr>
+<tr class="row-odd"><td><p>10	28	94	28	10	327</p></td>
+</tr>
+<tr class="row-even"><td><p>10	29	229	259	79	349</p></td>
+</tr>
+<tr class="row-odd"><td><p>10	30	38	332	87	346</p></td>
+</tr>
+<tr class="row-even"><td><p>10	31	79	311	160	10</p></td>
+</tr>
+<tr class="row-odd"><td><p>11	1	19	243	366	107</p></td>
+</tr>
+<tr class="row-even"><td><p>11	2	34	205	190	214</p></td>
+</tr>
+<tr class="row-odd"><td><p>11	3	348	294	300	232</p></td>
+</tr>
+<tr class="row-even"><td><p>11	4	266	39	166	339</p></td>
+</tr>
+<tr class="row-odd"><td><p>11	5	310	286	211	223</p></td>
+</tr>
+<tr class="row-even"><td><p>11	6	76	245	186	211</p></td>
+</tr>
+<tr class="row-odd"><td><p>11	7	51	72	17	299</p></td>
+</tr>
+<tr class="row-even"><td><p>11	8	97	119	260	312</p></td>
+</tr>
+<tr class="row-odd"><td><p>11	9	80	176	237	151</p></td>
+</tr>
+<tr class="row-even"><td><p>11	10	282	63	227	257</p></td>
+</tr>
+<tr class="row-odd"><td><p>11	11	46	123	244	159</p></td>
+</tr>
+<tr class="row-even"><td><p>11	12	66	255	259	66</p></td>
+</tr>
+<tr class="row-odd"><td><p>11	13	126	272	247	124</p></td>
+</tr>
+<tr class="row-even"><td><p>11	14	127	11	316	237</p></td>
+</tr>
+<tr class="row-odd"><td><p>11	15	131	362	318	176</p></td>
+</tr>
+<tr class="row-even"><td><p>11	16	107	197	120	209</p></td>
+</tr>
+<tr class="row-odd"><td><p>11	17	143	6	298	284</p></td>
+</tr>
+<tr class="row-even"><td><p>11	18	146	280	175	160</p></td>
+</tr>
+<tr class="row-odd"><td><p>11	19	203	252	333	270</p></td>
+</tr>
+<tr class="row-even"><td><p>11	20	185	98	125	301</p></td>
+</tr>
+<tr class="row-odd"><td><p>11	21	156	35	330	287</p></td>
+</tr>
+<tr class="row-even"><td><p>11	22	9	253	93	102</p></td>
+</tr>
+<tr class="row-odd"><td><p>11	23	182	193	181	320</p></td>
+</tr>
+<tr class="row-even"><td><p>11	24	230	81	62	180</p></td>
+</tr>
+<tr class="row-odd"><td><p>11	25	132	23	97	25</p></td>
+</tr>
+<tr class="row-even"><td><p>11	26	309	52	209	344</p></td>
+</tr>
+<tr class="row-odd"><td><p>11	27	47	168	240	135</p></td>
+</tr>
+<tr class="row-even"><td><p>11	28	281	324	31	130</p></td>
+</tr>
+<tr class="row-odd"><td><p>11	29	99	100	230	147</p></td>
+</tr>
+<tr class="row-even"><td><p>11	30	174	67	14	134</p></td>
+</tr>
+<tr class="row-odd"><td><p>12	1	129	347	38	170</p></td>
+</tr>
+<tr class="row-even"><td><p>12	2	328	321	99	90</p></td>
+</tr>
+<tr class="row-odd"><td><p>12	3	157	110	40	56</p></td>
+</tr>
+<tr class="row-even"><td><p>12	4	165	305	1	250</p></td>
+</tr>
+<tr class="row-odd"><td><p>12	5	56	27	252	31</p></td>
+</tr>
+<tr class="row-even"><td><p>12	6	10	198	356	336</p></td>
+</tr>
+<tr class="row-odd"><td><p>12	7	12	162	141	267</p></td>
+</tr>
+<tr class="row-even"><td><p>12	8	105	323	65	210</p></td>
+</tr>
+<tr class="row-odd"><td><p>12	9	43	114	27	120</p></td>
+</tr>
+<tr class="row-even"><td><p>12	10	41	204	362	73</p></td>
+</tr>
+<tr class="row-odd"><td><p>12	11	39	73	56	82</p></td>
+</tr>
+<tr class="row-even"><td><p>12	12	314	19	249	85</p></td>
+</tr>
+<tr class="row-odd"><td><p>12	13	163	151	204	335</p></td>
+</tr>
+<tr class="row-even"><td><p>12	14	26	348	275	38</p></td>
+</tr>
+<tr class="row-odd"><td><p>12	15	320	87	3	137</p></td>
+</tr>
+<tr class="row-even"><td><p>12	16	96	41	128	187</p></td>
+</tr>
+<tr class="row-odd"><td><p>12	17	304	315	293	294</p></td>
+</tr>
+<tr class="row-even"><td><p>12	18	128	208	73	13</p></td>
+</tr>
+<tr class="row-odd"><td><p>12	19	240	249	19	168</p></td>
+</tr>
+<tr class="row-even"><td><p>12	20	135	218	221	149</p></td>
+</tr>
+<tr class="row-odd"><td><p>12	21	70	181	341	80</p></td>
+</tr>
+<tr class="row-even"><td><p>12	22	53	194	156	188</p></td>
+</tr>
+<tr class="row-odd"><td><p>12	23	162	219	171	252</p></td>
+</tr>
+<tr class="row-even"><td><p>12	24	95	2	245	155</p></td>
+</tr>
+<tr class="row-odd"><td><p>12	25	84	361	135	6</p></td>
+</tr>
+<tr class="row-even"><td><p>12	26	173	80	361	351</p></td>
+</tr>
+<tr class="row-odd"><td><p>12	27	78	239	290	194</p></td>
+</tr>
+<tr class="row-even"><td><p>12	28	123	128	174	156</p></td>
+</tr>
+<tr class="row-odd"><td><p>12	29	16	145	101	175</p></td>
+</tr>
+<tr class="row-even"><td><p>12	30	3	192	167	281</p></td>
+</tr>
+<tr class="row-odd"><td><p>12	31	100	126	322	164</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Projects</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../notes/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Class Notes</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Grant Moore
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023, Grant Moore.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

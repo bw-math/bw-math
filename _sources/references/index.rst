@@ -8,7 +8,7 @@ References
 
    TEXTBOOKS
    TI84
-   LATEX
+   EXCEL
 
 
 Maintenance
@@ -20,4 +20,5 @@ These are resources I use for maintaining the site. You may safely ignore this s
    :maxdepth: 2
    :caption: Contents:
 
+   LATEX
    SITE
