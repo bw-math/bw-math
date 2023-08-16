@@ -12,3 +12,4 @@ jobs:
       TF_DOCS: false
       NO_CACHE: true
       LATEX: true
+      PYTHON_MATHLIBS: true
