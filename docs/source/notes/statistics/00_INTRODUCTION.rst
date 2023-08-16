@@ -125,7 +125,7 @@ Bias
 
             You are ordered to continue.
 
-        The results were nowhere near as large as in Dr. Milgrim's original experiment.
+        With this slight change, the results were nowhere near as large as in Dr. Milgrim's original experiment.
 
 
 .. _data_classification:

@@ -5,4 +5,4 @@ Projects
    :maxdepth: 2
    :caption: Contents:
 
-   01_GRAPHICAL_ANALYSIS
+   01_BIAS
