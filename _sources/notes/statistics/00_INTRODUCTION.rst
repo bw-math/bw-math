@@ -83,10 +83,9 @@ Bias
 
         A typical example of this kind of bias can be found in cold-calling telephone surveys. Most people are likely to ignore to robo-calls for political polls, and the set of people who do answer the calls are likely not an accurate representation of the entire population. 
 
-        A famous example of this kind of bias is the `1948 Election Between Thomas Dewey and Harry Truman <https://en.wikipedia.org/wiki/Dewey_Defeats_Truman>`. The polling data the Chicago Tribune relied on showed Dewey winning by a huge margin [DEWEY]_
+        A famous example of this kind of bias is the `1948 Election Between Thomas Dewey and Harry Truman <https://en.wikipedia.org/wiki/Dewey_Defeats_Truman>`. The polling data the Chicago Tribune relied on showed Dewey winning by a huge margin [*]_
 
-        .. [DEWEY] The 1948 Presidential Election polls
-            `source <https://www.randomservices.org/random/data/Election1948.html>`_
+        .. [*] The 1948 Presidential Election polls `source <https://www.randomservices.org/random/data/Election1948.html>`_
 
         ========= ======== ====== ===== ======
         Candidate Crossley Gallup Roper Actual
