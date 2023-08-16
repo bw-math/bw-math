@@ -78,7 +78,7 @@ Consider flipping a fair, two-sided coin. The only possible outcomes to this exp
 .. math:: 
     S = \{ h, t \}
 
-Events can be defined as :ref:`subsets` of the sample space. If we let **H** represent the event of a head and if we let **T** represent the event of a tail, then clearly,
+Events can be defined as :ref:`subsets <subset>` of the sample space. If we let **H** represent the event of a head and if we let **T** represent the event of a tail, then clearly,
 
 .. math:: 
     H = \{ h \}
@@ -159,7 +159,7 @@ The dial can land at any point between 0 and the circumference of the clock, :ma
 For this reason and other similar cases, the *classical definition of probability* is not sufficient to completely determine the nature of probability. This leads to the *axiomatization of probability*, which act as additional constraints any model of probability must satisfy in order to be considered a probability. 
 
 .. note::
-    We will see in a subsequent section, when we discuss :ref:`probability distributions <distribution_function>`, that while we cannot calculate the probability of the dial exactly landing on a given number, we can calculate the probability the dial lands within a certain interval (that is to say, a certain `arc length<https://en.wikipedia.org/wiki/Arc_length>`_ of the clock's circumference)
+    We will see in a subsequent section, when we discuss :ref:`probability distributions <distribution_function>`, that while we cannot calculate the probability of the dial exactly landing on a given number, we can calculate the probability the dial lands within a certain interval (that is to say, a certain `arc length <https://en.wikipedia.org/wiki/Arc_length>`_ of the clock's circumference)
 
 Axioms
 ------
@@ -192,7 +192,8 @@ We can use these *axioms*, along with the `theorems of set theory <set_theorems>
 Example
     Find the probability of atleast getting at least one head if you flip a coin 3 three times. 
 
-.. collapse::
+.. collapse:: Solution
+
     TODO
 
 The formal proof of the **Law of Complements** follows from the properties of :ref:`sets <set_theory>`.

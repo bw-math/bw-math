@@ -72,7 +72,7 @@ Example
     .. math::
         n(H) = 3
 
-    The problem can then be expressed in terms of the :ref:`_conditional_probability_formula`,
+    The problem can then be expressed in terms of the :ref:`conditional_probability_formula`,
 
     .. math::
         P(D \mid H) = \frac{P(D \cap H)}{P(H)}
@@ -95,7 +95,7 @@ Example
     .. math::
         P(D \cap H) = \frac{2}{4} = \frac{1}{2}
 
-    The conditional probability of **D** given the occurrence of **H** is then calculated from the previously mentioned :ref:`_conditional_probability_formula`,
+    The conditional probability of **D** given the occurrence of **H** is then calculated from the previously mentioned :ref:`conditional_probability_formula`,
 
     .. math::
         P(D \mid H) = \frac{\frac{1}{2}}{\frac{3}{4}} = \frac{1}{2} \cdot \frac{4}{3} = \frac{2}{3}
