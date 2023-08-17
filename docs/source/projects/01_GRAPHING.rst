@@ -12,13 +12,14 @@ Instructions
 ============
 
 1. Create a folder named `LASTNAME_FIRSTNAME_project_one`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
-2. Download the *csv* dataset below and place it in the new folder you created in step 1.
+2. Download the *csv* dataset :ref:`below <project_one_dataset>` and place it in the new folder you created in step 1.
 3. In the same folder, create a Microsoft Word *docx* document named `project_one.docx`.
 4. In the same folder, create a Python *py* script named `project_one.py`
-5. Read the :ref:`project_two_project` section.
-6. Perform the indicated analysis in the :ref:`project_two_project` section in the *.csv* spreadsheet file. Save all of your results. 
-7. Answer the indicated questions in the :ref:`project_two_project` section in the *.docx* document file.
-8. When you are done, upload both files using the following link: TODO 
+5. Read the :ref:`project_one_project` section.
+6. Perform the indicated analysis in the :ref:`project_one_project` section in the *.csv* spreadsheet file. Save all of your results. 
+7. Answer the indicated questions in the :ref:`project_one_project` section in the *.docx* document file.
+8. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_one.zip`
+9. Upload the zip file here: TODO
    
 .. _project_one_background: 
 
@@ -32,6 +33,8 @@ The `Michelson Velocity of Light Experiment<https://www.gutenberg.org/files/1175
     :align: center
 
 While the theoretical details of the experiment are interesting in their own right (see link above for further detail!), for this lab, we will take the data as given and analyze it from a statistical perspective.
+
+.. _project_one_loading_data:
 
 Loading In Data
 ===============
@@ -62,6 +65,13 @@ The following code snippet will load in a *CSV* spreadsheet, parse it into a lis
     print(column_1)
 
 Use this snippet to load in the provided data in order to finish the project. 
+
+.. _project_one_project:
+
+Project
+=======
+
+.. _project_one_dataset:
 
 Data Set
 ========
