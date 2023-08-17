@@ -1,3 +1,7 @@
+##################################################################################
+###                           IMPORT LIBRARIES                                 ###
+##################################################################################
+
 import matplotlib
 
 ## NOTE: How-To: Run This Script On Your Computer
@@ -8,11 +12,15 @@ import matplotlib
 
 matplotlib.use('agg')
 
-# And uncomment this line:
-#  
+# And uncomment this line: 
+
 # matplotlib.use('tkagg')
 
 import matplotlib.pyplot as plt
+
+##################################################################################
+###                                SCRIPT                                      ###
+##################################################################################
 
 # Create New Figures and Axes
 fig, axs = plt.subplots()
