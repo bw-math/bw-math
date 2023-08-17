@@ -166,6 +166,40 @@ Construction
 
 TODO 
 
+Boxplots
+========
+
+Construction
+------------
+
+Distribution Shapes
+-------------------
+
+Uniform
+*******
+
+.. plot:: assets/plots/boxplots/boxplot_uniform.py
+
+Normal
+******
+
+.. plot:: assets/plots/boxplots/boxplot_normal.py
+
+Bimodal
+*******
+
+.. plot:: assets/plots/boxplots/boxplot_bimodal.py
+
+Skewed
+******
+
+Skewed Right
+    .. plot:: assets/plots/boxplots/boxplot_skewed_right.py
+
+Skewed Left
+    .. plot:: assets/plots/boxplots/boxplot_skewed_left.py
+
+
 Other Types of Graphs
 =====================
 
