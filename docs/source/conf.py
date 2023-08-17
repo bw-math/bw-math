@@ -35,8 +35,8 @@ plot_html_show_source_link = False
 html_theme = "sphinx_book_theme"
 
 html_static_path = [
-    'imgs',
-    'css'
+    'assets/imgs',
+    'assets/css'
 ]
 
 html_css_files = [
