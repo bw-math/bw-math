@@ -5,4 +5,6 @@ Projects
    :maxdepth: 2
    :caption: Contents:
 
-   01_BIAS
+   00_PYTHON
+   01_GRAPHING
+   02_BIAS

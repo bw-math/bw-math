@@ -99,8 +99,8 @@ Bias
 
         While polls will never agree 100% of the time with reality, the error in this case was extreme. The pollsters at the organizations of Crossley, Gallup and Roper were told to survey a certain number of people. Beyond that, they were free to choose who to include in the survey. This led to the data they collected being *biased*, leading to blunders such as,
 
-        .. image:: ../../imgs/context/dewey_defeats_truman.jpg
-            :width: 60%
+        .. image:: ../../assets/imgs/context/dewey_defeats_truman.jpg
+            :width: 100%
             :align: center
 
     Observer Bias
