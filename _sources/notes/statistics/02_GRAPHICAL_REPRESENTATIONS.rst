@@ -109,27 +109,34 @@ A *histogram* is a graphical representation of a :ref:`frequency distribution <f
 Variations
 ----------
 
-TODO 
+A basic *histogram* can be modified to accomodate a variety of scenarios, depending on the specifics of the problem. In each case below, the sample's frequency distribution is used as the basis for constructing the graph.
 
-Bar Chart
-*********
-
-TODO 
+.. _pareto_charts:
 
 Pareto Charts
 *************
 
 TODO 
 
+.. _stem_leaf_plots:
+
 Stem-Leaf Plots
 ***************
 
 TODO 
 
+.. _relative_frequency_distribution:
+
 Relative Frequency Plots
 ************************
 
-TODO 
+*Relative frequency* histograms express the frequency of each class as a *percentage* of the total observations in the sample, 
+
+.. math::
+    f(x_i) = \frac{x_i}{n}
+
+
+.. plot:: assets/plots/histograms/histogram_relative.py
 
 Distribution Shapes
 -------------------
@@ -170,7 +177,7 @@ Ogives
 Construction
 ------------
 
-TODO 
+1. Find the :ref:`relative frequency distributionfrequency_distributions`
 
 .. _boxplots:
 
