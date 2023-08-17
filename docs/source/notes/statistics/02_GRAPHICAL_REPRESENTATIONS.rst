@@ -97,6 +97,8 @@ Steps
 
     6. Sort the data set into classes and tally up the frequency of each class.
 
+.. _histograms:
+
 Histograms
 ==========
 
@@ -156,6 +158,8 @@ Skewed Right
 Skewed Left
     .. plot:: assets/plots/histograms/histogram_skewed_left.py
 
+.. _ogives:
+
 Ogives
 ======
 
@@ -166,12 +170,22 @@ Construction
 
 TODO 
 
+.. _boxplots:
+
 Boxplots
 ========
+
+While :ref:`histograms` and :ref:`ogive` provide a wealth of information about the sample distribution, they do not give us the whole picture. 
 
 Construction
 ------------
 
+1. Find the maximum observation.
+2. Find the 75 :sup:`th` percentile (*third quartile*)
+3. Find the 50 :sup:`th` percentile (*median*)
+4. Find the 25 :sup:`th` percentile (*first quartile*)
+5. Find the minimum observation.
+   
 Distribution Shapes
 -------------------
 

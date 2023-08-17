@@ -24,7 +24,10 @@ import random as rand
 ##################################################################################
 
 # Create New Figures and Axes
-fig, axs = plt.subplots()
+# NOTE: 2 axes are being created!
+    #       1 to graph the histogram
+    #       1 to graph the ogive
+fig, axs = plt.subplots(1, 2)
 
 # Generate Data
 #   NOTE: Range x (Random Number Between 0, 1) + Lower Limit
@@ -44,7 +47,7 @@ plt.suptitle("Histogram and Box Plot of Quiz Scores")
 plt.title(f"n = {len(data)}")
 ## Label Histogram Axes
 axs[0].set_xlabel("Score")
-axs[1].set_ylabel("Frequency")
+axs[0].set_ylabel("Frequency")
 ## Label Boxplot Axes
 axs[1].set_xlabel("Score")
 axs[1].set_ylabel("Observation")
