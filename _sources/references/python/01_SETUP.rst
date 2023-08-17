@@ -9,7 +9,47 @@ Python Setup
 Python Installation
 ===================
 
-(INSERT LINK)
+ChromeOS
+--------
+
+1. Update 0S, if applicable,
+
+(INSERT SCREENSHOT)
+
+2. Enable and install Linux subsystem,
+
+(INSERT SCREENSHOT)
+
+3. Open command line terminal and verify installation,
+
+(INSERT SCREENSHOT)
+
+.. note:: 
+    Pin the Linux terminal to your dock for quick access.
+
+    (INSERT SCREENSHOT)
+
+4. Install **Python** graphics library,
+ 
+The following command is required to install PNG and JPEG rendering engines on your ChromeBook,
+
+    sudo apt-get install python3-tk
+
+(INSERT SCREENSHOT)
+
+5. Install the **Python** package manager,
+
+The following command is required to install the **Python** package manager,
+
+    sudo apt-get install python3-pip
+
+6. Install the **Python** editor,
+
+The following command is required to the **Python** editor, **IDLE**,
+
+    sudo apt-get install idle3
+
+Congratulation, you are now setup to run **Python** scripts on your ChromeBook.
 
 Interpretter
 ============
