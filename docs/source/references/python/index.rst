@@ -21,3 +21,4 @@ Furthermore, all of the plots across the pages of this website were generated wi
    03_SETS
    04_FUNCTIONS
    05_PLOTS
+   06_FILES
