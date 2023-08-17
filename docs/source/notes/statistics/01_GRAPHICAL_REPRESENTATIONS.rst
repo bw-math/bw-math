@@ -128,39 +128,38 @@ Relative Frequency Plots
 TODO 
 
 Distribution Shapes
-===================
+-------------------
 
 TODO 
 
 Uniform
--------
+*******
 
-TODO 
+.. plot:: assets/plots/histograms/histogram_uniform.py
 
 Normal
-------
+******
 
-TODO 
+.. plot:: assets/plots/histograms/histogram_normal.py
 
 Bimodal
--------
+*******
 
-TODO 
+.. plot:: assets/plots/histograms/histogram_bimodal.py
 
 Skewed
-------
+******
 
-TODO 
+Skewed Right
+    .. plot:: assets/plots/histograms/histogram_skewed_right.py
 
-Fat-tailed
-----------
-
-TODO 
+Skewed Left
+    .. plot:: assets/plots/histograms/histogram_skewed_left.py
 
 Ogives
 ======
 
-TODO 
+.. plot:: assets/plots/histograms/histogram_and_ogive.py
 
 Construction
 ------------

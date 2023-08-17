@@ -37,7 +37,7 @@ To exit the *interpretter*, use,
 Packages
 ========
 
-By default, Python comes installed with the `Standard Library <>`_. The **Standard Library** is a collection of common functions and utilities. For instance, the `math` library is part of the **Standard Library**. `math` contains functions for computing trigonemtric ratios, generating random numbers, calculating powers and roots, etc. You can use `math` functions by first `import`-ing the library and accessing its content with *dot notation*. Start an interpretter session and type,
+By default, Python comes installed with the `Standard Library <https://docs.python.org/3/library/index.html>`_. The **Standard Library** is a collection of common functions and utilities. For instance, the `math` library is part of the **Standard Library**. `math` contains functions for computing trigonemtric ratios, generating random numbers, calculating powers and roots, etc. You can use `math` functions by first `import`-ing the library and accessing its content with *dot notation*. Start an interpretter session and type,
 
     > import math
     > answer = math.factorial(20)
@@ -47,7 +47,7 @@ This sequence of commands imports the `math` library, calls the factorial functi
 
 `math` has plenty of functions that will be useful in this class, but it doesn't have *everything* we need. Luckily, **Python** ships with a *package manager* that allows you to install third-party libraries.
 
-We will need to install two additional packages for this class. `matplotlib <>`_ will be used to generate graphical representations of data. `tkinter <>`_ will be used to render the output of `matplotlib <>`_ into JPEG and PNG images. These packages can be installed through the command line (*not* the **Python** interpretter),
+We will need to install two additional packages for this class. `matplotlib <https://matplotlib.org/>`_ will be used to generate graphical representations of data. `tkinter <https://docs.python.org/3/library/tkinter.html>`_ will be used to render the output of `matplotlib <https://matplotlib.org/>`_ into JPEG and PNG images. These packages can be installed through the command line (*not* the **Python** interpretter),
 
     pip install matplotlib tk
 
@@ -56,4 +56,4 @@ See the :ref:`matplotlib` section to learn more about using *matplotlib* to gene
 IDLE
 ====
 
-**Python** ships with a program named *IDLE*. `IDLE <>`_ stands for *Integrated Development and Learning Environment*. 
+**Python** ships with a program named *IDLE*. `IDLE <https://docs.python.org/3/library/idle.html>`_ stands for *Integrated Development and Learning Environment*. 

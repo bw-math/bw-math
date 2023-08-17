@@ -66,6 +66,13 @@ Sets
 
     TODO
 
+.. _cardinality:
+
+Cardinality
+    :math:`n(A)`
+
+    The number of elements in a set.
+
 .. _universal_set:
 
 Universal Set 
@@ -136,6 +143,27 @@ Proper Subset
 
     This is an equivalent formulation between saying the cardinality of **A** is less than the cardinality of **B** is logically equivalent to saying **A** is no the same as **B**.
 
+.. _set_operations:
+
+Operations
+==========
+
+.. _complement:
+
+Complement
+    :math:`A^c`
+
+    :math:`~ A`
+
+.. _union:
+
+Union
+    :math:`A \cup B`
+
+.. _intersection:
+
+Intersection
+    :math: `A \cap B`
 
 .. _set_theorems:
 

@@ -27,7 +27,7 @@ templates_path = [
 
 exclude_patterns = []
 
-plot_html_show_source_link = False 
+plot_html_show_source_link = True
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

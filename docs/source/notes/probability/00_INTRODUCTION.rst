@@ -90,7 +90,7 @@ Be careful not to confuse the outcome *h* with the event **H**, and likewise the
 
 Consider now flipping the same fair, two-sided coin twice. A :ref:`tree diagram <tree_diagrams>` can help visualize the sample space for this experiment,
 
-.. image:: ../../imgs/sample_space_coin_flip.png
+.. image:: ../../assets/imgs/sample_space_coin_flip.png
     :width: 60%
     :align: center
 
@@ -183,7 +183,7 @@ We can use these *axioms*, along with the `theorems of set theory <set_theorems>
 **The Law of Complements** :math:`P(A) + P(A^C) = 1` 
     This corollary should be intuitively obvious, considering the Venn Diagramm of complementary sets,
 
-        .. image:: ../../imgs/sets_complement.jpg
+        .. image:: ../../assets/imgs/sets_complement.jpg
             :width: 60%
             :align: center
 
