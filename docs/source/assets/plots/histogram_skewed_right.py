@@ -1,7 +1,7 @@
 import matplotlib
 
-matplotlib.use('agg')
-# matplotlib.use('tkagg')
+# matplotlib.use('agg')
+matplotlib.use('tkagg')
 
 import matplotlib.pyplot as plt
 from matplotlib.ticker import PercentFormatter
