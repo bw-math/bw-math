@@ -102,7 +102,9 @@ Steps
 Histograms
 ==========
 
-TODO 
+A *histogram* is a graphical representation of a :ref:`frequency distribution <frequency_distributions>`. The *classes* or *bins* are plotted on the *x-axis* against the frequency of each *class* on the *y-axis*.
+
+.. plot:: assets/plots/histograms/histogram_random.py
 
 Variations
 ----------
