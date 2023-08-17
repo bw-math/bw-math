@@ -129,6 +129,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../SPLASH.html">AP Statistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../SCHEDULES.html">Homework</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../projects/index.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/00_PYTHON.html">Learning Python</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../projects/01_BIAS.html">Statistical Bias</a></li>
 </ul>
 </li>
@@ -176,6 +177,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../../references/TEXTBOOKS.html">Textbooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../references/TI84.html">TI-84</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../references/EXCEL.html">Excel</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../references/python/index.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/01_SETUP.html">Python Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/02_BASIC.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/03_SETS.html">Sets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/04_FUNCTIONS.html">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/05_PLOTS.html">Plots</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../references/LATEX.html">LaTex Reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../references/SITE.html">Maintence</a></li>
 </ul>
@@ -424,7 +433,7 @@ document.write(`
 <p><img src="../../_images/math/273039c3f5f5fcd47277c9156ab52565b713fe3c.png" alt="T = \{ t \}"/></p>
 </div><p>Be careful not to confuse the outcome <em>h</em> with the event <strong>H</strong>, and likewise the outcome <em>t</em> with the event <strong>T</strong>. They have different, but related, meanings. The outcomes <em>h</em> and <em>t</em> are individual observables; they are physically measured by flipping a coin and observing on which side it lands. An event, on the other hand, is a <a class="reference internal" href="../SET_THEORY.html#sets"><span class="std std-ref">set</span></a>, and <em>sets</em> are abstract collections of individual. In this case, the sets are <em>singletons</em>, i.e. the sets <strong>H</strong> and <strong>T</strong> only contain one element each, which can lead to confusion. Let us extend this example further, to put a finer point on this subtlety.</p>
 <p>Consider now flipping the same fair, two-sided coin twice. A <a class="reference internal" href="01_COMBINATORICS.html#tree-diagrams"><span class="std std-ref">tree diagram</span></a> can help visualize the sample space for this experiment,</p>
-<a class="reference internal image-reference" href="imgs/sample_space_coin_flip.png"><img alt="imgs/sample_space_coin_flip.png" class="align-center" src="imgs/sample_space_coin_flip.png" style="width: 60%;" /></a>
+<a class="reference internal image-reference" href="../../_images/sample_space_coin_flip.png"><img alt="../../_images/sample_space_coin_flip.png" class="align-center" src="../../_images/sample_space_coin_flip.png" style="width: 60%;" /></a>
 <p>The outcomes of the sample space are found by tracing each possible path of the <a class="reference internal" href="01_COMBINATORICS.html#tree-diagrams"><span class="std std-ref">tree diagram</span></a> and then collecting them into a set,</p>
 <div class="math">
 <p><img src="../../_images/math/993583dab40286afb32b98c177bd667c879cace1.png" alt="S = \{ hh, ht, th, tt \}"/></p>
@@ -486,7 +495,7 @@ document.write(`
 <dl id="law-of-complements">
 <dt><strong>The Law of Complements</strong> <img class="math" src="../../_images/math/3f3e023d0a6002d8a156ab9b9f082a0c0ba56be6.png" alt="P(A) + P(A^C) = 1"/></dt><dd><p>This corollary should be intuitively obvious, considering the Venn Diagramm of complementary sets,</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="imgs/sets_complement.jpg"><img alt="imgs/sets_complement.jpg" class="align-center" src="imgs/sets_complement.jpg" style="width: 60%;" /></a>
+<div><a class="reference internal image-reference" href="../../_images/sets_complement.jpg"><img alt="../../_images/sets_complement.jpg" class="align-center" src="../../_images/sets_complement.jpg" style="width: 60%;" /></a>
 </div></blockquote>
 <p>If the entire rectangle encompassing set <strong>A</strong> in the above diagram is identified as the sample space <strong>S</strong>, then the theorem follows immediately from Axiom 2, namely, <img class="math" src="../../_images/math/7e54cdab4f141cf48960cbaee92eccf6a3748b43.png" alt="P(S)=1"/>.</p>
 </dd>

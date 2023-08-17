@@ -129,6 +129,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../SPLASH.html">AP Statistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../SCHEDULES.html">Homework</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../projects/index.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../projects/00_PYTHON.html">Learning Python</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../projects/01_BIAS.html">Statistical Bias</a></li>
 </ul>
 </li>
@@ -176,6 +177,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../references/TEXTBOOKS.html">Textbooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../references/TI84.html">TI-84</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../references/EXCEL.html">Excel</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../references/python/index.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../references/python/01_SETUP.html">Python Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../references/python/02_BASIC.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../references/python/03_SETS.html">Sets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../references/python/04_FUNCTIONS.html">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../references/python/05_PLOTS.html">Plots</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../references/LATEX.html">LaTex Reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../references/SITE.html">Maintence</a></li>
 </ul>
@@ -334,6 +343,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">Notation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations">Relations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operations">Operations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a></li>
 </ul>
             </nav>
@@ -401,6 +411,11 @@ document.write(`
 <p>TODO</p>
 </dd>
 </dl>
+<dl id="cardinality">
+<dt>Cardinality</dt><dd><p><img class="math" src="../_images/math/534ec862789190f4e1c0ee776c13e4f478f5e83f.png" alt="n(A)"/></p>
+<p>The number of elements in a set.</p>
+</dd>
+</dl>
 <dl id="universal-set">
 <dt>Universal Set</dt><dd><p><img class="math" src="../_images/math/23298f92ca8dc2a1ce6332eb7a21d5f2e9ae0bd8.png" alt="S"/></p>
 <p>The universal set <em>S</em> is set of all elements in the <em>domain of discourse</em>.</p>
@@ -453,6 +468,26 @@ document.write(`
 <div class="math">
 <p><img src="../_images/math/568c0ba417503a1fbfba15f4011dfe92042e7810.png" alt="x \in A \implies x \in B \land n(A) &lt; n(B)"/></p>
 </div><p>This is an equivalent formulation between saying the cardinality of <strong>A</strong> is less than the cardinality of <strong>B</strong> is logically equivalent to saying <strong>A</strong> is no the same as <strong>B</strong>.</p>
+</dd>
+</dl>
+</section>
+<section id="operations">
+<span id="set-operations"></span><h2>Operations<a class="headerlink" href="#operations" title="Permalink to this headline">#</a></h2>
+<dl id="complement">
+<dt>Complement</dt><dd><p><img class="math" src="../_images/math/2ef75eec66003e588055d751eaddd391b6eccea0.png" alt="A^c"/></p>
+<p><img class="math" src="../_images/math/60fd91f97e0457b7df7ec875aee05de90775cbca.png" alt="~ A"/></p>
+</dd>
+</dl>
+<dl class="simple" id="union">
+<dt>Union</dt><dd><p><img class="math" src="../_images/math/47b7d7c58a0d8fba34b3e6c9b40a295769c86482.png" alt="A \cup B"/></p>
+</dd>
+</dl>
+<dl class="simple" id="intersection">
+<dt>Intersection</dt><dd><dl class="field-list simple">
+<dt class="field-odd">math</dt>
+<dd class="field-odd"><p><cite>A cap B</cite></p>
+</dd>
+</dl>
 </dd>
 </dl>
 </section>
@@ -518,6 +553,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">Notation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations">Relations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operations">Operations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a></li>
 </ul>
   </nav></div>

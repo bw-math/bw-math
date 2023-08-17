@@ -18,7 +18,7 @@ Consider a pop-quiz made up of two questions administered to a population of a 1
 +-----+-------+
 
 
-.. plot:: plots/histogram_skewed_right.py
+.. plot:: assets/plots/sampling_distribution/population_histogram.py
     :align: center
 
 It is important to keep in mind the meaning of this table. The right hand column represents the probability of selecting an individual with the left hand column number of answers correct. In other words, the probability a single randomly selected individual from the population got 0 answers correct is *0.20*, or *20%*. Similarly, the probability a single randomly selected individual from the population got 1 answer correct is *0.40*, or *40%*. Finally, the probability a single randomly selected individual from the population got both answers correct is again *0.40*, or *40%*. 

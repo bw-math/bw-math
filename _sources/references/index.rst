@@ -9,6 +9,8 @@ References
    TEXTBOOKS
    TI84
    EXCEL
+   python/index
+
 
 
 Maintenance

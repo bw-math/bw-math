@@ -129,6 +129,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../SPLASH.html">AP Statistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../SCHEDULES.html">Homework</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../projects/index.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/00_PYTHON.html">Learning Python</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../projects/01_BIAS.html">Statistical Bias</a></li>
 </ul>
 </li>
@@ -176,6 +177,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../../references/TEXTBOOKS.html">Textbooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../references/TI84.html">TI-84</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../references/EXCEL.html">Excel</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../references/python/index.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/01_SETUP.html">Python Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/02_BASIC.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/03_SETS.html">Sets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/04_FUNCTIONS.html">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/05_PLOTS.html">Plots</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../references/LATEX.html">LaTex Reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../references/SITE.html">Maintence</a></li>
 </ul>
@@ -366,6 +375,10 @@ document.write(`
 </tr>
 </tbody>
 </table>
+<p>(<a class="reference download internal" download="" href="../../_downloads/37ac89e90cd2cb1b18beb03abeff7f1a/population_histogram.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/847c2dca4efe82f765320ace201dc373/population_histogram.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f2976c6000f936edb79fefc13d00f53e/population_histogram.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/75800de1e9f609ef69c919939bea4e10/population_histogram.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-center">
+<img alt="../../_images/population_histogram.png" class="plot-directive" src="../../_images/population_histogram.png" />
+</figure>
 <p>It is important to keep in mind the meaning of this table. The right hand column represents the probability of selecting an individual with the left hand column number of answers correct. In other words, the probability a single randomly selected individual from the population got 0 answers correct is <em>0.20</em>, or <em>20%</em>. Similarly, the probability a single randomly selected individual from the population got 1 answer correct is <em>0.40</em>, or <em>40%</em>. Finally, the probability a single randomly selected individual from the population got both answers correct is again <em>0.40</em>, or <em>40%</em>.</p>
 <p>Since we are assuming we know the population distribution, we can see how sampling the population affects the value and distribution of the sample mean. This will provide insight into the more likely scenario of <em>not</em> knowing anything about the population and only having information about the sample. In other words, in what follows, the population distribution will be assumed to see what this implies about the sample mean. Then, the conclusions regarding the sample mean will be applied to scenarios where the population distribution is <em>unknown</em>.</p>
 <p>Suppose a random sample of 2 students are drawn from this population <em>with replacement</em>. Recall “<em>with replacement</em>” means the same student may be observed more than once, since every student is put back into the population for subsequenct selections.</p>
