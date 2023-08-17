@@ -7,18 +7,20 @@ In this lab, you will perform some graphical analysis on a famously biased data 
 Instructions
 ============
 
-1. Download the dataset spreadsheet below and 
-2. Create a Microsoft Word document and name it `LASTNAME_FIRSTNAME_YYYYMMDD_Project_1.docx`, replacing `LASTNAME`, `FIRSTNAME` and `YYYYMMDD` with your last name, first name and the date, respectively.
-3. Read the :ref:`project_two_background` section.
-4. Read the :ref:`project_two_project` section.
-5. Perform the indicated analysis in the :ref:`project_two_project` section in the *.csv* spreadsheet file. Save all of your results. 
-6. Answer the indicated questions in the :ref:`project_two_project` section in the *.docx* document file.
-7. When you are done, upload both files using the following link: TODO 
-   
-.. _project_two_example:
+1. Create a folder named `LASTNAME_FIRSTNAME_project_two`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
+2. Download the *csv* dataset `below <project_two_dataset>`_ and place it in the new folder you created in step 1.
+3. In the same folder, create a Microsoft Word *docx* document named `project_two.docx`.
+4. In the same folder, create a Python *py* script named `project_two.py`
+5. Read the :ref:`project_two_project` section.
+6. Perform the indicated analysis in the :ref:`project_two_project` section in the *.csv* spreadsheet file. Save all of your results. 
+7. Answer the indicated questions in the :ref:`project_two_project` section in the *.docx* document file.
+8. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_two.zip`
+9. Upload the zip file here: TODO
 
-Example 
-=======
+.. _project_two_loading_data:
+
+Loading In Data
+===============
 
 TODO
 
@@ -51,18 +53,21 @@ Project
 =======
 
 1. Discuss the following questions
-   - Is the selection method used for the draft random? Why or why not?
-   - If the selection method used for the draft were truly random, what shape would you expect a frequency distribution of the sample to have? 
-   - Given the information provided on the selection method, what shape do you expect a frequency distribution of the sample to have?
-   - What are some possible sources of bias in the draft lottery? List the cases and identify the *type* of bias in each case.
+   
+    - Is the selection method used for the draft random? Why or why not?
+    - If the selection method used for the draft were truly random, what shape would you expect a frequency distribution of the sample to have? 
+    - Given the information provided on the selection method, what shape do you expect a frequency distribution of the sample to have?
+    - What are some possible sources of bias in the draft lottery? List the cases and identify the *type* of bias in each case.
+
 2. Using the birth month of the drafted individual as the bins, construct histograms for the years 1969, 1970, 1971, 1972. Include **both** the frequency distributions and the histograms in your report. 
+
 3. Based on the histograms constructed, describe the shape of the distribution for each year's draft lottery. 
    - Are the graphs skewed, uniform, normal or bimodal?
-   - What is the mode of the birth month for each year?
+   - What is the mode of the birth month for each year? 
    - What can we conclude about the relative likelihood of a male with a birthday in January being drafted versus a male with a birthday in December being drafted?
    - Discuss the results and how the draft lottery could have been improved. 
 
-.. _project_two_data:
+.. _project_two_dataset:
 
 Data Set
 ========
@@ -72,7 +77,7 @@ You can download the full dataset :download:`here <../assets/datasets/vietnam_dr
 The following table is the a preview of the data you will be using for this project. 
 
 .. csv-table:: Vietnam Draft Lottery Data
-   :file: ../datasets/previews/vietnam_draft_data_preview.csv
+   :file: ../assets/datasets/previews/vietnam_draft_data_preview.csv
 
 The meaning of the columns is as follows.
 
@@ -85,3 +90,21 @@ The meaning of the columns is as follows.
     D = 1, 2, 3, ... , 30, 31 
 
 And *N69*, *N70*, *N71* and *N72* represent the number of individuals selected with a given birth date in the years 1969, 1970, 1971 and 1972, respectively.
+
+Cleaning the Data Set
+---------------------
+
+The dataset is broken down by day. Each entry corresponds to a particular birthdate, month and year. The lab is asking to group the data into monthly classes, so the frequency distribution can be visualized with a histogram grouped by month. Therefore, the data will need grouped and totaled by month before generating a histogram. 
+
+The following code snippet will:
+    1.  create a list, named ``data_1969``, of twelve *0*'s, ``[0, 0, 0, ... , 0, 0]``, one for each month,.
+    2.  step through ``column_1`` along with the *row number*
+    3.  grab the corresponding entry of the third column, ``column_3[row_number]``
+    4.  add the value of the third column to the corresponding entry in ``data_1969``
+
+.. code:: python 
+
+    data_1969 = [ 0 ] * 12
+
+    for row_number, entry in enumerate(column_1):
+        data_1969[int(entry) - 1] += column_3[row_number]

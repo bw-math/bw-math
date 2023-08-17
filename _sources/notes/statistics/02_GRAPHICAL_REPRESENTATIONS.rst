@@ -111,12 +111,14 @@ Variations
 
 A basic *histogram* can be modified to accomodate a variety of scenarios, depending on the specifics of the problem. In each case below, the sample's frequency distribution is used as the basis for constructing the graph.
 
-.. _pareto_charts:
+.. _bar_charts:
 
-Pareto Charts
-*************
+Bar Charts
+**********
 
-TODO 
+Sometimes the frequency distribution has already been calculated for us. In cases like this, a simple bar chart is all that is required.
+
+.. plot:: assets/plots/other/bar_chart.py
 
 .. _stem_leaf_plots:
 

@@ -338,13 +338,16 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method-of-observation">Method of Observation</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning-the-data-set">Cleaning the Data Set</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -362,17 +365,19 @@ document.write(`
 <section id="instructions">
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><p>Download the dataset spreadsheet below and</p></li>
-<li><p>Create a Microsoft Word document and name it <cite>LASTNAME_FIRSTNAME_YYYYMMDD_Project_1.docx</cite>, replacing <cite>LASTNAME</cite>, <cite>FIRSTNAME</cite> and <cite>YYYYMMDD</cite> with your last name, first name and the date, respectively.</p></li>
-<li><p>Read the <a class="reference internal" href="#project-two-background"><span class="std std-ref">Background</span></a> section.</p></li>
+<li><p>Create a folder named <cite>LASTNAME_FIRSTNAME_project_two</cite>, replacing <cite>LASTNAME</cite> and <cite>FIRSTNAME</cite> with your last name and first name, respectively.</p></li>
+<li><p>Download the <em>csv</em> dataset <a class="reference external" href="project_two_dataset">below</a> and place it in the new folder you created in step 1.</p></li>
+<li><p>In the same folder, create a Microsoft Word <em>docx</em> document named <cite>project_two.docx</cite>.</p></li>
+<li><p>In the same folder, create a Python <em>py</em> script named <cite>project_two.py</cite></p></li>
 <li><p>Read the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section.</p></li>
 <li><p>Perform the indicated analysis in the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section in the <em>.csv</em> spreadsheet file. Save all of your results.</p></li>
 <li><p>Answer the indicated questions in the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section in the <em>.docx</em> document file.</p></li>
-<li><p>When you are done, upload both files using the following link: TODO</p></li>
+<li><p>When you are done, zip your folder and all its contents in a file named <cite>LASTNAME_FIRSTNAME_project_two.zip</cite></p></li>
+<li><p>Upload the zip file here: TODO</p></li>
 </ol>
 </section>
-<section id="example">
-<span id="project-two-example"></span><h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">#</a></h2>
+<section id="loading-in-data">
+<span id="project-two-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
 <p>TODO</p>
 </section>
 <section id="background">
@@ -397,12 +402,17 @@ document.write(`
 </section>
 <section id="project">
 <span id="project-two-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
-<ol class="arabic simple">
-<li><p>Discuss the following questions
-- Is the selection method used for the draft random? Why or why not?
-- If the selection method used for the draft were truly random, what shape would you expect a frequency distribution of the sample to have?
-- Given the information provided on the selection method, what shape do you expect a frequency distribution of the sample to have?
-- What are some possible sources of bias in the draft lottery? List the cases and identify the <em>type</em> of bias in each case.</p></li>
+<ol class="arabic">
+<li><p>Discuss the following questions</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Is the selection method used for the draft random? Why or why not?</p></li>
+<li><p>If the selection method used for the draft were truly random, what shape would you expect a frequency distribution of the sample to have?</p></li>
+<li><p>Given the information provided on the selection method, what shape do you expect a frequency distribution of the sample to have?</p></li>
+<li><p>What are some possible sources of bias in the draft lottery? List the cases and identify the <em>type</em> of bias in each case.</p></li>
+</ul>
+</div></blockquote>
+</li>
 <li><p>Using the birth month of the drafted individual as the bins, construct histograms for the years 1969, 1970, 1971, 1972. Include <strong>both</strong> the frequency distributions and the histograms in your report.</p></li>
 <li><p>Based on the histograms constructed, describe the shape of the distribution for each year’s draft lottery.
 - Are the graphs skewed, uniform, normal or bimodal?
@@ -412,9 +422,323 @@ document.write(`
 </ol>
 </section>
 <section id="data-set">
-<span id="project-two-data"></span><h2>Data Set<a class="headerlink" href="#data-set" title="Permalink to this headline">#</a></h2>
+<span id="project-two-dataset"></span><h2>Data Set<a class="headerlink" href="#data-set" title="Permalink to this headline">#</a></h2>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../_downloads/257993626c7a7bafe318b70290252148/vietnam_draft_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
+<table class="table" id="id3">
+<caption><span class="caption-text">Vietnam Draft Lottery Data</span><a class="headerlink" href="#id3" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>M</p></td>
+<td><p>D</p></td>
+<td><p>N69</p></td>
+<td><p>N70</p></td>
+<td><p>N71</p></td>
+<td><p>N72</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>305</p></td>
+<td><p>133</p></td>
+<td><p>207</p></td>
+<td><p>150</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>159</p></td>
+<td><p>195</p></td>
+<td><p>225</p></td>
+<td><p>328</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>3</p></td>
+<td><p>251</p></td>
+<td><p>336</p></td>
+<td><p>246</p></td>
+<td><p>42</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>4</p></td>
+<td><p>215</p></td>
+<td><p>99</p></td>
+<td><p>264</p></td>
+<td><p>28</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>5</p></td>
+<td><p>101</p></td>
+<td><p>33</p></td>
+<td><p>265</p></td>
+<td><p>338</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>6</p></td>
+<td><p>224</p></td>
+<td><p>285</p></td>
+<td><p>242</p></td>
+<td><p>36</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>7</p></td>
+<td><p>306</p></td>
+<td><p>159</p></td>
+<td><p>292</p></td>
+<td><p>111</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>8</p></td>
+<td><p>199</p></td>
+<td><p>116</p></td>
+<td><p>287</p></td>
+<td><p>206</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>9</p></td>
+<td><p>194</p></td>
+<td><p>53</p></td>
+<td><p>338</p></td>
+<td><p>197</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>10</p></td>
+<td><p>325</p></td>
+<td><p>101</p></td>
+<td><p>231</p></td>
+<td><p>37</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>11</p></td>
+<td><p>329</p></td>
+<td><p>144</p></td>
+<td><p>90</p></td>
+<td><p>174</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>12</p></td>
+<td><p>221</p></td>
+<td><p>152</p></td>
+<td><p>228</p></td>
+<td><p>126</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>13</p></td>
+<td><p>318</p></td>
+<td><p>330</p></td>
+<td><p>183</p></td>
+<td><p>298</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>14</p></td>
+<td><p>238</p></td>
+<td><p>71</p></td>
+<td><p>285</p></td>
+<td><p>341</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>15</p></td>
+<td><p>17</p></td>
+<td><p>75</p></td>
+<td><p>325</p></td>
+<td><p>221</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>16</p></td>
+<td><p>121</p></td>
+<td><p>136</p></td>
+<td><p>74</p></td>
+<td><p>309</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>1</p></td>
+<td><p>19</p></td>
+<td><p>243</p></td>
+<td><p>366</p></td>
+<td><p>107</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>2</p></td>
+<td><p>34</p></td>
+<td><p>205</p></td>
+<td><p>190</p></td>
+<td><p>214</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>3</p></td>
+<td><p>348</p></td>
+<td><p>294</p></td>
+<td><p>300</p></td>
+<td><p>232</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>4</p></td>
+<td><p>266</p></td>
+<td><p>39</p></td>
+<td><p>166</p></td>
+<td><p>339</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>5</p></td>
+<td><p>310</p></td>
+<td><p>286</p></td>
+<td><p>211</p></td>
+<td><p>223</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>6</p></td>
+<td><p>76</p></td>
+<td><p>245</p></td>
+<td><p>186</p></td>
+<td><p>211</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>7</p></td>
+<td><p>51</p></td>
+<td><p>72</p></td>
+<td><p>17</p></td>
+<td><p>299</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>8</p></td>
+<td><p>97</p></td>
+<td><p>119</p></td>
+<td><p>260</p></td>
+<td><p>312</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>9</p></td>
+<td><p>80</p></td>
+<td><p>176</p></td>
+<td><p>237</p></td>
+<td><p>151</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>10</p></td>
+<td><p>282</p></td>
+<td><p>63</p></td>
+<td><p>227</p></td>
+<td><p>257</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>11</p></td>
+<td><p>46</p></td>
+<td><p>123</p></td>
+<td><p>244</p></td>
+<td><p>159</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>12</p></td>
+<td><p>66</p></td>
+<td><p>255</p></td>
+<td><p>259</p></td>
+<td><p>66</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>13</p></td>
+<td><p>126</p></td>
+<td><p>272</p></td>
+<td><p>247</p></td>
+<td><p>124</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>14</p></td>
+<td><p>127</p></td>
+<td><p>11</p></td>
+<td><p>316</p></td>
+<td><p>237</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>15</p></td>
+<td><p>131</p></td>
+<td><p>362</p></td>
+<td><p>318</p></td>
+<td><p>176</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>16</p></td>
+<td><p>107</p></td>
+<td><p>197</p></td>
+<td><p>120</p></td>
+<td><p>209</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>17</p></td>
+<td><p>143</p></td>
+<td><p>6</p></td>
+<td><p>298</p></td>
+<td><p>284</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>18</p></td>
+<td><p>146</p></td>
+<td><p>280</p></td>
+<td><p>175</p></td>
+<td><p>160</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>19</p></td>
+<td><p>203</p></td>
+<td><p>252</p></td>
+<td><p>333</p></td>
+<td><p>270</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>20</p></td>
+<td><p>185</p></td>
+<td><p>98</p></td>
+<td><p>125</p></td>
+<td><p>301</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>21</p></td>
+<td><p>156</p></td>
+<td><p>35</p></td>
+<td><p>330</p></td>
+<td><p>287</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>22</p></td>
+<td><p>9</p></td>
+<td><p>253</p></td>
+<td><p>93</p></td>
+<td><p>102</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>23</p></td>
+<td><p>182</p></td>
+<td><p>193</p></td>
+<td><p>181</p></td>
+<td><p>320</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>24</p></td>
+<td><p>230</p></td>
+<td><p>81</p></td>
+<td><p>62</p></td>
+<td><p>180</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>25</p></td>
+<td><p>132</p></td>
+<td><p>23</p></td>
+<td><p>97</p></td>
+<td><p>25</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>26</p></td>
+<td><p>309</p></td>
+<td><p>52</p></td>
+<td><p>209</p></td>
+<td><p>344</p></td>
+</tr>
+</tbody>
+</table>
 <p>The meaning of the columns is as follows.</p>
 <p><em>M</em> represents the birth month of the draftee,</p>
 <blockquote>
@@ -425,6 +749,25 @@ document.write(`
 <div><p>D = 1, 2, 3, … , 30, 31</p>
 </div></blockquote>
 <p>And <em>N69</em>, <em>N70</em>, <em>N71</em> and <em>N72</em> represent the number of individuals selected with a given birth date in the years 1969, 1970, 1971 and 1972, respectively.</p>
+<section id="cleaning-the-data-set">
+<h3>Cleaning the Data Set<a class="headerlink" href="#cleaning-the-data-set" title="Permalink to this headline">#</a></h3>
+<p>The dataset is broken down by day. Each entry corresponds to a particular birthdate, month and year. The lab is asking to group the data into monthly classes, so the frequency distribution can be visualized with a histogram grouped by month. Therefore, the data will need grouped and totaled by month before generating a histogram.</p>
+<dl class="simple">
+<dt>The following code snippet will:</dt><dd><ol class="arabic simple">
+<li><p>create a list, named <code class="docutils literal notranslate"><span class="pre">data_1969</span></code>, of twelve <em>0</em>’s, <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">...</span> <span class="pre">,</span> <span class="pre">0,</span> <span class="pre">0]</span></code>, one for each month,.</p></li>
+<li><p>step through <code class="docutils literal notranslate"><span class="pre">column_1</span></code> along with the <em>row number</em></p></li>
+<li><p>grab the corresponding entry of the third column, <code class="docutils literal notranslate"><span class="pre">column_3[row_number]</span></code></p></li>
+<li><p>add the value of the third column to the corresponding entry in <code class="docutils literal notranslate"><span class="pre">data_1969</span></code></p></li>
+</ol>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data_1969</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">0</span> <span class="p">]</span> <span class="o">*</span> <span class="mi">12</span>
+
+<span class="k">for</span> <span class="n">row_number</span><span class="p">,</span> <span class="n">entry</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">column_1</span><span class="p">):</span>
+    <span class="n">data_1969</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="n">column_3</span><span class="p">[</span><span class="n">row_number</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
 </section>
 </section>
 
@@ -477,13 +820,16 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method-of-observation">Method of Observation</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning-the-data-set">Cleaning the Data Set</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
