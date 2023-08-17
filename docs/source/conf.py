@@ -18,8 +18,7 @@ extensions = [
     'sphinx.ext.githubpages',
     'sphinx.ext.imgmath',
     'sphinx_toolbox.collapse',
-    'matplotlib.sphinxext.plot_directive',
-    'sphinxjp.shibukawa'
+    'matplotlib.sphinxext.plot_directive'
 ]
 
 templates_path = [

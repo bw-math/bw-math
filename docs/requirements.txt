@@ -1,6 +1,5 @@
 sphinx==4.3.0
 sphinx-toolbox==3.5.0
 sphinx-book-theme==1.0.1
-sphinxjp.shibukawa==0.1.6
 myst-parser==0.15.2
 matplotlib==3.7.2
