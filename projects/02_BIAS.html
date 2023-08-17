@@ -47,7 +47,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Class Notes" href="../notes/index.html" />
-    <link rel="prev" title="Learning Python" href="01_GRAPHING.html" />
+    <link rel="prev" title="Statistical Plots" href="01_GRAPHING.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -130,7 +130,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../SCHEDULES.html">Homework</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Projects</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="00_PYTHON.html">Learning Python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="01_GRAPHING.html">Learning Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_GRAPHING.html">Statistical Plots</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Statistical Bias</a></li>
 </ul>
 </li>
@@ -184,6 +184,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../references/python/03_SETS.html">Sets</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../references/python/04_FUNCTIONS.html">Functions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../references/python/05_PLOTS.html">Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../references/python/06_FILES.html">Files</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../references/LATEX.html">LaTex Reference</a></li>
@@ -337,6 +338,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method-of-observation">Method of Observation</a></li>
 </ul>
@@ -356,21 +358,25 @@ document.write(`
                   
   <section id="statistical-bias">
 <h1>Statistical Bias<a class="headerlink" href="#statistical-bias" title="Permalink to this headline">#</a></h1>
-<p>In this project, you will perform some graphical analysis on a famously biased data set and use statistical reasoning to draw conclusions about the method of observation used to generate the data.</p>
+<p>In this lab, you will perform some graphical analysis on a famously biased data set and use statistical reasoning to draw conclusions about the method of observation used to generate the data.</p>
 <section id="instructions">
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><p>Download the dataset spreadsheet below and rename it <cite>LASTNAME_FIRSTNAME_YYYYMMDD_Project_1.csv</cite>, replacing <cite>LASTNAME</cite>, <cite>FIRSTNAME</cite> and <cite>YYYYMMDD</cite> with your last name, first name and the date, respectively.</p></li>
+<li><p>Download the dataset spreadsheet below and</p></li>
 <li><p>Create a Microsoft Word document and name it <cite>LASTNAME_FIRSTNAME_YYYYMMDD_Project_1.docx</cite>, replacing <cite>LASTNAME</cite>, <cite>FIRSTNAME</cite> and <cite>YYYYMMDD</cite> with your last name, first name and the date, respectively.</p></li>
-<li><p>Read the <a class="reference internal" href="#project-one-background"><span class="std std-ref">Background</span></a> section.</p></li>
-<li><p>Read the <a class="reference internal" href="#project-one-project"><span class="std std-ref">Project</span></a> section.</p></li>
-<li><p>Perform the indicated analysis in the <a class="reference internal" href="#project-one-project"><span class="std std-ref">Project</span></a> section in the <em>.csv</em> spreadsheet file. Save all of your results.</p></li>
-<li><p>Answer the indicated questions in the <a class="reference internal" href="#project-one-project"><span class="std std-ref">Project</span></a> section in the <em>.docx</em> document file.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-two-background"><span class="std std-ref">Background</span></a> section.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section.</p></li>
+<li><p>Perform the indicated analysis in the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section in the <em>.csv</em> spreadsheet file. Save all of your results.</p></li>
+<li><p>Answer the indicated questions in the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section in the <em>.docx</em> document file.</p></li>
 <li><p>When you are done, upload both files using the following link: TODO</p></li>
 </ol>
 </section>
+<section id="example">
+<span id="project-two-example"></span><h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">#</a></h2>
+<p>TODO</p>
+</section>
 <section id="background">
-<span id="project-one-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<span id="project-two-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
 <p>In the years 1969, 1970, 1971 and 1972, the Selective Service System in the United States held a draft lottery by order of President Lyndon B. Johnson for men born between the dates of January 1, 1944 and December 31, 1950 <a class="footnote-reference brackets" href="#id2" id="id1">*</a>.</p>
 <dl class="footnote brackets">
 <dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">*</a></span></dt>
@@ -390,7 +396,7 @@ document.write(`
 </section>
 </section>
 <section id="project">
-<span id="project-one-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
+<span id="project-two-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
 <li><p>Discuss the following questions
 - Is the selection method used for the draft random? Why or why not?
@@ -406,7 +412,7 @@ document.write(`
 </ol>
 </section>
 <section id="data-set">
-<span id="project-one-data"></span><h2>Data Set<a class="headerlink" href="#data-set" title="Permalink to this headline">#</a></h2>
+<span id="project-two-data"></span><h2>Data Set<a class="headerlink" href="#data-set" title="Permalink to this headline">#</a></h2>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../_downloads/257993626c7a7bafe318b70290252148/vietnam_draft_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
 <p>The meaning of the columns is as follows.</p>
@@ -440,7 +446,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Learning Python</p>
+        <p class="prev-next-title">Statistical Plots</p>
       </div>
     </a>
     <a class="right-next"
@@ -471,6 +477,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method-of-observation">Method of Observation</a></li>
 </ul>

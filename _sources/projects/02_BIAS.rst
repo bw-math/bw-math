@@ -2,20 +2,27 @@
 Statistical Bias
 ================
 
-In this project, you will perform some graphical analysis on a famously biased data set and use statistical reasoning to draw conclusions about the method of observation used to generate the data.
+In this lab, you will perform some graphical analysis on a famously biased data set and use statistical reasoning to draw conclusions about the method of observation used to generate the data.
 
 Instructions
 ============
 
-1. Download the dataset spreadsheet below and rename it `LASTNAME_FIRSTNAME_YYYYMMDD_Project_1.csv`, replacing `LASTNAME`, `FIRSTNAME` and `YYYYMMDD` with your last name, first name and the date, respectively.
+1. Download the dataset spreadsheet below and 
 2. Create a Microsoft Word document and name it `LASTNAME_FIRSTNAME_YYYYMMDD_Project_1.docx`, replacing `LASTNAME`, `FIRSTNAME` and `YYYYMMDD` with your last name, first name and the date, respectively.
-3. Read the :ref:`project_one_background` section.
-4. Read the :ref:`project_one_project` section.
-5. Perform the indicated analysis in the :ref:`project_one_project` section in the *.csv* spreadsheet file. Save all of your results. 
-6. Answer the indicated questions in the :ref:`project_one_project` section in the *.docx* document file.
+3. Read the :ref:`project_two_background` section.
+4. Read the :ref:`project_two_project` section.
+5. Perform the indicated analysis in the :ref:`project_two_project` section in the *.csv* spreadsheet file. Save all of your results. 
+6. Answer the indicated questions in the :ref:`project_two_project` section in the *.docx* document file.
 7. When you are done, upload both files using the following link: TODO 
    
-.. _project_one_background:
+.. _project_two_example:
+
+Example 
+=======
+
+TODO
+
+.. _project_two_background:
 
 Background
 ==========
@@ -38,7 +45,7 @@ The method used to select individuals for service is highly controversial. Many 
 
 Slips of paper were then selected at random and anyone of eligible age who had a birthday on the date indicated would be drafted. The important point is *individuals who shared the same birthday* would be drafted at the same time. As example, two men who had the birthdays April 5:sup:`th`, 1946 and April 5:sup:`th`, 1947 would both be drafted in the event a slip of paper *"April 5"* was selected.
 
-.. _project_one_project:
+.. _project_two_project:
 
 Project
 =======
@@ -55,7 +62,7 @@ Project
    - What can we conclude about the relative likelihood of a male with a birthday in January being drafted versus a male with a birthday in December being drafted?
    - Discuss the results and how the draft lottery could have been improved. 
 
-.. _project_one_data:
+.. _project_two_data:
 
 Data Set
 ========
