@@ -6,4 +6,5 @@ Projects
    :caption: Contents:
 
    00_PYTHON
-   01_BIAS
+   01_GRAPHING
+   02_BIAS

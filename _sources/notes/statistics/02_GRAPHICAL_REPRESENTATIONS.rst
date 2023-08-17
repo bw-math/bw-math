@@ -177,14 +177,14 @@ Ogives
 Construction
 ------------
 
-1. Find the :ref:`relative frequency distributionfrequency_distributions`
+1. Find the :ref:`relative frequency distribution<frequency_distributions>`
 
 .. _boxplots:
 
 Boxplots
 ========
 
-While :ref:`histograms` and :ref:`ogive` provide a wealth of information about the sample distribution, they do not give us the whole picture. 
+While :ref:`histograms` and :ref:`ogives` provide a wealth of information about the sample distribution, they do not give us the whole picture. 
 
 Construction
 ------------
@@ -222,6 +222,17 @@ Skewed Right
 Skewed Left
     .. plot:: assets/plots/boxplots/boxplot_skewed_left.py
 
+Scatter Plots
+=============
+
+No Correlation
+    .. plot:: assets/plots/scatterplots/scatterplot_no_correlation.py
+
+Positive Correlation
+    .. plot:: assets/plots/scatterplots/scatterplot_positive_correlation.py
+
+Negative Correlation
+    .. plot:: assets/plots/scatterplots/scatterplot_negative_correlation.py
 
 Other Types of Graphs
 =====================
