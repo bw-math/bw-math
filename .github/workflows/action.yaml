@@ -13,3 +13,4 @@ jobs:
       NO_CACHE: true
       LATEX: true
       PYTHON_MATHLIBS: true
+      DOCS_DIR: .

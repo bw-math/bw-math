@@ -7,7 +7,8 @@ Bishop Walsh A.P Statistics
    :caption: Contents:
 
    SPLASH
-   SCHEDULES
+   SYLLABUS
+   HOMEWORK
    notes/index
    classwork/index
    projects/index
