@@ -6,5 +6,6 @@ Projects
    :caption: Contents:
 
    00_PYTHON
-   01_GRAPHING
-   02_BIAS
+   01_ESTIMATION
+   02_GRAPHING
+   03_BIAS

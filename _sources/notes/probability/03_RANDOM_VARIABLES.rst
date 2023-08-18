@@ -12,32 +12,36 @@ Definition
 Random Variable
     A *random variable* is a quantity whose value is *uncertain*; A *random variable* depends on a random event.
 
-.. :collapse:: Scenario
-
+Example
     A friend flips a fair, two-sided coin. If it lands on heads, he will pay you five dollars. If it lands on tails, you have to pay him five dollars. 
 
     The sample space for this simple game is given by,
         
-        .. :math::
-            S = \{ h, t \}
+    .. :math::
+        S = \{ h, t \}
 
-    The amount of money you win or lose is a *random variable* that depeonds on the outcome of the coin flip, i.e. whether the event of *h* or the event *t* from the sample space occurs. Using this information, we can define the *random variable* for the amount of money won or lost playing this game as follows,
+    The amount of money you win or lose is a *random variable* that depends on the outcome of the coin flip, i.e. whether the event of :math:`H = \{ h \}` or the event :math:`T = \{ *t* \}` from the sample space occurs. Using this information, we can define the *random variable* for the amount of money won or lost playing this game as follows,
 
-        .. :math::
-            TODO TERNARY DEFINITION
+    .. :math::
+        X = \begin{array}{ c l }
+            5       & \quad \textrm{with } p(H) \\
+            -5      & \quad \textrm{with } p(T)
+        \end{array}
 
 
     We can use a table to visualize the outcomes of this *random variable* and their associated probabilities,
 
-    +------+--------+
-    |   X  |   P(X) |
-    +------+--------+
-    |  5   |   0.5  |
-    +------+--------+
-    | -5   |   0.5  |
-    +------+--------+
+    +------+---------------+
+    |   x  |   P(X = x)    |
+    +------+---------------+
+    |  5   |   P(H) = 0.5  |
+    +------+---------------+
+    | -5   |   P(T) = 0.5  |
+    +------+---------------+
 
-.. :collapse:: Scenario
+    Notice this is similar in form and function to a :ref:`frequency distribution <frequency_distributions>`.
+
+Example
 
     Suppose you own a car that gets 30 miles per gallon of gasoline. Due to your commute, you drive your car approximately 120 miles every week. Then, your weekly cost of keeping your tank full is given by the expression
 
@@ -60,6 +64,10 @@ Random Variable
     A random variable is a function from the sample space **S** to the real numbers between 0 and 1. 
 
     TODO
+
+Random Variables and Events
+===========================
+
 
 .. _mass_function:
 
@@ -86,3 +94,12 @@ Variance
 ========
 
 TODO 
+
+Bernoulli Random Variable
+=========================
+
+.. math::
+    p(x) = P(X = x) = \begin{array}{ c l }
+        p       & \quad \textrm{if } x = 1 \\
+        1 - p   & \quad \textrm{if } x = 0
+    \end{array}
