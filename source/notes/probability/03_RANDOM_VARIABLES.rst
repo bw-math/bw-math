@@ -42,22 +42,23 @@ Example
     Notice this is similar in form and function to a :ref:`frequency distribution <frequency_distributions>`.
 
 Example
+    Suppose you own a car that gets 30 miles per gallon of gasoline. Due to your commute, you drive your car approximately 120 miles every week. Describe the cost of operating your car as a random variable measured in dollars.
+    
+Your weekly cost of keeping your tank full is given by the expression
 
-    Suppose you own a car that gets 30 miles per gallon of gasoline. Due to your commute, you drive your car approximately 120 miles every week. Then, your weekly cost of keeping your tank full is given by the expression
+    (Weekly Cost of Gas) = (Price per Gallon of Gasoline) :math:`\cdot` (Gallons Used)
 
-        (Weekly Cost of Gas) = (Price per Gallon of Gasoline) :math:`\cdot` (Gallons Used)
+If we assume you drive the exactly same amount every week, the second term on the right hand side of the expression can be written as,
 
-    If we assume you drive the exactly same amount every week, the second term on the right hand side of the expression can be written as,
+    (Gallons Used) = :math:`\frac{120 miles}{30 mpg} = 4 gallons`
 
-        (Gallons Used) = :math:`\frac{120 miles}{30 mpg} = 4 gallons`
+The price per gallon of gasoline, however, is an *uncertain* quantity; it depends on many extranenous factors, such as political conditions, shipping costs, taxes and tariffs, weather and climate, etc. Because of this, the price changes from day to day. 
 
-    The price per gallon of gasoline, however, is an *uncertain* quantity; it depends on many extranenous factors, such as political conditions, shipping costs, taxes and tariffs, weather and climate, etc. Because of this, the price changes from day to day. 
+The uncertainty in the price of gasoline becomes uncertainty in the weekly cost of driving your car. Therefore, we can model the weekly cost of gas as a *random variable*,
 
-    The uncertainty in the price of gasoline becomes uncertainty in the weekly cost of driving your car. Therefore, we can model the weekly cost of gas as a *random variable*,
-
-        :math:`4X`
-       
-    where **X** is the price of gasoline measured in dollars.
+    (**X** :math:`\frac{$}{g}`) * ( 4 gallons )
+    
+where **X** is the price of gasoline measured in dollars per gallon.
 
 .. :warning:: 
 
