@@ -1,4 +1,4 @@
-.. _normal_distribution:
+.. _normal_distribution_classwork:
 
 ===================
 Normal Distribution

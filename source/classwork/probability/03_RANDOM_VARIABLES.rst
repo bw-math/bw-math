@@ -4,7 +4,7 @@
 Random Variables
 ================
 
-1. A random variable **X** is defined as the sum of two die rolls. 
+1. A random variable **X** is defined as the sum of two six-sided die rolls. 
 
     - List the sample space for this random variable.
     - Find the probability distribution :math:`P(X=x)` for all values of *x*.

@@ -14,7 +14,6 @@ author = 'Grant Moore'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'myst_parser',
     'sphinx.ext.githubpages',
     'sphinx.ext.imgmath',
     'sphinx_toolbox.collapse',
