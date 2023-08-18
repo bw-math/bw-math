@@ -6,10 +6,11 @@ matplotlib.use('tkagg')
 
 import matplotlib.pyplot as plt
 
+# determine which directory the script is in.
+data_directory = os.path.dirname(os.path.dirname(os.path.abspath(sys.argv[0])))
+
 fig, axs = plt.subplots()
 # fig, axs = plt.subplots(1, 4)
-
-data_directory = os.path.dirname(os.path.dirname(os.path.abspath(sys.argv[0])))
 
 # read in data
 with open(f'{data_directory}/vietnam_draft_data.csv') as csv_file:

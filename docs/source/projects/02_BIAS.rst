@@ -1,6 +1,6 @@
-================
-Statistical Bias
-================
+====
+Bias
+====
 
 In this lab, you will perform some graphical analysis on a famously biased data set and use statistical reasoning to draw conclusions about the method of observation used to generate the data.
 
