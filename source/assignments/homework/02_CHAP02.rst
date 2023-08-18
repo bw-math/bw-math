@@ -1,5 +1,6 @@
 .. _chapter_two_homework:
 
+==================
 Chapter 2 Homework 
 ==================
 

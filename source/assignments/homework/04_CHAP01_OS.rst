@@ -1,10 +1,11 @@
 .. _chapter_one_alt_homework:
 
+==================================
 Chapter 1 Homework (OpenStax Text) 
 ==================================
 
-Data Description
-================
+Sets
+====
 
 Section 1: Basic Concepts
 -------------------------
@@ -26,6 +27,7 @@ Section 3: Venn Diagrams
 ------------------------
 
 #2, #6, #9, # 11, #12, #15, #17, #25, #27, #28, #29, #33, #36, #37, #43, #45
+
 .. note::
     Due Date: TBA
 

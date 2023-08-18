@@ -73,12 +73,12 @@ Project
 Data Set
 ========
 
-You can download the full dataset :download:`here <../assets/datasets/vietnam_draft_data.csv>`.
+You can download the full dataset :download:`here <../../assets/datasets/vietnam_draft_data.csv>`.
 
 The following table is the a preview of the data you will be using for this project. 
 
 .. csv-table:: Vietnam Draft Lottery Data
-   :file: ../assets/datasets/previews/vietnam_draft_data_preview.csv
+   :file: ../../assets/datasets/previews/vietnam_draft_data_preview.csv
 
 The meaning of the columns is as follows.
 

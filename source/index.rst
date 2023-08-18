@@ -8,8 +8,6 @@ Bishop Walsh A.P Statistics
 
    SPLASH
    SYLLABUS
-   homework/index
    notes/index
-   classwork/index
-   projects/index
+   assignments/index
    references/index

@@ -18,13 +18,24 @@ Probability Distribution
 Symmetry
 --------
 
+TODO 
+
 Z-Tables
 --------
+
+TODO 
 
 Empirical Rule
 --------------
 
+TODO 
+
 .. image:: ../../assets/imgs/distributions/normal/normal_distribution_empirical_rule.png
+
+Pearson Skew Index
+------------------
+
+TODO 
 
 Effects of Parameters
 =====================
@@ -46,3 +57,30 @@ To summarize,
 .. note:: 
     1. By changing the mean of the *normal distribution*, the *location* of the distribution changes.
     2. By changing the standard deviation of the *normal distribution*, the *spread* of the distribution changes. 
+
+Relation To Other Distributions
+===============================
+
+The :ref:`normal_distribution` is deeply connected with many different areas of mathematics. It pops up everywhere, from `quantum mechanics <https://en.wikipedia.org/wiki/Wave_packet>`_ to `finance <https://www.investopedia.com/articles/investing/102014/lognormal-and-normal-distribution.asp#:~:text=When%20the%20investor%20continuously%20compounds,time%20in%20a%20normal%20distribution.>`_. The reach of the *normal distribution* is far and wide.
+
+Normal As An Approximation of the Binomial
+------------------------------------------
+
+TODO 
+
+.. note:: 
+    *Conditions*: 
+    
+    :math:`n \cdot p >= 5`
+
+    :math:`n \cdot (1 - p) >= 5`
+
+Poisson As An Approximation of the Normal
+-----------------------------------------
+
+TODO
+
+.. note:: 
+    *Conditions*: 
+        
+    :math:`	\lambda >> 0`

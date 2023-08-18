@@ -68,11 +68,11 @@ Project
 Data Set
 ========
 
-You can download the full dataset :download:`here <../assets/datasets/earth_density_data.csv>`.
+You can download the full dataset :download:`here <../../assets/datasets/earth_density_data.csv>`.
 
 The following table is the a preview of the data you will be using for this project. 
 
 .. csv-table:: Cavendish's Density of the Earth
-   :file: ../assets/datasets/previews/earth_density_data_preview.csv
+   :file: ../../assets/datasets/previews/earth_density_data_preview.csv
 
 The meaning of the columns is as follows.

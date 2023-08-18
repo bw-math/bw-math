@@ -27,7 +27,7 @@ Background
 
 The `Michelson Velocity of Light Experiment<https://www.gutenberg.org/files/11753/11753-h/11753-h.htm>` conducted in 1887 remained one of most accurate estimations of the speed of light until modern times. Using a series of mirrors depicted below,
 
-.. image:: ../assets/imgs/context/michelson_experiment.png
+.. image:: ../../assets/imgs/context/michelson_experiment.png
     :width: 60%
     :align: center
 
@@ -75,11 +75,11 @@ Project
 Data Set
 ========
 
-You can download the full dataset :download:`here <../assets/datasets/velocity_of_light_data.csv>`.
+You can download the full dataset :download:`here <../../assets/datasets/velocity_of_light_data.csv>`.
 
 The following table is the a preview of the data you will be using for this project. 
 
 .. csv-table:: Michelson's Velocity of Light Data
-   :file: ../assets/datasets/previews/velocity_of_light_data_preview.csv
+   :file: ../../assets/datasets/previews/velocity_of_light_data_preview.csv
 
 The meaning of the columns is as follows.
