@@ -299,8 +299,8 @@ Notice :math:`B \cap C = \varnothing`, i.e. **B** and **C** are mutually exclusi
 
 In this case, the two methods of finding the probabilities agree *because the condition (or hypothesis) of* :ref:`axiom_3` *was met*, namely, that the events are mutually exclusive. If the condition (or hypothesis) of :ref:`axiom_3` is not met, then its conclusion does not follow.
 
-Corollaries
-===========
+Theorems
+========
 
 We can use these *axioms*, along with the `theorems of set theory <set_theorems>` to prove various things about probability.
 
@@ -382,3 +382,10 @@ The sample space for a selecting a single card from a deck of 52 cards is shown 
    :align: center
 
 Let **J** be the event of selecting a jack. Let **D** be the event of selecting a diamond.
+
+TODO
+
+Probability Tables
+******************
+
+TODO
