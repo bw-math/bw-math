@@ -1,4 +1,4 @@
-.. _normal:
+.. _normal_distribution:
 
 ===================
 Normal Distribution
@@ -37,7 +37,7 @@ TODO
 Varying the Standard Deviation
 ------------------------------
 
-By changing the :ref:`standard_deviation`, the shape of the distribution changes. As the :ref:`standard_deviation` increase, the graph spreads out. This is because :ref:`standard_deviation` is a :ref:`measure of variation<measures_of_variation>`. In other words, :ref:`standard deviation` quantifies how the distribution is spread out along the *x*-axis.
+By changing the :ref:`standard_deviation`, the shape of the distribution changes. As the :ref:`standard_deviation` increase, the graph spreads out. This is because :ref:`standard_deviation` is a :ref:`measure of variation<measures_of_variation>`. In other words, :ref:`standard_deviation` quantifies how the distribution is spread out along the *x*-axis.
 
 .. plot:: assets/plots/distributions/normal/normal_distribution_03.py
 

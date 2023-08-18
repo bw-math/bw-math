@@ -64,6 +64,7 @@ Example
     TODO 
 
 .. collapse:: Solution
+    
     TODO
 
 .. _reduction_of_the_sample_space:
@@ -84,7 +85,7 @@ The following example and its accompanying solutions serve to illustrate how con
 Example
     A fair, two-sided coin with heads and tails on either side is placed into a box alongside a double-sided coin that has heads on both sides. You select a coin at random from the box and, without looking at which coin you picked, flip it. If the coin lands on heads, what is the probability you selected the two sided coin?
 
-.. collapse:: Solution #1
+.. collapse:: Solution #1: Conditional Probability Formula
 
     Before solving the problem, first set up the :ref:`sample space <sample_space>` and define the events that correspond to its various outcomes. 
 
@@ -148,7 +149,7 @@ Example
     .. math::
         P(D \mid H) = \frac{\frac{1}{2}}{\frac{3}{4}} = \frac{1}{2} \cdot \frac{4}{3} = \frac{2}{3}
 
-.. collapse:: Solution #2
+.. collapse:: Solution #2: Reduction of Sample Space Formula
 
     There is another way of looking at this problem. The fact that it is known the outcome of the coin flip was heads effectively *reduces* the sample space **S** from,
 
@@ -179,10 +180,14 @@ Example
     .. math::
         P(D \mid H) = \frac{2}{3}
 
+.. _monty_hall_problem:
+
 Monty Hall Problem
 ******************
 
 TODO
+
+.. _multiplication_rule:
 
 Multiplication Rule
 -------------------
@@ -239,4 +244,11 @@ Example
     .. math::
         P(R_1 \cap R_2) = \frac{650}{2652} \approx 0.2451
 
-    
+TODO
+
+.. _independence:
+
+Independence
+------------
+
+TODO

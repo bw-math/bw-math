@@ -7,8 +7,6 @@ Graphical Representations of Data
 Definitions
 ===========
 
-.. _frequency:
-
 Frequency
 
     :math:`f(x)`

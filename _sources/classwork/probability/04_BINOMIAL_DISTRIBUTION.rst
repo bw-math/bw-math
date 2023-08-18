@@ -1,4 +1,4 @@
-.. _binomial_classwork:
+.. _binomial_distribution_classwork:
 
 =====================
 Binomial Distribution
