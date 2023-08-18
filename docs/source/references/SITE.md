@@ -14,7 +14,7 @@ References for updating and maintaing this site. This page has nothing to do wit
 ## Datasets
 ### Historical
 - [Challenger Explosion](https://www.randomservices.org/random/data/Challenger.html)
-- [Cholera]
+- [Cholera](https://www.randomservices.org/random/data/Snow.html)
 - [Titanic Survivors](https://www.kaggle.com/datasets/brendan45774/test-file)
 - [Vietnam Draft Data](https://www.randomservices.org/random/data/Draft.html)
 ### Scientific

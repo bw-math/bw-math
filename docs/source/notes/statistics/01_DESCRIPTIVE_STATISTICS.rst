@@ -91,7 +91,7 @@ Mean
         The *geometric mean* is defined as,
 
         .. math::
-            \bar{x}_G = (x_1 \cdot x_2 \cdot ... \cdot x_{n-1} \codt x_n )^(1/n)
+            \bar{x}_G = (x_1 \cdot x_2 \cdot ... \cdot x_{n-1} \cdot x_n )^(1/n)
 
     Geometric vs. Arithmetic Mean
 

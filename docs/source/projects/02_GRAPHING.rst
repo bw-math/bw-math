@@ -1,4 +1,4 @@
-.. _project_one:
+.. _project_two:
 
 =====
 Plots
@@ -6,22 +6,21 @@ Plots
 
 In this lab, you will get familiar with the statistical features of **Python** using a famous dataset from the history of physics.
 
-.. _project_one_instructions:
+.. _project_two_instructions:
 
 Instructions
 ============
 
-1. Create a folder named `LASTNAME_FIRSTNAME_project_one`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
-2. Download the *csv* dataset :ref:`below <project_one_dataset>` and place it in the new folder you created in step 1.
-3. In the same folder, create a Microsoft Word *docx* document named `project_one.docx`.
-4. In the same folder, create a Python *py* script named `project_one.py`
-5. Read the :ref:`project_one_project` section.
-6. Perform the indicated analysis in the :ref:`project_one_project` section in the *.csv* spreadsheet file. Save all of your results. 
-7. Answer the indicated questions in the :ref:`project_one_project` section in the *.docx* document file.
-8. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_one.zip`
-9. Upload the zip file here: TODO
+1. Create a folder named `LASTNAME_FIRSTNAME_project_two`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
+2. Download the *csv* dataset :ref:`below <project_two_dataset>` and place it in the new folder you created in step 1.
+3. In the same folder, create a Microsoft Word *docx* document named `project_two.docx`.
+4. In the same folder, create a Python *py* script named `project_two.py`
+5. Read the :ref:`project_two_project` section.
+6. Answer the indicated questions in the :ref:`project_two_project` section in the *.docx* document file.
+7. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_two.zip`
+8. Upload the zip file here: TODO
    
-.. _project_one_background: 
+.. _project_two_background: 
 
 Background
 ==========
@@ -34,7 +33,7 @@ The `Michelson Velocity of Light Experiment<https://www.gutenberg.org/files/1175
 
 While the theoretical details of the experiment are interesting in their own right (see link above for further detail!), for this lab, we will take the data as given and analyze it from a statistical perspective.
 
-.. _project_one_loading_data:
+.. _project_two_loading_data:
 
 Loading In Data
 ===============
@@ -51,7 +50,7 @@ The following code snippet will load in a *CSV* spreadsheet, parse it into a lis
     script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
 
     # read in data
-    with open(f'{script_directory}/example_univariate.csv') as csv_file:
+    with open(f'{script_directory}/vietnam_draft_data.csv') as csv_file:
         csv_reader = csv.reader(csv_file)
         raw_data = [ row for row in csv_reader ]
 
@@ -66,21 +65,21 @@ The following code snippet will load in a *CSV* spreadsheet, parse it into a lis
 
 Use this snippet to load in the provided data in order to finish the project. 
 
-.. _project_one_project:
+.. _project_two_project:
 
 Project
 =======
 
-.. _project_one_dataset:
+.. _project_two_dataset:
 
 Data Set
 ========
 
-You can download the full dataset :download:`here <../assets/datasets/vietnam_draft_data.csv>`.
+You can download the full dataset :download:`here <../assets/datasets/velocity_of_light_data.csv>`.
 
 The following table is the a preview of the data you will be using for this project. 
 
-.. csv-table:: Vietnam Draft Lottery Data
-   :file: ../assets/datasets/previews/vietnam_draft_data_preview.csv
+.. csv-table:: Michelson's Velocity of Light Data
+   :file: ../assets/datasets/previews/velocity_of_light_data_preview.csv
 
 The meaning of the columns is as follows.

@@ -1,3 +1,5 @@
+.. _project_three:
+
 ====
 Bias
 ====
@@ -7,24 +9,23 @@ In this lab, you will perform some graphical analysis on a famously biased data 
 Instructions
 ============
 
-1. Create a folder named `LASTNAME_FIRSTNAME_project_two`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
-2. Download the *csv* dataset `below <project_two_dataset>`_ and place it in the new folder you created in step 1.
-3. In the same folder, create a Microsoft Word *docx* document named `project_two.docx`.
-4. In the same folder, create a Python *py* script named `project_two.py`
-5. Read the :ref:`project_two_project` section.
-6. Perform the indicated analysis in the :ref:`project_two_project` section in the *.csv* spreadsheet file. Save all of your results. 
-7. Answer the indicated questions in the :ref:`project_two_project` section in the *.docx* document file.
-8. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_two.zip`
-9. Upload the zip file here: TODO
+1. Create a folder named `LASTNAME_FIRSTNAME_project_three`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
+2. Download the *csv* dataset `below <project_three_dataset>`_ and place it in the new folder you created in step 1.
+3. In the same folder, create a Microsoft Word *docx* document named `project_three.docx`.
+4. In the same folder, create a Python *py* script named `project_three.py`
+5. Read the :ref:`project_three_project` section.
+6. Answer the indicated questions in the :ref:`project_three_project` section in the *.docx* document file.
+7. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_three.zip`
+8. Upload the zip file here: TODO
 
-.. _project_two_loading_data:
+.. _project_three_loading_data:
 
 Loading In Data
 ===============
 
 TODO
 
-.. _project_two_background:
+.. _project_three_background:
 
 Background
 ==========
@@ -47,7 +48,7 @@ The method used to select individuals for service is highly controversial. Many 
 
 Slips of paper were then selected at random and anyone of eligible age who had a birthday on the date indicated would be drafted. The important point is *individuals who shared the same birthday* would be drafted at the same time. As example, two men who had the birthdays April 5:sup:`th`, 1946 and April 5:sup:`th`, 1947 would both be drafted in the event a slip of paper *"April 5"* was selected.
 
-.. _project_two_project:
+.. _project_three_project:
 
 Project
 =======
@@ -64,10 +65,10 @@ Project
 3. Based on the histograms constructed, describe the shape of the distribution for each year's draft lottery. 
    - Are the graphs skewed, uniform, normal or bimodal?
    - What is the mode of the birth month for each year? 
-   - What can we conclude about the relative likelihood of a male with a birthday in January being drafted versus a male with a birthday in December being drafted?
-   - Discuss the results and how the draft lottery could have been improved. 
+   - What can we conclude about the relative likelihood of a male with a birthday in January being drafted versus a male with a birthday in December being drafted for the years 1969? Does this same result appear to hold for 1970, 1971 and 1972?
+   - Discuss the results. Was the draft lottery fair? If not, why not? If so, why? Justify your answer.  
 
-.. _project_two_dataset:
+.. _project_three_dataset:
 
 Data Set
 ========
@@ -94,11 +95,11 @@ And *N69*, *N70*, *N71* and *N72* represent the number of individuals selected w
 Cleaning the Data Set
 ---------------------
 
-The dataset is broken down by day. Each entry corresponds to a particular birthdate, month and year. The lab is asking to group the data into monthly classes, so the frequency distribution can be visualized with a histogram grouped by month. Therefore, the data will need grouped and totaled by month before generating a histogram. 
+The dataset is broken down by day. Each entry corresponds to a particular birthdate, month and day. The lab is asking to group the data into monthly classes, so the frequency distribution can be visualized with a histogram grouped by month. Therefore, the data will need grouped and totaled by month before generating a histogram. 
 
 The following code snippet will:
     1.  create a list, named ``data_1969``, of twelve *0*'s, ``[0, 0, 0, ... , 0, 0]``, one for each month,.
-    2.  step through ``column_1`` along with the *row number*
+    2.  step through ``column_1`` along with the `row_number`.
     3.  grab the corresponding entry of the third column, ``column_3[row_number]``
     4.  add the value of the third column to the corresponding entry in ``data_1969``
 
