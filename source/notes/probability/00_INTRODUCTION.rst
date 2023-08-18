@@ -143,6 +143,16 @@ Applying this definition to the events **H** and **T** in the first example, it 
 .. math:: 
     P(T) = \frac{n(T)}{n(S)} = \frac{1}{2}
 
+Compound Events
+---------------
+
+A *compound* event is formed by composing simpler events with :ref:`set_operations`.
+
+Example
+    Consider the experiment of drawing a single card at random from a well-shuffled, standard playing deck.
+
+
+
 .. _axioms_of_probability:
 
 Axioms of Probability
@@ -164,14 +174,119 @@ For this reason and other similar cases, the *classical definition of probabilit
 Axioms
 ------
 
-**Axiom 1**: :math:`P(A)>=0`
+.. _axiom_1:
+
+Axiom 1
+*******
+
+:math:`P(A)>=0`    
     All probabilities are positive; No probabilities are negative.
 
-**Axiom 2**: :math:`P(S)=1`
+.. _axiom_2:
+
+Axiom 2
+*******
+
+:math:`P(S)=1`
     The probability of *some* outcome from the sample space **S** occuring is equal to 1.
 
-**Axiom 3**: :math:`\forall i \neg j: A_i \cap A_j = \varnothing \implies P(\bigcup\limits_{i=1}^{n} A_i) = \sum_{i=1}^n P(A_i)`
+.. _axiom_3:
+
+Axiom 3
+*******
+
+:math:`\forall i \neq j: A_i \cap A_j = \varnothing \implies P(\bigcup\limits_{i=1}^{n} A_i) = \sum_{i=1}^n P(A_i)`
     If each event :sub:`i` **A** in the sample space **S** is *mutually exclusive* with every other event :math:`\forall i \neg j: A_i`, then the probability of the union of all of these events is equal to the sum of the probabilities of each individual event.
+
+:ref:`axiom_1` and :ref:`axiom_2` are fairly intuitive and straight-forward in their meaning, while :ref:`axiom_3` takes a bit of study to fully appreciate. To help in that endeavor, consider the following example.
+
+Example
+    Let us return again to the experiment of flipping a fair coin twice. The sample space **S** of this experiment was given by,
+
+    .. math::
+        S = \{ hh, ht, th, tt \}
+
+    Consider now two different events **A** and **B** defined on this sample space,
+
+        **A** :math:`\equiv` getting at least one head
+        
+        **B** :math:`\equiv` getting exactly one tail
+
+    Then, in terms of outcomes, clearly, these events are given by,
+
+    .. math::
+        A = \{ hh, ht, th \}
+    
+    .. math::
+        n(A) = 3
+
+    .. math::
+        B = \{ ht, th \}
+
+    .. math::
+        n(B) = 2
+
+    And, using the :ref:`classical_definition`, the probabilities of these events is calculated as,
+
+    .. math::
+        P(A) = \frac{3}{4}
+    
+    .. math::
+        P(B) = \frac{2}{4} = \frac{1}{2}
+
+    :ref:`axiom_3` tells us how to compute :math:`A \cup B`; it tells us the probability of the union is equal to the sum of the individual probabilities. However, if we try to apply :ref:`axiom_3` here, we wind up with a contradiction,
+
+    .. math:: 
+        P(A) + P(B) = \frac{3}{4} + \frac{2}{4} = \frac{5}{4} \geq 1
+
+    Here is a probability greater than 1, which cannot be the case. What is going on?
+
+    The issue is the *condition* that must be met to apply :ref:`axiom_3`; the events **A** and **B** must be *mutually exclusive*, :math:`A \cap B = \varnothing`, while in this example we have,
+
+    .. math::
+        A \cap B = \{ ht, th \}
+
+    Therefore, we *cannot* say the probability of the union is equal to the sum of probabilities. In fact, in this example,
+
+    .. math::
+        P(A \cap B) = \frac{2}{4} = \frac{1}{2}
+
+    If, instead, we consider the event **C**,
+
+        C :math:`\equiv` getting exactly two heads
+
+    Then, the outcomes of **C** are,
+
+    .. math::
+        C = \{ hh \}
+    
+    .. math::
+        n(C) = 1
+
+    And the probability of the event **C**,
+
+    .. math::
+        P(C) = \frac{1}{4}
+    
+    Then, the :ref:`compound event <compound_events>` :math:`B \cup C` is found by aggregating the outcomes in both of the individual events **B** and **C** into a single new set,
+
+    .. math::
+        B \cup C = \{ hh, th, ht \}
+
+    .. math::
+        n(B \cup C) = 3
+
+    So the probability of the compound event :math:`B \cup C` is calculated as,
+
+    .. math::
+        P(B \cup C) = \frac{3}{4}
+
+    Notice :math:`B \cap C = \varnothing`, i.e. **B** and **C** are mutually exclusive, so by :ref:`axiom_3`, we may also decompose this probability into its individual probabilities,
+
+    .. math::
+        P(B \cup C) = P(B) + P(C) = \frac{1}{2} + \frac{1}{4} = \frac{3}{4}
+
+    In this case, the two methods of finding the probabilities agree *because the condition (or hypothesis) of* :ref:`axiom_3` *was met*, namely, that the events are mutually exclusive. If the condition (or hypothesis) of :ref:`axiom_3` is not met, then its conclusion does not follow.
 
 Corollaries
 ===========
