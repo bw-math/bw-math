@@ -377,8 +377,30 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-location">Measures of Location</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-dispersion">Measures of Dispersion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-location">Measures of Location</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetic-mean">Arithmetic Mean</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-formula">Sample Formula</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-formula">Frequency Formula</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-mean">Geometric Mean</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-vs-arithmetic-mean">Geometric vs. Arithmetic Mean</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mode">Mode</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#percentiles">Percentiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#median">Median</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#quartiles">Quartiles</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-variation">Measures of Variation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#interquartile-range">Interquartile Range</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#variance">Variance</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -393,57 +415,61 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="point-estimation">
-<h1>Point Estimation<a class="headerlink" href="#point-estimation" title="Permalink to this headline">#</a></h1>
+<span id="id1"></span><h1>Point Estimation<a class="headerlink" href="#point-estimation" title="Permalink to this headline">#</a></h1>
 <p>A sample of data is characterized by <em>point estimates</em> of <em>sample statistics</em>.</p>
 <section id="definitions">
 <h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
-<dl>
+<dl id="observation">
 <dt>Observation</dt><dd><p><img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/></p>
 <p>A single piece of data. The subscript is called the <em>index</em> of the observation. If the sample is ordered, the <em>index</em> corresponds to the order in which the observation was made, i.e. <img class="math" src="../../_images/math/e564d43fd97a8499ef8ceb6167286e4ae267704d.png" alt="x_1"/> is the first observation, <img class="math" src="../../_images/math/3f72613f77d1720ad07cc485a55e4a2fd2a96947.png" alt="x_2"/> is the second observation, etc.</p>
 </dd>
+</dl>
+<dl id="sample">
 <dt>Sample</dt><dd><p><img class="math" src="../../_images/math/28a9b81a2d599b224db97657a816304658443252.png" alt="\{ x_1, x_2, ..., x_{n-1}, x_n \}"/></p>
 <p>A collection, or <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">set</span></a>, of observations. The number of samples, <em>n</em>, is called the <em>sample size</em>.</p>
 </dd>
+</dl>
+<dl id="frequency">
 <dt>Frequency</dt><dd><p><img class="math" src="../../_images/math/905bd3c0445049b5e64f182e7238f2da96ada209.png" alt="f(x_i)"/></p>
 <p>The number of times a particular observation occurs in a sample of data.</p>
 </dd>
 </dl>
 <section id="measures-of-location">
-<h3>Measures of Location<a class="headerlink" href="#measures-of-location" title="Permalink to this headline">#</a></h3>
+<span id="id2"></span><h3>Measures of Location<a class="headerlink" href="#measures-of-location" title="Permalink to this headline">#</a></h3>
 <p><em>Measures of location</em> describe <em>where</em> a sample of data can be found.</p>
-<dl>
-<dt>Mean</dt><dd><p>Arithmetic Mean</p>
-<blockquote>
-<div><p>The <em>arithmetic</em> mean can be defined in two equivalent ways.</p>
-<p>Sample Formula</p>
-<blockquote>
-<div><p>If the sample of data is specified as a set or list of data as in the following,</p>
+<section id="arithmetic-mean">
+<span id="id3"></span><h4>Arithmetic Mean<a class="headerlink" href="#arithmetic-mean" title="Permalink to this headline">#</a></h4>
+<p>The <em>arithmetic</em> mean can be defined in two equivalent ways.</p>
+<section id="sample-formula">
+<span id="sample-mean-formula"></span><h5>Sample Formula<a class="headerlink" href="#sample-formula" title="Permalink to this headline">#</a></h5>
+<p>If the sample of data is specified as a set or list of data as in the following,</p>
 <div class="math">
 <p><img src="../../_images/math/96e63224bad5af018a81dada12df852a6ad4f18c.png" alt="S = \{ x_1, x_2, ... , x_n \}"/></p>
 </div><p>Then the sample arithmetic mean can be calculated with the formula,</p>
 <div class="math">
 <p><img src="../../_images/math/6c2c43714ec8b00fbe4f31fece8179db790ed6e0.png" alt="\bar{x} = \frac{\sum_{i}^n x_i}{n}"/></p>
-</div></div></blockquote>
+</div><dl class="simple">
+<dt>Example</dt><dd><p>TODO</p>
+</dd>
+</dl>
+<p>TODO</p>
 <p>Suppose in the sample of data <strong>S</strong>, some of the observations have identical values, such as in the following dataset that represents the age in years of an A.P Statistics student,</p>
 <blockquote>
 <div><p>S = { 16, 16, 17, 18, 16, 17, 17, 17 }</p>
 </div></blockquote>
 <p>In this case, the formula for the arithmetic mean gives,</p>
-<blockquote>
-<div><div class="math">
+<div class="math">
 <p><img src="../../_images/math/8722dcf12930227742a7546e5163faa325230446.png" alt="\bar{x} = \frac{16 + 16 + 17 + 18 + 16 + 17 + 17 + 17}{8}"/></p>
 </div><div class="math">
 <p><img src="../../_images/math/53d5981563f91100a00ed3205b7cccb6eae3e39c.png" alt="\bar{x} = \frac{2 \cdot 16 + 4 \cdot 17 + 1 \cdot 18}{8}"/></p>
-</div></div></blockquote>
-<p>Notice the first factor of each term in the numerator is simply frequency whereas the second factor is the value of the observation,</p>
-<blockquote>
-<div><div class="math">
+</div><p>Notice the first factor of each term in the numerator is simply frequency whereas the second factor is the value of the observation,</p>
+<div class="math">
 <p><img src="../../_images/math/310b52ccda0092374098f07bac2afd22025d9e59.png" alt="x_i \cdot f(x_i)"/></p>
-</div></div></blockquote>
-<p>This recognization leads the following formula that comes in handy when sample distributions are given in terms of <a class="reference internal" href="02_GRAPHICAL_REPRESENTATIONS.html#frequency-distributions"><span class="std std-ref">frequency distributions</span></a></p>
-<p>Frequency Formula</p>
-<blockquote>
-<div><p>If the sample of data is specified as a frequency distribution as in the following,</p>
+</div><p>This recognization leads the following formula that comes in handy when sample distributions are given in terms of <a class="reference internal" href="02_GRAPHICAL_REPRESENTATIONS.html#frequency-distributions"><span class="std std-ref">frequency distributions</span></a></p>
+</section>
+<section id="frequency-formula">
+<span id="sample-mean-frequency-formula"></span><h5>Frequency Formula<a class="headerlink" href="#frequency-formula" title="Permalink to this headline">#</a></h5>
+<p>If the sample of data is specified as a frequency distribution as in the following,</p>
 <table class="table">
 <colgroup>
 <col style="width: 41%" />
@@ -455,61 +481,68 @@ document.write(`
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>x:sub:<cite>0</cite></p></td>
-<td><p>f( x:sub:<cite>0</cite>)</p></td>
+<tr class="row-even"><td><p>x <sub>0</sub></p></td>
+<td><p>f( x <sub>0</sub>)</p></td>
 </tr>
-<tr class="row-odd"><td><p>x:sub:<cite>1</cite></p></td>
-<td><p>f( x:sub:<cite>1</cite>)</p></td>
+<tr class="row-odd"><td><p>x <sub>1</sub></p></td>
+<td><p>f( x <sub>1</sub>)</p></td>
 </tr>
 <tr class="row-even"><td><p>…</p></td>
 <td><p>…</p></td>
 </tr>
-<tr class="row-odd"><td><p>x:sub:<cite>n</cite></p></td>
-<td><p>f( x:sub:<cite>n</cite>)</p></td>
+<tr class="row-odd"><td><p>x <sub>n</sub></p></td>
+<td><p>f( x <sub>n</sub>)</p></td>
 </tr>
 </tbody>
 </table>
 <p>Then the sample arithmetic mean can be calculated with the formula,</p>
 <div class="math">
 <p><img src="../../_images/math/c5a83c9f3da0f9813a33adc07ff858912b567b00.png" alt="\bar{x}_A = \sum_{i}^n x_i \cdot f(x_i)"/></p>
-</div></div></blockquote>
-</div></blockquote>
-<p>Geometric Mean</p>
-<blockquote>
-<div><p>The <em>geometric mean</em> is defined as,</p>
+</div></section>
+</section>
+<section id="geometric-mean">
+<span id="id4"></span><h4>Geometric Mean<a class="headerlink" href="#geometric-mean" title="Permalink to this headline">#</a></h4>
+<p>The <em>geometric mean</em> is defined as,</p>
 <div class="math">
 <p><img src="../../_images/math/4af36249ae79e207d3653021760fdc732ad16cf3.png" alt="\bar{x}_G = (x_1 \cdot x_2 \cdot ... \cdot x_{n-1} \cdot x_n )^(1/n)"/></p>
-</div></div></blockquote>
-<p>Geometric vs. Arithmetic Mean</p>
-</dd>
-</dl>
-<p>Mode</p>
-<blockquote>
-<div><p>TODO</p>
-</div></blockquote>
-<p>Median</p>
-<blockquote>
-<div><p>TODO</p>
-</div></blockquote>
-<p>Percentiles</p>
-<blockquote>
-<div><p>TODO</p>
-<p>Quartiles</p>
-<blockquote>
-<div><p>TODO</p>
-</div></blockquote>
-</div></blockquote>
+</div><p>TODO</p>
 </section>
-<section id="measures-of-dispersion">
-<h3>Measures of Dispersion<a class="headerlink" href="#measures-of-dispersion" title="Permalink to this headline">#</a></h3>
-<p>Interquartile Range</p>
-<blockquote>
-<div><p>TODO</p>
-</div></blockquote>
-<p>Variance/Standard Deviation</p>
-<blockquote>
-<div><p>TODO</p>
-</div></blockquote>
+<section id="geometric-vs-arithmetic-mean">
+<span id="id5"></span><h4>Geometric vs. Arithmetic Mean<a class="headerlink" href="#geometric-vs-arithmetic-mean" title="Permalink to this headline">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="mode">
+<span id="id6"></span><h4>Mode<a class="headerlink" href="#mode" title="Permalink to this headline">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="percentiles">
+<span id="id7"></span><h4>Percentiles<a class="headerlink" href="#percentiles" title="Permalink to this headline">#</a></h4>
+<p>TODO</p>
+<section id="median">
+<span id="id8"></span><h5>Median<a class="headerlink" href="#median" title="Permalink to this headline">#</a></h5>
+<p>TODO</p>
+</section>
+<section id="quartiles">
+<span id="id9"></span><h5>Quartiles<a class="headerlink" href="#quartiles" title="Permalink to this headline">#</a></h5>
+<p>TODO</p>
+</section>
+</section>
+</section>
+<section id="measures-of-variation">
+<span id="id10"></span><h3>Measures of Variation<a class="headerlink" href="#measures-of-variation" title="Permalink to this headline">#</a></h3>
+<p><em>Measures of variation</em> characterize the <em>spread</em> and <em>dispersion</em> of a sample of data.</p>
+<section id="interquartile-range">
+<span id="id11"></span><h4>Interquartile Range<a class="headerlink" href="#interquartile-range" title="Permalink to this headline">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="standard-deviation">
+<h4>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">#</a></h4>
+<p>TODO</p>
+<section id="variance">
+<h5>Variance<a class="headerlink" href="#variance" title="Permalink to this headline">#</a></h5>
+<p>TODO</p>
+</section>
+</section>
 </section>
 </section>
 </section>
@@ -563,8 +596,30 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-location">Measures of Location</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-dispersion">Measures of Dispersion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-location">Measures of Location</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetic-mean">Arithmetic Mean</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-formula">Sample Formula</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-formula">Frequency Formula</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-mean">Geometric Mean</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-vs-arithmetic-mean">Geometric vs. Arithmetic Mean</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mode">Mode</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#percentiles">Percentiles</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#median">Median</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#quartiles">Quartiles</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-variation">Measures of Variation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#interquartile-range">Interquartile Range</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#variance">Variance</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

@@ -69,11 +69,13 @@ Random Variables and Events
 ===========================
 
 
-.. _mass_function:
+.. _density_function:
 
-Probability Mass Function 
+Density Function 
     TODO 
 
+    The *density function* should be familiar. We have already encountered its statistical analogue, :ref:`frequency`. The probability density of a random variable at a certain value is analogously to the *frequency* of an observation in a sample of data.
+    
 .. _distribution_function:
 
 Distribution Function

@@ -380,8 +380,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-spaces-and-events">Sample Spaces and Events</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-definition-of-probability">Classical Definition of Probability</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compound-events">Compound Events</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-definition-of-probability">Classical Definition of Probability</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#axioms-of-probability">Axioms of Probability</a><ul class="nav section-nav flex-column">
@@ -393,7 +393,11 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#law-of-complements">Law of Complements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#law-of-unions">Law of Unions</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -488,6 +492,21 @@ document.write(`
 <div class="math">
 <p><img src="../../_images/math/b8244207d8ea4d5f6e7f427f45d0a42bf0624ce3.png" alt="HT = \{ ht, th \}"/></p>
 </div></section>
+<section id="compound-events">
+<h3>Compound Events<a class="headerlink" href="#compound-events" title="Permalink to this headline">#</a></h3>
+<p>A <em>compound</em> event is formed by composing simpler events with <a class="reference internal" href="../SET_THEORY.html#set-operations"><span class="std std-ref">Operations</span></a>.</p>
+<dl class="simple">
+<dt>Example</dt><dd><p>Consider the experiment of drawing a single card at random from a well-shuffled, standard playing deck. Let <strong>A</strong> represent the event of drawing a 2. Let <strong>B</strong> represent the event of drawing a heart.</p>
+</dd>
+</dl>
+<p>The meaning of a few different <em>compound events</em> is considered below,</p>
+<ol class="arabic simple">
+<li><p><img class="math" src="../../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/> This <em>compound event</em> represents the event of getting a 2 of hearts.</p></li>
+<li><p><img class="math" src="../../_images/math/47b7d7c58a0d8fba34b3e6c9b40a295769c86482.png" alt="A \cup B"/> This <em>compound event</em> represents the event of getting a 2 <em>or</em> a heart.</p></li>
+<li><p><img class="math" src="../../_images/math/2ef404e15204ce9d58b01d10696c2fe1d26d6f8e.png" alt="A^C"/> This <em>compound event</em> represents the event of getting any card except a 2.</p></li>
+<li><p><img class="math" src="../../_images/math/bc14604dac150ff4ca46e9f90f04ae2a0651680a.png" alt="A \cap B^C"/> This <em>compond event</em> represents the event of getting a two that is <em>not</em> a heart.</p></li>
+</ol>
+</section>
 <section id="classical-definition-of-probability">
 <span id="classical-definition"></span><h3>Classical Definition of Probability<a class="headerlink" href="#classical-definition-of-probability" title="Permalink to this headline">#</a></h3>
 <p>Returning to the experiment of flipping a fair coin once,  we have a sample space and two events, <strong>H</strong> and <strong>T</strong>, defined on that sample space,</p>
@@ -512,14 +531,6 @@ document.write(`
 </div><div class="math">
 <p><img src="../../_images/math/4dbc991d4342aca97f51de6417afb463a7c50afc.png" alt="P(T) = \frac{n(T)}{n(S)} = \frac{1}{2}"/></p>
 </div></section>
-<section id="compound-events">
-<h3>Compound Events<a class="headerlink" href="#compound-events" title="Permalink to this headline">#</a></h3>
-<p>A <em>compound</em> event is formed by composing simpler events with <a class="reference internal" href="../SET_THEORY.html#set-operations"><span class="std std-ref">Operations</span></a>.</p>
-<dl class="simple">
-<dt>Example</dt><dd><p>Consider the experiment of drawing a single card at random from a well-shuffled, standard playing deck.</p>
-</dd>
-</dl>
-</section>
 </section>
 <section id="axioms-of-probability">
 <span id="id1"></span><h2>Axioms of Probability<a class="headerlink" href="#axioms-of-probability" title="Permalink to this headline">#</a></h2>
@@ -556,15 +567,18 @@ document.write(`
 </dl>
 <p><a class="reference internal" href="#axiom-1"><span class="std std-ref">Axiom 1</span></a> and <a class="reference internal" href="#axiom-2"><span class="std std-ref">Axiom 2</span></a> are fairly intuitive and straight-forward in their meaning, while <a class="reference internal" href="#axiom-3"><span class="std std-ref">Axiom 3</span></a> takes a bit of study to fully appreciate. To help in that endeavor, consider the following example.</p>
 <dl>
-<dt>Example</dt><dd><p>Let us return again to the experiment of flipping a fair coin twice. The sample space <strong>S</strong> of this experiment was given by,</p>
-<div class="math">
-<p><img src="../../_images/math/993583dab40286afb32b98c177bd667c879cace1.png" alt="S = \{ hh, ht, th, tt \}"/></p>
-</div><p>Consider now two different events <strong>A</strong> and <strong>B</strong> defined on this sample space,</p>
+<dt>Example</dt><dd><p>Let us return again to the experiment of flipping a fair coin twice. Consider now two different events <strong>A</strong> and <strong>B</strong> defined on this sample space,</p>
 <blockquote>
 <div><p><strong>A</strong> <img class="math" src="../../_images/math/923511c61677871074b599fdc4b132e717f93646.png" alt="\equiv"/> getting at least one head</p>
 <p><strong>B</strong> <img class="math" src="../../_images/math/923511c61677871074b599fdc4b132e717f93646.png" alt="\equiv"/> getting exactly one tail</p>
 </div></blockquote>
-<p>Then, in terms of outcomes, clearly, these events are given by,</p>
+<p>Find the probability of <img class="math" src="../../_images/math/ded8fba0806a974210e1ebf13927b8fac16dea92.png" alt="P(A \cup B)"/>.</p>
+</dd>
+</dl>
+<p>The sample space <strong>S</strong> of this experiment was given by,</p>
+<div class="math">
+<p><img src="../../_images/math/993583dab40286afb32b98c177bd667c879cace1.png" alt="S = \{ hh, ht, th, tt \}"/></p>
+</div><p>Then, in terms of outcomes, clearly, these events are given by,</p>
 <div class="math">
 <p><img src="../../_images/math/7b74d9e3d6fcc7962f60ec10a3076111c044657d.png" alt="A = \{ hh, ht, th \}"/></p>
 </div><div class="math">
@@ -612,16 +626,16 @@ document.write(`
 <div class="math">
 <p><img src="../../_images/math/664555e74d6c151c1d95e97e3cfc200a89ea0aee.png" alt="P(B \cup C) = P(B) + P(C) = \frac{1}{2} + \frac{1}{4} = \frac{3}{4}"/></p>
 </div><p>In this case, the two methods of finding the probabilities agree <em>because the condition (or hypothesis) of</em> <a class="reference internal" href="#axiom-3"><span class="std std-ref">Axiom 3</span></a> <em>was met</em>, namely, that the events are mutually exclusive. If the condition (or hypothesis) of <a class="reference internal" href="#axiom-3"><span class="std std-ref">Axiom 3</span></a> is not met, then its conclusion does not follow.</p>
-</dd>
-</dl>
 </section>
 </section>
 </section>
 <section id="corollaries">
 <h2>Corollaries<a class="headerlink" href="#corollaries" title="Permalink to this headline">#</a></h2>
 <p>We can use these <em>axioms</em>, along with the <cite>theorems of set theory &lt;set_theorems&gt;</cite> to prove various things about probability.</p>
-<dl id="law-of-complements">
-<dt><strong>The Law of Complements</strong> <img class="math" src="../../_images/math/3f3e023d0a6002d8a156ab9b9f082a0c0ba56be6.png" alt="P(A) + P(A^C) = 1"/></dt><dd><p>This corollary should be intuitively obvious, considering the Venn Diagramm of complementary sets,</p>
+<section id="law-of-complements">
+<span id="id5"></span><h3>Law of Complements<a class="headerlink" href="#law-of-complements" title="Permalink to this headline">#</a></h3>
+<dl>
+<dt><img class="math" src="../../_images/math/3f3e023d0a6002d8a156ab9b9f082a0c0ba56be6.png" alt="P(A) + P(A^C) = 1"/></dt><dd><p>This corollary should be intuitively obvious, considering the Venn Diagramm of complementary sets,</p>
 <blockquote>
 <div><a class="reference internal image-reference" href="../../_images/sets_complement.jpg"><img alt="../../_images/sets_complement.jpg" class="align-center" src="../../_images/sets_complement.jpg" style="width: 60%;" /></a>
 </div></blockquote>
@@ -630,9 +644,8 @@ document.write(`
 <dt>Example</dt><dd><p>Find the probability of atleast getting at least one head if you flip a coin 3 three times.</p>
 </dd>
 </dl>
-<details class="summary-solution">
-<summary>Solution</summary><p>TODO</p>
-</details><p>The formal proof of the <strong>Law of Complements</strong> follows from the properties of <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">sets</span></a>.</p>
+<p>TODO</p>
+<p>The formal proof of the <strong>Law of Complements</strong> follows from the properties of <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">sets</span></a>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Proof</p>
@@ -650,6 +663,31 @@ document.write(`
 </div></div></blockquote>
 <p>By Complement Theorem 13 (Put Link), the intersection of complements is the empty set.</p>
 </div>
+</section>
+<section id="law-of-unions">
+<span id="id6"></span><h3>Law of Unions<a class="headerlink" href="#law-of-unions" title="Permalink to this headline">#</a></h3>
+<div class="math">
+<p><img src="../../_images/math/71af65e11df7477b3ea176375daf5adc8dc01dfb.png" alt="P(A \cup B) = P(A) + P(B) - P(A \cap B)"/></p>
+</div><p>The <strong>Law of Unions</strong> follows directly from (TODO SET THEOREM) and the <a class="reference internal" href="#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a>,</p>
+<div class="math">
+<p><img src="../../_images/math/cdcdad509d898ec02e65eff1b1f7955920f46d76.png" alt="P(A \cup B) = \frac{n(A \cup B)}{n(S)}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/028e148af63506134f24ac337a00550b04da63fc.png" alt="P(A \cup B) = \frac{n(A) + n(B) - n(A \cap B)}/{n(S)}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/8fce00c6bea523cbdd210742578ddc4b76720d2f.png" alt="P(A \cup B) = \frac{n(A)}{n(S)} + \frac{n(B)}{n(S)} - \frac{n(A \cap B)}{n(S)}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/043f3963b05ab4d653afd19868f6480621e48a01.png" alt="P(A \cup) = P(A) + P(B) - P(A \cap B)"/></p>
+</div><p>The <strong>Law of Unions</strong> is easily seen with a <a class="reference internal" href="../SET_THEORY.html#venn-diagrams"><span class="std std-ref">Venn Diagrams</span></a>,</p>
+<a class="reference internal image-reference" href="../../_images/venn_diagram_overlapping_two_sets.jpg"><img alt="../../_images/venn_diagram_overlapping_two_sets.jpg" class="align-center" src="../../_images/venn_diagram_overlapping_two_sets.jpg" style="width: 60%;" /></a>
+<p>The area <strong>A</strong> and <strong>B</strong> have in common is <img class="math" src="../../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/>. When <img class="math" src="../../_images/math/534ec862789190f4e1c0ee776c13e4f478f5e83f.png" alt="n(A)"/> is added to <img class="math" src="../../_images/math/403c7a48e4364ebe62f8d574ed41d21d723278b9.png" alt="n(B)"/>, the area <img class="math" src="../../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/> has been double-counted, therefore it must be subtracted.</p>
+<dl class="simple">
+<dt>Example</dt><dd><p>Consider a standard deck of 52 playing cards. Find the probability of selecting a Jack or diamond.</p>
+</dd>
+</dl>
+<p>The sample space for a selecting a single card from a deck of 52 cards is shown below,</p>
+<a class="reference internal image-reference" href="../../_images/playing_cards.jpg"><img alt="../../_images/playing_cards.jpg" class="align-center" src="../../_images/playing_cards.jpg" style="width: 60%;" /></a>
+<p>Let <strong>J</strong> be the event of selecting a jack. Let <strong>D</strong> be the event of selecting a diamond.</p>
+</section>
 </section>
 </section>
 
@@ -705,8 +743,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-spaces-and-events">Sample Spaces and Events</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-definition-of-probability">Classical Definition of Probability</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compound-events">Compound Events</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-definition-of-probability">Classical Definition of Probability</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#axioms-of-probability">Axioms of Probability</a><ul class="nav section-nav flex-column">
@@ -718,7 +756,11 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#law-of-complements">Law of Complements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#law-of-unions">Law of Unions</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

@@ -353,7 +353,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -369,6 +371,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-spaces-and-events">Sample Spaces and Events</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-proofs">Probability Proofs</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -380,6 +392,110 @@ document.write(`
                   
   <section id="introduction">
 <span id="probability-introduction-classwork"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
+<section id="sample-spaces-and-events">
+<h2>Sample Spaces and Events<a class="headerlink" href="#sample-spaces-and-events" title="Permalink to this headline">#</a></h2>
+<ol class="arabic">
+<li><p>Describe the sample spaces of the following experiments with a set using <span class="xref std std-ref">list_notation</span></p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Flipping a two-sided coin three times</p></li>
+<li><p>Rolling a six-sided die</p></li>
+<li><p>Rolling two six-sided dice</p></li>
+<li><p>Flipping a two-sided coin and if it lands on heads rolling a six-sided die.</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Two dice are rolled. Let <strong>E</strong> be the event the sum of the outcomes is odd. Let <strong>F</strong> be the event of at least one <em>1</em> appearing on one of the die. Describe the elements of the following evnets in <span class="xref std std-ref">list_notation</span> and interpret the meaning of each event.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../_images/math/72f2056c1b56ffff779f8685f9aecee16c662a71.png" alt="E \cap F"/></p></li>
+<li><p><img class="math" src="../../_images/math/05a408cfe707d033a80470f7c87c64591864f48a.png" alt="E^C \cap F"/></p></li>
+<li><p><img class="math" src="../../_images/math/23a989be58d575d36a75228e27d7b5e3d0c9ad6d.png" alt="E^C \cap F^C"/></p></li>
+<li><p><img class="math" src="../../_images/math/4e84dcf55459fdeac82f6c0147aa9a3153de784c.png" alt="E \cup F"/></p></li>
+<li><p><img class="math" src="../../_images/math/7237027eba5c3fd54ed5652b78ebeafb74060ac8.png" alt="E \cup F^C"/></p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Three red balls and one green ball are placed into a box. Describe the samples of the following experiments with a set using <em>List Notation</em>.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>Hint</em>: Let <em>r</em> <sub>1</sub>, <em>r</em> <sub>2</sub> and <em>r</em> <sub>3</sub> represent the <em>outcome</em> of drawing each of the respective red balls.</p>
+</div>
+<ol class="loweralpha simple">
+<li><p>Selecting one ball at random.</p></li>
+<li><p>Selecting two balls at random and <span class="xref std std-ref">with_replacement</span> (i.e. putting the ball you drew back into the back after you draw it).</p></li>
+<li><p>Selecting two balls at random and <span class="xref std std-ref">without_replacement</span> (i.e. <em>not</em> putting the ball back after you draw it)</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>A deck of six cards consists of three black cards numbered <em>1</em>, <em>2</em>, <em>3</em> and three red cards numbered <em>1</em>, <em>2</em>, <em>3</em>. You draw two cards <span class="xref std std-ref">without_replacement</span>. Let <strong>A</strong> be the event the second card has a larger number than the first card. Let <strong>B</strong> be the event the first card has a larger number than the second card.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Are <strong>A</strong> and <strong>B</strong> mutually exclusive?</p></li>
+<li><p>Are <strong>A</strong> and <strong>B</strong> complements?</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="applications">
+<h2>Applications<a class="headerlink" href="#applications" title="Permalink to this headline">#</a></h2>
+<ol class="arabic" start="6">
+<li><p>Let <strong>S</strong> be the sample space of flipping a fair, two-sided coin three times. LEt <strong>A</strong> be the event of at least two heads. Find <img class="math" src="../../_images/math/0fb5c3fd8b5f12426f9ce700fdf2d4e704905cd2.png" alt="P(A)"/></p></li>
+<li><p>You roll two dice. The find the probability of the following events.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>The sum of the numbers rolled is 7.</p></li>
+<li><p>The sum of the numbers rolled on the dice is 3 or 5.</p></li>
+<li><p>The numbers rolled are both even.</p></li>
+<li><p>One of the numbers rolled is even.</p></li>
+<li><p>Neither or the numbers rolled are even.</p></li>
+<li><p>Is part <em>e</em> the complement of part <em>c</em> or part <em>d</em>?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>The card is a king.</p></li>
+<li><p>The card is a spade.</p></li>
+<li><p>The card is a king or spade.</p></li>
+<li><p>The card is a 4 or Jack.</p></li>
+<li><p>The card is black.</p></li>
+<li><p>The card is black or a queen.</p></li>
+<li><p>The card is neither nor a queen.</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>You select a number randomly between 1 and 1000. What is the probability the number selected is divisible by 5?</p></li>
+</ol>
+</section>
+<section id="probability-proofs">
+<h2>Probability Proofs<a class="headerlink" href="#probability-proofs" title="Permalink to this headline">#</a></h2>
+<ol class="arabic simple" start="10">
+<li><p>Let <strong>A</strong> and <strong>B</strong> be two events, not necessarily mutually exclusive. Prove the following inequality</p></li>
+</ol>
+<div class="math">
+<p><img src="../../_images/math/1c90eb45e00a57a13e96fbb29eb0bed7e8e17c85.png" alt="P(A \cap B) \geq P(A) + P(B) - 1"/></p>
+</div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>Hint</em>: Use the <a class="reference internal" href="../../notes/probability/00_INTRODUCTION.html#law-of-unions"><span class="std std-ref">Law of Unions</span></a> and <a class="reference internal" href="../../notes/probability/00_INTRODUCTION.html#axiom-1"><span class="std std-ref">Axiom 1</span></a></p>
+</div>
+<ol class="arabic simple" start="11">
+<li><p>Let <strong>A</strong> and <strong>B</strong> be two events, not necessarily mutually exclusive. The event,</p></li>
+</ol>
+<div class="math">
+<p><img src="../../_images/math/ef2c01c98cbd53ffe272f6f7a385465bb9a296b7.png" alt="(A - B) \cap (B - A)"/></p>
+</div><p>is called the <em>symmetric difference of</em> <strong>A</strong> <em>and</em> <strong>B</strong>. Prove the probability of the <em>symmetric difference of</em> <strong>A</strong> <em>and</em> <strong>B</strong> is equal to,</p>
+<div class="math">
+<p><img src="../../_images/math/0ac01dfdf7639005bf60d884b871bae2ea580ed6.png" alt="P(A) + P(B) - 2 \cdot P(A \cap B)"/></p>
+</div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>Hint #1</em>: Draw a <a class="reference internal" href="../../notes/SET_THEORY.html#venn-diagrams"><span class="std std-ref">Venn Diagram</span></a> of <strong>A</strong> and <strong>B</strong>, assuming the events are <em>not</em> mutually exclusive. Label the area that correspodned to the <em>symmetric difference of</em> <strong>A</strong> <em>and</em> <strong>B</strong>.</p>
+<p><em>Hint #2</em>: Recall (TODO link) <img class="math" src="../../_images/math/0bf2bc31d1c9ca98372f1fe5b44190df263dd714.png" alt="A - B = A \cap B^C"/></p>
+</div>
+</section>
 </section>
 
 
@@ -421,6 +537,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-spaces-and-events">Sample Spaces and Events</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-proofs">Probability Proofs</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
