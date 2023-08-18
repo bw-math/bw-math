@@ -103,3 +103,8 @@ Bernoulli Random Variable
         p       & \quad \textrm{if } x = 1 \\
         1 - p   & \quad \textrm{if } x = 0
     \end{array}
+
+Uniform Random Variable
+=======================
+
+TODO

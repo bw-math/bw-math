@@ -73,6 +73,6 @@ You can download the full dataset :download:`here <../assets/datasets/earth_dens
 The following table is the a preview of the data you will be using for this project. 
 
 .. csv-table:: Cavendish's Density of the Earth
-   :file: ../assets/datasets/previews/earth_density_data__preview.csv
+   :file: ../assets/datasets/previews/earth_density_data_preview.csv
 
 The meaning of the columns is as follows.
