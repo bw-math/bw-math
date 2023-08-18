@@ -1,11 +1,9 @@
 Set Theory
-===========
+==========
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   probability/index
-   statistics/index
-   hypotheses/index
-   regression/index
+   01_INTRODUCTION
+   02_VENN_DIAGRAMS
