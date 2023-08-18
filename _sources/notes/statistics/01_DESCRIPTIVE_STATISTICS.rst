@@ -2,11 +2,31 @@
 Point Estimation
 ================
 
+A sample of data is characterized by *point estimates* of *sample statistics*.
+
 Definitions
 ===========
 
+Observation
+    :math:`x_i`
+
+    A single piece of data. The subscript is called the *index* of the observation. If the sample is ordered, the *index* corresponds to the order in which the observation was made, i.e. :math:`x_1` is the first observation, :math:`x_2` is the second observation, etc. 
+
+Sample 
+    :math:`\{ x_1, x_2, ..., x_{n-1}, x_n \}`
+
+    A collection, or :ref:`set <set_theory>`, of observations. The number of samples, *n*, is called the *sample size*.
+
+Frequency
+    :math:`f(x_i)`
+
+    The number of times a particular observation occurs in a sample of data.
+
 Measures of Location
 --------------------
+
+*Measures of location* describe *where* a sample of data can be found.
+
 
 Mean
     Arithmetic Mean
@@ -64,11 +84,17 @@ Mean
             Then the sample arithmetic mean can be calculated with the formula, 
 
             .. math::
-                \bar{x} = \sum_{i}^n x_i \cdot f(x_i)
+                \bar{x}_A = \sum_{i}^n x_i \cdot f(x_i)
     
     Geometric Mean
 
-        TODO 
+        The *geometric mean* is defined as,
+
+        .. math::
+            \bar{x}_G = (x_1 \cdot x_2 \cdot ... \cdot x_{n-1} \codt x_n )^(1/n)
+
+    Geometric vs. Arithmetic Mean
+
 
 Mode
 

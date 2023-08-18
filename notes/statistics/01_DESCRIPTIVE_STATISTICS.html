@@ -129,9 +129,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../SPLASH.html">AP Statistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../SCHEDULES.html">Homework</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../projects/index.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../projects/00_PYTHON.html">Learning Python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../projects/01_GRAPHING.html">Statistical Plots</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../projects/02_BIAS.html">Statistical Bias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/00_PYTHON.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/01_GRAPHING.html">Plots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/02_BIAS.html">Bias</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Class Notes</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
@@ -355,10 +355,23 @@ document.write(`
                   
   <section id="point-estimation">
 <h1>Point Estimation<a class="headerlink" href="#point-estimation" title="Permalink to this headline">#</a></h1>
+<p>A sample of data is characterized by <em>point estimates</em> of <em>sample statistics</em>.</p>
 <section id="definitions">
 <h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
+<dl>
+<dt>Observation</dt><dd><p><img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/></p>
+<p>A single piece of data. The subscript is called the <em>index</em> of the observation. If the sample is ordered, the <em>index</em> corresponds to the order in which the observation was made, i.e. <img class="math" src="../../_images/math/e564d43fd97a8499ef8ceb6167286e4ae267704d.png" alt="x_1"/> is the first observation, <img class="math" src="../../_images/math/3f72613f77d1720ad07cc485a55e4a2fd2a96947.png" alt="x_2"/> is the second observation, etc.</p>
+</dd>
+<dt>Sample</dt><dd><p><img class="math" src="../../_images/math/28a9b81a2d599b224db97657a816304658443252.png" alt="\{ x_1, x_2, ..., x_{n-1}, x_n \}"/></p>
+<p>A collection, or <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">set</span></a>, of observations. The number of samples, <em>n</em>, is called the <em>sample size</em>.</p>
+</dd>
+<dt>Frequency</dt><dd><p><img class="math" src="../../_images/math/905bd3c0445049b5e64f182e7238f2da96ada209.png" alt="f(x_i)"/></p>
+<p>The number of times a particular observation occurs in a sample of data.</p>
+</dd>
+</dl>
 <section id="measures-of-location">
 <h3>Measures of Location<a class="headerlink" href="#measures-of-location" title="Permalink to this headline">#</a></h3>
+<p><em>Measures of location</em> describe <em>where</em> a sample of data can be found.</p>
 <dl>
 <dt>Mean</dt><dd><p>Arithmetic Mean</p>
 <blockquote>
@@ -419,13 +432,60 @@ document.write(`
 </table>
 <p>Then the sample arithmetic mean can be calculated with the formula,</p>
 <div class="math">
-<p><img src="../../_images/math/66e0ca34d01567bd12b28a120be92c6d030c9deb.png" alt="\bar{x} = \sum_{i}^n x_i \cdot f(x_i)"/></p>
+<p><img src="../../_images/math/c5a83c9f3da0f9813a33adc07ff858912b567b00.png" alt="\bar{x}_A = \sum_{i}^n x_i \cdot f(x_i)"/></p>
 </div></div></blockquote>
 </div></blockquote>
 <p>Geometric Mean</p>
 <blockquote>
-<div><p>TODO</p>
+<div><p>The <em>geometric mean</em> is defined as,</p>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\bar{x}_G = (x_1 \cdot x_2 \cdot ... \cdot x_{n-1} \codt x_n )^(1/n)
+
+</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Undefined control sequence.
+&lt;argument&gt; ...t x_2 \cdot ... \cdot x_{n-1} \codt 
+                                                  x_n )^(1/n)\end {split}
+l.16 ...\cdot x_{n-1} \codt x_n )^(1/n)\end{split}
+                                                  
+! Undefined control sequence.
+&lt;argument&gt; ...t x_2 \cdot ... \cdot x_{n-1} \codt 
+                                                  x_n )^(1/n)\end {split}
+l.16 ...\cdot x_{n-1} \codt x_n )^(1/n)\end{split}
+                                                  
+[1] (./math.aux) )
+(see the transcript file for additional information)
+Output written on math.dvi (1 page, 608 bytes).
+Transcript written on math.log.
+</p>
+</div>
 </div></blockquote>
+<p>Geometric vs. Arithmetic Mean</p>
 </dd>
 </dl>
 <p>Mode</p>

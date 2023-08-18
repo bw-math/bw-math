@@ -1,8 +1,8 @@
 .. _project_one:
 
-=================
-Statistical Plots
-=================
+=====
+Plots
+=====
 
 In this lab, you will get familiar with the statistical features of **Python** using a famous dataset from the history of physics.
 

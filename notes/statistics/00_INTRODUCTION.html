@@ -129,9 +129,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../SPLASH.html">AP Statistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../SCHEDULES.html">Homework</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../projects/index.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../projects/00_PYTHON.html">Learning Python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../projects/01_GRAPHING.html">Statistical Plots</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../projects/02_BIAS.html">Statistical Bias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/00_PYTHON.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/01_GRAPHING.html">Plots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../projects/02_BIAS.html">Bias</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Class Notes</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
@@ -337,8 +337,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key">Key</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-of-observation">Methods of Observation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-techniques">Sampling Techniques</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-fallacies">Statistical Fallacies</a></li>
@@ -361,15 +361,15 @@ document.write(`
   <section id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
 <p>Statistics is the study of making general assertions from particular cases.</p>
+<section id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h2>
+</section>
 <section id="definitions">
 <h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
-<section id="key">
-<h3>Key<a class="headerlink" href="#key" title="Permalink to this headline">#</a></h3>
 <dl class="simple" id="population">
 <dt>Population</dt><dd><p>The <em>population</em> is the set of all possible individuals that can be observed in a given experiment.</p>
 </dd>
 </dl>
-</section>
 <section id="methods-of-observation">
 <span id="observation-methods"></span><h3>Methods of Observation<a class="headerlink" href="#methods-of-observation" title="Permalink to this headline">#</a></h3>
 <dl>
@@ -385,27 +385,32 @@ document.write(`
 <span id="id1"></span><h3>Sampling Techniques<a class="headerlink" href="#sampling-techniques" title="Permalink to this headline">#</a></h3>
 <p>Random</p>
 <blockquote>
-<div><p>TODO</p>
-<p>Ex.</p>
-<blockquote>
-<div><p>TODO</p>
-</div></blockquote>
+<div><p>A <em>random</em> sample is selected from a population without any pre-determined method.</p>
+<dl class="simple">
+<dt>Examples</dt><dd><ul class="simple">
+<li><p>Mixing names in a hat and picking three names without looking.</p></li>
+<li><p>Going through the phone book and flipping a coin to determine who to include in the sample and who to exclude.</p></li>
+<li><p>Assign every name a number and then draw random numbers.</p></li>
+</ul>
+</dd>
+</dl>
 </div></blockquote>
 <p>Systematic</p>
 <blockquote>
-<div><p>TODO</p>
-<p>Ex.</p>
-<blockquote>
-<div><p>TODO</p>
-</div></blockquote>
+<div><p>A <em>systematic</em> sample is selected from a population according to some fixed rule.</p>
+<dl class="simple">
+<dt>Examples</dt><dd><ul class="simple">
+<li><p>Asking every 10 <sup>th</sup> person who they are voting for in the next election.</p></li>
+<li><p>Selecting ten people from every zipcode.</p></li>
+<li><p>Sending out surveys and using every 5 <sup>th</sup> one that is returned.</p></li>
+</ul>
+</dd>
+</dl>
 </div></blockquote>
 <p>Stratified</p>
 <blockquote>
-<div><p>TODO</p>
-<p>Ex.</p>
-<blockquote>
-<div><p>TODO</p>
-</div></blockquote>
+<div><p>To get <em>stratified</em> samples, the population must be broken up into demographics. Then a representative sample from every demographic taken and the results are put back together.</p>
+<p>Examples</p>
 </div></blockquote>
 <p>Cluster</p>
 <blockquote>
@@ -469,29 +474,30 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p>While polls will never agree 100% of the time with reality, the error in this case was extreme. The pollsters at the organizations of Crossley, Gallup and Roper were told to survey a certain number of people. Beyond that, they were free to choose who to include in the survey. This led to the data they collected being <em>biased</em>, leading to blunders such as,</p>
+<p>While polls will never agree 100% of the time with reality, the error in this case was extreme. The pollsters at the organizations of Crossley, Gallup and Roper were told to survey a certain number of people. Beyond that, they were free to choose who to include in the survey. This led to the data they collected being <em>biased</em>, resulting in an infamous photograph,</p>
 <a class="reference internal image-reference" href="../../_images/dewey_defeats_truman.jpg"><img alt="../../_images/dewey_defeats_truman.jpg" class="align-center" src="../../_images/dewey_defeats_truman.jpg" style="width: 100%;" /></a>
 </dd>
-<dt>Observer Bias</dt><dd><p><em>Observer Bias</em> occurs when the act of observation changes that which is being observed. Examples of this type of bias can crop up when pollsters ask leading questions, such as, “Do you <em>still</em> drink coffee?” versus the more neutral phrasing, “Do you drink coffee?”. Depending on how the question is, a different answer might be given.</p>
+<dt>Observer Bias</dt><dd><p><em>Observer Bias</em> occurs when the act of observation changes that which is being observed. Examples of this type of bias can crop up when pollsters ask leading questions, such as, “Do you <em>still</em> drink coffee?” versus the more neutral phrasing, “Do you drink coffee?”. Depending on how the question is phrased, a different answer might be given.</p>
 <p>A more famous example of this type of bias is the <a class="reference external" href="https://en.wikipedia.org/wiki/Milgram_experiment">Milgram Experiment</a> conducted by Dr. Stanley Milgrim at Yale University. The <em>Milford Experiment</em> was a psychological study wherein participants were told they were testing the effects of phyiscal punishment in form of an electric shock on the memory. Participants were to be paired off as <em>teacher</em> and <em>learner</em>. The <em>learner</em> would be asked to memorize a series of words, and then asked to recite them. If they got the words wrong in the recitation, the <em>teacher</em> would administer an electric shock to the <em>learner</em>. Each time a wrong answer was given, the voltage of the electric shock was increased.</p>
 <p>Unbeknownst to the participants of the study, this wasn’t the actual experiment. In reality, the <em>learner</em> in every experiment was a paid actor and the electric shocks weren’t real. The actor would intentionally get answers wrong and then pretend to be in pain when the teacher was administering the fake electric shocks. The <em>teacher</em> was the real object of study. Dr. Milgram was trying to see how much pain a randomly selected individual would inflict on someone else simply because they were told to do it.</p>
-<p>When participants expressed unease or concern, the researchers running the study, intentionally dressed in white lab coats, would give one of the following responses,</p>
+<p>When participants expressed unease or concern, the researchers running the study, intentionally dressed in white lab coats to give the appearance of authority, would give one of the following responses,</p>
 <ul class="simple">
 <li><p>Please continue.</p></li>
 <li><p>The experiment requires that you continue.</p></li>
 <li><p>It is absolutely essential that you continue.</p></li>
 <li><p>You have no other choice; you must go on.</p></li>
 </ul>
-<p>The actor would get many questions wrong, forcing the <em>teacher</em> to increase the voltage of the shock. Most, but not all, participants would quit before reaching the maximum voltage. Dr. Milgrim found 14 of the 40 participants in the original study would increase the voltage of the shock all the way up to the maximum amount, as long as a researcher was there to instruct him to continue.</p>
-<p>Subsequent variations of this experiment have shown the <em>way</em> the researcher responds to the participant’s concern significantly affects the results. In Dr. Milgram’s original experiment, the responses were phrased in such a way as to imply the actor’s pain was for the “<em>good of the experiment</em>”. If instead of saying,</p>
+<p>The actor would get many questions wrong, forcing the <em>teacher</em> to increase the voltage of the shock. Most, but not all, participants would quit before reaching the maximum voltage. Dr. Milgrim found 14 of the 40 participants in the original study would increase the voltage of the shock all the way up to the maximum amount, as long as a researcher was there to instruct him or her to continue.</p>
+<p>Subsequent variations of this experiment have shown the <em>way</em> the researcher responds to the participant’s concern after hearing the actor cry out in pain significantly affects the results. In Dr. Milgram’s original experiment, the responses were phrased in such a way as to imply the actor’s pain was for the “<em>good of the experiment</em>”. If instead of saying,</p>
 <blockquote>
 <div><p>The experiment requires that you continue.</p>
 </div></blockquote>
-<p>Researcher instead said,</p>
+<p>Researchers instead said,</p>
 <blockquote>
 <div><p>You are ordered to continue.</p>
 </div></blockquote>
-<p>With this slight change, the results were nowhere near as large as in Dr. Milgrim’s original experiment.</p>
+<p>The results were wildly different. With this slight change, the results were nowhere near as large as in Dr. Milgrim’s original experiment.</p>
+<p>In other words, <em>how</em> you make the observation may change <em>what</em> you are observing.</p>
 </dd>
 </dl>
 </dd>
@@ -647,8 +653,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key">Key</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-of-observation">Methods of Observation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-techniques">Sampling Techniques</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-fallacies">Statistical Fallacies</a></li>
