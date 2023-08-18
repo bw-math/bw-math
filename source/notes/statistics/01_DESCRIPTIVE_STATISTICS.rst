@@ -176,11 +176,15 @@ Interquartile Range
 
 TODO
 
+.. _standard_deviation:
+
 ******************
 Standard Deviation
 ******************
 
 TODO
+
+.. _variance:
 
 Variance
 ********

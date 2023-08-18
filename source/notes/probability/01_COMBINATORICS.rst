@@ -46,7 +46,7 @@ Suppose you live in the aptly named *Town A* and are planing a road trip to the 
 
 Suppose further there are two routes from *Town A* to *Town B*, and there are three routes from *Town B* to *Town C*. Let us call the routes from *Town A* to *Town B* *a* :sub:`1` and *a* :sub:`2`, respectively. Let us call the routes from *Town B* to *Town C* *b* :sub:`1`, *b* :sub:`2`, and *b* :sub:`3`, respectively. This setup is depicted in the following diagram,
 
-.. image:: ../../assets/imgs/combinatorics_road_trip.png
+.. image:: ../../assets/imgs/combinatorics/combinatorics_road_trip.png
    :width: 60%
    :align: center
 
@@ -60,7 +60,7 @@ Before toggling the solution below, try and figure out the answer by drawing arr
 
     Each choice represents a branch. Every time we make a choice, we are narrowing down the set of possible outcomes. With that in mind, we can represent each choice as a *branch* in a tree, as in the following diagram,
 
-    .. image:: ../../assets/imgs/combinatorics_tree_diagram.png
+    .. image:: ../../assets/imgs/combinatorics/combinatorics_tree_diagram.png
         :width: 60%
         :align: center
 
@@ -109,7 +109,7 @@ You are trying to figure out what to outfit to wear. In your closet, you have a 
     
     We have two sets in this problem: the set of shirts in our closet, and the set of pants in our dresser. 
 
-    .. image:: ../../assets/imgs/combinatorics_example.png
+    .. image:: ../../assets/imgs/combinatorics/combinatorics_example.png
         :width: 60%
         :align: center
 
@@ -227,7 +227,7 @@ Three friends, Aletheia, Bertha and Cornelius, are running a foot race to determ
 
     This can be visualized through a modified :ref:`tree diagram <tree_diagrams>`, where subsequent branches in the tree diagram are affected by the value of the current branch,
 
-        .. image:: ../../assets/imgs/combinatorics_permuted_tree_diagram.png
+        .. image:: ../../assets/imgs/combinatorics/combinatorics_permuted_tree_diagram.png
             :width: 60%
             :align: center
 
@@ -338,6 +338,10 @@ and consider all the two-element permutations that can be formed from this set, 
 If the condition that order is important is removed, then the permutation *ab* and *ba* are considered the same *combination*. Likewise for *ac* and *ca*, and then again for *bc* and *cb*. The number of distinct sequences becomes,
 
     ab ac bc
+    
+.. image:: ../../assets/imgs/combinatorics/combinatorics_connection.png
+        :width: 60%
+        :align: center
 
 Permuted Combinations
 *********************
@@ -352,7 +356,3 @@ and all two-element *combinations* (not *permutations*) are required, that is to
     ab ac ad bc bd cd 
 
 TODO 
-
-.. image:: ../../assets/imgs/combinatorics_connection.png
-        :width: 60%
-        :align: center

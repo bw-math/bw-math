@@ -90,7 +90,7 @@ Be careful not to confuse the outcome *h* with the event **H**, and likewise the
 
 Consider now flipping the same fair, two-sided coin twice. A :ref:`tree diagram <tree_diagrams>` can help visualize the sample space for this experiment,
 
-.. image:: ../../assets/imgs/sample_space_coin_flip.png
+.. image:: ../../assets/imgs/probability/sample_space_coin_flip.png
     :width: 60%
     :align: center
 
@@ -104,6 +104,7 @@ In this example, there is no simple correspondence between the events defined on
 .. math:: 
     HT = \{ ht, th \}
 
+.. _compound_events:
 
 Compound Events
 ---------------
@@ -311,7 +312,7 @@ Law of Complements
 :math:`P(A) + P(A^C) = 1` 
     This corollary should be intuitively obvious, considering the Venn Diagramm of complementary sets,
 
-        .. image:: ../../assets/imgs/sets_complement.jpg
+        .. image:: ../../assets/imgs/sets/sets_complement.jpg
             :width: 60%
             :align: center
 
@@ -324,21 +325,19 @@ TODO
 
 The formal proof of the **Law of Complements** follows from the properties of :ref:`sets <set_theory>`.
 
-.. warning::
-    Proof
-
+Proof
     By Complement Theorem 12 (Put Link), the union of complements is the sample space **S**. Therefore, the *probability* of the union is equal to the probability of the entire sample space **S**.
             
-        .. math::
-            A \cup A^C = S
+    .. math::
+        A \cup A^C = S
 
-        .. math::
-            \implies P(A \cup A^C) = P(S)
+    .. math::
+        \implies P(A \cup A^C) = P(S)
 
     By Axiom 2, the probability of the entire sample space **S** is 1.
         
-        .. math:: 
-            \implies P(A \cup A^C) = 1
+    .. math:: 
+        \implies P(A \cup A^C) = 1
 
     By Complement Theorem 13 (Put Link), the intersection of complements is the empty set.
 
@@ -350,23 +349,24 @@ Law of Unions
 .. math:: 
     P(A \cup B) = P(A) + P(B) - P(A \cap B)
     
-The **Law of Unions** follows directly from (TODO SET THEOREM) and the :ref:`classical_definition`,
+Proof 
+    The **Law of Unions** follows directly from (TODO SET THEOREM) and the :ref:`classical_definition`,
 
-.. math:: 
-    P(A \cup B) = \frac{n(A \cup B)}{n(S)}
+    .. math:: 
+        P(A \cup B) = \frac{n(A \cup B)}{n(S)}
 
-.. math:: 
-    P(A \cup B) = \frac{n(A) + n(B) - n(A \cap B)}/{n(S)}
+    .. math:: 
+        P(A \cup B) = \frac{n(A) + n(B) - n(A \cap B)}/{n(S)}
 
-.. math:: 
-    P(A \cup B) = \frac{n(A)}{n(S)} + \frac{n(B)}{n(S)} - \frac{n(A \cap B)}{n(S)}
+    .. math:: 
+        P(A \cup B) = \frac{n(A)}{n(S)} + \frac{n(B)}{n(S)} - \frac{n(A \cap B)}{n(S)}
 
-.. math::
-    P(A \cup) = P(A) + P(B) - P(A \cap B)
+    .. math::
+        P(A \cup B) = P(A) + P(B) - P(A \cap B)
 
 The **Law of Unions** is easily seen with a :ref:`venn_diagrams`,
 
-.. image:: ../../assets/imgs/venn_diagram_overlapping_two_sets.jpg
+.. image:: ../../assets/imgs/sets/sets_union_overlapping.jpg
    :width: 60%
    :align: center
 
@@ -377,7 +377,7 @@ Example
 
 The sample space for a selecting a single card from a deck of 52 cards is shown below,
 
-.. image:: ../../assets/imgs/playing_cards.jpg
+.. image:: ../../assets/imgs/probability/playing_cards.jpg
    :width: 60%
    :align: center
 
