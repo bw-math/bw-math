@@ -104,6 +104,22 @@ In this example, there is no simple correspondence between the events defined on
 .. math:: 
     HT = \{ ht, th \}
 
+
+Compound Events
+---------------
+
+A *compound* event is formed by composing simpler events with :ref:`set_operations`.
+
+Example
+    Consider the experiment of drawing a single card at random from a well-shuffled, standard playing deck. Let **A** represent the event of drawing a 2. Let **B** represent the event of drawing a heart.
+
+The meaning of a few different *compound events* is considered below,
+
+1. :math:`A \cap B` This *compound event* represents the event of getting a 2 of hearts.
+2. :math:`A \cup B` This *compound event* represents the event of getting a 2 *or* a heart.
+3. :math:`A^C` This *compound event* represents the event of getting any card except a 2.
+4. :math:`A \cap B^C` This *compond event* represents the event of getting a two that is *not* a heart.
+   
 .. _classical_definition:
 
 Classical Definition of Probability
@@ -142,15 +158,6 @@ Applying this definition to the events **H** and **T** in the first example, it 
 
 .. math:: 
     P(T) = \frac{n(T)}{n(S)} = \frac{1}{2}
-
-Compound Events
----------------
-
-A *compound* event is formed by composing simpler events with :ref:`set_operations`.
-
-Example
-    Consider the experiment of drawing a single card at random from a well-shuffled, standard playing deck.
-
 
 
 .. _axioms_of_probability:
@@ -201,92 +208,95 @@ Axiom 3
 :ref:`axiom_1` and :ref:`axiom_2` are fairly intuitive and straight-forward in their meaning, while :ref:`axiom_3` takes a bit of study to fully appreciate. To help in that endeavor, consider the following example.
 
 Example
-    Let us return again to the experiment of flipping a fair coin twice. The sample space **S** of this experiment was given by,
-
-    .. math::
-        S = \{ hh, ht, th, tt \}
-
-    Consider now two different events **A** and **B** defined on this sample space,
+    Let us return again to the experiment of flipping a fair coin twice. Consider now two different events **A** and **B** defined on this sample space,
 
         **A** :math:`\equiv` getting at least one head
         
         **B** :math:`\equiv` getting exactly one tail
-
-    Then, in terms of outcomes, clearly, these events are given by,
-
-    .. math::
-        A = \{ hh, ht, th \}
     
-    .. math::
-        n(A) = 3
-
-    .. math::
-        B = \{ ht, th \}
-
-    .. math::
-        n(B) = 2
-
-    And, using the :ref:`classical_definition`, the probabilities of these events is calculated as,
-
-    .. math::
-        P(A) = \frac{3}{4}
+    Find the probability of :math:`P(A \cup B)`. 
     
-    .. math::
-        P(B) = \frac{2}{4} = \frac{1}{2}
+The sample space **S** of this experiment was given by,
 
-    :ref:`axiom_3` tells us how to compute :math:`A \cup B`; it tells us the probability of the union is equal to the sum of the individual probabilities. However, if we try to apply :ref:`axiom_3` here, we wind up with a contradiction,
+.. math::
+    S = \{ hh, ht, th, tt \}
 
-    .. math:: 
-        P(A) + P(B) = \frac{3}{4} + \frac{2}{4} = \frac{5}{4} \geq 1
 
-    Here is a probability greater than 1, which cannot be the case. What is going on?
+Then, in terms of outcomes, clearly, these events are given by,
 
-    The issue is the *condition* that must be met to apply :ref:`axiom_3`; the events **A** and **B** must be *mutually exclusive*, :math:`A \cap B = \varnothing`, while in this example we have,
+.. math::
+    A = \{ hh, ht, th \}
 
-    .. math::
-        A \cap B = \{ ht, th \}
+.. math::
+    n(A) = 3
 
-    Therefore, we *cannot* say the probability of the union is equal to the sum of probabilities. In fact, in this example,
+.. math::
+    B = \{ ht, th \}
 
-    .. math::
-        P(A \cap B) = \frac{2}{4} = \frac{1}{2}
+.. math::
+    n(B) = 2
 
-    If, instead, we consider the event **C**,
+And, using the :ref:`classical_definition`, the probabilities of these events is calculated as,
 
-        C :math:`\equiv` getting exactly two heads
+.. math::
+    P(A) = \frac{3}{4}
 
-    Then, the outcomes of **C** are,
+.. math::
+    P(B) = \frac{2}{4} = \frac{1}{2}
 
-    .. math::
-        C = \{ hh \}
-    
-    .. math::
-        n(C) = 1
+:ref:`axiom_3` tells us how to compute :math:`A \cup B`; it tells us the probability of the union is equal to the sum of the individual probabilities. However, if we try to apply :ref:`axiom_3` here, we wind up with a contradiction,
 
-    And the probability of the event **C**,
+.. math:: 
+    P(A) + P(B) = \frac{3}{4} + \frac{2}{4} = \frac{5}{4} \geq 1
 
-    .. math::
-        P(C) = \frac{1}{4}
-    
-    Then, the :ref:`compound event <compound_events>` :math:`B \cup C` is found by aggregating the outcomes in both of the individual events **B** and **C** into a single new set,
+Here is a probability greater than 1, which cannot be the case. What is going on?
 
-    .. math::
-        B \cup C = \{ hh, th, ht \}
+The issue is the *condition* that must be met to apply :ref:`axiom_3`; the events **A** and **B** must be *mutually exclusive*, :math:`A \cap B = \varnothing`, while in this example we have,
 
-    .. math::
-        n(B \cup C) = 3
+.. math::
+    A \cap B = \{ ht, th \}
 
-    So the probability of the compound event :math:`B \cup C` is calculated as,
+Therefore, we *cannot* say the probability of the union is equal to the sum of probabilities. In fact, in this example,
 
-    .. math::
-        P(B \cup C) = \frac{3}{4}
+.. math::
+    P(A \cap B) = \frac{2}{4} = \frac{1}{2}
 
-    Notice :math:`B \cap C = \varnothing`, i.e. **B** and **C** are mutually exclusive, so by :ref:`axiom_3`, we may also decompose this probability into its individual probabilities,
+If, instead, we consider the event **C**,
 
-    .. math::
-        P(B \cup C) = P(B) + P(C) = \frac{1}{2} + \frac{1}{4} = \frac{3}{4}
+    C :math:`\equiv` getting exactly two heads
 
-    In this case, the two methods of finding the probabilities agree *because the condition (or hypothesis) of* :ref:`axiom_3` *was met*, namely, that the events are mutually exclusive. If the condition (or hypothesis) of :ref:`axiom_3` is not met, then its conclusion does not follow.
+Then, the outcomes of **C** are,
+
+.. math::
+    C = \{ hh \}
+
+.. math::
+    n(C) = 1
+
+And the probability of the event **C**,
+
+.. math::
+    P(C) = \frac{1}{4}
+
+Then, the :ref:`compound event <compound_events>` :math:`B \cup C` is found by aggregating the outcomes in both of the individual events **B** and **C** into a single new set,
+
+.. math::
+    B \cup C = \{ hh, th, ht \}
+
+.. math::
+    n(B \cup C) = 3
+
+So the probability of the compound event :math:`B \cup C` is calculated as,
+
+.. math::
+    P(B \cup C) = \frac{3}{4}
+
+Notice :math:`B \cap C = \varnothing`, i.e. **B** and **C** are mutually exclusive, so by :ref:`axiom_3`, we may also decompose this probability into its individual probabilities,
+
+.. math::
+    P(B \cup C) = P(B) + P(C) = \frac{1}{2} + \frac{1}{4} = \frac{3}{4}
+
+In this case, the two methods of finding the probabilities agree *because the condition (or hypothesis) of* :ref:`axiom_3` *was met*, namely, that the events are mutually exclusive. If the condition (or hypothesis) of :ref:`axiom_3` is not met, then its conclusion does not follow.
 
 Corollaries
 ===========
@@ -295,7 +305,10 @@ We can use these *axioms*, along with the `theorems of set theory <set_theorems>
 
 .. _law_of_complements:
 
-**The Law of Complements** :math:`P(A) + P(A^C) = 1` 
+Law of Complements 
+------------------
+
+:math:`P(A) + P(A^C) = 1` 
     This corollary should be intuitively obvious, considering the Venn Diagramm of complementary sets,
 
         .. image:: ../../assets/imgs/sets_complement.jpg
@@ -307,9 +320,7 @@ We can use these *axioms*, along with the `theorems of set theory <set_theorems>
 Example
     Find the probability of atleast getting at least one head if you flip a coin 3 three times. 
 
-.. collapse:: Solution
-
-    TODO
+TODO 
 
 The formal proof of the **Law of Complements** follows from the properties of :ref:`sets <set_theory>`.
 
@@ -330,3 +341,44 @@ The formal proof of the **Law of Complements** follows from the properties of :r
             \implies P(A \cup A^C) = 1
 
     By Complement Theorem 13 (Put Link), the intersection of complements is the empty set.
+
+.. _law_of_unions:
+
+Law of Unions
+-------------
+
+.. math:: 
+    P(A \cup B) = P(A) + P(B) - P(A \cap B)
+    
+The **Law of Unions** follows directly from (TODO SET THEOREM) and the :ref:`classical_definition`,
+
+.. math:: 
+    P(A \cup B) = \frac{n(A \cup B)}{n(S)}
+
+.. math:: 
+    P(A \cup B) = \frac{n(A) + n(B) - n(A \cap B)}/{n(S)}
+
+.. math:: 
+    P(A \cup B) = \frac{n(A)}{n(S)} + \frac{n(B)}{n(S)} - \frac{n(A \cap B)}{n(S)}
+
+.. math::
+    P(A \cup) = P(A) + P(B) - P(A \cap B)
+
+The **Law of Unions** is easily seen with a :ref:`venn_diagrams`,
+
+.. image:: ../../assets/imgs/venn_diagram_overlapping_two_sets.jpg
+   :width: 60%
+   :align: center
+
+The area **A** and **B** have in common is :math:`A \cap B`. When :math:`n(A)` is added to :math:`n(B)`, the area :math:`A \cap B` has been double-counted, therefore it must be subtracted.
+
+Example
+    Consider a standard deck of 52 playing cards. Find the probability of selecting a Jack or diamond. 
+
+The sample space for a selecting a single card from a deck of 52 cards is shown below,
+
+.. image:: ../../assets/imgs/playing_cards.jpg
+   :width: 60%
+   :align: center
+
+Let **J** be the event of selecting a jack. Let **D** be the event of selecting a diamond.
