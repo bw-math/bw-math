@@ -6,9 +6,9 @@ References
    :maxdepth: 2
    :caption: Contents:
 
-   TEXTBOOKS
+   TEXTS
+   tables/index
    TI84
-   EXCEL
    python/index
 
 
@@ -23,4 +23,4 @@ These are resources I use for maintaining the site. You may safely ignore this s
    :caption: Contents:
 
    LATEX
-   SITE
+   DOCS

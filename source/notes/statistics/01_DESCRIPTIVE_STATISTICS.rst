@@ -33,16 +33,15 @@ Frequency
 .. _measures_of_location:
 
 Measures of Location
---------------------
+====================
 
 *Measures of location* describe *where* a sample of data can be found.
 
 
 .. _arithmetic_mean:
 
-***************
 Arithmetic Mean
-***************
+---------------
 
 The *arithmetic* mean can be defined in two equivalent ways. 
 
@@ -112,9 +111,8 @@ Then the sample arithmetic mean can be calculated with the formula,
 
 .. _geometric_mean:
 
-**************
 Geometric Mean
-**************
+--------------
 
 The *geometric mean* is defined as,
 
@@ -125,7 +123,6 @@ TODO
 
 .. _geometric_vs_arithmetic_mean:
 
-*****************************
 Geometric vs. Arithmetic Mean
 *****************************
 
@@ -133,60 +130,89 @@ TODO
 
 .. _mode:
 
-****
 Mode
-****
+----
 
 TODO 
 
 .. _percentiles:
 
-***********
 Percentiles
-***********
+-----------
     
 TODO 
 
 .. _median:
 
 Median
-******
+------
 
 TODO
 
 .. _quartiles: 
 
 Quartiles
-*********
+---------
 
 TODO 
         
 .. _measures_of_variation:
 
 Measures of Variation 
----------------------
+=====================
 
 *Measures of variation* characterize the *spread* and *dispersion* of a sample of data.
 
 .. _interquartile_range:
 
-*******************
 Interquartile Range
-*******************
+-------------------
 
 TODO
 
 .. _standard_deviation:
 
-******************
 Standard Deviation
-******************
+------------------
 
 TODO
 
 .. _variance:
 
 Variance
-********
+--------
+
+TODO
+
+Measures of Comparision
+=======================
+
+Coefficient of Variation
+------------------------
+
+.. math:: 
+    v = \frac{\bar{x}}{s} \cdot 100
+
+Z Score
+-------
+
+.. math::
+    z = \frac{x_i - \bar{x}}{s}
+
+
+Outliers
+========
+
+TODO
+
+Rule of Thumb
+-------------
+
+TODO
+
+.. _chebyshevs_theorem:
+
+Chebyshev's Theorem
+===================
 
 TODO
