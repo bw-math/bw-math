@@ -353,7 +353,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -369,6 +371,24 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-distribution">Probability Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#symmetry">Symmetry</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#z-tables">Z-Tables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#empirical-rule">Empirical Rule</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effects-of-parameters">Effects of Parameters</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#varying-the-mean">Varying the Mean</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#varying-the-standard-deviation">Varying the Standard Deviation</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -381,6 +401,42 @@ document.write(`
   <section id="normal-distribution">
 <span id="normal"></span><h1>Normal Distribution<a class="headerlink" href="#normal-distribution" title="Permalink to this headline">#</a></h1>
 <p>The <strong>Normal Distribution</strong> is the foundation of <a class="reference internal" href="../statistics/00_INTRODUCTION.html#inferential-statistic"><span class="std std-ref">inferential statistics</span></a>.</p>
+<p>TODO</p>
+<section id="probability-distribution">
+<h2>Probability Distribution<a class="headerlink" href="#probability-distribution" title="Permalink to this headline">#</a></h2>
+<p>(<a class="reference download internal" download="" href="../../_downloads/2b58ddb05b619686edaf8ec53aaaf6eb/normal_distribution_01.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>)</p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/074ca617ee461a44c5999dd192051545/normal_distribution_02.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>)</p>
+<section id="symmetry">
+<h3>Symmetry<a class="headerlink" href="#symmetry" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="z-tables">
+<h3>Z-Tables<a class="headerlink" href="#z-tables" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="empirical-rule">
+<h3>Empirical Rule<a class="headerlink" href="#empirical-rule" title="Permalink to this headline">#</a></h3>
+<img alt="../../_images/normal_distribution_empirical_rule.png" src="../../_images/normal_distribution_empirical_rule.png" />
+</section>
+</section>
+<section id="effects-of-parameters">
+<h2>Effects of Parameters<a class="headerlink" href="#effects-of-parameters" title="Permalink to this headline">#</a></h2>
+<section id="varying-the-mean">
+<h3>Varying the Mean<a class="headerlink" href="#varying-the-mean" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="varying-the-standard-deviation">
+<h3>Varying the Standard Deviation<a class="headerlink" href="#varying-the-standard-deviation" title="Permalink to this headline">#</a></h3>
+<p>By changing the <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#standard-deviation"><span class="std std-ref">Standard Deviation</span></a>, the shape of the distribution changes. As the <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#standard-deviation"><span class="std std-ref">Standard Deviation</span></a> increase, the graph spreads out. This is because <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#standard-deviation"><span class="std std-ref">Standard Deviation</span></a> is a <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#measures-of-variation"><span class="std std-ref">measure of variation</span></a>. In other words, <span class="xref std std-ref">standard deviation</span> quantifies how the distribution is spread out along the <em>x</em>-axis.</p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/2abfb930df48cb56757f6474e85aa6bd/normal_distribution_03.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>)</p>
+<p>To summarize,</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ol class="arabic simple">
+<li><p>By changing the mean of the <em>normal distribution</em>, the <em>location</em> of the distribution changes.</p></li>
+<li><p>By changing the standard deviation of the <em>normal distribution</em>, the <em>spread</em> of the distribution changes.</p></li>
+</ol>
+</div>
+</section>
+</section>
 </section>
 
 
@@ -422,6 +478,30 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-distribution">Probability Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#symmetry">Symmetry</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#z-tables">Z-Tables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#empirical-rule">Empirical Rule</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effects-of-parameters">Effects of Parameters</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#varying-the-mean">Varying the Mean</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#varying-the-standard-deviation">Varying the Standard Deviation</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

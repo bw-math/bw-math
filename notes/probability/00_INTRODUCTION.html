@@ -493,7 +493,7 @@ document.write(`
 <p><img src="../../_images/math/b8244207d8ea4d5f6e7f427f45d0a42bf0624ce3.png" alt="HT = \{ ht, th \}"/></p>
 </div></section>
 <section id="compound-events">
-<h3>Compound Events<a class="headerlink" href="#compound-events" title="Permalink to this headline">#</a></h3>
+<span id="id1"></span><h3>Compound Events<a class="headerlink" href="#compound-events" title="Permalink to this headline">#</a></h3>
 <p>A <em>compound</em> event is formed by composing simpler events with <a class="reference internal" href="../SET_THEORY.html#set-operations"><span class="std std-ref">Operations</span></a>.</p>
 <dl class="simple">
 <dt>Example</dt><dd><p>Consider the experiment of drawing a single card at random from a well-shuffled, standard playing deck. Let <strong>A</strong> represent the event of drawing a 2. Let <strong>B</strong> represent the event of drawing a heart.</p>
@@ -533,7 +533,7 @@ document.write(`
 </div></section>
 </section>
 <section id="axioms-of-probability">
-<span id="id1"></span><h2>Axioms of Probability<a class="headerlink" href="#axioms-of-probability" title="Permalink to this headline">#</a></h2>
+<span id="id2"></span><h2>Axioms of Probability<a class="headerlink" href="#axioms-of-probability" title="Permalink to this headline">#</a></h2>
 <p>The <em>classical definition of probability</em> suffices for a general understanding of probability, but there are cases where it fails to account for every feature we would expect a definition of probability to satisfy.</p>
 <p>To see this, consider the experiment of spinning a dial on a clock with radius <em>r</em>,</p>
 <p>(INSERT PICTURE)</p>
@@ -546,21 +546,21 @@ document.write(`
 <section id="axioms">
 <h3>Axioms<a class="headerlink" href="#axioms" title="Permalink to this headline">#</a></h3>
 <section id="axiom-1">
-<span id="id2"></span><h4>Axiom 1<a class="headerlink" href="#axiom-1" title="Permalink to this headline">#</a></h4>
+<span id="id3"></span><h4>Axiom 1<a class="headerlink" href="#axiom-1" title="Permalink to this headline">#</a></h4>
 <dl class="simple">
 <dt><img class="math" src="../../_images/math/c760f70670616c60a6fd2cc21b724ee5b1b12d9e.png" alt="P(A)&gt;=0"/></dt><dd><p>All probabilities are positive; No probabilities are negative.</p>
 </dd>
 </dl>
 </section>
 <section id="axiom-2">
-<span id="id3"></span><h4>Axiom 2<a class="headerlink" href="#axiom-2" title="Permalink to this headline">#</a></h4>
+<span id="id4"></span><h4>Axiom 2<a class="headerlink" href="#axiom-2" title="Permalink to this headline">#</a></h4>
 <dl class="simple">
 <dt><img class="math" src="../../_images/math/7e54cdab4f141cf48960cbaee92eccf6a3748b43.png" alt="P(S)=1"/></dt><dd><p>The probability of <em>some</em> outcome from the sample space <strong>S</strong> occuring is equal to 1.</p>
 </dd>
 </dl>
 </section>
 <section id="axiom-3">
-<span id="id4"></span><h4>Axiom 3<a class="headerlink" href="#axiom-3" title="Permalink to this headline">#</a></h4>
+<span id="id5"></span><h4>Axiom 3<a class="headerlink" href="#axiom-3" title="Permalink to this headline">#</a></h4>
 <dl class="simple">
 <dt><img class="math" src="../../_images/math/965a3d90886aed05e7df54dedb739f4e80e47b98.png" alt="\forall i \neq j: A_i \cap A_j = \varnothing \implies P(\bigcup\limits_{i=1}^{n} A_i) = \sum_{i=1}^n P(A_i)"/></dt><dd><p>If each event <sub>i</sub> <strong>A</strong> in the sample space <strong>S</strong> is <em>mutually exclusive</em> with every other event <img class="math" src="../../_images/math/f88ac75a9c003fda443380a4e8297a89ebfdf170.png" alt="\forall i \neg j: A_i"/>, then the probability of the union of all of these events is equal to the sum of the probabilities of each individual event.</p>
 </dd>
@@ -614,7 +614,7 @@ document.write(`
 </div><p>And the probability of the event <strong>C</strong>,</p>
 <div class="math">
 <p><img src="../../_images/math/73e70c3e8e5b1b44d66d3dd7498f02e2714aa3c6.png" alt="P(C) = \frac{1}{4}"/></p>
-</div><p>Then, the <span class="xref std std-ref">compound event</span> <img class="math" src="../../_images/math/b206b40f7d2163458859a7fe3008a4ba9f6fa247.png" alt="B \cup C"/> is found by aggregating the outcomes in both of the individual events <strong>B</strong> and <strong>C</strong> into a single new set,</p>
+</div><p>Then, the <a class="reference internal" href="#compound-events"><span class="std std-ref">compound event</span></a> <img class="math" src="../../_images/math/b206b40f7d2163458859a7fe3008a4ba9f6fa247.png" alt="B \cup C"/> is found by aggregating the outcomes in both of the individual events <strong>B</strong> and <strong>C</strong> into a single new set,</p>
 <div class="math">
 <p><img src="../../_images/math/c99275d863ecbdcc63e4c3fe574a9b369438838f.png" alt="B \cup C = \{ hh, th, ht \}"/></p>
 </div><div class="math">
@@ -633,7 +633,7 @@ document.write(`
 <h2>Corollaries<a class="headerlink" href="#corollaries" title="Permalink to this headline">#</a></h2>
 <p>We can use these <em>axioms</em>, along with the <cite>theorems of set theory &lt;set_theorems&gt;</cite> to prove various things about probability.</p>
 <section id="law-of-complements">
-<span id="id5"></span><h3>Law of Complements<a class="headerlink" href="#law-of-complements" title="Permalink to this headline">#</a></h3>
+<span id="id6"></span><h3>Law of Complements<a class="headerlink" href="#law-of-complements" title="Permalink to this headline">#</a></h3>
 <dl>
 <dt><img class="math" src="../../_images/math/3f3e023d0a6002d8a156ab9b9f082a0c0ba56be6.png" alt="P(A) + P(A^C) = 1"/></dt><dd><p>This corollary should be intuitively obvious, considering the Venn Diagramm of complementary sets,</p>
 <blockquote>
@@ -646,29 +646,25 @@ document.write(`
 </dl>
 <p>TODO</p>
 <p>The formal proof of the <strong>Law of Complements</strong> follows from the properties of <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">sets</span></a>.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Proof</p>
-<p>By Complement Theorem 12 (Put Link), the union of complements is the sample space <strong>S</strong>. Therefore, the <em>probability</em> of the union is equal to the probability of the entire sample space <strong>S</strong>.</p>
-<blockquote>
-<div><div class="math">
+<dl>
+<dt>Proof</dt><dd><p>By Complement Theorem 12 (Put Link), the union of complements is the sample space <strong>S</strong>. Therefore, the <em>probability</em> of the union is equal to the probability of the entire sample space <strong>S</strong>.</p>
+<div class="math">
 <p><img src="../../_images/math/99df2f5db71e321e7f7e761345487d4a58a80db1.png" alt="A \cup A^C = S"/></p>
 </div><div class="math">
 <p><img src="../../_images/math/814cbbbb39828fe799467c46aa5e47317d238826.png" alt="\implies P(A \cup A^C) = P(S)"/></p>
-</div></div></blockquote>
-<p>By Axiom 2, the probability of the entire sample space <strong>S</strong> is 1.</p>
-<blockquote>
-<div><div class="math">
+</div><p>By Axiom 2, the probability of the entire sample space <strong>S</strong> is 1.</p>
+<div class="math">
 <p><img src="../../_images/math/e9564902f01faec85ee0f71ac2ab31bd77089ae3.png" alt="\implies P(A \cup A^C) = 1"/></p>
-</div></div></blockquote>
-<p>By Complement Theorem 13 (Put Link), the intersection of complements is the empty set.</p>
-</div>
+</div><p>By Complement Theorem 13 (Put Link), the intersection of complements is the empty set.</p>
+</dd>
+</dl>
 </section>
 <section id="law-of-unions">
-<span id="id6"></span><h3>Law of Unions<a class="headerlink" href="#law-of-unions" title="Permalink to this headline">#</a></h3>
+<span id="id7"></span><h3>Law of Unions<a class="headerlink" href="#law-of-unions" title="Permalink to this headline">#</a></h3>
 <div class="math">
 <p><img src="../../_images/math/71af65e11df7477b3ea176375daf5adc8dc01dfb.png" alt="P(A \cup B) = P(A) + P(B) - P(A \cap B)"/></p>
-</div><p>The <strong>Law of Unions</strong> follows directly from (TODO SET THEOREM) and the <a class="reference internal" href="#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a>,</p>
+</div><dl>
+<dt>Proof</dt><dd><p>The <strong>Law of Unions</strong> follows directly from (TODO SET THEOREM) and the <a class="reference internal" href="#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a>,</p>
 <div class="math">
 <p><img src="../../_images/math/cdcdad509d898ec02e65eff1b1f7955920f46d76.png" alt="P(A \cup B) = \frac{n(A \cup B)}{n(S)}"/></p>
 </div><div class="math">
@@ -676,9 +672,11 @@ document.write(`
 </div><div class="math">
 <p><img src="../../_images/math/8fce00c6bea523cbdd210742578ddc4b76720d2f.png" alt="P(A \cup B) = \frac{n(A)}{n(S)} + \frac{n(B)}{n(S)} - \frac{n(A \cap B)}{n(S)}"/></p>
 </div><div class="math">
-<p><img src="../../_images/math/043f3963b05ab4d653afd19868f6480621e48a01.png" alt="P(A \cup) = P(A) + P(B) - P(A \cap B)"/></p>
-</div><p>The <strong>Law of Unions</strong> is easily seen with a <a class="reference internal" href="../SET_THEORY.html#venn-diagrams"><span class="std std-ref">Venn Diagrams</span></a>,</p>
-<a class="reference internal image-reference" href="../../_images/venn_diagram_overlapping_two_sets.jpg"><img alt="../../_images/venn_diagram_overlapping_two_sets.jpg" class="align-center" src="../../_images/venn_diagram_overlapping_two_sets.jpg" style="width: 60%;" /></a>
+<p><img src="../../_images/math/71af65e11df7477b3ea176375daf5adc8dc01dfb.png" alt="P(A \cup B) = P(A) + P(B) - P(A \cap B)"/></p>
+</div></dd>
+</dl>
+<p>The <strong>Law of Unions</strong> is easily seen with a <a class="reference internal" href="../SET_THEORY.html#venn-diagrams"><span class="std std-ref">Venn Diagrams</span></a>,</p>
+<a class="reference internal image-reference" href="../../_images/sets_union_overlapping.jpg"><img alt="../../_images/sets_union_overlapping.jpg" class="align-center" src="../../_images/sets_union_overlapping.jpg" style="width: 60%;" /></a>
 <p>The area <strong>A</strong> and <strong>B</strong> have in common is <img class="math" src="../../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/>. When <img class="math" src="../../_images/math/534ec862789190f4e1c0ee776c13e4f478f5e83f.png" alt="n(A)"/> is added to <img class="math" src="../../_images/math/403c7a48e4364ebe62f8d574ed41d21d723278b9.png" alt="n(B)"/>, the area <img class="math" src="../../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/> has been double-counted, therefore it must be subtracted.</p>
 <dl class="simple">
 <dt>Example</dt><dd><p>Consider a standard deck of 52 playing cards. Find the probability of selecting a Jack or diamond.</p>
