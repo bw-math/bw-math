@@ -1,5 +1,6 @@
 .. _chapter_eight_homework:
 
+==================
 Chapter 8 Homework 
 ==================
 
