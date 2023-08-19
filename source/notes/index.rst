@@ -7,6 +7,7 @@ Class Notes
 
    HISTORY
    graphics/index
+   HISTORY
    SET_THEORY
    probability/index
    statistics/index

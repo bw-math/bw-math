@@ -1,5 +1,6 @@
 ============================
 A Brief History of Knowledge
+
 ============================
 
 Knowing Knowledge
@@ -17,7 +18,7 @@ How do we know things? To put a finer point on it, how do we know *that* we know
 
     **Socrates**: Let us make a slight change and say possessing knowledge.
 
-    **Theatetus**: Why, how will you claIm that the one differs from the other?
+    **Theatetus**: Why, how will you claim that the one differs from the other?
 
     **Socrates**: Well, then, having does not seem to me the same as possessing. For instance, if a man bought a cloak and had it under his control, but did not wear it, we should certainly not say that he had it, but that possessed it.
 
@@ -32,3 +33,6 @@ How do we know things? To put a finer point on it, how do we know *that* we know
 This transcription of a dialogue that allegedly transpired between Socrates and a young student of his named Theatetus sometime in the 4 :sup:`th` century BCE comes down to us through Plato. The contents of Plato's *Theatetus* have greatly influenced the development of scientific thought in the subsequent centuries, so it is worth understanding why Plato thought what Socrates was saying was so important it should be written down for future generations. 
 
 Socrates is making the point in the preceding lines that knowledge is not something you *have*, but something you *possess*. 
+=======
+============================
+>>>>>>> 5d8ad82d72194a8554a881e619f76fab99a82e21
