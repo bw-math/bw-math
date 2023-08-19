@@ -6,7 +6,6 @@ Course Syllabus
 
     A course blah blah
 
-
 .. admonition:: Grading Breakdown
 
     +-----------+------------+
@@ -28,6 +27,22 @@ Course Syllabus
     TODO 
 
     We will also be using **Chapter 1: Set Theoy** from the `OpenStax <https://openstax.org/>`_ online textbook library. You can find a link to it :ref:`here <openstax_contemporary_mathematics>` 
+
+.. topic:: Classwork
+
+    TODO 
+
+    Classwork Notebook
+
+        On the first day of class, you will receive a classwork notebook. This notebook will never leave the classroom. It will be collected at the end of every class.
+
+.. topic:: Homework
+
+    TODO 
+
+    Homework Notebook
+
+        On the first day of class, you will receive a homework notebook. This notebook will be taken home with you. **All** homework should be completed in this notebook. It will be collected every Monday and returned the next day. 
 
 .. admonition:: Exams
 
@@ -55,172 +70,498 @@ Course Syllabus
   
 .. topic:: Schedule
 
-Week 1: August 28 :sup:`th` - September 1 :sup:`st`
-    - Chapter 1, Section 1: Descriptive and Inferential Statistics
-    - Chapter 1, Section 2: Variables and Other Types of Data
-    - Chapter 1, Section 3: Data Collection and Sampling Techniques
-    - Chapter 1, Section 4: Observational and Experimental Studies
-    - Chapter 1, Section 5: Uses and Misuses of Statistics
-    - Project 0: Python
-Week 2: September 4 :sup:`th` - September 8 :sup:`th`
-    - Chapter 2, Section 1: Organzing Data
-    - Chapter 2, Section 2: Histograms, Frequency Polygons, Ogives
-    - Chapter 2, Section 3: Other Types of Graphs 
-    - Project 1: Graphing
+    Here is a tenative schedule for the course. This is subject to change, as uncertainty pervades all things (*as we will learn*).
 
+Week 1: August 28 :sup:`th` - September 1 :sup:`st`
+    Topics 
+        - Chapter 1, Section 1: Descriptive and Inferential Statistics
+        - Chapter 1, Section 2: Variables and Other Types of Data
+        - Chapter 1, Section 3: Data Collection and Sampling Techniques
+        - Chapter 1, Section 4: Observational and Experimental Studies
+        - Chapter 1, Section 5: Uses and Misuses of Statistics
+        - Project 0: Python
+  
+    Assigned 
+        - Chapter 1 Homework
+  
+Week 2: September 4 :sup:`th` - September 8 :sup:`th`
+    Due
+        - Chapter 1 Homework Due: September 5 :sup:`th`
+        - Project 0 Due: September 5 :sup:`th`
+
+    Topics
+        - Chapter 2, Section 1: Organzing Data
+        - Chapter 2, Section 2: Histograms, Frequency Polygons, Ogives
+        - Chapter 2, Section 3: Other Types of Graphs 
+        - Project 1: Graphing
+
+    Assigned
+        - Chapter 2, Section 1 Homework
+        - Chapter 2, Section 2 Homework 
+        - Chapter 2, Section 3 Homework
+        - Project 1: Graphing
+  
     .. warning::
 
         NO SCHOOL SEPTEMBER 4 :sup:`th`
         
 Week 3: September 11 :sup:`th` - September 15 :sup:`th`
-    - Chapter 3, Section 1: Measures of Central Tendency
-    - Chapter 3, Section 2: Measures of Variation
-    - Project 2: Estimation
+    Due
+      - Chapter 2, Section 1 Homework Due
+      - Chapter 2, Section 2 Homework Due
+      - Chapter 2, Section 3 Homework Due
+      - Project 1: Graphing
+  
+    Topics 
+      - Chapter 3, Section 1: Measures of Central Tendency
+      - Chapter 3, Section 2: Measures of Variation
+      - Project 2: Estimation
+
+    Assigned
+      - Chapter 3, Section 1 Homework
+      - Chapter 3, Section 2 Homework
+      - Project 2: Estimation
+  
 Week 4: September 18 :sup:`th` - September 22 :sup:`nd`
-    - Chapter 3, Section 3: Measures of Position
-    - Chapter 3, Section 4: Exploratory Data Analysis
-    - Project 4: Bias
+    Due
+        - Chapter 3, Section 1 Homework
+        - Chapter 3, Section 2 Homewrok
+        - Project 2: Estimation
+  
+    Topics
+        - Chapter 3, Section 3: Measures of Position
+        - Chapter 3, Section 4: Exploratory Data Analysis
+        - Project 4: Bias
+  
+    Assigned
+        - Chapter 3, Section 3 Homework 
+        - Chapter 3, Section 4 Homework
+        - Project 4: Bias
+    
 Week 5: September 25 :sup:`th` - September 29 :sup:`th`
-    - Chapter 1 - 3 Review 
-    - Project 5: Election
-    - **Exam 1**
+    Due 
+        - Chapter 3, Section 3 Homework
+        - Chapter 3, Section 4 Homework
+        - Chapter 1 Review Homework
+        - Chapter 2 Review Homework
+        - Chapter 3 Review Homework
+        - Project 4: Bias
+  
+    Topics
+        - Chapter 1 - 3 Review 
+        - Project 5: Election
+  
+    Assigned 
+        - Chapter 1 Review Homework
+        - Chapter 2 Review Homework
+        - Chapter 3 Review Homework
+ 
+    **Exam 1**
+        September 29 :sup:`th`
+
 Week 6: October 2 :sup:`nd` - October 6 :sup:`th`
-    - Chapter 1 (From Contemporary Mathematics), Section 1: Basic Set Concepts
-    - Chapter 1 (From Contemporary Mathematics), Section 2: Subsets
-    - Chapter 1 (From Contemporary Mathematics), Section 3: Understanding Venn Diagrams
-    - Chapter 1 (From Contemporary Mathematics), Section 4: Set Operations With Two Sets
-    - Chapter 1 (From Contemporary Mathematics), Section 5: Set Operations With Three Sets
-    - Project 6: Sets
+    Due
+        NOTHING
+
+    Topics
+        - Chapter 1 (From Contemporary Mathematics), Section 1: Basic Set Concepts
+        - Chapter 1 (From Contemporary Mathematics), Section 2: Subsets
+        - Chapter 1 (From Contemporary Mathematics), Section 3: Understanding Venn Diagrams
+        - Chapter 1 (From Contemporary Mathematics), Section 4: Set Operations With Two Sets
+        - Chapter 1 (From Contemporary Mathematics), Section 5: Set Operations With Three Sets
+        - Project 6: Sets
+
+    Assigned
+        - Chapter 1 (From Contemporary Mathematics), Section 1 Homework
+        - Chapter 1 (From Contemporary Mathematics), Section 2 Homework
+        - Chapter 1 (From Contemporary Mathematics), Section 3 Homework
+        - Chapter 1 (From Contemporary Mathematics), Section 4 Homework
+        - Chapter 1 (From Contemporary Mathematics), Section 5 Homework 
+        - Project 6: Sets
 
     .. warning::
        
         NO SCHOOL OCTOBER 6 :sup:`th`
     
 Week 7: October 9 :sup:`th` - October 13 :sup:`th`
-    - Chapter 4, Section 1: Sample Spaces and Probability 
-    - Chapter 4, Section 2: The Addition Rules for Probability
+    Due
+        - Chapter 1 (From Contemporary Mathematics), Section 1 Homework
+        - Chapter 1 (From Contemporary Mathematics), Section 2 Homework
+        - Chapter 1 (From Contemporary Mathematics), Section 3 Homework
+        - Chapter 1 (From Contemporary Mathematics), Section 4 Homework
+        - Chapter 1 (From Contemporary Mathematics), Section 5 Homework 
+        - Project 6: Sets
+
+    Topics 
+        - Chapter 4, Section 1: Sample Spaces and Probability 
+        - Chapter 4, Section 2: The Addition Rules for Probability
+  
+    Assigned 
+        - Chapter 4, Section 1 Homework 
+  
 Week 8: October 16 :sup:`th` - October 20 :sup:`th`
-    - Chapter 4, Section 2: The Addition Rules for Probability 
+    Due 
+        - Chapter 4, Section 1 Homework
+
+    Topics
+        - Chapter 4, Section 2: The Addition Rules for Probability 
+  
+    Assigned
+        - Chapter 4, Section 2 Homework
+
 Week 9: October 23 :sup:`rd` - October 27 :sup:`th`
-    - Chapter 4, Section 4: Counting Rules
-    - Chapter 4, Section 4: Probability and Counting Rules
+    Due
+        - Chapter 4, Section 2 Homework
+
+    Topics
+        - Chapter 4, Section 4: Counting Rules
+        - Chapter 4, Section 5: Probability and Counting Rules
+
+    Assigned
+        - Chapter 4, Section 4 Homework
+        - Chapter 5, Section 5 Homework
+
 Week 10: October 30 :sup:`th` - November 3 :sup:`rd`
-    - Chapter 4, Section 3: The Multiplication Rules and Conditional Probability
+    Due
+        - Chapter 4, Section 4 Homework
+        - Chapter 4, Section 5 Homework
+
+    Topics
+        - Chapter 4, Section 3: The Multiplication Rules and Conditional Probability
     
+    Assigned
+        - Chapter 4, Section 3 Homework
+
     .. warning::
 
         NO SCHOOL NOVEMBER 3 :sup:`rd`
 
 Week 11: November 6 :sup:`th` - November 10 :sup:`th`
-    - Chapter 5, Section 1: Probability Distributions 
-    - Chapter 5, Section 2: Mean, Variance, Standard Deviation and Expectation
+    Due 
+        - Chapter 4, Section 3 Homework 
+
+    Topics 
+        - Chapter 5, Section 1: Probability Distributions 
+        - Chapter 5, Section 2: Mean, Variance, Standard Deviation and Expectation
+
+    Assigned
+        - Chapter 5, Section 1 Homework
+        - Chapter 5, Section 2 Homework 
+
 Week 12: November 13 :sup:`th` - November 17 :sup:`th`
-    - Chapter 5, Section 3: The Binomial Distribution
+    Due
+        - Chapter 5, Section 1 Homework
+        - Chapter 5, Section 2 Homework
+
+    Topics
+        - Chapter 5, Section 3: The Binomial Distribution
+
+    Assigned
+        - Chapter 5, Section 3 Homework
+
 Week 13: November 20 :sup:`th` - November 24 :sup:`th`
-    - Chapter 5, Section 3: The Binomial Distribution 
-    - Chapter 5, Section 4: Other Types of Distributions
-  
+    Due 
+
+    Topics 
+
+        - Chapter 5, Section 3: The Binomial Distribution 
+        - Chapter 5, Section 4: Other Types of Distributions
+    
+    Assigned
+        - Chapter 5: Section 4 Homework
+    
     .. warning::
   
         NO SCHOOL NOVEMBER 22 :sup:`nd` - NOVEMBER 24 :sup:`th`
 
 Week 14: December 4 :sup:`th` - December 8 :sup:`th`
-    - Chapter 5, Section 4: Other Types of Distribution 
-    - Chapter 4 - 5, Chapter 1 (From Contemporary Mathematics) Review 
-    - **Exam 2**
+    Due
+        - Chapter 5: Section 4 Homework
+        - Chapter 4 Review Homework
+        - Chapter 5 Review Homework
+
+    Topics
+        - Chapter 4 - 5, Chapter 1 (From Contemporary Mathematics) Review 
+  
+    Assigned
+        - Chapter 1 (From Contemporary Mathematics) Review Homework
+        - Chapter 4 Review Homework
+        - Chapter 5 Review Homework
+  
+    **Exam 2**
+        December 8 :sup:`th`
+
 Week 15: December 11 :sup:`th` - December 15 :sup:`th`
-    - Chapter 6, Section 1: Normal Distribution
-    - Chapter 6, Section 2: Applications of the Normal Distribution
+    Due
+        NOTHING
+
+    Topics
+        - Chapter 6, Section 1: Normal Distribution
+        - Chapter 6, Section 2: Applications of the Normal Distribution
+
+    Assigned 
+        - Chapter 6, Section 1 Homework
+
 Week 16: December 18 :sup:`th` - December 22 :sup:`nd`
-    - Chapter 6, Section 1: Normal Distribution
-    - Chapter 6, Section 2: Applications of the Normal Distribution 
+    Due
+        - Chapter 6, Section 1 Homework
+  
+    Topics
+        - Chapter 6, Section 1: Normal Distribution
+        - Chapter 6, Section 2: Applications of the Normal Distribution 
+
+    Assigned
+        - Chapter 6, Section 2 Homework
   
     .. warning::
 
         NO SCHOOL DECEMBER 21 :sup:`st` - DECEMBER 22 :sup:`nd`
 
 Week 17: December 25 :sup:`th` - December 29 :sup:`th`
-
     .. warning::
 
         NO SCHOOL DECEMBER 25 :sup:`th` - DECEMBER 29 :sup:`th`
 
 Week 18: January 1 :sup:`st` - January 5 :sup:`th`
-    - Chapter 6, Section 1: Normal Distribution
-    - Chapter 6, Section 2: Applications of the Normal Distribution 
-    - Chapter 6, Section 3: The Normal Approximation to the Binomial Distribution
+    Due
+        - Chapter 6 Homework
+
+    Topics
+        - Chapter 6, Section 1: Normal Distribution
+        - Chapter 6, Section 2: Applications of the Normal Distribution 
+        - Chapter 6, Section 3: The Normal Approximation to the Binomial Distribution
+      
+    Assigned 
+        - Chapter 6, Section 3 Homework
   
     .. warning::
 
         NO SCHOOL JANUARY 1 :sup:`st` - JANUARY 2 :sup:`nd`
 
 Week 19: January 8 :sup:`th` - January 12 :sup:`th`
-    - Chapter 7, Section 1: Confidence Intervals for the Mean When :math:`\sigma` is Known and Sample Size 
-Week 20: January 15 :sup:`th` - January 19 :sup:`th`
-    - Chapter 7, Section 2: Confidence Intervals for the Mean When :math:`\sigma` is Unknown
+    Due 
+        - Chapter 6, Section 3 Homework
 
+    Topics
+        - Chapter 7, Section 1: Confidence Intervals for the Mean When :math:`\sigma` is Known and Sample Size 
+
+    Assigned 
+        - Chapter 7, Section 1 Homework
+
+Week 20: January 15 :sup:`th` - January 19 :sup:`th`
+    Due
+        - Chapter 7, Section 1 Homework
+    
+    Topics 
+        - Chapter 7, Section 2: Confidence Intervals for the Mean When :math:`\sigma` is Unknown
+
+    Assigned
+        - Chapter 7, Section 2 Homework
+  
     .. warning::
     
         NO SCHOOL JANUARY 15 :sup:`th`
 
 Week 21: January 22 :sup:`nd` - January 26 :sup:`th`
-    - Chapter 7, Section 3: Confidence Intervals and Sample Size for Proportions
+    Due
+        - Chapter 7, Section 2 Homework
+
+    Topics
+        - Chapter 7, Section 3: Confidence Intervals and Sample Size for Proportions
+
+    Assigned
+        - Chapter 7, Section 3 Homework 
+
 Week 22: January 29 :sup:`nd` - February 2 :sup:`nd`
-    - Chapter 7, Section 3: Confidence Intervals for Variances and Standard Deviations
+    Due
+        - Chapter 7, Section 3 Homework
+  
+    Topics
+        - Chapter 7, Section 4: Confidence Intervals for Variances and Standard Deviations
+
+    Assigned
+        - Chapter 7, Section 4 Homework
+
 Week 23: February 5 :sup:`th` - February 9 :sup:`th`
-    - Chapter 5 - 7 Review 
-    - **Exam 3**
+    Due 
+        - Chapter 7, Section 4 Homework
+        - Chapter 5 Review Homework
+        - Chapter 6 Review Homework
+        - Chapter 7 Review Homework
+  
+    Topics
+        - Chapter 5 - 7 Review 
+
+    **Exam 3**
+        Februrary 9 :sup:`th`
+
 Week 24: February 12 :sup:`th` - February 16 :sup:`th`
-    - Chapter 8, Section 1: Steps in Hypothesis Testing - Traditional Method
-    - Chapter 8, Section 2: Z Test for a Mean
+    Due
+        NOTHING
+
+    Topics
+        - Chapter 8, Section 1: Steps in Hypothesis Testing - Traditional Method
+        - Chapter 8, Section 2: Z Test for a Mean
+
+    Assigned
+        - Chapter 8, Section 1 Homework
+        - Chapter 8, Section 2 Homework
+  
 Week 25: February 19 :sup:`th` - February 23 :sup:`rd`
-    - Chapter 8, Section 3: T Test for a Mean
-    
+    Due
+        - Chapter 8, Section 1 Homework
+        - Chapter 8, Section 2 Homework
+
+    Topics
+        - Chapter 8, Section 3: T Test for a Mean
+
+    Assigned 
+        - Chapter 8, Section 3 Homework
+
     .. warning::
     
         NO SCHOOL FEBRUARY 19 :sup:`th`
     
 Week 26: February 26 :sup:`th` - March 30 :sup:`th`
-    - Chapter 8, Section 4: Z Test for a Proportion
+    Due 
+        - Chapter 8, Section 3 Homework
+
+    Topics
+        - Chapter 8, Section 4: Z Test for a Proportion
+
+    Assigned 
+        - Chapter 8, Section 4 Homework
+  
 Week 27: March 4 :sup:`th` - March 8 :sup:`th`
-    - Chapter 8, Section 5: Chi Squared Test for a Variance or Standard Deviation
-    - Chapter 8, Section 6: Additional Topics Regarding Hypothesis Testing
+    Due 
+        - Chapter 8, Section 4 Homework
+  
+    Topics
+        - Chapter 8, Section 5: Chi Squared Test for a Variance or Standard Deviation
+        - Chapter 8, Section 6: Additional Topics Regarding Hypothesis Testing
+  
+    Assigned
+        - Chapter 8, Section 5 Homework
+        - Chapter 8, Section 6 Homework
+  
 Week 28: March 11 :sup:`th` - March 15 :sup:`th`
-    - Chapter 9, Section 1: Testing the Difference Between Two Means Using The Z Test
+    Due 
+        - Chapter 8, Section 5 Homework
+        - Chapter 8, Section 6 Homework
+  
+    Topics
+        - Chapter 9, Section 1: Testing the Difference Between Two Means Using The Z Test
+
+    Assigned 
+        - Chapter 9, Section 1 Homework
+  
 Week 29: March 18 :sup:`th` - March 22 :sup:`nd`
-    - Chapter 9, Section 2: Testing the Difference Between Two Means of Independent Samples: Using the T Test
-    - Chapter 9, Section 3: Testing the Difference Between Two Means: Dependent Samples 
+    Due 
+        - Chapter 9, Section 1 Homework
+  
+    Topics
+        - Chapter 9, Section 2: Testing the Difference Between Two Means of Independent Samples: Using the T Test
+        - Chapter 9, Section 3: Testing the Difference Between Two Means: Dependent Samples 
+  
+    Assigned 
+        - Chapter 9, Section 2 Homework
+        - Chapter 9, Section 3 Homework
+
 Week 30: March 25 :sup:`th` - March 29 :sup:`th`
-    - Chapter 9, Section 4: Testing the Difference Between Two Proportions
-    - Chapter 9, Section 5: Testing the Difference Between Two Variances
+    Due 
+        - Chapter 9, Section 2 Homework
+        - Chapter 9, Section 3 Homework 
+
+    Topics
+        - Chapter 9, Section 4: Testing the Difference Between Two Proportions
+        - Chapter 9, Section 5: Testing the Difference Between Two Variances
+  
+    Assigned 
+        - Chapter 9, Section 4 Homework
+        - Chapter 9, Section 5 Homework
   
     .. warning::
 
         NO SCHOOL MARCH 29 :sup:`th`
 
 Week 31: April 1 :sup:`st` - April 5 :sup:`th`
-    - Chapter 8 - 9 Review
-    - **Exam 4**
+    Due
+        - Chapter 9, Section 4 Homework
+        - Chapter 9, Section 5 Homework
+        - Chapter 8 Review Homework
+        - Chapter 9 Review Homework
+  
+    Topics
+        - Chapter 8 - 9 Review
+
+    **Exam 4**
+        April 5 :sup:`th`
   
     .. warning::
 
         NO SCHOOL APRIL 1 :sup:`st` - APRIL 5 :sup:`th`
 
 Week 32: April 8 :sup:`th` - April 12 :sup:`th`
-    - Chapter 10, Section 1: Scatter Plots and Correlation
-Week 33: April 15 :sup:`th` - April 19 :sup:`th`
-    - Chapter 10, Section 2: Regression
-Week 34: April 22 :sup:`nd` - April 26 :sup:`th`
-    - Chapter 10, Section 3: Coefficient of Determination and Standard Error of the Estimate
-Week 35: April 29 :sup:`th` - May 3 :sup:`rd`
-    - A.P. Exam Prep Week
-Week 36: May 6 :sup:`th` - May 10 :sup:`th`
-    - A.P. Exam Final Countdown 
-    - Additional Topics
+    Due 
+        NOTHING
 
+    Topics
+        - Chapter 10, Section 1: Scatter Plots and Correlation
+
+    Assigned 
+        - Chapter 10, Section 1 Homework
+  
+Week 33: April 15 :sup:`th` - April 19 :sup:`th`
+    Due
+        - Chapter 10, Section 1 Homework
+
+    Topics
+        - Chapter 10, Section 2: Regression
+
+    Assigned 
+        - Chapter 10, Section 2 Homework
+
+Week 34: April 22 :sup:`nd` - April 26 :sup:`th`
+    Due 
+        - Chapter 10, Section 2 Homework
+
+    Topics
+        - Chapter 10, Section 3: Coefficient of Determination and Standard Error of the Estimate
+
+    Assigned 
+        - Chapter 10, Section 3 Homework
+  
+Week 35: April 29 :sup:`th` - May 3 :sup:`rd`
+    Due 
+        - Chapter 10, Setion 3 Homework 
+  
+    Topics
+        - A.P. Exam Prep Week
+
+    Assigned 
+        NOTHING
+
+Week 36: May 6 :sup:`th` - May 10 :sup:`th`
+    Due 
+        NOTHING
+
+    Topics
+        - A.P. Exam Final Countdown 
+        - Additional Topics
+
+    Assigned 
+        NOTHING
+        
     .. danger:: 
 
         A.P. STATISTICS EXAM IS ON MAY :sup:`th`
 
 Week 37: May 13 :sup:`rd` - May 17 :sup:`th`
-    - Additional Topics
+    Due
+        NOTHING
+    
+    Topics
+        - Additional Topics
+
+    Assigned   
+        NOTHING

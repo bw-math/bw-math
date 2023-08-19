@@ -31,10 +31,18 @@ Section 3: Venn Diagrams
 .. note::
     Due Date: TBA
 
-Section 4: Operations
----------------------
+Section 4: Operations with Two Sets
+-----------------------------------
 
 #1, #2, #3, #4, #5, #6, #7, #8, #13, #14, #25, #26, #27, #31, #32, #33, #37, #38, #39, #43, #47, #48, #49
+
+.. note::
+    Due Date: TBA
+
+Section 5: Operations with Three Sets
+-------------------------------------
+
+TODO 
 
 .. note::
     Due Date: TBA
