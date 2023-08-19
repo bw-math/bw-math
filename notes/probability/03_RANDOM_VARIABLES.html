@@ -232,7 +232,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/02_ESTIMATION.html">Estimation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/03_BIAS.html">Bias</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/04_POLLING.html">Polling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/05_SIMULATION.html">Simulation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/08_Z_TABLE.html">Applications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/09_FINANCE.html">Financial Analysis</a></li>
 </ul>
 </li>
 </ul>
@@ -408,7 +410,11 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variables-and-events">Random Variables and Events</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Random Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-of-functions">Review of Functions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variables-and-events">Random Variables and Events</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation">Expectation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation-of-a-sum">Expectation of a Sum</a></li>
 </ul>
@@ -433,7 +439,8 @@ document.write(`
 <section id="definition">
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">#</a></h2>
 <dl id="random-variable">
-<dt>Random Variable</dt><dd><p>A <em>random variable</em> is a quantity whose value is <em>uncertain</em>; A <em>random variable</em> depends on a random event.</p>
+<dt>Random Variable</dt><dd><p><img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/></p>
+<p>A <em>random variable</em> is a quantity whose value is <em>uncertain</em>; A <em>random variable</em> depends on a random event.</p>
 </dd>
 <dt>Example</dt><dd><p>A friend flips a fair, two-sided coin. If it lands on heads, he will pay you five dollars. If it lands on tails, you have to pay him five dollars.</p>
 <p>The sample space for this simple game is given by,</p>
@@ -471,72 +478,53 @@ document.write(`
 </div></blockquote>
 <p>The price per gallon of gasoline, however, is an <em>uncertain</em> quantity; it depends on many extranenous factors, such as political conditions, shipping costs, taxes and tariffs, weather and climate, etc. Because of this, the price changes from day to day.</p>
 <p>The uncertainty in the price of gasoline becomes uncertainty in the weekly cost of driving your car. Therefore, we can model the weekly cost of gas as a <em>random variable</em>,</p>
+<div class="math">
+<p><img src="../../_images/math/f423167351b822576217de03d3f2518016744b78.png" alt="\mathcal{X} \frac{\$}{gal} \cdot \text{4 gal }"/></p>
+</div><p>where <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is the price of gasoline measured in dollars per gallon.</p>
+</section>
+<section id="id1">
+<h2>Random Variables<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<section id="review-of-functions">
+<h3>Review of Functions<a class="headerlink" href="#review-of-functions" title="Permalink to this headline">#</a></h3>
+<p>Recall the concept of a <em>function</em> from your other mathematics classes. You probably remember a definition along the lines, “A function <img class="math" src="../../_images/math/4d080e94aa171bc1bba13b38e72317a67bac38e2.png" alt="f(x)"/> receives an input <em>x</em> and assigns to it a value <em>y</em>.” This definition has served you in your mathematics career up to this point, but it will no longer suffice. This is not <em>precisely</em> what a function is, though it is a close approximation. In order to understand what a <em>random variable</em> is, the concept of a <em>function</em> must be extended and enlarged to encompass a larger <em>set</em> of ideas (pun intended).</p>
+<p>When the concept of <em>functions</em> is first taught, students are encouraged to treat a function as an algebraic expression, such as <img class="math" src="../../_images/math/43351c541e04e74c653d11d4c5b887b3412da6a9.png" alt="f(x) = x^2"/>. It’s an algebraic <em>thing</em> that you plug numbers into and out of which you get numbers, which may or may not be the same numbers that were inputted (consider the output of  <img class="math" src="../../_images/math/f20854b57b3a7b7382133baffa9c696eb54c91ed.png" alt="f(x) = x"/> versus <img class="math" src="../../_images/math/43351c541e04e74c653d11d4c5b887b3412da6a9.png" alt="f(x) = x^2"/>; what is the difference between the set of things output by each of these function?). When <cite>f(x)=x^2</cite>, we put <cite>x = 5</cite> and get <cite>f(5) = 25</cite>, which describes an ordered pair in the <strong>Cartesian</strong> plane, <img class="math" src="../../_images/math/a5a48337ef6222a0c85235bc3dee17044c1cd46d.png" alt="(5, f(5))"/>. Students are told about the <em>domain</em> and <em>range</em>; The <a class="reference internal" href="../SET_THEORY.html#sets"><span class="std std-ref">set</span></a> of all values that are input into a function is called the <em>domain</em>. Likewise, the set of all values that is output by the function is called the <em>range</em>. You probably remember seeing a diagram to help you visualize this idea and it probably looked like this,</p>
+<img alt="../../_images/function.png" src="../../_images/function.png" />
+<p>And then you studied various types of algebraic functions, such as logs and sines. You learned about the joy of factoring and finding roots. You plotted curves and found inflection points. Life was idyllic; It seemed as though nothing could ever shatter the peace and serenity you were blessed with amidst the glory of algebra. However, this is not the whole story.</p>
+<p>The concept of a <em>function</em> underwent a radical change in the early 20 <sup>th</sup> century as set theory was developed by people with names like <a class="reference external" href="https://en.wikipedia.org/wiki/Giuseppe_Peano">Guiseppe Peano</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Ernst_Zermelo">Ernst Zermelo</a> to formalize the foundation of mathematics. To see why the notion of a function had to be extended, consider the following propositions,</p>
 <blockquote>
-<div><p>(<strong>X</strong> <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\frac{$}{g}</span>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2021-11-15&gt; patch level 1
-L3 programming layer &lt;2022-01-21&gt;
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
-(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
-! Missing \endgroup inserted.
-&lt;inserted text&gt; 
-                \endgroup 
-l.15 \fontsize{12}{14}\selectfont $\frac{$}{g}
-                                              $
-! Missing } inserted.
-&lt;inserted text&gt; 
-                }
-l.15 \fontsize{12}{14}\selectfont $\frac{$}{g}
-                                              $
-! Extra \endgroup.
-\frac  #1#2-&gt;{\begingroup #1\endgroup 
-                                      \&#64;&#64;over #2}
-l.15 \fontsize{12}{14}\selectfont $\frac{$}{g}
-                                              $
-! Missing $ inserted.
-&lt;inserted text&gt; 
-                $
-l.15 \fontsize{12}{14}\selectfont $\frac{$}{g}
-                                              $
-! Extra }, or forgotten $.
-\frac  #1#2-&gt;{\begingroup #1\endgroup \&#64;&#64;over #2}
-                                                 
-l.15 \fontsize{12}{14}\selectfont $\frac{$}{g}
-                                              $
-[1] (./math.aux) )
-(see the transcript file for additional information)
-Output written on math.dvi (1 page, 260 bytes).
-Transcript written on math.log.
-</p>
-</div>
-) * ( 4 gallons )</p>
+<div><p>The set of all unicorns has zero elements.</p>
+<p>The set of all humans has seven billion elements.</p>
+<p>The set of all natural numbers is infinite.</p>
+<p>The set of all prime numbers is infinite.</p>
 </div></blockquote>
-<p>where <strong>X</strong> is the price of gasoline measured in dollars per gallon.</p>
+<p>These statements could be translated into <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">set theoretic</span></a> symbols in the following way,</p>
+<div class="math">
+<p><img src="../../_images/math/70066b61adf7697569a0cf45d483aface986730a.png" alt="n(\{ \forall x: x \in U \}) = 0"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/7ef79a48e969b0dbc913952c22b66cacd5cb56a7.png" alt="n(\{ \forall x: x \in H \}) = 7,000,000,000"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/e656ff9faaf8888967c3868d6ffc07f05816cc62.png" alt="n(\mathbb{N}) = \infty"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/a07d32e789c28cd0e5f34398550f7a7e49701ed1.png" alt="n(P) = \infty"/></p>
+</div><p>If the specifics were abstracted away, this would lead to an expression that looks like,</p>
+<div class="math">
+<p><img src="../../_images/math/8c882d4d882b84ec7b63377c993bf50486ff4244.png" alt="n(x) = y"/></p>
+</div><p>In each case, the cardinality of <em>something</em> is being asserted. In other words, a <em>value</em> is being assigned to an input, but what exactly is the input? Each proposition is asserting a property of an entire <a class="reference internal" href="../SET_THEORY.html#sets"><span class="std std-ref">set</span></a>; this suggests the constraint that functions are <em>numbers</em> be relaxed.</p>
+<p>Put in the parlance of modern mathematics, a function <em>maps</em> a value to a given set. The set of all values that are mapped is likewise a set of <em>things</em>. This leds to the idea of a <em>function</em> as a map between sets. A <em>function</em> takes elements from one set and maps them to the elements of another set.</p>
+<p>This slight change in the way functions are talked about leads to a revision of the diagram given at the beginning of this section,</p>
+<img alt="../../_images/random_variable.png" class="align-center" src="../../_images/random_variable.png" />
+<p>This suggests we view random variables as <em>functions</em> of the outcomes in sample space,</p>
+<div class="math">
+<p><img src="../../_images/math/f354c8dbea91720ae9f5085c6c6482fc8ffb9551.png" alt="\mathcal{X} = f(A)"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/460cbba0d81c5c3715ced076eeba23e988bd7430.png" alt="\text{where} A \subseteq S"/></p>
+</div><p>This is getting closer to the truth. However, this picture is not yet complete; it doesn’t include probability. The outcomes in the sample space are <em>uncertain</em>.</p>
+<p>The outcomes in a event determine the value of the random variable in the same way the values inputted into a function determine the output of the function. However, the input to a random variable is uncertain, therefore the output is likewise uncertain. The probability of an event occuring in the sample space is transferred, through the outcomes that determine the random variable, into the probability of a random variable assuming a particular value.</p>
+<img alt="../../_images/random_variable.png" class="align-center" src="../../_images/random_variable.png" />
+<p>A random variable shows how events from the sample space (the domain) are transformed into events of the random variable (the range).</p>
 </section>
 <section id="random-variables-and-events">
-<h2>Random Variables and Events<a class="headerlink" href="#random-variables-and-events" title="Permalink to this headline">#</a></h2>
+<h3>Random Variables and Events<a class="headerlink" href="#random-variables-and-events" title="Permalink to this headline">#</a></h3>
 <dl id="density-function">
 <dt>Density Function</dt><dd><p>TODO</p>
 <p>The <em>density function</em> should be familiar. We have already encountered its statistical analogue, <span class="xref std std-ref">frequency</span>. The probability density of a random variable at a certain value is analogously to the <em>frequency</em> of an observation in a sample of data.</p>
@@ -546,6 +534,7 @@ Transcript written on math.log.
 <dt>Distribution Function</dt><dd><p>TODO</p>
 </dd>
 </dl>
+</section>
 </section>
 <section id="expectation">
 <h2>Expectation<a class="headerlink" href="#expectation" title="Permalink to this headline">#</a></h2>
@@ -625,7 +614,11 @@ Transcript written on math.log.
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variables-and-events">Random Variables and Events</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Random Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-of-functions">Review of Functions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variables-and-events">Random Variables and Events</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation">Expectation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation-of-a-sum">Expectation of a Sum</a></li>
 </ul>
