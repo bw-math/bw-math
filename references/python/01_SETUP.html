@@ -411,11 +411,13 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-installation">Python Installation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chromeos">ChromeOS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-operating-systems">Other Operating Systems</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretter">Interpretter</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scripts">Scripts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-idle">IDLE</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#packages">Packages</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#idle">IDLE</a></li>
 </ul>
             </nav>
         </div>
@@ -435,7 +437,7 @@ document.write(`
 <section id="chromeos">
 <h3>ChromeOS<a class="headerlink" href="#chromeos" title="Permalink to this headline">#</a></h3>
 <ol class="arabic simple">
-<li><p>Update 0S, if applicable,</p></li>
+<li><p>Update your Chrome0S, if applicable,</p></li>
 </ol>
 <p>(INSERT SCREENSHOT)</p>
 <ol class="arabic simple" start="2">
@@ -443,81 +445,147 @@ document.write(`
 </ol>
 <p>(INSERT SCREENSHOT)</p>
 <ol class="arabic simple" start="3">
-<li><p>Open command line terminal and verify installation,</p></li>
+<li><p>Open Linux terminal and verify installation with the command,</p></li>
 </ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>--version
+</pre></div>
+</div>
 <p>(INSERT SCREENSHOT)</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Pin the Linux terminal to your dock for quick access.</p>
 <p>(INSERT SCREENSHOT)</p>
 </div>
-<ol class="arabic simple" start="4">
+<ol class="arabic simple">
 <li><p>Install <strong>Python</strong> graphics library,</p></li>
 </ol>
 <p>The following command is required to install PNG and JPEG rendering engines on your ChromeBook,</p>
-<blockquote>
-<div><p>sudo apt-get install python3-tk</p>
-</div></blockquote>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3-tk
+</pre></div>
+</div>
 <p>(INSERT SCREENSHOT)</p>
 <ol class="arabic simple" start="5">
 <li><p>Install the <strong>Python</strong> package manager,</p></li>
 </ol>
 <p>The following command is required to install the <strong>Python</strong> package manager,</p>
-<blockquote>
-<div><p>sudo apt-get install python3-pip</p>
-</div></blockquote>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3-pip
+</pre></div>
+</div>
 <ol class="arabic simple" start="6">
 <li><p>Install the <strong>Python</strong> editor,</p></li>
 </ol>
 <p>The following command is required to the <strong>Python</strong> editor, <strong>IDLE</strong>,</p>
-<blockquote>
-<div><p>sudo apt-get install idle3</p>
-</div></blockquote>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>idle3
+</pre></div>
+</div>
 <p>Congratulation, you are now setup to run <strong>Python</strong> scripts on your ChromeBook.</p>
+</section>
+<section id="other-operating-systems">
+<h3>Other Operating Systems<a class="headerlink" href="#other-operating-systems" title="Permalink to this headline">#</a></h3>
+<p>If you want to install <strong>Python</strong> on your home PC or laptop, you can download the official installer on found the <a class="reference external" href="https://www.python.org/downloads/">Python website</a> and follow the steps in this section,</p>
+<ol class="arabic simple">
+<li><p>Go to <em>https://www.python.org/downloads*</em> and click the <strong>Download</strong> button,</p></li>
+</ol>
+<img alt="../../_images/install_step_1.png" src="../../_images/install_step_1.png" />
+<ol class="arabic simple" start="2">
+<li><p>Download the appriopriate operating system distribution,</p></li>
+</ol>
+<img alt="../../_images/install_step_2.png" src="../../_images/install_step_2.png" />
+<ol class="arabic simple" start="3">
+<li><p>Ensure the option “<em>Add Python to the PATH</em>” is checked,</p></li>
+</ol>
+<img alt="../../_images/install_step_3.png" src="../../_images/install_step_3.png" />
+<ol class="arabic simple" start="4">
+<li><p>Ensure all of the following options are checked,</p></li>
+</ol>
+<img alt="../../_images/install_step_4.png" src="../../_images/install_step_4.png" />
+<ol class="arabic simple" start="5">
+<li><p>All of the other defaults are fine. Proceed with the installation. When it is done, you will now have icons for the <strong>Python</strong> interpreter and <a class="reference internal" href="#python-idle"><span class="std std-ref">IDLE</span></a> in your start menu (or your app launcher, if you’re one of the weird <em>Mac</em> people.)</p></li>
+</ol>
 </section>
 </section>
 <section id="interpretter">
-<h2>Interpretter<a class="headerlink" href="#interpretter" title="Permalink to this headline">#</a></h2>
+<span id="python-interpretter"></span><h2>Interpretter<a class="headerlink" href="#interpretter" title="Permalink to this headline">#</a></h2>
 <p>Once <strong>Python</strong> is installed, you will have access to the <cite>python</cite> command on the command prompt. Open a command prompt and verify your installation with the following command,</p>
-<blockquote>
-<div><p>python –version</p>
-</div></blockquote>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>--version
+</pre></div>
+</div>
 <p>You can start an <em>interpretter</em> session with,</p>
-<blockquote>
-<div><p>python</p>
-</div></blockquote>
-<p>This will bring up the <strong>Python</strong> <em>shell</em>, which allows you to enter commands and expression line by line.</p>
-<blockquote>
-<div><p>&gt; 5 + 7 # addition</p>
-</div></blockquote>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python
+</pre></div>
+</div>
+<p>This will bring up the <strong>Python</strong> <em>shell</em>, which allows you to enter commands and expression line by line. <strong>Python</strong> <em>interprets</em> your commands after you type <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>.
+For example, type the following arithmetical expression and then type <code class="docutils literal notranslate"><span class="pre">ENTER</span></code> to execute it.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">+</span> <span class="mi">7</span>
+</pre></div>
+</div>
 <p>You can also print text to screen with the <cite>print()</cite> function,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We won’t use the <em>interpretter</em> much in this class, but it is a handy tool to quickly check if a expression you had in mind is syntactical. For example, you might want to square a number and try,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span> <span class="o">^</span> <span class="mi">2</span>
+</pre></div>
+</div>
+<p>However, this is not how you raise a number to a power in <strong>Python</strong>. Instead you use the “**” operator,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span> <span class="o">**</span> <span class="mi">2</span>
+</pre></div>
+</div>
+<p>The <em>interpretter</em> allows to experiment with <strong>Python</strong> and get a feel for it. However, for this class, we will almost always be writing <a class="reference internal" href="#python-scripts"><span class="std std-ref">Scripts</span></a>.</p>
+<p>To exit the <em>interpretter</em>, type and execute,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">exit</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="scripts">
+<span id="python-scripts"></span><h2>Scripts<a class="headerlink" href="#scripts" title="Permalink to this headline">#</a></h2>
+<p><strong>Python</strong> scripts are files that have a <code class="docutils literal notranslate"><span class="pre">.py</span></code> extension. <code class="docutils literal notranslate"><span class="pre">.py</span></code> files are just files containing plain text, but anything that ends in <code class="docutils literal notranslate"><span class="pre">.py</span></code> will be understood by the <strong>Python</strong> <a class="reference internal" href="#python-interpretter"><span class="std std-ref">Interpretter</span></a> as a set of executable instrutions, so you can’t write just any text in this file. You have to write words that exist in the <a class="reference external" href="https://docs.python.org/3/reference/index.html">Python language</a>. Anytime we do a lab in this class, you will be writing a <em>script</em>.</p>
+<p>As an example, create a new file named <code class="docutils literal notranslate"><span class="pre">test.py</span></code> and open it in a text editor (actually, you will want to use <a class="reference internal" href="#python-idle"><span class="std std-ref">IDLE</span></a>, but we haven’t gotten to that part yet, so any old text editor will do for now)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">the_meaning_of_life</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The meaning of life is: &quot;</span><span class="p">,</span> <span class="n">the_meaning_of_life</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Save the file and open a Linux terminal (or command prompt if you are using your personal computer). Pass the name of the file to the <strong>Python</strong> interpretter and something magical will happen,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>test.py
+</pre></div>
+</div>
+<p>Congratulations, you have just written your first Python script. In the labs, when you are asked to create and run a <strong>Python</strong> script, this is essentially what you will be doing:</p>
 <blockquote>
-<div><p>&gt; print(“Hello world”)</p>
+<div><ul class="simple">
+<li><p>create a <code class="docutils literal notranslate"><span class="pre">.py</span></code> file</p></li>
+<li><p>tell the <strong>Python</strong> interpretter your file name.</p></li>
+</ul>
 </div></blockquote>
-<p>To exit the <em>interpretter</em>, use,</p>
-<blockquote>
-<div><p>&gt; exit()</p>
-</div></blockquote>
+<p>However, <em>IDLE</em> will make this whole process much less painful, so continue onto the next section, dear reader.</p>
+</section>
+<section id="python-idle">
+<span id="idle"></span><h2>IDLE<a class="headerlink" href="#python-idle" title="Permalink to this headline">#</a></h2>
+<p><strong>Python</strong> (usually) ships with a program named <em>IDLE</em>. <a class="reference external" href="https://docs.python.org/3/library/idle.html">IDLE</a> stands for <em>Integrated Development and Learning Environment</em>. <em>IDLE</em> is a text editor integrated with a <strong>Python</strong> interpretter. It provides <a class="reference external" href="https://en.wikipedia.org/wiki/Syntax_highlighting#Support_in_text_editors">syntax highlighting</a>, the ability to save and execute scripts, and a debugger for stepping through the programs. Open up an <em>IDLE</em> session,</p>
+<img alt="../../_images/idle_shell.png" src="../../_images/idle_shell.png" />
+<p>This is another version of the <strong>Python</strong> interpretter we encountered a few sections ago, sometimes referred to as a <a class="reference external" href="https://en.wikipedia.org/wiki/Shell_(computing)">shell</a>. You can execute the exact same commands in this <em>shell</em> as in the previous section, e.g.,</p>
+<img alt="../../_images/idle_shell_command.png" src="../../_images/idle_shell_command.png" />
+<p>If you navigate to the <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span> <span class="pre">File</span></code> menu option in the top left corner to the <em>IDLE</em> shell (you may also hit the <code class="docutils literal notranslate"><span class="pre">CTRL</span> <span class="pre">+</span> <span class="pre">N</span></code> keys at the same time), it will open a text editor,</p>
+<img alt="../../_images/idle_editor.png" src="../../_images/idle_editor.png" />
+<p>You can type commands into this editor, as pictured. You can run these commands by navigating to the <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">&gt;</span> <span class="pre">Run</span> <span class="pre">Module</span></code> menu option in the top left corner (you may also hit <code class="docutils literal notranslate"><span class="pre">F5</span></code>). It will then prompt you to save the script, if you haven’t already. After saving it, the <em>IDLE</em> shell will reappear with the results of your script,</p>
+<img alt="../../_images/idle_editor_results.png" src="../../_images/idle_editor_results.png" />
+<p>While you can complete all the labs in this class in Notepad if you so choose, all examples in class will us the <em>IDLE</em> shell and text editor.</p>
 </section>
 <section id="packages">
-<h2>Packages<a class="headerlink" href="#packages" title="Permalink to this headline">#</a></h2>
+<span id="python-packages"></span><h2>Packages<a class="headerlink" href="#packages" title="Permalink to this headline">#</a></h2>
 <p>By default, Python comes installed with the <a class="reference external" href="https://docs.python.org/3/library/index.html">Standard Library</a>. The <strong>Standard Library</strong> is a collection of common functions and utilities. For instance, the <cite>math</cite> library is part of the <strong>Standard Library</strong>. <cite>math</cite> contains functions for computing trigonemtric ratios, generating random numbers, calculating powers and roots, etc. You can use <cite>math</cite> functions by first <cite>import</cite>-ing the library and accessing its content with <em>dot notation</em>. Start an interpretter session and type,</p>
-<blockquote>
-<div><p>&gt; import math
-&gt; answer = math.factorial(20)
-&gt; print(answer)</p>
-</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">answer</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>
+</pre></div>
+</div>
 <p>This sequence of commands imports the <cite>math</cite> library, calls the factorial function with <em>dot notation</em> to compute <img class="math" src="../../_images/math/7e451da68a24c1d66570895ec95c4e54480e6920.png" alt="n!"/>, stores the answer in the variable <cite>answer</cite>, and then prints it to screen.</p>
 <p><cite>math</cite> has plenty of functions that will be useful in this class, but it doesn’t have <em>everything</em> we need. Luckily, <strong>Python</strong> ships with a <em>package manager</em> that allows you to install third-party libraries.</p>
-<p>We will need to install two additional packages for this class. <a class="reference external" href="https://matplotlib.org/">matplotlib</a> will be used to generate graphical representations of data. <a class="reference external" href="https://docs.python.org/3/library/tkinter.html">tkinter</a> will be used to render the output of <a class="reference external" href="https://matplotlib.org/">matplotlib</a> into JPEG and PNG images. These packages can be installed through the command line (<em>not</em> the <strong>Python</strong> interpretter),</p>
-<blockquote>
-<div><p>pip install matplotlib tk</p>
-</div></blockquote>
+<p>We will need to install two additional packages for this class. <a class="reference external" href="https://matplotlib.org/">matplotlib</a> will be used to generate graphical representations of data. <a class="reference external" href="https://docs.python.org/3/library/tkinter.html">tkinter</a> will be used to render the output of <a class="reference external" href="https://matplotlib.org/">matplotlib</a> into JPEG and PNG images. These packages can be installed through the command line (<em>not</em> the <strong>Python</strong> interpretter). Open the Linux terminal on your ChromeBook (or the command prompt on your personal computer),</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>matplotlib<span class="w"> </span>tk
+</pre></div>
+</div>
 <p>See the <a class="reference internal" href="05_PLOTS.html#matplotlib"><span class="std std-ref">Plots</span></a> section to learn more about using <em>matplotlib</em> to generate plots of data.</p>
-</section>
-<section id="idle">
-<h2>IDLE<a class="headerlink" href="#idle" title="Permalink to this headline">#</a></h2>
-<p><strong>Python</strong> ships with a program named <em>IDLE</em>. <a class="reference external" href="https://docs.python.org/3/library/idle.html">IDLE</a> stands for <em>Integrated Development and Learning Environment</em>.</p>
 </section>
 </section>
 
@@ -571,11 +639,13 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-installation">Python Installation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chromeos">ChromeOS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-operating-systems">Other Operating Systems</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretter">Interpretter</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scripts">Scripts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-idle">IDLE</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#packages">Packages</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#idle">IDLE</a></li>
 </ul>
   </nav></div>
 
