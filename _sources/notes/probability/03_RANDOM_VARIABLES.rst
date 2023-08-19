@@ -1,3 +1,5 @@
+.. _random_variables:
+
 ================
 Random Variables
 ================
@@ -17,31 +19,31 @@ Random Variable
 Example
     A friend flips a fair, two-sided coin. If it lands on heads, he will pay you five dollars. If it lands on tails, you have to pay him five dollars. 
 
-    The sample space for this simple game is given by,
-        
-    .. :math::
-        S = \{ h, t \}
+The sample space for this simple game is given by,
+    
+.. :math::
+    S = \{ h, t \}
 
-    The amount of money you win or lose is a *random variable* that depends on the outcome of the coin flip, i.e. whether the event of :math:`H = \{ h \}` or the event :math:`T = \{ *t* \}` from the sample space occurs. Using this information, we can define the *random variable* for the amount of money won or lost playing this game as follows,
+The amount of money you win or lose is a *random variable* that depends on the outcome of the coin flip, i.e. whether the event of :math:`H = \{ h \}` or the event :math:`T = \{ *t* \}` from the sample space occurs. Using this information, we can define the *random variable* for the amount of money won or lost playing this game as follows,
 
-    .. :math::
-        \mathcal{X} = \begin{array}{ c l }
-            5       & \quad \textrm{with } p(H) \\
-            -5      & \quad \textrm{with } p(T)
-        \end{array}
+.. :math::
+    \mathcal{X} = \begin{array}{ c l }
+        5       & \quad \textrm{with } p(H) \\
+        -5      & \quad \textrm{with } p(T)
+    \end{array}
 
 
-    We can use a table to visualize the outcomes of this *random variable* and their associated probabilities,
+We can use a table to visualize the outcomes of this *random variable* and their associated probabilities,
 
-    +------+---------------+
-    |   x  |   P(X = x)    |
-    +------+---------------+
-    |  5   |   P(H) = 0.5  |
-    +------+---------------+
-    | -5   |   P(T) = 0.5  |
-    +------+---------------+
++------+---------------+
+|   x  |   P(X = x)    |
++------+---------------+
+|  5   |   P(H) = 0.5  |
++------+---------------+
+| -5   |   P(T) = 0.5  |
++------+---------------+
 
-    Notice this is similar in form and function to a :ref:`frequency distribution <frequency_distributions>`.
+Notice this is similar in form and function to a :ref:`frequency distribution <frequency_distributions>`.
 
 Example
     Suppose you own a car that gets 30 miles per gallon of gasoline. Due to your commute, you drive your car approximately 120 miles every week. Describe the cost of operating your car as a random variable measured in dollars.
@@ -66,6 +68,8 @@ where :math:`\mathcal{X}` is the price of gasoline measured in dollars per gallo
 Random Variables
 ================
 
+A *random variable* is not very well named. A more suitable name would be *random function*. In this section, the reason for this will be explored. We will examine the connection between *random variables* and *functions*.
+
 Review of Functions
 -------------------
 
@@ -76,6 +80,9 @@ When the concept of *functions* is first taught, students are encouraged to trea
 .. image:: ../../assets/imgs/probability/function.png
 
 And then you studied various types of algebraic functions, such as logs and sines. You learned about the joy of factoring and finding roots. You plotted curves and found inflection points. Life was idyllic; It seemed as though nothing could ever shatter the peace and serenity you were blessed with amidst the glory of algebra. However, this is not the whole story.
+
+Extension of The Concept of a Function
+--------------------------------------
 
 The concept of a *function* underwent a radical change in the early 20 :sup:`th` century as set theory was developed by people with names like `Guiseppe Peano <https://en.wikipedia.org/wiki/Giuseppe_Peano>`_ and `Ernst Zermelo <https://en.wikipedia.org/wiki/Ernst_Zermelo>`_ to formalize the foundation of mathematics. To see why the notion of a function had to be extended, consider the following propositions,
 
@@ -106,11 +113,9 @@ If the specifics were abstracted away, this would lead to an expression that loo
 .. math:: 
     n(x) = y
 
-In each case, the cardinality of *something* is being asserted. In other words, a *value* is being assigned to an input, but what exactly is the input? Each proposition is asserting a property of an entire :ref:`set <sets>`; this suggests the constraint that functions are *numbers* be relaxed. 
+In each case, the cardinality of *something* is being asserted. In other words, a *value* is being assigned to an input, but what exactly is the input? Each proposition is asserting a property of an entire :ref:`set <sets>`; this suggests the constraint that functions are *numbers* be relaxed so that we may input *sets* into *funtions*.
 
-Put in the parlance of modern mathematics, a function *maps* a value to a given set. The set of all values that are mapped is likewise a set of *things*. This leds to the idea of a *function* as a map between sets. A *function* takes elements from one set and maps them to the elements of another set. 
-
-This slight change in the way functions are talked about leads to a revision of the diagram given at the beginning of this section,
+Put in the parlance of modern mathematics, a function *maps* a value to a given set. The set of all values that are mapped is likewise a set of *things*. This leds to the idea of a *function* as a map between sets. A *function* takes elements from one set and *maps* them to the elements of another set. This slight change in the way functions are talked about leads to a revision of the diagram given at the beginning of this section,
 
 .. image:: ../../assets/imgs/probability/random_variable.png
     :align: center
@@ -125,7 +130,7 @@ This suggests we view random variables as *functions* of the outcomes in sample 
 
 This is getting closer to the truth. However, this picture is not yet complete; it doesn't include probability. The outcomes in the sample space are *uncertain*.
 
-The outcomes in a event determine the value of the random variable in the same way the values inputted into a function determine the output of the function. However, the input to a random variable is uncertain, therefore the output is likewise uncertain. The probability of an event occuring in the sample space is transferred, through the outcomes that determine the random variable, into the probability of a random variable assuming a particular value.  
+The outcomes in a event determine the value of the random variable in the same way the values inputted into a function determine the output of the function. However, the input to a random variable is uncertain, therefore the output is likewise uncertain. The probability of an event occuring in the sample space is transferred, through the outcomes that determine the random variable, into the probability of a random variable assuming a particular value. An event (set) of outcomes in the *sample space* becomes an assignment of a particular value to a *random variable*,
 
 .. image:: ../../assets/imgs/probability/random_variable.png
     :align: center

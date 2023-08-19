@@ -410,8 +410,9 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Random Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Random Variables</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-of-functions">Review of Functions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extension-of-the-concept-of-a-function">Extension of The Concept of a Function</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variables-and-events">Random Variables and Events</a></li>
 </ul>
 </li>
@@ -434,7 +435,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="random-variables">
-<h1>Random Variables<a class="headerlink" href="#random-variables" title="Permalink to this headline">#</a></h1>
+<span id="id1"></span><h1>Random Variables<a class="headerlink" href="#random-variables" title="Permalink to this headline">#</a></h1>
 <p>Many things in life are <em>uncertain</em>. Nevertheless, <em>uncertainy</em> doesn’t equate to <em>unpredictability</em>. Even though events may be <em>uncertain</em>, we can still make <em>predictions</em> about their outcome based on our knowledge of the sample space.</p>
 <section id="definition">
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">#</a></h2>
@@ -443,6 +444,8 @@ document.write(`
 <p>A <em>random variable</em> is a quantity whose value is <em>uncertain</em>; A <em>random variable</em> depends on a random event.</p>
 </dd>
 <dt>Example</dt><dd><p>A friend flips a fair, two-sided coin. If it lands on heads, he will pay you five dollars. If it lands on tails, you have to pay him five dollars.</p>
+</dd>
+</dl>
 <p>The sample space for this simple game is given by,</p>
 <p>The amount of money you win or lose is a <em>random variable</em> that depends on the outcome of the coin flip, i.e. whether the event of <img class="math" src="../../_images/math/5b46d7ed5d3903f3de8013a2ec88c7a4021098b5.png" alt="H = \{ h \}"/> or the event <img class="math" src="../../_images/math/155660817668da4cc76d26044a203e79322499f7.png" alt="T = \{ *t* \}"/> from the sample space occurs. Using this information, we can define the <em>random variable</em> for the amount of money won or lost playing this game as follows,</p>
 <p>We can use a table to visualize the outcomes of this <em>random variable</em> and their associated probabilities,</p>
@@ -464,7 +467,7 @@ document.write(`
 </tbody>
 </table>
 <p>Notice this is similar in form and function to a <a class="reference internal" href="../statistics/02_GRAPHICAL_REPRESENTATIONS.html#frequency-distributions"><span class="std std-ref">frequency distribution</span></a>.</p>
-</dd>
+<dl class="simple">
 <dt>Example</dt><dd><p>Suppose you own a car that gets 30 miles per gallon of gasoline. Due to your commute, you drive your car approximately 120 miles every week. Describe the cost of operating your car as a random variable measured in dollars.</p>
 </dd>
 </dl>
@@ -482,14 +485,18 @@ document.write(`
 <p><img src="../../_images/math/f423167351b822576217de03d3f2518016744b78.png" alt="\mathcal{X} \frac{\$}{gal} \cdot \text{4 gal }"/></p>
 </div><p>where <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is the price of gasoline measured in dollars per gallon.</p>
 </section>
-<section id="id1">
-<h2>Random Variables<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<section id="id2">
+<h2>Random Variables<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<p>A <em>random variable</em> is not very well named. A more suitable name would be <em>random function</em>. In this section, the reason for this will be explored. We will examine the connection between <em>random variables</em> and <em>functions</em>.</p>
 <section id="review-of-functions">
 <h3>Review of Functions<a class="headerlink" href="#review-of-functions" title="Permalink to this headline">#</a></h3>
 <p>Recall the concept of a <em>function</em> from your other mathematics classes. You probably remember a definition along the lines, “A function <img class="math" src="../../_images/math/4d080e94aa171bc1bba13b38e72317a67bac38e2.png" alt="f(x)"/> receives an input <em>x</em> and assigns to it a value <em>y</em>.” This definition has served you in your mathematics career up to this point, but it will no longer suffice. This is not <em>precisely</em> what a function is, though it is a close approximation. In order to understand what a <em>random variable</em> is, the concept of a <em>function</em> must be extended and enlarged to encompass a larger <em>set</em> of ideas (pun intended).</p>
 <p>When the concept of <em>functions</em> is first taught, students are encouraged to treat a function as an algebraic expression, such as <img class="math" src="../../_images/math/43351c541e04e74c653d11d4c5b887b3412da6a9.png" alt="f(x) = x^2"/>. It’s an algebraic <em>thing</em> that you plug numbers into and out of which you get numbers, which may or may not be the same numbers that were inputted (consider the output of  <img class="math" src="../../_images/math/f20854b57b3a7b7382133baffa9c696eb54c91ed.png" alt="f(x) = x"/> versus <img class="math" src="../../_images/math/43351c541e04e74c653d11d4c5b887b3412da6a9.png" alt="f(x) = x^2"/>; what is the difference between the set of things output by each of these function?). When <cite>f(x)=x^2</cite>, we put <cite>x = 5</cite> and get <cite>f(5) = 25</cite>, which describes an ordered pair in the <strong>Cartesian</strong> plane, <img class="math" src="../../_images/math/a5a48337ef6222a0c85235bc3dee17044c1cd46d.png" alt="(5, f(5))"/>. Students are told about the <em>domain</em> and <em>range</em>; The <a class="reference internal" href="../SET_THEORY.html#sets"><span class="std std-ref">set</span></a> of all values that are input into a function is called the <em>domain</em>. Likewise, the set of all values that is output by the function is called the <em>range</em>. You probably remember seeing a diagram to help you visualize this idea and it probably looked like this,</p>
 <img alt="../../_images/function.png" src="../../_images/function.png" />
 <p>And then you studied various types of algebraic functions, such as logs and sines. You learned about the joy of factoring and finding roots. You plotted curves and found inflection points. Life was idyllic; It seemed as though nothing could ever shatter the peace and serenity you were blessed with amidst the glory of algebra. However, this is not the whole story.</p>
+</section>
+<section id="extension-of-the-concept-of-a-function">
+<h3>Extension of The Concept of a Function<a class="headerlink" href="#extension-of-the-concept-of-a-function" title="Permalink to this headline">#</a></h3>
 <p>The concept of a <em>function</em> underwent a radical change in the early 20 <sup>th</sup> century as set theory was developed by people with names like <a class="reference external" href="https://en.wikipedia.org/wiki/Giuseppe_Peano">Guiseppe Peano</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Ernst_Zermelo">Ernst Zermelo</a> to formalize the foundation of mathematics. To see why the notion of a function had to be extended, consider the following propositions,</p>
 <blockquote>
 <div><p>The set of all unicorns has zero elements.</p>
@@ -509,9 +516,8 @@ document.write(`
 </div><p>If the specifics were abstracted away, this would lead to an expression that looks like,</p>
 <div class="math">
 <p><img src="../../_images/math/8c882d4d882b84ec7b63377c993bf50486ff4244.png" alt="n(x) = y"/></p>
-</div><p>In each case, the cardinality of <em>something</em> is being asserted. In other words, a <em>value</em> is being assigned to an input, but what exactly is the input? Each proposition is asserting a property of an entire <a class="reference internal" href="../SET_THEORY.html#sets"><span class="std std-ref">set</span></a>; this suggests the constraint that functions are <em>numbers</em> be relaxed.</p>
-<p>Put in the parlance of modern mathematics, a function <em>maps</em> a value to a given set. The set of all values that are mapped is likewise a set of <em>things</em>. This leds to the idea of a <em>function</em> as a map between sets. A <em>function</em> takes elements from one set and maps them to the elements of another set.</p>
-<p>This slight change in the way functions are talked about leads to a revision of the diagram given at the beginning of this section,</p>
+</div><p>In each case, the cardinality of <em>something</em> is being asserted. In other words, a <em>value</em> is being assigned to an input, but what exactly is the input? Each proposition is asserting a property of an entire <a class="reference internal" href="../SET_THEORY.html#sets"><span class="std std-ref">set</span></a>; this suggests the constraint that functions are <em>numbers</em> be relaxed so that we may input <em>sets</em> into <em>funtions</em>.</p>
+<p>Put in the parlance of modern mathematics, a function <em>maps</em> a value to a given set. The set of all values that are mapped is likewise a set of <em>things</em>. This leds to the idea of a <em>function</em> as a map between sets. A <em>function</em> takes elements from one set and <em>maps</em> them to the elements of another set. This slight change in the way functions are talked about leads to a revision of the diagram given at the beginning of this section,</p>
 <img alt="../../_images/random_variable.png" class="align-center" src="../../_images/random_variable.png" />
 <p>This suggests we view random variables as <em>functions</em> of the outcomes in sample space,</p>
 <div class="math">
@@ -519,7 +525,7 @@ document.write(`
 </div><div class="math">
 <p><img src="../../_images/math/460cbba0d81c5c3715ced076eeba23e988bd7430.png" alt="\text{where} A \subseteq S"/></p>
 </div><p>This is getting closer to the truth. However, this picture is not yet complete; it doesn’t include probability. The outcomes in the sample space are <em>uncertain</em>.</p>
-<p>The outcomes in a event determine the value of the random variable in the same way the values inputted into a function determine the output of the function. However, the input to a random variable is uncertain, therefore the output is likewise uncertain. The probability of an event occuring in the sample space is transferred, through the outcomes that determine the random variable, into the probability of a random variable assuming a particular value.</p>
+<p>The outcomes in a event determine the value of the random variable in the same way the values inputted into a function determine the output of the function. However, the input to a random variable is uncertain, therefore the output is likewise uncertain. The probability of an event occuring in the sample space is transferred, through the outcomes that determine the random variable, into the probability of a random variable assuming a particular value. An event (set) of outcomes in the <em>sample space</em> becomes an assignment of a particular value to a <em>random variable</em>,</p>
 <img alt="../../_images/random_variable.png" class="align-center" src="../../_images/random_variable.png" />
 <p>A random variable shows how events from the sample space (the domain) are transformed into events of the random variable (the range).</p>
 </section>
@@ -614,8 +620,9 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Random Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Random Variables</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-of-functions">Review of Functions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extension-of-the-concept-of-a-function">Extension of The Concept of a Function</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variables-and-events">Random Variables and Events</a></li>
 </ul>
 </li>
