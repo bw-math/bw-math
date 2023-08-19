@@ -7,6 +7,7 @@ References
    :caption: Contents:
 
    TEXTS
+   EXAM
    tables/index
    TI84
    python/index

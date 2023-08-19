@@ -6,6 +6,7 @@ Class Notes
    :caption: Contents:
 
    graphics/index
+   HISTORY
    SET_THEORY
    probability/index
    statistics/index
