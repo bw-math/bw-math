@@ -251,6 +251,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../references/TI84.html">TI-84</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../references/python/index.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../references/python/SHELL.html">Online Python Shell</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../references/python/01_SETUP.html">Python Setup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../references/python/02_BASIC.html">Basics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../references/python/03_SETS.html">Sets</a></li>
@@ -414,12 +415,36 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">Notation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">Notation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#list-notation">List Notation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantifier-notation">Quantifier Notation</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#venn-diagrams">Venn Diagrams</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations">Relations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operations">Operations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identity-theorems">Identity Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-1">Theorem 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-2">Theorem 2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-3">Theorem 3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-4">Theorem 4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-5">Theorem 5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-6">Theorem 6</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorems">Subset Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-one">Theorem 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-two">Theorem 2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-three">Theorem 3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-four">Theorem 4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-five">Theorem 5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-six">Theorem 6</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aristotle-s-square-of-opposition">Aristotle’s Square of Opposition</a></li>
 </ul>
             </nav>
@@ -439,14 +464,14 @@ document.write(`
 <section id="logic">
 <span id="symbolic-logic"></span><h3>Logic<a class="headerlink" href="#logic" title="Permalink to this headline">#</a></h3>
 <p>In order to develop the theory of sets precisely, we will first need a few concepts from <em>logic</em>.</p>
-<dl id="proposition">
+<dl class="simple" id="proposition">
 <dt>Proposition</dt><dd><p><img class="math" src="../_images/math/329a4059b6588ddc5291a9958408e7158452bc53.png" alt="p, q, r"/></p>
-<p>A sentence that can be judged either <em>true</em> or <em>false</em>.</p>
 </dd>
 </dl>
-<dl id="implication">
+<p>A sentence that can be judged either <em>true</em> or <em>false</em>.</p>
+<dl class="simple" id="implication">
 <dt>Implication</dt><dd><p><img class="math" src="../_images/math/149848db043cfb0a5e9cb8d3f76888f81894e6a5.png" alt="p \implies q"/></p>
-<dl class="simple">
+</dd>
 <dt>A symbolic representation of a <em>conditional</em> relationship between two <em>propositions</em>. This type of proposition can be translated into English in the following ways,</dt><dd><ol class="arabic simple">
 <li><p>“if <em>p</em>, then <em>q</em>”</p></li>
 <li><p>“whenever <em>p</em>, then <em>q</em>”</p></li>
@@ -454,17 +479,13 @@ document.write(`
 <li><p>“<em>q</em> follows from <em>p</em>”</p></li>
 </ol>
 </dd>
-</dl>
-</dd>
 <dt>Universal Quantification</dt><dd><p><img class="math" src="../_images/math/6c690fd3b495a4f8d1680f489d2e1e172274cd48.png" alt="\forall p: q"/></p>
-<dl class="simple">
+</dd>
 <dt>A symbolic representation of a universal proposition. This type of proposition can be translated into English in the following ways,</dt><dd><ol class="arabic simple">
 <li><p>“for all <em>p</em>, <em>q</em>”</p></li>
 <li><p>“for every <em>p</em>, <em>q</em>”</p></li>
 <li><p>“for each <em>p</em>, <em>q</em>”</p></li>
 </ol>
-</dd>
-</dl>
 </dd>
 </dl>
 </section>
@@ -478,40 +499,46 @@ document.write(`
 <dl id="elements">
 <dt>Elements</dt><dd><p><img class="math" src="../_images/math/20d6a1c77137e7fc63db49a2186054b269af01c1.png" alt="x,y,x"/> (<em>lowercase letters</em>)</p>
 <p><img class="math" src="../_images/math/3b27c6bfd0a0830505b6509e8b3e867ba65cea30.png" alt="x_1, x_2, ... , x_n"/> (<em>lowercase letters with subscripts</em>)</p>
-<p>TODO</p>
 </dd>
 </dl>
+<p>The individuals, or objects, in the <em>domain of discourse</em>; The “<em>things</em>” being counted.</p>
 <dl id="sets">
 <dt>Sets</dt><dd><p><img class="math" src="../_images/math/c1aa5e31bee7731e9792fb0b9760c002197de969.png" alt="A,B,C"/> (<em>upper case letters</em>)</p>
 <p><img class="math" src="../_images/math/ee2574d3596b3553624606616f77d378b51dea21.png" alt="A_1, A_2, ... , A_n"/> (<em>uppercase letters with subscripts</em>)</p>
-<p>TODO</p>
 </dd>
 </dl>
-<dl id="cardinality">
+<p>Groups of elements that share a common property. <em>Sets</em> are sometimes referred to as <em>classes</em> or <em>collections</em>.</p>
+<dl class="simple" id="cardinality">
 <dt>Cardinality</dt><dd><p><img class="math" src="../_images/math/534ec862789190f4e1c0ee776c13e4f478f5e83f.png" alt="n(A)"/></p>
-<p>The number of elements in a set.</p>
 </dd>
 </dl>
-<dl id="universal-set">
+<p>The number of <em>distinct</em> elements in a set.</p>
+<dl class="simple" id="universal-set">
 <dt>Universal Set</dt><dd><p><img class="math" src="../_images/math/23298f92ca8dc2a1ce6332eb7a21d5f2e9ae0bd8.png" alt="S"/></p>
-<p>The universal set <em>S</em> is set of all elements in the <em>domain of discourse</em>.</p>
 </dd>
 </dl>
+<p>The universal set <em>S</em> is set of all elements in the <em>domain of discourse</em>.</p>
 <dl class="simple" id="null-set">
 <dt>Null Set</dt><dd><p><img class="math" src="../_images/math/4d7ffaeaa90a71e9aedb567d46ba48bcb8c4ec80.png" alt="\varnothing"/></p>
 </dd>
 </dl>
+<p>The unique set which contains nothing.</p>
 </section>
 <section id="notation">
 <h2>Notation<a class="headerlink" href="#notation" title="Permalink to this headline">#</a></h2>
-<dl class="simple" id="list-notation">
-<dt>List Notation</dt><dd><p>TODO</p>
-</dd>
-</dl>
-<dl class="simple" id="quantifier-notation">
-<dt>Quantifier Notation</dt><dd><p>TODO</p>
-</dd>
-</dl>
+<section id="list-notation">
+<span id="id2"></span><h3>List Notation<a class="headerlink" href="#list-notation" title="Permalink to this headline">#</a></h3>
+<div class="math">
+<p><img src="../_images/math/9d9d56d6853698c59a59a322b9a3883a0b1c8c15.png" alt="A = \{ a, b, c, ... \}"/></p>
+</div><p>In <em>list notation</em>, all of the elements that belong to <strong>A</strong> are <em>explicitly</em> written between a pair of brackets with commas separating each element.</p>
+</section>
+<section id="quantifier-notation">
+<span id="id3"></span><h3>Quantifier Notation<a class="headerlink" href="#quantifier-notation" title="Permalink to this headline">#</a></h3>
+<div class="math">
+<p><img src="../_images/math/1f406e8380dff5a3efc3f81b1e66c978dcaa302e.png" alt="A = \{ \forall x: F(x) \}"/></p>
+</div><p>In <em>quantifier notation</em>, all of the elements that belong to <strong>A</strong> are <em>implicitly</em> written between a pair of brackets with a formula that specifies the conditions for membership.</p>
+<p><em>Quantifier notation</em> is sometimes referred to as <em>set builder notation</em>.</p>
+</section>
 </section>
 <section id="corollaries">
 <h2>Corollaries<a class="headerlink" href="#corollaries" title="Permalink to this headline">#</a></h2>
@@ -525,55 +552,233 @@ document.write(`
 </dl>
 </section>
 <section id="venn-diagrams">
-<span id="id2"></span><h2>Venn Diagrams<a class="headerlink" href="#venn-diagrams" title="Permalink to this headline">#</a></h2>
-<p>TODO</p>
+<span id="id4"></span><h2>Venn Diagrams<a class="headerlink" href="#venn-diagrams" title="Permalink to this headline">#</a></h2>
+<p>A <em>Venn Diagram</em> is a visual representation of sets. The universal set is represent as rectangle and sets are represented as circles within this rectangle. The simplest <em>Venn Diagram</em> is a graphic of a single set <strong>A</strong> shown against the universal set <strong>S</strong>,</p>
+<img alt="../_images/sets_simple.jpg" class="align-center" src="../_images/sets_simple.jpg" />
+<p>You will sometimes set <em>Venn Diagrams</em> with the elements of the sets written in, as in the following picture,</p>
+<img alt="../_images/sets_simple_with_elements.jpg" class="align-center" src="../_images/sets_simple_with_elements.jpg" />
+<p><em>Venn Diagrams</em> are useful for visualizing <a class="reference internal" href="#set-relations"><span class="std std-ref">Relations</span></a>. For this reason, we will see more complex examples of <em>Venn Diagrams</em> in the next section.</p>
 </section>
 <section id="relations">
-<h2>Relations<a class="headerlink" href="#relations" title="Permalink to this headline">#</a></h2>
-<dl id="subset">
-<dt>Subset</dt><dd><div class="math">
+<span id="set-relations"></span><h2>Relations<a class="headerlink" href="#relations" title="Permalink to this headline">#</a></h2>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../_images/math/de2b893138da1f4032fea64eade1533eed5eb60e.png" alt="A \subseteq B"/></p>
-</div><p>All of <strong>A</strong>’s elements are contained in <strong>B</strong>. To say the same thing in a different way, if the element <em>x</em> belongs to <strong>A</strong>, then the element <em>x</em> also belongs to <strong>B</strong></p>
-<div class="math">
-<p><img src="../_images/math/bfa52cdd8942b099dd53859d6ddc5ac0e6ca35e6.png" alt="x \in A \implies x \in B"/></p>
 </div></dd>
 </dl>
-<dl id="proper-subset">
-<dt>Proper Subset</dt><dd><div class="math">
-<p><img src="../_images/math/b0130aeceff05f789b654788662dc910994114ca.png" alt="A \subset B"/></p>
-</div><p><strong>A</strong> is a subset of <strong>B</strong> and <img class="math" src="../_images/math/0e1ac9039591736dc2d721dcac6dd0372721ca48.png" alt="A \neq B"/>. To say the same thing in a different way, <strong>A</strong> is wholly contained in <strong>B</strong>.</p>
+<p><strong>A</strong> is a subset of <strong>B</strong> if all of <strong>A</strong>’s elements are contained in <strong>B</strong>.</p>
+<p>To say the same thing in a different way, if the element <em>x</em> belongs to <strong>A</strong>, then the element <em>x</em> also belongs to <strong>B</strong></p>
 <div class="math">
-<p><img src="../_images/math/838ec5b3230f28f9360a27e93415359129cd48c0.png" alt="x \in A \implies x \in B \land A \neq B"/></p>
+<p><img src="../_images/math/e49f839a15be4555eb6cee194a9102937c56fb4e.png" alt="\forall x : x \in A \implies x \in B"/></p>
+</div><p>The relation of <em>subset</em> can be seen in the following <em>Venn Diagram</em>,</p>
+<img alt="../_images/sets_subset.jpg" src="../_images/sets_subset.jpg" />
+<p>This diagram represents the relationship <img class="math" src="../_images/math/d47d4abd77f8c220c227bb878ecc832f9ea96a52.png" alt="A \subseteq B"/>.</p>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../_images/math/b0130aeceff05f789b654788662dc910994114ca.png" alt="A \subset B"/></p>
+</div></dd>
+</dl>
+<p><strong>A</strong> is a subset of <strong>B</strong> and <img class="math" src="../_images/math/0e1ac9039591736dc2d721dcac6dd0372721ca48.png" alt="A \neq B"/>. To say the same thing in a different way, <strong>A</strong> is wholly contained in <strong>B</strong>.</p>
+<div class="math">
+<p><img src="../_images/math/0de37654f0bacf303cad72990e831346a2e742dc.png" alt="\forall x: x \in A \implies x \in B \text{ and } A \neq B"/></p>
 </div><p>An equivalent way of defining a <em>proper subset</em> is given by,</p>
 <div class="math">
-<p><img src="../_images/math/568c0ba417503a1fbfba15f4011dfe92042e7810.png" alt="x \in A \implies x \in B \land n(A) &lt; n(B)"/></p>
-</div><p>This is an equivalent formulation between saying the cardinality of <strong>A</strong> is less than the cardinality of <strong>B</strong> is logically equivalent to saying <strong>A</strong> is no the same as <strong>B</strong>.</p>
-</dd>
+<p><img src="../_images/math/5e140de15581ff7925d8c6f1955e3e8f245aed20.png" alt="\forall x: x \in A \implies x \in B \text{ and } n(A) &lt; n(B)"/></p>
+</div><p>This is an equivalent formulation between saying the cardinality of <strong>A</strong> is less than the cardinality of <strong>B</strong> is logically equivalent to saying <strong>A</strong> is not identical to <strong>B</strong>.</p>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../_images/math/eb87029094d8ad8dad7a3d3611e54911ea6e9909.png" alt="A \equiv B"/></p>
+</div></dd>
 </dl>
+<p>Two sets <strong>A</strong> and <strong>B</strong> are <em>equivalent</em> if the number of elements in <strong>A</strong> is equal to the number of elements <strong>B</strong>.</p>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../_images/math/862f3d4bf1c34c9cae21171572ff1c79d43f3be8.png" alt="A = B"/></p>
+</div></dd>
+</dl>
+<p>Two sets <strong>A</strong> and <strong>B</strong> are <em>equal</em> if they contain the same elements. In other words, two sets are equal if they are the same set.</p>
+<div class="math">
+<p><img src="../_images/math/5fed91e379f5a03cd37df32c0043561804ee81b5.png" alt="\forall x: x \in A \implies x \in B \text{ and } x \in B \implies x \in A"/></p>
+</div><p>An equivalent way of defining the equality of sets is given by,</p>
+<div class="math">
+<p><img src="../_images/math/060436e9788ea6d5bed7175b27650719c7334ffe.png" alt="A \subseteq B \text { and } B \subseteq A"/></p>
+</div><p>In other words, if <strong>A</strong> is wholly contained in <strong>B</strong> and <strong>B</strong> is wholly contained in <strong>A</strong>, then the only way this can occur is if <img class="math" src="../_images/math/b20b0b13ae1d51af6e0bcc6477b498dd3db052a0.png" alt="A = B"/>.</p>
 </section>
 <section id="operations">
 <span id="set-operations"></span><h2>Operations<a class="headerlink" href="#operations" title="Permalink to this headline">#</a></h2>
-<dl id="complement">
-<dt>Complement</dt><dd><p><img class="math" src="../_images/math/2ef75eec66003e588055d751eaddd391b6eccea0.png" alt="A^c"/></p>
-<p><img class="math" src="../_images/math/60fd91f97e0457b7df7ec875aee05de90775cbca.png" alt="~ A"/></p>
-</dd>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../_images/math/081ad39e649541259707f03e1dece0849a3b5572.png" alt="A^c"/></p>
+</div><div class="math">
+<p><img src="../_images/math/8e74e7d70332a1d98790820b78a3cf912d242312.png" alt="\sim  A"/></p>
+</div></dd>
 </dl>
-<dl class="simple" id="union">
-<dt>Union</dt><dd><p><img class="math" src="../_images/math/47b7d7c58a0d8fba34b3e6c9b40a295769c86482.png" alt="A \cup B"/></p>
-</dd>
+<p>The set containing elements that do not belong to the set <strong>A</strong>.</p>
+<div class="math">
+<p><img src="../_images/math/2ab5dd376e61bbd97d374e2dfc75b0586b181e91.png" alt="A^c = \{ \forall x: x \not in A \}"/></p>
+</div><p>The complement can be visualized with the following <em>Venn Diagram</em>,</p>
+<img alt="../_images/sets_complement.jpg" src="../_images/sets_complement.jpg" />
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The complement of a set correspond to the English “<em>not</em>”. To see this, let <strong>S</strong> be the set of animals and let <strong>A</strong> be the set of dogs. Then <img class="math" src="../_images/math/2ef75eec66003e588055d751eaddd391b6eccea0.png" alt="A^c"/> is the set of animals that are <em>not</em> dogs.</p>
+</div>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../_images/math/888ddb12ea65a9e5fb8d5232a34f768ddf4f5306.png" alt="A \cup B"/></p>
+</div></dd>
 </dl>
-<dl class="simple" id="intersection">
-<dt>Intersection</dt><dd><dl class="field-list simple">
-<dt class="field-odd">math</dt>
-<dd class="field-odd"><p><cite>A cap B</cite></p>
-</dd>
+<p>The set containing elements that belong to either the set <strong>A</strong> or the set <strong>B</strong>.</p>
+<div class="math">
+<p><img src="../_images/math/b8851eaf5aaef73d70a3d5746260e385d126e682.png" alt="A \cup B = \{ \forall x: x \in A \text{ or } x \in B \}"/></p>
+</div><p>We have to be careful with <em>Venn Diagrams</em> that represent unions, because the two sets <strong>A</strong> and <strong>B</strong> might have elements in common, or they may not have elements in common.</p>
+<p>The first case, where the two sets have no elements in common is shown below,</p>
+<img alt="../_images/sets_union_disjoint.jpg" src="../_images/sets_union_disjoint.jpg" />
+<p>The union would be represented by <em>both</em> circles. Notice the circles do not touch. Sets that have no elements in common are called <em>disjoint</em>.</p>
+<p>The second case, where the two sets have elements in common is shown in the next diagram,</p>
+<img alt="../_images/sets_union_overlapping.jpg" src="../_images/sets_union_overlapping.jpg" />
+<p>The union would be represented by the entire area of both circles. Notices the circles share some elements in this case. Sets that have elements in common, but are not subsets in either direction (i.e. neither <img class="math" src="../_images/math/d47d4abd77f8c220c227bb878ecc832f9ea96a52.png" alt="A \subseteq B"/> nor <img class="math" src="../_images/math/3035400ac38c7d070615ee5aa48248937a105b2d.png" alt="B \subseteq A"/>, are called <em>overlapping</em>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The union of two sets corresponds to the English “<em>or</em>”. To see this, let <strong>A</strong> be the set of calculators. Let <strong>B</strong> represent the set of <em>pencils</em>. Then <img class="math" src="../_images/math/47b7d7c58a0d8fba34b3e6c9b40a295769c86482.png" alt="A \cup B"/> represents the set of <em>calculators</em> or <em>pencils</em>.</p>
+</div>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../_images/math/4a09bf76fbfe7fd3ac1878768a4895e92f25df75.png" alt="A \cap B"/></p>
+</div></dd>
 </dl>
-</dd>
-</dl>
+<p>The set containing elements that to both the set <strong>A</strong> and the set <strong>B</strong>.</p>
+<div class="math">
+<p><img src="../_images/math/829dfd841627af6300ebc90c8153725409bd562a.png" alt="A \cap B = \{ \forall x: x \in A \text{ and } x \in B \}"/></p>
+</div><p>As in the union, there are two cases we need to consider when representing the interesection of two sets with a <em>Venn Diagram</em>. Either the sets have elements in common, or they do not.</p>
+<p>The first case, where the two sets have elements in common is shown in the next diagram,</p>
+<img alt="../_images/sets_union_overlapping.jpg" src="../_images/sets_union_overlapping.jpg" />
+<p>The intersection is represented by where the circles meet. In the case of <em>overlapping</em> sets, this is non-empty,</p>
+<div class="math">
+<p><img src="../_images/math/2f17aeadbb82646a9c4242983c0b9a445dec3d55.png" alt="A \cap B \neq \varnothing"/></p>
+</div><p>The second case, where the two sets have no elements in common is shown below,</p>
+<img alt="../_images/sets_union_disjoint.jpg" src="../_images/sets_union_disjoint.jpg" />
+<p>The intersection is represented by where the circles meet. In the case of <em>disjoint sets</em>, the circles do not meet. Thus,</p>
+<div class="math">
+<p><img src="../_images/math/ad08384ab7d641cd5fb74a25df89ac9fcea6ea96.png" alt="A \cap B = \varnothing"/></p>
+</div><div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The intersection of two sets corresponds to the English “<em>and</em>”. To see this, let <strong>A</strong> be the set of United States Senators. Let <strong>B</strong> the set of people over the age of 70. Then, <img class="math" src="../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/> represents the set of people who are both United States Senators and over the age of 70.</p>
+</div>
 </section>
 <section id="theorems">
 <span id="set-theorems"></span><h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">#</a></h2>
-<p>TODO</p>
+<p>Almost all of the theorems of Set Theory can be proven by referring to a <a class="reference internal" href="#venn-diagrams"><span class="std std-ref">Venn Diagram</span></a>. As you read through the following theorems, try to justify each one to yourself by drawing a picture of what it is saying.</p>
+<p>We will go through each of these theorems in more detail in class.</p>
+<section id="identity-theorems">
+<span id="id5"></span><h3>Identity Theorems<a class="headerlink" href="#identity-theorems" title="Permalink to this headline">#</a></h3>
+<section id="theorem-1">
+<span id="identity-theorem-one"></span><h4>Theorem 1<a class="headerlink" href="#theorem-1" title="Permalink to this headline">#</a></h4>
+<div class="math">
+<p><img src="../_images/math/599edcab9ce7123f384220111c824466e960c7fe.png" alt="A \cap \varnothing = \varnothing"/></p>
+</div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Notice the resemblance to <em>zero property of multiplication</em>,</p>
+<div class="math">
+<p><img src="../_images/math/e2f9cc86cb62e7b21ba62f972b69816bb105c28a.png" alt="a \cdot 0 = 0"/></p>
+</div></div>
+</section>
+<section id="theorem-2">
+<span id="identity-theorem-two"></span><h4>Theorem 2<a class="headerlink" href="#theorem-2" title="Permalink to this headline">#</a></h4>
+<div class="math">
+<p><img src="../_images/math/87ec295e7ac6ac2207eb0f1ec24acf706bba6132.png" alt="A \cup \varnothing = A"/></p>
+</div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Notice the resembalnce to the <em>identity property of addition</em>,</p>
+<div class="math">
+<p><img src="../_images/math/a4ef85c95fcca51bcc639358dbd4ae914bbb303b.png" alt="a + 0 = a"/></p>
+</div></div>
+</section>
+<section id="theorem-3">
+<span id="identity-theorem-three"></span><h4>Theorem 3<a class="headerlink" href="#theorem-3" title="Permalink to this headline">#</a></h4>
+<div class="math">
+<p><img src="../_images/math/a23262a8a80159336b111c74ba7378c932a63175.png" alt="A \cap S = A"/></p>
+</div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Notice the resemblance to the <em>identity property of multiplication</em>,</p>
+<div class="math">
+<p><img src="../_images/math/8aecf79fa387d95027a1653fb27a60124bfe1953.png" alt="a \cdot 1 = a"/></p>
+</div></div>
+</section>
+<section id="theorem-4">
+<span id="identity-theorem-four"></span><h4>Theorem 4<a class="headerlink" href="#theorem-4" title="Permalink to this headline">#</a></h4>
+<div class="math">
+<p><img src="../_images/math/aed48397aff16b989bdda910435207bc80b1f878.png" alt="A \cup S = S"/></p>
+</div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This theorem does not have an analogous algebraic property. This is where <em>set theory</em> starts to diverge from ordinary algebra.</p>
+</div>
+</section>
+<section id="theorem-5">
+<span id="identity-theorem-five"></span><h4>Theorem 5<a class="headerlink" href="#theorem-5" title="Permalink to this headline">#</a></h4>
+<div class="math">
+<p><img src="../_images/math/dfe27d66378c2b16284826d75978d92ab39d46a3.png" alt="A \cup A = A"/></p>
+</div></section>
+<section id="theorem-6">
+<span id="identity-theorem-six"></span><h4>Theorem 6<a class="headerlink" href="#theorem-6" title="Permalink to this headline">#</a></h4>
+<div class="math">
+<p><img src="../_images/math/d1f39df0606799002692d8679be2e404bb019213.png" alt="A \cap A = A"/></p>
+</div></section>
+</section>
+<section id="subset-theorems">
+<h3>Subset Theorems<a class="headerlink" href="#subset-theorems" title="Permalink to this headline">#</a></h3>
+<section id="subset-theorem-one">
+<span id="id6"></span><h4>Theorem 1<a class="headerlink" href="#subset-theorem-one" title="Permalink to this headline">#</a></h4>
+<blockquote>
+<div><div class="math">
+<p><img src="../_images/math/8f1e7a5f69f7a28a1b39a33ae369154b03c951e5.png" alt="A \cap B \subseteq A"/></p>
+</div></div></blockquote>
+<p>The intersection of <strong>A</strong> and <strong>B</strong> is a subset of <strong>A</strong>.</p>
+</section>
+<section id="subset-theorem-two">
+<span id="id7"></span><h4>Theorem 2<a class="headerlink" href="#subset-theorem-two" title="Permalink to this headline">#</a></h4>
+<blockquote>
+<div><div class="math">
+<p><img src="../_images/math/541b2db7263cad6154970693bca5bcca4ca80e87.png" alt="A \subseteq A \cup B"/></p>
+</div></div></blockquote>
+<p><strong>A</strong> is a subset of the union of <strong>A</strong> and <strong>B</strong>.</p>
+</section>
+<section id="subset-theorem-three">
+<span id="id8"></span><h4>Theorem 3<a class="headerlink" href="#subset-theorem-three" title="Permalink to this headline">#</a></h4>
+<blockquote>
+<div><div class="math">
+<p><img src="../_images/math/d666d0b08acaff4f5583afe43535444e057b1fc6.png" alt="A \cap B \subseteq A \cup B"/></p>
+</div></div></blockquote>
+<p>The intersection of two sets <strong>A</strong> and <strong>B</strong> is a subset of the union of those same two sets.</p>
+</section>
+<section id="subset-theorem-four">
+<span id="id9"></span><h4>Theorem 4<a class="headerlink" href="#subset-theorem-four" title="Permalink to this headline">#</a></h4>
+<blockquote>
+<div><div class="math">
+<p><img src="../_images/math/a88239fa9fc705130917443468208494728642f4.png" alt="A \subseteq B \implies A \cap B = A"/></p>
+</div></div></blockquote>
+<p>If <strong>A</strong> is a subset of <strong>B</strong>, then the intersection of <strong>A</strong> and <strong>B</strong> is equal to <strong>A</strong>.</p>
+</section>
+<section id="subset-theorem-five">
+<span id="id10"></span><h4>Theorem 5<a class="headerlink" href="#subset-theorem-five" title="Permalink to this headline">#</a></h4>
+<blockquote>
+<div><div class="math">
+<p><img src="../_images/math/45292bbb37c0b9ad99cb48f48e3e1e74ab20ae17.png" alt="A \subseteq B \implies A \cup B = B"/></p>
+</div></div></blockquote>
+<p>If <strong>A</strong> is a subset of <strong>B</strong>, then the union of <strong>A</strong> and <strong>B</strong> is equal to <strong>B</strong></p>
+</section>
+<section id="subset-theorem-six">
+<span id="id11"></span><h4>Theorem 6<a class="headerlink" href="#subset-theorem-six" title="Permalink to this headline">#</a></h4>
+<blockquote>
+<div><div class="math">
+<p><img src="../_images/math/18197d5d03e75d448a3f05c1eb35da16a60e6368.png" alt="A \subseteq B \text{ and } B \subset C \implies A \subseteq C"/></p>
+</div></div></blockquote>
+<p>If <strong>A</strong> is a subset of <strong>B</strong> and <strong>B</strong> is a subset of <strong>C</strong>, then <strong>A</strong> is a subset of <strong>C</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This theorem is a type of <a class="reference external" href="https://en.wikipedia.org/wiki/Syllogism">syllogism</a>. Refer to the <a class="reference internal" href="HISTORY.html#knowledge"><span class="std std-ref">A Brief History of Knowledge</span></a> section for more details on <em>syllogisms</em>.</p>
+</div>
+</section>
+</section>
 </section>
 <section id="aristotle-s-square-of-opposition">
 <span id="square-of-opposition"></span><h2>Aristotle’s Square of Opposition<a class="headerlink" href="#aristotle-s-square-of-opposition" title="Permalink to this headline">#</a></h2>
@@ -633,12 +838,36 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">Notation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">Notation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#list-notation">List Notation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantifier-notation">Quantifier Notation</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#venn-diagrams">Venn Diagrams</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations">Relations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operations">Operations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identity-theorems">Identity Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-1">Theorem 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-2">Theorem 2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-3">Theorem 3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-4">Theorem 4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-5">Theorem 5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-6">Theorem 6</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorems">Subset Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-one">Theorem 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-two">Theorem 2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-three">Theorem 3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-four">Theorem 4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-five">Theorem 5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-six">Theorem 6</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aristotle-s-square-of-opposition">Aristotle’s Square of Opposition</a></li>
 </ul>
   </nav></div>
