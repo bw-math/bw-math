@@ -183,7 +183,7 @@ You can type commands into this editor, as pictured. You can run these commands 
 
 .. image:: ../../assets/imgs/python/idle_editor_results.png
 
-While you can complete all the labs in this class in Notepad if you so choose, all examples in class will us the *IDLE* shell and text editor. 
+We will sometimes call the *IDLE* text editor a *notebook*. 
 
 .. _python_packages:
 
