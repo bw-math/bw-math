@@ -434,6 +434,8 @@ Theorem 6
 
     A \cap A = A
 
+.. _subset_theorems:
+
 Subset Theorems
 ---------------
 
@@ -501,7 +503,62 @@ If **A** is a subset of **B** and **B** is a subset of **C**, then **A** is a su
     
     This theorem is a type of `syllogism <https://en.wikipedia.org/wiki/Syllogism>`_. Refer to the :ref:`knowledge` section for more details on *syllogisms*.
 
+.. _complement_theorems:
+
+Complement Theorems
+-------------------
+
+.. _complement_theorem_one:
+
+Theorem 1
+*********
+
+TODO 
+
+.. _complement_theorem_two:
+
+Theorem 2
+*********
+
+TODO 
+
+.. note:: 
+    
+    This theorem is sometimes known as the `law of the excluded middle <https://simple.wikipedia.org/wiki/Law_of_the_excluded_middle>`_.
+
+.. _complement_theorem_three:
+
+Theorem 3
+*********
+
+TODO 
+
+.. note:: 
+    
+    This theorem is sometimes known as the `law of non-contradiction <https://simple.wikipedia.org/wiki/Law_of_noncontradiction>`_.
+
+.. _counting_theorems:
+
+Counting Theorems 
+-----------------
+
+.. _counting_theorem_one:
+
+Theorem 1
+*********
+
+TODO 
+
+.. _counting_theorem_two:
+
+Theorem 2
+*********
+
+TODO 
+
 .. _square_of_opposition:
 
 Aristotle's Square of Opposition
 ================================
+
+TODO
