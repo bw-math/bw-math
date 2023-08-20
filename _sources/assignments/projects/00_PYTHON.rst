@@ -4,6 +4,9 @@
 Python
 ======
 
+    What I cannot create, I do not understand.
+    - Richard Feynman
+    
 In this lab, you will install **Python** and learn some of its basic functions. 
 
 Instructions

@@ -178,3 +178,8 @@ Theorems
 ========
 
 TODO
+
+.. _square_of_opposition:
+
+Aristotle's Square of Opposition
+================================
