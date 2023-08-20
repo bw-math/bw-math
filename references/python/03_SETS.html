@@ -410,7 +410,12 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-variables">Set Variables</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-operations">Set Operations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-operations">Set Operations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cardinality">Cardinality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#union">Union</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intersection">Intersection</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -423,37 +428,50 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="sets">
-<h1>Sets<a class="headerlink" href="#sets" title="Permalink to this headline">#</a></h1>
+<span id="python-sets"></span><h1>Sets<a class="headerlink" href="#sets" title="Permalink to this headline">#</a></h1>
 <section id="set-variables">
-<h2>Set Variables<a class="headerlink" href="#set-variables" title="Permalink to this headline">#</a></h2>
+<span id="python-set-variables"></span><h2>Set Variables<a class="headerlink" href="#set-variables" title="Permalink to this headline">#</a></h2>
 <p>A set is an <em>unordered</em> collection of variables. By <em>unordered</em> it is meant a set that contains <em>a</em> and <em>b</em> is considered the same as a set that contains <em>b</em> and <em>a</em>.</p>
 <p>A set is defined in <strong>Python</strong> using the familiar <img class="math" src="../../_images/math/d2cb2acc177fb75f3f2d489acd83e5c8f622691b.png" alt="\{ \}"/> <span class="xref std std-ref">list_notation</span>,</p>
-<blockquote>
-<div><p>pets = { “dog”, “cat”, “fish”, “hamster”, “snake” }</p>
-<p>four_legs = { “dog”, “cat”, “hamster” }</p>
-<p>swims = { “dog”, “fish”, “snake” }</p>
-<p>warm_blooded = { “dog”, “cat”, “fish” }</p>
-<p>poets = { “byron”, “shakespeare”, “eliot” }</p>
-</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pets</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;fish&quot;</span><span class="p">,</span> <span class="s2">&quot;hamster&quot;</span><span class="p">,</span> <span class="s2">&quot;snake&quot;</span> <span class="p">}</span>
+
+<span class="n">four_legs</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;hamster&quot;</span> <span class="p">}</span>
+
+<span class="n">swims</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;fish&quot;</span><span class="p">,</span> <span class="s2">&quot;snake&quot;</span> <span class="p">}</span>
+
+<span class="n">warm_blooded</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;fish&quot;</span> <span class="p">}</span>
+
+<span class="n">poets</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;byron&quot;</span><span class="p">,</span> <span class="s2">&quot;shakespeare&quot;</span><span class="p">,</span> <span class="s2">&quot;eliot&quot;</span> <span class="p">}</span>
+</pre></div>
+</div>
 </section>
 <section id="set-operations">
-<h2>Set Operations<a class="headerlink" href="#set-operations" title="Permalink to this headline">#</a></h2>
+<span id="python-set-operations"></span><h2>Set Operations<a class="headerlink" href="#set-operations" title="Permalink to this headline">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Before executing these commands, try working them out by hand first and see if your work agrees!</p>
 </div>
-<p>The <span class="xref std std-ref">cardinality</span> of a set is found by calculating its <em>length</em>,</p>
-<blockquote>
-<div><p>total_pets = len(pets)</p>
-</div></blockquote>
+<section id="cardinality">
+<span id="python-set-cardinality"></span><h3>Cardinality<a class="headerlink" href="#cardinality" title="Permalink to this headline">#</a></h3>
+<p>The <span class="xref std std-ref">cardinality</span> of a set is found by calculating its <a class="reference internal" href="04_FUNCTIONS.html#python-builtin-functions"><span class="std std-ref">length</span></a>,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">total_pets</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">pets</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="union">
+<span id="python-set-union"></span><h3>Union<a class="headerlink" href="#union" title="Permalink to this headline">#</a></h3>
 <p>The <span class="xref std std-ref">union</span> of two sets is found by,</p>
-<blockquote>
-<div><p>pets_or_poets = pets.union(poets)</p>
-</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pets_or_poets</span> <span class="o">=</span> <span class="n">pets</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">poets</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="intersection">
+<span id="python-set-intersection"></span><h3>Intersection<a class="headerlink" href="#intersection" title="Permalink to this headline">#</a></h3>
 <p>The <span class="xref std std-ref">intersection</span> of two sets is found by,</p>
-<blockquote>
-<div><p>four_legs_and_swims = four_legs.intersect(swims)</p>
-</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">four_legs_and_swims</span> <span class="o">=</span> <span class="n">four_legs</span><span class="o">.</span><span class="n">intersect</span><span class="p">(</span><span class="n">swims</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
 </section>
 </section>
 
@@ -506,7 +524,12 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-variables">Set Variables</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-operations">Set Operations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-operations">Set Operations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cardinality">Cardinality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#union">Union</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intersection">Intersection</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

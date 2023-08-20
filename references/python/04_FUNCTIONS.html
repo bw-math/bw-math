@@ -423,12 +423,56 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="functions">
-<h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">#</a></h1>
+<span id="python-functions"></span><h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">#</a></h1>
+<p>This page details <strong>Python</strong> functions we will frequently need to use.</p>
+<p>The arguments of functions are specified as between angular brackets <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code>, with the name of the argument on the left hand side and the type of argument on the right hand side. For example, the definition,</p>
+<blockquote>
+<div><p>my_function(&lt;this_argument : required&gt;, &lt;that_argument : optional&gt;)</p>
+</div></blockquote>
+<p>Says the function <code class="docutils literal notranslate"><span class="pre">my_function</span></code> has a <em>required</em> argument named <code class="docutils literal notranslate"><span class="pre">this_argument</span></code> and an <em>optional</em> argument named <code class="docutils literal notranslate"><span class="pre">that_argument</span></code>.</p>
 <section id="built-in-functions">
-<h2>Built-In Functions<a class="headerlink" href="#built-in-functions" title="Permalink to this headline">#</a></h2>
+<span id="python-builtin-functions"></span><h2>Built-In Functions<a class="headerlink" href="#built-in-functions" title="Permalink to this headline">#</a></h2>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">len(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>length</em> function is used to find how many elements are in a list.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span> <span class="p">]</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">sum(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The sum function totals all the elements in a list.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span> <span class="p">]</span>
+<span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">range(&lt;start</span> <span class="pre">:</span> <span class="pre">optional&gt;,</span> <span class="pre">&lt;stop</span> <span class="pre">:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;step</span> <span class="pre">:</span> <span class="pre">optional&gt;)</span></code></dt><dd><p>The <em>range</em> generates an <em>iterable</em> sequence of numbers.</p>
+</dd>
+</dl>
+<p>Note only the <code class="docutils literal notranslate"><span class="pre">stop</span></code> argument is required. If only one argument is passed to the <em>range</em> function, then it is assumed to represent the <code class="docutils literal notranslate"><span class="pre">stop</span></code> argument.</p>
+<p>The <em>range</em> function is typically used with <a class="reference internal" href="02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a> to generate large lists of data quickly. For example, the following code snippet will create and print the list <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5,</span> <span class="pre">6,</span> <span class="pre">7,</span> <span class="pre">8,</span> <span class="pre">9]</span></code>,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">]</span>
+</pre></div>
+</div>
+<p>Notice the output does not include the endpoint <em>10</em>. The <em>range</em> function is exclusive with respect to the <code class="docutils literal notranslate"><span class="pre">stop</span></code> endpoint. This is so we can use the length function and get a result that makes sense,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">]</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">length</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In other words, the <em>range</em> function excludes the endpoint so the length of the returned list will equal whatever number was originally passed into the <em>range</em> function.</p>
+<p>You can use the <code class="docutils literal notranslate"><span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">step</span></code> arguments to generate arbitrary lists of data according to a rule. The following code snippet will create and print the list <code class="docutils literal notranslate"><span class="pre">[2,</span> <span class="pre">4,</span> <span class="pre">6,</span> <span class="pre">8,</span> <span class="pre">10,</span> <span class="pre">12,</span> <span class="pre">14,</span> <span class="pre">16,</span> <span class="pre">18]</span></code></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="p">]</span>
+</pre></div>
+</div>
 </section>
 <section id="creating-functions">
-<h2>Creating Functions<a class="headerlink" href="#creating-functions" title="Permalink to this headline">#</a></h2>
+<span id="python-creating-functions"></span><h2>Creating Functions<a class="headerlink" href="#creating-functions" title="Permalink to this headline">#</a></h2>
+<p>TODO</p>
 </section>
 </section>
 

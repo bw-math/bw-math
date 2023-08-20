@@ -410,7 +410,22 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetical-operations">Arithmetical Operations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetical-operations">Arithmetical Operations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#addition">Addition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subtraction">Subtraction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplication">Multiplication</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#division">Division</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exponentiation">Exponentiation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list-operations">List Operations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing">Slicing</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#special-slicing-techniques">Special Slicing Techniques</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comprehension">Comprehension</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -423,8 +438,12 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="basics">
-<h1>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">#</a></h1>
+<span id="python-basics"></span><h1>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">#</a></h1>
 <p><strong>Python</strong> is made up of <em>functions</em> and <em>variables</em>. Everything in <strong>Python</strong> is either one or the other.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>As you read through this page, open an <a class="reference internal" href="01_SETUP.html#python-idle"><span class="std std-ref">IDLE shell</span></a> and try out the commands yourself.</p>
+</div>
 <section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">#</a></h2>
 <p>A variable is a stored piece of data. A variable has a <em>type</em> that is determined by the form of the data, called the <em>data type</em>.</p>
@@ -432,41 +451,173 @@ document.write(`
 <blockquote>
 <div><p>x = y</p>
 </div></blockquote>
-<p>The left hand side, <em>x</em>, is the <em>name</em> of the variable. The right hand side, <em>y</em>, is the value of the variable. The equals sign in this instance is the <em>assignment operator</em>; it assigns the value of <em>y</em> to <em>x</em>.</p>
-<dl>
+<p>The left hand side, <em>x</em>, is the <em>name</em> of the variable. The right hand side, <em>y</em>, is the <em>value</em> of the variable. The order in which the <em>name</em> and <em>value</em> appear is important: the <em>name</em> of the variable always occurs on the left hand side and the <em>value</em> of the variable always occurs on the right hand side. The equals sign in between them is the <em>assignment operator</em>; it assigns the value of <em>y</em> to <em>x</em>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The assignment operator <code class="docutils literal notranslate"><span class="pre">=</span></code> is not <em>exactly</em> the same as the equals signs from <strong>Algebra</strong>, but it is similar. With an assignment, we are not <em>equating</em> two expressions. Instead, we are <em>assigning</em> the value of the right hand side to the left hand side.</p>
+</div>
+<dl class="simple" id="python-strings">
 <dt>Strings</dt><dd><p>Data that represents text are called <em>strings</em>. A string is enclosed by double quotes “” or single quotes ‘’,</p>
-<blockquote>
-<div><p>var = “hello world”</p>
-<p>another_var = ‘this is a sentence’</p>
-</div></blockquote>
-</dd>
-<dt>Floats</dt><dd><p>Data that represents numerical quantities are called <em>floats</em>. A <em>float</em> is simply a number, with or without the decimal,</p>
-<blockquote>
-<div><p>n = 100</p>
-<p>m = 25.76</p>
-</div></blockquote>
-</dd>
-<dt>Lists</dt><dd><p>Lists are ordered collections of variables.</p>
-<blockquote>
-<div><p>example_list = [ “Led Zeppelin”, “Pink Floyd”, “The Beatles” ]</p>
-</div></blockquote>
-<p>The first element in a list is indexex at 0, the second element at 1, the third element at 2, … , the n <sup>th</sup> element at <em>n-1</em>.</p>
-<blockquote>
-<div><p>example_list[0] # “Led Zeppelin”</p>
-<p>example_list[1] # “Pink Floyd”</p>
-<p>example_list[2] # “The Beatles”</p>
-</div></blockquote>
-<p>The variables in a list need not be the same type.</p>
-<blockquote>
-<div><p>unlike_list = [ “red”, 5.67, “blue”, “green” ]</p>
-<p>unlike_list[0] # “red”
-unlike_list[1] # 5.67</p>
-</div></blockquote>
 </dd>
 </dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="s2">&quot;hello world&quot;</span>
+<span class="n">another_var</span> <span class="o">=</span> <span class="s1">&#39;this is a sentence&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;these are strings: &quot;</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="s2">&quot; &amp; &quot;</span><span class="p">,</span> <span class="n">another_var</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="simple" id="python-integers">
+<dt>Integers</dt><dd><p>Data that represents whole numbered quantities are called <em>integers</em>.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a_number</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">another_number</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;these are integers: &quot;</span><span class="p">,</span> <span class="n">a</span> <span class="n">number</span><span class="p">,</span> <span class="n">another_number</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="simple" id="python-floats">
+<dt>Floats</dt><dd><p>Data that represents numerical quantities with decimals are called <em>floats</em>.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mf">100.00000001</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mf">25.76</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;these are floats: &quot;</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="simple" id="python-lists">
+<dt>Lists</dt><dd><p>Lists are ordered collections of variables.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">example_list</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;Led Zeppelin&quot;</span><span class="p">,</span> <span class="s2">&quot;Pink Floyd&quot;</span><span class="p">,</span> <span class="s2">&quot;The Beatles&quot;</span> <span class="p">]</span>
+</pre></div>
+</div>
+<p>The <em>index</em> of an element in a list is the order that it appears, starting at 0. In other words, the first element in a list is <em>indexed</em> at 0, the second element at 1, the third element at 2, … , the n <sup>th</sup> element at <em>n-1</em>. You can access the value of an element by using <code class="docutils literal notranslate"><span class="pre">[]</span></code> brackets and the element’s index,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is a whole list: &quot;</span><span class="p">,</span> <span class="n">example_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is the first element of a list: &quot;</span><span class="p">,</span> <span class="n">example_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is the second element of a list: &quot;</span><span class="p">,</span> <span class="n">example_list</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is the last element of a list: &quot;</span><span class="p">,</span> <span class="n">example_list</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>The variables in a list need not be the same type,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">unlike_list</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="mf">5.67</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span> <span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;lists can have different types of elements: &quot;</span><span class="p">,</span> <span class="n">unlike_list</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">unlike_list</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>You can determine the <em>length</em> of a list, i.e. how many elements are in it, using the <code class="docutils literal notranslate"><span class="pre">len()</span></code> function,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span> <span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 <section id="arithmetical-operations">
 <h2>Arithmetical Operations<a class="headerlink" href="#arithmetical-operations" title="Permalink to this headline">#</a></h2>
+<p>Most of the arithmetical operations in <strong>Python</strong> are exactly what you would expect them to be. The only operation whose symbol may be surprising is <a class="reference internal" href="#python-exponentiation"><span class="std std-ref">Exponentiation</span></a>.</p>
+<section id="addition">
+<span id="python-addition"></span><h3>Addition<a class="headerlink" href="#addition" title="Permalink to this headline">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">7</span> <span class="o">+</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</section>
+<section id="subtraction">
+<span id="python-subtraction"></span><h3>Subtraction<a class="headerlink" href="#subtraction" title="Permalink to this headline">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mf">10.45</span> <span class="o">-</span> <span class="mf">3.2</span>
+</pre></div>
+</div>
+</section>
+<section id="multiplication">
+<span id="python-multiplication"></span><h3>Multiplication<a class="headerlink" href="#multiplication" title="Permalink to this headline">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">*</span> <span class="mi">76</span>
+</pre></div>
+</div>
+</section>
+<section id="division">
+<span id="python-division"></span><h3>Division<a class="headerlink" href="#division" title="Permalink to this headline">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">68</span> <span class="o">/</span> <span class="mi">5</span>
+</pre></div>
+</div>
+</section>
+<section id="exponentiation">
+<span id="python-exponentiation"></span><h3>Exponentiation<a class="headerlink" href="#exponentiation" title="Permalink to this headline">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">**</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="list-operations">
+<span id="python-list-operations"></span><h2>List Operations<a class="headerlink" href="#list-operations" title="Permalink to this headline">#</a></h2>
+<p>The operations in the previous section dealt with <span class="xref std std-ref">python_floats</span> and <span class="xref std std-ref">python_integers</span>. In other words, the operations in the last section applied to numbers. <strong>Python</strong> has many operations that can be applied to <span class="xref std std-ref">python_lists</span>.</p>
+<section id="slicing">
+<span id="python-list-slicing"></span><h3>Slicing<a class="headerlink" href="#slicing" title="Permalink to this headline">#</a></h3>
+<p>Slicing a list is <strong>Python</strong>’s way of accessing multiple elements in a list at once. The general syntax of slicing is given below,</p>
+<blockquote>
+<div><p>list[&lt;start index : optional&gt; : &lt;end index : optional&gt;]</p>
+</div></blockquote>
+<p>Where <code class="docutils literal notranslate"><span class="pre">&lt;end</span> <span class="pre">index&gt;</span></code> is always <em>exclusive</em>, i.e. is <strong>not</strong> included in the slice. For example,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">]</span>
+<span class="n">sliced_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sliced_data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The commands above will print to screen the elements starting at the second index up to, but not including, the fourth index. In other words, if you execute the given commands, you will see the list <cite>[“b”, “c”]</cite> print to screen.</p>
+<p>Try to figure out what the next example will print to screen before pasting it into an <a class="reference internal" href="01_SETUP.html#python-idle"><span class="std std-ref">IDLE notebook</span></a>,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span> <span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">]</span>
+<span class="n">sliced_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sliced_data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If you leave out the <code class="docutils literal notranslate"><span class="pre">&lt;start</span> <span class="pre">index&gt;</span></code>, it is understood to be <code class="docutils literal notranslate"><span class="pre">0</span></code>,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;fish&quot;</span> <span class="p">]</span>
+<span class="n">sliced_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sliced_data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Likewise, if you leave out <code class="docutils literal notranslate"><span class="pre">&lt;end</span> <span class="pre">index&gt;</span></code>, it is understood to be the (last index + 1),</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;fish&quot;</span><span class="p">,</span> <span class="s2">&quot;hamster&quot;</span><span class="p">,</span> <span class="s2">&quot;bearded goat&quot;</span><span class="p">]</span>
+<span class="n">sliced_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sliced_data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We can use slicing in conjunction with the <code class="docutils literal notranslate"><span class="pre">len()</span></code> function to remove data from the start and end of a data set,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span> <span class="p">]</span>
+<span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">trimmed_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="n">length</span> <span class="o">-</span> <span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">trimmed_data</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="special-slicing-techniques">
+<h4>Special Slicing Techniques<a class="headerlink" href="#special-slicing-techniques" title="Permalink to this headline">#</a></h4>
+<p>There is another type of slicing that allows you extract elements from a list according to a rule. First we give the syntax and then go through a few examples,</p>
+<blockquote>
+<div><p>list[ &lt;start_index : optional&gt; :: &lt;step : required&gt;]</p>
+</div></blockquote>
+<p>This command tells <strong>Python</strong> to look at the <code class="docutils literal notranslate"><span class="pre">&lt;start</span> <span class="pre">index&gt;</span></code> and then <em>iterate</em> through the list in steps of <code class="docutils literal notranslate"><span class="pre">&lt;step&gt;</span></code>, grabbing each element it lands on along way,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span> <span class="p">]</span>
+<span class="n">even_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">even_data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The code snippet above will print to screen the list <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">0,</span> <span class="pre">2,</span> <span class="pre">4,</span> <span class="pre">6,</span> <span class="pre">8,</span> <span class="pre">10]</span></code>. If instead we started at a different index,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span> <span class="p">]</span>
+<span class="n">even_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">even_data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This would print to screen the list <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">3,</span> <span class="pre">5,</span> <span class="pre">7,</span> <span class="pre">9]</span></code></p>
+</section>
+</section>
+<section id="comprehension">
+<span id="python-list-comprehension"></span><h3>Comprehension<a class="headerlink" href="#comprehension" title="Permalink to this headline">#</a></h3>
+<p><em>List comprehension</em> is a way of applying an algebraic expression to every element in a list. In other words, <em>list comprehension</em> allows us to generate a list of data according to a formula. For this reason, <em>list comprehension</em> is sometimes called <em>list generation</em>. The general syntax is given below,</p>
+<blockquote>
+<div><p>list = [ &lt;expr&gt; for &lt;element&gt; in &lt;list&gt; ]</p>
+</div></blockquote>
+<p>For example, the following code snippets uses the list <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5]</span></code> to generate a new list that squares each element of the first list and then prints it to screen,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">squared_data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">data</span> <span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">squared_data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><em>List comprehension</em> is usually used in conjunction with the <cite>range() built-in function &lt;python_builtin_functions&gt;</cite>. Hop over to that section, take a look at <code class="docutils literal notranslate"><span class="pre">range()</span></code> to see more examples.</p>
+</section>
 </section>
 </section>
 
@@ -519,7 +670,22 @@ unlike_list[1] # 5.67</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetical-operations">Arithmetical Operations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetical-operations">Arithmetical Operations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#addition">Addition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subtraction">Subtraction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplication">Multiplication</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#division">Division</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exponentiation">Exponentiation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list-operations">List Operations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing">Slicing</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#special-slicing-techniques">Special Slicing Techniques</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comprehension">Comprehension</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
