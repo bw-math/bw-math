@@ -29,6 +29,17 @@ Floats
 
         m = 25.76
 
+Tuples
+    Tuples are *ordered pairs* of variables. 
+
+    .. code:: python
+
+        pair = (1, 2)
+
+        another_pair = ("dog", "cat")
+
+    Note the variables in the *tuple* do not have to be numbers.
+    
 Lists 
     Lists are ordered collections of variables. 
     
