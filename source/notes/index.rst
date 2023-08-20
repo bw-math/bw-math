@@ -5,7 +5,6 @@ Class Notes
    :maxdepth: 2
    :caption: Contents:
 
-   HISTORY
    graphics/index
    HISTORY
    SET_THEORY
