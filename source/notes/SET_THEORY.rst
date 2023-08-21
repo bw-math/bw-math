@@ -32,6 +32,8 @@ A symbolic representation of a *conditional* relationship between two *propositi
     3. "*p* implies *q*"
     4. "*q* follows from *p*"
 
+.. _universal_quantification:
+
 Universal Quantification
     :math:`\forall p: q`
 
@@ -39,6 +41,8 @@ A symbolic representation of a universal proposition. This type of proposition c
     1. "for all *p*, *q*"
     2. "for every *p*, *q*"
     3. "for each *p*, *q*"
+
+.. _existential_quantification:
 
 Existential Quantification
     :math:`\exists p: q`
@@ -96,12 +100,12 @@ Null Set
 The unique set which contains nothing. 
 
 Natural Numbers
-    :math:`\N`
+    :math:`\mathbb{N}`
 
 The set of all counting numbers starting at 1, :math:`1, 2, 3, ...`
 
 Real Numbers
-    :math:`\R`
+    :math:`\mathbb{R}`
 
 The set of all decimal numbers, :math:`1, 1.01, 1.001, ... `
 
@@ -269,7 +273,7 @@ In order words, from equality we can infer equivalence, but from equivalence, we
     A = B \implies A \equiv B
 
 .. math:: 
-    A \equiv B \nimplies A = B 
+    A \equiv B \not \Rightarrow A = B 
 
 .. _set_operations:
 
@@ -452,7 +456,7 @@ All of the theorems of Set Theory can be proven by referring in one of two ways:
 
     .. math::
 
-        A = B \imples A \equiv B
+        A = B \implies A \equiv B
     
     This will be important when we apply these ideas to :ref:`probability`. For this reason, we will give two version of each theorem. One version will be phrased in terms of sets and the other version will be phrased in terms of cardinalities.
 
@@ -684,7 +688,7 @@ From this and the theorem taken together, we are able to infer the intersection 
 
 .. math::
 
-    B \cap A = \{ \text{red}, \text{blue} } = B
+    B \cap A = \{ \text{red}, \text{blue} \} = B
 
 If we try to apply the same logic to **C** and **A**, we run into a problem. Namely, 
 
@@ -893,7 +897,7 @@ Example
 
     .. math::
         
-        B = \{ \text{ banana }, \text{ apple \}
+        B = \{ \text{ banana }, \text{ apple } \}
 
     .. math::
 
@@ -1017,7 +1021,7 @@ This type of statement is obviously true no matter what we insert for *x*. Whate
 
 .. math:: 
 
-    \forall x \in \R: 2 \cdot x = x + x 
+    \forall x \in mathbb{R}: 2 \cdot x = x + x 
 
 We read this is as, "for all x, doubling x is equal to adding x twice".
 
@@ -1031,9 +1035,9 @@ We are not free to plug just any value of *x* into this equation. Only a *partic
 
 .. math::
 
-    \exists x \in \R: 2x + 1 = 5
+    \exists x \in \mathbb{R}: 2x + 1 = 5
 
-We read this as, "there exists an *x* such that :math:`2x +1 = 5`" or "some *x* satisifies :math:`2x + 1 = 5".
+We read this as, "there exists an *x* such that :math:`2x +1 = 5`" or "some *x* satisifies :math:`2x + 1 = 5`.
 
 When dealing with sets, we have two types of propositions to consider, *universal* propositions, denoted by the :math:`\forall` symbol, and *existential* propositions, denoted by the :math:`\exists` symbol.
 
@@ -1082,7 +1086,7 @@ Thus, we arrive at the formal definition of the negativion of a universal affirm
 
 .. math::
 
-    ( \text{ not } \for all x in A: x \in B) \equiv (\exists x in A: x \not in B)
+    ( \text{ not } \forall x in A: x \in B) \equiv (\exists x in A: x \notin B)
 
 Universal Negative Case
 ***********************

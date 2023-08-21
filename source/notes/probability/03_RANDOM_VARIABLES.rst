@@ -153,6 +153,8 @@ Density Function
 Distribution Function
     TODO 
 
+.. _expectation:
+
 Expectation
 ===========
 
@@ -164,10 +166,14 @@ Expectation of a Sum
 :math:`E(X+Y)=E(X) + E(Y)`
     TODO
 
+.. _variance:
+
 Variance
 ========
 
 TODO 
+
+.. _bernoulli_distribution:
 
 Bernoulli Random Variable
 =========================
@@ -177,6 +183,8 @@ Bernoulli Random Variable
         p       & \quad \textrm{if } x = 1 \\
         1 - p   & \quad \textrm{if } x = 0
     \end{array}
+
+.. _uniform_distribution:
 
 Uniform Random Variable
 =======================
