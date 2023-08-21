@@ -4,7 +4,7 @@
 Conditional Probability
 =======================
 
-Probability is merely a guess. It is based on whatever currently available information we have. If new information about the outcomes in the sample space becomes available, the probability assigned to the remaining events must be updated to take into account the new state of the world (or more accurately, *our knowledge* of the new state of the world). *Conditional probability* is the tool for incorporating *new* information into probability calculations.
+Probability is merely a guess. It is based on whatever currently available information we have. If new information about the outcomes in the sample space becomes available, the probability assigned to the remaining events must be updated to take into account the new state of the world (or more accurately, :ref:`knowledge <knowledge>` of the new state of the world). *Conditional probability* is the tool for incorporating *new* information into probability calculations.
 
 Motivation
 ----------

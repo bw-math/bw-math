@@ -22,7 +22,6 @@ Symbolic Expression
 A symbol that represents the union of a sequence of sets.
 
 Example 
-    
     Let **A**, **B**, **C** and **D** be sets given by, 
 
     .. math::
@@ -83,12 +82,11 @@ Example
 
 .. note::
 
-    The sum :math:`\sum` is only defined if the set it is summing only contains numerical elements. It makes no sense to take about the sum of elements of a set like,
+    The sum :math:`\sum` is only defined if the set it is summing contains *only* numerical elements. It makes no sense to take about the sum of elements with a set like,
 
     .. math::
 
         A = \{ \text{ novels }, \text{ textbooks }, \text{ magazines } \}
-
 
 Definitions
 ===========
@@ -562,7 +560,7 @@ Therefore, the desired probability is,
 .. math::
 
     = \frac{4}{52} + \frac{13}{52} - \frac{1}{52} = \frac{16}{52} = \frac{4}{13} \approx 0.31
-    
+
 Probability Tables
 ******************
 
