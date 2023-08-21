@@ -384,7 +384,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -400,6 +402,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#law-of-intersections">Law of Intersections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#independence">Independence</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -411,6 +423,103 @@ document.write(`
                   
   <section id="conditional-probability">
 <span id="conditional-classwork"></span><h1>Conditional Probability<a class="headerlink" href="#conditional-probability" title="Permalink to this headline">#</a></h1>
+<section id="applications">
+<h2>Applications<a class="headerlink" href="#applications" title="Permalink to this headline">#</a></h2>
+<ol class="arabic">
+<li><p>In a highschool, there are 287 students. 92 of the students play football. 50 of them play football <em>and</em> basketball. What is the probability a randomly selected football player also plays basketball?</p></li>
+<li><p>A bag contains 3 red marbles and 4 blue marbles. Two marbles are drawn at random <em>without replacement</em>. If the first marble drawn is red, what is the probability the second marble is blue?</p></li>
+<li><p>In a sample of 100 adultS, 45 of them owned a dog, 30 of them owned a cat and 18 of them owned a dog and a cat. What percentage of those who have a dog also have a cat?</p></li>
+<li><p>Suppose two fair dice have been tossed.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the probability of a sum of 5 if they land on different numbers?</p></li>
+<li><p>If the total of their top faces is found to be divisible by 5, what is the probability that both of them have landed on five?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>A box contains three coins: two regular coins and a double-sided coin with heads on both sides. You select a coin at random and flip it.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the probability it lands heads up?</p></li>
+<li><p>If it lands heads up, what is the probability you have selected the double-sided coin?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>You are given the following <a class="reference internal" href="../../../notes/SET_THEORY.html#venn-diagrams"><span class="std std-ref">Venn Diagram</span></a>,</p></li>
+</ol>
+<ol class="arabic simple" start="7">
+<li><p>Paging through a magazine, you notice a interesting survey of randomly selected individuals who were each asked two questions. The first question was “Do you believe the Earth is flat or round?”. The second question was, “Do you think Finland is a <span class="xref std std-ref">real country</span>?” The results are given in the table below,</p></li>
+</ol>
+<table class="table">
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 27%" />
+<col style="width: 32%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>Flat</p></td>
+<td><p>Round</p></td>
+</tr>
+<tr class="row-even"><td><p>Exists</p></td>
+<td><p>15</p></td>
+<td><p>120</p></td>
+</tr>
+<tr class="row-odd"><td><p>Doesn’t</p></td>
+<td><p>12</p></td>
+<td><p>35</p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Draw a <a class="reference internal" href="../../../notes/SET_THEORY.html#venn-diagrams"><span class="std std-ref">Venn Diagram</span></a> that represents the results.</p></li>
+<li><p>How many people were included in this survey?</p></li>
+<li><p>What is the probability a randomly selected in this survey person believes the Earth is flat?</p></li>
+<li><p>What is the probability a randomly selected in this survey person believes Finland doesn’t exist?</p></li>
+<li><p>Of the people who believe the Earth is round, what percentage of them believe Finland exists?</p></li>
+<li><p>If a randomly selected person believes Finland doesn’t exist, what is the probability he or she believes the Earth is flat?</p></li>
+<li><p>If a randomly selected person believes the Earth is flat, what is the probability he or she doesn’t believe Finland exists?</p></li>
+<li><p><strong>Spoiler Alert</strong> Why is the answer to <em>part f</em> different from the answer to <em>part g</em>?</p></li>
+</ol>
+</div></blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Challenge Problem Ahead</p>
+</div>
+<ol class="arabic simple" start="8">
+<li><p>In a small lake, it is estimated that there are approximately 105 fish, of which 40 are trout and 64 are carp. A fisherman caught eight fish. What is the probability that exactly two of them are trout if we know that at least three of them are not?</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><a class="reference internal" href="../../../notes/probability/02_CONDITIONAL.html#reduction-of-the-sample-space"><span class="std std-ref">Reduce the sample space</span></a> and then use <img class="math" src="../../../_images/math/5b093c6188bb0b850897155346178206597dd3e2.png" alt="combinatorics"/>.</p>
+</div>
+</section>
+<section id="law-of-intersections">
+<h2>Law of Intersections<a class="headerlink" href="#law-of-intersections" title="Permalink to this headline">#</a></h2>
+<ol class="arabic" start="9">
+<li><p>You shuffle a deck of playing cards and deal yourself two cards at random.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>If the first card is a king, what is the probability the second card is a king?</p></li>
+<li><p>What is the probability both cards are kings?</p></li>
+<li><p>What is the difference between the meanings of <em>part a</em> and <em>part b</em>?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>100 sci-fi fans were polled by the reporters at  <em>Imporant News Weekly</em>. 64 of those polled preferred <em>Star Wars</em> to <em>Star Trek</em>, while the rest of them, due to poor life choices, preferred <em>Star Trek</em> to <em>Star Wars</em>. Of the people who preferred <em>Star Wars</em>, 75% of them thought <em>The Empire Strikes Back</em> was the best of the film in the <cite>ennealogy &lt;https://en.wiktionary.org/wiki/ennealogy&gt;_</cite>. Of the people who preferred <em>Star Trek</em>, only half of them thought <em>The Empire Strike Back</em> was the best film in the series.</p>
+<ol class="loweralpha simple">
+<li><p>What percent of people preferred <em>Star Wars</em> over <em>Star Trek</em> and thought <em>The Empire Strikes Back</em> was the best film in the series?</p></li>
+<li><p>What percent of people preferred <em>Star Trek</em> over <em>Star Wars</em> and thought <em>The Empire Strikes Back</em> <strong>wasn’t</strong> the best film in the series?</p></li>
+</ol>
+</li>
+</ol>
+<p>ONE OR TWO MORE</p>
+</section>
+<section id="independence">
+<h2>Independence<a class="headerlink" href="#independence" title="Permalink to this headline">#</a></h2>
+<p>TODO</p>
+</section>
 </section>
 
 
@@ -452,6 +561,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#law-of-intersections">Law of Intersections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#independence">Independence</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
