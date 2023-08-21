@@ -10,30 +10,41 @@ Definitions
 ===========
 
 .. _factorial:
-    The factorial of a number *n*, denoted *n!*, is the product of all the numbers up to *n*
 
-    .. math::
-        n! = n \cdot (n-1) \cdot (n-2) \cdot ... \cdot 2 \cdot 1
+Factorial
+---------
 
-    *0!* is undefined and taken to be *1* by convention.
+Symbolic Expression
+    :math:`n!`
+
+The factorial of a number *n*, denoted *n!*, is the product of all the numbers up to *n*
+
+.. math::
+
+    n! = n \cdot (n-1) \cdot (n-2) \cdot ... \cdot 2 \cdot 1
+
+*0!* is undefined and taken to be *1* by convention.
 
 .. _power_set:
 
 Power Set
-    The *Power Set* of a set **A**, or more simply the *Power Set of A*, denoted :math:`\mathcal{P}(A)`, is the set of all subsets of **A**.
+---------
 
-    .. note::
-        If :math:`A = \{ a, b \}`
+Symbolic Expression 
+    :math:`\mathcal{P}(A)`
 
-        Then :math:`\mathcal{P}(A) = \{ \{\}, \{a\}, \{b\}, \{a, b\} \}`
+The *Power Set* of a set **A**, or more simply the *Power Set of A*, denoted :math:`\mathcal{P}(A)`, is the set of all subsets of **A**.
 
-    .. warning::
+.. note::
+    If :math:`A = \{ a, b \}`
 
-        We can define the *Power Set* of a set **A** formally by quantifying over all sets in the :ref:`Sample Space<sample_space>` (:ref:`Universal Set <universal_set>`) and imposing the condition we only look at subsets of a given set **A**
+    Then :math:`\mathcal{P}(A) = \{ \{\}, \{a\}, \{b\}, \{a, b\} \}`
 
-        :math:`\forall B: B \subseteq A \implies B \in \mathcal{P}(A)`
+We can define the *Power Set* of a set **A** formally by quantifying over all sets in the :ref:`Sample Space<sample_space>` (:ref:`Universal Set <universal_set>`) and imposing the condition we only look at subsets of a given set **A**
 
-        In English, "for all *B*, if *B* is a subset of *A*, then *B* belongs to the *Power Set of A*"
+:math:`\forall B: B \subseteq A \implies B \in \mathcal{P}(A)`
+
+In English, "for all *B*, if *B* is a subset of *A*, then *B* belongs to the *Power Set of A*"
 
 
 Counting Principles

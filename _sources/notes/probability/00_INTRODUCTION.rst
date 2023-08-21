@@ -1,3 +1,5 @@
+.. _probability_introduction:
+
 ============
 Introduction
 ============
@@ -7,17 +9,84 @@ Probability is the study of the properties of random events.
 Preliminaries
 =============
 
-Compound Union 
-    A symbol that represents the union of a sequence of sets.
+.. _compound union:
 
+Compound Union 
+--------------
+
+Symbolic Expression
     .. math:: 
+
         \bigcup\limits_{i=1}^{n} A_{i} = A_1 \cup A_2 \cup ... \cup A_{n-1} \cup A_n 
 
-Summation
-    A symbol that represents the sum of the elements :sub:`i`\ *x*
+A symbol that represents the union of a sequence of sets.
+
+Example 
+    Let **A**, **B**, **C** and **D** be sets given by, 
 
     .. math::
-        \sum_{i=0}^n x_i = x_1 + x_2 + ... x_{n-1} + x_n
+
+        A_1 = \{ a, b, c \}
+
+    .. math::
+
+        A_2 = \{ b, c, d \}
+
+    .. math::
+
+        A_3 = \{ c, d, e \}
+
+    .. math::
+
+        A_4 = \{ d, e, f \}
+
+    Then,
+
+    .. math::
+
+        \bigcup\limits_{i=1}^{4} A_{i} = A_1 \cup A_2 \cup A_3 \cup A_4 
+
+    .. math::
+
+        = \{ a, b, c, d, e, f \}
+
+
+Summation
+    Symbolic Expression 
+        .. math::
+        
+            \sum_{i=1}^n x_i = x_1 + x_2 + ... x_{n-1} + x_n
+    
+        Sometimes written as,
+
+        .. math:: 
+            
+            \sum_{x_i \in B} x_i 
+
+        Where **B** is a set of elements. 
+    
+A symbol that represents the sum of elements :math:`x_i`.
+
+Example
+    Let the set **A** be given by,
+
+    .. math::
+
+        A = \{ 1, 2, 3, 4, 5 \}
+
+    Then,
+
+    .. math:: 
+
+        \sum_{x_i \in A} x_i = 1 + 2 + 3 + 4 + 5 = 15
+
+.. note::
+
+    The sum :math:`\sum` is only defined if the set it is summing contains *only* numerical elements. It makes no sense to take about the sum of elements with a set like,
+
+    .. math::
+
+        A = \{ \text{ novels }, \text{ textbooks }, \text{ magazines } \}
 
 Definitions
 ===========
@@ -30,20 +99,29 @@ Experiment
 .. _mutual_exclusion:
 
 Mutual Exclusivity
-    :math:`A \cap B = \varnothing \implies` **A** and **B** are mutually exclusive. 
-        Two sets, **A** and **B**, are *mutually exclusive* if they are disjoint.
+    .. math::
+
+        A \cap B = \varnothing \implies \text{ A and B are mutually exclusive.} 
+
+Two sets, **A** and **B**, are *mutually exclusive* if they are disjoint.
 
 .. _outcome:
 
 Outcomes 
     :math:`x, y, z` (*lower case letters*)
-        A possible way an experiment might occur.
+        
+A possible way an experiment might occur.
     
 .. _sample_space: 
 
 Sample Space 
     :math:`S`
-        The set of all possible outcomes for an experiment.
+        
+The set of all possible outcomes for an experiment.
+
+.. note:: 
+
+    The *sample space* is simply the :ref:`universal_set` in probability's :ref:`domain_of_discourse`.
 
 .. _event:
 
@@ -52,13 +130,15 @@ Events
 
     :math:`A_1, A_2, A_3, ..., A_{n-1}, A_n` (*upper-case letters with subscripts*)
         
-    A subset of the sample space, i.e. a set of outcomes. 
+A subset of the sample space, i.e. a set of outcomes. 
 
-    :math:`A \subseteq S \implies` **A** is an event
+.. math::
+    A \subseteq S \implies  \text{ A is an event }
 
 Probability
     :math:`P(A)`
-        A numerical measure of the *likelihood*, or *chance*, that event **A** occurs.
+        
+A numerical measure of the *likelihood*, or *chance*, that an event **A** occurs.
 
 .. _sample_spaces:
 
@@ -71,7 +151,7 @@ Motivation
 ----------
 
 .. note:: 
-    By "*fair*", we mean the probability of either outcome, heads or tails, is *equally likely*.
+    By "*fair*", we mean the probability of all outcomes are *equally likely*.
 
 Consider flipping a fair, two-sided coin. The only possible outcomes to this experiment are heads or tails. If we let *h* represent the outcome of a head for a single flip and *t* represent the outcome of a tail for a single flip, then the sample space is given by the set **S**,
 
@@ -86,9 +166,9 @@ Events can be defined as :ref:`subsets <subset>` of the sample space. If we let 
 .. math:: 
     T = \{ t \}
 
-Be careful not to confuse the outcome *h* with the event **H**, and likewise the outcome *t* with the event **T**. They have different, but related, meanings. The outcomes *h* and *t* are individual observables; they are physically measured by flipping a coin and observing on which side it lands. An event, on the other hand, is a :ref:`set <sets>`, and *sets* are abstract collections of individual. In this case, the sets are *singletons*, i.e. the sets **H** and **T** only contain one element each, which can lead to confusion. Let us extend this example further, to put a finer point on this subtlety.   
+Be careful not to confuse the outcome *h* with the event **H**, and likewise the outcome *t* with the event **T**. They have different, but related, meanings. The outcomes *h* and *t* are individual observables; they are physically measured by flipping a coin and observing on which side it lands. An event, on the other hand, is a :ref:`set <sets>`, and *sets* are abstract collections of individual elements. In this case, the sets are *singletons*, i.e. the sets **H** and **T** only contain one element each, which can lead to confusing the set for the outcome. Let us extend this example further, to put a finer point on this subtlety.   
 
-Consider now flipping the same fair, two-sided coin twice. A :ref:`tree diagram <tree_diagrams>` can help visualize the sample space for this experiment,
+Consider now flipping the same fair, two-sided coin twice. A :ref:`tree diagram <tree_diagrams>` can help visualize the sample space for this experiment. We represent each each flip as a branch in the tree diagram, with each outcome forking the tree,
 
 .. image:: ../../assets/imgs/probability/sample_space_coin_flip.png
     :width: 60%
@@ -99,10 +179,19 @@ The outcomes of the sample space are found by tracing each possible path of the 
 .. math::
     S = \{ hh, ht, th, tt \}
 
-In this example, there is no simple correspondence between the events defined on the sample space and the outcomes within those events, as in the previous example. Take note, the sequence of outcomes *ht* is different than the sequence of outcomes *th*. In the first case, we get a head and *then* we get a tail. In the second case, we get a head and *then* we get a tail. Therefore, *ht* and *th* represent two different *outcomes* that correspond to the same *event*. Let us call that event the set **HT**. **HT** represents event of getting one head and one tail, regardless of order. Then, **HT** has exactly two outcomes (elements), for the reasons just discussed,
+In this example, there is no simple correspondence between the events defined on the sample space and the outcomes within those events, as in the previous example. 
+
+Take note, the sequence of outcomes *ht* is different than the sequence of outcomes *th*. In the first case, we get a head and *then* we get a tail. In the second case, we get a head and *then* we get a tail. Therefore, *ht* and *th* represent two different *outcomes* that correspond to the same *event*. Let us call that event the set **HT**. **HT** represents event of getting one head and one tail, regardless of order. Then, **HT** has exactly two outcomes (elements),
 
 .. math:: 
     HT = \{ ht, th \}
+
+When one of the outcomes *ht* or *th* is observed, we say the event **HT** *occurs*.
+
+It is important to keep in mind the distinction between *events* and *outcomes*. The differences are summarized below,
+
+    1. *Outcomes* are elements. *Events* are sets.
+    2. *Outcomes* are observed. *Event* occur.
 
 .. _compound_events:
 
@@ -118,15 +207,15 @@ The meaning of a few different *compound events* is considered below,
 
 1. :math:`A \cap B` This *compound event* represents the event of getting a 2 of hearts.
 2. :math:`A \cup B` This *compound event* represents the event of getting a 2 *or* a heart.
-3. :math:`A^C` This *compound event* represents the event of getting any card except a 2.
-4. :math:`A \cap B^C` This *compond event* represents the event of getting a two that is *not* a heart.
+3. :math:`A^c` This *compound event* represents the event of getting any card except a 2.
+4. :math:`A \cap B^c` This *compond event* represents the event of getting a two that is *not* a heart.
    
 .. _classical_definition:
 
 Classical Definition of Probability
 -----------------------------------
 
-Returning to the experiment of flipping a fair coin once,  we have a sample space and two events, **H** and **T**, defined on that sample space,
+Returning to the experiment of flipping a fair coin once, we have a sample space and two events, **H** and **T**, defined on that sample space,
 
 .. math:: 
     S = \{ h, t \}
@@ -145,12 +234,20 @@ The cardinalities of these sets are given by,
 .. math:: 
     n(H) = n(T) = 1
 
-This leads to the following definition of *probability*
+A natural way to define probability of an event is as the ratio of the cardinality of that event to the cardinality of the sample space. This leads to the following definition of *the probability of event* **A**,
 
 .. math:: 
     P(A) = \frac{n(A)}{n(S)}
 
-This is called the *classical definition of probability*, and it can be understood as saying, roughly speaking, the probability of an event **A** is equal to the ratio of the number of ways **A** can occur to the number of ways **S** can occur, or simply the ratio of the cardinalities of the sets **A** and **S**.
+In plain English,
+
+    The probability of an event **A** is the ratio of the number ways **A** can occur to the number of ways all the outcomes in the sample space **S** can occur.
+
+Another way of saying the same thing,
+
+    The probability of an event **A** is the ratio of the cardinalities of the set **A** and the sample space **S**.
+
+This is called the *classical definition of probability*.
 
 Applying this definition to the events **H** and **T** in the first example, it can be seen to conform to the intuitive notions of probability, namely that *equally likely* events should have the same probability. Intuitively, if the coin being flipped is fair, the probability of either event **H** or **T** should be equal.
 
@@ -159,7 +256,6 @@ Applying this definition to the events **H** and **T** in the first example, it 
 
 .. math:: 
     P(T) = \frac{n(T)}{n(S)} = \frac{1}{2}
-
 
 .. _axioms_of_probability:
 
@@ -174,10 +270,10 @@ To see this, consider the experiment of spinning a dial on a clock with radius *
 
 The dial can land at any point between 0 and the circumference of the clock, :math:`{2}{\cdot}{\pi}{\cdot}{r}`. Between 0 and :math:`{2}{\cdot}{\pi}{\cdot}{r}`, there are an *infinite* number of numbers (*0, 0.01, 0.001, 0.001, ..., 1, 1.01, 1.001, ..., etc., ... ,* :math:`{2}{\cdot}{\pi}{\cdot}{r}`) ; What is :math:`n(S)` when the sample space of outcomes is infinitely large? The *classical definition of probability* is unable to answer this question.
 
-For this reason and other similar cases, the *classical definition of probability* is not sufficient to completely determine the nature of probability. This leads to the *axiomatization of probability*, which act as additional constraints any model of probability must satisfy in order to be considered a probability. 
+For this reason and other similar cases, the *classical definition of probability* is not sufficient to completely determine the nature of probability. This leads to the *axiomatization of probability*, which acts as additional constraints any model of probability must satisfy in order to be considered a probability. 
 
 .. note::
-    We will see in a subsequent section, when we discuss :ref:`probability distributions <distribution_function>`, that while we cannot calculate the probability of the dial exactly landing on a given number, we can calculate the probability the dial lands within a certain interval (that is to say, a certain `arc length <https://en.wikipedia.org/wiki/Arc_length>`_ of the clock's circumference)
+    We will see in a subsequent section, when we discuss :ref:`the uniform distribution <uniform_distribution>`, while we cannot calculate the probability of the dial exactly landing on a given number, we can calculate the probability the dial lands within a certain interval (that is to say, a certain `arc length <https://en.wikipedia.org/wiki/Arc_length>`_ of the clock's circumference).
 
 Axioms
 ------
@@ -204,16 +300,20 @@ Axiom 3
 *******
 
 :math:`\forall i \neq j: A_i \cap A_j = \varnothing \implies P(\bigcup\limits_{i=1}^{n} A_i) = \sum_{i=1}^n P(A_i)`
-    If each event :sub:`i` **A** in the sample space **S** is *mutually exclusive* with every other event :math:`\forall i \neg j: A_i`, then the probability of the union of all of these events is equal to the sum of the probabilities of each individual event.
+    If each event :sub:`i` **A** in the sample space **S** is *mutually exclusive* with every other event :math:`\forall i \neq j: A_i`, then the probability of the union of all of these events is equal to the sum of the probabilities of each individual event.
 
 :ref:`axiom_1` and :ref:`axiom_2` are fairly intuitive and straight-forward in their meaning, while :ref:`axiom_3` takes a bit of study to fully appreciate. To help in that endeavor, consider the following example.
 
 Example
     Let us return again to the experiment of flipping a fair coin twice. Consider now two different events **A** and **B** defined on this sample space,
 
-        **A** :math:`\equiv` getting at least one head
+    .. math::
         
-        **B** :math:`\equiv` getting exactly one tail
+        A \equiv \text{ getting at least one head }
+        
+    .. math::
+        
+        B \equiv \text{ getting exactly one tail }
     
     Find the probability of :math:`P(A \cup B)`. 
     
@@ -222,8 +322,7 @@ The sample space **S** of this experiment was given by,
 .. math::
     S = \{ hh, ht, th, tt \}
 
-
-Then, in terms of outcomes, clearly, these events are given by,
+Then, in terms of outcomes, clearly, these events can be defined as,
 
 .. math::
     A = \{ hh, ht, th \}
@@ -237,7 +336,7 @@ Then, in terms of outcomes, clearly, these events are given by,
 .. math::
     n(B) = 2
 
-And, using the :ref:`classical_definition`, the probabilities of these events is calculated as,
+And, using the :ref:`classical_definition`, the probabilities of these events can be calculated by,
 
 .. math::
     P(A) = \frac{3}{4}
@@ -255,16 +354,26 @@ Here is a probability greater than 1, which cannot be the case. What is going on
 The issue is the *condition* that must be met to apply :ref:`axiom_3`; the events **A** and **B** must be *mutually exclusive*, :math:`A \cap B = \varnothing`, while in this example we have,
 
 .. math::
+
     A \cap B = \{ ht, th \}
 
-Therefore, we *cannot* say the probability of the union is equal to the sum of probabilities. In fact, in this example,
+In other words, **A** and **B** are *not* mutually exclusive here. Therefore, we *cannot* say the probability of the union  of these two events is equal to the sum of the probabilities of each individual event. In fact, in this example,
 
 .. math::
-    P(A \cap B) = \frac{2}{4} = \frac{1}{2}
+
+    A \cup B = \{ hh, ht, th \}
+
+And therefore, by the :ref:`classical_definition`,
+
+.. math::
+    P(A \cup B) = \frac{3}{4}
+
+Which is clearly not greater than 1.
 
 If, instead, we consider the event **C**,
 
-    C :math:`\equiv` getting exactly two heads
+.. math::
+    C \equiv \text{ getting exactly two heads }
 
 Then, the outcomes of **C** are,
 
@@ -309,68 +418,111 @@ We can use these *axioms*, along with the `theorems of set theory <set_theorems>
 Law of Complements 
 ------------------
 
-:math:`P(A) + P(A^C) = 1` 
-    This corollary should be intuitively obvious, considering the Venn Diagramm of complementary sets,
+Symbolic Expression
+    .. math::
+        
+        P(A) + P(A^c) = 1
 
-        .. image:: ../../assets/imgs/sets/sets_complement.jpg
-            :width: 60%
-            :align: center
+This corollary should be intuitively obvious, considering the Venn Diagramm of complementary sets,
 
-    If the entire rectangle encompassing set **A** in the above diagram is identified as the sample space **S**, then the theorem follows immediately from Axiom 2, namely, :math:`P(S)=1`. 
+.. image:: ../../assets/imgs/sets/sets_complement.jpg
+    :align: center
+
+If the entire rectangle encompassing set **A** in the above diagram is identified as the sample space **S**, then the theorem follows immediately from Axiom 2, namely, :math:`P(S)=1`. 
+
+A more formal proof of this theorem is given below.
+
+Proof 
+    By the :ref:`classical_definition`, the probability of :math:`A \cup A^c` is given by,
+
+    .. math::
+
+        P(A \cup A^c) = \frac{n(A \cup A^c)}{n(S)}
+        
+    By :ref:`Counting Theorem 1 <counting_theorem_one>`,
+
+    .. math::
+
+        n(A \cup A^c) = n(A) + n(A^c)
+
+    So, the probability of :math:`A \cup A^c` is,
+
+    .. math::
+
+        P(A \cup A^c) = \frac{n(A) + n(A^c)}{n(S)} 
+        
+    Distributing :math:`\frac{1}{n(S)}`,
+
+    .. math::
+
+        P(A \cup A^c) = \frac{n(A)}{n(S)} + \frac{n(A^c)}{n(S)}
+
+    Applying the :ref:`classical_definition` to both terms on the right hand side of the equation, 
+
+    .. math::
+
+        = P(A) + P(A^c)
+
+    On the other hand, by :ref:`Complement Theorem 2 <complement_theorem_2>`,
+
+    .. math::
+
+        P(A \cup A^c) = P(S)
+
+    By :ref:`axiom_2`,
+
+    .. math::
+        
+        P(S) = 1
+
+    Putting it altogether,
+
+    .. math::
+
+        1 = P(A) + P(A^C)
 
 Example
     Find the probability of atleast getting at least one head if you flip a coin 3 three times. 
 
-TODO 
-
-The formal proof of the **Law of Complements** follows from the properties of :ref:`sets <set_theory>`.
-
-Proof
-    By Complement Theorem 12 (Put Link), the union of complements is the sample space **S**. Therefore, the *probability* of the union is equal to the probability of the entire sample space **S**.
-            
-    .. math::
-        A \cup A^C = S
-
-    .. math::
-        \implies P(A \cup A^C) = P(S)
-
-    By Axiom 2, the probability of the entire sample space **S** is 1.
-        
-    .. math:: 
-        \implies P(A \cup A^C) = 1
-
-    By Complement Theorem 13 (Put Link), the intersection of complements is the empty set.
+TODO
 
 .. _law_of_unions:
 
 Law of Unions
 -------------
 
-.. math:: 
-    P(A \cup B) = P(A) + P(B) - P(A \cap B)
-    
+Symbolic Expression
+    .. math:: 
+        P(A \cup B) = P(A) + P(B) - P(A \cap B)
+
+Again, from inspection of a :ref:`Venn Diagram <venn_diagrams>` of *overlappying* sets, this theorem should be obvious,
+
+.. image:: ../assets/imgs/sets/sets_union_overlapping.jpg
+
+The union is the area encompassed by bother circles. When we add the probability of **A** (area of circle **A**) to the probability of **B** (area of circle **B**), we double-count the area :math:`A \cap B`, so to correct the overcount, we must subtract once by the offending area.
+
+The formal proof **Law of Unions** follows directly from :ref:`Counting Theorem 1 <counting_theorem_one>` and the :ref:`classical_definition`. The proof is given below.
+
 Proof 
-    The **Law of Unions** follows directly from (TODO SET THEOREM) and the :ref:`classical_definition`,
+    By the :ref:`classical definition`,
 
     .. math:: 
         P(A \cup B) = \frac{n(A \cup B)}{n(S)}
 
+    By :ref:`Counting Teorem 1 <counting_theorem_one>`,
+
     .. math:: 
         P(A \cup B) = \frac{n(A) + n(B) - n(A \cap B)}/{n(S)}
+
+    Distributing :math:`\frac{1}{n(S)}`,
 
     .. math:: 
         P(A \cup B) = \frac{n(A)}{n(S)} + \frac{n(B)}{n(S)} - \frac{n(A \cap B)}{n(S)}
 
+    Applying the :ref:`classical definition` to all three terms on the right side of the equation,
+
     .. math::
         P(A \cup B) = P(A) + P(B) - P(A \cap B)
-
-The **Law of Unions** is easily seen with a :ref:`venn_diagrams`,
-
-.. image:: ../../assets/imgs/sets/sets_union_overlapping.jpg
-   :width: 60%
-   :align: center
-
-The area **A** and **B** have in common is :math:`A \cap B`. When :math:`n(A)` is added to :math:`n(B)`, the area :math:`A \cap B` has been double-counted, therefore it must be subtracted.
 
 Example
     Consider a standard deck of 52 playing cards. Find the probability of selecting a Jack or diamond. 
@@ -381,9 +533,33 @@ The sample space for a selecting a single card from a deck of 52 cards is shown 
    :width: 60%
    :align: center
 
-Let **J** be the event of selecting a jack. Let **D** be the event of selecting a diamond.
+Let **J** be the event of selecting a jack. Let **D** be the event of selecting a diamond. This example wants us to find :math:`J \cup D`.
 
-TODO
+There are 4 Jacks and 13 Diamonds in a standard deck of cards. Therefore, the probability of the individual events is given by,
+
+.. math::
+
+    P(J) = \frac{4}{52} = \frac{1}{13}
+
+.. math::
+
+    P(D) = \frac{13}{52} = \frac{1}{4}
+
+If we stopped at this point and simply added these two probability to find :math:`P(J \cup D)`, we would be counting the Jack of Diamonds twice, once when we found the probability of a Jack and again when we found the probability of a Diamond. To avoid double-counting this card, we first find,
+
+.. math:: 
+
+    P(J \cap D) = \frac{1}{52}
+
+Therefore, the desired probability is,
+
+.. math::
+
+    P(J \cup D) = P(J) + P(D) - P(D \cap J) 
+
+.. math::
+
+    = \frac{4}{52} + \frac{13}{52} - \frac{1}{52} = \frac{16}{52} = \frac{4}{13} \approx 0.31
 
 Probability Tables
 ******************
