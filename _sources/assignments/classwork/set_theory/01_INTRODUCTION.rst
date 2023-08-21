@@ -112,9 +112,9 @@ Where **S** is the universal set and **A**, **B**, **C** and **D** are subsets o
 
     c. :math:`A = B \implies A \equiv B`
 
-    d. :math:`A \equiv B \imples A = B`
+    d. :math:`A \equiv B \implies A = B`
 
-8. **Subsets** Determine whether each of the following propositions is *true* or *false.
+8. **Subsets** Determine whether each of the following propositions is *true* or *false*.
 
     a. :math:`B \subseteq C`
 
@@ -122,7 +122,7 @@ Where **S** is the universal set and **A**, **B**, **C** and **D** are subsets o
 
     c. :math:`C^c \subseteq B^c`
 
-9. **Symbolic Expressions** Write a symbolic proposition that expresses the results of #8 in the form of an "*if...then..." conditional statement.
+9. **Symbolic Expressions** Write a symbolic proposition that expresses the results of #8 in the form of an "*if...then...*" conditional statement.
 
 .. tip:: 
     Don't forget to :ref:`quantify <universal_quantification>` the proposition.

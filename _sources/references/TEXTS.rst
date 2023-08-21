@@ -1,3 +1,5 @@
+.. _textbooks:
+
 =========
 Textbooks
 =========
@@ -23,11 +25,11 @@ Contemporary Mathematics
 Introductory Statistics
 -----------------------
 
-- `Textbook <https://openstax.org/details/books/introductory-statistics>`_
+- `Introductory Stats Textbook <https://openstax.org/details/books/introductory-statistics>`_
 
 .. _openstax_statistics:
 
 Statistics
 ----------
 
-- `Textbook <https://openstax.org/details/books/statistics>`_
+- `Stats Textbook <https://openstax.org/details/books/statistics>`_
