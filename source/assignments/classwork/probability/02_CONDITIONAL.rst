@@ -25,16 +25,16 @@ Applications
 
     b. If it lands heads up, what is the probability you have selected the double-sided coin?
 
-6. You are given the following :ref:`Venn Diagram <venn_diagrams>`,
+6. You are given the following :ref:`Venn Diagram <venn_diagrams>` below. 
+
+    a. Find :math:`P(A \mid B)`
+
+    b. Find :math:`P(B \mid A)`
 
 .. image:: ../../../assets/imgs/problems/conditional_probability_venn_diagram.jpg
     :align: center
 
-    a. Find :math:`P(A | B)`
-
-    b. Find :math:`P(B | A)`
-
-7. Paging through a magazine, you notice a interesting survey of randomly selected individuals who were each asked two questions. The first question was "Do you believe the Earth is flat or round?". The second question was, "Do you think Finland is a :ref:`real country <https://knowyourmeme.com/memes/finland-does-not-exist>`?" The results are given in the table below, 
+1. Paging through a magazine, you notice a interesting survey of randomly selected individuals who were each asked two questions. The first question was "Do you believe the Earth is flat or round?". The second question was, "Do you think Finland is a `real country <https://knowyourmeme.com/memes/finland-does-not-exist>`?" The results are given in the table below, 
 
 +---------+------+-------+
 |         | Flat | Round |
