@@ -53,7 +53,7 @@ Socrates is making the point in the preceding lines that knowledge is not exactl
 Aristotle
 ---------
 
-Like Socrates influenced Plato, Plato influenced Aristotle, and it would be Aristotle who would make the biggest mark on the history of thought. Of the three major Greek philosopher, Socrates, Plato and Aristotle, Aristotle was by far the most prolific. He wrote volumes of book on subjects as diverse as logic, biology, physics and art. His works were used as textbooks for centuries afterwards; more than that, entire school curriculums were oriented around learning what Aristotle saw as the three tiers (or `trivium <>`_) of primary education: grammar, logic and rhetoric. Many of his volumes are still studied to this day in universities across the world.
+Like Socrates influenced Plato, Plato influenced Aristotle, and it would be Aristotle who would make the biggest mark on the history of thought. Of the three major Greek philosopher, Socrates, Plato and Aristotle, Aristotle was by far the most prolific. He wrote volumes of book on subjects as diverse as logic, biology, physics and art. His works were used as textbooks for centuries afterwards; more than that, entire school curriculums were oriented around learning what Aristotle saw as the three tiers (or `trivium <https://en.wikipedia.org/wiki/Trivium>`_) of primary education: grammar, logic and rhetoric. Many of his volumes are still studied to this day in universities across the world.
 
 After learning from Plato, Aristotle moved to (LINK) and opened a famous academy named (LINK). It was there he wrote and distributed his extensive body of work. We will take a look at some of his contributions in the field of *Logic*, specifically those relating to the *character of knowledge*,
 
@@ -78,7 +78,7 @@ In anticipation of what is to come, we might be so bold as to *symbolize* this d
 
 Which is to be read as, "if p implies q is true and if p is true, then q is true".
 
-Aristotle argued that all deductions like this were a form of `syllogism <>`_, or *syllogistic reasoning*. 
+Aristotle argued that all deductions like this were a form of `syllogism <https://en.wikipedia.org/wiki/Syllogism>`_, or *syllogistic reasoning*. 
 
 Toggle the excerpt below to read through a passage of Aristotle's *Prior Analytics* where he defines a logical syllogism.
 
@@ -113,7 +113,7 @@ In later sections, we will define the relation shown here more precisely as one 
 
 As we proceed in this class, instead of taking about *universals* and *particulars*, we will talk about :ref:`populations` and `samples`, but the same principles described by Aristotle more than two thousand years ago still hold (with slight modifications). In effect, our knowledge of *all things* allows us to draw conclusions about *particular things*.  
 
-There is an `aporia <>`_ in this, though. In life, we are only ever presented with *particular cases*. We don't actually know that *all cats are afraid of dogs*; we only know the cats we have seen up to this point appear to be afraid of dogs. Nevertheless, from this limited sample of data, we are able to draw the conclusion *all cats are afraid of data* by inferring from *particular* cases of cats being afraid of dogs (we may even allow for the possibility of ignoring a few :ref:`outlying <outliers>` cases of particularly `bold cats <>`_).
+There is an `aporia <https://en.wikipedia.org/wiki/Aporia>`_ in this, though. In life, we are only ever presented with *particular cases*. We don't actually know that *all cats are afraid of dogs*; we only know the cats we have seen up to this point appear to be afraid of dogs. Nevertheless, from this limited sample of data, we are able to draw the conclusion *all cats are afraid of data* by inferring from *particular* cases of cats being afraid of dogs (we may even allow for the possibility of ignoring a few :ref:`outlying <outliers>` cases of particularly `bold cats <https://www.youtube.com/watch?v=8E1uBxkQxCY>`_).
 
 TODO induction
 

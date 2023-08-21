@@ -107,7 +107,7 @@ The set of all counting numbers starting at 1, :math:`1, 2, 3, ...`
 Real Numbers
     :math:`\mathbb{R}`
 
-The set of all decimal numbers, :math:`1, 1.01, 1.001, ... `
+The set of all decimal numbers, :math:`1, 1.01, 1.001, ...`
 
 Notation
 ========
@@ -173,7 +173,7 @@ Relations
 .. _subset:
 
 Subset
-******
+------
  
 Symbolic Expression
     .. math::
@@ -197,7 +197,7 @@ This diagram represents the relationship :math:`A \subseteq B`.
 .. _proper_subset:
 
 Proper Subset 
-*************
+-------------
 
 Symbolic Expression
     .. math:: 
@@ -218,7 +218,7 @@ This is an equivalent formulation between saying the cardinality of **A** is les
 .. _set_equivalence:
 
 Equivalence
-***********
+-----------
 
 Symbolic Expression
     .. math::
@@ -230,7 +230,7 @@ Two sets **A** and **B** are *equivalent* if the number of elements in **A** is 
 .. _set_equality:
 
 Equality
-********
+--------
 
 Symbolic Expression 
     .. math::
@@ -283,7 +283,7 @@ Operations
 .. _complement:
 
 Complement
-**********
+----------
 
 Symbolic Expression 
     .. math::
@@ -332,7 +332,7 @@ Example
 .. _union:
 
 Union
-*****
+-----
 
 Symbolic Expression 
     .. math::
@@ -383,7 +383,7 @@ Example
 .. _intersection:
 
 Intersection
-************
+------------
 
 Symbolic Expression
     .. math::
@@ -877,7 +877,7 @@ Symbolic Expression
 
 The number of elements in **A** or **B** is equal to the number of elements in **A** plus the number of elements in **B**, minus the elements **A** and **B** have in common.
 
-This is another theorem most easily understood by considering the following :ref:`venn diagram <venn_diagram>`,
+This is another theorem most easily understood by considering the following :ref:`venn diagram <venn_diagrams>`,
 
 .. image:: ../assets/imgs/sets/sets_union_overlapping.jpg
 
