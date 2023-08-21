@@ -40,6 +40,14 @@ A symbolic representation of a universal proposition. This type of proposition c
     2. "for every *p*, *q*"
     3. "for each *p*, *q*"
 
+Existential Quantification
+    :math:`\exists p: q`
+
+A symbolic representation of an existential proposition. This type of proposition can be translated into English in the following ways,
+    1. "there exists a *p* such that *q*"
+    2. "for some *p*, *q*"
+    3. "there is a *p* that *q*"
+
 Definitions
 ===========
 
@@ -86,6 +94,16 @@ Null Set
     :math:`\varnothing`
 
 The unique set which contains nothing. 
+
+Natural Numbers
+    :math:`\N`
+
+The set of all counting numbers starting at 1, :math:`1, 2, 3, ...`
+
+Real Numbers
+    :math:`\R`
+
+The set of all decimal numbers, :math:`1, 1.01, 1.001, ... `
 
 Notation
 ========
@@ -229,6 +247,30 @@ An equivalent way of defining the equality of sets is given by,
 
 In other words, if **A** is wholly contained in **B** and **B** is wholly contained in **A**, then the only way this can occur is if :math:`A = B`.
 
+*Equality* is a stricter condition than *equivalence*. Two sets that are equal are equivalent, but two sets that equivalent are not necessarily equal. Consider the sets,
+
+.. math::
+
+    A = \{ "dog", "cat" \}
+    B = \{ "Vietnam War", "Russo-Japanese War" \}
+
+Both of these sets are equivalent because :math:`n(A) = n(B) = 2`, but they are not equal. If we add **C** to the mix,
+
+.. math::
+
+    C = \{ "cat", "dog" \}
+
+Then not only do we have :math:`n(A) = n(C) = 2`, but we also have :math:`C = A`, since they both contain the same elements. 
+
+In order words, from equality we can infer equivalence, but from equivalence, we *cannot* infer equality. 
+
+.. math::
+
+    A = B \implies A \equiv B
+
+.. math:: 
+    A \equiv B \nimplies A = B 
+
 .. _set_operations:
 
 Operations
@@ -260,7 +302,28 @@ The complement can be visualized with the following *Venn Diagram*,
 
 .. tip:: 
 
-    The complement of a set correspond to the English "*not*". To see this, let **S** be the set of animals and let **A** be the set of dogs. Then :math:`A^c` is the set of animals that are *not* dogs.
+    The complement of a set corresponds to the English word "*not*". 
+    
+    Example
+        Let **S** be the set of animals and let **A** be the set of dogs. Then :math:`A^c` is the set of animals that are *not* dogs.
+
+.. note::
+
+    The complement is always taken *relative to the universal set*. In other words, you cannot find the complement if you do not have the universal set. 
+
+Example 
+
+    .. math::
+      
+        S = \{ \text{ red }, \text{ blue }, \text{ green } \}
+
+    .. math::
+
+        A = \{ \text{ blue } \}
+
+    .. math::
+
+        A^c = \{ \text{ red }, \text{ green } \}
 
 .. _union:
 
@@ -294,7 +357,24 @@ The union would be represented by the entire area of both circles. Notices the c
 
 .. tip:: 
     
-    The union of two sets corresponds to the English "*or*". To see this, let **A** be the set of calculators. Let **B** represent the set of *pencils*. Then :math:`A \cup B` represents the set of *calculators* or *pencils*.
+    The union of two sets corresponds to the English "*or*". 
+    
+    Example
+        Let **A** be the set of calculators. Let **B** represent the set of *pencils*. Then :math:`A \cup B` represents the set of *calculators* or *pencils*.
+
+Example 
+
+    .. math:: 
+
+        A = \{ a, b, c \} 
+
+    .. math::
+        
+        B = \{ b, c, d \}
+
+    .. math::
+
+        A \cup B = \{ a, b, c, d \}
 
 .. _intersection:
 
@@ -336,16 +416,45 @@ The intersection is represented by where the circles meet. In the case of *disjo
 
 .. tip:: 
 
-    The intersection of two sets corresponds to the English "*and*". To see this, let **A** be the set of United States Senators. Let **B** the set of people over the age of 70. Then, :math:`A \cap B` represents the set of people who are both United States Senators and over the age of 70.
+    The intersection of two sets corresponds to the English "*and*". 
+    
+    Example
+        Let **A** be the set of United States Senators. Let **B** the set of people over the age of 70. Then, :math:`A \cap B` represents the set of people who are both United States Senators and over the age of 70.
+
+Example 
+
+    .. math::
+
+        A = \{ a, b, c \}
+    
+    .. math:: 
+
+        B = \{ b, c, d \}
+
+    .. math::
+
+        A \cap B = \{ b, c \}
 
 .. _set_theorems:
 
 Theorems
 ========
 
-Almost all of the theorems of Set Theory can be proven by referring to a :ref:`Venn Diagram<venn_diagrams>`. As you read through the following theorems, try to justify each one to yourself by drawing a picture of what it is saying. 
+All of the theorems of Set Theory can be proven by referring in one of two ways:
 
-We will go through each of these theorems in more detail in class.
+1. By drawing a :ref:`Venn Diagram<venn_diagrams>` of the sets in question and working out the relations between them graphically.
+
+2. Writing example sets in :ref:`list_notation` and then applying the definitions of :ref:`set_operations` to both sides of the equation. 
+
+.. note:: 
+
+    Most of the set theorems can be phrased in terms of sets, or in terms of cardinalities. We can do this because all of the following theorems are theorems about *equality* of sets. Recall that from equality we can infer equivalence, 
+
+    .. math::
+
+        A = B \imples A \equiv B
+    
+    This will be important when we apply these ideas to :ref:`probability`. For this reason, we will give two version of each theorem. One version will be phrased in terms of sets and the other version will be phrased in terms of cardinalities.
 
 .. _identity_theorems:
 
@@ -357,9 +466,18 @@ Identity Theorems
 Theorem 1
 *********
 
-.. math:: 
+Symbolc Expression
+    .. math:: 
 
-    A \cap \varnothing = \varnothing
+        A \cap \varnothing = \varnothing
+
+    Or equivalently, 
+
+    .. math:: 
+
+        n(A \cap \varnothing) = n(\varnothing)
+
+The intersection of any set **A** with the empty set is the empty set. 
 
 .. note:: 
 
@@ -374,9 +492,18 @@ Theorem 1
 Theorem 2
 *********
 
-.. math:: 
+Symbolic Expression
+    .. math:: 
 
-    A \cup \varnothing = A
+        A \cup \varnothing = A
+
+    Or equivalently, 
+
+    .. math::
+
+        n(A \cup \varnothing) = n(A)
+
+The union of any set **A** with the empty set is itself. 
 
 .. note:: 
 
@@ -391,9 +518,18 @@ Theorem 2
 Theorem 3
 *********
 
-.. math:: 
+Symbolic Expression 
+    .. math:: 
 
-    A \cap S = A 
+        A \cap S = A 
+
+    Or equivalently, 
+
+    .. math::
+
+        n(A \cap S) = n(A)
+
+The intersection of any set **A** with the universal set is itself.
 
 .. note:: 
 
@@ -408,9 +544,18 @@ Theorem 3
 Theorem 4
 *********
 
-.. math:: 
+Symbolic Expression
+    .. math:: 
 
-    A \cup S = S 
+        A \cup S = S 
+
+    Or equivalently, 
+
+    .. math::
+
+        n(A \cup S) = n(S)
+
+The union of any set **A** with the universal set is the universal set.
 
 .. note:: 
 
@@ -421,18 +566,24 @@ Theorem 4
 Theorem 5
 *********
 
-.. math:: 
+Symbolic Expression
+    .. math:: 
 
-    A \cup A = A 
+        A \cup A = A 
+
+The union of any set **A** with itself is itself. 
 
 .. _identity_theorem_six:
 
 Theorem 6
 *********
 
-.. math:: 
+Symbolic Expression
+    .. math:: 
 
-    A \cap A = A
+        A \cap A = A
+
+The intersection of any set **A** with itself is itself.
 
 .. _subset_theorems:
 
@@ -443,9 +594,16 @@ Subset Theorems
 
 Theorem 1
 *********
+
+Symbolic Expression
     .. math::
 
         A \cap B \subseteq A 
+
+    Or equivalently, 
+
+    .. math::
+        n(A \cap B) <= n(A)
 
 The intersection of **A** and **B** is a subset of **A**.
 
@@ -453,9 +611,16 @@ The intersection of **A** and **B** is a subset of **A**.
 
 Theorem 2
 *********
+
+Symbolic Expression
     .. math::
         
         A \subseteq A \cup B
+
+    Or equivalently,
+
+    .. math::
+        n(A) <= n(A \cup B)
 
 **A** is a subset of the union of **A** and **B**.
 
@@ -463,9 +628,17 @@ Theorem 2
 
 Theorem 3
 *********
+
+Symbolic Expression
     .. math::
 
         A \cap B \subseteq A \cup B
+
+    Or equivalently,
+
+    .. math::
+
+        n(A \cap B) <= n(A \cup B)
 
 The intersection of two sets **A** and **B** is a subset of the union of those same two sets.
 
@@ -473,11 +646,83 @@ The intersection of two sets **A** and **B** is a subset of the union of those s
 
 Theorem 4
 *********
+
+Symbolic Expression 
     .. math::
 
         A \subseteq B \implies A \cap B = A
 
+    Or equivalently,
+
+    .. math:: 
+        
+        A \subseteq B \implies n(A \cap B) = n(A)
+
 If **A** is a subset of **B**, then the intersection of **A** and **B** is equal to **A**. 
+
+The hypothesis of this theorem, that **A** is a subset of **B**, cannot be written simply in terms of cardinalities. To see why, consider the sets,
+
+.. math:: 
+
+    A = \{ \text{red}, \text{blue}, \text{yellow} \}
+
+.. math::
+
+    B = \{ \text{red}, \text{blue} \}
+
+.. math::
+
+    C = \{ \text{orange}, \text{black} \}
+
+Here we have,
+
+.. math::
+    
+    B \subseteq A
+
+From this and the theorem taken together, we are able to infer the intersection of **B** and **A** is **B**,
+
+.. math::
+
+    B \cap A = \{ \text{red}, \text{blue} } = B
+
+If we try to apply the same logic to **C** and **A**, we run into a problem. Namely, 
+
+.. math:: 
+
+    C \nsubseteq A
+
+However, we do have, 
+
+.. math::
+
+    n(C) <= n(A)
+
+But this doesn't help us, because from it, we **cannot** infer,
+
+.. math:: 
+
+    n(C \cap A) = n(C)
+
+In fact, not only can we *not* infer it, it's *not* true. In this example, 
+
+.. math::
+
+    C \cap A = \varnothing
+
+So, 
+
+.. math::
+
+    n(C \cap A) = 0
+
+Whereas, 
+
+.. math::
+
+    n(A) = 3 \neq 0
+
+The lesson here is: the relation of "*less than or equal to*" between cardinalities does not equate to the relation of "*subset of*" between two sets. While the concepts are related, this theorem illustrates they must regarded as separate *ideas*. 
 
 .. _subset_theorem_five:
 
@@ -512,30 +757,104 @@ Complement Theorems
 
 Theorem 1
 *********
+    .. math::
+        (A^c)^c = A 
 
-TODO 
+The complement of a set **A**'s complement is the set **a**. 
+
+.. tip::
+
+    Think of this theorem in terms of "*double negative*". 
+
+    Example 
+        If a crayon isn't *not red*, then it *is* red. 
+
+Example 
+
+    .. math::
+
+        S = \{ 1, 2, 3 \}
+
+    .. math::
+
+        A = \{ 1, 2 \}
+
+    .. math::
+
+        A^c = \{ 3 \}
+
+    .. math::
+
+        (A^c)^c = \{ 1, 2 \}
 
 .. _complement_theorem_two:
 
 Theorem 2
 *********
+    .. math::
 
-TODO 
+        A \cup A^c = S
+
+    Or equivalently, 
+
+    .. math::
+        n(A \cup A^c) = n(S)
+
+The union of a set **A** with its complement is the universal set.
 
 .. note:: 
     
     This theorem is sometimes known as the `law of the excluded middle <https://simple.wikipedia.org/wiki/Law_of_the_excluded_middle>`_.
 
+Example 
+
+    .. math::
+
+        S = \{ \text{ heads }, \text{ tails } \}
+
+    .. math::
+
+        A = \{ \text{ heads } \}
+
+    .. math::
+
+        A^c = \{ \text{ tails } \}
+
+    .. math::
+
+        A \cup A^c = \{ \text{ heads }, \text{ tails } \} = S 
+
 .. _complement_theorem_three:
 
 Theorem 3
 *********
+    .. math::
 
-TODO 
+        A \cap A ^c = \varnothing
+
+The intersection of a set **A** its complement is the empty set.
 
 .. note:: 
     
     This theorem is sometimes known as the `law of non-contradiction <https://simple.wikipedia.org/wiki/Law_of_noncontradiction>`_.
+
+Example 
+
+    .. math::
+
+        S = \{ \text{jack}, \text{queen}, \text{king}, \text{ace} \}
+
+    .. math::
+
+        A = \{ \text{jack}, \text{queen}, \text{king} \}
+
+    .. math::
+
+        A^c = \{ \text{ace} \}
+    
+    .. math:: 
+
+        A \cap A^c = \{ \} = \varnothing
 
 .. _counting_theorems:
 
@@ -547,18 +866,286 @@ Counting Theorems
 Theorem 1
 *********
 
-TODO 
+Symbolic Expression 
+    .. math::
+        
+        n(A \cup B) = n(A) + n(B) - n(A \cap B)
+
+The number of elements in **A** or **B** is equal to the number of elements in **A** plus the number of elements in **B**, minus the elements **A** and **B** have in common.
+
+This is another theorem most easily understood by considering the following :ref:`venn diagram <venn_diagram>`,
+
+.. image:: ../assets/imgs/sets/sets_union_overlapping.jpg
+
+The area encompassed by both circles is the union :math:`A \cup B`. The overlap in the circles is intersection :math:`A \cap B`. 
+
+Consider how we count up elements in **A** or **B**. We first count up the elements in **A**, including the elemetns in the overlap. We then count up the elements in **B**, which includes the overlap again. In other words, by calculating :math:`n(A) + n(B)`, we have counted up the elements in :math:`A \cap B` *twice*. To fix this overcount, we need to subtract the number elements of in :math:`A \cap B`. Whence we arrive at the theorem.
+
+Example 
+
+    .. math::
+        
+        A = \{ \text{ google }, \text{ facebook }, \text{ apple } \}
+
+    .. math:: 
+        
+        n(A) = 3 
+
+    .. math::
+        
+        B = \{ \text{ banana }, \text{ apple \}
+
+    .. math::
+
+        n(B) = 2
+
+    Note, when the elements of **A** are totaled, ``apple`` is counted once. When the elements of **B** are totaled, the element ``apple`` is counted again. We have thus doubled-counted this element, which is exactly the intersection :math:`A \cap B`,
+
+    .. math::
+        
+        A \cap B = \{ text{ apple } \}
+
+    .. math::
+
+        n(A \cap B) = 1
+
+    .. math::
+
+        A \cup B = \{ \text{ google }, \text{ facebook }, \text{ apple }, \text{ banana } \}
+
+    .. math::
+
+        n(A \cup B) = 4
+
+    .. math::
+
+        n(A) + n(B) - n(A \cap B) = 2 + 3 - 1 = 4
 
 .. _counting_theorem_two:
 
 Theorem 2
 *********
 
-TODO 
+Symbolic Expression
+    .. math::
+
+        n(A) + n(A^c) = n(S)
+
+The number of elements in any set **A** plus the number of elements in its complement is equal to the number of elements in the univeral set.
+
+This theorem follows from the :ref:`venn diagram <venn_diagrams>` of a set with its complement,
+
+.. image:: ../assets/imgs/sets/sets_complement.jpg 
+    :align: center
+
+It can proved formally as follows,
+
+Proof 
+    By :ref:`Complement Theorem 3 <complement_theorem_three>`, 
+
+    .. math::
+
+        A \cap A^c = \varnothing
+
+    By definition,
+
+    .. math::
+
+        n(\varnothing) = 0
+
+    So, it follows, 
+
+    .. math::
+
+        n(A \cap A ^c) = 0
+
+    By :ref:`Counting Theoreom 1 <counting_theorem_one>`,
+
+    .. math::
+
+        n(A \cup A^c) = n(A) + n(A^c) - n(A \cap A^c)
+
+    .. math::
+
+        = n(A) + n(A^c)
+
+    On the other hand, by :ref:`Complement Theorem 2 <complement_theorem_two>`,
+
+    .. math::
+
+        A \cup A^c = S
+
+    So, it follows, 
+
+    .. math::
+
+        n(A \cup A^c) = n(S)
+
+    Putting it altogether,
+
+    .. math::
+
+        n(S) = n(A) + n(A^c)
 
 .. _square_of_opposition:
 
 Aristotle's Square of Opposition
 ================================
 
-TODO
+The *square of opposition* is a famous logical device for remembering how different propositions involving sets are related to one another. To be more specific, the *square of opposition* shows how negation affects sets. Before we show you the *square of opposition*, let us take a look at the logic behidn it.
+
+In ordinary *first-order* logic, the *negation* of proposition simply means negating its truth value. For example, the negation of the proposition,
+
+    p = it is raining
+
+Can be found by inserting the word "*not*",
+
+    ~ p = it is not raining
+
+However, when we are talking about sets, it is more complicated, because we must *quantify* over which elements in the set proposition is true.
+
+Derivation
+----------
+
+Consider the proposition,
+
+.. math:: 
+
+    2 \cdot x = x + x
+
+This type of statement is obviously true no matter what we insert for *x*. Whatever number we plug into the equation, a true statement will always result. Symbolically, we can express this idea with the :math:`\forall` symbol,
+
+.. math:: 
+
+    \forall x \in \R: 2 \cdot x = x + x 
+
+We read this is as, "for all x, doubling x is equal to adding x twice".
+
+Contrast this against the proposition,
+
+.. math::
+
+    2x + 1 = 5
+
+We are not free to plug just any value of *x* into this equation. Only a *particular* value of *x* will satisfy it, i.e. make it true (in this case :math:`x = 2`). Anything else we plug into the equation will result in a *contradiction*, a statement that is obviously not true (try plugging in :math:`x =3 ` and see what you get). We can express this idea with the :math:`\exists` symbol,
+
+.. math::
+
+    \exists x \in \R: 2x + 1 = 5
+
+We read this as, "there exists an *x* such that :math:`2x +1 = 5`" or "some *x* satisifies :math:`2x + 1 = 5".
+
+When dealing with sets, we have two types of propositions to consider, *universal* propositions, denoted by the :math:`\forall` symbol, and *existential* propositions, denoted by the :math:`\exists` symbol.
+
+Then, in order to understand negation with respect to sets, we must answer to questions:
+    1. How do we negate a *universal* proposition? 
+    2. How do we negate an *existential* proposition?
+
+In order to answer these question, we have to break each case into two further cases: the *positive* case and the *negative* case. 
+
+For universal propositions: In the *positive* case, we take a universal proposition that asserts something of all elements in a set. In the *negative* case, we take a universal proposition that denies something of all elements in a set.
+
+For existential propositions: In the *positive* case, we take an exisential proposition that asserts something of some element in a set. In the *negative* case, we take an existential proposition that denies something of some element in a set.
+
+Universal Positive Case
+***********************
+
+Consider the proposition
+
+    All dogs are brown.
+
+In order to show this proposition is false, it would be sufficient to show at least one dog existed that was not brown. For, if all dogs are brown, then it cannot be the case there is one dog that is not brown. Therefore, the negation of this proposition is,
+
+    Some dog is not brown.
+
+To express this symbollically, let **D** represent the set of dogs and let **B** represent the set of brown things. Then the first proposition can be represented as,
+
+.. math::
+    
+    \forall x in D: x \in B
+
+.. note::
+    This is equivalent to saying,
+
+    .. math::
+        
+        D \subseteq B
+
+In order to negate this, we must show there is some element in D that is *not* in B. In other words, we switch the :math:`\forall` to a :math:`\exists` and negate the proposition being quantified,
+
+.. math::
+
+    \exists x \in D: x \notin B
+
+
+Thus, we arrive at the formal definition of the negativion of a universal affirmative proposition,
+
+.. math::
+
+    ( \text{ not } \for all x in A: x \in B) \equiv (\exists x in A: x \not in B)
+
+Universal Negative Case
+***********************
+
+Consider the proposition,
+
+    Some cars are fast. 
+
+In order to negative this we must show *all* cars are *not*fast. It is *not* sufficient to show *only* some cars are *not* fast, because there may exist cars in the *some* we have not considered that may yet be fast, which would coincide with the truth of the original proposition. Therefore, the negation of this proposition is,
+
+    All cars not fast.
+
+To express this symbollically, let **C** be the set of all cars and let **F** be the set of all fast things. Then, the original proposition can be written with the :math:`\exists` symbol,
+
+.. math::
+
+    \exists x \in C: x \in F
+
+To negate this, we switch the :math:`\exists` to a :math:`\forall` and negate the quantified proposition,
+
+.. math::
+
+    \forall x \in C: x \not in F
+
+Thus, we arrive at the formal definition of the negation of a *universal negative proposition*,
+
+.. math::
+
+    (\exists x \in C: x \in F) \equiv (\text {not} \forall x \in C: \not in F)
+
+Existential Positive Case
+*************************
+
+TODO 
+
+Existential Negative Case
+*************************
+
+TODO 
+
+Square of Opposition
+********************
+
+Finally, we come to the *square of opposition*, a visual device for remembering everything that has been covered in this section. 
+
+The *square of opposition* is constructed by first drawing a table,
+
++-------------+--------------+----------------+
+|             |  existential |    universal   |
++-------------+--------------+----------------+
+|  positive   |              |                |
++-------------+--------------+----------------+
+|  negative   |              |                |
++-------------+--------------+----------------+
+
+In the entries of this table, you draw :ref:`venn_diagrams` that represent the intersection of the row and column. Putting the results together, we get the following picture,
+
+.. image:: ../assets/imgs/sets/square_of_opposition.jpg
+
+Notice the diagonals of the picture, the line that connects the top left to the bottom right and the line that connects the top right to the bottom left, form the contradictory pairs of propositions, namely,
+
+    universal positive <- contradicts -> existential negative 
+
+And,
+
+    universal negative <- contradictis -> existential positive
