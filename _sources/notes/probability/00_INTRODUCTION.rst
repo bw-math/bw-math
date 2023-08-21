@@ -463,7 +463,7 @@ Proof
 
         = P(A) + P(A^c)
 
-    On the other hand, by :ref:`Complement Theorem 2 <complement_theorem_2>`,
+    On the other hand, by :ref:`Complement Theorem 2 <complement_theorem_two>`,
 
     .. math::
 
@@ -497,14 +497,14 @@ Symbolic Expression
 
 Again, from inspection of a :ref:`Venn Diagram <venn_diagrams>` of *overlappying* sets, this theorem should be obvious,
 
-.. image:: ../assets/imgs/sets/sets_union_overlapping.jpg
+.. image:: ../../assets/imgs/sets/sets_union_overlapping.jpg
 
 The union is the area encompassed by bother circles. When we add the probability of **A** (area of circle **A**) to the probability of **B** (area of circle **B**), we double-count the area :math:`A \cap B`, so to correct the overcount, we must subtract once by the offending area.
 
 The formal proof **Law of Unions** follows directly from :ref:`Counting Theorem 1 <counting_theorem_one>` and the :ref:`classical_definition`. The proof is given below.
 
 Proof 
-    By the :ref:`classical definition`,
+    By the :ref:`classical_definition`,
 
     .. math:: 
         P(A \cup B) = \frac{n(A \cup B)}{n(S)}
@@ -519,7 +519,7 @@ Proof
     .. math:: 
         P(A \cup B) = \frac{n(A)}{n(S)} + \frac{n(B)}{n(S)} - \frac{n(A \cap B)}{n(S)}
 
-    Applying the :ref:`classical definition` to all three terms on the right side of the equation,
+    Applying the :ref:`classical_definition` to all three terms on the right side of the equation,
 
     .. math::
         P(A \cup B) = P(A) + P(B) - P(A \cap B)

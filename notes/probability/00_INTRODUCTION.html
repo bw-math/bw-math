@@ -254,6 +254,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../references/python/04_FUNCTIONS.html">Functions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../references/python/05_PLOTS.html">Plots</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../references/python/06_FILES.html">Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/07_CONTROLS.html">Control Structures</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../references/LATEX.html">LaTex Reference</a></li>
@@ -636,7 +637,7 @@ document.write(`
 <p>For this reason and other similar cases, the <em>classical definition of probability</em> is not sufficient to completely determine the nature of probability. This leads to the <em>axiomatization of probability</em>, which acts as additional constraints any model of probability must satisfy in order to be considered a probability.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>We will see in a subsequent section, when we discuss <span class="xref std std-ref">the uniform distribution</span>, while we cannot calculate the probability of the dial exactly landing on a given number, we can calculate the probability the dial lands within a certain interval (that is to say, a certain <a class="reference external" href="https://en.wikipedia.org/wiki/Arc_length">arc length</a> of the clock’s circumference).</p>
+<p>We will see in a subsequent section, when we discuss <a class="reference internal" href="03_RANDOM_VARIABLES.html#uniform-distribution"><span class="std std-ref">the uniform distribution</span></a>, while we cannot calculate the probability of the dial exactly landing on a given number, we can calculate the probability the dial lands within a certain interval (that is to say, a certain <a class="reference external" href="https://en.wikipedia.org/wiki/Arc_length">arc length</a> of the clock’s circumference).</p>
 </div>
 <section id="axioms">
 <h3>Axioms<a class="headerlink" href="#axioms" title="Permalink to this headline">#</a></h3>
@@ -757,7 +758,7 @@ document.write(`
 </div><p>Applying the <a class="reference internal" href="#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a> to both terms on the right hand side of the equation,</p>
 <div class="math">
 <p><img src="../../_images/math/91fdb192453cf5e699ca92e034d750dd323ba2ba.png" alt="= P(A) + P(A^c)"/></p>
-</div><p>On the other hand, by <span class="xref std std-ref">Complement Theorem 2</span>,</p>
+</div><p>On the other hand, by <a class="reference internal" href="../SET_THEORY.html#complement-theorem-two"><span class="std std-ref">Complement Theorem 2</span></a>,</p>
 <div class="math">
 <p><img src="../../_images/math/552d663abb1f8f281fc10954101d3c82bd91d294.png" alt="P(A \cup A^c) = P(S)"/></p>
 </div><p>By <a class="reference internal" href="#axiom-2"><span class="std std-ref">Axiom 2</span></a>,</p>
@@ -780,11 +781,11 @@ document.write(`
 </div></dd>
 </dl>
 <p>Again, from inspection of a <a class="reference internal" href="../SET_THEORY.html#venn-diagrams"><span class="std std-ref">Venn Diagram</span></a> of <em>overlappying</em> sets, this theorem should be obvious,</p>
-<img alt="notes/assets/imgs/sets/sets_union_overlapping.jpg" src="notes/assets/imgs/sets/sets_union_overlapping.jpg" />
+<img alt="../../_images/sets_union_overlapping.jpg" src="../../_images/sets_union_overlapping.jpg" />
 <p>The union is the area encompassed by bother circles. When we add the probability of <strong>A</strong> (area of circle <strong>A</strong>) to the probability of <strong>B</strong> (area of circle <strong>B</strong>), we double-count the area <img class="math" src="../../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/>, so to correct the overcount, we must subtract once by the offending area.</p>
 <p>The formal proof <strong>Law of Unions</strong> follows directly from <a class="reference internal" href="../SET_THEORY.html#counting-theorem-one"><span class="std std-ref">Counting Theorem 1</span></a> and the <a class="reference internal" href="#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a>. The proof is given below.</p>
 <dl>
-<dt>Proof</dt><dd><p>By the <span class="xref std std-ref">classical definition</span>,</p>
+<dt>Proof</dt><dd><p>By the <a class="reference internal" href="#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a>,</p>
 <div class="math">
 <p><img src="../../_images/math/cdcdad509d898ec02e65eff1b1f7955920f46d76.png" alt="P(A \cup B) = \frac{n(A \cup B)}{n(S)}"/></p>
 </div><p>By <a class="reference internal" href="../SET_THEORY.html#counting-theorem-one"><span class="std std-ref">Counting Teorem 1</span></a>,</p>
@@ -793,7 +794,7 @@ document.write(`
 </div><p>Distributing <img class="math" src="../../_images/math/6b88ff087c7af4bff36ae170e991cf8e380ced2b.png" alt="\frac{1}{n(S)}"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/8fce00c6bea523cbdd210742578ddc4b76720d2f.png" alt="P(A \cup B) = \frac{n(A)}{n(S)} + \frac{n(B)}{n(S)} - \frac{n(A \cap B)}{n(S)}"/></p>
-</div><p>Applying the <span class="xref std std-ref">classical definition</span> to all three terms on the right side of the equation,</p>
+</div><p>Applying the <a class="reference internal" href="#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a> to all three terms on the right side of the equation,</p>
 <div class="math">
 <p><img src="../../_images/math/71af65e11df7477b3ea176375daf5adc8dc01dfb.png" alt="P(A \cup B) = P(A) + P(B) - P(A \cap B)"/></p>
 </div></dd>

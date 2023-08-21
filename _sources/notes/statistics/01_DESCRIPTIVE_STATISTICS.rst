@@ -177,7 +177,7 @@ Standard Deviation
 
 TODO
 
-.. _variance:
+.. _sample_variance:
 
 Variance
 --------

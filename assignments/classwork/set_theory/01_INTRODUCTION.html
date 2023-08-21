@@ -254,6 +254,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../references/python/04_FUNCTIONS.html">Functions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../references/python/05_PLOTS.html">Plots</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../references/python/06_FILES.html">Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../references/python/07_CONTROLS.html">Control Structures</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../../references/LATEX.html">LaTex Reference</a></li>
@@ -410,6 +411,163 @@ document.write(`
                   
   <section id="set-theory">
 <span id="set-theory-classwork"></span><h1>Set Theory<a class="headerlink" href="#set-theory" title="Permalink to this headline">#</a></h1>
+<div class="topic">
+<p class="topic-title">Instructions</p>
+<p>Start a fresh page in your classwork notebook. Write today’s date in the margin of the page. Clearly label and solve each of the following. Show your work and circle the anwer.</p>
+</div>
+<p>For the following problems, you are given,</p>
+<div class="math">
+<p><img src="../../../_images/math/0cf1023e54ff69e8760bdf9ffbdb2666965c96f7.png" alt="S = \{ 1, 2, 3, 5, 7, 19, 19, 31, 50, 81 \}"/></p>
+</div><div class="math">
+<p><img src="../../../_images/math/f7ffbca83296083be32232b9673fa12ae47b683e.png" alt="A = \{ 1, 2, 3, \}"/></p>
+</div><div class="math">
+<p><img src="../../../_images/math/47e869a329b7e98e6a68b9d53904a2961596fa94.png" alt="B = \{ 19, 50, 81 \}"/></p>
+</div><div class="math">
+<p><img src="../../../_images/math/85cf4031211d2221b55c147e981d327c5b9a9753.png" alt="C = \{ 2, 12, 19, 50, 81 \}"/></p>
+</div><div class="math">
+<p><img src="../../../_images/math/0a1d638427b4eaa468db76233e099434e43ecc45.png" alt="D = \{ 31, 50 \}"/></p>
+</div><p>Where <strong>S</strong> is the universal set and <strong>A</strong>, <strong>B</strong>, <strong>C</strong> and <strong>D</strong> are subsets of <strong>S</strong>.</p>
+<ol class="arabic">
+<li><p><strong>Set Operations</strong> Write the elements of each of the following sets in <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a>,</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/2ef75eec66003e588055d751eaddd391b6eccea0.png" alt="A^c"/></p></li>
+<li><p><img class="math" src="../../../_images/math/8baf415367bb142a93d04eba8007d3e5cd02bdad.png" alt="B^c"/></p></li>
+<li><p><img class="math" src="../../../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/></p></li>
+<li><p><img class="math" src="../../../_images/math/47b7d7c58a0d8fba34b3e6c9b40a295769c86482.png" alt="A \cup B"/></p></li>
+<li><p><img class="math" src="../../../_images/math/9e6b4dd4cfa1f0ac33d0566dcaba53d734e3e75e.png" alt="C \cup A"/></p></li>
+<li><p><img class="math" src="../../../_images/math/a5de231c15081b365a6c200bb6c52f374fe1a5cf.png" alt="C \cup B"/></p></li>
+<li><p><img class="math" src="../../../_images/math/d4666b5ee81691c7ecbd12bef86d2672928a2705.png" alt="C \cap A"/></p></li>
+<li><p><img class="math" src="../../../_images/math/448c731d535beb3ca68f5b8b6fc5f6d8c924b789.png" alt="C \cap B"/></p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p><strong>Cardinality</strong> Answer each of the following problems,</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/f117c7775e5127b1e1957a30104db1ac6d1f16b4.png" alt="n(C)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/c1fd680dba552f3b9b74b8aa501cfbe09b0ce09d.png" alt="n(C^c)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/cf90e0c29ef4a62a7df7e7e01dc977d6d0f6b908.png" alt="n(S)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/04c443d69f9011c51a180e38df8017fc3bbc621f.png" alt="n(S) - n(C^c)"/></p></li>
+<li><p><strong>Spoiler Alert</strong> Why does <em>part d</em> equal <em>part a</em>?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p><strong>De Morgan’s Laws</strong>. Write the elements of each of the following sets in <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a>. Use the answers from #1 where appriopriate.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/58ba2920d273dee714fc39da651a911a2e5d23e2.png" alt="(A^c) \cup (B^c)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/49231157518d3e86c2364d085f588c56b6f2ad0e.png" alt="(A \cup B)^c"/></p></li>
+<li><p><img class="math" src="../../../_images/math/679394566d6429b0cf1ada6e84f28ddcaf4e782b.png" alt="(A^c) \cap (B^c)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/a749ae8311d57637f940b9fe6b7b4ed1a63746fd.png" alt="(A \cap B)^c"/></p></li>
+<li><p>Based on the answers to <em>part a - d</em>, what conclusions can you draw about the relationship that exists between the operations of <em>complementation</em>, <em>intersection</em> and <em>union</em>?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p><strong>Absorption Laws</strong> Write the elements of each of the following sets in <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a>. Use the answers from #1 where appriopriate.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/45f0095aef7245260ba732e87a6b3e5c35f7acfd.png" alt="A \cup (A \cap B)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/7590271a778b4eeac5f0c07b94137ff36ff34a1c.png" alt="B \cap (A \cup B)"/></p></li>
+<li><p>Based on the answers to <em>part a - b</em>, what conclusions can you draw about the relationship that exists between the operations of <em>intersection</em> and <em>union</em>?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p><strong>Distributive Laws</strong> Write the elements of each of the following sets in <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a>. User the answers from #1 where appriopriate.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/07da9a21c98340a23dde0c618d58ca910b4c5fe9.png" alt="C \cup (A \cap B)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/ac00db9436dfb09ddbc9abadcb9bd11c270a721e.png" alt="C \cap (A \cup B)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/ed494bdca84fedd770870af663dd6ab40b9ed8ec.png" alt="(C \cup A) \cap (C \cup B)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/60aac53bfbf2abbdf9e67c4edc9041357fae0ac1.png" alt="(C \cap A) \cup (C \cap B)"/></p></li>
+<li><p>Based on the answers to <em>part a - d</em>, what conclusions can you draw about the relationship that exists between the operations of <em>intersection</em> and <em>union</em>?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p><strong>Counting Laws</strong>. Find the cardinality of each of the following sets.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/f3e0934201efbb32db343299944572dec5cbd93a.png" alt="D"/></p></li>
+<li><p><img class="math" src="../../../_images/math/447df7efa44cac9e3a362ef5cf36e52e672dd2d8.png" alt="D \cap C"/></p></li>
+<li><p><img class="math" src="../../../_images/math/50757c25142cf5e7836fa68a5d30539a95b614c9.png" alt="(D \cap C)^c"/></p></li>
+<li><p><img class="math" src="../../../_images/math/0099dc736eadc9d531a80463cc4e2ea32ca51fff.png" alt="n(D \cup C)"/></p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p><strong>Equivalence and Equality</strong>. Determine whether each of the following propositions is <em>true</em> or <em>false</em>.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/b20b0b13ae1d51af6e0bcc6477b498dd3db052a0.png" alt="A = B"/></p></li>
+<li><p><img class="math" src="../../../_images/math/831191fc4ae36fafd93c7a23ea718db20c35e94c.png" alt="A \equiv B"/></p></li>
+<li><p><img class="math" src="../../../_images/math/ae56156c3181058969f6cb9317bd12a7dbd18214.png" alt="A = B \implies A \equiv B"/></p></li>
+<li><p><div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">A \equiv B \imples A = B</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Undefined control sequence.
+l.15 ...ize{12}{14}\selectfont $A \equiv B \imples
+                                                   A = B$
+[1] (./math.aux) )
+(see the transcript file for additional information)
+Output written on math.dvi (1 page, 344 bytes).
+Transcript written on math.log.
+</p>
+</div>
+</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p><strong>Subsets</strong> Determine whether each of the following propositions is <em>true</em> or <a href="#id1"><span class="problematic" id="id2">*</span></a>false.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/27317cca69c2b08f6d776e40da70a12c1e5d7086.png" alt="B \subseteq C"/></p></li>
+<li><p><img class="math" src="../../../_images/math/34aa9acdd619a395c83a6c1001e1c89a0f3b99cd.png" alt="B^c \subseteq C^c"/></p></li>
+<li><p><img class="math" src="../../../_images/math/84672e2ccab318c2ef11d647d76c0062aae07f28.png" alt="C^c \subseteq B^c"/></p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p><strong>Symbolic Expressions</strong> Write a symbolic proposition that expresses the results of #8 in the form of an “<a href="#id3"><span class="problematic" id="id4">*</span></a>if…then…” conditional statement.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Don’t forget to <a class="reference internal" href="../../../notes/SET_THEORY.html#universal-quantification"><span class="std std-ref">quantify</span></a> the proposition.</p>
+</div>
+<ol class="arabic simple" start="10">
+<li><p><strong>Proofs</strong> Suppose you are given two sets <strong>E</strong> and <strong>F</strong>. Using the properties of sets discussed in class and the ones covered in this classwork, derive an identity for each of the following expressions,</p>
+<ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/0451fd930701bc931c43461d02673f27b0248843.png" alt="(E \cap F^c) \cup (E \cap F)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/17f93f20cfc2df8458935f16bebebb39d743154a.png" alt="(E \cup F^c) \cap (E \cup F)"/></p></li>
+</ol>
+</li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Use the distributive laws from #5 and then use the <cite>Complement Theorems &lt;complement_theorems&gt;</cite></p>
+</div>
 </section>
 
 

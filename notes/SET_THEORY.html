@@ -254,6 +254,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../references/python/04_FUNCTIONS.html">Functions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../references/python/05_PLOTS.html">Plots</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../references/python/06_FILES.html">Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../references/python/07_CONTROLS.html">Control Structures</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../references/LATEX.html">LaTex Reference</a></li>
@@ -458,7 +459,7 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#universal-negative-case">Universal Negative Case</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#existential-positive-case">Existential Positive Case</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#existential-negative-case">Existential Negative Case</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Square of Opposition</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Square of Opposition</a></li>
 </ul>
 </li>
 </ul>
@@ -496,6 +497,8 @@ document.write(`
 <li><p>“<em>q</em> follows from <em>p</em>”</p></li>
 </ol>
 </dd>
+</dl>
+<dl class="simple" id="universal-quantification">
 <dt>Universal Quantification</dt><dd><p><img class="math" src="../_images/math/6c690fd3b495a4f8d1680f489d2e1e172274cd48.png" alt="\forall p: q"/></p>
 </dd>
 <dt>A symbolic representation of a universal proposition. This type of proposition can be translated into English in the following ways,</dt><dd><ol class="arabic simple">
@@ -504,6 +507,8 @@ document.write(`
 <li><p>“for each <em>p</em>, <em>q</em>”</p></li>
 </ol>
 </dd>
+</dl>
+<dl class="simple" id="existential-quantification">
 <dt>Existential Quantification</dt><dd><p><img class="math" src="../_images/math/3a9bb8c5ceff40bb8422433a0418db4dbcb13ac4.png" alt="\exists p: q"/></p>
 </dd>
 <dt>A symbolic representation of an existential proposition. This type of proposition can be translated into English in the following ways,</dt><dd><ol class="arabic simple">
@@ -549,90 +554,12 @@ document.write(`
 </dl>
 <p>The unique set which contains nothing.</p>
 <dl class="simple">
-<dt>Natural Numbers</dt><dd><p><div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\N</span>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2021-11-15&gt; patch level 1
-L3 programming layer &lt;2022-01-21&gt;
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
-(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
-! Undefined control sequence.
-&lt;recently read&gt; \N 
-                   
-l.15 \fontsize{12}{14}\selectfont $\N
-                                     $
-[1] (./math.aux) )
-(see the transcript file for additional information)
-Output written on math.dvi (1 page, 188 bytes).
-Transcript written on math.log.
-</p>
-</div>
-</p>
+<dt>Natural Numbers</dt><dd><p><img class="math" src="../_images/math/453896d96e7397619da7c8d46796c4904cfc2a5c.png" alt="\mathbb{N}"/></p>
 </dd>
 </dl>
 <p>The set of all counting numbers starting at 1, <img class="math" src="../_images/math/ed871b77658649aee54fd910b4468044caaa1be3.png" alt="1, 2, 3, ..."/></p>
 <dl class="simple">
-<dt>Real Numbers</dt><dd><p><div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\R</span>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2021-11-15&gt; patch level 1
-L3 programming layer &lt;2022-01-21&gt;
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
-(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
-! Undefined control sequence.
-&lt;recently read&gt; \R 
-                   
-l.15 \fontsize{12}{14}\selectfont $\R
-                                     $
-[1] (./math.aux) )
-(see the transcript file for additional information)
-Output written on math.dvi (1 page, 188 bytes).
-Transcript written on math.log.
-</p>
-</div>
-</p>
+<dt>Real Numbers</dt><dd><p><img class="math" src="../_images/math/1483d3014b3dd6403a406685ba29142ee3a9c764.png" alt="\mathbb{R}"/></p>
 </dd>
 </dl>
 <p>The set of all decimal numbers, :math:<a href="#id2"><span class="problematic" id="id3">`</span></a>1, 1.01, 1.001, … `</p>
@@ -727,53 +654,9 @@ B = \{ &quot;Vietnam War&quot;, &quot;Russo-Japanese War&quot; \}"/></p>
 <p>In order words, from equality we can infer equivalence, but from equivalence, we <em>cannot</em> infer equality.</p>
 <div class="math">
 <p><img src="../_images/math/a94a382f4fcae2205d1c0ddbbb469c9911cac5a6.png" alt="A = B \implies A \equiv B"/></p>
-</div><div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">A \equiv B \nimplies A = B
-
-</span>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2021-11-15&gt; patch level 1
-L3 programming layer &lt;2022-01-21&gt;
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
-(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
-! Undefined control sequence.
-&lt;argument&gt; ... \begin {split}A \equiv B \nimplies 
-                                                  A = B\end {split}
-l.16 ...plit}A \equiv B \nimplies A = B\end{split}
-                                                  
-! Undefined control sequence.
-&lt;argument&gt; ... \begin {split}A \equiv B \nimplies 
-                                                  A = B\end {split}
-l.16 ...plit}A \equiv B \nimplies A = B\end{split}
-                                                  
-[1] (./math.aux) )
-(see the transcript file for additional information)
-Output written on math.dvi (1 page, 376 bytes).
-Transcript written on math.log.
-</p>
-</div>
-</section>
+</div><div class="math">
+<p><img src="../_images/math/4b153daf42b9e4a4e292bd3ce4af9f746424fa0e.png" alt="A \equiv B \not \Rightarrow A = B"/></p>
+</div></section>
 <section id="operations">
 <span id="set-operations"></span><h2>Operations<a class="headerlink" href="#operations" title="Permalink to this headline">#</a></h2>
 <dl>
@@ -888,51 +771,9 @@ Transcript written on math.log.
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Most of the set theorems can be phrased in terms of sets, or in terms of cardinalities. We can do this because all of the following theorems are theorems about <em>equality</em> of sets. Recall that from equality we can infer equivalence,</p>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">A = B \imples A \equiv B</span>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2021-11-15&gt; patch level 1
-L3 programming layer &lt;2022-01-21&gt;
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
-(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
-! Undefined control sequence.
-&lt;argument&gt; \split&#64;tag \begin {split}A = B \imples 
-                                                  A \equiv B\end {split}
-l.16 ...{split}A = B \imples A \equiv B\end{split}
-                                                  
-! Undefined control sequence.
-&lt;argument&gt; \split&#64;tag \begin {split}A = B \imples 
-                                                  A \equiv B\end {split}
-l.16 ...{split}A = B \imples A \equiv B\end{split}
-                                                  
-[1] (./math.aux) )
-(see the transcript file for additional information)
-Output written on math.dvi (1 page, 376 bytes).
-Transcript written on math.log.
-</p>
-</div>
-<p>This will be important when we apply these ideas to <a class="reference internal" href="probability/index.html#probability"><span class="std std-ref">Probability</span></a>. For this reason, we will give two version of each theorem. One version will be phrased in terms of sets and the other version will be phrased in terms of cardinalities.</p>
+<div class="math">
+<p><img src="../_images/math/a94a382f4fcae2205d1c0ddbbb469c9911cac5a6.png" alt="A = B \implies A \equiv B"/></p>
+</div><p>This will be important when we apply these ideas to <a class="reference internal" href="probability/index.html#probability"><span class="std std-ref">Probability</span></a>. For this reason, we will give two version of each theorem. One version will be phrased in terms of sets and the other version will be phrased in terms of cardinalities.</p>
 </div>
 <section id="identity-theorems">
 <span id="id7"></span><h3>Identity Theorems<a class="headerlink" href="#identity-theorems" title="Permalink to this headline">#</a></h3>
@@ -1085,126 +926,9 @@ Transcript written on math.log.
 <div class="math">
 <p><img src="../_images/math/5a08823b79eebb096f2fe2e8b6b32dbf4cef0384.png" alt="B \subseteq A"/></p>
 </div><p>From this and the theorem taken together, we are able to infer the intersection of <strong>B</strong> and <strong>A</strong> is <strong>B</strong>,</p>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">B \cap A = \{ \text{red}, \text{blue} } = B</span>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2021-11-15&gt; patch level 1
-L3 programming layer &lt;2022-01-21&gt;
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
-(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
-! Argument of \split has an extra }.
-&lt;inserted text&gt; 
-                \par 
-l.16 ...it}B \cap A = \{ \text{red}, \text{blue} }
-                                                   = B\end{split}
-Runaway argument?
-B \cap A = \{ \text {red}, \text {blue} 
-! Paragraph ended before \split was complete.
-&lt;to be read again&gt; 
-                   \par 
-l.16 ...it}B \cap A = \{ \text{red}, \text{blue} }
-                                                   = B\end{split}
-! Missing $ inserted.
-&lt;inserted text&gt; 
-                $
-l.16 ...it}B \cap A = \{ \text{red}, \text{blue} }
-                                                   = B\end{split}
-! Missing \endgroup inserted.
-&lt;inserted text&gt; 
-                \endgroup 
-l.16 ...it}B \cap A = \{ \text{red}, \text{blue} }
-                                                   = B\end{split}
-! Missing \endgroup inserted.
-&lt;inserted text&gt; 
-                \endgroup 
-l.16 ...it}B \cap A = \{ \text{red}, \text{blue} }
-                                                   = B\end{split}
-! Display math should end with $$.
-&lt;to be read again&gt; 
-                   \tex_par:D 
-l.16 ...it}B \cap A = \{ \text{red}, \text{blue} }
-                                                   = B\end{split}
-! Extra }, or forgotten \endgroup.
-&lt;recently read&gt; }
-                 
-l.16 ...it}B \cap A = \{ \text{red}, \text{blue} }
-                                                   = B\end{split}
-! Misplaced \crcr.
-\endsplit -&gt;\crcr 
-                  \egroup \egroup \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
-l.16 ...{ \text{red}, \text{blue} } = B\end{split}
-                                                  
-! Extra }, or forgotten \endgroup.
-\endsplit -&gt;\crcr \egroup 
-                          \egroup \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
-l.16 ...{ \text{red}, \text{blue} } = B\end{split}
-                                                  
-! Extra }, or forgotten \endgroup.
-\endsplit -&gt;\crcr \egroup \egroup 
-                                  \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
-l.16 ...{ \text{red}, \text{blue} } = B\end{split}
-                                                  
-
-! LaTeX Error: \begin{equation*} on input line 15 ended by \end{split}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H &lt;return&gt;  for immediate help.
- ...                                              
-                                                  
-l.16 ...{ \text{red}, \text{blue} } = B\end{split}
-                                                  
-! Missing $ inserted.
-&lt;inserted text&gt; 
-                $
-l.16 ...{ \text{red}, \text{blue} } = B\end{split}
-                                                  
-
-! LaTeX Error: \begin{document} ended by \end{equation*}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H &lt;return&gt;  for immediate help.
- ...                                              
-                                                  
-l.17 \end{equation*}
-                    
-! Missing $ inserted.
-&lt;inserted text&gt; 
-                $
-l.17 \end{equation*}
-                    
-! Extra \endgroup.
-&lt;recently read&gt; \endgroup 
-                          
-l.17 \end{equation*}
-                    
-[1] (./math.aux) )
-(see the transcript file for additional information)
-Output written on math.dvi (1 page, 244 bytes).
-Transcript written on math.log.
-</p>
-</div>
-<p>If we try to apply the same logic to <strong>C</strong> and <strong>A</strong>, we run into a problem. Namely,</p>
+<div class="math">
+<p><img src="../_images/math/da9a6ca48abff79e38a10f616e368b439bab1bd2.png" alt="B \cap A = \{ \text{red}, \text{blue} \} = B"/></p>
+</div><p>If we try to apply the same logic to <strong>C</strong> and <strong>A</strong>, we run into a problem. Namely,</p>
 <div class="math">
 <p><img src="../_images/math/a2a042817d11390281723c7a5fd86261002d2e27.png" alt="C \nsubseteq A"/></p>
 </div><p>However, we do have,</p>
@@ -1344,49 +1068,9 @@ Transcript written on math.log.
 <p><img src="../_images/math/b5ec35c45410ca4946db438890dcb2b8f0593917.png" alt="A = \{ \text{ google }, \text{ facebook }, \text{ apple } \}"/></p>
 </div><div class="math">
 <p><img src="../_images/math/340cad1e295430dfd919d86cff20582b8dadbd12.png" alt="n(A) = 3"/></p>
-</div><div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">B = \{ \text{ banana }, \text{ apple \}</span>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2021-11-15&gt; patch level 1
-L3 programming layer &lt;2022-01-21&gt;
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
-(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd))
-Runaway argument?
-B = \{ \text { banana }, \text { apple \}\end {split} \end {equation*\ETC.
-! File ended while scanning use of \split.
-&lt;inserted text&gt; 
-                \par 
-&lt;*&gt; math.tex
-            
-! Emergency stop.
-&lt;*&gt; math.tex
-            
-No pages of output.
-Transcript written on math.log.
-</p>
-</div>
-<div class="math">
+</div><div class="math">
+<p><img src="../_images/math/5108ba2672ed19737841a32bcb3890a05069b727.png" alt="B = \{ \text{ banana }, \text{ apple } \}"/></p>
+</div><div class="math">
 <p><img src="../_images/math/ce96ec2e74f5776e519a310382b8f2acb590a9eb.png" alt="n(B) = 2"/></p>
 </div><p>Note, when the elements of <strong>A</strong> are totaled, <code class="docutils literal notranslate"><span class="pre">apple</span></code> is counted once. When the elements of <strong>B</strong> are totaled, the element <code class="docutils literal notranslate"><span class="pre">apple</span></code> is counted again. We have thus doubled-counted this element, which is exactly the intersection <img class="math" src="../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/>,</p>
 <div class="math">
@@ -1459,100 +1143,16 @@ Transcript written on math.log.
 <div class="math">
 <p><img src="../_images/math/ab2b9af18aaed1d50672cb7a5d7ff4564435903c.png" alt="2 \cdot x = x + x"/></p>
 </div><p>This type of statement is obviously true no matter what we insert for <em>x</em>. Whatever number we plug into the equation, a true statement will always result. Symbolically, we can express this idea with the <img class="math" src="../_images/math/55f1b2416df87eca07ff0f8d7db7552931a0adcd.png" alt="\forall"/> symbol,</p>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\forall x \in \R: 2 \cdot x = x + x</span>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2021-11-15&gt; patch level 1
-L3 programming layer &lt;2022-01-21&gt;
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
-(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
-! Undefined control sequence.
-&lt;argument&gt; ...&#64;tag \begin {split}\forall x \in \R 
-                                                  : 2 \cdot x = x + x\end {s...
-l.16 ...all x \in \R: 2 \cdot x = x + x\end{split}
-                                                  
-! Undefined control sequence.
-&lt;argument&gt; ...&#64;tag \begin {split}\forall x \in \R 
-                                                  : 2 \cdot x = x + x\end {s...
-l.16 ...all x \in \R: 2 \cdot x = x + x\end{split}
-                                                  
-[1] (./math.aux) )
-(see the transcript file for additional information)
-Output written on math.dvi (1 page, 396 bytes).
-Transcript written on math.log.
-</p>
-</div>
-<p>We read this is as, “for all x, doubling x is equal to adding x twice”.</p>
+<div class="math">
+<p><img src="../_images/math/50af30be41b9ce1a6bb3ac29737434680bf6bad1.png" alt="\forall x \in mathbb{R}: 2 \cdot x = x + x"/></p>
+</div><p>We read this is as, “for all x, doubling x is equal to adding x twice”.</p>
 <p>Contrast this against the proposition,</p>
 <div class="math">
 <p><img src="../_images/math/019bea4a14d8b8657f83f60466bd2ca2e582311a.png" alt="2x + 1 = 5"/></p>
 </div><p>We are not free to plug just any value of <em>x</em> into this equation. Only a <em>particular</em> value of <em>x</em> will satisfy it, i.e. make it true (in this case <img class="math" src="../_images/math/2934bf74a886f3142685875c0d794ad1f883993d.png" alt="x = 2"/>). Anything else we plug into the equation will result in a <em>contradiction</em>, a statement that is obviously not true (try plugging in <img class="math" src="../_images/math/d094d9e3368fbe2e0000bb593e5bf18db3cb581b.png" alt="x =3"/>exists` symbol,</p>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\exists x \in \R: 2x + 1 = 5</span>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2021-11-15&gt; patch level 1
-L3 programming layer &lt;2022-01-21&gt;
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
-(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
-! Undefined control sequence.
-&lt;argument&gt; ...&#64;tag \begin {split}\exists x \in \R 
-                                                  : 2x + 1 = 5\end {split}
-l.16 ...it}\exists x \in \R: 2x + 1 = 5\end{split}
-                                                  
-! Undefined control sequence.
-&lt;argument&gt; ...&#64;tag \begin {split}\exists x \in \R 
-                                                  : 2x + 1 = 5\end {split}
-l.16 ...it}\exists x \in \R: 2x + 1 = 5\end{split}
-                                                  
-[1] (./math.aux) )
-(see the transcript file for additional information)
-Output written on math.dvi (1 page, 384 bytes).
-Transcript written on math.log.
-</p>
-</div>
-<p>We read this as, “there exists an <em>x</em> such that <img class="math" src="../_images/math/5116603a2acee9460e1c9dc8d519190befbb5d4c.png" alt="2x +1 = 5"/>” or “some <em>x</em> satisifies :math:<a href="#id22"><span class="problematic" id="id23">`</span></a>2x + 1 = 5”.</p>
+<div class="math">
+<p><img src="../_images/math/5002567e1f5f365c6673784afd40813e1f20eab3.png" alt="\exists x \in \mathbb{R}: 2x + 1 = 5"/></p>
+</div><p>We read this as, “there exists an <em>x</em> such that <img class="math" src="../_images/math/5116603a2acee9460e1c9dc8d519190befbb5d4c.png" alt="2x +1 = 5"/>” or “some <em>x</em> satisifies <img class="math" src="../_images/math/20f4658fcbe661139c1794960631a8d6821bd4cf.png" alt="2x + 1 = 5"/>.</p>
 <p>When dealing with sets, we have two types of propositions to consider, <em>universal</em> propositions, denoted by the <img class="math" src="../_images/math/55f1b2416df87eca07ff0f8d7db7552931a0adcd.png" alt="\forall"/> symbol, and <em>existential</em> propositions, denoted by the <img class="math" src="../_images/math/1682b7e79eb04ea4f8799cedb437ebe4236ae8d1.png" alt="\exists"/> symbol.</p>
 <dl class="simple">
 <dt>Then, in order to understand negation with respect to sets, we must answer to questions:</dt><dd><ol class="arabic simple">
@@ -1587,51 +1187,9 @@ Transcript written on math.log.
 <div class="math">
 <p><img src="../_images/math/831843dcda90f6231643ee44daa17931a76e4210.png" alt="\exists x \in D: x \notin B"/></p>
 </div><p>Thus, we arrive at the formal definition of the negativion of a universal affirmative proposition,</p>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">( \text{ not } \for all x in A: x \in B) \equiv (\exists x in A: x \not in B)</span>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2021-11-15&gt; patch level 1
-L3 programming layer &lt;2022-01-21&gt;
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
-(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
-! Undefined control sequence.
-&lt;argument&gt; ... \begin {split}( \text { not } \for 
-                                                  all x in A: x \in B) \equi...
-l.16 ...v (\exists x in A: x \not in B)\end{split}
-                                                  
-! Undefined control sequence.
-&lt;argument&gt; ... \begin {split}( \text { not } \for 
-                                                  all x in A: x \in B) \equi...
-l.16 ...v (\exists x in A: x \not in B)\end{split}
-                                                  
-[1] (./math.aux) )
-(see the transcript file for additional information)
-Output written on math.dvi (1 page, 432 bytes).
-Transcript written on math.log.
-</p>
-</div>
-</section>
+<div class="math">
+<p><img src="../_images/math/eb79d28136744711992e21e43503490681b8d4f0.png" alt="( \text{ not } \forall x in A: x \in B) \equiv (\exists x in A: x \notin B)"/></p>
+</div></section>
 <section id="universal-negative-case">
 <h4>Universal Negative Case<a class="headerlink" href="#universal-negative-case" title="Permalink to this headline">#</a></h4>
 <p>Consider the proposition,</p>
@@ -1660,8 +1218,8 @@ Transcript written on math.log.
 <h4>Existential Negative Case<a class="headerlink" href="#existential-negative-case" title="Permalink to this headline">#</a></h4>
 <p>TODO</p>
 </section>
-<section id="id24">
-<h4>Square of Opposition<a class="headerlink" href="#id24" title="Permalink to this headline">#</a></h4>
+<section id="id22">
+<h4>Square of Opposition<a class="headerlink" href="#id22" title="Permalink to this headline">#</a></h4>
 <p>Finally, we come to the <em>square of opposition</em>, a visual device for remembering everything that has been covered in this section.</p>
 <p>The <em>square of opposition</em> is constructed by first drawing a table,</p>
 <table class="table">
@@ -1800,7 +1358,7 @@ Transcript written on math.log.
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#universal-negative-case">Universal Negative Case</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#existential-positive-case">Existential Positive Case</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#existential-negative-case">Existential Negative Case</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Square of Opposition</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Square of Opposition</a></li>
 </ul>
 </li>
 </ul>
