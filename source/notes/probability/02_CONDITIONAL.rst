@@ -246,6 +246,11 @@ Example
 
 TODO
 
+Probability Tables Revisited
+----------------------------
+
+TODO
+
 .. _independence:
 
 Independence
