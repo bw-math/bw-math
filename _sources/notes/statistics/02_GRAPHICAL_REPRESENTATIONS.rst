@@ -172,7 +172,14 @@ Skewed Left
 Ogives
 ======
 
+TODO 
+
 .. plot:: assets/plots/histograms/histogram_and_ogive.py
+
+
+.. note:: 
+    
+    Your book's authors call these types of graphs *ogives*. Be aware, you will almost never see these graphs referred to by that term. In practice, they are almost always called *cumulative frequency distributions*.
 
 Construction
 ------------
@@ -180,6 +187,36 @@ Construction
 1. Find the :ref:`relative frequency distribution<frequency_distributions>`
 
 .. _boxplots:
+
+
+Distribution Shapes
+-------------------
+
+TODO 
+
+Uniform
+*******
+
+.. plot:: assets/plots/ogives/ogive_uniform.py
+
+Normal
+******
+
+.. plot:: assets/plots/ogives/ogive_normal.py
+
+Bimodal
+*******
+
+.. plot:: assets/plots/ogives/ogive_bimodal.py
+
+Skewed
+******
+
+Skewed Right
+    .. plot:: assets/plots/ogives/ogive_skewed_right.py
+
+Skewed Left
+    .. plot:: assets/plots/ogives/ogive_skewed_left.py
 
 Boxplots
 ========

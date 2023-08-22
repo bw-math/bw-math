@@ -408,14 +408,24 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-installation">Python Installation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chromeos">ChromeOS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chromeos">ChromeOS</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-update-chromeos">Step 1: Update ChromeOS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-enable-linux-subsystem">Step 2: Enable Linux Subsystem</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-explore-a-little">Step 3: Explore A Little</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-install-python">Step 3: Install Python</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-install-libraries">Step 4: Install Libraries</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-operating-systems">Other Operating Systems</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretter">Interpretter</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scripts">Scripts</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-idle">IDLE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#packages">Packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#packages">Packages</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#third-party-packages">Third-Party Packages</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -432,51 +442,118 @@ document.write(`
 <p><strong>Python</strong> will run on virtually any device with a processor. It supports all operating systems: Windows, Mac and Linux.</p>
 <section id="python-installation">
 <h2>Python Installation<a class="headerlink" href="#python-installation" title="Permalink to this headline">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ensure you are connected to the internet before attempting any of the commands on this page, especially <a class="reference internal" href="#python-packages"><span class="std std-ref">Packages</span></a> section. When you install third-party libraries into <strong>Python</strong>, your computer needs to reach out to the <a class="reference external" href="https://pypi.org/">Python Package Index (PyPi)</a>, where all of the extra libraries are stored.</p>
+</div>
 <section id="chromeos">
 <h3>ChromeOS<a class="headerlink" href="#chromeos" title="Permalink to this headline">#</a></h3>
-<ol class="arabic simple">
-<li><p>Update your Chrome0S, if applicable,</p></li>
-</ol>
+<p>This video will illustrate each of the steps below.</p>
+<p>(TODO INSERT YOUTUBE VIDEO HERE)</p>
+<section id="step-1-update-chromeos">
+<h4>Step 1: Update ChromeOS<a class="headerlink" href="#step-1-update-chromeos" title="Permalink to this headline">#</a></h4>
+<p>Ensure you are on the latest version of the ChromeOS operating system.</p>
 <p>(INSERT SCREENSHOT)</p>
-<ol class="arabic simple" start="2">
-<li><p>Enable and install Linux subsystem,</p></li>
-</ol>
+</section>
+<section id="step-2-enable-linux-subsystem">
+<h4>Step 2: Enable Linux Subsystem<a class="headerlink" href="#step-2-enable-linux-subsystem" title="Permalink to this headline">#</a></h4>
+<p>Enable and install Linux subsystem in the Settings menu,</p>
 <p>(INSERT SCREENSHOT)</p>
-<ol class="arabic simple" start="3">
-<li><p>Open Linux terminal and verify installation with the command,</p></li>
-</ol>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>--version
-</pre></div>
-</div>
-<p>(INSERT SCREENSHOT)</p>
+<p>This will give you access to something called the <em>command line</em> (sometimes called a <em>terminal</em> or a <em>shell</em>). The <em>command line</em> is a direct interface to the operating system of your laptop. Let’s take a look.</p>
+</section>
+<section id="step-3-explore-a-little">
+<h4>Step 3: Explore A Little<a class="headerlink" href="#step-3-explore-a-little" title="Permalink to this headline">#</a></h4>
+<p>A new world has now opened up to you, the world of <em>Linux</em>. Let’s take a little while to familiarize ourselves with it before moving on to <strong>Python</strong>. Open Linux command line (<em>terminal</em>),</p>
+<p>(INSERT PICTURE)</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Pin the Linux terminal to your dock for quick access.</p>
 <p>(INSERT SCREENSHOT)</p>
 </div>
-<ol class="arabic simple">
-<li><p>Install <strong>Python</strong> graphics library,</p></li>
-</ol>
-<p>The following command is required to install PNG and JPEG rendering engines on your ChromeBook,</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3-tk
+<p>This is your <em>operating system</em>. Let’s try a few commands here and see what we can see. You can type (or copy and paste) the next command directly into the <em>cursor</em> of the terminal,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
+</pre></div>
+</div>
+<p>Press <code class="docutils literal notranslate"><span class="pre">ENTER</span></code> and you shoud see the words “<em>Hello World</em>” print to screen. The <code class="docutils literal notranslate"><span class="pre">echo</span></code> command, as you might have guessed, simply prints the words (a <em>string</em> of text) you give it back to screen,</p>
+<p>(INSERT PICTURE)</p>
+<p>Not very useful. Let’s try something a little more interesting,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>df
+</pre></div>
+</div>
+<p>Press <code class="docutils literal notranslate"><span class="pre">ENTER</span></code> and you will see something along the lines of (the actual output will vary from computer to computer),</p>
+<p>(INSERT PICTURE)</p>
+<p>These are your computer filesystems. This is where all of the data on your computer lives. Let’s not mess around with it. While you can’t physically break your computer by entering commands, it is possible to break your <em>operating system</em> to the point where it will need re-installed. That is not something you want to happen. For that reason, let’s move on to other, safer areas.</p>
+<p>The <em>Linux</em> world is a hierarchy of files. Everything in <em>Linux</em> is a file, even folders.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Folders are called <em>directories</em> in Linux.</p>
+</div>
+<p>You can imagine a tree like the following picture exists somewhere inside your computer,</p>
+<p>(INSERT PICTURE)</p>
+<p>When you open your <em>terminal</em>, you open it <em>in</em> one of the folders in this tree. The <em>terminal</em> allows you traverse the different nodes and branches of this tree. To see where you currently located in the tree, type the following command and press <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">pwd</span>
+</pre></div>
+</div>
+<p>This stands for “<em>present working directory</em>”. When you type <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>, you will see a file path print to screen. This is the directory where you terminal is currently idling. You can see the contents of the <em>present working directory</em> with the command,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ls
+</pre></div>
+</div>
+<p>This will list the contents of the directory to screen,</p>
+<p>(INSERT PICTURE)</p>
+<p>You can <em>change directories</em> with the next command,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>&lt;path&gt;
+</pre></div>
+</div>
+<p>Where <code class="docutils literal notranslate"><span class="pre">&lt;path&gt;</span></code> is the location of the directory into which you would like to go.</p>
+<p>You can move <em>up</em> the file hierarchy by typing,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>..
+</pre></div>
+</div>
+<p>If you then print the <em>present working directory</em>, you will see the directory you were just in.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">pwd</span>
+</pre></div>
+</div>
+<p>Alright, that was fun. However, this class isn’t about learning the ins and outs of <em>Linux</em>. This section was merely to show you for what the terminal is used: issuing commands.</p>
+</section>
+<section id="step-3-install-python">
+<h4>Step 3: Install Python<a class="headerlink" href="#step-3-install-python" title="Permalink to this headline">#</a></h4>
+<p><strong>Python</strong> <em>should</em> come pre-installed in most <em>Linux</em> distributions. Open a terminal and verify your installation with the following command,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>--version
 </pre></div>
 </div>
 <p>(INSERT SCREENSHOT)</p>
-<ol class="arabic simple" start="5">
-<li><p>Install the <strong>Python</strong> package manager,</p></li>
-</ol>
-<p>The following command is required to install the <strong>Python</strong> package manager,</p>
+<p>If you get an error along the lines of “<em>bash: python command not found</em>”, you will need to install <strong>Python</strong>. You can do this through the <em>Linux</em> package repository, an online library of software that you can install from the command line,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure you install <strong>Python3</strong>. <strong>Python2</strong>, an older version, is still available to be installed. If you encounter any unknown errors through the course of this class, the first thing you check if what <em>version</em> of <strong>Python</strong> you are running.</p>
+</div>
+<p>Once this command completes, verify you installation by printing the version to screen,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>--version
+</pre></div>
+</div>
+</section>
+<section id="step-4-install-libraries">
+<h4>Step 4: Install Libraries<a class="headerlink" href="#step-4-install-libraries" title="Permalink to this headline">#</a></h4>
+<p><strong>Python</strong> alone is not enough. We need to plugin some additional functionality to the bare bones installation of <strong>Python</strong>.</p>
+<p>In order to create graphics, we need a graphics library.</p>
+<p>The following command installs a PNG/JPEG rendering engines on your ChromeBook,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3-tk
+</pre></div>
+</div>
+<p>We are currently installing from the <em>Linux</em> package repository. We will need a way to install <strong>Python</strong> packages as well.</p>
+<p>The following command installs the <strong>Python</strong> package manager,</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3-pip
 </pre></div>
 </div>
-<ol class="arabic simple" start="6">
-<li><p>Install the <strong>Python</strong> editor,</p></li>
-</ol>
-<p>The following command is required to the <strong>Python</strong> editor, <strong>IDLE</strong>,</p>
+<p>Lastly, while the command line is fun tool, it would be nice to have an text editor to develop <strong>Python</strong> programs. <em>IDLE</em> is the solution to this problem. We will talk more about this editor in the next section. For now, you can install it with the following command,</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>idle3
 </pre></div>
 </div>
 <p>Congratulation, you are now setup to run <strong>Python</strong> scripts on your ChromeBook.</p>
+</section>
 </section>
 <section id="other-operating-systems">
 <h3>Other Operating Systems<a class="headerlink" href="#other-operating-systems" title="Permalink to this headline">#</a></h3>
@@ -504,20 +581,21 @@ document.write(`
 </section>
 <section id="interpretter">
 <span id="python-interpretter"></span><h2>Interpretter<a class="headerlink" href="#interpretter" title="Permalink to this headline">#</a></h2>
-<p>Once <strong>Python</strong> is installed, you will have access to the <cite>python</cite> command on the command prompt. Open a command prompt and verify your installation with the following command,</p>
+<p>Once <strong>Python</strong> is installed, you will have access to the <cite>python</cite> command on the terminal. Open a <em>Linux</em> and verify your installation with the following command,</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>--version
 </pre></div>
 </div>
+<p>If you see a version print out, you are good to go. If you get an error that says “<em>bash: python command not found</em>”, head back to the previous section and make sure you completed all of the steps.</p>
 <p>You can start an <em>interpretter</em> session with,</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python
 </pre></div>
 </div>
-<p>This will bring up the <strong>Python</strong> <em>shell</em>, which allows you to enter commands and expression line by line. <strong>Python</strong> <em>interprets</em> your commands after you type <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>.
-For example, type the following arithmetical expression and then type <code class="docutils literal notranslate"><span class="pre">ENTER</span></code> to execute it.</p>
+<p>This will bring up the <strong>Python</strong> <em>shell</em>, which allows you to enter commands and expressions line by line. Up to this point we have been allow <em>Linux</em> to intrepret our commands. We are now handing off that responsiblity to <strong>Python</strong>. Like <em>Linux</em>, <strong>Python</strong> <em>interprets</em> your commands after you type <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>.</p>
+<p>For example, type the following arithmetical expression and then type <code class="docutils literal notranslate"><span class="pre">ENTER</span></code> to execute it,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">+</span> <span class="mi">7</span>
 </pre></div>
 </div>
-<p>You can also print text to screen with the <cite>print()</cite> function,</p>
+<p>You can also print text to screen with the <cite>print()</cite> function, similar to (but not exactly like) <em>Linux</em>’s <code class="docutils literal notranslate"><span class="pre">echo</span></code> function,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -529,7 +607,7 @@ For example, type the following arithmetical expression and then type <code clas
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span> <span class="o">**</span> <span class="mi">2</span>
 </pre></div>
 </div>
-<p>The <em>interpretter</em> allows to experiment with <strong>Python</strong> and get a feel for it. However, for this class, we will almost always be writing <a class="reference internal" href="#python-scripts"><span class="std std-ref">Scripts</span></a>.</p>
+<p>The <em>interpretter</em> allows to experiment with <strong>Python</strong> and get a feel for it. However, as previously mentioned, for this class, we will almost always be writing <a class="reference internal" href="#python-scripts"><span class="std std-ref">Scripts</span></a>.</p>
 <p>To exit the <em>interpretter</em>, type and execute,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">exit</span><span class="p">()</span>
 </pre></div>
@@ -543,22 +621,24 @@ For example, type the following arithmetical expression and then type <code clas
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The meaning of life is: &quot;</span><span class="p">,</span> <span class="n">the_meaning_of_life</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Save the file and open a Linux terminal (or command prompt if you are using your personal computer). Pass the name of the file to the <strong>Python</strong> interpretter and something magical will happen,</p>
+<p>Save the file and open a <em>Linux</em> terminal (or command prompt if you are using your personal computer). Pass the name of the file to the <strong>Python</strong> interpretter and something magical will happen,</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>test.py
 </pre></div>
 </div>
-<p>Congratulations, you have just written your first Python script. In the labs, when you are asked to create and run a <strong>Python</strong> script, this is essentially what you will be doing:</p>
+<p>(INSERT SCREENSHOT)</p>
+<p>Congratulations, you have just written your first Python script. In the labs for this class, when you are asked to create and run a <strong>Python</strong> script, this is essentially what you will be doing:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>create a <code class="docutils literal notranslate"><span class="pre">.py</span></code> file</p></li>
-<li><p>tell the <strong>Python</strong> interpretter your file name.</p></li>
+<li><p>creating a <code class="docutils literal notranslate"><span class="pre">.py</span></code> file</p></li>
+<li><p>telling the <strong>Python</strong> interpretter your file name.</p></li>
 </ul>
 </div></blockquote>
 <p>However, <em>IDLE</em> will make this whole process much less painful, so continue onto the next section, dear reader.</p>
 </section>
 <section id="python-idle">
 <span id="idle"></span><h2>IDLE<a class="headerlink" href="#python-idle" title="Permalink to this headline">#</a></h2>
-<p><strong>Python</strong> (usually) ships with a program named <em>IDLE</em>. <a class="reference external" href="https://docs.python.org/3/library/idle.html">IDLE</a> stands for <em>Integrated Development and Learning Environment</em>. <em>IDLE</em> is a text editor integrated with a <strong>Python</strong> interpretter. It provides <a class="reference external" href="https://en.wikipedia.org/wiki/Syntax_highlighting#Support_in_text_editors">syntax highlighting</a>, the ability to save and execute scripts, and a debugger for stepping through the programs. Open up an <em>IDLE</em> session,</p>
+<p><strong>Python</strong> (usually) ships with a program named <em>IDLE</em>. <a class="reference external" href="https://docs.python.org/3/library/idle.html">IDLE</a> stands for <em>Integrated Development and Learning Environment</em>. <em>IDLE</em> is a text editor integrated with a <strong>Python</strong> interpretter. It provides <a class="reference external" href="https://en.wikipedia.org/wiki/Syntax_highlighting#Support_in_text_editors">syntax highlighting</a>, the ability to save and execute scripts, and a debugger for stepping through the programs. In the immortal words of the poet laureate, Biz Markie, it’s got what we need.</p>
+<p>Open up an <em>IDLE</em> session,</p>
 <img alt="../../_images/idle_shell.png" src="../../_images/idle_shell.png" />
 <p>This is another version of the <strong>Python</strong> interpretter we encountered a few sections ago, sometimes referred to as a <a class="reference external" href="https://en.wikipedia.org/wiki/Shell_(computing)">shell</a>. You can execute the exact same commands in this <em>shell</em> as in the previous section, e.g.,</p>
 <img alt="../../_images/idle_shell_command.png" src="../../_images/idle_shell_command.png" />
@@ -578,12 +658,26 @@ For example, type the following arithmetical expression and then type <code clas
 </pre></div>
 </div>
 <p>This sequence of commands imports the <cite>math</cite> library, calls the factorial function with <em>dot notation</em> to compute <img class="math" src="../../_images/math/7e451da68a24c1d66570895ec95c4e54480e6920.png" alt="n!"/>, stores the answer in the variable <cite>answer</cite>, and then prints it to screen.</p>
-<p><cite>math</cite> has plenty of functions that will be useful in this class, but it doesn’t have <em>everything</em> we need. Luckily, <strong>Python</strong> ships with a <em>package manager</em> that allows you to install third-party libraries.</p>
-<p>We will need to install two additional packages for this class. <a class="reference external" href="https://matplotlib.org/">matplotlib</a> will be used to generate graphical representations of data. <a class="reference external" href="https://docs.python.org/3/library/tkinter.html">tkinter</a> will be used to render the output of <a class="reference external" href="https://matplotlib.org/">matplotlib</a> into JPEG and PNG images. These packages can be installed through the command line (<em>not</em> the <strong>Python</strong> interpretter). Open the Linux terminal on your ChromeBook (or the command prompt on your personal computer),</p>
+<section id="third-party-packages">
+<span id="python-third-party"></span><h3>Third-Party Packages<a class="headerlink" href="#third-party-packages" title="Permalink to this headline">#</a></h3>
+<p><cite>math</cite> has plenty of functions that will be useful in this class, but it doesn’t have <em>everything</em> we need. Luckily, <strong>Python</strong> ships with a <em>package manager</em> that allows you to install third-party libraries. You use the <code class="docutils literal notranslate"><span class="pre">pip</span></code> command anytime you need to install any additional libraries or pacakges into <strong>Python</strong>. Open up a Linux Terminal and type,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>You should see the version number print to screen. If you happen to see an error message that says something along the lines of “bash: pip command not found”, then you will need to install <code class="docutils literal notranslate"><span class="pre">pip</span></code> from the <em>Linux</em> package repository with the following command,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3-pip
+</pre></div>
+</div>
+<p>After this installation is complete, try verifying the <code class="docutils literal notranslate"><span class="pre">pip</span></code> version again,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>Now that you have <code class="docutils literal notranslate"><span class="pre">pip</span></code>, we will need to install two additional packages for this class. <a class="reference external" href="https://matplotlib.org/">matplotlib</a> will be used to generate graphical representations of data. <a class="reference external" href="https://docs.python.org/3/library/tkinter.html">tkinter</a> will be used to render the output of <a class="reference external" href="https://matplotlib.org/">matplotlib</a> into JPEG and PNG images. These packages can be installed through the command line. Open the Linux terminal on your ChromeBook (or the command prompt on your personal computer),</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>matplotlib<span class="w"> </span>tk
 </pre></div>
 </div>
 <p>See the <a class="reference internal" href="05_PLOTS.html#matplotlib"><span class="std std-ref">Plots</span></a> section to learn more about using <em>matplotlib</em> to generate plots of data.</p>
+</section>
 </section>
 </section>
 
@@ -636,14 +730,24 @@ For example, type the following arithmetical expression and then type <code clas
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-installation">Python Installation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chromeos">ChromeOS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chromeos">ChromeOS</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-update-chromeos">Step 1: Update ChromeOS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-enable-linux-subsystem">Step 2: Enable Linux Subsystem</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-explore-a-little">Step 3: Explore A Little</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-install-python">Step 3: Install Python</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-install-libraries">Step 4: Install Libraries</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-operating-systems">Other Operating Systems</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretter">Interpretter</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scripts">Scripts</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-idle">IDLE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#packages">Packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#packages">Packages</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#third-party-packages">Third-Party Packages</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

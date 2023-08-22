@@ -384,7 +384,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -400,6 +402,28 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">matplotlib</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tkinter">tkinter</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importing">Importing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gallery">Gallery</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boxplot">Boxplot</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">Histogram</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ogives">Ogives</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scatterplot">Scatterplot</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#error-bars">Error Bars</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -411,6 +435,85 @@ document.write(`
                   
   <section id="plots">
 <span id="matplotlib"></span><h1>Plots<a class="headerlink" href="#plots" title="Permalink to this headline">#</a></h1>
+<p>We will be using <strong>Python</strong> to generate graphs. Lots and lots of graphs. So many graphs, you might say it’s <em>graphic</em>.</p>
+<p>This section serves as a gallery for all the different sorts of graphs you can create with <strong>Python</strong>. However, before we get to that point, we need to make sure our computers are setup with graphing capabilities. If you followed along with the <a class="reference internal" href="01_SETUP.html#python-setup"><span class="std std-ref">Python Setup</span></a> and completed all the steps on that page, you should be good to go. You may skip the next section in that case, or read through as a refresher (re-installing the graphics library won’t break anything).</p>
+<p>By default, <strong>Python</strong> does not have statistical graphing capabilities. You must install two addition packages to supplement this deficiency, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> and <code class="docutils literal notranslate"><span class="pre">tk</span></code>.</p>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
+<section id="id1">
+<h3>matplotlib<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> is a versatile library for generating just about any sort of mathematical graph you can imagine. To install it, open up the Linux Terminal on your ChromeBook and type,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>matplotlib
+</pre></div>
+</div>
+</section>
+<section id="tkinter">
+<h3>tkinter<a class="headerlink" href="#tkinter" title="Permalink to this headline">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">tkinter</span></code>, or just <code class="docutils literal notranslate"><span class="pre">tk</span></code>, is a library for processing the results of <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> into pretty JPEGs and PNGs. You can also install it through the Linux terminal,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>tk
+</pre></div>
+</div>
+<p>Now that we have everything we need, let’s take a look at the various plots we can create.</p>
+</section>
+</section>
+<section id="importing">
+<h2>Importing<a class="headerlink" href="#importing" title="Permalink to this headline">#</a></h2>
+<p>When you import <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> into your scripts, the very first thing you should always do is <em>tell it to use the</em> <code class="docutils literal notranslate"><span class="pre">tk</span></code> <em>library</em> to create graphs.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib</span>
+
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;tkagg&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><em>Always, always, always</em> do this. If it’s not clear by now, let’s re-iterate: anytime you are using <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> you should <em>always</em> do this. Otherwise, you may encounter strange errors that make no sense.</p>
+</section>
+<section id="gallery">
+<h2>Gallery<a class="headerlink" href="#gallery" title="Permalink to this headline">#</a></h2>
+<p>You can download the scripts used to generate any of these examples by clicking on the “<em>source</em>” link in the top right corner of the image.</p>
+<section id="boxplot">
+<h3>Boxplot<a class="headerlink" href="#boxplot" title="Permalink to this headline">#</a></h3>
+<p>(<a class="reference download internal" download="" href="../../_downloads/96f6eae3fd5f0f31966bfdd55748b732/boxplot_normal.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/02cd14e26dd9dfd968ebaac6deb6edc0/boxplot_normal.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/e86491f6d04807b92f3a5b3763800529/boxplot_normal.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/8a8e9884227a1ed601c1cc58abef4988/boxplot_normal.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/boxplot_normal.png" class="plot-directive" src="../../_images/boxplot_normal.png" />
+</figure>
+</section>
+<section id="histogram">
+<h3>Histogram<a class="headerlink" href="#histogram" title="Permalink to this headline">#</a></h3>
+<p>(<a class="reference download internal" download="" href="../../_downloads/af4741c2ca0dbe02296d6d69fbbb9543/histogram_normal.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/ace234f281e95d0ffe906dc5b5776507/histogram_normal.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/896988df4e6cc053d5d908c4e15065c2/histogram_normal.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/69aea2c2d783043412d307c1c1f6f235/histogram_normal.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/histogram_normal.png" class="plot-directive" src="../../_images/histogram_normal.png" />
+</figure>
+</section>
+<section id="ogives">
+<h3>Ogives<a class="headerlink" href="#ogives" title="Permalink to this headline">#</a></h3>
+<p>(<a class="reference download internal" download="" href="../../_downloads/6d9c2688f6b56401b31ba732b2a3f093/ogive_normal.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/1ba699d407e46a10113569128dee6591/ogive_normal.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/715b349d56782eca8b0a92e86423fa2f/ogive_normal.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/df6567eedb419390f4f287397da6cfcf/ogive_normal.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/ogive_normal.png" class="plot-directive" src="../../_images/ogive_normal.png" />
+</figure>
+</section>
+<section id="scatterplot">
+<h3>Scatterplot<a class="headerlink" href="#scatterplot" title="Permalink to this headline">#</a></h3>
+<p>(<a class="reference download internal" download="" href="../../_downloads/17c2f52e958097c3c536d017ad440b19/scatterplot_no_correlation.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/9388f7667548c31b865aefc453d7f769/scatterplot_no_correlation.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f7f19cc8a16a8d1967fe7aac0d71cebb/scatterplot_no_correlation.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d3582693e2a20ddb42c3cec0b29ded9c/scatterplot_no_correlation.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/scatterplot_no_correlation.png" class="plot-directive" src="../../_images/scatterplot_no_correlation.png" />
+</figure>
+</section>
+<section id="error-bars">
+<h3>Error Bars<a class="headerlink" href="#error-bars" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://matplotlib.org/">matplotlib documentation</a></p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/gallery/index">matplotlib examples</a></p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/gallery/statistics/index.html">matplotlib statistics examples</a></p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/gallery/statistics/hist.html#sphx-glr-gallery-statistics-hist-py">matplotlib histogram examples</a></p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/gallery/statistics/histogram_cumulative.html#sphx-glr-gallery-statistics-histogram-cumulative-py">matplotlib ogive (cumulative distribution) examples</a></p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/gallery/statistics/errorbar.html#sphx-glr-gallery-statistics-errorbar-py">matplotlib error bar examples</a></p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/gallery/statistics/boxplot_demo.html#sphx-glr-gallery-statistics-boxplot-demo-py">matplotlib boxplot examples</a></p></li>
+</ul>
+</section>
 </section>
 
 
@@ -452,6 +555,34 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">matplotlib</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tkinter">tkinter</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importing">Importing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gallery">Gallery</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boxplot">Boxplot</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">Histogram</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ogives">Ogives</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scatterplot">Scatterplot</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#error-bars">Error Bars</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

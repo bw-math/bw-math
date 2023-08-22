@@ -422,7 +422,11 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-functions">Creating Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-functions">Creating Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#function-signatures">Function Signatures</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#function-example">Function Example</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -484,7 +488,7 @@ document.write(`
 </section>
 <section id="standard-library-functions">
 <span id="python-standard-library"></span><h2>Standard Library Functions<a class="headerlink" href="#standard-library-functions" title="Permalink to this headline">#</a></h2>
-<p>In addition to the functions accessible by default in <strong>Python</strong>, there are also a large number of functions you can <code class="docutils literal notranslate"><span class="pre">import</span></code> to extend <a href="#id1"><span class="problematic" id="id2">**</span></a>Python**`s basic functionality. These functions reside in the <em>Standard Library</em>.</p>
+<p>In addition to the functions accessible by default in <strong>Python</strong>, there are also a large number of functions you can <code class="docutils literal notranslate"><span class="pre">import</span></code> to extend the basic functionality of <strong>Python</strong>. These functions reside in the <em>Standard Library</em>.</p>
 <p>The syntax for importing an additional package is simply,</p>
 <blockquote>
 <div><p>import &lt;package-name&gt;</p>
@@ -561,7 +565,37 @@ document.write(`
 </section>
 <section id="creating-functions">
 <span id="python-creating-functions"></span><h2>Creating Functions<a class="headerlink" href="#creating-functions" title="Permalink to this headline">#</a></h2>
-<p>TODO</p>
+<p>Occassionally, the <em>Standard Library</em> plus third-party packages will not be enough to do what we need to do. In those cases, we have no other options but to define our own function.</p>
+<section id="function-signatures">
+<h3>Function Signatures<a class="headerlink" href="#function-signatures" title="Permalink to this headline">#</a></h3>
+<p>A function in <strong>Python</strong> has four components its <code class="docutils literal notranslate"><span class="pre">def</span></code>, its <em>name</em>, its <em>arguments</em> and its <code class="docutils literal notranslate"><span class="pre">return</span></code> value. The following list breaks each of these components down,</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">def</span></code> is a <em>keyword</em> that informs <strong>Python</strong> you are about to define a function. You must <em>always</em> precede a function with <code class="docutils literal notranslate"><span class="pre">def</span></code>.</p></li>
+<li><p>The function <em>name</em> is how you will access the function. You have already encountered several function <em>names</em> with <code class="docutils literal notranslate"><span class="pre">range()</span></code> and <code class="docutils literal notranslate"><span class="pre">sum()</span></code>.</p></li>
+<li><p>The <em>arguments</em> are the input that is passed into the function. <em>Arguments</em> are variables.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">return</span></code> value is data the function outputs.</p></li>
+</ol>
+</section>
+<section id="function-example">
+<h3>Function Example<a class="headerlink" href="#function-example" title="Permalink to this headline">#</a></h3>
+<p>Putting all four of these pieces together, let’s create a simple function.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fancy</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+    <span class="n">sentence</span> <span class="o">=</span> <span class="n">word</span> <span class="o">+</span> <span class="s2">&quot; is fancy!&quot;</span>
+    <span class="k">return</span> <span class="n">sentence</span>
+</pre></div>
+</div>
+<p>Take note of the <em>indentation</em>. <strong>Python</strong> is very particular about <em>indentation</em> because that is how it groups functions together. A <em>function</em> definition must be indented once (with <code class="docutils literal notranslate"><span class="pre">TAB</span></code>). All lines within the function must be the same <em>indentation</em> level. If you do not follow this requirement, you will get errors. Errors are bad. So, always pay your indentation.</p>
+<p>We can call this function after defined it by addressing it by its name and passing in an argument. Create a new <a class="reference internal" href="01_SETUP.html#python-idle"><span class="std std-ref">IDLE Notebook</span></a>, copy in the following function and try executing it with <code class="docutils literal notranslate"><span class="pre">F5</span></code>,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fancy</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+    <span class="n">sentence</span> <span class="o">=</span> <span class="n">word</span> <span class="o">+</span> <span class="s2">&quot; is fancy!&quot;</span>
+    <span class="k">return</span> <span class="n">sentence</span>
+
+<span class="n">fancified_taco</span> <span class="o">=</span> <span class="n">fancy</span><span class="p">(</span><span class="s2">&quot;taco&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">fancified_taco</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
 </section>
 </section>
 
@@ -628,7 +662,11 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-functions">Creating Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-functions">Creating Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#function-signatures">Function Signatures</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#function-example">Function Example</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

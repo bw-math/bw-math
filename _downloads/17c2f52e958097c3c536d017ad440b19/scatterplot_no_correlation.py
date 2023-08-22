@@ -44,5 +44,5 @@ axs.set_ylabel("Quiz Score")
 # Generate and output
 ## Plot Histogram
 axs.scatter(*data)
-
+## Show results
 plt.show()
