@@ -1,8 +1,8 @@
 .. _project_four:
 
-=======
-Polling
-=======
+========
+Outliers
+========
 
 TODO
 
