@@ -123,7 +123,7 @@ Velocity of Light
 
     .. math::
 
-        \text{percent error} = \frac{ \text{estimated - actual} }{ \text{actual}} \cdot 100 \text{ % }
+        \text{percent error} = \frac{ \text{estimated - actual} }{ \text{actual} } \cdot 100
 
 Density of the Earth 
 --------------------
@@ -149,7 +149,7 @@ The meaning of the column is clear from the column header: each observation meas
 Density of the Earth Data
 -------------------------
 
-You can download the full dataset :download:`here <../../assets/datasets/density_of_the_earth_data.csv>`.
+You can download the full dataset :download:`here <../../assets/datasets/earth_density_data.csv>`.
 
 The following table is the a preview of the data you will be using for this project. 
 
