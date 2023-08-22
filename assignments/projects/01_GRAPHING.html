@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Plots &#8212; bishop-walsh-ap-stats  documentation</title>
+    <title>Graphing &#8212; bishop-walsh-ap-stats  documentation</title>
   
   
   
@@ -224,13 +224,15 @@
 </li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Projects</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="00_PYTHON.html">Python</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Plots</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Graphing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="02_ESTIMATION.html">Estimation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="03_BIAS.html">Bias</a></li>
-<li class="toctree-l3"><a class="reference internal" href="04_POLLING.html">Polling</a></li>
-<li class="toctree-l3"><a class="reference internal" href="05_SIMULATION.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_OUTLIERS.html">Outliers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_POLLING.html">Polling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_SIMULATION.html">Simulation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="08_Z_TABLE.html">Applications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="09_FINANCE.html">Financial Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
 </ul>
 </li>
 </ul>
@@ -397,7 +399,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Plots</h1>
+    <h1>Graphing</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -408,10 +410,22 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-michelson-velocity-of-light-experiment">The Michelson Velocity of Light Experiment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cavendish-density-of-the-earth-experiment">The Cavendish Density of the Earth Experiment</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light">Velocity of Light</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-the-earth">Density of the Earth</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light-data">Velocity of Light Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-the-earth-data">Density of the Earth Data</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -423,31 +437,47 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="plots">
-<span id="project-two"></span><h1>Plots<a class="headerlink" href="#plots" title="Permalink to this headline">#</a></h1>
-<p>In this lab, you will get familiar with the statistical features of <strong>Python</strong> using a famous dataset from the history of physics.</p>
+  <section id="graphing">
+<span id="project-one"></span><h1>Graphing<a class="headerlink" href="#graphing" title="Permalink to this headline">#</a></h1>
+<blockquote>
+<div><p>The picture is a model of reality.
+- Ludwig Wittgenstein</p>
+</div></blockquote>
+<p>In this lab, you will get familiar with the statistical plotting features of <strong>Python</strong> using several famous datasets from the history of science.</p>
 <section id="instructions">
-<span id="project-two-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
+<span id="project-one-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><p>Create a folder named <cite>LASTNAME_FIRSTNAME_project_two</cite>, replacing <cite>LASTNAME</cite> and <cite>FIRSTNAME</cite> with your last name and first name, respectively.</p></li>
-<li><p>Download the <em>csv</em> dataset <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">below</span></a> and place it in the new folder you created in step 1.</p></li>
-<li><p>In the same folder, create a Microsoft Word <em>docx</em> document named <cite>project_two.docx</cite>.</p></li>
-<li><p>In the same folder, create a Python <em>py</em> script named <cite>project_two.py</cite></p></li>
-<li><p>Read the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section.</p></li>
-<li><p>Answer the indicated questions in the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section in the <em>.docx</em> document file.</p></li>
-<li><p>When you are done, zip your folder and all its contents in a file named <cite>LASTNAME_FIRSTNAME_project_two.zip</cite></p></li>
+<li><p>Create a folder named <cite>LASTNAME_FIRSTNAME_project_one</cite>, replacing <cite>LASTNAME</cite> and <cite>FIRSTNAME</cite> with your last name and first name, respectively.</p></li>
+<li><p>Download <strong>both</strong> <em>csv</em> datasets in the <a class="reference internal" href="#project-one-dataset"><span class="std std-ref">Velocity of Light</span></a> section and place it in the new folder you created in step 1.</p></li>
+<li><p>In the same folder, create a Python <em>py</em> script named <cite>project_one.py</cite>.</p></li>
+<li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Python docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-one-background"><span class="std std-ref">Background</span></a> section and the <a class="reference internal" href="#project-one-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-one-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the <em>Project</em> section.</p></li>
+<li><p>When you are done, zip your folder and all its contents into a file named <cite>LASTNAME_FIRSTNAME_project_one.zip</cite></p></li>
 <li><p>Upload the zip file here: TODO</p></li>
 </ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You may need to refer to the <a class="reference internal" href="../../references/python/05_PLOTS.html#python-plotting"><span class="std std-ref">Plots</span></a> page for examples of various types of graphs.</p>
+</div>
 </section>
 <section id="background">
-<span id="project-two-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<span id="project-one-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<section id="the-michelson-velocity-of-light-experiment">
+<h3>The Michelson Velocity of Light Experiment<a class="headerlink" href="#the-michelson-velocity-of-light-experiment" title="Permalink to this headline">#</a></h3>
 <p>The <cite>Michelson Velocity of Light Experiment&lt;https://www.gutenberg.org/files/11753/11753-h/11753-h.htm&gt;</cite> conducted in 1887 remained one of most accurate estimations of the speed of light until modern times. Using a series of mirrors depicted below,</p>
 <a class="reference internal image-reference" href="../../_images/michelson_experiment.png"><img alt="../../_images/michelson_experiment.png" class="align-center" src="../../_images/michelson_experiment.png" style="width: 60%;" /></a>
 <p>While the theoretical details of the experiment are interesting in their own right (see link above for further detail!), for this lab, we will take the data as given and analyze it from a statistical perspective.</p>
 </section>
+<section id="the-cavendish-density-of-the-earth-experiment">
+<h3>The Cavendish Density of the Earth Experiment<a class="headerlink" href="#the-cavendish-density-of-the-earth-experiment" title="Permalink to this headline">#</a></h3>
+<p>Henry Cavendish performed the first modern, scientific experiment to measure the density of the Earth in 1797. Using the mutual gravitational attraction of two heavy metal balls attached to a <a class="reference external" href="https://en.wikipedia.org/wiki/Torsion_spring#Torsion_balance">torsion balanace</a> to twist a fiber of string, Cavendish measured the force of the tension produced. With <a class="reference external" href="https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion">Newton’s Laws of Motion</a> , he was able to derive an expression that related this force to the mass of the Earth.</p>
+<p>The estimate produced by Cavendish remained until modern times one of the most accurate and authoritative measures of the Earth’s mass. In this lab, we will analyze the data produced by Cavendish.</p>
+</section>
+</section>
 <section id="loading-in-data">
-<span id="project-two-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
-<p>The following code snippet will load in a <em>CSV</em> spreadsheet, parse it into a list and then print it to screen, assuming that file is saved in the same folder as your script.</p>
+<span id="project-one-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
+<p>The following code snippet will load in a <em>CSV</em> spreadsheet, parse it into a list and then print it to screen, assuming that file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets <a class="reference internal" href="#project-one-dataset"><span class="std std-ref">Velocity of Light</span></a></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span><span class="o">,</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
 
 <span class="c1"># discover file path of python script</span>
@@ -473,10 +503,54 @@ document.write(`
 <p>Use this snippet to load in the provided data in order to finish the project.</p>
 </section>
 <section id="project">
-<span id="project-two-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
+<span id="project-one-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
+<section id="velocity-of-light">
+<span id="project-one-dataset"></span><h3>Velocity of Light<a class="headerlink" href="#velocity-of-light" title="Permalink to this headline">#</a></h3>
+<ol class="arabic">
+<li><p>Load the <a class="reference internal" href="#project-one-dataset"><span class="std std-ref">Velocity of Light</span></a> data into a <a class="reference internal" href="../../references/python/01_SETUP.html#python-scripts"><span class="std std-ref">Python Script</span></a> using the tecnique outlined in the <a class="reference internal" href="#project-one-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Construct a histogram plot for this data sets using eight classes. Answer the following questions in the body of your docstring.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the class width of your histogram?</p></li>
+<li><p>What are the class limits for each class?</p></li>
+<li><p>What is the most frequent class?</p></li>
+<li><p>What type of shape does this distribtion of data have? Is this expected? Why or why not?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Construct a boxplot for this data set. Using the boxplot, answer the following questions in the body of your docstring.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Estimate the 75 <sup>th</sup> percentile of this data set.</p></li>
+<li><p>Estimate the 25 <sup>th</sup> percentile of this data set.</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>The actual value of the speed of light, according to the best estimates we have today, is <img class="math" src="../../_images/math/868a4aab530b8d56986836c1b7d0d42918ce334b.png" alt="299,792,458 \frac{m}{s}"/>. Use this information to answer the following questions in the body of your docstring.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the sample mean of the dataset?</p></li>
+<li><p>What is the percent error of this estimate with respect to the actual value.</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Recall the formula for <em>percent error</em> is given by,</p>
+<div class="math">
+<p><img src="../../_images/math/17d14ef48d395f9775a26d2741ea4b725f4815f0.png" alt="\text{percent error} = \frac{ \text{estimated - actual} }{ \text{actual} } \cdot 100"/></p>
+</div></div>
+</section>
+<section id="density-of-the-earth">
+<h3>Density of the Earth<a class="headerlink" href="#density-of-the-earth" title="Permalink to this headline">#</a></h3>
+<p>5.514 g/cm3</p>
+</section>
 </section>
 <section id="data-set">
-<span id="project-two-dataset"></span><h2>Data Set<a class="headerlink" href="#data-set" title="Permalink to this headline">#</a></h2>
+<h2>Data Set<a class="headerlink" href="#data-set" title="Permalink to this headline">#</a></h2>
+<section id="velocity-of-light-data">
+<h3>Velocity of Light Data<a class="headerlink" href="#velocity-of-light-data" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/5aa18cd2c2ca04b7636763fca781ca72/velocity_of_light_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
 <table class="table" id="id1">
@@ -485,7 +559,7 @@ document.write(`
 <col style="width: 100%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p>Velocity ( m/s )</p></td>
+<tr class="row-odd"><td><p>Velocity ( km/s )</p></td>
 </tr>
 <tr class="row-even"><td><p>299850</p></td>
 </tr>
@@ -503,193 +577,16 @@ document.write(`
 </tr>
 <tr class="row-odd"><td><p>299980</p></td>
 </tr>
-<tr class="row-even"><td><p>299980</p></td>
-</tr>
-<tr class="row-odd"><td><p>299880</p></td>
-</tr>
-<tr class="row-even"><td><p>300000</p></td>
-</tr>
-<tr class="row-odd"><td><p>299980</p></td>
-</tr>
-<tr class="row-even"><td><p>299930</p></td>
-</tr>
-<tr class="row-odd"><td><p>299650</p></td>
-</tr>
-<tr class="row-even"><td><p>299760</p></td>
-</tr>
-<tr class="row-odd"><td><p>299810</p></td>
-</tr>
-<tr class="row-even"><td><p>300000</p></td>
-</tr>
-<tr class="row-odd"><td><p>300000</p></td>
-</tr>
-<tr class="row-even"><td><p>299960</p></td>
-</tr>
-<tr class="row-odd"><td><p>299960</p></td>
-</tr>
-<tr class="row-even"><td><p>299960</p></td>
-</tr>
-<tr class="row-odd"><td><p>299940</p></td>
-</tr>
-<tr class="row-even"><td><p>299960</p></td>
-</tr>
-<tr class="row-odd"><td><p>299940</p></td>
-</tr>
-<tr class="row-even"><td><p>299880</p></td>
-</tr>
-<tr class="row-odd"><td><p>299800</p></td>
-</tr>
-<tr class="row-even"><td><p>299850</p></td>
-</tr>
-<tr class="row-odd"><td><p>299880</p></td>
-</tr>
-<tr class="row-even"><td><p>299900</p></td>
-</tr>
-<tr class="row-odd"><td><p>299840</p></td>
-</tr>
-<tr class="row-even"><td><p>299830</p></td>
-</tr>
-<tr class="row-odd"><td><p>299790</p></td>
-</tr>
-<tr class="row-even"><td><p>299810</p></td>
-</tr>
-<tr class="row-odd"><td><p>299880</p></td>
-</tr>
-<tr class="row-even"><td><p>299880</p></td>
-</tr>
-<tr class="row-odd"><td><p>299830</p></td>
-</tr>
-<tr class="row-even"><td><p>299800</p></td>
-</tr>
-<tr class="row-odd"><td><p>299790</p></td>
-</tr>
-<tr class="row-even"><td><p>299760</p></td>
-</tr>
-<tr class="row-odd"><td><p>299800</p></td>
-</tr>
-<tr class="row-even"><td><p>299880</p></td>
-</tr>
-<tr class="row-odd"><td><p>299880</p></td>
-</tr>
-<tr class="row-even"><td><p>299880</p></td>
-</tr>
-<tr class="row-odd"><td><p>299860</p></td>
-</tr>
-<tr class="row-even"><td><p>299720</p></td>
-</tr>
-<tr class="row-odd"><td><p>299720</p></td>
-</tr>
-<tr class="row-even"><td><p>299620</p></td>
-</tr>
-<tr class="row-odd"><td><p>299860</p></td>
-</tr>
-<tr class="row-even"><td><p>299970</p></td>
-</tr>
-<tr class="row-odd"><td><p>299950</p></td>
-</tr>
-<tr class="row-even"><td><p>299880</p></td>
-</tr>
-<tr class="row-odd"><td><p>299910</p></td>
-</tr>
-<tr class="row-even"><td><p>299850</p></td>
-</tr>
-<tr class="row-odd"><td><p>299870</p></td>
-</tr>
-<tr class="row-even"><td><p>299840</p></td>
-</tr>
-<tr class="row-odd"><td><p>299840</p></td>
-</tr>
-<tr class="row-even"><td><p>299850</p></td>
-</tr>
-<tr class="row-odd"><td><p>299840</p></td>
-</tr>
-<tr class="row-even"><td><p>299840</p></td>
-</tr>
-<tr class="row-odd"><td><p>299840</p></td>
-</tr>
-<tr class="row-even"><td><p>299890</p></td>
-</tr>
-<tr class="row-odd"><td><p>299810</p></td>
-</tr>
-<tr class="row-even"><td><p>299810</p></td>
-</tr>
-<tr class="row-odd"><td><p>299820</p></td>
-</tr>
-<tr class="row-even"><td><p>299800</p></td>
-</tr>
-<tr class="row-odd"><td><p>299770</p></td>
-</tr>
-<tr class="row-even"><td><p>299760</p></td>
-</tr>
-<tr class="row-odd"><td><p>299740</p></td>
-</tr>
-<tr class="row-even"><td><p>299750</p></td>
-</tr>
-<tr class="row-odd"><td><p>299760</p></td>
-</tr>
-<tr class="row-even"><td><p>299910</p></td>
-</tr>
-<tr class="row-odd"><td><p>299920</p></td>
-</tr>
-<tr class="row-even"><td><p>299890</p></td>
-</tr>
-<tr class="row-odd"><td><p>299860</p></td>
-</tr>
-<tr class="row-even"><td><p>299880</p></td>
-</tr>
-<tr class="row-odd"><td><p>299720</p></td>
-</tr>
-<tr class="row-even"><td><p>299840</p></td>
-</tr>
-<tr class="row-odd"><td><p>299850</p></td>
-</tr>
-<tr class="row-even"><td><p>299850</p></td>
-</tr>
-<tr class="row-odd"><td><p>299780</p></td>
-</tr>
-<tr class="row-even"><td><p>299890</p></td>
-</tr>
-<tr class="row-odd"><td><p>299840</p></td>
-</tr>
-<tr class="row-even"><td><p>299780</p></td>
-</tr>
-<tr class="row-odd"><td><p>299810</p></td>
-</tr>
-<tr class="row-even"><td><p>299760</p></td>
-</tr>
-<tr class="row-odd"><td><p>299810</p></td>
-</tr>
-<tr class="row-even"><td><p>299790</p></td>
-</tr>
-<tr class="row-odd"><td><p>299810</p></td>
-</tr>
-<tr class="row-even"><td><p>299820</p></td>
-</tr>
-<tr class="row-odd"><td><p>299850</p></td>
-</tr>
-<tr class="row-even"><td><p>299870</p></td>
-</tr>
-<tr class="row-odd"><td><p>299870</p></td>
-</tr>
-<tr class="row-even"><td><p>299810</p></td>
-</tr>
-<tr class="row-odd"><td><p>299740</p></td>
-</tr>
-<tr class="row-even"><td><p>299810</p></td>
-</tr>
-<tr class="row-odd"><td><p>299940</p></td>
-</tr>
-<tr class="row-even"><td><p>299950</p></td>
-</tr>
-<tr class="row-odd"><td><p>299800</p></td>
-</tr>
-<tr class="row-even"><td><p>299810</p></td>
-</tr>
-<tr class="row-odd"><td><p>299870</p></td>
-</tr>
 </tbody>
 </table>
-<p>The meaning of the columns is as follows.</p>
+<p>The meaning of the column is clear from the column header: each observation measures the speed of light in meters per second, <img class="math" src="../../_images/math/f947fc011b21b493cc0dc5ca9a5e77e8808f4e8a.png" alt="\frac{m}{s}"/>.</p>
+</section>
+<section id="density-of-the-earth-data">
+<h3>Density of the Earth Data<a class="headerlink" href="#density-of-the-earth-data" title="Permalink to this headline">#</a></h3>
+<p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/cdfabab0d4b760ba1033cb33c1adaac8/earth_density_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
+<p>The following table is the a preview of the data you will be using for this project.</p>
+<p>The first column corresponds to the experiment number (first, second, third, etc.). The second column is the <em>ratio of the density of Earth to the density of water</em>. Recall the density of water by definition is <img class="math" src="../../_images/math/53fe61fc6b56ada57fe4981393b357d6008bccb3.png" alt="1 \frac{g}{cm^3}"/>.</p>
+</section>
 </section>
 </section>
 
@@ -742,10 +639,22 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-michelson-velocity-of-light-experiment">The Michelson Velocity of Light Experiment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cavendish-density-of-the-earth-experiment">The Cavendish Density of the Earth Experiment</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light">Velocity of Light</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-the-earth">Density of the Earth</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light-data">Velocity of Light Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-the-earth-data">Density of the Earth Data</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

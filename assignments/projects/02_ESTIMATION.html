@@ -47,7 +47,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Bias" href="03_BIAS.html" />
-    <link rel="prev" title="Plots" href="01_GRAPHING.html" />
+    <link rel="prev" title="Graphing" href="01_GRAPHING.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -224,13 +224,15 @@
 </li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Projects</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="00_PYTHON.html">Python</a></li>
-<li class="toctree-l3"><a class="reference internal" href="01_GRAPHING.html">Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_GRAPHING.html">Graphing</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Estimation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="03_BIAS.html">Bias</a></li>
-<li class="toctree-l3"><a class="reference internal" href="04_POLLING.html">Polling</a></li>
-<li class="toctree-l3"><a class="reference internal" href="05_SIMULATION.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_OUTLIERS.html">Outliers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_POLLING.html">Polling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_SIMULATION.html">Simulation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="08_Z_TABLE.html">Applications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="09_FINANCE.html">Financial Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
 </ul>
 </li>
 </ul>
@@ -424,22 +426,22 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="estimation">
-<span id="project-one"></span><h1>Estimation<a class="headerlink" href="#estimation" title="Permalink to this headline">#</a></h1>
+<span id="project-two"></span><h1>Estimation<a class="headerlink" href="#estimation" title="Permalink to this headline">#</a></h1>
 <p>In this lab, you will use <strong>Python</strong> to calculate sample statistics.</p>
 <section id="instructions">
-<span id="project-one-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
+<span id="project-two-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><p>Create a folder named <cite>LASTNAME_FIRSTNAME_project_one</cite>, replacing <cite>LASTNAME</cite> and <cite>FIRSTNAME</cite> with your last name and first name, respectively.</p></li>
-<li><p>Download the <em>csv</em> dataset <a class="reference internal" href="#project-one-dataset"><span class="std std-ref">below</span></a> and place it in the new folder you created in step 1.</p></li>
-<li><p>In the same folder, create a Python <em>py</em> script named <cite>project_one.py</cite></p></li>
-<li><p>Read the <a class="reference internal" href="#project-one-project"><span class="std std-ref">Project</span></a> section.</p></li>
-<li><p>Answer the indicated questions in the <a class="reference internal" href="#project-one-project"><span class="std std-ref">Project</span></a> section in the <em>.docx</em> document file.</p></li>
-<li><p>When you are done, zip your folder and all its contents in a file named <cite>LASTNAME_FIRSTNAME_project_one.zip</cite></p></li>
+<li><p>Create a folder named <cite>LASTNAME_FIRSTNAME_project_two</cite>, replacing <cite>LASTNAME</cite> and <cite>FIRSTNAME</cite> with your last name and first name, respectively.</p></li>
+<li><p>Download the <em>csv</em> dataset <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">below</span></a> and place it in the new folder you created in step 1.</p></li>
+<li><p>In the same folder, create a Python <em>py</em> script named <cite>project_two.py</cite></p></li>
+<li><p>Read the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section.</p></li>
+<li><p>Answer the indicated questions in the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section in the <em>.docx</em> document file.</p></li>
+<li><p>When you are done, zip your folder and all its contents in a file named <cite>LASTNAME_FIRSTNAME_project_two.zip</cite></p></li>
 <li><p>Upload the zip file here: TODO</p></li>
 </ol>
 </section>
 <section id="background">
-<span id="project-one-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<span id="project-two-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
 <p>Henry Cavendish performed the first modern, scientific experiment to measure the density of the Earth in 1797. Using the mutual gravitational attraction of two heavy metal balls attached to a <a class="reference external" href="https://en.wikipedia.org/wiki/Torsion_spring#Torsion_balance">torsion balanace</a> to twist a fiber of string, Cavendish measured the force of the tension produced. With <a class="reference external" href="https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion">Newton’s Laws of Motion</a> , he was able to derive an expression that related this force to the mass of the Earth.</p>
 <p>The estimate produced by Cavendish remained until modern times one of the most accurate and authoritative measures of the Earth’s mass. In this lab, we will analyze the data produced by Cavendish.</p>
 </section>
@@ -471,10 +473,10 @@ document.write(`
 <p>Use this snippet to load in the provided data in order to finish the project.</p>
 </section>
 <section id="project">
-<span id="project-one-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
+<span id="project-two-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
 </section>
 <section id="data-set">
-<span id="project-one-dataset"></span><h2>Data Set<a class="headerlink" href="#data-set" title="Permalink to this headline">#</a></h2>
+<span id="project-two-dataset"></span><h2>Data Set<a class="headerlink" href="#data-set" title="Permalink to this headline">#</a></h2>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/cdfabab0d4b760ba1033cb33c1adaac8/earth_density_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
 <table class="table" id="id1">
@@ -544,7 +546,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Plots</p>
+        <p class="prev-next-title">Graphing</p>
       </div>
     </a>
     <a class="right-next"

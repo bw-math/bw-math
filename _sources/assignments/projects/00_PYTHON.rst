@@ -7,16 +7,17 @@ Python
     What I cannot create, I do not understand.
     - Richard Feynman
     
-In this lab, you will install **Python** and learn some of its basic functions. 
+In this lab, you will install **Python** and learn some of its basic functions. The goal is to get familiar with using **Python**.
 
 Instructions
 ============
 
 1. Create a folder named `LASTNAME_FIRSTNAME_project_zero`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
 2. In the same folder, create a Python *py* script named `project_zero.py`
-3. Read the :ref:`project_zero_project` section. Complete all indicated exercises.
-4. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_zero.zip`
-5. Upload the zip file here: TODO
+3. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
+4. Perform all exercises and answer all questions in the :ref:`project_zero_project` section. Label your script with comments as indicated in the *Project* section.
+5. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_zero.zip`
+6. Upload the zip file here: TODO
 
 .. _project_zero_background:
 

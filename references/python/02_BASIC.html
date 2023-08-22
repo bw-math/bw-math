@@ -224,13 +224,15 @@
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/projects/index.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/00_PYTHON.html">Python</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/01_GRAPHING.html">Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/01_GRAPHING.html">Graphing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/02_ESTIMATION.html">Estimation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/03_BIAS.html">Bias</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/04_POLLING.html">Polling</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/05_SIMULATION.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/04_OUTLIERS.html">Outliers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/05_POLLING.html">Polling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/06_SIMULATION.html">Simulation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/08_Z_TABLE.html">Applications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/09_FINANCE.html">Financial Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/10_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
 </ul>
 </li>
 </ul>
@@ -408,6 +410,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">Comments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docstrings">Docstrings</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integers">Integers</a></li>
@@ -432,6 +435,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comprehension">Comprehension</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
             </nav>
         </div>
@@ -474,10 +478,54 @@ document.write(`
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># this will step through the numbers 1 through 100. Then it will either,</span>
     <span class="c1"># add 1 to a list if the number is divisible by 5</span>
     <span class="c1"># add 0 to a list if the number is not divisible by 5</span>
-<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)]</span>
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)]</span>
 </pre></div>
 </div>
-<p>When you create scripts for the projects in this class, be sure to add comments to your scripts where appropriate, especially if your code is hard to understand.</p>
+<p>When you create scripts for the projects in this class, be sure to add comments where appropriate, especially if your code is complicated.</p>
+</section>
+<section id="docstrings">
+<span id="python-docstring"></span><h2>Docstrings<a class="headerlink" href="#docstrings" title="Permalink to this headline">#</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Anytime a lab asks you to answer a question that requires a written response, write your answer in a docstring! <em>All</em> of your work should be done in the <em>py</em> file.</p>
+</div>
+<p>Comments annotate code. Docstrings annotate scripts. A <cite>docstring &lt;https://peps.python.org/pep-0257/&gt;</cite> is a special type of comment that provides a quick summary of everything that is happening in a script. As an example, save the following snippet as a file named <em>example_docstring.py</em>,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;This is a docstring comment. It explains what the whole script is doing.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># This is a normal comment. It explains what the line below it is doing.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello world&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>After you save the file, open up a <em>Linux</em> terminal and type,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pdoc<span class="w"> </span>example_docstring
+</pre></div>
+</div>
+<p>You will see the docstring content get printed to screen. This allows programmers, such as yourself, to quickly determine what a script is doing without executing the code.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>When I grade your projects, I will be running the command just given to check your written answers. Ensure this command works on your computer before uploading any files or you will lose points!</p>
+</div>
+<p>When you write a docstring for your projects, use the following format,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Project &lt;Name&gt;</span>
+<span class="sd">==============</span>
+<span class="sd">&lt;Your Name&gt;</span>
+<span class="sd">-----------</span>
+<span class="sd">Date</span>
+<span class="sd">****</span>
+
+<span class="sd">This is where your preamble will go. Explain what your script does here.</span>
+
+<span class="sd">1. Label each problem in your docstring.</span>
+<span class="sd">2. If your problems aren&#39;t labelled, you will lose points.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># this is a difficult math problem</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 <section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">#</a></h2>
@@ -679,6 +727,12 @@ document.write(`
 <p><em>List comprehension</em> is usually used in conjunction with the <cite>range() built-in function &lt;python_builtin_functions&gt;</cite>. Hop over to that section, take a look at <code class="docutils literal notranslate"><span class="pre">range()</span></code> to see more examples.</p>
 </section>
 </section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://peps.python.org/pep-0257/">docstrings</a></p></li>
+</ul>
+</section>
 </section>
 
 
@@ -730,6 +784,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">Comments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docstrings">Docstrings</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integers">Integers</a></li>
@@ -754,6 +809,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comprehension">Comprehension</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
   </nav></div>
 

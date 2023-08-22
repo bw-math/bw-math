@@ -2,7 +2,7 @@
 Online Python Shell
 ===================
 
-Below you will find an interactive :ref:`Python Shell <python_interpretter>`. You cannot run scripts or save files from this terminal, but it's still pretty neat. Use it in a pinch or as a reference, 
+Below you will find an interactive :ref:`Python Shell <python_interpretter>`. This is a fully-functional simulation of a **Python** installation; you can even upload your own scripts and run them, or download any scripts you write in it. Give it a whirl!
 
 .. raw:: html
 

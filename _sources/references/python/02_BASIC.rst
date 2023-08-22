@@ -44,9 +44,62 @@ Comments should provide clear and precise explanations for the code it is annota
     # this will step through the numbers 1 through 100. Then it will either,
         # add 1 to a list if the number is divisible by 5
         # add 0 to a list if the number is not divisible by 5
-    numbers = [1 if x %% 5 == 0 else 0 for x in range(100)]
+    numbers = [1 if x % 5 == 0 else 0 for x in range(100)]
 
-When you create scripts for the projects in this class, be sure to add comments to your scripts where appropriate, especially if your code is hard to understand. 
+When you create scripts for the projects in this class, be sure to add comments where appropriate, especially if your code is complicated. 
+
+.. _python_docstring:
+
+Docstrings
+==========
+
+.. important:: 
+
+    Anytime a lab asks you to answer a question that requires a written response, write your answer in a docstring! *All* of your work should be done in the *py* file.
+
+Comments annotate code. Docstrings annotate scripts. A `docstring <https://peps.python.org/pep-0257/>` is a special type of comment that provides a quick summary of everything that is happening in a script. As an example, save the following snippet as a file named *example_docstring.py*,
+
+.. code:: python
+
+    """This is a docstring comment. It explains what the whole script is doing.
+    """
+    
+    # This is a normal comment. It explains what the line below it is doing.
+    print("hello world")
+
+After you save the file, open up a *Linux* terminal and type, 
+
+.. code:: shell
+
+    python -m pdoc example_docstring
+
+You will see the docstring content get printed to screen. This allows programmers, such as yourself, to quickly determine what a script is doing without executing the code. 
+
+.. important:: 
+    
+    When I grade your projects, I will be running the command just given to check your written answers. Ensure this command works on your computer before uploading any files or you will lose points!
+
+When you write a docstring for your projects, use the following format,
+
+.. code:: python
+
+    """
+    Project <Name>
+    ==============
+    <Your Name>
+    -----------
+    Date
+    ****
+
+    This is where your preamble will go. Explain what your script does here.
+
+    1. Label each problem in your docstring.
+    2. If your problems aren't labelled, you will lose points.
+    """
+    
+    # this is a difficult math problem
+    x = 2 + 2
+    print(x)
 
 Variables
 =========
@@ -307,3 +360,8 @@ For example, the following code snippets uses the list ``[1, 2, 3, 4, 5]`` to ge
     print(squared_data)
 
 *List comprehension* is usually used in conjunction with the `range() built-in function <python_builtin_functions>`. Hop over to that section, take a look at ``range()`` to see more examples.
+
+
+References
+==========
+- `docstrings <https://peps.python.org/pep-0257/>`_

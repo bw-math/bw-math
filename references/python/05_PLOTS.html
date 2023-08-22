@@ -224,13 +224,15 @@
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/projects/index.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/00_PYTHON.html">Python</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/01_GRAPHING.html">Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/01_GRAPHING.html">Graphing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/02_ESTIMATION.html">Estimation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/03_BIAS.html">Bias</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/04_POLLING.html">Polling</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/05_SIMULATION.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/04_OUTLIERS.html">Outliers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/05_POLLING.html">Polling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/06_SIMULATION.html">Simulation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/08_Z_TABLE.html">Applications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/09_FINANCE.html">Financial Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/10_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
 </ul>
 </li>
 </ul>
@@ -408,7 +410,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">matplotlib</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matplotlib">matplotlib</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tkinter">tkinter</a></li>
 </ul>
 </li>
@@ -418,6 +420,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">Histogram</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ogives">Ogives</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scatterplot">Scatterplot</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-series">Time Series</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#error-bars">Error Bars</a></li>
 </ul>
 </li>
@@ -434,14 +437,14 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="plots">
-<span id="matplotlib"></span><h1>Plots<a class="headerlink" href="#plots" title="Permalink to this headline">#</a></h1>
+<span id="python-plotting"></span><h1>Plots<a class="headerlink" href="#plots" title="Permalink to this headline">#</a></h1>
 <p>We will be using <strong>Python</strong> to generate graphs. Lots and lots of graphs. So many graphs, you might say it’s <em>graphic</em>.</p>
 <p>This section serves as a gallery for all the different sorts of graphs you can create with <strong>Python</strong>. However, before we get to that point, we need to make sure our computers are setup with graphing capabilities. If you followed along with the <a class="reference internal" href="01_SETUP.html#python-setup"><span class="std std-ref">Python Setup</span></a> and completed all the steps on that page, you should be good to go. You may skip the next section in that case, or read through as a refresher (re-installing the graphics library won’t break anything).</p>
 <p>By default, <strong>Python</strong> does not have statistical graphing capabilities. You must install two addition packages to supplement this deficiency, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> and <code class="docutils literal notranslate"><span class="pre">tk</span></code>.</p>
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
-<section id="id1">
-<h3>matplotlib<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<section id="matplotlib">
+<h3>matplotlib<a class="headerlink" href="#matplotlib" title="Permalink to this headline">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> is a versatile library for generating just about any sort of mathematical graph you can imagine. To install it, open up the Linux Terminal on your ChromeBook and type,</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>matplotlib
 </pre></div>
@@ -464,7 +467,7 @@ document.write(`
 <span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;tkagg&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><em>Always, always, always</em> do this. If it’s not clear by now, let’s re-iterate: anytime you are using <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> you should <em>always</em> do this. Otherwise, you may encounter strange errors that make no sense.</p>
+<p><em>Always, always, always</em> do this. If it’s not clear by now, let’s re-iterate: anytime you are using <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> you should <em>always</em> tell it to use <code class="docutils literal notranslate"><span class="pre">tk</span></code>. Otherwise, you may encounter strange errors that make no sense.</p>
 </section>
 <section id="gallery">
 <h2>Gallery<a class="headerlink" href="#gallery" title="Permalink to this headline">#</a></h2>
@@ -495,6 +498,13 @@ document.write(`
 <p>(<a class="reference download internal" download="" href="../../_downloads/17c2f52e958097c3c536d017ad440b19/scatterplot_no_correlation.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/9388f7667548c31b865aefc453d7f769/scatterplot_no_correlation.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f7f19cc8a16a8d1967fe7aac0d71cebb/scatterplot_no_correlation.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d3582693e2a20ddb42c3cec0b29ded9c/scatterplot_no_correlation.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/scatterplot_no_correlation.png" class="plot-directive" src="../../_images/scatterplot_no_correlation.png" />
+</figure>
+</section>
+<section id="time-series">
+<h3>Time Series<a class="headerlink" href="#time-series" title="Permalink to this headline">#</a></h3>
+<p>(<a class="reference download internal" download="" href="../../_downloads/c8e21425f590d9587251e769270ff76a/timeseries_no_trend.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/4a9acb3fc7cf75952d1d01a5e381f51b/timeseries_no_trend.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/6ccdf25a94363b2969eb6f2a8047dc15/timeseries_no_trend.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/945bd32773ef59c7f178be0e61d5e1af/timeseries_no_trend.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/timeseries_no_trend.png" class="plot-directive" src="../../_images/timeseries_no_trend.png" />
 </figure>
 </section>
 <section id="error-bars">
@@ -565,7 +575,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">matplotlib</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matplotlib">matplotlib</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tkinter">tkinter</a></li>
 </ul>
 </li>
@@ -575,6 +585,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">Histogram</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ogives">Ogives</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scatterplot">Scatterplot</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-series">Time Series</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#error-bars">Error Bars</a></li>
 </ul>
 </li>

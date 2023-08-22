@@ -1,4 +1,4 @@
-.. _matplotlib:
+.. _python_plotting:
 
 =====
 Plots
@@ -44,7 +44,7 @@ When you import ``matplotlib`` into your scripts, the very first thing you shoul
 
     matplotlib.use('tkagg')
 
-*Always, always, always* do this. If it's not clear by now, let's re-iterate: anytime you are using ``matplotlib`` you should *always* do this. Otherwise, you may encounter strange errors that make no sense. 
+*Always, always, always* do this. If it's not clear by now, let's re-iterate: anytime you are using ``matplotlib`` you should *always* tell it to use ``tk``. Otherwise, you may encounter strange errors that make no sense. 
 
 Gallery
 =======
@@ -70,6 +70,11 @@ Scatterplot
 -----------
 
 .. plot:: assets/plots/scatterplots/scatterplot_no_correlation.py
+
+Time Series
+-----------
+
+.. plot:: assets/plots/timeseries/timeseries_no_trend.py
 
 Error Bars
 ----------

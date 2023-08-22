@@ -166,6 +166,11 @@ The following code illustrates its use,
 
     print("this is a random choice from the list ", options, " : ", x)
 
+Normal Variate
+**************
+
+TODO 
+
 .. _python_creating_functions:
 
 Creating Functions

@@ -305,4 +305,14 @@ TODO
 Time Series
 -----------
 
-TODO 
+**Positive Trend**
+
+.. plot:: assets/plots/timeseries/timeseries_positive_trend.py
+
+**Negative Trend**
+
+.. plot:: assets/plots/timeseries/timeseries_negative_trend.py
+
+**No Trend**
+
+.. plot:: assets/plots/timeseries/timeseries_no_trend.py
