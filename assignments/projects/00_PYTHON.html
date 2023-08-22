@@ -410,7 +410,12 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imports">Imports</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#natural-numbers">Natural Numbers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-numbers">Random Numbers</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
             </nav>
@@ -455,17 +460,68 @@ document.write(`
 </section>
 <section id="project">
 <span id="project-zero-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
-<ol class="arabic simple">
+<ol class="arabic">
 <li><p>Head over to the <a class="reference internal" href="../../references/python/01_SETUP.html#python-setup"><span class="std std-ref">Python Setup</span></a> page and prepare your ChromeBook for Python.</p></li>
-<li><p>Read through the <a class="reference internal" href="../../references/python/02_BASIC.html#python-basics"><span class="std std-ref">Basics</span></a> page.</p></li>
+<li><p>Read through the <a class="reference internal" href="../../references/python/02_BASIC.html#python-basics"><span class="std std-ref">Basics</span></a> and the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-functions"><span class="std std-ref">Functions</span></a> pages. Try the examples on your ChromeBook as you read through these pages. Use them as a reference to complete the exercises that follow.</p></li>
+<li><p>Add the required <code class="docutils literal notranslate"><span class="pre">import</span></code> statements from <span class="xref std std-ref">project_zero_imports</span> to the top of your <em>py</em> script.</p></li>
+<li><p>Take the <em>Natural Numbers</em> dataset from the <a class="reference internal" href="#project-zero-dataset"><span class="std std-ref">Datasets</span></a> section and add it to your <em>py</em> script. Perform the following operations. Be sure to add <a class="reference internal" href="../../references/python/02_BASIC.html#python-comments"><span class="std std-ref">Comments</span></a> where appriopriate.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Using <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-slicing"><span class="std std-ref">Slicing</span></a> and the <code class="docutils literal notranslate"><span class="pre">natural_numbers</span></code> list, create a list of all the <em>even</em> numbers between 1 and 100. Save the code in your script and label it with a comment <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">4a</span></code>.</p></li>
+<li><p>Using <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-slicing"><span class="std std-ref">Slicing</span></a> and the <code class="docutils literal notranslate"><span class="pre">natural</span> <span class="pre">numbers</span></code> list, create a list of all the <em>odd</em> numbers between 1 and 100. Save the code in your script and label it with a comment <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">4b</span></code>.</p></li>
+<li><p>Using <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a> and the <code class="docutils literal notranslate"><span class="pre">natural</span> <span class="pre">numbers</span></code> list, a create a list of the first 100 <em>squares</em>. Recall a sequence of <em>n</em> square numbers is given by <img class="math" src="../../_images/math/7f032b77ef06f2a295162b1306c394f0148df6df.png" alt="1, 4, 9, 16, ..., n^2"/>. Save the code in your script and lavel it with a comment <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">4c</span></code>.</p></li>
+<li><p>Using <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a> and the <code class="docutils literal notranslate"><span class="pre">natural</span> <span class="pre">numbers</span></code> list, a create a list that represents the first 100 values of the function <img class="math" src="../../_images/math/b887e607ee519905e9b3b8211ee6280ac7333765.png" alt="f(n) = \frac{1}{n}"/></p></li>
 </ol>
+</div></blockquote>
+</li>
+<li><p>Take the <em>Random Numbers</em> dataset from the <a class="reference internal" href="#project-zero-dataset"><span class="std std-ref">Datasets</span></a> section and add it to your <em>py</em> script. Perform the following operations. Be sure to add <a class="reference internal" href="../../references/python/02_BASIC.html#python-comments"><span class="std std-ref">Comments</span></a> where appropriate,</p>
+<blockquote>
+<div><ol class="loweralpha">
+<li><p>Using <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-slicing"><span class="std std-ref">Slicing</span></a>, break this list into two even lists of 500 random numbers each. Save the code in your script and label it with a comment <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">5a</span></code>.</p></li>
+<li><p>Using <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-builtin-functions"><span class="std std-ref">Built-In Functions</span></a>, calculate the sum of each of the lists you found in <em>part a</em>. Save the code in your script and label it with a comment <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">5b</span></code>. Before executing your code, answer the following questionS and include each in a comment.</p>
+<blockquote>
+<div><ol class="lowerroman simple">
+<li><p>How do you expect the sums to be compare? Will they be equal or unequal? Will be they be close together or far apart? Justify your answer.</p></li>
+<li><p>Calculate the difference between both sums, i.e. if <code class="docutils literal notranslate"><span class="pre">n</span></code> is the variable that contains the length of your first list and <code class="docutils literal notranslate"><span class="pre">m</span></code> is the variable that contains the length of your second list, find the value of <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">-</span> <span class="pre">m</span></code>. Should this value be positive or negative?</p></li>
+<li><p>Re-execute your code. Did you do it? Go ahead and do it again, just to be safe. Alright, are you done? Do it one more time, but this time do it with <em>feeling</em>. Do you get the same results each time? How do the results compare?</p></li>
+<li><p>If you performed this experiment a 100 times, what do you expect the difference of the sum of these lists to be?</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Now it’s your turn to generate some data. Using the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-choice-function"><span class="std std-ref">Random Choice Function</span></a> and the techniques studied so far, generate a list of data that represents the experiment of asking 100 randomly selected people whether they prefer Mayor McCheese, The Hamburglar, Grimace or Ronald McDonald as McDonald’s mascot. Save the code in your script and lavel it with a comment <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">6a</span></code>.</p></li>
+</ol>
+</section>
+<section id="imports">
+<h2>Imports<a class="headerlink" href="#imports" title="Permalink to this headline">#</a></h2>
+<p>To complete this lab, you will need to import the <code class="docutils literal notranslate"><span class="pre">math</span></code> and the <code class="docutils literal notranslate"><span class="pre">random</span></code> package. Add the following line to the <em>top</em> of your <em>py</em> script,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">random</span>
+</pre></div>
+</div>
+<p>Alternatively, you can import both packages in one fell swoop,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span><span class="o">,</span> <span class="nn">random</span>
+</pre></div>
+</div>
 </section>
 <section id="datasets">
 <span id="project-zero-dataset"></span><h2>Datasets<a class="headerlink" href="#datasets" title="Permalink to this headline">#</a></h2>
-<p>Copy and paste the following <span class="xref std std-ref">python_lists</span> into an <a class="reference internal" href="../../references/python/01_SETUP.html#python-idle"><span class="std std-ref">IDLE notebook</span></a>,</p>
+<section id="natural-numbers">
+<h3>Natural Numbers<a class="headerlink" href="#natural-numbers" title="Permalink to this headline">#</a></h3>
+<p>Copy and paste the following <a class="reference internal" href="../../references/python/02_BASIC.html#python-lists"><span class="std std-ref">list variable</span></a> into your <em>py</em> script to generate the natural <em>1</em> to <em>100</em>,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">natural_numbers</span> <span class="o">=</span> <span class="p">[</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="p">]</span>
 </pre></div>
 </div>
+</section>
+<section id="random-numbers">
+<h3>Random Numbers<a class="headerlink" href="#random-numbers" title="Permalink to this headline">#</a></h3>
+<p>Copy and paste the following <span class="xref std std-ref">list variable</span> into your <em>py</em> script to generate 10000 random numbers.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">random_numbers</span> <span class="o">=</span> <span class="p">[</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span> <span class="p">]</span>
+</pre></div>
+</div>
+</section>
 </section>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
@@ -527,7 +583,12 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imports">Imports</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#natural-numbers">Natural Numbers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-numbers">Random Numbers</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
   </nav></div>

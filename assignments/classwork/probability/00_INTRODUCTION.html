@@ -556,6 +556,10 @@ document.write(`
 </ol>
 <details class="summary-solution-2">
 <summary>Solution #2</summary><p>The sample space from #1c will be useful here, so let’s copy it for reference,</p>
+<dl class="simple">
+<dt>Table 1: Outcomes</dt><dd><p>The outcomes of two die rolls.</p>
+</dd>
+</dl>
 <table class="table">
 <colgroup>
 <col style="width: 12%" />
@@ -626,6 +630,10 @@ document.write(`
 </tbody>
 </table>
 <p>This problem is asking questions about the <em>sum</em> of outcomes, so let’s rework this table a bit. Instead of entering the outcomes as ordered pairs, we will calculate their sum and enter the result into each entry of the table,</p>
+<dl class="simple">
+<dt>Table 2: Sum</dt><dd><p>The sum of two die rolls.</p>
+</dd>
+</dl>
 <table class="table">
 <colgroup>
 <col style="width: 12%" />
@@ -699,6 +707,10 @@ document.write(`
 <li><p>Recall the symbol <img class="math" src="../../../_images/math/ec747e15a42f69d2e51530283f75f024fbb133b6.png" alt="\cap"/> correspond to the English “<em>and</em>”. <img class="math" src="../../../_images/math/72f2056c1b56ffff779f8685f9aecee16c662a71.png" alt="E \cap F"/> represents the event of rolling atleast one <em>1</em> <em>and</em> the sum of the rolls being odd. In other words, we need to look at the outcomes <strong>E</strong> and <strong>F</strong> have in common.</p></li>
 </ol>
 <p>The outcomes of <strong>F</strong>, the event of getting at least one <em>1</em>, are given by the second row and second column of the Table 1 (the row and column with the headings of <em>1</em>). We can blank out the other rows, since they don’t affect this problem and it will help us keep everythign organized,</p>
+<dl class="simple">
+<dt>Table 1a-1: Outcomes</dt><dd><p>The outcomes of <strong>F</strong>.</p>
+</dd>
+</dl>
 <table class="table">
 <colgroup>
 <col style="width: 12%" />
@@ -844,6 +856,10 @@ document.write(`
 </tbody>
 </table>
 <p>Similarly, let’s blank out the corresponding entries in Table 2,</p>
+<dl class="simple">
+<dt>Table 2a-1: Sum</dt><dd><p>The sum of two die rolls in F.</p>
+</dd>
+</dl>
 <table class="table">
 <colgroup>
 <col style="width: 12%" />
@@ -989,6 +1005,10 @@ document.write(`
 </tbody>
 </table>
 <p>Now, we need the outcomes that correspond to event <strong>E</strong>. These are the outcomes whose sum is odd. Removing those entries from the table we get,</p>
+<dl class="simple">
+<dt>Table 1a-2: Outcomes</dt><dd><p>The outcomes in <img class="math" src="../../../_images/math/72f2056c1b56ffff779f8685f9aecee16c662a71.png" alt="E \cap F"/></p>
+</dd>
+</dl>
 <table class="table">
 <colgroup>
 <col style="width: 12%" />
@@ -1148,6 +1168,10 @@ document.write(`
 </tr>
 </tbody>
 </table>
+<dl class="simple">
+<dt>Table 2a-2: Sum</dt><dd><p>The sum of two die rolls in <img class="math" src="../../../_images/math/72f2056c1b56ffff779f8685f9aecee16c662a71.png" alt="E \cap F"/></p>
+</dd>
+</dl>
 <table class="table">
 <colgroup>
 <col style="width: 12%" />
@@ -1319,6 +1343,10 @@ document.write(`
 <p>If a number is not odd, then it is even. Therefore, the set <img class="math" src="../../../_images/math/eb42abbf880e2df5b750226e8c4ba1c02f3b0ded.png" alt="E^c"/> is the set of outcomes whose sum is <em>even</em>.</p>
 <p>Thus, the intersection we desire <img class="math" src="../../../_images/math/ea19490380e8c1f1193d10878cecea37d051e0b5.png" alt="E^c \cap F"/> is the set of even sums that have <em>atleast</em> one <em>1</em>.</p>
 <p>Using a similar method to <em>part a</em>, we take Table 2a-1 and remove the outcomes that odd to find the outcomes in the event <img class="math" src="../../../_images/math/8fce2f6462c110050e89a9f2101ed1d2fef90e66.png" alt="E ^c \cap F"/>,</p>
+<dl class="simple">
+<dt>Table 1b</dt><dd><p>The even sums with at least one <em>1</em>, <img class="math" src="../../../_images/math/ea19490380e8c1f1193d10878cecea37d051e0b5.png" alt="E^c \cap F"/></p>
+</dd>
+</dl>
 <table class="table">
 <colgroup>
 <col style="width: 12%" />
@@ -1489,7 +1517,117 @@ document.write(`
 </ol>
 <p>The intersection <img class="math" src="../../../_images/math/7abeac78c7a0d51aee91fbb674bed1ec47a09859.png" alt="F^c \cap E^c"/> thus represents the event of getting an even sum that has no <em>1</em>’s.</p>
 <p>To find the outcomes in the event, first find <cite>F^c</cite> (it doesn’t actually matter which event/set you start with, just pick one and go with it)</p>
+<dl class="simple">
+<dt>Table 1c-1</dt><dd><p>The outcomes with no <em>1</em>’s, <img class="math" src="../../../_images/math/6581ef5ebcd3926679cf78650b10baf93da983f7.png" alt="F^c"/></p>
+</dd>
+</dl>
+<table class="table">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 16%" />
+<col style="width: 17%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>(2, 2)</p></td>
+<td><p>(2, 3)</p></td>
+<td><p>(2, 4)</p></td>
+<td><p>(2, 5)</p></td>
+<td><p>(2, 6)</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>(3, 2)</p></td>
+<td><p>(3, 3)</p></td>
+<td><p>(3, 4)</p></td>
+<td><p>(3, 5)</p></td>
+<td><p>(3, 6)</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>(4, 2)</p></td>
+<td><p>(4, 3)</p></td>
+<td><p>(4, 4)</p></td>
+<td><p>(4, 5)</p></td>
+<td><p>(4, 6)</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>(5, 2)</p></td>
+<td><p>(5, 3)</p></td>
+<td><p>(5, 4)</p></td>
+<td><p>(5, 5)</p></td>
+<td><p>(5, 6)</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>(6, 6)</p></td>
+<td><p>(6, 3)</p></td>
+<td><p>(6, 4)</p></td>
+<td><p>(6, 5)</p></td>
+<td><p>(6, 6)</p></td>
+</tr>
+</tbody>
+</table>
 <p>We want to intersect this event with the event of getting an even sum, <img class="math" src="../../../_images/math/eb42abbf880e2df5b750226e8c4ba1c02f3b0ded.png" alt="E^c"/>. Thus, we remove entries with a odd sum,</p>
+<dl class="simple">
+<dt>Table 1c-2</dt><dd><p>The outcomes with no <em>1</em>’s that have even sums, <img class="math" src="../../../_images/math/1e20132630e741089c48db1c91ad7e5d2b0929a5.png" alt="E^c \cap F^c"/></p>
+</dd>
+</dl>
 <table class="table">
 <colgroup>
 <col style="width: 12%" />
@@ -1635,6 +1773,10 @@ document.write(`
 <li><p>Recall the symbol <img class="math" src="../../../_images/math/a44d8dde15531224807f1c5344a7bf473357fdff.png" alt="\cup"/> correspond to the English word “<em>or</em>”. This problem is therefore asking for the outcomes in the event of getting an odd sum <em>or</em> getting atleast one <em>1</em>.</p></li>
 </ol>
 <p>To find the set <img class="math" src="../../../_images/math/4e84dcf55459fdeac82f6c0147aa9a3153de784c.png" alt="E \cup F"/>, use the method from the previous part, except in this case, blank out entries that don’t satisfy the condition of having odd sum or containing atleast one <em>1</em>,</p>
+<dl class="simple">
+<dt>Table 1d-1</dt><dd><p>The outcomes which have an odd sum <em>or</em> have atleast one <em>1</em>, <img class="math" src="../../../_images/math/4e84dcf55459fdeac82f6c0147aa9a3153de784c.png" alt="E \cup F"/></p>
+</dd>
+</dl>
 <table class="table">
 <colgroup>
 <col style="width: 12%" />
@@ -1750,6 +1892,10 @@ document.write(`
 <li><p>This event would correspond to the event of getting an odd sum <em>or</em> getting <em>no 1’s</em>.</p></li>
 </ol>
 <p>To find the elements in the sets <img class="math" src="../../../_images/math/71c73355e9e589d6df9bb350b0c68fff992556db.png" alt="E \cup F^c"/>, blank out the entries in Table 1 that satisfy the condition of membership,</p>
+<dl class="simple">
+<dt>Table 1e-1: Outcomes</dt><dd><p>The outcomes which have an odd sum or have no <em>1</em>’s, <img class="math" src="../../../_images/math/71c73355e9e589d6df9bb350b0c68fff992556db.png" alt="E \cup F^c"/></p>
+</dd>
+</dl>
 <table class="table">
 <colgroup>
 <col style="width: 12%" />
@@ -1834,7 +1980,7 @@ document.write(`
 </tr>
 </tbody>
 </table>
-</details><ol class="arabic" start="3">
+</details><ol class="arabic">
 <li><p>Three red balls and one green ball are placed into a box. Describe the sample spaces of the following experiments with a set using <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a>.</p>
 <blockquote>
 <div><div class="admonition note">
@@ -1858,6 +2004,47 @@ document.write(`
 </div><ol class="loweralpha simple" start="2">
 <li><p>Any time two things are occuring <em>with replacement</em>, it’s a good bet a table would be helpful. Let’s create one like we did in #2, but instead of listing rolls of a die on the headings, let’s use this sample space,</p></li>
 </ol>
+<table class="table">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 23%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 20%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><img class="math" src="../../../_images/math/143dafb553a14461a737e1db5e467c0f248bf28e.png" alt="r_1"/></p></td>
+<td><p><img class="math" src="../../../_images/math/ca78b4b8c789cb16ff67c87fdc9a8aedfdc7eb0b.png" alt="r_2"/></p></td>
+<td><p><img class="math" src="../../../_images/math/614197703201f5bfb5b84cd3aa9c4571dd8b61db.png" alt="r_3"/></p></td>
+<td><p>g</p></td>
+</tr>
+<tr class="row-even"><td><p><img class="math" src="../../../_images/math/143dafb553a14461a737e1db5e467c0f248bf28e.png" alt="r_1"/></p></td>
+<td><p><img class="math" src="../../../_images/math/3f85c40e0f6c35891bc22cdb8b9025c090e95d0c.png" alt="(r_1, r_1)"/></p></td>
+<td><p><img class="math" src="../../../_images/math/54a0a25bc06a4fadfea4cfca1427e3110f641639.png" alt="(r_1, r_2)"/></p></td>
+<td><p><img class="math" src="../../../_images/math/95027a1e9d3584bcc9714efc1b030dd04c7fc5af.png" alt="(r_1, r_3)"/></p></td>
+<td><p><img class="math" src="../../../_images/math/597735927d1b7ae101156d3ba167143d6cf11dec.png" alt="(r_1, g)"/></p></td>
+</tr>
+<tr class="row-odd"><td><p><img class="math" src="../../../_images/math/ca78b4b8c789cb16ff67c87fdc9a8aedfdc7eb0b.png" alt="r_2"/></p></td>
+<td><p><img class="math" src="../../../_images/math/cc055d58dddc1305188058f3cf10dea32676d438.png" alt="(r_2, r_1)"/></p></td>
+<td><p><img class="math" src="../../../_images/math/ef575c12e506c27062f8234b266e22c6218a1fe3.png" alt="(r_2, r_2)"/></p></td>
+<td><p><img class="math" src="../../../_images/math/513f826f849028e5f43a544974349542920f1981.png" alt="(r_2, r_3)"/></p></td>
+<td><p><img class="math" src="../../../_images/math/835740a298442f42b9f44f8ba5a77fa8804c8e32.png" alt="(r_2, g)"/></p></td>
+</tr>
+<tr class="row-even"><td><p><img class="math" src="../../../_images/math/614197703201f5bfb5b84cd3aa9c4571dd8b61db.png" alt="r_3"/></p></td>
+<td><p><img class="math" src="../../../_images/math/c356f74b1032cb65b06fe6b458a9e877d9723241.png" alt="(r_3, r_1)"/></p></td>
+<td><p><img class="math" src="../../../_images/math/977be4b175b62c5a296b048a1c4c3dae5a00dd26.png" alt="(r_3, r_2)"/></p></td>
+<td><p><img class="math" src="../../../_images/math/539f2d3ea964c98150d3b192ba079f774ea3f5d2.png" alt="(r_3, r_3)"/></p></td>
+<td><p><img class="math" src="../../../_images/math/db922dd9cb170d93accf5012f7f1867b848e14c4.png" alt="(r_3, g)"/></p></td>
+</tr>
+<tr class="row-odd"><td><p>g</p></td>
+<td><p><img class="math" src="../../../_images/math/7c77eaa70761f9fa824413a326a0cf1bbc4c2396.png" alt="(g, r_1)"/></p></td>
+<td><p><img class="math" src="../../../_images/math/6a37924b477e47b7cd24369d3616203952e30ce8.png" alt="(g, r_2)"/></p></td>
+<td><p><img class="math" src="../../../_images/math/da1d335d268c01710cf7a358df28c3a37c8c6a70.png" alt="(g, r_3)"/></p></td>
+<td><p><img class="math" src="../../../_images/math/95dcd6ef6a55ee7c8cf62451ed6297df147270a9.png" alt="(g, g)"/></p></td>
+</tr>
+</tbody>
+</table>
 <p>Collect all of these elements into a set to complement the problem,</p>
 <div class="math">
 <p><img src="../../../_images/math/c5a1e240515269bfcb4bd86a852f0af3ed69bb4a.png" alt="S = \{ (r_1, r_1), (r_1, r_2), ..., (g, r_3), (g, g) \}"/></p>
@@ -1885,7 +2072,7 @@ document.write(`
 <li><p>Events are <em>mutually exclusive</em> if they share no outcomes. If the first card has a larger number than the second card, then the second card cannot possibly be larger than the first card. In the other direction, if the second card is larger than the first card, then the first card cannot possibly be larger than the second card. In other words, there is no possible way for <strong>A</strong> to share any outcomes with <strong>B</strong>. Therefore, <strong>A</strong> and <strong>B</strong> are <em>mutually exclusive</em> by definition.</p></li>
 <li><p>This part is a bit trickier to see. Recall that the union of complements is equal to the sample space (<span class="xref std std-ref">universal set</span>),</p></li>
 </ol>
-<img alt="assignments/assets/imgs/sets/sets_complement.jpg" class="align-center" src="assignments/assets/imgs/sets/sets_complement.jpg" />
+<img alt="../../../_images/sets_complement.jpg" class="align-center" src="../../../_images/sets_complement.jpg" />
 <p>If you take all of the outcomes in an event <strong>A</strong> and add to them the outcomes <em>not</em> in event <strong>A</strong>, then you will have all of the outcomes of the sample space.</p>
 <p>Then, there are no outcomes outside of the outcomes contained in <img class="math" src="../../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/> plus the outcomes contained in <img class="math" src="../../../_images/math/2ef75eec66003e588055d751eaddd391b6eccea0.png" alt="A^c"/>. For, if there were, these two sets would not be complements of one another.</p>
 <p>If we can show there is an outcome in the sample space <strong>S</strong> that does not belong to <em>either</em> <img class="math" src="../../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/> <em>or</em> <img class="math" src="../../../_images/math/3a7a214c98a4440c624d51173249c2fb0d99e2c4.png" alt="B"/>, then it must follow that <strong>A</strong> and <strong>B</strong> are <em>not</em> complements, since their union does not equal the entire sample space.</p>
@@ -1907,7 +2094,167 @@ document.write(`
 </div></blockquote>
 </li>
 </ol>
-<ol class="arabic" start="7">
+<details class="summary-solution-6">
+<summary>Solution #6</summary><p>Ah, our old friend. We found the sample of this experiment back in <em>#1</em> and then examined some events defined on it in <em>#2</em>. Let us copy the results over for quick reference,</p>
+<dl class="simple">
+<dt>Table 1 Redux: Outcomes</dt><dd><p>The outcomes of two die rolls.</p>
+</dd>
+</dl>
+<table class="table">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 16%" />
+<col style="width: 17%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>(1, 1)</p></td>
+<td><p>(1, 2)</p></td>
+<td><p>(1, 3)</p></td>
+<td><p>(1, 4)</p></td>
+<td><p>(1, 5)</p></td>
+<td><p>(1, 6)</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>(2, 1)</p></td>
+<td><p>(2, 2)</p></td>
+<td><p>(2, 3)</p></td>
+<td><p>(2, 4)</p></td>
+<td><p>(2, 5)</p></td>
+<td><p>(2, 6)</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>(3, 1)</p></td>
+<td><p>(3, 2)</p></td>
+<td><p>(3, 3)</p></td>
+<td><p>(3, 4)</p></td>
+<td><p>(3, 5)</p></td>
+<td><p>(3, 6)</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>(4, 1)</p></td>
+<td><p>(4, 2)</p></td>
+<td><p>(4, 3)</p></td>
+<td><p>(4, 4)</p></td>
+<td><p>(4, 5)</p></td>
+<td><p>(4, 6)</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>(5, 1)</p></td>
+<td><p>(5, 2)</p></td>
+<td><p>(5, 3)</p></td>
+<td><p>(5, 4)</p></td>
+<td><p>(5, 5)</p></td>
+<td><p>(5, 6)</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>(6, 1)</p></td>
+<td><p>(6, 6)</p></td>
+<td><p>(6, 3)</p></td>
+<td><p>(6, 4)</p></td>
+<td><p>(6, 5)</p></td>
+<td><p>(6, 6)</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="simple">
+<dt>Table 2 Redux: Sum</dt><dd><p>The sum of two die rolls.</p>
+</dd>
+</dl>
+<table class="table">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 16%" />
+<col style="width: 17%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+<td><p>6</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+<td><p>6</p></td>
+<td><p>7</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+<td><p>6</p></td>
+<td><p>7</p></td>
+<td><p>8</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>5</p></td>
+<td><p>6</p></td>
+<td><p>7</p></td>
+<td><p>8</p></td>
+<td><p>9</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>6</p></td>
+<td><p>7</p></td>
+<td><p>8</p></td>
+<td><p>9</p></td>
+<td><p>10</p></td>
+<td><p>11</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>7</p></td>
+<td><p>8</p></td>
+<td><p>9</p></td>
+<td><p>10</p></td>
+<td><p>11</p></td>
+<td><p>12</p></td>
+</tr>
+</tbody>
+</table>
+<p>Notice the number of elements in the sample space, i.e. its <em>cardinality</em>, is equal to 36, i.e.,</p>
+<div class="math">
+<p><img src="../../../_images/math/c33700e8bf8d4bd99149dfd6a2772593e81d4866.png" alt="n(S) = 36"/></p>
+</div><p>All of the probabilities in this problem can be calculated by crossing out the entries in these tables that do not satisfy the given conditions, counting up the number of entries that remain and then applying the <a class="reference internal" href="../../../notes/probability/00_INTRODUCTION.html#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a>.</p>
+<ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/71f106dce377828ba09c859ef90350f328c1f15a.png" alt="\frac{6}{36} = \frac{1}{6}"/></p></li>
+<li><p><img class="math" src="../../../_images/math/71f106dce377828ba09c859ef90350f328c1f15a.png" alt="\frac{6}{36} = \frac{1}{6}"/></p></li>
+<li><p><img class="math" src="../../../_images/math/e730815474f8905c8f2f015a0188088ec1fda7c2.png" alt="\frac{9}{36} = \frac{1}{4}"/></p></li>
+<li><p><img class="math" src="../../../_images/math/413c57406bb3c419d3ab6aca9abb0c07c07544c7.png" alt="\frac{27}{36} = \frac{3}{4}"/></p></li>
+<li><p><img class="math" src="../../../_images/math/e730815474f8905c8f2f015a0188088ec1fda7c2.png" alt="\frac{9}{36} = \frac{1}{4}"/></p></li>
+<li><p><em>part d</em> and <em>part e</em> are complements. Part <em>d</em> can be rephrased as “<em>at least one of the die is even</em>”. By the <a class="reference internal" href="../../../notes/SET_THEORY.html#square-of-opposition"><span class="std std-ref">Aristotle’s Square of Opposition</span></a>, the complement of “<em>atleast one</em>” is “<em>none</em>”. This can be verified by summing the probabilities of both events and verifying they add to one,</p></li>
+</ol>
+</details><ol class="arabic">
 <li><p>You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,</p>
 <blockquote>
 <div><ol class="loweralpha simple">

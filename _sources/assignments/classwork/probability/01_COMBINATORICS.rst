@@ -39,7 +39,7 @@ Probability
 
     The word "*atleast*" is a red flag in problems involving probability. If you see the word "*atleast*", it is a fair bet you will need to find the complement of a set at some point. To see why, note the way this problem is phrase can be interpretted with the :ref:`square_of_opposition`. The *Square of Opposition* is pictured below for quick reference,
 
-    .. image:: ../../assets/imgs/sets/square_of_opposition.jpg
+    .. image:: ../../../assets/imgs/sets/square_of_opposition.jpg
         :align: center
 
     The *Square* tells us the complement of "*some are*" ("atleast one") is "*none are*". Therefore, we can express the probability this problem is seeking with the :ref:`law_of_complements`,

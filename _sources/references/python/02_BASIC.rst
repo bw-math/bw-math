@@ -10,6 +10,44 @@ Basics
 
     As you read through this page, open an :ref:`IDLE shell<python_idle>` and try out the commands yourself.
 
+.. _python_comments:
+
+Comments
+========
+
+*Comments* are code that doesn't get interpretted by the **Python** shell. They allow you annotate your actual program with explanations geared towards an audience that is trying to understand what your program is doing. For example,
+
+.. code:: python 
+
+    # this is a comment, it won't have any effect on this script
+    print("this a command, it will be interpretted by Python")
+
+Any line that starts with a hashtag *#* is skipped over by **Python** when it is executing your script. 
+
+Comments should provide clear and precise explanations for the code it is annotating.
+
+.. topic:: Bad Comments
+
+    The following is an example of a bad comment. The code below it is complicated and hard to understand and the comment provides no insight.
+
+.. code:: python
+
+    # this is a bad comment
+    numbers = [1 if x %% 5 == 0 else 0 for x in range(100)]
+
+.. topic:: Good Comments
+
+    The following is an example of a good comment. It explains what the code it is attached to is doing and allows the reader to gain insight in your program.
+
+.. code:: python
+    
+    # this will step through the numbers 1 through 100. Then it will either,
+        # add 1 to a list if the number is divisible by 5
+        # add 0 to a list if the number is not divisible by 5
+    numbers = [1 if x %% 5 == 0 else 0 for x in range(100)]
+
+When you create scripts for the projects in this class, be sure to add comments to your scripts where appropriate, especially if your code is hard to understand. 
+
 Variables
 =========
 
@@ -26,7 +64,10 @@ The left hand side, *x*, is the *name* of the variable. The right hand side, *y*
 
 .. _python_strings:
 
-Strings 
+Strings
+-------
+
+Definition
     Data that represents text are called *strings*. A string is enclosed by double quotes "" or single quotes '',
 
 .. code:: python
@@ -38,6 +79,9 @@ Strings
 .. _python_integers:
 
 Integers
+--------
+
+Definition
     Data that represents whole numbered quantities are called *integers*.
 
 .. code:: python
@@ -49,6 +93,9 @@ Integers
 .. _python_floats:
 
 Floats
+------
+
+Definition
     Data that represents numerical quantities with decimals are called *floats*. 
 
 .. code:: python
@@ -57,20 +104,28 @@ Floats
     m = 25.76
     print("these are floats: ", n, m)
 
-.. _python_lists:
+.. _python_tuples:
 
 Tuples
+------
+
+Definition
     Tuples are *ordered pairs* of variables. 
 
-    .. code:: python
+.. code:: python
 
-        pair = (1, 2)
+    pair = (1, 2)
 
-        another_pair = ("dog", "cat")
+    another_pair = ("dog", "cat")
 
-    Note the variables in the *tuple* do not have to be numbers.
-    
+Note the variables in the *tuple* do not have to be numbers.
+
+.. _python_lists:
+
 Lists 
+-----
+
+Definition
     Lists are ordered collections of variables. 
     
 .. code:: python 
@@ -155,7 +210,7 @@ Exponentiation
 List Operations
 ===============
 
-The operations in the previous section dealt with :ref:`python_floats` and :ref:`python_integers`. In other words, the operations in the last section applied to numbers. **Python** has many operations that can be applied to :ref:`python_lists`.
+The operations in the previous section dealt with :ref:`python_floats` and :ref:`python_integers`. In other words, the operations in the last section applied to numbers. **Python** has many operations that can be applied specifically to :ref:`python_lists`.
 
 .. _python_list_slicing:
 

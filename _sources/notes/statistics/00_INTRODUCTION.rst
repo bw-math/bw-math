@@ -33,7 +33,7 @@ Population
 Definition
     The *population* is the set of all possible individuals that can be observed in a given experiment. 
 
-.. _sample:
+.. _sample_definition:
 
 Sample
 ------
