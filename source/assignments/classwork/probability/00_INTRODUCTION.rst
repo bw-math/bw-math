@@ -91,8 +91,7 @@ Sample Spaces and Events
 
     The sample space from #1c will be useful here, so let's copy it for reference,
 
-    .. topic:: Table 1: Outcomes
-
+    Table 1: Outcomes
         The outcomes of two die rolls.
 
     +-------+--------+--------+---------+----------+--------+--------+
@@ -113,8 +112,7 @@ Sample Spaces and Events
 
     This problem is asking questions about the *sum* of outcomes, so let's rework this table a bit. Instead of entering the outcomes as ordered pairs, we will calculate their sum and enter the result into each entry of the table,
 
-    .. topic:: Table 2: Sum
-
+    Table 2: Sum
         The sum of two die rolls.
 
     +-------+--------+--------+---------+----------+--------+--------+
@@ -137,8 +135,7 @@ Sample Spaces and Events
 
     The outcomes of **F**, the event of getting at least one *1*, are given by the second row and second column of the Table 1 (the row and column with the headings of *1*). We can blank out the other rows, since they don't affect this problem and it will help us keep everythign organized,
     
-    .. topic:: Table 1a-1: Outcomes
-
+    Table 1a-1: Outcomes
         The outcomes of **F**.
 
     +-------+--------+--------+---------+----------+--------+--------+
@@ -159,8 +156,7 @@ Sample Spaces and Events
     
     Similarly, let's blank out the corresponding entries in Table 2,
 
-    .. topic:: Table 2a-1: Sum
-
+    Table 2a-1: Sum
         The sum of two die rolls in F.
         
     +-------+--------+--------+---------+----------+--------+--------+
@@ -181,8 +177,7 @@ Sample Spaces and Events
 
     Now, we need the outcomes that correspond to event **E**. These are the outcomes whose sum is odd. Removing those entries from the table we get,
     
-    .. topic:: Table 1a-2: Outcomes
-
+    Table 1a-2: Outcomes
         The outcomes in :math:`E \cap F`
 
     +-------+--------+--------+---------+----------+--------+--------+
@@ -201,8 +196,7 @@ Sample Spaces and Events
     |   6   | (6, 1) |   -    |   -     |     -    |   -    |   -    |
     +-------+--------+--------+---------+----------+--------+--------+
 
-    .. topic:: Table 2a-2: Sum
-
+    Table 2a-2: Sum
         The sum of two die rolls in :math:`E \cap F`
         
     +-------+--------+--------+---------+----------+--------+--------+
@@ -241,8 +235,7 @@ Sample Spaces and Events
     
     Using a similar method to *part a*, we take Table 2a-1 and remove the outcomes that odd to find the outcomes in the event :math:`E ^c \cap F`,
     
-    .. topic:: Table 1b
-
+    Table 1b
         The even sums with at least one *1*, :math:`E^c \cap F`
 
     +-------+--------+--------+---------+----------+--------+--------+
@@ -273,14 +266,13 @@ Sample Spaces and Events
     
     To find the outcomes in the event, first find `F^c` (it doesn't actually matter which event/set you start with, just pick one and go with it)
     
-    .. topic:: Table 1c-1
-
+    Table 1c-1
         The outcomes with no *1*'s, :math:`F^c`
 
     +-------+--------+--------+---------+----------+--------+--------+
     |       |    1   |   2    |    3    |   4      |    5   |   6    |
     +-------+--------+--------+---------+----------+--------+--------+
-    |   1   |    -   |    -    |   -     |     -    |   -    |   -    | 
+    |   1   |    -   |    -   |   -     |     -    |   -    |   -    | 
     +-------+--------+--------+---------+----------+--------+--------+
     |   2   |    -   | (2, 2) |  (2, 3) |  (2, 4)  | (2, 5) | (2, 6) |
     +-------+--------+--------+---------+----------+--------+--------+
@@ -295,8 +287,7 @@ Sample Spaces and Events
 
     We want to intersect this event with the event of getting an even sum, :math:`E^c`. Thus, we remove entries with a odd sum,
 
-    .. topic:: Table 1c-2
-
+    Table 1c-2
         The outcomes with no *1*'s that have even sums, :math:`E^c \cap F^c`
 
     +-------+--------+--------+---------+----------+--------+--------+
@@ -325,8 +316,7 @@ Sample Spaces and Events
 
     To find the set :math:`E \cup F`, use the method from the previous part, except in this case, blank out entries that don't satisfy the condition of having odd sum or containing atleast one *1*,
 
-    .. topic:: Table 1d-1
-
+    Table 1d-1
         The outcomes which have an odd sum *or* have atleast one *1*, :math:`E \cup F`
 
     +-------+--------+--------+---------+----------+--------+--------+
@@ -355,8 +345,7 @@ Sample Spaces and Events
     
     To find the elements in the sets :math:`E \cup F^c`, blank out the entries in Table 1 that satisfy the condition of membership,
 
-    .. topic:: Table1e-1
-
+    Table 1e-1: Outcomes
         The outcomes which have an odd sum or have no *1*'s, :math:`E \cup F^c`
 
     +-------+--------+--------+---------+----------+--------+--------+
@@ -375,7 +364,7 @@ Sample Spaces and Events
     |   6   | (6, 1) | (6, 6) |  (6, 3) |  (6, 4)  | (6, 5) | (6, 6) |
     +-------+--------+--------+---------+----------+--------+--------+
 
-3. Three red balls and one green ball are placed into a box. Describe the sample spaces of the following experiments with a set using :ref:`list_notation`.
+1. Three red balls and one green ball are placed into a box. Describe the sample spaces of the following experiments with a set using :ref:`list_notation`.
 
     .. note:: 
         *Hint*: Let *r* :sub:`1`, *r* :sub:`2` and *r* :sub:`3` represent the *outcome* of drawing each of the respective red balls. 
@@ -403,7 +392,7 @@ Sample Spaces and Events
     +-------------+---------------------+--------------------+--------------------+------------------+
     | :math:`r_3` |  :math:`(r_3, r_1)` | :math:`(r_3, r_2)` | :math:`(r_3, r_3)` | :math:`(r_3, g)` |
     +-------------+---------------------+--------------------+--------------------+------------------+
-    |     g       |  :math:`(g, r_1)`   |  :math:`(g, r_2)`  |  :math:`(g, r_3)`  | :math:`(g, g)` |
+    |     g       |  :math:`(g, r_1)`   |  :math:`(g, r_2)`  |  :math:`(g, r_3)`  | :math:`(g, g)`   |
     +-------------+---------------------+--------------------+--------------------+------------------+
 
     Collect all of these elements into a set to complement the problem,
@@ -437,7 +426,7 @@ Sample Spaces and Events
 
     b. This part is a bit trickier to see. Recall that the union of complements is equal to the sample space (:ref:`universal set`),
 
-    .. image:: ../../assets/imgs/sets/sets_complement.jpg
+    .. image:: ../../../assets/imgs/sets/sets_complement.jpg
         :align: center 
 
     If you take all of the outcomes in an event **A** and add to them the outcomes *not* in event **A**, then you will have all of the outcomes of the sample space. 
@@ -460,12 +449,11 @@ Applications
     e. Neither of the numbers rolled are even.
     f. Is part *e* the complement of part *c* or part *d*?
 
-.. collapse::
+.. collapse:: Solution #6
 
     Ah, our old friend. We found the sample of this experiment back in *#1* and then examined some events defined on it in *#2*. Let us copy the results over for quick reference,
 
-    .. topic:: Table 1 Redux: Outcomes
-
+    Table 1 Redux: Outcomes
         The outcomes of two die rolls.
 
     +-------+--------+--------+---------+----------+--------+--------+
@@ -484,8 +472,7 @@ Applications
     |   6   | (6, 1) | (6, 6) |  (6, 3) |  (6, 4)  | (6, 5) | (6, 6) |
     +-------+--------+--------+---------+----------+--------+--------+
 
-    .. topic:: Table 2 Redux: Sum
-
+    Table 2 Redux: Sum
         The sum of two die rolls.
 
     +-------+--------+--------+---------+----------+--------+--------+
@@ -523,17 +510,24 @@ Applications
     e. :math:`\frac{9}{36} = \frac{1}{4}`
 
     f. *part d* and *part e* are complements. Part *d* can be rephrased as "*at least one of the die is even*". By the :ref:`square_of_opposition`, the complement of "*atleast one*" is "*none*". This can be verified by summing the probabilities of both events and verifying they add to one, 
-7. You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,
+
+1. You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,
 
     a. The card is a king.
+
     b. The card is a spade.
+
     c. The card is a king or spade.
+
     d. The card is a 4 or Jack.
+
     e. The card is black. 
+
     f. The card is black or a queen. 
+    
     g. The card is neither nor a queen.
 
-8. You select a number randomly between 1 and 1000. What is the probability the number selected is divisible by 5?
+2. You select a number randomly between 1 and 1000. What is the probability the number selected is divisible by 5?
 
 TODO: ONE MORE
 

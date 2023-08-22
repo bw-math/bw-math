@@ -214,7 +214,7 @@ TODO
 The Moral of the Story
 **********************
 
-There are other variants of the *mean* that sometimes appear in the literature. For example, when dealing with acoustic (sound) data, the `harmonic mean <>`_ is often the most appropriate measure for the *mean*. 
+There are other variants of the *mean* that sometimes appear in the literature. For example, when dealing with acoustic (sound) data, the `harmonic mean <https://en.wikipedia.org/wiki/Harmonic_mean>`_ is often the most appropriate measure for the *mean*. 
 
 We talk about these other variants only to make you aware of them. In this class, we will exclusively be dealing with the *arithmetic mean*.
 

@@ -45,18 +45,72 @@ Project
 =======
 
 1. Head over to the :ref:`python_setup` page and prepare your ChromeBook for Python.
-2. Read through the :ref:`python_basics` page. 
+2. Read through the :ref:`python_basics` and the :ref:`python_functions` pages. Try the examples on your ChromeBook as you read through these pages. Use them as a reference to complete the exercises that follow.
+3. Add the required ``import`` statements from :ref:`project_zero_imports` to the top of your *py* script.
+4. Take the *Natural Numbers* dataset from the :ref:`project_zero_dataset` section and add it to your *py* script. Perform the following operations. Be sure to add :ref:`python_comments` where appriopriate.
+
+    a. Using :ref:`python_list_slicing` and the ``natural_numbers`` list, create a list of all the *even* numbers between 1 and 100. Save the code in your script and label it with a comment ``# 4a``. 
+
+    b. Using :ref:`python_list_slicing` and the ``natural numbers`` list, create a list of all the *odd* numbers between 1 and 100. Save the code in your script and label it with a comment ``# 4b``.
+
+    c. Using :ref:`python_list_comprehension` and the ``natural numbers`` list, a create a list of the first 100 *squares*. Recall a sequence of *n* square numbers is given by :math:`1, 4, 9, 16, ..., n^2`. Save the code in your script and lavel it with a comment ``# 4c``.
+
+    d. Using :ref:`python_list_comprehension` and the ``natural numbers`` list, a create a list that represents the first 100 values of the function :math:`f(n) = \frac{1}{n}`
+
+5. Take the *Random Numbers* dataset from the :ref:`project_zero_dataset` section and add it to your *py* script. Perform the following operations. Be sure to add :ref:`python_comments` where appropriate,
+
+    a. Using :ref:`python_list_slicing`, break this list into two even lists of 500 random numbers each. Save the code in your script and label it with a comment ``# 5a``.
+
+    b. Using :ref:`python_builtin_functions`, calculate the sum of each of the lists you found in *part a*. Save the code in your script and label it with a comment ``# 5b``. Before executing your code, answer the following questionS and include each in a comment.
+
+        i. How do you expect the sums to be compare? Will they be equal or unequal? Will be they be close together or far apart? Justify your answer.
+
+        ii. Calculate the difference between both sums, i.e. if ``n`` is the variable that contains the length of your first list and ``m`` is the variable that contains the length of your second list, find the value of ``n - m``. Should this value be positive or negative? 
+
+        iii. Re-execute your code. Did you do it? Go ahead and do it again, just to be safe. Alright, are you done? Do it one more time, but this time do it with *feeling*. Do you get the same results each time? How do the results compare?
+
+        iv. If you performed this experiment a 100 times, what do you expect the difference of the sum of these lists to be?
+
+6. Now it's your turn to generate some data. Using the :ref:`python_choice_function` and the techniques studied so far, generate a list of data that represents the experiment of asking 100 randomly selected people whether they prefer Mayor McCheese, The Hamburglar, Grimace or Ronald McDonald as McDonald's mascot. Save the code in your script and lavel it with a comment ``# 6a``.
+   
+Imports
+=======
+
+To complete this lab, you will need to import the ``math`` and the ``random`` package. Add the following line to the *top* of your *py* script,
+
+.. code:: python
+
+    import math 
+    import random
+
+Alternatively, you can import both packages in one fell swoop,
+
+.. code:: python 
+
+    import math, random 
 
 .. _project_zero_dataset:
 
 Datasets
 ========
 
-Copy and paste the following :ref:`python_lists` into an :ref:`IDLE notebook <python_idle>`,
+Natural Numbers
+---------------
+
+Copy and paste the following :ref:`list variable <python_lists>` into your *py* script to generate the natural *1* to *100*,
 
 .. code:: python
 
     natural_numbers = [ x for x in range(100) ]
+
+Random Numbers
+--------------
+
+Copy and paste the following :ref:`list variable <python_list>` into your *py* script to generate 10000 random numbers.
+
+.. code:: python
+
+    random_numbers = [ random.random() for _ in range(10000) ]
 
 References
 ==========
