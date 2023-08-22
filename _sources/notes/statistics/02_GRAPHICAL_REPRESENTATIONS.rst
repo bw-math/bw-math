@@ -62,38 +62,50 @@ The steps for constructing a *grouped* frequency distribution are given below.
 Steps 
     1. Find the range of the data sets. 
  
-        .. math::
-            R = max(x_i) - min(x_i)
+    .. math::
+        R = max(x_i) - min(x_i)
     
     2. Choose a number of classes. Typically between 5  and 20, depending on the size and type of data.
+   
     3. Find the class width. Round up, if necessary.
 
-        .. math::
-            w = \frac{R}{n}
+    .. math::
+        w = \frac{R}{n}
 
     4. Find the lower and upper class limits **LL**:sub:`i` and **UL**:sub:`i` for each *i* up to *n*, i.e. for each class. 
 
-        .. math:: 
-            LL_i = min(x_i) + (i-1) \cdot w
-        
-        .. math::
-            UL_i = min(x_i) + i \cdot w
-        
-        .. math::
-            i = 1, 2, ... , n
+    .. math:: 
+        LL_i = min(x_i) + (i-1) \cdot w
+    
+    .. math::
+        UL_i = min(x_i) + i \cdot w
+    
+    .. math::
+        i = 1, 2, ... , n
 
     5. Find the lower and upper class boundaries **LB**:sub:`i` and **UB**:sub:`i` for each *i* up to *n*, i.e. for each class, 
 
-        .. math::
-            LB_i = LL_i - 0.5
-        
-        .. math::
-            UB_i = UL_i + 0.5
+    .. math::
+        LB_i = LL_i - 0.5
+    
+    .. math::
+        UB_i = UL_i + 0.5
 
-        .. math::
-            i = 1, 2, ... , n
+    .. math::
+        i = 1, 2, ... , n
 
     6. Sort the data set into classes and tally up the frequency of each class.
+
+Example 
+    Suppose you measure the height of everyone in your class and get the following sample of data, where each observation in the data set is measured in feet,
+
+    .. math::
+
+        S = \{ 5.7, 5.8, 5.5, 5.7, 5.9, 6.3, 5.3, 5.5, 5.4, 5.3, 5.7, 5.9 \}
+
+    Find the grouped frequency distribution for this sample of data using :math:`n = 5` classes.
+
+TODO 
 
 .. _histograms:
 
@@ -161,11 +173,13 @@ Bimodal
 Skewed
 ******
 
-Skewed Right
-    .. plot:: assets/plots/histograms/histogram_skewed_right.py
+**Skewed Right**
 
-Skewed Left
-    .. plot:: assets/plots/histograms/histogram_skewed_left.py
+.. plot:: assets/plots/histograms/histogram_skewed_right.py
+
+**Skewed Left**
+
+.. plot:: assets/plots/histograms/histogram_skewed_left.py
 
 .. _ogives:
 
@@ -235,6 +249,8 @@ Construction
 Distribution Shapes
 -------------------
 
+TODO 
+
 Uniform
 *******
 
@@ -253,23 +269,28 @@ Bimodal
 Skewed
 ******
 
-Skewed Right
-    .. plot:: assets/plots/boxplots/boxplot_skewed_right.py
+**Skewed Right**
 
-Skewed Left
-    .. plot:: assets/plots/boxplots/boxplot_skewed_left.py
+.. plot:: assets/plots/boxplots/boxplot_skewed_right.py
+
+**Skewed Left**
+
+.. plot:: assets/plots/boxplots/boxplot_skewed_left.py
 
 Scatter Plots
 =============
 
-No Correlation
-    .. plot:: assets/plots/scatterplots/scatterplot_no_correlation.py
+**No Correlation**
 
-Positive Correlation
-    .. plot:: assets/plots/scatterplots/scatterplot_positive_correlation.py
+.. plot:: assets/plots/scatterplots/scatterplot_no_correlation.py
 
-Negative Correlation
-    .. plot:: assets/plots/scatterplots/scatterplot_negative_correlation.py
+**Positive Correlation**
+
+.. plot:: assets/plots/scatterplots/scatterplot_positive_correlation.py
+
+**Negative Correlation**
+
+.. plot:: assets/plots/scatterplots/scatterplot_negative_correlation.py
 
 Other Types of Graphs
 =====================

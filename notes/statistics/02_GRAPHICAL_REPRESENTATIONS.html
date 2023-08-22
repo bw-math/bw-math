@@ -527,44 +527,46 @@ document.write(`
 <span id="grouped-frequency-distributions"></span><h3>Grouped Distributions<a class="headerlink" href="#grouped-distributions" title="Permalink to this headline">#</a></h3>
 <p>The steps for constructing a <em>grouped</em> frequency distribution are given below.</p>
 <dl>
-<dt>Steps</dt><dd><ol class="arabic">
-<li><p>Find the range of the data sets.</p>
-<blockquote>
-<div><div class="math">
+<dt>Steps</dt><dd><ol class="arabic simple">
+<li><p>Find the range of the data sets.</p></li>
+</ol>
+<div class="math">
 <p><img src="../../_images/math/d9a7c1a37759aa5952772d886fa66aaca676f59d.png" alt="R = max(x_i) - min(x_i)"/></p>
-</div></div></blockquote>
-</li>
+</div><ol class="arabic simple" start="2">
 <li><p>Choose a number of classes. Typically between 5  and 20, depending on the size and type of data.</p></li>
-<li><p>Find the class width. Round up, if necessary.</p>
-<blockquote>
-<div><div class="math">
+<li><p>Find the class width. Round up, if necessary.</p></li>
+</ol>
+<div class="math">
 <p><img src="../../_images/math/19bcbe12f484ffe8532a2bcf459160e8f4fc86ed.png" alt="w = \frac{R}{n}"/></p>
-</div></div></blockquote>
-</li>
-<li><p>Find the lower and upper class limits <strong>LL</strong><sub>i</sub> and <strong>UL</strong><sub>i</sub> for each <em>i</em> up to <em>n</em>, i.e. for each class.</p>
-<blockquote>
-<div><div class="math">
+</div><ol class="arabic simple" start="4">
+<li><p>Find the lower and upper class limits <strong>LL</strong><sub>i</sub> and <strong>UL</strong><sub>i</sub> for each <em>i</em> up to <em>n</em>, i.e. for each class.</p></li>
+</ol>
+<div class="math">
 <p><img src="../../_images/math/9975d399bc5c46946c6b4bae55422876432e72ce.png" alt="LL_i = min(x_i) + (i-1) \cdot w"/></p>
 </div><div class="math">
 <p><img src="../../_images/math/154c7a73ee820d4dec0cf869e038a741015e2233.png" alt="UL_i = min(x_i) + i \cdot w"/></p>
 </div><div class="math">
 <p><img src="../../_images/math/4bff2530224fae4b63f126ec9137d95e9b20a03a.png" alt="i = 1, 2, ... , n"/></p>
-</div></div></blockquote>
-</li>
-<li><p>Find the lower and upper class boundaries <strong>LB</strong><sub>i</sub> and <strong>UB</strong><sub>i</sub> for each <em>i</em> up to <em>n</em>, i.e. for each class,</p>
-<blockquote>
-<div><div class="math">
+</div><ol class="arabic simple" start="5">
+<li><p>Find the lower and upper class boundaries <strong>LB</strong><sub>i</sub> and <strong>UB</strong><sub>i</sub> for each <em>i</em> up to <em>n</em>, i.e. for each class,</p></li>
+</ol>
+<div class="math">
 <p><img src="../../_images/math/3dcf5fe96c36f928aece7e43df80f22f0e006c0d.png" alt="LB_i = LL_i - 0.5"/></p>
 </div><div class="math">
 <p><img src="../../_images/math/3fe3763e596608f62e14e8d7c8ea44f0a8642037.png" alt="UB_i = UL_i + 0.5"/></p>
 </div><div class="math">
 <p><img src="../../_images/math/4bff2530224fae4b63f126ec9137d95e9b20a03a.png" alt="i = 1, 2, ... , n"/></p>
-</div></div></blockquote>
-</li>
+</div><ol class="arabic simple" start="6">
 <li><p>Sort the data set into classes and tally up the frequency of each class.</p></li>
 </ol>
 </dd>
+<dt>Example</dt><dd><p>Suppose you measure the height of everyone in your class and get the following sample of data, where each observation in the data set is measured in feet,</p>
+<div class="math">
+<p><img src="../../_images/math/d032cca6a329136013e511d9520a8bcd64c171b6.png" alt="S = \{ 5.7, 5.8, 5.5, 5.7, 5.9, 6.3, 5.3, 5.5, 5.4, 5.3, 5.7, 5.9 \}"/></p>
+</div><p>Find the grouped frequency distribution for this sample of data using <img class="math" src="../../_images/math/896b64445e9dec448da50ed8483c1139678f9e6d.png" alt="n = 5"/> classes.</p>
+</dd>
 </dl>
+<p>TODO</p>
 </section>
 </section>
 <section id="histograms">
@@ -626,18 +628,16 @@ document.write(`
 </section>
 <section id="skewed">
 <h4>Skewed<a class="headerlink" href="#skewed" title="Permalink to this headline">#</a></h4>
-<dl>
-<dt>Skewed Right</dt><dd><p>(<a class="reference download internal" download="" href="../../_downloads/9e06d9e00ffef119241ca2734114f1da/histogram_skewed_right.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/9668e309e024fa01a93baba5831e241d/histogram_skewed_right.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d7e0d3fcc71ad93d419efc08cf29c0fa/histogram_skewed_right.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/61ec0bc654fe64c872c8f215be4c5710/histogram_skewed_right.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<p><strong>Skewed Right</strong></p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/9e06d9e00ffef119241ca2734114f1da/histogram_skewed_right.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/9668e309e024fa01a93baba5831e241d/histogram_skewed_right.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d7e0d3fcc71ad93d419efc08cf29c0fa/histogram_skewed_right.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/61ec0bc654fe64c872c8f215be4c5710/histogram_skewed_right.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/histogram_skewed_right.png" class="plot-directive" src="../../_images/histogram_skewed_right.png" />
 </figure>
-</dd>
-<dt>Skewed Left</dt><dd><p>(<a class="reference download internal" download="" href="../../_downloads/32f8a358a2800c603464ccfc187c99d6/histogram_skewed_left.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/1a78b8836fba5a013efffcc94a37c554/histogram_skewed_left.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f05fafe9efa5c95cd70ebc0c1488c608/histogram_skewed_left.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d5c2a2759642f0c3c8270481387d7da0/histogram_skewed_left.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<p><strong>Skewed Left</strong></p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/32f8a358a2800c603464ccfc187c99d6/histogram_skewed_left.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/1a78b8836fba5a013efffcc94a37c554/histogram_skewed_left.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f05fafe9efa5c95cd70ebc0c1488c608/histogram_skewed_left.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d5c2a2759642f0c3c8270481387d7da0/histogram_skewed_left.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/histogram_skewed_left.png" class="plot-directive" src="../../_images/histogram_skewed_left.png" />
 </figure>
-</dd>
-</dl>
 </section>
 </section>
 </section>
@@ -714,6 +714,7 @@ document.write(`
 </section>
 <section id="id14">
 <h3>Distribution Shapes<a class="headerlink" href="#id14" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
 <section id="id15">
 <h4>Uniform<a class="headerlink" href="#id15" title="Permalink to this headline">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/db6e44fc604b742c48b88ead81dd19fa/boxplot_uniform.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/971caf930d94da07d5a485c9dc3f95ad/boxplot_uniform.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/66eeb1b0f07d225ec0c24d97ef744c3f/boxplot_uniform.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/ee3e20ae9e5f6a4950d1fbd0c30d5df8/boxplot_uniform.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
@@ -737,40 +738,36 @@ document.write(`
 </section>
 <section id="id18">
 <h4>Skewed<a class="headerlink" href="#id18" title="Permalink to this headline">#</a></h4>
-<dl>
-<dt>Skewed Right</dt><dd><p>(<a class="reference download internal" download="" href="../../_downloads/45929d2918dc97fa5461a2450e2f6dd3/boxplot_skewed_right.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f5cf367c6ae66936ff746693f5d760f3/boxplot_skewed_right.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/271e2bb106dda2d3ba7dcda45402faa9/boxplot_skewed_right.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/788fae045977a9401a6af84e4274e18c/boxplot_skewed_right.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<p><strong>Skewed Right</strong></p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/45929d2918dc97fa5461a2450e2f6dd3/boxplot_skewed_right.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f5cf367c6ae66936ff746693f5d760f3/boxplot_skewed_right.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/271e2bb106dda2d3ba7dcda45402faa9/boxplot_skewed_right.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/788fae045977a9401a6af84e4274e18c/boxplot_skewed_right.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/boxplot_skewed_right.png" class="plot-directive" src="../../_images/boxplot_skewed_right.png" />
 </figure>
-</dd>
-<dt>Skewed Left</dt><dd><p>(<a class="reference download internal" download="" href="../../_downloads/aba795f2e0f3a33ca65c4ac57d06d78d/boxplot_skewed_left.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/32434ae5b5e3ad86a592707e31fb262a/boxplot_skewed_left.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/8d465e4ce75244c48b8fdbb286fdd416/boxplot_skewed_left.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/b037e67f7e7bf5ef71bfff18056aaf13/boxplot_skewed_left.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<p><strong>Skewed Left</strong></p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/aba795f2e0f3a33ca65c4ac57d06d78d/boxplot_skewed_left.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/32434ae5b5e3ad86a592707e31fb262a/boxplot_skewed_left.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/8d465e4ce75244c48b8fdbb286fdd416/boxplot_skewed_left.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/b037e67f7e7bf5ef71bfff18056aaf13/boxplot_skewed_left.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/boxplot_skewed_left.png" class="plot-directive" src="../../_images/boxplot_skewed_left.png" />
 </figure>
-</dd>
-</dl>
 </section>
 </section>
 </section>
 <section id="scatter-plots">
 <h2>Scatter Plots<a class="headerlink" href="#scatter-plots" title="Permalink to this headline">#</a></h2>
-<dl>
-<dt>No Correlation</dt><dd><p>(<a class="reference download internal" download="" href="../../_downloads/17c2f52e958097c3c536d017ad440b19/scatterplot_no_correlation.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/9388f7667548c31b865aefc453d7f769/scatterplot_no_correlation.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f7f19cc8a16a8d1967fe7aac0d71cebb/scatterplot_no_correlation.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d3582693e2a20ddb42c3cec0b29ded9c/scatterplot_no_correlation.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<p><strong>No Correlation</strong></p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/17c2f52e958097c3c536d017ad440b19/scatterplot_no_correlation.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/9388f7667548c31b865aefc453d7f769/scatterplot_no_correlation.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f7f19cc8a16a8d1967fe7aac0d71cebb/scatterplot_no_correlation.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d3582693e2a20ddb42c3cec0b29ded9c/scatterplot_no_correlation.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/scatterplot_no_correlation.png" class="plot-directive" src="../../_images/scatterplot_no_correlation.png" />
 </figure>
-</dd>
-<dt>Positive Correlation</dt><dd><p>(<a class="reference download internal" download="" href="../../_downloads/a6508ba1cd622e6ab5aab92e7640d8e4/scatterplot_positive_correlation.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/14f7b3899ebc3df9de5a82ece9bc51e7/scatterplot_positive_correlation.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/4098c5961b91de6b53e72cca3bd836f4/scatterplot_positive_correlation.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/eff9abc8b2471c8055a0da1f6f2db95a/scatterplot_positive_correlation.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<p><strong>Positive Correlation</strong></p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/a6508ba1cd622e6ab5aab92e7640d8e4/scatterplot_positive_correlation.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/14f7b3899ebc3df9de5a82ece9bc51e7/scatterplot_positive_correlation.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/4098c5961b91de6b53e72cca3bd836f4/scatterplot_positive_correlation.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/eff9abc8b2471c8055a0da1f6f2db95a/scatterplot_positive_correlation.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/scatterplot_positive_correlation.png" class="plot-directive" src="../../_images/scatterplot_positive_correlation.png" />
 </figure>
-</dd>
-<dt>Negative Correlation</dt><dd><p>(<a class="reference download internal" download="" href="../../_downloads/3d5865cf124884d8df5bd091f0f4b904/scatterplot_negative_correlation.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/86237a02d3c9588b0f6c2005aa6e871e/scatterplot_negative_correlation.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/55e230353863c130e0ad3c7a98d15beb/scatterplot_negative_correlation.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/750fd82ef14724b99aba124f7782bdc7/scatterplot_negative_correlation.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<p><strong>Negative Correlation</strong></p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/3d5865cf124884d8df5bd091f0f4b904/scatterplot_negative_correlation.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/86237a02d3c9588b0f6c2005aa6e871e/scatterplot_negative_correlation.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/55e230353863c130e0ad3c7a98d15beb/scatterplot_negative_correlation.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/750fd82ef14724b99aba124f7782bdc7/scatterplot_negative_correlation.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/scatterplot_negative_correlation.png" class="plot-directive" src="../../_images/scatterplot_negative_correlation.png" />
 </figure>
-</dd>
-</dl>
 </section>
 <section id="other-types-of-graphs">
 <h2>Other Types of Graphs<a class="headerlink" href="#other-types-of-graphs" title="Permalink to this headline">#</a></h2>
