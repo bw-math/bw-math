@@ -7,18 +7,62 @@ Combinatorics
 Counting
 --------
 
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+
 TODO 
 
 Probability
 -----------
 
-1. A bank PIN is selected at random from 4 digits.
+7. A bank PIN is selected at random from 4 digits.
    
    a. What is the probability all of the digits are the same?
 
    b. What is the probability no digits repeat?
 
    c. What is the probability the PIN starts with the number 7?
+
+8. Let **S** be the sample space for flipping a fair, two-sided coin three times. Let **A** be the event of atleast one heads. Find :math:`P(A)`.
+
+.. collapse:: Solution #8
+
+    The word "*atleast*" is a red flag in problems involving probability. If you see the word "*atleast*", it is a fair bet you will need to find the complement of a set at some point. To see why, note the way this problem is phrase can be interpretted with the :ref:`square_of_opposition`. The *Square of Opposition* is pictured below for quick reference,
+
+    .. image:: ../../assets/imgs/sets/square_of_opposition.jpg
+        :align: center
+
+    The *Square* tells us the complement of "*some are*" ("atleast one") is "*none are*". Therefore, we can express the probability this problem is seeking with the :ref:`law_of_complements`,
+
+    .. math::
+
+        P(A) = 1 - P(A^c)    
+    
+    Where :math:`A^c` corresponds to the event of getting *no heads*. 
+    
+    This is equivalent to getting all tails, which is a much simpler event to find, because it only has one outcome, namely ``ttt``. 
+
+    To calculate the probability of this event, we apply the :ref:`counting_principle` to find the total number of ways the experiment can occur. Each flip has two outcomes, heads or tails. There are three flips in total. Thus,
+
+    .. math::
+
+        n(S) = 2 \cdot 2 \cdot 2 = 8
+
+    The probability sought can then be calculated as,
+
+    .. math::
+
+        P(A) = 1 - \frac{1}{8} = \frac{7}{8}
 
 2. A bag contains 4 red and 5 green balls. Two balls are drawn at random from the bag *with replacement*. 
 
