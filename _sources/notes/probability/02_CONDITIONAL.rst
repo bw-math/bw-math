@@ -17,6 +17,7 @@ Example
 Let **A** represent the event of selecting a ball numbered 2. Let **B** represent the event of selecting a red ball. Then :math:`n(A) = 2`, :math:`n(B)=3` and :math:`n(S) = 7` (Why?) Without taking into account the second part of the problem yet, the :ref:`classical_definition` yields the probability the ball she selected has the number 2 written it,
 
 .. math::   
+
     P(A) = \frac{2}{7} \approx 0.286
 
 This number represents the probability of **A** *without any further information* provided about the sample space. 
@@ -26,6 +27,7 @@ If the friend now informs us the ball she selected was red, then this new inform
 Applying the :ref:`classical_definition` to this *reduced* sample space, we get the *probability of selecting a ball with the number 2, given the ball is red*,
 
 .. math:: 
+    
     P(A \mid B) = \frac{1}{3} \approx 0.333
 
 In other words, knowing the event a red ball was selected happened has *increased* the probability the ball that *has* been selected has the number 2. Taking a look at the original sample space, this should be intuitive. There are less red balls than green balls, so more probability is "concentrated" in the red number 2 ball when the green balls are removed from the sample space.  

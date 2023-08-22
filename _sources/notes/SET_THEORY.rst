@@ -58,56 +58,95 @@ Definitions
 .. _domain_of_discourse:
 
 Domain of Discourse
+-------------------
+
+Definition
     The *domain of discourse* is subject matter we are treating. 
 
 .. _elements:
 
 Elements
+--------
+
+Symbolic Expression
     :math:`x,y,x` (*lowercase letters*)
     
     :math:`x_1, x_2, ... , x_n` (*lowercase letters with subscripts*)
-    
-The individuals, or objects, in the *domain of discourse*; The "*things*" being counted.
+
+Definition   
+    The individuals, or objects, in the *domain of discourse*; The "*things*" being counted.
 
 .. _sets:
 
 Sets
+-----
+
+Symbolic Expression
     :math:`A,B,C` (*upper case letters*)
 
     :math:`A_1, A_2, ... , A_n` (*uppercase letters with subscripts*)
 
-Groups of elements that share a common property. *Sets* are sometimes referred to as *classes* or *collections*.
+Definition 
+    Groups of elements that share a common property. 
+
+.. note:: 
+
+    *Sets* are sometimes referred to as *classes* or *collections*.
 
 .. _cardinality:
 
 Cardinality
+-----------
+
+Symbolic Expression
     :math:`n(A)`
 
-The number of *distinct* elements in a set.
+Definition 
+    The number of *distinct* elements in a set.
 
 .. _universal_set:
 
 Universal Set 
+-------------
+
+Symbolic Expression
     :math:`S`
 
-The universal set *S* is set of all elements in the *domain of discourse*. 
+Definition
+    The universal set *S* is set of all elements in the *domain of discourse*. 
 
 .. _null_set:
 
 Null Set
+--------
+
+Symbolic Expression
     :math:`\varnothing`
 
-The unique set which contains nothing. 
+Definition
+    The unique set which contains nothing, i.e. no elements. 
+
+.. _natural_numbers:
 
 Natural Numbers
+---------------
+
+Symbolic Expresison
     :math:`\mathbb{N}`
 
-The set of all counting numbers starting at 1, :math:`1, 2, 3, ...`
+Definition
+    The set of all counting numbers starting at 1, :math:`1, 2, 3, ...`
+
+.. _real_numbers:
 
 Real Numbers
+------------
+
+Symbolic Expression
     :math:`\mathbb{R}`
 
-The set of all decimal numbers, :math:`1, 1.01, 1.001, ...`
+Definition
+    The set of all decimal numbers, :math:`1, 1.01, 1.001, ...`
 
 Notation
 ========

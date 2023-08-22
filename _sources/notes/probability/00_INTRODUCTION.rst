@@ -430,9 +430,37 @@ This corollary should be intuitively obvious, considering the Venn Diagramm of c
 
 If the entire rectangle encompassing set **A** in the above diagram is identified as the sample space **S**, then the theorem follows immediately from Axiom 2, namely, :math:`P(S)=1`. 
 
-A more formal proof of this theorem is given below.
+.. warning:: 
 
-Proof 
+    The converse of this theorem is *not* true, i.e. if two events **A** and **B** have probabilities that sum to *1*, this does not imply they are complements of one another. 
+
+To see any example of what that pesky warning is talking about, consider flipping a fair, two-sided coin twice. Let **A** be the event of getting a head in the first flip. Let **B** of getting exactly one head in both flips. 
+
+The outcomes of **A** are given by,
+
+.. math::
+
+    A = \{ hh, ht \}
+
+While the outcomes of **B** are given by,
+
+.. math::
+
+    B = \{ ht, th \}
+
+In this case, 
+
+.. math::
+    
+    P(A) + P(B) = 1
+
+But **A** and **B** are *not* complements. To restart this result in plain English,
+
+    The sum of the probability of complementary events is equal to 1; The converse does not hold, namely if the sum of probability of events is equal to 1, the events in question are not necessarily complements.
+
+Two equivalent formal proofs of this theorem are given below. Choose whichever one makes more sense to you.
+
+Proof #1 
     By the :ref:`classical_definition`, the probability of :math:`A \cup A^c` is given by,
 
     .. math::
@@ -480,6 +508,36 @@ Proof
     .. math::
 
         1 = P(A) + P(A^C)
+
+Proof #2
+    By :ref:`Complement Theorem 3 <complement_theorem_three>`,
+
+    .. math::
+
+        A \cap A^c = \varnothing
+
+    Therefore, :math:`A` and :math:`A^c` are *mutually exclusive*. So by :ref:`axiom_three`, we can say,
+
+    .. math::
+
+        P(A \cup A^c) = P(A) + P(A^c)
+
+    But, by :ref:`Complement Theorem TWo <complement_theorem_two>`,
+
+    .. math::
+        
+        A \cup A^c = S
+
+    And by :ref:`axiom_2`,
+
+    .. math::
+
+        P(S) = 1
+
+    So,
+
+    .. math::
+        1 = P(A) + P(A^c)
 
 Example
     Find the probability of atleast getting at least one head if you flip a coin 3 three times. 

@@ -528,7 +528,7 @@ document.write(`
 <p>The set of all possible outcomes for an experiment.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The <em>sample space</em> is simply the <span class="xref std std-ref">universal_set</span> in probability’s <span class="xref std std-ref">domain_of_discourse</span>.</p>
+<p>The <em>sample space</em> is simply the <a class="reference internal" href="../SET_THEORY.html#universal-set"><span class="std std-ref">Universal Set</span></a> in probability’s <a class="reference internal" href="../SET_THEORY.html#domain-of-discourse"><span class="std std-ref">Domain of Discourse</span></a>.</p>
 </div>
 <dl id="event">
 <dt>Events</dt><dd><p><img class="math" src="../../_images/math/21eefc1439fd0281617bf99294383d62e3b03e06.png" alt="A, B, C"/> (<em>upper-case letters</em>)</p>
@@ -741,9 +741,27 @@ document.write(`
 <p>This corollary should be intuitively obvious, considering the Venn Diagramm of complementary sets,</p>
 <img alt="../../_images/sets_complement.jpg" class="align-center" src="../../_images/sets_complement.jpg" />
 <p>If the entire rectangle encompassing set <strong>A</strong> in the above diagram is identified as the sample space <strong>S</strong>, then the theorem follows immediately from Axiom 2, namely, <img class="math" src="../../_images/math/7e54cdab4f141cf48960cbaee92eccf6a3748b43.png" alt="P(S)=1"/>.</p>
-<p>A more formal proof of this theorem is given below.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The converse of this theorem is <em>not</em> true, i.e. if two events <strong>A</strong> and <strong>B</strong> have probabilities that sum to <em>1</em>, this does not imply they are complements of one another.</p>
+</div>
+<p>To see any example of what that pesky warning is talking about, consider flipping a fair, two-sided coin twice. Let <strong>A</strong> be the event of getting a head in the first flip. Let <strong>B</strong> of getting exactly one head in both flips.</p>
+<p>The outcomes of <strong>A</strong> are given by,</p>
+<div class="math">
+<p><img src="../../_images/math/935db6ef4cfe27e20081830c95b8fa342474ed05.png" alt="A = \{ hh, ht \}"/></p>
+</div><p>While the outcomes of <strong>B</strong> are given by,</p>
+<div class="math">
+<p><img src="../../_images/math/8609a1b7ca4510aa36157ad37f6c5d09e75b4ed0.png" alt="B = \{ ht, th \}"/></p>
+</div><p>In this case,</p>
+<div class="math">
+<p><img src="../../_images/math/f85365a24cc51f41670b4fcf4ce29308597b4754.png" alt="P(A) + P(B) = 1"/></p>
+</div><p>But <strong>A</strong> and <strong>B</strong> are <em>not</em> complements. To restart this result in plain English,</p>
+<blockquote>
+<div><p>The sum of the probability of complementary events is equal to 1; The converse does not hold, namely if the sum of probability of events is equal to 1, the events in question are not necessarily complements.</p>
+</div></blockquote>
+<p>Two equivalent formal proofs of this theorem are given below. Choose whichever one makes more sense to you.</p>
 <dl>
-<dt>Proof</dt><dd><p>By the <a class="reference internal" href="#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a>, the probability of <img class="math" src="../../_images/math/8c493c3bf203d9cd345df1dc5108114313389984.png" alt="A \cup A^c"/> is given by,</p>
+<dt>Proof #1</dt><dd><p>By the <a class="reference internal" href="#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a>, the probability of <img class="math" src="../../_images/math/8c493c3bf203d9cd345df1dc5108114313389984.png" alt="A \cup A^c"/> is given by,</p>
 <div class="math">
 <p><img src="../../_images/math/98383499462e7bde496f4fcbf200feeedf91bbdb.png" alt="P(A \cup A^c) = \frac{n(A \cup A^c)}{n(S)}"/></p>
 </div><p>By <a class="reference internal" href="../SET_THEORY.html#counting-theorem-one"><span class="std std-ref">Counting Theorem 1</span></a>,</p>
@@ -767,6 +785,22 @@ document.write(`
 </div><p>Putting it altogether,</p>
 <div class="math">
 <p><img src="../../_images/math/689ddbd464afd6a00474bec7fbafee1b7ff7825c.png" alt="1 = P(A) + P(A^C)"/></p>
+</div></dd>
+<dt>Proof #2</dt><dd><p>By <a class="reference internal" href="../SET_THEORY.html#complement-theorem-three"><span class="std std-ref">Complement Theorem 3</span></a>,</p>
+<div class="math">
+<p><img src="../../_images/math/4c7a979e497521caa61eb325248056ca39a8730e.png" alt="A \cap A^c = \varnothing"/></p>
+</div><p>Therefore, <img class="math" src="../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/> and <img class="math" src="../../_images/math/2ef75eec66003e588055d751eaddd391b6eccea0.png" alt="A^c"/> are <em>mutually exclusive</em>. So by <span class="xref std std-ref">axiom_three</span>, we can say,</p>
+<div class="math">
+<p><img src="../../_images/math/e96a93dc8e0db7df191cf77257205ff946325fc9.png" alt="P(A \cup A^c) = P(A) + P(A^c)"/></p>
+</div><p>But, by <a class="reference internal" href="../SET_THEORY.html#complement-theorem-two"><span class="std std-ref">Complement Theorem TWo</span></a>,</p>
+<div class="math">
+<p><img src="../../_images/math/1bfdea2655c561dc3eb5427c22f98c21cb0912a0.png" alt="A \cup A^c = S"/></p>
+</div><p>And by <a class="reference internal" href="#axiom-2"><span class="std std-ref">Axiom 2</span></a>,</p>
+<div class="math">
+<p><img src="../../_images/math/d8b887a8e830618af32e4f820a6d0c4823382c9f.png" alt="P(S) = 1"/></p>
+</div><p>So,</p>
+<div class="math">
+<p><img src="../../_images/math/c063bc1e469cd7112c7bf44252ab03e552825788.png" alt="1 = P(A) + P(A^c)"/></p>
 </div></dd>
 <dt>Example</dt><dd><p>Find the probability of atleast getting at least one head if you flip a coin 3 three times.</p>
 </dd>

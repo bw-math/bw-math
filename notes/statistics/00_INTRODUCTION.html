@@ -409,10 +409,25 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#individual">Individual</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population">Population</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample">Sample</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population-vs-sample">Population vs. Sample</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-of-observation">Methods of Observation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-techniques">Sampling Techniques</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-fallacies">Statistical Fallacies</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bias">Bias</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#selection-bias">Selection Bias</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#response-bias">Response bias</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#observer-bias">Observer Bias</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionality">Dimensionality</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristic">Characteristic</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scale">Scale</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-statistics">Types of Statistics</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-terminology">Other Terminology</a></li>
 </ul>
@@ -436,74 +451,122 @@ document.write(`
 </section>
 <section id="definitions">
 <h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
-<dl class="simple" id="population">
-<dt>Population</dt><dd><p>The <em>population</em> is the set of all possible individuals that can be observed in a given experiment.</p>
+<section id="individual">
+<span id="id1"></span><h3>Individual<a class="headerlink" href="#individual" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
+<dt>Definition</dt><dd><p>A single observation.</p>
 </dd>
 </dl>
-<section id="methods-of-observation">
-<span id="observation-methods"></span><h3>Methods of Observation<a class="headerlink" href="#methods-of-observation" title="Permalink to this headline">#</a></h3>
-<dl>
-<dt>Census</dt><dd><p>A <em>census</em> is a type of statistical study where each individual in the population is observed.</p>
-<p>A <em>census</em> may also refer to the entire population itself, rather than the method of observation.</p>
-</dd>
-<dt>Sample</dt><dd><p>A <em>sample</em> is a type of statistical study where a subset of the population is observed <em>at random</em>.</p>
-<p>A <em>sample</em> may also refer to the subset of the population being observed, rather than the method of observation.</p>
+<p><em>Individuals</em> will mean different things depending on the experiment being conducted.</p>
+<p>If we are measuring how hot it is over the course of a week in the summer, then the <em>individuals</em> in the experiment will be the temperature measurements made on a thermometer.</p>
+<p>If we are measuring what percent of the country’s population supports a government policy, then the <em>individuals</em> in the experiment will be the collection (<a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">Set Theory</span></a>) people’s answers, Yes or No.</p>
+</section>
+<section id="population">
+<span id="id2"></span><h3>Population<a class="headerlink" href="#population" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
+<dt>Definition</dt><dd><p>The <em>population</em> is the set of all possible individuals that can be observed in a given experiment.</p>
 </dd>
 </dl>
 </section>
+<section id="sample">
+<span id="id3"></span><h3>Sample<a class="headerlink" href="#sample" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
+<dt>Definition</dt><dd><p>A <em>sample</em> is the subset of individuals drawn from the population in a given experiment.</p>
+</dd>
+</dl>
+</section>
+<section id="population-vs-sample">
+<h3>Population vs. Sample<a class="headerlink" href="#population-vs-sample" title="Permalink to this headline">#</a></h3>
+<p>(INSERT VENN DIAGRAM HERE)</p>
+</section>
+<section id="methods-of-observation">
+<span id="observation-methods"></span><h3>Methods of Observation<a class="headerlink" href="#methods-of-observation" title="Permalink to this headline">#</a></h3>
+<p>In statistics, <em>observation</em> is the name of the game. Without first making observations, there is nothing is to be done.</p>
+<dl class="simple">
+<dt>Conducting Census</dt><dd><p>A <em>census</em> is a type of statistical study where each individual in the population is observed.</p>
+</dd>
+</dl>
+<p>A <em>census</em> is <em>ideal</em>, like a <em>vacuum</em> in physics or . If we had infinite time and resources, we should always like to conduct a <em>census</em>, rather than a <em>sample</em>, because it would tell us conclusively how the population looks. In</p>
+<p>A <em>census</em> is conducted every ten years in the United States to accurately measure the population size. This data is used to <em>extrapolate</em> what the population will be in the intervening years.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>A <em>census</em> may also refer to the entire population itself, rather than the method of observation. The use should always be clear from context.</p>
+</div>
+<dl class="simple">
+<dt>Drawing A Sample</dt><dd><p>A <em>sample</em> is a type of statistical study where a subset of the population is observed <em>at random</em>.</p>
+</dd>
+</dl>
+<p>When a sample is drawn from a population, we say, “<em>the population has been sampled</em>” or that we are “<em>sampling the population</em>”.</p>
+<p>Because we are not able to conduct a <em>census</em> whenever we want, we have to make do with a sample. It is usually the case the sample is much, much smaller than the actual population. For this reason, it is very important the sample is <em>random</em> and <em>representative</em> of the population.</p>
+<p>We need a <em>random</em> sample because we do not want the data to have any features in it (e.g., patterns) that would obscure the population we are trying to observe.</p>
+<p>At the same time, we need a <em>representative</em> sample because we do not want the data to give a false impression of the population we are trying to observe.</p>
+<p>Often, these two goals are at odds with one another. In order to make a sample <em>representative</em>, you must impose some sort of order on the way you sample the population, but doing so then affects the <em>randomness</em> of the sample. Finding the right balance between these two directives is the topic of the next section.</p>
+</section>
 <section id="sampling-techniques">
-<span id="id1"></span><h3>Sampling Techniques<a class="headerlink" href="#sampling-techniques" title="Permalink to this headline">#</a></h3>
+<span id="id4"></span><h3>Sampling Techniques<a class="headerlink" href="#sampling-techniques" title="Permalink to this headline">#</a></h3>
 <p>Random</p>
 <blockquote>
 <div><p>A <em>random</em> sample is selected from a population without any pre-determined method.</p>
-<dl class="simple">
-<dt>Examples</dt><dd><ul class="simple">
+</div></blockquote>
+<p>Examples</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>Mixing names in a hat and picking three names without looking.</p></li>
 <li><p>Going through the phone book and flipping a coin to determine who to include in the sample and who to exclude.</p></li>
 <li><p>Assign every name a number and then draw random numbers.</p></li>
 </ul>
-</dd>
-</dl>
 </div></blockquote>
 <p>Systematic</p>
 <blockquote>
 <div><p>A <em>systematic</em> sample is selected from a population according to some fixed rule.</p>
-<dl class="simple">
-<dt>Examples</dt><dd><ul class="simple">
+</div></blockquote>
+<p>Examples</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>Asking every 10 <sup>th</sup> person who they are voting for in the next election.</p></li>
 <li><p>Selecting ten people from every zipcode.</p></li>
 <li><p>Sending out surveys and using every 5 <sup>th</sup> one that is returned.</p></li>
 </ul>
-</dd>
-</dl>
 </div></blockquote>
 <p>Stratified</p>
 <blockquote>
-<div><p>To get <em>stratified</em> samples, the population must be broken up into demographics. Then a representative sample from every demographic taken and the results are put back together.</p>
-<p>Examples</p>
+<div><p>To get <em>stratified</em> samples, the population is broken up into demographics. Then a <em>random</em> sample from every demographic is taken. Finally, the results are put back together.</p>
 </div></blockquote>
+<p>Example</p>
 <p>Cluster</p>
 <blockquote>
 <div><p>TODO</p>
-<p>Ex.</p>
+</div></blockquote>
+<p>Example</p>
 <blockquote>
 <div><p>TODO</p>
-</div></blockquote>
 </div></blockquote>
 </section>
 <section id="statistical-fallacies">
 <h3>Statistical Fallacies<a class="headerlink" href="#statistical-fallacies" title="Permalink to this headline">#</a></h3>
-<dl id="bias">
-<dt>Bias</dt><dd><p><em>Bias</em> is a type of systematic error that arises when the sample data that is used to draw conclusions about the population does not accurately represent a <em>random</em> sample.</p>
-<dl>
-<dt>Selection Bias</dt><dd><p><em>Selection bias</em> occurs when the sampling method is not representative of the entire population.</p>
-<p>As an extreme example, if you were interested in making assertions about the average height of a United States citizens, selecting a sample of 100 elementary schoolers would lead you to make wildly erroneous conclusions.</p>
+</section>
+<section id="bias">
+<span id="id5"></span><h3>Bias<a class="headerlink" href="#bias" title="Permalink to this headline">#</a></h3>
+<p><em>Bias</em> is a type of systematic error that arises when the sample data that is used to draw conclusions about the population does not accurately reflect the population.</p>
+<section id="selection-bias">
+<h4>Selection Bias<a class="headerlink" href="#selection-bias" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt>Definition</dt><dd><p><em>Selection bias</em> occurs when the sampling method is not representative of the entire population.</p>
 </dd>
-<dt>Response bias</dt><dd><p><em>Response bias</em> occurs when the sampling method is over-representative or under-representative of certain segments of the population.</p>
-<p>A typical example of this kind of bias can be found in cold-calling telephone surveys. Most people are likely to ignore to robo-calls for political polls, and the set of people who do answer the calls are likely not an accurate representation of the entire population.</p>
-<p>A famous example of this kind of bias is the <cite>1948 Election Between Thomas Dewey and Harry Truman &lt;https://en.wikipedia.org/wiki/Dewey_Defeats_Truman&gt;</cite>. The polling data the Chicago Tribune relied on showed Dewey winning by a huge margin <a class="footnote-reference brackets" href="#id3" id="id2">*</a></p>
+</dl>
+<p>As an extreme example, if you were interested in making assertions about the average height of a United States citizens, selecting a sample of 100 elementary schoolers would lead you to make wildly erroneous conclusions.</p>
+</section>
+<section id="response-bias">
+<h4>Response bias<a class="headerlink" href="#response-bias" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt>Definition</dt><dd><p><em>Response bias</em> occurs when the sampling method is over-representative or under-representative of certain segments of the population.</p>
+</dd>
+</dl>
+<p>A typical example of this kind of bias can be found in cold-calling telephone surveys. Most people are likely to ignore robo-calls for political polls, and the set of people who do answer the calls are likely not an accurate representation of the entire population.</p>
+<p>A famous example of this kind of bias is the <a class="reference external" href="https://en.wikipedia.org/wiki/Dewey_Defeats_Truman">1948 Election Between Thomas Dewey and Harry Truman</a>. The polling data the Chicago Tribune relied on showed Dewey winning by a huge margin <a class="footnote-reference brackets" href="#id7" id="id6">*</a></p>
+<p>The results of the polls versus the actual result of the election are shown below,</p>
 <dl class="footnote brackets">
-<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id2">*</a></span></dt>
+<dt class="label" id="id7"><span class="brackets"><a class="fn-backref" href="#id6">*</a></span></dt>
 <dd><p>The 1948 Presidential Election polls <a class="reference external" href="https://www.randomservices.org/random/data/Election1948.html">source</a></p>
 </dd>
 </dl>
@@ -544,19 +607,27 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p>While polls will never agree 100% of the time with reality, the error in this case was extreme. The pollsters at the organizations of Crossley, Gallup and Roper were told to survey a certain number of people. Beyond that, they were free to choose who to include in the survey. This led to the data they collected being <em>biased</em>, resulting in an infamous photograph,</p>
-<a class="reference internal image-reference" href="../../_images/dewey_defeats_truman.jpg"><img alt="../../_images/dewey_defeats_truman.jpg" class="align-center" src="../../_images/dewey_defeats_truman.jpg" style="width: 100%;" /></a>
+<p>While polls will never agree 100% of the time with reality, the error in this case was extreme. Upon investigating what went wrong, it was discovered the pollsters at the organizations of Crossley, Gallup and Roper were told to survey a certain number of people. Beyond that, they were free to choose who to include in the survey. They ended up calling their friends, family and close relatives. This led to the data they collected being <em>biased</em>, resulting in an infamous photograph,</p>
+<img alt="../../_images/dewey_defeats_truman.jpg" class="align-center" src="../../_images/dewey_defeats_truman.jpg" />
+</section>
+<section id="observer-bias">
+<h4>Observer Bias<a class="headerlink" href="#observer-bias" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt>Definition</dt><dd><p><em>Observer Bias</em> occurs when the act of observation changes that which is being observed.</p>
 </dd>
-<dt>Observer Bias</dt><dd><p><em>Observer Bias</em> occurs when the act of observation changes that which is being observed. Examples of this type of bias can crop up when pollsters ask leading questions, such as, “Do you <em>still</em> drink coffee?” versus the more neutral phrasing, “Do you drink coffee?”. Depending on how the question is phrased, a different answer might be given.</p>
+</dl>
+<p>Examples of this type of bias can crop up when pollsters ask leading questions, such as, “Do you <em>still</em> drink coffee?” versus the more neutral phrasing, “Do you drink coffee?”. Depending on how the question is phrased, a different answer might be given.</p>
 <p>A more famous example of this type of bias is the <a class="reference external" href="https://en.wikipedia.org/wiki/Milgram_experiment">Milgram Experiment</a> conducted by Dr. Stanley Milgrim at Yale University. The <em>Milford Experiment</em> was a psychological study wherein participants were told they were testing the effects of phyiscal punishment in form of an electric shock on the memory. Participants were to be paired off as <em>teacher</em> and <em>learner</em>. The <em>learner</em> would be asked to memorize a series of words, and then asked to recite them. If they got the words wrong in the recitation, the <em>teacher</em> would administer an electric shock to the <em>learner</em>. Each time a wrong answer was given, the voltage of the electric shock was increased.</p>
 <p>Unbeknownst to the participants of the study, this wasn’t the actual experiment. In reality, the <em>learner</em> in every experiment was a paid actor and the electric shocks weren’t real. The actor would intentionally get answers wrong and then pretend to be in pain when the teacher was administering the fake electric shocks. The <em>teacher</em> was the real object of study. Dr. Milgram was trying to see how much pain a randomly selected individual would inflict on someone else simply because they were told to do it.</p>
 <p>When participants expressed unease or concern, the researchers running the study, intentionally dressed in white lab coats to give the appearance of authority, would give one of the following responses,</p>
-<ul class="simple">
+<blockquote>
+<div><ul class="simple">
 <li><p>Please continue.</p></li>
 <li><p>The experiment requires that you continue.</p></li>
 <li><p>It is absolutely essential that you continue.</p></li>
 <li><p>You have no other choice; you must go on.</p></li>
 </ul>
+</div></blockquote>
 <p>The actor would get many questions wrong, forcing the <em>teacher</em> to increase the voltage of the shock. Most, but not all, participants would quit before reaching the maximum voltage. Dr. Milgrim found 14 of the 40 participants in the original study would increase the voltage of the shock all the way up to the maximum amount, as long as a researcher was there to instruct him or her to continue.</p>
 <p>Subsequent variations of this experiment have shown the <em>way</em> the researcher responds to the participant’s concern after hearing the actor cry out in pain significantly affects the results. In Dr. Milgram’s original experiment, the responses were phrased in such a way as to imply the actor’s pain was for the “<em>good of the experiment</em>”. If instead of saying,</p>
 <blockquote>
@@ -566,86 +637,119 @@ document.write(`
 <blockquote>
 <div><p>You are ordered to continue.</p>
 </div></blockquote>
-<p>The results were wildly different. With this slight change, the results were nowhere near as large as in Dr. Milgrim’s original experiment.</p>
+<p>The results were vastly different. With this slight change, the results were nowhere near as large as in Dr. Milgrim’s original experiment; Fewer people were more likely to quit before reaching the maximum shock threshold.</p>
 <p>In other words, <em>how</em> you make the observation may change <em>what</em> you are observing.</p>
-</dd>
-</dl>
-</dd>
-</dl>
+</section>
 </section>
 <section id="classifications-of-data">
 <span id="data-classification"></span><h3>Classifications of Data<a class="headerlink" href="#classifications-of-data" title="Permalink to this headline">#</a></h3>
-<dl>
-<dt>Dimensionality</dt><dd><p>The <em>dimension</em> of a dataset is the number of values associated with a single observation.</p>
-<dl>
-<dt>Univariate</dt><dd><p><em>Univariate</em> data consists of observations that each contain a single value.</p>
-<p><img class="math" src="../../_images/math/02ff3586e2dbe8a38e918ae4cbfbae022878a4e2.png" alt="\{ x_1, x_2, x_3 \}"/></p>
-</dd>
-<dt>Bivariate</dt><dd><p><em>Bivariate</em> data consists of observations that each contain two values (i.e. an <em>pair</em>)</p>
-<p><img class="math" src="../../_images/math/167e4d5ca72db146183c8baacc90e6f72eff7044.png" alt="\{ (x_1, y_1), (x_2, y_2), ... , (x_n, y_n)\}"/></p>
-</dd>
-<dt>Multivariate</dt><dd><p><em>Multivariate</em> data consists of observations that each contain an arbitrary number of values (i.e. a <em>vector</em>)</p>
-<p><img class="math" src="../../_images/math/fbbdfa3f3d502368b86e9fae2abae1163ef1f8b8.png" alt="\{ (x_{1}^1, x_{2}^1, ... , x_{n}^1 ), (x_{1}^2, x_{2}^2, ... , x_{n}^2 ), ... ,(x_{1}^m, x_{2}^m, ... , x_{n}^m )"/></p>
-</dd>
-</dl>
-</dd>
-<dt>Characteristic</dt><dd><p>The <em>characteristic</em> of a dataset is the <em>type</em> of data being observed.</p>
-<dl>
-<dt>Qualitative</dt><dd><p>Qualitative data are categorical.</p>
+<section id="dimensionality">
+<h4>Dimensionality<a class="headerlink" href="#dimensionality" title="Permalink to this headline">#</a></h4>
+<p>Definition</p>
+<blockquote>
+<div><p>The <em>dimension</em> of a dataset is the number of values associated with a single observation.</p>
+</div></blockquote>
 <dl class="simple">
-<dt>Ex.</dt><dd><p><img class="math" src="../../_images/math/afb50e7c84c0301e9bb66513d9ece99daf282a69.png" alt="\{ &quot;Red&quot;, &quot;Blue&quot;, &quot;Yellow&quot;\}"/></p>
+<dt>Univariate</dt><dd><p><img class="math" src="../../_images/math/02ff3586e2dbe8a38e918ae4cbfbae022878a4e2.png" alt="\{ x_1, x_2, x_3 \}"/></p>
 </dd>
 </dl>
+<p><em>Univariate</em> data consists of observations that each contain a single value.</p>
+<dl class="simple">
+<dt>Bivariate</dt><dd><p><img class="math" src="../../_images/math/167e4d5ca72db146183c8baacc90e6f72eff7044.png" alt="\{ (x_1, y_1), (x_2, y_2), ... , (x_n, y_n)\}"/></p>
+</dd>
+</dl>
+<p><em>Bivariate</em> data consists of observations that each contain two values (i.e. an <em>pair</em>)</p>
+<dl class="simple">
+<dt>Multivariate</dt><dd><p><img class="math" src="../../_images/math/fbbdfa3f3d502368b86e9fae2abae1163ef1f8b8.png" alt="\{ (x_{1}^1, x_{2}^1, ... , x_{n}^1 ), (x_{1}^2, x_{2}^2, ... , x_{n}^2 ), ... ,(x_{1}^m, x_{2}^m, ... , x_{n}^m )"/></p>
+</dd>
+</dl>
+<p><em>Multivariate</em> data consists of observations that each contain an arbitrary number of values (i.e. a <em>vector</em>)</p>
+</section>
+<section id="characteristic">
+<h4>Characteristic<a class="headerlink" href="#characteristic" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt>Definition</dt><dd><p>The <em>characteristic</em> of a dataset is the <em>type</em> of data being observed.</p>
+</dd>
+<dt>Qualitative</dt><dd><p><img class="math" src="../../_images/math/afb50e7c84c0301e9bb66513d9ece99daf282a69.png" alt="\{ &quot;Red&quot;, &quot;Blue&quot;, &quot;Yellow&quot;\}"/></p>
+</dd>
+</dl>
+<p>Qualitative data are categorical.</p>
+<dl class="simple">
+<dt>Example</dt><dd><ul class="simple">
+<li><p>The favorite color of a sample of people.</p></li>
+<li><p>A group of people’s answer to supporting a new tax reform law.</p></li>
+<li><p>Movies that feature Kevin Bacon.</p></li>
+<li><p>Words that appear in a novel.</p></li>
+</ul>
 </dd>
 <dt>Quantitative</dt><dd><p>Quantitative data are numerical.</p>
-<dl>
-<dt>Discrete</dt><dd><p>Discrete quantitative data is countable.</p>
+</dd>
+</dl>
+<p>These are two types of <em>quantitative</em> data, <em>discrete</em> and <em>continuous</em>.</p>
 <dl class="simple">
-<dt>Ex.</dt><dd><p><img class="math" src="../../_images/math/dff2242d6d91fa1f3c6719f5c232e81e9f532fd9.png" alt="\{ 1, 2, 3, 4, 5, ... \}"/></p>
+<dt>Discrete Quantitative</dt><dd><p><img class="math" src="../../_images/math/dff2242d6d91fa1f3c6719f5c232e81e9f532fd9.png" alt="\{ 1, 2, 3, 4, 5, ... \}"/></p>
 </dd>
 </dl>
-</dd>
-<dt>Continuous</dt><dd><p>Continuous quantitative data  is infinitely divisible</p>
+<p><em>Discrete quantitative</em> data are countable.</p>
 <dl class="simple">
-<dt>Ex.</dt><dd><p><img class="math" src="../../_images/math/b939635cce776f2bf5a93b9770b88ddc1ac8e084.png" alt="\{ 1.0, 1.01, 1.001, 1.0001, 1.00001, ... \}"/></p>
+<dt>Example</dt><dd><ul class="simple">
+<li><p>Students in a class.</p></li>
+<li><p>Petals on a clover</p></li>
+<li><p>The championships won by a football team.</p></li>
+<li><p>M&amp;M’s in a bag.</p></li>
+</ul>
+</dd>
+<dt>Continuous Quantitative</dt><dd><p><img class="math" src="../../_images/math/b939635cce776f2bf5a93b9770b88ddc1ac8e084.png" alt="\{ 1.0, 1.01, 1.001, 1.0001, 1.00001, ... \}"/></p>
 </dd>
 </dl>
+<p><em>Continuous quantitative</em> data are infinitely divisible</p>
+<dl class="simple">
+<dt>Example</dt><dd><ul class="simple">
+<li><p>The temperature of a gallon of water under various pressures.</p></li>
+<li><p>The speed of a train.</p></li>
+<li><p>The weight of a coin.</p></li>
+<li><p>The amount of rainfall in a region.</p></li>
+</ul>
 </dd>
 </dl>
-</dd>
-</dl>
-</dd>
-</dl>
-<p>Scale</p>
-<blockquote>
-<div><dl>
+</section>
+</section>
+<section id="scale">
+<h3>Scale<a class="headerlink" href="#scale" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
 <dt>Nominal Level</dt><dd><p>Unordered, categorical data.</p>
-<p>Ex.</p>
-<blockquote>
-<div><p>TODO</p>
-</div></blockquote>
-</dd>
-<dt>Ordinal Level</dt><dd><p>Ordered, categorical data.</p>
-<p>Ex.</p>
-<blockquote>
-<div><p>TODO</p>
-</div></blockquote>
-</dd>
-<dt>Interval/Ratio Level</dt><dd><p>Ordered, numerical data.</p>
-<p>Ex.</p>
-<blockquote>
-<div><p>TODO</p>
-</div></blockquote>
 </dd>
 </dl>
+<p>TODO</p>
+<p>Example</p>
+<blockquote>
+<div><p>TODO</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Ordinal Level</dt><dd><p>Ordered, categorical data.</p>
+</dd>
+</dl>
+<p>Example</p>
+<blockquote>
+<div><p>TODO</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Interval/Ratio Level</dt><dd><p>Ordered, numerical data.</p>
+</dd>
+</dl>
+<p>TODO</p>
+<p>Example</p>
+<blockquote>
+<div><p>TODO</p>
 </div></blockquote>
 </section>
 <section id="types-of-statistics">
 <span id="statistics-defintions"></span><h3>Types of Statistics<a class="headerlink" href="#types-of-statistics" title="Permalink to this headline">#</a></h3>
 <dl class="simple" id="sample-statistic">
-<dt>Sample Statistic</dt><dd><p>A piece of information that characterizes the shape and spread of a sample.</p>
+<dt>Sample Statistic</dt><dd><p>A piece of information calculated from sample of data.</p>
 </dd>
 </dl>
+<p><em>Sample statistics</em> are used to summarize the features of a dataset. They are broken down into two main categories.</p>
 <dl class="simple" id="descriptive-statistic">
 <dt>Descriptive Statistic</dt><dd><p>A sample statisic used to visualize and approximate the shape and spread of a population.</p>
 </dd>
@@ -657,20 +761,22 @@ document.write(`
 </section>
 <section id="other-terminology">
 <h3>Other Terminology<a class="headerlink" href="#other-terminology" title="Permalink to this headline">#</a></h3>
-<dl id="with-replacement">
+<dl class="simple" id="with-replacement">
 <dt>With Replacement</dt><dd><p>An observation has been made <em>with replacement</em>, if after its selection, it is placed back into the population.</p>
+</dd>
+</dl>
+<p>Example</p>
 <blockquote>
 <div><p>Consider drawing a single card from a deck of cards, shuffling it back into the deck and then selecting another card. The event of getting the same card on both draws is a possible event because the card selected on the first draw is returned to the population of possible observation before making the second draw.</p>
 </div></blockquote>
+<dl class="simple" id="without-replacement">
+<dt>Without Replacement</dt><dd><p>An observation has been made <em>without replacement</em>, if after its selection, it is removed from the population and is no longer a possible observation.</p>
 </dd>
 </dl>
-<dl id="without-replacement">
-<dt>Without Replacement</dt><dd><p>An observation has been made <em>without replacement</em>, if after its selection, it is removed from the population and is no longer a possible observation.</p>
+<p>Example</p>
 <blockquote>
 <div><p>Consider drawing a single card from a deck of cards, setting it aside and then selecting another card. The event of getting the same card on both draws is an impossible event because the card selected on the first draw is no longer in the population of possible observation, and therefore cannot possible be selected again. In other words, when we sample data <em>without replacement</em>, we affect the <em>sample space</em> of subsequent experiments.</p>
 </div></blockquote>
-</dd>
-</dl>
 </section>
 </section>
 </section>
@@ -725,10 +831,25 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#individual">Individual</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population">Population</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample">Sample</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population-vs-sample">Population vs. Sample</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-of-observation">Methods of Observation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-techniques">Sampling Techniques</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-fallacies">Statistical Fallacies</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bias">Bias</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#selection-bias">Selection Bias</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#response-bias">Response bias</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#observer-bias">Observer Bias</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionality">Dimensionality</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristic">Characteristic</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scale">Scale</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-statistics">Types of Statistics</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-terminology">Other Terminology</a></li>
 </ul>
