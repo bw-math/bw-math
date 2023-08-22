@@ -66,7 +66,7 @@ You can use the ``start`` and ``step`` arguments to generate arbitrary lists of 
 Standard Library Functions
 ==========================
 
-In addition to the functions accessible by default in **Python**, there are also a large number of functions you can ``import`` to extend **Python**`s basic functionality. These functions reside in the *Standard Library*. 
+In addition to the functions accessible by default in **Python**, there are also a large number of functions you can ``import`` to extend the basic functionality of **Python**. These functions reside in the *Standard Library*. 
 
 The syntax for importing an additional package is simply,
 
@@ -171,4 +171,42 @@ The following code illustrates its use,
 Creating Functions
 ==================
 
-TODO
+Occassionally, the *Standard Library* plus third-party packages will not be enough to do what we need to do. In those cases, we have no other options but to define our own function.
+
+Function Signatures
+-------------------
+
+A function in **Python** has four components its ``def``, its *name*, its *arguments* and its ``return`` value. The following list breaks each of these components down,
+
+1. ``def`` is a *keyword* that informs **Python** you are about to define a function. You must *always* precede a function with ``def``. 
+
+2. The function *name* is how you will access the function. You have already encountered several function *names* with ``range()`` and ``sum()``. 
+
+3. The *arguments* are the input that is passed into the function. *Arguments* are variables.
+
+4. The ``return`` value is data the function outputs.
+   
+Function Example
+----------------
+
+Putting all four of these pieces together, let's create a simple function.
+
+.. code:: python
+
+    def fancy(word):
+        sentence = word + " is fancy!" 
+        return sentence
+
+Take note of the *indentation*. **Python** is very particular about *indentation* because that is how it groups functions together. A *function* definition must be indented once (with ``TAB``). All lines within the function must be the same *indentation* level. If you do not follow this requirement, you will get errors. Errors are bad. So, always pay your indentation.
+
+We can call this function after defined it by addressing it by its name and passing in an argument. Create a new :ref:`IDLE Notebook <python_idle>`, copy in the following function and try executing it with ``F5``,
+
+.. code:: python
+
+    def fancy(word):
+        sentence = word + " is fancy!" 
+        return sentence
+
+    fancified_taco = fancy("taco")
+
+    print(fancified_taco)

@@ -27,12 +27,12 @@ fig, axs = plt.subplots()
 
 # Generate Data
 data = ( 
-    [ 'F' for _ in range(3) ] +  
-    [ 'E' for _ in range(7) ] + 
-    [ 'D' for _ in range(3) ] + 
-    [ 'C' for _ in range(4) ] + 
-    [ 'B' for _ in range(6) ] +
-    [ 'A' for _ in range(1) ] 
+    [ 'F' for _ in range(33) ] +  
+    [ 'E' for _ in range(74) ] + 
+    [ 'D' for _ in range(32) ] + 
+    [ 'C' for _ in range(35) ] + 
+    [ 'B' for _ in range(67) ] +
+    [ 'A' for _ in range(30) ] 
 )
 
 # Label the graph appropriately

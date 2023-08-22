@@ -17,7 +17,6 @@ matplotlib.use('agg')
 # matplotlib.use('tkagg')
 
 import matplotlib.pyplot as plt
-import random as rand
 
 ##################################################################################
 ###                                SCRIPT                                      ###
@@ -26,23 +25,24 @@ import random as rand
 # Create New Figures and Axes
 fig, axs = plt.subplots()
 
-# Generate Data
-#   NOTE: Range x (Random Number Between 0, 1) + Lower Limit
-n = 20
-data = [
-    [ rand.randint(0, 10) for _ in range(n)],
-    [ 10*rand.random() - 5 for _ in range(n) ]
-]
+# Generate data
+data = ( 
+    [ 'F' for _ in range(30) ] +  
+    [ 'E' for _ in range(40) ] + 
+    [ 'D' for _ in range(60) ] + 
+    [ 'C' for _ in range(60) ] + 
+    [ 'B' for _ in range(40) ] +
+    [ 'A' for _ in range(30) ] 
+)
 
-# Label the graph appropriately
-plt.suptitle("Scatterplot of Quiz Scores vs Minutes Late to Class")
-plt.title(f"n = {n}")
-## Label Scatter Plot Axes
-axs.set_xlabel("Time Spent Studying")
-axs.set_ylabel("Quiz Score")
+# Label axes
+plt.suptitle("Histogram of Quiz Grades")
+plt.title(f"n = {len(data)}")
+axs.set_xlabel("Grades")
+axs.set_ylabel("Frequency")
 
-# Generate and output
-## Plot Histogram
-axs.scatter(*data)
-## Show results
+# Plot data
+axs.hist(data, bins=6, range=(0,6), align='left', color="lightblue", ec="red", cumulative=True)
+
+# Show results
 plt.show()

@@ -25,6 +25,7 @@ import matplotlib.pyplot as plt
 # Create New Figures and Axes
 fig, axs = plt.subplots()
 
+# Generate data
 data = ( 
     [ 'F' for _ in range(2) ] +  
     [ 'E' for _ in range(4) ] + 
@@ -34,11 +35,14 @@ data = (
     [ 'A' for _ in range(2) ] 
 )
 
+# Label axes
 plt.suptitle("Histogram of Quiz Grades")
 plt.title(f"n = {len(data)}")
 axs.set_xlabel("Grades")
 axs.set_ylabel("Frequency")
 
+# Plot data
 axs.hist(data, bins=6, range=(0,6), align='left', color="lightblue", ec="red")
 
+# Show results
 plt.show()
