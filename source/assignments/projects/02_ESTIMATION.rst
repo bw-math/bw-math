@@ -15,7 +15,7 @@ Instructions
 2. Download the *csv* dataset :ref:`below <project_two_dataset>` and place it in the new folder you created in step 1.
 3. In the same folder, create a Python *py* script named `project_two.py`
 4. Read the :ref:`project_two_project` section.
-5. Answer the indicated questions in the :ref:`project_two_project` section in the *.docx* document file.
+6. Perform all exercises and answer all questions in the :ref:`project_two_project` section. Label your script with comments as indicated in the instructions of each problem.
 6. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_two.zip`
 7. Upload the zip file here: TODO
    

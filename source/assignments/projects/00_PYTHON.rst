@@ -15,7 +15,7 @@ Instructions
 1. Create a folder named `LASTNAME_FIRSTNAME_project_zero`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
 2. In the same folder, create a Python *py* script named `project_zero.py`
 3. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
-4. Perform all exercises and answer all questions in the :ref:`project_zero_project` section. Label your script with comments as indicated in the *Project* section.
+4. Perform all exercises and answer all questions in the :ref:`project_zero_project` section. Label your script with comments as indicated in the instructions of each problem.
 5. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_zero.zip`
 6. Upload the zip file here: TODO
 
@@ -46,8 +46,11 @@ Project
 =======
 
 1. Head over to the :ref:`python_setup` page and prepare your ChromeBook for Python.
+
 2. Read through the :ref:`python_basics` and the :ref:`python_functions` pages. Try the examples on your ChromeBook as you read through these pages. Use them as a reference to complete the exercises that follow.
+
 3. Add the required ``import`` statements from :ref:`project_zero_imports` to the top of your *py* script.
+
 4. Take the *Natural Numbers* dataset from the :ref:`project_zero_dataset` section and add it to your *py* script. Perform the following operations. Be sure to add :ref:`python_comments` where appriopriate.
 
     a. Using :ref:`python_list_slicing` and the ``natural_numbers`` list, create a list of all the *even* numbers between 1 and 100. Save the code in your script and label it with a comment ``# 4a``. 
@@ -70,7 +73,7 @@ Project
 
         iii. Re-execute your code. Did you do it? Go ahead and do it again, just to be safe. Alright, are you done? Do it one more time, but this time do it with *feeling*. Do you get the same results each time? How do the results compare?
 
-        iv. If you performed this experiment a 100 times, what do you expect the difference of the sum of these lists to be?
+        iv. If you performed this experiment a 100 times, what do you expect the difference of the sum of these lists to be on average?
 
 6. Now it's your turn to generate some data. Using the :ref:`python_choice_function` and the techniques studied so far, generate a list of data that represents the experiment of asking 100 randomly selected people whether they prefer Mayor McCheese, The Hamburglar, Grimace or Ronald McDonald as McDonald's mascot. Save the code in your script and lavel it with a comment ``# 6a``.
    
