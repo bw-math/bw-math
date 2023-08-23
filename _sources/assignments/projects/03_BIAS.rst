@@ -11,12 +11,12 @@ Instructions
 
 1. Create a folder named `LASTNAME_FIRSTNAME_project_three`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
 2. Download the *csv* dataset `below <project_three_dataset>`_ and place it in the new folder you created in step 1.
-3. In the same folder, create a Microsoft Word *docx* document named `project_three.docx`.
 4. In the same folder, create a Python *py* script named `project_three.py`
-5. Read the :ref:`project_three_project` section.
-6. Answer the indicated questions in the :ref:`project_three_project` section in the *.docx* document file.
-7. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_three.zip`
-8. Upload the zip file here: TODO
+5. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
+6. Read the :ref:`project_three_project` section.
+7. Perform all exercises and answer all questions in the :ref:`project_one_project` section. Label your script with comments as indicated in the instructions of each problem.
+8. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_three.zip`
+9. Upload the zip file here: TODO
 
 .. _project_three_loading_data:
 
@@ -55,18 +55,33 @@ Project
 
 1. Discuss the following questions
    
-    - Is the selection method used for the draft random? Why or why not?
-    - If the selection method used for the draft were truly random, what shape would you expect a frequency distribution of the sample to have? 
-    - Given the information provided on the selection method, what shape do you expect a frequency distribution of the sample to have?
-    - What are some possible sources of bias in the draft lottery? List the cases and identify the *type* of bias in each case.
+    a. Is the selection method used for the draft random? Why or why not?
+    
+    b. If the selection method used for the draft were truly random, what shape would you expect a frequency distribution of the sample to have? 
+    
+    c. Given the information provided on the selection method, what shape do you expect a frequency distribution of the sample to have?
+    
+    d. What are some possible sources of bias in the draft lottery? List the cases and identify the *type* of bias in each case.
 
-2. Using the birth month of the drafted individual as the bins, construct histograms for the years 1969, 1970, 1971, 1972. Include **both** the frequency distributions and the histograms in your report. 
+2. During the first year of the draft, 1969, months were put into the shoebox in ascending order. In other words, the birth dates in the month of December were first put in the bottom of the shoebox, then birth dates in November were placed on top of the December birth dates, then October birth dates were placed on top of the November birth dates, and so on up to January. The slips of paper were not mixed any further before the draft was selected. 
+
+    a. How does this information affect your answer to *#1a*? 
+
+    b. How does this information affect your answer to *#1c*?
+
+    c. How does this information affect your answer to *#1d*?
+
+3. Using the birth month of the drafted individual as the bins, construct histograms for the years 1969, 1970, 1971, 1972. 
 
 3. Based on the histograms constructed, describe the shape of the distribution for each year's draft lottery. 
-   - Are the graphs skewed, uniform, normal or bimodal?
-   - What is the mode of the birth month for each year? 
-   - What can we conclude about the relative likelihood of a male with a birthday in January being drafted versus a male with a birthday in December being drafted for the years 1969? Does this same result appear to hold for 1970, 1971 and 1972?
-   - Discuss the results. Was the draft lottery fair? If not, why not? If so, why? Justify your answer.  
+   
+   a. Are the graphs skewed, uniform, normal or bimodal?
+   
+   b. What is the mode of the birth month for each year? 
+   
+   c. What can we conclude about the relative likelihood of a male with a birthday in January being drafted versus a male with a birthday in December being drafted for the year of 1969? Does this same result appear to hold for 1970, 1971 and 1972?
+   
+   d. Discuss the results. Was the draft lottery fair? If not, why not? If so, why? Justify your answer.  
 
 .. _project_three_dataset:
 
@@ -95,13 +110,27 @@ And *N69*, *N70*, *N71* and *N72* represent the number of individuals selected w
 Cleaning the Data Set
 ---------------------
 
-The dataset is broken down by day. Each entry corresponds to a particular birthdate, month and day. The lab is asking to group the data into monthly classes, so the frequency distribution can be visualized with a histogram grouped by month. Therefore, the data will need grouped and totaled by month before generating a histogram. 
+The *experimental unit* in this lab is a date. Each entry in the datasets corresponds to a particular birthdate, i.e. a month and day. For example, the first row of the dataset looks like,
 
-The following code snippet will:
-    1.  create a list, named ``data_1969``, of twelve *0*'s, ``[0, 0, 0, ... , 0, 0]``, one for each month,.
-    2.  step through ``column_1`` along with the `row_number`.
+| M | D | N69 | N70 | N71 | N72 |
+| 1 | 1 | 305 | 133 | 207 | 150 |
+| 1 | 2 | 159 | 195 | 225 | 328 |
+
+The lab is asking to group the data into monthly classes so the sample can be visualized with a histogram. Since we are only interested in *birth months*, we may ignore the **D** column. That leaves us with our class data broken up across multiple rows of the list. We will need to manually group the data to calculate the total number of draftees per month.  
+
+In other words, we will need to step (*iterate*) over the dataset and look at each row. As we do so, we will need to check if the first column **M** is 1, 2, 3, ..., 11 or 12. Then, based on the value of the first column **M**, we will grab the entries from the ``N69``, ``N70``, ``N71`` and ``N72`` columns and add them to the corresponding monthly totals. 
+
+To re-iterate, to *clean the data*, we will need to perform the following steps:
+    
+    1.  create a list, named ``data_1969``, of twelve *0*'s, ``[0, 0, 0, ... , 0, 0]``, one for each month.
+    
+    2.  step through ``column_1`` with the ``row_number``.
+    
     3.  grab the corresponding entry of the third column, ``column_3[row_number]``
-    4.  add the value of the third column to the corresponding entry in ``data_1969``
+    
+    4.  add the value of the third column to the list entry in ``data_1969`` that represents that month. 
+
+The following code snippet implements this algorithm, assuming you have the **M** column stored in ``column_1`` and the ``N69`` column stored in ``column_3``. Use this logic in the lab to clean your data,
 
 .. code:: python 
 

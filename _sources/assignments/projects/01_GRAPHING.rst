@@ -35,11 +35,19 @@ Background
 The Michelson Velocity of Light Experiment 
 ------------------------------------------
 
-The `Michelson Velocity of Light Experiment<https://www.gutenberg.org/files/11753/11753-h/11753-h.htm>` conducted in 1887 remained one of most accurate estimations of the speed of light until modern times. Using a series of mirrors depicted below,
+The `Michelson Velocity of Light Experiment<https://www.gutenberg.org/files/11753/11753-h/11753-h.htm>` conducted in 1887 was a landmark experiment for severals reason.
+
+TODO
+
+remained one of most accurate estimations of the speed of light until modern times. Using a series of mirrors depicted below,
 
 .. image:: ../../assets/imgs/context/michelson_experiment.png
     :width: 60%
     :align: center
+
+He was able to measure the fractional time difference in lights of ray arriving 
+
+TODO
 
 While the theoretical details of the experiment are interesting in their own right (see link above for further detail!), for this lab, we will take the data as given and analyze it from a statistical perspective.
 
@@ -56,7 +64,7 @@ The estimate produced by Cavendish remained until modern times one of the most a
 Loading In Data
 ===============
 
-The following code snippet will load in a *CSV* spreadsheet, parse it into a list and then print it to screen, assuming that file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets :ref:`project_one_dataset`
+The following code snippet will load in a *CSV* spreadsheet named ``example.csv``, parse it into a list and then print it to screen, assuming that *CSV* file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in :ref:`project_one_dataset` section.
 
 .. code-block:: python 
 
@@ -64,11 +72,11 @@ The following code snippet will load in a *CSV* spreadsheet, parse it into a lis
 
     # discover file path of python script
     #   i.e., if your python script is stored in C:\\myuser\Documents\projects\script.py
-    #           this command will return "C:\\myuser\Documents\project"
+    #           this command will return "C:\\myuser\Documents\projects"
     script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
 
     # read in data
-    with open(f'{script_directory}/vietnam_draft_data.csv') as csv_file:
+    with open(f'{script_directory}/example.csv') as csv_file:
         csv_reader = csv.reader(csv_file)
         raw_data = [ row for row in csv_reader ]
 
@@ -103,13 +111,17 @@ Velocity of Light
 
     c. What is the most frequent class?
 
-    d. What type of shape does this distribtion of data have? Is this expected? Why or why not?
+    d. What type of shape does this distribtion have? Is this expected? Why or why not?
 
 3. Construct a boxplot for this data set. Using the boxplot, answer the following questions in the body of your docstring.
 
     a. Estimate the 75 :sup:`th` percentile of this data set. 
 
-    b. Estimate the 25 :sup:`th` percentile of this data set. 
+    b. Estimate the 25 :sup:`th` percentile of this data set.
+
+    c. Estimate the median of this data set.
+
+    d.  
 
 4. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your docstring.
 

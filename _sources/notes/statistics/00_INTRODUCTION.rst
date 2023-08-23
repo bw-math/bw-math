@@ -52,14 +52,14 @@ Population vs. Sample
 Methods of Observation
 ----------------------
 
-In statistics, *observation* is the name of the game. Without first making observations, there is nothing is to be done. 
+In statistics, *observation* is the name of the game. Without first making observations, there is nothing else to be done. 
 
 Conducting Census
     A *census* is a type of statistical study where each individual in the population is observed.
 
-A *census* is *ideal*, like a *vacuum* in physics or . If we had infinite time and resources, we should always like to conduct a *census*, rather than a *sample*, because it would tell us conclusively how the population looks. In
+In practice, we are never able to see entire population at once. A *census* is an *ideal*, like a *vacuum* or a *frictionless surface*. If we had infinite time and resources, we should always like to conduct a *census*, rather than drawing a *sample*, because it would tell us conclusively how the population looked. 
 
-A *census* is conducted every ten years in the United States to accurately measure the population size. This data is used to *extrapolate* what the population will be in the intervening years. 
+A *census* is conducted every ten years in the United States to accurately measure the population size. Even a massive operation like this is likely to miss a few individuals in the population, whether due to undocumented citizens or errors in the record-keeping. 
 
 .. warning::
     
@@ -84,7 +84,9 @@ Sampling Techniques
 -------------------
 
 Random
+******
 
+Definition
     A *random* sample is selected from a population without any pre-determined method. 
 
 Examples
@@ -94,7 +96,9 @@ Examples
     - Assign every name a number and then draw random numbers.
 
 Systematic
+**********
 
+Definition
     A *systematic* sample is selected from a population according to some fixed rule.
 
 Examples
@@ -104,8 +108,10 @@ Examples
     - Sending out surveys and using every 5 :sup:`th` one that is returned.
 
 Stratified
+**********
 
-    To get *stratified* samples, the population is broken up into demographics. Then a *random* sample from every demographic is taken. Finally, the results are put back together. 
+Definition
+    To get *stratified* samples, the population is broken up by demographics. Then a *random* sample from every demographic is taken. Finally, the results are put back together. 
 
 Example
         

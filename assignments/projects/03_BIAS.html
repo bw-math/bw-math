@@ -201,8 +201,8 @@
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../classwork/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../classwork/statistics/01_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../classwork/statistics/02_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/statistics/01_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/statistics/02_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../classwork/statistics/03_SAMPLING_DISTRIBUTIONS.html">Sampling Distributions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../classwork/statistics/04_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../classwork/statistics/05_CHI_SQUARED_DISTRIBUTION.html"><img alt="\chi^2" class="math" src="../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
@@ -228,7 +228,7 @@
 <li class="toctree-l3"><a class="reference internal" href="02_ESTIMATION.html">Estimation</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Bias</a></li>
 <li class="toctree-l3"><a class="reference internal" href="04_OUTLIERS.html">Outliers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="05_POLLING.html">Polling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_SAMPLING.html">Sampling</a></li>
 <li class="toctree-l3"><a class="reference internal" href="06_SIMULATION.html">Simulation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="08_Z_TABLE.html">Applications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="09_FINANCE.html">Financial Analysis</a></li>
@@ -438,14 +438,14 @@ document.write(`
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
 <li><p>Create a folder named <cite>LASTNAME_FIRSTNAME_project_three</cite>, replacing <cite>LASTNAME</cite> and <cite>FIRSTNAME</cite> with your last name and first name, respectively.</p></li>
-<li><p>Download the <em>csv</em> dataset <a class="reference external" href="project_three_dataset">below</a> and place it in the new folder you created in step 1.</p></li>
-<li><p>In the same folder, create a Microsoft Word <em>docx</em> document named <cite>project_three.docx</cite>.</p></li>
-<li><p>In the same folder, create a Python <em>py</em> script named <cite>project_three.py</cite></p></li>
-<li><p>Read the <a class="reference internal" href="#project-three-project"><span class="std std-ref">Project</span></a> section.</p></li>
-<li><p>Answer the indicated questions in the <a class="reference internal" href="#project-three-project"><span class="std std-ref">Project</span></a> section in the <em>.docx</em> document file.</p></li>
-<li><p>When you are done, zip your folder and all its contents in a file named <cite>LASTNAME_FIRSTNAME_project_three.zip</cite></p></li>
-<li><p>Upload the zip file here: TODO</p></li>
 </ol>
+<p>2. Download the <em>csv</em> dataset <a class="reference external" href="project_three_dataset">below</a> and place it in the new folder you created in step 1.
+4. In the same folder, create a Python <em>py</em> script named <cite>project_three.py</cite>
+5. Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Python docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.
+6. Read the <a class="reference internal" href="#project-three-project"><span class="std std-ref">Project</span></a> section.
+7. Perform all exercises and answer all questions in the <a class="reference internal" href="01_GRAPHING.html#project-one-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the instructions of each problem.
+8. When you are done, zip your folder and all its contents in a file named <cite>LASTNAME_FIRSTNAME_project_three.zip</cite>
+9. Upload the zip file here: TODO</p>
 </section>
 <section id="loading-in-data">
 <span id="project-three-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
@@ -476,20 +476,34 @@ document.write(`
 <ol class="arabic">
 <li><p>Discuss the following questions</p>
 <blockquote>
-<div><ul class="simple">
+<div><ol class="loweralpha simple">
 <li><p>Is the selection method used for the draft random? Why or why not?</p></li>
 <li><p>If the selection method used for the draft were truly random, what shape would you expect a frequency distribution of the sample to have?</p></li>
 <li><p>Given the information provided on the selection method, what shape do you expect a frequency distribution of the sample to have?</p></li>
 <li><p>What are some possible sources of bias in the draft lottery? List the cases and identify the <em>type</em> of bias in each case.</p></li>
-</ul>
+</ol>
 </div></blockquote>
 </li>
-<li><p>Using the birth month of the drafted individual as the bins, construct histograms for the years 1969, 1970, 1971, 1972. Include <strong>both</strong> the frequency distributions and the histograms in your report.</p></li>
-<li><p>Based on the histograms constructed, describe the shape of the distribution for each year’s draft lottery.
-- Are the graphs skewed, uniform, normal or bimodal?
-- What is the mode of the birth month for each year?
-- What can we conclude about the relative likelihood of a male with a birthday in January being drafted versus a male with a birthday in December being drafted for the years 1969? Does this same result appear to hold for 1970, 1971 and 1972?
-- Discuss the results. Was the draft lottery fair? If not, why not? If so, why? Justify your answer.</p></li>
+<li><p>During the first year of the draft, 1969, months were put into the shoebox in ascending order. In other words, the birth dates in the month of December were first put in the bottom of the shoebox, then birth dates in November were placed on top of the December birth dates, then October birth dates were placed on top of the November birth dates, and so on up to January. The slips of paper were not mixed any further before the draft was selected.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>How does this information affect your answer to <em>#1a</em>?</p></li>
+<li><p>How does this information affect your answer to <em>#1c</em>?</p></li>
+<li><p>How does this information affect your answer to <em>#1d</em>?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Using the birth month of the drafted individual as the bins, construct histograms for the years 1969, 1970, 1971, 1972.</p></li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p>Based on the histograms constructed, describe the shape of the distribution for each year’s draft lottery.</p>
+<ol class="loweralpha simple">
+<li><p>Are the graphs skewed, uniform, normal or bimodal?</p></li>
+<li><p>What is the mode of the birth month for each year?</p></li>
+<li><p>What can we conclude about the relative likelihood of a male with a birthday in January being drafted versus a male with a birthday in December being drafted for the year of 1969? Does this same result appear to hold for 1970, 1971 and 1972?</p></li>
+<li><p>Discuss the results. Was the draft lottery fair? If not, why not? If so, why? Justify your answer.</p></li>
+</ol>
+</li>
 </ol>
 </section>
 <section id="data-set">
@@ -654,16 +668,24 @@ document.write(`
 <p>And <em>N69</em>, <em>N70</em>, <em>N71</em> and <em>N72</em> represent the number of individuals selected with a given birth date in the years 1969, 1970, 1971 and 1972, respectively.</p>
 <section id="cleaning-the-data-set">
 <h3>Cleaning the Data Set<a class="headerlink" href="#cleaning-the-data-set" title="Permalink to this headline">#</a></h3>
-<p>The dataset is broken down by day. Each entry corresponds to a particular birthdate, month and day. The lab is asking to group the data into monthly classes, so the frequency distribution can be visualized with a histogram grouped by month. Therefore, the data will need grouped and totaled by month before generating a histogram.</p>
-<dl class="simple">
-<dt>The following code snippet will:</dt><dd><ol class="arabic simple">
-<li><p>create a list, named <code class="docutils literal notranslate"><span class="pre">data_1969</span></code>, of twelve <em>0</em>’s, <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">...</span> <span class="pre">,</span> <span class="pre">0,</span> <span class="pre">0]</span></code>, one for each month,.</p></li>
-<li><p>step through <code class="docutils literal notranslate"><span class="pre">column_1</span></code> along with the <cite>row_number</cite>.</p></li>
+<p>The <em>experimental unit</em> in this lab is a date. Each entry in the datasets corresponds to a particular birthdate, i.e. a month and day. For example, the first row of the dataset looks like,</p>
+<div class="line-block">
+<div class="line">M | D | N69 | N70 | N71 | N72 |</div>
+<div class="line">1 | 1 | 305 | 133 | 207 | 150 |</div>
+<div class="line">1 | 2 | 159 | 195 | 225 | 328 |</div>
+</div>
+<p>The lab is asking to group the data into monthly classes so the sample can be visualized with a histogram. Since we are only interested in <em>birth months</em>, we may ignore the <strong>D</strong> column. That leaves us with our class data broken up across multiple rows of the list. We will need to manually group the data to calculate the total number of draftees per month.</p>
+<p>In other words, we will need to step (<em>iterate</em>) over the dataset and look at each row. As we do so, we will need to check if the first column <strong>M</strong> is 1, 2, 3, …, 11 or 12. Then, based on the value of the first column <strong>M</strong>, we will grab the entries from the <code class="docutils literal notranslate"><span class="pre">N69</span></code>, <code class="docutils literal notranslate"><span class="pre">N70</span></code>, <code class="docutils literal notranslate"><span class="pre">N71</span></code> and <code class="docutils literal notranslate"><span class="pre">N72</span></code> columns and add them to the corresponding monthly totals.</p>
+<p>To re-iterate, to <em>clean the data</em>, we will need to perform the following steps:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>create a list, named <code class="docutils literal notranslate"><span class="pre">data_1969</span></code>, of twelve <em>0</em>’s, <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">...</span> <span class="pre">,</span> <span class="pre">0,</span> <span class="pre">0]</span></code>, one for each month.</p></li>
+<li><p>step through <code class="docutils literal notranslate"><span class="pre">column_1</span></code> with the <code class="docutils literal notranslate"><span class="pre">row_number</span></code>.</p></li>
 <li><p>grab the corresponding entry of the third column, <code class="docutils literal notranslate"><span class="pre">column_3[row_number]</span></code></p></li>
-<li><p>add the value of the third column to the corresponding entry in <code class="docutils literal notranslate"><span class="pre">data_1969</span></code></p></li>
+<li><p>add the value of the third column to the list entry in <code class="docutils literal notranslate"><span class="pre">data_1969</span></code> that represents that month.</p></li>
 </ol>
-</dd>
-</dl>
+</div></blockquote>
+<p>The following code snippet implements this algorithm, assuming you have the <strong>M</strong> column stored in <code class="docutils literal notranslate"><span class="pre">column_1</span></code> and the <code class="docutils literal notranslate"><span class="pre">N69</span></code> column stored in <code class="docutils literal notranslate"><span class="pre">column_3</span></code>. Use this logic in the lab to clean your data,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data_1969</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">0</span> <span class="p">]</span> <span class="o">*</span> <span class="mi">12</span>
 
 <span class="k">for</span> <span class="n">row_number</span><span class="p">,</span> <span class="n">entry</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">column_1</span><span class="p">):</span>

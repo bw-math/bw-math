@@ -201,8 +201,8 @@
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/01_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/02_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/01_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/02_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/03_SAMPLING_DISTRIBUTIONS.html">Sampling Distributions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/04_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/05_CHI_SQUARED_DISTRIBUTION.html"><img alt="\chi^2" class="math" src="../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
@@ -228,7 +228,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/02_ESTIMATION.html">Estimation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/03_BIAS.html">Bias</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/04_OUTLIERS.html">Outliers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/05_POLLING.html">Polling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/05_SAMPLING.html">Sampling</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/06_SIMULATION.html">Simulation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/08_Z_TABLE.html">Applications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/09_FINANCE.html">Financial Analysis</a></li>
@@ -468,8 +468,16 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">sum</span></code> function is only defined if the list contains numerical data.</p>
+</div>
 <dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">range(&lt;start</span> <span class="pre">:</span> <span class="pre">optional&gt;,</span> <span class="pre">&lt;stop</span> <span class="pre">:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;step</span> <span class="pre">:</span> <span class="pre">optional&gt;)</span></code></dt><dd><p>The <em>range</em> generates an <em>iterable</em> sequence of numbers.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">max(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>TODO</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">min(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>TODO</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">range(&lt;start</span> <span class="pre">:</span> <span class="pre">optional&gt;,</span> <span class="pre">&lt;stop</span> <span class="pre">:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;step</span> <span class="pre">:</span> <span class="pre">optional&gt;)</span></code></dt><dd><p>The <em>range</em> function generates an <em>iterable</em> sequence of numbers.</p>
 </dd>
 </dl>
 <p>Note only the <code class="docutils literal notranslate"><span class="pre">stop</span></code> argument is required. If only one argument is passed to the <em>range</em> function, then it is assumed to represent the <code class="docutils literal notranslate"><span class="pre">stop</span></code> argument.</p>
@@ -488,6 +496,20 @@ document.write(`
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="p">]</span>
 </pre></div>
 </div>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">enumerate(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>enumerate</em> function allows you to number the elements in a list.</p>
+</dd>
+</dl>
+<p>Suppose you had a sample of closing stock prices observed over one business week,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">stock_prices</span> <span class="o">=</span> <span class="p">[</span> <span class="mf">101.5</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mf">105.25</span><span class="p">,</span> <span class="mf">107.10</span><span class="p">,</span> <span class="mf">104.56</span> <span class="p">]</span>
+</pre></div>
+</div>
+<p>If you wanted to plot this as a <span class="xref std std-ref">time_series</span> to get a sense for any trends in the price, you would order the observations by day and plot the stock prices against the order in which they occured.</p>
+<p>We already have the <em>y-axis</em> of the time series; we need to generate the <em>x-axis</em>. An easy way to do this is to <code class="docutils literal notranslate"><span class="pre">enumerate()</span></code> the list,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">order</span> <span class="o">=</span> <span class="p">[</span> <span class="n">index</span> <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">stock_prices</span><span class="p">)</span> <span class="p">]</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">enumerate()</span></code> pulls the index of the observation from the list and allows you to use it in the <code class="docutils literal notranslate"><span class="pre">&lt;expr&gt;</span></code> of <a class="reference internal" href="02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a>. This is especially useful for time series data, as this example illustrates.</p>
 </section>
 <section id="standard-library-functions">
 <span id="python-standard-library"></span><h2>Standard Library Functions<a class="headerlink" href="#standard-library-functions" title="Permalink to this headline">#</a></h2>
@@ -496,10 +518,10 @@ document.write(`
 <blockquote>
 <div><p>import &lt;package-name&gt;</p>
 </div></blockquote>
-<p>We will be using two packages in particular from the <em>Standard Library</em> over and over again in this class, <code class="docutils literal notranslate"><span class="pre">math</span></code> and <code class="docutils literal notranslate"><span class="pre">ranodom</span></code>.</p>
+<p>We will be using two packages in particular from the <em>Standard Library</em> over and over again in this class, <code class="docutils literal notranslate"><span class="pre">math</span></code> and <code class="docutils literal notranslate"><span class="pre">random</span></code>.</p>
 <section id="math">
 <span id="python-math-package"></span><h3>Math<a class="headerlink" href="#math" title="Permalink to this headline">#</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">math</span></code> has all sorts of goodies in it. Unfortunately, we won’t need most of them. The ones we will need a detailed below.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">math</span></code> has all sorts of goodies in it. Unfortunately, we won’t need most of them. The ones we will need are detailed below.</p>
 <section id="square-root">
 <h4>Square Root<a class="headerlink" href="#square-root" title="Permalink to this headline">#</a></h4>
 <p>TODO</p>

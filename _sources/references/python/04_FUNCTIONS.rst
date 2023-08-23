@@ -34,8 +34,18 @@ Built-In Functions
     total = sum(data)
     print(data)
 
+.. note::
+
+    The ``sum`` function is only defined if the list contains numerical data.
+
+``max(<list : required>)``
+    TODO 
+
+``min(<list : required>)``
+    TODO 
+
 ``range(<start : optional>, <stop : required>, <step : optional>)``
-    The *range* generates an *iterable* sequence of numbers. 
+    The *range* function generates an *iterable* sequence of numbers. 
 
 Note only the ``stop`` argument is required. If only one argument is passed to the *range* function, then it is assumed to represent the ``stop`` argument. 
 
@@ -61,6 +71,25 @@ You can use the ``start`` and ``step`` arguments to generate arbitrary lists of 
 
     data = [ i for i range(2, 20, 2) ]
 
+``enumerate(<list : required>)``
+    The *enumerate* function allows you to number the elements in a list.
+
+Suppose you had a sample of closing stock prices observed over one business week,
+
+.. code:: python
+
+    stock_prices = [ 101.5, 100, 105.25, 107.10, 104.56 ]
+
+If you wanted to plot this as a :ref:`time_series` to get a sense for any trends in the price, you would order the observations by day and plot the stock prices against the order in which they occured. 
+
+We already have the *y-axis* of the time series; we need to generate the *x-axis*. An easy way to do this is to ``enumerate()`` the list,
+
+.. code:: python
+
+    order = [ index for index, data in enumerate(stock_prices) ]
+
+``enumerate()`` pulls the index of the observation from the list and allows you to use it in the ``<expr>`` of :ref:`python_list_comprehension`. This is especially useful for time series data, as this example illustrates.
+
 .. _python_standard_library:
 
 Standard Library Functions
@@ -72,14 +101,14 @@ The syntax for importing an additional package is simply,
 
     import <package-name>
 
-We will be using two packages in particular from the *Standard Library* over and over again in this class, ``math`` and ``ranodom``. 
+We will be using two packages in particular from the *Standard Library* over and over again in this class, ``math`` and ``random``. 
 
 .. _python_math_package:
 
 Math
 ----
 
-The ``math`` has all sorts of goodies in it. Unfortunately, we won't need most of them. The ones we will need a detailed below. 
+The ``math`` has all sorts of goodies in it. Unfortunately, we won't need most of them. The ones we will need are detailed below. 
 
 
 Square Root
