@@ -34,6 +34,9 @@ Scientific
 
 - `Alpha Particle Emissions <https://www.randomservices.org/random/data/Alpha.html>`_
 - `Density of the Earth <https://www.randomservices.org/random/data/Cavendish.html>`_
+- `London Weather <https://www.kaggle.com/datasets/emmanuelfwerr/london-weather-data>`_
+- `Manatee Mortality <https://myfwc.com/research/manatee/rescue-mortality-response/statistics/mortality/>`_
+- `Old Faithful <https://www.stat.cmu.edu/~larry/all-of-statistics/=data/faithful.dat>`_
 - `Velocity of Light <https://www.randomservices.org/random/data/Michelson.html>`_
 
 Economic
@@ -46,6 +49,6 @@ Economic
 Cultural
 --------
 
+- `Celebrity Twitter <https://www.kaggle.com/datasets/ahmedshahriarsakib/top-1000-twitter-celebrity-tweets-embeddings>`_
 - `Instagram Reviews <https://www.kaggle.com/datasets/saloni1712/instagram-play-store-reviews>`_
-- `London Weather <https://www.kaggle.com/datasets/emmanuelfwerr/london-weather-data>`_
 - `Marvel Movies <https://www.kaggle.com/datasets/joebeachcapital/marvel-movies>`_

@@ -16,11 +16,6 @@ Python Installation
 ChromeOS
 --------
 
-This video will illustrate each of the steps below.
-
-(TODO INSERT YOUTUBE VIDEO HERE)
-
-
 Step 1: Update ChromeOS 
 ***********************
 
@@ -31,9 +26,13 @@ Ensure you are on the latest version of the ChromeOS operating system.
 Step 2: Enable Linux Subsystem
 ******************************
 
+.. image:: https://img.youtube.com/vi/LauMdnSRWa8/maxresdefault.jpg
+    :alt: Enable Linux Subsystem
+    :target: https://www.youtube.com/watch?v=LauMdnSRWa8
+
 Enable and install Linux subsystem in the Settings menu,
 
-(INSERT SCREENSHOT)
+(SCREENSHOT)
 
 This will give you access to something called the *command line* (sometimes called a *terminal* or a *shell*). The *command line* is a direct interface to the operating system of your laptop. Let's take a look.
 
@@ -151,6 +150,10 @@ Once this command completes, verify you installation by printing the version to 
 Step 4: Install Libraries 
 *************************
 
+.. image:: https://img.youtube.com/vi/Wm7KgJcts8s/maxresdefault.jpg
+    :alt: Installing Libraries
+    :target: https://www.youtube.com/watch?v=Wm7KgJcts8s
+
 **Python** alone is not enough. We need to plugin some additional functionality to the bare bones installation of **Python**. 
 
 In order to create graphics, we need a graphics library. 
@@ -204,6 +207,10 @@ If you want to install **Python** on your home PC or laptop, you can download th
 
 Interpretter
 ============
+
+.. image:: https://img.youtube.com/vi/lHqt-dLR8iU/maxresdefault.jpg
+    :alt: Creating Lists
+    :target: https://www.youtube.com/watch?v=lHqt-dLR8iU
 
 Once **Python** is installed, you will have access to the `python` command on the terminal. Open a *Linux* and verify your installation with the following command, 
 
