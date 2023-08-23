@@ -432,7 +432,10 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#special-slicing-techniques">Special Slicing Techniques</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comprehension">Comprehension</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comprehension">Comprehension</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#filtering">Filtering</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
@@ -725,6 +728,28 @@ document.write(`
 </pre></div>
 </div>
 <p><em>List comprehension</em> is usually used in conjunction with the <cite>range() built-in function &lt;python_builtin_functions&gt;</cite>. Hop over to that section, take a look at <code class="docutils literal notranslate"><span class="pre">range()</span></code> to see more examples.</p>
+<section id="filtering">
+<h4>Filtering<a class="headerlink" href="#filtering" title="Permalink to this headline">#</a></h4>
+<p>Suppose you had the a dataset that represented a group of men and women’s average height, where each observation in the sample is an ordered pair <img class="math" src="../../_images/math/db3b041d6222b5fe5fd26fa90cfb17219b7a1623.png" alt="(x, y)"/>
+with <em>x</em> corresponding the gender of the individual and <em>y</em> corresponding to their height measured in feet,</p>
+<div class="math">
+<p><img src="../../_images/math/cca2b7a102288de10cfa5d581f426acbafb93c99.png" alt="S = \{ (m, 5.9), (m, 5.75), (f, 5.6), (f, 5.8), (m, 6.3), (f, 5.7), (m, 6.0), (f, 5.3) \}"/></p>
+</div><p>In <strong>Python</strong>, you could store this sample in a list with the following code snippet,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="o">.</span> <span class="mf">5.75</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="mf">5.6</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="mf">6.3</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">)</span> <span class="p">]</span>
+</pre></div>
+</div>
+<p>Often we will need to <em>group</em> the data by category. For example, in this data set, we might like to look at the average height of <em>males only</em> versus the average of <em>females only</em>. You can achieve this result with a tecnique known as <em>filtering</em>. <em>Filtering</em> consists of applying a condition to each member of the list to determine whether it should be included or not.</p>
+<p>The syntax for filtering is given by,</p>
+<blockquote>
+<div><p>list = [ &lt;expr&gt; for &lt;element&gt; in &lt;list&gt; if &lt;condition&gt; ]</p>
+</div></blockquote>
+<p>Applying this idea to the dataset above, we can create a list that contains only male heights and a list that contains only female height as follows,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">male_heights</span> <span class="o">=</span> <span class="p">[</span> <span class="n">obs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">obs</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">if</span> <span class="n">obs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;m&#39;</span> <span class="p">]</span>
+<span class="n">female_heights</span> <span class="o">=</span> <span class="p">[</span> <span class="n">obs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">obs</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">if</span> <span class="n">obs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;f&#39;</span> <span class="p">]</span>
+</pre></div>
+</div>
+<p><em>Filtering</em> is very useful when you are <em>cleaning data</em> for analysis. Data is not usually in a format ready for analysis. You will often need to perform some preparatory steps to get the data ready. As this example illustrates, <em>filtering</em> is often (but not always!) the exact tool we need to do this.</p>
+</section>
 </section>
 </section>
 <section id="references">
@@ -806,7 +831,10 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#special-slicing-techniques">Special Slicing Techniques</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comprehension">Comprehension</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comprehension">Comprehension</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#filtering">Filtering</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>

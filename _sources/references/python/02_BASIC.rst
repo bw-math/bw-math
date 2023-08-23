@@ -361,6 +361,37 @@ For example, the following code snippets uses the list ``[1, 2, 3, 4, 5]`` to ge
 
 *List comprehension* is usually used in conjunction with the `range() built-in function <python_builtin_functions>`. Hop over to that section, take a look at ``range()`` to see more examples.
 
+Filtering
+*********
+
+Suppose you had the a dataset that represented a group of men and women's average height, where each observation in the sample is an ordered pair :math:`(x, y)`
+with *x* corresponding the gender of the individual and *y* corresponding to their height measured in feet,
+
+.. math:: 
+
+    S = \{ (m, 5.9), (m, 5.75), (f, 5.6), (f, 5.8), (m, 6.3), (f, 5.7), (m, 6.0), (f, 5.3) \}
+
+In **Python**, you could store this sample in a list with the following code snippet, 
+
+
+.. code:: python
+
+    data = [ ('m', 5.9), ('m'. 5.75), ('f', 5.6), ('f', 5.8), ('m', 6.3), ('f', 5.7), ('m', 6.0), ('f', 5.3) ]
+
+Often we will need to *group* the data by category. For example, in this data set, we might like to look at the average height of *males only* versus the average of *females only*. You can achieve this result with a tecnique known as *filtering*. *Filtering* consists of applying a condition to each member of the list to determine whether it should be included or not. 
+
+The syntax for filtering is given by,
+
+    list = [ <expr> for <element> in <list> if <condition> ]
+
+Applying this idea to the dataset above, we can create a list that contains only male heights and a list that contains only female height as follows,
+
+.. code:: python
+
+    male_heights = [ obs[1] for obs in data if obs[0] == 'm' ]
+    female_heights = [ obs[1] for obs in data if obs[1] == 'f' ]
+
+*Filtering* is very useful when you are *cleaning data* for analysis. Data is not usually in a format ready for analysis. You will often need to perform some preparatory steps to get the data ready. As this example illustrates, *filtering* is often (but not always!) the exact tool we need to do this. 
 
 References
 ==========

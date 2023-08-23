@@ -166,6 +166,6 @@ You can download the full dataset :download:`here <../../assets/datasets/earth_d
 The following table is the a preview of the data you will be using for this project. 
 
 .. csv-table:: Michelson's Velocity of Light Data
-   :file: ../../assets/datasets/previews/density_of_the_earth_data_preview.csv
+   :file: ../../assets/datasets/previews/earth_density_data_preview.csv
 
 The first column corresponds to the experiment number (first, second, third, etc.). The second column is the *ratio of the density of Earth to the density of water*. Recall the density of water by definition is :math:`1 \frac{g}{cm^3}`.
