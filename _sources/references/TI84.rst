@@ -1,6 +1,10 @@
+.. _ti84:
+
 =====
 TI-84
 =====
+
+.. _ti84_basic_operations:
 
 Basic Operations
 ================
@@ -12,8 +16,12 @@ Creating Lists
     :alt: Creating Lists
     :target: https://www.youtube.com/watch?v=RUGIsQ8Xluk
 
+.. _ti84_statistics:
+
 Statistics
 ==========
+
+.. _ti84_sample_percentiles:
 
 Sample Percentiles
 ------------------
@@ -21,6 +29,8 @@ Sample Percentiles
 .. image:: https://img.youtube.com/vi/5TXzhpTnk4Q/maxresdefault.jpg
     :alt: Sample Percentiles
     :target: https://www.youtube.com/watch?v=5TXzhpTnk4Q
+
+.. _ti84_sample_percentiles_redux:
 
 Sample Percentiles Redux
 ------------------------
