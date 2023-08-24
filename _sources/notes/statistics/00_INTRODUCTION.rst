@@ -83,6 +83,8 @@ Often, these two goals are at odds with one another. In order to make a sample *
 Sampling Techniques
 -------------------
 
+.. _random_sampling:
+
 Random
 ******
 
@@ -94,6 +96,8 @@ Examples
     - Mixing names in a hat and picking three names without looking.
     - Going through the phone book and flipping a coin to determine who to include in the sample and who to exclude. 
     - Assign every name a number and then draw random numbers.
+
+.. _systematic_sampling:
 
 Systematic
 **********
@@ -107,6 +111,8 @@ Examples
     - Selecting ten people from every zipcode.
     - Sending out surveys and using every 5 :sup:`th` one that is returned.
 
+.. _stratifed_sampling:
+
 Stratified
 **********
 
@@ -116,7 +122,10 @@ Definition
 Example
         
 
+.. _cluster_sampling:
+
 Cluster
+*******
 
     TODO
 
@@ -207,6 +216,8 @@ In other words, *how* you make the observation may change *what* you are observi
 Classifications of Data
 -----------------------
 
+.. _data_dimensionality:
+
 Dimensionality
 **************
 
@@ -228,6 +239,8 @@ Multivariate
     :math:`\{ (x_{1}^1, x_{2}^1, ... , x_{n}^1 ), (x_{1}^2, x_{2}^2, ... , x_{n}^2 ), ... ,(x_{1}^m, x_{2}^m, ... , x_{n}^m )`
 
 *Multivariate* data consists of observations that each contain an arbitrary number of values (i.e. a *vector*)
+
+.. _data_characteristic:
 
 Characteristic
 **************
