@@ -451,21 +451,29 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#median">Median</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#identifying-skew">Identifying Skew</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#shortcut">Shortcut</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-is-odd">Sample is Odd</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-is-even">Sample is Even</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#identifying-skewness">Identifying Skewness</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-of-thumb">Rule of Thumb</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#z-score">Z Score</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#z-score">Z Score</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Motivation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#formula">Formula</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-variation">Measures of Variation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Motivation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interquartile-range">Interquartile Range</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-of-thumb-for-outliers">Rule of Thumb for Outliers</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#absolute-variation">Absolute Variation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variance">Variance</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Motivation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Motivation</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
@@ -473,7 +481,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outliers">Outliers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-of-thumb">Rule of Thumb</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Rule of Thumb</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chebyshev-s-theorem">Chebyshev’s Theorem</a></li>
@@ -749,9 +757,9 @@ document.write(`
 <p>To see what is meant by the term <em>ordinality</em>, suppose you have a sample of <a class="reference internal" href="00_INTRODUCTION.html#data-characteristic"><span class="std std-ref">quantiative data</span></a> <img class="math" src="../../_images/math/42f6eba29127a8a12bce070ee5bec81d715bb94a.png" alt="\{ x_i \}"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/3484309044fbce023bb6dcec342c3b458755db4c.png" alt="S = \{ x_1, x_2, ..., x_i, ... , x_n \}"/></p>
-</div><p>The <em>m</em> <sup>th</sup> order statistic, <img class="math" src="../../_images/math/9c9a612bf35d753230009040b6c3793875943065.png" alt="x_(m)"/> is the <em>m</em> <sup>th</sup> observation in the ordered sample <img class="math" src="../../_images/math/39a336dc46dbad90451b21c5e41867b9b6d29b1a.png" alt="S_(o)"/>,</p>
+</div><p>The <em>m</em> <sup>th</sup> order statistic, <img class="math" src="../../_images/math/9c9a612bf35d753230009040b6c3793875943065.png" alt="x_(m)"/> is the <em>m</em> <sup>th</sup> observation in the ordered sample <img class="math" src="../../_images/math/5d620f0ce538f3de3eb335cc4055b53e87d01e83.png" alt="S_{(o)}"/>,</p>
 <div class="math">
-<p><img src="../../_images/math/e9abc481b096bf21d211768c76f5755d8ed8fa7c.png" alt="S_(o) = \{ x_{(1)}, x_{(2)}, ... x_{(m)}, ..., x_{(n)} \}"/></p>
+<p><img src="../../_images/math/1f7001b6c9563ef6a87614c8d8ea688561d605d6.png" alt="S_{(o)} = \{ x_{(1)}, x_{(2)}, ... x_{(m)}, ..., x_{(n)} \}"/></p>
 </div><p>After the data set is sorted, the new index (subscript) <code class="docutils literal notranslate"><span class="pre">(m)</span></code> attached to the observation is called the <em>order</em> of the observation.</p>
 <dl>
 <dt>Example</dt><dd><p>Suppose you measure the lifetime of a sample of batteries in years. You obtain the following result,</p>
@@ -761,8 +769,8 @@ document.write(`
 </dl>
 <p>Then the ordered sample <img class="math" src="../../_images/math/39a336dc46dbad90451b21c5e41867b9b6d29b1a.png" alt="S_(o)"/> is given</p>
 <div class="math">
-<p><img src="../../_images/math/ebe613702f48adbf214b4cc6b421f804ac7f5eba.png" alt="S_(o) = \{ 1.4 \text{ years }, 3.3 \text{ years }, 5.1 \text{ years }, 6.7 \text{ years } \}"/></p>
-</div><p>The 1 <sup>st</sup> <em>order statistic</em> is <em>1.4 years</em>, the 2 <sup>nd</sup> <em>order statistic</em> is <em>3.3 years</em>, the 3 <sup>rd</sup> <em>order statistic</em> is <em>5.1 years</em> and the 4 <sup>th</sup> <em>order statistic</em> is <em>6.7 years</em>. Another way of saying this would be the <em>order</em> of <em>1.4 years</em> is 1, the <em>order</em> of <em>3.3 years</em> is 2, the <em>order</em> of <em>5.1 years</em> is 3 and the <em>order</em> of <em>6 years</em> is 4.</p>
+<p><img src="../../_images/math/dd140803b63534b92e31e5e49815c65d45331750.png" alt="S_{(o)} = \{ 1.4 \text{ years }, 3.3 \text{ years }, 5.1 \text{ years }, 6.7 \text{ years } \}"/></p>
+</div><p>The 1 <sup>st</sup> <em>order statistic</em> <img class="math" src="../../_images/math/7aa70a4ac203aa2ed9e0d040185bef92f3124ff4.png" alt="x_{(1)}"/> is <em>1.4 years</em>, the 2 <sup>nd</sup> <em>order statistic</em> <img class="math" src="../../_images/math/a80b5a6e88cbf3dc6b46afda81c9782c19ea1c3d.png" alt="x_{(2)}"/> is <em>3.3 years</em>, the 3 <sup>rd</sup> <em>order statistic</em> <img class="math" src="../../_images/math/39e7cee1481ddc7014c78ff87e86ef6eb058c23d.png" alt="x_{(3)}"/> is <em>5.1 years</em> and the 4 <sup>th</sup> <em>order statistic</em> <img class="math" src="../../_images/math/7ef1dbe8243c3bdcae773590e381306bfc7c1619.png" alt="x_{(4)}"/> is <em>6.7 years</em>. Another way of saying this would be the <em>order</em> of <em>1.4 years</em> is 1, the <em>order</em> of <em>3.3 years</em> is 2, the <em>order</em> of <em>5.1 years</em> is 3 and the <em>order</em> of <em>6 years</em> is 4.</p>
 <p><em>Order statistics</em> are important because they allows us to define more complex statistics in a precise manner.</p>
 <section id="range">
 <span id="id14"></span><h4>Range<a class="headerlink" href="#range" title="Permalink to this headline">#</a></h4>
@@ -807,7 +815,7 @@ document.write(`
 </dl>
 <p>We denote the order statistic <img class="math" src="../../_images/math/9c9a612bf35d753230009040b6c3793875943065.png" alt="x_(m)"/> which satisfies this formula as the <img class="math" src="../../_images/math/feef0d56168a273f4d2b0aefb4c2b025aa9c358c.png" alt="\pi_p"/> percentile,</p>
 <div class="math">
-<p><img src="../../_images/math/77b800ba874f8c557755e2cee8d953d20e79a11c.png" alt="\pi_p = x_(m)"/></p>
+<p><img src="../../_images/math/b37e9beab0eb0ea979af7dc1f2dc68fc437b707a.png" alt="\pi_p = x_{(m)}"/></p>
 </div><dl>
 <dt>Example</dt><dd><p>Suppose you were conducting a study to determine how many minutes late or early the average city bus arrived versus its scheduled time. You obtained the following data set, measured in minutes,</p>
 <div class="math">
@@ -888,10 +896,16 @@ document.write(`
 <span id="percentile-formula"></span><h4>General Formula<a class="headerlink" href="#general-formula" title="Permalink to this headline">#</a></h4>
 <p>We can abstract away the specifies from the previous example to arrive at the general formula for a <em>sample percentile</em>. The <img class="math" src="../../_images/math/5a370fe464b17da9be1d8a2676ab8d230c8cf781.png" alt="(p \cdot 100 \%)^{\text{th}}"/> percentile <img class="math" src="../../_images/math/feef0d56168a273f4d2b0aefb4c2b025aa9c358c.png" alt="\pi_p"/> is defined as the order statistic <img class="math" src="../../_images/math/5b7911294f5ce25e14a533686eb676195fc547f4.png" alt="x_{(m)}"/>,</p>
 <div class="math">
-<p><img src="../../_images/math/fe973f6d6e2b6feddbecee5ad0c0418c529ab11e.png" alt="\pi_p = x_{(m)} = x_{(\lfloor m \rfloor)} + x_{(\lceil m \rceil )} * (m - \lfloor m \rfloor)"/></p>
-</div><p>Where</p>
+<p><img src="../../_images/math/7c12e3afc828b74c6baf044939ce4f4878c06ba8.png" alt="\pi_p = x_{(m)} = x_{(\lfloor m \rfloor)} + (x_{(\lceil m \rceil )} - x_{(\lfloor m \rfloor)})* (m - \lfloor m \rfloor)"/></p>
+</div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In this definition, we have chosen <em>Equation 1, Redux</em> from the previous section to express the percentile. We could also define the percentile <img class="math" src="../../_images/math/feef0d56168a273f4d2b0aefb4c2b025aa9c358c.png" alt="\pi_p"/> using <em>Equation 2, Redux</em> from the previous section as,</p>
 <div class="math">
-<p><img src="../../_images/math/86b00bf9006d0249adc5e92f38ac3bfb46e6db0c.png" alt="m = \frac{p}{n+1}"/></p>
+<p><img src="../../_images/math/1012ba92bb601155dc7da77e9e40c671ff2deb16.png" alt="\pi_p = x_{(m)} = x_{(\lceil m \rceil)} - (x_{(\lceil m \rceil )} - x_{(\lfloor m \rfloor)})* (\lceil m \lceil - m)"/></p>
+</div><p>In other words, we can either correct from <em>above</em> the order staistic <img class="math" src="../../_images/math/5b7911294f5ce25e14a533686eb676195fc547f4.png" alt="x_{(m)}"/>, or from <em>below</em> the order statistic <img class="math" src="../../_images/math/5b7911294f5ce25e14a533686eb676195fc547f4.png" alt="x_{(m)}"/>, as detailed in the previous. Either way will give the same answer.</p>
+</div>
+<div class="math">
+<p><img src="../../_images/math/f206c2fd202dcdc5e6501f3bc3356b9174e4169d.png" alt="m = p \cdot (n+1)"/></p>
 </div><div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This formula, while conceptually more difficult than the procedure offered by the book, is more versatile. This formula will work no matter if the sample contains an even number of data points or an odd number of data points; It will work if the order <em>m</em> is a whole number or if the order <em>m</em> is a fraction. It can be applied to <em>every quantitative</em> sample of data.</p>
@@ -954,6 +968,97 @@ document.write(`
 <section id="median">
 <h3>Median<a class="headerlink" href="#median" title="Permalink to this headline">#</a></h3>
 <p>The <em>median</em> of a dataset is the observation such that half of the sample is above it and half of the sample is above it. As the table in the previous section indicated, another way of saying this is the <em>median</em> is the <em>50</em> <sup>th</sup> percentile.</p>
+<p>First, let’s state a quick shortcut formula for the median that you are probably familiar with, although you may not have seen it stated as precisely.</p>
+<section id="shortcut">
+<h4>Shortcut<a class="headerlink" href="#shortcut" title="Permalink to this headline">#</a></h4>
+<p>Applying the <a class="reference internal" href="#percentile-formula"><span class="std std-ref">General Formula</span></a> to the special case of the median, i.e. <img class="math" src="../../_images/math/a18b3996a403dfc97e7c2db7cda1362e41caab6a.png" alt="p = 0.5"/>, we have <em>order</em> of the median as,</p>
+<div class="math">
+<p><img src="../../_images/math/8fb8d973b301ad1f22855e24a01bbb23db738505.png" alt="m = 0.5 \cdot (n+1) = \frac{n+1}{2}"/></p>
+</div><p>We must consider two cases: if <em>n</em> is odd or if <em>n</em> is even. Depending on the case, the <em>order m</em> of the median will be an integer value or an fractional value.</p>
+</section>
+<section id="sample-is-odd">
+<h4>Sample is Odd<a class="headerlink" href="#sample-is-odd" title="Permalink to this headline">#</a></h4>
+<hr class="docutils" />
+<p>If <em>n</em> is odd, then <em>n+1</em> is even (<em>divisibly be 2</em>). If <em>n+1</em> is even, then <em>m</em> is an integer. If <em>m</em> is an integer, then <img class="math" src="../../_images/math/1daf16020d9f969df695e027db9f4fa83c9e5433.png" alt="\lfloor m \rfloor = m = \lceil m \rceil"/>,</p>
+<p>The percentile <img class="math" src="../../_images/math/d2de40790989e44dbfe6fd614ad87ad1e3f6b876.png" alt="\pi_{0.50}"/> is given by,</p>
+<div class="math">
+<p><img src="../../_images/math/df872adde9d9a56657b35a263e93bdf795d72ce8.png" alt="\pi_0.50 = x_{(\lfloor m \rfloor)} + (x_{(\lceil m \rceil )} - x_{(\lfloor m \rfloor)}) \cdot (m - \lfloor m \rfloor)"/></p>
+</div><p>Applying <img class="math" src="../../_images/math/1daf16020d9f969df695e027db9f4fa83c9e5433.png" alt="\lfloor m \rfloor = m = \lceil m \rceil"/>,</p>
+<div class="math">
+<p><img src="../../_images/math/1d86e5d8445d15a3cb7694032eef9833ab2e4655.png" alt="\pi_0.50 = x_{(m)} + (x_{(m)} - x_{(m)}) \cdot (m - m)"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/1a824b8276e32f0a31a555635f1bbe7bc0d8e362.png" alt="\implies \pi_0.50 = x_{(m)} + 0 = x_{(m)}"/></p>
+</div><p>Since <img class="math" src="../../_images/math/3cec8d46f44738c3c07379b20a6cf84cd8e5fce5.png" alt="m = \frac{n+1}{2}"/>,</p>
+<div class="math">
+<p><img src="../../_images/math/4e4f76c94f61044c98d458591d8ae6670c12d4c7.png" alt="\implies \pi_0.50 = x_{(\frac{n+1}{2})}"/></p>
+</div><p>Recalling the meaning of the term <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">x_{(\frac{n+1}{2})</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.15 ...ze{12}{14}\selectfont $x_{(\frac{n+1}{2})$
+                                                  
+[1] (./math.aux) )
+(see the transcript file for additional information)
+Output written on math.dvi (1 page, 424 bytes).
+Transcript written on math.log.
+</p>
+</div>
+, we see if the number of samples is odd, then <em>median</em> is simply the <img class="math" src="../../_images/math/0df35ae86503d0bafec7ddba90e0ca0c9002db46.png" alt="\frac{n+1}{2}"/> <sup>th</sup> ordered observation.</p>
+<div class="topic">
+<p class="topic-title">Odd Sample: Median Shortcut</p>
+<p>pi_0.50 = x_{(frac{n+1}{2})</p>
+</div>
+</section>
+<section id="sample-is-even">
+<h4>Sample is Even<a class="headerlink" href="#sample-is-even" title="Permalink to this headline">#</a></h4>
+<hr class="docutils" />
+<p>If <em>n</em> is even, then <em>n+1</em> is odd (<em>not divisible by 2</em>). If <em>n+1</em> is odd, then <em>m</em> is not an integer. Because <em>m</em> is being divided by 2 and it is not an integer,</p>
+<div class="math">
+<p><img src="../../_images/math/289f67c838e7a75c74ff750ff32a39e2b131c934.png" alt="m - \lfloor m \rfloor = 0.5 = \frac{1}{2}"/></p>
+</div><p>In other words, any fraction with a denominator of 2 is either a whole number or a decimal that ends in <em>0.5</em>.</p>
+<p>Applying this information to the sample percentile formula,</p>
+<div class="math">
+<p><img src="../../_images/math/d240d27e662cb31c9fa0da21efe451d72532f2df.png" alt="\pi_0.50 = x_{(\lfloor m \rfloor)} + (x_{(\lceil m \rceil )} - x_{(\lfloor m \rfloor)}) \cdot \frac{1}{2}"/></p>
+</div><p>Distributing the <img class="math" src="../../_images/math/ba97e16c7f9569bc9ec9fb7e38da7355fb167ea5.png" alt="\frac{1}{2}"/>,</p>
+<div class="math">
+<p><img src="../../_images/math/f87be2da556ef29ed9aba947e297270ce5dd210d.png" alt="\pi_0.50 = x_{(\lfloor m \rfloor)} + \frac{x_{(\lceil m \rceil )}}{2} - \frac{x_{(\lfloor m \rfloor)}}{2}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/b9f582585b355d2093c59ee9c14278b54defcdd3.png" alt="\implies \pi_0.50 = \frac{x_{(\lceil m \rceil )}}{2} + \frac{x_{(\lfloor m \rfloor)}}{2}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/38f93864c2c54c4cbb93d0192c92aaa83ecf174c.png" alt="\implies \pi_0.50 = \frac{x_{(\lceil m \rceil )} + x_{(\lfloor m \rfloor)}}{2}"/></p>
+</div><p>Plugging in <img class="math" src="../../_images/math/3cec8d46f44738c3c07379b20a6cf84cd8e5fce5.png" alt="m = \frac{n+1}{2}"/></p>
+<div class="math">
+<p><img src="../../_images/math/464572f946e7a59cbcaa729e248889a2c24cf646.png" alt="\pi_0.50 = \frac{x_{(\lceil \frac{n+1}{2} \rceil )} + x_{(\lfloor \frac{n+1}{2} \rfloor)}}{2}"/></p>
+</div></section>
+<section id="identifying-skewness">
+<h4>Identifying Skewness<a class="headerlink" href="#identifying-skewness" title="Permalink to this headline">#</a></h4>
 <p>The median is important for helping identify <a class="reference internal" href="01_GRAPHICAL_REPRESENTATIONS.html#skew"><span class="std std-ref">skewness</span></a> in data. To see why, consider the following example.</p>
 <dl>
 <dt>Example</dt><dd><p>The annual income, measured to the nearest thousand, of a random sample of people is given below,</p>
@@ -987,8 +1092,10 @@ document.write(`
 </div><p>Take note, there is a large divergence between the value of the sample mean and the value of median here. The sample mean in this example <img class="math" src="../../_images/math/2cd6777983e1466983489d7c6b879128472f5485.png" alt="\bar{x}"/> has a value that is larger than every observation in the sample except one, the person with an annual income of <em>$2,000,000</em>, whereas the median is closer where the majority of observations lie.</p>
 <p>The observation of <em>$2,000,000</em> is an <a class="reference internal" href="#outlier"><span class="std std-ref">Outlier</span></a>, an unusual observation. This example illustrates when the sample mean is not a <em>resilient</em> measure of <em>centrality</em>; the presence of a single outlying observation in the sample <em>skews</em> the sample mean <em>towards</em> the outlying observation. The median, however, preserves its ability to measure <em>centrality</em> when the sample contains outliers.</p>
 <p>This idea will allow us to develop a general rule of thumb for identifying the presence of <a class="reference internal" href="01_GRAPHICAL_REPRESENTATIONS.html#skew"><span class="std std-ref">Skew</span></a> in samples.</p>
-<section id="identifying-skew">
-<h4>Identifying Skew<a class="headerlink" href="#identifying-skew" title="Permalink to this headline">#</a></h4>
+</section>
+<section id="rule-of-thumb">
+<h4>Rule of Thumb<a class="headerlink" href="#rule-of-thumb" title="Permalink to this headline">#</a></h4>
+<hr class="docutils" />
 <p>Consider a symmetrical sample distribution,</p>
 <div class="math">
 <p><img src="../../_images/math/ede7c3c75e8ff9bc8c1dc6f7911107fb7513cd79.png" alt="S = \{ 1, 5, 5, 5, 9 \}"/></p>
@@ -1030,17 +1137,27 @@ document.write(`
 </section>
 <section id="z-score">
 <h3>Z Score<a class="headerlink" href="#z-score" title="Permalink to this headline">#</a></h3>
+<p><em>Percentiles</em> are one way of describing location, but they are not the only way. We can also use <em>Z-Scores</em> to talk about the location of data.</p>
+<section id="id17">
+<h4>Motivation<a class="headerlink" href="#id17" title="Permalink to this headline">#</a></h4>
 <p>TODO</p>
-<div class="math">
+</section>
+<section id="formula">
+<h4>Formula<a class="headerlink" href="#formula" title="Permalink to this headline">#</a></h4>
+<dl>
+<dt>Definition</dt><dd><div class="math">
 <p><img src="../../_images/math/355911cc4d9fcf781150b979f8764a3876731f10.png" alt="z = \frac{x_i - \bar{x}}{s}"/></p>
-</div><p>TODO</p>
+</div></dd>
+</dl>
+<p>TODO</p>
+</section>
 </section>
 </section>
 <section id="measures-of-variation">
-<span id="id17"></span><h2>Measures of Variation<a class="headerlink" href="#measures-of-variation" title="Permalink to this headline">#</a></h2>
+<span id="id18"></span><h2>Measures of Variation<a class="headerlink" href="#measures-of-variation" title="Permalink to this headline">#</a></h2>
 <p><em>Measures of variation</em> characterize the <em>spread</em> and <em>dispersion</em> of a sample of data.</p>
-<section id="id18">
-<h3>Motivation<a class="headerlink" href="#id18" title="Permalink to this headline">#</a></h3>
+<section id="id19">
+<h3>Motivation<a class="headerlink" href="#id19" title="Permalink to this headline">#</a></h3>
 <p>Consider these two samples of data <img class="math" src="../../_images/math/08dae650aba750710b182a0e7b1e63c09404075b.png" alt="S_1"/> and <img class="math" src="../../_images/math/7a01e66959cdf273b6b3c5541280a7402771722e.png" alt="S_2"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/754cdb6148d139ef3ccd106ede07d0a517a3998d.png" alt="S_1 = \{ 4, 5, 6 \}"/></p>
@@ -1062,7 +1179,7 @@ document.write(`
 <p>The goal of the next few sections is to come up with a way of quantifying and measuring this <em>variation</em>.</p>
 </section>
 <section id="interquartile-range">
-<span id="id19"></span><h3>Interquartile Range<a class="headerlink" href="#interquartile-range" title="Permalink to this headline">#</a></h3>
+<span id="id20"></span><h3>Interquartile Range<a class="headerlink" href="#interquartile-range" title="Permalink to this headline">#</a></h3>
 <p>First up, we have the <em>interquartile range</em>.</p>
 <p>TODO</p>
 <section id="rule-of-thumb-for-outliers">
@@ -1071,19 +1188,19 @@ document.write(`
 </section>
 </section>
 <section id="absolute-variation">
-<span id="id20"></span><h3>Absolute Variation<a class="headerlink" href="#absolute-variation" title="Permalink to this headline">#</a></h3>
+<span id="id21"></span><h3>Absolute Variation<a class="headerlink" href="#absolute-variation" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
 </section>
 <section id="variance">
 <span id="sample-variance"></span><h3>Variance<a class="headerlink" href="#variance" title="Permalink to this headline">#</a></h3>
-<section id="id21">
-<h4>Motivation<a class="headerlink" href="#id21" title="Permalink to this headline">#</a></h4>
+<section id="id22">
+<h4>Motivation<a class="headerlink" href="#id22" title="Permalink to this headline">#</a></h4>
 <p>Let us consider a rather contrived example that is nevertheless instructive. Suppose <strong>S</strong> a sample of data.represents
 TODO</p>
 </section>
 </section>
 <section id="standard-deviation">
-<span id="id22"></span><h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">#</a></h3>
+<span id="id23"></span><h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
 </section>
 <section id="coefficient-of-variation">
@@ -1095,8 +1212,8 @@ TODO</p>
 <section id="outliers">
 <h2>Outliers<a class="headerlink" href="#outliers" title="Permalink to this headline">#</a></h2>
 <p>TODO</p>
-<section id="rule-of-thumb">
-<h3>Rule of Thumb<a class="headerlink" href="#rule-of-thumb" title="Permalink to this headline">#</a></h3>
+<section id="id24">
+<h3>Rule of Thumb<a class="headerlink" href="#id24" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
 </section>
 </section>
@@ -1193,21 +1310,29 @@ TODO</p>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#median">Median</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#identifying-skew">Identifying Skew</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#shortcut">Shortcut</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-is-odd">Sample is Odd</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-is-even">Sample is Even</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#identifying-skewness">Identifying Skewness</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-of-thumb">Rule of Thumb</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#z-score">Z Score</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#z-score">Z Score</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Motivation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#formula">Formula</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-variation">Measures of Variation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Motivation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interquartile-range">Interquartile Range</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-of-thumb-for-outliers">Rule of Thumb for Outliers</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#absolute-variation">Absolute Variation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variance">Variance</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Motivation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Motivation</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
@@ -1215,7 +1340,7 @@ TODO</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outliers">Outliers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-of-thumb">Rule of Thumb</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Rule of Thumb</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chebyshev-s-theorem">Chebyshev’s Theorem</a></li>
