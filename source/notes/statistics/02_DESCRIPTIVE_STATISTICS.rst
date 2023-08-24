@@ -321,7 +321,7 @@ The *m* :sup:`th` order statistic, :math:`x_(m)` is the *m* :sup:`th` observatio
 
 .. math:: 
 
-    S_(o) = \{ x_(1), x_(2), ... x_(m), ..., x_(n) \}
+    S_(o) = \{ x_{(1)}, x_{(2)}, ... x_{(m)}, ..., x_{(n)} \}
 
 After the data set is sorted, the new index (subscript) ``(m)`` attached to the observation is called the *order* of the observation. 
 
@@ -330,14 +330,14 @@ Example
 
     .. math::
 
-        S = \{ 5.1 \text{years}, 3.2 \text{years}, 6.7 \text{years}, 1.4 \text{years} \}
+        S = \{ 5.1 \text{ years }, 3.2 \text{ years }, 6.7 \text{ years }, 1.4 \text{ years } \}
 
 
 Then the ordered sample :math:`S_(o)` is given
 
 .. math:: 
 
-    S_(o) = \{ 1.4, 3.3, 5.1, 6.7 \}
+    S_(o) = \{ 1.4 \text{ years }, 3.3 \text{ years }, 5.1 \text{ years }, 6.7 \text{ years } \}
 
 The 1 :sup:`st` *order statistic* is *1.4 years*, the 2 :sup:`nd` *order statistic* is *3.3 years*, the 3 :sup:`rd` *order statistic* is *5.1 years* and the 4 :sup:`th` *order statistic* is *6.7 years*. Another way of saying this would be the *order* of *1.4 years* is 1, the *order* of *3.3 years* is 2, the *order* of *5.1 years* is 3 and the *order* of *6 years* is 4. 
 
@@ -352,11 +352,11 @@ Range
 The range is a measure of the *total variation* of a sample of data.
 
 Definition
-    The *range* of a sample of data :math:`x_i` is the difference between its last order statistic and its first order statistic, 
+    The *range* of a sample of data :math:`\{ x_1, x_2, ..., x_n \}` is the difference between its last order statistic, :math:`x_(n),` and its first order statistic, :math:`x_(1)` 
 
     .. math::
 
-        \text{Range}(\{ x_i \}) = x_(n) - x_(1)
+        \text{Range}(\{ x_i \}) = x_{(n)} - x_{(1)}
 
 .. _percentile:
 
@@ -364,22 +364,25 @@ Percentile
 **********
 **********
 
+Motivation
+**********
+
 The :math:`(p \cdot 100 \%)^{\text{th}}` *percentile* roughly means the observation in a sample with :math:`(p \cdot 100 \%)` percent of the distribution below its value. 
 
 .. note:: 
 
-    *p* is a fraction here.
+    *p* is a fraction, i.e. :math:`0<= p <=1`.
 
 You have probably encountered the concept of *percentiles* at some point in other classes and have developed an idea of what they represent. Teachers often express quiz and test scores in terms of percentiles to give students a sense of how they are doing relative to the rest of the class. 
 
 The meaning of a percentile should be intuitive and straight-forward; it is a measure of *how much* of a distribution lies below a given observation. The preliminary definition of a *percentile* conforms to this intuition,
 
 Preliminary Definition 
-    If a sample of data has been ordered from lowest value to highest value, then :math:`(p \cdot 100 \%)^{\text{th}}`:sup:`th` percentile of the sample is the observation such that :math:`(p \cdot 100 \%)` percent of the sample is less than or equal that value.
+    If a sample of data has been ordered from lowest value to highest value, then the :math:`(p \cdot 100 \%)^{\text{th}}`:sup:`th` percentile of the sample is the observation such that :math:`(p \cdot 100 \%)` percent of the sample is less than or equal that value.
 
 From this definition, it should be clear *percentiles* only have meaning with respect to :ref:`quantitative data <data_characteristic>`. To *order* a sample of data :math:`\{ x_i \}`, the relation :math:`x_{i-1} < x_i` must have meaning. 
 
-*Order statistics* give us a way to precisely define a percentile. *Order statistics* divide the interval on which the sample was measured into :math:`n+1` intervals, pictured below,
+*Order statistics* give us a way to precisely define a percentile. *Order statistics* divide the interval on which the sample is measured into :math:`n+1` intervals, pictured below,
 
 .. image:: ../../assets/imgs/statistics/order_statistics.jpg
     :align: center
@@ -392,7 +395,7 @@ The number of such intervals below a given order statistic is *equal to* to the 
 
     p = \frac{m}{n+1}
 
-The *order m* :sup:`th` of the observation which corresponds to the :math:`(p \cdot 100 \%)^{\text{th}}` percentile can be found by solving for *m*,
+*p* represents the percent of the intervals below the *m* :sup:`th` order statistic. The *order m* of the observation which corresponds to the :math:`(p \cdot 100 \%)^{\text{th}}` percentile can be found by solving for *m*,
 
 Formula
     .. math::
@@ -410,19 +413,27 @@ Example
 
     .. math::
 
-        S = \{ 6.5 \text{min}, -2.5 \text{min}, 4.3 \text{min}, 0.5 \text{min}, 7.0 \text{min}, -1.0 \text{min}, 5.0 \text{min}, 3.0 \text{min}, -1.5 \text{min} \}
+        S = \{ 6.5 \text{ min }, -2.5 \text{ min }, 4.3 \text{ min }, 0.5 \text{ min }, 7.0 \text{ min }, -1.0 \text{ min }, 5.0 \text{ min }, 3.0 \text{ min }, -1.5 \text{ mi n} \}
 
     Find the following percentiles: 20 :sup:`th` and 50 :sup:`th`
 
 Note in this sample we have :math:`n = 9` total samples.
 
-To find the percentiles, we need to *order* the sample from lowest to highest,
+Before we move onto solving the problem, consider a scatter plot of these observations against their observation order,
+
+.. plot:: assets/plots/examples/03_ex01_unordered.py
+
+To find the percentiles, we need to find the *order statistics*, i.e. we need to *order* the sample from lowest to highest,
 
 .. math:: 
 
-    S_(o)= \{ -2.5 \text{min}, -1.5 \text{min}, -1.0 \text{min}, 0.5 \text{min}, 3.0 \text{min}, 4.3 \text{min}, 5.0 \text{min}, 6.5 \text{min}, 7.0 \text{min} \}
+    S_{(o)}= \{ -2.5 \text{min}, -1.5 \text{min}, -1.0 \text{min}, 0.5 \text{min}, 3.0 \text{min}, 4.3 \text{min}, 5.0 \text{min}, 6.5 \text{min}, 7.0 \text{min} \}
 
-To find the 20 :sup:`th` percentile, :math:`pi_{.20}`, we find the *order* in which it occurs in the sample,
+Once ordered, we can plot the observations against their *rank order*,
+
+.. plot:: assets/plots/examples/03_ex02_ordered.py
+    
+The previous two graphs should make clear the meaning of *order statistics*. To find the 20 :sup:`th` percentile, :math:`pi_{.20}`, we find the *order* in which it occurs in the sample,
 
 .. math:: 
 
@@ -466,64 +477,192 @@ When we try to apply the formula to determine the order statistic which correspo
 
     m = 0.25 \cdot (9 + 1) = 2.5
 
-There is no observation which corresponds to a fractional order. In order to estimate the percentile in this case, we use *linear interpolation*, using the *order* of the observation as the *x* variable and the value of the observation as the *y* variable. 
+There is no observation which corresponds to a fractional order. To estimate the percentile in this case, we use *linear interpolation*, using the *order* of the observation as the *x* variable and the value of the observation as the *y* variable. 
 
 
 To do this, we take the order statistics on each side of :math:`m = 2.5`, in this case :math:`x_(2)` and :math:`x_(3)`, and find the slope of the line that connects them,
 
 .. math:: 
 
-    \text{slope} = \frac{x_(3) - x_(2)}{3-2} = x_(3) - x_(2)
+    \text{slope} = \frac{x_{(3)} - x_{(2)}}{3-2} = x_{(3)} - x_{(2)}
 
-Then we find the point on this line that corresponds to :math:`(2.5, x_(2.5))` (using the point-slope formula!), which will serve as our estimate of the 25 :sup:`th` percentile,
-
-.. math::
-
-    \text{slope} = \frac{x_(3) - x_(2.5)}{3 - 2.5} = x_(3) - x_(2)
-
-Sovling this for :math:`x_(m)`, we obtain,
+Then we find the point on this line that corresponds to :math:`(2.5, x_(2.5))` (using the point-slope formula with the point :math:`(3, x_{(3)}` as the sample point!), which will serve as the estimate of the 25 :sup:`th` percentile,
 
 .. math::
 
-    x_(2.5) = x_(3) - (x_(3) - x_(2))*(3 - 2.5)
+    \text{slope} = \frac{x_{(3)} - x_{(2.5)}}{3 - 2.5} = x_{(3)} - x_{(2)}
 
-Or equivalently (plugging :math:`x_(2)` into the point-slope formula instead of :math:`x_(3)`),
+Sovling this for :math:`x_{(2.5)}`, we obtain,
 
-.. math:: 
+.. math::
 
-    x_(2.5) = x_(2) + (x_(3) - x_(2))*(2.5 - 2)
+    x_{(2.5)} = x_{(3)} - (x_{(3)} - x_{(2)}) \cdot (3 - 2.5) \text{      Equation 1}
 
-Plugging the values in 
-
-
-
-TODO 
-
-This leads to a general expression for the percentile that applies whether the order *m* is a whole number or a fraction,
-
+Or equivalently (plugging :math:`x_(2)` into the point-slope formula instead of :math:`x_{(3)}`),
 
 .. math:: 
 
-    x_(m) = x_(\lfloor m \rfloor) + x_(\lceil m \rceil ) * (m - \lfloor m \rfloor)
+    x_{(2.5)} = x_{(2)} + (x_{(3)} - x_{(2)}) \cdot (2.5 - 2) \text{      Equation 2}
 
-TODO
+Notice in *Equation 1*, we are subtracting a quantity from the third order statistic, :math:`x_{(3)}`, whereas in *Equation 2* we are adding a quantity to the second order statistic, :math:`x_{(4)}`. In other words, to find the percentile of a sample data where the percentile does not correspond to an actual observation we may either subtract a corective quantity from the next largest observation, or add a corrective quantity to the next smallest observation.
 
-.. _median:
+Plugging the values of the *order statistics* :math:`x_{(2)}` and :math:`x_{(3)}` in either equation will result in the answer. 
+
+Applying *Equation 1* to the example, we calculate the *25* :sup:`th` percentile,
+
+.. math:: 
+
+    x_{(2.5)} = -1.0 - (-1.0 - (-1.5)) \cdot (3 - 2.5) = -1.0 - 0.25 = -1.25
+
+Applying *Equation 1* to the example, we calculate the *25* :sup:`th` percentile,
+
+.. math:: 
+
+    x_{(2.5)} = -1.5 + (-1.0 - (-1.5)) \cdot (2.5 - 2) = -1.5 + 0.25 = -1.25
+
+In both cases, we arrive at the same answer of a 25 :sup:`th` percentile of ``-1.25`` minutes.     
+
+Before moving onto the next section where we give the general formula for calculating the *sample percentile*, let us note both *Equation 1* and *Equation 2* can be rewritten in terms of the :ref:`floor_function` and the :ref:`ceiling_function`,
+
+.. math::
+
+    x_{(2.5)} = x_{(\lceil 2.5 \rceil)} - (x_{(\lceil 2.5 \rceil)} - x_{(\lfloor 2.5 \rfloor)}) \cdot (\lceil 2.5 \rceil - 2.5) \text{      Equation 1, Redux}
+
+Or equivalently (plugging :math:`x_(2)` into the point-slope formula instead of :math:`x_{(3)}`),
+
+.. math:: 
+
+    x_{(2.5)} = x_{(\lfloor 2.5 \rfloor)} + (x_{(\lceil 2.5 \rceil)} - x_{(\lfloor 2.5 \rfloor)}) \cdot (2.5 - \lfloor 2.5 \rfloor) \text{      Equation 2, Redux}
+
+.. _percentile_formula:
+
+General Formula
+***************
+
+We can abstract away the specifies from the previous example to arrive at the general formula for a *sample percentile*. The :math:`(p \cdot 100 \%)^{\text{th}}` percentile :math:`\pi_p` is defined as the order statistic :math:`x_{(m)}`,
+
+.. math:: 
+
+    \pi_p = x_{(m)} = x_{(\lfloor m \rfloor)} + x_{(\lceil m \rceil )} * (m - \lfloor m \rfloor)
+
+Where 
+
+.. math:: 
+
+    m = \frac{p}{n+1}
+
+.. note:: 
+
+    This formula, while conceptually more difficult than the procedure offered by the book, is more versatile. This formula will work no matter if the sample contains an even number of data points or an odd number of data points; It will work if the order *m* is a whole number or if the order *m* is a fraction. It can be applied to *every quantitative* sample of data.
+
+.. _special_percentiles:
+
+Special Percentiles
+*******************
+
+The table below lists the names that have been given to special percentiles.
+
++---------------+-------------------------------------+
+| Percentile    | Name                                |
++===============+=====================================+
+| 10 :sup:`th`  | First Decile                        |
++---------------+-------------------------------------+
+| 20 :sup:`th`  | Second Decile                       |
++---------------+-------------------------------------+
+| 25 :sup:`th`  | First Quartile                      |
++---------------+-------------------------------------+
+| 30 :sup:`th`  | Third Decile                        |
++---------------+-------------------------------------+
+| 40 :sup:`th`  | Fourth Decile                       |
++---------------+-------------------------------------+
+| 50 :sup:`th`  | Median/Second Quartile/Fifth Decile |
++---------------+-------------------------------------+
+| 60 :sup:`th`  | Sixth Decile                        |
++---------------+-------------------------------------+
+| 70 :sup:`th`  | Seventh Decile                      |
++---------------+-------------------------------------+
+| 75 :sup:`th`  | Third Quartile                      |
++---------------+-------------------------------------+
+| 80 :sup:`th`  | Eighth Decile                       |
++---------------+-------------------------------------+
+| 90 :sup:`th`  | Ninth Decile                        |
++---------------+-------------------------------------+
+| 100 :sup:`th` | Fourth Quartile/ Tenth Decile       |
++---------------+-------------------------------------+
 
 Median
-******
-******
+-------
+
+The *median* of a dataset is the observation such that half of the sample is above it and half of the sample is above it. As the table in the previous section indicated, another way of saying this is the *median* is the *50* :sup:`th` percentile. 
+
+
+The median is important for helping identify :ref:`skewness <skew>` in data. To see why, consider the following example.
+
+Example
+    The annual income, measured to the nearest thousand, of a random sample of people is given below, 
+
+    .. math::
+
+        S = \{ \$ 50000, \$ 65000, \$ 45000, \$ 30000, \$ 120000, \$ 200000, \$ 70000, \$ 56000, \$ 55000, \$ 2000000 \}
+
+    Find the sample mean and the sample median. 
+
+It is always a good idea to start problems by looking at some sort :ref:`graphical representation <graphical_representations_of_data>` of the data being treated. If we use a histogram here, we immediately notice an unusual feature of this sample,
+
+.. plot:: assets/plots/examples/03_ex03_skewed.py
+
+One of the observations, the person with an annual income of *$2,000,000*, sits well outside the range of the rest of the observations. This feature of the sample, its :ref:`skew`, will manifest in the sample statistics as we move through this example. 
+
+The sample mean is calculated using the :ref:`formula <sample_mean_formula>`,
+
+.. math:: 
+
+    \bar{x} = \frac{ \sum{x_i} }{n} = \$  291000
+
+TODO 
+
+To find the sample median, we first find the *order* that it occurs,
+
+.. math:: 
+
+    m = 0.5 \cdot 11 = 5.5
+
+Then we order the sample, 
+
+.. math:: 
+
+    S_{(o)} = \{ \$ 30000, \$ 45000, \$ 50000, \$ 55000, \$ 56000, \$ 65000, \$ 70000, \$ 120000, \$ 200000, , \$ 2000000 \}
+
+Finally, we apply the :ref:`general percentile formula <percentile_formula>`, with :math:`x_{(5)} = \$ 56000` and :math:`x_{(6)} = \$ 65000`,
+
+.. math:: 
+
+    \pi_p = \$ 56000 + (\$ 65000 - \$ 50000) \cdot (5.5 - 5) = \$ 60500
 
 TODO
 
-.. _quartiles: 
+Take note, there is a large divergence between the value of the sample mean and the value of median here. The sample mean in this example :math:`\bar{x}` value is larger than every observation in the sample except one, the person with an annual income of *$2,000,000*, whereas the median is closer where the majority of values lie. 
 
-Quartiles
-*********
-*********
+TODO
+
+Identifying Skew
+****************
+
+.. topic:: Rule of Thumb for Skew
+
+    1. If median is much greater than mean, then the data are skewed to the left.
+    2. If the median is much less than the mean, then the data are skewed to right.
+   
+Z Score
+-------
+
+TODO
+
+.. math::
+    z = \frac{x_i - \bar{x}}{s}
 
 TODO 
-        
+
 .. _measures_of_variation:
 
 Measures of Variation 
@@ -612,21 +751,11 @@ Standard Deviation
 
 TODO
 
-Measures of Comparision
-=======================
-
 Coefficient of Variation
 ------------------------
 
 .. math:: 
     v = \frac{\bar{x}}{s} \cdot 100
-
-Z Score
--------
-
-.. math::
-    z = \frac{x_i - \bar{x}}{s}
-
 
 Outliers
 ========

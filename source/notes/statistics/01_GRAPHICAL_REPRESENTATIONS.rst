@@ -7,11 +7,24 @@ Graphical Representations of Data
 Definitions
 ===========
 
+.. _frequency:
+
 Frequency
+---------
 
-    :math:`f(x)`
+Symbolic Expression:
+    :math:`f(x_i)`
 
-    The number of times an observation *x* occurs in a sample *S*.  
+Definition
+    The *frequency* is number of times an observation *x_i* occurs in a sample *S*.  
+
+.. _skew:
+
+Skew
+----
+
+Definition
+    A *skew* is a feature of sample where more data is *clustered* on one side of the sample. We say such data are "*skewed*", or that it exhibits "*skewness*". 
 
 .. _frequency_distributions:
 
