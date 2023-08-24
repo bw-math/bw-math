@@ -56,9 +56,9 @@ Definition
 
 What we mean by "*unusual*" depends on the data. GEnerally speaking, we mean something that roughly approximates, "*a data that is far outside what is expected*".
 
-If we are measuring :ref:`numerical data <quantitative_data>`, this might mean an observation that is much, much greater than or much, much less than the majority of the data. 
+If we are measuring :ref:`numerical data <data_characteristic>`, this might mean an observation that is much, much greater than or much, much less than the majority of the data. 
 
-If we are measuring :ref:`categorical data <categorical_data>`, this might mean an observation is in infrequent.
+If we are measuring :ref:`categorical data <data_characteristic>`, this might mean an observation is in infrequent.
 
 .. _measures_of_centrality:
 
@@ -260,67 +260,155 @@ In the :ref:`measures_of_centrality`, we drew the analogy between mass and a sam
 
     Center of mass is to matter as measures of centrality are to a sample of data.
 
-Extending the analogy, the center of mass is not enough to *distribution of mass* in a body. We also need information about the volume (e.g. :math:`cm^3`) enclosed by the body and the density of the matter (e.g. :math:`\frac{gm}{cm^3}`) it contained.
+Extending the analogy, the center of mass is not enough to specify the *distribution of mass* in a body. We also need information about the volume (e.g. :math:`cm^3`) enclosed by the body and the density of the matter (e.g. :math:`\frac{gm}{cm^3}`) it contains.
 
-Likewise, *measures of centrality* do not tell us the whole story about a sample. We need additional information in order to get a clearer picture of the distribution of data. *Measures of location* are a type of sample statistics that provide  
+Likewise, *measures of centrality* do not tell us the whole story about a sample. We need additional information in order to get a clearer picture of the distribution of data. *Measures of location* are a type of sample statistics that provide this information.
 
-.. _percentiles:
+Order Statistics
+----------------
 
-Percentiles
------------
+An *order* statistic gives you information about the *ordinality* of a sample. The term "*ordinality*" refers to the *structural* or *sequential* nature of a sample. 
 
-Definition 
-    If a sample of data has been ordered from lowest to highest, then the *p* :sup:`th` percentile is the smallest value such that no more than *p* percent of the data is less than that value.
+To see what is meant by the term *ordinality*, suppose you have a sample of :ref:`quantiative data <data_characteristic>` :math:`\{ x_i \}`,
 
-From the definition, it should be clear *percentiles* only have meaning with respect to :ref:`quantiative data <data_characteristic>`. To *order* a sample of data :math:`x_i`, the relation :math:`x_{i-1} < x_i` must have meaning. This requires the data to be numerical. A *percentile* is often referred to in the technical literature as an *order* statistic for this reason. 
+.. math:: 
 
-You have probably encountered the concept of *percentiles* at some point in other classes and may have developed an idea of what it represents. If not, the meaning of a percentile should be intuitive and straight-forward; it is a measure of *how much* of a distribution lies below a given observation. 
+    S = \{ x_1, x_2, ..., x_i, ... , x_n \}
 
-Before giving a more formal definition of the *percentile*, let's consider a simple, motivating example.
+The *m* :sup:`th` order statistic, :math:`x_(m)` is the *m* :sup:`th` observation in the ordered sample :math:`S_(o)`,
+
+.. math:: 
+
+    S_(o) = \{ x_(1), x_(2), ... x_(m), ..., x_(n) \}
+
+After the data set is sorted, the new index (subscript) ``(m)`` attached to the observation is called the *order* of the observation. 
+
+Example
+    Suppose you measure the lifetime of a sample of batteries in years. You obtain the following result,
+
+    .. math::
+
+        S = \{ 5.1 \text{years}, 3.2 \text{years}, 6.7 \text{years}, 1.4 \text{years} \}
+
+
+Then the ordered sample :math:`S_(o)` is given
+
+.. math:: 
+
+    S_(o) = \{ 1.4, 3.3, 5.1, 6.7 \}
+
+The 1 :sup:`st` *order statistic* is *1.4 years*, the 2 :sup:`nd` *order statistic* is *3.3 years*, the 3 :sup:`rd` *order statistic* is *5.1 years* and the 4 :sup:`th` *order statistic* is *6.7 years*. Another way of saying this would be the *order* of *1.4 years* is 1, the *order* of *3.3 years* is 2, the *order* of *5.1 years* is 3 and the *order* of *6 years* is 4. 
+
+*Order statistics* are important because they allows us to define more complex statistics in a precise manner. 
+
+.. _range:
+
+Range
+*****
+*****
+
+The range is a measure of the *total variation* of a sample of data.
+
+Definition
+    The *range* of a sample of data :math:`x_i` is the difference between its last order statistic and its first order statistic, 
+
+    .. math::
+
+        \text{Range}(\{ x_i \}) = x_(n) - x_(1)
+
+.. _percentile:
+
+Percentile
+**********
+**********
+
+The :math:`(p \cdot 100 \%)^{\text{th}}` *percentile* roughly means the observation in a sample with :math:`(p \cdot 100 \%)` percent of the distribution below its value. 
+
+.. note:: 
+
+    *p* is a fraction here.
+
+You have probably encountered the concept of *percentiles* at some point in other classes and have developed an idea of what they represent. Teachers often express quiz and test scores in terms of percentiles to give students a sense of how they are doing relative to the rest of the class. 
+
+The meaning of a percentile should be intuitive and straight-forward; it is a measure of *how much* of a distribution lies below a given observation. The preliminary definition of a *percentile* conforms to this intuition,
+
+Preliminary Definition 
+    If a sample of data has been ordered from lowest value to highest value, then :math:`(p \cdot 100 \%)^{\text{th}}`:sup:`th` percentile of the sample is the observation such that :math:`(p \cdot 100 \%)` percent of the sample is less than or equal that value.
+
+From this definition, it should be clear *percentiles* only have meaning with respect to :ref:`quantitative data <data_characteristic>`. To *order* a sample of data :math:`\{ x_i \}`, the relation :math:`x_{i-1} < x_i` must have meaning. 
+
+*Order statistics* give us a way to precisely define a percentile. *Order statistics* divide the interval on which the sample was measured into :math:`n+1` intervals, pictured below,
+
+.. image:: ../../assets/imgs/statistics/order_statistics.jpg
+    :align: center
+
+Note all of the intervals are *below* the order statistic except the last one, which is *above* its order statistic. Hence :math:`n+1`.
+
+The number of such intervals below a given order statistic is *equal to* to the *order* of that observation. In other words, the fraction of intervals below the *m* :sup:`th` order statistic is given by,
+
+.. math:: 
+
+    p = \frac{m}{n+1}
+
+The *order m* :sup:`th` of the observation which corresponds to the :math:`(p \cdot 100 \%)^{\text{th}}` percentile can be found by solving for *m*,
+
+Formula
+    .. math::
+        m = p \cdot (n+1)
 
 Example
     Suppose you were conducting a study to determine how many minutes late or early the average city bus arrived versus its scheduled time. You obtained the following data set, measured in minutes, 
 
     .. math::
 
-        S = \{ 6.5 \text{min}, -2.5 \text{min}, 4.3 \text{min}, 0.5 \text{min}, 7.0 \text{min}, -1.0 \text{min}, 5.0 \text{min}, 3.0 \text{min}, 15.0 \text{min}, -1.5 \text{min} \}
+        S = \{ 6.5 \text{min}, -2.5 \text{min}, 4.3 \text{min}, 0.5 \text{min}, 7.0 \text{min}, -1.0 \text{min}, 5.0 \text{min}, 3.0 \text{min}, -1.5 \text{min} \}
 
-Note in this sample we have :math:`n = 10` total samples. A single observation accounts for :math:`\frac{1}{10} \cdot 100\% = 10 \%` of the sample.
+    Find the following percentiles: 20 :sup:`th` and 50 :sup:`th`
+
+Note in this sample we have :math:`n = 9` total samples.
 
 To find the percentiles, we need to *order* the sample from lowest to highest,
 
 .. math:: 
 
-    S= \{ -2.5 \text{min}, -1.5 \text{min}, -1.0 \text{min}, 0.5 \text{min}, 3.0 \text{min}, 4.3 \text{min}, 5.0 \text{min}, 6.5 \text{min}, 7.0 \text{min}, 15.0 \text{min} \}
+    S= \{ -2.5 \text{min}, -1.5 \text{min}, -1.0 \text{min}, 0.5 \text{min}, 3.0 \text{min}, 4.3 \text{min}, 5.0 \text{min}, 6.5 \text{min}, 7.0 \text{min} \}
 
-Let's look at a few individual observations.
+To find the 20 :sup:`th` percentile, we find the *order* in which it occurs in the sample,
 
-:math:`3.0 \text{min}` is called the 5 :sup:`th` *order statistic*, because it occupies the fifth place of the ordered sample. 
+.. math:: 
 
-Below :math:`3.0 \text{min}`, we have the observation :math:`-2.5, -1.5, -1.0, 0.5`. The percentage of the sample below this point is :math:`\frac{4}{10} \cdot 100 \% = 40 \%`. Adding to this the percentage of the sample the observation :math:`3.0` represents, i.e. :math:`10 \%`, we see the observation :math:`3.0 \text{min}` represents the 50 :sup:`th` percentile.
+    m = 0.20 \cdot (9 + 1) = 2
 
-Likewise, :math:`4.3 \text{min}` is called the 6 :sup:`th` *order statistic* and by similar logic, represents the 60 :sup:`th` percentile of the sample.
+This tells us the 20 :sup:`th` percentile is the second order statistic, or in this case ``-1.5`` minutes. 
 
-Continuing in this manner, we can find the 10 :sup:`th`, 20 :sup:`th`, 30 :sup:`th`, ... , up to the 100 :sup:`th` percentile. Notice because the sample only has :math:`n = 10` datapoints, there are only 10 percentiles, or *order statistics*, that can be found directly (exactly). However, scroll back up and re-read the defintion we have given of the percentile, keeping in mind the point just raised. 
+Similarly, to find the 50 :sup:`th` percentile, we find the *order* in which it occurs in the sample,
 
-The definition of the percentile is phrased so as to give meaning to percentiles such as the 25 :sup:`th` and 75 :sup:`th` percentile. When we say "...*the smallest value such that no more than*.."
+.. math:: 
+    
+    m = 0.5 \cdot (9 + 1) = 5 
 
+Which corresponds to the fifth order statistic, or in this case, ``3.0`` minutes.
 
+Interpolation
+*************
 
-``
+The previous example was contrived so the *order* of the sample percentile worked out to be a whole number, i.e. in both cases the formula :math:`m = (n+1) \cdot p` gave us an integer value. What happens things are not so simple? Let's amend 
 
+TODO
 
 .. _median:
 
 Median
-------
+******
+******
 
 TODO
 
 .. _quartiles: 
 
 Quartiles
----------
+*********
+*********
 
 TODO 
         
