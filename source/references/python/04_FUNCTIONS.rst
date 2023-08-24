@@ -121,6 +121,18 @@ Natural Base e
 
 TODO 
 
+Min
+***
+
+Max
+***
+
+Ceil
+****
+
+Floor
+*****
+
 .. _python_random_package:
 
 Random

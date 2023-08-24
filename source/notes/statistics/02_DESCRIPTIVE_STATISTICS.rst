@@ -317,11 +317,11 @@ To see what is meant by the term *ordinality*, suppose you have a sample of :ref
 
     S = \{ x_1, x_2, ..., x_i, ... , x_n \}
 
-The *m* :sup:`th` order statistic, :math:`x_(m)` is the *m* :sup:`th` observation in the ordered sample :math:`S_(o)`,
+The *m* :sup:`th` order statistic, :math:`x_(m)` is the *m* :sup:`th` observation in the ordered sample :math:`S_{(o)}`,
 
 .. math:: 
 
-    S_(o) = \{ x_{(1)}, x_{(2)}, ... x_{(m)}, ..., x_{(n)} \}
+    S_{(o)} = \{ x_{(1)}, x_{(2)}, ... x_{(m)}, ..., x_{(n)} \}
 
 After the data set is sorted, the new index (subscript) ``(m)`` attached to the observation is called the *order* of the observation. 
 
@@ -337,9 +337,9 @@ Then the ordered sample :math:`S_(o)` is given
 
 .. math:: 
 
-    S_(o) = \{ 1.4 \text{ years }, 3.3 \text{ years }, 5.1 \text{ years }, 6.7 \text{ years } \}
+    S_{(o)} = \{ 1.4 \text{ years }, 3.3 \text{ years }, 5.1 \text{ years }, 6.7 \text{ years } \}
 
-The 1 :sup:`st` *order statistic* is *1.4 years*, the 2 :sup:`nd` *order statistic* is *3.3 years*, the 3 :sup:`rd` *order statistic* is *5.1 years* and the 4 :sup:`th` *order statistic* is *6.7 years*. Another way of saying this would be the *order* of *1.4 years* is 1, the *order* of *3.3 years* is 2, the *order* of *5.1 years* is 3 and the *order* of *6 years* is 4. 
+The 1 :sup:`st` *order statistic* :math:`x_{(1)}` is *1.4 years*, the 2 :sup:`nd` *order statistic* :math:`x_{(2)}` is *3.3 years*, the 3 :sup:`rd` *order statistic* :math:`x_{(3)}` is *5.1 years* and the 4 :sup:`th` *order statistic* :math:`x_{(4)}` is *6.7 years*. Another way of saying this would be the *order* of *1.4 years* is 1, the *order* of *3.3 years* is 2, the *order* of *5.1 years* is 3 and the *order* of *6 years* is 4. 
 
 *Order statistics* are important because they allows us to define more complex statistics in a precise manner. 
 
@@ -406,7 +406,7 @@ We denote the order statistic :math:`x_(m)` which satisfies this formula as the 
 
 .. math:: 
 
-    \pi_p = x_(m)
+    \pi_p = x_{(m)}
 
 Example
     Suppose you were conducting a study to determine how many minutes late or early the average city bus arrived versus its scheduled time. You obtained the following data set, measured in minutes, 
@@ -543,13 +543,21 @@ We can abstract away the specifies from the previous example to arrive at the ge
 
 .. math:: 
 
-    \pi_p = x_{(m)} = x_{(\lfloor m \rfloor)} + x_{(\lceil m \rceil )} * (m - \lfloor m \rfloor)
+    \pi_p = x_{(m)} = x_{(\lfloor m \rfloor)} + (x_{(\lceil m \rceil )} - x_{(\lfloor m \rfloor)})* (m - \lfloor m \rfloor)
 
-Where 
+.. note:: 
+
+    In this definition, we have chosen *Equation 1, Redux* from the previous section to express the percentile. We could also define the percentile :math:`\pi_p` using *Equation 2, Redux* from the previous section as,
+
+    .. math::
+
+        \pi_p = x_{(m)} = x_{(\lceil m \rceil)} - (x_{(\lceil m \rceil )} - x_{(\lfloor m \rfloor)})* (\lceil m \lceil - m)
+
+    In other words, we can either correct from *above* the order staistic :math:`x_{(m)}`, or from *below* the order statistic :math:`x_{(m)}`, as detailed in the previous. Either way will give the same answer.
 
 .. math:: 
 
-    m = \frac{p}{n+1}
+    m = p \cdot (n+1)
 
 .. note:: 
 
@@ -596,6 +604,94 @@ Median
 
 The *median* of a dataset is the observation such that half of the sample is above it and half of the sample is above it. As the table in the previous section indicated, another way of saying this is the *median* is the *50* :sup:`th` percentile. 
 
+First, let's state a quick shortcut formula for the median that you are probably familiar with, although you may not have seen it stated as precisely.
+
+Shortcut
+********
+
+Applying the :ref:`percentile_formula` to the special case of the median, i.e. :math:`p = 0.5`, we have *order* of the median as,
+
+.. math:: 
+
+    m = 0.5 \cdot (n+1) = \frac{n+1}{2}
+
+We must consider two cases: if *n* is odd or if *n* is even. Depending on the case, the *order m* of the median will be an integer value or an fractional value. 
+
+Sample is Odd
+*************
+*************
+
+If *n* is odd, then *n+1* is even (*divisibly be 2*). If *n+1* is even, then *m* is an integer. If *m* is an integer, then :math:`\lfloor m \rfloor = m = \lceil m \rceil`,
+
+The percentile :math:`\pi_{0.50}` is given by,
+
+.. math:: 
+
+    \pi_0.50 = x_{(\lfloor m \rfloor)} + (x_{(\lceil m \rceil )} - x_{(\lfloor m \rfloor)}) \cdot (m - \lfloor m \rfloor)
+
+Applying :math:`\lfloor m \rfloor = m = \lceil m \rceil`,
+
+.. math:: 
+    
+    \pi_0.50 = x_{(m)} + (x_{(m)} - x_{(m)}) \cdot (m - m)
+
+.. math:: 
+
+    \implies \pi_0.50 = x_{(m)} + 0 = x_{(m)}
+
+Since :math:`m = \frac{n+1}{2}`,
+
+.. math:: 
+
+    \implies \pi_0.50 = x_{(\frac{n+1}{2})}
+
+Recalling the meaning of the term :math:`x_{(\frac{n+1}{2})`, we see if the number of samples is odd, then *median* is simply the :math:`\frac{n+1}{2}` :sup:`th` ordered observation.
+
+.. topic:: Odd Sample: Median Shortcut
+
+    \pi_0.50 = x_{(\frac{n+1}{2})
+
+Sample is Even
+**************
+**************
+
+If *n* is even, then *n+1* is odd (*not divisible by 2*). If *n+1* is odd, then *m* is not an integer. Because *m* is being divided by 2 and it is not an integer, 
+
+.. math:: 
+    
+    m - \lfloor m \rfloor = 0.5 = \frac{1}{2}
+
+In other words, any fraction with a denominator of 2 is either a whole number or a decimal that ends in *0.5*.
+
+Applying this information to the sample percentile formula,
+
+.. math::
+
+    \pi_0.50 = x_{(\lfloor m \rfloor)} + (x_{(\lceil m \rceil )} - x_{(\lfloor m \rfloor)}) \cdot \frac{1}{2}
+
+Distributing the :math:`\frac{1}{2}`,
+
+.. math:: 
+
+    \pi_0.50 = x_{(\lfloor m \rfloor)} + \frac{x_{(\lceil m \rceil )}}{2} - \frac{x_{(\lfloor m \rfloor)}}{2}
+
+.. math:: 
+
+    \implies \pi_0.50 = \frac{x_{(\lceil m \rceil )}}{2} + \frac{x_{(\lfloor m \rfloor)}}{2}
+
+.. math:: 
+    
+    \implies \pi_0.50 = \frac{x_{(\lceil m \rceil )} + x_{(\lfloor m \rfloor)}}{2}
+
+Plugging in :math:`m = \frac{n+1}{2}`
+
+.. math:: 
+    
+    \pi_0.50 = \frac{x_{(\lceil \frac{n+1}{2} \rceil )} + x_{(\lfloor \frac{n+1}{2} \rfloor)}}{2}
+
+
+Identifying Skewness
+********************
 
 The median is important for helping identify :ref:`skewness <skew>` in data. To see why, consider the following example.
 
@@ -653,8 +749,9 @@ The observation of *$2,000,000* is an :ref:`outlier`, an unusual observation. Th
 
 This idea will allow us to develop a general rule of thumb for identifying the presence of :ref:`skew` in samples.   
 
-Identifying Skew
-****************
+Rule of Thumb
+*************
+*************
 
 Consider a symmetrical sample distribution,
 
@@ -675,7 +772,6 @@ In general, when dealing with symmetrical distributions, the following result ho
     \bar{x} \approx \pi_{0.50}
 
 A histogram for a symmetrical distribution is given below, with the median and mean again labelled with a green and blue line respectively,
-
 
 .. plot:: assets/plots/examples/03_ex05_normal.py
 
@@ -701,10 +797,19 @@ These results are summarized with the following rule of thumb,
 Z Score
 -------
 
-TODO
+*Percentiles* are one way of describing location, but they are not the only way. We can also use *Z-Scores* to talk about the location of data. 
 
-.. math::
-    z = \frac{x_i - \bar{x}}{s}
+Motivation
+**********
+
+TODO 
+
+Formula
+*******
+
+Definition
+    .. math::
+        z = \frac{x_i - \bar{x}}{s}
 
 TODO 
 
