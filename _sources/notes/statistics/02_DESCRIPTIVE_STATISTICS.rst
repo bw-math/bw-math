@@ -60,6 +60,44 @@ If we are measuring :ref:`numerical data <data_characteristic>`, this might mean
 
 If we are measuring :ref:`categorical data <data_characteristic>`, this might mean an observation is in infrequent.
 
+.. _floor_function:
+
+Floor Function 
+--------------
+
+Symbolic Expression
+    .. math::
+
+        \lfloor x \rfloor
+
+Definition
+    The *floor function* returns the integer-valued part of a number. In other words, it removes the decimal from a number.
+
+
+Example
+    .. math::
+
+        \lfloor 4.5 \rfloor = 4
+
+.. _ceiling_function:
+
+Ceiling Function
+----------------
+
+Symbolic Expression 
+    .. math::
+
+        \lceil x \rceil 
+
+Definition 
+    The *ceiling* returns the next largest integer. In other words, it always rounds *up*.
+
+
+Example 
+    .. math::
+
+        \lceil 4.5 \rceil = 5
+
 .. _measures_of_centrality:
 
 Measures of Centrality 
@@ -256,6 +294,10 @@ The sample proportion is the ratio of the number of individuals in the sample th
 Measures of Location
 ====================
 
+.. important:: 
+
+    Your book does not do a good job of covering this topic. 
+
 In the :ref:`measures_of_centrality`, we drew the analogy between mass and a sample. Specifically, we proposed the following relation,
 
     Center of mass is to matter as measures of centrality are to a sample of data.
@@ -354,7 +396,14 @@ The *order m* :sup:`th` of the observation which corresponds to the :math:`(p \c
 
 Formula
     .. math::
+
         m = p \cdot (n+1)
+
+We denote the order statistic :math:`x_(m)` which satisfies this formula as the :math:`\pi_p` percentile,
+
+.. math:: 
+
+    \pi_p = x_(m)
 
 Example
     Suppose you were conducting a study to determine how many minutes late or early the average city bus arrived versus its scheduled time. You obtained the following data set, measured in minutes, 
@@ -371,15 +420,19 @@ To find the percentiles, we need to *order* the sample from lowest to highest,
 
 .. math:: 
 
-    S= \{ -2.5 \text{min}, -1.5 \text{min}, -1.0 \text{min}, 0.5 \text{min}, 3.0 \text{min}, 4.3 \text{min}, 5.0 \text{min}, 6.5 \text{min}, 7.0 \text{min} \}
+    S_(o)= \{ -2.5 \text{min}, -1.5 \text{min}, -1.0 \text{min}, 0.5 \text{min}, 3.0 \text{min}, 4.3 \text{min}, 5.0 \text{min}, 6.5 \text{min}, 7.0 \text{min} \}
 
-To find the 20 :sup:`th` percentile, we find the *order* in which it occurs in the sample,
+To find the 20 :sup:`th` percentile, :math:`pi_{.20}`, we find the *order* in which it occurs in the sample,
 
 .. math:: 
 
     m = 0.20 \cdot (9 + 1) = 2
 
-This tells us the 20 :sup:`th` percentile is the second order statistic, or in this case ``-1.5`` minutes. 
+This tells us the 20 :sup:`th` percentile is the second order statistic, or in this case ``-1.5`` minutes, i.e.,
+
+.. math:: 
+
+    \pi_{.20} = x_(2) = -1.5 \text{min}
 
 Similarly, to find the 50 :sup:`th` percentile, we find the *order* in which it occurs in the sample,
 
@@ -387,12 +440,71 @@ Similarly, to find the 50 :sup:`th` percentile, we find the *order* in which it 
     
     m = 0.5 \cdot (9 + 1) = 5 
 
-Which corresponds to the fifth order statistic, or in this case, ``3.0`` minutes.
+Which corresponds to the fifth order statistic, or in this case, ``3.0`` minutes,
+
+.. math:: 
+
+    \pi_p = x_(5) = 3.0 \text{min}
 
 Interpolation
 *************
 
-The previous example was contrived so the *order* of the sample percentile worked out to be a whole number, i.e. in both cases the formula :math:`m = (n+1) \cdot p` gave us an integer value. What happens things are not so simple? Let's amend 
+The previous example was contrived so the *order* of the sample percentile worked out to be a whole number, i.e. in both cases the formula :math:`m = (n+1) \cdot p` gave us an integer value. What happens things are not so simple?
+
+Example
+    Consider the same experiment of measuring bus waiting times, with the same sample data,
+
+    .. math::
+
+        S_(o)= \{ -2.5 \text{min}, -1.5 \text{min}, -1.0 \text{min}, 0.5 \text{min}, 3.0 \text{min}, 4.3 \text{min}, 5.0 \text{min}, 6.5 \text{min}, 7.0 \text{min} \}
+
+    Find the following percentiles: 25 :sup:`th` percentile. 
+
+When we try to apply the formula to determine the order statistic which corresponds to this percentile, we get,
+
+.. math:: 
+
+    m = 0.25 \cdot (9 + 1) = 2.5
+
+There is no observation which corresponds to a fractional order. In order to estimate the percentile in this case, we use *linear interpolation*, using the *order* of the observation as the *x* variable and the value of the observation as the *y* variable. 
+
+
+To do this, we take the order statistics on each side of :math:`m = 2.5`, in this case :math:`x_(2)` and :math:`x_(3)`, and find the slope of the line that connects them,
+
+.. math:: 
+
+    \text{slope} = \frac{x_(3) - x_(2)}{3-2} = x_(3) - x_(2)
+
+Then we find the point on this line that corresponds to :math:`(2.5, x_(2.5))` (using the point-slope formula!), which will serve as our estimate of the 25 :sup:`th` percentile,
+
+.. math::
+
+    \text{slope} = \frac{x_(3) - x_(2.5)}{3 - 2.5} = x_(3) - x_(2)
+
+Sovling this for :math:`x_(m)`, we obtain,
+
+.. math::
+
+    x_(2.5) = x_(3) - (x_(3) - x_(2))*(3 - 2.5)
+
+Or equivalently (plugging :math:`x_(2)` into the point-slope formula instead of :math:`x_(3)`),
+
+.. math:: 
+
+    x_(2.5) = x_(2) + (x_(3) - x_(2))*(2.5 - 2)
+
+Plugging the values in 
+
+
+
+TODO 
+
+This leads to a general expression for the percentile that applies whether the order *m* is a whole number or a fraction,
+
+
+.. math:: 
+
+    x_(m) = x_(\lfloor m \rfloor) + x_(\lceil m \rceil ) * (m - \lfloor m \rfloor)
 
 TODO
 
