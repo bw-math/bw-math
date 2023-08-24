@@ -555,6 +555,7 @@ Where
 
     This formula, while conceptually more difficult than the procedure offered by the book, is more versatile. This formula will work no matter if the sample contains an even number of data points or an odd number of data points; It will work if the order *m* is a whole number or if the order *m* is a fraction. It can be applied to *every quantitative* sample of data.
 
+
 .. _special_percentiles:
 
 Special Percentiles
@@ -619,9 +620,7 @@ The sample mean is calculated using the :ref:`formula <sample_mean_formula>`,
 
     \bar{x} = \frac{ \sum{x_i} }{n} = \$  291000
 
-TODO 
-
-To find the sample median, we first find the *order* that it occurs,
+To find the sample median, we first find the *order* of the 50 :sup:`th` percentile,
 
 .. math:: 
 
@@ -637,21 +636,67 @@ Finally, we apply the :ref:`general percentile formula <percentile_formula>`, wi
 
 .. math:: 
 
-    \pi_p = \$ 56000 + (\$ 65000 - \$ 50000) \cdot (5.5 - 5) = \$ 60500
+    \pi_{0.50} = x_{(5.5)} = x_{(\lfloor 5.5 \rfloor)} + (x_{(\lceil 5.5 \rceil)} - x_{(\lfloor 5.5 \rfloor)}) \cdot (5.5 - \lfloor 5.5 \rfloor)
+    
+.. math::
 
-TODO
+    = x_{(5)} + (x_{(6)} - x_{(5)}) \cdot (5.5 - 5 )
 
-Take note, there is a large divergence between the value of the sample mean and the value of median here. The sample mean in this example :math:`\bar{x}` value is larger than every observation in the sample except one, the person with an annual income of *$2,000,000*, whereas the median is closer where the majority of values lie. 
 
-TODO
+.. math::
+    
+    = \$ 56000 + (\$ 65000 - \$ 50000) \cdot (5.5 - 5) = \$ 60500
+
+Take note, there is a large divergence between the value of the sample mean and the value of median here. The sample mean in this example :math:`\bar{x}` has a value that is larger than every observation in the sample except one, the person with an annual income of *$2,000,000*, whereas the median is closer where the majority of observations lie. 
+
+The observation of *$2,000,000* is an :ref:`outlier`, an unusual observation. This example illustrates when the sample mean is not a *resilient* measure of *centrality*; the presence of a single outlying observation in the sample *skews* the sample mean *towards* the outlying observation. The median, however, preserves its ability to measure *centrality* when the sample contains outliers. 
+
+This idea will allow us to develop a general rule of thumb for identifying the presence of :ref:`skew` in samples.   
 
 Identifying Skew
 ****************
 
+Consider a symmetrical sample distribution,
+
+.. math:: 
+    
+    S = \{ 1, 5, 5, 5, 9 \}
+
+As is easily verified in this example, the mean and median agree. A histogram of this situation would look like,
+
+.. plot:: assets/plots/examples/03_ex04_symmetric.py
+
+The median and mean are shown with green and blue lines respectively, but because they overlap exactly in this admittedly contrived example, you only see a single line in the graph.
+
+In general, when dealing with symmetrical distributions, the following result holds, 
+
+.. math:: 
+
+    \bar{x} \approx \pi_{0.50}
+
+A histogram for a symmetrical distribution is given below, with the median and mean again labelled with a green and blue line respectively,
+
+
+.. plot:: assets/plots/examples/03_ex05_normal.py
+
+In this case, the mean and median do not *exactly* agree. The extent to which the mean and median do **not** agree is a measure of a distribution's departure from *normality*. The less *normal* (*symmetrical*) the distribution comes, the further apart the mean and median will split. Consider an extreme example like the following,
+
+.. plot:: assets/plots/examples/03_ex07_right_skew.py
+
+Most of the distribution is *clustered* to the left of the mean. The presence of the *right hand tail* on this distribution pulls the sample *towards* it. 
+
+Consider the opposite case, where most of the data is clustered to the right of the mean,
+
+.. plot:: assets/plots/examples/03_ex06_left_skew.py
+
+As in the previous case, the presence of a *tails* acts sink towards which the mean is drawn. 
+
+These results are summarized with the following rule of thumb,
+
 .. topic:: Rule of Thumb for Skew
 
-    1. If median is much greater than mean, then the data are skewed to the left.
-    2. If the median is much less than the mean, then the data are skewed to right.
+    1. If median is much greater than mean, then the data are skewed to the left. In this case, we say the distribution has a "*left hand tail*".
+    2. If the median is much less than the mean, then the data are skewed to right. In this case, we say the distribution has a "*right hand tail*".
    
 Z Score
 -------

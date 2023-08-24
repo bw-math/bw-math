@@ -971,8 +971,7 @@ document.write(`
 <p>The sample mean is calculated using the <a class="reference internal" href="#sample-mean-formula"><span class="std std-ref">formula</span></a>,</p>
 <div class="math">
 <p><img src="../../_images/math/2f4829fa863095b24ab381a111326fe30db034f9.png" alt="\bar{x} = \frac{ \sum{x_i} }{n} = \$  291000"/></p>
-</div><p>TODO</p>
-<p>To find the sample median, we first find the <em>order</em> that it occurs,</p>
+</div><p>To find the sample median, we first find the <em>order</em> of the 50 <sup>th</sup> percentile,</p>
 <div class="math">
 <p><img src="../../_images/math/babceaac7db915358a8a75738ae43f37a0a7887f.png" alt="m = 0.5 \cdot 11 = 5.5"/></p>
 </div><p>Then we order the sample,</p>
@@ -980,17 +979,51 @@ document.write(`
 <p><img src="../../_images/math/24b3daf49edf0473a7ca4cadb6ab2150f583a6ed.png" alt="S_{(o)} = \{ \$ 30000, \$ 45000, \$ 50000, \$ 55000, \$ 56000, \$ 65000, \$ 70000, \$ 120000, \$ 200000, , \$ 2000000 \}"/></p>
 </div><p>Finally, we apply the <a class="reference internal" href="#percentile-formula"><span class="std std-ref">general percentile formula</span></a>, with <img class="math" src="../../_images/math/dd8abd56b3c2b2584af89b2b9109149f992dada8.png" alt="x_{(5)} = \$ 56000"/> and <img class="math" src="../../_images/math/5040660abe7f514be1057a743a02e8005fe34950.png" alt="x_{(6)} = \$ 65000"/>,</p>
 <div class="math">
-<p><img src="../../_images/math/0abe4ed087ae1c8488c038e474f19d90f38a8bdb.png" alt="\pi_p = \$ 56000 + (\$ 65000 - \$ 50000) \cdot (5.5 - 5) = \$ 60500"/></p>
-</div><p>TODO</p>
-<p>Take note, there is a large divergence between the value of the sample mean and the value of median here. The sample mean in this example <img class="math" src="../../_images/math/2cd6777983e1466983489d7c6b879128472f5485.png" alt="\bar{x}"/> value is larger than every observation in the sample except one, the person with an annual income of <em>$2,000,000</em>, whereas the median is closer where the majority of values lie.</p>
-<p>TODO</p>
+<p><img src="../../_images/math/81536d58c1dbe24e871ae8e59c865f441cc350ac.png" alt="\pi_{0.50} = x_{(5.5)} = x_{(\lfloor 5.5 \rfloor)} + (x_{(\lceil 5.5 \rceil)} - x_{(\lfloor 5.5 \rfloor)}) \cdot (5.5 - \lfloor 5.5 \rfloor)"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/8dc11eacabb5679a3a107ff5b6f5155eecac7b5b.png" alt="= x_{(5)} + (x_{(6)} - x_{(5)}) \cdot (5.5 - 5 )"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/0a7f9f898373de1fe7c03d0f2d69307a2a88c3cc.png" alt="= \$ 56000 + (\$ 65000 - \$ 50000) \cdot (5.5 - 5) = \$ 60500"/></p>
+</div><p>Take note, there is a large divergence between the value of the sample mean and the value of median here. The sample mean in this example <img class="math" src="../../_images/math/2cd6777983e1466983489d7c6b879128472f5485.png" alt="\bar{x}"/> has a value that is larger than every observation in the sample except one, the person with an annual income of <em>$2,000,000</em>, whereas the median is closer where the majority of observations lie.</p>
+<p>The observation of <em>$2,000,000</em> is an <a class="reference internal" href="#outlier"><span class="std std-ref">Outlier</span></a>, an unusual observation. This example illustrates when the sample mean is not a <em>resilient</em> measure of <em>centrality</em>; the presence of a single outlying observation in the sample <em>skews</em> the sample mean <em>towards</em> the outlying observation. The median, however, preserves its ability to measure <em>centrality</em> when the sample contains outliers.</p>
+<p>This idea will allow us to develop a general rule of thumb for identifying the presence of <a class="reference internal" href="01_GRAPHICAL_REPRESENTATIONS.html#skew"><span class="std std-ref">Skew</span></a> in samples.</p>
 <section id="identifying-skew">
 <h4>Identifying Skew<a class="headerlink" href="#identifying-skew" title="Permalink to this headline">#</a></h4>
+<p>Consider a symmetrical sample distribution,</p>
+<div class="math">
+<p><img src="../../_images/math/ede7c3c75e8ff9bc8c1dc6f7911107fb7513cd79.png" alt="S = \{ 1, 5, 5, 5, 9 \}"/></p>
+</div><p>As is easily verified in this example, the mean and median agree. A histogram of this situation would look like,</p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/2a67a2f72cbd0bcea30c65db6156b2e7/03_ex04_symmetric.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/39945263a95cd8a74b043889dda638bc/03_ex04_symmetric.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/9acca8b68a8c967b8706d499ef0d8d8e/03_ex04_symmetric.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/ef4aace9cbac2377cc9bd6365603181e/03_ex04_symmetric.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/03_ex04_symmetric.png" class="plot-directive" src="../../_images/03_ex04_symmetric.png" />
+</figure>
+<p>The median and mean are shown with green and blue lines respectively, but because they overlap exactly in this admittedly contrived example, you only see a single line in the graph.</p>
+<p>In general, when dealing with symmetrical distributions, the following result holds,</p>
+<div class="math">
+<p><img src="../../_images/math/c6d799191aea33ca5921eb1320c6d23e70ec21c0.png" alt="\bar{x} \approx \pi_{0.50}"/></p>
+</div><p>A histogram for a symmetrical distribution is given below, with the median and mean again labelled with a green and blue line respectively,</p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/32fb7f20a466b7d5586ab25adec0dbfd/03_ex05_normal.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/64b55393ccc863031d1f3f3c6a9976f2/03_ex05_normal.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/ff9a10264314e3d36b165d3017af41d5/03_ex05_normal.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/1b5bda921acf8d83e35ed2fe28fa25fd/03_ex05_normal.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/03_ex05_normal.png" class="plot-directive" src="../../_images/03_ex05_normal.png" />
+</figure>
+<p>In this case, the mean and median do not <em>exactly</em> agree. The extent to which the mean and median do <strong>not</strong> agree is a measure of a distribution’s departure from <em>normality</em>. The less <em>normal</em> (<em>symmetrical</em>) the distribution comes, the further apart the mean and median will split. Consider an extreme example like the following,</p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/92e022d9968592efa282c18c98f8a805/03_ex07_right_skew.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/ba768c351ea572bba0fd195ac781b39b/03_ex07_right_skew.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/2ccbed2bb874e6f1ced16d068b8a1d5c/03_ex07_right_skew.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/59a12232c2e95b9eecc47bc699476a37/03_ex07_right_skew.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/03_ex07_right_skew.png" class="plot-directive" src="../../_images/03_ex07_right_skew.png" />
+</figure>
+<p>Most of the distribution is <em>clustered</em> to the left of the mean. The presence of the <em>right hand tail</em> on this distribution pulls the sample <em>towards</em> it.</p>
+<p>Consider the opposite case, where most of the data is clustered to the right of the mean,</p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/8a0bb6b6494f2a4850728783b0157916/03_ex06_left_skew.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d8474a91b7d06c388f38fcc005fe3e0b/03_ex06_left_skew.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/99815633e881ebd2a036fd5934a1dfa2/03_ex06_left_skew.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/c560666065136edc6e144e48239ce5a5/03_ex06_left_skew.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/03_ex06_left_skew.png" class="plot-directive" src="../../_images/03_ex06_left_skew.png" />
+</figure>
+<p>As in the previous case, the presence of a <em>tails</em> acts sink towards which the mean is drawn.</p>
+<p>These results are summarized with the following rule of thumb,</p>
 <div class="topic">
 <p class="topic-title">Rule of Thumb for Skew</p>
 <ol class="arabic simple">
-<li><p>If median is much greater than mean, then the data are skewed to the left.</p></li>
-<li><p>If the median is much less than the mean, then the data are skewed to right.</p></li>
+<li><p>If median is much greater than mean, then the data are skewed to the left. In this case, we say the distribution has a “<em>left hand tail</em>”.</p></li>
+<li><p>If the median is much less than the mean, then the data are skewed to right. In this case, we say the distribution has a “<em>right hand tail</em>”.</p></li>
 </ol>
 </div>
 </section>
