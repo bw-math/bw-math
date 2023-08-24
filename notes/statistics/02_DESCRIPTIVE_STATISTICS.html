@@ -444,15 +444,21 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#order-statistics">Order Statistics</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#range">Range</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#percentile">Percentile</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#interpolation">Interpolation</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#median">Median</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quartiles">Quartiles</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#general-formula">General Formula</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#special-percentiles">Special Percentiles</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#median">Median</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#identifying-skew">Identifying Skew</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#z-score">Z Score</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-variation">Measures of Variation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Motivation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interquartile-range">Interquartile Range</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-of-thumb-for-outliers">Rule of Thumb for Outliers</a></li>
 </ul>
@@ -463,11 +469,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-comparision">Measures of Comparision</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coefficient-of-variation">Coefficient of Variation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#z-score">Z Score</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outliers">Outliers</a><ul class="nav section-nav flex-column">
@@ -749,17 +751,17 @@ document.write(`
 <p><img src="../../_images/math/3484309044fbce023bb6dcec342c3b458755db4c.png" alt="S = \{ x_1, x_2, ..., x_i, ... , x_n \}"/></p>
 </div><p>The <em>m</em> <sup>th</sup> order statistic, <img class="math" src="../../_images/math/9c9a612bf35d753230009040b6c3793875943065.png" alt="x_(m)"/> is the <em>m</em> <sup>th</sup> observation in the ordered sample <img class="math" src="../../_images/math/39a336dc46dbad90451b21c5e41867b9b6d29b1a.png" alt="S_(o)"/>,</p>
 <div class="math">
-<p><img src="../../_images/math/e592817197ec225e8d2859b243b6616bfec5377a.png" alt="S_(o) = \{ x_(1), x_(2), ... x_(m), ..., x_(n) \}"/></p>
+<p><img src="../../_images/math/e9abc481b096bf21d211768c76f5755d8ed8fa7c.png" alt="S_(o) = \{ x_{(1)}, x_{(2)}, ... x_{(m)}, ..., x_{(n)} \}"/></p>
 </div><p>After the data set is sorted, the new index (subscript) <code class="docutils literal notranslate"><span class="pre">(m)</span></code> attached to the observation is called the <em>order</em> of the observation.</p>
 <dl>
 <dt>Example</dt><dd><p>Suppose you measure the lifetime of a sample of batteries in years. You obtain the following result,</p>
 <div class="math">
-<p><img src="../../_images/math/41024bd6f22e58759fc573a114798f923bc061cb.png" alt="S = \{ 5.1 \text{years}, 3.2 \text{years}, 6.7 \text{years}, 1.4 \text{years} \}"/></p>
+<p><img src="../../_images/math/bf1b316825604ca7acfe0a63a59d9e35cc33d614.png" alt="S = \{ 5.1 \text{ years }, 3.2 \text{ years }, 6.7 \text{ years }, 1.4 \text{ years } \}"/></p>
 </div></dd>
 </dl>
 <p>Then the ordered sample <img class="math" src="../../_images/math/39a336dc46dbad90451b21c5e41867b9b6d29b1a.png" alt="S_(o)"/> is given</p>
 <div class="math">
-<p><img src="../../_images/math/1a981f0deffb8b010561aa7ce66a2c8abd65b093.png" alt="S_(o) = \{ 1.4, 3.3, 5.1, 6.7 \}"/></p>
+<p><img src="../../_images/math/ebe613702f48adbf214b4cc6b421f804ac7f5eba.png" alt="S_(o) = \{ 1.4 \text{ years }, 3.3 \text{ years }, 5.1 \text{ years }, 6.7 \text{ years } \}"/></p>
 </div><p>The 1 <sup>st</sup> <em>order statistic</em> is <em>1.4 years</em>, the 2 <sup>nd</sup> <em>order statistic</em> is <em>3.3 years</em>, the 3 <sup>rd</sup> <em>order statistic</em> is <em>5.1 years</em> and the 4 <sup>th</sup> <em>order statistic</em> is <em>6.7 years</em>. Another way of saying this would be the <em>order</em> of <em>1.4 years</em> is 1, the <em>order</em> of <em>3.3 years</em> is 2, the <em>order</em> of <em>5.1 years</em> is 3 and the <em>order</em> of <em>6 years</em> is 4.</p>
 <p><em>Order statistics</em> are important because they allows us to define more complex statistics in a precise manner.</p>
 <section id="range">
@@ -767,34 +769,37 @@ document.write(`
 <hr class="docutils" />
 <p>The range is a measure of the <em>total variation</em> of a sample of data.</p>
 <dl>
-<dt>Definition</dt><dd><p>The <em>range</em> of a sample of data <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> is the difference between its last order statistic and its first order statistic,</p>
+<dt>Definition</dt><dd><p>The <em>range</em> of a sample of data <img class="math" src="../../_images/math/4c955d656d607e948e29508a6e07f063fc321a82.png" alt="\{ x_1, x_2, ..., x_n \}"/> is the difference between its last order statistic, <img class="math" src="../../_images/math/1d006456f2f63e37d4bcc91123ed75c273d4c88b.png" alt="x_(n),"/> and its first order statistic, <img class="math" src="../../_images/math/a47b6fd542f432e7daefc592084c3e0c329b620a.png" alt="x_(1)"/></p>
 <div class="math">
-<p><img src="../../_images/math/8d69fe05bdbe8279a38c835abd109001c7500828.png" alt="\text{Range}(\{ x_i \}) = x_(n) - x_(1)"/></p>
+<p><img src="../../_images/math/822556b4d0c5d7658bd41dd76545d41073544fe2.png" alt="\text{Range}(\{ x_i \}) = x_{(n)} - x_{(1)}"/></p>
 </div></dd>
 </dl>
 </section>
 <section id="percentile">
 <span id="id15"></span><h4>Percentile<a class="headerlink" href="#percentile" title="Permalink to this headline">#</a></h4>
+</section>
 <hr class="docutils" />
+<section id="motivation">
+<h4>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h4>
 <p>The <img class="math" src="../../_images/math/5a370fe464b17da9be1d8a2676ab8d230c8cf781.png" alt="(p \cdot 100 \%)^{\text{th}}"/> <em>percentile</em> roughly means the observation in a sample with <img class="math" src="../../_images/math/a566ed8661544f8306fcf210a010daec074a1279.png" alt="(p \cdot 100 \%)"/> percent of the distribution below its value.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><em>p</em> is a fraction here.</p>
+<p><em>p</em> is a fraction, i.e. <img class="math" src="../../_images/math/73dab761ea3ed2f09a93102d9c06be28b616f0b4.png" alt="0&lt;= p &lt;=1"/>.</p>
 </div>
 <p>You have probably encountered the concept of <em>percentiles</em> at some point in other classes and have developed an idea of what they represent. Teachers often express quiz and test scores in terms of percentiles to give students a sense of how they are doing relative to the rest of the class.</p>
 <p>The meaning of a percentile should be intuitive and straight-forward; it is a measure of <em>how much</em> of a distribution lies below a given observation. The preliminary definition of a <em>percentile</em> conforms to this intuition,</p>
 <dl class="simple">
-<dt>Preliminary Definition</dt><dd><p>If a sample of data has been ordered from lowest value to highest value, then <img class="math" src="../../_images/math/5a370fe464b17da9be1d8a2676ab8d230c8cf781.png" alt="(p \cdot 100 \%)^{\text{th}}"/><sup>th</sup> percentile of the sample is the observation such that <img class="math" src="../../_images/math/a566ed8661544f8306fcf210a010daec074a1279.png" alt="(p \cdot 100 \%)"/> percent of the sample is less than or equal that value.</p>
+<dt>Preliminary Definition</dt><dd><p>If a sample of data has been ordered from lowest value to highest value, then the <img class="math" src="../../_images/math/5a370fe464b17da9be1d8a2676ab8d230c8cf781.png" alt="(p \cdot 100 \%)^{\text{th}}"/><sup>th</sup> percentile of the sample is the observation such that <img class="math" src="../../_images/math/a566ed8661544f8306fcf210a010daec074a1279.png" alt="(p \cdot 100 \%)"/> percent of the sample is less than or equal that value.</p>
 </dd>
 </dl>
 <p>From this definition, it should be clear <em>percentiles</em> only have meaning with respect to <a class="reference internal" href="00_INTRODUCTION.html#data-characteristic"><span class="std std-ref">quantitative data</span></a>. To <em>order</em> a sample of data <img class="math" src="../../_images/math/42f6eba29127a8a12bce070ee5bec81d715bb94a.png" alt="\{ x_i \}"/>, the relation <img class="math" src="../../_images/math/d76c7ed0ff409d0cf3d522ad624844e7eccd9687.png" alt="x_{i-1} &lt; x_i"/> must have meaning.</p>
-<p><em>Order statistics</em> give us a way to precisely define a percentile. <em>Order statistics</em> divide the interval on which the sample was measured into <img class="math" src="../../_images/math/3257ff5f24446ed5552c93f0804681a7ec8d3920.png" alt="n+1"/> intervals, pictured below,</p>
+<p><em>Order statistics</em> give us a way to precisely define a percentile. <em>Order statistics</em> divide the interval on which the sample is measured into <img class="math" src="../../_images/math/3257ff5f24446ed5552c93f0804681a7ec8d3920.png" alt="n+1"/> intervals, pictured below,</p>
 <img alt="../../_images/order_statistics.jpg" class="align-center" src="../../_images/order_statistics.jpg" />
 <p>Note all of the intervals are <em>below</em> the order statistic except the last one, which is <em>above</em> its order statistic. Hence <img class="math" src="../../_images/math/3257ff5f24446ed5552c93f0804681a7ec8d3920.png" alt="n+1"/>.</p>
 <p>The number of such intervals below a given order statistic is <em>equal to</em> to the <em>order</em> of that observation. In other words, the fraction of intervals below the <em>m</em> <sup>th</sup> order statistic is given by,</p>
 <div class="math">
 <p><img src="../../_images/math/6c7f2e0d00dedc39880cad8853de42971498a8f1.png" alt="p = \frac{m}{n+1}"/></p>
-</div><p>The <em>order m</em> <sup>th</sup> of the observation which corresponds to the <img class="math" src="../../_images/math/5a370fe464b17da9be1d8a2676ab8d230c8cf781.png" alt="(p \cdot 100 \%)^{\text{th}}"/> percentile can be found by solving for <em>m</em>,</p>
+</div><p><em>p</em> represents the percent of the intervals below the <em>m</em> <sup>th</sup> order statistic. The <em>order m</em> of the observation which corresponds to the <img class="math" src="../../_images/math/5a370fe464b17da9be1d8a2676ab8d230c8cf781.png" alt="(p \cdot 100 \%)^{\text{th}}"/> percentile can be found by solving for <em>m</em>,</p>
 <dl>
 <dt>Formula</dt><dd><div class="math">
 <p><img src="../../_images/math/f206c2fd202dcdc5e6501f3bc3356b9174e4169d.png" alt="m = p \cdot (n+1)"/></p>
@@ -806,15 +811,25 @@ document.write(`
 </div><dl>
 <dt>Example</dt><dd><p>Suppose you were conducting a study to determine how many minutes late or early the average city bus arrived versus its scheduled time. You obtained the following data set, measured in minutes,</p>
 <div class="math">
-<p><img src="../../_images/math/0f22e1b349849afb6f644d67e7d07092cda7680b.png" alt="S = \{ 6.5 \text{min}, -2.5 \text{min}, 4.3 \text{min}, 0.5 \text{min}, 7.0 \text{min}, -1.0 \text{min}, 5.0 \text{min}, 3.0 \text{min}, -1.5 \text{min} \}"/></p>
+<p><img src="../../_images/math/ccb8d34fe85d843bc04cdeb798d7b1482c2af990.png" alt="S = \{ 6.5 \text{ min }, -2.5 \text{ min }, 4.3 \text{ min }, 0.5 \text{ min }, 7.0 \text{ min }, -1.0 \text{ min }, 5.0 \text{ min }, 3.0 \text{ min }, -1.5 \text{ mi n} \}"/></p>
 </div><p>Find the following percentiles: 20 <sup>th</sup> and 50 <sup>th</sup></p>
 </dd>
 </dl>
 <p>Note in this sample we have <img class="math" src="../../_images/math/5e31da1f1f01beff492ee16989925c256179a0b9.png" alt="n = 9"/> total samples.</p>
-<p>To find the percentiles, we need to <em>order</em> the sample from lowest to highest,</p>
+<p>Before we move onto solving the problem, consider a scatter plot of these observations against their observation order,</p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/41080ac3c806e98d8bb75adda7d3e1a0/03_ex01_unordered.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/868cf2d32c74690a3ed8fba800dcf04c/03_ex01_unordered.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/2d531371e4fdbd7d087a7166c8c8d0ea/03_ex01_unordered.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/e94a7c7cc309913ae9f43f259ed1be3f/03_ex01_unordered.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/03_ex01_unordered.png" class="plot-directive" src="../../_images/03_ex01_unordered.png" />
+</figure>
+<p>To find the percentiles, we need to find the <em>order statistics</em>, i.e. we need to <em>order</em> the sample from lowest to highest,</p>
 <div class="math">
-<p><img src="../../_images/math/9dc845aec65205df7b61a09210a12fb86ca4233b.png" alt="S_(o)= \{ -2.5 \text{min}, -1.5 \text{min}, -1.0 \text{min}, 0.5 \text{min}, 3.0 \text{min}, 4.3 \text{min}, 5.0 \text{min}, 6.5 \text{min}, 7.0 \text{min} \}"/></p>
-</div><p>To find the 20 <sup>th</sup> percentile, <img class="math" src="../../_images/math/7d25073a62d550751d35fd8bcc451482a912fd2d.png" alt="pi_{.20}"/>, we find the <em>order</em> in which it occurs in the sample,</p>
+<p><img src="../../_images/math/0506de3808e73735b09b85cc1aed7b3ec8e48636.png" alt="S_{(o)}= \{ -2.5 \text{min}, -1.5 \text{min}, -1.0 \text{min}, 0.5 \text{min}, 3.0 \text{min}, 4.3 \text{min}, 5.0 \text{min}, 6.5 \text{min}, 7.0 \text{min} \}"/></p>
+</div><p>Once ordered, we can plot the observations against their <em>rank order</em>,</p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/6020af7d9a35cc374a39debab04af2f2/03_ex02_ordered.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f8758c044b7ea0dc9296d8ce00654ddd/03_ex02_ordered.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/2cd274a1afac34395ddac2f621852f50/03_ex02_ordered.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d48ef22c81c4b90b8f4dd8451f2f8a8a/03_ex02_ordered.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/03_ex02_ordered.png" class="plot-directive" src="../../_images/03_ex02_ordered.png" />
+</figure>
+<p>The previous two graphs should make clear the meaning of <em>order statistics</em>. To find the 20 <sup>th</sup> percentile, <img class="math" src="../../_images/math/7d25073a62d550751d35fd8bcc451482a912fd2d.png" alt="pi_{.20}"/>, we find the <em>order</em> in which it occurs in the sample,</p>
 <div class="math">
 <p><img src="../../_images/math/0eefe230a10e43d898fb217f4568b3ce07907021.png" alt="m = 0.20 \cdot (9 + 1) = 2"/></p>
 </div><p>This tells us the 20 <sup>th</sup> percentile is the second order statistic, or in this case <code class="docutils literal notranslate"><span class="pre">-1.5</span></code> minutes, i.e.,</p>
@@ -840,43 +855,159 @@ document.write(`
 <p>When we try to apply the formula to determine the order statistic which corresponds to this percentile, we get,</p>
 <div class="math">
 <p><img src="../../_images/math/f6bd1947ec765960ec3548475fd9176f22f7d355.png" alt="m = 0.25 \cdot (9 + 1) = 2.5"/></p>
-</div><p>There is no observation which corresponds to a fractional order. In order to estimate the percentile in this case, we use <em>linear interpolation</em>, using the <em>order</em> of the observation as the <em>x</em> variable and the value of the observation as the <em>y</em> variable.</p>
+</div><p>There is no observation which corresponds to a fractional order. To estimate the percentile in this case, we use <em>linear interpolation</em>, using the <em>order</em> of the observation as the <em>x</em> variable and the value of the observation as the <em>y</em> variable.</p>
 <p>To do this, we take the order statistics on each side of <img class="math" src="../../_images/math/8495ae1b818dd679b280aec2d92783e46f635b1b.png" alt="m = 2.5"/>, in this case <img class="math" src="../../_images/math/90e7ebfd8e3b95ec32b0a9de3822a9f6e7ce6bf6.png" alt="x_(2)"/> and <img class="math" src="../../_images/math/4d4db9f2fecd7c84e20fcca913e05892963a53aa.png" alt="x_(3)"/>, and find the slope of the line that connects them,</p>
 <div class="math">
-<p><img src="../../_images/math/07db2464d674241c13de0bf808323e678981b3d5.png" alt="\text{slope} = \frac{x_(3) - x_(2)}{3-2} = x_(3) - x_(2)"/></p>
-</div><p>Then we find the point on this line that corresponds to <img class="math" src="../../_images/math/394de2473f2bc2edbfa81a2c618bf5a5008a5cb5.png" alt="(2.5, x_(2.5))"/> (using the point-slope formula!), which will serve as our estimate of the 25 <sup>th</sup> percentile,</p>
+<p><img src="../../_images/math/915566408986e348d0d674b9474ffc5387216c40.png" alt="\text{slope} = \frac{x_{(3)} - x_{(2)}}{3-2} = x_{(3)} - x_{(2)}"/></p>
+</div><p>Then we find the point on this line that corresponds to <img class="math" src="../../_images/math/394de2473f2bc2edbfa81a2c618bf5a5008a5cb5.png" alt="(2.5, x_(2.5))"/> (using the point-slope formula with the point <img class="math" src="../../_images/math/3362fff25ba0d24cd3b2e4b970b4ff0fc687cf25.png" alt="(3, x_{(3)}"/> as the sample point!), which will serve as the estimate of the 25 <sup>th</sup> percentile,</p>
 <div class="math">
-<p><img src="../../_images/math/c3ce7ae3511678389ade4214be655fbe6d1557ff.png" alt="\text{slope} = \frac{x_(3) - x_(2.5)}{3 - 2.5} = x_(3) - x_(2)"/></p>
-</div><p>Sovling this for <img class="math" src="../../_images/math/9c9a612bf35d753230009040b6c3793875943065.png" alt="x_(m)"/>, we obtain,</p>
+<p><img src="../../_images/math/8377d37aada2798349fa19ff3d65458f3049f3c8.png" alt="\text{slope} = \frac{x_{(3)} - x_{(2.5)}}{3 - 2.5} = x_{(3)} - x_{(2)}"/></p>
+</div><p>Sovling this for <img class="math" src="../../_images/math/cfadd0fe3e007f7ce086fb740fec66e42f9190ee.png" alt="x_{(2.5)}"/>, we obtain,</p>
 <div class="math">
-<p><img src="../../_images/math/7a8af776e5698f8dbb6ff840c82a8e73b2601cb8.png" alt="x_(2.5) = x_(3) - (x_(3) - x_(2))*(3 - 2.5)"/></p>
-</div><p>Or equivalently (plugging <img class="math" src="../../_images/math/90e7ebfd8e3b95ec32b0a9de3822a9f6e7ce6bf6.png" alt="x_(2)"/> into the point-slope formula instead of <img class="math" src="../../_images/math/4d4db9f2fecd7c84e20fcca913e05892963a53aa.png" alt="x_(3)"/>),</p>
+<p><img src="../../_images/math/9a45c76f7ebd5cf5f1f23b285ef00522dc18edff.png" alt="x_{(2.5)} = x_{(3)} - (x_{(3)} - x_{(2)}) \cdot (3 - 2.5) \text{      Equation 1}"/></p>
+</div><p>Or equivalently (plugging <img class="math" src="../../_images/math/90e7ebfd8e3b95ec32b0a9de3822a9f6e7ce6bf6.png" alt="x_(2)"/> into the point-slope formula instead of <img class="math" src="../../_images/math/39e7cee1481ddc7014c78ff87e86ef6eb058c23d.png" alt="x_{(3)}"/>),</p>
 <div class="math">
-<p><img src="../../_images/math/57f810a01eb2a6badcc3d88689a56b121f970d3b.png" alt="x_(2.5) = x_(2) + (x_(3) - x_(2))*(2.5 - 2)"/></p>
-</div><p>Plugging the values in</p>
-<p>TODO</p>
-<p>This leads to a general expression for the percentile that applies whether the order <em>m</em> is a whole number or a fraction,</p>
+<p><img src="../../_images/math/f6ec7494fe453e1b461948eba662f4f9e502c24c.png" alt="x_{(2.5)} = x_{(2)} + (x_{(3)} - x_{(2)}) \cdot (2.5 - 2) \text{      Equation 2}"/></p>
+</div><p>Notice in <em>Equation 1</em>, we are subtracting a quantity from the third order statistic, <img class="math" src="../../_images/math/39e7cee1481ddc7014c78ff87e86ef6eb058c23d.png" alt="x_{(3)}"/>, whereas in <em>Equation 2</em> we are adding a quantity to the second order statistic, <img class="math" src="../../_images/math/7ef1dbe8243c3bdcae773590e381306bfc7c1619.png" alt="x_{(4)}"/>. In other words, to find the percentile of a sample data where the percentile does not correspond to an actual observation we may either subtract a corective quantity from the next largest observation, or add a corrective quantity to the next smallest observation.</p>
+<p>Plugging the values of the <em>order statistics</em> <img class="math" src="../../_images/math/a80b5a6e88cbf3dc6b46afda81c9782c19ea1c3d.png" alt="x_{(2)}"/> and <img class="math" src="../../_images/math/39e7cee1481ddc7014c78ff87e86ef6eb058c23d.png" alt="x_{(3)}"/> in either equation will result in the answer.</p>
+<p>Applying <em>Equation 1</em> to the example, we calculate the <em>25</em> <sup>th</sup> percentile,</p>
 <div class="math">
-<p><img src="../../_images/math/3a8e6fe3aa202646aac7be553bbf491ae0b7bd83.png" alt="x_(m) = x_(\lfloor m \rfloor) + x_(\lceil m \rceil ) * (m - \lfloor m \rfloor)"/></p>
-</div><p>TODO</p>
+<p><img src="../../_images/math/a613cbe896f41d1a1f737bbaea0f22991336484f.png" alt="x_{(2.5)} = -1.0 - (-1.0 - (-1.5)) \cdot (3 - 2.5) = -1.0 - 0.25 = -1.25"/></p>
+</div><p>Applying <em>Equation 1</em> to the example, we calculate the <em>25</em> <sup>th</sup> percentile,</p>
+<div class="math">
+<p><img src="../../_images/math/d50016ca324a99f8d983d8476ff968414e285269.png" alt="x_{(2.5)} = -1.5 + (-1.0 - (-1.5)) \cdot (2.5 - 2) = -1.5 + 0.25 = -1.25"/></p>
+</div><p>In both cases, we arrive at the same answer of a 25 <sup>th</sup> percentile of <code class="docutils literal notranslate"><span class="pre">-1.25</span></code> minutes.</p>
+<p>Before moving onto the next section where we give the general formula for calculating the <em>sample percentile</em>, let us note both <em>Equation 1</em> and <em>Equation 2</em> can be rewritten in terms of the <a class="reference internal" href="#floor-function"><span class="std std-ref">Floor Function</span></a> and the <a class="reference internal" href="#ceiling-function"><span class="std std-ref">Ceiling Function</span></a>,</p>
+<div class="math">
+<p><img src="../../_images/math/052827ed37c4d62773174c0e25a440024a3fea88.png" alt="x_{(2.5)} = x_{(\lceil 2.5 \rceil)} - (x_{(\lceil 2.5 \rceil)} - x_{(\lfloor 2.5 \rfloor)}) \cdot (\lceil 2.5 \rceil - 2.5) \text{      Equation 1, Redux}"/></p>
+</div><p>Or equivalently (plugging <img class="math" src="../../_images/math/90e7ebfd8e3b95ec32b0a9de3822a9f6e7ce6bf6.png" alt="x_(2)"/> into the point-slope formula instead of <img class="math" src="../../_images/math/39e7cee1481ddc7014c78ff87e86ef6eb058c23d.png" alt="x_{(3)}"/>),</p>
+<div class="math">
+<p><img src="../../_images/math/bf835ee03acd49dd6686d4b910929b98fbc7be3b.png" alt="x_{(2.5)} = x_{(\lfloor 2.5 \rfloor)} + (x_{(\lceil 2.5 \rceil)} - x_{(\lfloor 2.5 \rfloor)}) \cdot (2.5 - \lfloor 2.5 \rfloor) \text{      Equation 2, Redux}"/></p>
+</div></section>
+<section id="general-formula">
+<span id="percentile-formula"></span><h4>General Formula<a class="headerlink" href="#general-formula" title="Permalink to this headline">#</a></h4>
+<p>We can abstract away the specifies from the previous example to arrive at the general formula for a <em>sample percentile</em>. The <img class="math" src="../../_images/math/5a370fe464b17da9be1d8a2676ab8d230c8cf781.png" alt="(p \cdot 100 \%)^{\text{th}}"/> percentile <img class="math" src="../../_images/math/feef0d56168a273f4d2b0aefb4c2b025aa9c358c.png" alt="\pi_p"/> is defined as the order statistic <img class="math" src="../../_images/math/5b7911294f5ce25e14a533686eb676195fc547f4.png" alt="x_{(m)}"/>,</p>
+<div class="math">
+<p><img src="../../_images/math/fe973f6d6e2b6feddbecee5ad0c0418c529ab11e.png" alt="\pi_p = x_{(m)} = x_{(\lfloor m \rfloor)} + x_{(\lceil m \rceil )} * (m - \lfloor m \rfloor)"/></p>
+</div><p>Where</p>
+<div class="math">
+<p><img src="../../_images/math/86b00bf9006d0249adc5e92f38ac3bfb46e6db0c.png" alt="m = \frac{p}{n+1}"/></p>
+</div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This formula, while conceptually more difficult than the procedure offered by the book, is more versatile. This formula will work no matter if the sample contains an even number of data points or an odd number of data points; It will work if the order <em>m</em> is a whole number or if the order <em>m</em> is a fraction. It can be applied to <em>every quantitative</em> sample of data.</p>
+</div>
+</section>
+<section id="special-percentiles">
+<span id="id16"></span><h4>Special Percentiles<a class="headerlink" href="#special-percentiles" title="Permalink to this headline">#</a></h4>
+<p>The table below lists the names that have been given to special percentiles.</p>
+<table class="table">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Percentile</p></th>
+<th class="head"><p>Name</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>10 <sup>th</sup></p></td>
+<td><p>First Decile</p></td>
+</tr>
+<tr class="row-odd"><td><p>20 <sup>th</sup></p></td>
+<td><p>Second Decile</p></td>
+</tr>
+<tr class="row-even"><td><p>25 <sup>th</sup></p></td>
+<td><p>First Quartile</p></td>
+</tr>
+<tr class="row-odd"><td><p>30 <sup>th</sup></p></td>
+<td><p>Third Decile</p></td>
+</tr>
+<tr class="row-even"><td><p>40 <sup>th</sup></p></td>
+<td><p>Fourth Decile</p></td>
+</tr>
+<tr class="row-odd"><td><p>50 <sup>th</sup></p></td>
+<td><p>Median/Second Quartile/Fifth Decile</p></td>
+</tr>
+<tr class="row-even"><td><p>60 <sup>th</sup></p></td>
+<td><p>Sixth Decile</p></td>
+</tr>
+<tr class="row-odd"><td><p>70 <sup>th</sup></p></td>
+<td><p>Seventh Decile</p></td>
+</tr>
+<tr class="row-even"><td><p>75 <sup>th</sup></p></td>
+<td><p>Third Quartile</p></td>
+</tr>
+<tr class="row-odd"><td><p>80 <sup>th</sup></p></td>
+<td><p>Eighth Decile</p></td>
+</tr>
+<tr class="row-even"><td><p>90 <sup>th</sup></p></td>
+<td><p>Ninth Decile</p></td>
+</tr>
+<tr class="row-odd"><td><p>100 <sup>th</sup></p></td>
+<td><p>Fourth Quartile/ Tenth Decile</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 <section id="median">
-<span id="id16"></span><h4>Median<a class="headerlink" href="#median" title="Permalink to this headline">#</a></h4>
-<hr class="docutils" />
+<h3>Median<a class="headerlink" href="#median" title="Permalink to this headline">#</a></h3>
+<p>The <em>median</em> of a dataset is the observation such that half of the sample is above it and half of the sample is above it. As the table in the previous section indicated, another way of saying this is the <em>median</em> is the <em>50</em> <sup>th</sup> percentile.</p>
+<p>The median is important for helping identify <a class="reference internal" href="01_GRAPHICAL_REPRESENTATIONS.html#skew"><span class="std std-ref">skewness</span></a> in data. To see why, consider the following example.</p>
+<dl>
+<dt>Example</dt><dd><p>The annual income, measured to the nearest thousand, of a random sample of people is given below,</p>
+<div class="math">
+<p><img src="../../_images/math/1f89b56e6065abda213622d4cc43b8ba4f7a270e.png" alt="S = \{ \$ 50000, \$ 65000, \$ 45000, \$ 30000, \$ 120000, \$ 200000, \$ 70000, \$ 56000, \$ 55000, \$ 2000000 \}"/></p>
+</div><p>Find the sample mean and the sample median.</p>
+</dd>
+</dl>
+<p>It is always a good idea to start problems by looking at some sort <a class="reference internal" href="01_GRAPHICAL_REPRESENTATIONS.html#graphical-representations-of-data"><span class="std std-ref">graphical representation</span></a> of the data being treated. If we use a histogram here, we immediately notice an unusual feature of this sample,</p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/7c6f0168e4b4f3aa2e8ea559a98c3abe/03_ex03_skewed.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/c2d90f53c4b30d5fe1792b8e33ab0148/03_ex03_skewed.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/5d8543ba3b7092c4eba85204ee4097bb/03_ex03_skewed.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/3a3d947335e5eb57d8c717d611f3cbd7/03_ex03_skewed.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/03_ex03_skewed.png" class="plot-directive" src="../../_images/03_ex03_skewed.png" />
+</figure>
+<p>One of the observations, the person with an annual income of <em>$2,000,000</em>, sits well outside the range of the rest of the observations. This feature of the sample, its <a class="reference internal" href="01_GRAPHICAL_REPRESENTATIONS.html#skew"><span class="std std-ref">Skew</span></a>, will manifest in the sample statistics as we move through this example.</p>
+<p>The sample mean is calculated using the <a class="reference internal" href="#sample-mean-formula"><span class="std std-ref">formula</span></a>,</p>
+<div class="math">
+<p><img src="../../_images/math/2f4829fa863095b24ab381a111326fe30db034f9.png" alt="\bar{x} = \frac{ \sum{x_i} }{n} = \$  291000"/></p>
+</div><p>TODO</p>
+<p>To find the sample median, we first find the <em>order</em> that it occurs,</p>
+<div class="math">
+<p><img src="../../_images/math/babceaac7db915358a8a75738ae43f37a0a7887f.png" alt="m = 0.5 \cdot 11 = 5.5"/></p>
+</div><p>Then we order the sample,</p>
+<div class="math">
+<p><img src="../../_images/math/24b3daf49edf0473a7ca4cadb6ab2150f583a6ed.png" alt="S_{(o)} = \{ \$ 30000, \$ 45000, \$ 50000, \$ 55000, \$ 56000, \$ 65000, \$ 70000, \$ 120000, \$ 200000, , \$ 2000000 \}"/></p>
+</div><p>Finally, we apply the <a class="reference internal" href="#percentile-formula"><span class="std std-ref">general percentile formula</span></a>, with <img class="math" src="../../_images/math/dd8abd56b3c2b2584af89b2b9109149f992dada8.png" alt="x_{(5)} = \$ 56000"/> and <img class="math" src="../../_images/math/5040660abe7f514be1057a743a02e8005fe34950.png" alt="x_{(6)} = \$ 65000"/>,</p>
+<div class="math">
+<p><img src="../../_images/math/0abe4ed087ae1c8488c038e474f19d90f38a8bdb.png" alt="\pi_p = \$ 56000 + (\$ 65000 - \$ 50000) \cdot (5.5 - 5) = \$ 60500"/></p>
+</div><p>TODO</p>
+<p>Take note, there is a large divergence between the value of the sample mean and the value of median here. The sample mean in this example <img class="math" src="../../_images/math/2cd6777983e1466983489d7c6b879128472f5485.png" alt="\bar{x}"/> value is larger than every observation in the sample except one, the person with an annual income of <em>$2,000,000</em>, whereas the median is closer where the majority of values lie.</p>
 <p>TODO</p>
+<section id="identifying-skew">
+<h4>Identifying Skew<a class="headerlink" href="#identifying-skew" title="Permalink to this headline">#</a></h4>
+<div class="topic">
+<p class="topic-title">Rule of Thumb for Skew</p>
+<ol class="arabic simple">
+<li><p>If median is much greater than mean, then the data are skewed to the left.</p></li>
+<li><p>If the median is much less than the mean, then the data are skewed to right.</p></li>
+</ol>
+</div>
 </section>
-<section id="quartiles">
-<span id="id17"></span><h4>Quartiles<a class="headerlink" href="#quartiles" title="Permalink to this headline">#</a></h4>
-<hr class="docutils" />
+</section>
+<section id="z-score">
+<h3>Z Score<a class="headerlink" href="#z-score" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
-</section>
+<div class="math">
+<p><img src="../../_images/math/355911cc4d9fcf781150b979f8764a3876731f10.png" alt="z = \frac{x_i - \bar{x}}{s}"/></p>
+</div><p>TODO</p>
 </section>
 </section>
 <section id="measures-of-variation">
-<span id="id18"></span><h2>Measures of Variation<a class="headerlink" href="#measures-of-variation" title="Permalink to this headline">#</a></h2>
+<span id="id17"></span><h2>Measures of Variation<a class="headerlink" href="#measures-of-variation" title="Permalink to this headline">#</a></h2>
 <p><em>Measures of variation</em> characterize the <em>spread</em> and <em>dispersion</em> of a sample of data.</p>
-<section id="motivation">
-<h3>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h3>
+<section id="id18">
+<h3>Motivation<a class="headerlink" href="#id18" title="Permalink to this headline">#</a></h3>
 <p>Consider these two samples of data <img class="math" src="../../_images/math/08dae650aba750710b182a0e7b1e63c09404075b.png" alt="S_1"/> and <img class="math" src="../../_images/math/7a01e66959cdf273b6b3c5541280a7402771722e.png" alt="S_2"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/754cdb6148d139ef3ccd106ede07d0a517a3998d.png" alt="S_1 = \{ 4, 5, 6 \}"/></p>
@@ -922,18 +1053,10 @@ TODO</p>
 <span id="id22"></span><h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
 </section>
-</section>
-<section id="measures-of-comparision">
-<h2>Measures of Comparision<a class="headerlink" href="#measures-of-comparision" title="Permalink to this headline">#</a></h2>
 <section id="coefficient-of-variation">
 <h3>Coefficient of Variation<a class="headerlink" href="#coefficient-of-variation" title="Permalink to this headline">#</a></h3>
 <div class="math">
 <p><img src="../../_images/math/3f79723d3ee7fdbae983e83e374cccb75ae3ed44.png" alt="v = \frac{\bar{x}}{s} \cdot 100"/></p>
-</div></section>
-<section id="z-score">
-<h3>Z Score<a class="headerlink" href="#z-score" title="Permalink to this headline">#</a></h3>
-<div class="math">
-<p><img src="../../_images/math/355911cc4d9fcf781150b979f8764a3876731f10.png" alt="z = \frac{x_i - \bar{x}}{s}"/></p>
 </div></section>
 </section>
 <section id="outliers">
@@ -1030,15 +1153,21 @@ TODO</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#order-statistics">Order Statistics</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#range">Range</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#percentile">Percentile</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#interpolation">Interpolation</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#median">Median</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quartiles">Quartiles</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#general-formula">General Formula</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#special-percentiles">Special Percentiles</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#median">Median</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#identifying-skew">Identifying Skew</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#z-score">Z Score</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-variation">Measures of Variation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Motivation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interquartile-range">Interquartile Range</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-of-thumb-for-outliers">Rule of Thumb for Outliers</a></li>
 </ul>
@@ -1049,11 +1178,7 @@ TODO</p>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-comparision">Measures of Comparision</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coefficient-of-variation">Coefficient of Variation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#z-score">Z Score</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outliers">Outliers</a><ul class="nav section-nav flex-column">
