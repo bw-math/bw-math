@@ -177,15 +177,36 @@ Example
 
     TODO 
 
+Other Terminology
+-----------------
+
+.. _with_replacement:
+
+With Replacement
+    An observation has been made *with replacement*, if after its selection, it is placed back into the population. 
+
+Example 
+
+    Consider drawing a single card from a deck of cards, shuffling it back into the deck and then selecting another card. The event of getting the same card on both draws is a possible event because the card selected on the first draw is returned to the population of possible observation before making the second draw.
+
+.. _without_replacement:
+
+Without Replacement 
+    An observation has been made *without replacement*, if after its selection, it is removed from the population and is no longer a possible observation.
+
+Example
+
+    Consider drawing a single card from a deck of cards, setting it aside and then selecting another card. The event of getting the same card on both draws is an impossible event because the card selected on the first draw is no longer in the population of possible observation, and therefore cannot possible be selected again. In other words, when we sample data *without replacement*, we affect the *sample space* of subsequent experiments.
+
 Statistical Inference
----------------------
+=====================
 
 Once we have data to analyze, we apply the *statistical inference* to see what it tells us. 
 
 *Statistical inference* is the process of using a sample of data to reach new conclusions about the population from which it was drawn. 
 
 Null and Alternate Hypotheses
-*****************************
+-----------------------------
 
 Usually in statistics we are concerned with *hypotheses* and whether or not, based on the available data, there is sufficient evidence to reject one hypothesis in favor of another.
 
@@ -215,24 +236,29 @@ We assume the *null hypothesis* in order to test the validity of the *alternate 
 
     We never *prove* the null hypothesis true. It is always *assumed* true in order to determine whether there is sufficient evidence to conclude it is false.
 
-In the example of testing the efficiency of a new type of fuel against standard gasoline, notice we are asking a question about two different populations: the population of cars that use the new type of fuel and the population of cars that use standard gasoline. Specifically, we are asking if there is a *statistical significance* difference between the efficiency of either groups. 
+Controls 
+--------
+
+In the example of testing the efficiency of a new type of fuel against standard gasoline, notice we are asking a question about two different populations: the population of cars that use the new type of fuel and the population of cars that use standard gasoline. Specifically, we are asking if there is a *statistically significance* difference between the efficiency of either group. 
+
+(INSERT PICTURE)
 
 The first group is referred to as the *test* group, the sample to which a *treatment* has been applied and whose efficacy we would like to test.
 
-The second group is referred to as the *control group*, the sample to which no *treatments* have been applied. 
+The second group is referred to as the *control group*, the sample to which no *treatments* have been applied and which acts as a baseline against which we can judge the effects of the *treatment*.
 
 Confounding Variables
-*********************
+---------------------
 
-Let us continue  to consider the example experiment of testing the efficiency of a new type of fuel against standard gasoline. 
+Let us continue to consider the example experiment of testing the efficiency of a new type of fuel against standard gasoline. 
 
 To truly isolate the experiment from any *confounding variables*, we should restrict our populations to certain *makes* and *models* of cars. Otherwise, we would not be sure if the results of our experiments were due to the efficiency of the new fuel, or variations in the engine running the fuel. 
 
 A *confounding variable* is a variable that affects the experiment, but is not measured, whether due to poor experimental design or due to the nature of the interaction. 
 
-To see what is meant by "*due to the nature of the interaction*", suppose the new type of fuel whose efficiency is being tested loses some of its potency at higher elevations (due to the effects of gravity on its chemical composition, let's say). If some of the data we collect from the cars using the new fuel type is collected from high altitude locations, then the data will show the effects of this dependence, without our being aware. We might then erroneously conclude the new fuel does not possess the anticipated efficiency gains. 
+To see what is meant by "*due to the nature of the interaction*", suppose the new type of fuel whose efficiency is being tested loses some of its potency at higher elevations (due to the effects of gravity on its chemical composition, let's say). If some of the data we collect from the cars using the new fuel type is collected from high-altitude locations, then the data will show the effects of this dependence, without our being aware. We might then erroneously conclude the new fuel does not possess the anticipated efficiency gains, call the experiment a wash and go home sad. 
 
-For this reason, we must be very careful to always consider what variables for which we haven't accounted might influencing the samples we observe. In other words, we must always be mindful of *confounding variables*. 
+For this reason, we must be very careful to always consider what variables for which we haven't accounted might be influencing the samples we observe. In other words, we must always be mindful of *confounding variables* and their effects. 
 
 Statistical Fallacies
 =====================
@@ -250,7 +276,9 @@ Selection Bias
 Definition 
     *Selection bias* occurs when the sampling method is not representative of the entire population.
         
-As an extreme example, if you were interested in making assertions about the average height of a United States citizens, selecting a sample of 100 elementary schoolers would lead you to make wildly erroneous conclusions. 
+As an extreme example to illustrate the meaning of this type of *bias*, if you were interested in making assertions about the average height of a United States citizens, selecting a sample of 100 elementary schoolers would lead you to make wildly erroneous conclusions. 
+
+(TODO famous example)
 
 Response bias
 *************
@@ -287,9 +315,9 @@ Definition
         
 Examples of this type of bias can crop up when pollsters ask leading questions, such as, "Do you *still* drink coffee?" versus the more neutral phrasing, "Do you drink coffee?". Depending on how the question is phrased, a different answer might be given.
 
-A more famous example of this type of bias is the `Milgram Experiment <https://en.wikipedia.org/wiki/Milgram_experiment>`_ conducted by Dr. Stanley Milgrim at Yale University. The *Milford Experiment* was a psychological study wherein participants were told they were testing the effects of phyiscal punishment in form of an electric shock on the memory. Participants were to be paired off as *teacher* and *learner*. The *learner* would be asked to memorize a series of words, and then asked to recite them. If they got the words wrong in the recitation, the *teacher* would administer an electric shock to the *learner*. Each time a wrong answer was given, the voltage of the electric shock was increased.
+A more famous example of this type of bias is the `Milgram Experiment <https://en.wikipedia.org/wiki/Milgram_experiment>`_ conducted by Dr. Stanley Milgrim at Yale University. The *Milford Experiment* was a psychological study wherein participants were told they were testing the effects of phyiscal punishment, in form of an electric shock, on the memory. Participants were to be paired off as *teacher* and *learner*. The *learner* would be asked to memorize a series of words, and then asked to recite them. If they got the words wrong in the recitation, the *teacher* would administer an electric shock to the *learner*. Each time a wrong answer was given, the voltage of the electric shock was increased.
 
-Unbeknownst to the participants of the study, this wasn't the actual experiment. In reality, the *learner* in every experiment was a paid actor and the electric shocks weren't real. The actor would intentionally get answers wrong and then pretend to be in pain when the teacher was administering the fake electric shocks. The *teacher* was the real object of study. Dr. Milgram was trying to see how much pain a randomly selected individual would inflict on someone else simply because they were told to do it. 
+Unbeknownst to the participants of the study, this wasn't the actual experiment. In reality, the *learner* in every experiment was a paid actor and the electric shocks weren't real. The actor would intentionally get answers wrong and then pretend to be in pain when the *teacher* was administering the fake electric shocks. The *teacher* was the real object of study. Dr. Milgram was trying to see how much pain a randomly selected individual would inflict on someone else simply because they were told to do it. 
 
 When participants expressed unease or concern, the researchers running the study, intentionally dressed in white lab coats to give the appearance of authority, would give one of the following responses,
 
@@ -308,19 +336,24 @@ Researchers instead said,
 
     You are ordered to continue.
 
-The results were vastly different. With this slight change, the results were nowhere near as large as in Dr. Milgrim's original experiment; Fewer people were more likely to quit before reaching the maximum shock threshold.
+The results were vastly different. With this slight change, the results were nowhere near as large as in Dr. Milgrim's original experiment; Participants were more more likely to quit before reaching the maximum shock threshold. In other words, when the participants did not believe there to be a "*greater good*" at stake they would quit at greater rates than if they did. 
 
-In other words, *how* you make the observation may change *what* you are observing.
+The key takeway from the *Milgram experiment* is *how* you make the observation may change *what* you are observing.
+
+Correlation Vs. Causation
+-------------------------
+
+TODO
 
 .. _data_classification:
 
 Classifications of Data
------------------------
+=======================
 
 .. _data_dimensionality:
 
 Dimensionality
-**************
+--------------
 
 Definition
 
@@ -331,20 +364,39 @@ Univariate
 
 *Univariate* data consists of observations that each contain a single value.
 
+Example 
+    Experimental data from Henri Cavendish's density of the Earth experiments. Density is expressed as a ratio of the density of water. See :ref:`project_one` for more information about this dataset.
+
+.. csv-table:: Density of the Earth
+   :file: ../../assets/datasets/previews/earth_density_data_preview.csv
+
 Bivariate
     :math:`\{ (x_1, y_1), (x_2, y_2), ... , (x_n, y_n)\}`
 
 *Bivariate* data consists of observations that each contain two values (i.e. an *pair*)
+
+Example 
+    Data from the Challenger space shuttle explosion showing the atmospheric temperature versus the erosion index of the O-ring seal. The failure of the O-ring seal at lower temperatures was not accounted for prior to launch.
+
+.. csv-table:: Density of the Earth
+   :file: ../../assets/datasets/previews/challenger_erosion_data_preview.csv
+
 
 Multivariate 
     :math:`\{ (x_{1}^1, x_{2}^1, ... , x_{n}^1 ), (x_{1}^2, x_{2}^2, ... , x_{n}^2 ), ... ,(x_{1}^m, x_{2}^m, ... , x_{n}^m )`
 
 *Multivariate* data consists of observations that each contain an arbitrary number of values (i.e. a *vector*)
 
+Example
+    Body measurements from a sample of grizzly bears.
+
+.. csv-table:: Bear Measurements
+    :file: ../../assets/datasets/previews/bear_measurements_data_preview.csv
+
 .. _data_characteristic:
 
 Characteristic
-**************
+--------------
 
 Definition
     The *characteristic* of a dataset is the *type* of data being observed.
@@ -418,7 +470,7 @@ Example
 .. _statistics_defintions:
 
 Types of Statistics
--------------------
+===================
 
 .. _sample_statistic:
 
@@ -436,24 +488,3 @@ Descriptive Statistic
 
 Inferential Statistic
     A sample statistic used to make inferences about the population.
-
-Other Terminology
------------------
-
-.. _with_replacement:
-
-With Replacement
-    An observation has been made *with replacement*, if after its selection, it is placed back into the population. 
-
-Example 
-
-    Consider drawing a single card from a deck of cards, shuffling it back into the deck and then selecting another card. The event of getting the same card on both draws is a possible event because the card selected on the first draw is returned to the population of possible observation before making the second draw.
-
-.. _without_replacement:
-
-Without Replacement 
-    An observation has been made *without replacement*, if after its selection, it is removed from the population and is no longer a possible observation.
-
-Example
-
-    Consider drawing a single card from a deck of cards, setting it aside and then selecting another card. The event of getting the same card on both draws is an impossible event because the card selected on the first draw is no longer in the population of possible observation, and therefore cannot possible be selected again. In other words, when we sample data *without replacement*, we affect the *sample space* of subsequent experiments.
