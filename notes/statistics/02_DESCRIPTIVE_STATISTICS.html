@@ -470,21 +470,21 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#z-score">Z Score</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Motivation</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Formula</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Motivation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Formula</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-variation">Measures of Variation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Motivation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interquartile-range">Interquartile Range</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-of-thumb-for-outliers">Rule of Thumb for Outliers</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#absolute-variation">Absolute Variation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variance">Variance</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Motivation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Motivation</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
@@ -492,7 +492,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outliers">Outliers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Rule of Thumb</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Rule of Thumb</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chebyshev-s-theorem">Chebyshev’s Theorem</a></li>
@@ -770,7 +770,6 @@ document.write(`
 </div></section>
 <section id="formula">
 <h4>Formula<a class="headerlink" href="#formula" title="Permalink to this headline">#</a></h4>
-<hr class="docutils" />
 <p>If a sample of data <strong>S</strong> has been broken up into <em>m</em> groups, then</p>
 <div class="math">
 <p><img src="../../_images/math/9b2bf1f5c18c2484b9e0705741728b10e27415bd.png" alt="\bar{x} = \sum_{j}^m \bar{x_j} \cdot w_j"/></p>
@@ -1053,7 +1052,7 @@ document.write(`
 </section>
 </section>
 <section id="median">
-<h3>Median<a class="headerlink" href="#median" title="Permalink to this headline">#</a></h3>
+<span id="id19"></span><h3>Median<a class="headerlink" href="#median" title="Permalink to this headline">#</a></h3>
 <p>The <em>median</em> of a dataset is the observation such that half of the sample is above it and half of the sample is above it. As the table in the previous section indicated, another way of saying this is the <em>median</em> is the <em>50</em> <sup>th</sup> percentile.</p>
 <p>First, let’s state a quick shortcut formula for the median that you are probably familiar with, although you may not have seen it stated as precisely.</p>
 <section id="shortcut">
@@ -1065,7 +1064,6 @@ document.write(`
 </section>
 <section id="sample-is-odd">
 <h4>Sample is Odd<a class="headerlink" href="#sample-is-odd" title="Permalink to this headline">#</a></h4>
-<hr class="docutils" />
 <p>If <em>n</em> is odd, then <em>n+1</em> is even (<em>divisibly be 2</em>). If <em>n+1</em> is even, then <em>m</em> is an integer. If <em>m</em> is an integer, then <img class="math" src="../../_images/math/1daf16020d9f969df695e027db9f4fa83c9e5433.png" alt="\lfloor m \rfloor = m = \lceil m \rceil"/>,</p>
 <p>The percentile <img class="math" src="../../_images/math/d2de40790989e44dbfe6fd614ad87ad1e3f6b876.png" alt="\pi_{0.50}"/> is given by,</p>
 <div class="math">
@@ -1086,7 +1084,6 @@ document.write(`
 </section>
 <section id="sample-is-even">
 <h4>Sample is Even<a class="headerlink" href="#sample-is-even" title="Permalink to this headline">#</a></h4>
-<hr class="docutils" />
 <p>If <em>n</em> is even, then <em>n+1</em> is odd (<em>not divisible by 2</em>). If <em>n+1</em> is odd, then <em>m</em> is not an integer. Because <em>m</em> is being divided by 2 and it is not an integer,</p>
 <div class="math">
 <p><img src="../../_images/math/289f67c838e7a75c74ff750ff32a39e2b131c934.png" alt="m - \lfloor m \rfloor = 0.5 = \frac{1}{2}"/></p>
@@ -1143,7 +1140,6 @@ document.write(`
 </section>
 <section id="rule-of-thumb">
 <h4>Rule of Thumb<a class="headerlink" href="#rule-of-thumb" title="Permalink to this headline">#</a></h4>
-<hr class="docutils" />
 <p>Consider a symmetrical sample distribution,</p>
 <div class="math">
 <p><img src="../../_images/math/ede7c3c75e8ff9bc8c1dc6f7911107fb7513cd79.png" alt="S = \{ 1, 5, 5, 5, 9 \}"/></p>
@@ -1186,12 +1182,12 @@ document.write(`
 <section id="z-score">
 <h3>Z Score<a class="headerlink" href="#z-score" title="Permalink to this headline">#</a></h3>
 <p><em>Percentiles</em> are one way of describing location, but they are not the only way. We can also use <em>Z-Scores</em> to talk about the location of data.</p>
-<section id="id19">
-<h4>Motivation<a class="headerlink" href="#id19" title="Permalink to this headline">#</a></h4>
+<section id="id20">
+<h4>Motivation<a class="headerlink" href="#id20" title="Permalink to this headline">#</a></h4>
 <p>TODO</p>
 </section>
-<section id="id20">
-<h4>Formula<a class="headerlink" href="#id20" title="Permalink to this headline">#</a></h4>
+<section id="id21">
+<h4>Formula<a class="headerlink" href="#id21" title="Permalink to this headline">#</a></h4>
 <dl>
 <dt>Definition</dt><dd><div class="math">
 <p><img src="../../_images/math/355911cc4d9fcf781150b979f8764a3876731f10.png" alt="z = \frac{x_i - \bar{x}}{s}"/></p>
@@ -1202,10 +1198,10 @@ document.write(`
 </section>
 </section>
 <section id="measures-of-variation">
-<span id="id21"></span><h2>Measures of Variation<a class="headerlink" href="#measures-of-variation" title="Permalink to this headline">#</a></h2>
+<span id="id22"></span><h2>Measures of Variation<a class="headerlink" href="#measures-of-variation" title="Permalink to this headline">#</a></h2>
 <p><em>Measures of variation</em> characterize the <em>spread</em> and <em>dispersion</em> of a sample of data.</p>
-<section id="id22">
-<h3>Motivation<a class="headerlink" href="#id22" title="Permalink to this headline">#</a></h3>
+<section id="id23">
+<h3>Motivation<a class="headerlink" href="#id23" title="Permalink to this headline">#</a></h3>
 <p>Consider these two samples of data <img class="math" src="../../_images/math/08dae650aba750710b182a0e7b1e63c09404075b.png" alt="S_1"/> and <img class="math" src="../../_images/math/7a01e66959cdf273b6b3c5541280a7402771722e.png" alt="S_2"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/754cdb6148d139ef3ccd106ede07d0a517a3998d.png" alt="S_1 = \{ 4, 5, 6 \}"/></p>
@@ -1227,7 +1223,7 @@ document.write(`
 <p>The goal of the next few sections is to come up with a way of quantifying and measuring this <em>variation</em>.</p>
 </section>
 <section id="interquartile-range">
-<span id="id23"></span><h3>Interquartile Range<a class="headerlink" href="#interquartile-range" title="Permalink to this headline">#</a></h3>
+<span id="id24"></span><h3>Interquartile Range<a class="headerlink" href="#interquartile-range" title="Permalink to this headline">#</a></h3>
 <p>First up, we have the <em>interquartile range</em>.</p>
 <p>TODO</p>
 <section id="rule-of-thumb-for-outliers">
@@ -1236,19 +1232,19 @@ document.write(`
 </section>
 </section>
 <section id="absolute-variation">
-<span id="id24"></span><h3>Absolute Variation<a class="headerlink" href="#absolute-variation" title="Permalink to this headline">#</a></h3>
+<span id="id25"></span><h3>Absolute Variation<a class="headerlink" href="#absolute-variation" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
 </section>
 <section id="variance">
 <span id="sample-variance"></span><h3>Variance<a class="headerlink" href="#variance" title="Permalink to this headline">#</a></h3>
-<section id="id25">
-<h4>Motivation<a class="headerlink" href="#id25" title="Permalink to this headline">#</a></h4>
+<section id="id26">
+<h4>Motivation<a class="headerlink" href="#id26" title="Permalink to this headline">#</a></h4>
 <p>Let us consider a rather contrived example that is nevertheless instructive. Suppose <strong>S</strong> a sample of data.represents
 TODO</p>
 </section>
 </section>
 <section id="standard-deviation">
-<span id="id26"></span><h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">#</a></h3>
+<span id="id27"></span><h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
 </section>
 <section id="coefficient-of-variation">
@@ -1260,8 +1256,8 @@ TODO</p>
 <section id="outliers">
 <h2>Outliers<a class="headerlink" href="#outliers" title="Permalink to this headline">#</a></h2>
 <p>TODO</p>
-<section id="id27">
-<h3>Rule of Thumb<a class="headerlink" href="#id27" title="Permalink to this headline">#</a></h3>
+<section id="id28">
+<h3>Rule of Thumb<a class="headerlink" href="#id28" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
 </section>
 </section>
@@ -1370,21 +1366,21 @@ TODO</p>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#z-score">Z Score</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Motivation</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Formula</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Motivation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Formula</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-variation">Measures of Variation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Motivation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interquartile-range">Interquartile Range</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-of-thumb-for-outliers">Rule of Thumb for Outliers</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#absolute-variation">Absolute Variation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variance">Variance</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Motivation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Motivation</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
@@ -1392,7 +1388,7 @@ TODO</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outliers">Outliers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Rule of Thumb</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Rule of Thumb</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chebyshev-s-theorem">Chebyshev’s Theorem</a></li>
