@@ -25,7 +25,7 @@ If we are measuring how hot it is over the course of a week in the summer, then 
 
 .. note:: 
 
-    When reading temperature data in most scientific literature, you will likely never see celsius or fahrenheit. Kelvin is the standard *experimental unit* for the fields of physics, chemistry and biology. The only times you will encounter other measurements scales is when they are trying to relate the data to human experience.
+    When reading temperature data in most scientific literature, you will likely never see celsius or fahrenheit. Kelvin is the standard *experimental unit* for the fields of physics, chemistry and biology. The only times you will encounter other measurement scales is when the authors are trying to relate the data to human experience.
 
 If we are measuring what percent of the country's population supports a government policy, then the *individuals* in the experiment will be the collection (:ref:`set_theory`) people's answers, Yes or No. The *experimental unit* of each *individual observation* would be the binary units, *Y* or *N*. 
 
@@ -43,7 +43,7 @@ Sample
 ------
 
 Definition 
-    A *sample* is the subset of individuals drawn from the population in a given experiment.
+    A *sample* is a subset of individuals drawn from the population in a given experiment.
 
 
 .. _population_subset_sample:
@@ -51,7 +51,7 @@ Definition
 Population vs. Sample 
 *********************
 
-The relationship between the *population* and the *sample* can be visualized with the following :ref:`venn_diagrams`. 
+The relationship between the *population* and the *sample* can be visualized with the following :ref:`venn diagram <venn_diagrams>`. 
 
 .. image:: ../../assets/imgs/statistics/sample_subset_population.jpg
     :align: center
@@ -61,22 +61,21 @@ The *sample* is contained in the *population*; it is the portion of the populati
 
 .. note:: 
 
-    We will study :ref:`venn_diagrams` in more detail in later chapters. 
-
+    We will study :ref:`venn diagrams <venn_diagrams>` in more detail in later chapters. 
 
 .. _observation_methods:
 
 Methods of Observation
-----------------------
+======================
 
-In statistics, *observation* is the name of the game. Without first making observations, there is nothing else to be done. 
+In statistics, "*observation*" is the name of the game. Without first making observations, there is nothing else to be done. 
 
 Conducting Census
     A *census* is a type of statistical study where each individual in the population is observed.
 
 In practice, we are never able to see entire population at once. A *census* is an *ideal*, like a *vacuum* or a *frictionless surface*. If we had infinite time and resources, we should always like to conduct a *census*, rather than drawing a *sample*, because it would tell us conclusively how the population looked. 
 
-A *census* is conducted every ten years in the United States to accurately measure the population size. Even a massive operation like this is likely to miss a few individuals in the population, whether due to undocumented citizens or errors in the record-keeping. 
+A *census* is conducted every ten years in the United States to accurately measure the population size. Even a massive operation like this is likely to miss more than a few individuals in the population, whether due to undocumented citizens, errors in record-keeping or pure happenstance. The point being, a *census* is the *ideal* study, but *impossible* to obtain.
 
 .. warning::
     
@@ -178,8 +177,65 @@ Example
 
     TODO 
 
-Statistical Fallacies
+Statistical Inference
 ---------------------
+
+Once we have data to analyze, we apply the *statistical inference* to see what it tells us. 
+
+*Statistical inference* is the process of using a sample of data to reach new conclusions about the population from which it was drawn. 
+
+Null and Alternate Hypotheses
+*****************************
+
+Usually in statistics we are concerned with *hypotheses* and whether or not, based on the available data, there is sufficient evidence to reject one hypothesis in favor of another.
+
+For example, we might like to know whether a new type of fuel is cleaner and more efficient than standard gasoline. In this case, we would start by assuming the *null hypothesis* that the efficiency of the new fuel is the same as standard gasoline. We would then establish an experiment designed to test this hypothesis against the *alternate hypothesis* that the new fuel is more efficient than standard gasoline.
+
+.. topic:: Null Hypothesis
+
+    .. math::
+
+        H_{ \varnothing }
+
+    The *null hypothesis* is the prior assumption we bring to the *experiment*. It represents the "*status quo*". 
+
+    The term "*Null*" (as in :ref:`null_set`) means "*none*" or "*empty*", as in nothing has been accomplished with the *null hypothesis*. It represents "*no change to the state of our knowledge about the world*"
+
+.. topic:: Alternate Hypothesis
+
+    .. math::
+
+        H_a
+
+    The *alternate hypothesis* is the theory we would like to test with the experiment. It represents "*overturning of the status quo*" in favor of a new explanation. 
+
+We assume the *null hypothesis* in order to test the validity of the *alternate hypothesis*. If we find sufficient evidence the *null hypothesis* is not true, we reject it in favor of the *alternate hypothesis*.
+
+.. important::
+
+    We never *prove* the null hypothesis true. It is always *assumed* true in order to determine whether there is evidence to conclude it is false.
+
+In the example of testing the efficiency of a new type of fuel against standard gasoline, notice we are asking a question about two different populations: the population of cars that use the new type of fuel and the population of cars that use standard gasoline. Specifically, we are asking if there is a *statistical significance* difference between the efficiency of either groups. 
+
+The first group is referred to as the *test* group, the sample to which a *treatment* has been applied and whose efficacy we would like to test.
+
+The second group is referred to as the *control group*, the sample to which no *treatments* have been applied. 
+
+Confounding Variables
+*********************
+
+Let us continue  to consider the example experiment of testing the efficiency of a new type of fuel against standard gasoline. 
+
+To truly isolate the experiment from any *confounding variables*, we should restrict our populations to certain *makes* and *models* of cars. Otherwise, we would not be sure if the results of our experiments were due to the efficiency of the new fuel, or variations in the engine running the fuel. 
+
+A *confounding variable* is a variable that affects the experiment, but is not measured, whether due to poor experimental design or due to the nature of the interaction. 
+
+To see what is meant by "*due to the nature of the interaction*", suppose the new type of fuel whose efficiency is being tested loses some of its potency at higher elevations (due to the effects of gravity on its chemical composition, let's say). If some of the data we collect from the cars using the new fuel type is collected from high altitude locations, then the data will show the effects of this dependence, without our being aware. We might then erroneously conclude the new fuel does not possess the anticipated efficiency gains. 
+
+For this reason, we must be very careful to always consider what variables for which we haven't accounted might influencing the samples we observe. In other words, we must always be mindful of *confounding variables*. 
+
+Statistical Fallacies
+=====================
 
 .. _bias:
 
