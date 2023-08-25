@@ -1,3 +1,5 @@
+.. _classwork:
+
 Class Work
 ===========
 

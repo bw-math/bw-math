@@ -28,7 +28,7 @@ Sample
 ------
 
 Symbolic Expression 
-    :math:`\{ x_1, x_2, ..., x_{n-1}, x_n \}`
+    :math:`S = \{ x_1, x_2, ..., x_{n-1}, x_n \}`
 
 Definition 
     A collection, or :ref:`set <set_theory>`, of observations. 
@@ -45,6 +45,30 @@ Symbolic Expression
 
 Definition
     The number of times a particular observation occurs in a sample of data.
+
+.. _minimum:
+
+Minimum
+-------
+
+Symbolic Expression 
+    :math:`min(\{ x_i \})`
+
+Definition
+    The smallest value in a sample of observations.
+
+.. _maximum:
+
+Maximum
+-------
+
+Symbolic Expression 
+    :math:`max(\{ x_i \})`
+
+    :math:`max(S)`
+
+Definition
+    The largest value in a sample of observations
 
 .. _outlier:
 
@@ -227,6 +251,100 @@ Example
 +--------------+----------------+
 |      ??      |       ?        |
 +--------------+----------------+
+
+Weighted Mean
+*************
+
+If the sample is broken up into groups, then the mean of the overall sample can be computed by weighting the mean of each group by the proportion of the overall sample it represents.
+
+Example
+    The following datasets represent the heights (in feet) of male and female students in a statistics class,
+
+    .. math::
+
+        S_{\text{male}} = \{ 5.8 \text{ ft}, 5.7 \text{ ft}, 5.9 \text{ ft}, 6.1 \text{ ft}, 5.6 \text{ ft}\}
+
+    .. math:: 
+
+        S_{\text{female}} = \{ 5.9 \text{ ft}, 5.6 \text{ ft}, 5.4 \text{ ft}, 5.5 \text{ ft}, 5.6 \text{ ft} \} 
+
+    Find the average height of all students in this class.
+
+The sample is broken into 2 groups here, whereas the question is asking for the mean of the entire sample. We *could* merge the two samples into one giant sample,
+
+.. math:: 
+
+        S = \{ 5.8 \text{ ft}, 5.7 \text{ ft}, 5.9 \text{ ft}, 5.9 \text{ ft}, 5.6 \text{ ft}, 5.5 \text{ ft}, 5.9 \text{ ft}, 5.6 \text{ ft}, 5.4 \text{ ft}, 5.5 \text{ ft}, 5.6 \text{ ft}, 5.7 \text{ ft} \} 
+
+And then calculate the sample mean directly, but there is an alternate approach here that is easier. We can first find the mean of each group,
+
+.. math:: 
+
+    \bar{x_{\text{male}}} = \frac{ 5.8 \text{ ft} + 5.7 \text{ ft} + 5.9 \text{ ft} + 6.1 \text{ ft} + 5.6 \text{ ft}}{5} = 5.82 \text{ ft}
+
+.. math:: 
+
+    \bar{x_{\text{female}}} = \frac{ 5.9 \text{ ft} + 5.6 \text{ ft} + 5.4 \text{ ft} + 5.5 \text{ ft}}{5} = 5.6 \text{ ft}
+
+Then we find the *weight* :math:`w_j` of the male and female groups. The weight is simply the ratio of samples in a group to the total number of samples,
+
+.. math:: 
+    w_j = \frac{n(\{ x_j \})}{n}
+
+.. note:: 
+
+    We are using :ref:`set theoretic <set_theory>` notation here that we have not yet introduced formally. Nevertheless, the meaning of this equation should be intuitive. It represents the fraction of the sample that belongs to the given group.
+
+The number of males in this sample is 5 and the number of females in this sample is 4. Thus,
+
+.. math:: 
+
+    w_{\text{male}} = \frac{5}{9}
+
+
+.. math:: 
+    
+    w_{\text{female}} = \frac{4}{9}
+
+Then, the overall mean of the sample can be calculated by *weighting* each mean of the sample groups,
+
+.. math:: 
+
+    \bar{x} = w_{\text{male}} \cdot \bar{x_{\text{male}}} + w_{\text{female}} \cdot \bar{x_{\text{female}}}
+
+.. math:: 
+
+    \implies = \frac{5}{9} \cdot 5.82 \text{ ft} + \frac{4}{9} \cdot 5.6 \text{ ft} \approx 5.72 \text{ ft}
+
+Note, this agrees with first method we discussed in this section, namely calculating the mean directly from a merged sample,
+
+.. math:: 
+
+    \bar{x} = \frac{5.8 \text{ ft} + 5.7 \text{ ft} + 5.9 \text{ ft} + 6.1 \text{ ft} + 5.6 \text{ ft} + 5.9 \text{ ft} + 5.6 \text{ ft} + 5.4 \text{ ft} + 5.5 \text{ ft}}{9}
+
+.. math:: 
+
+    \implies \approx 5.72 \text{ ft}
+
+Formula
+*******
+*******
+
+
+If a sample of data **S** has been broken up into *m* groups, then 
+
+.. math:: 
+
+    \bar{x} = \sum_{j}^m \bar{x_j} \cdot w_j
+
+Where 
+
+.. math:: 
+
+    w_j = \frac{n(\{ x_j \})}{n}
+
+Example
+    TODO 
 
 .. _geometric_mean:
 
@@ -645,11 +763,11 @@ Since :math:`m = \frac{n+1}{2}`,
 
     \implies \pi_0.50 = x_{(\frac{n+1}{2})}
 
-Recalling the meaning of the term :math:`x_{(\frac{n+1}{2})`, we see if the number of samples is odd, then *median* is simply the :math:`\frac{n+1}{2}` :sup:`th` ordered observation.
+Recalling the meaning of the term :math:`x_{(\frac{n+1}{2})}`, we see if the number of samples is odd, then *median* is simply the :math:`\frac{n+1}{2}` :sup:`th` ordered observation.
 
 .. topic:: Odd Sample: Median Shortcut
 
-    \pi_0.50 = x_{(\frac{n+1}{2})
+    \pi_0.50 = x_{(\frac{n+1}{2})}
 
 Sample is Even
 **************

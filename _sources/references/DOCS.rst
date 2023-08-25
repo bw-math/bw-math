@@ -50,5 +50,7 @@ Cultural
 --------
 
 - `Celebrity Twitter <https://www.kaggle.com/datasets/ahmedshahriarsakib/top-1000-twitter-celebrity-tweets-embeddings>`_
+- `Kentucky Derby Winning Times <https://www.kaggle.com/datasets/danbraswell/kentucky-derby-winners-18752022?resource=download>`_
+- `Pigeon Racing Times <https://github.com/joanby/python-ml-course/blob/master/datasets/pigeon-race/pigeon-racing.csv>`_
 - `Instagram Reviews <https://www.kaggle.com/datasets/saloni1712/instagram-play-store-reviews>`_
 - `Marvel Movies <https://www.kaggle.com/datasets/joebeachcapital/marvel-movies>`_
