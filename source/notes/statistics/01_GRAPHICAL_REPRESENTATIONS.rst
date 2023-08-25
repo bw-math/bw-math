@@ -24,18 +24,27 @@ Frequency Distributions
 Ungrouped Distributions
 -----------------------
 
-Suppose you ask 10 people their favorite color and the following data set represents their answers,
+The concept of an *ungrouped distribution* is best seen by example.
 
-.. math:: 
-    S = \{ r, b, g, g, r, r, y, o, r, b \}
+Example
+    Suppose you ask 10 people their favorite color and the following data set represents their answers,
 
-Where 
+    .. math:: 
+        S = \{ r, b, g, g, r, r, y, o, r, b \}
 
-    *b* = response of "blue"
-    *g* = response of "green"
-    *o* = response of "orange"
-    *r* = response of "red"
-    *y* = response of "yellow "
+    Where 
+
+        *b* = response of "blue"
+
+        *g* = response of "green"
+
+        *o* = response of "orange"
+
+        *r* = response of "red"
+
+        *y* = response of "yellow "
+
+    Describe the *distribution* of this sample with a an ungrouped frequency distribution.
 
 An *ungrouped frequency distribtion* is simply a table where each entry represents the :ref:`frequency` of every possible observation,
 
@@ -53,19 +62,38 @@ An *ungrouped frequency distribtion* is simply a table where each entry represen
 |  y  |   1   |
 +-----+-------+
 
+Notice the sum of the right hand column totals to the number of observations in the sample, :math:`n = 10`. We summarize this result below,
+
+.. math:: 
+
+    n = \sum_{x_i \in S} f(x_i)
+
+Take note of the index in this sum. The :math:`x_i \in S` symbol can be read as "*for every* :math:`x_i` *in S*". This notation is used to take into account observations that may have the same value, as in this example where the observations ``b``, ``g`` and ``r`` occur multiple times. In other words, each term :math:`x_i` of the sum is a *unique value*. Its so-called multiplicity derives from the frequency :math:`f(x_i)` by which it multiplied.
+
+Contrast this against the notation employed in the :ref:`sample_mean_formula`
+
+.. math:: 
+
+    \bar{x} = \frac{ sum^n_{i=1} x_i }{n}
+
+In the :ref:`sample_mean_formula`, the index is over the observation order, i.e. from :math:`i = 1, 2, 3 ..., n`. In this case, it may happen that :math:`x_i = x_j` for some :math:`i \neq j`. In other words, in the sample mean formula, it is possible for terms in the summation to *repeat*. 
+
 .. _grouped_frequency_distributions:
 
 Grouped Distributions
 ---------------------
 
-TODO 
+Ungrouped distributions can get cumbersome when the :ref:`range` of the data is very large or when there are a large number of unique observations drawn from a continuous population. For example, consider the following dataset which represents the eruption length and period between eruptions for the famous geyser `Old Faithful <https://en.wikipedia.org/wiki/Old_Faithful>`_ at Yellowstone National Park in Wymoing.
 
-The steps for constructing a *grouped* frequency distribution are given below. 
+.. csv-table:: Old Faithful Eruption and Waiting Times
+   :file: ../../assets/datasets/previews/old_faithful_data_preview.csv
+
+Attempting to create an ungrouped distribution would be a futile effort. Therefore, the standard approach with datasets like this is to create an *grouped* frequency distribution.
 
 Steps
 *****
 
-If you are given a sample **S** of data points, then the steps for finding a *grouped* frequency distribution are as follows,
+If you are given a sample of *n* data points :math:`S = \{ x_1, x_2, ... , x_n \}`, then the steps for finding a *grouped* frequency distribution are as follows,
 
 1. Find the range of the data set. 
 
@@ -149,6 +177,8 @@ A *histogram* is a graphical representation of a :ref:`frequency distribution <f
 
 .. plot:: assets/plots/histograms/histogram_random.py
 
+.. _histogram_variatians:
+
 Variations
 ----------
 
@@ -183,25 +213,46 @@ Relative Frequency Plots
 
 .. plot:: assets/plots/histograms/histogram_relative.py
 
+.. _distribution_shapes:
+
 Distribution Shapes
 -------------------
 
-TODO 
+The shape of the histogram can tell us a lot about the distribution of the sample. 
+
+.. _uniform_shape:
 
 Uniform
 *******
 
+A histogram where each class is approximately level with every other class is known as *uniform*. 
+
 .. plot:: assets/plots/histograms/histogram_uniform.py
+
+A *uniform distribution* tells us each class is *equally likely*. In other words, if we were to randomly select an individual from this sample, there is an equal chance the selected individual will come from each class. 
 
 Normal
 ******
 
+A histogram where the classes are symmetric and decreasing around a common point is known as *normal*.
+
 .. plot:: assets/plots/histograms/histogram_normal.py
+
+The line of symmetry in a perfectly symmetrical distribution is the :ref:`median`. The reason for this can by equating the *area* under the distribution with the proportion of the sample that belongs to that area. Since the *areas* on either side of a symmetric distribution are equal,
+
+(TODO: fill between points)
+
+It follows these areas are both fifty percent of the distribution. 
+
+A *normal distribution* tells us classes closer to the :ref:`median` are more likely to be observed.
 
 Bimodal
 *******
 
+A histogram where two classes are much larger than the other classes is known as *bimodal*.
+
 .. plot:: assets/plots/histograms/histogram_bimodal.py
+
 
 Skewed
 ******

@@ -328,8 +328,6 @@ Note, this agrees with first method we discussed in this section, namely calcula
 
 Formula
 *******
-*******
-
 
 If a sample of data **S** has been broken up into *m* groups, then 
 
@@ -717,6 +715,8 @@ The table below lists the names that have been given to special percentiles.
 | 100 :sup:`th` | Fourth Quartile/ Tenth Decile       |
 +---------------+-------------------------------------+
 
+.. _median:
+
 Median
 -------
 
@@ -736,7 +736,6 @@ Applying the :ref:`percentile_formula` to the special case of the median, i.e. :
 We must consider two cases: if *n* is odd or if *n* is even. Depending on the case, the *order m* of the median will be an integer value or an fractional value. 
 
 Sample is Odd
-*************
 *************
 
 If *n* is odd, then *n+1* is even (*divisibly be 2*). If *n+1* is even, then *m* is an integer. If *m* is an integer, then :math:`\lfloor m \rfloor = m = \lceil m \rceil`,
@@ -770,7 +769,6 @@ Recalling the meaning of the term :math:`x_{(\frac{n+1}{2})}`, we see if the num
     \pi_0.50 = x_{(\frac{n+1}{2})}
 
 Sample is Even
-**************
 **************
 
 If *n* is even, then *n+1* is odd (*not divisible by 2*). If *n+1* is odd, then *m* is not an integer. Because *m* is being divided by 2 and it is not an integer, 
@@ -868,7 +866,6 @@ The observation of *$2,000,000* is an :ref:`outlier`, an unusual observation. Th
 This idea will allow us to develop a general rule of thumb for identifying the presence of :ref:`skew` in samples.   
 
 Rule of Thumb
-*************
 *************
 
 Consider a symmetrical sample distribution,
