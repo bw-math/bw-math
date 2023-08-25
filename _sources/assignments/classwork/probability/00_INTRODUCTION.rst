@@ -556,3 +556,11 @@ is called the *symmetric difference of* **A** *and* **B**. Prove the probability
     *Hint #1*: Draw a :ref:`Venn Diagram <venn_diagrams>` of **A** and **B**, assuming the events are *not* mutually exclusive. Label the area that correspodned to the *symmetric difference of* **A** *and* **B**. 
 
     *Hint #2*: Recall (TODO link) :math:`A - B = A \cap B^C`
+
+
+A.P. Exam Practice
+==================
+
+12. **2019, Free Response, #3** (TODO)
+
+13. **2016, Free Response, #3** (TODO)

@@ -94,3 +94,8 @@ Independence
 ------------
 
 TODO
+
+A.P. Exam Practice
+------------------
+
+?. **2018 Free Response, #3a-b**
