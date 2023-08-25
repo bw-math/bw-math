@@ -21,9 +21,13 @@ Definition
 
 *Individuals* will mean different things depending on the experiment being conducted. 
 
-If we are measuring how hot it is over the course of a week in the summer, then the *individuals* in the experiment will be the temperature measurements made on a thermometer. 
+If we are measuring how hot it is over the course of a week in the summer, then the *individuals* in the experiment will be the temperature measurements made on a thermometer. The *experimental unit* of each *individual observation* would be degrees Kelvin.
 
-If we are measuring what percent of the country's population supports a government policy, then the *individuals* in the experiment will be the collection (:ref:`set_theory`) people's answers, Yes or No.
+.. note:: 
+
+    When reading temperature data in most scientific literature, you will likely never see celsius or fahrenheit. Kelvin is the standard *experimental unit* for the fields of physics, chemistry and biology. The only times you will encounter other measurements scales is when they are trying to relate the data to human experience.
+
+If we are measuring what percent of the country's population supports a government policy, then the *individuals* in the experiment will be the collection (:ref:`set_theory`) people's answers, Yes or No. The *experimental unit* of each *individual observation* would be the binary units, *Y* or *N*. 
 
 .. _population: 
 
@@ -42,10 +46,23 @@ Definition
     A *sample* is the subset of individuals drawn from the population in a given experiment.
 
 
-Population vs. Sample 
----------------------
+.. _population_subset_sample:
 
-(INSERT VENN DIAGRAM HERE)
+Population vs. Sample 
+*********************
+
+The relationship between the *population* and the *sample* can be visualized with the following :ref:`venn_diagrams`. 
+
+.. image:: ../../assets/imgs/statistics/sample_subset_population.jpg
+    :align: center
+
+
+The *sample* is contained in the *population*; it is the portion of the population we actually observe. The *sample* is the information we have available to us to draw conclusions about the population.
+
+.. note:: 
+
+    We will study :ref:`venn_diagrams` in more detail in later chapters. 
+
 
 .. _observation_methods:
 
@@ -96,6 +113,34 @@ Examples
     - Mixing names in a hat and picking three names without looking.
     - Going through the phone book and flipping a coin to determine who to include in the sample and who to exclude. 
     - Assign every name a number and then draw random numbers.
+
+The last item in the list above is the most common technique in practice. A standard method in statistics for generating a random sample from a population is to *associate an index* to each *individual*. Consider the following table of names,
+
++-------+---------------------+
+| Index | Individual          |
++-------+---------------------+
+| 1     | Jean-Paul Sartre    |
++-------+---------------------+
+| 2     | Martin Heidegger    |
++-------+---------------------+
+| 3     | Edmund Husserl      |
++-------+---------------------+
+| 4     | Bertrand Russel     |
++-------+---------------------+
+| 5     | Kurt Godel          |
++-------+---------------------+
+| 6     | Gottlob Frege       |
++-------+---------------------+
+| 7     | Immanuel Kant       |
++-------+---------------------+
+| 8     | Rene Descarates     |
++-------+---------------------+
+| 9     | Ludwig Wittgenstein |
++-------+---------------------+
+| 10    | Alain Badiou        |
++-------+---------------------+
+
+Once each individual in the population is associated with an *index*, random numbers are generated; the indices that are selected by the random number generator then tell us what individuals to select for the sample.
 
 .. _systematic_sampling:
 

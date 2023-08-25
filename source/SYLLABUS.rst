@@ -2,11 +2,49 @@
 Course Syllabus
 ===============
 
-.. topic:: Advanced Placement Statistics
+Advanced Placement Statistics
+=============================
 
-    A course blah blah
+AP Statistics is an introductory college-level statistics course that introduces students to the major concepts and tools for collecting, analyzing, and drawing conclusions from data. Students cultivate their understanding of statistics using technology, investigations, problem solving, and writing as they explore concepts like variation and distribution; patterns and uncertainty; and data-based predictions, decisions, and conclusions.
 
-.. admonition:: Grading Breakdown
+.. topic:: Overview 
+
+    Each class will be broken into a lecture portion and a classwork portion. The classwork will pertain to the lecture just given. Classwork will often involve a combination of hand written work, results collected from calculator and computer program output, and visual aids, such as news programs and articles that involve applications of statistics.
+
+    At the end of each class, reading from the textbook will be assigned. The student is expected to complete the reading by next class. 
+
+    Each week, homework from the textbook and other sources will be assigned. Homework will be collected every Monday.
+
+    Each week, a project will be assigned that involves creating and interpretting statistical graphs, performing analysis on real-life data sets, simulating outcomes using random numbers or other applications. Projects will be due the following Monday.
+
+.. topic:: Text
+
+    Reading will be assigned from `Elementary Statistics: A Step-by-Step Approach <https://www.mheducation.com/prek-12/program/bluman-elementary-statistics/MKTSP-GFG04M0.html>`_ by Allan G. Bluman (ISBN: 9780076793907), 10 :sup:`th` edition. This textbook will distributed to students on the first day of class. It expected the students will bring the textbook to class every day. 
+
+    This textbook is not designed for a full-fledged *A.P. Statistics* course. Additional resources will be provided to fill the gaps. 
+
+    We will be using **Chapter 1: Set Theory** from the `Contemporary Mathematics <https://openstax.org/details/books/contemporary-mathematics>`_. This is a college-level textbook taken from the `OpenStax <https://openstax.org/>`_ online textbook library. This chapter will be inserted in between **Chapter 3** and **Chapter 4** of the Bluman text.
+
+    The online :ref:`class_notes` will also serve as reference material for many of the subjects discussed in class. These notes cover the same topics as the Bluman text, but go into more technical detail and provide a more rigorous foundation. 
+
+.. topic:: Technology 
+
+    TI-84
+        The student is expected to bring a calculator from the `TI-84 series <https://en.wikipedia.org/wiki/TI-84_Plus_series>`_ of calculators to class every day. It is important the calculator is a *TI-84* and not one of the older *TI-83*. `TI Connect CE <https://education.ti.com/en/products/computer-software/ti-connect-ce-sw>`_ will be used to transmit datasets to students during class. This software will only integrate with calculators from the *TI-84* series.
+
+    ChromeBook
+        The student is expected to bring the ChromeBook they have been provided to class every day. It should be fully-charged. The student will need this to access online resources such as projects and datasets.
+
+    Python 3
+        Students will be shown how to install `Python3 <https://python.org>`_ on their ChromeBooks very early in the class schedule. Python3 will be used to perform data analysis and generate graphical representations of data. Statistical graphs will be generated using `matplotlib <https://matplotlib.org>`_.
+
+        All :ref:`projects` and some class work will be done Python 3. In each case, the student will write programs that perform statistical analysis and interpret the results.  
+
+.. topic:: Website
+
+    All of the class notes, classwork, homework and projects for this class can be found at TODO. This site includes references to additional resources, such as datasets used in class and links to relevant Python documentation.
+
+.. topic:: Grading Breakdown
 
     +-----------+------------+
     | Area      | Percentage |
@@ -22,55 +60,72 @@ Course Syllabus
     | Projects  |     20%    |
     +-----------+------------+
 
-.. admonition:: Textbooks
-    
-    TODO 
+.. topic:: Quizzes
 
-    We will also be using **Chapter 1: Set Theoy** from the `OpenStax <https://openstax.org/>`_ online textbook library. You can find a link to it :ref:`here <openstax_contemporary_mathematics>` 
+    Quizzes will be of the *pop* variety, meaning they will not be announced ahead of time. Quizzes will typically be short, five to ten minutes assessments aimed at verifying reading selections have been read by the student before class begins.
 
 .. topic:: Classwork
 
-    TODO 
+    Classwork will come a variety of sources:
+
+    - The student will complete exercises in the Bluman textbook.
+    - The student will complete exercises designed to assess learning outcomes.
+    - The student will complete exercises from the :ref:`classwork` section. 
+    - The student will complete sample problems from `previous A.P. exams <https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions>`_
 
     Classwork Notebook
 
-        On the first day of class, you will receive a classwork notebook. This notebook will never leave the classroom. It will be collected at the end of every class.
+        On the first day of class, student will receive a classwork notebook. This notebook will never leave the classroom. It will be collected at the end of every class and graded.
 
 .. topic:: Homework
 
-    TODO 
-
+    Homework will come from a variety of sources:
+    
+    - The student will complete exercises in the Bluman textbook.
+    - The student will complete exercises designed to assess learning outcomes.
+    - The student will complete sample problems from `previous A.P. exams <https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions>`_
+ 
     Homework Notebook
 
-        On the first day of class, you will receive a homework notebook. This notebook will be taken home with you. **All** homework should be completed in this notebook. It will be collected every Monday and returned the next day. 
+        On the first day of class, students will receive a homework notebook. This notebook will be taken home with you. **All** homework should be completed in this notebook. It will be collected every Monday and returned the next day, with the exception of exam days. See below for more information.
 
-.. admonition:: Exams
+    Regular Homework
 
-    Exam 1
+        Homework will be assigned every week. The student is expected to work on it throughout the week. It will be collected every Monday. 
+
+    Review Homework
+
+        On exam weeks, review homework will be assigned. This homework will be due the day of the exam.
+
+.. topic:: Exams
+
+    The topics covered on each exam are listed below, along with their **tentative** dates,
+
+    Exam 1: September 29 :sup:`th`
         - Chapter 1: The Nature of Probability and Statistics
         - Chapter 2: Frequency Distributions and Graphs
         - Chapter 3: Data Description
   
-    Exam 2
+    Exam 2: December 8 :sup:`th`
         - Chapter 1 (From Contemporary Mathematics): Set Theory
         - Chapter 4: Probability and Counting Rules
         - Chapter 5: Discrete Probability Rules 
   
-    Exam 3
+    Exam 3: Februrary 9 :sup:`th`
         - Chapter 6: The Normal Distribution
         - Chapter 7: Confidence Intervals and Sample Size
 
-    Exam 4
-        - Chapter 8: Hypothesis Testing
+    Exam 4: April 5 :sup:`th`
+        - Chapter 8: Hypothesis Testing 
         - Chapter 9: Testing the Difference Between Two Means, Two Proportions and Two Variances
   
-    Final
+    Final: Last Day of Class
         - Everything
         - Chapter 10: Correlation and Regression
   
 .. topic:: Schedule
 
-    Here is a tenative schedule for the course. This is subject to change, as uncertainty pervades all things (*as we will learn*).
+    Here is a tenative schedule for the course. This is subject to change, as uncertainty pervades all things (*as the student will learn*).
 
 Week 1: August 28 :sup:`th` - September 1 :sup:`st`
     Topics 
@@ -131,12 +186,12 @@ Week 4: September 18 :sup:`th` - September 22 :sup:`nd`
     Topics
         - Chapter 3, Section 3: Measures of Position
         - Chapter 3, Section 4: Exploratory Data Analysis
-        - Project 4: Bias
+        - Project 3: Bias
   
     Assigned
         - Chapter 3, Section 3 Homework 
         - Chapter 3, Section 4 Homework
-        - Project 4: Bias
+        - Project 3: Bias
     
 Week 5: September 25 :sup:`th` - September 29 :sup:`th`
     Due 
@@ -145,11 +200,11 @@ Week 5: September 25 :sup:`th` - September 29 :sup:`th`
         - Chapter 1 Review Homework
         - Chapter 2 Review Homework
         - Chapter 3 Review Homework
-        - Project 4: Bias
+        - Project 3: Bias
   
     Topics
         - Chapter 1 - 3 Review 
-        - Project 5: Election
+        - Project 4: Outliers
   
     Assigned 
         - Chapter 1 Review Homework
@@ -161,7 +216,7 @@ Week 5: September 25 :sup:`th` - September 29 :sup:`th`
 
 Week 6: October 2 :sup:`nd` - October 6 :sup:`th`
     Due
-        NOTHING
+        - Project 4: Outliers
 
     Topics
         - Chapter 1 (From Contemporary Mathematics), Section 1: Basic Set Concepts
@@ -169,7 +224,7 @@ Week 6: October 2 :sup:`nd` - October 6 :sup:`th`
         - Chapter 1 (From Contemporary Mathematics), Section 3: Understanding Venn Diagrams
         - Chapter 1 (From Contemporary Mathematics), Section 4: Set Operations With Two Sets
         - Chapter 1 (From Contemporary Mathematics), Section 5: Set Operations With Three Sets
-        - Project 6: Sets
+        - Project 5: Sampling
 
     Assigned
         - Chapter 1 (From Contemporary Mathematics), Section 1 Homework
@@ -177,7 +232,7 @@ Week 6: October 2 :sup:`nd` - October 6 :sup:`th`
         - Chapter 1 (From Contemporary Mathematics), Section 3 Homework
         - Chapter 1 (From Contemporary Mathematics), Section 4 Homework
         - Chapter 1 (From Contemporary Mathematics), Section 5 Homework 
-        - Project 6: Sets
+        - Project 5: Sampling
 
     .. warning::
        
@@ -190,45 +245,55 @@ Week 7: October 9 :sup:`th` - October 13 :sup:`th`
         - Chapter 1 (From Contemporary Mathematics), Section 3 Homework
         - Chapter 1 (From Contemporary Mathematics), Section 4 Homework
         - Chapter 1 (From Contemporary Mathematics), Section 5 Homework 
-        - Project 6: Sets
+        - Project 5: Sampling
 
     Topics 
         - Chapter 4, Section 1: Sample Spaces and Probability 
         - Chapter 4, Section 2: The Addition Rules for Probability
+        - Project 6: Simulation
   
     Assigned 
         - Chapter 4, Section 1 Homework 
+        - Project 6: Simulation
   
 Week 8: October 16 :sup:`th` - October 20 :sup:`th`
     Due 
         - Chapter 4, Section 1 Homework
+        - Project 6: Simulation
 
     Topics
         - Chapter 4, Section 2: The Addition Rules for Probability 
+        - Project 7: TODO
   
     Assigned
         - Chapter 4, Section 2 Homework
+        - Project 7: TODO
 
 Week 9: October 23 :sup:`rd` - October 27 :sup:`th`
     Due
         - Chapter 4, Section 2 Homework
+        - Project 7: TODO
 
     Topics
         - Chapter 4, Section 4: Counting Rules
         - Chapter 4, Section 5: Probability and Counting Rules
+        - Project 8: TODO
 
     Assigned
         - Chapter 4, Section 4 Homework
         - Chapter 5, Section 5 Homework
-
+        - Project 8: TODO
+  
 Week 10: October 30 :sup:`th` - November 3 :sup:`rd`
     Due
         - Chapter 4, Section 4 Homework
         - Chapter 4, Section 5 Homework
+        - Project 8: TODO
 
     Topics
         - Chapter 4, Section 3: The Multiplication Rules and Conditional Probability
-    
+        - Project 9: Bayesian Statistics
+
     Assigned
         - Chapter 4, Section 3 Homework
 
@@ -239,36 +304,45 @@ Week 10: October 30 :sup:`th` - November 3 :sup:`rd`
 Week 11: November 6 :sup:`th` - November 10 :sup:`th`
     Due 
         - Chapter 4, Section 3 Homework 
+        - Project 9: Bayesian Statistics
 
     Topics 
         - Chapter 5, Section 1: Probability Distributions 
         - Chapter 5, Section 2: Mean, Variance, Standard Deviation and Expectation
+        - Project 10: Probability Density Graphs
 
     Assigned
         - Chapter 5, Section 1 Homework
         - Chapter 5, Section 2 Homework 
+        - Project 10: Probability Density Graphs
 
 Week 12: November 13 :sup:`th` - November 17 :sup:`th`
     Due
         - Chapter 5, Section 1 Homework
         - Chapter 5, Section 2 Homework
+        - Project 10: Probability Density Graphs
 
     Topics
         - Chapter 5, Section 3: The Binomial Distribution
+        - Project 11: Binomial Distribution
 
     Assigned
         - Chapter 5, Section 3 Homework
+        - Project 11: Binomial Distribution
 
 Week 13: November 20 :sup:`th` - November 24 :sup:`th`
-    Due 
+    Due
+        - Chapter 5, Section 3 Homework 
+        - Project 11: Binomial Distribution
 
     Topics 
-
         - Chapter 5, Section 3: The Binomial Distribution 
         - Chapter 5, Section 4: Other Types of Distributions
+        - Project 12: Other Distributions 
     
     Assigned
         - Chapter 5: Section 4 Homework
+        - Project 12: Other Distributions
     
     .. warning::
   
@@ -279,6 +353,7 @@ Week 14: December 4 :sup:`th` - December 8 :sup:`th`
         - Chapter 5: Section 4 Homework
         - Chapter 4 Review Homework
         - Chapter 5 Review Homework
+        - Project 12: Other Distributions
 
     Topics
         - Chapter 4 - 5, Chapter 1 (From Contemporary Mathematics) Review 
@@ -298,20 +373,25 @@ Week 15: December 11 :sup:`th` - December 15 :sup:`th`
     Topics
         - Chapter 6, Section 1: Normal Distribution
         - Chapter 6, Section 2: Applications of the Normal Distribution
+        - Project 13: Normal Distribution
 
     Assigned 
         - Chapter 6, Section 1 Homework
+        - Project 13: Normal Distribution
 
 Week 16: December 18 :sup:`th` - December 22 :sup:`nd`
     Due
         - Chapter 6, Section 1 Homework
+        - Project 13: Normal Distribution
   
     Topics
         - Chapter 6, Section 1: Normal Distribution
         - Chapter 6, Section 2: Applications of the Normal Distribution 
+        - Project 14: Financial Analysis
 
     Assigned
         - Chapter 6, Section 2 Homework
+        - Project 14: Financial Analysis
   
     .. warning::
 
@@ -324,15 +404,18 @@ Week 17: December 25 :sup:`th` - December 29 :sup:`th`
 
 Week 18: January 1 :sup:`st` - January 5 :sup:`th`
     Due
-        - Chapter 6 Homework
+        - Chapter 6, Section 2 Homework
+        - Project 14: Financial Analysis
 
     Topics
         - Chapter 6, Section 1: Normal Distribution
         - Chapter 6, Section 2: Applications of the Normal Distribution 
         - Chapter 6, Section 3: The Normal Approximation to the Binomial Distribution
+        - Project 15: Monte Carlo Simulation
       
     Assigned 
         - Chapter 6, Section 3 Homework
+        - Project 15: Monte Carlo Simulation
   
     .. warning::
 
@@ -341,6 +424,7 @@ Week 18: January 1 :sup:`st` - January 5 :sup:`th`
 Week 19: January 8 :sup:`th` - January 12 :sup:`th`
     Due 
         - Chapter 6, Section 3 Homework
+        - Project 15: Monte Carlo Simulation
 
     Topics
         - Chapter 7, Section 1: Confidence Intervals for the Mean When :math:`\sigma` is Known and Sample Size 
@@ -565,3 +649,6 @@ Week 37: May 13 :sup:`rd` - May 17 :sup:`th`
 
     Assigned   
         NOTHING
+    
+    **Final Exam**
+        Last Day of Class

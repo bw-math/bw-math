@@ -6,18 +6,6 @@ Graphical Representations of Data
 
 Definitions
 ===========
-
-.. _frequency:
-
-Frequency
----------
-
-Symbolic Expression:
-    :math:`f(x_i)`
-
-Definition
-    The *frequency* is number of times an observation *x_i* occurs in a sample *S*.  
-
 .. _skew:
 
 Skew
@@ -49,7 +37,7 @@ Where
     *r* = response of "red"
     *y* = response of "yellow "
 
-An *ungrouped frequency distribtion* is simply a table where each entry represents the frequency of every possible observation,
+An *ungrouped frequency distribtion* is simply a table where each entry represents the :ref:`frequency` of every possible observation,
 
 +-----+-------+
 |  x  |  f(x) |
@@ -70,44 +58,76 @@ An *ungrouped frequency distribtion* is simply a table where each entry represen
 Grouped Distributions
 ---------------------
 
+TODO 
+
 The steps for constructing a *grouped* frequency distribution are given below. 
 
-Steps 
-    1. Find the range of the data sets. 
- 
-    .. math::
-        R = max(x_i) - min(x_i)
+Steps
+*****
+
+If you are given a sample **S** of data points, then the steps for finding a *grouped* frequency distribution are as follows,
+
+1. Find the range of the data set. 
+
+.. math::
+
+    R = max(\{ x_i \}) - min(\{ x_i \})
+
+2. Choose a number of classes. Typically between 5  and 20, depending on the size and type of data.
+
+3. Find the class width. Round up, if necessary.
+
+.. math::
     
-    2. Choose a number of classes. Typically between 5  and 20, depending on the size and type of data.
-   
-    3. Find the class width. Round up, if necessary.
+    w = \frac{R}{n}
+
+.. note:: 
+
+    Using the :ref:`ceiling_function` from a future section, we could simply write,
 
     .. math::
-        w = \frac{R}{n}
 
-    4. Find the lower and upper class limits **LL**:sub:`i` and **UL**:sub:`i` for each *i* up to *n*, i.e. for each class. 
+        w = \lceil \frac{R}{n} \rceil
 
-    .. math:: 
-        LL_i = min(x_i) + (i-1) \cdot w
+    And the *rounding* would be implied. 
+
+4. Find the lower and upper class limits **LL**:sub:`i` and **UL**:sub:`i` for each *i* up to *n*, i.e. for each class. 
+
+.. math:: 
     
-    .. math::
-        UL_i = min(x_i) + i \cdot w
+    LL_i = min(S) + (i-1) \cdot w
+
+.. math::
+
+    UL_i = min(s) + i \cdot w - 1
+
+.. math::
     
-    .. math::
-        i = 1, 2, ... , n
+    i = 1, 2, ... , n
 
-    5. Find the lower and upper class boundaries **LB**:sub:`i` and **UB**:sub:`i` for each *i* up to *n*, i.e. for each class, 
+.. note:: 
 
-    .. math::
-        LB_i = LL_i - 0.5
+    The upper limit is subtracted by 1 so the lower limit of the next class doesn't overlap. 
+
+5. Find the lower and upper class boundaries **LB**:sub:`i` and **UB**:sub:`i` for each *i* up to *n*, i.e. for each class, 
+
+.. math::
     
-    .. math::
-        UB_i = UL_i + 0.5
+    LB_i = LL_i - 0.5
 
-    .. math::
-        i = 1, 2, ... , n
+.. math::
+    
+    UB_i = UL_i + 0.5
 
-    6. Sort the data set into classes and tally up the frequency of each class.
+.. math::
+    
+    i = 1, 2, ... , n
+
+.. important:: 
+    
+    This step is *only* really necessary for continuous data. In the previous step, we subtracted the upper limit of each class by 1, so there are now gaps in the interval. In other words, with a class width of *5* and starting a minimum :math:`min(S)=100`, we might end up with intervals like 100 - 104, 105 - 109, 110 - 114, etc. We need to ensure the classes actually meet so we divide up the 1 we subtracted and distributed it evenly on either side of the boundary. 
+
+6. Sort the data set into classes and tally up the frequency of each class.
 
 Example 
     Suppose you measure the height of everyone in your class and get the following sample of data, where each observation in the data set is measured in feet,

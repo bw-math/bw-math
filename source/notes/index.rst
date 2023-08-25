@@ -1,3 +1,5 @@
+.. _class_notes:
+
 Class Notes
 ===========
 
