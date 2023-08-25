@@ -6,6 +6,7 @@ Graphical Representations of Data
 
 Definitions
 ===========
+
 .. _skew:
 
 Skew
