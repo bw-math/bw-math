@@ -199,7 +199,7 @@ For example, we might like to know whether a new type of fuel is cleaner and mor
 
     The *null hypothesis* is the prior assumption we bring to the *experiment*. It represents the "*status quo*". 
 
-    The term "*Null*" (as in :ref:`null_set`) means "*none*" or "*empty*", as in nothing has been accomplished with the *null hypothesis*. It represents "*no change to the state of our knowledge about the world*"
+    The term "*null*" in *null hypothesis* means "*none*" or "*empty*", as in nothing has been accomplished with the *null hypothesis*. It represents "*no change to the state of our knowledge about the world*"
 
 .. topic:: Alternate Hypothesis
 
@@ -207,13 +207,13 @@ For example, we might like to know whether a new type of fuel is cleaner and mor
 
         H_a
 
-    The *alternate hypothesis* is the theory we would like to test with the experiment. It represents "*overturning of the status quo*" in favor of a new explanation. 
+    The *alternate hypothesis* is the theory we would like to test with the experiment. It represents the "*overturning of the status quo*" in favor of a new explanation. 
 
 We assume the *null hypothesis* in order to test the validity of the *alternate hypothesis*. If we find sufficient evidence the *null hypothesis* is not true, we reject it in favor of the *alternate hypothesis*.
 
 .. important::
 
-    We never *prove* the null hypothesis true. It is always *assumed* true in order to determine whether there is evidence to conclude it is false.
+    We never *prove* the null hypothesis true. It is always *assumed* true in order to determine whether there is sufficient evidence to conclude it is false.
 
 In the example of testing the efficiency of a new type of fuel against standard gasoline, notice we are asking a question about two different populations: the population of cars that use the new type of fuel and the population of cars that use standard gasoline. Specifically, we are asking if there is a *statistical significance* difference between the efficiency of either groups. 
 
