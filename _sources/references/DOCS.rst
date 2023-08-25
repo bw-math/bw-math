@@ -32,6 +32,8 @@ Historical
 Scientific
 ----------
 
+TODO: need bear measurements reference
+
 - `Alpha Particle Emissions <https://www.randomservices.org/random/data/Alpha.html>`_
 - `Density of the Earth <https://www.randomservices.org/random/data/Cavendish.html>`_
 - `London Weather <https://www.kaggle.com/datasets/emmanuelfwerr/london-weather-data>`_

@@ -437,11 +437,13 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cluster">Cluster</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-inference">Statistical Inference</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#null-and-alternate-hypotheses">Null and Alternate Hypotheses</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#confounding-variables">Confounding Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-terminology">Other Terminology</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-inference">Statistical Inference</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#null-and-alternate-hypotheses">Null and Alternate Hypotheses</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#controls">Controls</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confounding-variables">Confounding Variables</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-fallacies">Statistical Fallacies</a><ul class="nav section-nav flex-column">
@@ -451,16 +453,16 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#observer-bias">Observer Bias</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionality">Dimensionality</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristic">Characteristic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation-vs-causation">Correlation Vs. Causation</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionality">Dimensionality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristic">Characteristic</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scale">Scale</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-statistics">Types of Statistics</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-terminology">Other Terminology</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-statistics">Types of Statistics</a></li>
 </ul>
             </nav>
         </div>
@@ -635,12 +637,32 @@ document.write(`
 </div></blockquote>
 </section>
 </section>
+<section id="other-terminology">
+<h3>Other Terminology<a class="headerlink" href="#other-terminology" title="Permalink to this headline">#</a></h3>
+<dl class="simple" id="with-replacement">
+<dt>With Replacement</dt><dd><p>An observation has been made <em>with replacement</em>, if after its selection, it is placed back into the population.</p>
+</dd>
+</dl>
+<p>Example</p>
+<blockquote>
+<div><p>Consider drawing a single card from a deck of cards, shuffling it back into the deck and then selecting another card. The event of getting the same card on both draws is a possible event because the card selected on the first draw is returned to the population of possible observation before making the second draw.</p>
+</div></blockquote>
+<dl class="simple" id="without-replacement">
+<dt>Without Replacement</dt><dd><p>An observation has been made <em>without replacement</em>, if after its selection, it is removed from the population and is no longer a possible observation.</p>
+</dd>
+</dl>
+<p>Example</p>
+<blockquote>
+<div><p>Consider drawing a single card from a deck of cards, setting it aside and then selecting another card. The event of getting the same card on both draws is an impossible event because the card selected on the first draw is no longer in the population of possible observation, and therefore cannot possible be selected again. In other words, when we sample data <em>without replacement</em>, we affect the <em>sample space</em> of subsequent experiments.</p>
+</div></blockquote>
+</section>
+</section>
 <section id="statistical-inference">
-<h3>Statistical Inference<a class="headerlink" href="#statistical-inference" title="Permalink to this headline">#</a></h3>
+<h2>Statistical Inference<a class="headerlink" href="#statistical-inference" title="Permalink to this headline">#</a></h2>
 <p>Once we have data to analyze, we apply the <em>statistical inference</em> to see what it tells us.</p>
 <p><em>Statistical inference</em> is the process of using a sample of data to reach new conclusions about the population from which it was drawn.</p>
 <section id="null-and-alternate-hypotheses">
-<h4>Null and Alternate Hypotheses<a class="headerlink" href="#null-and-alternate-hypotheses" title="Permalink to this headline">#</a></h4>
+<h3>Null and Alternate Hypotheses<a class="headerlink" href="#null-and-alternate-hypotheses" title="Permalink to this headline">#</a></h3>
 <p>Usually in statistics we are concerned with <em>hypotheses</em> and whether or not, based on the available data, there is sufficient evidence to reject one hypothesis in favor of another.</p>
 <p>For example, we might like to know whether a new type of fuel is cleaner and more efficient than standard gasoline. In this case, we would start by assuming the <em>null hypothesis</em> that the efficiency of the new fuel is the same as standard gasoline. We would then establish an experiment designed to test this hypothesis against the <em>alternate hypothesis</em> that the new fuel is more efficient than standard gasoline.</p>
 <div class="topic">
@@ -661,18 +683,21 @@ document.write(`
 <p class="admonition-title">Important</p>
 <p>We never <em>prove</em> the null hypothesis true. It is always <em>assumed</em> true in order to determine whether there is sufficient evidence to conclude it is false.</p>
 </div>
-<p>In the example of testing the efficiency of a new type of fuel against standard gasoline, notice we are asking a question about two different populations: the population of cars that use the new type of fuel and the population of cars that use standard gasoline. Specifically, we are asking if there is a <em>statistical significance</em> difference between the efficiency of either groups.</p>
+</section>
+<section id="controls">
+<h3>Controls<a class="headerlink" href="#controls" title="Permalink to this headline">#</a></h3>
+<p>In the example of testing the efficiency of a new type of fuel against standard gasoline, notice we are asking a question about two different populations: the population of cars that use the new type of fuel and the population of cars that use standard gasoline. Specifically, we are asking if there is a <em>statistically significance</em> difference between the efficiency of either group.</p>
+<p>(INSERT PICTURE)</p>
 <p>The first group is referred to as the <em>test</em> group, the sample to which a <em>treatment</em> has been applied and whose efficacy we would like to test.</p>
-<p>The second group is referred to as the <em>control group</em>, the sample to which no <em>treatments</em> have been applied.</p>
+<p>The second group is referred to as the <em>control group</em>, the sample to which no <em>treatments</em> have been applied and which acts as a baseline against which we can judge the effects of the <em>treatment</em>.</p>
 </section>
 <section id="confounding-variables">
-<h4>Confounding Variables<a class="headerlink" href="#confounding-variables" title="Permalink to this headline">#</a></h4>
-<p>Let us continue  to consider the example experiment of testing the efficiency of a new type of fuel against standard gasoline.</p>
+<h3>Confounding Variables<a class="headerlink" href="#confounding-variables" title="Permalink to this headline">#</a></h3>
+<p>Let us continue to consider the example experiment of testing the efficiency of a new type of fuel against standard gasoline.</p>
 <p>To truly isolate the experiment from any <em>confounding variables</em>, we should restrict our populations to certain <em>makes</em> and <em>models</em> of cars. Otherwise, we would not be sure if the results of our experiments were due to the efficiency of the new fuel, or variations in the engine running the fuel.</p>
 <p>A <em>confounding variable</em> is a variable that affects the experiment, but is not measured, whether due to poor experimental design or due to the nature of the interaction.</p>
-<p>To see what is meant by “<em>due to the nature of the interaction</em>”, suppose the new type of fuel whose efficiency is being tested loses some of its potency at higher elevations (due to the effects of gravity on its chemical composition, let’s say). If some of the data we collect from the cars using the new fuel type is collected from high altitude locations, then the data will show the effects of this dependence, without our being aware. We might then erroneously conclude the new fuel does not possess the anticipated efficiency gains.</p>
-<p>For this reason, we must be very careful to always consider what variables for which we haven’t accounted might influencing the samples we observe. In other words, we must always be mindful of <em>confounding variables</em>.</p>
-</section>
+<p>To see what is meant by “<em>due to the nature of the interaction</em>”, suppose the new type of fuel whose efficiency is being tested loses some of its potency at higher elevations (due to the effects of gravity on its chemical composition, let’s say). If some of the data we collect from the cars using the new fuel type is collected from high-altitude locations, then the data will show the effects of this dependence, without our being aware. We might then erroneously conclude the new fuel does not possess the anticipated efficiency gains, call the experiment a wash and go home sad.</p>
+<p>For this reason, we must be very careful to always consider what variables for which we haven’t accounted might be influencing the samples we observe. In other words, we must always be mindful of <em>confounding variables</em> and their effects.</p>
 </section>
 </section>
 <section id="statistical-fallacies">
@@ -686,7 +711,8 @@ document.write(`
 <dt>Definition</dt><dd><p><em>Selection bias</em> occurs when the sampling method is not representative of the entire population.</p>
 </dd>
 </dl>
-<p>As an extreme example, if you were interested in making assertions about the average height of a United States citizens, selecting a sample of 100 elementary schoolers would lead you to make wildly erroneous conclusions.</p>
+<p>As an extreme example to illustrate the meaning of this type of <em>bias</em>, if you were interested in making assertions about the average height of a United States citizens, selecting a sample of 100 elementary schoolers would lead you to make wildly erroneous conclusions.</p>
+<p>(TODO famous example)</p>
 </section>
 <section id="response-bias">
 <h4>Response bias<a class="headerlink" href="#response-bias" title="Permalink to this headline">#</a></h4>
@@ -749,8 +775,8 @@ document.write(`
 </dd>
 </dl>
 <p>Examples of this type of bias can crop up when pollsters ask leading questions, such as, “Do you <em>still</em> drink coffee?” versus the more neutral phrasing, “Do you drink coffee?”. Depending on how the question is phrased, a different answer might be given.</p>
-<p>A more famous example of this type of bias is the <a class="reference external" href="https://en.wikipedia.org/wiki/Milgram_experiment">Milgram Experiment</a> conducted by Dr. Stanley Milgrim at Yale University. The <em>Milford Experiment</em> was a psychological study wherein participants were told they were testing the effects of phyiscal punishment in form of an electric shock on the memory. Participants were to be paired off as <em>teacher</em> and <em>learner</em>. The <em>learner</em> would be asked to memorize a series of words, and then asked to recite them. If they got the words wrong in the recitation, the <em>teacher</em> would administer an electric shock to the <em>learner</em>. Each time a wrong answer was given, the voltage of the electric shock was increased.</p>
-<p>Unbeknownst to the participants of the study, this wasn’t the actual experiment. In reality, the <em>learner</em> in every experiment was a paid actor and the electric shocks weren’t real. The actor would intentionally get answers wrong and then pretend to be in pain when the teacher was administering the fake electric shocks. The <em>teacher</em> was the real object of study. Dr. Milgram was trying to see how much pain a randomly selected individual would inflict on someone else simply because they were told to do it.</p>
+<p>A more famous example of this type of bias is the <a class="reference external" href="https://en.wikipedia.org/wiki/Milgram_experiment">Milgram Experiment</a> conducted by Dr. Stanley Milgrim at Yale University. The <em>Milford Experiment</em> was a psychological study wherein participants were told they were testing the effects of phyiscal punishment, in form of an electric shock, on the memory. Participants were to be paired off as <em>teacher</em> and <em>learner</em>. The <em>learner</em> would be asked to memorize a series of words, and then asked to recite them. If they got the words wrong in the recitation, the <em>teacher</em> would administer an electric shock to the <em>learner</em>. Each time a wrong answer was given, the voltage of the electric shock was increased.</p>
+<p>Unbeknownst to the participants of the study, this wasn’t the actual experiment. In reality, the <em>learner</em> in every experiment was a paid actor and the electric shocks weren’t real. The actor would intentionally get answers wrong and then pretend to be in pain when the <em>teacher</em> was administering the fake electric shocks. The <em>teacher</em> was the real object of study. Dr. Milgram was trying to see how much pain a randomly selected individual would inflict on someone else simply because they were told to do it.</p>
 <p>When participants expressed unease or concern, the researchers running the study, intentionally dressed in white lab coats to give the appearance of authority, would give one of the following responses,</p>
 <blockquote>
 <div><ul class="simple">
@@ -769,14 +795,19 @@ document.write(`
 <blockquote>
 <div><p>You are ordered to continue.</p>
 </div></blockquote>
-<p>The results were vastly different. With this slight change, the results were nowhere near as large as in Dr. Milgrim’s original experiment; Fewer people were more likely to quit before reaching the maximum shock threshold.</p>
-<p>In other words, <em>how</em> you make the observation may change <em>what</em> you are observing.</p>
+<p>The results were vastly different. With this slight change, the results were nowhere near as large as in Dr. Milgrim’s original experiment; Participants were more more likely to quit before reaching the maximum shock threshold. In other words, when the participants did not believe there to be a “<em>greater good</em>” at stake they would quit at greater rates than if they did.</p>
+<p>The key takeway from the <em>Milgram experiment</em> is <em>how</em> you make the observation may change <em>what</em> you are observing.</p>
+</section>
+</section>
+<section id="correlation-vs-causation">
+<h3>Correlation Vs. Causation<a class="headerlink" href="#correlation-vs-causation" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
 </section>
 </section>
 <section id="classifications-of-data">
-<span id="data-classification"></span><h3>Classifications of Data<a class="headerlink" href="#classifications-of-data" title="Permalink to this headline">#</a></h3>
+<span id="data-classification"></span><h2>Classifications of Data<a class="headerlink" href="#classifications-of-data" title="Permalink to this headline">#</a></h2>
 <section id="dimensionality">
-<span id="data-dimensionality"></span><h4>Dimensionality<a class="headerlink" href="#dimensionality" title="Permalink to this headline">#</a></h4>
+<span id="data-dimensionality"></span><h3>Dimensionality<a class="headerlink" href="#dimensionality" title="Permalink to this headline">#</a></h3>
 <p>Definition</p>
 <blockquote>
 <div><p>The <em>dimension</em> of a dataset is the number of values associated with a single observation.</p>
@@ -787,18 +818,179 @@ document.write(`
 </dl>
 <p><em>Univariate</em> data consists of observations that each contain a single value.</p>
 <dl class="simple">
+<dt>Example</dt><dd><p>Experimental data from Henri Cavendish’s density of the Earth experiments. Density is expressed as a ratio of the density of water. See <a class="reference internal" href="../../assignments/projects/01_GRAPHING.html#project-one"><span class="std std-ref">Graphing</span></a> for more information about this dataset.</p>
+</dd>
+</dl>
+<table class="table" id="id7">
+<caption><span class="caption-text">Density of the Earth</span><a class="headerlink" href="#id7" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Experiment</p></td>
+<td><p>Density</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>5.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>5.61</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>4.88</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>5.07</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>5.26</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>5.55</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>5.36</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>5.29</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>5.58</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>5.65</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>5.57</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="simple">
 <dt>Bivariate</dt><dd><p><img class="math" src="../../_images/math/167e4d5ca72db146183c8baacc90e6f72eff7044.png" alt="\{ (x_1, y_1), (x_2, y_2), ... , (x_n, y_n)\}"/></p>
 </dd>
 </dl>
 <p><em>Bivariate</em> data consists of observations that each contain two values (i.e. an <em>pair</em>)</p>
 <dl class="simple">
+<dt>Example</dt><dd><p>Data from the Challenger space shuttle explosion showing the atmospheric temperature versus the erosion index of the O-ring seal. The failure of the O-ring seal at lower temperatures was not accounted for prior to launch.</p>
+</dd>
+</dl>
+<table class="table" id="id8">
+<caption><span class="caption-text">Density of the Earth</span><a class="headerlink" href="#id8" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Temp	Erosion</p></td>
+</tr>
+<tr class="row-even"><td><p>66.0	0.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>70.0	53.0</p></td>
+</tr>
+<tr class="row-even"><td><p>69.0	0.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>68.0	0.0</p></td>
+</tr>
+<tr class="row-even"><td><p>67.0	0.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>63.0	0.0</p></td>
+</tr>
+<tr class="row-even"><td><p>70.0	28.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>78.0	0.0</p></td>
+</tr>
+<tr class="row-even"><td><p>67.0	0.0</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="simple">
 <dt>Multivariate</dt><dd><p><img class="math" src="../../_images/math/fbbdfa3f3d502368b86e9fae2abae1163ef1f8b8.png" alt="\{ (x_{1}^1, x_{2}^1, ... , x_{n}^1 ), (x_{1}^2, x_{2}^2, ... , x_{n}^2 ), ... ,(x_{1}^m, x_{2}^m, ... , x_{n}^m )"/></p>
 </dd>
 </dl>
 <p><em>Multivariate</em> data consists of observations that each contain an arbitrary number of values (i.e. a <em>vector</em>)</p>
+<dl class="simple">
+<dt>Example</dt><dd><p>Body measurements from a sample of grizzly bears.</p>
+</dd>
+</dl>
+<table class="table" id="id9">
+<caption><span class="caption-text">Bear Measurements</span><a class="headerlink" href="#id9" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>AGE</p></td>
+<td><p>MONTH</p></td>
+<td><p>SEX (1=M)</p></td>
+<td><p>HEADLEN</p></td>
+<td><p>HEADWDTH</p></td>
+<td><p>NECK</p></td>
+<td><p>LENGTH</p></td>
+<td><p>CHEST</p></td>
+<td><p>WEIGHT</p></td>
+</tr>
+<tr class="row-even"><td><p>19</p></td>
+<td><p>7</p></td>
+<td><p>1</p></td>
+<td><p>11.0</p></td>
+<td><p>5.5</p></td>
+<td><p>16.0</p></td>
+<td><p>53.0</p></td>
+<td><p>26.0</p></td>
+<td><p>80</p></td>
+</tr>
+<tr class="row-odd"><td><p>55</p></td>
+<td><p>7</p></td>
+<td><p>1</p></td>
+<td><p>16.5</p></td>
+<td><p>9.0</p></td>
+<td><p>28.0</p></td>
+<td><p>67.5</p></td>
+<td><p>45.0</p></td>
+<td><p>344</p></td>
+</tr>
+<tr class="row-even"><td><p>81</p></td>
+<td><p>9</p></td>
+<td><p>1</p></td>
+<td><p>15.5</p></td>
+<td><p>8.0</p></td>
+<td><p>31.0</p></td>
+<td><p>72.0</p></td>
+<td><p>54.0</p></td>
+<td><p>416</p></td>
+</tr>
+<tr class="row-odd"><td><p>115</p></td>
+<td><p>7</p></td>
+<td><p>1</p></td>
+<td><p>17.0</p></td>
+<td><p>10.0</p></td>
+<td><p>31.5</p></td>
+<td><p>72.0</p></td>
+<td><p>49.0</p></td>
+<td><p>348</p></td>
+</tr>
+<tr class="row-even"><td><p>104</p></td>
+<td><p>8</p></td>
+<td><p>0</p></td>
+<td><p>15.5</p></td>
+<td><p>6.5</p></td>
+<td><p>22.0</p></td>
+<td><p>62.0</p></td>
+<td><p>35.0</p></td>
+<td><p>166</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="characteristic">
-<span id="data-characteristic"></span><h4>Characteristic<a class="headerlink" href="#characteristic" title="Permalink to this headline">#</a></h4>
+<span id="data-characteristic"></span><h3>Characteristic<a class="headerlink" href="#characteristic" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
 <dt>Definition</dt><dd><p>The <em>characteristic</em> of a dataset is the <em>type</em> of data being observed.</p>
 </dd>
@@ -845,7 +1037,6 @@ document.write(`
 </dd>
 </dl>
 </section>
-</section>
 <section id="scale">
 <h3>Scale<a class="headerlink" href="#scale" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
@@ -875,8 +1066,9 @@ document.write(`
 <div><p>TODO</p>
 </div></blockquote>
 </section>
+</section>
 <section id="types-of-statistics">
-<span id="statistics-defintions"></span><h3>Types of Statistics<a class="headerlink" href="#types-of-statistics" title="Permalink to this headline">#</a></h3>
+<span id="statistics-defintions"></span><h2>Types of Statistics<a class="headerlink" href="#types-of-statistics" title="Permalink to this headline">#</a></h2>
 <dl class="simple" id="sample-statistic">
 <dt>Sample Statistic</dt><dd><p>A piece of information calculated from sample of data.</p>
 </dd>
@@ -890,26 +1082,6 @@ document.write(`
 <dt>Inferential Statistic</dt><dd><p>A sample statistic used to make inferences about the population.</p>
 </dd>
 </dl>
-</section>
-<section id="other-terminology">
-<h3>Other Terminology<a class="headerlink" href="#other-terminology" title="Permalink to this headline">#</a></h3>
-<dl class="simple" id="with-replacement">
-<dt>With Replacement</dt><dd><p>An observation has been made <em>with replacement</em>, if after its selection, it is placed back into the population.</p>
-</dd>
-</dl>
-<p>Example</p>
-<blockquote>
-<div><p>Consider drawing a single card from a deck of cards, shuffling it back into the deck and then selecting another card. The event of getting the same card on both draws is a possible event because the card selected on the first draw is returned to the population of possible observation before making the second draw.</p>
-</div></blockquote>
-<dl class="simple" id="without-replacement">
-<dt>Without Replacement</dt><dd><p>An observation has been made <em>without replacement</em>, if after its selection, it is removed from the population and is no longer a possible observation.</p>
-</dd>
-</dl>
-<p>Example</p>
-<blockquote>
-<div><p>Consider drawing a single card from a deck of cards, setting it aside and then selecting another card. The event of getting the same card on both draws is an impossible event because the card selected on the first draw is no longer in the population of possible observation, and therefore cannot possible be selected again. In other words, when we sample data <em>without replacement</em>, we affect the <em>sample space</em> of subsequent experiments.</p>
-</div></blockquote>
-</section>
 </section>
 </section>
 
@@ -979,11 +1151,13 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cluster">Cluster</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-inference">Statistical Inference</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#null-and-alternate-hypotheses">Null and Alternate Hypotheses</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#confounding-variables">Confounding Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-terminology">Other Terminology</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-inference">Statistical Inference</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#null-and-alternate-hypotheses">Null and Alternate Hypotheses</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#controls">Controls</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confounding-variables">Confounding Variables</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-fallacies">Statistical Fallacies</a><ul class="nav section-nav flex-column">
@@ -993,16 +1167,16 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#observer-bias">Observer Bias</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionality">Dimensionality</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristic">Characteristic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation-vs-causation">Correlation Vs. Causation</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionality">Dimensionality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristic">Characteristic</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scale">Scale</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-statistics">Types of Statistics</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-terminology">Other Terminology</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-statistics">Types of Statistics</a></li>
 </ul>
   </nav></div>
 
