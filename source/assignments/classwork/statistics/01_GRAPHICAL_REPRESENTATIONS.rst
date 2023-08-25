@@ -8,18 +8,19 @@ Graphical Representations of Data
 
     Start a fresh page in your classwork notebook. Write today's date in the margin of the page. Clearly label and solve each of the following. Show your work and circle the anwer. 
 
+
+Twitter by Tweets and Followers
+===============================
+
 .. important:: 
 
     The data will be downloaded directly onto the your calculator in class via a cable link. 
 
-    If you want to try out the dataset in **Python** at any point, you can download the full dataset `here <../../assets/datasets/celebrity_twitter.csv>`_
-
-Twitter by Tweets: Quality Over Quantity
-----------------------------------------
+    If you want to try out the dataset in **Python** at any point, you can download the full dataset `here <../../assets/datasets/celebrity_twitter_data.csv>`_
 
 The following table lists the top 20 **Twitter** users by follower count (as of: TODO DATE).
 
-`Source: TODO <>`
+`Source: TODO <https://www.kaggle.com/datasets/ahmedshahriarsakib/top-1000-twitter-celebrity-tweets-embeddings>`_
 
 +-----------------------+---------------------+-----------------------+-----------------+
 |   Twitter Username    |      Name           |    Followers Count    |   Tweet Count   |
