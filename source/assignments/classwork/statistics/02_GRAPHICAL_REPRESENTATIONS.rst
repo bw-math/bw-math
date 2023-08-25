@@ -65,3 +65,18 @@ The following table lists the top 20 **Twitter** users by follower count (as of:
 +-----------------------+---------------------+-----------------------+-----------------+
 |        imVkohli       |       Virat Kohli   |         47768699      |        2593     |
 +-----------------------+---------------------+-----------------------+-----------------+
+
+Use this information to answer the following questions.
+
+TODO
+
+A.P. Exam Practice
+------------------
+
+?. **2021, Free Response, #5a-b** (TODO)
+
+?. **2021, Free Response #6** (TODO)
+
+?. **2018, Free Response #5a-b** (TODO)
+
+?. **2017, Free Response #1**
