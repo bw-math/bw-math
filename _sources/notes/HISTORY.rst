@@ -1,8 +1,8 @@
 .. _knowledge:
 
-============================
-A Brief History of Knowledge
-============================
+=========
+Knowledge
+=========
 
     I know that I know nothing
 
@@ -12,13 +12,13 @@ How do we know things? To put a finer point on it, how do we know *that* we know
 
 Before we begin to untangle the answer, let us take a step back and see what put us in this pickle in the first place.
 
-Knowing Knowledge
-=================
+History
+=======
 
 Plato 
 -----
 
-One of the first attempts (of which we are aware) to give a (*proto*-)scientific account of knowledge was produced by Plato in the 4 :sup:`th` century BCE. In his work *Thaetetus*, he tackles the subject of how we know things. The work is written as a dialogue between the titular character, a young mathematician named Thaetetus, and Plato's teacher, *Socrates*.
+One of the first historical attempts of which we are aware to give a *proto*-scientific account of knowledge was produced by Plato in the 4 :sup:`th` century BCE. In his work *Thaetetus*, he tackles the subject of how we know things. The work is written as a dialogue between the titular character, a young mathematician named Thaetetus, and Plato's teacher, *Socrates*.
 
 Toggle the excerpt of *Thaetetus* below and read through it,
 

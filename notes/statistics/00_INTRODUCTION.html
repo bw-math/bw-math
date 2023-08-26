@@ -130,7 +130,7 @@
 
 <li class="toctree-l1"><a class="reference internal" href="../../SYLLABUS.html">Course Syllabus</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Class Notes</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../HISTORY.html">A Brief History of Knowledge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../HISTORY.html">Knowledge</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../SET_THEORY.html">Set Theory</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../probability/00_INTRODUCTION.html">Introduction</a></li>
@@ -479,6 +479,36 @@ document.write(`
 <p>Statistics is the study of making general assertions from particular cases.</p>
 <section id="motivation">
 <h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h2>
+<p>What is <em>science</em>? A rough definition of <em>science</em> might go: “<em>Science is a rational process used for deciding which propositions are true and which propositions are false.</em>”</p>
+<p>What this definition doesn’t say is what the “<em>decision process</em>” for sorting propositions into <em>true</em> or <em>false</em> looks like. That is where <em>statistics</em> comes in. <em>Statistics</em> is the study of this decision process; it is a way of understanding what we mean when we say something is <em>true</em> or something is <em>false</em>. <em>Statistics</em> is the study of how we do science, and since it is the study of science, it is also the study of <em>decision-making</em>.</p>
+<p>Our lives are filled with decisions. Life is, in some sense, nothing but a series of decisions. So, because we do it so often, we have a pretty good of idea of what we mean by “<em>deciding</em>” or “<em>making a decision</em>”. Every decision we make, we take into account the uncertainty in the various outcomes that might result, factor in their respective <em>likelihood</em> and then <em>decide</em> what course of action is the best. We <a class="reference internal" href="../HISTORY.html#knowledge"><span class="std std-ref">know</span></a> there is always a chance of the unexpected occuring anytime we take an action in the world and that our <em>decisions</em> are not always correct.</p>
+<p>Writers and philosophers have, throughout the ages, summarized this idea much more eloquently than the current author, so let’s hear what they have to say on the matter,</p>
+<blockquote>
+<div><p>With domineering hand she moves the turning wheel,
+Like currents in a treacherous bay swept to and fro:
+Her ruthless will has just deposed once fearful kings
+While trustless still, from low she lifts a conquered head;
+No cries of misery she hears, no tears she heeds,
+But steely hearted laughs at groans her deeds have wrung.
+Such is a game she plays, and so she tests her strength;
+Of mighty power she makes parade when one short hour
+Sees happiness from utter desolation grow.
+- Boethius, <em>On the Consolation of Philosophy</em>, 524</p>
+<p>Our wills and fates do so contrary run
+That our devices still are overthrown;
+Our thoughts are ours, their ends none of our own.
+- William Shakespeare, 1599</p>
+<p>But Mouse, you are not alone,
+In proving foresight may be vain:
+The best-laid schemes of mice and men
+Go oft awry,
+And leave us nothing but grief and pain,
+For promised joy!
+- Robert Burns, <em>To a Mouse, on Turning Her Up in Her Nest With the Plough</em>, 1785</p>
+</div></blockquote>
+<p>That’s all very enlightening, but it amounts to saying: there is always <em>uncertainty</em> in any assertion we make about the world around us. Our “<em>devices might be overthrown</em>” or “<em>go oft awry</em>”.</p>
+<p>In <em>statistics</em>, we are interested in how to <em>quantity this uncertainty</em>. Once we have quantified and measured it, rather than waxing poetical about its effervescence, we want to use that information to allow us to make the most informed decision we can possibly make.</p>
+<p>Before we can make these notions precise, we need to define some terms. On this page, we will define the general notions of <em>statistics</em> and give a brief overview of its ideas and concepts.</p>
 </section>
 <section id="definitions">
 <h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
@@ -489,12 +519,12 @@ document.write(`
 </dd>
 </dl>
 <p><em>Individuals</em> will mean different things depending on the experiment being conducted.</p>
-<p>If we are measuring how hot it is over the course of a week in the summer, then the <em>individuals</em> in the experiment will be the temperature measurements made on a thermometer. The <em>experimental unit</em> of each <em>individual observation</em> would be degrees Kelvin.</p>
+<p>If we are measuring how hot it is over the course of a week in the summer, then the <em>individuals</em> in the experiment will be the temperature measurements made on a thermometer. The <em>experimental unit</em> of each <em>individual observation</em> will be degrees Kelvin (or degrees celsius or degrees fahrenheit, depending on the <em>scale</em> of the <em>experimental unit</em>).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>When reading temperature data in most scientific literature, you will likely never see celsius or fahrenheit. Kelvin is the standard <em>experimental unit</em> for the fields of physics, chemistry and biology. The only times you will encounter other measurement scales is when the authors are trying to relate the data to human experience.</p>
+<p>Degress Kelvin is the standard <em>experimental unit</em> for temperature the fields of physics, chemistry and biology.</p>
 </div>
-<p>If we are measuring what percent of the country’s population supports a government policy, then the <em>individuals</em> in the experiment will be the collection (<a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">Set Theory</span></a>) people’s answers, Yes or No. The <em>experimental unit</em> of each <em>individual observation</em> would be the binary units, <em>Y</em> or <em>N</em>.</p>
+<p>If we are measuring what percent of the country’s population supports a certain government policy, then the <em>individuals</em> in the experiment will be the collection (<a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">set</span></a>) of people’s answers, “<em>Yes</em>” or “<em>No</em>”. The <em>experimental unit</em> of each <em>individual observation</em> would be the binary units, <em>Y</em> or <em>N</em>.</p>
 </section>
 <section id="population">
 <span id="id2"></span><h3>Population<a class="headerlink" href="#population" title="Permalink to this headline">#</a></h3>
@@ -523,16 +553,16 @@ document.write(`
 </section>
 <section id="methods-of-observation">
 <span id="observation-methods"></span><h2>Methods of Observation<a class="headerlink" href="#methods-of-observation" title="Permalink to this headline">#</a></h2>
-<p>In statistics, “<em>observation</em>” is the name of the game. Without first making observations, there is nothing else to be done.</p>
+<p>In statistics, “<em>observation</em>” is the name of the game. Without first making observations, there is nothing else to be done. There are several different ways and techniques of making observations.</p>
 <dl class="simple">
 <dt>Conducting Census</dt><dd><p>A <em>census</em> is a type of statistical study where each individual in the population is observed.</p>
 </dd>
 </dl>
 <p>In practice, we are never able to see entire population at once. A <em>census</em> is an <em>ideal</em>, like a <em>vacuum</em> or a <em>frictionless surface</em>. If we had infinite time and resources, we should always like to conduct a <em>census</em>, rather than drawing a <em>sample</em>, because it would tell us conclusively how the population looked.</p>
-<p>A <em>census</em> is conducted every ten years in the United States to accurately measure the population size. Even a massive operation like this is likely to miss more than a few individuals in the population, whether due to undocumented citizens, errors in record-keeping or pure happenstance. The point being, a <em>census</em> is the <em>ideal</em> study, but <em>impossible</em> to obtain.</p>
+<p>A <em>census</em> is conducted every ten years in the United States to accurately measure the population size. Even a massive and organized operation like this is likely to miss more than a few individuals in the population, whether due to undocumented citizens, errors in record-keeping or pure happenstance. The point being, a <em>census</em> is the <em>ideal</em> study, but <em>impossible</em> to obtain.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>A <em>census</em> may also refer to the entire population itself, rather than the method of observation. The use should always be clear from context.</p>
+<p>A <em>census</em> may also refer to the entire population itself, rather than the method of observing the population. The use should always be clear from context.</p>
 </div>
 <dl class="simple">
 <dt>Drawing A Sample</dt><dd><p>A <em>sample</em> is a type of statistical study where a subset of the population is observed <em>at random</em>.</p>
@@ -579,7 +609,7 @@ document.write(`
 <td><p>Edmund Husserl</p></td>
 </tr>
 <tr class="row-odd"><td><p>4</p></td>
-<td><p>Bertrand Russel</p></td>
+<td><p>Bertrand Russell</p></td>
 </tr>
 <tr class="row-even"><td><p>5</p></td>
 <td><p>Kurt Godel</p></td>
@@ -601,7 +631,7 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p>Once each individual in the population is associated with an <em>index</em>, random numbers are generated; the indices that are selected by the random number generator then tell us what individuals to select for the sample.</p>
+<p>Once each individual in the population is associated with an <em>index</em>, random numbers are generated; the indices that are selected by the random number generator then tell us what individuals to select for the sample. For example, we must get the numbers <em>3</em>, <em>6</em>, <em>10</em> and from this, we would then construct a sample of individuals: <em>Edmund Husserl</em>, <em>Gottlob Frege</em>, <em>Alain Badiou</em>.</p>
 </section>
 <section id="systematic">
 <span id="systematic-sampling"></span><h4>Systematic<a class="headerlink" href="#systematic" title="Permalink to this headline">#</a></h4>
@@ -612,7 +642,7 @@ document.write(`
 <p>Examples</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Asking every 10 <sup>th</sup> person who they are voting for in the next election.</p></li>
+<li><p>Asking every 10 <sup>th</sup> person who enters a building if they are voting in the next election.</p></li>
 <li><p>Selecting ten people from every zipcode.</p></li>
 <li><p>Sending out surveys and using every 5 <sup>th</sup> one that is returned.</p></li>
 </ul>
@@ -621,10 +651,52 @@ document.write(`
 <section id="stratified">
 <span id="stratifed-sampling"></span><h4>Stratified<a class="headerlink" href="#stratified" title="Permalink to this headline">#</a></h4>
 <dl class="simple">
-<dt>Definition</dt><dd><p>To get <em>stratified</em> samples, the population is broken up by demographics. Then a <em>random</em> sample from every demographic is taken. Finally, the results are put back together.</p>
+<dt>Definition</dt><dd><p>To get <em>stratified</em> samples, the population is broken up into <span class="xref std std-ref">mutually exclusive</span> groups. Then a <em>random</em> sample from every group is taken.</p>
+</dd>
+<dt>Example</dt><dd><ul class="simple">
+<li><p>Sampling a highschool by grouping the school into freshmen, sophomores, juniors and seniors.</p></li>
+<li><p>Mailing surveys to 100 randomly selected residents of each state.</p></li>
+<li></li>
+</ul>
 </dd>
 </dl>
-<p>Example</p>
+<p><em>Stratified samples</em> are easily visualized with a table. As an example, suppose in the first example, we were sampling a population of highschool students to determine for whom they were voting in the student government elections.</p>
+<table class="table">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 29%" />
+<col style="width: 29%" />
+<col style="width: 16%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>Candidate 1</p></td>
+<td><p>Candidate 2</p></td>
+<td><p>Other</p></td>
+</tr>
+<tr class="row-even"><td><p>Freshmen</p></td>
+<td><p>25</p></td>
+<td><p>45</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sophomores</p></td>
+<td><p>30</p></td>
+<td><p>33</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Juniors</p></td>
+<td><p>15</p></td>
+<td><p>27</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Seniors</p></td>
+<td><p>23</p></td>
+<td><p>21</p></td>
+<td><p>2</p></td>
+</tr>
+</tbody>
+</table>
+<p>These tables will pop up in a later chapter under the name <a class="reference internal" href="../probability/00_INTRODUCTION.html#probability-tables"><span class="std std-ref">Probability Tables</span></a>.</p>
 </section>
 <section id="cluster">
 <span id="cluster-sampling"></span><h4>Cluster<a class="headerlink" href="#cluster" title="Permalink to this headline">#</a></h4>
@@ -687,7 +759,7 @@ document.write(`
 <section id="controls">
 <h3>Controls<a class="headerlink" href="#controls" title="Permalink to this headline">#</a></h3>
 <p>In the example of testing the efficiency of a new type of fuel against standard gasoline, notice we are asking a question about two different populations: the population of cars that use the new type of fuel and the population of cars that use standard gasoline. Specifically, we are asking if there is a <em>statistically significance</em> difference between the efficiency of either group.</p>
-<p>(INSERT PICTURE)</p>
+<img alt="../../_images/fuel_efficiency_null_versus_alternate.jpg" class="align-center" src="../../_images/fuel_efficiency_null_versus_alternate.jpg" />
 <p>The first group is referred to as the <em>test</em> group, the sample to which a <em>treatment</em> has been applied and whose efficacy we would like to test.</p>
 <p>The second group is referred to as the <em>control group</em>, the sample to which no <em>treatments</em> have been applied and which acts as a baseline against which we can judge the effects of the <em>treatment</em>.</p>
 </section>
