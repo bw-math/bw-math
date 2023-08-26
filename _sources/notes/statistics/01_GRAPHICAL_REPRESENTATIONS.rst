@@ -611,30 +611,52 @@ No Correlation
 Positive Correlation
 --------------------
 
+Strong Correlation 
+******************
+
 .. plot:: assets/plots/scatterplots/scatterplot_positive_correlation.py
+
+Weak Correlation
+****************
+
+TODO
 
 Negative Correlation
 --------------------
 
+Strong Correlation
+******************
+
 .. plot:: assets/plots/scatterplots/scatterplot_negative_correlation.py
+
+Weak Correlation
+****************
+
+TODO
+
+Non-linear Correlations 
+-----------------------
+
+TODO 
 
 Time Series
 ===========
 
-Positive Correlation
---------------------
+A *time series* is similar to a *scatter plot* in almost all ways, but the *independent* variable in a *time series* is always a unit of time.
 
-**Positive Trend**
+TODO 
+
+Positive Trend
+--------------
 
 .. plot:: assets/plots/timeseries/timeseries_positive_trend.py
 
-Negative Correlation
---------------------
-
-**Negative Trend**
+Negative Trend
+--------------
 
 .. plot:: assets/plots/timeseries/timeseries_negative_trend.py
 
-**No Trend**
+No Trend
+--------
 
 .. plot:: assets/plots/timeseries/timeseries_no_trend.py

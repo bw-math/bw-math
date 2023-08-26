@@ -456,6 +456,12 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation-vs-causation">Correlation Vs. Causation</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experimental-design">Experimental Design</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Definitions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#single-blind">Single Blind</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#double-blind">Double Blind</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionality">Dimensionality</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristic">Characteristic</a></li>
@@ -483,29 +489,37 @@ document.write(`
 <p>What this definition doesn’t say is what the “<em>decision process</em>” for sorting propositions into <em>true</em> or <em>false</em> looks like. That is where <em>statistics</em> comes in. <em>Statistics</em> is the study of this decision process; it is a way of understanding what we mean when we say something is <em>true</em> or something is <em>false</em>. <em>Statistics</em> is the study of how we do science, and since it is the study of science, it is also the study of <em>decision-making</em>.</p>
 <p>Our lives are filled with decisions. Life is, in some sense, nothing but a series of decisions. So, because we do it so often, we have a pretty good of idea of what we mean by “<em>deciding</em>” or “<em>making a decision</em>”. Every decision we make, we take into account the uncertainty in the various outcomes that might result, factor in their respective <em>likelihood</em> and then <em>decide</em> what course of action is the best. We <a class="reference internal" href="../HISTORY.html#knowledge"><span class="std std-ref">know</span></a> there is always a chance of the unexpected occuring anytime we take an action in the world and that our <em>decisions</em> are not always correct.</p>
 <p>Writers and philosophers have, throughout the ages, summarized this idea much more eloquently than the current author, so let’s hear what they have to say on the matter,</p>
-<blockquote>
-<div><p>With domineering hand she moves the turning wheel,
-Like currents in a treacherous bay swept to and fro:
-Her ruthless will has just deposed once fearful kings
-While trustless still, from low she lifts a conquered head;
-No cries of misery she hears, no tears she heeds,
-But steely hearted laughs at groans her deeds have wrung.
-Such is a game she plays, and so she tests her strength;
-Of mighty power she makes parade when one short hour
-Sees happiness from utter desolation grow.
-- Boethius, <em>On the Consolation of Philosophy</em>, 524</p>
-<p>Our wills and fates do so contrary run
-That our devices still are overthrown;
-Our thoughts are ours, their ends none of our own.
-- William Shakespeare, 1599</p>
-<p>But Mouse, you are not alone,
-In proving foresight may be vain:
-The best-laid schemes of mice and men
-Go oft awry,
-And leave us nothing but grief and pain,
-For promised joy!
-- Robert Burns, <em>To a Mouse, on Turning Her Up in Her Nest With the Plough</em>, 1785</p>
-</div></blockquote>
+<div class="topic">
+<p class="topic-title">Boethius, On the Consolation of Philosophy, 524 AD</p>
+<p>With domineering hand she moves the turning wheel,</p>
+<p>Like currents in a treacherous bay swept to and fro:</p>
+<p>Her ruthless will has just deposed once fearful kings</p>
+<p>While trustless still, from low she lifts a conquered head;</p>
+<p>No cries of misery she hears, no tears she heeds,</p>
+<p>But steely hearted laughs at groans her deeds have wrung.</p>
+<p>Such is a game she plays, and so she tests her strength;</p>
+<p>Of mighty power she makes parade when one short hour</p>
+<p>Sees happiness from utter desolation grow.</p>
+</div>
+<div class="topic">
+<p class="topic-title">William Shakespeare, Hamlet, 1599</p>
+<p>Our wills and fates do so contrary run</p>
+<p>That our devices still are overthrown;</p>
+<p>Our thoughts are ours, their ends none of our own.</p>
+</div>
+<div class="topic">
+<p class="topic-title">Robert Burns, To a Mouse, on Turning Her Up in Her Nest With the Plough, 1785</p>
+<p>But Mouse, you are not alone,</p>
+<p>In proving foresight may be vain:</p>
+<p>The best-laid schemes of mice and men</p>
+<p>Go oft awry,</p>
+<p>And leave us nothing but grief and pain,</p>
+<p>For promised joy!</p>
+</div>
+<div class="topic">
+<p class="topic-title">Han Solo, 1980</p>
+<p>Never tell me the odds!</p>
+</div>
 <p>That’s all very enlightening, but it amounts to saying: there is always <em>uncertainty</em> in any assertion we make about the world around us. Our “<em>devices might be overthrown</em>” or “<em>go oft awry</em>”.</p>
 <p>In <em>statistics</em>, we are interested in how to <em>quantity this uncertainty</em>. Once we have quantified and measured it, rather than waxing poetical about its effervescence, we want to use that information to allow us to make the most informed decision we can possibly make.</p>
 <p>Before we can make these notions precise, we need to define some terms. On this page, we will define the general notions of <em>statistics</em> and give a brief overview of its ideas and concepts.</p>
@@ -911,8 +925,39 @@ For promised joy!
 <img alt="../../_images/spurious_correlation.jpeg" class="align-center" src="../../_images/spurious_correlation.jpeg" />
 </section>
 </section>
+<section id="experimental-design">
+<span id="id7"></span><h2>Experimental Design<a class="headerlink" href="#experimental-design" title="Permalink to this headline">#</a></h2>
+<p>The key to eliminating bias and preventing fallacies is <em>good experimental design</em>.</p>
+<section id="id8">
+<h3>Definitions<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
+<dt>Treatment</dt><dd><p>TODO</p>
+</dd>
+<dt>Experimental Unit</dt><dd><p>TODO</p>
+</dd>
+<dt>Indicator Variable</dt><dd><p>TODO</p>
+</dd>
+<dt>Response Variable</dt><dd><p>TODO</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>Indicator</em> variables are sometimes known as either <em>explanatory</em> variables or <a href="#id9"><span class="problematic" id="id10">*</span></a>independent variables.</p>
+<p><em>Response</em> variables are sometimes known as either <em>explicated</em> variables or <em>dependent variables</em>.</p>
+</div>
+</section>
+<section id="single-blind">
+<h3>Single Blind<a class="headerlink" href="#single-blind" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="double-blind">
+<h3>Double Blind<a class="headerlink" href="#double-blind" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
 <section id="classifications-of-data">
 <span id="data-classification"></span><h2>Classifications of Data<a class="headerlink" href="#classifications-of-data" title="Permalink to this headline">#</a></h2>
+<p>The data we collect from an experiment is classified according to several factors.</p>
 <section id="dimensionality">
 <span id="data-dimensionality"></span><h3>Dimensionality<a class="headerlink" href="#dimensionality" title="Permalink to this headline">#</a></h3>
 <p>Definition</p>
@@ -928,8 +973,8 @@ For promised joy!
 <dt>Example</dt><dd><p>Experimental data from Henri Cavendish’s density of the Earth experiments. Density is expressed as a ratio of the density of water. See <a class="reference internal" href="../../assignments/projects/01_GRAPHING.html#project-one"><span class="std std-ref">Graphing</span></a> for more information about this dataset.</p>
 </dd>
 </dl>
-<table class="table" id="id7">
-<caption><span class="caption-text">Density of the Earth</span><a class="headerlink" href="#id7" title="Permalink to this table">#</a></caption>
+<table class="table" id="id11">
+<caption><span class="caption-text">Density of the Earth</span><a class="headerlink" href="#id11" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -982,8 +1027,8 @@ For promised joy!
 <dt>Example</dt><dd><p>Data from the Challenger space shuttle explosion showing the atmospheric temperature versus the erosion index of the O-ring seal. The failure of the O-ring seal at lower temperatures was not accounted for prior to launch.</p>
 </dd>
 </dl>
-<table class="table" id="id8">
-<caption><span class="caption-text">Density of the Earth</span><a class="headerlink" href="#id8" title="Permalink to this table">#</a></caption>
+<table class="table" id="id12">
+<caption><span class="caption-text">Density of the Earth</span><a class="headerlink" href="#id12" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 100%" />
 </colgroup>
@@ -1019,8 +1064,8 @@ For promised joy!
 <dt>Example</dt><dd><p>Body measurements from a sample of grizzly bears.</p>
 </dd>
 </dl>
-<table class="table" id="id9">
-<caption><span class="caption-text">Bear Measurements</span><a class="headerlink" href="#id9" title="Permalink to this table">#</a></caption>
+<table class="table" id="id13">
+<caption><span class="caption-text">Bear Measurements</span><a class="headerlink" href="#id13" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 11%" />
 <col style="width: 11%" />
@@ -1275,6 +1320,12 @@ For promised joy!
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation-vs-causation">Correlation Vs. Causation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experimental-design">Experimental Design</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Definitions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#single-blind">Single Blind</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#double-blind">Double Blind</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a><ul class="nav section-nav flex-column">
