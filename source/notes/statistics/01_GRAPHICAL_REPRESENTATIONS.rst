@@ -4,28 +4,21 @@
 Graphical Representations of Data
 =================================
 
-Definitions
-===========
-
-.. _skew:
-
-Skew
-----
-
-Definition
-    A *skew* is a feature of sample where more data is *clustered* on one side of the sample. We say such data are "*skewed*", or that it exhibits "*skewness*". 
+In this section we study various ways of representing data graphically. 
 
 .. _frequency_distributions:
 
 Frequency Distributions
 =======================
 
+A *frequency distribution* is a tabular summary (table) of a sample of data. It tells us how often each observation occurs. 
+
 .. _ungrouped_frequency_distributions:
 
 Ungrouped Distributions
 -----------------------
 
-The concept of an *ungrouped distribution* is best seen by example.
+The concept of an *ungrouped distribution* is intuitive and best seen by example.
 
 Example
     Suppose you ask 10 people their favorite color and the following data set represents their answers,
@@ -49,19 +42,19 @@ Example
 
 An *ungrouped frequency distribtion* is simply a table where each entry represents the :ref:`frequency` of every possible observation,
 
-+-----+-------+
-|  x  |  f(x) |
-+=====+=======+
-|  b  |   2   |
-+-----+-------+
-|  g  |   2   |
-+-----+-------+
-|  o  |   1   |
-+-----+-------+
-|  r  |   4   |
-+-----+-------+
-|  y  |   1   |
-+-----+-------+
++---------------+-------+
+|  :math:`x_i`  |  f(x) |
++===============+=======+
+|     b         |   2   |
++---------------+-------+
+|     g         |   2   |
++---------------+-------+
+|     o         |   1   |
++---------------+-------+
+|     r         |   4   |
++---------------+-------+
+|       y       |   1   |
++---------------+-------+
 
 Notice the sum of the right hand column totals to the number of observations in the sample, :math:`n = 10`. We summarize this result below,
 
@@ -69,7 +62,7 @@ Notice the sum of the right hand column totals to the number of observations in 
 
     n = \sum_{x_i \in S} f(x_i)
 
-Take note of the index in this sum. The :math:`x_i \in S` symbol can be read as "*for every* :math:`x_i` *in S*". This notation is used to take into account observations that may have the same value, as in this example where the observations ``b``, ``g`` and ``r`` occur multiple times. In other words, each term :math:`x_i` of the sum is a *unique value*. Its so-called multiplicity derives from the frequency :math:`f(x_i)` by which it multiplied.
+Take note of the index in this sum. The :math:`x_i \in S` symbol can be read as "*for every* :math:`x_i` *in S*". This notation is used to take into account observations that may have the same value, as in this example where the observations ``b``, ``g`` and ``r`` occur multiple times. In other words, each term :math:`x_i` of the sum is a *unique value*. Its multiplicity derives from the frequency :math:`f(x_i)` by which it is multiplied.
 
 Contrast this against the notation employed in the :ref:`sample_mean_formula`
 
@@ -89,7 +82,7 @@ Ungrouped distributions can get cumbersome when the :ref:`range` of the data is 
 .. csv-table:: Old Faithful Eruption and Waiting Times
    :file: ../../assets/datasets/previews/old_faithful_data_preview.csv
 
-Attempting to create an ungrouped distribution would be a futile effort. Therefore, the standard approach with datasets like this is to create an *grouped* frequency distribution.
+Attempting to create an ungrouped distribution of this data would be a futile effort. Therefore, the standard approach with datasets like this is to create an *grouped* frequency distribution.
 
 Steps
 *****
@@ -185,14 +178,12 @@ Variations
 
 A basic *histogram* can be modified to accomodate a variety of scenarios, depending on the specifics of the problem. In each case below, the sample's frequency distribution is used as the basis for constructing the graph.
 
-.. _bar_charts:
+.. _dot_plots:
 
-Bar Charts
-**********
+Dot Plots
+*********
 
-Sometimes the frequency distribution has already been calculated for us. In cases like this, a simple bar chart is all that is required.
-
-.. plot:: assets/plots/other/bar_chart.py
+Instead bars with differing heights, dot plots use *stacked dots* to represent the number of times each observation occurs, i.e. its frequency. 
 
 .. _stem_leaf_plots:
 
@@ -209,10 +200,53 @@ Relative Frequency Plots
 *Relative frequency* histograms express the frequency of each class as a *percentage* of the total observations in the sample, 
 
 .. math::
-    f(x_i) = \frac{x_i}{n}
+    r(x_i) = \frac{f(x_i)}{n}
 
+Recall that the sum of frequencies is *n*,
+
+.. math:: 
+
+    n = \sum_{x_i \in S} f(x_i)  \text{      Frequency Equation }
+
+Therefore, the sum of *relative frequencies* is,
+
+.. math::
+
+    \sum_{x_i \in S} r(x_i) = \sum_{x_i \in S} \frac{f(x_i)}{n}
+
+Since the sum does not depend on *n*, we can factor :math:`\frac{1}{n}` out of the denominator,
+
+.. math::
+
+     = \frac{1}{n} \cdot \sum_{x_i \in S} f(x_i)
+
+Whence, we apply the *Frequency Equation* to get,
+
+.. math::
+
+    = \frac{1}{n} \cdot n = 1
+
+In other words, the sum of *relative frequencies* is equal to 1, 
+
+.. math::
+
+    \sum_{x_i \in S} r(x_i) = 1  \text{     Relative Frequency Equation}
+
+This intuitive result simply means the distribution must total to *100%*.
+
+In other words, *relative frequency* histograms do not change the shape of the distribution; they scale (*normalize*) the distribution so that the sum of class frequencies is *100%*.
 
 .. plot:: assets/plots/histograms/histogram_relative.py
+
+
+Pie Charts
+**********
+
+*Pie charts* are a special type of relative frequency histogram. Since the relative frequencies sum to 1, we can represent the distribution as *one* circle and then express the proportion the distribtion that belongs to class by the proportion of area in a circular sector.
+
+In other words, the size of each slice of the pie represents the relative frequency of that class. 
+
+(TODO plot)
 
 .. _distribution_shapes:
 
@@ -232,6 +266,8 @@ A histogram where each class is approximately level with every other class is kn
 
 A *uniform distribution* tells us each class is *equally likely*. In other words, if we were to randomly select an individual from this sample, there is an equal chance the selected individual will come from each class. 
 
+(TODO find good uniform data set)
+
 Normal
 ******
 
@@ -239,33 +275,65 @@ A histogram where the classes are symmetric and decreasing around a common point
 
 .. plot:: assets/plots/histograms/histogram_normal.py
 
-The line of symmetry in a perfectly symmetrical distribution is the :ref:`median`. The reason for this can by equating the *area* under the distribution with the proportion of the sample that belongs to that area. Since the *areas* on either side of a symmetric distribution are equal,
+The line of symmetry in a perfectly symmetrical distribution is the :ref:`median`. The reason for this can seen by equating the *area* under the distribution with the proportion of the sample that belongs to that area. Since the *areas* on either side of a symmetric distribution are equal,
 
 (TODO: fill between points)
 
-It follows these areas are both fifty percent of the distribution. 
+It follows these areas both represent fifty percent of the distribution. 
 
 A *normal distribution* tells us classes closer to the :ref:`median` are more likely to be observed.
 
+Example
+    :download:`here <../../assets/datasets/velocity_of_light.csv>`.
+
+.. note::
+
+    We will construct the histogram for this dataset in class using **Python3**.
+    
 Bimodal
 *******
 
-A histogram where two classes are much larger than the other classes is known as *bimodal*.
+A histogram where two classes are more frequent than the other classes in the distribution is known as *bimodal*.
 
 .. plot:: assets/plots/histograms/histogram_bimodal.py
 
+Example
+    :download:`here <../../assets/datasets/old_faithful_data.csv>`.
 
+.. note::
+
+    We will construct the histogram for this dataset in class using **Python3**.
+    
 Skewed
 ******
+
+Definition
+    A *skew* is a feature of sample where more data is *clustered* on one side of the sample. We say such data are "*skewed*", or that it exhibits "*skewness*". 
+
+A *skewed* distribution has *tails*, indicating the distribution is not symmetric (*asymmetric*). Individuals drawn from a *skewed* distribution are more likely to have extreme values. By "*extreme*" we mean values outside of the intervals where the majority of the distribution lies. 
 
 **Skewed Right**
 
 .. plot:: assets/plots/histograms/histogram_skewed_right.py
 
+Example
+    :download:`here <../../assets/datasets/roman_emperors_data.csv>`.
+
+.. note::
+
+    We will construct the histogram for this dataset in class using **Python3**.
+
 **Skewed Left**
 
 .. plot:: assets/plots/histograms/histogram_skewed_left.py
 
+Example
+    :download:`here <../../assets/datasets/earth_density_data.csv>`.
+
+.. note::
+
+    We will construct the histogram for this dataset in class using **Python3**.
+    
 .. _ogives:
 
 Ogives
@@ -283,9 +351,7 @@ TODO
 Construction
 ------------
 
-1. Find the :ref:`relative frequency distribution<frequency_distributions>`
-
-.. _boxplots:
+1. Find the :ref:`relative frequency distribution <frequency_distributions>`
 
 
 Distribution Shapes
@@ -317,6 +383,12 @@ Skewed Right
 Skewed Left
     .. plot:: assets/plots/ogives/ogive_skewed_left.py
 
+Variations
+----------
+
+Stacked Bar Chart
+*****************
+
 Boxplots
 ========
 
@@ -330,7 +402,12 @@ Construction
 3. Find the 50 :sup:`th` percentile (*median*)
 4. Find the 25 :sup:`th` percentile (*first quartile*)
 5. Find the minimum observation.
-   
+
+
+.. note::
+
+    The maximum observation, the third quartile, the median, the firsrt quartile and the minimum are sometimes collectively known as the *five-number summary*.
+
 Distribution Shapes
 -------------------
 
@@ -365,34 +442,33 @@ Skewed
 Scatter Plots
 =============
 
-**No Correlation**
+No Correlation
+--------------
 
 .. plot:: assets/plots/scatterplots/scatterplot_no_correlation.py
 
-**Positive Correlation**
+Positive Correlation
+--------------------
 
 .. plot:: assets/plots/scatterplots/scatterplot_positive_correlation.py
 
-**Negative Correlation**
+Negative Correlation
+--------------------
 
 .. plot:: assets/plots/scatterplots/scatterplot_negative_correlation.py
 
-Other Types of Graphs
-=====================
-
-TODO 
-
-Pie Chart
----------
-
-TODO 
-
 Time Series
------------
+===========
+
+Positive Correlation
+--------------------
 
 **Positive Trend**
 
 .. plot:: assets/plots/timeseries/timeseries_positive_trend.py
+
+Negative Correlation
+--------------------
 
 **Negative Trend**
 
