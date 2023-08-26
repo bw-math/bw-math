@@ -7,7 +7,7 @@ Conditional Probability
 Probability is merely a guess. It is based on whatever currently available information we have. If new information about the outcomes in the sample space becomes available, the probability assigned to the remaining events must be updated to take into account the new state of the world (or more accurately, :ref:`knowledge <knowledge>` of the new state of the world). *Conditional probability* is the tool for incorporating *new* information into probability calculations.
 
 Motivation
-----------
+==========
 
 Example 
     Suppose three red balls numbered 1 - 3 and four green balls numbered 1 - 4 are placed into a box. A friend selects a ball at random from the box without showing you what she selected. 
@@ -50,7 +50,7 @@ If the event **B** has occurred, then the only way the event **A** can now occur
 .. _conditional_probability_formula:
 
 Condtional Probability Formula
-------------------------------
+==============================
 
 Abstracting from the details from the previous example, the *conditional probability* of an event **A** given the occurrence of an event **B** is defined by the following formula,
 
@@ -72,12 +72,12 @@ Example
 .. _reduction_of_the_sample_space:
 
 Reduction of Sample Space
--------------------------
+=========================
 
 TODO 
 
 Formula
-*******
+-------
 
 .. math::
     P(A \mid B) = \frac{n(A \mid B)}{n(S \mid B)}
@@ -185,14 +185,14 @@ Example
 .. _monty_hall_problem:
 
 Monty Hall Problem
-******************
+------------------
 
 TODO
 
 .. _multiplication_rule:
 
 Multiplication Rule
--------------------
+===================
 
 TODO 
 
@@ -248,8 +248,10 @@ Example
 
 TODO
 
+.. _probability_tables_revisted:
+
 Probability Tables Revisited
-----------------------------
+============================
 
 TODO
 

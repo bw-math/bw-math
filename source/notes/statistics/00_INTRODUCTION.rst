@@ -7,6 +7,45 @@ Statistics is the study of making general assertions from particular cases.
 Motivation
 ==========
 
+What is *science*? A rough definition of *science* might go: "*Science is a rational process used for deciding which propositions are true and which propositions are false.*" 
+
+What this definition doesn't say is what the "*decision process*" for sorting propositions into *true* or *false* looks like. That is where *statistics* comes in. *Statistics* is the study of this decision process; it is a way of understanding what we mean when we say something is *true* or something is *false*. *Statistics* is the study of how we do science, and since it is the study of science, it is also the study of *decision-making*.
+
+Our lives are filled with decisions. Life is, in some sense, nothing but a series of decisions. So, because we do it so often, we have a pretty good of idea of what we mean by "*deciding*" or "*making a decision*". Every decision we make, we take into account the uncertainty in the various outcomes that might result, factor in their respective *likelihood* and then *decide* what course of action is the best. We :ref:`know <knowledge>` there is always a chance of the unexpected occuring anytime we take an action in the world and that our *decisions* are not always correct. 
+
+Writers and philosophers have, throughout the ages, summarized this idea much more eloquently than the current author, so let's hear what they have to say on the matter,
+
+    With domineering hand she moves the turning wheel,
+    Like currents in a treacherous bay swept to and fro:
+    Her ruthless will has just deposed once fearful kings
+    While trustless still, from low she lifts a conquered head;
+    No cries of misery she hears, no tears she heeds,
+    But steely hearted laughs at groans her deeds have wrung.
+    Such is a game she plays, and so she tests her strength;
+    Of mighty power she makes parade when one short hour
+    Sees happiness from utter desolation grow.
+    - Boethius, *On the Consolation of Philosophy*, 524
+
+
+    Our wills and fates do so contrary run
+    That our devices still are overthrown;
+    Our thoughts are ours, their ends none of our own.
+    - William Shakespeare, 1599
+
+
+    But Mouse, you are not alone,
+    In proving foresight may be vain:
+    The best-laid schemes of mice and men
+    Go oft awry,
+    And leave us nothing but grief and pain,
+    For promised joy!
+    - Robert Burns, *To a Mouse, on Turning Her Up in Her Nest With the Plough*, 1785
+
+That's all very enlightening, but it amounts to saying: there is always *uncertainty* in any assertion we make about the world around us. Our "*devices might be overthrown*" or "*go oft awry*". 
+
+In *statistics*, we are interested in how to *quantity this uncertainty*. Once we have quantified and measured it, rather than waxing poetical about its effervescence, we want to use that information to allow us to make the most informed decision we can possibly make. 
+
+Before we can make these notions precise, we need to define some terms. On this page, we will define the general notions of *statistics* and give a brief overview of its ideas and concepts.
 
 Definitions
 ===========
@@ -21,13 +60,13 @@ Definition
 
 *Individuals* will mean different things depending on the experiment being conducted. 
 
-If we are measuring how hot it is over the course of a week in the summer, then the *individuals* in the experiment will be the temperature measurements made on a thermometer. The *experimental unit* of each *individual observation* would be degrees Kelvin.
+If we are measuring how hot it is over the course of a week in the summer, then the *individuals* in the experiment will be the temperature measurements made on a thermometer. The *experimental unit* of each *individual observation* will be degrees Kelvin (or degrees celsius or degrees fahrenheit, depending on the *scale* of the *experimental unit*).
 
 .. note:: 
 
-    When reading temperature data in most scientific literature, you will likely never see celsius or fahrenheit. Kelvin is the standard *experimental unit* for the fields of physics, chemistry and biology. The only times you will encounter other measurement scales is when the authors are trying to relate the data to human experience.
+    Degress Kelvin is the standard *experimental unit* for temperature the fields of physics, chemistry and biology.
 
-If we are measuring what percent of the country's population supports a government policy, then the *individuals* in the experiment will be the collection (:ref:`set_theory`) people's answers, Yes or No. The *experimental unit* of each *individual observation* would be the binary units, *Y* or *N*. 
+If we are measuring what percent of the country's population supports a certain government policy, then the *individuals* in the experiment will be the collection (:ref:`set <set_theory>`) of people's answers, "*Yes*" or "*No*". The *experimental unit* of each *individual observation* would be the binary units, *Y* or *N*. 
 
 .. _population: 
 
@@ -44,7 +83,6 @@ Sample
 
 Definition 
     A *sample* is a subset of individuals drawn from the population in a given experiment.
-
 
 .. _population_subset_sample:
 
@@ -68,18 +106,18 @@ The *sample* is contained in the *population*; it is the portion of the populati
 Methods of Observation
 ======================
 
-In statistics, "*observation*" is the name of the game. Without first making observations, there is nothing else to be done. 
+In statistics, "*observation*" is the name of the game. Without first making observations, there is nothing else to be done. There are several different ways and techniques of making observations. 
 
 Conducting Census
     A *census* is a type of statistical study where each individual in the population is observed.
 
 In practice, we are never able to see entire population at once. A *census* is an *ideal*, like a *vacuum* or a *frictionless surface*. If we had infinite time and resources, we should always like to conduct a *census*, rather than drawing a *sample*, because it would tell us conclusively how the population looked. 
 
-A *census* is conducted every ten years in the United States to accurately measure the population size. Even a massive operation like this is likely to miss more than a few individuals in the population, whether due to undocumented citizens, errors in record-keeping or pure happenstance. The point being, a *census* is the *ideal* study, but *impossible* to obtain.
+A *census* is conducted every ten years in the United States to accurately measure the population size. Even a massive and organized operation like this is likely to miss more than a few individuals in the population, whether due to undocumented citizens, errors in record-keeping or pure happenstance. The point being, a *census* is the *ideal* study, but *impossible* to obtain.
 
 .. warning::
     
-    A *census* may also refer to the entire population itself, rather than the method of observation. The use should always be clear from context.
+    A *census* may also refer to the entire population itself, rather than the method of observing the population. The use should always be clear from context.
 
 Drawing A Sample
     A *sample* is a type of statistical study where a subset of the population is observed *at random*.
@@ -124,7 +162,7 @@ The last item in the list above is the most common technique in practice. A stan
 +-------+---------------------+
 | 3     | Edmund Husserl      |
 +-------+---------------------+
-| 4     | Bertrand Russel     |
+| 4     | Bertrand Russell    |
 +-------+---------------------+
 | 5     | Kurt Godel          |
 +-------+---------------------+
@@ -139,7 +177,7 @@ The last item in the list above is the most common technique in practice. A stan
 | 10    | Alain Badiou        |
 +-------+---------------------+
 
-Once each individual in the population is associated with an *index*, random numbers are generated; the indices that are selected by the random number generator then tell us what individuals to select for the sample.
+Once each individual in the population is associated with an *index*, random numbers are generated; the indices that are selected by the random number generator then tell us what individuals to select for the sample. For example, we must get the numbers *3*, *6*, *10* and from this, we would then construct a sample of individuals: *Edmund Husserl*, *Gottlob Frege*, *Alain Badiou*. 
 
 .. _systematic_sampling:
 
@@ -151,7 +189,7 @@ Definition
 
 Examples
 
-    - Asking every 10 :sup:`th` person who they are voting for in the next election.
+    - Asking every 10 :sup:`th` person who enters a building if they are voting in the next election.
     - Selecting ten people from every zipcode.
     - Sending out surveys and using every 5 :sup:`th` one that is returned.
 
@@ -161,10 +199,28 @@ Stratified
 **********
 
 Definition
-    To get *stratified* samples, the population is broken up by demographics. Then a *random* sample from every demographic is taken. Finally, the results are put back together. 
+    To get *stratified* samples, the population is broken up into :ref:`mutually exclusive <mutually_exclusive>` groups. Then a *random* sample from every group is taken.
 
 Example
+    - Sampling a highschool by grouping the school into freshmen, sophomores, juniors and seniors. 
+    - Mailing surveys to 100 randomly selected residents of each state.
+    -  
         
+*Stratified samples* are easily visualized with a table. As an example, suppose in the first example, we were sampling a population of highschool students to determine for whom they were voting in the student government elections.
+
++------------+-------------+-------------+-------+
+|            | Candidate 1 | Candidate 2 | Other |
++------------+-------------+-------------+-------+
+| Freshmen   | 25          | 45          | 2     |
++------------+-------------+-------------+-------+
+| Sophomores | 30          | 33          | 5     |
++------------+-------------+-------------+-------+
+| Juniors    | 15          | 27          | 1     |
++------------+-------------+-------------+-------+
+| Seniors    | 23          | 21          | 2     |
++------------+-------------+-------------+-------+
+
+These tables will pop up in a later chapter under the name :ref:`probability_tables`.
 
 .. _cluster_sampling:
 
@@ -241,7 +297,8 @@ Controls
 
 In the example of testing the efficiency of a new type of fuel against standard gasoline, notice we are asking a question about two different populations: the population of cars that use the new type of fuel and the population of cars that use standard gasoline. Specifically, we are asking if there is a *statistically significance* difference between the efficiency of either group. 
 
-(INSERT PICTURE)
+.. image:: ../../assets/imgs/context/fuel_efficiency_null_versus_alternate.jpg
+    :align: center
 
 The first group is referred to as the *test* group, the sample to which a *treatment* has been applied and whose efficacy we would like to test.
 

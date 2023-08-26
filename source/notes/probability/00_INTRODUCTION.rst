@@ -619,6 +619,8 @@ Therefore, the desired probability is,
 
     = \frac{4}{52} + \frac{13}{52} - \frac{1}{52} = \frac{16}{52} = \frac{4}{13} \approx 0.31
 
+.. _probability_tables:
+
 Probability Tables
 ******************
 
