@@ -4,7 +4,7 @@
 Point Estimation
 ================
 
-A sample of data is characterized by *point estimates* of *sample statistics*.
+A sample of data is characterized numerically by *point estimates* of *sample statistics*.
 
 Definitions
 ===========

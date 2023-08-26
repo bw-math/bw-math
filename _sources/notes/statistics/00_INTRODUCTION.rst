@@ -278,7 +278,15 @@ Definition
         
 As an extreme example to illustrate the meaning of this type of *bias*, if you were interested in making assertions about the average height of a United States citizens, selecting a sample of 100 elementary schoolers would lead you to make wildly erroneous conclusions. 
 
-(TODO famous example)
+A famous example of *how to avoid selection bias* is the work of Abraham Wald during World War II. Wald was a statistican at Columbia University who was analyzing damage done to aircraft that had taken enemy fire. Had he only used the sample as his disposal, the aircraft that *survived* the war and made their way to Columbia University to be examined by him, he would have erroneously concluded the areas where craft sustained major damaged needed re-inforced with armor. 
+
+(INSERT PICTURE)
+
+However, the sample he was looking at only represented *aircraft that had survived*, not the entire population of aircraft. In other words, the sample was not *representative* of the *aircraft that had not survived*, and thus could not be used to draw inferences about where on the body of the aircraft to re-inforce with armor. 
+
+Instead, he reasoned, the areas where the surviving aircraft had not sustained damage were likely the areas the *aircraft that had not survived* **had** sustained damage. Counter-intuitively (but statistically sound), he proposed re-inforcing the areas on the surviving planes where there was no damage.
+
+His statistical insight led to a reduction in the number of aircraft causalities during the war.
 
 Response bias
 *************
@@ -343,7 +351,32 @@ The key takeway from the *Milgram experiment* is *how* you make the observation 
 Correlation Vs. Causation
 -------------------------
 
-TODO
+The phenomenon of *correlation*, a statistical quantity we will study in much greater detail later on in the class, can be summed up succintly,
+
+    Correlation is the tendency of two variables to vary together, either positively or negatively. 
+
+As an illustrative example of *positive correlation*, the average speed of a car on a highway is *positively correlated* with the number of speeding tickets received by its driver. The faster one goes on the highway, the more tickets one receives *on average*.
+
+As an illustrative example of *negative correlation*, the number of cigarettes smoked a week is negatively correlated with the lifespan of the smoker. The more cigarettes smoked a week, the shorter the lifespan of the smoker *on average*.
+
+In these examples, the two variables being measured are related through a *causal mechanism*, i.e. we can think of one variable being the "*cause*" of the other. 
+
+In the first example, state speeding laws determine the nature of the correlation between the variable "*average highway speed*" and the variable "*number of tickets*, so we say "*speeding causes tickets*""
+
+In the second case, the facts of biology determine the the nature of the correlation between the variable "*number of cigarettes smoked*" and the variable "*lifespan*", so we say "*smoking causes shorter lifespans*".
+
+In each of these cases, we can identify "*how*" one variable determines the value of the other.
+
+**However**, correlated variables do not necessarily imply a *causal relationship* between the quantities being observed, i.e. correlation does not imply a relationship of cause and effect.
+
+.. important::
+
+    Correlation :math:`\neq` Causation
+
+The following image illustrates why we cannot infer *causation* from *correlation*,
+
+.. image:: ../../assets/imgs/context/spurious_correlation.jpeg
+    :align: center
 
 .. _data_classification:
 

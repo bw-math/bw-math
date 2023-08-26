@@ -712,7 +712,11 @@ document.write(`
 </dd>
 </dl>
 <p>As an extreme example to illustrate the meaning of this type of <em>bias</em>, if you were interested in making assertions about the average height of a United States citizens, selecting a sample of 100 elementary schoolers would lead you to make wildly erroneous conclusions.</p>
-<p>(TODO famous example)</p>
+<p>A famous example of <em>how to avoid selection bias</em> is the work of Abraham Wald during World War II. Wald was a statistican at Columbia University who was analyzing damage done to aircraft that had taken enemy fire. Had he only used the sample as his disposal, the aircraft that <em>survived</em> the war and made their way to Columbia University to be examined by him, he would have erroneously concluded the areas where craft sustained major damaged needed re-inforced with armor.</p>
+<p>(INSERT PICTURE)</p>
+<p>However, the sample he was looking at only represented <em>aircraft that had survived</em>, not the entire population of aircraft. In other words, the sample was not <em>representative</em> of the <em>aircraft that had not survived</em>, and thus could not be used to draw inferences about where on the body of the aircraft to re-inforce with armor.</p>
+<p>Instead, he reasoned, the areas where the surviving aircraft had not sustained damage were likely the areas the <em>aircraft that had not survived</em> <strong>had</strong> sustained damage. Counter-intuitively (but statistically sound), he proposed re-inforcing the areas on the surviving planes where there was no damage.</p>
+<p>His statistical insight led to a reduction in the number of aircraft causalities during the war.</p>
 </section>
 <section id="response-bias">
 <h4>Response bias<a class="headerlink" href="#response-bias" title="Permalink to this headline">#</a></h4>
@@ -801,7 +805,23 @@ document.write(`
 </section>
 <section id="correlation-vs-causation">
 <h3>Correlation Vs. Causation<a class="headerlink" href="#correlation-vs-causation" title="Permalink to this headline">#</a></h3>
-<p>TODO</p>
+<p>The phenomenon of <em>correlation</em>, a statistical quantity we will study in much greater detail later on in the class, can be summed up succintly,</p>
+<blockquote>
+<div><p>Correlation is the tendency of two variables to vary together, either positively or negatively.</p>
+</div></blockquote>
+<p>As an illustrative example of <em>positive correlation</em>, the average speed of a car on a highway is <em>positively correlated</em> with the number of speeding tickets received by its driver. The faster one goes on the highway, the more tickets one receives <em>on average</em>.</p>
+<p>As an illustrative example of <em>negative correlation</em>, the number of cigarettes smoked a week is negatively correlated with the lifespan of the smoker. The more cigarettes smoked a week, the shorter the lifespan of the smoker <em>on average</em>.</p>
+<p>In these examples, the two variables being measured are related through a <em>causal mechanism</em>, i.e. we can think of one variable being the “<em>cause</em>” of the other.</p>
+<p>In the first example, state speeding laws determine the nature of the correlation between the variable “<em>average highway speed</em>” and the variable “<em>number of tickets</em>, so we say “<em>speeding causes tickets</em>””</p>
+<p>In the second case, the facts of biology determine the the nature of the correlation between the variable “<em>number of cigarettes smoked</em>” and the variable “<em>lifespan</em>”, so we say “<em>smoking causes shorter lifespans</em>”.</p>
+<p>In each of these cases, we can identify “<em>how</em>” one variable determines the value of the other.</p>
+<p><strong>However</strong>, correlated variables do not necessarily imply a <em>causal relationship</em> between the quantities being observed, i.e. correlation does not imply a relationship of cause and effect.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Correlation <img class="math" src="../../_images/math/d16520bee5763ea016f6fe0a7d903dfecc22c8ca.png" alt="\neq"/> Causation</p>
+</div>
+<p>The following image illustrates why we cannot infer <em>causation</em> from <em>correlation</em>,</p>
+<img alt="../../_images/spurious_correlation.jpeg" class="align-center" src="../../_images/spurious_correlation.jpeg" />
 </section>
 </section>
 <section id="classifications-of-data">

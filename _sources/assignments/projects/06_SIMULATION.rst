@@ -52,6 +52,7 @@ The following code snippet simulates flipping a fair coin 10 times,
 
     for i in range(10):
         flip = math.random()
+        
         if flip >= 0.5:
             heads += 1
         else:
