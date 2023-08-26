@@ -11,6 +11,8 @@ In this section we study various ways of representing data graphically.
 Frequency Distributions
 =======================
 
+A *frequency distribution* is the foundation of most statistical graphs. In order to interpret graphs like histograms or pie charts, you must first understand what a *frequency distribution* represents.
+
 A *frequency distribution* is a tabular summary (table) of a sample of data. It tells us how often each observation occurs. 
 
 .. _ungrouped_frequency_distributions:
@@ -68,7 +70,7 @@ Contrast this against the notation employed in the :ref:`sample_mean_formula`
 
 .. math:: 
 
-    \bar{x} = \frac{ sum^n_{i=1} x_i }{n}
+    \bar{x} = \frac{ \sum^n_{i=1} x_i }{n}
 
 In the :ref:`sample_mean_formula`, the index is over the observation order, i.e. from :math:`i = 1, 2, 3 ..., n`. In this case, it may happen that :math:`x_i = x_j` for some :math:`i \neq j`. In other words, in the sample mean formula, it is possible for terms in the summation to *repeat*. 
 
@@ -227,19 +229,19 @@ The limits of the fifth class are given by,
 Using this limits, we can construct the table,
 
 
-+-------------------------+------+
-| Class Limits            | f(x) |
-+-------------------------+------+
-| :math:`5.3 <= x < 5.5`  | 3    |
-+-------------------------+------+
-| :math:`5.5 <= x < 5.7`  | 2    |
-+-------------------------+------+
-| :math:`5.7 <= x < 5.9`  | 4    |
-+-------------------------+------+
-| :math:`5.9 <= x < 6.1`  | 2    |
-+-------------------------+------+
-| :math:`6.1 <= x <= 6.3` | 1    |
-+-------------------------+------+
++---------------------------+----------------+
+| Class Limits              | :math:`f(x_i)` |
++---------------------------+----------------+
+| :math:`5.3 <= x_i < 5.5`  | 3              |
++---------------------------+----------------+
+| :math:`5.5 <= x < 5.7`    | 2              |
++---------------------------+----------------+
+| :math:`5.7 <= x < 5.9`    | 4              |
++---------------------------+----------------+
+| :math:`5.9 <= x < 6.1`    | 2              |
++---------------------------+----------------+
+| :math:`6.1 <= x <= 6.3`   | 1              | 
++---------------------------+----------------+
 
 .. tip:: 
 
@@ -260,6 +262,7 @@ A *histogram* is a graphical representation of a :ref:`frequency distribution <f
 
 .. plot:: assets/plots/histograms/histogram_random.py
 
+The *width* of the bars is normalized so that the bars of the histogram meet. 
 .. _histogram_variatians:
 
 Variations
@@ -284,14 +287,36 @@ Then the dot plot is constructed by drawing a number of dots above a point on th
 
 .. plot:: assets/plots/other/dot_plot.py
 
-*Dot plots* are a quick and easy to represent a sample of data graphically.
+*Dot plots* are a quick and easy to represent a sample of data graphically. When in doubt, throw together a dot plot to see if it gives you any clues about the distribution.
 
 .. _stem_leaf_plots:
 
 Stem-Leaf Plots
 ***************
 
-TODO 
+A *stem-leaf* plot is a type of histogram where the classes are determined by the leading digitS of the observation valueS. 
+
+For example, you measured the average annual rainfall in inches for Maryland over the course of 20 years and arrived at the following sample,
+
+.. math:: 
+
+    S = \{ 46 \text{ in}, 52 \text{ in},  33 \text{ in}, 42 \text{ in}, 43 \text{ in}, 51 \text{ in}, 31 \text{ in}, 27 \text{ in}, 49 \text{ in}, 47 \text{ in}, 37 \text{ in}, 50 \text{ in}, 42 \text{ in}, 46 \text{ in}, 61 \text{ in}, 37 \text{ in}, 46 \text{ in}, 47 \text{ in}, 51 \text{ in}, 33 \text{ in} \}
+
+A *stem-and-leaf* plot is a *tabular summary* (table) where the first column, called the *stem* column, is the leading digits that occurs in the sample, in this case ``3``, ``4``, ``5`` and ``6``. The digits after the leading digit after tallied up and written in ascending order in the second column, called the *leaf* column,
+
++------+----------------------------+
+| Stem |         Leaf               |
++------+----------------------------+
+|   3  | 3, 3, 7,                   |
++------+----------------------------+
+|   4  | 2, 2, 3, 6, 6, 6, 9, 7, 7  |
++------+----------------------------+
+|   5  | 0, 1, 1, 2                 |
++------+----------------------------+
+|   6  | 1,1                        |
++------+----------------------------+
+
+*Stem-and-leaf* plots are convenient for finding the :ref:`mode` of a distribution; the :ref:`mode` is simply the observation with the most number of leaves, in this case, ``46`` inches.
 
 .. _relative_frequency_distribution:
 
@@ -354,14 +379,14 @@ In other words, the size of each slice of the pie represents the relative freque
 Distribution Shapes
 -------------------
 
-The shape of the histogram can tell us a lot about the distribution of the sample. 
+The shape of the histogram tells a story about the distribution of the sample. 
 
 .. _uniform_shape:
 
 Uniform
 *******
 
-A histogram where each class is approximately level with every other class is known as *uniform*. 
+A histogram where each class is approximately level with every other class is known as a *uniform* distribution. 
 
 .. plot:: assets/plots/histograms/histogram_uniform.py
 
@@ -409,7 +434,7 @@ Skewed
 ******
 
 Definition
-    A *skew* is a feature of sample where more data is *clustered* on one side of the sample. We say such data are "*skewed*", or that it exhibits "*skewness*". 
+    A *skew* is a feature of sample where more data is *clustered* on one side of the sample than the other. We say such data are "*skewed*", or that it exhibits "*skewness*". 
 
 A *skewed* distribution has *tails*, indicating the distribution is not symmetric (*asymmetric*). Individuals drawn from a *skewed* distribution are more likely to have extreme values. By "*extreme*" we mean values outside of the intervals where the majority of the distribution lies. 
 
@@ -440,7 +465,45 @@ Example
 Ogives
 ======
 
-TODO 
+An *ogive* is a histogram of the *cumulative frequency*. The difference between *frequency* and *cumulative frequency* is slight, but potent.
+
+Frequency
+    :math:`f(x_i)`
+
+    The number of times an observation :math:`x_i` occurs in a sample.
+
+Cumulative Frequency
+    :math:`F(x_i)`
+
+    The number of times an observation *less than or equal to* :math:`x_i` occurs in a sample.
+
+Notice, by definition,
+
+.. math::
+
+    F(x_i) = \sum^{x_i}_{x_j = x_1} f(x_j)
+
+.. warning::
+
+    Be mindful of the *indices* in the summation. This summation says "*add up all the frequencies up to a certain observation* :math:`x_i`".
+
+In order to construct an *ogive* or a *cumulative frequency histogram*, we first have to find the *cumulative frequency distribution*.
+
+Recall the *frequency distribution* created in the :ref:`ungrouped_frequency_distributions` section. The *cumulative frequency* of this distribution can be found by adding another column :math:`F(x_i)` that sums up the the individual frequencies of all the classes up to that class,
+
++---------------------------+----------------+------------------------+
+| Class Limits              | :math:`f(x_i)` | :math:`F(x_i)`         |
++---------------------------+----------------+------------------------+
+| :math:`5.3 <= x_i < 5.5`  | 3              | 3                      |
++---------------------------+----------------+------------------------+
+| :math:`5.5 <= x < 5.7`    | 2              | 5 = 2 + 3              |
++---------------------------+-----------------------------------------+
+| :math:`5.7 <= x < 5.9`    | 4              | 9 = 4 + 2 + 3          |
++---------------------------+----------------+------------------------+
+| :math:`5.9 <= x < 6.1`    | 2              | 11 = 2 + 4 + 2 + 3     |
++---------------------------+----------------+------------------------+
+| :math:`6.1 <= x <= 6.3`   | 1              | 12 = 1 + 2 + 4 + 2 + 3 |
++---------------------------+----------------+------------------------+
 
 .. plot:: assets/plots/histograms/histogram_and_ogive.py
 
@@ -449,16 +512,13 @@ TODO
     
     Your book's authors call these types of graphs *ogives*. Be aware, you will almost never see these graphs referred to by that term. In practice, they are almost always called *cumulative frequency distributions*.
 
-Construction
-------------
-
-1. Find the :ref:`relative frequency distribution <frequency_distributions>`
-
 
 Distribution Shapes
 -------------------
 
-TODO 
+All *cumulative frequency histograms* (*ogives*) are *monotonic*. A *monotonic* functions is *non-decreasing*. Another way of saying *non-decreasing* is to say "*always increases or stays the same*". The reason for this should be clear: we are always adding quantities to the cumulative frequency as :math:`x_i` increases. The *cumulative frequency* never *decreases*. 
+
+Thus, it can sometimes be difficult to discern any features of the distribution from the cumulative frequency histogram. Nevertheless, closer inspection reveals a few things we can infer.
 
 Uniform
 *******

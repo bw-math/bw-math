@@ -44,7 +44,45 @@ Symbolic Expression
     :math:`f(x_i)`
 
 Definition
-    The number of times a particular observation occurs in a sample of data.
+    The number of times a particular observation :math:`x_i` occurs in a sample of data.
+
+.. _relative_frequency:
+
+Relative Frequency
+------------------
+
+Symbolic Expression
+    :math:`r(x_i)`
+
+Definition
+    The *percentage* of times a particular observation :math:`x_i` occurs in a sample of data.
+
+Note by definition, in a sample of *n* observations,
+
+.. math::
+
+    r(x_i) = \frac{f(x_i)}{n}
+
+Cumulative Frequency 
+--------------------
+
+Symbolic Expression 
+    :math:`F(x_i)`
+
+Definition
+    The number of times an observation *less than of equal to* :math:`x_i` occurs in a sample of data.
+
+Note the relation between *frequency* and *cumulative frequency*,
+
+.. math::
+
+    F(x_i) = \sum^{x_i}_{x_j = x_1} f(x_j)
+
+Also note by definition,
+
+.. math::
+
+    F(max(S)) = n
 
 .. _minimum:
 
@@ -53,6 +91,10 @@ Minimum
 
 Symbolic Expression 
     :math:`min(\{ x_i \})`
+
+    :math:`min(S)`
+    
+    :math:`x_{min}`
 
 Definition
     The smallest value in a sample of observations.
@@ -66,6 +108,8 @@ Symbolic Expression
     :math:`max(\{ x_i \})`
 
     :math:`max(S)`
+
+    :math:`x_{max}`
 
 Definition
     The largest value in a sample of observations

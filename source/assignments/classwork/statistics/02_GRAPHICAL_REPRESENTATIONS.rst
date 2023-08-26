@@ -68,7 +68,7 @@ The following table lists the top 20 **Twitter** users by follower count (as of 
 
 Use this information to answer the following questions.
 
-1. Construct a frequency distribution with 8 classes.
+1. Construct a frequency distribution for the *follower count* of the top twenty Twitter users. Use 8 classes for this sample of data.
 
     a. Find the class width. 
 
@@ -76,12 +76,42 @@ Use this information to answer the following questions.
 
     c. Find the class frequencies. 
 
-    D
+    d. Using the frequency distribution, create a histogram of the sample. Sketch the histogram in your classwork notebook. Make sure to label the axes and classes.
+
+    e. What is the shape of this distribution? What does this tell you about this sample? 
+
+2. Construct a cumulative frequency distribution for the 8 classes.
+
+    a. Using the *cumulative* frequency distribution, create a histogram of the sample. Sketch the cumulative histogram in your classwork notebook. Make sure to label the axes and classes.
+
+    b. Based on this histogram and distribution, what percent of the distribution is below the seventh class? Justify your answer.
+
+    c. Based on this histogram and distribution, estimate the median of this distribution. Justify your answer.
+
+    d. Based on this histogram and distribution, estimate the 25 :sup:`th` percentile of this distribution, i.e. find the class where at least 25 percent of the distribution is *below* it.  
+
+3. Construct a boxplot using the *follower count* for the top twenty Twitter users. 
+
+    a. Sketch the boxplot in your classwork notebook. Be sure to label the axes. In addition, label the points on the graph that correspond to the five-number summary: minimum, 1 :sup:`th` quartile, median, 2 :sup:`nd` quartile, maximum. 
+
+    b. Based on this boxplot, what is the *75* :sup:`th` percentile of this distribution?
+
+    c. Based on this box plot, what is the *25* :sup:`th` percentile of this distribution?
+
+    d. Compare your answers in part *a* and *b* with your answers to *#2b* and *#2d*. Why are these answers different? Which answer is more accurate? Why?
+
+    e. Is the median of this distribution closer to the minimum value of the sample or the maximum value of the sample?
+
+4. Using *follower count* as the *response variable* and *tweet count* as the *indicator variable*, create a scatter plot of *follower count* vs. *tweet count*.
+
+    a. Sketch the scatter plot in your classwork notebook. Label your axes. 
+
+    b. Describe the type of correlation seen in this graph. What does this tell you about the relationship between *follower count* and *tweet count*?
 
 A.P. Exam Practice
 ------------------
 
-?. **2021, Free Response, #5a-b** A research center conducted a national survey about teenage behavior. Teens were asked whether they had consumed a soft drink in the past week. The following table shows the counts for three independent random samples from major cities.
+5. **2021, Free Response, #5a-b** A research center conducted a national survey about teenage behavior. Teens were asked whether they had consumed a soft drink in the past week. The following table shows the counts for three independent random samples from major cities.
 
 +-------+-----------+---------+-----------+-------+
 |       | Baltimore | Detroit | San Diego | Total |
@@ -100,30 +130,61 @@ A.P. Exam Practice
     c. Which city had the smallest proportion of teens who consumed a soft drink in the previous week? Determine the value of the proportion.
 
 
-?. **2021, Free Response #6** Attendance at games for a certain baseball team is being investigated by the team owner. The following boxplots summarize the attendance, measured as average number of attendees per game, for 47 years of the team's existence. The boxplots include the 30 years of games played in the old stadium and the 17 years played in the new stadium.
+6. **2021, Free Response #6** Attendance at games for a certain baseball team is being investigated by the team owner. The following boxplots summarize the attendance, measured as average number of attendees per game, for 47 years of the team's existence. The boxplots include the 30 years of games played in the old stadium and the 17 years played in the new stadium.
 
 .. image:: ../../../assets/imgs/classwork/2021_apstats_frp_06a.png
     :align: center
 
-a. Compare the distributions of average attendance between the old and new stadiums.
+Use this graph to answer the following question,
+
+    a. Compare the distributions of average attendance between the old and new stadiums.
 
 The following scatterplot shows average attendance versus year,
 
 .. image:: ../../../assets/imgs/classwork/2021_apstats_frp_06b.png
+    :align: center
 
-b. Compare the trends in average attendance over time between the old and new stadium.
+Use this graph to answer the following question,
+
+    b. Compare the trends in average attendance over time between the old and new stadium.
 
 Consider the following scatterplots,
 
 .. image:: ../../../assets/imgs/classwork/2021_apstats_frp_06c.png
+    :align: center
 
-c. Graph I shows the average attendance versus number of games won for each year. Describe the relationship between the variables.
+Use these graphs to answer the following questions,
 
-d. Graph II shows the same information as Graph I, but also indicates the old and new stadiums. Does Graph II suggest that the rate at which attendance changes as number of games won increases is different in the new stadium compared to the old stadium? Explain your reasoning.
+    c. Graph I shows the average attendance versus number of games won for each year. Describe the relationship between the variables.
 
-e. Consider the three variables: number of games won, year, and stadium. Based on the graphs, explain how one of those variables could be a confounding variable in the relationship between average attendance and the other variables.
+    d. Graph II shows the same information as Graph I, but also indicates the old and new stadiums. Does Graph II suggest that the rate at which attendance changes as number of games won increases is different in the new stadium compared to the old stadium? Explain your reasoning.
+
+    e. Consider the three variables: number of games won, year, and stadium. Based on the graphs, explain how one of those variables could be a confounding variable in the relationship between average attendance and the other variables.
 
 
-?. **2018, Free Response #5a-b** (TODO)
+7. **2018, Free Response #5a-b** The following histograms summarize the teaching year for the teachers at two high schools, A and B.
 
-?. **2017, Free Response #1**
+.. image:: ../../assets/imgs/classwork/2018_apstats_frp_05.png
+    :align: center
+
+Teaching year is recorded as an integer, with first-year teachers recorded as 1, second-year teachers recorded as 2, and so on. Both sets of data have a mean teaching year of 8.2, with data recorded from 200 teachers at High School A and 221 teachers at High School B. On the histograms, each interval represents possible integer values from the left endpoint up to but not including the right endpoint.
+
+    a. The median teaching year for one high school is 6, and the median teaching year for the other high school is 7. Identify which high school has each median and justify your answer.
+
+    b. An additional 18 teachers were not included with the data recorded from the 200 teachers at High School A. The mean teaching year of the 18 teachers is 2.5. What is the mean teaching year for all 218 teachers at High School A?
+
+8. **2017, Free Response #1**
+
+9. **2017, Free Response #4** The chemicals in clay used to make pottery can differ depending on the geographical region where the clay originated. Sometimes, archaeologists use a chemical analysis of clay to help identify where a piece of pottery originated. Such an analysis measures the amount of a chemical in the clay as a percent of the total weight of the piece of pottery. The boxplots below summarize analyses done for three chemicals—X, Y, and Z—on pieces of pottery that originated at one of three sites: I, II, or III.
+
+.. image:: ../../assets/imgs/classwork/2017_apstats_frp_04.png
+
+Use this information to answer the following questions.
+
+    a. For chemical Z, describe how the percents found in the pieces of pottery are similar and how they differ among the three sites.
+
+    b. Consider a piece of pottery known to have originated at one of the three sites, but the actual site is not known.
+
+        i. Suppose an analysis of the clay reveals that the sum of the percents of the three chemicals X, Y, and Z is 20.5%. Based on the boxplots, which site—I, II, or III—is the most likely site where the piece of pottery originated? Justify your choice.
+
+        ii. Suppose only one chemical could be analyzed in the piece of pottery. Which chemical—X, Y, or Z— would be the most useful in identifying the site where the piece of pottery originated? Justify your choice.
