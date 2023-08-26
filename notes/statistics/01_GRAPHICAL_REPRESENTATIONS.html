@@ -446,26 +446,26 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ogives">Ogives</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construction">Construction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Distribution Shapes</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Uniform</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Normal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Bimodal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Skewed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Distribution Shapes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Uniform</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Normal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Bimodal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Skewed</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Variations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Variations</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stacked-bar-chart">Stacked Bar Chart</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boxplots">Boxplots</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Construction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Distribution Shapes</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Uniform</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Normal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Bimodal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Skewed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Construction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Distribution Shapes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Uniform</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Normal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Bimodal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Skewed</a></li>
 </ul>
 </li>
 </ul>
@@ -477,8 +477,8 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-series">Time Series</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Positive Correlation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Negative Correlation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Positive Correlation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Negative Correlation</a></li>
 </ul>
 </li>
 </ul>
@@ -557,8 +557,8 @@ document.write(`
 <section id="grouped-distributions">
 <span id="grouped-frequency-distributions"></span><h3>Grouped Distributions<a class="headerlink" href="#grouped-distributions" title="Permalink to this headline">#</a></h3>
 <p>Ungrouped distributions can get cumbersome when the <a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html#range"><span class="std std-ref">Range</span></a> of the data is very large or when there are a large number of unique observations drawn from a continuous population. For example, consider the following dataset which represents the eruption length and period between eruptions for the famous geyser <a class="reference external" href="https://en.wikipedia.org/wiki/Old_Faithful">Old Faithful</a> at Yellowstone National Park in Wymoing.</p>
-<table class="table" id="id22">
-<caption><span class="caption-text">Old Faithful Eruption and Waiting Times</span><a class="headerlink" href="#id22" title="Permalink to this table">#</a></caption>
+<table class="table" id="id24">
+<caption><span class="caption-text">Old Faithful Eruption and Waiting Times</span><a class="headerlink" href="#id24" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -620,12 +620,16 @@ document.write(`
 <p>Attempting to create an ungrouped distribution of this data would be a futile effort. Therefore, the standard approach with datasets like this is to create an <em>grouped</em> frequency distribution.</p>
 <section id="steps">
 <h4>Steps<a class="headerlink" href="#steps" title="Permalink to this headline">#</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The book introduces the additional concept of <em>class boundaries</em> which are rarely used in practice. The process for finding a <em>grouped frequency distribution</em> given below is more in line with the standard methods used in real-world applications.</p>
+</div>
 <p>If you are given a sample of <em>n</em> data points <img class="math" src="../../_images/math/d64d0815fc8a6ccc2f430c1c7db6e5edd8053a47.png" alt="S = \{ x_1, x_2, ... , x_n \}"/>, then the steps for finding a <em>grouped</em> frequency distribution are as follows,</p>
 <ol class="arabic simple">
 <li><p>Find the range of the data set.</p></li>
 </ol>
 <div class="math">
-<p><img src="../../_images/math/755b5438dd4b8049e5b11dab4d5e4b09c5113a43.png" alt="R = max(\{ x_i \}) - min(\{ x_i \})"/></p>
+<p><img src="../../_images/math/f469b30338983974d58ac040712500e6d7afa080.png" alt="R = max(S) - min(S)"/></p>
 </div><ol class="arabic simple" start="2">
 <li><p>Choose a number of classes. Typically between 5  and 20, depending on the size and type of data.</p></li>
 <li><p>Find the class width. Round up, if necessary.</p></li>
@@ -640,34 +644,45 @@ document.write(`
 </div><p>And the <em>rounding</em> would be implied.</p>
 </div>
 <ol class="arabic simple" start="4">
-<li><p>Find the lower and upper class limits <strong>LL</strong><sub>i</sub> and <strong>UL</strong><sub>i</sub> for each <em>i</em> up to <em>n</em>, i.e. for each class.</p></li>
+<li><p>Find the lower and upper class limits <strong>LL</strong><sub>i</sub> and <strong>UL</strong><sub>i</sub>, for each <em>i</em> up to <em>n</em>, i.e. for each class, by adding multiples of the class width to the sample minimum.</p></li>
 </ol>
 <div class="math">
 <p><img src="../../_images/math/bcdf4d4bb8437b92637767040b83e3ad6ff49338.png" alt="LL_i = min(S) + (i-1) \cdot w"/></p>
 </div><div class="math">
-<p><img src="../../_images/math/39cd13940c1bbc488eed47619fcf8c8499ef3a36.png" alt="UL_i = min(s) + i \cdot w - 1"/></p>
+<p><img src="../../_images/math/2f7f9461198b83b5f141b19882b5e0aacdb0ed96.png" alt="UL_i = min(S) + i \cdot w"/></p>
 </div><div class="math">
 <p><img src="../../_images/math/4bff2530224fae4b63f126ec9137d95e9b20a03a.png" alt="i = 1, 2, ... , n"/></p>
-</div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The upper limit is subtracted by 1 so the lower limit of the next class doesn’t overlap.</p>
-</div>
-<ol class="arabic simple" start="5">
-<li><p>Find the lower and upper class boundaries <strong>LB</strong><sub>i</sub> and <strong>UB</strong><sub>i</sub> for each <em>i</em> up to <em>n</em>, i.e. for each class,</p></li>
-</ol>
-<div class="math">
-<p><img src="../../_images/math/3dcf5fe96c36f928aece7e43df80f22f0e006c0d.png" alt="LB_i = LL_i - 0.5"/></p>
-</div><div class="math">
-<p><img src="../../_images/math/3fe3763e596608f62e14e8d7c8ea44f0a8642037.png" alt="UB_i = UL_i + 0.5"/></p>
-</div><div class="math">
-<p><img src="../../_images/math/4bff2530224fae4b63f126ec9137d95e9b20a03a.png" alt="i = 1, 2, ... , n"/></p>
-</div><div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>This step is <em>only</em> really necessary for continuous data. In the previous step, we subtracted the upper limit of each class by 1, so there are now gaps in the interval. In other words, with a class width of <em>5</em> and starting a minimum <img class="math" src="../../_images/math/251cabcc86d67e705d39d0bd06b27509691845c9.png" alt="min(S)=100"/>, we might end up with intervals like 100 - 104, 105 - 109, 110 - 114, etc. We need to ensure the classes actually meet so we divide up the 1 we subtracted and distributed it evenly on either side of the boundary.</p>
-</div>
-<ol class="arabic simple" start="6">
+</div><ol class="arabic simple" start="5">
 <li><p>Sort the data set into classes and tally up the frequency of each class.</p></li>
 </ol>
+<table class="table">
+<colgroup>
+<col style="width: 51%" />
+<col style="width: 49%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Class Limits</p></td>
+<td><p>f(x)</p></td>
+</tr>
+<tr class="row-even"><td><p><img class="math" src="../../_images/math/195c9aab7232f2e61d55d906a9477066d7cdeda9.png" alt="LL_1 &lt;= x &lt; UL_1"/></p></td>
+<td><p><img class="math" src="../../_images/math/b18e33c6ebbade54737b68fa53d32f4b40e3ec41.png" alt="f(LL_1 &lt;= x &lt; UL_1)"/></p></td>
+</tr>
+<tr class="row-odd"><td><p><img class="math" src="../../_images/math/f2d2f3eb061e1b260fdfe532a9fe6d7d91a862b7.png" alt="LL_2 &lt;= x &lt; UL_2"/></p></td>
+<td><p><img class="math" src="../../_images/math/baccca04b590947a96c345a5cc008f86778c2fa8.png" alt="f(LL_2 &lt;= x &lt; UL_2)"/></p></td>
+</tr>
+<tr class="row-even"><td><p>…</p></td>
+<td><p>…</p></td>
+</tr>
+<tr class="row-odd"><td><p><img class="math" src="../../_images/math/6504d781579901d0ad4f1cef889997f37992be3c.png" alt="f(LL_n &lt;= x &lt;= UL_n)"/></p></td>
+<td><p><img class="math" src="../../_images/math/4ab0241055c1f15e5298a91018e6ab5f34b91e79.png" alt="f(LL_n) &lt;= x &lt; UL_n"/></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Note each class is inclusive, <img class="math" src="../../_images/math/ed4d611b7ea2cfff39ae782d1cec44893c762308.png" alt="&lt;="/>, with respect to the <em>lower limit</em>, while it is strictly exclusive, <img class="math" src="../../_images/math/c054424db5c00c0342089505e233bb53b9d0ee75.png" alt="&lt;"/>, with respect to the <em>upper limit</em>. This is so the classes are <em>mutually exclusive</em>, or to the say the same thing in a different way, a single observation cannot be assigned to two different classes; Every individual can belong to <em>only</em> one class.</p>
+<p>This applies to every class except the last, which must include the <em>upper limit</em>. Otherwise, the distribution would be missing a single value: the maximum value of the sample.</p>
+</div>
 <dl>
 <dt>Example</dt><dd><p>Suppose you measure the height of everyone in your class and get the following sample of data, where each observation in the data set is measured in feet,</p>
 <div class="math">
@@ -675,12 +690,77 @@ document.write(`
 </div><p>Find the grouped frequency distribution for this sample of data using <img class="math" src="../../_images/math/896b64445e9dec448da50ed8483c1139678f9e6d.png" alt="n = 5"/> classes.</p>
 </dd>
 </dl>
-<p>TODO</p>
+<p>First we find the sample range,</p>
+<div class="math">
+<p><img src="../../_images/math/f54f89d50a95b85fa012772a7bd49cbd99ad335e.png" alt="R = max(S) - min(S) = 6.3 - 5.3 = 1.0"/></p>
+</div><p>We divide this interval into 5 sub-intervals, called <a href="#id3"><span class="problematic" id="id4">*</span></a>classes,</p>
+<div class="math">
+<p><img src="../../_images/math/425bfe43700bcf2561f8b39655fc642cd7411024.png" alt="w = \frac{1.0}{5} = 0.20"/></p>
+</div><p>Then the lower class limits and upper class limits are found by adding successive multiples of the class width to the minimum value of the sample.</p>
+<p>The limits of the first class are given by,</p>
+<div class="math">
+<p><img src="../../_images/math/a3cd7eb95f0b1e41c43b2dee075408875f557e8d.png" alt="LL_1 = 5.3 + 0 \cdot 0.20 = 5.3"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/20208a53feea9f46d0a0fcaaba527078a7d47f66.png" alt="UL_1 = 5.3 + 1 \cdot 0.20 = 5.5"/></p>
+</div><p>The limits of the second class are given by,</p>
+<div class="math">
+<p><img src="../../_images/math/c2381ca1d5597d9175a27646b82ab35f3ac00347.png" alt="LL_2 = 5.3 + 1 \cdot 0.20 = 5.5"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/5262ef3aedd15a5b2b357ab08dd074e46b7d4d85.png" alt="UL_2 = 5.3 + 2 \cdot 0.2 = 5.7"/></p>
+</div><p>The limits of the third class are given by,</p>
+<div class="math">
+<p><img src="../../_images/math/753e8e05ea4f2364fccf13aa72401aa7669dcdab.png" alt="LL_3 = 5.3 + 2 \cdot 0.20 = 5.7"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/db1c7b98306c8e2a85257671fcacb3c23d61b8ba.png" alt="UL_3 = 5.3 + 3 \cdot 0.2 = 5.9"/></p>
+</div><p>The limits of fourth class are given by,</p>
+<div class="math">
+<p><img src="../../_images/math/1f043e188f1349e66c4ee5597cfae0e15c645a2b.png" alt="LL_4 = 5.3 + 3 \cdot 0.20 = 5.9"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/b66dae228fa43e9e68499646b7349f5f78c3d9ab.png" alt="UL_4 = 5.3 + 4 \cdot 0.2 = 6.1"/></p>
+</div><p>The limits of the fifth class are given by,</p>
+<div class="math">
+<p><img src="../../_images/math/c411afadd43c108d5bc760385f91ee2ce7d15fe9.png" alt="LL_5 = 5.3 + 4 \cdot 0.20 = 6.1"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/f6104113ff9f691d846786601b024150e4b0dbdd.png" alt="UL_5 = 5.3 + 5 \cdot 0.2 = 6.3"/></p>
+</div><p>Using this limits, we can construct the table,</p>
+<table class="table">
+<colgroup>
+<col style="width: 81%" />
+<col style="width: 19%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Class Limits</p></td>
+<td><p>f(x)</p></td>
+</tr>
+<tr class="row-even"><td><p><img class="math" src="../../_images/math/9bbe043188b0e5fd6baa13957d16b97b25c65343.png" alt="5.3 &lt;= x &lt; 5.5"/></p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p><img class="math" src="../../_images/math/3c1d94a9c19e9530daf47aa059a3acf5b108b777.png" alt="5.5 &lt;= x &lt; 5.7"/></p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p><img class="math" src="../../_images/math/4bd01b4af339e44daab9c3bbe746ee04dcd8af04.png" alt="5.7 &lt;= x &lt; 5.9"/></p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p><img class="math" src="../../_images/math/c8e90d129c6307a52e66a2611ac5f979ce687f4f.png" alt="5.9 &lt;= x &lt; 6.1"/></p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p><img class="math" src="../../_images/math/a3ea9bff65a78b0bb5554ce7dbd0b30d93e2f975.png" alt="6.1 &lt;= x &lt;= 6.3"/></p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>A quick check to verify the <em>grouped frequency distribution</em> has been constructed correctly is to sum the frequencies and ensure they total up to the number of samples.</p>
+<p>In this case, the total number of samples is 12 and,</p>
+<div class="math">
+<p><img src="../../_images/math/c1795deea7e3364faad015fceca101a4540503d9.png" alt="12 = 3 + 2 + 4 + 2 + 1"/></p>
+</div></div>
 </section>
 </section>
 </section>
 <section id="histograms">
-<span id="id3"></span><h2>Histograms<a class="headerlink" href="#histograms" title="Permalink to this headline">#</a></h2>
+<span id="id5"></span><h2>Histograms<a class="headerlink" href="#histograms" title="Permalink to this headline">#</a></h2>
 <p>A <em>histogram</em> is a graphical representation of a <a class="reference internal" href="#frequency-distributions"><span class="std std-ref">frequency distribution</span></a>. The <em>classes</em> or <em>bins</em> are plotted on the <em>x-axis</em> against the frequency of each <em>class</em> on the <em>y-axis</em>.</p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/222fa3465e96c588fa760b265b98feec/histogram_random.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/47eb0d4ee1a9dff517e8e86ed5dc53c7/histogram_random.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/5fefdae5beeef8dac0a5278361105fe5/histogram_random.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/95464f689c054ccff8a0a32c47f5af98/histogram_random.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
@@ -690,11 +770,20 @@ document.write(`
 <span id="histogram-variatians"></span><h3>Variations<a class="headerlink" href="#variations" title="Permalink to this headline">#</a></h3>
 <p>A basic <em>histogram</em> can be modified to accomodate a variety of scenarios, depending on the specifics of the problem. In each case below, the sample’s frequency distribution is used as the basis for constructing the graph.</p>
 <section id="dot-plots">
-<span id="id4"></span><h4>Dot Plots<a class="headerlink" href="#dot-plots" title="Permalink to this headline">#</a></h4>
-<p>Instead bars with differing heights, dot plots use <em>stacked dots</em> to represent the number of times each observation occurs, i.e. its frequency.</p>
+<span id="id6"></span><h4>Dot Plots<a class="headerlink" href="#dot-plots" title="Permalink to this headline">#</a></h4>
+<p>Instead bars with differing heights, <em>dot plots</em> use <em>stacked dots</em> to represent the number of times each observation occurs, i.e. its frequency.</p>
+<p>Suppose a quiz with nine questions was administered to an A.P. Statistics course. The following sample represents the number of questions answered correctly by each student in this class,</p>
+<div class="math">
+<p><img src="../../_images/math/f408d6770e9def5962fdca748f1122d61b1e0f45.png" alt="S = \{ 3, 3, 4, 4, 4, 5, 5, 6, 6, 6, 6, 6, 6, 7, 7, 9 \}"/></p>
+</div><p>Then the dot plot is constructed by drawing a number of dots above a point on the number line that corresponds to the <em>frequency</em> of that observation.</p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/efcffe134cff6c4384959dff6fcc614f/dot_plot.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/7c4b87c96e84437293de8e0708b6ec26/dot_plot.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/11cf7b240d9ef8a01b1a36f8bc01d950/dot_plot.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/0a279d8fc41b974a180599a6612fe81c/dot_plot.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/dot_plot.png" class="plot-directive" src="../../_images/dot_plot.png" />
+</figure>
+<p><em>Dot plots</em> are a quick and easy to represent a sample of data graphically.</p>
 </section>
 <section id="stem-leaf-plots">
-<span id="id5"></span><h4>Stem-Leaf Plots<a class="headerlink" href="#stem-leaf-plots" title="Permalink to this headline">#</a></h4>
+<span id="id7"></span><h4>Stem-Leaf Plots<a class="headerlink" href="#stem-leaf-plots" title="Permalink to this headline">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="relative-frequency-plots">
@@ -732,7 +821,7 @@ document.write(`
 </section>
 </section>
 <section id="distribution-shapes">
-<span id="id6"></span><h3>Distribution Shapes<a class="headerlink" href="#distribution-shapes" title="Permalink to this headline">#</a></h3>
+<span id="id8"></span><h3>Distribution Shapes<a class="headerlink" href="#distribution-shapes" title="Permalink to this headline">#</a></h3>
 <p>The shape of the histogram can tell us a lot about the distribution of the sample.</p>
 <section id="uniform">
 <span id="uniform-shape"></span><h4>Uniform<a class="headerlink" href="#uniform" title="Permalink to this headline">#</a></h4>
@@ -817,7 +906,7 @@ document.write(`
 </section>
 </section>
 <section id="ogives">
-<span id="id7"></span><h2>Ogives<a class="headerlink" href="#ogives" title="Permalink to this headline">#</a></h2>
+<span id="id9"></span><h2>Ogives<a class="headerlink" href="#ogives" title="Permalink to this headline">#</a></h2>
 <p>TODO</p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/be960a1a9d72d166ce17d8208d6707ed/histogram_and_ogive.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/500a29e7a043cad86f0c264c6126261f/histogram_and_ogive.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/c2c76461417113eba6badd5a257d1fe2/histogram_and_ogive.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/c72dd39be56a746dc1b745e580f605c3/histogram_and_ogive.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
@@ -833,32 +922,32 @@ document.write(`
 <li><p>Find the <a class="reference internal" href="#frequency-distributions"><span class="std std-ref">relative frequency distribution</span></a></p></li>
 </ol>
 </section>
-<section id="id8">
-<h3>Distribution Shapes<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h3>
+<section id="id10">
+<h3>Distribution Shapes<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
-<section id="id9">
-<h4>Uniform<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h4>
+<section id="id11">
+<h4>Uniform<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/cf9d84732060210e385e422e9e43e2da/ogive_uniform.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/9cfe1c940252628fb8143bece2808ca5/ogive_uniform.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/4f8361fd5cfbc65111c0db67b8344246/ogive_uniform.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/ec8a76468c148a0a828865af5f6705e5/ogive_uniform.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/ogive_uniform.png" class="plot-directive" src="../../_images/ogive_uniform.png" />
 </figure>
 </section>
-<section id="id10">
-<h4>Normal<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h4>
+<section id="id12">
+<h4>Normal<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/6d9c2688f6b56401b31ba732b2a3f093/ogive_normal.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/1ba699d407e46a10113569128dee6591/ogive_normal.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/715b349d56782eca8b0a92e86423fa2f/ogive_normal.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/df6567eedb419390f4f287397da6cfcf/ogive_normal.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/ogive_normal.png" class="plot-directive" src="../../_images/ogive_normal.png" />
 </figure>
 </section>
-<section id="id11">
-<h4>Bimodal<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h4>
+<section id="id13">
+<h4>Bimodal<a class="headerlink" href="#id13" title="Permalink to this headline">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/b0866aec12ec26c3f271fc5be0f328f2/ogive_bimodal.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/8802afae3ca2b3b1d94aef013b1b5276/ogive_bimodal.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/19f53fcf9d5592ba3bd741c300fcdad5/ogive_bimodal.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/100ccf04d87f88304576316e74866755/ogive_bimodal.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/ogive_bimodal.png" class="plot-directive" src="../../_images/ogive_bimodal.png" />
 </figure>
 </section>
-<section id="id12">
-<h4>Skewed<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h4>
+<section id="id14">
+<h4>Skewed<a class="headerlink" href="#id14" title="Permalink to this headline">#</a></h4>
 <dl>
 <dt>Skewed Right</dt><dd><p>(<a class="reference download internal" download="" href="../../_downloads/3c63bdcc71c5f8b435590acfae2531f6/ogive_skewed_right.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/574b4ab261cc6ff4afa502e43f7ece41/ogive_skewed_right.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/2dc62a8ac5ea2b9c5ff40ea3ff6237ed/ogive_skewed_right.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/bd7f1de19273d0872ee096ea7d39eea2/ogive_skewed_right.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
@@ -873,8 +962,8 @@ document.write(`
 </dl>
 </section>
 </section>
-<section id="id13">
-<h3>Variations<a class="headerlink" href="#id13" title="Permalink to this headline">#</a></h3>
+<section id="id15">
+<h3>Variations<a class="headerlink" href="#id15" title="Permalink to this headline">#</a></h3>
 <section id="stacked-bar-chart">
 <h4>Stacked Bar Chart<a class="headerlink" href="#stacked-bar-chart" title="Permalink to this headline">#</a></h4>
 </section>
@@ -883,8 +972,8 @@ document.write(`
 <section id="boxplots">
 <h2>Boxplots<a class="headerlink" href="#boxplots" title="Permalink to this headline">#</a></h2>
 <p>While <a class="reference internal" href="#histograms"><span class="std std-ref">Histograms</span></a> and <a class="reference internal" href="#ogives"><span class="std std-ref">Ogives</span></a> provide a wealth of information about the sample distribution, they do not give us the whole picture.</p>
-<section id="id14">
-<h3>Construction<a class="headerlink" href="#id14" title="Permalink to this headline">#</a></h3>
+<section id="id16">
+<h3>Construction<a class="headerlink" href="#id16" title="Permalink to this headline">#</a></h3>
 <ol class="arabic simple">
 <li><p>Find the maximum observation.</p></li>
 <li><p>Find the 75 <sup>th</sup> percentile (<em>third quartile</em>)</p></li>
@@ -897,32 +986,32 @@ document.write(`
 <p>The maximum observation, the third quartile, the median, the firsrt quartile and the minimum are sometimes collectively known as the <em>five-number summary</em>.</p>
 </div>
 </section>
-<section id="id15">
-<h3>Distribution Shapes<a class="headerlink" href="#id15" title="Permalink to this headline">#</a></h3>
+<section id="id17">
+<h3>Distribution Shapes<a class="headerlink" href="#id17" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
-<section id="id16">
-<h4>Uniform<a class="headerlink" href="#id16" title="Permalink to this headline">#</a></h4>
+<section id="id18">
+<h4>Uniform<a class="headerlink" href="#id18" title="Permalink to this headline">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/db6e44fc604b742c48b88ead81dd19fa/boxplot_uniform.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/971caf930d94da07d5a485c9dc3f95ad/boxplot_uniform.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/66eeb1b0f07d225ec0c24d97ef744c3f/boxplot_uniform.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/ee3e20ae9e5f6a4950d1fbd0c30d5df8/boxplot_uniform.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/boxplot_uniform.png" class="plot-directive" src="../../_images/boxplot_uniform.png" />
 </figure>
 </section>
-<section id="id17">
-<h4>Normal<a class="headerlink" href="#id17" title="Permalink to this headline">#</a></h4>
+<section id="id19">
+<h4>Normal<a class="headerlink" href="#id19" title="Permalink to this headline">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/96f6eae3fd5f0f31966bfdd55748b732/boxplot_normal.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/02cd14e26dd9dfd968ebaac6deb6edc0/boxplot_normal.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/e86491f6d04807b92f3a5b3763800529/boxplot_normal.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/8a8e9884227a1ed601c1cc58abef4988/boxplot_normal.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/boxplot_normal.png" class="plot-directive" src="../../_images/boxplot_normal.png" />
 </figure>
 </section>
-<section id="id18">
-<h4>Bimodal<a class="headerlink" href="#id18" title="Permalink to this headline">#</a></h4>
+<section id="id20">
+<h4>Bimodal<a class="headerlink" href="#id20" title="Permalink to this headline">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/4e799bf2a97cb3c4ce13821a17ff3dff/boxplot_bimodal.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/2cb3ed20748a269ba8086433fd6c188c/boxplot_bimodal.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d9ab1cbe308ebca584bc55d4049d8e2a/boxplot_bimodal.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/700a64d7086840cd43c817bb051414d7/boxplot_bimodal.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/boxplot_bimodal.png" class="plot-directive" src="../../_images/boxplot_bimodal.png" />
 </figure>
 </section>
-<section id="id19">
-<h4>Skewed<a class="headerlink" href="#id19" title="Permalink to this headline">#</a></h4>
+<section id="id21">
+<h4>Skewed<a class="headerlink" href="#id21" title="Permalink to this headline">#</a></h4>
 <p><strong>Skewed Right</strong></p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/45929d2918dc97fa5461a2450e2f6dd3/boxplot_skewed_right.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f5cf367c6ae66936ff746693f5d760f3/boxplot_skewed_right.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/271e2bb106dda2d3ba7dcda45402faa9/boxplot_skewed_right.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/788fae045977a9401a6af84e4274e18c/boxplot_skewed_right.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
@@ -962,16 +1051,16 @@ document.write(`
 </section>
 <section id="time-series">
 <h2>Time Series<a class="headerlink" href="#time-series" title="Permalink to this headline">#</a></h2>
-<section id="id20">
-<h3>Positive Correlation<a class="headerlink" href="#id20" title="Permalink to this headline">#</a></h3>
+<section id="id22">
+<h3>Positive Correlation<a class="headerlink" href="#id22" title="Permalink to this headline">#</a></h3>
 <p><strong>Positive Trend</strong></p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/32667871ec4f51c6a0a9f81f9731ccea/timeseries_positive_trend.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/8a33cdbf487ccb2f9918e389418a459f/timeseries_positive_trend.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/a9a53241e38c1b97e30139b12788f2cc/timeseries_positive_trend.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/76c355bf66a060c742285e69a42e198d/timeseries_positive_trend.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/timeseries_positive_trend.png" class="plot-directive" src="../../_images/timeseries_positive_trend.png" />
 </figure>
 </section>
-<section id="id21">
-<h3>Negative Correlation<a class="headerlink" href="#id21" title="Permalink to this headline">#</a></h3>
+<section id="id23">
+<h3>Negative Correlation<a class="headerlink" href="#id23" title="Permalink to this headline">#</a></h3>
 <p><strong>Negative Trend</strong></p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/2d343b86e373eff52b9d4b207496176b/timeseries_negative_trend.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/b4105e586cbf07ce38859635050d0759/timeseries_negative_trend.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d5a11697861215f27efbfdf8a36a6253/timeseries_negative_trend.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/5dc8b872c505b84b4320e37781f4ec0e/timeseries_negative_trend.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
@@ -1061,26 +1150,26 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ogives">Ogives</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construction">Construction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Distribution Shapes</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Uniform</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Normal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Bimodal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Skewed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Distribution Shapes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Uniform</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Normal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Bimodal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Skewed</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Variations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Variations</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stacked-bar-chart">Stacked Bar Chart</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boxplots">Boxplots</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Construction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Distribution Shapes</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Uniform</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Normal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Bimodal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Skewed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Construction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Distribution Shapes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Uniform</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Normal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Bimodal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Skewed</a></li>
 </ul>
 </li>
 </ul>
@@ -1092,8 +1181,8 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-series">Time Series</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Positive Correlation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Negative Correlation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Positive Correlation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Negative Correlation</a></li>
 </ul>
 </li>
 </ul>

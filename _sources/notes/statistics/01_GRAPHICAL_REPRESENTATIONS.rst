@@ -42,19 +42,19 @@ Example
 
 An *ungrouped frequency distribtion* is simply a table where each entry represents the :ref:`frequency` of every possible observation,
 
-+---------------+-------+
-|  :math:`x_i`  |  f(x) |
-+===============+=======+
-|     b         |   2   |
-+---------------+-------+
-|     g         |   2   |
-+---------------+-------+
-|     o         |   1   |
-+---------------+-------+
-|     r         |   4   |
-+---------------+-------+
-|       y       |   1   |
-+---------------+-------+
++-------------+------+
+| :math:`x_i` | f(x) |
++=============+======+
+| b           | 2    |
++-------------+------+
+| g           | 2    |
++-------------+------+
+| o           | 1    |
++-------------+------+
+| r           | 4    |
++-------------+------+
+| y           | 1    |
++-------------+------+
 
 Notice the sum of the right hand column totals to the number of observations in the sample, :math:`n = 10`. We summarize this result below,
 
@@ -87,13 +87,17 @@ Attempting to create an ungrouped distribution of this data would be a futile ef
 Steps
 *****
 
+.. note:: 
+
+    The book introduces the additional concept of *class boundaries* which are rarely used in practice. The process for finding a *grouped frequency distribution* given below is more in line with the standard methods used in real-world applications.
+
 If you are given a sample of *n* data points :math:`S = \{ x_1, x_2, ... , x_n \}`, then the steps for finding a *grouped* frequency distribution are as follows,
 
 1. Find the range of the data set. 
 
 .. math::
 
-    R = max(\{ x_i \}) - min(\{ x_i \})
+    R = max(S) - min(S)
 
 2. Choose a number of classes. Typically between 5  and 20, depending on the size and type of data.
 
@@ -113,7 +117,7 @@ If you are given a sample of *n* data points :math:`S = \{ x_1, x_2, ... , x_n \
 
     And the *rounding* would be implied. 
 
-4. Find the lower and upper class limits **LL**:sub:`i` and **UL**:sub:`i` for each *i* up to *n*, i.e. for each class. 
+4. Find the lower and upper class limits **LL**:sub:`i` and **UL**:sub:`i`, for each *i* up to *n*, i.e. for each class, by adding multiples of the class width to the sample minimum.
 
 .. math:: 
     
@@ -121,35 +125,31 @@ If you are given a sample of *n* data points :math:`S = \{ x_1, x_2, ... , x_n \
 
 .. math::
 
-    UL_i = min(s) + i \cdot w - 1
+    UL_i = min(S) + i \cdot w
 
 .. math::
     
     i = 1, 2, ... , n
 
-.. note:: 
+5. Sort the data set into classes and tally up the frequency of each class.
 
-    The upper limit is subtracted by 1 so the lower limit of the next class doesn't overlap. 
-
-5. Find the lower and upper class boundaries **LB**:sub:`i` and **UB**:sub:`i` for each *i* up to *n*, i.e. for each class, 
-
-.. math::
-    
-    LB_i = LL_i - 0.5
-
-.. math::
-    
-    UB_i = UL_i + 0.5
-
-.. math::
-    
-    i = 1, 2, ... , n
++------------------------------+-----------------------------+
+| Class Limits                 | f(x)                        |
++------------------------------+-----------------------------+
+| :math:`LL_1 <= x < UL_1`     | :math:`f(LL_1 <= x < UL_1)` |
++------------------------------+-----------------------------+
+| :math:`LL_2 <= x < UL_2`     | :math:`f(LL_2 <= x < UL_2)` |
++------------------------------+-----------------------------+
+| ...                          | ...                         |
++------------------------------+-----------------------------+
+| :math:`f(LL_n <= x <= UL_n)` | :math:`f(LL_n) <= x < UL_n` |
++------------------------------+-----------------------------+
 
 .. important:: 
     
-    This step is *only* really necessary for continuous data. In the previous step, we subtracted the upper limit of each class by 1, so there are now gaps in the interval. In other words, with a class width of *5* and starting a minimum :math:`min(S)=100`, we might end up with intervals like 100 - 104, 105 - 109, 110 - 114, etc. We need to ensure the classes actually meet so we divide up the 1 we subtracted and distributed it evenly on either side of the boundary. 
+    Note each class is inclusive, :math:`<=`, with respect to the *lower limit*, while it is strictly exclusive, :math:`<`, with respect to the *upper limit*. This is so the classes are *mutually exclusive*, or to the say the same thing in a different way, a single observation cannot be assigned to two different classes; Every individual can belong to *only* one class.
 
-6. Sort the data set into classes and tally up the frequency of each class.
+    This applies to every class except the last, which must include the *upper limit*. Otherwise, the distribution would be missing a single value: the maximum value of the sample. 
 
 Example 
     Suppose you measure the height of everyone in your class and get the following sample of data, where each observation in the data set is measured in feet,
@@ -160,7 +160,96 @@ Example
 
     Find the grouped frequency distribution for this sample of data using :math:`n = 5` classes.
 
-TODO 
+First we find the sample range,
+
+.. math:: 
+
+    R = max(S) - min(S) = 6.3 - 5.3 = 1.0
+
+We divide this interval into 5 sub-intervals, called *classes,
+
+.. math:: 
+
+    w = \frac{1.0}{5} = 0.20
+
+Then the lower class limits and upper class limits are found by adding successive multiples of the class width to the minimum value of the sample.
+
+The limits of the first class are given by, 
+
+.. math:: 
+
+    LL_1 = 5.3 + 0 \cdot 0.20 = 5.3
+
+.. math:: 
+
+    UL_1 = 5.3 + 1 \cdot 0.20 = 5.5 
+
+The limits of the second class are given by,
+
+.. math:: 
+
+    LL_2 = 5.3 + 1 \cdot 0.20 = 5.5 
+
+.. math:: 
+
+    UL_2 = 5.3 + 2 \cdot 0.2 = 5.7
+
+The limits of the third class are given by,
+
+.. math:: 
+
+    LL_3 = 5.3 + 2 \cdot 0.20 = 5.7
+
+.. math:: 
+
+    UL_3 = 5.3 + 3 \cdot 0.2 = 5.9
+
+The limits of fourth class are given by,
+
+.. math:: 
+
+    LL_4 = 5.3 + 3 \cdot 0.20 = 5.9
+
+.. math:: 
+
+    UL_4 = 5.3 + 4 \cdot 0.2 = 6.1
+
+The limits of the fifth class are given by,
+
+.. math:: 
+
+    LL_5 = 5.3 + 4 \cdot 0.20 = 6.1
+
+.. math:: 
+
+    UL_5 = 5.3 + 5 \cdot 0.2 = 6.3
+
+Using this limits, we can construct the table,
+
+
++-------------------------+------+
+| Class Limits            | f(x) |
++-------------------------+------+
+| :math:`5.3 <= x < 5.5`  | 3    |
++-------------------------+------+
+| :math:`5.5 <= x < 5.7`  | 2    |
++-------------------------+------+
+| :math:`5.7 <= x < 5.9`  | 4    |
++-------------------------+------+
+| :math:`5.9 <= x < 6.1`  | 2    |
++-------------------------+------+
+| :math:`6.1 <= x <= 6.3` | 1    |
++-------------------------+------+
+
+.. tip:: 
+
+    A quick check to verify the *grouped frequency distribution* has been constructed correctly is to sum the frequencies and ensure they total up to the number of samples.
+
+    In this case, the total number of samples is 12 and,
+
+    .. math::
+
+        12 = 3 + 2 + 4 + 2 + 1
 
 .. _histograms:
 
@@ -183,7 +272,19 @@ A basic *histogram* can be modified to accomodate a variety of scenarios, depend
 Dot Plots
 *********
 
-Instead bars with differing heights, dot plots use *stacked dots* to represent the number of times each observation occurs, i.e. its frequency. 
+Instead bars with differing heights, *dot plots* use *stacked dots* to represent the number of times each observation occurs, i.e. its frequency. 
+
+Suppose a quiz with nine questions was administered to an A.P. Statistics course. The following sample represents the number of questions answered correctly by each student in this class,
+
+.. math:: 
+    
+    S = \{ 3, 3, 4, 4, 4, 5, 5, 6, 6, 6, 6, 6, 6, 7, 7, 9 \}
+
+Then the dot plot is constructed by drawing a number of dots above a point on the number line that corresponds to the *frequency* of that observation.
+
+.. plot:: assets/plots/other/dot_plot.py
+
+*Dot plots* are a quick and easy to represent a sample of data graphically.
 
 .. _stem_leaf_plots:
 
