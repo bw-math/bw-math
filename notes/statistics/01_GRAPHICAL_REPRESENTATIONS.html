@@ -445,7 +445,6 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ogives">Ogives</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construction">Construction</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Distribution Shapes</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Uniform</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Normal</a></li>
@@ -460,12 +459,12 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boxplots">Boxplots</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Construction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Distribution Shapes</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Uniform</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Normal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Bimodal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Skewed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construction">Construction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Distribution Shapes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Uniform</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Normal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Bimodal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Skewed</a></li>
 </ul>
 </li>
 </ul>
@@ -477,8 +476,8 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-series">Time Series</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Positive Correlation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Negative Correlation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Positive Correlation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Negative Correlation</a></li>
 </ul>
 </li>
 </ul>
@@ -497,6 +496,7 @@ document.write(`
 <p>In this section we study various ways of representing data graphically.</p>
 <section id="frequency-distributions">
 <span id="id2"></span><h2>Frequency Distributions<a class="headerlink" href="#frequency-distributions" title="Permalink to this headline">#</a></h2>
+<p>A <em>frequency distribution</em> is the foundation of most statistical graphs. In order to interpret graphs like histograms or pie charts, you must first understand what a <em>frequency distribution</em> represents.</p>
 <p>A <em>frequency distribution</em> is a tabular summary (table) of a sample of data. It tells us how often each observation occurs.</p>
 <section id="ungrouped-distributions">
 <span id="ungrouped-frequency-distributions"></span><h3>Ungrouped Distributions<a class="headerlink" href="#ungrouped-distributions" title="Permalink to this headline">#</a></h3>
@@ -551,14 +551,14 @@ document.write(`
 </div><p>Take note of the index in this sum. The <img class="math" src="../../_images/math/80eb29dd111d34e18d1517f3357d4fddcacb3d6d.png" alt="x_i \in S"/> symbol can be read as “<em>for every</em> <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> <em>in S</em>”. This notation is used to take into account observations that may have the same value, as in this example where the observations <code class="docutils literal notranslate"><span class="pre">b</span></code>, <code class="docutils literal notranslate"><span class="pre">g</span></code> and <code class="docutils literal notranslate"><span class="pre">r</span></code> occur multiple times. In other words, each term <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> of the sum is a <em>unique value</em>. Its multiplicity derives from the frequency <img class="math" src="../../_images/math/905bd3c0445049b5e64f182e7238f2da96ada209.png" alt="f(x_i)"/> by which it is multiplied.</p>
 <p>Contrast this against the notation employed in the <a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html#sample-mean-formula"><span class="std std-ref">Sample Formula</span></a></p>
 <div class="math">
-<p><img src="../../_images/math/9ee8c7896c07e6be0c76498432e7d5bfd1048206.png" alt="\bar{x} = \frac{ sum^n_{i=1} x_i }{n}"/></p>
+<p><img src="../../_images/math/651f6b91846ed73ec3c45039bd77e11a29d01e6e.png" alt="\bar{x} = \frac{ \sum^n_{i=1} x_i }{n}"/></p>
 </div><p>In the <a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html#sample-mean-formula"><span class="std std-ref">Sample Formula</span></a>, the index is over the observation order, i.e. from <img class="math" src="../../_images/math/a8bdbc0429f6518a5078cc1895980167b2a2c40b.png" alt="i = 1, 2, 3 ..., n"/>. In this case, it may happen that <img class="math" src="../../_images/math/8d1dcd2449a432288fea05ca70fd52d0c66ce58a.png" alt="x_i = x_j"/> for some <img class="math" src="../../_images/math/53fe0a246450d67038e0f2cc8362651b212ea261.png" alt="i \neq j"/>. In other words, in the sample mean formula, it is possible for terms in the summation to <em>repeat</em>.</p>
 </section>
 <section id="grouped-distributions">
 <span id="grouped-frequency-distributions"></span><h3>Grouped Distributions<a class="headerlink" href="#grouped-distributions" title="Permalink to this headline">#</a></h3>
 <p>Ungrouped distributions can get cumbersome when the <a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html#range"><span class="std std-ref">Range</span></a> of the data is very large or when there are a large number of unique observations drawn from a continuous population. For example, consider the following dataset which represents the eruption length and period between eruptions for the famous geyser <a class="reference external" href="https://en.wikipedia.org/wiki/Old_Faithful">Old Faithful</a> at Yellowstone National Park in Wymoing.</p>
-<table class="table" id="id24">
-<caption><span class="caption-text">Old Faithful Eruption and Waiting Times</span><a class="headerlink" href="#id24" title="Permalink to this table">#</a></caption>
+<table class="table" id="id23">
+<caption><span class="caption-text">Old Faithful Eruption and Waiting Times</span><a class="headerlink" href="#id23" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -725,14 +725,14 @@ document.write(`
 </div><p>Using this limits, we can construct the table,</p>
 <table class="table">
 <colgroup>
-<col style="width: 81%" />
-<col style="width: 19%" />
+<col style="width: 63%" />
+<col style="width: 37%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Class Limits</p></td>
-<td><p>f(x)</p></td>
+<td><p><img class="math" src="../../_images/math/905bd3c0445049b5e64f182e7238f2da96ada209.png" alt="f(x_i)"/></p></td>
 </tr>
-<tr class="row-even"><td><p><img class="math" src="../../_images/math/9bbe043188b0e5fd6baa13957d16b97b25c65343.png" alt="5.3 &lt;= x &lt; 5.5"/></p></td>
+<tr class="row-even"><td><p><img class="math" src="../../_images/math/1d4ea24440c110ce9586d132c5cc68b7e9891a15.png" alt="5.3 &lt;= x_i &lt; 5.5"/></p></td>
 <td><p>3</p></td>
 </tr>
 <tr class="row-odd"><td><p><img class="math" src="../../_images/math/3c1d94a9c19e9530daf47aa059a3acf5b108b777.png" alt="5.5 &lt;= x &lt; 5.7"/></p></td>
@@ -766,8 +766,10 @@ document.write(`
 <figure class="align-default">
 <img alt="../../_images/histogram_random.png" class="plot-directive" src="../../_images/histogram_random.png" />
 </figure>
+<p>The <em>width</em> of the bars is normalized so that the bars of the histogram meet.
+.. _histogram_variatians:</p>
 <section id="variations">
-<span id="histogram-variatians"></span><h3>Variations<a class="headerlink" href="#variations" title="Permalink to this headline">#</a></h3>
+<h3>Variations<a class="headerlink" href="#variations" title="Permalink to this headline">#</a></h3>
 <p>A basic <em>histogram</em> can be modified to accomodate a variety of scenarios, depending on the specifics of the problem. In each case below, the sample’s frequency distribution is used as the basis for constructing the graph.</p>
 <section id="dot-plots">
 <span id="id6"></span><h4>Dot Plots<a class="headerlink" href="#dot-plots" title="Permalink to this headline">#</a></h4>
@@ -780,11 +782,39 @@ document.write(`
 <figure class="align-default">
 <img alt="../../_images/dot_plot.png" class="plot-directive" src="../../_images/dot_plot.png" />
 </figure>
-<p><em>Dot plots</em> are a quick and easy to represent a sample of data graphically.</p>
+<p><em>Dot plots</em> are a quick and easy to represent a sample of data graphically. When in doubt, throw together a dot plot to see if it gives you any clues about the distribution.</p>
 </section>
 <section id="stem-leaf-plots">
 <span id="id7"></span><h4>Stem-Leaf Plots<a class="headerlink" href="#stem-leaf-plots" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
+<p>A <em>stem-leaf</em> plot is a type of histogram where the classes are determined by the leading digitS of the observation valueS.</p>
+<p>For example, you measured the average annual rainfall in inches for Maryland over the course of 20 years and arrived at the following sample,</p>
+<div class="math">
+<p><img src="../../_images/math/6f6a46a156dcacd833cb34475fe7aba60cf31c40.png" alt="S = \{ 46 \text{ in}, 52 \text{ in},  33 \text{ in}, 42 \text{ in}, 43 \text{ in}, 51 \text{ in}, 31 \text{ in}, 27 \text{ in}, 49 \text{ in}, 47 \text{ in}, 37 \text{ in}, 50 \text{ in}, 42 \text{ in}, 46 \text{ in}, 61 \text{ in}, 37 \text{ in}, 46 \text{ in}, 47 \text{ in}, 51 \text{ in}, 33 \text{ in} \}"/></p>
+</div><p>A <em>stem-and-leaf</em> plot is a <em>tabular summary</em> (table) where the first column, called the <em>stem</em> column, is the leading digits that occurs in the sample, in this case <code class="docutils literal notranslate"><span class="pre">3</span></code>, <code class="docutils literal notranslate"><span class="pre">4</span></code>, <code class="docutils literal notranslate"><span class="pre">5</span></code> and <code class="docutils literal notranslate"><span class="pre">6</span></code>. The digits after the leading digit after tallied up and written in ascending order in the second column, called the <em>leaf</em> column,</p>
+<table class="table">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 82%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Stem</p></td>
+<td><p>Leaf</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>3, 3, 7,</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>2, 2, 3, 6, 6, 6, 9, 7, 7</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>0, 1, 1, 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>1,1</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>Stem-and-leaf</em> plots are convenient for finding the <a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html#mode"><span class="std std-ref">Mode</span></a> of a distribution; the <a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html#mode"><span class="std std-ref">Mode</span></a> is simply the observation with the most number of leaves, in this case, <code class="docutils literal notranslate"><span class="pre">46</span></code> inches.</p>
 </section>
 <section id="relative-frequency-plots">
 <span id="relative-frequency-distribution"></span><h4>Relative Frequency Plots<a class="headerlink" href="#relative-frequency-plots" title="Permalink to this headline">#</a></h4>
@@ -822,10 +852,10 @@ document.write(`
 </section>
 <section id="distribution-shapes">
 <span id="id8"></span><h3>Distribution Shapes<a class="headerlink" href="#distribution-shapes" title="Permalink to this headline">#</a></h3>
-<p>The shape of the histogram can tell us a lot about the distribution of the sample.</p>
+<p>The shape of the histogram tells a story about the distribution of the sample.</p>
 <section id="uniform">
 <span id="uniform-shape"></span><h4>Uniform<a class="headerlink" href="#uniform" title="Permalink to this headline">#</a></h4>
-<p>A histogram where each class is approximately level with every other class is known as <em>uniform</em>.</p>
+<p>A histogram where each class is approximately level with every other class is known as a <em>uniform</em> distribution.</p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/7a0758e4dd678d7dbcf3995bc873e7bd/histogram_uniform.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/a29bc89cfb709f974d709f892916354a/histogram_uniform.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/3fc7484416af1b8cb4a2aaae0837485b/histogram_uniform.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/962c34c176e286dd5b6add872cf3afeb/histogram_uniform.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/histogram_uniform.png" class="plot-directive" src="../../_images/histogram_uniform.png" />
@@ -872,7 +902,7 @@ document.write(`
 <section id="skewed">
 <h4>Skewed<a class="headerlink" href="#skewed" title="Permalink to this headline">#</a></h4>
 <dl class="simple">
-<dt>Definition</dt><dd><p>A <em>skew</em> is a feature of sample where more data is <em>clustered</em> on one side of the sample. We say such data are “<em>skewed</em>”, or that it exhibits “<em>skewness</em>”.</p>
+<dt>Definition</dt><dd><p>A <em>skew</em> is a feature of sample where more data is <em>clustered</em> on one side of the sample than the other. We say such data are “<em>skewed</em>”, or that it exhibits “<em>skewness</em>”.</p>
 </dd>
 </dl>
 <p>A <em>skewed</em> distribution has <em>tails</em>, indicating the distribution is not symmetric (<em>asymmetric</em>). Individuals drawn from a <em>skewed</em> distribution are more likely to have extreme values. By “<em>extreme</em>” we mean values outside of the intervals where the majority of the distribution lies.</p>
@@ -907,7 +937,55 @@ document.write(`
 </section>
 <section id="ogives">
 <span id="id9"></span><h2>Ogives<a class="headerlink" href="#ogives" title="Permalink to this headline">#</a></h2>
-<p>TODO</p>
+<p>An <em>ogive</em> is a histogram of the <em>cumulative frequency</em>. The difference between <em>frequency</em> and <em>cumulative frequency</em> is slight, but potent.</p>
+<dl>
+<dt>Frequency</dt><dd><p><img class="math" src="../../_images/math/905bd3c0445049b5e64f182e7238f2da96ada209.png" alt="f(x_i)"/></p>
+<p>The number of times an observation <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> occurs in a sample.</p>
+</dd>
+<dt>Cumulative Frequency</dt><dd><p><img class="math" src="../../_images/math/4e31378f88556ebbcb6f7c1f026b7d04c17b2ffe.png" alt="F(x_i)"/></p>
+<p>The number of times an observation <em>less than or equal to</em> <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> occurs in a sample.</p>
+</dd>
+</dl>
+<p>Notice, by definition,</p>
+<div class="math">
+<p><img src="../../_images/math/8f3d1e2ea84be9d904a81a304c6b149657c85c6f.png" alt="F(x_i) = \sum^{x_i}_{x_j = x_1} f(x_j)"/></p>
+</div><div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Be mindful of the <em>indices</em> in the summation. This summation says “<em>add up all the frequencies up to a certain observation</em> <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/>”.</p>
+</div>
+<p>In order to construct an <em>ogive</em> or a <em>cumulative frequency histogram</em>, we first have to find the <em>cumulative frequency distribution</em>.</p>
+<p>Recall the <em>frequency distribution</em> created in the <a class="reference internal" href="#ungrouped-frequency-distributions"><span class="std std-ref">Ungrouped Distributions</span></a> section. The <em>cumulative frequency</em> of this distribution can be found by adding another column <img class="math" src="../../_images/math/4e31378f88556ebbcb6f7c1f026b7d04c17b2ffe.png" alt="F(x_i)"/> that sums up the the individual frequencies of all the classes up to that class,</p>
+<table class="table">
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 24%" />
+<col style="width: 36%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Class Limits</p></td>
+<td><p><img class="math" src="../../_images/math/905bd3c0445049b5e64f182e7238f2da96ada209.png" alt="f(x_i)"/></p></td>
+<td><p><img class="math" src="../../_images/math/4e31378f88556ebbcb6f7c1f026b7d04c17b2ffe.png" alt="F(x_i)"/></p></td>
+</tr>
+<tr class="row-even"><td><p><img class="math" src="../../_images/math/1d4ea24440c110ce9586d132c5cc68b7e9891a15.png" alt="5.3 &lt;= x_i &lt; 5.5"/></p></td>
+<td><p>3</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p><img class="math" src="../../_images/math/3c1d94a9c19e9530daf47aa059a3acf5b108b777.png" alt="5.5 &lt;= x &lt; 5.7"/></p></td>
+<td colspan="2"><p>2              | 5 = 2 + 3</p></td>
+</tr>
+<tr class="row-even"><td><p><img class="math" src="../../_images/math/4bd01b4af339e44daab9c3bbe746ee04dcd8af04.png" alt="5.7 &lt;= x &lt; 5.9"/></p></td>
+<td colspan="2"><p>4              | 9 = 4 + 2 + 3</p></td>
+</tr>
+<tr class="row-odd"><td><p><img class="math" src="../../_images/math/c8e90d129c6307a52e66a2611ac5f979ce687f4f.png" alt="5.9 &lt;= x &lt; 6.1"/></p></td>
+<td><p>2</p></td>
+<td><p>11 = 2 + 4 + 2 + 3</p></td>
+</tr>
+<tr class="row-even"><td><p><img class="math" src="../../_images/math/a3ea9bff65a78b0bb5554ce7dbd0b30d93e2f975.png" alt="6.1 &lt;= x &lt;= 6.3"/></p></td>
+<td><p>1</p></td>
+<td><p>12 = 1 + 2 + 4 + 2 + 3</p></td>
+</tr>
+</tbody>
+</table>
 <p>(<a class="reference download internal" download="" href="../../_downloads/be960a1a9d72d166ce17d8208d6707ed/histogram_and_ogive.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/500a29e7a043cad86f0c264c6126261f/histogram_and_ogive.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/c2c76461417113eba6badd5a257d1fe2/histogram_and_ogive.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/c72dd39be56a746dc1b745e580f605c3/histogram_and_ogive.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/histogram_and_ogive.png" class="plot-directive" src="../../_images/histogram_and_ogive.png" />
@@ -916,15 +994,10 @@ document.write(`
 <p class="admonition-title">Note</p>
 <p>Your book’s authors call these types of graphs <em>ogives</em>. Be aware, you will almost never see these graphs referred to by that term. In practice, they are almost always called <em>cumulative frequency distributions</em>.</p>
 </div>
-<section id="construction">
-<h3>Construction<a class="headerlink" href="#construction" title="Permalink to this headline">#</a></h3>
-<ol class="arabic simple">
-<li><p>Find the <a class="reference internal" href="#frequency-distributions"><span class="std std-ref">relative frequency distribution</span></a></p></li>
-</ol>
-</section>
 <section id="id10">
 <h3>Distribution Shapes<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h3>
-<p>TODO</p>
+<p>All <em>cumulative frequency histograms</em> (<em>ogives</em>) are <em>monotonic</em>. A <em>monotonic</em> functions is <em>non-decreasing</em>. Another way of saying <em>non-decreasing</em> is to say “<em>always increases or stays the same</em>”. The reason for this should be clear: we are always adding quantities to the cumulative frequency as <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> increases. The <em>cumulative frequency</em> never <em>decreases</em>.</p>
+<p>Thus, it can sometimes be difficult to discern any features of the distribution from the cumulative frequency histogram. Nevertheless, closer inspection reveals a few things we can infer.</p>
 <section id="id11">
 <h4>Uniform<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/cf9d84732060210e385e422e9e43e2da/ogive_uniform.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/9cfe1c940252628fb8143bece2808ca5/ogive_uniform.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/4f8361fd5cfbc65111c0db67b8344246/ogive_uniform.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/ec8a76468c148a0a828865af5f6705e5/ogive_uniform.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
@@ -972,8 +1045,8 @@ document.write(`
 <section id="boxplots">
 <h2>Boxplots<a class="headerlink" href="#boxplots" title="Permalink to this headline">#</a></h2>
 <p>While <a class="reference internal" href="#histograms"><span class="std std-ref">Histograms</span></a> and <a class="reference internal" href="#ogives"><span class="std std-ref">Ogives</span></a> provide a wealth of information about the sample distribution, they do not give us the whole picture.</p>
-<section id="id16">
-<h3>Construction<a class="headerlink" href="#id16" title="Permalink to this headline">#</a></h3>
+<section id="construction">
+<h3>Construction<a class="headerlink" href="#construction" title="Permalink to this headline">#</a></h3>
 <ol class="arabic simple">
 <li><p>Find the maximum observation.</p></li>
 <li><p>Find the 75 <sup>th</sup> percentile (<em>third quartile</em>)</p></li>
@@ -986,32 +1059,32 @@ document.write(`
 <p>The maximum observation, the third quartile, the median, the firsrt quartile and the minimum are sometimes collectively known as the <em>five-number summary</em>.</p>
 </div>
 </section>
-<section id="id17">
-<h3>Distribution Shapes<a class="headerlink" href="#id17" title="Permalink to this headline">#</a></h3>
+<section id="id16">
+<h3>Distribution Shapes<a class="headerlink" href="#id16" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
-<section id="id18">
-<h4>Uniform<a class="headerlink" href="#id18" title="Permalink to this headline">#</a></h4>
+<section id="id17">
+<h4>Uniform<a class="headerlink" href="#id17" title="Permalink to this headline">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/db6e44fc604b742c48b88ead81dd19fa/boxplot_uniform.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/971caf930d94da07d5a485c9dc3f95ad/boxplot_uniform.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/66eeb1b0f07d225ec0c24d97ef744c3f/boxplot_uniform.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/ee3e20ae9e5f6a4950d1fbd0c30d5df8/boxplot_uniform.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/boxplot_uniform.png" class="plot-directive" src="../../_images/boxplot_uniform.png" />
 </figure>
 </section>
-<section id="id19">
-<h4>Normal<a class="headerlink" href="#id19" title="Permalink to this headline">#</a></h4>
+<section id="id18">
+<h4>Normal<a class="headerlink" href="#id18" title="Permalink to this headline">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/96f6eae3fd5f0f31966bfdd55748b732/boxplot_normal.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/02cd14e26dd9dfd968ebaac6deb6edc0/boxplot_normal.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/e86491f6d04807b92f3a5b3763800529/boxplot_normal.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/8a8e9884227a1ed601c1cc58abef4988/boxplot_normal.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/boxplot_normal.png" class="plot-directive" src="../../_images/boxplot_normal.png" />
 </figure>
 </section>
-<section id="id20">
-<h4>Bimodal<a class="headerlink" href="#id20" title="Permalink to this headline">#</a></h4>
+<section id="id19">
+<h4>Bimodal<a class="headerlink" href="#id19" title="Permalink to this headline">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/4e799bf2a97cb3c4ce13821a17ff3dff/boxplot_bimodal.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/2cb3ed20748a269ba8086433fd6c188c/boxplot_bimodal.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d9ab1cbe308ebca584bc55d4049d8e2a/boxplot_bimodal.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/700a64d7086840cd43c817bb051414d7/boxplot_bimodal.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/boxplot_bimodal.png" class="plot-directive" src="../../_images/boxplot_bimodal.png" />
 </figure>
 </section>
-<section id="id21">
-<h4>Skewed<a class="headerlink" href="#id21" title="Permalink to this headline">#</a></h4>
+<section id="id20">
+<h4>Skewed<a class="headerlink" href="#id20" title="Permalink to this headline">#</a></h4>
 <p><strong>Skewed Right</strong></p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/45929d2918dc97fa5461a2450e2f6dd3/boxplot_skewed_right.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f5cf367c6ae66936ff746693f5d760f3/boxplot_skewed_right.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/271e2bb106dda2d3ba7dcda45402faa9/boxplot_skewed_right.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/788fae045977a9401a6af84e4274e18c/boxplot_skewed_right.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
@@ -1051,16 +1124,16 @@ document.write(`
 </section>
 <section id="time-series">
 <h2>Time Series<a class="headerlink" href="#time-series" title="Permalink to this headline">#</a></h2>
-<section id="id22">
-<h3>Positive Correlation<a class="headerlink" href="#id22" title="Permalink to this headline">#</a></h3>
+<section id="id21">
+<h3>Positive Correlation<a class="headerlink" href="#id21" title="Permalink to this headline">#</a></h3>
 <p><strong>Positive Trend</strong></p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/32667871ec4f51c6a0a9f81f9731ccea/timeseries_positive_trend.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/8a33cdbf487ccb2f9918e389418a459f/timeseries_positive_trend.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/a9a53241e38c1b97e30139b12788f2cc/timeseries_positive_trend.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/76c355bf66a060c742285e69a42e198d/timeseries_positive_trend.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/timeseries_positive_trend.png" class="plot-directive" src="../../_images/timeseries_positive_trend.png" />
 </figure>
 </section>
-<section id="id23">
-<h3>Negative Correlation<a class="headerlink" href="#id23" title="Permalink to this headline">#</a></h3>
+<section id="id22">
+<h3>Negative Correlation<a class="headerlink" href="#id22" title="Permalink to this headline">#</a></h3>
 <p><strong>Negative Trend</strong></p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/2d343b86e373eff52b9d4b207496176b/timeseries_negative_trend.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/b4105e586cbf07ce38859635050d0759/timeseries_negative_trend.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d5a11697861215f27efbfdf8a36a6253/timeseries_negative_trend.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/5dc8b872c505b84b4320e37781f4ec0e/timeseries_negative_trend.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
@@ -1149,7 +1222,6 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ogives">Ogives</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construction">Construction</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Distribution Shapes</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Uniform</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Normal</a></li>
@@ -1164,12 +1236,12 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boxplots">Boxplots</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Construction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Distribution Shapes</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Uniform</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Normal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Bimodal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Skewed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construction">Construction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Distribution Shapes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Uniform</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Normal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Bimodal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Skewed</a></li>
 </ul>
 </li>
 </ul>
@@ -1181,8 +1253,8 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-series">Time Series</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Positive Correlation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Negative Correlation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Positive Correlation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Negative Correlation</a></li>
 </ul>
 </li>
 </ul>

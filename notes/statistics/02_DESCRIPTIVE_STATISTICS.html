@@ -423,6 +423,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observation">Observation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample">Sample</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency">Frequency</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-frequency">Relative Frequency</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cumulative-frequency">Cumulative Frequency</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#minimum">Minimum</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maximum">Maximum</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outlier">Outlier</a></li>
@@ -470,21 +472,21 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#z-score">Z Score</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Motivation</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Formula</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Motivation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Formula</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-variation">Measures of Variation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Motivation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interquartile-range">Interquartile Range</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-of-thumb-for-outliers">Rule of Thumb for Outliers</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#absolute-variation">Absolute Variation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variance">Variance</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Motivation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Motivation</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
@@ -492,7 +494,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outliers">Outliers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Rule of Thumb</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">Rule of Thumb</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chebyshev-s-theorem">Chebyshev’s Theorem</a></li>
@@ -537,31 +539,61 @@ document.write(`
 <dl class="simple">
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/905bd3c0445049b5e64f182e7238f2da96ada209.png" alt="f(x_i)"/></p>
 </dd>
-<dt>Definition</dt><dd><p>The number of times a particular observation occurs in a sample of data.</p>
+<dt>Definition</dt><dd><p>The number of times a particular observation <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> occurs in a sample of data.</p>
 </dd>
 </dl>
 </section>
-<section id="minimum">
-<span id="id5"></span><h3>Minimum<a class="headerlink" href="#minimum" title="Permalink to this headline">#</a></h3>
+<section id="relative-frequency">
+<span id="id5"></span><h3>Relative Frequency<a class="headerlink" href="#relative-frequency" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
+<dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/abafc97d01de337232b55341745b6bd59c1f9c0c.png" alt="r(x_i)"/></p>
+</dd>
+<dt>Definition</dt><dd><p>The <em>percentage</em> of times a particular observation <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> occurs in a sample of data.</p>
+</dd>
+</dl>
+<p>Note by definition, in a sample of <em>n</em> observations,</p>
+<div class="math">
+<p><img src="../../_images/math/b9f41fc9d1deabfb10807e599da1d8398e9f0967.png" alt="r(x_i) = \frac{f(x_i)}{n}"/></p>
+</div></section>
+<section id="cumulative-frequency">
+<h3>Cumulative Frequency<a class="headerlink" href="#cumulative-frequency" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
+<dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/4e31378f88556ebbcb6f7c1f026b7d04c17b2ffe.png" alt="F(x_i)"/></p>
+</dd>
+<dt>Definition</dt><dd><p>The number of times an observation <em>less than of equal to</em> <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> occurs in a sample of data.</p>
+</dd>
+</dl>
+<p>Note the relation between <em>frequency</em> and <em>cumulative frequency</em>,</p>
+<div class="math">
+<p><img src="../../_images/math/8f3d1e2ea84be9d904a81a304c6b149657c85c6f.png" alt="F(x_i) = \sum^{x_i}_{x_j = x_1} f(x_j)"/></p>
+</div><p>Also note by definition,</p>
+<div class="math">
+<p><img src="../../_images/math/034497916e2b7279e5e834cc8fee0e55a881cf6a.png" alt="F(max(S)) = n"/></p>
+</div></section>
+<section id="minimum">
+<span id="id6"></span><h3>Minimum<a class="headerlink" href="#minimum" title="Permalink to this headline">#</a></h3>
+<dl>
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/00772ab0121709ef7685a2e0b9ec74702855933c.png" alt="min(\{ x_i \})"/></p>
+<p><img class="math" src="../../_images/math/107d3d35dae4c5b280707109792b266d90aee74a.png" alt="min(S)"/></p>
+<p><img class="math" src="../../_images/math/47cb64480f16bd44c215e62122af3cb76e0ad941.png" alt="x_{min}"/></p>
 </dd>
 <dt>Definition</dt><dd><p>The smallest value in a sample of observations.</p>
 </dd>
 </dl>
 </section>
 <section id="maximum">
-<span id="id6"></span><h3>Maximum<a class="headerlink" href="#maximum" title="Permalink to this headline">#</a></h3>
+<span id="id7"></span><h3>Maximum<a class="headerlink" href="#maximum" title="Permalink to this headline">#</a></h3>
 <dl>
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/c0c9254bff1cbeb2e982c1cd9cb6a1e3216267e8.png" alt="max(\{ x_i \})"/></p>
 <p><img class="math" src="../../_images/math/cb526221ddda56fd2808ca1991e2f9077b0deaf9.png" alt="max(S)"/></p>
+<p><img class="math" src="../../_images/math/adc0363f8449081efcb53169ba168696c031fc84.png" alt="x_{max}"/></p>
 </dd>
 <dt>Definition</dt><dd><p>The largest value in a sample of observations</p>
 </dd>
 </dl>
 </section>
 <section id="outlier">
-<span id="id7"></span><h3>Outlier<a class="headerlink" href="#outlier" title="Permalink to this headline">#</a></h3>
+<span id="id8"></span><h3>Outlier<a class="headerlink" href="#outlier" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
 <dt>Definition</dt><dd><p>An unusual observation.</p>
 </dd>
@@ -571,7 +603,7 @@ document.write(`
 <p>If we are measuring <a class="reference internal" href="00_INTRODUCTION.html#data-characteristic"><span class="std std-ref">categorical data</span></a>, this might mean an observation is in infrequent.</p>
 </section>
 <section id="floor-function">
-<span id="id8"></span><h3>Floor Function<a class="headerlink" href="#floor-function" title="Permalink to this headline">#</a></h3>
+<span id="id9"></span><h3>Floor Function<a class="headerlink" href="#floor-function" title="Permalink to this headline">#</a></h3>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../../_images/math/784b25f566e8b973531fd0d08c1eab83dc65d2a0.png" alt="\lfloor x \rfloor"/></p>
@@ -584,7 +616,7 @@ document.write(`
 </dl>
 </section>
 <section id="ceiling-function">
-<span id="id9"></span><h3>Ceiling Function<a class="headerlink" href="#ceiling-function" title="Permalink to this headline">#</a></h3>
+<span id="id10"></span><h3>Ceiling Function<a class="headerlink" href="#ceiling-function" title="Permalink to this headline">#</a></h3>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../../_images/math/1777c259a796409953b8b89e0c9b48fb0e7e2d0d.png" alt="\lceil x \rceil"/></p>
@@ -598,10 +630,10 @@ document.write(`
 </section>
 </section>
 <section id="measures-of-centrality">
-<span id="id10"></span><h2>Measures of Centrality<a class="headerlink" href="#measures-of-centrality" title="Permalink to this headline">#</a></h2>
+<span id="id11"></span><h2>Measures of Centrality<a class="headerlink" href="#measures-of-centrality" title="Permalink to this headline">#</a></h2>
 <p><em>Measures of centrality</em>, sometimes known as <em>measures of central tendency</em>, describe <em>where</em> the “<em>center</em>” of a sample of data is located. What we mean by “<em>center</em>” is, in some sense, left to the reader’s intuition. A good analogy for the statistical conception of <em>centrality</em> comes from the field of physics: the idea of <a class="reference external" href="https://en.wikipedia.org/wiki/Center_of_mass">center of mass</a>. The <em>center of mass</em> is the <em>balance point</em>, the point around which a body of mass is distributed so the torque generated by gravity is held is equilibrium. In this analogy, the <em>mass</em> is the <em>sample of data</em>. <em>Centrality</em> in a <em>sample</em> is a measure of its “<em>center of mass</em>”, so to speak.</p>
 <section id="arithmetic-mean">
-<span id="id11"></span><h3>Arithmetic Mean<a class="headerlink" href="#arithmetic-mean" title="Permalink to this headline">#</a></h3>
+<span id="id12"></span><h3>Arithmetic Mean<a class="headerlink" href="#arithmetic-mean" title="Permalink to this headline">#</a></h3>
 <p>The <em>arithmetic</em> mean is a sample statistic you have probably seen before; what you probably didn’t know is it is not the <em>only</em> way of calculating the mean. You will see in the next few sections alternate ways of calculating a quantity that is meant to represent the <em>mean</em> of a sample. Each of these <a class="reference internal" href="00_INTRODUCTION.html#sample-statistic"><span class="std std-ref">sample statistics</span></a> represents a way of quantifying the notion of “<em>central tendency</em>”</p>
 <p>Before getting to the good stuff, let’s review the <em>arithmetic</em> mean. There are two equivalent ways of defining the <em>sample mean</em>.</p>
 <section id="sample-formula">
@@ -783,14 +815,14 @@ document.write(`
 </section>
 </section>
 <section id="geometric-mean">
-<span id="id12"></span><h3>Geometric Mean<a class="headerlink" href="#geometric-mean" title="Permalink to this headline">#</a></h3>
+<span id="id13"></span><h3>Geometric Mean<a class="headerlink" href="#geometric-mean" title="Permalink to this headline">#</a></h3>
 <p>The <em>geometric mean</em> is an alternate way of defining the <em>mean</em> of a sample data.</p>
 <p>The <em>geometric mean</em> is defined as,</p>
 <div class="math">
 <p><img src="../../_images/math/4af36249ae79e207d3653021760fdc732ad16cf3.png" alt="\bar{x}_G = (x_1 \cdot x_2 \cdot ... \cdot x_{n-1} \cdot x_n )^(1/n)"/></p>
 </div><p>TODO</p>
 <section id="geometric-vs-arithmetic-mean">
-<span id="id13"></span><h4>Geometric vs. Arithmetic Mean<a class="headerlink" href="#geometric-vs-arithmetic-mean" title="Permalink to this headline">#</a></h4>
+<span id="id14"></span><h4>Geometric vs. Arithmetic Mean<a class="headerlink" href="#geometric-vs-arithmetic-mean" title="Permalink to this headline">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="the-moral-of-the-story">
@@ -807,7 +839,7 @@ document.write(`
 <h3>Categorical Measures<a class="headerlink" href="#categorical-measures" title="Permalink to this headline">#</a></h3>
 <p>The <a class="reference internal" href="#arithmetic-mean"><span class="std std-ref">Arithmetic Mean</span></a> and the <a class="reference internal" href="#geometric-mean"><span class="std std-ref">Geometric Mean</span></a> only apply if the data being measured is <a class="reference internal" href="00_INTRODUCTION.html#data-characteristic"><span class="std std-ref">quantitative data</span></a>. If, however, the data being measured is categorical is nature, we do not have these tools available to us. Instead, we use the next two measures of central tendency to get a picture of the distribution shape.</p>
 <section id="mode">
-<span id="id14"></span><h4>Mode<a class="headerlink" href="#mode" title="Permalink to this headline">#</a></h4>
+<span id="id15"></span><h4>Mode<a class="headerlink" href="#mode" title="Permalink to this headline">#</a></h4>
 <dl class="simple">
 <dt>Definition</dt><dd><p>The <em>mode</em> is the most frequent of observation in a sample of data.</p>
 </dd>
@@ -826,7 +858,7 @@ document.write(`
 </section>
 </section>
 <section id="measures-of-location">
-<span id="id15"></span><h2>Measures of Location<a class="headerlink" href="#measures-of-location" title="Permalink to this headline">#</a></h2>
+<span id="id16"></span><h2>Measures of Location<a class="headerlink" href="#measures-of-location" title="Permalink to this headline">#</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Your book does not do a good job of covering this topic.</p>
@@ -859,7 +891,7 @@ document.write(`
 </div><p>The 1 <sup>st</sup> <em>order statistic</em> <img class="math" src="../../_images/math/7aa70a4ac203aa2ed9e0d040185bef92f3124ff4.png" alt="x_{(1)}"/> is <em>1.4 years</em>, the 2 <sup>nd</sup> <em>order statistic</em> <img class="math" src="../../_images/math/a80b5a6e88cbf3dc6b46afda81c9782c19ea1c3d.png" alt="x_{(2)}"/> is <em>3.3 years</em>, the 3 <sup>rd</sup> <em>order statistic</em> <img class="math" src="../../_images/math/39e7cee1481ddc7014c78ff87e86ef6eb058c23d.png" alt="x_{(3)}"/> is <em>5.1 years</em> and the 4 <sup>th</sup> <em>order statistic</em> <img class="math" src="../../_images/math/7ef1dbe8243c3bdcae773590e381306bfc7c1619.png" alt="x_{(4)}"/> is <em>6.7 years</em>. Another way of saying this would be the <em>order</em> of <em>1.4 years</em> is 1, the <em>order</em> of <em>3.3 years</em> is 2, the <em>order</em> of <em>5.1 years</em> is 3 and the <em>order</em> of <em>6 years</em> is 4.</p>
 <p><em>Order statistics</em> are important because they allows us to define more complex statistics in a precise manner.</p>
 <section id="range">
-<span id="id16"></span><h4>Range<a class="headerlink" href="#range" title="Permalink to this headline">#</a></h4>
+<span id="id17"></span><h4>Range<a class="headerlink" href="#range" title="Permalink to this headline">#</a></h4>
 <hr class="docutils" />
 <p>The range is a measure of the <em>total variation</em> of a sample of data.</p>
 <dl>
@@ -870,7 +902,7 @@ document.write(`
 </dl>
 </section>
 <section id="percentile">
-<span id="id17"></span><h4>Percentile<a class="headerlink" href="#percentile" title="Permalink to this headline">#</a></h4>
+<span id="id18"></span><h4>Percentile<a class="headerlink" href="#percentile" title="Permalink to this headline">#</a></h4>
 </section>
 <hr class="docutils" />
 <section id="motivation">
@@ -998,7 +1030,7 @@ document.write(`
 </div>
 </section>
 <section id="special-percentiles">
-<span id="id18"></span><h4>Special Percentiles<a class="headerlink" href="#special-percentiles" title="Permalink to this headline">#</a></h4>
+<span id="id19"></span><h4>Special Percentiles<a class="headerlink" href="#special-percentiles" title="Permalink to this headline">#</a></h4>
 <p>The table below lists the names that have been given to special percentiles.</p>
 <table class="table">
 <colgroup>
@@ -1052,7 +1084,7 @@ document.write(`
 </section>
 </section>
 <section id="median">
-<span id="id19"></span><h3>Median<a class="headerlink" href="#median" title="Permalink to this headline">#</a></h3>
+<span id="id20"></span><h3>Median<a class="headerlink" href="#median" title="Permalink to this headline">#</a></h3>
 <p>The <em>median</em> of a dataset is the observation such that half of the sample is above it and half of the sample is above it. As the table in the previous section indicated, another way of saying this is the <em>median</em> is the <em>50</em> <sup>th</sup> percentile.</p>
 <p>First, let’s state a quick shortcut formula for the median that you are probably familiar with, although you may not have seen it stated as precisely.</p>
 <section id="shortcut">
@@ -1182,12 +1214,12 @@ document.write(`
 <section id="z-score">
 <h3>Z Score<a class="headerlink" href="#z-score" title="Permalink to this headline">#</a></h3>
 <p><em>Percentiles</em> are one way of describing location, but they are not the only way. We can also use <em>Z-Scores</em> to talk about the location of data.</p>
-<section id="id20">
-<h4>Motivation<a class="headerlink" href="#id20" title="Permalink to this headline">#</a></h4>
+<section id="id21">
+<h4>Motivation<a class="headerlink" href="#id21" title="Permalink to this headline">#</a></h4>
 <p>TODO</p>
 </section>
-<section id="id21">
-<h4>Formula<a class="headerlink" href="#id21" title="Permalink to this headline">#</a></h4>
+<section id="id22">
+<h4>Formula<a class="headerlink" href="#id22" title="Permalink to this headline">#</a></h4>
 <dl>
 <dt>Definition</dt><dd><div class="math">
 <p><img src="../../_images/math/355911cc4d9fcf781150b979f8764a3876731f10.png" alt="z = \frac{x_i - \bar{x}}{s}"/></p>
@@ -1198,10 +1230,10 @@ document.write(`
 </section>
 </section>
 <section id="measures-of-variation">
-<span id="id22"></span><h2>Measures of Variation<a class="headerlink" href="#measures-of-variation" title="Permalink to this headline">#</a></h2>
+<span id="id23"></span><h2>Measures of Variation<a class="headerlink" href="#measures-of-variation" title="Permalink to this headline">#</a></h2>
 <p><em>Measures of variation</em> characterize the <em>spread</em> and <em>dispersion</em> of a sample of data.</p>
-<section id="id23">
-<h3>Motivation<a class="headerlink" href="#id23" title="Permalink to this headline">#</a></h3>
+<section id="id24">
+<h3>Motivation<a class="headerlink" href="#id24" title="Permalink to this headline">#</a></h3>
 <p>Consider these two samples of data <img class="math" src="../../_images/math/08dae650aba750710b182a0e7b1e63c09404075b.png" alt="S_1"/> and <img class="math" src="../../_images/math/7a01e66959cdf273b6b3c5541280a7402771722e.png" alt="S_2"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/754cdb6148d139ef3ccd106ede07d0a517a3998d.png" alt="S_1 = \{ 4, 5, 6 \}"/></p>
@@ -1223,7 +1255,7 @@ document.write(`
 <p>The goal of the next few sections is to come up with a way of quantifying and measuring this <em>variation</em>.</p>
 </section>
 <section id="interquartile-range">
-<span id="id24"></span><h3>Interquartile Range<a class="headerlink" href="#interquartile-range" title="Permalink to this headline">#</a></h3>
+<span id="id25"></span><h3>Interquartile Range<a class="headerlink" href="#interquartile-range" title="Permalink to this headline">#</a></h3>
 <p>First up, we have the <em>interquartile range</em>.</p>
 <p>TODO</p>
 <section id="rule-of-thumb-for-outliers">
@@ -1232,19 +1264,19 @@ document.write(`
 </section>
 </section>
 <section id="absolute-variation">
-<span id="id25"></span><h3>Absolute Variation<a class="headerlink" href="#absolute-variation" title="Permalink to this headline">#</a></h3>
+<span id="id26"></span><h3>Absolute Variation<a class="headerlink" href="#absolute-variation" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
 </section>
 <section id="variance">
 <span id="sample-variance"></span><h3>Variance<a class="headerlink" href="#variance" title="Permalink to this headline">#</a></h3>
-<section id="id26">
-<h4>Motivation<a class="headerlink" href="#id26" title="Permalink to this headline">#</a></h4>
+<section id="id27">
+<h4>Motivation<a class="headerlink" href="#id27" title="Permalink to this headline">#</a></h4>
 <p>Let us consider a rather contrived example that is nevertheless instructive. Suppose <strong>S</strong> a sample of data.represents
 TODO</p>
 </section>
 </section>
 <section id="standard-deviation">
-<span id="id27"></span><h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">#</a></h3>
+<span id="id28"></span><h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
 </section>
 <section id="coefficient-of-variation">
@@ -1256,8 +1288,8 @@ TODO</p>
 <section id="outliers">
 <h2>Outliers<a class="headerlink" href="#outliers" title="Permalink to this headline">#</a></h2>
 <p>TODO</p>
-<section id="id28">
-<h3>Rule of Thumb<a class="headerlink" href="#id28" title="Permalink to this headline">#</a></h3>
+<section id="id29">
+<h3>Rule of Thumb<a class="headerlink" href="#id29" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
 </section>
 </section>
@@ -1319,6 +1351,8 @@ TODO</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observation">Observation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample">Sample</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency">Frequency</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-frequency">Relative Frequency</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cumulative-frequency">Cumulative Frequency</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#minimum">Minimum</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maximum">Maximum</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outlier">Outlier</a></li>
@@ -1366,21 +1400,21 @@ TODO</p>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#z-score">Z Score</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Motivation</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Formula</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Motivation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Formula</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#measures-of-variation">Measures of Variation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Motivation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Motivation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interquartile-range">Interquartile Range</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rule-of-thumb-for-outliers">Rule of Thumb for Outliers</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#absolute-variation">Absolute Variation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variance">Variance</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Motivation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Motivation</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
@@ -1388,7 +1422,7 @@ TODO</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outliers">Outliers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Rule of Thumb</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">Rule of Thumb</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chebyshev-s-theorem">Chebyshev’s Theorem</a></li>

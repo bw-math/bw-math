@@ -36,9 +36,16 @@ AP Statistics is an introductory college-level statistics course that introduces
         The student is expected to bring the ChromeBook they have been provided to class every day. It should be fully-charged. The student will need this to access online resources such as projects and datasets.
 
     Python 3
-        Students will be shown how to install `Python3 <https://python.org>`_ on their ChromeBooks very early in the class schedule. Python3 will be used to perform data analysis and generate graphical representations of data. Statistical graphs will be generated using `matplotlib <https://matplotlib.org>`_.
+        Students will be shown how to install `Python3 <https://python.org>`_ on their ChromeBooks very early in the class schedule. **Python 3** will be used to perform data analysis and generate graphical representations of data. Statistical graphs will be generated using `matplotlib <https://matplotlib.org>`_.
 
-        All :ref:`projects` and some class work will be done Python 3. In each case, the student will write programs that perform statistical analysis and interpret the results.  
+        All :ref:`projects` and some class work will be done **Python 3**. In each case, the student will write programs that perform statistical analysis and interpret the results.  
+
+.. topic:: Google Classroom
+
+    Any and all announcements will be posted to the Google Classroom. Any assignments or projects that are completed on the student's ChromeBook will be uploaded to Google as zip files. The code to join the classroom is given below,
+
+    Classroom Code
+        TODO 
 
 .. topic:: Website
 
@@ -68,7 +75,7 @@ AP Statistics is an introductory college-level statistics course that introduces
 
     Classwork will come a variety of sources:
 
-    - The student will complete exercises in the Bluman textbook.
+    - The student will complete exercises in the *Bluman* textbook.
     - The student will complete exercises designed to assess learning outcomes.
     - The student will complete exercises from the :ref:`classwork` section. 
     - The student will complete sample problems from `previous A.P. exams <https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions>`_
@@ -81,7 +88,7 @@ AP Statistics is an introductory college-level statistics course that introduces
 
     Homework will come from a variety of sources:
     
-    - The student will complete exercises in the Bluman textbook.
+    - The student will complete exercises in the *Bluman* textbook.
     - The student will complete exercises designed to assess learning outcomes.
     - The student will complete sample problems from `previous A.P. exams <https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions>`_
  
@@ -97,9 +104,25 @@ AP Statistics is an introductory college-level statistics course that introduces
 
         On exam weeks, review homework will be assigned. This homework will be due the day of the exam.
 
+.. topic:: Class Notebook
+
+    The student is expected to bring their own notebook to take notes during class. This notebook is **separate** from the classwork notebook and homework notebook; it belongs to the student and will not be collected for grading.
+
+    While students will use their ChromeBooks extensively in class to perform data analysis, when these activities are not being done, it is expected the ChromeBook will be closed and all note-taking will occur in the student's notebook. 
+
+.. topic:: Projects
+
+    The student will complete projects using their ChromeBook and **Python 3**. The projects will involve performing analysis on data sets, visualizing results and interpretting the output.
+
+    Projects will include either one or several *.csv* files and a *.py* script file. The *.py* file will contain a **Python 3** program written by the student that addresses and answers all assigned exercises. Written responses will be included in comments in the script files.
+
+    Projects will be zipped into zip files and uploaded to Google. 
+    
+    The student will be shown how to do all of this in class before the first project is assigned. 
+
 .. topic:: Exams
 
-    The topics covered on each exam are listed below, along with their **tentative** dates,
+    The topics covered on each exam are listed below, along with their **tentative** dates. Unless otherwise noted, all chapters come from the *Bluman* textbook.
 
     Exam 1: September 29 :sup:`th`
         - Chapter 1: The Nature of Probability and Statistics
@@ -107,9 +130,9 @@ AP Statistics is an introductory college-level statistics course that introduces
         - Chapter 3: Data Description
   
     Exam 2: December 8 :sup:`th`
-        - Chapter 1 (From Contemporary Mathematics): Set Theory
+        - Chapter 1 (From Contemporary Mathematics Textbook): Set Theory
         - Chapter 4: Probability and Counting Rules
-        - Chapter 5: Discrete Probability Rules 
+        - Chapter 5: Discrete Probability Distributions
   
     Exam 3: Februrary 9 :sup:`th`
         - Chapter 6: The Normal Distribution
