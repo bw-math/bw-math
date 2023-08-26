@@ -15,31 +15,51 @@ Our lives are filled with decisions. Life is, in some sense, nothing but a serie
 
 Writers and philosophers have, throughout the ages, summarized this idea much more eloquently than the current author, so let's hear what they have to say on the matter,
 
-    With domineering hand she moves the turning wheel,
-    Like currents in a treacherous bay swept to and fro:
-    Her ruthless will has just deposed once fearful kings
-    While trustless still, from low she lifts a conquered head;
-    No cries of misery she hears, no tears she heeds,
-    But steely hearted laughs at groans her deeds have wrung.
-    Such is a game she plays, and so she tests her strength;
-    Of mighty power she makes parade when one short hour
-    Sees happiness from utter desolation grow.
-    - Boethius, *On the Consolation of Philosophy*, 524
+.. topic:: Boethius, On the Consolation of Philosophy, 524 AD
 
+    With domineering hand she moves the turning wheel,
+
+    Like currents in a treacherous bay swept to and fro:
+
+    Her ruthless will has just deposed once fearful kings
+
+    While trustless still, from low she lifts a conquered head;
+
+    No cries of misery she hears, no tears she heeds,
+
+    But steely hearted laughs at groans her deeds have wrung.
+
+    Such is a game she plays, and so she tests her strength;
+
+    Of mighty power she makes parade when one short hour
+
+    Sees happiness from utter desolation grow.
+
+.. topic:: William Shakespeare, Hamlet, 1599
 
     Our wills and fates do so contrary run
+
     That our devices still are overthrown;
+
     Our thoughts are ours, their ends none of our own.
-    - William Shakespeare, 1599
 
-
+.. topic:: Robert Burns, To a Mouse, on Turning Her Up in Her Nest With the Plough, 1785
+    
     But Mouse, you are not alone,
+    
     In proving foresight may be vain:
+    
     The best-laid schemes of mice and men
+    
     Go oft awry,
+    
     And leave us nothing but grief and pain,
+    
     For promised joy!
-    - Robert Burns, *To a Mouse, on Turning Her Up in Her Nest With the Plough*, 1785
+
+.. topic:: Han Solo, 1980
+
+    Never tell me the odds!
 
 That's all very enlightening, but it amounts to saying: there is always *uncertainty* in any assertion we make about the world around us. Our "*devices might be overthrown*" or "*go oft awry*". 
 
@@ -455,10 +475,50 @@ The following image illustrates why we cannot infer *causation* from *correlatio
 .. image:: ../../assets/imgs/context/spurious_correlation.jpeg
     :align: center
 
+.. _experimental_design:
+
+Experimental Design
+===================
+
+The key to eliminating bias and preventing fallacies is *good experimental design*.
+
+Definitions 
+-----------
+
+Treatment
+    TODO 
+
+Experimental Unit
+    TODO 
+
+Indicator Variable 
+    TODO
+
+Response Variable 
+    TODO 
+
+.. note:: 
+
+    *Indicator* variables are sometimes known as either *explanatory* variables or *independent variables.
+
+    *Response* variables are sometimes known as either *explicated* variables or *dependent variables*.
+
+Single Blind
+------------
+
+TODO 
+
+Double Blind
+------------
+
+TODO
+
 .. _data_classification:
 
 Classifications of Data
 =======================
+
+The data we collect from an experiment is classified according to several factors.
 
 .. _data_dimensionality:
 
