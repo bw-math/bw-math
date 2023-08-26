@@ -203,9 +203,11 @@ Definition
 
 Example
     - Sampling a highschool by grouping the school into freshmen, sophomores, juniors and seniors. 
-    - Mailing surveys to 100 randomly selected residents of each state.
-    -  
-        
+    - Separating the population by political affiliation and then drawing a sample from each group.
+    - Mailing surveys to 100 randomly selected residents of each state. 
+
+The different groups of a stratified sample as sometimes known as *strata*.
+
 *Stratified samples* are easily visualized with a table. As an example, suppose in the first example, we were sampling a population of highschool students to determine for whom they were voting in the student government elections.
 
 +------------+-------------+-------------+-------+
@@ -227,11 +229,27 @@ These tables will pop up in a later chapter under the name :ref:`probability_tab
 Cluster
 *******
 
-    TODO
+Defintion
+    To get a *clustered* sample, the population is broken up into *random* groups and then each group is randomly sampled.
 
 Example
+    - Looking at a map of a city and breaking it into grid of squares. Then, selecting a few squares and drawing a sample from each square.
+    - Surveying people entering supermarkets across a city. 
+    - Looking at the employees of the top three local banks by revenue to determine the average salary of a bank employee.
 
-    TODO 
+It is easy to confuse the method of *cluster* sampling with the method of *stratified* sampling. They seem to be saying the exact same thing at first glance, but upon closer inspection, there are subtle, but important differences.
+
+.. topic:: Difference #1: The groups are sampled differently. 
+
+    In a clustered sample, certain clusters are selected and sampled; the rest of the clusters are ignored.  
+
+    In a stratified sample, all of the *strata* are selected and sampled.
+
+.. topic:: Difference #2: The composition of the groups is different.
+
+    In a clusterd sample, each cluster is *hetergeneous*; Each group contains representatives of all subsets of the population.
+
+    In a stratified sample, each strata is *homogeneous*; Each group contains representatives of a certain subset of the population.
 
 Other Terminology
 -----------------
@@ -337,7 +355,9 @@ As an extreme example to illustrate the meaning of this type of *bias*, if you w
 
 A famous example of *how to avoid selection bias* is the work of Abraham Wald during World War II. Wald was a statistican at Columbia University who was analyzing damage done to aircraft that had taken enemy fire. Had he only used the sample as his disposal, the aircraft that *survived* the war and made their way to Columbia University to be examined by him, he would have erroneously concluded the areas where craft sustained major damaged needed re-inforced with armor. 
 
-(INSERT PICTURE)
+.. image:: ../../assets/imgs/context/wald_plane_armor.png
+    :width: 50%
+    :align: center
 
 However, the sample he was looking at only represented *aircraft that had survived*, not the entire population of aircraft. In other words, the sample was not *representative* of the *aircraft that had not survived*, and thus could not be used to draw inferences about where on the body of the aircraft to re-inforce with armor. 
 

@@ -284,7 +284,7 @@ It follows these areas both represent fifty percent of the distribution.
 A *normal distribution* tells us classes closer to the :ref:`median` are more likely to be observed.
 
 Example
-    :download:`here <../../assets/datasets/velocity_of_light.csv>`.
+    :download:`here <../../assets/datasets/velocity_of_light_data.csv>`.
 
 .. note::
 
