@@ -80,13 +80,13 @@ Definition
 
 *Individuals* will mean different things depending on the experiment being conducted. 
 
-If we are measuring how hot it is over the course of a week in the summer, then the *individuals* in the experiment will be the temperature measurements made on a thermometer. The *experimental unit* of each *individual observation* will be degrees Kelvin (or degrees celsius or degrees fahrenheit, depending on the *scale* of the *experimental unit*).
+If we are measuring how hot it is over the course of a week in the summer, then the *individuals* in the experiment will be the temperature measurements made on a thermometer. The *units* of each *individual observation* will be degrees Kelvin (or degrees celsius or degrees fahrenheit, depending on the *scale* of the *unit*).
 
 .. note:: 
 
-    Degress Kelvin is the standard *experimental unit* for temperature the fields of physics, chemistry and biology.
+    Degress Kelvin is the standard *unit* for temperature the fields of physics, chemistry and biology.
 
-If we are measuring what percent of the country's population supports a certain government policy, then the *individuals* in the experiment will be the collection (:ref:`set <set_theory>`) of people's answers, "*Yes*" or "*No*". The *experimental unit* of each *individual observation* would be the binary units, *Y* or *N*. 
+If we are measuring what percent of the country's population supports a certain government policy, then the *individuals* in the experiment will be the collection (:ref:`set <set_theory>`) of people's answers, "*Yes*" or "*No*". The *unit* of each *individual observation* would be the binary units, *Y* or *N*. 
 
 .. _population: 
 
@@ -197,7 +197,7 @@ The last item in the list above is the most common technique in practice. A stan
 | 10    | Alain Badiou        |
 +-------+---------------------+
 
-Once each individual in the population is associated with an *index*, random numbers are generated; the indices that are selected by the random number generator then tell us what individuals to select for the sample. For example, we must get the numbers *3*, *6*, *10* and from this, we would then construct a sample of individuals: *Edmund Husserl*, *Gottlob Frege*, *Alain Badiou*. 
+Once each individual in the population is associated with an *index*, random numbers are generated; the indices that are selected by the random number generator then tell us what individuals to select for the sample. For example, the random number generator might output *3*, *6*,  and *10*; from this, we would then construct a sample of individuals: *Edmund Husserl*, *Gottlob Frege*, *Alain Badiou*. 
 
 .. _systematic_sampling:
 
@@ -208,7 +208,6 @@ Definition
     A *systematic* sample is selected from a population according to some fixed rule.
 
 Examples
-
     - Asking every 10 :sup:`th` person who enters a building if they are voting in the next election.
     - Selecting ten people from every zipcode.
     - Sending out surveys and using every 5 :sup:`th` one that is returned.
@@ -267,7 +266,7 @@ It is easy to confuse the method of *cluster* sampling with the method of *strat
 
 .. topic:: Difference #2: The composition of the groups is different.
 
-    In a clusterd sample, each cluster is *hetergeneous*; Each group contains representatives of all subsets of the population.
+    In a clustered sample, each cluster is *hetergeneous*; Each group contains representatives of all subsets of the population.
 
     In a stratified sample, each strata is *homogeneous*; Each group contains representatives of a certain subset of the population.
 
@@ -422,6 +421,10 @@ Examples of this type of bias can crop up when pollsters ask leading questions, 
 
 A more famous example of this type of bias is the `Milgram Experiment <https://en.wikipedia.org/wiki/Milgram_experiment>`_ conducted by Dr. Stanley Milgrim at Yale University. The *Milford Experiment* was a psychological study wherein participants were told they were testing the effects of phyiscal punishment, in form of an electric shock, on the memory. Participants were to be paired off as *teacher* and *learner*. The *learner* would be asked to memorize a series of words, and then asked to recite them. If they got the words wrong in the recitation, the *teacher* would administer an electric shock to the *learner*. Each time a wrong answer was given, the voltage of the electric shock was increased.
 
+.. image:: https://img.youtube.com/vi/Kzd6Ew3TraA/maxresdefault.jpg
+    :alt: Milgram Experiment
+    :target: https://www.youtube.com/watch?v=Kzd6Ew3TraA
+
 Unbeknownst to the participants of the study, this wasn't the actual experiment. In reality, the *learner* in every experiment was a paid actor and the electric shocks weren't real. The actor would intentionally get answers wrong and then pretend to be in pain when the *teacher* was administering the fake electric shocks. The *teacher* was the real object of study. Dr. Milgram was trying to see how much pain a randomly selected individual would inflict on someone else simply because they were told to do it. 
 
 When participants expressed unease or concern, the researchers running the study, intentionally dressed in white lab coats to give the appearance of authority, would give one of the following responses,
@@ -485,17 +488,23 @@ The key to eliminating bias and preventing fallacies is *good experimental desig
 Definitions 
 -----------
 
-Treatment
-    TODO 
-
 Experimental Unit
-    TODO 
+    The entity (person, object, thing) being observed in an experiment.
+
+Treatment
+    The condition applied in an experiment.
+
+.. topic:: Phraseology
+
+    The *experimental unit* receives *treatments*. 
+
+    *Treatments* are applied to *experimental units*.
 
 Indicator Variable 
-    TODO
+    An *indicator* variable is the variable over which the researcher has control.
 
 Response Variable 
-    TODO 
+    A *response* variable is the variable measured by the researcher. 
 
 .. note:: 
 
@@ -503,15 +512,59 @@ Response Variable
 
     *Response* variables are sometimes known as either *explicated* variables or *dependent variables*.
 
-Single Blind
-------------
+Example
+    A researcher changes the pH concentration of a solution and measures the temperature at various concentrations.
 
-TODO 
+In this example, the *indicator* or *explanatory* variable is the *pH contentration*. The researcher is able to change the amount of acid or base that is added to the solution. The *response* variable is the temperature of the solution.
+
+Blind Studies
+-------------
+
+The concept of *blind studies* mainly applies to the areas of psychology and medicine. These sciences deal with human nature and humans are, if nothing else, peculiar creatures. Their expectations can influence the results of the experiment.
+
+In medical studies, the *test* group will receive the real treatment while the *control* group will receive a *placebo* treatment. For example, in testing whether a certain drug treats cancer, the *control* group would receive a sugar pill. Yet it sometimes occurs 
+
+.. image:: https://img.youtube.com/vi/mSEr3A-pMsw/maxresdefault.jpg
+    :alt: Placebo Effect
+    :target: https://www.youtube.com/watch?v=mSEr3A-pMsw
+
+.. topic:: Placebo Effect
+
+    The *Placebo Effect* occurs when individuals in the *control group* appear as if they have received *treatment*. 
+
+To minimize the *Placebo Effect*, *single blind* and *double blind* studies are performed.
+
+Single Blind
+    In a single blind study, the participant does not know whether he or she is in the *control* or *test* group. However, the researcher *does* know.
 
 Double Blind
-------------
+    In a double blind study, neither the participant nor the researcher administering the treatment know if the individual is in the *control* or *test* group.
 
-TODO
+Matched Pairs 
+-------------
+
+A *matched pairs* design is an experimental design where researchers match pairs of participants by relevant characteristics. Then the researchers randomly assign one person from each pair to the treatment group and the other to the control group. This type of experiment is also known as a matching pairs design.
+
+An ideal example of a *matched pairs design* would be twins,
+
+.. image:: ../../assets/imgs/context/twins.jpg
+    :align: center
+
+If one of the twins is submitted to a *treatment*, their genetically identical counterpart serves as a nearly perfect *control*. 
+
+Randomized Blocks
+-----------------
+
+A *randomized block* experiment should be understood a series of identical experiments, where each *block* of the population sampled is composed of the same distribution of individuals. 
+
+A *randomized block* design is commonly encountered in *agricultural* applications. Consider a farmer who wants to test a new type of seed against his usual stock to determine if the yield is higher. In a *randomized block* experiment, he would break his plots of land into *blocks*, and then partition each block into segments, call them *A*, *B*, *C* and *D*,
+
+.. image:: ../../assets/imgs/statistics/randomized_blocks.png
+    :align: center
+
+The type of seed would be planted in the *A* segment of each block, i.e. the *A* segment would receive a *treatment*, while the other segments would be planted with the farmer's usual stock. Data would then be collected from each block and analyzed in isolation to determine if the new type of seed has any benefits. 
+
+In essence, each *block* represents a separate experiment, where the treated group is tested against the control group.
 
 .. _data_classification:
 
