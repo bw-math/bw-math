@@ -45,11 +45,13 @@ AP Statistics is an introductory college-level statistics course that introduces
     Any and all announcements will be posted to the Google Classroom. Any assignments or projects that are completed on the student's ChromeBook will be uploaded to Google as zip files. The code to join the classroom is given below,
 
     Classroom Code
-        TODO 
+        TBA 
 
 .. topic:: Website
 
-    All of the class notes, classwork, homework and projects for this class can be found at TODO. This site includes references to additional resources, such as datasets used in class and links to relevant Python documentation.
+    All of the class notes, classwork, homework and projects for this class can be found at `https://bishopwalshmath.org/ <https://bishopwalshmath.org/>`_. This site includes references to additional resources, such as datasets used in class, tutorial videos and links to relevant Python documentation.
+
+    **NOTE**: I will probably change the address to "*https://apstats.bishopwalshmath.org*" once I have everything setup. 
 
 .. topic:: Grading Breakdown
 
@@ -286,32 +288,32 @@ Week 8: October 16 :sup:`th` - October 20 :sup:`th`
 
     Topics
         - Chapter 4, Section 2: The Addition Rules for Probability 
-        - Project 7: TODO
+        - Project 7: TBA
   
     Assigned
         - Chapter 4, Section 2 Homework
-        - Project 7: TODO
+        - Project 7: TBA
 
 Week 9: October 23 :sup:`rd` - October 27 :sup:`th`
     Due
         - Chapter 4, Section 2 Homework
-        - Project 7: TODO
+        - Project 7: TBA
 
     Topics
         - Chapter 4, Section 4: Counting Rules
         - Chapter 4, Section 5: Probability and Counting Rules
-        - Project 8: TODO
+        - Project 8: TBA
 
     Assigned
         - Chapter 4, Section 4 Homework
         - Chapter 5, Section 5 Homework
-        - Project 8: TODO
+        - Project 8: TBA
   
 Week 10: October 30 :sup:`th` - November 3 :sup:`rd`
     Due
         - Chapter 4, Section 4 Homework
         - Chapter 4, Section 5 Homework
-        - Project 8: TODO
+        - Project 8: TBA
 
     Topics
         - Chapter 4, Section 3: The Multiplication Rules and Conditional Probability
@@ -451,19 +453,26 @@ Week 19: January 8 :sup:`th` - January 12 :sup:`th`
 
     Topics
         - Chapter 7, Section 1: Confidence Intervals for the Mean When :math:`\sigma` is Known and Sample Size 
+        - Project 16: TBA
 
     Assigned 
         - Chapter 7, Section 1 Homework
+        - Project 16: TBA
 
 Week 20: January 15 :sup:`th` - January 19 :sup:`th`
     Due
         - Chapter 7, Section 1 Homework
+        - Project 16: TBA
     
     Topics 
         - Chapter 7, Section 2: Confidence Intervals for the Mean When :math:`\sigma` is Unknown
+        - Project 17: TBA
+
 
     Assigned
         - Chapter 7, Section 2 Homework
+        - Project 17: TBA
+  
   
     .. warning::
     
@@ -472,22 +481,28 @@ Week 20: January 15 :sup:`th` - January 19 :sup:`th`
 Week 21: January 22 :sup:`nd` - January 26 :sup:`th`
     Due
         - Chapter 7, Section 2 Homework
+        - Project 17: TBA
 
     Topics
         - Chapter 7, Section 3: Confidence Intervals and Sample Size for Proportions
+        - Project 18: TBA
 
     Assigned
         - Chapter 7, Section 3 Homework 
+        - Project 18: TBA
 
 Week 22: January 29 :sup:`nd` - February 2 :sup:`nd`
     Due
         - Chapter 7, Section 3 Homework
+        - Project 18: TBA
   
     Topics
         - Chapter 7, Section 4: Confidence Intervals for Variances and Standard Deviations
+        - Project 19: TBA
 
     Assigned
         - Chapter 7, Section 4 Homework
+        - Project 19: TBA
 
 Week 23: February 5 :sup:`th` - February 9 :sup:`th`
     Due 
@@ -495,6 +510,7 @@ Week 23: February 5 :sup:`th` - February 9 :sup:`th`
         - Chapter 5 Review Homework
         - Chapter 6 Review Homework
         - Chapter 7 Review Homework
+        - Project 19: TBA
   
     Topics
         - Chapter 5 - 7 Review 
@@ -509,21 +525,26 @@ Week 24: February 12 :sup:`th` - February 16 :sup:`th`
     Topics
         - Chapter 8, Section 1: Steps in Hypothesis Testing - Traditional Method
         - Chapter 8, Section 2: Z Test for a Mean
+        - Project 20: TBA
 
     Assigned
         - Chapter 8, Section 1 Homework
         - Chapter 8, Section 2 Homework
+        - Project 20: TBA
   
 Week 25: February 19 :sup:`th` - February 23 :sup:`rd`
     Due
         - Chapter 8, Section 1 Homework
         - Chapter 8, Section 2 Homework
+        - Project 20: TBA
 
     Topics
         - Chapter 8, Section 3: T Test for a Mean
+        - Project 21: TBA
 
     Assigned 
         - Chapter 8, Section 3 Homework
+        - Project 21: TBA
 
     .. warning::
     
@@ -532,60 +553,75 @@ Week 25: February 19 :sup:`th` - February 23 :sup:`rd`
 Week 26: February 26 :sup:`th` - March 30 :sup:`th`
     Due 
         - Chapter 8, Section 3 Homework
+        - Project 21: TBA
 
     Topics
         - Chapter 8, Section 4: Z Test for a Proportion
+        - Project 22: TBA
 
     Assigned 
         - Chapter 8, Section 4 Homework
+        - Project 22: TBA
   
 Week 27: March 4 :sup:`th` - March 8 :sup:`th`
     Due 
         - Chapter 8, Section 4 Homework
+        - Project 22: TBA
   
     Topics
         - Chapter 8, Section 5: Chi Squared Test for a Variance or Standard Deviation
         - Chapter 8, Section 6: Additional Topics Regarding Hypothesis Testing
+        - Project 23: TBA
   
     Assigned
         - Chapter 8, Section 5 Homework
         - Chapter 8, Section 6 Homework
+        - Project 23: TBA
   
 Week 28: March 11 :sup:`th` - March 15 :sup:`th`
     Due 
         - Chapter 8, Section 5 Homework
         - Chapter 8, Section 6 Homework
+        - Project 23: TBA
   
     Topics
         - Chapter 9, Section 1: Testing the Difference Between Two Means Using The Z Test
+        - Project 24: TBA 
 
     Assigned 
         - Chapter 9, Section 1 Homework
+        - Project 24: TBA
   
 Week 29: March 18 :sup:`th` - March 22 :sup:`nd`
     Due 
         - Chapter 9, Section 1 Homework
+        - Project 25: TBA
   
     Topics
         - Chapter 9, Section 2: Testing the Difference Between Two Means of Independent Samples: Using the T Test
         - Chapter 9, Section 3: Testing the Difference Between Two Means: Dependent Samples 
+        - Project 26: TBA
   
     Assigned 
         - Chapter 9, Section 2 Homework
         - Chapter 9, Section 3 Homework
+        - Project 26: TBA
 
 Week 30: March 25 :sup:`th` - March 29 :sup:`th`
     Due 
         - Chapter 9, Section 2 Homework
         - Chapter 9, Section 3 Homework 
+        - Project 28: TBA
 
     Topics
         - Chapter 9, Section 4: Testing the Difference Between Two Proportions
         - Chapter 9, Section 5: Testing the Difference Between Two Variances
+        - Project 29: TBA
   
     Assigned 
         - Chapter 9, Section 4 Homework
         - Chapter 9, Section 5 Homework
+        - Project 29: TBA
   
     .. warning::
 
@@ -597,6 +633,7 @@ Week 31: April 1 :sup:`st` - April 5 :sup:`th`
         - Chapter 9, Section 5 Homework
         - Chapter 8 Review Homework
         - Chapter 9 Review Homework
+        - Project 29: TBA
   
     Topics
         - Chapter 8 - 9 Review
@@ -614,33 +651,42 @@ Week 32: April 8 :sup:`th` - April 12 :sup:`th`
 
     Topics
         - Chapter 10, Section 1: Scatter Plots and Correlation
+        - Project 30: TBA
 
     Assigned 
         - Chapter 10, Section 1 Homework
+        - Project 30: TBA
   
 Week 33: April 15 :sup:`th` - April 19 :sup:`th`
     Due
         - Chapter 10, Section 1 Homework
+        - Project 30: TBA
 
     Topics
         - Chapter 10, Section 2: Regression
+        - Project 31: TBA
 
     Assigned 
         - Chapter 10, Section 2 Homework
+        - Project 31: TBA
 
 Week 34: April 22 :sup:`nd` - April 26 :sup:`th`
     Due 
         - Chapter 10, Section 2 Homework
+        - Project 31: TBA
 
     Topics
         - Chapter 10, Section 3: Coefficient of Determination and Standard Error of the Estimate
+        - Project 32: TBA
 
     Assigned 
         - Chapter 10, Section 3 Homework
+        - Project 32: TBA
   
 Week 35: April 29 :sup:`th` - May 3 :sup:`rd`
     Due 
         - Chapter 10, Setion 3 Homework 
+        - Project 32: TBA
   
     Topics
         - A.P. Exam Prep Week

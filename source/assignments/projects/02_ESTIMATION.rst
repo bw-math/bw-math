@@ -4,6 +4,10 @@
 Estimation
 ==========
 
+    We must be careful not to confuse data with the abstractions we use to analyze them.
+    
+    - William James, 1907
+
 In this lab, you will use **Python** to calculate sample statistics.
 
 .. _project_two_instructions:
@@ -24,9 +28,6 @@ Instructions
 Background
 ==========
 
-Henry Cavendish performed the first modern, scientific experiment to measure the density of the Earth in 1797. Using the mutual gravitational attraction of two heavy metal balls attached to a `torsion balanace <https://en.wikipedia.org/wiki/Torsion_spring#Torsion_balance>`_ to twist a fiber of string, Cavendish measured the force of the tension produced. With `Newton's Laws of Motion <https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion>`_ , he was able to derive an expression that related this force to the mass of the Earth. 
-
-The estimate produced by Cavendish remained until modern times one of the most accurate and authoritative measures of the Earth's mass. In this lab, we will analyze the data produced by Cavendish.
 
 Loading In Data
 ===============
