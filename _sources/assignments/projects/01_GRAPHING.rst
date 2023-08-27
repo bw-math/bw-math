@@ -77,15 +77,10 @@ The following code snippet will load in a *CSV* spreadsheet named ``example.csv`
 
 .. code-block:: python 
 
-    import csv, os, sys
-
-    # discover file path of python script
-    #   i.e., if your python script is stored in C:\\myuser\Documents\projects\script.py
-    #           this command will return "C:\\myuser\Documents\projects"
-    script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
+    import csv
 
     # read in data
-    with open(f'{script_directory}/example.csv') as csv_file:
+    with open('example.csv') as csv_file:
         csv_reader = csv.reader(csv_file)
         raw_data = [ row for row in csv_reader ]
 
@@ -93,12 +88,10 @@ The following code snippet will load in a *CSV* spreadsheet named ``example.csv`
     headers = raw_data[0]
     columns = raw_data[1:]
 
-    # grab first column from csv file
+    # grab first column from csv file and ensure it's a number (not a string)
     column_1 = [ float(row[0]) for row in columns ]
 
     print(column_1)
-
-Use this snippet to load in the provided data in order to finish the project. 
 
 .. _project_one_project:
 
@@ -170,8 +163,8 @@ Density of the Earth
     b. What is the percent error of this estimate with respect to the actual value?
 
 
-Data Sets
-=========
+Datasets
+========
 
 Velocity of Light Data
 ----------------------
@@ -192,7 +185,7 @@ You can download the full dataset :download:`here <../../assets/datasets/earth_d
 
 The following table is the a preview of the data you will be using for this project. 
 
-.. csv-table:: Michelson's Velocity of Light Data
+.. csv-table:: Cavendish's Density of the Earth Data
    :file: ../../assets/datasets/previews/earth_density_data_preview.csv
 
 The first column corresponds to the experiment number (first, second, third, etc.). The second column is the *ratio of the density of Earth to the density of water*. Recall the density of water by definition is :math:`1 \frac{g}{cm^3}`.

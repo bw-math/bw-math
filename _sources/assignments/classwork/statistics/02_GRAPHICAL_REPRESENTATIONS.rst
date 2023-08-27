@@ -164,7 +164,7 @@ Use these graphs to answer the following questions,
 
 7. **2018, Free Response #5a-b** The following histograms summarize the teaching year for the teachers at two high schools, A and B.
 
-.. image:: ../../assets/imgs/classwork/2018_apstats_frp_05.png
+.. image:: ../../../assets/imgs/classwork/2018_apstats_frp_05.png
     :align: center
 
 Teaching year is recorded as an integer, with first-year teachers recorded as 1, second-year teachers recorded as 2, and so on. Both sets of data have a mean teaching year of 8.2, with data recorded from 200 teachers at High School A and 221 teachers at High School B. On the histograms, each interval represents possible integer values from the left endpoint up to but not including the right endpoint.
@@ -177,7 +177,7 @@ Teaching year is recorded as an integer, with first-year teachers recorded as 1,
 
 9. **2017, Free Response #4** The chemicals in clay used to make pottery can differ depending on the geographical region where the clay originated. Sometimes, archaeologists use a chemical analysis of clay to help identify where a piece of pottery originated. Such an analysis measures the amount of a chemical in the clay as a percent of the total weight of the piece of pottery. The boxplots below summarize analyses done for three chemicals—X, Y, and Z—on pieces of pottery that originated at one of three sites: I, II, or III.
 
-.. image:: ../../assets/imgs/classwork/2017_apstats_frp_04.png
+.. image:: ../../../assets/imgs/classwork/2017_apstats_frp_04.png
 
 Use this information to answer the following questions.
 

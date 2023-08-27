@@ -366,7 +366,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a></li>
 </ul>
             </nav>
         </div>
@@ -393,27 +393,24 @@ document.write(`
 <li><p>Create a folder named <cite>LASTNAME_FIRSTNAME_project_two</cite>, replacing <cite>LASTNAME</cite> and <cite>FIRSTNAME</cite> with your last name and first name, respectively.</p></li>
 <li><p>Download the <em>csv</em> dataset <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">below</span></a> and place it in the new folder you created in step 1.</p></li>
 <li><p>In the same folder, create a Python <em>py</em> script named <cite>project_two.py</cite></p></li>
+<li><p>Read the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section.</p></li>
+<li><p>Load in the data from the <em>csv</em> files using the technique outlined in the <a class="reference internal" href="#project-two-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the instructions of each problem.</p></li>
+<li><p>When you are done, zip your folder and all its contents in a file named <cite>LASTNAME_FIRSTNAME_project_two.zip</cite></p></li>
+<li><p>Upload the zip file here: TODO</p></li>
 </ol>
-<p>4. Read the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section.
-6. Perform all exercises and answer all questions in the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the instructions of each problem.
-6. When you are done, zip your folder and all its contents in a file named <cite>LASTNAME_FIRSTNAME_project_two.zip</cite>
-7. Upload the zip file here: TODO</p>
 </section>
 <section id="background">
 <span id="project-two-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<p>TODO</p>
 </section>
 <section id="loading-in-data">
-<h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
-<p>The following code snippet will load in a <em>CSV</em> spreadsheet, parse it into a list and then print it to screen, assuming that file is saved in the same folder as your script.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span><span class="o">,</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
-
-<span class="c1"># discover file path of python script</span>
-<span class="c1">#   i.e., if your python script is stored in C:\\myuser\Documents\projects\script.py</span>
-<span class="c1">#           this command will return &quot;C:\\myuser\Documents\project&quot;</span>
-<span class="n">script_directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+<span id="project-two-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
+<p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="01_GRAPHING.html#project-one-dataset"><span class="std std-ref">Velocity of Light</span></a> section.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 
 <span class="c1"># read in data</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">script_directory</span><span class="si">}</span><span class="s1">/earth_density_data.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
     <span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csv_file</span><span class="p">)</span>
     <span class="n">raw_data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv_reader</span> <span class="p">]</span>
 
@@ -421,23 +418,73 @@ document.write(`
 <span class="n">headers</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">columns</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
 
-<span class="c1"># grab first column from csv file</span>
+<span class="c1"># grab first column from csv file and ensure it&#39;s a number (not a string)</span>
 <span class="n">column_1</span> <span class="o">=</span> <span class="p">[</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">columns</span> <span class="p">]</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">column_1</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Use this snippet to load in the provided data in order to finish the project.</p>
 </section>
 <section id="project">
 <span id="project-two-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
+<ol class="arabic">
+<li><p>Write a function that accepts a list of data an argument and computes the following sample statistics. Write a separate function for each exercise and label it with a comment. Name the function appropriately.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>The sample mean of a dataset.</p></li>
+<li><p>The sample median of a dataset.</p></li>
+<li><p><em>Any</em> percentile of a dataset.</p></li>
+<li><p>The sample variance of a dataset.</p></li>
+<li><p>The sample standard deviation of a dataset.</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><em>#1c</em> will require <em>two arguments</em>, the list of data and the percentile you wish to find.</p>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Load in the data from the <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">Dataset</span></a> section. Note the length of a reign is separated in a <code class="docutils literal notranslate"><span class="pre">Years</span></code> column, a <code class="docutils literal notranslate"><span class="pre">Months</span></code> column and a <code class="docutils literal notranslate"><span class="pre">Days</span></code>. To clean the data and compute the total length of a Roman Emperor’s reign, apply the formula to each row of data,</p></li>
+</ol>
+<div class="math">
+<p><img src="../../_images/math/8f9acb6220313f54fac0179794236cfd42854089.png" alt="\text{ length of reign } = \text{ years column } + \frac{ \text{weeks column} }{52} + \frac{ \text{ days column } }{365}"/></p>
+</div><p>Save the cleaned data in a new list. Label the list with a comment.</p>
+<ol class="arabic" start="3">
+<li><p>Using the functions created in #1, find the following statistics using the <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">Dataset</span></a>. Label each computation with a comment.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>The mean length of a Roman Emperor’s reign.</p></li>
+<li><p>The median length of a Roman Emperor’s reign.</p></li>
+<li><p>The 25 <sup>th</sup> percentile length of a Roman Emperor’s reign.</p></li>
+<li><p>The 75 <sup>th</sup> percentile length of a Roman Emperor’s reign.</p></li>
+<li><p>The sample standard deviation of a Roman Emperor’s reign length.</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Compare the answers to <em>#2a</em> and <em>#2b</em>. What do these two answers tell you about the skew of this distribution? Interpret the skew in terms of Roman Emperors and the length of their reign, i.e. what does the skew tell you about Roman Emperor’s and the length of their reigns?</p></li>
+<li><p>Construct a relative frequency histogram and a cumulative relative frequency using 10 classes for this sample of data. Label the code for creating the plots with a comment. What type of distribution shape does this dataset have? Does this agree with your answer to <em>#4</em>? Explain.</p></li>
+<li><p>Construct a boxplot for this sample of data. Label the code for creating the plot with a comment. Based on the boxplot, are there any potential outliers in this dataset? Are the outliers Emperors who had long rules or short rules?</p></li>
+</ol>
+<ol class="arabic" start="6">
+<li><p>Find the coefficient of variation for this dataset. What does this statistic tell you about the distribution? Interpret the coefficient of variation in terms of Roman Emperors  and the length of their reign.</p></li>
+<li><p>Summarize the conclusions you can draw about Roman Emperors and the length of their reign. Answer the following questions in your summary.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What percentage of Roman Emperors had reigns longer than 30 years?</p></li>
+<li><p>What percentage of Roman Emperors had reigns shorter than 1 year?</p></li>
+<li><p>Interpret the results of <em>#a</em> and <em>#b</em>. What does this tell you about the distribution of Roman Emperors?</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
 </section>
-<section id="data-set">
-<span id="project-two-dataset"></span><h2>Data Set<a class="headerlink" href="#data-set" title="Permalink to this headline">#</a></h2>
-<p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/cdfabab0d4b760ba1033cb33c1adaac8/earth_density_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
+<section id="dataset">
+<span id="project-two-dataset"></span><h2>Dataset<a class="headerlink" href="#dataset" title="Permalink to this headline">#</a></h2>
+<p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/d989dffdbfec45a433df9e196b6368d4/roman_emperors_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
 <table class="table" id="id1">
-<caption><span class="caption-text">Cavendish’s Density of the Earth</span><a class="headerlink" href="#id1" title="Permalink to this table">#</a></caption>
+<caption><span class="caption-text">Roman Emperor Reigns</span><a class="headerlink" href="#id1" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 100%" />
 </colgroup>
@@ -468,7 +515,11 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p>The meaning of the columns is as follows.</p>
+<p>The meaning of the columns is as follows:
+- <code class="docutils literal notranslate"><span class="pre">Emperor</span></code> is the name of the Roman Emperor.
+- <code class="docutils literal notranslate"><span class="pre">Years</span></code> is the number of years in the reign.
+- <code class="docutils literal notranslate"><span class="pre">Months</span></code> is the number of months in the reign.
+- <code class="docutils literal notranslate"><span class="pre">Days</span></code> is the number of days in the reign.</p>
 </section>
 </section>
 
@@ -524,7 +575,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a></li>
 </ul>
   </nav></div>
 
