@@ -601,7 +601,7 @@ Bivariate
 Example 
     Data from the Challenger space shuttle explosion showing the atmospheric temperature versus the erosion index of the O-ring seal. The failure of the O-ring seal at lower temperatures was not accounted for prior to launch.
 
-.. csv-table:: Density of the Earth
+.. csv-table:: Challenger Space Shuttle Erosion Data
    :file: ../../assets/datasets/previews/challenger_erosion_data_preview.csv
 
 
@@ -665,30 +665,47 @@ Example
 Scale 
 -----
 
-Nominal Level
-    Unordered, categorical data.
+.. image:: ../../assets/imgs/statistics/measurement_scales.jpg
+    :align: center
 
-TODO 
+Nominal Level
+    Unordered, categorical data. 
+
+*Nominal data* is the simplest type of data. A *nominal scale* or *level* is a way of labelling and separating individuals in a sample into groups.
 
 Example
-
-    TODO
+    - The favorite color of each person in a sample of data.
+    - The political party affiliation of each person in a sample of data.
+    - The nationality of each person in a sample of data.
 
 Ordinal Level
     Ordered, categorical data.
 
+*Ordinal data* is a step above *nominal data*. It is *categorical*, but an order can be imposed on it.
+
 Example
+    - Answers to a customer satisfaction survey: ``DISSATISFIED``, ``NEUTRAL``, ``SATISIFED``
+    - Grades on a quiz: ``A``, ``B``, ``C``, ``D``, ``E``, ``F``.
 
-    TODO
-
-Interval/Ratio Level 
+Interval Level
     Ordered, numerical data.
 
-TODO
+*Interval level* is a step above *ordinal data*. The data are ordered, but now the *difference* between observations is defined. In other words, with an *interval level*, the distance between two observation :math:`x_2` and :math:`x_1` can be defined as :math:`x_2 - x_1`
 
 Example
+    - A historical time series of the Consumer Price Index
+    - The IQs of a random sample of people.
+    - The SAT scores of the graduating class of seniors.
 
-    TODO
+Ratio Level 
+    Ordered, numerical data.
+
+*Ratio level* is the final level of data. The data are ordered, the difference between two datapoints can be computed :math:`x_2 - x_1` and there is a *true zero*. With a *ratio level*, it makes sense to have an observation of *0*.
+
+Example
+    - Measurements from a scale, i.e. the weight of a mass.
+    - Measurements from a thermometer, i.e the temperature of a body.
+    - The amount of rainfall in a region over a period of a week. 
 
 .. _statistics_defintions:
 
@@ -711,3 +728,17 @@ Descriptive Statistic
 
 Inferential Statistic
     A sample statistic used to make inferences about the population.
+
+One of the most important *descriptive statistics* is the *sample mean*,
+
+.. math:: 
+
+    \bar{x} = \frac{ \sum^n_{i = 1} x_i } {n}
+
+One of the most important *inferential statistics* is the *Z-score* of the *sample mean*,
+
+.. math:: 
+
+    Z = \frac{ \bar{x} - \mu }{ \frac{ \sigma }{n} }
+
+If these formulae make no sense yet, don't worry! That is to be expected. They are listed here, so you can start forming a picture of the things to come. By the end of this class, these two formulae will become your best friends.  
