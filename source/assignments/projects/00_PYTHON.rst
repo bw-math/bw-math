@@ -49,7 +49,7 @@ Project
 
 2. Read through the :ref:`python_basics` and the :ref:`python_functions` pages. Try the examples on your ChromeBook as you read through these pages. Use them as a reference to complete the exercises that follow.
 
-3. Add the required ``import`` statements from :ref:`project_zero_imports` to the top of your *py* script.
+3. Add the required ``import`` statements from :ref:`project_zero_imports` to the top of your *py* script. 
 
 4. Take the *Natural Numbers* dataset from the :ref:`project_zero_dataset` section and add it to your *py* script. Perform the following operations. Be sure to add :ref:`python_comments` where appriopriate.
 
@@ -77,6 +77,8 @@ Project
 
 6. Now it's your turn to generate some data. Using the :ref:`python_choice_function` and the techniques studied so far, generate a list of data that represents the experiment of asking 100 randomly selected people whether they prefer Mayor McCheese, The Hamburglar, Grimace or Ronald McDonald as McDonald's mascot. Save the code in your script and lavel it with a comment ``# 6a``.
    
+.. _project_zero_imports:
+
 Imports
 =======
 
