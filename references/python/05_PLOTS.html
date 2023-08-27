@@ -374,7 +374,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ogives">Ogives</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scatterplot">Scatterplot</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-series">Time Series</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#error-bars">Error Bars</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
@@ -420,7 +419,7 @@ document.write(`
 <span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;tkagg&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><em>Always, always, always</em> do this. If it’s not clear by now, let’s re-iterate: anytime you are using <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> you should <em>always</em> tell it to use <code class="docutils literal notranslate"><span class="pre">tk</span></code>. Otherwise, you may encounter strange errors that make no sense.</p>
+<p>This step is not, strictly speaking, necessary as most systems will default to using this library, but if you plots aren’t showing up, this is the likely culprit. In the event something goes wrong and you can’t figure why, try adjusting this setting.</p>
 </section>
 <section id="gallery">
 <h2>Gallery<a class="headerlink" href="#gallery" title="Permalink to this headline">#</a></h2>
@@ -459,10 +458,6 @@ document.write(`
 <figure class="align-default">
 <img alt="../../_images/timeseries_no_trend.png" class="plot-directive" src="../../_images/timeseries_no_trend.png" />
 </figure>
-</section>
-<section id="error-bars">
-<h3>Error Bars<a class="headerlink" href="#error-bars" title="Permalink to this headline">#</a></h3>
-<p>TODO</p>
 </section>
 </section>
 <section id="references">
@@ -539,7 +534,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ogives">Ogives</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scatterplot">Scatterplot</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-series">Time Series</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#error-bars">Error Bars</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>

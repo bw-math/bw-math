@@ -362,13 +362,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#built-in-functions">Built-In Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#built-in-functions">Built-In Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#length-function">Length Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sum-function">Sum Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#max-function">Max Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#min-function">Min Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#range-function">Range Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerate-function">Enumerate Function</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-library-functions">Standard Library Functions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math">Math</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#square-root">Square Root</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#natural-base-e">Natural Base e</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#min">Min</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#max">Max</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ceil">Ceil</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#floor">Floor</a></li>
 </ul>
@@ -408,32 +414,59 @@ document.write(`
 <p>Says the function <code class="docutils literal notranslate"><span class="pre">my_function</span></code> has a <em>required</em> argument named <code class="docutils literal notranslate"><span class="pre">this_argument</span></code> and an <em>optional</em> argument named <code class="docutils literal notranslate"><span class="pre">that_argument</span></code>.</p>
 <section id="built-in-functions">
 <span id="python-builtin-functions"></span><h2>Built-In Functions<a class="headerlink" href="#built-in-functions" title="Permalink to this headline">#</a></h2>
+<section id="length-function">
+<span id="python-length-function"></span><h3>Length Function<a class="headerlink" href="#length-function" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">len(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>length</em> function is used to find how many elements are in a list.</p>
 </dd>
 </dl>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span> <span class="p">]</span>
 <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>5</p>
+</div></blockquote>
+</section>
+<section id="sum-function">
+<span id="python-sum-function"></span><h3>Sum Function<a class="headerlink" href="#sum-function" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">sum(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The sum function totals all the elements in a list.</p>
 </dd>
 </dl>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span> <span class="p">]</span>
 <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>8</p>
+</div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">sum</span></code> function is only defined if the list contains numerical data.</p>
 </div>
+</section>
+<section id="max-function">
+<span id="python-max-function"></span><h3>Max Function<a class="headerlink" href="#max-function" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">max(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>TODO</p>
 </dd>
+</dl>
+</section>
+<section id="min-function">
+<span id="python-min-function"></span><h3>Min Function<a class="headerlink" href="#min-function" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">min(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>TODO</p>
 </dd>
+</dl>
+</section>
+<section id="range-function">
+<span id="python-range-function"></span><h3>Range Function<a class="headerlink" href="#range-function" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">range(&lt;start</span> <span class="pre">:</span> <span class="pre">optional&gt;,</span> <span class="pre">&lt;stop</span> <span class="pre">:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;step</span> <span class="pre">:</span> <span class="pre">optional&gt;)</span></code></dt><dd><p>The <em>range</em> function generates an <em>iterable</em> sequence of numbers.</p>
 </dd>
 </dl>
@@ -445,14 +478,32 @@ document.write(`
 <p>Notice the output does not include the endpoint <em>10</em>. The <em>range</em> function is exclusive with respect to the <code class="docutils literal notranslate"><span class="pre">stop</span></code> endpoint. This is so we can use the length function and get a result that makes sense,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">]</span>
 <span class="n">n</span> <span class="o">=</span> <span class="n">length</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+10</p>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Notice the list in the output <em>doesn’t include</em> 10.</p>
+</div>
 <p>In other words, the <em>range</em> function excludes the endpoint so the length of the returned list will equal whatever number was originally passed into the <em>range</em> function.</p>
-<p>You can use the <code class="docutils literal notranslate"><span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">step</span></code> arguments to generate arbitrary lists of data according to a rule. The following code snippet will create and print the list <code class="docutils literal notranslate"><span class="pre">[2,</span> <span class="pre">4,</span> <span class="pre">6,</span> <span class="pre">8,</span> <span class="pre">10,</span> <span class="pre">12,</span> <span class="pre">14,</span> <span class="pre">16,</span> <span class="pre">18]</span></code></p>
+<p>You can use the <code class="docutils literal notranslate"><span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">step</span></code> arguments to generate arbitrary lists of data according to a rule,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>[2, 4, 6, 8, 10, 12, 14, 16, 18]</p>
+</div></blockquote>
+</section>
+<section id="enumerate-function">
+<h3>Enumerate Function<a class="headerlink" href="#enumerate-function" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">enumerate(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>enumerate</em> function allows you to number the elements in a list.</p>
 </dd>
@@ -463,10 +514,19 @@ document.write(`
 </div>
 <p>If you wanted to plot this as a <a class="reference internal" href="../../notes/statistics/01_GRAPHICAL_REPRESENTATIONS.html#time-series"><span class="std std-ref">Time Series</span></a> to get a sense for any trends in the price, you would order the observations by day and plot the stock prices against the order in which they occured.</p>
 <p>We already have the <em>y-axis</em> of the time series; we need to generate the <em>x-axis</em>. An easy way to do this is to <code class="docutils literal notranslate"><span class="pre">enumerate()</span></code> the list,</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">order</span> <span class="o">=</span> <span class="p">[</span> <span class="n">index</span> <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">stock_prices</span><span class="p">)</span> <span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">order</span> <span class="o">=</span> <span class="p">[</span> <span class="n">index</span> <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">price</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">stock_prices</span><span class="p">)</span> <span class="p">]</span>
+<span class="n">pairs</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">price</span><span class="p">)</span> <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">price</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">stock_prices</span><span class="p">)</span> <span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;order: &quot;</span><span class="p">,</span> <span class="n">order</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;pairs: &quot;</span><span class="p">,</span> <span class="n">pairs</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>[0, 1, 2, 3, 4]</p>
+<p>[(0, 101.5), (1, 100), (2, 105.25), (3, 107.1), (4, 104.56)]</p>
+</div></blockquote>
 <p><code class="docutils literal notranslate"><span class="pre">enumerate()</span></code> pulls the index of the observation from the list and allows you to use it in the <code class="docutils literal notranslate"><span class="pre">&lt;expr&gt;</span></code> of <a class="reference internal" href="02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a>. This is especially useful for time series data, as this example illustrates.</p>
+</section>
 </section>
 <section id="standard-library-functions">
 <span id="python-standard-library"></span><h2>Standard Library Functions<a class="headerlink" href="#standard-library-functions" title="Permalink to this headline">#</a></h2>
@@ -480,24 +540,98 @@ document.write(`
 <span id="python-math-package"></span><h3>Math<a class="headerlink" href="#math" title="Permalink to this headline">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">math</span></code> has all sorts of goodies in it. Unfortunately, we won’t need most of them. The ones we will need are detailed below.</p>
 <section id="square-root">
-<h4>Square Root<a class="headerlink" href="#square-root" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
+<span id="python-square-root-function"></span><h4>Square Root<a class="headerlink" href="#square-root" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">sqrt(&lt;</span> <span class="pre">value</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>square root</em> function calculates the square root of a number.</p>
+</dd>
+</dl>
+<p>Mathematically, the argument to this function is the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> in the following algebraic expression,</p>
+<div class="math">
+<p><img src="../../_images/math/b628e983913ad16e1fd8b984d0b1d6dee7fae2d7.png" alt="\sqrt{x}"/></p>
+</div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">root</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">36</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the square root of 36 is : &quot;</span><span class="p">,</span> <span class="n">root</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>the square root of 36 is : 6</p>
+</div></blockquote>
 </section>
 <section id="natural-base-e">
-<h4>Natural Base e<a class="headerlink" href="#natural-base-e" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
-</section>
-<section id="min">
-<h4>Min<a class="headerlink" href="#min" title="Permalink to this headline">#</a></h4>
-</section>
-<section id="max">
-<h4>Max<a class="headerlink" href="#max" title="Permalink to this headline">#</a></h4>
+<span id="python-e-function"></span><h4>Natural Base e<a class="headerlink" href="#natural-base-e" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">exp(&lt;exponent</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>e</em> function raises the number <em>e</em> to the given exponent.</p>
+</dd>
+</dl>
+<p>The argument to this function is the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> in the following expression,</p>
+<div class="math">
+<p><img src="../../_images/math/54005a7046b36dc5119415a0fd1c2d6e763d2454.png" alt="e ^ {x}"/></p>
+</div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">e</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">e_squared</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the value of e is: &quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the value of e squared is: &quot;</span><span class="p">,</span> <span class="n">e_squared</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>the value of e is: 2.718281828459045
+the value of e squared is: 7.38905609893065</p>
+</div></blockquote>
 </section>
 <section id="ceil">
-<h4>Ceil<a class="headerlink" href="#ceil" title="Permalink to this headline">#</a></h4>
+<span id="python-ceiling-function"></span><h4>Ceil<a class="headerlink" href="#ceil" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">ceil(&lt;value</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>ceiling</em> function always rounds a number up to the next integer (whole-number)</p>
+</dd>
+</dl>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The <em>celing function</em> will <strong>always</strong> round up, even in cases like <code class="docutils literal notranslate"><span class="pre">2.3</span></code>, where ordinarily we would round down.</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">ceiling_test_1</span> <span class="o">=</span> <span class="mf">4.8</span>
+<span class="n">ceiling_test_2</span> <span class="o">=</span> <span class="mf">32.1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ceil(4.8) = &quot;</span><span class="p">,</span> <span class="n">ceiling_test_1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ceil(32.1) = &quot;</span><span class="p">,</span> <span class="n">ceiling_test_2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>ceil(4.8) = 5
+ceil(32.1) = 33</p>
+</div></blockquote>
 </section>
 <section id="floor">
-<h4>Floor<a class="headerlink" href="#floor" title="Permalink to this headline">#</a></h4>
+<span id="python-floor-function"></span><h4>Floor<a class="headerlink" href="#floor" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">floor(&lt;value</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>floor</em> function always rounds a number down to the previous integer (whole-number)</p>
+</dd>
+</dl>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The <em>floor</em> function <strong>always</strong> rounds down, even in cases like <code class="docutils literal notranslate"><span class="pre">2.7</span></code>, where ordinarily we would round down.</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">floor_test_1</span> <span class="o">=</span> <span class="mf">4.8</span>
+<span class="n">floor_test_2</span> <span class="o">=</span> <span class="mf">32.1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;floor(4.8) = &quot;</span><span class="p">,</span> <span class="n">floor_test_1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;floor(32.1) = &quot;</span><span class="p">,</span> <span class="n">floor_test_2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>floor(4.8) = 4
+floor(32.1) = 32</p>
+</div></blockquote>
 </section>
 </section>
 <section id="random">
@@ -509,16 +643,23 @@ document.write(`
 <p>Truly random numbers are a valuable commodity; they are used by investment banks to simulate financial outcomes, they are used by companies to train machine learning algorithms, they are used by militaries to conduct war-games, etc.</p>
 <p>The numbers that are returned by <code class="docutils literal notranslate"><span class="pre">random</span></code> are what are called <a class="reference external" href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">pseudo-random numbers</a>. <em>Pseudo-random numbers</em> approximate the properties we would expect random numbers to have, but if you look too closely you might start to notice they are not <em>truly</em> random. So don’t look too closely; For the purposes of this class, we may assume anything returned by the <code class="docutils literal notranslate"><span class="pre">random</span></code> package is actually random.</p>
 </div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Due to the nature of the <code class="docutils literal notranslate"><span class="pre">random</span></code> package, if you are following along on your ChromeBook, you will get different output than the examples.</p>
+</div>
 <section id="random-function">
 <span id="python-random-function"></span><h4>Random Function<a class="headerlink" href="#random-function" title="Permalink to this headline">#</a></h4>
 <p>The simplest function in the <code class="docutils literal notranslate"><span class="pre">random</span></code> package is the <code class="docutils literal notranslate"><span class="pre">random()</span></code>. The <code class="docutils literal notranslate"><span class="pre">random()</span></code> has no arguments; it will always return a number between <em>0</em> and <em>1</em>, excluding the endpoitns. The following code illustrates its use,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
-
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is a random number between 0 and 1: &quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>this is a random number between 0 and 1: 0.7886516803637625</p>
+</div></blockquote>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Be careful to distinguish the <code class="docutils literal notranslate"><span class="pre">random</span></code> <em>package</em> from the <code class="docutils literal notranslate"><span class="pre">random()</span></code> <em>function</em>. The <code class="docutils literal notranslate"><span class="pre">random</span></code> <em>package</em> is a <cite>namespace &lt;https://realpython.com/python-namespaces-scope/&gt;</cite> for <em>naming</em> functions. The <code class="docutils literal notranslate"><span class="pre">random()</span></code> function is an operation that produce output.</p>
@@ -528,16 +669,19 @@ document.write(`
 <span id="python-randint-function"></span><h4>Random Integer Function<a class="headerlink" href="#random-integer-function" title="Permalink to this headline">#</a></h4>
 <p>The <a class="reference internal" href="#python-random-function"><span class="std std-ref">Random Function</span></a> will suffice for most purposes. Occassionally, we will need integer-valued random numbers instead of real-valued random numbers. To that end, we will need to use the <code class="docutils literal notranslate"><span class="pre">randint()</span></code> function. The syntax for the <code class="docutils literal notranslate"><span class="pre">randint()</span></code> is given below,</p>
 <blockquote>
-<div><p>randint(&lt;start&gt;, &lt;stop&gt;)</p>
+<div><p>randint(&lt;start : required&gt;, &lt;stop : required&gt;)</p>
 </div></blockquote>
 <p><code class="docutils literal notranslate"><span class="pre">randint</span></code> returns a random integer between <code class="docutils literal notranslate"><span class="pre">&lt;start&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;stop&gt;</span></code>, including both endpoints.</p>
 <p>The following code illustrates its use,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
-
 <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is a random integer between 1 and 5, including 1 and 5: &quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>this is a random integer between 1 and 5, including 1 and 5: 2</p>
+</div></blockquote>
 </section>
 <section id="random-choice-function">
 <span id="python-choice-function"></span><h4>Random Choice Function<a class="headerlink" href="#random-choice-function" title="Permalink to this headline">#</a></h4>
@@ -554,9 +698,13 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is a random choice from the list &quot;</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="s2">&quot; : &quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>this is a random choice from the list [‘Augustus’, ‘Tiberius’, ‘Hadrian’]: Tiberius</p>
+</div></blockquote>
 </section>
 <section id="normal-variate">
-<h4>Normal Variate<a class="headerlink" href="#normal-variate" title="Permalink to this headline">#</a></h4>
+<span id="python-normal-variate-function"></span><h4>Normal Variate<a class="headerlink" href="#normal-variate" title="Permalink to this headline">#</a></h4>
 <p>TODO</p>
 </section>
 </section>
@@ -585,14 +733,17 @@ document.write(`
 <p>Take note of the <em>indentation</em>. <strong>Python</strong> is very particular about <em>indentation</em> because that is how it groups functions together. A <em>function</em> definition must be indented once (with <code class="docutils literal notranslate"><span class="pre">TAB</span></code>). All lines within the function must be the same <em>indentation</em> level. If you do not follow this requirement, you will get errors. Errors are bad. So, always pay your indentation.</p>
 <p>We can call this function after defined it by addressing it by its name and passing in an argument. Create a new <a class="reference internal" href="01_SETUP.html#python-idle"><span class="std std-ref">IDLE Notebook</span></a>, copy in the following function and try executing it with <code class="docutils literal notranslate"><span class="pre">F5</span></code>,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fancy</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
-    <span class="n">sentence</span> <span class="o">=</span> <span class="n">word</span> <span class="o">+</span> <span class="s2">&quot; is fancy!&quot;</span>
+    <span class="n">sentence</span> <span class="o">=</span> <span class="s2">&quot;fancy &quot;</span> <span class="o">+</span> <span class="n">word</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span>
     <span class="k">return</span> <span class="n">sentence</span>
 
 <span class="n">fancified_taco</span> <span class="o">=</span> <span class="n">fancy</span><span class="p">(</span><span class="s2">&quot;taco&quot;</span><span class="p">)</span>
-
 <span class="nb">print</span><span class="p">(</span><span class="n">fancified_taco</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>fancy taco!</p>
+</div></blockquote>
 </section>
 </section>
 </section>
@@ -645,13 +796,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#built-in-functions">Built-In Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#built-in-functions">Built-In Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#length-function">Length Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sum-function">Sum Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#max-function">Max Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#min-function">Min Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#range-function">Range Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerate-function">Enumerate Function</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-library-functions">Standard Library Functions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math">Math</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#square-root">Square Root</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#natural-base-e">Natural Base e</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#min">Min</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#max">Max</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ceil">Ceil</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#floor">Floor</a></li>
 </ul>

@@ -17,6 +17,11 @@ Says the function ``my_function`` has a *required* argument named ``this_argumen
 Built-In Functions
 ==================
 
+.. _python_length_function:
+
+Length Function 
+---------------
+
 ``len(<list : required>)``
     The *length* function is used to find how many elements are in a list.
 
@@ -24,6 +29,16 @@ Built-In Functions
 
     data = [ 1, 2, 3, 4, 5 ]
     n = len(data)
+    print(n)
+
+Output:
+
+    5
+
+.. _python_sum_function:
+
+Sum Function
+------------
 
 ``sum(<list : required>)``
     The sum function totals all the elements in a list.
@@ -32,17 +47,36 @@ Built-In Functions
 
     data = [ 2, 2, 2, 2 ]
     total = sum(data)
-    print(data)
+    print(total)
+
+Output:
+
+    8
 
 .. note::
 
     The ``sum`` function is only defined if the list contains numerical data.
 
+.. _python_max_function:
+
+Max Function
+------------
+
 ``max(<list : required>)``
     TODO 
 
+.. _python_min_function:
+
+Min Function
+------------
+
 ``min(<list : required>)``
     TODO 
+
+.. _python_range_function:
+
+Range Function
+--------------
 
 ``range(<start : optional>, <stop : required>, <step : optional>)``
     The *range* function generates an *iterable* sequence of numbers. 
@@ -61,15 +95,33 @@ Notice the output does not include the endpoint *10*. The *range* function is ex
 
     data = [ i for i in range(10) ]
     n = length(data)
+    print(data)
     print(n)
+
+Output:
+
+    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    10
+
+.. important:: 
+
+    Notice the list in the output *doesn't include* 10.
 
 In other words, the *range* function excludes the endpoint so the length of the returned list will equal whatever number was originally passed into the *range* function.
 
-You can use the ``start`` and ``step`` arguments to generate arbitrary lists of data according to a rule. The following code snippet will create and print the list ``[2, 4, 6, 8, 10, 12, 14, 16, 18]``
+You can use the ``start`` and ``step`` arguments to generate arbitrary lists of data according to a rule,
 
 .. code:: python 
 
     data = [ i for i range(2, 20, 2) ]
+    print(data)
+
+Output:
+
+    [2, 4, 6, 8, 10, 12, 14, 16, 18]
+
+Enumerate Function 
+------------------
 
 ``enumerate(<list : required>)``
     The *enumerate* function allows you to number the elements in a list.
@@ -86,7 +138,16 @@ We already have the *y-axis* of the time series; we need to generate the *x-axis
 
 .. code:: python
 
-    order = [ index for index, data in enumerate(stock_prices) ]
+    order = [ index for index, price in enumerate(stock_prices) ]
+    pairs = [ (index, price) for index, price in enumerate(stock_prices) ]
+    print("order: ", order)
+    print("pairs: ", pairs)
+
+Output:
+
+    [0, 1, 2, 3, 4]
+    
+    [(0, 101.5), (1, 100), (2, 105.25), (3, 107.1), (4, 104.56)]
 
 ``enumerate()`` pulls the index of the observation from the list and allows you to use it in the ``<expr>`` of :ref:`python_list_comprehension`. This is especially useful for time series data, as this example illustrates.
 
@@ -110,28 +171,113 @@ Math
 
 The ``math`` has all sorts of goodies in it. Unfortunately, we won't need most of them. The ones we will need are detailed below. 
 
+.. _python_square_root_function:
 
 Square Root
 ***********
 
-TODO
+``sqrt(< value : required>)``
+    The *square root* function calculates the square root of a number.
+
+Mathematically, the argument to this function is the :math:`x` in the following algebraic expression,
+
+.. math:: 
+
+    \sqrt{x}
+
+.. code:: python
+
+    import math
+
+    root = math.sqrt(36)
+    print("the square root of 36 is : ", root)
+
+Output:
+
+    the square root of 36 is : 6
+
+.. _python_e_function:
 
 Natural Base e
 **************
 
-TODO 
+``exp(<exponent : required>)``
+    The *e* function raises the number *e* to the given exponent.
 
-Min
-***
+The argument to this function is the :math:`x` in the following expression,
 
-Max
-***
+.. math:: 
+
+    e ^ {x}
+
+.. code:: python
+
+    import math
+
+    e = math.exp(1)
+    e_squared = math.exp(2)
+
+    print("the value of e is: ", e)
+    print("the value of e squared is: ", e_squared)
+
+Output:
+
+    the value of e is: 2.718281828459045
+    the value of e squared is: 7.38905609893065
+
+.. _python_ceiling_function:
 
 Ceil
 ****
 
+``ceil(<value : required>)``
+    The *ceiling* function always rounds a number up to the next integer (whole-number)
+
+.. important:: 
+
+    The *celing function* will **always** round up, even in cases like ``2.3``, where ordinarily we would round down.
+
+.. code:: python
+
+    import math
+
+    ceiling_test_1 = 4.8
+    ceiling_test_2 = 32.1
+
+    print("ceil(4.8) = ", ceiling_test_1)
+    print("ceil(32.1) = ", ceiling_test_2)
+
+Output:
+
+    ceil(4.8) = 5
+    ceil(32.1) = 33
+
+.. _python_floor_function:
+
 Floor
 *****
+
+``floor(<value : required>)``
+    The *floor* function always rounds a number down to the previous integer (whole-number)
+
+.. important:: 
+
+    The *floor* function **always** rounds down, even in cases like ``2.7``, where ordinarily we would round down.
+
+.. code:: python
+
+    import math
+
+    floor_test_1 = 4.8
+    floor_test_2 = 32.1
+
+    print("floor(4.8) = ", floor_test_1)
+    print("floor(32.1) = ", floor_test_2)
+
+Output:
+
+    floor(4.8) = 4
+    floor(32.1) = 32
 
 .. _python_random_package:
 
@@ -148,6 +294,10 @@ The ``random`` package is very appropriately named. It is used to generate rando
 
     The numbers that are returned by ``random`` are what are called `pseudo-random numbers <https://en.wikipedia.org/wiki/Pseudorandom_number_generator>`_. *Pseudo-random numbers* approximate the properties we would expect random numbers to have, but if you look too closely you might start to notice they are not *truly* random. So don't look too closely; For the purposes of this class, we may assume anything returned by the ``random`` package is actually random.
 
+.. important:: 
+
+    Due to the nature of the ``random`` package, if you are following along on your ChromeBook, you will get different output than the examples.
+
 .. _python_random_function:
 
 Random Function
@@ -160,8 +310,11 @@ The simplest function in the ``random`` package is the ``random()``. The ``rando
     import random
     
     x = random.random()
-    
     print("this is a random number between 0 and 1: ", x)
+
+Output:
+
+    this is a random number between 0 and 1: 0.7886516803637625
 
 .. warning:: 
     
@@ -174,7 +327,7 @@ Random Integer Function
 
 The :ref:`python_random_function` will suffice for most purposes. Occassionally, we will need integer-valued random numbers instead of real-valued random numbers. To that end, we will need to use the ``randint()`` function. The syntax for the ``randint()`` is given below,
 
-    randint(<start>, <stop>)
+    randint(<start : required>, <stop : required>)
 
 ``randint`` returns a random integer between ``<start>`` and ``<stop>``, including both endpoints.
 
@@ -183,9 +336,12 @@ The following code illustrates its use,
 .. code:: python 
 
     import random 
-
     x = random.randint(1,5)
     print("this is a random integer between 1 and 5, including 1 and 5: ", x)
+
+Output: 
+
+    this is a random integer between 1 and 5, including 1 and 5: 2
 
 .. _python_choice_function:
 
@@ -206,6 +362,12 @@ The following code illustrates its use,
     x = random.choice(options)
 
     print("this is a random choice from the list ", options, " : ", x)
+
+Output:
+
+    this is a random choice from the list ['Augustus', 'Tiberius', 'Hadrian']: Tiberius
+
+.. _python_normal_variate_function:
 
 Normal Variate
 **************
@@ -250,9 +412,12 @@ We can call this function after defined it by addressing it by its name and pass
 .. code:: python
 
     def fancy(word):
-        sentence = word + " is fancy!" 
+        sentence = "fancy " + word + "!" 
         return sentence
 
     fancified_taco = fancy("taco")
-
     print(fancified_taco)
+
+Output:
+
+    fancy taco!
