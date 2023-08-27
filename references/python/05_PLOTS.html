@@ -368,6 +368,17 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importing">Importing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-axes">Creating the Axes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#labelling">Labelling</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#titles">Titles</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subtitles">Subtitles</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#axes">Axes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-graphs">Multiple Graphs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#showing-the-plot">Showing The Plot</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gallery">Gallery</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boxplot">Boxplot</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">Histogram</a></li>
@@ -394,7 +405,7 @@ document.write(`
 <p>This section serves as a gallery for all the different sorts of graphs you can create with <strong>Python</strong>. However, before we get to that point, we need to make sure our computers are setup with graphing capabilities. If you followed along with the <a class="reference internal" href="01_SETUP.html#python-setup"><span class="std std-ref">Python Setup</span></a> and completed all the steps on that page, you should be good to go. You may skip the next section in that case, or read through as a refresher (re-installing the graphics library won’t break anything).</p>
 <p>By default, <strong>Python</strong> does not have statistical graphing capabilities. You must install two addition packages to supplement this deficiency, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> and <code class="docutils literal notranslate"><span class="pre">tk</span></code>.</p>
 <section id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
+<span id="python-plotting-prerequisites"></span><h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
 <section id="matplotlib">
 <h3>matplotlib<a class="headerlink" href="#matplotlib" title="Permalink to this headline">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> is a versatile library for generating just about any sort of mathematical graph you can imagine. To install it, open up the Linux Terminal on your ChromeBook and type,</p>
@@ -412,14 +423,104 @@ document.write(`
 </section>
 </section>
 <section id="importing">
-<h2>Importing<a class="headerlink" href="#importing" title="Permalink to this headline">#</a></h2>
-<p>When you import <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> into your scripts, the very first thing you should always do is <em>tell it to use the</em> <code class="docutils literal notranslate"><span class="pre">tk</span></code> <em>library</em> to create graphs.</p>
+<span id="python-plotting-imports"></span><h2>Importing<a class="headerlink" href="#importing" title="Permalink to this headline">#</a></h2>
+<p>When you import <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> into your scripts, the very first thing you should do is <em>tell it to use the</em> <code class="docutils literal notranslate"><span class="pre">tk</span></code> <em>library</em> to create graphs.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib</span>
 
 <span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;tkagg&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>This step is not, strictly speaking, necessary as most systems will default to using this library, but if you plots aren’t showing up, this is the likely culprit. In the event something goes wrong and you can’t figure why, try adjusting this setting.</p>
+<p>This step is not, strictly speaking, necessary as most systems will default to using this library, but if you plots aren’t showing up or you experience other weird errors, this is the likely culprit. In the event something goes wrong and you can’t figure why, try adjusting this setting.</p>
+</section>
+<section id="creating-the-axes">
+<h2>Creating the Axes<a class="headerlink" href="#creating-the-axes" title="Permalink to this headline">#</a></h2>
+<p>To create a plot, we use the <code class="docutils literal notranslate"><span class="pre">pyplot</span></code> library. The <code class="docutils literal notranslate"><span class="pre">subplots()</span></code> function within the <code class="docutils literal notranslate"><span class="pre">pyplot</span></code> library will generate an <em>x-y</em> plane canvas, called the <em>axes</em>.</p>
+<p>The following code will create a <em>figure</em> and a set of <em>axes</em> on which we can graph.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># note: the `as` gives the library a short-cut name we can use.</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">fig</span></code>, which stands for <em>figure</em>, is for drawing directly onto a 2D image using pixels. We will not use <em>figures</em> in this class to generate images. We are only interested in the <code class="docutils literal notranslate"><span class="pre">axes</span></code>, which allow us to graph things in the <em>x-y</em> plane.</p>
+</div>
+<section id="labelling">
+<h3>Labelling<a class="headerlink" href="#labelling" title="Permalink to this headline">#</a></h3>
+<section id="titles">
+<h4>Titles<a class="headerlink" href="#titles" title="Permalink to this headline">#</a></h4>
+<p>The following code adds a title to a plot,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">plot</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;This is the Main Title&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="subtitles">
+<h4>Subtitles<a class="headerlink" href="#subtitles" title="Permalink to this headline">#</a></h4>
+<p>The following code adds a subtitle to a plot,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">plot</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;This is the Sub Title&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="axes">
+<h4>Axes<a class="headerlink" href="#axes" title="Permalink to this headline">#</a></h4>
+<p>The following code labels both the <em>x</em> and <em>y</em> axes in a plot,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">axes</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;x units&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;y units&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="multiple-graphs">
+<h3>Multiple Graphs<a class="headerlink" href="#multiple-graphs" title="Permalink to this headline">#</a></h3>
+<p>You can add multiple graphs to the same image by creating additional axes. You can create more axes by passing an argument into the <code class="docutils literal notranslate"><span class="pre">subplots()</span></code> function.</p>
+<p>When you pass in arguments to <code class="docutils literal notranslate"><span class="pre">subplots</span></code>, it will return a <em>list</em> of axes. You can then access the individual axes by using their <em>index</em>,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
+
+<span class="c1"># create two sets of axes</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># plot the ordered pairs (4, 10) and (5, 11) on the first set of axes</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">])</span>
+<span class="c1"># plot the ordered pairs (-1, 5) and (2, -2) on the second set of axes</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The number of <em>axes</em> is the <em>second</em> argument of the <code class="docutils literal notranslate"><span class="pre">subplots()</span></code> function.</p>
+</div>
+</section>
+</section>
+<section id="showing-the-plot">
+<h2>Showing The Plot<a class="headerlink" href="#showing-the-plot" title="Permalink to this headline">#</a></h2>
+<p>Once you have plotted something on the <code class="docutils literal notranslate"><span class="pre">axes</span></code>, you can display the plot with the <code class="docutils literal notranslate"><span class="pre">show()</span></code> function.</p>
+<p>This example will plot the ordered pairs <img class="math" src="../../_images/math/d8f984479028d739ef9a97d3777f3f99534444fc.png" alt="(1, 8), (2, 9), (3, 7)"/></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">plot</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Ordered Pairs&quot;</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="o">.</span><span class="n">scatter</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">7</span><span class="p">])</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;X units&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Y units&quot;</span><span class="p">)</span>
+
+<span class="n">plot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
 </section>
 <section id="gallery">
 <h2>Gallery<a class="headerlink" href="#gallery" title="Permalink to this headline">#</a></h2>
@@ -528,6 +629,17 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importing">Importing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-axes">Creating the Axes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#labelling">Labelling</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#titles">Titles</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subtitles">Subtitles</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#axes">Axes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-graphs">Multiple Graphs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#showing-the-plot">Showing The Plot</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gallery">Gallery</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boxplot">Boxplot</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">Histogram</a></li>
