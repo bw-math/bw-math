@@ -12,7 +12,7 @@ The Student Government elections are an excellent opportunity to put some of you
 Preamble
 ========
 
-As you will soon discover in the :ref:`project_five_instructions`, you will be assigned a partner for this lab. In the spirit of statistics and to put you in the right headspace for this lab, I will be using the following code snippet to randomly assign partners.
+As you will soon discover in the :ref:`project_five_instructions`, you will be assigned a partner for this lab. In the spirit of statistics and to put you in the right headspace for this lab, I will be using the following code snippet to randomly assign partners. 
 
 .. code:: python
 
@@ -26,7 +26,7 @@ As you will soon discover in the :ref:`project_five_instructions`, you will be a
 
     Obviously, I will be using your real names in class. 
 
-.. _project_five_instruction:
+.. _project_five_instructions:
 
 Instructions
 ============
