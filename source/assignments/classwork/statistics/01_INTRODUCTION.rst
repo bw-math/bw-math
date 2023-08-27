@@ -13,12 +13,33 @@ Discussion Questions
 
 ?. TODO
 
-?. TODO 
+?. **2012, Practice Exam, #11** The manager of a public swimming pool wants to compare the effectiveness of two laundry detergents, Detergent A and Detergent B, in cleaning the towels that are used daily. As each dirty towel is turned in, it is placed into the only washing machine on the premises. When the washing machine contains 20 towels, the
+manager flips a coin to determine whether Detergent A or Detergent B will be used for that load. The cleanliness of the load of towels is rated on a scale of 1 to 10 by a person who does not know which detergent was used. The manager continues this experiment for many days. Which of the following best describes the manager's study?
 
-?. TODO
+    (A) A completely randomized design
 
-A.P. Exam Practice
-------------------
+    (B) A randomized block design with Detergent A and Detergent B as blocks
+
+    (C) A randomized block design with the washing machine as the block
+
+    (D) A matched-pairs design with Detergent A and Detergent B as the pair
+    
+    (E) An observational study
+
+?. **2012, Practice Exam, #10** A compact disc manufacturer wanted to determine which of two different cover designs for a newly released CD will generate more sales. The manufacturer chose 70 stores to sell the CD. Thirty-five of these stores were randomly assigned to sell CDs with one of the cover designs and the other 35 were assigned to sell
+the CDs with the other cover design. The manufacturer recorded the number of CDs sold at each of the stores and found a significant difference between the mean number of CDs sold for the two cover designs. Which of the following gives the conclusion that should be made based on the results and provides the best explanation for
+the conclusion?
+
+    (A) It is not reasonable to conclude that the difference in sales was caused by the different cover designs because this was not an experiment.
+
+    (B) It is not reasonable to conclude that the difference in sales was caused by the different cover designs because there was no control group for comparison.
+
+    (C) It is not reasonable to conclude that the difference in sales was caused by the different cover designs because the 70 stores were not randomly chosen.
+
+    (D) It is reasonable to conclude that the difference in sales was caused by the different cover designs because the cover designs were randomly assigned to stores.
+    
+    (E) It is reasonable to conclude that the difference in sales was caused by the different cover designs because the sample size was large.
+
 
 ?. **2006, Free Response, #5** When a tractor pulls a plow through an agricultural field, the energy needed to pull that plow is called the draft. The draft is affected by environmental conditions such as soil type, terrain, and moisture. 
 
