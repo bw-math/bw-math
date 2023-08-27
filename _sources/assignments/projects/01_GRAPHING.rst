@@ -27,6 +27,15 @@ Instructions
     
     You may need to refer to the :ref:`python_plotting` page for examples of various types of graphs. 
 
+Formulae
+========
+
+Recall the formula for *percent error* is given by,
+
+.. math::
+
+    \text{percent error} = \frac{ \text{estimated - actual} }{ \text{actual} } \cdot 100
+
 .. _project_one_background: 
 
 Background
@@ -121,7 +130,7 @@ Velocity of Light
 
     c. Estimate the median of this data set.
 
-    d.  
+    d. Estimate the range of this data set. 
 
 4. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your docstring.
 
@@ -129,22 +138,40 @@ Velocity of Light
 
     b. What is the percent error of this estimate with respect to the actual value.
 
-.. tip:: 
-
-    Recall the formula for *percent error* is given by,
-
-    .. math::
-
-        \text{percent error} = \frac{ \text{estimated - actual} }{ \text{actual} } \cdot 100
-
 Density of the Earth 
 --------------------
 
-5.514 g/cm3
+1. Load the :ref:`Density of the Earth <project_one_dataset>` data into a :ref:`Python Script <python_scripts>` using the tecnique outlined in the :ref:`project_one_loading_data` section.
+
+2. Construct a histogram plot for this data sets using eight classes. Answer the following questions in the body of your docstring.
+
+    a. What is the class width of your histogram? 
+    
+    b. What are the class limits for each class? 
+
+    c. What is the most frequent class?
+
+    d. What type of shape does this distribtion have? Is this expected? Why or why not?
+
+3. Construct a boxplot for this data set. Using the boxplot, answer the following questions in the body of your docstring.
+
+    a. Estimate the 75 :sup:`th` percentile of this data set. 
+
+    b. Estimate the 25 :sup:`th` percentile of this data set.
+
+    c. Estimate the median of this data set.
+
+    d. Estimate the range of this data set. 
+
+4. The actual value of the speed of light, according to the best estimates we have today, is :math:`5.514 \frac{g}{cm^3}`. Use this information to answer the following questions in the body of your docstring.
+
+    a. What is the sample mean of the dataset?
+
+    b. What is the percent error of this estimate with respect to the actual value?
 
 
-Data Set
-========
+Data Sets
+=========
 
 Velocity of Light Data
 ----------------------

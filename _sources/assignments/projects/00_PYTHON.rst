@@ -63,17 +63,17 @@ Project
 
 5. Take the *Random Numbers* dataset from the :ref:`project_zero_dataset` section and add it to your *py* script. Perform the following operations. Be sure to add :ref:`python_comments` where appropriate,
 
-    a. Using :ref:`python_list_slicing`, break this list into two even lists of 500 random numbers each. Save the code in your script and label it with a comment ``# 5a``.
+a. Using :ref:`python_list_slicing`, break this list into two even lists of 500 random numbers each. Save the code in your script and label it with a comment ``# 5a``.
 
-    b. Using :ref:`python_builtin_functions`, calculate the sum of each of the lists you found in *part a*. Save the code in your script and label it with a comment ``# 5b``. Before executing your code, answer the following questionS and include each in a comment.
+b. Using :ref:`python_builtin_functions`, calculate the sum of each of the lists you found in *part a*. Save the code in your script and label it with a comment ``# 5b``. Before executing your code, answer the following questionS and include each in a comment.
 
-        i. How do you expect the sums to be compare? Will they be equal or unequal? Will be they be close together or far apart? Justify your answer.
+    i. How do you expect the sums to be compare? Will they be equal or unequal? Will be they be close together or far apart? Justify your answer.
 
-        ii. Calculate the difference between both sums, i.e. if ``n`` is the variable that contains the length of your first list and ``m`` is the variable that contains the length of your second list, find the value of ``n - m``. Should this value be positive or negative? 
+    ii. Calculate the difference between both sums, i.e. if ``n`` is the variable that contains the length of your first list and ``m`` is the variable that contains the length of your second list, find the value of ``n - m``. Should this value be positive or negative? 
 
-        iii. Re-execute your code. Did you do it? Go ahead and do it again, just to be safe. Alright, are you done? Do it one more time, but this time do it with *feeling*. Do you get the same results each time? How do the results compare?
+    iii. Re-execute your code. Did you do it? Go ahead and do it again, just to be safe. Alright, are you done? Do it one more time, but this time do it with *feeling*. Do you get the same results each time? How do the results compare?
 
-        iv. If you performed this experiment a 100 times, what do you expect the difference of the sum of these lists to be on average?
+    iv. If you performed this experiment a 100 times, what do you expect the difference of the sum of these lists to be on average?
 
 6. Now it's your turn to generate some data. Using the :ref:`python_choice_function` and the techniques studied so far, generate a list of data that represents the experiment of asking 100 randomly selected people whether they prefer Mayor McCheese, The Hamburglar, Grimace or Ronald McDonald as McDonald's mascot. Save the code in your script and lavel it with a comment ``# 6a``.
    

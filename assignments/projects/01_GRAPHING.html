@@ -366,6 +366,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formulae">Formulae</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-michelson-velocity-of-light-experiment">The Michelson Velocity of Light Experiment</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cavendish-density-of-the-earth-experiment">The Cavendish Density of the Earth Experiment</a></li>
@@ -377,7 +378,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-the-earth">Density of the Earth</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sets">Data Sets</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light-data">Velocity of Light Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-the-earth-data">Density of the Earth Data</a></li>
 </ul>
@@ -417,6 +418,12 @@ document.write(`
 <p>You may need to refer to the <a class="reference internal" href="../../references/python/05_PLOTS.html#python-plotting"><span class="std std-ref">Plots</span></a> page for examples of various types of graphs.</p>
 </div>
 </section>
+<section id="formulae">
+<h2>Formulae<a class="headerlink" href="#formulae" title="Permalink to this headline">#</a></h2>
+<p>Recall the formula for <em>percent error</em> is given by,</p>
+<div class="math">
+<p><img src="../../_images/math/17d14ef48d395f9775a26d2741ea4b725f4815f0.png" alt="\text{percent error} = \frac{ \text{estimated - actual} }{ \text{actual} } \cdot 100"/></p>
+</div></section>
 <section id="background">
 <span id="project-one-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
 <section id="the-michelson-velocity-of-light-experiment">
@@ -484,7 +491,7 @@ document.write(`
 <li><p>Estimate the 75 <sup>th</sup> percentile of this data set.</p></li>
 <li><p>Estimate the 25 <sup>th</sup> percentile of this data set.</p></li>
 <li><p>Estimate the median of this data set.</p></li>
-<li></li>
+<li><p>Estimate the range of this data set.</p></li>
 </ol>
 </div></blockquote>
 </li>
@@ -497,20 +504,44 @@ document.write(`
 </div></blockquote>
 </li>
 </ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Recall the formula for <em>percent error</em> is given by,</p>
-<div class="math">
-<p><img src="../../_images/math/17d14ef48d395f9775a26d2741ea4b725f4815f0.png" alt="\text{percent error} = \frac{ \text{estimated - actual} }{ \text{actual} } \cdot 100"/></p>
-</div></div>
 </section>
 <section id="density-of-the-earth">
 <h3>Density of the Earth<a class="headerlink" href="#density-of-the-earth" title="Permalink to this headline">#</a></h3>
-<p>5.514 g/cm3</p>
+<ol class="arabic">
+<li><p>Load the <a class="reference internal" href="#project-one-dataset"><span class="std std-ref">Density of the Earth</span></a> data into a <a class="reference internal" href="../../references/python/01_SETUP.html#python-scripts"><span class="std std-ref">Python Script</span></a> using the tecnique outlined in the <a class="reference internal" href="#project-one-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Construct a histogram plot for this data sets using eight classes. Answer the following questions in the body of your docstring.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the class width of your histogram?</p></li>
+<li><p>What are the class limits for each class?</p></li>
+<li><p>What is the most frequent class?</p></li>
+<li><p>What type of shape does this distribtion have? Is this expected? Why or why not?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Construct a boxplot for this data set. Using the boxplot, answer the following questions in the body of your docstring.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Estimate the 75 <sup>th</sup> percentile of this data set.</p></li>
+<li><p>Estimate the 25 <sup>th</sup> percentile of this data set.</p></li>
+<li><p>Estimate the median of this data set.</p></li>
+<li><p>Estimate the range of this data set.</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>The actual value of the speed of light, according to the best estimates we have today, is <img class="math" src="../../_images/math/1a73c7b41d050f8b924f653612fab468c802358a.png" alt="5.514 \frac{g}{cm^3}"/>. Use this information to answer the following questions in the body of your docstring.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the sample mean of the dataset?</p></li>
+<li><p>What is the percent error of this estimate with respect to the actual value?</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
 </section>
 </section>
-<section id="data-set">
-<h2>Data Set<a class="headerlink" href="#data-set" title="Permalink to this headline">#</a></h2>
+<section id="data-sets">
+<h2>Data Sets<a class="headerlink" href="#data-sets" title="Permalink to this headline">#</a></h2>
 <section id="velocity-of-light-data">
 <h3>Velocity of Light Data<a class="headerlink" href="#velocity-of-light-data" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/5aa18cd2c2ca04b7636763fca781ca72/velocity_of_light_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
@@ -633,6 +664,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formulae">Formulae</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-michelson-velocity-of-light-experiment">The Michelson Velocity of Light Experiment</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cavendish-density-of-the-earth-experiment">The Cavendish Density of the Earth Experiment</a></li>
@@ -644,7 +676,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-the-earth">Density of the Earth</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sets">Data Sets</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light-data">Velocity of Light Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-the-earth-data">Density of the Earth Data</a></li>
 </ul>
