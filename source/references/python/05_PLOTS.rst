@@ -44,7 +44,7 @@ When you import ``matplotlib`` into your scripts, the very first thing you shoul
 
     matplotlib.use('tkagg')
 
-*Always, always, always* do this. If it's not clear by now, let's re-iterate: anytime you are using ``matplotlib`` you should *always* tell it to use ``tk``. Otherwise, you may encounter strange errors that make no sense. 
+This step is not, strictly speaking, necessary as most systems will default to using this library, but if you plots aren't showing up, this is the likely culprit. In the event something goes wrong and you can't figure why, try adjusting this setting.
 
 Gallery
 =======
@@ -76,10 +76,6 @@ Time Series
 
 .. plot:: assets/plots/timeseries/timeseries_no_trend.py
 
-Error Bars
-----------
-
-TODO 
 
 References
 ==========
