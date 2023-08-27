@@ -10,5 +10,6 @@ Class Work
    set_theory/index
    probability/index
    statistics/index
-   hypotheses/index
-   regression/index
+   .. 
+      hypotheses/index
+      regression/index
