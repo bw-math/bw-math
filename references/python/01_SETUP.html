@@ -210,9 +210,6 @@
 <li class="toctree-l3"><a class="reference internal" href="04_FUNCTIONS.html">Functions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="05_PLOTS.html">Plots</a></li>
 <li class="toctree-l3"><a class="reference internal" href="06_FILES.html">Files</a></li>
-<li class="toctree-l3"><a class="reference internal" href="07_CONTROLS.html">Control Structures</a></li>
-<li class="toctree-l3"><a class="reference internal" href="08_WEB.html">The Internet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="09_EXAMPLES.html">Examples</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../LATEX.html">LaTex Reference</a></li>
@@ -414,6 +411,10 @@ document.write(`
 <section id="step-2-enable-linux-subsystem">
 <h4>Step 2: Enable Linux Subsystem<a class="headerlink" href="#step-2-enable-linux-subsystem" title="Permalink to this headline">#</a></h4>
 <a class="reference external image-reference" href="https://www.youtube.com/watch?v=LauMdnSRWa8"><img alt="Enable Linux Subsystem" src="https://img.youtube.com/vi/LauMdnSRWa8/maxresdefault.jpg" /></a>
+<div class="admonition-enable-linux-subsystem-video admonition">
+<p class="admonition-title">Enable Linux Subsystem Video</p>
+<p>Click on the image to play the video.</p>
+</div>
 <p>Enable and install Linux subsystem in the Settings menu,</p>
 <p>(SCREENSHOT)</p>
 <p>This will give you access to something called the <em>command line</em> (sometimes called a <em>terminal</em> or a <em>shell</em>). The <em>command line</em> is a direct interface to the operating system of your laptop. Let’s take a look.</p>
@@ -475,8 +476,16 @@ document.write(`
 <section id="step-3-install-python">
 <h4>Step 3: Install Python<a class="headerlink" href="#step-3-install-python" title="Permalink to this headline">#</a></h4>
 <p><strong>Python</strong> <em>should</em> come pre-installed in most <em>Linux</em> distributions. Open a terminal and verify your installation with the following command,</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>--version
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>--version
 </pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>3.10.12</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Any version of <strong>Python</strong> greater than <em>3.7</em> will be sufficient for the purposes of this class.</p>
 </div>
 <p>(INSERT SCREENSHOT)</p>
 <p>If you get an error along the lines of “<em>bash: python command not found</em>”, you will need to install <strong>Python</strong>. You can do this through the <em>Linux</em> package repository, an online library of software that you can install from the command line,</p>
@@ -488,9 +497,13 @@ document.write(`
 <p>Make sure you install <strong>Python3</strong>. <strong>Python2</strong>, an older version, is still available to be installed. If you encounter any unknown errors through the course of this class, the first thing you check if what <em>version</em> of <strong>Python</strong> you are running.</p>
 </div>
 <p>Once this command completes, verify you installation by printing the version to screen,</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>--version
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>--version
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>3.10.12</p>
+</div></blockquote>
 </section>
 <section id="step-4-install-libraries">
 <h4>Step 4: Install Libraries<a class="headerlink" href="#step-4-install-libraries" title="Permalink to this headline">#</a></h4>
@@ -541,31 +554,56 @@ document.write(`
 <span id="python-interpretter"></span><h2>Interpretter<a class="headerlink" href="#interpretter" title="Permalink to this headline">#</a></h2>
 <a class="reference external image-reference" href="https://www.youtube.com/watch?v=lHqt-dLR8iU"><img alt="Creating Lists" src="https://img.youtube.com/vi/lHqt-dLR8iU/maxresdefault.jpg" /></a>
 <p>Once <strong>Python</strong> is installed, you will have access to the <cite>python</cite> command on the terminal. Open a <em>Linux</em> and verify your installation with the following command,</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>--version
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>--version
 </pre></div>
 </div>
 <p>If you see a version print out, you are good to go. If you get an error that says “<em>bash: python command not found</em>”, head back to the previous section and make sure you completed all of the steps.</p>
 <p>You can start an <em>interpretter</em> session with,</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3
 </pre></div>
 </div>
-<p>This will bring up the <strong>Python</strong> <em>shell</em>, which allows you to enter commands and expressions line by line. Up to this point we have been allow <em>Linux</em> to intrepret our commands. We are now handing off that responsiblity to <strong>Python</strong>. Like <em>Linux</em>, <strong>Python</strong> <em>interprets</em> your commands after you type <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>.</p>
+<p>Output:</p>
+<blockquote>
+<div><p>Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0] on linux</p>
+<p>Type “help”, “copyright”, “credits” or “license” for more information.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>This will bring up the <strong>Python</strong> <em>shell</em>, which allows you to enter commands and expressions line by line. If your version does not exactly match the output above, you will be fine as long as you are on <em>Version 3</em> of <strong>Python</strong>.</p>
+<p>Up to this point we have been allow <em>Linux</em> to intrepret our commands. We are now handing off that responsiblity to <strong>Python</strong>. Like <em>Linux</em>, <strong>Python</strong> <em>interprets</em> your commands after you type <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>.</p>
 <p>For example, type the following arithmetical expression and then type <code class="docutils literal notranslate"><span class="pre">ENTER</span></code> to execute it,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">+</span> <span class="mi">7</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>12</p>
+</div></blockquote>
 <p>You can also print text to screen with the <cite>print()</cite> function, similar to (but not exactly like) <em>Linux</em>’s <code class="docutils literal notranslate"><span class="pre">echo</span></code> function,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>Hello world</p>
+</div></blockquote>
 <p>We won’t use the <em>interpretter</em> much in this class, but it is a handy tool to quickly check if a expression you had in mind is syntactical. For example, you might want to square a number and try,</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span> <span class="o">^</span> <span class="mi">2</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="o">^</span> <span class="mi">3</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>0</p>
+</div></blockquote>
 <p>However, this is not how you raise a number to a power in <strong>Python</strong>. Instead you use the “**” operator,</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span> <span class="o">**</span> <span class="mi">2</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>4</p>
+</div></blockquote>
 <p>The <em>interpretter</em> allows to experiment with <strong>Python</strong> and get a feel for it. However, as previously mentioned, for this class, we will almost always be writing <a class="reference internal" href="#python-scripts"><span class="std std-ref">Scripts</span></a>.</p>
 <p>To exit the <em>interpretter</em>, type and execute,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">exit</span><span class="p">()</span>
@@ -581,10 +619,13 @@ document.write(`
 </pre></div>
 </div>
 <p>Save the file and open a <em>Linux</em> terminal (or command prompt if you are using your personal computer). Pass the name of the file to the <strong>Python</strong> interpretter and something magical will happen,</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>test.py
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>test.py
 </pre></div>
 </div>
-<p>(INSERT SCREENSHOT)</p>
+<p>The following text should print to screen,</p>
+<blockquote>
+<div><p>The meaning of life is: 42</p>
+</div></blockquote>
 <p>Congratulations, you have just written your first Python script. In the labs for this class, when you are asked to create and run a <strong>Python</strong> script, this is essentially what you will be doing:</p>
 <blockquote>
 <div><ul class="simple">
@@ -616,25 +657,53 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>
 </pre></div>
 </div>
+<dl class="simple">
+<dt>Output:</dt><dd><p>2432902008176640000</p>
+</dd>
+</dl>
 <p>This sequence of commands imports the <cite>math</cite> library, calls the factorial function with <em>dot notation</em> to compute <img class="math" src="../../_images/math/7e451da68a24c1d66570895ec95c4e54480e6920.png" alt="n!"/>, stores the answer in the variable <cite>answer</cite>, and then prints it to screen.</p>
 <section id="third-party-packages">
 <span id="python-third-party"></span><h3>Third-Party Packages<a class="headerlink" href="#third-party-packages" title="Permalink to this headline">#</a></h3>
 <p><cite>math</cite> has plenty of functions that will be useful in this class, but it doesn’t have <em>everything</em> we need. Luckily, <strong>Python</strong> ships with a <em>package manager</em> that allows you to install third-party libraries. You use the <code class="docutils literal notranslate"><span class="pre">pip</span></code> command anytime you need to install any additional libraries or pacakges into <strong>Python</strong>. Open up a Linux Terminal and type,</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>--version
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip3<span class="w"> </span>--version
 </pre></div>
 </div>
-<p>You should see the version number print to screen. If you happen to see an error message that says something along the lines of “bash: pip command not found”, then you will need to install <code class="docutils literal notranslate"><span class="pre">pip</span></code> from the <em>Linux</em> package repository with the following command,</p>
+<p>Output:</p>
+<blockquote>
+<div><p>pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Your output may not be exactly the same, depending on the version of <strong>Python 3</strong> you are using.</p>
+</div>
+<p>You should see the version number print to screen. If you happen to see an error message that says something along the lines of <code class="docutils literal notranslate"><span class="pre">`bash:</span> <span class="pre">pip3</span> <span class="pre">command</span> <span class="pre">not</span> <span class="pre">found`</span></code>, then you will need to install <code class="docutils literal notranslate"><span class="pre">pip3</span></code> from the <em>Linux</em> package repository with the following command,</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3-pip
 </pre></div>
 </div>
 <p>After this installation is complete, try verifying the <code class="docutils literal notranslate"><span class="pre">pip</span></code> version again,</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>--version
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip3<span class="w"> </span>--version
 </pre></div>
 </div>
-<p>Now that you have <code class="docutils literal notranslate"><span class="pre">pip</span></code>, we will need to install two additional packages for this class. <a class="reference external" href="https://matplotlib.org/">matplotlib</a> will be used to generate graphical representations of data. <a class="reference external" href="https://docs.python.org/3/library/tkinter.html">tkinter</a> will be used to render the output of <a class="reference external" href="https://matplotlib.org/">matplotlib</a> into JPEG and PNG images. These packages can be installed through the command line. Open the Linux terminal on your ChromeBook (or the command prompt on your personal computer),</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>matplotlib<span class="w"> </span>tk
+<p>Output:</p>
+<blockquote>
+<div><p>pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)</p>
+</div></blockquote>
+<p>Now that you have <code class="docutils literal notranslate"><span class="pre">pip3</span></code>, we will need to install two additional packages for this class. <a class="reference external" href="https://matplotlib.org/">matplotlib</a> will be used to generate graphical representations of data. <a class="reference external" href="https://docs.python.org/3/library/tkinter.html">tkinter</a> will be used to render the output of <a class="reference external" href="https://matplotlib.org/">matplotlib</a> into JPEG and PNG images. These packages can be installed through the command line. Open the Linux terminal on your ChromeBook (or the command prompt on your personal computer),</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip3<span class="w"> </span>install<span class="w"> </span>matplotlib<span class="w"> </span>tk
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>Defaulting to user installation because normal site-packages is not writeable</p>
+<dl class="simple">
+<dt>Collecting tk</dt><dd><p>Downloading tk-0.1.0-py3-none-any.whl (3.9 kB)</p>
+</dd>
+</dl>
+<p>…</p>
+<p>Installing collected packages: tk</p>
+<p>Successfully installed tk-0.1.0</p>
+</div></blockquote>
+<p>You should see the packages download and install into your system.</p>
 <p>See the <span class="xref std std-ref">matplotlib</span> section to learn more about using <em>matplotlib</em> to generate plots of data.</p>
 </section>
 </section>

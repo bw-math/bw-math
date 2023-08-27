@@ -30,6 +30,10 @@ Step 2: Enable Linux Subsystem
     :alt: Enable Linux Subsystem
     :target: https://www.youtube.com/watch?v=LauMdnSRWa8
 
+.. admonition:: Enable Linux Subsystem Video
+
+    Click on the image to play the video.
+
 Enable and install Linux subsystem in the Settings menu,
 
 (SCREENSHOT)
@@ -127,7 +131,15 @@ Step 3: Install Python
 
 .. code:: shell
 
-    python --version
+    python3 --version
+
+Output:
+
+    3.10.12
+
+.. note:: 
+
+    Any version of **Python** greater than *3.7* will be sufficient for the purposes of this class.
 
 (INSERT SCREENSHOT)
 
@@ -145,7 +157,11 @@ Once this command completes, verify you installation by printing the version to 
 
 .. code:: shell
 
-    python --version
+    python3 --version
+
+Output:
+
+    3.10.12
 
 Step 4: Install Libraries 
 *************************
@@ -216,7 +232,7 @@ Once **Python** is installed, you will have access to the `python` command on th
 
 .. code:: shell
     
-    python --version
+    python3 --version
 
 If you see a version print out, you are good to go. If you get an error that says "*bash: python command not found*", head back to the previous section and make sure you completed all of the steps. 
 
@@ -224,9 +240,20 @@ You can start an *interpretter* session with,
 
 .. code:: shell
 
-    python
+    python3
 
-This will bring up the **Python** *shell*, which allows you to enter commands and expressions line by line. Up to this point we have been allow *Linux* to intrepret our commands. We are now handing off that responsiblity to **Python**. Like *Linux*, **Python** *interprets* your commands after you type ``ENTER``.
+Output: 
+
+    Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0] on linux
+    
+    Type "help", "copyright", "credits" or "license" for more information.
+    
+    >>>
+
+
+This will bring up the **Python** *shell*, which allows you to enter commands and expressions line by line. If your version does not exactly match the output above, you will be fine as long as you are on *Version 3* of **Python**. 
+
+Up to this point we have been allow *Linux* to intrepret our commands. We are now handing off that responsiblity to **Python**. Like *Linux*, **Python** *interprets* your commands after you type ``ENTER``.
 
 For example, type the following arithmetical expression and then type ``ENTER`` to execute it,
 
@@ -234,23 +261,39 @@ For example, type the following arithmetical expression and then type ``ENTER`` 
 
     5 + 7
 
+Output:
+
+    12
+
 You can also print text to screen with the `print()` function, similar to (but not exactly like) *Linux*'s ``echo`` function,
 
 .. code:: python
 
     print("Hello world")
 
+Output: 
+
+    Hello world
+
 We won't use the *interpretter* much in this class, but it is a handy tool to quickly check if a expression you had in mind is syntactical. For example, you might want to square a number and try,
 
 .. code:: 
 
-    2 ^ 2
+    3 ^ 3
+
+Output:
+    
+    0
 
 However, this is not how you raise a number to a power in **Python**. Instead you use the "\*\*" operator,
 
 .. code:: 
 
     2 ** 2
+
+Output:
+
+    4
 
 The *interpretter* allows to experiment with **Python** and get a feel for it. However, as previously mentioned, for this class, we will almost always be writing :ref:`python_scripts`.
 
@@ -278,9 +321,11 @@ Save the file and open a *Linux* terminal (or command prompt if you are using yo
 
 .. code:: shell 
  
-    python test.py 
+    python3 test.py 
 
-(INSERT SCREENSHOT)
+The following text should print to screen,
+
+    The meaning of life is: 42
 
 Congratulations, you have just written your first Python script. In the labs for this class, when you are asked to create and run a **Python** script, this is essentially what you will be doing: 
 
@@ -328,6 +373,9 @@ By default, Python comes installed with the `Standard Library <https://docs.pyth
     answer = math.factorial(20)
     print(answer)
 
+Output:
+    2432902008176640000
+
 This sequence of commands imports the `math` library, calls the factorial function with *dot notation* to compute :math:`n!`, stores the answer in the variable `answer`, and then prints it to screen.
 
 .. _python_third_party:
@@ -339,9 +387,17 @@ Third-Party Packages
 
 .. code:: shell
  
-    pip --version 
+    pip3 --version 
 
-You should see the version number print to screen. If you happen to see an error message that says something along the lines of "bash: pip command not found", then you will need to install ``pip`` from the *Linux* package repository with the following command,
+Output:
+
+    pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)
+
+.. note:: 
+    
+    Your output may not be exactly the same, depending on the version of **Python 3** you are using.
+
+You should see the version number print to screen. If you happen to see an error message that says something along the lines of ```bash: pip3 command not found```, then you will need to install ``pip3`` from the *Linux* package repository with the following command,
 
 .. code:: shell
 
@@ -351,12 +407,31 @@ After this installation is complete, try verifying the ``pip`` version again,
 
 .. code:: shell 
 
-    pip --version 
+    pip3 --version 
 
-Now that you have ``pip``, we will need to install two additional packages for this class. `matplotlib <https://matplotlib.org/>`_ will be used to generate graphical representations of data. `tkinter <https://docs.python.org/3/library/tkinter.html>`_ will be used to render the output of `matplotlib <https://matplotlib.org/>`_ into JPEG and PNG images. These packages can be installed through the command line. Open the Linux terminal on your ChromeBook (or the command prompt on your personal computer),
+Output:
+
+    pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)
+
+Now that you have ``pip3``, we will need to install two additional packages for this class. `matplotlib <https://matplotlib.org/>`_ will be used to generate graphical representations of data. `tkinter <https://docs.python.org/3/library/tkinter.html>`_ will be used to render the output of `matplotlib <https://matplotlib.org/>`_ into JPEG and PNG images. These packages can be installed through the command line. Open the Linux terminal on your ChromeBook (or the command prompt on your personal computer),
 
 .. code:: shell
 
-    pip install matplotlib tk
+    pip3 install matplotlib tk
+
+Output:
+
+    Defaulting to user installation because normal site-packages is not writeable
+
+    Collecting tk
+        Downloading tk-0.1.0-py3-none-any.whl (3.9 kB)
+    
+    ...
+
+    Installing collected packages: tk
+
+    Successfully installed tk-0.1.0
+
+You should see the packages download and install into your system.
 
 See the :ref:`matplotlib` section to learn more about using *matplotlib* to generate plots of data.

@@ -210,9 +210,6 @@
 <li class="toctree-l3"><a class="reference internal" href="04_FUNCTIONS.html">Functions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="05_PLOTS.html">Plots</a></li>
 <li class="toctree-l3"><a class="reference internal" href="06_FILES.html">Files</a></li>
-<li class="toctree-l3"><a class="reference internal" href="07_CONTROLS.html">Control Structures</a></li>
-<li class="toctree-l3"><a class="reference internal" href="08_WEB.html">The Internet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="09_EXAMPLES.html">Examples</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../LATEX.html">LaTex Reference</a></li>
@@ -383,6 +380,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exponentiation">Exponentiation</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-operations">Logical Operations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equivalence">Equivalence</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list-operations">List Operations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing">Slicing</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#special-slicing-techniques">Special Slicing Techniques</a></li>
@@ -420,6 +421,10 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this a command, it will be interpretted by Python&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>this is a command, it will be interpretted by Python</p>
+</div></blockquote>
 <p>Any line that starts with a hashtag <em>#</em> is skipped over by <strong>Python</strong> when it is executing your script.</p>
 <p>Comments should provide clear and precise explanations for the code it is annotating.</p>
 <div class="topic">
@@ -448,7 +453,7 @@ document.write(`
 <p class="admonition-title">Important</p>
 <p>Anytime a lab asks you to answer a question that requires a written response, write your answer in a docstring! <em>All</em> of your work should be done in the <em>py</em> file.</p>
 </div>
-<p>Comments annotate code. Docstrings annotate scripts. A <cite>docstring &lt;https://peps.python.org/pep-0257/&gt;</cite> is a special type of comment that provides a quick summary of everything that is happening in a script. As an example, save the following snippet as a file named <em>example_docstring.py</em>,</p>
+<p>Comments annotate code. Docstrings annotate scripts. A <a class="reference external" href="https://peps.python.org/pep-0257/">docstring</a> is a special type of comment that provides a quick summary of everything that is happening in a script. As an example, save the following snippet as a file named <em>example_docstring.py</em>,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;This is a docstring comment. It explains what the whole script is doing.</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
@@ -456,8 +461,12 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello world&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>hello world</p>
+</div></blockquote>
 <p>After you save the file, open up a <em>Linux</em> terminal and type,</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pdoc<span class="w"> </span>example_docstring
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>pdoc<span class="w"> </span>example_docstring
 </pre></div>
 </div>
 <p>You will see the docstring content get printed to screen. This allows programmers, such as yourself, to quickly determine what a script is doing without executing the code.</p>
@@ -506,9 +515,13 @@ document.write(`
 </dl>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="s2">&quot;hello world&quot;</span>
 <span class="n">another_var</span> <span class="o">=</span> <span class="s1">&#39;this is a sentence&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;these are strings: &quot;</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="s2">&quot; &amp; &quot;</span><span class="p">,</span> <span class="n">another_var</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;these are strings: &#39;&quot;</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="s2">&quot;&#39;&#39; &amp; &#39;&quot;</span><span class="p">,</span> <span class="n">another_var</span><span class="p">,</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>these are strings: ‘hello world’ &amp; ‘this is a sentence’</p>
+</div></blockquote>
 </section>
 <section id="integers">
 <span id="python-integers"></span><h3>Integers<a class="headerlink" href="#integers" title="Permalink to this headline">#</a></h3>
@@ -518,9 +531,13 @@ document.write(`
 </dl>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a_number</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">another_number</span> <span class="o">=</span> <span class="mi">15</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;these are integers: &quot;</span><span class="p">,</span> <span class="n">a</span> <span class="n">number</span><span class="p">,</span> <span class="n">another_number</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;these are integers: &quot;</span><span class="p">,</span> <span class="n">a</span> <span class="n">number</span><span class="p">,</span> <span class="o">|</span><span class="s2">&quot;, &quot;</span><span class="p">,</span> <span class="n">another_number</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>these are integers: 5, 15</p>
+</div></blockquote>
 </section>
 <section id="floats">
 <span id="python-floats"></span><h3>Floats<a class="headerlink" href="#floats" title="Permalink to this headline">#</a></h3>
@@ -530,9 +547,13 @@ document.write(`
 </dl>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mf">100.00000001</span>
 <span class="n">m</span> <span class="o">=</span> <span class="mf">25.76</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;these are floats: &quot;</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;these are floats: &quot;</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="s2">&quot;, &quot;</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>these are floats: 100.00000001, 25.76</p>
+</div></blockquote>
 </section>
 <section id="tuples">
 <span id="python-tuples"></span><h3>Tuples<a class="headerlink" href="#tuples" title="Permalink to this headline">#</a></h3>
@@ -541,10 +562,14 @@ document.write(`
 </dd>
 </dl>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pair</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-
 <span class="n">another_pair</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;these are tuples: &quot;</span><span class="p">,</span> <span class="n">pair</span><span class="p">,</span> <span class="s2">&quot;, &quot;</span><span class="p">,</span> <span class="n">another_pair</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output</p>
+<blockquote>
+<div><p>these are tuples: (1,2), (‘dog’, ‘cat’)</p>
+</div></blockquote>
 <p>Note the variables in the <em>tuple</em> do not have to be numbers.</p>
 </section>
 <section id="lists">
@@ -561,18 +586,35 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is the first element of a list: &quot;</span><span class="p">,</span> <span class="n">example_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is the second element of a list: &quot;</span><span class="p">,</span> <span class="n">example_list</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is the last element of a list: &quot;</span><span class="p">,</span> <span class="n">example_list</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is also the last element of a list: &quot;</span><span class="p">,</span> <span class="n">example_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>this is a whole list: [‘Led Zeppelin’, ‘Pink Floyd’, ‘The Beatles’]
+this is the first element of a list: Led Zeppelin
+this is the second element of a list: Pink Floyd
+this is the last element of a list: The Beatles
+this is also the element of a list: The Beatles</p>
+</div></blockquote>
 <p>The variables in a list need not be the same type,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">unlike_list</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="mf">5.67</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span> <span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;lists can have different types of elements: &quot;</span><span class="p">,</span> <span class="n">unlike_list</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">unlike_list</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>lists can have different types of elements: [‘red’, 5.67, ‘blue’, ‘green’]</p>
+</div></blockquote>
 <p>You can determine the <em>length</em> of a list, i.e. how many elements are in it, using the <code class="docutils literal notranslate"><span class="pre">len()</span></code> function,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span> <span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;length of list: &quot;</span><span class="p">,</span> <span class="n">my_list</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>length of list: 7</p>
+</div></blockquote>
 </section>
 </section>
 <section id="arithmetical-operations">
@@ -583,11 +625,24 @@ document.write(`
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">7</span> <span class="o">+</span> <span class="mi">3</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>10</p>
+</div></blockquote>
 </section>
 <section id="subtraction">
 <span id="python-subtraction"></span><h3>Subtraction<a class="headerlink" href="#subtraction" title="Permalink to this headline">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mf">10.45</span> <span class="o">-</span> <span class="mf">3.2</span>
 </pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>7.249999999999999</p>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Python</strong> uses <em>floating point arithmetic</em>. If the output above is surprising, read through the <a class="reference external" href="https://docs.python.org/3/tutorial/floatingpoint.html">documentation about floating point arithmetic</a> to understand what is going on.</p>
+<p>For this class, it is not necessary to understand <em>why</em> this doesn’t <em>exactly</em> equal <code class="docutils literal notranslate"><span class="pre">7.25</span></code>; it is only necessary to be aware of this limitation.</p>
 </div>
 </section>
 <section id="multiplication">
@@ -595,18 +650,54 @@ document.write(`
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">*</span> <span class="mi">76</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>380</p>
+</div></blockquote>
 </section>
 <section id="division">
 <span id="python-division"></span><h3>Division<a class="headerlink" href="#division" title="Permalink to this headline">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">68</span> <span class="o">/</span> <span class="mi">5</span>
 </pre></div>
 </div>
+<p>Output</p>
+<blockquote>
+<div><p>13.6</p>
+</div></blockquote>
 </section>
 <section id="exponentiation">
 <span id="python-exponentiation"></span><h3>Exponentiation<a class="headerlink" href="#exponentiation" title="Permalink to this headline">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">**</span> <span class="mi">2</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>25</p>
+</div></blockquote>
+</section>
+</section>
+<section id="logical-operations">
+<span id="python-logical-operations"></span><h2>Logical Operations<a class="headerlink" href="#logical-operations" title="Permalink to this headline">#</a></h2>
+<section id="equivalence">
+<h3>Equivalence<a class="headerlink" href="#equivalence" title="Permalink to this headline">#</a></h3>
+<p>The <em>equivalence</em> operator is used to test the <em>truth-value</em> of an alegraic expressions. The syntax for using it is,</p>
+<blockquote>
+<div><p>&lt;expression A&gt; == &lt;expression B&gt;</p>
+</div></blockquote>
+<p>A simple example is given below,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">variable</span> <span class="o">=</span> <span class="s2">&quot;a sentence&quot;</span>
+<span class="n">true_test</span> <span class="o">=</span> <span class="n">variable</span> <span class="o">==</span> <span class="s2">&quot;a sentence&quot;</span>
+<span class="n">false_test</span> <span class="o">=</span> <span class="n">variable</span> <span class="o">==</span> <span class="mf">4.5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">true_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">false_test</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>True</p>
+<p>False</p>
+</div></blockquote>
+<p>This example is contrived to illustrate the operator and how it works, but in practice, the <em>equivalence</em> operator will be used in conjunction with <a class="reference internal" href="#python-list-filtering"><span class="std std-ref">Filtering</span></a> to parse data sets. It will also pop up again once we introduce <a class="reference internal" href="07_CONTROLS.html#python-control-structures"><span class="std std-ref">Control Structures</span></a>.</p>
 </section>
 </section>
 <section id="list-operations">
@@ -624,32 +715,57 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="n">sliced_data</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The commands above will print to screen the elements starting at the second index up to, but not including, the fourth index. In other words, if you execute the given commands, you will see the list <cite>[“b”, “c”]</cite> print to screen.</p>
+<p>Output:</p>
+<blockquote>
+<div><p>[‘b’, ‘c’]</p>
+</div></blockquote>
+<p>The commands above will print to screen the elements starting at the second index up to, but not including, the fourth index.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Remember the first index of a list is 0!</p>
+</div>
+<p>In other words, if you execute the given commands, you will see the list <code class="docutils literal notranslate"><span class="pre">['b',</span> <span class="pre">'c']</span></code> print to screen.</p>
 <p>Try to figure out what the next example will print to screen before pasting it into an <a class="reference internal" href="01_SETUP.html#python-idle"><span class="std std-ref">IDLE notebook</span></a>,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span> <span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">]</span>
 <span class="n">sliced_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sliced_data</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>[‘A’, ‘B’]</p>
+</div></blockquote>
 <p>If you leave out the <code class="docutils literal notranslate"><span class="pre">&lt;start</span> <span class="pre">index&gt;</span></code>, it is understood to be <code class="docutils literal notranslate"><span class="pre">0</span></code>,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;fish&quot;</span> <span class="p">]</span>
 <span class="n">sliced_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sliced_data</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>[ ‘dog’, ‘cat’]</p>
+</div></blockquote>
 <p>Likewise, if you leave out <code class="docutils literal notranslate"><span class="pre">&lt;end</span> <span class="pre">index&gt;</span></code>, it is understood to be the (last index + 1),</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;fish&quot;</span><span class="p">,</span> <span class="s2">&quot;hamster&quot;</span><span class="p">,</span> <span class="s2">&quot;bearded goat&quot;</span><span class="p">]</span>
 <span class="n">sliced_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sliced_data</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>[‘cat’, ‘fish’, ‘hamster’, ‘bearded goat’]</p>
+</div></blockquote>
 <p>We can use slicing in conjunction with the <code class="docutils literal notranslate"><span class="pre">len()</span></code> function to remove data from the start and end of a data set,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span> <span class="p">]</span>
-<span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">trimmed_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="n">length</span> <span class="o">-</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">trimmed_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">trimmed_data</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>[3, 4, 5, 6, 7, 8]</p>
+</div></blockquote>
 <section id="special-slicing-techniques">
 <h4>Special Slicing Techniques<a class="headerlink" href="#special-slicing-techniques" title="Permalink to this headline">#</a></h4>
 <p>There is another type of slicing that allows you extract elements from a list according to a rule. First we give the syntax and then go through a few examples,</p>
@@ -662,20 +778,27 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="n">even_data</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The code snippet above will print to screen the list <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">0,</span> <span class="pre">2,</span> <span class="pre">4,</span> <span class="pre">6,</span> <span class="pre">8,</span> <span class="pre">10]</span></code>. If instead we started at a different index,</p>
+<p>Output:</p>
+<blockquote>
+<div><p>[0, 2, 4, 6, 8, 10]</p>
+</div></blockquote>
+<p>If instead we started at a different index,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span> <span class="p">]</span>
-<span class="n">even_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">even_data</span><span class="p">)</span>
+<span class="n">odd_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">odd_data</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>This would print to screen the list <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">3,</span> <span class="pre">5,</span> <span class="pre">7,</span> <span class="pre">9]</span></code></p>
+<p>Output</p>
+<blockquote>
+<div><p>[1, 3, 5, 7, 9]</p>
+</div></blockquote>
 </section>
 </section>
 <section id="comprehension">
 <span id="python-list-comprehension"></span><h3>Comprehension<a class="headerlink" href="#comprehension" title="Permalink to this headline">#</a></h3>
 <p><em>List comprehension</em> is a way of applying an algebraic expression to every element in a list. In other words, <em>list comprehension</em> allows us to generate a list of data according to a formula. For this reason, <em>list comprehension</em> is sometimes called <em>list generation</em>. The general syntax is given below,</p>
 <blockquote>
-<div><p>list = [ &lt;expr&gt; for &lt;element&gt; in &lt;list&gt; ]</p>
+<div><p>list = [ &lt;expr : required&gt; for &lt;element : required&gt; in &lt;list: requied&gt; ]</p>
 </div></blockquote>
 <p>For example, the following code snippets uses the list <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5]</span></code> to generate a new list that squares each element of the first list and then prints it to screen,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
@@ -683,27 +806,39 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="n">squared_data</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><em>List comprehension</em> is usually used in conjunction with the <cite>range() built-in function &lt;python_builtin_functions&gt;</cite>. Hop over to that section, take a look at <code class="docutils literal notranslate"><span class="pre">range()</span></code> to see more examples.</p>
+<p>Output:</p>
+<blockquote>
+<div><p>[ 1, 4, 9, 16, 25 ]</p>
+</div></blockquote>
+<p><em>List comprehension</em> is usually used in conjunction with the <a class="reference internal" href="04_FUNCTIONS.html#python-builtin-functions"><span class="std std-ref">range() built-in function</span></a>. Hop over to that section, take a look at <code class="docutils literal notranslate"><span class="pre">range()</span></code> to see more examples.</p>
 <section id="filtering">
-<h4>Filtering<a class="headerlink" href="#filtering" title="Permalink to this headline">#</a></h4>
+<span id="python-list-filtering"></span><h4>Filtering<a class="headerlink" href="#filtering" title="Permalink to this headline">#</a></h4>
 <p>Suppose you had the a dataset that represented a group of men and women’s average height, where each observation in the sample is an ordered pair <img class="math" src="../../_images/math/db3b041d6222b5fe5fd26fa90cfb17219b7a1623.png" alt="(x, y)"/>
 with <em>x</em> corresponding the gender of the individual and <em>y</em> corresponding to their height measured in feet,</p>
 <div class="math">
 <p><img src="../../_images/math/cca2b7a102288de10cfa5d581f426acbafb93c99.png" alt="S = \{ (m, 5.9), (m, 5.75), (f, 5.6), (f, 5.8), (m, 6.3), (f, 5.7), (m, 6.0), (f, 5.3) \}"/></p>
 </div><p>In <strong>Python</strong>, you could store this sample in a list with the following code snippet,</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="o">.</span> <span class="mf">5.75</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="mf">5.6</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="mf">6.3</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">)</span> <span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="mf">5.75</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="mf">5.6</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="mf">6.3</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="mf">5.7</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="mf">5.3</span><span class="p">)</span> <span class="p">]</span>
 </pre></div>
 </div>
 <p>Often we will need to <em>group</em> the data by category. For example, in this data set, we might like to look at the average height of <em>males only</em> versus the average of <em>females only</em>. You can achieve this result with a tecnique known as <em>filtering</em>. <em>Filtering</em> consists of applying a condition to each member of the list to determine whether it should be included or not.</p>
 <p>The syntax for filtering is given by,</p>
 <blockquote>
-<div><p>list = [ &lt;expr&gt; for &lt;element&gt; in &lt;list&gt; if &lt;condition&gt; ]</p>
+<div><p>list = [ &lt;expr : required&gt; for &lt;element : required&gt; in &lt;list : required&gt; if &lt;condition : required&gt; ]</p>
 </div></blockquote>
 <p>Applying this idea to the dataset above, we can create a list that contains only male heights and a list that contains only female height as follows,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">male_heights</span> <span class="o">=</span> <span class="p">[</span> <span class="n">obs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">obs</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">if</span> <span class="n">obs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;m&#39;</span> <span class="p">]</span>
-<span class="n">female_heights</span> <span class="o">=</span> <span class="p">[</span> <span class="n">obs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">obs</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">if</span> <span class="n">obs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;f&#39;</span> <span class="p">]</span>
+<span class="n">female_heights</span> <span class="o">=</span> <span class="p">[</span> <span class="n">obs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">obs</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">if</span> <span class="n">obs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;f&#39;</span> <span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">male_heights</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">female_heights</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>[5.9, 5.75, 6.3, 6.0]</p>
+<p>[5.6, 5.8, 5.7, 5.3]</p>
+</div></blockquote>
 <p><em>Filtering</em> is very useful when you are <em>cleaning data</em> for analysis. Data is not usually in a format ready for analysis. You will often need to perform some preparatory steps to get the data ready. As this example illustrates, <em>filtering</em> is often (but not always!) the exact tool we need to do this.</p>
 </section>
 </section>
@@ -780,6 +915,10 @@ with <em>x</em> corresponding the gender of the individual and <em>y</em> corres
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplication">Multiplication</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#division">Division</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exponentiation">Exponentiation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-operations">Logical Operations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equivalence">Equivalence</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list-operations">List Operations</a><ul class="nav section-nav flex-column">

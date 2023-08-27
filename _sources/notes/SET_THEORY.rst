@@ -17,40 +17,79 @@ In order to develop the theory of sets precisely, we will first need a few conce
 .. _proposition:
 
 Proposition
+***********
+
+Symbolic Expression
     :math:`p, q, r`
 
-A sentence that can be judged either *true* or *false*.
+Definition
+    A sentence that can be judged either *true* or *false*.
+
+.. _truth_table:
+
+Truth Table
+***********
+
+TODO 
+
+.. _logic_operations:
+
+Operations
+**********
+
+TODO 
 
 .. _implication:
 
 Implication
+***********
+
+Symbolic Expression
     :math:`p \implies q`
 
-A symbolic representation of a *conditional* relationship between two *propositions*. This type of proposition can be translated into English in the following ways,
-    1. "if *p*, then *q*"
-    2. "whenever *p*, then *q*"
-    3. "*p* implies *q*"
-    4. "*q* follows from *p*"
+Definition 
+    A symbolic representation of a *conditional* (if-then) relationship between two *propositions*. 
+
+This type of proposition can be translated into English in the following ways,
+
+1. "if *p*, then *q*"
+2. "whenever *p*, then *q*"
+3. "*p* implies *q*"
+4. "*q* follows from *p*"
 
 .. _universal_quantification:
 
 Universal Quantification
+************************
+
+Symbolic Expression 
     :math:`\forall p: q`
 
-A symbolic representation of a universal proposition. This type of proposition can be translated into English in the following ways,
-    1. "for all *p*, *q*"
-    2. "for every *p*, *q*"
-    3. "for each *p*, *q*"
+Definition
+    A symbolic representation of a universal proposition. 
+    
+This type of proposition can be translated into English in the following ways,
+    
+1. "for all *p*, *q*"
+2. "for every *p*, *q*"
+3. "for each *p*, *q*"
 
 .. _existential_quantification:
 
 Existential Quantification
+**************************
+
+Symbolic Expression
     :math:`\exists p: q`
 
-A symbolic representation of an existential proposition. This type of proposition can be translated into English in the following ways,
-    1. "there exists a *p* such that *q*"
-    2. "for some *p*, *q*"
-    3. "there is a *p* that *q*"
+Definition
+    A symbolic representation of an existential proposition. 
+    
+This type of proposition can be translated into English in the following ways,
+    
+1. "there exists a *p* such that *q*"
+2. "for some *p*, *q*"
+3. "there is a *p* that *q*"
 
 Definitions
 ===========
@@ -477,6 +516,19 @@ Example
     .. math::
 
         A \cap B = \{ b, c \}
+
+.. _set_difference:
+
+Difference
+----------
+
+TODO
+
+The operation of subtracting a set :math:`B` from a set :math:`A` is equivalent to taking the intersection the sets :math:`A` and :math:`B^c`,
+
+.. math:: 
+
+    A - B = A \cap B^c
 
 .. _set_theorems:
 

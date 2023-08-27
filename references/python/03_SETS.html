@@ -210,9 +210,6 @@
 <li class="toctree-l3"><a class="reference internal" href="04_FUNCTIONS.html">Functions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="05_PLOTS.html">Plots</a></li>
 <li class="toctree-l3"><a class="reference internal" href="06_FILES.html">Files</a></li>
-<li class="toctree-l3"><a class="reference internal" href="07_CONTROLS.html">Control Structures</a></li>
-<li class="toctree-l3"><a class="reference internal" href="08_WEB.html">The Internet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="09_EXAMPLES.html">Examples</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../LATEX.html">LaTex Reference</a></li>
@@ -370,6 +367,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cardinality">Cardinality</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#union">Union</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intersection">Intersection</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference">Difference</a></li>
 </ul>
 </li>
 </ul>
@@ -400,6 +398,7 @@ document.write(`
 <span class="n">poets</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;byron&quot;</span><span class="p">,</span> <span class="s2">&quot;shakespeare&quot;</span><span class="p">,</span> <span class="s2">&quot;eliot&quot;</span> <span class="p">}</span>
 </pre></div>
 </div>
+<p>The examples on this page will refer to the above sets.</p>
 </section>
 <section id="set-operations">
 <span id="python-set-operations"></span><h2>Set Operations<a class="headerlink" href="#set-operations" title="Permalink to this headline">#</a></h2>
@@ -411,22 +410,53 @@ document.write(`
 <span id="python-set-cardinality"></span><h3>Cardinality<a class="headerlink" href="#cardinality" title="Permalink to this headline">#</a></h3>
 <p>The <a class="reference internal" href="../../notes/SET_THEORY.html#cardinality"><span class="std std-ref">Cardinality</span></a> of a set is found by calculating its <a class="reference internal" href="04_FUNCTIONS.html#python-builtin-functions"><span class="std std-ref">length</span></a>,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">total_pets</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">pets</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">total_pets</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>5</p>
+</div></blockquote>
 </section>
 <section id="union">
 <span id="python-set-union"></span><h3>Union<a class="headerlink" href="#union" title="Permalink to this headline">#</a></h3>
 <p>The <a class="reference internal" href="../../notes/SET_THEORY.html#union"><span class="std std-ref">Union</span></a> of two sets is found by,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pets_or_poets</span> <span class="o">=</span> <span class="n">pets</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">poets</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pets_or_poets</span><span class="p">)</span>
 </pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>{‘snake’, ‘byron’, ‘shakespeare’, ‘eliot’, ‘fish’, ‘cat’, ‘dog’, ‘hamster’}</p>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Take note: <em>set operations</em> do <strong>not</strong> preserve the order of the sets. In technical terms, <em>sets</em> are not <em>indexed</em>.</p>
 </div>
 </section>
 <section id="intersection">
 <span id="python-set-intersection"></span><h3>Intersection<a class="headerlink" href="#intersection" title="Permalink to this headline">#</a></h3>
 <p>The <a class="reference internal" href="../../notes/SET_THEORY.html#intersection"><span class="std std-ref">Intersection</span></a> of two sets is found by,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">four_legs_and_swims</span> <span class="o">=</span> <span class="n">four_legs</span><span class="o">.</span><span class="n">intersect</span><span class="p">(</span><span class="n">swims</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">four_legs_and_swims</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Output:</p>
+<blockquote>
+<div><p>{‘dog’}</p>
+</div></blockquote>
+</section>
+<section id="difference">
+<span id="python-set-difference"></span><h3>Difference<a class="headerlink" href="#difference" title="Permalink to this headline">#</a></h3>
+<p>The <a class="reference internal" href="../../notes/SET_THEORY.html#set-difference"><span class="std std-ref">Difference</span></a> of two sets is found by,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">swims_but_not_warmblooded</span> <span class="o">=</span> <span class="n">swims</span> <span class="o">-</span> <span class="n">warm_blooded</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">swims_but_not_warmblooded</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>{‘snake’}</p>
+</div></blockquote>
 </section>
 </section>
 </section>
@@ -484,6 +514,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cardinality">Cardinality</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#union">Union</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intersection">Intersection</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference">Difference</a></li>
 </ul>
 </li>
 </ul>

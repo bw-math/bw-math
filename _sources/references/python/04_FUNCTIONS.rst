@@ -80,7 +80,7 @@ Suppose you had a sample of closing stock prices observed over one business week
 
     stock_prices = [ 101.5, 100, 105.25, 107.10, 104.56 ]
 
-If you wanted to plot this as a :ref:`time_series` to get a sense for any trends in the price, you would order the observations by day and plot the stock prices against the order in which they occured. 
+If you wanted to plot this as a :ref:`time_series` to get a sense for any trends in the price, you would order the observations by day and plot the stock prices against the order in which they occured.
 
 We already have the *y-axis* of the time series; we need to generate the *x-axis*. An easy way to do this is to ``enumerate()`` the list,
 

@@ -25,6 +25,7 @@ A set is defined in **Python** using the familiar :math:`\{ \}` :ref:`list_notat
 
     poets = { "byron", "shakespeare", "eliot" }
 
+The examples on this page will refer to the above sets.
 
 .. _python_set_operations: 
 
@@ -44,7 +45,11 @@ The :ref:`cardinality` of a set is found by calculating its :ref:`length <python
 .. code:: python 
 
     total_pets = len(pets)
+    print(total_pets)
 
+Output:
+
+    5
 .. _python_set_union:
 
 Union
@@ -55,6 +60,15 @@ The :ref:`union` of two sets is found by,
 .. code:: python
 
     pets_or_poets = pets.union(poets)
+    print(pets_or_poets)
+
+Output:
+
+    {'snake', 'byron', 'shakespeare', 'eliot', 'fish', 'cat', 'dog', 'hamster'}
+
+.. important:: 
+    
+    Take note: *set operations* do **not** preserve the order of the sets. In technical terms, *sets* are not *indexed*. 
 
 .. _python_set_intersection:
 
@@ -66,6 +80,24 @@ The :ref:`intersection` of two sets is found by,
 .. code:: python 
 
     four_legs_and_swims = four_legs.intersect(swims)
+    print(four_legs_and_swims)
 
+Output:
 
+    {'dog'}
 
+.. _python_set_difference:
+
+Difference
+----------
+
+The :ref:`set_difference` of two sets is found by,
+
+.. code:: python
+
+    swims_but_not_warmblooded = swims - warm_blooded
+    print(swims_but_not_warmblooded)
+
+Output:
+
+    {'snake'}
