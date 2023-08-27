@@ -16,7 +16,7 @@ Sample Spaces and Events
 
 .. collapse:: Solution #1
 
-    a. Let *h* represent a single coin flip landing on heads. Let *t* represent a single coin flip landing on tails. A :ref:`tree_diagram` is useful for visualizing the sample space here,
+    a. Let *h* represent a single coin flip landing on heads. Let *t* represent a single coin flip landing on tails. A :ref:`tree diagram <tree_diagrams>` is useful for visualizing the sample space here,
 
     (TODO: insert image)
 
@@ -364,7 +364,7 @@ Sample Spaces and Events
     |   6   | (6, 1) | (6, 6) |  (6, 3) |  (6, 4)  | (6, 5) | (6, 6) |
     +-------+--------+--------+---------+----------+--------+--------+
 
-1. Three red balls and one green ball are placed into a box. Describe the sample spaces of the following experiments with a set using :ref:`list_notation`.
+3. Three red balls and one green ball are placed into a box. Describe the sample spaces of the following experiments with a set using :ref:`list_notation`.
 
     .. note:: 
         *Hint*: Let *r* :sub:`1`, *r* :sub:`2` and *r* :sub:`3` represent the *outcome* of drawing each of the respective red balls. 
@@ -440,7 +440,7 @@ Sample Spaces and Events
 Applications
 ============
    
-6. You roll two dice. The find the probability of the following events. 
+5. You roll two dice. The find the probability of the following events. 
    
     a. The sum of the numbers rolled is 7.
     b. The sum of the numbers rolled on the dice is 3 or 5.
@@ -449,7 +449,7 @@ Applications
     e. Neither of the numbers rolled are even.
     f. Is part *e* the complement of part *c* or part *d*?
 
-.. collapse:: Solution #6
+.. collapse:: Solution #5
 
     Ah, our old friend. We found the sample of this experiment back in *#1* and then examined some events defined on it in *#2*. Let us copy the results over for quick reference,
 
@@ -511,7 +511,7 @@ Applications
 
     f. *part d* and *part e* are complements. Part *d* can be rephrased as "*at least one of the die is even*". By the :ref:`square_of_opposition`, the complement of "*atleast one*" is "*none*". This can be verified by summing the probabilities of both events and verifying they add to one, 
 
-1. You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,
+6. You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,
 
     a. The card is a king.
 
@@ -527,14 +527,14 @@ Applications
     
     g. The card is neither nor a queen.
 
-2. You select a number randomly between 1 and 1000. What is the probability the number selected is divisible by 5?
+7. You select a number randomly between 1 and 1000. What is the probability the number selected is divisible by 5?
 
 TODO: ONE MORE
 
 Probability Proofs
 ==================
 
-10. Let **A** and **B** be two events, not necessarily mutually exclusive. Prove the following inequality
+8. Let **A** and **B** be two events, not necessarily mutually exclusive. Prove the following inequality
 
 .. math:: 
     P(A \cap B) \geq P(A) + P(B) - 1
@@ -542,7 +542,7 @@ Probability Proofs
 .. note:: 
     *Hint*: Use the :ref:`law_of_unions` and :ref:`axiom_1`
 
-11. Let **A** and **B** be two events, not necessarily mutually exclusive. The event,
+9. Let **A** and **B** be two events, not necessarily mutually exclusive. The event,
     
 .. math:: 
     (A - B) \cap (B - A)
@@ -557,6 +557,7 @@ is called the *symmetric difference of* **A** *and* **B**. Prove the probability
 
     *Hint #2*: Recall (TODO link) :math:`A - B = A \cap B^C`
 
+TODO: one more
 
 A.P. Exam Practice
 ==================
@@ -564,3 +565,24 @@ A.P. Exam Practice
 12. **2019, Free Response, #3** (TODO)
 
 13. **2016, Free Response, #3** (TODO)
+
+14. **2012, Practice Exam, #23** A local company is interested in supporting environmentally friendly initiatives such as carpooling among employees. The company surveyed all of the 200 employees at the downtown offices. Employees responded as to whether or not they own a car and to the location of the home where they live. The results are shown in the
+table below.
+
+.. image:: ../../../assets/imgs/classwork/2012_apstats_pe_23.png
+    :align: center 
+
+Which of the following statements about a randomly chosen person from these 200 employees is true?
+
+    (A) If the person owns a car, he or she is more likely to live elsewhere in the city than to live in the downtown
+    area in the city.
+
+    (B) If the person does not own a car, he or she is more likely to live outside the city than to live in the city
+    (downtown area or elsewhere).
+
+    (C) The person is more likely to own a car if he or she lives in the city (downtown area or elsewhere) than if he
+    or she lives outside the city.
+
+    (D) The person is more likely to live in the downtown area in the city than elsewhere in the city.
+
+    (E) The person is more likely to own a car than not to own a car.
