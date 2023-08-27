@@ -22,6 +22,10 @@ Comments
     # this is a comment, it won't have any effect on this script
     print("this a command, it will be interpretted by Python")
 
+Output:
+
+    this is a command, it will be interpretted by Python 
+
 Any line that starts with a hashtag *#* is skipped over by **Python** when it is executing your script. 
 
 Comments should provide clear and precise explanations for the code it is annotating.
@@ -57,7 +61,7 @@ Docstrings
 
     Anytime a lab asks you to answer a question that requires a written response, write your answer in a docstring! *All* of your work should be done in the *py* file.
 
-Comments annotate code. Docstrings annotate scripts. A `docstring <https://peps.python.org/pep-0257/>` is a special type of comment that provides a quick summary of everything that is happening in a script. As an example, save the following snippet as a file named *example_docstring.py*,
+Comments annotate code. Docstrings annotate scripts. A `docstring <https://peps.python.org/pep-0257/>`_ is a special type of comment that provides a quick summary of everything that is happening in a script. As an example, save the following snippet as a file named *example_docstring.py*,
 
 .. code:: python
 
@@ -67,11 +71,15 @@ Comments annotate code. Docstrings annotate scripts. A `docstring <https://peps.
     # This is a normal comment. It explains what the line below it is doing.
     print("hello world")
 
+Output:
+
+    hello world 
+
 After you save the file, open up a *Linux* terminal and type, 
 
 .. code:: shell
 
-    python -m pdoc example_docstring
+    python3 -m pdoc example_docstring
 
 You will see the docstring content get printed to screen. This allows programmers, such as yourself, to quickly determine what a script is doing without executing the code. 
 
@@ -127,7 +135,11 @@ Definition
 
     var = "hello world"
     another_var = 'this is a sentence'
-    print("these are strings: ", var, " & ", another_var)
+    print("these are strings: '", var, "'' & '", another_var, "'")
+
+Output:
+
+    these are strings: 'hello world' & 'this is a sentence'
 
 .. _python_integers:
 
@@ -141,7 +153,11 @@ Definition
 
     a_number = 5
     another_number = 15
-    print("these are integers: ", a number, another_number)
+    print("these are integers: ", a number, |", ", another_number)
+
+Output:
+
+    these are integers: 5, 15
 
 .. _python_floats:
 
@@ -155,7 +171,11 @@ Definition
 
     n = 100.00000001
     m = 25.76
-    print("these are floats: ", n, m)
+    print("these are floats: ", n, ", ", m)
+
+Output: 
+
+    these are floats: 100.00000001, 25.76
 
 .. _python_tuples:
 
@@ -168,8 +188,12 @@ Definition
 .. code:: python
 
     pair = (1, 2)
-
     another_pair = ("dog", "cat")
+    print("these are tuples: ", pair, ", ", another_pair)
+
+Output
+
+    these are tuples: (1,2), ('dog', 'cat')
 
 Note the variables in the *tuple* do not have to be numbers.
 
@@ -193,6 +217,15 @@ The *index* of an element in a list is the order that it appears, starting at 0.
     print("this is the first element of a list: ", example_list[0])
     print("this is the second element of a list: ", example_list[1])
     print("this is the last element of a list: ", example_list[2])
+    print("this is also the last element of a list: ", example_list[-1])
+
+Output:
+
+    this is a whole list: ['Led Zeppelin', 'Pink Floyd', 'The Beatles']
+    this is the first element of a list: Led Zeppelin
+    this is the second element of a list: Pink Floyd
+    this is the last element of a list: The Beatles 
+    this is also the element of a list: The Beatles
 
 The variables in a list need not be the same type,
 
@@ -201,12 +234,20 @@ The variables in a list need not be the same type,
     unlike_list = [ "red", 5.67, "blue", "green" ]
     print("lists can have different types of elements: ", unlike_list[0], unlike_list[1])
 
+Output:
+
+    lists can have different types of elements: ['red', 5.67, 'blue', 'green']
+
 You can determine the *length* of a list, i.e. how many elements are in it, using the ``len()`` function,
 
 .. code:: python
 
     my_list = [ 1, 2, 3, 4, 5, 6, 7 ]
-    print(my_list)
+    print("length of list: ", my_list)
+
+Output: 
+
+    length of list: 7
 
 Arithmetical Operations
 =======================
@@ -222,6 +263,10 @@ Addition
     
     7 + 3 
 
+Output:
+
+    10 
+
 .. _python_subtraction:
 
 Subtraction
@@ -230,6 +275,16 @@ Subtraction
 .. code:: python
     
     10.45 - 3.2
+
+Output:
+
+    7.249999999999999
+
+.. important:: 
+
+    **Python** uses *floating point arithmetic*. If the output above is surprising, read through the `documentation about floating point arithmetic <https://docs.python.org/3/tutorial/floatingpoint.html>`_ to understand what is going on.
+
+    For this class, it is not necessary to understand *why* this doesn't *exactly* equal ``7.25``; it is only necessary to be aware of this limitation.
 
 .. _python_multiplication:
 
@@ -240,6 +295,10 @@ Multiplication
     
     5 * 76
 
+Output:
+
+    380
+
 .. _python_division:
 
 Division 
@@ -249,6 +308,10 @@ Division
 
     68 / 5
 
+Output
+
+    13.6
+
 .. _python_exponentiation:
 
 Exponentiation
@@ -257,6 +320,41 @@ Exponentiation
 .. code::
 
     5 ** 2
+
+Output:
+
+    25
+
+.. _python_logical_operations:
+
+Logical Operations
+==================
+
+Equivalence
+-----------
+
+The *equivalence* operator is used to test the *truth-value* of an alegraic expressions. The syntax for using it is,
+
+
+    <expression A> == <expression B>
+
+A simple example is given below,
+
+.. code:: python
+
+    variable = "a sentence"
+    true_test = variable == "a sentence"
+    false_test = variable == 4.5
+    print(true_test)
+    print(false_test)
+
+Output:
+
+    True
+    
+    False 
+
+This example is contrived to illustrate the operator and how it works, but in practice, the *equivalence* operator will be used in conjunction with :ref:`python_list_filtering` to parse data sets. It will also pop up again once we introduce :ref:`python_control_structures`.
 
 .. _python_list_operations:
 
@@ -281,8 +379,18 @@ Where ``<end index>`` is always *exclusive*, i.e. is **not** included in the sli
     data = [ "a", "b", "c", "d"]
     sliced_data = data[1:3]
     print(sliced_data)
-    
-The commands above will print to screen the elements starting at the second index up to, but not including, the fourth index. In other words, if you execute the given commands, you will see the list `["b", "c"]` print to screen. 
+
+Output:
+
+    ['b', 'c']
+
+The commands above will print to screen the elements starting at the second index up to, but not including, the fourth index. 
+
+.. important:: 
+
+    Remember the first index of a list is 0!
+
+In other words, if you execute the given commands, you will see the list ``['b', 'c']`` print to screen. 
 
 Try to figure out what the next example will print to screen before pasting it into an :ref:`IDLE notebook <python_idle>`,
 
@@ -292,6 +400,10 @@ Try to figure out what the next example will print to screen before pasting it i
     sliced_data = data[0:2]
     print(sliced_data)
 
+Output:
+
+    ['A', 'B']
+
 If you leave out the ``<start index>``, it is understood to be ``0``, 
 
 .. code:: python
@@ -299,6 +411,10 @@ If you leave out the ``<start index>``, it is understood to be ``0``,
     data = [ "dog", "cat", "fish" ]
     sliced_data = data[:2]
     print(sliced_data)
+
+Output:
+
+    [ 'dog', 'cat']
 
 Likewise, if you leave out ``<end index>``, it is understood to be the (last index + 1),
 
@@ -308,14 +424,22 @@ Likewise, if you leave out ``<end index>``, it is understood to be the (last ind
     sliced_data = data[1:]
     print(sliced_data)
 
+Output:
+
+    ['cat', 'fish', 'hamster', 'bearded goat']
+
 We can use slicing in conjunction with the ``len()`` function to remove data from the start and end of a data set, 
 
 .. code:: python
 
     data = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
-    length = len(data)
-    trimmed_data = data[2:length - 2]
+    n = len(data)
+    trimmed_data = data[2:n - 2]
     print(trimmed_data)
+
+Output:
+
+    [3, 4, 5, 6, 7, 8]
 
 Special Slicing Techniques
 **************************
@@ -332,15 +456,21 @@ This command tells **Python** to look at the ``<start index>`` and then *iterate
     even_data = data[0::2]
     print(even_data)
 
-The code snippet above will print to screen the list ``[ 0, 2, 4, 6, 8, 10]``. If instead we started at a different index,
+Output:
+
+    [0, 2, 4, 6, 8, 10]
+
+If instead we started at a different index,
 
 .. code:: python 
 
     data = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
-    even_data = data[1::2]
-    print(even_data)
+    odd_data = data[1::2]
+    print(odd_data)
 
-This would print to screen the list ``[1, 3, 5, 7, 9]``
+Output
+
+    [1, 3, 5, 7, 9]
 
 .. _python_list_comprehension:
 
@@ -349,7 +479,7 @@ Comprehension
 
 *List comprehension* is a way of applying an algebraic expression to every element in a list. In other words, *list comprehension* allows us to generate a list of data according to a formula. For this reason, *list comprehension* is sometimes called *list generation*. The general syntax is given below, 
 
-    list = [ <expr> for <element> in <list> ]
+    list = [ <expr : required> for <element : required> in <list: requied> ]
 
 For example, the following code snippets uses the list ``[1, 2, 3, 4, 5]`` to generate a new list that squares each element of the first list and then prints it to screen,
 
@@ -359,7 +489,13 @@ For example, the following code snippets uses the list ``[1, 2, 3, 4, 5]`` to ge
     squared_data = [ x ** 2 for x in data ]
     print(squared_data)
 
-*List comprehension* is usually used in conjunction with the `range() built-in function <python_builtin_functions>`. Hop over to that section, take a look at ``range()`` to see more examples.
+Output:
+
+    [ 1, 4, 9, 16, 25 ]
+
+*List comprehension* is usually used in conjunction with the :ref:`range() built-in function <python_builtin_functions>`. Hop over to that section, take a look at ``range()`` to see more examples.
+
+.. _python_list_filtering:
 
 Filtering
 *********
@@ -376,20 +512,29 @@ In **Python**, you could store this sample in a list with the following code sni
 
 .. code:: python
 
-    data = [ ('m', 5.9), ('m'. 5.75), ('f', 5.6), ('f', 5.8), ('m', 6.3), ('f', 5.7), ('m', 6.0), ('f', 5.3) ]
+    data = [ ('m', 5.9), ('m', 5.75), ('f', 5.6), ('f', 5.8), ('m', 6.3), ('f', 5.7), ('m', 6.0), ('f', 5.3) ]
 
 Often we will need to *group* the data by category. For example, in this data set, we might like to look at the average height of *males only* versus the average of *females only*. You can achieve this result with a tecnique known as *filtering*. *Filtering* consists of applying a condition to each member of the list to determine whether it should be included or not. 
 
 The syntax for filtering is given by,
 
-    list = [ <expr> for <element> in <list> if <condition> ]
+    list = [ <expr : required> for <element : required> in <list : required> if <condition : required> ]
 
 Applying this idea to the dataset above, we can create a list that contains only male heights and a list that contains only female height as follows,
 
 .. code:: python
 
     male_heights = [ obs[1] for obs in data if obs[0] == 'm' ]
-    female_heights = [ obs[1] for obs in data if obs[1] == 'f' ]
+    female_heights = [ obs[1] for obs in data if obs[0] == 'f' ]
+
+    print(male_heights)
+    print(female_heights)
+
+Output:
+
+    [5.9, 5.75, 6.3, 6.0]
+
+    [5.6, 5.8, 5.7, 5.3]
 
 *Filtering* is very useful when you are *cleaning data* for analysis. Data is not usually in a format ready for analysis. You will often need to perform some preparatory steps to get the data ready. As this example illustrates, *filtering* is often (but not always!) the exact tool we need to do this. 
 

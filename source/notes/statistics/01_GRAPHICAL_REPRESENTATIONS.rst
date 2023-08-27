@@ -600,6 +600,8 @@ Skewed
 
 .. plot:: assets/plots/boxplots/boxplot_skewed_left.py
 
+.. _scatter_plots:
+
 Scatter Plots
 =============
 
@@ -639,10 +641,12 @@ Non-linear Correlations
 
 TODO 
 
+.. _time_series:
+
 Time Series
 ===========
 
-A *time series* is similar to a *scatter plot* in almost all ways, but the *independent* variable in a *time series* is always a unit of time.
+A *time series* is similar to a *scatter plot* in almost all ways, except the *independent* variable in a *time series* is always a unit of time.
 
 TODO 
 
