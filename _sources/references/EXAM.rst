@@ -16,6 +16,10 @@ Past Exam Questions
 
 You can find `past exam questions on the A.P. Central website <https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions>`_. Many of the :ref:`classwork` problems are drawn from this question bank. 
 
+Practice Exams
+--------------
+
+You can find `a 2012 practice exam here <https://apcentral.collegeboard.org/media/pdf/ap-statistics-practice-exam-2012.pdf?course=ap-statistics>`. By the end of the class, we will have completed most, if not all, of the problems on this practice exam.
 
 When
 ====
