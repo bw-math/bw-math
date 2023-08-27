@@ -85,8 +85,8 @@ Project
 
 .. _project_three_dataset:
 
-Data Set
-========
+Dataset
+=======
 
 You can download the full dataset :download:`here <../../assets/datasets/vietnam_draft_data.csv>`.
 

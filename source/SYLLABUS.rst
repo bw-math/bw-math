@@ -45,7 +45,7 @@ AP Statistics is an introductory college-level statistics course that introduces
     Any and all announcements will be posted to the Google Classroom. Any assignments or projects that are completed on the student's ChromeBook will be uploaded to Google as zip files. The code to join the classroom is given below,
 
     Classroom Code
-        TBA 
+        Will be distributed on the first class date.
 
 .. topic:: Website
 
