@@ -9,13 +9,13 @@ AP Statistics is an introductory college-level statistics course that introduces
 
 .. topic:: Overview 
 
-    Each class will be broken into a lecture portion and a classwork portion. The classwork will pertain to the lecture just given. Classwork will often involve a combination of hand written work, results collected from calculator and computer program output, and visual aids, such as news programs and articles that involve applications of statistics.
+    Most classes will be broken into a lecture portion and a classwork portion. The classwork will pertain to the lecture just given. Classwork will often involve a combination of hand written work, results collected from calculator and computer program output, and visual aids, such as news programs and articles that involve applications of statistics.
 
     At the end of each class, reading from the textbook will be assigned. The student is expected to complete the reading by next class. 
 
     Each week, homework from the textbook and other sources will be assigned. Homework will be collected every Monday.
 
-    Each week, a project will be assigned that involves creating and interpretting statistical graphs, performing analysis on real-life data sets, simulating outcomes using random numbers or other applications. Projects will be due the following Monday.
+    Each week, a project will be assigned that involves creating and interpretting statistical graphs, performing analysis on real-life data sets, simulating outcomes using random numbers or other applications. Usually, projects will be covered in detail on Friday classes; the student will have time in class on Friday to begin the project and then it will be due the following Monday. Projects will be uploaded to the Google Classroom Assignments tab.
 
 .. topic:: Text
 

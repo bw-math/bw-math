@@ -686,8 +686,10 @@ document.write(`
 <p><img src="../_images/math/eb87029094d8ad8dad7a3d3611e54911ea6e9909.png" alt="A \equiv B"/></p>
 </div></dd>
 </dl>
-<p>Two sets <strong>A</strong> and <strong>B</strong> are <em>equivalent</em> if the number of elements in <strong>A</strong> is equal to the number of elements <strong>B</strong>.</p>
-</section>
+<p>Two sets <strong>A</strong> and <strong>B</strong> are <em>equivalent</em> if the number of elements in <strong>A</strong> is equal to the number of elements <strong>B</strong>, i.e.,</p>
+<div class="math">
+<p><img src="../_images/math/d59c27c501c3a96b4274541cd07710f6e833ad4a.png" alt="n(A) = n(B) \implies A \equiv B"/></p>
+</div></section>
 <section id="equality">
 <span id="set-equality"></span><h3>Equality<a class="headerlink" href="#equality" title="Permalink to this headline">#</a></h3>
 <dl>
@@ -704,8 +706,9 @@ document.write(`
 </div><p>In other words, if <strong>A</strong> is wholly contained in <strong>B</strong> and <strong>B</strong> is wholly contained in <strong>A</strong>, then the only way this can occur is if <img class="math" src="../_images/math/b20b0b13ae1d51af6e0bcc6477b498dd3db052a0.png" alt="A = B"/>.</p>
 <p><em>Equality</em> is a stricter condition than <em>equivalence</em>. Two sets that are equal are equivalent, but two sets that equivalent are not necessarily equal. Consider the sets,</p>
 <div class="math">
-<p><img src="../_images/math/9703d40611ad1e74e5e73a0270fab1bcc1cda6f3.png" alt="A = \{ &quot;dog&quot;, &quot;cat&quot; \}
-B = \{ &quot;Vietnam War&quot;, &quot;Russo-Japanese War&quot; \}"/></p>
+<p><img src="../_images/math/b29de7093f82946d98d4cf0ae72ba120f0450526.png" alt="A = \{ \text{dog}, \text{cat} \}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/88fdff88da83d1cbaabcc34efea2068289cd9398.png" alt="B = \{ \text{Vietnam War}, \text{Russo-Japanese War} \}"/></p>
 </div><p>Both of these sets are equivalent because <img class="math" src="../_images/math/747adc5850644682016036f2b719aaf6ef2c4827.png" alt="n(A) = n(B) = 2"/>, but they are not equal. If we add <strong>C</strong> to the mix,</p>
 <div class="math">
 <p><img src="../_images/math/2b055ea090141eacb7778b44beaceed168429437.png" alt="C = \{ &quot;cat&quot;, &quot;dog&quot; \}"/></p>
@@ -1185,8 +1188,9 @@ B = \{ &quot;Vietnam War&quot;, &quot;Russo-Japanese War&quot; \}"/></p>
 </div><p>By <a class="reference internal" href="#counting-theorem-one"><span class="std std-ref">Counting Theoreom 1</span></a>,</p>
 <div class="math">
 <p><img src="../_images/math/9cf64f98d4d90b235a3d084b79455c8f11b4471d.png" alt="n(A \cup A^c) = n(A) + n(A^c) - n(A \cap A^c)"/></p>
-</div><div class="math">
-<p><img src="../_images/math/86ab010a4014a74bf874b99a3fc1730eba339b15.png" alt="= n(A) + n(A^c)"/></p>
+</div><p>But, as noted, the last term on the righthand side of this equation is <code class="docutils literal notranslate"><span class="pre">0</span></code>, so</p>
+<div class="math">
+<p><img src="../_images/math/24255235d9a6d2310f5e4ff6aaac7289ff312b41.png" alt="n(A \cup A^c) = n(A) + n(A^c)"/></p>
 </div><p>On the other hand, by <a class="reference internal" href="#complement-theorem-two"><span class="std std-ref">Complement Theorem 2</span></a>,</p>
 <div class="math">
 <p><img src="../_images/math/1bfdea2655c561dc3eb5427c22f98c21cb0912a0.png" alt="A \cup A^c = S"/></p>
@@ -1215,17 +1219,17 @@ B = \{ &quot;Vietnam War&quot;, &quot;Russo-Japanese War&quot; \}"/></p>
 <p>However, when we are talking about sets, it is more complicated, because we must <em>quantify</em> over which elements in the set proposition is true.</p>
 <section id="derivation">
 <h3>Derivation<a class="headerlink" href="#derivation" title="Permalink to this headline">#</a></h3>
-<p>Consider the proposition,</p>
+<p>Consider the algebraic proposition,</p>
 <div class="math">
 <p><img src="../_images/math/ab2b9af18aaed1d50672cb7a5d7ff4564435903c.png" alt="2 \cdot x = x + x"/></p>
 </div><p>This type of statement is obviously true no matter what we insert for <em>x</em>. Whatever number we plug into the equation, a true statement will always result. Symbolically, we can express this idea with the <img class="math" src="../_images/math/55f1b2416df87eca07ff0f8d7db7552931a0adcd.png" alt="\forall"/> symbol,</p>
 <div class="math">
-<p><img src="../_images/math/50af30be41b9ce1a6bb3ac29737434680bf6bad1.png" alt="\forall x \in mathbb{R}: 2 \cdot x = x + x"/></p>
+<p><img src="../_images/math/a03632f64688007518e30f573ec228d636efb3f5.png" alt="\forall x \in \mathbb{R}: 2 \cdot x = x + x"/></p>
 </div><p>We read this is as, “for all x, doubling x is equal to adding x twice”.</p>
 <p>Contrast this against the proposition,</p>
 <div class="math">
 <p><img src="../_images/math/019bea4a14d8b8657f83f60466bd2ca2e582311a.png" alt="2x + 1 = 5"/></p>
-</div><p>We are not free to plug just any value of <em>x</em> into this equation. Only a <em>particular</em> value of <em>x</em> will satisfy it, i.e. make it true (in this case <img class="math" src="../_images/math/2934bf74a886f3142685875c0d794ad1f883993d.png" alt="x = 2"/>). Anything else we plug into the equation will result in a <em>contradiction</em>, a statement that is obviously not true (try plugging in <img class="math" src="../_images/math/d094d9e3368fbe2e0000bb593e5bf18db3cb581b.png" alt="x =3"/>exists` symbol,</p>
+</div><p>We are not free to plug just any value of <em>x</em> into this equation. Only a <em>particular</em> value of <em>x</em> will satisfy it, i.e. make it true (in this case <img class="math" src="../_images/math/2934bf74a886f3142685875c0d794ad1f883993d.png" alt="x = 2"/>). Anything else we plug into the equation will result in a <em>contradiction</em>, a statement that is obviously not true (try plugging in <img class="math" src="../_images/math/9cfde9192e0c5ccf5b5813fbef737e0794b5cf1b.png" alt="x = 3"/> and see what you get). We can express this idea with the <img class="math" src="../_images/math/1682b7e79eb04ea4f8799cedb437ebe4236ae8d1.png" alt="\exists"/> symbol,</p>
 <div class="math">
 <p><img src="../_images/math/5002567e1f5f365c6673784afd40813e1f20eab3.png" alt="\exists x \in \mathbb{R}: 2x + 1 = 5"/></p>
 </div><p>We read this as, “there exists an <em>x</em> such that <img class="math" src="../_images/math/5116603a2acee9460e1c9dc8d519190befbb5d4c.png" alt="2x +1 = 5"/>” or “some <em>x</em> satisifies <img class="math" src="../_images/math/20f4658fcbe661139c1794960631a8d6821bd4cf.png" alt="2x + 1 = 5"/>.</p>
@@ -1252,7 +1256,7 @@ B = \{ &quot;Vietnam War&quot;, &quot;Russo-Japanese War&quot; \}"/></p>
 </div></blockquote>
 <p>To express this symbollically, let <strong>D</strong> represent the set of dogs and let <strong>B</strong> represent the set of brown things. Then the first proposition can be represented as,</p>
 <div class="math">
-<p><img src="../_images/math/5dd331577afb65c3b88db807aa6cb3454c5af2f6.png" alt="\forall x in D: x \in B"/></p>
+<p><img src="../_images/math/753d972f708a058a30fdd0a78c800afe7ddcc902.png" alt="\forall x \in D: x \in B"/></p>
 </div><div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This is equivalent to saying,</p>
@@ -1264,7 +1268,7 @@ B = \{ &quot;Vietnam War&quot;, &quot;Russo-Japanese War&quot; \}"/></p>
 <p><img src="../_images/math/831843dcda90f6231643ee44daa17931a76e4210.png" alt="\exists x \in D: x \notin B"/></p>
 </div><p>Thus, we arrive at the formal definition of the negativion of a universal affirmative proposition,</p>
 <div class="math">
-<p><img src="../_images/math/eb79d28136744711992e21e43503490681b8d4f0.png" alt="( \text{ not } \forall x in A: x \in B) \equiv (\exists x in A: x \notin B)"/></p>
+<p><img src="../_images/math/d7953e850953e05dc1e70ab6673437266841b572.png" alt="( \text{ not } \forall x \in A: x \in B) \equiv (\exists x \in A: x \notin B)"/></p>
 </div></section>
 <section id="universal-negative-case">
 <h4>Universal Negative Case<a class="headerlink" href="#universal-negative-case" title="Permalink to this headline">#</a></h4>
@@ -1281,10 +1285,10 @@ B = \{ &quot;Vietnam War&quot;, &quot;Russo-Japanese War&quot; \}"/></p>
 <p><img src="../_images/math/586ae79892cf4a61d7efc1c6884887ed0ecf16a4.png" alt="\exists x \in C: x \in F"/></p>
 </div><p>To negate this, we switch the <img class="math" src="../_images/math/1682b7e79eb04ea4f8799cedb437ebe4236ae8d1.png" alt="\exists"/> to a <img class="math" src="../_images/math/55f1b2416df87eca07ff0f8d7db7552931a0adcd.png" alt="\forall"/> and negate the quantified proposition,</p>
 <div class="math">
-<p><img src="../_images/math/b3bb57c06bf967a78bcd3a98d1973a5af4ba9a46.png" alt="\forall x \in C: x \not in F"/></p>
+<p><img src="../_images/math/49c979fd6a4be5227dcb1770fb0ad602ce3b153e.png" alt="\forall x \in C: x \notin F"/></p>
 </div><p>Thus, we arrive at the formal definition of the negation of a <em>universal negative proposition</em>,</p>
 <div class="math">
-<p><img src="../_images/math/7b7038719656d827b71cab1ab2fc57870996b958.png" alt="(\exists x \in C: x \in F) \equiv (\text {not} \forall x \in C: \not in F)"/></p>
+<p><img src="../_images/math/63b1d738dca17efcf7c5394b583e8c7a2322200a.png" alt="(\exists x \in C: x \in F) \equiv (\text {not} \forall x \in C: \notin F)"/></p>
 </div></section>
 <section id="existential-positive-case">
 <h4>Existential Positive Case<a class="headerlink" href="#existential-positive-case" title="Permalink to this headline">#</a></h4>
@@ -1323,11 +1327,11 @@ B = \{ &quot;Vietnam War&quot;, &quot;Russo-Japanese War&quot; \}"/></p>
 <img alt="../_images/square_of_opposition.jpg" src="../_images/square_of_opposition.jpg" />
 <p>Notice the diagonals of the picture, the line that connects the top left to the bottom right and the line that connects the top right to the bottom left, form the contradictory pairs of propositions, namely,</p>
 <blockquote>
-<div><p>universal positive &lt;- contradicts -&gt; existential negative</p>
+<div><p>universal positive &lt;– contradicts –&gt; existential negative</p>
 </div></blockquote>
 <p>And,</p>
 <blockquote>
-<div><p>universal negative &lt;- contradictis -&gt; existential positive</p>
+<div><p>universal negative &lt;– contradictis –&gt; existential positive</p>
 </div></blockquote>
 </section>
 </section>
