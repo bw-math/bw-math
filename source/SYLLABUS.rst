@@ -5,6 +5,12 @@ Course Syllabus
 Advanced Placement Statistics
 =============================
 
+.. admonition:: Instructor Information
+
+    Grant Moore
+
+    gmoore@bishopwalsh.org
+
 AP Statistics is an introductory college-level statistics course that introduces students to the major concepts and tools for collecting, analyzing, and drawing conclusions from data. Students cultivate their understanding of statistics using technology, investigations, problem solving, and writing as they explore concepts like variation and distribution; patterns and uncertainty; and data-based predictions, decisions, and conclusions.
 
 .. topic:: Overview 
