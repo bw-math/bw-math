@@ -4,8 +4,13 @@ Course Syllabus
 
 Algebra 2
 =========
-Instructor: Grant Moore
-***********************
+
+.. topic:: Instructor Information
+
+    Grant Moore
+
+    gmoore@bishopwalsh.org
+    
 
 This course is designed to build on the algebraic and geometric concepts learned in *Algebra 1*. It develops advanced algebra skills such as systems of equations, quadratics, polynomials, imaginary and complex numbers, conics and trigonometry. The content of this course is very important for a student's success on both the *ACT* and *SAT*. It will also help prepare the student for future college courses or career choices.
 
