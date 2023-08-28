@@ -11,7 +11,7 @@ This course is designed to build on the algebraic and geometric concepts learned
 
 .. topic:: Text
 
-    Reading and homework will be assigned from `Algebra 2<TODO>`_ by Larson et al (ISBN: TODO), *Common Core* edition. This textbook will distributed to students on the first day of class. The student is expected will bring the textbook to class every day. 
+    Reading and homework will be assigned from `Algebra 2 <https://www.textbooks.com/Algebra-2-12-Edition/9780547647159/Ron-Larson.php?kpid=9780547647159N&kenshu=_k_Cj0KCQjwi7GnBhDXARIsAFLvH4nbae1a70BaZ_thcA1DHXvwF2nfcKpMqHGDUPAsAZ19DgcN2m3bMGMaAlZAEALw_wcB_k_&mcid=XKS-7564-41-1050598661-GoogleShopping-PRIDREPLACE-291&gclid=Cj0KCQjwi7GnBhDXARIsAFLvH4nbae1a70BaZ_thcA1DHXvwF2nfcKpMqHGDUPAsAZ19DgcN2m3bMGMaAlZAEALw_wcB>`_ by Larson et al (ISBN: 9780547647159), *Common Core* edition. This textbook will be distributed to students on the first day of class. The student is expected to bring the textbook to class every day. 
 
 .. topic:: Supplies
     
@@ -27,12 +27,12 @@ This course is designed to build on the algebraic and geometric concepts learned
 .. topic:: Technology 
 
     Calculator
-        The student is expected to bring a calculator from the `TI-84 series <https://en.wikipedia.org/wiki/TI-84_Plus_series>`_ of calculators to class every day. The older *TI-83*s will also work. 
+        A calculator is not required, but examples in class will sometimes be demonstrated on a virtual TI graphing calculator via a computer. The student is allowed to bring a calculator from the `TI-84 series <https://en.wikipedia.org/wiki/TI-84_Plus_series>`_ of calculators to class every day. The older *TI-83*s will also work. 
         
         Other types of graphing calculators are permitted, but instruction will only be given for the TI models. 
 
     ChromeBook
-        The student is expected to bring the ChromeBook they have been provided to class every day. It should be fully-charged. From time to time, the student will use computer graphing utilities such as `Desmos <https://desmos.org>`_ and analyze problems with spreadsheet programs. 
+        The student is expected to bring the ChromeBook they have been provided to class every day. It should be fully-charged. From time to time, the student will use computer graphing utilities such as `Desmos <https://desmos.org>`_ to graph equations and analyze problems with spreadsheet programs. 
 
 .. topic:: Google Classroom
 
@@ -59,7 +59,7 @@ This course is designed to build on the algebraic and geometric concepts learned
 
 .. topic:: Quizzes
 
-    Quizzes will be of the *pop* variety, meaning they will not be announced ahead of time. Quizzes will typically be short, five to ten minutes assessments aimed at verifying the student is progressing as expected.
+    Quizzes will be of the *pop* variety, meaning they will not be announced ahead of time. Quizzes will typically be short, ten to fifteen minutes assessments aimed at verifying the student is progressing as expected.
 
 .. topic:: Classwork
 
@@ -73,13 +73,11 @@ This course is designed to build on the algebraic and geometric concepts learned
     
     All homework will be graded. The student should show all of their work and circle the answer.
 
-    Students should write their name and date at the top of each homework assignment. In addition, the page number and problem numbers should be written in margins. If more than one page is required, the student will staple the papers together. 
+    Students should write their name and date at the top of each homework assignment. In addition, the page number and problem numbers should be written in margins. If more than one page is required, the student will staple the papers together before turning in the assignment. 
     
 .. topic:: Exams
 
     Every chapter in the book will end with an examination. The exam dates will be announced atleast one week prior to the exam. 
-    
-    Exams will be broken in two sections: handwritten sections and calculator sections. During the handwritten section, no calculators will be allowed. When the student completes the handwritten section, they will turn it in and then begin the calculator section.
   
 .. topic:: Topics 
 
