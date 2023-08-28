@@ -65,13 +65,13 @@ Project
 
 a. Using :ref:`python_list_slicing`, break this list into two even lists of 500 random numbers each. Save the code in your script and label it with a comment ``# 5a``.
 
-b. Using :ref:`python_builtin_functions`, calculate the sum of each of the lists you found in *part a*. Save the code in your script and label it with a comment ``# 5b``. Before executing your code, answer the following questionS and include each in a comment.
+b. Using :ref:`python_builtin_functions`, calculate the sum of each of the lists you found in *part a*. Save the code in your script and label it with a comment ``# 5b``. Before executing your code, answer the following questions and include each in a comment.
 
-    i. How do you expect the sums to be compare? Will they be equal or unequal? Will be they be close together or far apart? Justify your answer.
+    i. How do you expect the sums to be compare? Will they be equal or unequal? Will be they be close together or far apart? Why? Justify your answer.
 
-    ii. Calculate the difference between both sums, i.e. if ``n`` is the variable that contains the length of your first list and ``m`` is the variable that contains the length of your second list, find the value of ``n - m``. Should this value be positive or negative? 
+    ii. Calculate the difference between both sums, i.e. if ``n`` is the variable that contains the length of your first list and ``m`` is the variable that contains the length of your second list, find the value of ``n - m``. Should this value be positive, negative or zero?  
 
-    iii. Re-execute your code. Did you do it? Go ahead and do it again, just to be safe. Alright, are you done? Do it one more time, but this time do it with *feeling*. Do you get the same results each time? How do the results compare?
+    iii. Re-execute your code. Did you do it? Go ahead and do it again, just to be safe. Alright, are you done? Do it one more time, but this time do it with *feeling*. Do you get the same results each time? How do the results compare? Explain.
 
     iv. If you performed this experiment a 100 times, what do you expect the difference of the sum of these lists to be on average?
 
@@ -103,7 +103,7 @@ Datasets
 Natural Numbers
 ---------------
 
-Copy and paste the following :ref:`list variable <python_lists>` into your *py* script to generate the natural *1* to *100*,
+Copy and paste the following :ref:`list variable <python_lists>` into your *py* script to generate the natural numbers *1* to *100*,
 
 .. code:: python
 
