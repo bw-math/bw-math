@@ -1,7 +1,7 @@
-.. _chapter_one_openstax_homework:
+.. _chapter_seven_openstax_homework:
 
 ==================================
-Chapter 1 Homework (OpenStax Text) 
+Chapter 7 Homework (OpenStax Text) 
 ==================================
 
 Sets

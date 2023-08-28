@@ -303,7 +303,11 @@ Symbolic Expression
     
         A \equiv B
     
-Two sets **A** and **B** are *equivalent* if the number of elements in **A** is equal to the number of elements **B**.
+Two sets **A** and **B** are *equivalent* if the number of elements in **A** is equal to the number of elements **B**, i.e.,
+
+.. math:: 
+
+    n(A) = n(B) \implies A \equiv B
 
 .. _set_equality:
 
@@ -333,8 +337,11 @@ In other words, if **A** is wholly contained in **B** and **B** is wholly contai
 
 .. math::
 
-    A = \{ "dog", "cat" \}
-    B = \{ "Vietnam War", "Russo-Japanese War" \}
+    A = \{ \text{dog}, \text{cat} \}
+
+.. math:: 
+
+    B = \{ \text{Vietnam War}, \text{Russo-Japanese War} \}
 
 Both of these sets are equivalent because :math:`n(A) = n(B) = 2`, but they are not equal. If we add **C** to the mix,
 
@@ -1060,9 +1067,11 @@ Proof
 
         n(A \cup A^c) = n(A) + n(A^c) - n(A \cap A^c)
 
+    But, as noted, the last term on the righthand side of this equation is ``0``, so
+
     .. math::
 
-        = n(A) + n(A^c)
+        n(A \cup A^c) = n(A) + n(A^c)
 
     On the other hand, by :ref:`Complement Theorem 2 <complement_theorem_two>`,
 
@@ -1102,7 +1111,7 @@ However, when we are talking about sets, it is more complicated, because we must
 Derivation
 ----------
 
-Consider the proposition,
+Consider the algebraic proposition,
 
 .. math:: 
 
@@ -1112,7 +1121,7 @@ This type of statement is obviously true no matter what we insert for *x*. Whate
 
 .. math:: 
 
-    \forall x \in mathbb{R}: 2 \cdot x = x + x 
+    \forall x \in \mathbb{R}: 2 \cdot x = x + x 
 
 We read this is as, "for all x, doubling x is equal to adding x twice".
 
@@ -1122,7 +1131,7 @@ Contrast this against the proposition,
 
     2x + 1 = 5
 
-We are not free to plug just any value of *x* into this equation. Only a *particular* value of *x* will satisfy it, i.e. make it true (in this case :math:`x = 2`). Anything else we plug into the equation will result in a *contradiction*, a statement that is obviously not true (try plugging in :math:`x =3 ` and see what you get). We can express this idea with the :math:`\exists` symbol,
+We are not free to plug just any value of *x* into this equation. Only a *particular* value of *x* will satisfy it, i.e. make it true (in this case :math:`x = 2`). Anything else we plug into the equation will result in a *contradiction*, a statement that is obviously not true (try plugging in :math:`x = 3` and see what you get). We can express this idea with the :math:`\exists` symbol,
 
 .. math::
 
@@ -1157,7 +1166,7 @@ To express this symbollically, let **D** represent the set of dogs and let **B**
 
 .. math::
     
-    \forall x in D: x \in B
+    \forall x \in D: x \in B
 
 .. note::
     This is equivalent to saying,
@@ -1177,7 +1186,7 @@ Thus, we arrive at the formal definition of the negativion of a universal affirm
 
 .. math::
 
-    ( \text{ not } \forall x in A: x \in B) \equiv (\exists x in A: x \notin B)
+    ( \text{ not } \forall x \in A: x \in B) \equiv (\exists x \in A: x \notin B)
 
 Universal Negative Case
 ***********************
@@ -1200,13 +1209,13 @@ To negate this, we switch the :math:`\exists` to a :math:`\forall` and negate th
 
 .. math::
 
-    \forall x \in C: x \not in F
+    \forall x \in C: x \notin F
 
 Thus, we arrive at the formal definition of the negation of a *universal negative proposition*,
 
 .. math::
 
-    (\exists x \in C: x \in F) \equiv (\text {not} \forall x \in C: \not in F)
+    (\exists x \in C: x \in F) \equiv (\text {not} \forall x \in C: \notin F)
 
 Existential Positive Case
 *************************
@@ -1239,8 +1248,8 @@ In the entries of this table, you draw :ref:`venn_diagrams` that represent the i
 
 Notice the diagonals of the picture, the line that connects the top left to the bottom right and the line that connects the top right to the bottom left, form the contradictory pairs of propositions, namely,
 
-    universal positive <- contradicts -> existential negative 
+    universal positive <-- contradicts --> existential negative 
 
 And,
 
-    universal negative <- contradictis -> existential positive
+    universal negative <-- contradictis --> existential positive
