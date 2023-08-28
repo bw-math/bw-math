@@ -1,4 +1,4 @@
-.. _chapter_one_alt_homework:
+.. _chapter_one_openstax_homework:
 
 ==================================
 Chapter 1 Homework (OpenStax Text) 
