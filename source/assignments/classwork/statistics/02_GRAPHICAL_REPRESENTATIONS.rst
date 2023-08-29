@@ -17,17 +17,15 @@ A random sample of 20 eletric vehicles was selected from this dataset and the *m
 
     BMW, FORD, CHEVROLEY, TESLA, FORD, BMW, VOLVO, TESLA, TESLA, NISSAN, CHEVROLET, BMW, TESLA, NISSAN, CHEVROLET, TESLA, TESLA, CHEVROLET
 
-
 1. What is the population being sampled in this experiment?
    
-2. Construct a relative frequency distribution and histogram for this sample of data. Label the axes. What is the most common (frequent) electric vehicle in this sample of data?
+2. Construct a relative frequency distribution and histogram for this sample of data. Label the axes. What is the most common (frequent) electric vehicle make in this sample of data?
 
-3. Based on this sample, can we conclude your answer to #1 is the most common vehicle in the United States? Why or why not? 
-
+3. Based on this sample, can we conclude your answer to #1 is the most common eletric vehicle make in the United States? Why or why not? 
 
 .. note:: 
 
-    We will come back and examine this data set again.
+    We will come back and examine this dataset again at various points in the class.
 
 Twitter by Tweets and Followers
 ===============================
@@ -152,7 +150,7 @@ A research center conducted a national survey about teenage behavior. Teens were
     c. Which city had the smallest proportion of teens who consumed a soft drink in the previous week? Determine the value of the proportion.
 
 
-1. **2021, Free Response #6** 
+6. **2021, Free Response #6** 
    
 Attendance at games for a certain baseball team is being investigated by the team owner. The following boxplots summarize the attendance, measured as average number of attendees per game, for 47 years of the team's existence. The boxplots include the 30 years of games played in the old stadium and the 17 years played in the new stadium.
 
@@ -186,7 +184,7 @@ Use these graphs to answer the following questions,
     e. Consider the three variables: number of games won, year, and stadium. Based on the graphs, explain how one of those variables could be a confounding variable in the relationship between average attendance and the other variables.
 
 
-1. **2018, Free Response #5a-b** 
+7. **2018, Free Response #5a-b** 
    
 The following histograms summarize the teaching year for the teachers at two high schools, A and B.
 
@@ -199,7 +197,7 @@ Teaching year is recorded as an integer, with first-year teachers recorded as 1,
 
     b. An additional 18 teachers were not included with the data recorded from the 200 teachers at High School A. The mean teaching year of the 18 teachers is 2.5. What is the mean teaching year for all 218 teachers at High School A?
 
-1. **2017, Free Response #4** 
+8. **2017, Free Response #4** 
    
 The chemicals in clay used to make pottery can differ depending on the geographical region where the clay originated. Sometimes, archaeologists use a chemical analysis of clay to help identify where a piece of pottery originated. Such an analysis measures the amount of a chemical in the clay as a percent of the total weight of the piece of pottery. The boxplots below summarize analyses done for three chemicals—X, Y, and Z—on pieces of pottery that originated at one of three sites: I, II, or III.
 
@@ -215,11 +213,24 @@ Use this information to answer the following questions.
 
         ii. Suppose only one chemical could be analyzed in the piece of pottery. Which chemical—X, Y, or Z— would be the most useful in identifying the site where the piece of pottery originated? Justify your choice.
 
-1. **2017, Free Response #1**
+9. **2017, Free Response #1**
 
-TODO 
+Researchers studying a pack of gray wolves in North America collected data on the length x, in meters, from nose to tip of tail, and the weight y, in kilograms, of the wolves. A scatterplot of weight versus length revealed a relationship between the two variables described as positive, linear, and strong.
 
-2.  **2015, Multiple Choice #8**
+a. For the situation described above, explain what is meant by each of the following words.
+
+    (i) Positive:
+    (ii) Linear:
+    (iii) Strong:
+
+The data collected from the wolves were used to create the least-squares equation y = -16.46 + 35.02 x.
+
+b. Interpret the meaning of the slope of the least-squares regression line in context.
+
+c. One wolf in the pack with a length of 1.4 meters had a residual of -9.67 kilograms. What was the weight
+of the wolf?
+
+10.  **2015, Multiple Choice #8**
 
 The 25 students in one professor's introductory statistics course at a large university were surveyed and asked to report the number of siblings that they have. The histogram below displays the data collected in the survey.
 
