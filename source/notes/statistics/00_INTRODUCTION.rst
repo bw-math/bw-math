@@ -739,6 +739,6 @@ One of the most important *inferential statistics* is the *Z-score* of the *samp
 
 .. math:: 
 
-    Z = \frac{ \bar{x} - \mu }{ \frac{ \sigma }{n} }
+    Z = \frac{ \bar{x} - \mu }{ \frac{ \sigma }{\sqrt n} }
 
-If these formulae make no sense yet, don't worry! That is to be expected. They are listed here, so you can start forming a picture of the things to come. By the end of this class, these two formulae will become your best friends.  
+If these formulae make no sense yet, don't worry! That is to be expected. They are listed here, so you can start forming a picture of the things to come. By the end of this class, these two formulae will become your best friends.
