@@ -57,7 +57,7 @@ Aristotle
 
 Like Socrates influenced Plato, Plato influenced Aristotle, and it would be Aristotle who would make the biggest mark on the history of thought. Of the three major Greek philosopher, Socrates, Plato and Aristotle, Aristotle was by far the most prolific. He wrote volumes of book on subjects as diverse as logic, biology, physics and art. His works were used as textbooks for centuries afterwards; more than that, entire school curriculums were oriented around learning what Aristotle saw as the three tiers (or `trivium <https://en.wikipedia.org/wiki/Trivium>`_) of primary education: grammar, logic and rhetoric. Many of his volumes are still studied to this day in universities across the world.
 
-After learning from Plato, Aristotle moved to Athens, Greeceand opened a famous academy named `Lyceum <https://en.wikipedia.org/wiki/Lyceum_(classical)>`_. It was there he wrote and distributed his extensive body of work. We will take a look at some of his contributions in the field of *Logic*, specifically those relating to the *character of knowledge*,
+After learning from Plato, Aristotle moved to Athens, Greece and opened a famous academy named the `Lyceum <https://en.wikipedia.org/wiki/Lyceum_(classical)>`_. It was there he wrote and distributed his extensive body of work. We will take a look at some of his contributions in the field of *Logic*, specifically those relating to the *character of knowledge*,
 
 Syllogism and Induction
 ***********************
@@ -148,35 +148,37 @@ Cartesian Skepticism
 
     All that up to the present time I have accepted as most true and certain I have learned either from the senses or through the senses; but it is sometimes proved to me that these senses are deceptive, and it is wiser not to trust entirely to anything by which we have once been deceived.
 
-    But it may be that althought the senses sometimes deceive us concering thigns which are hardly perceptible, or very far away, there are yet many other sto be met with as to which we cannot reasonably have any doubt, although we recognize them by their means. For example, there is the fact that I am here, seated by the fire, attried in a dressing gown, having this paper in my hands and other similar matters. And how could I deny that these hands and this body are mine, were it not perhaps that I compare myself to certain persons, devoid of sense, whose cerebella are so troubled and clouded by violent vapours of black bile, that they constantly assure us that they think they are kings when they are really quite poor, or that they are clothed in purple when they are really without covering, or who imagine that they have an earthernware head or are nothing but pumpkins or are made of glass. But they are mad, and I should be any the less insane were I to follow examples so extravagant.
+    But it may be that although the senses sometimes deceive us concerning things which are hardly perceptible, or very far away, there are yet many others to be met with as to which we cannot reasonably have any doubt, although we recognize them by their means. For example, there is the fact that I am here, seated by the fire, attired in a dressing gown, having this paper in my hands and other similar matters. And how could I deny that these hands and this body are mine, were it not perhaps that I compare myself to certain persons, devoid of sense, whose cerebella are so troubled and clouded by violent vapours of black bile, that they constantly assure us that they think they are kings when they are really quite poor, or that they are clothed in purple when they are really without covering, or who imagine that they have an earthernware head or are nothing but pumpkins or are made of glass. But they are mad, and I should be any the less insane were I to follow examples so extravagant.
 
-    At the same time I must remember that I am a man, and that consequently I am in the habit of sleeping, and in my dreams representing to myself that same things or sometimes even less probable things, than do those who are insane in their waking moments. How often has it happened to me that in the night I dreamt that I found myself in this particular place, that I was dressed and seated near the fire, whilst in reality I was lying undressed in bed! At this moment it does indeed seem to me that it is with eyes awake that I am looking that I am looking at this paper; that this head which I move is not asleep, that it is deliberately and of set purpose that I extend my hand and perceive it; what happens in slee does not appear so clear nor so distinct as does all this. But in thinking over this I remind myself that on many occasions I have in sleep been deceived by similar illusions, and in dwelling carefully on this reflection I see so manifestly that there are no certain indications by which we may clearly distinguish wakefulness from sleep that I am lost in astonishment. And my astonishment is such that it is almsot capable of persuading me that I now dream.
+    At the same time I must remember that I am a man, and that consequently I am in the habit of sleeping, and in my dreams representing to myself those same things or sometimes even less probable things, than do those who are insane in their waking moments. How often has it happened to me that in the night I dreamt that I found myself in this particular place, that I was dressed and seated near the fire, whilst in reality I was lying undressed in bed! At this moment it does indeed seem to me that it is with eyes awake that I am looking at this paper; that this head which I move is not asleep, that it is deliberately and of set purpose that I extend my hand and perceive it; what happens in sleep does not appear so clear nor so distinct as does all this. But in thinking over this I remind myself that on many occasions I have in sleep been deceived by similar illusions, and in dwelling carefully on this reflection I see so manifestly that there are no certain indications by which we may clearly distinguish wakefulness from sleep that I am lost in astonishment. And my astonishment is such that it is almost capable of persuading me that I now dream.
 
     I suppose, then, that all the things I see are false; I persuade myself that nothing has ever existed of all that my fallacious memory represents to me. I consider that I possess no senses; I imagine that body, figure, extension, movement and place are but fictions of my mind. What, then, can be esteemed as true? Perhaps nothing at all, unless that there is nothing in this world that is certain.
 
-Descartes is making a point here about *uncertainty*. He is saying: everything, the people we know and places we visit, the books we read and music to which we listen, all of it, might be an illusion. More than that, there is no way to be *certain* your waking life *isn't* an illusion.
+Descartes is making a point here about *uncertainty*. He is saying: everything, the people we know and places we visit, the books we read and music to which we listen, all of it, might be an illusion. More than that, there is no way to be *certain* your waking life *is not* an illusion.
 
-How do you *know *you are not dreaming right now? How do you *know* your senses aren't lying to you? Descartes' point is *you don't*. No matter how hard you try to convince yourself you aren't dreaming, you will never be *100%* certain in the next moment you won't wake up and find yourself in another life. 
+How do you *know* you are not dreaming right now? How do you *know* your senses aren't lying to you? Descartes' point is *you do not*. No matter how hard you try to convince yourself you aren't dreaming, you will never be *100%* certain in the next moment you won't wake up and find yourself in another life. 
 
-This point is the *essence* of statistics: uncertainty is inherent in everything. Everything about our lives involves an element of *uncertainty*; this is not just due to a lack of information either. 
+This point is the *essence* of statistics: uncertainty is inherent in everything. Everything about our lives involves an element of *uncertainty*; this is not just due to a lack of information either. Uncertainty is an essential part of life.
 
-In statistics, we can never say anything with *100%* confidence (certainty). To do so is impossible. Instead, in statistics, we speak in terms of probabilities, in terms of chance and likelihood. 
+This is the lesson learned from Descartes: In statistics, we can never say anything with *100%* confidence (certainty). To do so is impossible. Instead, in statistics, we speak in terms of probabilities, chance and likelihoods. 
 
 Immanuel Kant
 -------------
 
-Descartes ignited a revolution in philosophy. Suddenly all of the things everyone had taken for granted as true were called back to the fore to be analyzed anew. Philosophers and mathematicians (there was not much distinction between the two fields back then) began re-examining and re-thinking their philosophies. 
+Descartes ignited a revolution in philosophy. Suddenly all of the things everyone had taken for granted as true were called back to the fore to be analyzed anew. Philosophers and mathematicians (although there was not much distinction between the two fields back then) began re-examining and re-thinking their philosophies. 
 
-The last stop in our historical detour is one such individual, a German philosopher named Immanuel Kant. His work was hugely influential in the development of statistics in the later half of the 18 :sup:`th` century. He is famous for developing the ideas "*prior knowledge*" and "*posterior*" knowledge.
+The last stop in our historical detour is one such individual, a German philosopher named Immanuel Kant. His work was hugely influential in the development of statistics in the later half of the 18 :sup:`th` century. He disagreed with Descartes about the nature of knowledge. Whereas Descarte saw nothing but uncertainty, Kant argued there were some forms of knowledge we *can* know with certainty. It was this philosophical foothold that finally allowed statistics to be born.
+  
+Immanuel Kant is famous for developing the ideas "*prior knowledge*" and "*posterior* knowledge".
 
 A Priori and A Posteriori
 *************************
 
 .. topic:: A Critique of Pure Reason, Immanuel Kant, 18th Century AD
 
-    That all our knowledge begins with experience that can be no doubt. For how should the faculty of knowledge be called into activity, if not by objects which affect our senses and which, on the one hand, produce representations by themselves or on the other, rouse the activity of our understanding to compare, connect, or to separate them and thus to convert the raw material of our sensible impressions into knowledge of objects, which we call experience? With respect to time, therefore, no knowledge within us is antecedent to experience, but all knowledge begins with it.
+    That all our knowledge begins with experience there can be no doubt. For how should the faculty of knowledge be called into activity, if not by objects which affect our senses and which, on the one hand, produce representations by themselves or on the other, rouse the activity of our understanding to compare, connect, or to separate them and thus to convert the raw material of our sensible impressions into knowledge of objects, which we call experience? With respect to time, therefore, no knowledge within us is antecedent to experience, but all knowledge begins with it.
 
-    But though all our knowledge begins with experience, it does not follow that it all arises from experience. For it is quite possible that even our empirical knowledge is a compound of that which we perceive through impression, and of that which our own faculty of knowledge (incited by sense impressions) supplies from itself, a supplement which we do not distinguish from that raw material until long practice and rendered us capable of separating one from the other.  It is therefore a question which deserves at least closer investigation and cannot be disposed of at first sigh: Whether there is any knowledge independent of all experience and even of all impressions of the senses? Such knowledge is called *"a priori*"and is distguished from empirical knowledge, which has its source "*a posteriori*", that is, in experience...
+    But though all our knowledge begins with experience, it does not follow that it all arises from experience. For it is quite possible that even our empirical knowledge is a compound of that which we perceive through impression, and of that which our own faculty of knowledge (incited by sense impressions) supplies from itself, a supplement which we do not distinguish from that raw material until long practice and rendered us capable of separating one from the other.  It is therefore a question which deserves at least closer investigation and cannot be disposed of at first sight: Whether there is any knowledge independent of all experience and even of all impressions of the senses? Such knowledge is called *"a priori*"and is distguished from empirical knowledge, which has its source "*a posteriori*", that is, in experience...
 
 According to Kant, there are two types of knowledge: *prior* knowledge and *posterior* knowledge. 
 
@@ -186,15 +188,15 @@ To see what is meant by these two notions, consider the two propositions,
 
     q = the dog is brown
 
-The proposition ``p`` is known as a *tautology* in logic. It is a proposition that is "*trivially true*" or "*always true*", no matter to which dog we are refeering. With ``p``, we have added nothing of value to our knowledge of the world. That does not mean the proposition ``p`` does not have meaning, though. 
+The proposition ``p`` is known as a *tautology* in logic. It is a proposition that is "*trivially true*" or "*always true*", no matter to which dog we refer. With ``p``, we have added nothing of value to our knowledge of the world. That does not mean the proposition ``p`` does not have *meaning*, though. 
 
 Consider the opposite of ``p``, called the *negation of* ``p`` in logic. We denote the negation of ``p`` with ``~p``. In this case, 
 
     ~ p = the dog is not a dog. 
 
-This is obviously not true. No matter what dog we consider, it will always be false that it is not a dog. Therefore, it cannot be said ``p`` adds *nothing* to our knowledge; we can only say what it adds is *nothing of value* to our knowledge.
+This is obviously not true. No matter what dog we consider, it will always be false that it is not a dog. Therefore, it cannot be said ``p`` adds *nothing* to our knowledge; by asserting ``p`` we have asserted something *true*. We can only say what it adds is *nothing of value* to our knowledge.
 
-Contrast that against the proposition ``q``.  It might be true or it might be false, depending on the dog. In other words, the truth of ``q`` depends on the *particular* dog we have in front of us.
+Contrast that against the proposition ``q``.  It might be true or it might be false, depending on the dog. In other words, the truth of ``q`` depends on the *particular* dog we have in front of us and whether or not it is brown.
 
 Propositions like ``p`` are what Kant called "*prior* knowledge". They are types of propositions whose truth is self evident. *Prior* knowledge consists of propositions whose truth we have no choice but to acknowledge. In other words, a *prior form of knowledge* consists of a proposition that looks like,
 
@@ -206,6 +208,10 @@ Propositions like ``q`` are what Kant called "*posterior* knowledge". They are t
 
 *Prior knowledge* is *absolutely true*. *Posterior knowledge* is *conditionally true*.
 
+*Prior knowledge* is the domain of mathematical logic. *Posterior knowledge* is the domain of statistics. 
+
+With this simple distinction, the science of statistics became a possibility. It would take a few more decades to crystallize, but the seeds had been planted. 
+
 The Birth of Statistics
 -----------------------
 
@@ -214,14 +220,12 @@ To summarize what we have said so far, we could create a list of all the things 
 - Knowledge can be deductive, i.e. a movement from hypothesis to conclusion.
 - Knowledge can be inductive, i.e. a movement from particular to universal.
 - Some knowledge is uncertain.
-- Some knowledge is always true.
-- Some knowledge is sometimes true.
+- Some knowledge is always true, i.e by appeal to logic (prior).
+- Some knowledge is sometimes true, i.e. by appeal to experience (posterior).
 
 This was our understanding of science and philosophy around the late 1700s and early 1800s. 
 
-In the 1770s, three mathematicians began to take all of these ideas and formalize them into the field of statistics. Their names were: Pierre-Simon Laplace, Thomas Bayes and Abraham de Moivre. With their work, statistics finally became a science in its own right and moved away from the field of philosophy altogether.
-
-The previously vague notions Aristotle, Descartes and Kant had tried to expound were made exact by the work of these mathematicans. 
+In the 1770s, three mathematicians began to take all of these ideas and formalize them into the field of statistics. Their names were: Pierre-Simon Laplace, Thomas Bayes and Abraham de Moivre. With their work, statistics finally became a science in its own right and moved away from the field of philosophy altogether. The previously vague notions Aristotle, Descartes and Kant had tried to expound were made exact by the work of these mathematicans. 
 
 Below you will find the first formal definition of *probability* in the history of mathematics,
 
@@ -233,3 +237,5 @@ Below you will find the first formal definition of *probability* in the history 
     4. An event is said to be *determined* when it has either happened or *failed*.
     5. The *probability of any event* is the ratio between the value at which an expectation depending on the happening of the event ought to be computed, and the value of the thing expected upon it's happening. 
     6. Events are independent when the happening of any one of them does neither increase nor abate the probability of the rest. 
+
+At this point, we leave aside the historical narrative and take up the subject itself. 
