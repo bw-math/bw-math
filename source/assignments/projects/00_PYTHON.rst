@@ -112,7 +112,7 @@ Copy and paste the following :ref:`list variable <python_lists>` into your *py* 
 Random Numbers
 --------------
 
-Copy and paste the following :ref:`list variable <python_list>` into your *py* script to generate 10000 random numbers.
+Copy and paste the following :ref:`list variable <python_lists>` into your *py* script to generate 10000 random numbers.
 
 .. code:: python
 

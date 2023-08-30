@@ -153,7 +153,7 @@ Definition
 
     a_number = 5
     another_number = 15
-    print("these are integers: ", a number, |", ", another_number)
+    print("these are integers: ", a number, ", ", another_number)
 
 Output:
 
