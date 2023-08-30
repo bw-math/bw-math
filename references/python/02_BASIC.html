@@ -596,12 +596,12 @@ document.write(`
 </div></blockquote>
 <p>The variables in a list need not be the same type,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">unlike_list</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="mf">5.67</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span> <span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;lists can have different types of elements: &quot;</span><span class="p">,</span> <span class="n">unlike_list</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">unlike_list</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;lists can have different types of elements: &quot;</span><span class="p">,</span> <span class="n">unlike_list</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;, &quot;</span><span class="p">,</span> <span class="n">unlike_list</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
 </div>
 <p>Output:</p>
 <blockquote>
-<div><p>lists can have different types of elements: [‘red’, 5.67, ‘blue’, ‘green’]</p>
+<div><p>lists can have different types of elements: red, 5.67</p>
 </div></blockquote>
 <p>You can determine the <em>length</em> of a list, i.e. how many elements are in it, using the <code class="docutils literal notranslate"><span class="pre">len()</span></code> function,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span> <span class="p">]</span>
@@ -702,7 +702,7 @@ document.write(`
 <p>The operations in the previous section dealt with <a class="reference internal" href="#python-floats"><span class="std std-ref">Floats</span></a> and <a class="reference internal" href="#python-integers"><span class="std std-ref">Integers</span></a>. In other words, the operations in the last section applied to numbers. <strong>Python</strong> has many operations that can be applied specifically to <a class="reference internal" href="#python-lists"><span class="std std-ref">Lists</span></a>.</p>
 <section id="slicing">
 <span id="python-list-slicing"></span><h3>Slicing<a class="headerlink" href="#slicing" title="Permalink to this headline">#</a></h3>
-<p>Slicing a list is <strong>Python</strong>’s way of accessing multiple elements in a list at once. The general syntax of slicing is given below,</p>
+<p>Slicing a list is <strong>Python</strong>’s way of breaking a list into a smaller sub-list (an especially useful technique in the domain of statistics!). The general syntax of slicing is given below,</p>
 <blockquote>
 <div><p>list[&lt;start index : optional&gt; : &lt;end index : optional&gt;]</p>
 </div></blockquote>
@@ -716,7 +716,7 @@ document.write(`
 <blockquote>
 <div><p>[‘b’, ‘c’]</p>
 </div></blockquote>
-<p>The commands above will print to screen the elements starting at the second index up to, but not including, the fourth index.</p>
+<p>The commands above will print to screen the elements starting at the second index up to, but <strong>not including</strong>, the fourth index.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Remember the first index of a list is 0!</p>
@@ -728,11 +728,12 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="n">sliced_data</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Output:</p>
+<details class="summary-solution">
+<summary>Solution</summary><p>Output:</p>
 <blockquote>
 <div><p>[‘A’, ‘B’]</p>
 </div></blockquote>
-<p>If you leave out the <code class="docutils literal notranslate"><span class="pre">&lt;start</span> <span class="pre">index&gt;</span></code>, it is understood to be <code class="docutils literal notranslate"><span class="pre">0</span></code>,</p>
+</details><p>If you leave out the <code class="docutils literal notranslate"><span class="pre">&lt;start</span> <span class="pre">index&gt;</span></code>, it is understood to be <code class="docutils literal notranslate"><span class="pre">0</span></code>,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;fish&quot;</span> <span class="p">]</span>
 <span class="n">sliced_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sliced_data</span><span class="p">)</span>
