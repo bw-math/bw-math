@@ -383,7 +383,7 @@ The set containing elements that do not belong to the set **A**.
 
 .. math:: 
 
-    A^c = \{ \forall x: x \not in A \}
+    A^c = \{ \forall x: x \notin A \}
 
 The complement can be visualized with the following *Venn Diagram*,
 
