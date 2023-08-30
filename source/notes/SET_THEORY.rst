@@ -174,7 +174,7 @@ Symbolic Expresison
     :math:`\mathbb{N}`
 
 Definition
-    The set of all counting numbers starting at 1, :math:`1, 2, 3, ...`
+    The set of all counting numbers starting at :math:`1, 2, 3, ...`
 
 .. _real_numbers:
 
@@ -291,7 +291,7 @@ An equivalent way of defining a *proper subset* is given by,
 .. math::
     \forall x: x \in A \implies x \in B \text{ and } n(A) < n(B)
 
-This is an equivalent formulation between saying the cardinality of **A** is less than the cardinality of **B** is logically equivalent to saying **A** is not identical to **B**.
+This is an equivalent formulation because saying the cardinality of **A** is less than the cardinality of **B** is logically equivalent to saying **A** is not identical to **B**.
 
 .. _set_equivalence:
 

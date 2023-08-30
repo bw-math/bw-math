@@ -388,7 +388,7 @@ Output:
 
     ['b', 'c']
 
-The commands above will print to screen the elements starting at the second index up to, but not including, the fourth index. 
+The commands above will print to screen the elements starting at the second index up to, but **not including**, the fourth index. 
 
 .. important:: 
 
@@ -404,9 +404,11 @@ Try to figure out what the next example will print to screen before pasting it i
     sliced_data = data[0:2]
     print(sliced_data)
 
-Output:
+.. collapse:: Solution 
+    
+    Output:
 
-    ['A', 'B']
+        ['A', 'B']
 
 If you leave out the ``<start index>``, it is understood to be ``0``, 
 
