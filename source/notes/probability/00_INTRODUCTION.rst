@@ -624,7 +624,7 @@ Therefore, the desired probability is,
 Probability Tables
 ******************
 
-If you have two sets of events, :math:`A` and :math:`B`, then you can form a *two-way* probability table by partitioning the sample space in :math:`A` and :math:`A^c` and then simultaneously partitioning the sample space into :math:`B` and :math:`B^c`, 
+If you have two events, :math:`A` and :math:`B`, then you can form a *two-way* probability table by partitioning the sample space into :math:`A` and :math:`A^c` and then simultaneously partitioning the sample space into :math:`B` and :math:`B^c`, 
 
                         
 +--------------+---------------------+--------------------+----------------+ 
