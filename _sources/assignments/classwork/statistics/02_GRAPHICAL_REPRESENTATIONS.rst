@@ -11,7 +11,7 @@ Graphical Representations of Data
 Electric Vehicle Distribution
 =============================
 
-The United States Government General Services Administration maintains a huge database of public available information. One of the datasets they publish is the "`Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) that are currently registered through Washington State Department of Licensing <https://catalog.data.gov/dataset/electric-vehicle-population-data>`"
+The United States Government General Services Administration maintains a huge database of public available information. One of the datasets they publish is the `Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) that are currently registered through Washington State Department of Licensing <https://catalog.data.gov/dataset/electric-vehicle-population-data>`_
 
 A random sample of 20 eletric vehicles was selected from this dataset and the *make* of the car was recorded. The resuls are given below,
 
