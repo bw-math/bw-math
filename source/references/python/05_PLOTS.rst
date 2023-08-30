@@ -22,7 +22,7 @@ matplotlib
 
 .. code:: shell
 
-    pip install matplotlib
+    pip3 install matplotlib
 
 tkinter
 -------
@@ -31,7 +31,7 @@ tkinter
 
 .. code:: shell 
 
-    pip install tk
+    pip3 install tk
 
 Now that we have everything we need, let's take a look at the various plots we can create. 
 
