@@ -6,7 +6,7 @@ Functions
 
 This page details **Python** functions we will frequently need to use.
 
-The arguments of functions are specified as between angular brackets ``<>``, with the name of the argument on the left hand side and the type of argument on the right hand side. For example, the definition,
+The arguments of functions are specified between angular brackets ``<>``, with the name of the argument on the left hand side and the type of argument on the right hand side. For example, the definition,
 
     my_function(<this_argument : required>, <that_argument : optional>)
 
@@ -63,7 +63,17 @@ Max Function
 ------------
 
 ``max(<list : required>)``
-    TODO 
+    The *max* function finds the largest element in a list.
+
+.. code:: 
+
+    data = [ 1, 10, 6, 89 ]
+    m = max(data)
+    print(m)
+
+Output:
+
+    89
 
 .. _python_min_function:
 
@@ -71,7 +81,17 @@ Min Function
 ------------
 
 ``min(<list : required>)``
-    TODO 
+    The *min* function returns the smallest element in a list.
+
+.. code:: 
+
+    data = [ 10, 95, 0, -5, 16 ]
+    m = min(data)
+    print(m)
+
+Output:
+
+    -5
 
 .. _python_range_function:
 
@@ -101,6 +121,7 @@ Notice the output does not include the endpoint *10*. The *range* function is ex
 Output:
 
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
     10
 
 .. important:: 
@@ -109,7 +130,7 @@ Output:
 
 In other words, the *range* function excludes the endpoint so the length of the returned list will equal whatever number was originally passed into the *range* function.
 
-You can use the ``start`` and ``step`` arguments to generate arbitrary lists of data according to a rule,
+You can use the ``start`` and ``step`` arguments to generate arbitrary lists of data according to a rule. The following command will iterate through the numbers ``2`` to ``19`` in steps of ``2``.
 
 .. code:: python 
 
@@ -124,7 +145,7 @@ Enumerate Function
 ------------------
 
 ``enumerate(<list : required>)``
-    The *enumerate* function allows you to number the elements in a list.
+    The *enumerate* function allows you to *index* the elements in a list.
 
 Suppose you had a sample of closing stock prices observed over one business week,
 
@@ -223,6 +244,7 @@ The argument to this function is the :math:`x` in the following expression,
 Output:
 
     the value of e is: 2.718281828459045
+
     the value of e squared is: 7.38905609893065
 
 .. _python_ceiling_function:
@@ -250,6 +272,7 @@ Ceil
 Output:
 
     ceil(4.8) = 5
+
     ceil(32.1) = 33
 
 .. _python_floor_function:
@@ -277,6 +300,7 @@ Floor
 Output:
 
     floor(4.8) = 4
+
     floor(32.1) = 32
 
 .. _python_random_package:
@@ -318,7 +342,7 @@ Output:
 
 .. warning:: 
     
-    Be careful to distinguish the ``random`` *package* from the ``random()`` *function*. The ``random`` *package* is a `namespace <https://realpython.com/python-namespaces-scope/>` for *naming* functions. The ``random()`` function is an operation that produce output.
+    Be careful to distinguish the ``random`` *package* from the ``random()`` *function*. The ``random`` *package* is a `namespace <https://realpython.com/python-namespaces-scope/>`_ for *naming* functions. The ``random()`` function is an operation that produce output.
 
 .. _python_randint_function:
 
@@ -348,7 +372,7 @@ Output:
 Random Choice Function
 **********************
 
-Finally, the last function we will need from the ``random`` package is the ``choice()`` method. The previous two functions we looked were for generating :ref:`quantitative_data`. The ``choice()`` function, on the other hand, will generate :ref:`categorical_data`. The syntax for ``choice`` is given below,
+Another function we will need from the ``random`` package is the ``choice()`` method. The previous two functions we looked were for generating :ref:`quantitative_data`. The ``choice()`` function, on the other hand, will generate :ref:`categorical_data`. The syntax for ``choice`` is given below,
 
     choice(<list of options>)
 

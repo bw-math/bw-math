@@ -22,7 +22,7 @@ matplotlib
 
 .. code:: shell
 
-    pip install matplotlib
+    pip3 install matplotlib
 
 tkinter
 -------
@@ -31,7 +31,7 @@ tkinter
 
 .. code:: shell 
 
-    pip install tk
+    pip3 install tk
 
 Now that we have everything we need, let's take a look at the various plots we can create. 
 
@@ -132,7 +132,7 @@ When you pass in arguments to ``subplots``, it will return a *list* of axes. You
 
 .. note:: 
 
-    The number of *axes* is the *second* argument of the ``subplots()`` function.
+    The number of *axes* is the *second* argument of the ``subplots()`` function. We have to pass in a ``1`` first because **matplotlib.pyplot** always interprets the first argument as the number of *figures*.
 
 Showing The Plot
 ================

@@ -404,7 +404,7 @@ document.write(`
   <section id="functions">
 <span id="python-functions"></span><h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">#</a></h1>
 <p>This page details <strong>Python</strong> functions we will frequently need to use.</p>
-<p>The arguments of functions are specified as between angular brackets <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code>, with the name of the argument on the left hand side and the type of argument on the right hand side. For example, the definition,</p>
+<p>The arguments of functions are specified between angular brackets <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code>, with the name of the argument on the left hand side and the type of argument on the right hand side. For example, the definition,</p>
 <blockquote>
 <div><p>my_function(&lt;this_argument : required&gt;, &lt;that_argument : optional&gt;)</p>
 </div></blockquote>
@@ -450,16 +450,34 @@ document.write(`
 <section id="max-function">
 <span id="python-max-function"></span><h3>Max Function<a class="headerlink" href="#max-function" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">max(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>TODO</p>
+<dt><code class="docutils literal notranslate"><span class="pre">max(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>max</em> function finds the largest element in a list.</p>
 </dd>
 </dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">89</span> <span class="p">]</span>
+<span class="n">m</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>89</p>
+</div></blockquote>
 </section>
 <section id="min-function">
 <span id="python-min-function"></span><h3>Min Function<a class="headerlink" href="#min-function" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">min(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>TODO</p>
+<dt><code class="docutils literal notranslate"><span class="pre">min(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>min</em> function returns the smallest element in a list.</p>
 </dd>
 </dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">16</span> <span class="p">]</span>
+<span class="n">m</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>-5</p>
+</div></blockquote>
 </section>
 <section id="range-function">
 <span id="python-range-function"></span><h3>Range Function<a class="headerlink" href="#range-function" title="Permalink to this headline">#</a></h3>
@@ -481,15 +499,15 @@ document.write(`
 </div>
 <p>Output:</p>
 <blockquote>
-<div><p>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-10</p>
+<div><p>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</p>
+<p>10</p>
 </div></blockquote>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Notice the list in the output <em>doesn’t include</em> 10.</p>
 </div>
 <p>In other words, the <em>range</em> function excludes the endpoint so the length of the returned list will equal whatever number was originally passed into the <em>range</em> function.</p>
-<p>You can use the <code class="docutils literal notranslate"><span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">step</span></code> arguments to generate arbitrary lists of data according to a rule,</p>
+<p>You can use the <code class="docutils literal notranslate"><span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">step</span></code> arguments to generate arbitrary lists of data according to a rule. The following command will iterate through the numbers <code class="docutils literal notranslate"><span class="pre">2</span></code> to <code class="docutils literal notranslate"><span class="pre">19</span></code> in steps of <code class="docutils literal notranslate"><span class="pre">2</span></code>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
@@ -502,7 +520,7 @@ document.write(`
 <section id="enumerate-function">
 <h3>Enumerate Function<a class="headerlink" href="#enumerate-function" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">enumerate(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>enumerate</em> function allows you to number the elements in a list.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">enumerate(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>enumerate</em> function allows you to <em>index</em> the elements in a list.</p>
 </dd>
 </dl>
 <p>Suppose you had a sample of closing stock prices observed over one business week,</p>
@@ -576,8 +594,8 @@ document.write(`
 </div>
 <p>Output:</p>
 <blockquote>
-<div><p>the value of e is: 2.718281828459045
-the value of e squared is: 7.38905609893065</p>
+<div><p>the value of e is: 2.718281828459045</p>
+<p>the value of e squared is: 7.38905609893065</p>
 </div></blockquote>
 </section>
 <section id="ceil">
@@ -601,8 +619,8 @@ the value of e squared is: 7.38905609893065</p>
 </div>
 <p>Output:</p>
 <blockquote>
-<div><p>ceil(4.8) = 5
-ceil(32.1) = 33</p>
+<div><p>ceil(4.8) = 5</p>
+<p>ceil(32.1) = 33</p>
 </div></blockquote>
 </section>
 <section id="floor">
@@ -626,8 +644,8 @@ ceil(32.1) = 33</p>
 </div>
 <p>Output:</p>
 <blockquote>
-<div><p>floor(4.8) = 4
-floor(32.1) = 32</p>
+<div><p>floor(4.8) = 4</p>
+<p>floor(32.1) = 32</p>
 </div></blockquote>
 </section>
 </section>
@@ -659,7 +677,7 @@ floor(32.1) = 32</p>
 </div></blockquote>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Be careful to distinguish the <code class="docutils literal notranslate"><span class="pre">random</span></code> <em>package</em> from the <code class="docutils literal notranslate"><span class="pre">random()</span></code> <em>function</em>. The <code class="docutils literal notranslate"><span class="pre">random</span></code> <em>package</em> is a <cite>namespace &lt;https://realpython.com/python-namespaces-scope/&gt;</cite> for <em>naming</em> functions. The <code class="docutils literal notranslate"><span class="pre">random()</span></code> function is an operation that produce output.</p>
+<p>Be careful to distinguish the <code class="docutils literal notranslate"><span class="pre">random</span></code> <em>package</em> from the <code class="docutils literal notranslate"><span class="pre">random()</span></code> <em>function</em>. The <code class="docutils literal notranslate"><span class="pre">random</span></code> <em>package</em> is a <a class="reference external" href="https://realpython.com/python-namespaces-scope/">namespace</a> for <em>naming</em> functions. The <code class="docutils literal notranslate"><span class="pre">random()</span></code> function is an operation that produce output.</p>
 </div>
 </section>
 <section id="random-integer-function">
@@ -682,7 +700,7 @@ floor(32.1) = 32</p>
 </section>
 <section id="random-choice-function">
 <span id="python-choice-function"></span><h4>Random Choice Function<a class="headerlink" href="#random-choice-function" title="Permalink to this headline">#</a></h4>
-<p>Finally, the last function we will need from the <code class="docutils literal notranslate"><span class="pre">random</span></code> package is the <code class="docutils literal notranslate"><span class="pre">choice()</span></code> method. The previous two functions we looked were for generating <span class="xref std std-ref">quantitative_data</span>. The <code class="docutils literal notranslate"><span class="pre">choice()</span></code> function, on the other hand, will generate <span class="xref std std-ref">categorical_data</span>. The syntax for <code class="docutils literal notranslate"><span class="pre">choice</span></code> is given below,</p>
+<p>Another function we will need from the <code class="docutils literal notranslate"><span class="pre">random</span></code> package is the <code class="docutils literal notranslate"><span class="pre">choice()</span></code> method. The previous two functions we looked were for generating <span class="xref std std-ref">quantitative_data</span>. The <code class="docutils literal notranslate"><span class="pre">choice()</span></code> function, on the other hand, will generate <span class="xref std std-ref">categorical_data</span>. The syntax for <code class="docutils literal notranslate"><span class="pre">choice</span></code> is given below,</p>
 <blockquote>
 <div><p>choice(&lt;list of options&gt;)</p>
 </div></blockquote>
