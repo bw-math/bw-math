@@ -222,9 +222,13 @@ The *index* of an element in a list is the order that it appears, starting at 0.
 Output:
 
     this is a whole list: ['Led Zeppelin', 'Pink Floyd', 'The Beatles']
+
     this is the first element of a list: Led Zeppelin
+
     this is the second element of a list: Pink Floyd
+
     this is the last element of a list: The Beatles 
+    
     this is also the element of a list: The Beatles
 
 The variables in a list need not be the same type,
