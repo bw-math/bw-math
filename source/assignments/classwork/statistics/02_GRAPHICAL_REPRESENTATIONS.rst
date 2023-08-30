@@ -11,9 +11,9 @@ Graphical Representations of Data
 Electric Vehicle Distribution
 =============================
 
-The United States Government General Services Administration maintains a huge database of public available information. One of the datasets they publish is the "`Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) that are currently registered through Washington State Department of Licensing <https://catalog.data.gov/dataset/electric-vehicle-population-data>`"
+The United States Government General Services Administration maintains a huge database of public available information. One of the datasets they publish is the `Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) that are currently registered through Washington State Department of Licensing <https://catalog.data.gov/dataset/electric-vehicle-population-data>`_
 
-A random sample of 20 eletric vehicles was selected from this dataset and the *make* of the car was recorded. The resuls are given below,
+A random sample of 18 eletric vehicles was selected from this dataset and the *make* of the car was recorded. The resuls are given below,
 
     BMW, FORD, CHEVROLEY, TESLA, FORD, BMW, VOLVO, TESLA, TESLA, NISSAN, CHEVROLET, BMW, TESLA, NISSAN, CHEVROLET, TESLA, TESLA, CHEVROLET
 
@@ -21,7 +21,7 @@ A random sample of 20 eletric vehicles was selected from this dataset and the *m
    
 2. Construct a relative frequency distribution and histogram for this sample of data. Label the axes. What is the most common (frequent) electric vehicle make in this sample of data?
 
-3. Based on this sample, can we conclude your answer to #1 is the most common eletric vehicle make in the United States? Why or why not? 
+3. Based on this sample, can we conclude your answer to #2 is the most common eletric vehicle make in the United States? Why or why not? 
 
 .. note:: 
 
