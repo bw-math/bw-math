@@ -25,4 +25,5 @@ These are resources I use for maintaining the site. You may safely ignore this s
 
    LATEX
    DOCS
-   ALGEBRA_2
+   ..
+      ALGEBRA_2
