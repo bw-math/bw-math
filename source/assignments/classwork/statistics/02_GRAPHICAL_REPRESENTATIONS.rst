@@ -15,7 +15,7 @@ The United States Government General Services Administration maintains a huge da
 
 A random sample of 18 eletric vehicles was selected from this dataset and the *make* of the car was recorded. The resuls are given below,
 
-    BMW, FORD, CHEVROLEY, TESLA, FORD, BMW, VOLVO, TESLA, TESLA, NISSAN, CHEVROLET, BMW, TESLA, NISSAN, CHEVROLET, TESLA, TESLA, CHEVROLET
+    BMW, FORD, CHEVROLET, TESLA, FORD, BMW, VOLVO, TESLA, TESLA, NISSAN, CHEVROLET, BMW, TESLA, NISSAN, CHEVROLET, TESLA, TESLA, CHEVROLET
 
 1. What is the population being sampled in this experiment?
    
