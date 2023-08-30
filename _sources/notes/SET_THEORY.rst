@@ -383,7 +383,7 @@ The set containing elements that do not belong to the set **A**.
 
 .. math:: 
 
-    A^c = \{ \forall x: x \not in A \}
+    A^c = \{ \forall x: x \notin A \}
 
 The complement can be visualized with the following *Venn Diagram*,
 
@@ -442,7 +442,7 @@ The second case, where the two sets have elements in common is shown in the next
 
 .. image:: ../assets/imgs/sets/sets_union_overlapping.jpg
 
-The union would be represented by the entire area of both circles. Notices the circles share some elements in this case. Sets that have elements in common, but are not subsets in either direction (i.e. neither :math:`A \subseteq B` nor :math:`B \subseteq A`, are called *overlapping*.
+The union would be represented by the entire area of both circles. Notice the circles share some elements in this case. Sets that have elements in common, but are not subsets in either direction (i.e. neither :math:`A \subseteq B` nor :math:`B \subseteq A`, are called *overlapping*.
 
 .. tip:: 
     
