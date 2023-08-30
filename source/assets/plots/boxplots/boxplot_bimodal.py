@@ -29,7 +29,7 @@ import random as rand
 # Create New Figures and Axes
 # NOTE: 2 axes are being created!
     #       1 to graph the histogram
-    #       1 to graph the ogive
+    #       1 to graph the boxplot
 fig, axs = plt.subplots(1, 2)
 
 # Generate Data
