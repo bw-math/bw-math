@@ -597,7 +597,9 @@ information about current events from the internet?
 
     (E) :math:`\frac{20 \cdot 65}{295}`
 
-1.  **2012, Practice Exam, #23** A local company is interested in supporting environmentally friendly initiatives such as carpooling among employees. The company surveyed all of the 200 employees at the downtown offices. Employees responded as to whether or not they own a car and to the location of the home where they live. The results are shown in the
+15.  **2012, Practice Exam, #23** 
+
+A local company is interested in supporting environmentally friendly initiatives such as carpooling among employees. The company surveyed all of the 200 employees at the downtown offices. Employees responded as to whether or not they own a car and to the location of the home where they live. The results are shown in the
 table below.
 
 .. image:: ../../../assets/imgs/classwork/2012_apstats_pe_23.png
