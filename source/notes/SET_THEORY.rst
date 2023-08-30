@@ -442,7 +442,7 @@ The second case, where the two sets have elements in common is shown in the next
 
 .. image:: ../assets/imgs/sets/sets_union_overlapping.jpg
 
-The union would be represented by the entire area of both circles. Notice the circles share some elements in this case. Sets that have elements in common, but are not subsets in either direction (i.e. neither :math:`A \subseteq B` nor :math:`B \subseteq A`, are called *overlapping*.
+The union would be represented by the entire area of both circles. Notice the circles share some elements in this case. Sets that have elements in common, but are not subsets in either direction (i.e. neither :math:`A \subseteq B` nor :math:`B \subseteq A`), are called *overlapping*.
 
 .. tip:: 
     
@@ -542,7 +542,7 @@ The operation of subtracting a set :math:`B` from a set :math:`A` is equivalent 
 Theorems
 ========
 
-All of the theorems of Set Theory can be proven by referring in one of two ways:
+All of the theorems of Set Theory can be proven in one of two ways:
 
 1. By drawing a :ref:`Venn Diagram<venn_diagrams>` of the sets in question and working out the relations between them graphically.
 
