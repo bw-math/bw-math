@@ -556,7 +556,7 @@ All of the theorems of Set Theory can be proven in one of two ways:
 
         A = B \implies A \equiv B
     
-    This will be important when we apply these ideas to :ref:`probability`. For this reason, we will give two version of each theorem. One version will be phrased in terms of sets and the other version will be phrased in terms of cardinalities.
+    This will be important when we apply these ideas to :ref:`probability`. For this reason, we will give two versions of each theorem, when possible. One version will be phrased in terms of sets and the other version will be phrased in terms of cardinalities.
 
 .. _identity_theorems:
 
