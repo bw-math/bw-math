@@ -15,6 +15,8 @@ By default, **Python** does not have statistical graphing capabilities. You must
 Prerequisites
 =============
 
+.. _matplotlib:
+
 matplotlib
 ----------
 
@@ -174,7 +176,7 @@ Dot Plot
 --------
 
 .. plot:: assets/plots/other/dot_plot.py
-    
+
 Histogram
 ---------
 
