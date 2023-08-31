@@ -188,6 +188,10 @@ Step 4: Install Libraries
     :alt: Installing Libraries
     :target: https://www.youtube.com/watch?v=Wm7KgJcts8s
 
+.. admonition:: Install Libraries
+
+    Click on the image to play the video.
+
 **Python** alone is not enough. We need to plugin some additional functionality to the bare bones installation of **Python**. 
 
 In order to create graphics, we need a graphics library. 
@@ -243,8 +247,12 @@ Interpretter
 ============
 
 .. image:: https://img.youtube.com/vi/lHqt-dLR8iU/maxresdefault.jpg
-    :alt: Creating Lists
+    :alt: Python Interpretter and IDLE
     :target: https://www.youtube.com/watch?v=lHqt-dLR8iU
+
+.. admonition:: Python Interpretter and IDLE
+
+    Click on the image to play the video.
 
 Once **Python** is installed, you will have access to the `python` command on the terminal. Open a *Linux* and verify your installation with the following command, 
 
