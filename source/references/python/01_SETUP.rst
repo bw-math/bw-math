@@ -196,7 +196,7 @@ Step 4: Install Libraries
 
 In order to create graphics, we need a graphics library. 
  
-The following command installs a PNG/JPEG rendering engines on your ChromeBook,
+The following command installs a PNG/JPEG rendering engine on your ChromeBook,
 
 .. code:: shell 
 
@@ -279,7 +279,7 @@ Output:
 
 This will bring up the **Python** *shell*, which allows you to enter commands and expressions line by line. If your version does not exactly match the output above, you will be fine as long as you are on atleast *Version 3.7* of **Python**. 
 
-Up to this point we have been allow *Linux* to intrepret our commands. We are now handing off that responsiblity to **Python**. Like *Linux*, **Python** *interprets* your commands after you type ``ENTER``.
+Up to this point we have been allowing *Linux* to intrepret our commands. We are now handing off that responsiblity to **Python**. Like *Linux*, **Python** *interprets* your commands after you type ``ENTER``.
 
 For example, type the following arithmetical expression and then type ``ENTER`` to execute it,
 
@@ -321,7 +321,7 @@ Output:
 
     4
 
-The *interpretter* allows to experiment with **Python** and get a feel for it. However, as previously mentioned, for this class, we will almost always be writing :ref:`python_scripts`.
+The *interpretter* allows you to experiment with **Python** and get a feel for it. However, as previously mentioned, for this class, we will almost always be writing :ref:`python_scripts`.
 
 To exit the *interpretter*, type and execute,
 
@@ -390,7 +390,7 @@ We will sometimes call the *IDLE* text editor a *notebook*.
 Packages
 ========
 
-By default, Python comes installed with the `Standard Library <https://docs.python.org/3/library/index.html>`_. The **Standard Library** is a collection of common functions and utilities. For instance, the `math` library is part of the **Standard Library**. `math` contains functions for computing trigonemtric ratios, generating random numbers, calculating powers and roots, etc. You can use `math` functions by first `import`-ing the library and accessing its content with *dot notation*. Start an interpretter session and type,
+By default, Python comes installed with the `Standard Library <https://docs.python.org/3/library/index.html>`_. The **Standard Library** is a collection of common functions and utilities. For instance, the `math` library is part of the **Standard Library**. `math` contains functions for computing trigonemtric ratios, calculating powers and roots, etc. You can use `math` functions by first `import`-ing the library and accessing its content with *dot notation*. Start an interpretter session and type,
 
 .. code:: python
 
