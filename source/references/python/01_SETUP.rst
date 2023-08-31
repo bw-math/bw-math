@@ -365,7 +365,7 @@ However, *IDLE* will make this whole process much less painful, so continue onto
 IDLE
 ====
 
-**Python** (usually) ships with a program named *IDLE*. `IDLE <https://docs.python.org/3/library/idle.html>`_ stands for *Integrated Development and Learning Environment*. *IDLE* is a text editor integrated with a **Python** interpretter. It provides `syntax highlighting <https://en.wikipedia.org/wiki/Syntax_highlighting#Support_in_text_editors>`_, the ability to save and execute scripts, and a debugger for stepping through the programs. In the immortal words of the poet laureate, Biz Markie, it's got what we need. 
+**Python** (usually) ships with a program named *IDLE*. `IDLE <https://docs.python.org/3/library/idle.html>`_ stands for *Integrated Development and Learning Environment*. *IDLE* is a text editor integrated with a **Python** interpretter. It provides `syntax highlighting <https://en.wikipedia.org/wiki/Syntax_highlighting#Support_in_text_editors>`_, the ability to save and execute scripts, and a debugger for stepping through the programs. In other words, it's got what we need. 
 
 Open up an *IDLE* session,
 
