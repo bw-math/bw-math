@@ -69,7 +69,7 @@ b. Using :ref:`python_builtin_functions`, calculate the sum of each of the lists
 
     i. How do you expect the sums to be compare? Will they be equal or unequal? Will be they be close together or far apart? Why? Justify your answer.
 
-    ii. Calculate the difference between both sums, i.e. if ``n`` is the variable that contains the length of your first list and ``m`` is the variable that contains the length of your second list, find the value of ``n - m``. Should this value be positive, negative or zero?  
+    ii. Calculate the difference between both sums, i.e. if ``n`` is the variable that contains the sum of your first list and ``m`` is the variable that contains the sum of your second list, find the value of ``n - m``. Should this value be positive, negative or zero?  
 
     iii. Re-execute your code. Did you do it? Go ahead and do it again, just to be safe. Alright, are you done? Do it one more time, but this time do it with *feeling*. Do you get the same results each time? How do the results compare? Explain.
 
