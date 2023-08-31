@@ -19,7 +19,7 @@ You can find `past exam questions on the A.P. Central website <https://apcentral
 Practice Exams
 --------------
 
-You can find `a 2012 practice exam here <https://apcentral.collegeboard.org/media/pdf/ap-statistics-practice-exam-2012.pdf?course=ap-statistics>`. By the end of the class, we will have completed most, if not all, of the problems on this practice exam.
+You can find `a 2012 practice exam here <https://apcentral.collegeboard.org/media/pdf/ap-statistics-practice-exam-2012.pdf?course=ap-statistics>`_. By the end of the class, we will have completed most, if not all, of the problems on this practice exam.
 
 When
 ====

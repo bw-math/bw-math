@@ -174,7 +174,7 @@ Symbolic Expresison
     :math:`\mathbb{N}`
 
 Definition
-    The set of all counting numbers starting at 1, :math:`1, 2, 3, ...`
+    The set of all counting numbers starting at :math:`1, 2, 3, ...`
 
 .. _real_numbers:
 
@@ -291,7 +291,7 @@ An equivalent way of defining a *proper subset* is given by,
 .. math::
     \forall x: x \in A \implies x \in B \text{ and } n(A) < n(B)
 
-This is an equivalent formulation between saying the cardinality of **A** is less than the cardinality of **B** is logically equivalent to saying **A** is not identical to **B**.
+This is an equivalent formulation because saying the cardinality of **A** is less than the cardinality of **B** is logically equivalent to saying **A** is not identical to **B**.
 
 .. _set_equivalence:
 
@@ -383,7 +383,7 @@ The set containing elements that do not belong to the set **A**.
 
 .. math:: 
 
-    A^c = \{ \forall x: x \not in A \}
+    A^c = \{ \forall x: x \notin A \}
 
 The complement can be visualized with the following *Venn Diagram*,
 
@@ -442,7 +442,7 @@ The second case, where the two sets have elements in common is shown in the next
 
 .. image:: ../assets/imgs/sets/sets_union_overlapping.jpg
 
-The union would be represented by the entire area of both circles. Notices the circles share some elements in this case. Sets that have elements in common, but are not subsets in either direction (i.e. neither :math:`A \subseteq B` nor :math:`B \subseteq A`, are called *overlapping*.
+The union would be represented by the entire area of both circles. Notice the circles share some elements in this case. Sets that have elements in common, but are not subsets in either direction (i.e. neither :math:`A \subseteq B` nor :math:`B \subseteq A`), are called *overlapping*.
 
 .. tip:: 
     
@@ -542,7 +542,7 @@ The operation of subtracting a set :math:`B` from a set :math:`A` is equivalent 
 Theorems
 ========
 
-All of the theorems of Set Theory can be proven by referring in one of two ways:
+All of the theorems of Set Theory can be proven in one of two ways:
 
 1. By drawing a :ref:`Venn Diagram<venn_diagrams>` of the sets in question and working out the relations between them graphically.
 
@@ -556,7 +556,7 @@ All of the theorems of Set Theory can be proven by referring in one of two ways:
 
         A = B \implies A \equiv B
     
-    This will be important when we apply these ideas to :ref:`probability`. For this reason, we will give two version of each theorem. One version will be phrased in terms of sets and the other version will be phrased in terms of cardinalities.
+    This will be important when we apply these ideas to :ref:`probability`. For this reason, we will give two versions of each theorem, when possible. One version will be phrased in terms of sets and the other version will be phrased in terms of cardinalities.
 
 .. _identity_theorems:
 

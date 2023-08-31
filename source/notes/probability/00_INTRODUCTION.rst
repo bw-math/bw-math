@@ -624,4 +624,18 @@ Therefore, the desired probability is,
 Probability Tables
 ******************
 
-TODO
+If you have two events, :math:`A` and :math:`B`, then you can form a *two-way* probability table by partitioning the sample space into :math:`A` and :math:`A^c` and then simultaneously partitioning the sample space into :math:`B` and :math:`B^c`, 
+
+                        
++--------------+---------------------+--------------------+----------------+ 
+| Events       |     :math:`A`       |  :math:`A^c`       |    Probability |
++--------------+---------------------+--------------------+----------------+
+| :math:`B`    | :math:`P(B \cap A)` | :math:`B \cap A^c` | :math:`P(B)`   |
++--------------+---------------------+--------------------+----------------+
+| :math:`B^c`  | :math:`P(B \cap A`  | :math:`B \cap A^c` | :math:`P(B^c)` |
++--------------+---------------------+--------------------+----------------+
+| Probabilitiy | :math:`P(A)`        | :math:`P(A^c)`     | :math:`P(S)=1` |
++--------------+---------------------+--------------------+----------------+
+
+
+

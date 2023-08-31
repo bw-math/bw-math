@@ -566,7 +566,40 @@ A.P. Exam Practice
 
 13. **2016, Free Response, #3** (TODO)
 
-14. **2012, Practice Exam, #23** A local company is interested in supporting environmentally friendly initiatives such as carpooling among employees. The company surveyed all of the 200 employees at the downtown offices. Employees responded as to whether or not they own a car and to the location of the home where they live. The results are shown in the
+14. **2015, Multplie Choice, #32**
+    
+A survey conducted by a national news network asked a random sample of U.S. adults whether they get most of their information about current events from newspapers, television, the internet, or some
+other source. The results, shown in the table below, are reported by age group of the respondents.
+
++---------+------------+------------+----------+-------+-------+
+|         | Newspapers | Television | Internet | Other | Total |
++---------+------------+------------+----------+-------+-------+
+| 18 -34  | 12         | 35         | 40       | 6     | 93    |
++---------+------------+------------+----------+-------+-------+
+| 35 -54  | 16         | 55         | 20       | 8     | 99    |
++---------+------------+------------+----------+-------+-------+
+| Over 55 | 33         | 60         | 5        | 5     | 103   |
++---------+------------+------------+----------+-------+-------+
+| Total   | 61         | 150        | 65       | 19    | 295   |
++---------+------------+------------+----------+-------+-------+
+
+If primary news source is independent of age group, which of the following expressions is equal to
+the expected number of respondents who are aged 35 to 54, inclusive, and get most of their
+information about current events from the internet?
+
+    (A) :math:`\frac{99 \cdot 65}{295}`
+
+    (B) :math:`\frac{99 \cdot 150}{295}`
+
+    (C) :math:`\frac{20 \cdot 65}{99}`
+
+    (D) :math:`\frac{20 \cdot 99}{295}`
+
+    (E) :math:`\frac{20 \cdot 65}{295}`
+
+15.  **2012, Practice Exam, #23** 
+
+A local company is interested in supporting environmentally friendly initiatives such as carpooling among employees. The company surveyed all of the 200 employees at the downtown offices. Employees responded as to whether or not they own a car and to the location of the home where they live. The results are shown in the
 table below.
 
 .. image:: ../../../assets/imgs/classwork/2012_apstats_pe_23.png

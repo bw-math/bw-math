@@ -47,9 +47,12 @@ The :ref:`cardinality` of a set is found by calculating its :ref:`length <python
     total_pets = len(pets)
     print(total_pets)
 
-Output:
+.. collapse:: Cardinality Solution
+        
+    Output:
 
-    5
+        5
+
 .. _python_set_union:
 
 Union
@@ -62,13 +65,15 @@ The :ref:`union` of two sets is found by,
     pets_or_poets = pets.union(poets)
     print(pets_or_poets)
 
-Output:
+.. collapse:: Union Solution 
 
-    {'snake', 'byron', 'shakespeare', 'eliot', 'fish', 'cat', 'dog', 'hamster'}
+    Output:
+
+        {'snake', 'byron', 'shakespeare', 'eliot', 'fish', 'cat', 'dog', 'hamster'}
 
 .. important:: 
     
-    Take note: *set operations* do **not** preserve the order of the sets. In technical terms, *sets* are not *indexed*. 
+    Take note: *set operations* do **not** preserve the order of the sets. In technical terms, *sets* are not *indexed*. Notice the *order* of the set in the output is *random*. 
 
 .. _python_set_intersection:
 
@@ -82,9 +87,11 @@ The :ref:`intersection` of two sets is found by,
     four_legs_and_swims = four_legs.intersect(swims)
     print(four_legs_and_swims)
 
-Output:
+.. collapse:: Intersection Solution
 
-    {'dog'}
+    Output:
+
+        {'dog'}
 
 .. _python_set_difference:
 
@@ -98,6 +105,8 @@ The :ref:`set_difference` of two sets is found by,
     swims_but_not_warmblooded = swims - warm_blooded
     print(swims_but_not_warmblooded)
 
-Output:
+.. collapse:: Difference Solution 
 
-    {'snake'}
+    Output:
+
+        {'snake'}
