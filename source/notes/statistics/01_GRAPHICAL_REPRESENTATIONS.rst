@@ -193,7 +193,7 @@ Then, with these definitions in hand, we can think of the table being filled lik
 +-------------------------+------------------------+-----------------------+
 |  :math:`\text{yes}_{t}` | :math:`E \cap T`       | :math:`E^c \cap T`    |
 +-------------------------+------------------------+-----------------------+
-| :math:`\text{no}_{t}`   | :math:`E \cap T^c`     | :math:`E^c \cap T^c   |
+| :math:`\text{no}_{t}`   | :math:`E \cap T^c`     | :math:`E^c \cap T^c`  |
 +-------------------------+------------------------+-----------------------+
 
 .. note:: 
