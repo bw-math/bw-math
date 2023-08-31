@@ -153,7 +153,7 @@ Definition
 
     a_number = 5
     another_number = 15
-    print("these are integers: ", a number, |", ", another_number)
+    print("these are integers: ", a number, ", ", another_number)
 
 Output:
 
@@ -222,9 +222,13 @@ The *index* of an element in a list is the order that it appears, starting at 0.
 Output:
 
     this is a whole list: ['Led Zeppelin', 'Pink Floyd', 'The Beatles']
+
     this is the first element of a list: Led Zeppelin
+
     this is the second element of a list: Pink Floyd
+
     this is the last element of a list: The Beatles 
+
     this is also the element of a list: The Beatles
 
 The variables in a list need not be the same type,
@@ -232,11 +236,11 @@ The variables in a list need not be the same type,
 .. code:: python
 
     unlike_list = [ "red", 5.67, "blue", "green" ]
-    print("lists can have different types of elements: ", unlike_list[0], unlike_list[1])
+    print("lists can have different types of elements: ", unlike_list[0], ", ", unlike_list[1])
 
 Output:
 
-    lists can have different types of elements: ['red', 5.67, 'blue', 'green']
+    lists can have different types of elements: red, 5.67
 
 You can determine the *length* of a list, i.e. how many elements are in it, using the ``len()`` function,
 
@@ -368,7 +372,7 @@ The operations in the previous section dealt with :ref:`python_floats` and :ref:
 Slicing
 -------
 
-Slicing a list is **Python**'s way of accessing multiple elements in a list at once. The general syntax of slicing is given below,
+Slicing a list is **Python**'s way of breaking a list into a smaller sub-list (an especially useful technique in the domain of statistics!). The general syntax of slicing is given below,
 
     list[<start index : optional> : <end index : optional>]
 
@@ -384,7 +388,7 @@ Output:
 
     ['b', 'c']
 
-The commands above will print to screen the elements starting at the second index up to, but not including, the fourth index. 
+The commands above will print to screen the elements starting at the second index up to, but **not including**, the fourth index. 
 
 .. important:: 
 
@@ -400,9 +404,11 @@ Try to figure out what the next example will print to screen before pasting it i
     sliced_data = data[0:2]
     print(sliced_data)
 
-Output:
+.. collapse:: Solution 
+    
+    Output:
 
-    ['A', 'B']
+        ['A', 'B']
 
 If you leave out the ``<start index>``, it is understood to be ``0``, 
 
