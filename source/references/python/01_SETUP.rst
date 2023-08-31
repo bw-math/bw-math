@@ -53,7 +53,7 @@ A new world has now opened up to you, the world of *Linux*. Let's take a little 
 
 .. note:: 
 
-    Pin the Linux terminal to your dock for quick access.
+    Pin the Linux terminal to your dock for quick access. At the bottom of the screen,
 
     .. image:: ../../assets/imgs/python/dock.png
         :align: center
@@ -63,6 +63,7 @@ A new world has now opened up to you, the world of *Linux*. Let's take a little 
     .. image:: ../../assets/imgs/python/pin.png
         :align: center
 
+    In this image, it's already pinned. In place of ``Unpinned``, you will see ``Pinned``.
     
 This is your *operating system*. Let's try a few commands here and see what we can see. You can type (or copy and paste) the next command directly into the *cursor* of the terminal,
 
