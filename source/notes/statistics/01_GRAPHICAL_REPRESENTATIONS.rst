@@ -164,7 +164,7 @@ We can compose the events and their complements with the *operation* of *interse
 	
 	In other words, seeing *Empire Strikes Back* **and** seeing *The Two Towers*.
 	
-.. admonition:: :math:`(\text{yes}_{e}, \text{no}_{t}) \in E \cap T^c `
+.. admonition:: :math:`(\text{yes}_{e}, \text{no}_{t}) \in E \cap T^c`
 
 	The event of seeing the *Empire Strikes Back* but not *The Two Towers*.
 	
