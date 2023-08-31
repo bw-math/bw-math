@@ -1,0 +1,133 @@
+.. _project_two:
+
+==========
+Estimation
+==========
+
+    We must be careful not to confuse data with the abstractions we use to analyze them.
+    
+    - William James, 1907
+
+In this lab, you will use **Python** to calculate sample statistics.
+
+.. _project_two_instructions:
+
+Instructions
+============
+
+1. Create a folder named `LASTNAME_FIRSTNAME_project_two`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
+2. Download the *csv* dataset :ref:`below <project_two_dataset>` and place it in the new folder you created in step 1.
+3. In the same folder, create a Python *py* script named `project_two.py`
+4. Read the :ref:`project_two_project` section.
+5. Load in the data from the *csv* files using the technique outlined in the :ref:`project_two_loading_data` section.
+6. Perform all exercises and answer all questions in the :ref:`project_two_project` section. Label your script with comments as indicated in the instructions of each problem.
+7. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_two.zip`
+8. Upload the zip file here: TODO
+   
+.. _project_two_background: 
+
+Background
+==========
+
+TODO 
+
+.. _project_two_loading_data:
+
+Loading In Data
+===============
+
+The following code snippet will load in a *CSV* spreadsheet named ``example.csv``, parse it into a list and then print it to screen, assuming that *CSV* file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in :ref:`project_one_dataset` section.
+
+.. code-block:: python 
+
+    import csv
+
+    # read in data
+    with open('example.csv') as csv_file:
+        csv_reader = csv.reader(csv_file)
+        raw_data = [ row for row in csv_reader ]
+
+    # separate headers from data
+    headers = raw_data[0]
+    columns = raw_data[1:]
+
+    # grab first column from csv file and ensure it's a number (not a string)
+    column_1 = [ float(row[0]) for row in columns ]
+
+    print(column_1)
+
+
+.. _project_two_project:
+
+Project
+=======
+
+1. Write a function that accepts a list of data an argument and computes the following sample statistics. Write a separate function for each exercise and label it with a comment. Name the function appropriately.
+
+    a. The sample mean of a dataset.
+
+    b. The sample median of a dataset.
+
+    c. *Any* percentile of a dataset.
+
+    d. The sample variance of a dataset.
+
+    e. The sample standard deviation of a dataset.
+
+.. tip:: 
+
+    *#1c* will require *two arguments*, the list of data and the percentile you wish to find.
+
+2. Load in the data from the :ref:`project_two_dataset` section. Note the length of a reign is separated in a ``Years`` column, a ``Months`` column and a ``Days``. To clean the data and compute the total length of a Roman Emperor's reign, apply the formula to each row of data, 
+
+.. math:: 
+
+    \text{ length of reign } = \text{ years column } + \frac{ \text{weeks column} }{52} + \frac{ \text{ days column } }{365}
+
+Save the cleaned data in a new list. Label the list with a comment. 
+
+3. Using the functions created in #1, find the following statistics using the :ref:`project_two_dataset`. Label each computation with a comment.
+
+    a. The mean length of a Roman Emperor's reign.
+
+    b. The median length of a Roman Emperor's reign.
+
+    c. The 25 :sup:`th` percentile length of a Roman Emperor's reign.
+
+    d. The 75 :sup:`th` percentile length of a Roman Emperor's reign.
+
+    e. The sample standard deviation of a Roman Emperor's reign length. 
+
+4. Compare the answers to *#2a* and *#2b*. What do these two answers tell you about the skew of this distribution? Interpret the skew in terms of Roman Emperors and the length of their reign, i.e. what does the skew tell you about Roman Emperor's and the length of their reigns?
+
+5. Construct a relative frequency histogram and a cumulative relative frequency using 10 classes for this sample of data. Label the code for creating the plots with a comment. What type of distribution shape does this dataset have? Does this agree with your answer to *#4*? Explain.
+
+6. Construct a boxplot for this sample of data. Label the code for creating the plot with a comment. Based on the boxplot, are there any potential outliers in this dataset? Are the outliers Emperors who had long rules or short rules? 
+
+6. Find the coefficient of variation for this dataset. What does this statistic tell you about the distribution? Interpret the coefficient of variation in terms of Roman Emperors  and the length of their reign. 
+
+7. Summarize the conclusions you can draw about Roman Emperors and the length of their reign. Answer the following questions in your summary.
+
+    a. What percentage of Roman Emperors had reigns longer than 30 years?
+
+    b. What percentage of Roman Emperors had reigns shorter than 1 year?
+
+    c. Interpret the results of *#a* and *#b*. What does this tell you about the distribution of Roman Emperors?
+
+.. _project_two_dataset:
+
+Dataset
+=======
+
+You can download the full dataset :download:`here <../../assets/datasets/roman_emperors_data.csv>`.
+
+The following table is the a preview of the data you will be using for this project. 
+
+.. csv-table:: Roman Emperor Reigns
+   :file: ../../assets/datasets/previews/earth_density_data_preview.csv
+
+The meaning of the columns is as follows: 
+- ``Emperor`` is the name of the Roman Emperor.
+- ``Years`` is the number of years in the reign.
+- ``Months`` is the number of months in the reign.
+- ``Days`` is the number of days in the reign.
