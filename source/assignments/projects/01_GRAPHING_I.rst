@@ -8,7 +8,7 @@ Graphing I: Bar Charts
 
     - Ludwig Wittgenstein
 
-In this lab, you will get familiar with the statistical plotting features of **Python** using several famous datasets from the history of science.
+In this lab, you will get familiar with the statistical plotting features of **Python** using a dataset we have already seen.
 
 .. _project_one_instructions:
 
@@ -78,7 +78,7 @@ Behold, the power of `matplotlib <https://matplotlib.org/>`_,
 .. plot:: assets/plots/other/bar_chart.py
 
 Click on the ``source`` button in the top right corner of the graph to download a *.py* script. Examine the source code contained therein for generating a *Bar Chart*. This script is annotated with lots of comments for you to read. Give them a peak, and then let's meet back here.
- 
+
 .. _project_one_project:
 
 Project

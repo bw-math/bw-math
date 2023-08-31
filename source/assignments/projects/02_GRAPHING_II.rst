@@ -4,10 +4,11 @@
 Graphing II: Histograms
 =======================
 
-    The picture is a model of reality.
+    What can be shown, cannot be said.
+
     - Ludwig Wittgenstein
 
-In this lab, you will get familiar with the statistical plotting features of **Python** using several famous datasets from the history of science.
+In this lab, you will get *even more* familiar with the statistical plotting features of **Python** using several famous datasets from the history of science.
 
 .. _project_three_instructions:
 

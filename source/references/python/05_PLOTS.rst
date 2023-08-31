@@ -165,6 +165,16 @@ Boxplot
 
 .. plot:: assets/plots/boxplots/boxplot_normal.py
 
+Bar Chart
+---------
+
+.. plot:: assets/plots/other/bar_chart.py
+
+Dot Plot
+--------
+
+.. plot:: assets/plots/other/dot_plot.py
+    
 Histogram
 ---------
 
