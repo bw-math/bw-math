@@ -21,7 +21,8 @@ Step 1: Update ChromeOS
 
 Ensure you are on the latest version of the ChromeOS operating system.
 
-(INSERT SCREENSHOT)
+.. image:: ../../assets/imgs/python/update_chrome_os.png
+    :align: center
 
 Step 2: Enable Linux Subsystem
 ******************************
