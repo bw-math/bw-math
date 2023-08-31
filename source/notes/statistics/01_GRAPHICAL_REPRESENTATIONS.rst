@@ -269,6 +269,7 @@ Conditional Probability Distribution
 Yet another way to make this table equal *100%* is through its *conditional probability distribution*.
 
 TODO 
+
 .. _grouped_frequency_distributions: 
 
 Grouped Distributions
