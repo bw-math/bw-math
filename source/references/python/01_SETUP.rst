@@ -409,7 +409,7 @@ This sequence of commands imports the `math` library, calls the factorial functi
 Third-Party Packages
 --------------------
 
-`math` has plenty of functions that will be useful in this class, but it doesn't have *everything* we need. Luckily, **Python** ships with a *package manager* that allows you to install third-party libraries. You use the ``pip`` command anytime you need to install any additional libraries or pacakges into **Python**. Open up a Linux Terminal and type,
+`math` has plenty of functions that will be useful in this class, but it doesn't have *everything* we need. Luckily, **Python** has a *package manager* that allows you to install third-party libraries. You use the ``pip`` command anytime you need to install any additional libraries or pacakges into **Python**. Open up a Linux Terminal and type,
 
 .. code:: shell
  
