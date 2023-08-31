@@ -21,7 +21,7 @@ A set is defined in **Python** using the familiar :math:`\{ \}` :ref:`list_notat
 
     swims = { "dog", "fish", "snake" }
 
-    warm_blooded = { "dog", "cat", "fish" }
+    warm_blooded = { "dog", "cat", "hamster" }
 
     poets = { "byron", "shakespeare", "eliot" }
 
