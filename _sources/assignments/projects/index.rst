@@ -8,9 +8,10 @@ Projects
    :caption: Contents:
 
    00_PYTHON
+   01_GRAPHING_I
    02_GRAPHING_II
-   02_ESTIMATION
-   03_BIAS
+   03_ESTIMATION
+   04_BIAS
    .. 
       04_OUTLIERS
       05_TIMESERIES

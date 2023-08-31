@@ -164,7 +164,7 @@ We can compose the events and their complements with the *operation* of *interse
 	
 	In other words, seeing *Empire Strikes Back* **and** seeing *The Two Towers*.
 	
-.. admonition:: :math:`(\text{yes}_{e}, \text{no}_{t}) \in E \cap T^c `
+.. admonition:: :math:`(\text{yes}_{e}, \text{no}_{t}) \in E \cap T^c`
 
 	The event of seeing the *Empire Strikes Back* but not *The Two Towers*.
 	
@@ -193,7 +193,7 @@ Then, with these definitions in hand, we can think of the table being filled lik
 +-------------------------+------------------------+-----------------------+
 |  :math:`\text{yes}_{t}` | :math:`E \cap T`       | :math:`E^c \cap T`    |
 +-------------------------+------------------------+-----------------------+
-| :math:`\text{no}_{t}`   | :math:`E \cap T^c`     | :math:`E^c \cap T^c   |
+| :math:`\text{no}_{t}`   | :math:`E \cap T^c`     | :math:`E^c \cap T^c`  |
 +-------------------------+------------------------+-----------------------+
 
 .. note:: 
@@ -269,6 +269,7 @@ Conditional Probability Distribution
 Yet another way to make this table equal *100%* is through its *conditional probability distribution*.
 
 TODO 
+
 .. _grouped_frequency_distributions: 
 
 Grouped Distributions
