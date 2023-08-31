@@ -8,7 +8,7 @@ Projects
    :caption: Contents:
 
    00_PYTHON
-   01_GRAPHING
+   02_GRAPHING_II
    02_ESTIMATION
    03_BIAS
    .. 

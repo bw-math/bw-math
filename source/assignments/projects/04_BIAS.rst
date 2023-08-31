@@ -1,4 +1,4 @@
-.. _project_three:
+.. _project_five:
 
 ====
 Bias
@@ -9,23 +9,23 @@ In this lab, you will perform some graphical analysis on a famously biased data 
 Instructions
 ============
 
-1. Create a folder named `LASTNAME_FIRSTNAME_project_three`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
-2. Download the *csv* dataset `below <project_three_dataset>`_ and place it in the new folder you created in step 1.
-4. In the same folder, create a Python *py* script named `project_three.py`
+1. Create a folder named `LASTNAME_FIRSTNAME_project_five`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
+2. Download the *csv* dataset `below <project_five_dataset>`_ and place it in the new folder you created in step 1.
+4. In the same folder, create a Python *py* script named `project_five.py`
 5. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
-6. Read the :ref:`project_three_project` section.
+6. Read the :ref:`project_five_project` section.
 7. Perform all exercises and answer all questions in the :ref:`project_one_project` section. Label your script with comments as indicated in the instructions of each problem.
-8. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_three.zip`
+8. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_five.zip`
 9. Upload the zip file here: TODO
 
-.. _project_three_loading_data:
+.. _project_five_loading_data:
 
 Loading In Data
 ===============
 
 TODO
 
-.. _project_three_background:
+.. _project_five_background:
 
 Background
 ==========
@@ -48,7 +48,7 @@ The method used to select individuals for service is highly controversial. Many 
 
 Slips of paper were then selected at random and anyone of eligible age who had a birthday on the date indicated would be drafted. The important point is *individuals who shared the same birthday* would be drafted at the same time. As example, two men who had the birthdays April 5:sup:`th`, 1946 and April 5:sup:`th`, 1947 would both be drafted in the event a slip of paper *"April 5"* was selected.
 
-.. _project_three_project:
+.. _project_five_project:
 
 Project
 =======
@@ -83,7 +83,7 @@ Project
    
    d. Discuss the results. Was the draft lottery fair? If not, why not? If so, why? Justify your answer.  
 
-.. _project_three_dataset:
+.. _project_five_dataset:
 
 Dataset
 =======

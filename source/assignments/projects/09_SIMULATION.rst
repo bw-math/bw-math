@@ -1,4 +1,4 @@
-.. _project_six:
+.. _project_ten:
 
 ==========
 Simulation
@@ -9,15 +9,15 @@ Simulation
 Instructions
 ============
 
-1. Create a folder named `LASTNAME_FIRSTNAME_project_six`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
-2. In the same folder, create a Microsoft Word *docx* document named `project_six.docx`.
-3. In the same folder, create a Python *py* script named `project_six.py`
-4. Read the :ref:`project_six_project` section.
-5. Perform the indicated exercises in the :ref:`project_six_project` section. Include answers in the *.docx* document file.
-6. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_six.zip`
+1. Create a folder named `LASTNAME_FIRSTNAME_project_ten`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
+2. In the same folder, create a Microsoft Word *docx* document named `project_ten.docx`.
+3. In the same folder, create a Python *py* script named `project_ten.py`
+4. Read the :ref:`project_ten_project` section.
+5. Perform the indicated exercises in the :ref:`project_ten_project` section. Include answers in the *.docx* document file.
+6. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_ten.zip`
 7. Upload the zip file here: TODO
 
-.. _project_six_background:
+.. _project_ten_background:
 
 Background
 ==========
@@ -146,7 +146,7 @@ The key point is: we are *nesting* a list iteration within another list iteratio
         
 Note that in this example, since **A** is the set of pets and **B** is the set of owners, we can interpret :math:`A x B` as the set of all the possible :ref:`combinations` of pet owners. 
 
-.. _project_six_project:
+.. _project_ten_project:
 
 Project
 =======
