@@ -247,7 +247,7 @@ You can determine the *length* of a list, i.e. how many elements are in it, usin
 .. code:: python
 
     my_list = [ 1, 2, 3, 4, 5, 6, 7 ]
-    print("length of list: ", my_list)
+    print("length of list: ", len(my_list))
 
 Output: 
 
