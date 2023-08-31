@@ -169,7 +169,7 @@ If you get an error along the lines of "*bash: python command not found*", you w
 
 .. warning:: 
 
-    Make sure you install **Python3**. **Python2**, an older version, is still available to be installed. If you encounter any unknown errors through the course of this class, the first thing you check if what *version* of **Python** you are running.
+    Make sure you install **Python3**. **Python2**, an older version, is still available to be installed. If you encounter any unknown errors through the course of this class, the first thing you should check is what *version* of **Python** you are running.
 
 Once this command completes, verify you installation by printing the version to screen,
 
