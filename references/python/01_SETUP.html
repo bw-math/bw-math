@@ -402,7 +402,7 @@ document.write(`
 <section id="step-1-update-chromeos">
 <h4>Step 1: Update ChromeOS<a class="headerlink" href="#step-1-update-chromeos" title="Permalink to this headline">#</a></h4>
 <p>Ensure you are on the latest version of the ChromeOS operating system.</p>
-<p>(INSERT SCREENSHOT)</p>
+<img alt="../../_images/update_chrome_os.png" class="align-center" src="../../_images/update_chrome_os.png" />
 </section>
 <section id="step-2-enable-linux-subsystem">
 <h4>Step 2: Enable Linux Subsystem<a class="headerlink" href="#step-2-enable-linux-subsystem" title="Permalink to this headline">#</a></h4>
@@ -412,30 +412,32 @@ document.write(`
 <p>Click on the image to play the video.</p>
 </div>
 <p>Enable and install Linux subsystem in the Settings menu,</p>
-<p>(SCREENSHOT)</p>
+<img alt="../../_images/developer_mode.png" class="align-center" src="../../_images/developer_mode.png" />
 <p>This will give you access to something called the <em>command line</em> (sometimes called a <em>terminal</em> or a <em>shell</em>). The <em>command line</em> is a direct interface to the operating system of your laptop. Let’s take a look.</p>
 </section>
 <section id="step-3-explore-a-little">
 <h4>Step 3: Explore A Little<a class="headerlink" href="#step-3-explore-a-little" title="Permalink to this headline">#</a></h4>
 <p>A new world has now opened up to you, the world of <em>Linux</em>. Let’s take a little while to familiarize ourselves with it before moving on to <strong>Python</strong>. Open Linux command line (<em>terminal</em>),</p>
-<p>(INSERT PICTURE)</p>
+<img alt="../../_images/terminal.png" class="align-center" src="../../_images/terminal.png" />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Pin the Linux terminal to your dock for quick access.</p>
-<p>(INSERT SCREENSHOT)</p>
+<img alt="../../_images/dock.png" class="align-center" src="../../_images/dock.png" />
+<p>Right click the <em>terminal icon</em> (or whatever the equivalent of right-click is on the ChromeBook you are using) and then pin it,</p>
+<img alt="../../_images/pin.png" class="align-center" src="../../_images/pin.png" />
 </div>
 <p>This is your <em>operating system</em>. Let’s try a few commands here and see what we can see. You can type (or copy and paste) the next command directly into the <em>cursor</em> of the terminal,</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
 </pre></div>
 </div>
 <p>Press <code class="docutils literal notranslate"><span class="pre">ENTER</span></code> and you shoud see the words “<em>Hello World</em>” print to screen. The <code class="docutils literal notranslate"><span class="pre">echo</span></code> command, as you might have guessed, simply prints the words (a <em>string</em> of text) you give it back to screen,</p>
-<p>(INSERT PICTURE)</p>
+<img alt="../../_images/echo.png" src="../../_images/echo.png" />
 <p>Not very useful. Let’s try something a little more interesting,</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>df
 </pre></div>
 </div>
 <p>Press <code class="docutils literal notranslate"><span class="pre">ENTER</span></code> and you will see something along the lines of (the actual output will vary from computer to computer),</p>
-<p>(INSERT PICTURE)</p>
+<img alt="../../_images/df.png" class="align-center" src="../../_images/df.png" />
 <p>These are your computer filesystems. This is where all of the data on your computer lives. Let’s not mess around with it. While you can’t physically break your computer by entering commands, it is possible to break your <em>operating system</em> to the point where it will need re-installed. That is not something you want to happen. For that reason, let’s move on to other, safer areas.</p>
 <p>The <em>Linux</em> world is a hierarchy of files. Everything in <em>Linux</em> is a file, even folders.</p>
 <div class="admonition note">
@@ -443,17 +445,18 @@ document.write(`
 <p>Folders are called <em>directories</em> in Linux.</p>
 </div>
 <p>You can imagine a tree like the following picture exists somewhere inside your computer,</p>
-<p>(INSERT PICTURE)</p>
+<img alt="../../_images/folder_system.png" class="align-center" src="../../_images/folder_system.png" />
 <p>When you open your <em>terminal</em>, you open it <em>in</em> one of the folders in this tree. The <em>terminal</em> allows you traverse the different nodes and branches of this tree. To see where you currently located in the tree, type the following command and press <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>,</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">pwd</span>
 </pre></div>
 </div>
+<img alt="../../_images/pwd.png" class="align-center" src="../../_images/pwd.png" />
 <p>This stands for “<em>present working directory</em>”. When you type <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>, you will see a file path print to screen. This is the directory where you terminal is currently idling. You can see the contents of the <em>present working directory</em> with the command,</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ls
 </pre></div>
 </div>
 <p>This will list the contents of the directory to screen,</p>
-<p>(INSERT PICTURE)</p>
+<img alt="../../_images/ls.png" class="align-center" src="../../_images/ls.png" />
 <p>You can <em>change directories</em> with the next command,</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>&lt;path&gt;
 </pre></div>
@@ -483,7 +486,7 @@ document.write(`
 <p class="admonition-title">Note</p>
 <p>Any version of <strong>Python</strong> greater than <em>3.7</em> will be sufficient for the purposes of this class.</p>
 </div>
-<p>(INSERT SCREENSHOT)</p>
+<img alt="../../_images/python_version.png" class="align-center" src="../../_images/python_version.png" />
 <p>If you get an error along the lines of “<em>bash: python command not found</em>”, you will need to install <strong>Python</strong>. You can do this through the <em>Linux</em> package repository, an online library of software that you can install from the command line,</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3
 </pre></div>
@@ -566,7 +569,7 @@ document.write(`
 </pre></div>
 </div>
 </div></blockquote>
-<p>This will bring up the <strong>Python</strong> <em>shell</em>, which allows you to enter commands and expressions line by line. If your version does not exactly match the output above, you will be fine as long as you are on <em>Version 3</em> of <strong>Python</strong>.</p>
+<p>This will bring up the <strong>Python</strong> <em>shell</em>, which allows you to enter commands and expressions line by line. If your version does not exactly match the output above, you will be fine as long as you are on atleast <em>Version 3.7</em> of <strong>Python</strong>.</p>
 <p>Up to this point we have been allow <em>Linux</em> to intrepret our commands. We are now handing off that responsiblity to <strong>Python</strong>. Like <em>Linux</em>, <strong>Python</strong> <em>interprets</em> your commands after you type <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>.</p>
 <p>For example, type the following arithmetical expression and then type <code class="docutils literal notranslate"><span class="pre">ENTER</span></code> to execute it,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">+</span> <span class="mi">7</span>
@@ -688,6 +691,7 @@ document.write(`
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip3<span class="w"> </span>install<span class="w"> </span>matplotlib<span class="w"> </span>tk
 </pre></div>
 </div>
+<img alt="../../_images/matplotlib_tk_install_done.png" class="align-center" src="../../_images/matplotlib_tk_install_done.png" />
 <p>Output:</p>
 <blockquote>
 <div><p>Defaulting to user installation because normal site-packages is not writeable</p>
@@ -699,6 +703,7 @@ document.write(`
 <p>Installing collected packages: tk</p>
 <p>Successfully installed tk-0.1.0</p>
 </div></blockquote>
+<img alt="../../_images/matplotlib_tk_install_done.png" class="align-center" src="../../_images/matplotlib_tk_install_done.png" />
 <p>You should see the packages download and install into your system.</p>
 <p>See the <span class="xref std std-ref">matplotlib</span> section to learn more about using <em>matplotlib</em> to generate plots of data.</p>
 </section>

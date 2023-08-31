@@ -21,7 +21,8 @@ Step 1: Update ChromeOS
 
 Ensure you are on the latest version of the ChromeOS operating system.
 
-(INSERT SCREENSHOT)
+.. image:: ../../assets/imgs/python/update_chrome_os.png
+    :align: center
 
 Step 2: Enable Linux Subsystem
 ******************************
@@ -36,7 +37,8 @@ Step 2: Enable Linux Subsystem
 
 Enable and install Linux subsystem in the Settings menu,
 
-(SCREENSHOT)
+.. image:: ../../assets/imgs/python/developer_mode.png
+    :align: center
 
 This will give you access to something called the *command line* (sometimes called a *terminal* or a *shell*). The *command line* is a direct interface to the operating system of your laptop. Let's take a look.
 
@@ -45,14 +47,22 @@ Step 3: Explore A Little
 
 A new world has now opened up to you, the world of *Linux*. Let's take a little while to familiarize ourselves with it before moving on to **Python**. Open Linux command line (*terminal*),
 
-(INSERT PICTURE)
+.. image:: ../../assets/imgs/python/terminal.png
+    :align: center
 
 
 .. note:: 
 
     Pin the Linux terminal to your dock for quick access.
 
-    (INSERT SCREENSHOT)
+    .. image:: ../../assets/imgs/python/dock.png
+        :align: center
+
+    Right click the *terminal icon* (or whatever the equivalent of right-click is on the ChromeBook you are using) and then pin it,
+
+    .. image:: ../../assets/imgs/python/pin.png
+        :align: center
+
     
 This is your *operating system*. Let's try a few commands here and see what we can see. You can type (or copy and paste) the next command directly into the *cursor* of the terminal,
 
@@ -62,7 +72,7 @@ This is your *operating system*. Let's try a few commands here and see what we c
 
 Press ``ENTER`` and you shoud see the words "*Hello World*" print to screen. The ``echo`` command, as you might have guessed, simply prints the words (a *string* of text) you give it back to screen,
 
-(INSERT PICTURE)
+.. image:: ../../assets/imgs/python/echo.png
 
 Not very useful. Let's try something a little more interesting,
 
@@ -72,7 +82,8 @@ Not very useful. Let's try something a little more interesting,
 
 Press ``ENTER`` and you will see something along the lines of (the actual output will vary from computer to computer), 
 
-(INSERT PICTURE)
+.. image:: ../../assets/imgs/python/df.png
+    :align: center
 
 These are your computer filesystems. This is where all of the data on your computer lives. Let's not mess around with it. While you can't physically break your computer by entering commands, it is possible to break your *operating system* to the point where it will need re-installed. That is not something you want to happen. For that reason, let's move on to other, safer areas.
 
@@ -84,13 +95,17 @@ The *Linux* world is a hierarchy of files. Everything in *Linux* is a file, even
 
 You can imagine a tree like the following picture exists somewhere inside your computer,
 
-(INSERT PICTURE)
+.. image:: ../../assets/imgs/python/folder_system.png
+    :align: center
 
 When you open your *terminal*, you open it *in* one of the folders in this tree. The *terminal* allows you traverse the different nodes and branches of this tree. To see where you currently located in the tree, type the following command and press ``ENTER``,
 
 .. code:: shell
 
     pwd 
+
+.. image:: ../../assets/imgs/python/pwd.png
+    :align: center
 
 This stands for "*present working directory*". When you type ``ENTER``, you will see a file path print to screen. This is the directory where you terminal is currently idling. You can see the contents of the *present working directory* with the command,
 
@@ -100,7 +115,8 @@ This stands for "*present working directory*". When you type ``ENTER``, you will
 
 This will list the contents of the directory to screen,
 
-(INSERT PICTURE)
+.. image:: ../../assets/imgs/python/ls.png
+    :align: center
 
 You can *change directories* with the next command, 
 
@@ -141,7 +157,8 @@ Output:
 
     Any version of **Python** greater than *3.7* will be sufficient for the purposes of this class.
 
-(INSERT SCREENSHOT)
+.. image:: ../../assets/imgs/python/python_version.png
+    :align: center
 
 If you get an error along the lines of "*bash: python command not found*", you will need to install **Python**. You can do this through the *Linux* package repository, an online library of software that you can install from the command line,
 
@@ -251,7 +268,7 @@ Output:
     >>>
 
 
-This will bring up the **Python** *shell*, which allows you to enter commands and expressions line by line. If your version does not exactly match the output above, you will be fine as long as you are on *Version 3* of **Python**. 
+This will bring up the **Python** *shell*, which allows you to enter commands and expressions line by line. If your version does not exactly match the output above, you will be fine as long as you are on atleast *Version 3.7* of **Python**. 
 
 Up to this point we have been allow *Linux* to intrepret our commands. We are now handing off that responsiblity to **Python**. Like *Linux*, **Python** *interprets* your commands after you type ``ENTER``.
 
@@ -419,6 +436,9 @@ Now that you have ``pip3``, we will need to install two additional packages for 
 
     pip3 install matplotlib tk
 
+.. image:: ../../assets/imgs/python/matplotlib_tk_install_done.png
+    :align: center 
+
 Output:
 
     Defaulting to user installation because normal site-packages is not writeable
@@ -431,6 +451,9 @@ Output:
     Installing collected packages: tk
 
     Successfully installed tk-0.1.0
+
+.. image:: ../../assets/imgs/python/matplotlib_tk_install_done.png
+    :align: center 
 
 You should see the packages download and install into your system.
 
