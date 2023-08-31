@@ -42,6 +42,10 @@ Example
 
     Describe the *distribution* of this sample with a an ungrouped frequency distribution.
 
+.. important::
+
+	In this example, the individual would be the person being surveyed, while the variable being observed is their favorite color. The variable in this instance is *categorical*.
+	 
 An *ungrouped frequency distribtion* is simply a table where each entry represents the :ref:`frequency` of every possible observation,
 
 +-------------+------+
@@ -74,7 +78,198 @@ Contrast this against the notation employed in the :ref:`sample_mean_formula`
 
 In the :ref:`sample_mean_formula`, the index is over the observation order, i.e. from :math:`i = 1, 2, 3 ..., n`. In this case, it may happen that :math:`x_i = x_j` for some :math:`i \neq j`. In other words, in the sample mean formula, it is possible for terms in the summation to *repeat*. 
 
-.. _grouped_frequency_distributions:
+.. _two_way_tables:
+
+Two Way Tables
+--------------
+
+.. tip::
+
+	This section includes a lot of terminology that will be covered in upcoming :ref:`probability` and :ref:`set_theory` sections.
+	
+	If you do not fully understand this section just yet, that is *fine*! Read Section 1.1 from the *Starnes and Tabor* textbook to fill in the gaps. Bookmark this page and come back to it **after** we have studied probability in more detail.
+	
+Often times, you are observing more than one *categorical variable* on a single individual. If each observation in the sample has two *attributes* (*dimensions*, *properties*), we call such data *bivariate*. A *bivariate* data set is represent with a set of *ordered pairs* :math:`(x_i, y_i)`,
+
+.. math::
+
+	S = \{ (x_1, y_1), (x_2, y_2), ... , (x_n, y_n) \}
+	
+
+For example, suppose we asked a sample of people the following questions:
+
+	Have you seen the *Empire Strikes Back*?
+	
+	Have you seen the *The Two Towers*?
+	
+We may represent their response to the first question as :math:`\text{yes}_{e}` and :math:`\text{no}_{e}`, i.e. "yes, I have seen the *Empire Strikes Back*" and "no, I have not seen the *Empire Strikes Back*". 
+
+In a similar fashion, we may represent their response to the second question as :math:`\text{yes}_{t}` and :math:`\text{no}_{t}`, i.e. "yes, I have seen *The Two Towers*" and "no, I have not seen *The Two Towers*".
+
+Suppose we sampled a group of ten people and asked them these questions. Then we might represent their responses with the following sample ``S``, where the *x* variable is their response to the first question and the *y* variable is their response to the second question,
+
+.. math::
+
+	S = { (\text{yes}_{e}, \text{yes}_{t}), (\text{no}_{e}, \text{yes}_{t}), (\text{no}_{e}, \text{yes}_{t}), (\text{yes}_{e}, \text{no}_{t}), (\text{yes}_{e}, \text{yes}_{t}), (\text{yes}_{e}, \text{no}_{t}),(\text{yes}_{e}, \text{no}_{t}),(\text{yes}_{e}, \text{yes}_{t}), (\text{no}_{e}, \text{no}_{t}), (\text{yes}_{e}, \text{no}_{t})}
+	 	
+	 	
+Even with a small sample of *10*, this is a lot of information to process. A useful way to summarize this data into a more readable format is with a *two-way* table, 
+
++-------------------------+------------------------+-----------------------+
+| outcomes                | :math:`\text{yes}_{e}` | :math:`\text{no}_{e}` |
++-------------------------+------------------------+-----------------------+
+|  :math:`\text{yes}_{t}` |                        |                       |
++-------------------------+------------------------+-----------------------+
+| :math:`\text{no}_{t}`   |                        |                       |
++-------------------------+------------------------+-----------------------+
+
+The :ref:`intersection` of each row and column represents the simultaneous occurance of two *events*.
+
+.. topic:: Intersection
+
+	The intersection of two events **A** and **B** is denoted :math:`A \cap B`. 
+	
+	This can be read as "*A* **and** *B*". We will talk much more about :ref:`intersections <intersection>` in later sections.
+
+There are four *events* here, but two of them are related to the others.
+	
+To see this, let us define **E** to be the event of seeing the *Empire Strikes Back* and **T** to be the event of seeing *The Two Towers*. 
+
+The complement of event is its *negation*. 
+
+.. topic:: Complement
+
+	The complement of an event **A** is denoted :math:`A^c`
+	
+	This can be read as "**not** *A*". We will take more about :ref:`complements <complement>` in later sections.
+	
+
+If **E** is the event of seeing the *Empire Strikes Back*, then :math:`E^c` is the event of **not** seeing the *Empire Strikes Back*. We call :math:`E` and :math:`E^c` *complementary events*.
+
+Similarly, if **T** is the event of seeing the *Two Towers*, then :math:`T^c` is the event of **not** seeing the *Two Towers*. We call :math:`T` and :math:`T^c` *complementary events*.
+
+.. note::
+
+	**E** and :math:`E^c` *partition* the sample.
+	
+	**T** and :math:`T^c` *partition* the sample.
+	
+	*Complementary events* are a type of *partition*.
+
+We can compose the events and their complements with the *operation* of *intersection*,
+
+.. admonition:: :math:`(\text{yes}_{e}, \text{yes}_{t}) \in E \cap T`
+
+	The event of seeing both movies.
+	
+	In other words, seeing *Empire Strikes Back* **and** seeing *The Two Towers*.
+	
+.. admonition:: :math:`(\text{yes}_{e}, \text{no}_{t}) \in E \cap T^c `
+
+	The event of seeing the *Empire Strikes Back* but not *The Two Towers*.
+	
+	In other words, seeing the *Empire Strikes Back* **and** not seeing the *Two Towers*.
+	
+.. admonition:: :math:`(\text{no}_{e}, \text{yes}_{t}) \in E^c \cap T`
+	
+	The event of not seeing the *Empire Strikes Back*, but seeing the *Two Towers*.
+	
+	In other words, not seeing the *Empire Strikes Back* **and** seeing the *Two Towers*.
+	
+.. admonition:: :math:`(\text{no}_{e}, \text{no}_{t}) \in E^c \cap T^c`
+
+	The event of seeing neither movie.
+	
+	In other words, not seeing the *Empire Strikes Back* **and** not seeing the *Two Towers*. 
+	
+.. topic:: Belonging
+
+	The symbol :math:`\in` is the Greek letter *epsilon*. It represents the *relation of belonging*. We say *outcomes belong to events*.
+	
+Then, with these definitions in hand, we can think of the table being filled like so,
+
++-------------------------+------------------------+-----------------------+
+| outcomes                | :math:`\text{yes}_{e}` | :math:`\text{no}_{e}` |
++-------------------------+------------------------+-----------------------+
+|  :math:`\text{yes}_{t}` | :math:`E \cap T`       | :math:`E^c \cap T`    |
++-------------------------+------------------------+-----------------------+
+| :math:`\text{no}_{t}`   | :math:`E \cap T^c`     | :math:`E^c \cap T^c   |
++-------------------------+------------------------+-----------------------+
+
+.. note:: 
+
+	*Events* are composed of *outcomes*. 
+	
+	In symbols,
+	
+	.. math::
+	
+		(\text{yes}_{t}, math:`\text{yes}_{e}`) \in E \cap T
+		
+	We read this as, 
+		
+		the outcome of :math:`\text{yes}_{t}` and :math:`\text{yes}_{e}` is *in* the event :math:`E \cap T`.
+	
+The *joint probability* (*percentage*) of two *events* occuring is given by :ref:`classical definition of probability<classical_definition>`. For example, the percentage of people who have seen the *Empire Strkes Back* and the *Two Towers*,
+
+.. math::
+
+	P(E \cap T) = \frac{n(E \cap T)}{n(S)}
+	
+In this case, :math:`n(S)=10`. To find :math:`n(E \cap T)`, we count up all the *outcomes* that satisfy the condition of seeing both movines, or in symbols,
+
+.. math::
+	
+	(\text{yes}_{t}, math:`\text{yes}_{e}`) \in E \cap T
+	
+And similarly for the rest of the events.
+	
++-------------------------+------------------------+-----------------------+
+| outcomes                | :math:`\text{yes}_{e}` | :math:`\text{no}_{e}` |
++-------------------------+------------------------+-----------------------+
+|  :math:`\text{yes}_{t}` |           3            |          2            |
++-------------------------+------------------------+-----------------------+
+| :math:`\text{no}_{t}`   |           4            |          1            |
++-------------------------+------------------------+-----------------------+
+
+Therefore,
+
+.. math::
+
+	P(E \cap T) = \frac{3}{10} = 0.30
+	
+
+In plain English, "*30 percent of people in this sample have seen both movies*".
+	
+There are many things a table like this tells us. In the next few sections we will take a look at a few of the important facts it is telling us. 
+
+As we study this table, keep in mind the following question,
+
+.. admonition:: Think About It
+
+	In what ways does this table add up to 100%?
+	
+Whenever we encounter something that sums to 100%, it is a fair guess it represents a type of *distribution*.
+
+Joint Probability Distribution
+******************************
+
+The most obvious to make this table equal *100%* is through its *joint probabilty distribution*. 
+	
+TODO
+
+Marginal Probability Distribution
+*********************************
+
+TODO
+
+Conditional Probability Distribution
+************************************
+
+Yet another way to make this table equal *100%* is through its *conditional probability distribution*.
+
+TODO 
+.. _grouped_frequency_distributions: 
 
 Grouped Distributions
 ---------------------
