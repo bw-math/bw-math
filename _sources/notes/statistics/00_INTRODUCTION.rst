@@ -86,7 +86,7 @@ If we are measuring how hot it is over the course of a week in the summer, then 
 
     Degress Kelvin is the standard *unit* for temperature the fields of physics, chemistry and biology.
 
-If we are measuring what percent of the country's population supports a certain government policy, then the *individuals* in the experiment will be the collection (:ref:`set <set_theory>`) of people's answers, "*Yes*" or "*No*". The *unit* of each *individual observation* would be the binary units, *Y* or *N*. 
+If we are measuring what percent of the country's population supports a certain government policy, then the *individuals* in the experiment will be the people sampled. The *unit* of each *individual observation* would be the binary units, *Y* or *N*, that represent the possible outcomes of answers, "*Yes*" or "*No*"
 
 .. _population: 
 
