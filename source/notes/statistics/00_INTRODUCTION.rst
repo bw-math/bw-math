@@ -633,7 +633,7 @@ Definition
     The *characteristic* of a dataset is the *type* of data being observed.
 
 Qualitative
-    :math:`\{ "Red", "Blue", "Yellow"\}`
+    :math:`\{ \text{red}, \text{blue}, \text{yellow} \}`
 
 Qualitative data are categorical.
 
