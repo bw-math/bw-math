@@ -141,6 +141,8 @@ Output:
 
     [2, 4, 6, 8, 10, 12, 14, 16, 18]
 
+.. _python_enumerate_function: 
+
 Enumerate Function 
 ------------------
 
@@ -372,7 +374,7 @@ Output:
 Random Choice Function
 **********************
 
-Another function we will need from the ``random`` package is the ``choice()`` method. The previous two functions we looked were for generating :ref:`quantitative_data`. The ``choice()`` function, on the other hand, will generate :ref:`categorical_data`. The syntax for ``choice`` is given below,
+Another function we will need from the ``random`` package is the ``choice()`` method. The previous two functions we looked were for generating *quantitative data*. The ``choice()`` function, on the other hand, will generate *categorical data*. The syntax for ``choice`` is given below,
 
     choice(<list of options>)
 
