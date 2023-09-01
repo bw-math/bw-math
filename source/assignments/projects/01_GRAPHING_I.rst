@@ -8,7 +8,7 @@ Graphing I: Bar Charts
 
     - Ludwig Wittgenstein
 
-In this lab, you will get familiar with the statistical plotting features of **Python** using a dataset we have already seen.
+In this lab, you will get familiar with the statistical plotting features of **Python** using a dataset we have already seen. We will explore the association between two categorical variables and determine if a relationship exists.
 
 .. _project_one_instructions:
 
@@ -39,34 +39,81 @@ Recall the dataset from :ref:`graphical_representations_of_data_classwork` *#1*,
 
     The United States Government General Services Administration maintains a huge database of public available information. One of the datasets they publish is the `Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) that are currently registered through Washington State Department of Licensing <https://catalog.data.gov/dataset/electric-vehicle-population-data>`_
 
-This dataset was taken from `data.gov <https://data.gov/>`_. This is an excellent resource, if you are even in need of some data. We will be using this online database quite a bit once we get fully up to speed on **Python**.
+This dataset was taken from `data.gov <https://data.gov/>`_. This is an excellent resource, if you ever find yourself in need of some data. We will be using this online database quite a bit once we get fully up to speed on **Python**.
 
 We examined the *Eletric Vehcile* dataset a little bit in class on the first week. We are now prepared to do a little more in-depth analysis. 
 
 First, let's take about some of the variables being observed in this dataset.
 
+Make
+****
+
+The **Make** variable represents the manufacturer of the car. The possible values for this variable are listed below,
+
+- FIAT
+- MINI
+- LEXUS
+- CHRYSLER
+- LINCOLN
+- ALFA ROMEO
+- RIVIAN
+- TOYOTA
+- AZURE DYNAMICS
+- GENESIS
+- VOLKSWAGEN
+- JEEP
+- PORSCHE
+- MERCEDES-BENZ
+- CADILLAC
+- KIA
+- JAGUAR
+- POLESTAR
+- FISKER
+- FORD
+- TESLA
+- SMART
+- HYUNDAI
+- BENTLEY
+- NISSAN
+- MITSUBISHI
+- TH!NK
+- VOLVO
+- LUCID
+- CHEVROLET
+- WHEEGO ELECTRIC CARS
+- HONDA
+- LAND ROVER
+- SUBARU
+- AUDI
+- MAZDA
+- BMW
+  
 Clean Alternative Fuel Vehicle (CAFV) Eligibility
 *************************************************
 
-TODO
+`The state of Washington offers many incentives for vehicle owners to invest in an electric vehicle <https://www.dol.wa.gov/vehicles-and-boats/taxes-fuel-tax-and-other-fees/tax-exemptions-alternative-fuel-vehicles-and-plug-hybrids>`_,
 
-The possible values of this variable are:
+    In 2019, Washington State reinstated the sales and use tax exemption for the sales of vehicles powered by a clean alternative fuel and certain plug-in hybrids.
+
+However, not all cars are eligible for this tax exemption. The exemption depends on the battery range of the electric vehicle. If your electric vehicle does not have a large enough range, your vehicle is deemed ineligible for a tax exemption.
+
+The **Clean Alternative Fuel Vehicle (CAFV) Eligibility** variable in this dataset records whether or not an individual car is eligible. The possible values of this variable are:
 
 - Not eligible due to low battery range
 - Eligibility unknown as battery range has not been researched
 - Clean Alternative Fuel Vehicle Eligible
 
-
-
 Electric Vehicle Type
 *********************
 
-TODO
+Electric vehicles come in two varieties: vehicles that are fully electric and hybrid vehicles that revert to a gasoline engine when they run out of electric power. This `article from PC Magazine goes into greater detail about the differences between these two types of electric vehicles <https://www.pcmag.com/how-to/ev-vs-hev-vs-phev-what-are-the-types-of-electric-vehicles>`_
 
 The possible values of this variable are:
 
 - Battery Electric Vehicle (BEV)
 - Plug-in Hybrid Electric Vehicle (PHEV)
+
+*BEV* electric vehicles are *fully electric*. *PHEV* use hybrid engines; when *PHEV* engines run out of power, they start using gasoline.
 
 .. _project_one_loading_data:
 
@@ -186,6 +233,9 @@ Output:
 Project
 =======
 
+No Frills 
+---------
+
 1. Calculate the relative frequency of the following **Makes** of *Electric Vehicles*,
 
 - TESLA
@@ -194,15 +244,20 @@ Project
 - TOYOTA
 - VOLKWAGEN
 
-Save your commands and label them with comments. Out of these five values, what is the most frequent **Make** of *Electric Vehicle* in Washington State?
+Save your commands and label them with comments. In a :ref:`python_docstring`, answer the following question: Out of these five values, what is the most frequent **Make** of *Electric Vehicle* in Washington State?
 
-2. Using your answers to #1, construct a bar chart for these five values of the **Make** categorical variable. 
+2. Using your answers to #1, construct a bar chart for *only* these five values of the **Make** categorical variable.
 
-3. In this dataset, there are only two possible values for the **Electric Vehicle Types** variable. 
+.. note:: 
 
-Furthermore, there are only three possible values for the **Clean Alternative Fuel Vehicle (CAFV) Eligibility** variable.
+    If you want to construct the entire frequency distribution and make a bar chart for it, I won't stop you, but make sure it's readable.
 
-Answer the following questions. Label any commands you use to solve the problem with comments. Write your answers in the :ref:`python_docstring` at the top of the script.
+Stacked
+-------
+
+1. Before starting this part of project, answer the following in a :ref:`python_docstring`: Based on the information provided in the :ref:`project_one_background` section, how would you expect the *conditional distribution* of **Clean Alternative Fuel Vehicle (CAFV) Eligibility** given the **Electric Vehicle Type** to look? Do you expect fully electric vehicles to have greater eligibility for tax credits than hybrid vehicles? Why or why not?
+   
+2. Answer the following questions. Label any commands you use to solve the problem with comments. Write your answers in the :ref:`python_docstring` at the top of the script.
 
 a. What percentage of *electric vehicles* in Washington State are both *Battery Electric Vehicles (BEV)* and "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility** ?
 
@@ -211,12 +266,12 @@ b. What percentage of *Battery Electric Vehicles (BEV)* are "*Not eligible due t
 c. What percentage of "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility** vehicles are *Battery Electric Vehicles (BEV)*?
 
 
-4. Using this information obtained in *#3* and any additional information required, create a stacked bar chart for the *conditional distribution* of the **Clean Alternative Fuel Vehicle (CAFV) Eligibility** given the **Electric Vehicle Type**.
+3. Using this information obtained in *#3* and any additional information required, create a stacked bar chart for the *conditional distribution* of the **Clean Alternative Fuel Vehicle (CAFV) Eligibility** given the **Electric Vehicle Type**.
 
 4. What does your stacked bar chart from #3 tell you about the *association* between the **Clean Alternative Fuel Vehicle (CAFV) Eligibility** and the **Electric Vehicle Type**? Write your answer in your script's :ref:`python_docstring` and label the problem.
 
-5. What percentage of *electric vehicles* are 
-
+5. Write a few sentences explaining the results from #2 - #4. Did the result turn out the way you expected? Why or why not?
+   
 .. _project_one_dataset:
 
 Datasets
@@ -231,6 +286,3 @@ The following table is the a preview of the data you will be using for this proj
 
 .. csv-table:: Electric Vehicles in Washington State
    :file: ../../assets/datasets/previews/electric_vehicle_population_data_preview.csv
-
-
-TODO
