@@ -562,11 +562,34 @@ TODO: one more
 A.P. Exam Practice
 ==================
 
-12. **2019, Free Response, #3** (TODO)
+12. **2019, Free Response, #3** 
+    
+A medical researcher surveyed a large group of men and women about whether they take medicine as prescribed.
+The responses were categorized as never, sometimes, or always. The relative frequency of each category is
+shown in the table.
 
-13. **2016, Free Response, #3** (TODO)
+.. image:: ../../../assets/imgs/classwork/2019_apstats_frp_03.png
+    :align: center
 
-14. **2015, Multplie Choice, #32**
+One person from those surveyed will be selected at random.
+
+a. What is the probability that the person selected will be someone whose response is never and who is a
+woman?
+
+b. What is the probability that the person selected will be someone whose response is never or who is a
+woman?
+
+c. What is the probability that the person selected will be someone whose response is never given that the
+person is a woman?
+
+d. For the people surveyed, are the events of being a person whose response is never and being a woman
+independent? Justify your answer.
+
+e. Assume that, in a large population, the probability that a person will always take medicine as prescribed
+is 0.54. If 5 people are selected at random from the population, what is the probability that at least 4 of
+the people selected will always take medicine as prescribed? Support your answer.
+
+1.  **2015, Multplie Choice, #32**
     
 A survey conducted by a national news network asked a random sample of U.S. adults whether they get most of their information about current events from newspapers, television, the internet, or some
 other source. The results, shown in the table below, are reported by age group of the respondents.

@@ -10,6 +10,7 @@ Random Variables
     - Find the probability distribution :math:`P(X=x)` for all values of *x*.
 
 
+TODO
 
 ?. **2015, Free Response, #3**
 
