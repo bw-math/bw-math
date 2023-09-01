@@ -24,7 +24,7 @@ Instructions
 7. Read the :ref:`bar_chart` section. Download the script files in that section onto your ChromeBook. Read through and execute them on your computer. 
 8. Read the :ref:`project_one_set_operations` section. 
 9. Perform all exercises and answer all questions in the :ref:`project_one_project` section. Label your script with comments as indicated in the *Project* section.
-10. When you are done, zip your folder and all its contents into a file named `LASTNAME_FIRSTNAME_project_one.zip`
+10. When you are done, zip your folder and all its contents into a file named ``LASTNAME_FIRSTNAME_project_one.zip``
 11. Upload the zip file here to the Google Classroom Project One Assignment.
 
 .. _project_one_background:
