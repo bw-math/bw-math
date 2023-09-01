@@ -220,7 +220,9 @@ Researchers studying a pack of gray wolves in North America collected data on th
 a. For the situation described above, explain what is meant by each of the following words.
 
     (i) Positive:
+
     (ii) Linear:
+
     (iii) Strong:
 
 The data collected from the wolves were used to create the least-squares equation y = -16.46 + 35.02 x.
@@ -247,3 +249,60 @@ Which of the following is the median number of siblings for these 25 students?
     (D) 2.5
 
     (E) 3
+
+11. **2014, Free Response, #1**
+
+An administrator at a large university is interested in determining whether the residential status of a student is associated with level of participation in extracurricular activities. Residential status is categorized as on campus for students living in university housing and off campus otherwise. A simple random sample of 100 students in
+the university was taken, and each student was asked the following two questions.
+
+- Are you an on campus student or an off campus student?
+- In how many extracurricular activities do you participate?
+
+The responses of the 100 students are summarized in the frequency table shown.
+
+.. image:: ../../../assets/imgs/classwork/2014_apstats_frp_01a.png
+    :align: center 
+
+a. Calculate the proportion of on campus students in the sample who participate in at least one extracurricular
+activity and the proportion of off campus students in the sample who participate in at least one
+extracurricular activity.
+
+    On campus proportion:
+
+    Off campus proportion:
+
+b. The responses of the 100 students are summarized in the segmented bar graph shown.
+
+.. image:: ../../../assets/imgs/classwork/2014_apstats_frp_01b.png
+    :align: center
+
+Write a few sentences summarizing what the graph reveals about the association between residential status
+and level of participation in extracurricular activities among the 100 students in the sample.
+
+12. **2015, Free Response, #1**
+
+Two large corporations, A and B, hire many new college graduates as accountants at entry-level positions. In 2009 the starting salary for an entry-level accountant position was $36,000 a year at both corporations. At each corporation, data were collected from 30 employees who were hired in 2009 as entry-level accountants and were still employed at the corporation five years later. The yearly salaries of the 60 employees in 2014 are summarized in the boxplots below.
+
+.. image:: ../../../assets/imgs/classwork/2015_apstats_frp_1.png
+    :align: center
+
+a. Write a few sentences comparing the distributions of the yearly salaries at the two corporations.
+
+b. Suppose both corporations offered you a job for $36,000 a year as an entry-level accountant. Based on the boxplots, give one reason why you might choose to accept the job at corporation A.
+
+c. Suppose both corporations offered you a job for $36,000 a year as an entry-level accountant. Based on the boxplots, give one reason why you might choose to accept the job at corporation B.
+
+13. **2016, Free Response, #2**
+
+Product advertisers studied the effects of television ads on children’s choices for two new snacks. The advertisers used two 30-second television ads in an experiment. One ad was for a new sugary snack called Choco-Zuties, and the other ad was for a new healthy snack called Apple-Zuties.
+
+For the experiment, 75 children were randomly assigned to one of three groups, A, B, or C. Each child individually watched a 30-minute television program that was interrupted for 5 minutes of advertising. The advertising was the same for each group with the following exceptions.
+
+- The advertising for group A included the Choco-Zuties ad but not the Apple-Zuties ad.
+- The advertising for group B included the Apple-Zuties ad but not the Choco-Zuties ad.
+- The advertising for group C included neither the Choco-Zuties ad nor the Apple-Zuties ad.
+
+After the program, the children were offered a choice between the two snacks. The table below summarizes their choices.
+
+.. image:: ../../../assets/imgs/classwork/2016_apstats_frp_02.png
+    :align: center
