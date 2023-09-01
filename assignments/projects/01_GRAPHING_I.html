@@ -362,6 +362,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicles-in-washington-state">Electric Vehicles in Washington State</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#make">Make</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clean-alternative-fuel-vehicle-cafv-eligibility">Clean Alternative Fuel Vehicle (CAFV) Eligibility</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicle-type">Electric Vehicle Type</a></li>
 </ul>
@@ -375,7 +376,11 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-operations">Set Operations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">No Frills</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Stacked</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicle-dataset">Electric Vehicle Dataset</a></li>
 </ul>
@@ -399,7 +404,7 @@ document.write(`
 <li><p>Ludwig Wittgenstein</p></li>
 </ul>
 </div></blockquote>
-<p>In this lab, you will get familiar with the statistical plotting features of <strong>Python</strong> using a dataset we have already seen.</p>
+<p>In this lab, you will get familiar with the statistical plotting features of <strong>Python</strong> using a dataset we have already seen. We will explore the association between two categorical variables and determine if a relationship exists.</p>
 <section id="instructions">
 <span id="project-one-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
@@ -424,13 +429,60 @@ document.write(`
 <blockquote>
 <div><p>The United States Government General Services Administration maintains a huge database of public available information. One of the datasets they publish is the <a class="reference external" href="https://catalog.data.gov/dataset/electric-vehicle-population-data">Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) that are currently registered through Washington State Department of Licensing</a></p>
 </div></blockquote>
-<p>This dataset was taken from <a class="reference external" href="https://data.gov/">data.gov</a>. This is an excellent resource, if you are even in need of some data. We will be using this online database quite a bit once we get fully up to speed on <strong>Python</strong>.</p>
+<p>This dataset was taken from <a class="reference external" href="https://data.gov/">data.gov</a>. This is an excellent resource, if you ever find yourself in need of some data. We will be using this online database quite a bit once we get fully up to speed on <strong>Python</strong>.</p>
 <p>We examined the <em>Eletric Vehcile</em> dataset a little bit in class on the first week. We are now prepared to do a little more in-depth analysis.</p>
 <p>First, let’s take about some of the variables being observed in this dataset.</p>
+<section id="make">
+<h4>Make<a class="headerlink" href="#make" title="Permalink to this headline">#</a></h4>
+<p>The <strong>Make</strong> variable represents the manufacturer of the car. The possible values for this variable are listed below,</p>
+<ul class="simple">
+<li><p>FIAT</p></li>
+<li><p>MINI</p></li>
+<li><p>LEXUS</p></li>
+<li><p>CHRYSLER</p></li>
+<li><p>LINCOLN</p></li>
+<li><p>ALFA ROMEO</p></li>
+<li><p>RIVIAN</p></li>
+<li><p>TOYOTA</p></li>
+<li><p>AZURE DYNAMICS</p></li>
+<li><p>GENESIS</p></li>
+<li><p>VOLKSWAGEN</p></li>
+<li><p>JEEP</p></li>
+<li><p>PORSCHE</p></li>
+<li><p>MERCEDES-BENZ</p></li>
+<li><p>CADILLAC</p></li>
+<li><p>KIA</p></li>
+<li><p>JAGUAR</p></li>
+<li><p>POLESTAR</p></li>
+<li><p>FISKER</p></li>
+<li><p>FORD</p></li>
+<li><p>TESLA</p></li>
+<li><p>SMART</p></li>
+<li><p>HYUNDAI</p></li>
+<li><p>BENTLEY</p></li>
+<li><p>NISSAN</p></li>
+<li><p>MITSUBISHI</p></li>
+<li><p>TH!NK</p></li>
+<li><p>VOLVO</p></li>
+<li><p>LUCID</p></li>
+<li><p>CHEVROLET</p></li>
+<li><p>WHEEGO ELECTRIC CARS</p></li>
+<li><p>HONDA</p></li>
+<li><p>LAND ROVER</p></li>
+<li><p>SUBARU</p></li>
+<li><p>AUDI</p></li>
+<li><p>MAZDA</p></li>
+<li><p>BMW</p></li>
+</ul>
+</section>
 <section id="clean-alternative-fuel-vehicle-cafv-eligibility">
 <h4>Clean Alternative Fuel Vehicle (CAFV) Eligibility<a class="headerlink" href="#clean-alternative-fuel-vehicle-cafv-eligibility" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
-<p>The possible values of this variable are:</p>
+<p><a class="reference external" href="https://www.dol.wa.gov/vehicles-and-boats/taxes-fuel-tax-and-other-fees/tax-exemptions-alternative-fuel-vehicles-and-plug-hybrids">The state of Washington offers many incentives for vehicle owners to invest in an electric vehicle</a>,</p>
+<blockquote>
+<div><p>In 2019, Washington State reinstated the sales and use tax exemption for the sales of vehicles powered by a clean alternative fuel and certain plug-in hybrids.</p>
+</div></blockquote>
+<p>However, not all cars are eligible for this tax exemption. The exemption depends on the battery range of the electric vehicle. If your electric vehicle does not have a large enough range, your vehicle is deemed ineligible for a tax exemption.</p>
+<p>The <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> variable in this dataset records whether or not an individual car is eligible. The possible values of this variable are:</p>
 <ul class="simple">
 <li><p>Not eligible due to low battery range</p></li>
 <li><p>Eligibility unknown as battery range has not been researched</p></li>
@@ -439,12 +491,13 @@ document.write(`
 </section>
 <section id="electric-vehicle-type">
 <h4>Electric Vehicle Type<a class="headerlink" href="#electric-vehicle-type" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
+<p>Electric vehicles come in two varieties: vehicles that are fully electric and hybrid vehicles that revert to a gasoline engine when they run out of electric power. This <a class="reference external" href="https://www.pcmag.com/how-to/ev-vs-hev-vs-phev-what-are-the-types-of-electric-vehicles">article from PC Magazine goes into greater detail about the differences between these two types of electric vehicles</a></p>
 <p>The possible values of this variable are:</p>
 <ul class="simple">
 <li><p>Battery Electric Vehicle (BEV)</p></li>
 <li><p>Plug-in Hybrid Electric Vehicle (PHEV)</p></li>
 </ul>
+<p><em>BEV</em> electric vehicles are <em>fully electric</em>. <em>PHEV</em> use hybrid engines; when <em>PHEV</em> engines run out of power, they start using gasoline.</p>
 </section>
 </section>
 </section>
@@ -533,6 +586,8 @@ document.write(`
 </section>
 <section id="project">
 <span id="project-one-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
+<section id="id3">
+<h3>No Frills<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
 <ol class="arabic simple">
 <li><p>Calculate the relative frequency of the following <strong>Makes</strong> of <em>Electric Vehicles</em>,</p></li>
 </ol>
@@ -543,25 +598,32 @@ document.write(`
 <li><p>TOYOTA</p></li>
 <li><p>VOLKWAGEN</p></li>
 </ul>
-<p>Save your commands and label them with comments. Out of these five values, what is the most frequent <strong>Make</strong> of <em>Electric Vehicle</em> in Washington State?</p>
+<p>Save your commands and label them with comments. In a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: Out of these five values, what is the most frequent <strong>Make</strong> of <em>Electric Vehicle</em> in Washington State?</p>
 <ol class="arabic simple" start="2">
-<li><p>Using your answers to #1, construct a bar chart for these five values of the <strong>Make</strong> categorical variable.</p></li>
-<li><p>In this dataset, there are only two possible values for the <strong>Electric Vehicle Types</strong> variable.</p></li>
+<li><p>Using your answers to #1, construct a bar chart for <em>only</em> these five values of the <strong>Make</strong> categorical variable.</p></li>
 </ol>
-<p>Furthermore, there are only three possible values for the <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> variable.</p>
-<p>Answer the following questions. Label any commands you use to solve the problem with comments. Write your answers in the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a> at the top of the script.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to construct the entire frequency distribution and make a bar chart for it, I won’t stop you, but make sure it’s readable.</p>
+</div>
+</section>
+<section id="id4">
+<h3>Stacked<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
+<ol class="arabic simple">
+<li><p>Before starting this part of project, answer the following in a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>: Based on the information provided in the <a class="reference internal" href="#project-one-background"><span class="std std-ref">Background</span></a> section, how would you expect the <em>conditional distribution</em> of <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> given the <strong>Electric Vehicle Type</strong> to look? Do you expect fully electric vehicles to have greater eligibility for tax credits than hybrid vehicles? Why or why not?</p></li>
+<li><p>Answer the following questions. Label any commands you use to solve the problem with comments. Write your answers in the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a> at the top of the script.</p></li>
+</ol>
 <ol class="loweralpha simple">
 <li><p>What percentage of <em>electric vehicles</em> in Washington State are both <em>Battery Electric Vehicles (BEV)</em> and “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> ?</p></li>
 <li><p>What percentage of <em>Battery Electric Vehicles (BEV)</em> are “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong>?</p></li>
 <li><p>What percentage of “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> vehicles are <em>Battery Electric Vehicles (BEV)</em>?</p></li>
 </ol>
-<ol class="arabic simple" start="4">
+<ol class="arabic simple" start="3">
 <li><p>Using this information obtained in <em>#3</em> and any additional information required, create a stacked bar chart for the <em>conditional distribution</em> of the <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> given the <strong>Electric Vehicle Type</strong>.</p></li>
-</ol>
-<ol class="arabic simple" start="4">
 <li><p>What does your stacked bar chart from #3 tell you about the <em>association</em> between the <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> and the <strong>Electric Vehicle Type</strong>? Write your answer in your script’s <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a> and label the problem.</p></li>
-<li><p>What percentage of <em>electric vehicles</em> are</p></li>
+<li><p>Write a few sentences explaining the results from #2 - #4. Did the result turn out the way you expected? Why or why not?</p></li>
 </ol>
+</section>
 </section>
 <section id="datasets">
 <span id="project-one-dataset"></span><h2>Datasets<a class="headerlink" href="#datasets" title="Permalink to this headline">#</a></h2>
@@ -569,8 +631,8 @@ document.write(`
 <h3>Electric Vehicle Dataset<a class="headerlink" href="#electric-vehicle-dataset" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/38b9a9c95bf197232fea6cd4646dd2da/electric_vehicle_population_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
-<table class="table" id="id3">
-<caption><span class="caption-text">Electric Vehicles in Washington State</span><a class="headerlink" href="#id3" title="Permalink to this table">#</a></caption>
+<table class="table" id="id5">
+<caption><span class="caption-text">Electric Vehicles in Washington State</span><a class="headerlink" href="#id5" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 6%" />
 <col style="width: 6%" />
@@ -665,7 +727,6 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p>TODO</p>
 </section>
 </section>
 </section>
@@ -721,6 +782,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicles-in-washington-state">Electric Vehicles in Washington State</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#make">Make</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clean-alternative-fuel-vehicle-cafv-eligibility">Clean Alternative Fuel Vehicle (CAFV) Eligibility</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicle-type">Electric Vehicle Type</a></li>
 </ul>
@@ -734,7 +796,11 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-operations">Set Operations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">No Frills</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Stacked</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicle-dataset">Electric Vehicle Dataset</a></li>
 </ul>

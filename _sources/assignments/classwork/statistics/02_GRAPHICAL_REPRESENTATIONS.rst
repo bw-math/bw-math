@@ -232,25 +232,7 @@ b. Interpret the meaning of the slope of the least-squares regression line in co
 c. One wolf in the pack with a length of 1.4 meters had a residual of -9.67 kilograms. What was the weight
 of the wolf?
 
-10.  **2015, Multiple Choice #8**
-
-The 25 students in one professor's introductory statistics course at a large university were surveyed and asked to report the number of siblings that they have. The histogram below displays the data collected in the survey.
-
-.. image:: ../../../assets/imgs/classwork/2015_apstats_mc_08.png
-
-Which of the following is the median number of siblings for these 25 students?
-
-    (A) 1
-
-    (B) 1.5
-
-    (C) 2
-
-    (D) 2.5
-
-    (E) 3
-
-11. **2014, Free Response, #1**
+10.  **2014, Free Response, #1**
 
 An administrator at a large university is interested in determining whether the residential status of a student is associated with level of participation in extracurricular activities. Residential status is categorized as on campus for students living in university housing and off campus otherwise. A simple random sample of 100 students in
 the university was taken, and each student was asked the following two questions.
@@ -279,7 +261,7 @@ b. The responses of the 100 students are summarized in the segmented bar graph s
 Write a few sentences summarizing what the graph reveals about the association between residential status
 and level of participation in extracurricular activities among the 100 students in the sample.
 
-12. **2015, Free Response, #1**
+11. **2015, Free Response, #1**
 
 Two large corporations, A and B, hire many new college graduates as accountants at entry-level positions. In 2009 the starting salary for an entry-level accountant position was $36,000 a year at both corporations. At each corporation, data were collected from 30 employees who were hired in 2009 as entry-level accountants and were still employed at the corporation five years later. The yearly salaries of the 60 employees in 2014 are summarized in the boxplots below.
 
@@ -292,7 +274,7 @@ b. Suppose both corporations offered you a job for $36,000 a year as an entry-le
 
 c. Suppose both corporations offered you a job for $36,000 a year as an entry-level accountant. Based on the boxplots, give one reason why you might choose to accept the job at corporation B.
 
-13. **2016, Free Response, #2**
+12. **2016, Free Response, #2**
 
 Product advertisers studied the effects of television ads on children’s choices for two new snacks. The advertisers used two 30-second television ads in an experiment. One ad was for a new sugary snack called Choco-Zuties, and the other ad was for a new healthy snack called Apple-Zuties.
 

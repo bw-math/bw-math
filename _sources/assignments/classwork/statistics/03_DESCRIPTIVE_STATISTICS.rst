@@ -32,6 +32,24 @@ room size.
 c. What characteristic of the shape of the distribution of room size is apparent from the histogram but not from
 the boxplot?
 
+10.  **2015, Multiple Choice #8**
+
+The 25 students in one professor's introductory statistics course at a large university were surveyed and asked to report the number of siblings that they have. The histogram below displays the data collected in the survey.
+
+.. image:: ../../../assets/imgs/classwork/2015_apstats_mc_08.png
+
+Which of the following is the median number of siblings for these 25 students?
+
+    (A) 1
+
+    (B) 1.5
+
+    (C) 2
+
+    (D) 2.5
+
+    (E) 3
+    
 2. **2016, Free Response, #1**
 
 Robin works as a server in a small restaurant, where she can earn a tip (extra money) from each customer she serves. The histogram below shows the distribution of her 60 tip amounts for one day of work.
