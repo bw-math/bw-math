@@ -425,6 +425,10 @@ A more famous example of this type of bias is the `Milgram Experiment <https://e
     :alt: Milgram Experiment
     :target: https://www.youtube.com/watch?v=Kzd6Ew3TraA
 
+.. admonition:: Milgram Experiment 
+
+    Click on the image to play the video.
+
 Unbeknownst to the participants of the study, this wasn't the actual experiment. In reality, the *learner* in every experiment was a paid actor and the electric shocks weren't real. The actor would intentionally get answers wrong and then pretend to be in pain when the *teacher* was administering the fake electric shocks. The *teacher* was the real object of study. Dr. Milgram was trying to see how much pain a randomly selected individual would inflict on someone else simply because they were told to do it. 
 
 When participants expressed unease or concern, the researchers running the study, intentionally dressed in white lab coats to give the appearance of authority, would give one of the following responses,
@@ -522,11 +526,15 @@ Blind Studies
 
 The concept of *blind studies* mainly applies to the areas of psychology and medicine. These sciences deal with human nature and humans are, if nothing else, peculiar creatures. Their expectations can influence the results of the experiment.
 
-In medical studies, the *test* group will receive the real treatment while the *control* group will receive a *placebo* treatment. For example, in testing whether a certain drug treats cancer, the *control* group would receive a sugar pill. Yet it sometimes occurs 
+In medical studies, the *test* group will receive the real treatment while the *control* group will receive a *placebo* treatment. For example, in testing whether a certain drug treats a medical condition, the *control* group would receive a sugar pill. Yet it sometimes occurs the *control* group experiences the effects of the *real treatment* simply by *expecting* the effect,
 
 .. image:: https://img.youtube.com/vi/mSEr3A-pMsw/maxresdefault.jpg
     :alt: Placebo Effect
     :target: https://www.youtube.com/watch?v=mSEr3A-pMsw
+
+.. admonition:: Placebo Effect Video 
+
+    Click on the image to watch the video.
 
 .. topic:: Placebo Effect
 
@@ -625,7 +633,7 @@ Definition
     The *characteristic* of a dataset is the *type* of data being observed.
 
 Qualitative
-    :math:`\{ "Red", "Blue", "Yellow"\}`
+    :math:`\{ \text{red}, \text{blue}, \text{yellow} \}`
 
 Qualitative data are categorical.
 

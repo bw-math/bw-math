@@ -4,6 +4,10 @@
 Bias
 ====
 
+    There's something happening here, but what it is ain't exactly clear.
+
+    - Buffalo Springfield
+
 In this lab, you will perform some graphical analysis on a famously biased data set and use statistical reasoning to draw conclusions about the method of observation used to generate the data.
 
 Instructions
@@ -11,12 +15,12 @@ Instructions
 
 1. Create a folder named `LASTNAME_FIRSTNAME_project_five`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
 2. Download the *csv* dataset `below <project_five_dataset>`_ and place it in the new folder you created in step 1.
-4. In the same folder, create a Python *py* script named `project_five.py`
-5. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
-6. Read the :ref:`project_five_project` section.
-7. Perform all exercises and answer all questions in the :ref:`project_one_project` section. Label your script with comments as indicated in the instructions of each problem.
-8. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_five.zip`
-9. Upload the zip file here: TODO
+3. In the same folder, create a Python *py* script named `project_five.py`
+4. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
+5. Read the :ref:`project_five_project` section.
+6. Perform all exercises and answer all questions in the :ref:`project_one_project` section. Label your script with comments as indicated in the instructions of each problem.
+7. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_five.zip`
+8. Upload the zip file here: TODO
 
 .. _project_five_loading_data:
 
