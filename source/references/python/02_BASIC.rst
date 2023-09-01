@@ -191,12 +191,27 @@ Definition
     another_pair = ("dog", "cat")
     print("these are tuples: ", pair, ", ", another_pair)
 
-Output
+Output:
 
     these are tuples: (1,2), ('dog', 'cat')
 
 Note the variables in the *tuple* do not have to be numbers.
 
+You can access the *values* in a tuple the same way you access elements of a list, using the index of the value you want and the ``[]`` notation,
+
+.. code:: python 
+
+    pair = ("android", "iphone")
+
+    print("this is the x variable in the ordered pair: ", pair[0])
+    print("this is the y variable in the ordered pair: ", pair[1])
+
+Output:
+
+    this is the x variable in the ordered pair: 'android'
+
+    this is the y variable in the ordered pair: 'iphone'
+    
 .. _python_lists:
 
 Lists 
