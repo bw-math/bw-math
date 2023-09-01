@@ -528,7 +528,7 @@ document.write(`
 </dl>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a_number</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">another_number</span> <span class="o">=</span> <span class="mi">15</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;these are integers: &quot;</span><span class="p">,</span> <span class="n">a</span> <span class="n">number</span><span class="p">,</span> <span class="s2">&quot;, &quot;</span><span class="p">,</span> <span class="n">another_number</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;these are integers: &quot;</span><span class="p">,</span> <span class="n">a_number</span><span class="p">,</span> <span class="s2">&quot;, &quot;</span><span class="p">,</span> <span class="n">another_number</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Output:</p>
@@ -563,11 +563,23 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;these are tuples: &quot;</span><span class="p">,</span> <span class="n">pair</span><span class="p">,</span> <span class="s2">&quot;, &quot;</span><span class="p">,</span> <span class="n">another_pair</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Output</p>
+<p>Output:</p>
 <blockquote>
 <div><p>these are tuples: (1,2), (‘dog’, ‘cat’)</p>
 </div></blockquote>
 <p>Note the variables in the <em>tuple</em> do not have to be numbers.</p>
+<p>You can access the <em>values</em> in a tuple the same way you access elements of a list, using the index of the value you want and the <code class="docutils literal notranslate"><span class="pre">[]</span></code> notation,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pair</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;android&quot;</span><span class="p">,</span> <span class="s2">&quot;iphone&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is the x variable in the ordered pair: &quot;</span><span class="p">,</span> <span class="n">pair</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is the y variable in the ordered pair: &quot;</span><span class="p">,</span> <span class="n">pair</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>this is the x variable in the ordered pair: ‘android’</p>
+<p>this is the y variable in the ordered pair: ‘iphone’</p>
+</div></blockquote>
 </section>
 <section id="lists">
 <span id="python-lists"></span><h3>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">#</a></h3>
@@ -592,7 +604,7 @@ document.write(`
 <p>this is the first element of a list: Led Zeppelin</p>
 <p>this is the second element of a list: Pink Floyd</p>
 <p>this is the last element of a list: The Beatles</p>
-<p>this is also the element of a list: The Beatles</p>
+<p>this is also the last element of a list: The Beatles</p>
 </div></blockquote>
 <p>The variables in a list need not be the same type,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">unlike_list</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="mf">5.67</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span> <span class="p">]</span>
