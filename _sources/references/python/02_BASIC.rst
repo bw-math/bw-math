@@ -85,10 +85,7 @@ You will see the docstring content get printed to screen. This allows programmer
 
 .. warning:: 
 
-	This command won't work on your computer yet. I need to install some things. 
-.. important:: 
-    
-    When I grade your projects, I will be running the command just given to check your written answers. Ensure this command works on your computer before uploading any files or you will lose points!
+	This command won't work on your computer yet. We need to install some things. 
 
 When you write a docstring for your projects, use the following format,
 
