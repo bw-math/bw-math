@@ -70,13 +70,13 @@ Notice the sum of the right hand column totals to the number of observations in 
 
 Take note of the index in this sum. The :math:`x_i \in S` symbol can be read as "*for every* :math:`x_i` *in S*". This notation is used to take into account observations that may have the same value, as in this example where the observations ``b``, ``g`` and ``r`` occur multiple times. In other words, each term :math:`x_i` of the sum is a *unique value*. Its multiplicity derives from the frequency :math:`f(x_i)` by which it is multiplied.
 
-Contrast this against the notation employed in the :ref:`sample_mean_formula`
+Contrast this against the notation employed in the :ref:`sample mean formula <sample_mean_formula>`
 
 .. math:: 
 
     \bar{x} = \frac{ \sum^n_{i=1} x_i }{n}
 
-In the :ref:`sample_mean_formula`, the index is over the observation order, i.e. from :math:`i = 1, 2, 3 ..., n`. In this case, it may happen that :math:`x_i = x_j` for some :math:`i \neq j`. In other words, in the sample mean formula, it is possible for terms in the summation to *repeat*. 
+In the :ref:`sample_mean_formula <sample_mean_formula>`, the index is over the observation order, i.e. from :math:`i = 1, 2, 3 ..., n`. In this case, it may happen that :math:`x_i = x_j` for some :math:`i \neq j`. In other words, in the sample mean formula, it is possible for terms in the summation to *repeat*. 
 
 .. _two_way_tables:
 
@@ -331,21 +331,21 @@ If you are given a sample of *n* data points :math:`S = \{ x_1, x_2, ... , x_n \
 
 5. Sort the data set into classes and tally up the frequency of each class.
 
-+------------------------------+-----------------------------+
-| Class Limits                 | f(x)                        |
-+------------------------------+-----------------------------+
-| :math:`LL_1 <= x < UL_1`     | :math:`f(LL_1 <= x < UL_1)` |
-+------------------------------+-----------------------------+
-| :math:`LL_2 <= x < UL_2`     | :math:`f(LL_2 <= x < UL_2)` |
-+------------------------------+-----------------------------+
-| ...                          | ...                         |
-+------------------------------+-----------------------------+
-| :math:`f(LL_n <= x <= UL_n)` | :math:`f(LL_n) <= x < UL_n` |
-+------------------------------+-----------------------------+
++--------------------------------+-------------------------------+
+| Class Limits                   | f(x)                          |
++--------------------------------+-------------------------------+
+| :math:`LL_1 \leq x < UL_1`     | :math:`f(LL_1 \leq x < UL_1)` |
++--------------------------------+-------------------------------+
+| :math:`LL_2 \leq x < UL_2`     | :math:`f(LL_2 \leq x < UL_2)` |
++--------------------------------+-------------------------------+
+| ...                            | ...                           |
++--------------------------------+-------------------------------+
+| :math:`f(LL_n \leq x <= UL_n)` | :math:`f(LL_n) \leq x < UL_n` |
++--------------------------------+-------------------------------+
 
 .. important:: 
     
-    Note each class is inclusive, :math:`<=`, with respect to the *lower limit*, while it is strictly exclusive, :math:`<`, with respect to the *upper limit*. This is so the classes are *mutually exclusive*, or to the say the same thing in a different way, a single observation cannot be assigned to two different classes; Every individual can belong to *only* one class.
+    Note each class is inclusive, :math:`\leq`, with respect to the *lower limit*, while it is strictly exclusive, :math:`<`, with respect to the *upper limit*. This is so the classes are *mutually exclusive*, or to the say the same thing in a different way, a single observation cannot be assigned to two different classes; Every individual can belong to *only* one class.
 
     This applies to every class except the last, which must include the *upper limit*. Otherwise, the distribution would be missing a single value: the maximum value of the sample. 
 
@@ -364,7 +364,7 @@ First we find the sample range,
 
     R = max(S) - min(S) = 6.3 - 5.3 = 1.0
 
-We divide this interval into 5 sub-intervals, called *classes,
+We divide this interval into 5 sub-intervals, called *classes*,
 
 .. math:: 
 
@@ -459,6 +459,7 @@ A *histogram* is a graphical representation of a :ref:`frequency distribution <f
 .. plot:: assets/plots/histograms/histogram_random.py
 
 The *width* of the bars is normalized so that the bars of the histogram meet. 
+
 .. _histogram_variatians:
 
 Variations
@@ -490,7 +491,7 @@ Then the dot plot is constructed by drawing a number of dots above a point on th
 Stem-Leaf Plots
 ***************
 
-A *stem-leaf* plot is a type of histogram where the classes are determined by the leading digitS of the observation valueS. 
+A *stem-leaf* plot is a type of histogram where the classes are determined by the leading digits of the observation values. 
 
 For example, you measured the average annual rainfall in inches for Maryland over the course of 20 years and arrived at the following sample,
 
@@ -528,7 +529,7 @@ Recall that the sum of frequencies is *n*,
 
 .. math:: 
 
-    n = \sum_{x_i \in S} f(x_i)  \text{      Frequency Equation }
+    n = \sum_{x_i \in S} f(x_i)
 
 Therefore, the sum of *relative frequencies* is,
 
@@ -552,7 +553,7 @@ In other words, the sum of *relative frequencies* is equal to 1,
 
 .. math::
 
-    \sum_{x_i \in S} r(x_i) = 1  \text{     Relative Frequency Equation}
+    \sum_{x_i \in S} r(x_i) = 1
 
 This intuitive result simply means the distribution must total to *100%*.
 
@@ -605,12 +606,25 @@ It follows these areas both represent fifty percent of the distribution.
 
 A *normal distribution* tells us classes closer to the :ref:`median` are more likely to be observed.
 
+
 Example
-    :download:`here <../../assets/datasets/velocity_of_light_data.csv>`.
+    :download:`Old Faithful Data Set <../../assets/datasets/old_faithful_data.csv>`.
+
+
+*Old Faithful* is a famous hot-water geyser in Yellowstone National Park that erupts every 45 minutes to 2 hours. 
+
+.. image:: ../../assets/imgs/context/old_faithful.jpg
+    :align: center
+
+The first column of this dataset represents the *length of an eruption in minutes* while the second column represents the *waiting time in minutes* until the next eruption.
 
 .. note::
 
-    We will construct the histogram for this dataset in class using **Python3**.
+    We will construct the histogram for this dataset in class using **Python3** using the *length of an eruption in minutes*.
+
+.. note:: 
+
+    We will also look at this dataset again when we get to :ref:`correlation` and :ref:`scatter_plots`.
     
 Bimodal
 *******
@@ -620,12 +634,11 @@ A histogram where two classes are more frequent than the other classes in the di
 .. plot:: assets/plots/histograms/histogram_bimodal.py
 
 Example
-    :download:`here <../../assets/datasets/old_faithful_data.csv>`.
+    :download:`Old Faithful Data Set <../../assets/datasets/old_faithful_data.csv>`.
 
-.. note::
 
-    We will construct the histogram for this dataset in class using **Python3**.
-    
+(TODO: need bimodal dataset)
+
 Skewed
 ******
 
@@ -649,12 +662,7 @@ Example
 
 .. plot:: assets/plots/histograms/histogram_skewed_left.py
 
-Example
-    :download:`here <../../assets/datasets/earth_density_data.csv>`.
-
-.. note::
-
-    We will construct the histogram for this dataset in class using **Python3**.
+(TODO: need skewed left dataset)
     
 .. _ogives:
 
