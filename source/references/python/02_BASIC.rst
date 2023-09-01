@@ -153,7 +153,7 @@ Definition
 
     a_number = 5
     another_number = 15
-    print("these are integers: ", a number, ", ", another_number)
+    print("these are integers: ", a_number, ", ", another_number)
 
 Output:
 
@@ -229,7 +229,7 @@ Output:
 
     this is the last element of a list: The Beatles 
 
-    this is also the element of a list: The Beatles
+    this is also the last element of a list: The Beatles
 
 The variables in a list need not be the same type,
 
