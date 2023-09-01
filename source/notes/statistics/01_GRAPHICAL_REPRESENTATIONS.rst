@@ -204,7 +204,7 @@ Then, with these definitions in hand, we can think of the table being filled lik
 	
 	.. math::
 	
-		(\text{yes}_{t}, math:`\text{yes}_{e}`) \in E \cap T
+		(\text{yes}_{t}, \text{yes}_{e}) \in E \cap T
 		
 	We read this as, 
 		
