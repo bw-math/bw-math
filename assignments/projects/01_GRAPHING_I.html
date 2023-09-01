@@ -361,11 +361,20 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicles-in-washington-state">Electric Vehicles in Washington State</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicles-in-washington-state">Electric Vehicles in Washington State</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clean-alternative-fuel-vehicle-cafv-eligibility">Clean Alternative Fuel Vehicle (CAFV) Eligibility</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicle-type">Electric Vehicle Type</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bar-charts">Bar Charts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bar-charts">Bar Charts</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-frills">No Frills</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stacked">Stacked</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-operations">Set Operations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicle-dataset">Electric Vehicle Dataset</a></li>
@@ -394,19 +403,18 @@ document.write(`
 <section id="instructions">
 <span id="project-one-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><p>Create a folder named <cite>LASTNAME_FIRSTNAME_project_one</cite>, replacing <cite>LASTNAME</cite> and <cite>FIRSTNAME</cite> with your last name and first name, respectively.</p></li>
+<li><p>Create a folder named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_one</span></code>, replacing <code class="docutils literal notranslate"><span class="pre">LASTNAME</span></code> and <code class="docutils literal notranslate"><span class="pre">FIRSTNAME</span></code> with your last name and first name, respectively.</p></li>
 <li><p>Download the <em>csv</em> dataset in the <a class="reference internal" href="#project-one-dataset"><span class="std std-ref">Datasets</span></a> section and place it in the new folder you created in step 1.</p></li>
-<li><p>In the same folder, create a Python <em>py</em> script named <cite>project_one.py</cite>.</p></li>
+<li><p>In the same folder, create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">project_one.py</span></code>.</p></li>
 <li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Python docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
-<li><p>Read the <a class="reference internal" href="#project-one-background"><span class="std std-ref">Background</span></a> section and the <a class="reference internal" href="#project-one-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-one-background"><span class="std std-ref">Background</span></a> section.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-one-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Read the <span class="xref std std-ref">bar_chart</span> section. Download the script files in that section onto your ChromeBook. Read through and execute them on your computer.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-one-set-operations"><span class="std std-ref">Set Operations</span></a> section.</p></li>
 <li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-one-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the <em>Project</em> section.</p></li>
 <li><p>When you are done, zip your folder and all its contents into a file named <cite>LASTNAME_FIRSTNAME_project_one.zip</cite></p></li>
 <li><p>Upload the zip file here to the Google Classroom Project One Assignment.</p></li>
 </ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You may need to refer to the <a class="reference internal" href="../../references/python/05_PLOTS.html#python-plotting"><span class="std std-ref">Plots</span></a> page for examples of various types of graphs.</p>
-</div>
 </section>
 <section id="background">
 <span id="project-one-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
@@ -418,6 +426,26 @@ document.write(`
 </div></blockquote>
 <p>This dataset was taken from <a class="reference external" href="https://data.gov/">data.gov</a>. This is an excellent resource, if you are even in need of some data. We will be using this online database quite a bit once we get fully up to speed on <strong>Python</strong>.</p>
 <p>We examined the <em>Eletric Vehcile</em> dataset a little bit in class on the first week. We are now prepared to do a little more in-depth analysis.</p>
+<p>First, let’s take about some of the variables being observed in this dataset.</p>
+<section id="clean-alternative-fuel-vehicle-cafv-eligibility">
+<h4>Clean Alternative Fuel Vehicle (CAFV) Eligibility<a class="headerlink" href="#clean-alternative-fuel-vehicle-cafv-eligibility" title="Permalink to this headline">#</a></h4>
+<p>TODO</p>
+<p>The possible values of this variable are:</p>
+<ul class="simple">
+<li><p>Not eligible due to low battery range</p></li>
+<li><p>Eligibility unknown as battery range has not been researched</p></li>
+<li><p>Clean Alternative Fuel Vehicle Eligible</p></li>
+</ul>
+</section>
+<section id="electric-vehicle-type">
+<h4>Electric Vehicle Type<a class="headerlink" href="#electric-vehicle-type" title="Permalink to this headline">#</a></h4>
+<p>TODO</p>
+<p>The possible values of this variable are:</p>
+<ul class="simple">
+<li><p>Battery Electric Vehicle (BEV)</p></li>
+<li><p>Plug-in Hybrid Electric Vehicle (PHEV)</p></li>
+</ul>
+</section>
 </section>
 </section>
 <section id="loading-in-data">
@@ -442,16 +470,98 @@ document.write(`
 </div>
 </section>
 <section id="bar-charts">
-<h2>Bar Charts<a class="headerlink" href="#bar-charts" title="Permalink to this headline">#</a></h2>
-<p>Behold, the power of <a class="reference external" href="https://matplotlib.org/">matplotlib</a>,</p>
+<span id="id1"></span><h2>Bar Charts<a class="headerlink" href="#bar-charts" title="Permalink to this headline">#</a></h2>
+<section id="no-frills">
+<span id="standard-bar-charts"></span><h3>No Frills<a class="headerlink" href="#no-frills" title="Permalink to this headline">#</a></h3>
+<p>Recall a standard bar chart is a way of visually representing the marginal frequency distribution for a sample of categorical data,</p>
+<div class="math">
+<p><img src="../../_images/math/b2c2da3d775d5d5921064cc19a80029adf42084f.png" alt="f(A) = \frac{n(A)}{n(S)}"/></p>
+</div><p>Up until now we have been living in the stone age, creating these graphs by hand. Welcome to the twenty-first century. Behold, the power of <a class="reference external" href="https://matplotlib.org/">matplotlib</a>,</p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/7348413fe5c5573da59530320b27e9a6/bar_chart.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/4bd9aa85b9a89f6d28630b82b751b167/bar_chart.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/bdbc74d5a1ce962504a577d3b760d336/bar_chart.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/6194ec86cb8460bde27176bd1580e59e/bar_chart.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/bar_chart.png" class="plot-directive" src="../../_images/bar_chart.png" />
 </figure>
-<p>Click on the <code class="docutils literal notranslate"><span class="pre">source</span></code> button in the top right corner of the graph to download a <em>.py</em> script. Examine the source code contained therein for generating a <em>Bar Chart</em>. This script is annotated with lots of comments for you to read. Give them a peak, and then let’s meet back here.</p>
+<p>Click on the <code class="docutils literal notranslate"><span class="pre">source</span></code> button in the top left corner of the graph to download the <em>.py</em> script used to generate this graph. Examine the source code contained therein for generating a <em>Bar Chart</em>. Be sure to read the comments before you execute it, as you will need to tweak a setting to get it to run on your computer.</p>
+<p>This script is annotated with lots of comments for you to read. Give them a peak, and then let’s meet over in the next section.</p>
+</section>
+<section id="stacked">
+<span id="stacked-bar-charts"></span><h3>Stacked<a class="headerlink" href="#stacked" title="Permalink to this headline">#</a></h3>
+<p>Recall a <em>stacked bar chart</em> is a way of visually representing a <em>conditional distribution</em> of one categorical variable with respect to another,</p>
+<div class="math">
+<p><img src="../../_images/math/5b7cd1a0ab9a994a8d9a706676c34428b9b35a58.png" alt="P(A \mid B) = \frac{n(A \cap B)}{n(B)}"/></p>
+</div><p>(<a class="reference download internal" download="" href="../../_downloads/efb8867c6facab1ecff134e53389a36b/stacked_bar_chart.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/9d903cc99407aa942431920fd38dda93/stacked_bar_chart.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/eb1f2c474e77b707c270c791fd6a9880/stacked_bar_chart.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/04521609867dd7cdf63c9f36afbd50a6/stacked_bar_chart.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/stacked_bar_chart.png" class="plot-directive" src="../../_images/stacked_bar_chart.png" />
+</figure>
+<p>This one is extremely tricky. <a class="reference external" href="https://matplotlib.org/">matplotlib</a> does not have a nice way of making stacked bar charts; Unforunately, the twenty-first century isn’t all it’s cracked up to be. In this timeline, you have to “stack” your bar charts yourself. Make sure to download this one and go through it step by step. The script has been well commented; every step has been detailed.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Your script comments should look like the ones in the scripts you just downloaded.</p>
+</div>
+</section>
+</section>
+<section id="set-operations">
+<span id="project-one-set-operations"></span><h2>Set Operations<a class="headerlink" href="#set-operations" title="Permalink to this headline">#</a></h2>
+<p>A set in <strong>Python</strong> is defined with a pair of curly brackets <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">}</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">this_is_a_set</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;some&quot;</span><span class="p">,</span> <span class="s2">&quot;things&quot;</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p>A <a class="reference internal" href="../../references/python/03_SETS.html#python-sets"><span class="std std-ref">set variable</span></a> in <strong>Python</strong> is a special type of variable.  When you create a set, it won’t distinguish between identical elements. In other words, <em>sets</em> do not allow duplicates. As an example,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">set_of_dupes</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span> <span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">set_of_dupes</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>{‘a’, ‘b’}</p>
+</div></blockquote>
+<p>Notice the repetitions of <em>a</em> and <em>b</em> are ignored. This property of <em>sets</em> is extremely useful for categorical data.</p>
+<p>Suppose you have a list of categorical data such as,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">some_list</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span> <span class="p">]</span>
+</pre></div>
+</div>
+<p>Suppose, further, you didn’t know how many values the categorical variable took on. In this particular case, it’s easy to see what the values are just by looking at the list (i.e. <code class="docutils literal notranslate"><span class="pre">A</span></code>, <code class="docutils literal notranslate"><span class="pre">B</span></code>, <code class="docutils literal notranslate"><span class="pre">C</span></code> and <code class="docutils literal notranslate"><span class="pre">D</span></code>), but in real world datasets, you could have <em>thousands of individual observations</em> to sort through to determine exactly how many values a categorical variable can assume.</p>
+<p>Rather than trying to determine what the <em>distinct</em> values are by hand, let <strong>Python</strong> do the hard work for you by converting the <em>list</em> into a <em>set</em>,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="p">(</span><span class="n">some_list</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>{‘A’, ‘B’, ‘C’, ‘D’}</p>
+</div></blockquote>
 </section>
 <section id="project">
 <span id="project-one-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
+<ol class="arabic simple">
+<li><p>Calculate the relative frequency of the following <strong>Makes</strong> of <em>Electric Vehicles</em>,</p></li>
+</ol>
+<ul class="simple">
+<li><p>TESLA</p></li>
+<li><p>CHEVROLET</p></li>
+<li><p>NISSAN</p></li>
+<li><p>TOYOTA</p></li>
+<li><p>VOLKWAGEN</p></li>
+</ul>
+<p>Save your commands and label them with comments. Out of these five values, what is the most frequent <strong>Make</strong> of <em>Electric Vehicle</em> in Washington State?</p>
+<ol class="arabic simple" start="2">
+<li><p>Using your answers to #1, construct a bar chart for these five values of the <strong>Make</strong> categorical variable.</p></li>
+<li><p>In this dataset, there are only two possible values for the <strong>Electric Vehicle Types</strong> variable.</p></li>
+</ol>
+<p>Furthermore, there are only three possible values for the <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> variable.</p>
+<p>Answer the following questions. Label any commands you use to solve the problem with comments. Write your answers in the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a> at the top of the script.</p>
+<ol class="loweralpha simple">
+<li><p>What percentage of <em>electric vehicles</em> in Washington State are both <em>Battery Electric Vehicles (BEV)</em> and “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> ?</p></li>
+<li><p>What percentage of <em>Battery Electric Vehicles (BEV)</em> are “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong>?</p></li>
+<li><p>What percentage of “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> vehicles are <em>Battery Electric Vehicles (BEV)</em>?</p></li>
+</ol>
+<ol class="arabic simple" start="4">
+<li><p>Using this information obtained in <em>#3</em> and any additional information required, create a stacked bar chart for the <em>conditional distribution</em> of the <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> given the <strong>Electric Vehicle Type</strong>.</p></li>
+</ol>
+<ol class="arabic simple" start="4">
+<li><p>What does your stacked bar chart from #3 tell you about the <em>association</em> between the <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> and the <strong>Electric Vehicle Type</strong>? Write your answer in your script’s <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a> and label the problem.</p></li>
+<li><p>What percentage of <em>electric vehicles</em> are</p></li>
+</ol>
 </section>
 <section id="datasets">
 <span id="project-one-dataset"></span><h2>Datasets<a class="headerlink" href="#datasets" title="Permalink to this headline">#</a></h2>
@@ -459,32 +569,6 @@ document.write(`
 <h3>Electric Vehicle Dataset<a class="headerlink" href="#electric-vehicle-dataset" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/38b9a9c95bf197232fea6cd4646dd2da/electric_vehicle_population_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
-<table class="table" id="id1">
-<caption><span class="caption-text">Electric Vehicles in Washington State</span><a class="headerlink" href="#id1" title="Permalink to this table">#</a></caption>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>Velocity ( km/s )</p></td>
-</tr>
-<tr class="row-even"><td><p>299850</p></td>
-</tr>
-<tr class="row-odd"><td><p>299740</p></td>
-</tr>
-<tr class="row-even"><td><p>299900</p></td>
-</tr>
-<tr class="row-odd"><td><p>300070</p></td>
-</tr>
-<tr class="row-even"><td><p>299930</p></td>
-</tr>
-<tr class="row-odd"><td><p>299850</p></td>
-</tr>
-<tr class="row-even"><td><p>299950</p></td>
-</tr>
-<tr class="row-odd"><td><p>299980</p></td>
-</tr>
-</tbody>
-</table>
 </section>
 </section>
 </section>
@@ -539,11 +623,20 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicles-in-washington-state">Electric Vehicles in Washington State</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicles-in-washington-state">Electric Vehicles in Washington State</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clean-alternative-fuel-vehicle-cafv-eligibility">Clean Alternative Fuel Vehicle (CAFV) Eligibility</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicle-type">Electric Vehicle Type</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bar-charts">Bar Charts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bar-charts">Bar Charts</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-frills">No Frills</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stacked">Stacked</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-operations">Set Operations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicle-dataset">Electric Vehicle Dataset</a></li>

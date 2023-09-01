@@ -392,8 +392,8 @@ document.write(`
 <section id="instructions">
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><p>Create a folder named <cite>LASTNAME_FIRSTNAME_project_zero</cite>, replacing <cite>LASTNAME</cite> and <cite>FIRSTNAME</cite> with your last name and first name, respectively.</p></li>
-<li><p>In the same folder, create a Python <em>py</em> script named <cite>project_zero.py</cite></p></li>
+<li><p>Create a folder named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_zero</span></code>, replacing <code class="docutils literal notranslate"><span class="pre">LASTNAME</span></code> and <code class="docutils literal notranslate"><span class="pre">FIRSTNAME</span></code> with your last name and first name, respectively.</p></li>
+<li><p>In the same folder, create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">project_zero.py</span></code></p></li>
 <li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Python docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
 <li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-zero-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the instructions of each problem.</p></li>
 <li><p>When you are done, zip your folder and all its contents in a file named <cite>LASTNAME_FIRSTNAME_project_zero.zip</cite></p></li>
@@ -425,7 +425,7 @@ document.write(`
 <li><p>Using <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-slicing"><span class="std std-ref">Slicing</span></a> and the <code class="docutils literal notranslate"><span class="pre">natural_numbers</span></code> list, create a list of all the <em>even</em> numbers between 1 and 100. Save the code in your script and label it with a comment <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">4a</span></code>.</p></li>
 <li><p>Using <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-slicing"><span class="std std-ref">Slicing</span></a> and the <code class="docutils literal notranslate"><span class="pre">natural</span> <span class="pre">numbers</span></code> list, create a list of all the <em>odd</em> numbers between 1 and 100. Save the code in your script and label it with a comment <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">4b</span></code>.</p></li>
 <li><p>Using <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a> and the <code class="docutils literal notranslate"><span class="pre">natural</span> <span class="pre">numbers</span></code> list, a create a list of the first 100 <em>squares</em>. Recall a sequence of <em>n</em> square numbers is given by <img class="math" src="../../_images/math/7f032b77ef06f2a295162b1306c394f0148df6df.png" alt="1, 4, 9, 16, ..., n^2"/>. Save the code in your script and lavel it with a comment <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">4c</span></code>.</p></li>
-<li><p>Using <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a> and the <code class="docutils literal notranslate"><span class="pre">natural</span> <span class="pre">numbers</span></code> list, a create a list that represents the first 100 values of the function <img class="math" src="../../_images/math/b887e607ee519905e9b3b8211ee6280ac7333765.png" alt="f(n) = \frac{1}{n}"/></p></li>
+<li><p>Using <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a> and the <code class="docutils literal notranslate"><span class="pre">natural</span> <span class="pre">numbers</span></code> list, a create a list that represents the first 100 values of the function <img class="math" src="../../_images/math/b887e607ee519905e9b3b8211ee6280ac7333765.png" alt="f(n) = \frac{1}{n}"/>, where <code class="docutils literal notranslate"><span class="pre">n</span></code> must be a natural number.</p></li>
 </ol>
 </div></blockquote>
 </li>
@@ -451,12 +451,7 @@ document.write(`
 <section id="imports">
 <span id="project-zero-imports"></span><h2>Imports<a class="headerlink" href="#imports" title="Permalink to this headline">#</a></h2>
 <p>To complete this lab, you will need to import the <code class="docutils literal notranslate"><span class="pre">math</span></code> and the <code class="docutils literal notranslate"><span class="pre">random</span></code> package. Add the following line to the <em>top</em> of your <em>py</em> script,</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
-<span class="kn">import</span> <span class="nn">random</span>
-</pre></div>
-</div>
-<p>Alternatively, you can import both packages in one fell swoop,</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span><span class="o">,</span> <span class="nn">random</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 </pre></div>
 </div>
 </section>

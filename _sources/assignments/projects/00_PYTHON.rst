@@ -13,8 +13,8 @@ In this lab, you will install **Python** and learn some of its basic functions. 
 Instructions
 ============
 
-1. Create a folder named `LASTNAME_FIRSTNAME_project_zero`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
-2. In the same folder, create a Python *py* script named `project_zero.py`
+1. Create a folder named ``LASTNAME_FIRSTNAME_project_zero``, replacing ``LASTNAME`` and ``FIRSTNAME`` with your last name and first name, respectively.
+2. In the same folder, create a Python ``.py`` script named ``project_zero.py``
 3. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Perform all exercises and answer all questions in the :ref:`project_zero_project` section. Label your script with comments as indicated in the instructions of each problem.
 5. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_zero.zip`
@@ -60,7 +60,7 @@ Project
 
     c. Using :ref:`python_list_comprehension` and the ``natural numbers`` list, a create a list of the first 100 *squares*. Recall a sequence of *n* square numbers is given by :math:`1, 4, 9, 16, ..., n^2`. Save the code in your script and lavel it with a comment ``# 4c``.
 
-    d. Using :ref:`python_list_comprehension` and the ``natural numbers`` list, a create a list that represents the first 100 values of the function :math:`f(n) = \frac{1}{n}`
+    d. Using :ref:`python_list_comprehension` and the ``natural numbers`` list, a create a list that represents the first 100 values of the function :math:`f(n) = \frac{1}{n}`, where ``n`` must be a natural number.
 
 5. Take the *Random Numbers* dataset from the :ref:`project_zero_dataset` section and add it to your *py* script. Perform the following operations. Be sure to add :ref:`python_comments` where appropriate,
 
@@ -87,14 +87,7 @@ To complete this lab, you will need to import the ``math`` and the ``random`` pa
 
 .. code:: python
 
-    import math 
     import random
-
-Alternatively, you can import both packages in one fell swoop,
-
-.. code:: python 
-
-    import math, random 
 
 .. _project_zero_dataset:
 
