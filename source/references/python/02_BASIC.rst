@@ -83,6 +83,9 @@ After you save the file, open up a *Linux* terminal and type,
 
 You will see the docstring content get printed to screen. This allows programmers, such as yourself, to quickly determine what a script is doing without executing the code. 
 
+.. warning:: 
+
+	This command won't work on your computer yet. I need to install some things. 
 .. important:: 
     
     When I grade your projects, I will be running the command just given to check your written answers. Ensure this command works on your computer before uploading any files or you will lose points!
