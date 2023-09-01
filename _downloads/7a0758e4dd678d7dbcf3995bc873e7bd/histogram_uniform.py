@@ -29,7 +29,7 @@ fig, axs = plt.subplots()
 data = ( 
     [ 'F' for _ in range(5) ] +  
     [ 'E' for _ in range(4) ] + 
-    [ 'D' for _ in range(3) ] + 
+    [ 'D' for _ in range(5) ] + 
     [ 'C' for _ in range(5) ] + 
     [ 'B' for _ in range(4) ] +
     [ 'A' for _ in range(4) ] 

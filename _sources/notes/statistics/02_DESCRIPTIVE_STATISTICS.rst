@@ -1004,7 +1004,7 @@ If we apply the :ref:`Sample Mean Formula <sample_mean_formula>` to **S_1**, we 
 
     \bar{x_2} = \frac{0 + 5 + 10}{3} = 5
 
-In bothcases, we wind up with the same sample mean. If we summarizing these two samples of data to audience and the only information we gave them was the sample mean, they might erroneously conclude the samples were the same.
+In both cases, we wind up with the same sample mean. If we summarizing these two samples of data to audience and the only information we gave them was the sample mean, they might erroneously conclude the samples were the same.
 
 However, refering to the actual observations that make up either sample, it is clear the samples are **not** the same.
 
@@ -1049,7 +1049,8 @@ Variance
 Motivation
 **********
 
-Let us consider a rather contrived example that is nevertheless instructive. Suppose **S** a sample of data.represents 
+Let us consider a rather contrived example that is nevertheless instructive. Suppose **S** a sample of data represents 
+
 TODO
 
 
@@ -1080,5 +1081,12 @@ TODO
 
 Chebyshev's Theorem
 ===================
+
+TODO
+
+.. _correlation: 
+
+Correlation
+===========
 
 TODO
