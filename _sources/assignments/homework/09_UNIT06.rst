@@ -4,4 +4,8 @@
 Unit 6 Homework 
 ===============
 
+.. note:: 
+    
+    From the *Starnes and Tabor* textbook.
+    
 TBA 

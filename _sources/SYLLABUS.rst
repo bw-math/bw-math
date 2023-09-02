@@ -75,7 +75,7 @@ AP Statistics is an introductory college-level statistics course that introduces
 
     In Unit Five, the student will take the idea of simulation and use it to demonstrate the Central Limit Theorem. In the process, the student will construct theoretical sampling distributions to see how the Central Limit Theorem arises naturally from random variation. After learning about the Central Limit Theorem, they will use it to calculate confidence intervals for sample means, sample proportions and sample variances.
 
-    In Unit 5 - 6, the student will apply statistical reasoning to determine whether sufficient evidence can be found in a sample of data to draw conclusions. They will set up null and alternate hypotheses, calculate test statistics and apply statistical inference. The student will examine datasets such as `Avocado Prices <https://www.kaggle.com/datasets/neuromusic/avocado-prices>`_, `Diamond Prices <https://www.kaggle.com/datasets/shivam2503/diamonds>`_, `Marvel Movies <https://www.kaggle.com/datasets/joebeachcapital/marvel-movies>`_, among many others.
+    In Units Six - Nine, the student will apply statistical reasoning to determine whether sufficient evidence can be found in a sample of data to draw conclusions. They will set up null and alternate hypotheses, calculate test statistics and apply statistical inference. The student will examine datasets such as `Avocado Prices <https://www.kaggle.com/datasets/neuromusic/avocado-prices>`_, `Diamond Prices <https://www.kaggle.com/datasets/shivam2503/diamonds>`_, `Marvel Movies <https://www.kaggle.com/datasets/joebeachcapital/marvel-movies>`_, among many others.
 
     In addition, if time permits, the following topics will be covered:
     
@@ -91,9 +91,9 @@ AP Statistics is an introductory college-level statistics course that introduces
     
     We will be using **Chapter 1: Set Theory** and **Chapter 7: Probability** from the `Contemporary Mathematics textbook <https://openstax.org/details/books/contemporary-mathematics>`_ when we cover **Unit 4** from the *Starnes & Tabor* textbook.
     
-    We will be using **Chapter 6: Normal Distribution** and **Chapter 7: The Central Limit Theorem** from the `Introductory Statistics textbook <https://openstax.org/books/introductory-statistics>`_ when we cover **Unit 5** from the *Starnes & Tabor* textbook.
+    We will be using **Chapter 6: Normal Distribution** and **Chapter 7: The Central Limit Theorem** from the `Introductory Statistics textbook <https://openstax.org/details/books/introductory-statistics>`_ when we cover **Unit 5** from the *Starnes & Tabor* textbook.
 
-    We will be using **Chapter 8: Confidence Intervals** from `Introductory Statistics <https://openstax.org/books/introductory-statistics>`_ when we cover **Unit 6** and **Unit 7** from the *Starnes & Tabor* textbook.
+    We will be using **Chapter 8: Confidence Intervals** from `Introductory Statistics <https://openstax.org/details/books/introductory-statistics>`_ when we cover **Unit 6** and **Unit 7** from the *Starnes & Tabor* textbook.
 
     The online :ref:`class_notes` will also serve as reference material for many of the subjects discussed in class.
 
@@ -160,7 +160,7 @@ AP Statistics is an introductory college-level statistics course that introduces
 
     Homework will come from a variety of sources:
     
-    - The student will complete exercises in the *Starnes* textbook.
+    - The student will complete exercises in the *Starnes and Tabor* textbook.
     - The student will complete exercises designed to assess learning outcomes.
     - The student will complete sample problems from `previous A.P. exams <https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions>`_
  

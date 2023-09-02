@@ -4,4 +4,11 @@
 Chapter 8 Homework (OpenStax Text) 
 ==================================
 
-TBA
+.. note:: 
+
+    From `OpenStax Introductory Statistics Book <https://openstax.org/details/books/introductory-statistics>`_
+    
+Confidence Intervals 
+====================
+
+TODO
