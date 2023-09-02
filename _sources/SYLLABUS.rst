@@ -61,6 +61,28 @@ AP Statistics is an introductory college-level statistics course that introduces
     - Unit 8 (Starnes and Tabor): Inference for Categorical Data: Chi-Square
     - Unit 9 (Starnes and Tabor): Inference for Quantitative Data: Slopes
 
+.. topic:: Project Overview 
+
+    Below, some of the projects that will be completed by the student are broken down by unit.
+
+    In Unit One, the student will examine categorical frequency distributions using the `Electric Vehicles Registered in Washington State <https://catalog.data.gov/dataset/electric-vehicle-population-data>`_ dataset. They will also examine distribution shapes with histograms using datasets such as `Old Faithful Eruption Times<https://www.stat.cmu.edu/~larry/all-of-statistics/=data/faithful.dat>`_, and `Length of Roman Emperor Reigns <https://historum.com/t/league-table-of-roman-emperors-by-length-of-reign.21418/>`_ 
+
+    In Unit Two, the student will study and visualize the correlation in datasets such `Celebrity Twitter Data<https://www.kaggle.com/datasets/ahmedshahriarsakib/top-1000-twitter-celebrity-tweets-embeddings>`_ and `Challenger Explosion <https://www.randomservices.org/random/data/Challenger.html>`_ datasets. They will use this correlation to find the line of best fit. They will use the linear regression equation to make predictions and learn to interpret the meaning of residuals.
+
+    In Unit Three, the student will learn how to detect and prevent bias using the `Vietnam Draft Data <https://www.randomservices.org/random/data/Draft.html>`_ dataset. 
+
+    In Unit Four, the student will create simulations of random variables using software to generate random numbers. 
+
+    In Unit Five, the student will take the idea of simulation and use it to demonstrate the Central Limit Theorem. In the process, the student will construct theoretical sampling distributions to see how the Central Limit Theorem arises naturally from random variation.
+
+    In Unit 5 - 6, the student will apply statistical reasoning to determine whether sufficient evidence can be found in a sample of data to draw conclusions. They will set up null and alternate hypotheses, calculate test statistics and apply statistical inference. The student will examine datasets such as `Avocado Prices <https://www.kaggle.com/datasets/neuromusic/avocado-prices>`_, `Diamond Prices <https://www.kaggle.com/datasets/shivam2503/diamonds>`_, `Marvel Movies <https://www.kaggle.com/datasets/joebeachcapital/marvel-movies>`_, among many others.
+
+    In addition, if time permits, the following topics will be covered:
+    
+    - the student will learn how to apply Monte Carlo Simulation to model financial outcomes
+    - the student will interact with machine learning programs to see how linear regression is applied in the real world.
+
+
 .. topic:: Text
 
     Reading will be assigned from `The Practice of Statistics (for the AP Exam) <https://www.bfwpub.com/high-school/us/product/The-Practice-of-Statistics/p/1319113338>`_ by Daren S. Starnes and Josh Tabor (ISBN: 9781319113339), 6 :sup:`th` edition. This textbook will distributed to students on the first day of class. It expected the students will bring the textbook to class every day. Most, but not all (see next paragraph), reading and homework be will assigned from this textbook.

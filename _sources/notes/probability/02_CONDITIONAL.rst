@@ -30,7 +30,7 @@ Applying the :ref:`classical_definition` to this *reduced* sample space, we get 
     
     P(A \mid B) = \frac{1}{3} \approx 0.333
 
-In other words, knowing the event a red ball was selected happened has *increased* the probability the ball that *has* been selected has the number 2. Taking a look at the original sample space, this should be intuitive. There are less red balls than green balls, so more probability is "concentrated" in the red number 2 ball when the green balls are removed from the sample space.  
+In other words, knowing the event a red ball was selected has *increased* the probability the ball has the number 2 written onit. Taking a look at the original sample space, this should be intuitive. There are less red balls than green balls, so more probability is "concentrated" in the red number 2 ball when the green balls are removed from the sample space.  
 
 In order to further understand what is going, return to the point in time when your friend has not yet revealed the color she has selected, i.e. before the information the ball is red has become available. Before you know the ball is red, the probability of it being red is given by,
 
