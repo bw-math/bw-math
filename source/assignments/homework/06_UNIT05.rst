@@ -4,4 +4,8 @@
 Unit 5 Homework 
 ===============
 
+.. note:: 
+    
+    From the *Starnes and Tabor* textbook.
+    
 TODO 

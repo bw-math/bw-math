@@ -8,7 +8,7 @@ Chapter 6 Homework (OpenStax Text)
 
     From `OpenStax Introductory Statistics Book <https://openstax.org/details/books/introductory-statistics>`_
     
-Central Limit Theorem
-=====================
+Normal Distribution 
+===================
 
 TODO

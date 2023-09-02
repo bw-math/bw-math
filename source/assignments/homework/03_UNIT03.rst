@@ -6,7 +6,7 @@ Unit 3 Homework
 
 .. note:: 
     
-    Starnes and Tabor textbook.
+    From the *Starnes and Tabor* textbook.
     
 Collecting Data 
 ===============
