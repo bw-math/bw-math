@@ -8,9 +8,6 @@ Some Point In The Distant Past
 
 This script will generate a stacked bar chart for a randomly generated set of bivariate data. The individual in the data is the object selected from a box of ducks and balls (Imagine that.) The individual may either be RED or BLUE, or the individual may either be a DUCK or BALL. 
 
-.. note:: 
-
-    This script is written to run in a `Continuous Integration Pipeline <https://about.gitlab.com/topics/ci-cd/>`_. It is used to render images for the `AP Stats Bishop Walsh website <https://bishopwalshmath.org>`_. In other words, it is running in an environment without a desktop. Read comments below for more information on running it on your computer. 
 """
 
 ##################################################################################
@@ -19,17 +16,7 @@ This script will generate a stacked bar chart for a randomly generated set of bi
 
 import matplotlib
 
-## NOTE: How-To: Run This Script On Your Computer
-#
-# To render the website, I have to use a "headless" backend to generate the images. 
-# If you want to run this script on your computer, comment out the following line 
-# with the "#" you see appended to each line of this comment:
-
-matplotlib.use('agg')
-
-# And uncomment this line: 
-
-# matplotlib.use('tkagg')
+matplotlib.use('tkagg')
 
 import matplotlib.pyplot as plt
 import random

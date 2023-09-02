@@ -7,10 +7,6 @@ Some Point In The Distant Past
 ******************************
 
 This script will generate a dot plot for a (hard-coded) distribution of quiz grades. It will then calculate the sample mean and sample median and plot them with red and green lines, respectively. We will alter the distribution of grades in class to see how it affects the sample mean and sample median.
-
-.. note:: 
-
-    This script is written to run in a `Continuous Integration Pipeline <https://about.gitlab.com/topics/ci-cd/>`_. It is used to render images for the `AP Stats Bishop Walsh website <https://bishopwalshmath.org>`_. In other words, it is running in an environment without a desktop. Read comments below for more information on running it on your computer. 
 """
 
 
@@ -21,17 +17,7 @@ This script will generate a dot plot for a (hard-coded) distribution of quiz gra
 
 import matplotlib
 
-## NOTE: How-To: Run This Script On Your Computer
-#
-# To render the website, I have to use a "headless" backend to generate the images. 
-# If you want to run this script on your computer, comment out the following line 
-# with the "#" you see appended to each line of this comment:
-
-# matplotlib.use('agg')
-
-# And uncomment this line: 
-
-# matplotlib.use('tkagg')
+matplotlib.use('tkagg')
 
 import matplotlib.pyplot as plt
 import math
@@ -43,9 +29,9 @@ import math
 # Create New Figures and Axes
 fig, axs = plt.subplots()
 
-# Generate Data
+# Generate Data for Dot Plot
 # NOTE: the y-variable in the ordered pair is being increased by 1 in every iteration
-#       of range(). This is so the dots can be stacked.
+#       of range(). This is so the dots can be stacked in a vertical line.
 data = \
 [ (3, i+1) for i in range(2) ] +\
 [ (4, i+1) for i in range(3) ] +\
@@ -67,13 +53,11 @@ axs.set_ylabel("Frequency")
 x_values = [bit[0] for bit in data]
 y_values = [bit[1] for bit in data]
 
-# Calculate sample mean
-# NOTE: Only the x-coordinate is required. The y-value is only used 
-#       to stack the dots.
-sample_mean = sum(x_values) / n
+# NOTE: Only the x-coordinate is required for sample statistic calculations. 
+#       The y-value is only used to stack the dots.
+# NOTE: The x-values are already sorted, so we don't need to sort them.
 
-# Find order statistics.
-# NOTE: x_values are already sorted.
+# Find order statistic for the median.
 order = 0.5 * ( n + 1 )
 order_floor = math.floor(order)
 order_ceiling = math.ceil(order)
@@ -84,13 +68,18 @@ percentile_delta = (upper_percentile - lower_percentile)
 # Calculate sample median
 sample_median = lower_percentile + percentile_delta * (order - order_floor)
 
+# Calculate sample mean
+sample_mean = sum(x_values) / n
+
 # Generate dotplot
 axs.scatter(x_values, y_values)
 
 # Plot the mean as a vertical line
 plt.plot([sample_mean, sample_mean], [0, 10], linestyle="--", color="red")
+
 # Plot sample median as a vertical line
 plt.plot([sample_median, sample_median], [0, 10], linestyle="--", color="green")
+
 # Label
 plt.text(sample_mean + 1, 5, f"Sample Mean = {sample_mean}", color="red")
 plt.text(sample_mean + 1, 4.5, f"Sample Median = {sample_median}", color="green")
