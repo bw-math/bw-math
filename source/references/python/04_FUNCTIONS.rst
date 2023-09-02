@@ -265,8 +265,8 @@ Ceil
 
     import math
 
-    ceiling_test_1 = 4.8
-    ceiling_test_2 = 32.1
+    ceiling_test_1 = math.ceil(4.8)
+    ceiling_test_2 = mat.ceil(32.1)
 
     print("ceil(4.8) = ", ceiling_test_1)
     print("ceil(32.1) = ", ceiling_test_2)
@@ -293,8 +293,8 @@ Floor
 
     import math
 
-    floor_test_1 = 4.8
-    floor_test_2 = 32.1
+    floor_test_1 = math.floor(4.8)
+    floor_test_2 = math.floor(32.1)
 
     print("floor(4.8) = ", floor_test_1)
     print("floor(32.1) = ", floor_test_2)
