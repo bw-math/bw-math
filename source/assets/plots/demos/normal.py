@@ -1,18 +1,24 @@
 import random 
+import matplotlib as mpl
 import matplotlib.pyplot as plot 
 
-def sum_dice(): 
-    roll = random.randint(1, 6) + random.randint(1, 6)
+mpl.use("tkagg")
+
+def sum_dice(dice): 
+    roll = sum([random.randint(1, 6) for _ in range(dice) ])
     return roll
 
-n = 10
+# number of experiments
+n = 30
+# number of rolls per experiment
+m = 5
 
-die_rolls = [ sum_dice() for _ in range(n) ]
+die_rolls = [ sum_dice(m) for _ in range(n) ]
 
 fig, axes = plot.subplots()
 
-axes.set_xlabel(f"Sum of {n} Die Rolls")
+axes.set_xlabel(f"Sum of {m} Die Rolls, {n} times")
 axes.set_ylabel("Frequency")
-axes.hist(die_rolls, 6)
+axes.hist(die_rolls)
 
 plot.show()
