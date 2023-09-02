@@ -25,7 +25,7 @@ import matplotlib
 # If you want to run this script on your computer, comment out the following line 
 # with the "#" you see appended to each line of this comment:
 
-# matplotlib.use('agg')
+matplotlib.use('agg')
 
 # And uncomment this line: 
 

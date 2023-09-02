@@ -15,17 +15,16 @@ In this lab, you will get familiar with the statistical plotting features of **P
 Instructions
 ============
 
-1. Create a folder named ``LASTNAME_FIRSTNAME_project_one``, replacing ``LASTNAME`` and ``FIRSTNAME`` with your last name and first name, respectively.
-2. Download the *csv* dataset in the :ref:`project_one_dataset` section and place it in the new folder you created in step 1.
-3. In the same folder, create a Python ``.py`` script named ``project_one.py``. 
-4. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
-5. Read the :ref:`project_one_background` section.
-6. Read the :ref:`project_one_loading_data` section.
-7. Read the :ref:`bar_chart` section. Download the script files in that section onto your ChromeBook. Read through and execute them on your computer. 
-8. Read the :ref:`project_one_set_operations` section. 
-9. Perform all exercises and answer all questions in the :ref:`project_one_project` section. Label your script with comments as indicated in the *Project* section.
-10. When you are done, zip your folder and all its contents into a file named ``LASTNAME_FIRSTNAME_project_one.zip``
-11. Upload the zip file here to the Google Classroom Project One Assignment.
+1. Download the *csv* dataset in the :ref:`project_one_dataset` section and place it in the ``Linux Files`` folder on your folder system (where you save your ``.py`` scripts.
+2. In the same folder, create a Python ``.py`` script named ``project_one.py``. 
+3. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
+4. Read the :ref:`project_one_background` section.
+5. Read the :ref:`project_one_loading_data` section.
+6. Read the :ref:`bar_chart` section. Download the script files in that section onto your ChromeBook. Read through and execute them on your computer. 
+7. Read the :ref:`project_one_set_operations` section. 
+8. Perform all exercises and answer all questions in the :ref:`project_one_project` section. Label your script with comments as indicated in the *Project* section.
+9.  When you are done, zip your folder and all its contents into a file named ``LASTNAME_FIRSTNAME_project_one.zip``
+10. Upload the zip file here to the Google Classroom Project One Assignment.
 
 .. _project_one_background:
 
