@@ -413,7 +413,7 @@ document.write(`
 </div>
 <section id="comments">
 <span id="python-comments"></span><h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">#</a></h2>
-<p><em>Comments</em> are code that doesn’t get interpretted by the <strong>Python</strong> shell. They allow you annotate your actual program with explanations geared towards an audience that is trying to understand what your program is doing. For example,</p>
+<p><em>Comments</em> are code that doesn’t get interpretted by the <strong>Python</strong> shell. They allow you to annotate your actual program with explanations geared towards an audience that is trying to understand what your program is doing. For example,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># this is a comment, it won&#39;t have any effect on this script</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this a command, it will be interpretted by Python&quot;</span><span class="p">)</span>
 </pre></div>
@@ -422,7 +422,7 @@ document.write(`
 <blockquote>
 <div><p>this is a command, it will be interpretted by Python</p>
 </div></blockquote>
-<p>Any line that starts with a hashtag <em>#</em> is skipped over by <strong>Python</strong> when it is executing your script.</p>
+<p>Any line that starts with a hashtag <code class="docutils literal notranslate"><span class="pre">#</span></code> is skipped over by <strong>Python</strong> when it is executing your script.</p>
 <p>Comments should provide clear and precise explanations for the code it is annotating.</p>
 <div class="topic">
 <p class="topic-title">Bad Comments</p>
@@ -437,8 +437,8 @@ document.write(`
 <p>The following is an example of a good comment. It explains what the code it is attached to is doing and allows the reader to gain insight in your program.</p>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># this will step through the numbers 1 through 100. Then it will either,</span>
-    <span class="c1"># add 1 to a list if the number is divisible by 5</span>
-    <span class="c1"># add 0 to a list if the number is not divisible by 5</span>
+<span class="c1"># add 1 to a list if the number is divisible by 5</span>
+<span class="c1"># add 0 to a list if the number is not divisible by 5</span>
 <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)]</span>
 </pre></div>
 </div>
@@ -495,7 +495,7 @@ document.write(`
 <section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">#</a></h2>
 <p>A variable is a stored piece of data. A variable has a <em>type</em> that is determined by the form of the data, called the <em>data type</em>.</p>
-<p>Every varible must be <em>assigned</em> a value in order to be used. A value assignment occurs when you type an expression of the form,</p>
+<p>Every variable must be <em>assigned</em> a value in order to be used. A value assignment occurs when you type an expression of the form,</p>
 <blockquote>
 <div><p>x = y</p>
 </div></blockquote>
@@ -693,6 +693,10 @@ document.write(`
 <blockquote>
 <div><p>&lt;expression A&gt; == &lt;expression B&gt;</p>
 </div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The angular brackets <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code> are <strong>not</strong> part of the code. They tell you where to place your code.</p>
+</div>
 <p>A simple example is given below,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">variable</span> <span class="o">=</span> <span class="s2">&quot;a sentence&quot;</span>
 <span class="n">true_test</span> <span class="o">=</span> <span class="n">variable</span> <span class="o">==</span> <span class="s2">&quot;a sentence&quot;</span>
@@ -718,6 +722,10 @@ document.write(`
 <blockquote>
 <div><p>list[&lt;start index : optional&gt; : &lt;end index : optional&gt;]</p>
 </div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The angular brackets <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code> are not part of the code. They represent the <em>grammatical</em> rules for <em>list slicing</em>.</p>
+</div>
 <p>Where <code class="docutils literal notranslate"><span class="pre">&lt;end</span> <span class="pre">index&gt;</span></code> is always <em>exclusive</em>, i.e. is <strong>not</strong> included in the slice. For example,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">]</span>
 <span class="n">sliced_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
@@ -782,6 +790,10 @@ document.write(`
 <blockquote>
 <div><p>list[ &lt;start_index : optional&gt; :: &lt;step : required&gt;]</p>
 </div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The angular brackets <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code> are not part of the code. They represent the <em>grammatical</em> rules for <em>list slicing</em>.</p>
+</div>
 <p>This command tells <strong>Python</strong> to look at the <code class="docutils literal notranslate"><span class="pre">&lt;start</span> <span class="pre">index&gt;</span></code> and then <em>iterate</em> through the list in steps of <code class="docutils literal notranslate"><span class="pre">&lt;step&gt;</span></code>, grabbing each element it lands on along way,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span> <span class="p">]</span>
 <span class="n">even_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
@@ -810,6 +822,10 @@ document.write(`
 <blockquote>
 <div><p>list = [ &lt;expr : required&gt; for &lt;element : required&gt; in &lt;list: requied&gt; ]</p>
 </div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The angular brackets <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code> are not part of the code. They represent the <em>grammatical</em> rules for <em>list comprehension</em>.</p>
+</div>
 <p>For example, the following code snippets uses the list <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5]</span></code> to generate a new list that squares each element of the first list and then prints it to screen,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="n">squared_data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">data</span> <span class="p">]</span>

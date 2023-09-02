@@ -15,7 +15,7 @@ Basics
 Comments
 ========
 
-*Comments* are code that doesn't get interpretted by the **Python** shell. They allow you annotate your actual program with explanations geared towards an audience that is trying to understand what your program is doing. For example,
+*Comments* are code that doesn't get interpretted by the **Python** shell. They allow you to annotate your actual program with explanations geared towards an audience that is trying to understand what your program is doing. For example,
 
 .. code:: python 
 
@@ -26,7 +26,7 @@ Output:
 
     this is a command, it will be interpretted by Python 
 
-Any line that starts with a hashtag *#* is skipped over by **Python** when it is executing your script. 
+Any line that starts with a hashtag ``#`` is skipped over by **Python** when it is executing your script. 
 
 Comments should provide clear and precise explanations for the code it is annotating.
 
@@ -46,8 +46,8 @@ Comments should provide clear and precise explanations for the code it is annota
 .. code:: python
     
     # this will step through the numbers 1 through 100. Then it will either,
-        # add 1 to a list if the number is divisible by 5
-        # add 0 to a list if the number is not divisible by 5
+    # add 1 to a list if the number is divisible by 5
+    # add 0 to a list if the number is not divisible by 5
     numbers = [1 if x % 5 == 0 else 0 for x in range(100)]
 
 When you create scripts for the projects in this class, be sure to add comments where appropriate, especially if your code is complicated. 
@@ -114,7 +114,7 @@ Variables
 
 A variable is a stored piece of data. A variable has a *type* that is determined by the form of the data, called the *data type*. 
 
-Every varible must be *assigned* a value in order to be used. A value assignment occurs when you type an expression of the form,
+Every variable must be *assigned* a value in order to be used. A value assignment occurs when you type an expression of the form,
 
     x = y
 
@@ -357,6 +357,10 @@ The *equivalence* operator is used to test the *truth-value* of expressions. The
 
     <expression A> == <expression B>
 
+.. note:: 
+
+    The angular brackets ``<>`` are **not** part of the code. They tell you where to place your code.
+
 A simple example is given below,
 
 .. code:: python
@@ -390,6 +394,10 @@ Slicing
 Slicing a list is **Python**'s way of breaking a list into a smaller sub-list (an especially useful technique in the domain of statistics!). The general syntax of slicing is given below,
 
     list[<start index : optional> : <end index : optional>]
+
+.. important:: 
+
+    The angular brackets ``<>`` are not part of the code. They represent the *grammatical* rules for *list slicing*. 
 
 Where ``<end index>`` is always *exclusive*, i.e. is **not** included in the slice. For example, 
 
@@ -469,6 +477,10 @@ There is another type of slicing that allows you extract elements from a list ac
 
     list[ <start_index : optional> :: <step : required>]
 
+.. important:: 
+
+    The angular brackets ``<>`` are not part of the code. They represent the *grammatical* rules for *list slicing*. 
+
 This command tells **Python** to look at the ``<start index>`` and then *iterate* through the list in steps of ``<step>``, grabbing each element it lands on along way,        
 
 .. code:: python
@@ -501,6 +513,10 @@ Comprehension
 *List comprehension* is a way of applying an algebraic expression to every element in a list. In other words, *list comprehension* allows us to generate a list of data according to a formula. For this reason, *list comprehension* is sometimes called *list generation*. The general syntax is given below, 
 
     list = [ <expr : required> for <element : required> in <list: requied> ]
+
+.. important:: 
+
+    The angular brackets ``<>`` are not part of the code. They represent the *grammatical* rules for *list comprehension*. 
 
 For example, the following code snippets uses the list ``[1, 2, 3, 4, 5]`` to generate a new list that squares each element of the first list and then prints it to screen,
 
