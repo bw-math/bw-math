@@ -9,8 +9,6 @@ Some Point In The Distant Past
 This script will generate a dot plot for a (hard-coded) distribution of quiz grades. It will then calculate the sample mean and sample median and plot them with red and green lines, respectively. We will alter the distribution of grades in class to see how it affects the sample mean and sample median.
 """
 
-
-
 ##################################################################################
 ###                           IMPORT LIBRARIES                                 ###
 ##################################################################################

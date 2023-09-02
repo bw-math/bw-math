@@ -10,7 +10,7 @@ This script will simulate rolling *m* dice *n* times. It will sum up the *m* die
 
 This script is meant to illustrate the motivating idea behind the Central Limit Theorem: independent, identically distributed random variables are summed together. Some of the random variable values will correspond to small values (i.e. rolling nothing but ones), while some values will correspond to large values (i.e. rolling nothing but sixes). On average, the variations will be "averaged" out of the distribution until the distribution becomes approximately normal.
 
-The more die we roll and the more times we roll them, the closer the resulting distribution becomes normal.
+The more die we roll and the more times we roll them, the closer the resulting distribution becomes to normal. The Central Limit Theorem states that as *m* and *n* go to infinity, **all** distributions become normal, no matter what the underlying population looks like.
 """
 
 import random 

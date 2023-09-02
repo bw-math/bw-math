@@ -1,6 +1,6 @@
 """
-Stacked Bar Chart
-=================
+Stacked Bar Chart (Conditional Distributions)
+=============================================
 Grant Moore
 -----------
 Some Point In The Distant Past
