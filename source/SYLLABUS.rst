@@ -87,7 +87,7 @@ AP Statistics is an introductory college-level statistics course that introduces
 
     Classwork will come a variety of sources:
 
-    - The student will complete exercises in the *Bluman* textbook.
+    - The student will complete exercises in the *Starnes and Tabor* textbook.
     - The student will complete exercises designed to assess learning outcomes.
     - The student will complete exercises from the :ref:`classwork` section. 
     - The student will complete sample problems from `previous A.P. exams <https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions>`_
@@ -100,7 +100,7 @@ AP Statistics is an introductory college-level statistics course that introduces
 
     Homework will come from a variety of sources:
     
-    - The student will complete exercises in the *Bluman* textbook.
+    - The student will complete exercises in the *Starnes* textbook.
     - The student will complete exercises designed to assess learning outcomes.
     - The student will complete sample problems from `previous A.P. exams <https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions>`_
  
