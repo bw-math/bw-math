@@ -1,4 +1,4 @@
-.. _prize_corner
+.. _prize_corner:
 
 Prize Corner
 ============
@@ -20,7 +20,7 @@ No Datasets Required
 - :download:`The Birthday Problem <assets/worksheets/Student_BirthdayProblem.pdf>`
 - :download:`Probability Density <assets/worksheets/Student_Density.pdf>`
 - :download:`Probabily Simulations <assets/worksheets/Student_ProbabilitySimulations.pdf>`
-- :download:`Toss Simulation <assets/worksheets/Student_TossSimulations.pdf>`
+- :download:`Toss Simulation <assets/worksheets/Student_TossSimulation.pdf>`
 
 Datasets Required
 *****************
