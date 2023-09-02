@@ -25,11 +25,11 @@ import matplotlib
 # If you want to run this script on your computer, comment out the following line 
 # with the "#" you see appended to each line of this comment:
 
-matplotlib.use('agg')
+# matplotlib.use('agg')
 
 # And uncomment this line: 
 
-# matplotlib.use('tkagg')
+matplotlib.use('tkagg')
 
 import matplotlib.pyplot as plt
 import random as rand
@@ -51,7 +51,6 @@ data = (
     [ 9*rand.random() + 80 for _ in range(3) ] + # generate some random B's, 80 - 89
     [ 10*rand.random() + 90 for _ in range(2) ] # generate some random A's, 90 - 100
 )
-
 
 # Label axes
 plt.suptitle("Histogram of Quiz Grades")

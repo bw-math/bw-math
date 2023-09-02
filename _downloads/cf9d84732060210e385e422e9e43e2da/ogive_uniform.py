@@ -51,6 +51,7 @@ data = (
     [ 10*rand.random() + 90 for _ in range(4) ] # generate some random A's, 90 - 100
 )
 
+
 # Label everything
 plt.suptitle("Histogram of Quiz Grades")
 plt.title(f"n = {len(data)}")
