@@ -185,6 +185,36 @@ The syntax for importing an additional package is simply,
 
     import <package-name>
 
+.. important:: 
+
+    The angular brackets ``<>`` are not part of the code. They represent the *grammatical rules* for importing. 
+
+When you import a package, it becomes available in that package's *namespace*. For example, if you import ``math``,
+
+.. code:: python 
+
+    import math
+
+The functions inside of the ``math`` package can be accessed through *dot notation*. The syntax for accessing a ``math`` function is given below,
+
+    math.<function-name>
+
+.. important:: 
+
+    The angular brackets ``<>`` are not part of the code. They represent the *grammatical rules* for accessing a function through *dot notation*.
+
+As an example,
+
+.. code:: python
+
+    import math
+
+    print(math.sqrt(36))
+
+Ouput:
+
+    6
+    
 We will be using two packages in particular from the *Standard Library* over and over again in this class, ``math`` and ``random``. 
 
 .. _python_math_package:
@@ -287,7 +317,7 @@ Floor
 
 .. important:: 
 
-    The *floor* function **always** rounds down, even in cases like ``2.7``, where ordinarily we would round down.
+    The *floor* function **always** rounds down, even in cases like ``2.7``, where ordinarily we would round up.
 
 .. code:: python
 
