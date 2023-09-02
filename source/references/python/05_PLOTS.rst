@@ -179,7 +179,7 @@ Stacked
 *******
 
 .. plot:: assets/plots/other/stacked_bar_chart.py
-    
+
 Dot Plot
 --------
 
@@ -207,6 +207,16 @@ Scatterplot
 -----------
 
 .. plot:: assets/plots/scatterplots/scatterplot_no_correlation.py
+
+Line Of Best Fit
+****************
+
+TODO 
+
+Error Bars
+**********
+
+TODO 
 
 Time Series
 -----------
