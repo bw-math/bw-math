@@ -565,6 +565,7 @@ A.P. Exam Practice
 12. **2019, Free Response, #3** 
     
 A medical researcher surveyed a large group of men and women about whether they take medicine as prescribed.
+
 The responses were categorized as never, sometimes, or always. The relative frequency of each category is
 shown in the table.
 
@@ -585,11 +586,9 @@ person is a woman?
 d. For the people surveyed, are the events of being a person whose response is never and being a woman
 independent? Justify your answer.
 
-e. Assume that, in a large population, the probability that a person will always take medicine as prescribed
-is 0.54. If 5 people are selected at random from the population, what is the probability that at least 4 of
-the people selected will always take medicine as prescribed? Support your answer.
+e. Assume that, in a large population, the probability that a person will always take medicine as prescribed is 0.54. If 5 people are selected at random from the population, what is the probability that at least 4 of the people selected will always take medicine as prescribed? Support your answer.
 
-1.  **2015, Multplie Choice, #32**
+13.  **2015, Multplie Choice, #32**
     
 A survey conducted by a national news network asked a random sample of U.S. adults whether they get most of their information about current events from newspapers, television, the internet, or some
 other source. The results, shown in the table below, are reported by age group of the respondents.
@@ -630,14 +629,11 @@ table below.
 
 Which of the following statements about a randomly chosen person from these 200 employees is true?
 
-    (A) If the person owns a car, he or she is more likely to live elsewhere in the city than to live in the downtown
-    area in the city.
+    (A) If the person owns a car, he or she is more likely to live elsewhere in the city than to live in the downtown area in the city.
 
-    (B) If the person does not own a car, he or she is more likely to live outside the city than to live in the city
-    (downtown area or elsewhere).
+    (B) If the person does not own a car, he or she is more likely to live outside the city than to live in the city (downtown area or elsewhere).
 
-    (C) The person is more likely to own a car if he or she lives in the city (downtown area or elsewhere) than if he
-    or she lives outside the city.
+    (C) The person is more likely to own a car if he or she lives in the city (downtown area or elsewhere) than if he or she lives outside the city.
 
     (D) The person is more likely to live in the downtown area in the city than elsewhere in the city.
 
