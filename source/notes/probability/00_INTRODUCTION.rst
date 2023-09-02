@@ -191,7 +191,7 @@ When one of the outcomes *ht* or *th* is observed, we say the event **HT** *occu
 It is important to keep in mind the distinction between *events* and *outcomes*. The differences are summarized below,
 
     1. *Outcomes* are elements. *Events* are sets.
-    2. *Outcomes* are observed. *Event* occur.
+    2. *Outcomes* are observed. *Events* occur.
 
 .. _compound_events:
 
