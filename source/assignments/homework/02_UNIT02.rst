@@ -4,6 +4,10 @@
 Unit 2 Homework 
 ===============
 
+.. note:: 
+    
+    Starnes and Tabor textbook.
+    
 Exploring Two-Variable Data
 ===========================
 
