@@ -87,7 +87,7 @@ AP Statistics is an introductory college-level statistics course that introduces
 
     Classwork will come a variety of sources:
 
-    - The student will complete exercises in the *Bluman* textbook.
+    - The student will complete exercises in the *Starnes and Tabor* textbook.
     - The student will complete exercises designed to assess learning outcomes.
     - The student will complete exercises from the :ref:`classwork` section. 
     - The student will complete sample problems from `previous A.P. exams <https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions>`_
@@ -100,7 +100,7 @@ AP Statistics is an introductory college-level statistics course that introduces
 
     Homework will come from a variety of sources:
     
-    - The student will complete exercises in the *Bluman* textbook.
+    - The student will complete exercises in the *Starnes* textbook.
     - The student will complete exercises designed to assess learning outcomes.
     - The student will complete sample problems from `previous A.P. exams <https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions>`_
  
@@ -163,15 +163,40 @@ AP Statistics is an introductory college-level statistics course that introduces
 
 .. topic:: Course Content
 
-    This course will provide the student will a toolset to design scientific experiments, test hypotheseses, collect data and then draw conclusions from said data using the principles of probability and statistics. 
+    This course will provide the student will a toolset to design scientific experiments, test hypotheses, collect data and then draw conclusions from said data using the principles of probability and statistics. 
     
-    Over the school year, the student will study concepts such as sampling distributions, random variables and expectations. They will become acquainted with the ideas of *chance* and *likelihood*. In doing so, they will come to understand how *uncertainty* affects decision-making. 
-     
-    In this class, the student will be taking a look at many datasets drawn from everyday life. Among the datasets the student will examine,
+    Over the school year, the student will study concepts such as sampling distributions, random variables and expectations. They will become acquainted with the ideas of *chance* and *likelihood*. In doing so, they will come to understand how *uncertainty* affects decision-making. They will see the effects of this *uncertainty* in the estimation of population parameters from sample data. 
+
+    The student will learn how to describe and see the effects of *uncertainty* in the shape and distribution of data. The student will become skilled in identifying features like skewness, outliers and *normality*. 
+
+    To accomplish this, the student will be taking a look at many datasets drawn from everyday life. Among the datasets the student will examine,
 
     - `The Challenger Space Shuttle Explosion <https://www.randomservices.org/random/data/Challenger.html>`_
     - `Electric Vehicles Registered in Washington State <https://catalog.data.gov/dataset/electric-vehicle-population-data>`_
-    - `Pigeon Racing Times <https://github.com/joanby/python-ml-course/blob/master/datasets/pigeon-race/pigeon-racing.csv>`_
     - `Vietnam Draft Data <https://www.randomservices.org/random/data/Draft.html>`_
 
-    The student will learn to perform analysis and draw conclusions from the data presented. The activities in the class will explore, among other things, the effects on bias on distribution shapes
+    The student will use a combination of technology to analyze these datasets. The activities in the class will explore, among other things,
+    
+    - The effects on bias on distribution shapes
+    - How to test hypotheses using control groups
+    - Identifying correlation in bivariate data and utilizing it to make predictions
+    - Simulating random outcomes to visualize the Law of Large Numbers
+    - Constructing sampling distributions
+
+.. topic:: Topic Outline 
+
+- Unit 1 (Starnes and Tabor): Exploring One-Variable Data 
+- Unit 2 (Starnes and Tabor): Exploring Two-Variable Data 
+- Unit 3 (Starnes and Tabor): Collecting Data
+- Chapter 1 (From Contemporary Mathematics Textbook): Set Theory
+- Chapter 7 (From Contemporary Mathematics Textbook): Probability
+- Unit 4: Probability, Random Variables, and Probability Distributions 
+- Chapter 6 (From Introductory Statistics Textbook): Normal Distribution
+- Chapter 7 (From Introductory Statistics Textbook): The Central Limit Theorem
+- Unit 5 (Starnes and Tabor): Sampling Distributions
+- Unit 6 (Starnes and Tabor): Inference for Categorical Data: Proportions 
+- Unit 7 (Starnes and Tabor): Inference for Quantitative Data: Means
+- Unit 8 (Starnes and Tabor): Inference for Categorical Data: Chi-Square
+- Unit 9 (Starnes and Tabor): Inference for Quantitative Data: Slopes
+
+
