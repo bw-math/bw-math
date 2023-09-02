@@ -41,6 +41,7 @@ Economic
 
 - `Avocado Prices <https://www.kaggle.com/datasets/neuromusic/avocado-prices>`_
 - `Billionaries <https://www.kaggle.com/datasets/surajjha101/forbes-billionaires-data-preprocessed>`_
+- `Electric Vehicles Registered in Washington State <https://catalog.data.gov/dataset/electric-vehicle-population-data>`_
 - `Diamonds <https://www.kaggle.com/datasets/shivam2503/diamonds>`_
 
 Cultural

@@ -352,7 +352,7 @@ Logical Operations
 Equivalence
 -----------
 
-The *equivalence* operator is used to test the *truth-value* of an alegraic expressions. The syntax for using it is,
+The *equivalence* operator is used to test the *truth-value* of expressions. The syntax for using it is,
 
 
     <expression A> == <expression B>

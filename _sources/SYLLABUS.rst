@@ -160,3 +160,18 @@ AP Statistics is an introductory college-level statistics course that introduces
     Final: Last Day of Class
         - Everything
         - Unit 9: Inferences for Quantitive Data - Slopes
+
+.. topic:: Course Content
+
+    This course will provide the student will a toolset to design scientific experiments, test hypotheseses, collect data and then draw conclusions from said data using the principles of probability and statistics. 
+    
+    Over the school year, the student will study concepts such as sampling distributions, random variables and expectations. They will become acquainted with the ideas of *chance* and *likelihood*. In doing so, they will come to understand how *uncertainty* affects decision-making. 
+     
+    In this class, the student will be taking a look at many datasets drawn from everyday life. Among the datasets the student will examine,
+
+    - `The Challenger Space Shuttle Explosion <https://www.randomservices.org/random/data/Challenger.html>`_
+    - `Electric Vehicles Registered in Washington State <https://catalog.data.gov/dataset/electric-vehicle-population-data>`_
+    - `Pigeon Racing Times <https://github.com/joanby/python-ml-course/blob/master/datasets/pigeon-race/pigeon-racing.csv>`_
+    - `Vietnam Draft Data <https://www.randomservices.org/random/data/Draft.html>`_
+
+    The student will learn to perform analysis and draw conclusions from the data presented. The activities in the class will explore, among other things, the effects on bias on distribution shapes
