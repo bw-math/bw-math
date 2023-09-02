@@ -380,6 +380,7 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#random-function">Random Function</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#random-integer-function">Random Integer Function</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#random-choice-function">Random Choice Function</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#shuffle">Shuffle</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-variate">Normal Variate</a></li>
 </ul>
 </li>
@@ -550,6 +551,32 @@ document.write(`
 <blockquote>
 <div><p>import &lt;package-name&gt;</p>
 </div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The angular brackets <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code> are not part of the code. They represent the <em>grammatical rules</em> for importing.</p>
+</div>
+<p>When you import a package, it becomes available in that package’s <em>namespace</em>. For example, if you import <code class="docutils literal notranslate"><span class="pre">math</span></code>,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+</pre></div>
+</div>
+<p>The functions inside of the <code class="docutils literal notranslate"><span class="pre">math</span></code> package are now available to be used through <em>dot notation</em>. The syntax for accessing a <code class="docutils literal notranslate"><span class="pre">math</span></code> function is given below,</p>
+<blockquote>
+<div><p>math.&lt;function-name&gt;</p>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The angular brackets <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code> are not part of the code. They represent the <em>grammatical rules</em> for accessing a function through <em>dot notation</em>.</p>
+</div>
+<p>As an example,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">36</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Ouput:</p>
+<blockquote>
+<div><p>6</p>
+</div></blockquote>
 <p>We will be using two packages in particular from the <em>Standard Library</em> over and over again in this class, <code class="docutils literal notranslate"><span class="pre">math</span></code> and <code class="docutils literal notranslate"><span class="pre">random</span></code>.</p>
 <section id="math">
 <span id="python-math-package"></span><h3>Math<a class="headerlink" href="#math" title="Permalink to this headline">#</a></h3>
@@ -611,7 +638,7 @@ document.write(`
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="n">ceiling_test_1</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">4.8</span><span class="p">)</span>
-<span class="n">ceiling_test_2</span> <span class="o">=</span> <span class="n">mat</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">32.1</span><span class="p">)</span>
+<span class="n">ceiling_test_2</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">32.1</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ceil(4.8) = &quot;</span><span class="p">,</span> <span class="n">ceiling_test_1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ceil(32.1) = &quot;</span><span class="p">,</span> <span class="n">ceiling_test_2</span><span class="p">)</span>
@@ -631,7 +658,7 @@ document.write(`
 </dl>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>The <em>floor</em> function <strong>always</strong> rounds down, even in cases like <code class="docutils literal notranslate"><span class="pre">2.7</span></code>, where ordinarily we would round down.</p>
+<p>The <em>floor</em> function <strong>always</strong> rounds down, even in cases like <code class="docutils literal notranslate"><span class="pre">2.7</span></code>, where ordinarily we would round up.</p>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
@@ -664,7 +691,11 @@ document.write(`
 </div>
 <section id="random-function">
 <span id="python-random-function"></span><h4>Random Function<a class="headerlink" href="#random-function" title="Permalink to this headline">#</a></h4>
-<p>The simplest function in the <code class="docutils literal notranslate"><span class="pre">random</span></code> package is the <code class="docutils literal notranslate"><span class="pre">random()</span></code>. The <code class="docutils literal notranslate"><span class="pre">random()</span></code> has no arguments; it will always return a number between <em>0</em> and <em>1</em>, excluding the endpoitns. The following code illustrates its use,</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">random()</span></code></dt><dd><p>The <em>random</em> function returns a random number between 0 and 1.</p>
+</dd>
+</dl>
+<p>The simplest function in the <code class="docutils literal notranslate"><span class="pre">random</span></code> package is the <code class="docutils literal notranslate"><span class="pre">random()</span></code>. The <code class="docutils literal notranslate"><span class="pre">random()</span></code> has no arguments; it will always return a number between <em>0</em> and <em>1</em>, excluding the endpoints. The following code illustrates its use,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
@@ -682,11 +713,11 @@ document.write(`
 </section>
 <section id="random-integer-function">
 <span id="python-randint-function"></span><h4>Random Integer Function<a class="headerlink" href="#random-integer-function" title="Permalink to this headline">#</a></h4>
-<p>The <a class="reference internal" href="#python-random-function"><span class="std std-ref">Random Function</span></a> will suffice for most purposes. Occassionally, we will need integer-valued random numbers instead of real-valued random numbers. To that end, we will need to use the <code class="docutils literal notranslate"><span class="pre">randint()</span></code> function. The syntax for the <code class="docutils literal notranslate"><span class="pre">randint()</span></code> is given below,</p>
-<blockquote>
-<div><p>randint(&lt;start : required&gt;, &lt;stop : required&gt;)</p>
-</div></blockquote>
-<p><code class="docutils literal notranslate"><span class="pre">randint</span></code> returns a random integer between <code class="docutils literal notranslate"><span class="pre">&lt;start&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;stop&gt;</span></code>, including both endpoints.</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">randint(&lt;start:</span> <span class="pre">required,</span> <span class="pre">stop</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p><code class="docutils literal notranslate"><span class="pre">randint</span></code> returns a random integer between <code class="docutils literal notranslate"><span class="pre">&lt;start&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;stop&gt;</span></code>, including both endpoints.</p>
+</dd>
+</dl>
+<p>The <a class="reference internal" href="#python-random-function"><span class="std std-ref">Random Function</span></a> will suffice for most purposes. Occassionally, we will need integer-valued random numbers instead of real-valued random numbers. To that end, we will need to use the <code class="docutils literal notranslate"><span class="pre">randint()</span></code> function.</p>
 <p>The following code illustrates its use,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
@@ -700,10 +731,11 @@ document.write(`
 </section>
 <section id="random-choice-function">
 <span id="python-choice-function"></span><h4>Random Choice Function<a class="headerlink" href="#random-choice-function" title="Permalink to this headline">#</a></h4>
-<p>Another function we will need from the <code class="docutils literal notranslate"><span class="pre">random</span></code> package is the <code class="docutils literal notranslate"><span class="pre">choice()</span></code> method. The previous two functions we looked were for generating <em>quantitative data</em>. The <code class="docutils literal notranslate"><span class="pre">choice()</span></code> function, on the other hand, will generate <em>categorical data</em>. The syntax for <code class="docutils literal notranslate"><span class="pre">choice</span></code> is given below,</p>
-<blockquote>
-<div><p>choice(&lt;list of options&gt;)</p>
-</div></blockquote>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">choice(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>choice</em> function returns a random selection for a list.</p>
+</dd>
+</dl>
+<p>Another function we will need from the <code class="docutils literal notranslate"><span class="pre">random</span></code> package is the <code class="docutils literal notranslate"><span class="pre">choice()</span></code> function. The previous two functions we looked were for generating <em>quantitative data</em>. The <code class="docutils literal notranslate"><span class="pre">choice()</span></code> function, on the other hand, will generate <em>categorical data</em>.</p>
 <p>The following code illustrates its use,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 
@@ -716,6 +748,26 @@ document.write(`
 <p>Output:</p>
 <blockquote>
 <div><p>this is a random choice from the list [‘Augustus’, ‘Tiberius’, ‘Hadrian’]: Tiberius</p>
+</div></blockquote>
+</section>
+<section id="shuffle">
+<h4>Shuffle<a class="headerlink" href="#shuffle" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">shuffle(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>shuffle</em> functions randomly orders a list into a new list.</p>
+</dd>
+</dl>
+<p>The <code class="docutils literal notranslate"><span class="pre">shuffle()</span></code> function is the equivalent of shuffling a deck of cards, if the deck of cards were a <a class="reference internal" href="02_BASIC.html#python-lists"><span class="std std-ref">list</span></a>.</p>
+<p>The following code illustrates it use,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span> <span class="p">]</span>
+<span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output</p>
+<blockquote>
+<div><p>[‘c’, ‘b’, ‘d’, ‘a’]</p>
 </div></blockquote>
 </section>
 <section id="normal-variate">
@@ -832,6 +884,7 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#random-function">Random Function</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#random-integer-function">Random Integer Function</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#random-choice-function">Random Choice Function</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#shuffle">Shuffle</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-variate">Normal Variate</a></li>
 </ul>
 </li>
