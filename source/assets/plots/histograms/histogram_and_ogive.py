@@ -68,8 +68,8 @@ axs[1].set_ylabel("Cumulative Frequency")
 
 # Generate and output
 ## Plot histogram
-axs[0].hist(data, bins=6, range=(0,6), align='left', color="lightblue", ec="red")
+axs[0].hist(data, bins=6, align='left', color="lightblue", ec="red")
 ## Plot ogive
-axs[1].hist(data, bins=6, range=(0,6), align='left', color="lightblue", ec="red", cumulative=True)
+axs[1].hist(data, bins=6, align='left', color="lightblue", ec="red", cumulative=True)
 
 plt.show()
