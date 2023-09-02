@@ -359,15 +359,15 @@ The *equivalence* operator is used to test the *truth-value* of expressions. The
 
 .. note:: 
 
-    The angular brackets ``<>`` are **not** part of the code. They tell you where to place your code.
+    The angular brackets ``<>`` are **not** part of the code. They tell you where to place your code. In other words, the ``<>`` represent the *grammatical rules* for equivalence.
 
 A simple example is given below,
 
 .. code:: python
 
     variable = "a sentence"
-    true_test = variable == "a sentence"
-    false_test = variable == 4.5
+    true_test = (variable == "a sentence")
+    false_test = (variable == 4.5)
     print(true_test)
     print(false_test)
 

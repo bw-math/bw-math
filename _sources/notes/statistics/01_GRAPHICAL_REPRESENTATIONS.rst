@@ -778,20 +778,10 @@ Distribution Shapes
 
 TODO 
 
-Uniform
-*******
-
-.. plot:: assets/plots/boxplots/boxplot_uniform.py
-
 Normal
 ******
 
 .. plot:: assets/plots/boxplots/boxplot_normal.py
-
-Bimodal
-*******
-
-.. plot:: assets/plots/boxplots/boxplot_bimodal.py
 
 Skewed
 ******

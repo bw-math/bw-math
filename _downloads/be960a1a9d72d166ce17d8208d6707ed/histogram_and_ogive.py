@@ -1,6 +1,6 @@
 """
-Stacked Bar Chart
-=================
+Histogram and Ogive
+===================
 Grant Moore
 -----------
 Some Point In The Distant Past
@@ -32,6 +32,7 @@ matplotlib.use('agg')
 # matplotlib.use('tkagg')
 
 import matplotlib.pyplot as plt
+import random as rand
 
 ##################################################################################
 ###                                SCRIPT                                      ###
@@ -43,15 +44,17 @@ import matplotlib.pyplot as plt
     #       1 to graph the ogive
 fig, axs = plt.subplots(1,2)
 
-# Generate data
+# Generate Data
+# NOTE: You can add the contents of lists together with "+"
 data = ( 
-    [ 'F' for _ in range(2) ] +  
-    [ 'E' for _ in range(4) ] + 
-    [ 'D' for _ in range(5) ] + 
-    [ 'C' for _ in range(5) ] + 
-    [ 'B' for _ in range(3) ] +
-    [ 'A' for _ in range(2) ] 
+    [ 50*rand.random() for _ in range(2) ] + # generate some random F's, 0 - 49
+    [ 9*rand.random() + 50 for _ in range(4) ] + # generate some random E's, 50 - 59 
+    [ 9*rand.random() + 60 for _ in range(5) ] + # generate some random D's, 60 -69
+    [ 9*rand.random() + 70 for _ in range(5) ] + # generate some random C's, 70- 79
+    [ 9*rand.random() + 80 for _ in range(3) ] + # generate some random B's, 80 - 89
+    [ 10*rand.random() + 90 for _ in range(2) ] # generate some random A's, 90 - 100
 )
+
 
 # Label everything
 plt.suptitle("Histogram and Ogive of Quiz Scores")

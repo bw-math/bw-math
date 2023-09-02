@@ -695,12 +695,12 @@ document.write(`
 </div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The angular brackets <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code> are <strong>not</strong> part of the code. They tell you where to place your code.</p>
+<p>The angular brackets <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code> are <strong>not</strong> part of the code. They tell you where to place your code. In other words, the <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code> represent the <em>grammatical rules</em> for equivalence.</p>
 </div>
 <p>A simple example is given below,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">variable</span> <span class="o">=</span> <span class="s2">&quot;a sentence&quot;</span>
-<span class="n">true_test</span> <span class="o">=</span> <span class="n">variable</span> <span class="o">==</span> <span class="s2">&quot;a sentence&quot;</span>
-<span class="n">false_test</span> <span class="o">=</span> <span class="n">variable</span> <span class="o">==</span> <span class="mf">4.5</span>
+<span class="n">true_test</span> <span class="o">=</span> <span class="p">(</span><span class="n">variable</span> <span class="o">==</span> <span class="s2">&quot;a sentence&quot;</span><span class="p">)</span>
+<span class="n">false_test</span> <span class="o">=</span> <span class="p">(</span><span class="n">variable</span> <span class="o">==</span> <span class="mf">4.5</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">true_test</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">false_test</span><span class="p">)</span>
 </pre></div>

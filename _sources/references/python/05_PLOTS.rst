@@ -170,8 +170,16 @@ Boxplot
 Bar Chart
 ---------
 
+No Frills
+*********
+
 .. plot:: assets/plots/other/bar_chart.py
 
+Stacked
+*******
+
+.. plot:: assets/plots/other/stacked_bar_chart.py
+    
 Dot Plot
 --------
 
@@ -180,7 +188,15 @@ Dot Plot
 Histogram
 ---------
 
+Normal
+******
+
 .. plot:: assets/plots/histograms/histogram_normal.py
+
+Relative
+********
+
+.. plot:: assets/plots/histograms/histogram_relative.py
 
 Ogives
 ------
