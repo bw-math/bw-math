@@ -8,6 +8,7 @@ Bishop Walsh A.P Statistics
 
    SPLASH
    SYLLABUS
+   PRIZES
    notes/index
    assignments/index
    references/index
