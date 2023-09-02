@@ -23,6 +23,66 @@ AP Statistics is an introductory college-level statistics course that introduces
 
     Each week, a project will be assigned that involves creating and interpretting statistical graphs, performing analysis on real-life data sets, simulating outcomes using random numbers or other applications. Usually, projects will be covered in detail on Friday classes; the student will have time in class on Friday to begin the project and then it will be due the following Monday. Projects will be uploaded to the Google Classroom Assignments tab.
 
+.. topic:: Course Content
+
+    This course will provide the student with a toolset to design scientific experiments, test hypotheses, collect data and then draw conclusions from said data using the principles of probability and statistics. 
+    
+    Over the school year, the student will study concepts such as sampling distributions, random variables and expectations. They will become acquainted with the ideas of *chance* and *likelihood*. In doing so, they will come to understand how *uncertainty* affects decision-making. They will see the effects of *uncertainty* in the estimation of population parameters from sample data. 
+
+    The student will learn how to describe and see the effects of *uncertainty* in the shape and distribution of data. The student will become skilled in identifying features like skewness, outliers and *normality*. 
+
+    To accomplish this, the student will be taking a look at many datasets drawn from everyday life. Among the datasets the student will examine,
+
+    - `The Challenger Space Shuttle Explosion <https://www.randomservices.org/random/data/Challenger.html>`_
+    - `Electric Vehicles Registered in Washington State <https://catalog.data.gov/dataset/electric-vehicle-population-data>`_
+    - `Vietnam Draft Data <https://www.randomservices.org/random/data/Draft.html>`_
+
+    The student will use a combination of technology to analyze these datasets. The activities in the class will explore, among other things,
+    
+    - The effects on bias on distribution shapes
+    - Constructing sampling distributions
+    - How to test hypotheses using control groups
+    - Identifying correlation in bivariate data and utilizing it to make predictions
+    - Simulating random outcomes to visualize the Law of Large Numbers
+
+.. topic:: Topic Outline 
+
+    - Unit 1 (Starnes and Tabor): Exploring One-Variable Data 
+    - Unit 2 (Starnes and Tabor): Exploring Two-Variable Data 
+    - Unit 3 (Starnes and Tabor): Collecting Data
+    - Chapter 1 (From Contemporary Mathematics Textbook): Set Theory
+    - Chapter 7 (From Contemporary Mathematics Textbook): Probability
+    - Unit 4: Probability, Random Variables, and Probability Distributions 
+    - Chapter 6 (From Introductory Statistics Textbook): Normal Distribution
+    - Chapter 7 (From Introductory Statistics Textbook): The Central Limit Theorem
+    - Unit 5 (Starnes and Tabor): Sampling Distributions
+    - Unit 6 (Starnes and Tabor): Inference for Categorical Data: Proportions 
+    - Unit 7 (Starnes and Tabor): Inference for Quantitative Data: Means
+    - Unit 8 (Starnes and Tabor): Inference for Categorical Data: Chi-Square
+    - Unit 9 (Starnes and Tabor): Inference for Quantitative Data: Slopes
+
+.. topic:: Project Overview 
+
+    Below, some of the projects that will be completed by the student are broken down by unit.
+
+    In Unit One, the student will examine categorical frequency distributions using the `Electric Vehicles Registered in Washington State <https://catalog.data.gov/dataset/electric-vehicle-population-data>`_ dataset. They will also examine distribution shapes with histograms using datasets such as `Old Faithful Eruption Times <https://www.stat.cmu.edu/~larry/all-of-statistics/=data/faithful.dat>`_, and the `Length of Roman Emperor Reigns <https://historum.com/t/league-table-of-roman-emperors-by-length-of-reign.21418/>`_ 
+
+    In Unit Two, the student will study and visualize the correlation in datasets such `Celebrity Twitter Data <https://www.kaggle.com/datasets/ahmedshahriarsakib/top-1000-twitter-celebrity-tweets-embeddings>`_ and the `Challenger Shuttle Explosion <https://www.randomservices.org/random/data/Challenger.html>`_. They will use this correlation to find the line of best fit and then use the linear regression equation to make predictions. In the process, they will learn to interpret the meaning of residuals and to assess whether the distribution of residuals provides evidence of a model fit.
+
+    In Unit Three, the student will learn how to detect and prevent bias using the `Vietnam Draft Data <https://www.randomservices.org/random/data/Draft.html>`_ dataset. 
+
+    In Unit Four, the student will create simulations of random variables using software to generate random numbers. 
+
+    In Unit Five, the student will take the idea of simulation and use it to demonstrate the Central Limit Theorem. In the process, the student will construct theoretical sampling distributions to see how the Central Limit Theorem arises naturally from random variation. After learning about the Central Limit Theorem, they will use it to calculate confidence intervals for sample means, sample proportions and sample variances.
+
+    In Units Six - Nine, the student will apply statistical reasoning to determine whether sufficient evidence can be found in a sample of data to draw conclusions. They will set up null and alternate hypotheses, calculate test statistics and apply statistical inference. The student will examine datasets such as `Avocado Prices <https://www.kaggle.com/datasets/neuromusic/avocado-prices>`_, `Diamond Prices <https://www.kaggle.com/datasets/shivam2503/diamonds>`_, `Marvel Movies <https://www.kaggle.com/datasets/joebeachcapital/marvel-movies>`_, among many others.
+
+    In addition, if time permits, the following topics will be covered:
+    
+    - the student will learn how to apply Monte Carlo Simulation to model financial outcomes
+    - the student will interact with machine learning programs to see how linear regression is applied in the real world.
+
+
 .. topic:: Text
 
     Reading will be assigned from `The Practice of Statistics (for the AP Exam) <https://www.bfwpub.com/high-school/us/product/The-Practice-of-Statistics/p/1319113338>`_ by Daren S. Starnes and Josh Tabor (ISBN: 9781319113339), 6 :sup:`th` edition. This textbook will distributed to students on the first day of class. It expected the students will bring the textbook to class every day. Most, but not all (see next paragraph), reading and homework be will assigned from this textbook.
@@ -31,9 +91,9 @@ AP Statistics is an introductory college-level statistics course that introduces
     
     We will be using **Chapter 1: Set Theory** and **Chapter 7: Probability** from the `Contemporary Mathematics textbook <https://openstax.org/details/books/contemporary-mathematics>`_ when we cover **Unit 4** from the *Starnes & Tabor* textbook.
     
-    We will be using **Chapter 6: Normal Distribution** and **Chapter 7: The Central Limit Theorem** from the `Introductory Statistics textbook <https://openstax.org/books/introductory-statistics>`_ when we cover **Unit 5** from the *Starnes & Tabor* textbook.
+    We will be using **Chapter 6: Normal Distribution** and **Chapter 7: The Central Limit Theorem** from the `Introductory Statistics textbook <https://openstax.org/details/books/introductory-statistics>`_ when we cover **Unit 5** from the *Starnes & Tabor* textbook.
 
-    We will be using **Chapter 8: Confidence Intervals** from `Introductory Statistics <https://openstax.org/books/introductory-statistics>`_ when we cover **Unit 6** and **Unit 7** from the *Starnes & Tabor* textbook.
+    We will be using **Chapter 8: Confidence Intervals** from `Introductory Statistics <https://openstax.org/details/books/introductory-statistics>`_ when we cover **Unit 6** and **Unit 7** from the *Starnes & Tabor* textbook.
 
     The online :ref:`class_notes` will also serve as reference material for many of the subjects discussed in class.
 
@@ -87,7 +147,7 @@ AP Statistics is an introductory college-level statistics course that introduces
 
     Classwork will come a variety of sources:
 
-    - The student will complete exercises in the *Bluman* textbook.
+    - The student will complete exercises in the *Starnes and Tabor* textbook.
     - The student will complete exercises designed to assess learning outcomes.
     - The student will complete exercises from the :ref:`classwork` section. 
     - The student will complete sample problems from `previous A.P. exams <https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions>`_
@@ -100,7 +160,7 @@ AP Statistics is an introductory college-level statistics course that introduces
 
     Homework will come from a variety of sources:
     
-    - The student will complete exercises in the *Bluman* textbook.
+    - The student will complete exercises in the *Starnes and Tabor* textbook.
     - The student will complete exercises designed to assess learning outcomes.
     - The student will complete sample problems from `previous A.P. exams <https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions>`_
  
@@ -160,3 +220,4 @@ AP Statistics is an introductory college-level statistics course that introduces
     Final: Last Day of Class
         - Everything
         - Unit 9: Inferences for Quantitive Data - Slopes
+

@@ -1,3 +1,18 @@
+"""
+Random History
+==============
+Grant Moore
+-----------
+Some Point In The Distant Past
+******************************
+
+This script will generate a histogram for a sample of quiz grades.
+
+.. note:: 
+
+    This script is written to run in a `Continuous Integration Pipeline <https://about.gitlab.com/topics/ci-cd/>`_. It is used to render images for the `AP Stats Bishop Walsh website <https://bishopwalshmath.org>`_. In other words, it is running in an environment without a desktop. Read comments below for more information on running it on your computer. 
+"""
+
 ##################################################################################
 ###                           IMPORT LIBRARIES                                 ###
 ##################################################################################
@@ -27,22 +42,17 @@ import random as rand
 fig, axs = plt.subplots()
 
 # Generate data
-#   NOTE: Range*(Random Number Between 0 and 1)
-#       -> data set of samples between 0 and Range
-#   In other words, the following command generates
-#       a list of length 100 where each element is 
-#       a number between 0 and 50
+#   NOTE: Range*(Random Number Between 0 and 1) will give us a dataset of samples 
+#   between 0 and Range. In other words, the following command generates a list of 
+#   length 100 where each element is a number between 0 and 50
 data = [ 50*rand.random() for _ in range(100 ) ]
-bins = [ 10, 20, 30, 40, 50 ]
-bin_labels = [ "0 - 10", "11 - 20", "21 - 30", "31 - 40", "41 - 50"]
 
 # Label everything appropriately
-plt.suptitle("Histogram")
+plt.suptitle("Histogram of Random Numbers Between 0 and 50")
 plt.title(f"n = {len(data)}")
 axs.set_xlabel("Classes")
 axs.set_ylabel("Frequency")
-plt.xticks(ticks=bins, labels=bin_labels)
 
 # Generate and output
-axs.hist(data, bins=bins, align='left', color="lightblue", ec="red")
+axs.hist(data, bins=6, align='mid', color="lightblue", ec="red")
 plt.show()

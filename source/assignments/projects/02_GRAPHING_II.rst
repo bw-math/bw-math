@@ -15,14 +15,13 @@ In this lab, you will get *even more* familiar with the statistical plotting fea
 Instructions
 ============
 
-1. Create a folder named `LASTNAME_FIRSTNAME_project_three`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
-2. Download **both** *csv* datasets in the :ref:`project_three_dataset` section and place it in the new folder you created in step 1.
-3. In the same folder, create a Python *py* script named `project_three.py`. 
-4. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
-5. Read the :ref:`project_three_background` section and the :ref:`project_three_loading_data` section.
-6. Perform all exercises and answer all questions in the :ref:`project_three_project` section. Label your script with comments as indicated in the *Project* section.
-7. When you are done, zip your folder and all its contents into a file named `LASTNAME_FIRSTNAME_project_three.zip`
-8. Upload the zip file here: TODO
+1. Download **both** *csv* datasets in the :ref:`project_three_dataset` section and place them in the *Linux Files* folder on your file system.
+2. In the same folder, create a Python *py* script named `project_three.py`. 
+3. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
+4. Read the :ref:`project_three_background` section and the :ref:`project_three_loading_data` section.
+5. Perform all exercises and answer all questions in the :ref:`project_three_project` section. Label your script with comments as indicated in the *Project* section.
+6. When you are done, zip your folder and all its contents into a file named ``LASTNAME_FIRSTNAME_project_three.zip``
+7. Upload the zip file here: TODO
 
 .. tip:: 
     
@@ -45,21 +44,17 @@ Background
 The Michelson Velocity of Light Experiment 
 ------------------------------------------
 
-The `Michelson Velocity of Light Experiment<https://www.gutenberg.org/files/11753/11753-h/11753-h.htm>` conducted in 1887 was a landmark experiment for several reasons.
+The `Michelson Velocity of Light Experiment<https://www.gutenberg.org/files/11753/11753-h/11753-h.htm>` conducted in 1887 was the first time `Albert A. Michelson <https://en.wikipedia.org/wiki/Albert_A._Michelson>`_ successfully measured the speed of light. He would go on to do so several more times, eventually teaming up with `Edward Morley <https://en.wikipedia.org/wiki/Edward_W._Morley>`_. Together, using the principles Michelson first developed in 1887, Michelson and Morley would demonstrate the speed of light was the same regardless of the state of motion of the emitting body. This would go on to have profound effects for physics in the early twentieth century. It would lead `Albert Einstein <https://en.wikipedia.org/wiki/Albert_Einstein>`_ to propose the `theory of relativity <https://en.wikipedia.org/wiki/Theory_of_relativity>`_, one of the most significant intellectual developments in history of humanity. 
 
-TODO
-
-remained one of most accurate estimations of the speed of light until modern times. Using a series of mirrors depicted below,
+Michelson's 1887 experimental results remained one of most accurate estimations of the speed of light until modern times. Using a series of mirrors depicted below,
 
 .. image:: ../../assets/imgs/context/michelson_experiment.png
     :width: 60%
     :align: center
 
-He was able to measure the fractional time difference in lights of ray arriving 
+He was able to divert light rays from an emitting body along separate paths and measure the fractional time difference it took for the rays to reach the same location.
 
-TODO
-
-While the theoretical details of the experiment are interesting in their own right (see link above for further detail!), for this lab, we will take the data as given and analyze it from a statistical perspective.
+In this lab, we will be using his dataset to perform some statistical analysis. 
 
 
 The Cavendish Density of the Earth Experiment
@@ -112,7 +107,7 @@ Velocity of Light
 
     c. What is the most frequent class?
 
-    d. What type of shape does this distribtion have? Is this expected? Why or why not?
+    d. What type of shape does this distribtion have? Is this expected? Why or why not? 
 
 3. Construct a boxplot for this data set. Using the boxplot, answer the following questions in the body of your docstring.
 
@@ -122,13 +117,15 @@ Velocity of Light
 
     c. Estimate the median of this data set.
 
-    d. Estimate the range of this data set. 
+    d. Estimate the range of this data set.
+
+    e. Based on the boxplot, do you detect any possible outliers?  
 
 4. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your docstring.
 
     a. What is the sample mean of the dataset?
 
-    b. What is the percent error of this estimate with respect to the actual value.
+    b. What is the percent error of this estimate with respect to the actual value?
 
 Density of the Earth 
 --------------------
@@ -155,7 +152,9 @@ Density of the Earth
 
     d. Estimate the range of this data set. 
 
-4. The actual value of the speed of light, according to the best estimates we have today, is :math:`5.514 \frac{g}{cm^3}`. Use this information to answer the following questions in the body of your docstring.
+    e. Based on the boxplot, do you detect any possible outliers?  
+
+4. The actual denity of the Earth, according to the best estimates we have today, is :math:`5.514 \frac{g}{cm^3}`. Use this information to answer the following questions in the body of your docstring.
 
     a. What is the sample mean of the dataset?
 

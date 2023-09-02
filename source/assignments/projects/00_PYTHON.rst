@@ -13,12 +13,11 @@ In this lab, you will install **Python** and learn some of its basic functions. 
 Instructions
 ============
 
-1. Create a folder named ``LASTNAME_FIRSTNAME_project_zero``, replacing ``LASTNAME`` and ``FIRSTNAME`` with your last name and first name, respectively.
-2. In the same folder, create a Python ``.py`` script named ``project_zero.py``
-3. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
-4. Perform all exercises and answer all questions in the :ref:`project_zero_project` section. Label your script with comments as indicated in the instructions of each problem.
-5. When you are done, zip your folder and all its contents in a file named ``LASTNAME_FIRSTNAME_project_zero.zip``
-6. Upload the zip file to the Google Classroom Project Zero assignment.
+1. Create a Python ``.py`` script named ``project_zero.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it.
+2. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
+3. Perform all exercises and answer all questions in the :ref:`project_zero_project` section. Label your script with comments as indicated in the instructions of each problem.
+4. When you are done, zip your folder and all its contents in a file named ``LASTNAME_FIRSTNAME_project_zero.zip``
+5. Upload the zip file to the Google Classroom Project Zero assignment.
 
 .. _project_zero_background:
 
@@ -66,7 +65,7 @@ Project
 
 a. Using :ref:`python_list_slicing`, break this list into two even lists of 500 random numbers each. Save the code in your script and label it with a comment ``# 5a``.
 
-b. Using :ref:`python_builtin_functions`, calculate the sum of each of the lists you found in *part a*. Save the code in your script and label it with a comment ``# 5b``. Before executing your code, answer the following questions and include each in a comment.
+b. Using :ref:`python_builtin_functions`, calculate the sum of each of the lists you found in *part a*. Save the code in your script and label it with a comment ``# 5b``. Before executing your code, answer the following questions and include each answer in the :ref:`docstring <python_docstring>`.
 
     i. How do you expect the sums to be compare? Will they be equal or unequal? Will be they be close together or far apart? Why? Justify your answer.
 
@@ -83,7 +82,7 @@ b. Using :ref:`python_builtin_functions`, calculate the sum of each of the lists
 Imports
 =======
 
-To complete this lab, you will need to import the ``math`` and the ``random`` package. Add the following line to the *top* of your *py* script,
+To complete this lab, you will need to import the ``random`` package. Add the following line to the *top* of your *py* script **underneath** your :ref:`docstring <python_docstring>`,
 
 .. code:: python
 

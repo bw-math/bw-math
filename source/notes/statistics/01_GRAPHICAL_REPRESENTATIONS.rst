@@ -220,7 +220,7 @@ In this case, :math:`n(S)=10`. To find :math:`n(E \cap T)`, we count up all the 
 
 .. math::
 	
-	(\text{yes}_{t}, math:`\text{yes}_{e}`) \in E \cap T
+	(\text{yes}_{t}, \text{yes}_{e}) \in E \cap T
 	
 And similarly for the rest of the events.
 	
@@ -331,17 +331,17 @@ If you are given a sample of *n* data points :math:`S = \{ x_1, x_2, ... , x_n \
 
 5. Sort the data set into classes and tally up the frequency of each class.
 
-+--------------------------------+-------------------------------+
-| Class Limits                   | f(x)                          |
-+--------------------------------+-------------------------------+
-| :math:`LL_1 \leq x < UL_1`     | :math:`f(LL_1 \leq x < UL_1)` |
-+--------------------------------+-------------------------------+
-| :math:`LL_2 \leq x < UL_2`     | :math:`f(LL_2 \leq x < UL_2)` |
-+--------------------------------+-------------------------------+
-| ...                            | ...                           |
-+--------------------------------+-------------------------------+
-| :math:`f(LL_n \leq x <= UL_n)` | :math:`f(LL_n) \leq x < UL_n` |
-+--------------------------------+-------------------------------+
++-------------------------------+-------------------------------+
+| Class Limits                  | f(x)                          |
++-------------------------------+-------------------------------+
+| :math:`LL_1 \leq x < UL_1`    | :math:`f(LL_1 \leq x < UL_1)` |
++-------------------------------+-------------------------------+
+| :math:`LL_2 \leq x < UL_2`    | :math:`f(LL_2 \leq x < UL_2)` |
++-------------------------------+-------------------------------+
+| ...                           | ...                           |
++-------------------------------+-------------------------------+
+| :math:`LL_n \leq x \leq UL_n` | :math:`f(LL_n \leq x < UL_n)` |
++-------------------------------+-------------------------------+
 
 .. important:: 
     
@@ -425,19 +425,19 @@ The limits of the fifth class are given by,
 Using this limits, we can construct the table,
 
 
-+---------------------------+----------------+
-| Class Limits              | :math:`f(x_i)` |
-+---------------------------+----------------+
-| :math:`5.3 <= x_i < 5.5`  | 3              |
-+---------------------------+----------------+
-| :math:`5.5 <= x < 5.7`    | 2              |
-+---------------------------+----------------+
-| :math:`5.7 <= x < 5.9`    | 4              |
-+---------------------------+----------------+
-| :math:`5.9 <= x < 6.1`    | 2              |
-+---------------------------+----------------+
-| :math:`6.1 <= x <= 6.3`   | 1              | 
-+---------------------------+----------------+
++-----------------------------+----------------+
+| Class Limits                | :math:`f(x_i)` |
++-----------------------------+----------------+
+| :math:`5.3 \leq x_i < 5.5`  | 3              |
++-----------------------------+----------------+
+| :math:`5.5 \leq x < 5.7`    | 2              |
++-----------------------------+----------------+
+| :math:`5.7 \leq x < 5.9`    | 4              |
++-----------------------------+----------------+
+| :math:`5.9 \leq x < 6.1`    | 2              |
++-----------------------------+----------------+
+| :math:`6.1 \leq x \leq 6.3` | 1              |
++-----------------------------+----------------+
 
 .. tip:: 
 
@@ -615,6 +615,7 @@ Example
 
 .. image:: ../../assets/imgs/context/old_faithful.jpg
     :align: center
+    :height: 25
 
 The first column of this dataset represents the *length of an eruption in minutes* while the second column represents the *waiting time in minutes* until the next eruption.
 
@@ -778,20 +779,10 @@ Distribution Shapes
 
 TODO 
 
-Uniform
-*******
-
-.. plot:: assets/plots/boxplots/boxplot_uniform.py
-
 Normal
 ******
 
 .. plot:: assets/plots/boxplots/boxplot_normal.py
-
-Bimodal
-*******
-
-.. plot:: assets/plots/boxplots/boxplot_bimodal.py
 
 Skewed
 ******

@@ -6,6 +6,27 @@ Point Estimation
 
 A sample of data is characterized numerically by *point estimates* of *sample statistics*.
 
+Motivation
+==========
+
+In the first few sections, we discussed the idea of *drawing a sample* and using it to make inferences about the *population* . Now we begin the study of how to apply these ideas quantitatively and make them more exact.
+
+We want to know the *parameters* of a population, but we do not have the entire population on hand to determine the values of these *parameters*. So, we *sample* the population and then calculate *point estimates*. *Point estimates* are *sample statistics* that represent our best guess of the *true* value of population *parameters.
+
+For example, in this section, we will introduce the idea of the *sample mean*, :math:`\bar{x}`. The *sample mean* is a *sample statistic*; It is an *estimate*. This in contrast to the *population mean*, :math:`\mu`, the *true* value of :math:`\bar{x}` we would get if we had access to entire population.
+
+In general, as we move through this section, keep in mind the following table,
+
++----------------------+------------------+
+| Population Parameter | Sample Statistic |
++----------------------+------------------+
+| :math:`\mu`          | :math:`\bar{x}`  |
++----------------------+------------------+
+| :math:`\sigma`       | :math:`s`        |
++----------------------+------------------+
+
+The left hand column of this table represents the *true* value of a quantity that describes the population *distribution*. The right hand column represents the *estimated* value of this quantity as derived from the sample *distribution*.
+
 Definitions
 ===========
 
@@ -52,7 +73,7 @@ Relative Frequency
 ------------------
 
 Symbolic Expression
-    :math:`r(x_i)`
+    :math:`p(x_i)`
 
 Definition
     The *percentage* of times a particular observation :math:`x_i` occurs in a sample of data.
@@ -61,7 +82,9 @@ Note by definition, in a sample of *n* observations,
 
 .. math::
 
-    r(x_i) = \frac{f(x_i)}{n}
+    p(x_i) = \frac{f(x_i)}{n}
+
+.. _cumulative_frequency:
 
 Cumulative Frequency 
 --------------------
@@ -76,13 +99,50 @@ Note the relation between *frequency* and *cumulative frequency*,
 
 .. math::
 
-    F(x_i) = \sum^{x_i}_{x_j = x_1} f(x_j)
+    F(x_i) = \sum^{i}_{j = 1} f(x_j)
+
+.. important:: 
+
+    Take note of the indices on the summation. The sum starts at the first observation and goes all the way up to the :math:`i^{\text{th}}` observation.
 
 Also note by definition,
 
 .. math::
 
-    F(max(S)) = n
+    F( max(S) ) = n
+
+.. _cumulative_relative_frequency:
+
+Cumulative Relative Frequency 
+-----------------------------
+
+Symbolic Expression 
+    :math:`P(x_i)`
+
+Definition
+    The percentage of times an observation *less than of equal to* :math:`x_i` occurs in a sample of data.
+
+Note the relation between *relative frequency* and *cumulative relative frequency*,
+
+.. math::
+
+    P(x_i) = \sum^{i}_{j = 1} p(x_j)
+
+.. important:: 
+
+    Take note of the indices on the summation. The sum starts at the first observation and goes all the way up to the :math:`i^{\text{th}}` observation.
+
+Another important relation to remember is the relative between *cumulative frequency* and *cumulative relative frequency*,
+
+.. math:: 
+    
+    F(x_i) = \frac{P(x_i)}{n}
+
+Also note by definition,
+
+.. math::
+
+    P( max(S) ) = 1
 
 .. _minimum:
 
@@ -122,7 +182,7 @@ Outlier
 Definition
     An unusual observation.
 
-What we mean by "*unusual*" depends on the data. GEnerally speaking, we mean something that roughly approximates, "*a data that is far outside what is expected*".
+What we mean by "*unusual*" depends on the data. Generally speaking, we mean something that roughly approximates, "*a data that is far outside what is expected*".
 
 If we are measuring :ref:`numerical data <data_characteristic>`, this might mean an observation that is much, much greater than or much, much less than the majority of the data. 
 
@@ -195,7 +255,7 @@ If the sample of data is specified as a set or list of data as in the following,
 Then the sample arithmetic mean can be calculated with the formula,
 
 .. math::
-    \bar{x} = \frac{\sum_{i}^n x_i}{n}
+    \bar{x} = \frac{\sum_{1}^n x_i}{n}
 
 This is known as the *sample mean formula* for the arithmetic mean.
 
@@ -953,6 +1013,8 @@ These results are summarized with the following rule of thumb,
     1. If median is much greater than mean, then the data are skewed to the left. In this case, we say the distribution has a "*left hand tail*".
     2. If the median is much less than the mean, then the data are skewed to right. In this case, we say the distribution has a "*right hand tail*".
    
+.. _z_score::
+
 Z Score
 -------
 
@@ -970,7 +1032,17 @@ Definition
     .. math::
         z = \frac{x_i - \bar{x}}{s}
 
+The *z-score* in this formula would be a *sample statistic*. In other words, it is computed from a limited set of data, rather than an entire population. We may also talk about the *z-score* for an individual in the *population*. Recall, when a sample is drawn, we talk about the point estimates :math:`\bar{x}` and :math:`s`. When the entire population is under consider, these quantities are no longer *statistics*, but the *parameters* :math:`\mu` and :math:`\sigma`.
+
+In the case of an individual selected from an entire population, the *z-score* formula would become,
+
+.. math:: 
+
+    z = \frac{x_i - \mu}{\sigma}
+
 TODO 
+
+
 
 .. _measures_of_variation:
 

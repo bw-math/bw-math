@@ -185,6 +185,36 @@ The syntax for importing an additional package is simply,
 
     import <package-name>
 
+.. important:: 
+
+    The angular brackets ``<>`` are not part of the code. They represent the *grammatical rules* for importing. 
+
+When you import a package, it becomes available in that package's *namespace*. For example, if you import ``math``,
+
+.. code:: python 
+
+    import math
+
+The functions inside of the ``math`` package are now available to be used through *dot notation*. The syntax for accessing a ``math`` function is given below,
+
+    math.<function-name>
+
+.. important:: 
+
+    The angular brackets ``<>`` are not part of the code. They represent the *grammatical rules* for accessing a function through *dot notation*.
+
+As an example,
+
+.. code:: python
+
+    import math
+
+    print(math.sqrt(36))
+
+Ouput:
+
+    6
+
 We will be using two packages in particular from the *Standard Library* over and over again in this class, ``math`` and ``random``. 
 
 .. _python_math_package:
@@ -265,8 +295,8 @@ Ceil
 
     import math
 
-    ceiling_test_1 = 4.8
-    ceiling_test_2 = 32.1
+    ceiling_test_1 = math.ceil(4.8)
+    ceiling_test_2 = math.ceil(32.1)
 
     print("ceil(4.8) = ", ceiling_test_1)
     print("ceil(32.1) = ", ceiling_test_2)
@@ -287,14 +317,14 @@ Floor
 
 .. important:: 
 
-    The *floor* function **always** rounds down, even in cases like ``2.7``, where ordinarily we would round down.
+    The *floor* function **always** rounds down, even in cases like ``2.7``, where ordinarily we would round up.
 
 .. code:: python
 
     import math
 
-    floor_test_1 = 4.8
-    floor_test_2 = 32.1
+    floor_test_1 = math.floor(4.8)
+    floor_test_2 = math.floor(32.1)
 
     print("floor(4.8) = ", floor_test_1)
     print("floor(32.1) = ", floor_test_2)
@@ -329,7 +359,10 @@ The ``random`` package is very appropriately named. It is used to generate rando
 Random Function
 ***************
 
-The simplest function in the ``random`` package is the ``random()``. The ``random()`` has no arguments; it will always return a number between *0* and *1*, excluding the endpoitns. The following code illustrates its use,
+``random()``
+    The *random* function returns a random number between 0 and 1.
+
+The simplest function in the ``random`` package is the ``random()``. The ``random()`` has no arguments; it will always return a number between *0* and *1*, excluding the endpoints. The following code illustrates its use,
 
 .. code:: python
 
@@ -351,11 +384,10 @@ Output:
 Random Integer Function
 ***********************
 
-The :ref:`python_random_function` will suffice for most purposes. Occassionally, we will need integer-valued random numbers instead of real-valued random numbers. To that end, we will need to use the ``randint()`` function. The syntax for the ``randint()`` is given below,
+``randint(<start: required, stop : required>)``
+    ``randint`` returns a random integer between ``<start>`` and ``<stop>``, including both endpoints.
 
-    randint(<start : required>, <stop : required>)
-
-``randint`` returns a random integer between ``<start>`` and ``<stop>``, including both endpoints.
+The :ref:`python_random_function` will suffice for most purposes. Occassionally, we will need integer-valued random numbers instead of real-valued random numbers. To that end, we will need to use the ``randint()`` function.
 
 The following code illustrates its use, 
 
@@ -374,9 +406,10 @@ Output:
 Random Choice Function
 **********************
 
-Another function we will need from the ``random`` package is the ``choice()`` method. The previous two functions we looked were for generating *quantitative data*. The ``choice()`` function, on the other hand, will generate *categorical data*. The syntax for ``choice`` is given below,
+``choice(<list : required>)``
+    The *choice* function returns a random selection for a list.
 
-    choice(<list of options>)
+Another function we will need from the ``random`` package is the ``choice()`` function. The previous two functions we looked were for generating *quantitative data*. The ``choice()`` function, on the other hand, will generate *categorical data*.
 
 The following code illustrates its use,
 
@@ -393,19 +426,52 @@ Output:
 
     this is a random choice from the list ['Augustus', 'Tiberius', 'Hadrian']: Tiberius
 
+Shuffle
+*******
+
+``shuffle(<list : required>)``
+    The *shuffle* functions randomly orders a list into a new list.
+
+The ``shuffle()`` function is the equivalent of shuffling a deck of cards, if the deck of cards were a :ref:`list <python_lists>`. 
+
+The following code illustrates it use,
+
+.. code:: python 
+
+    import random
+    
+    data = [ "a", "b", "c", "d" ]
+    random.shuffle(data)
+    print(data)
+
+Output
+
+    ['c', 'b', 'd', 'a']
+
 .. _python_normal_variate_function:
 
 Normal Variate
 **************
 
-TODO 
+``normalvariate(<mean : required>, <standard deviation : required>)``
+    The *normal variate* functions simulates a random draw from the :ref:`normal_distribution`.
+
+.. note:: 
+
+    We will not need this function until Unit 3 or 4. 
+
+This function is *extremely important* in this class. It will return a random draw from a normally distribution population. We can use it to simulate all sorts of outcomes and samples. By solving the :ref:`z_score` for the individual :math:`x`,
+
+.. math:: 
+
+    x = \mu + \sigma \cdot z 
 
 .. _python_creating_functions:
 
 Creating Functions
 ==================
 
-Occassionally, the *Standard Library* plus third-party packages will not be enough to do what we need to do. In those cases, we have no other options but to define our own function.
+Occassionally, the *Standard Library* will not be enough to do what we need to do. In those cases, we have no other options but to define our own function.
 
 Function Signatures
 -------------------
@@ -433,7 +499,7 @@ Putting all four of these pieces together, let's create a simple function.
 
 Take note of the *indentation*. **Python** is very particular about *indentation* because that is how it groups functions together. A *function* definition must be indented once (with ``TAB``). All lines within the function must be the same *indentation* level. If you do not follow this requirement, you will get errors. Errors are bad. So, always pay your indentation.
 
-We can call this function after defined it by addressing it by its name and passing in an argument. Create a new :ref:`IDLE Notebook <python_idle>`, copy in the following function and try executing it with ``F5``,
+We can call this function after defining it by addressing it by its name (i.e., typing its name) and passing in an argument. Create a new :ref:`IDLE Notebook <python_idle>`, copy in the following function and try executing it with ``F5``,
 
 .. code:: python
 
