@@ -69,7 +69,7 @@ axs[1].set_xlabel("Score")
 axs[1].set_ylabel("Observation")
 
 ## Plot Histogram
-axs[0].hist(data, bins=6, align='left', color="lightblue", ec="red")
+axs[0].hist(data, bins=6, align='mid', color="lightblue", ec="red")
 
 ## Plot Boxplot
 axs[1].boxplot(data)

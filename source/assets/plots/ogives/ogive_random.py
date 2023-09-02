@@ -57,5 +57,5 @@ axs.set_ylabel("Frequency")
 plt.xticks(ticks=bins, labels=bin_labels)
 
 # Generate and output
-axs.hist(data, bins=bins, align='left', color="lightblue", ec="red", cumulative=True)
+axs.hist(data, bins=bins, align='mid', color="lightblue", ec="red", cumulative=True)
 plt.show()
