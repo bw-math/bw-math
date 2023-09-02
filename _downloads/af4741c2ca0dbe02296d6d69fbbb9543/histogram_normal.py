@@ -25,11 +25,11 @@ import matplotlib
 # If you want to run this script on your computer, comment out the following line 
 # with the "#" you see appended to each line of this comment:
 
-# matplotlib.use('agg')
+matplotlib.use('agg')
 
 # And uncomment this line: 
 
-matplotlib.use('tkagg')
+# matplotlib.use('tkagg')
 
 import matplotlib.pyplot as plt
 import random as rand
@@ -44,7 +44,7 @@ fig, axs = plt.subplots()
 # Generate Data
 # NOTE: You can add the contents of lists together with "+"
 data = ( 
-    [ 50*rand.random() for _ in range(2) ] + # generate some random F's, 0 - 49
+    [ 9*rand.random() + 40 for _ in range(2) ] + # generate some random F's, 0 - 49
     [ 9*rand.random() + 50 for _ in range(4) ] + # generate some random E's, 50 - 59 
     [ 9*rand.random() + 60 for _ in range(5) ] + # generate some random D's, 60 -69
     [ 9*rand.random() + 70 for _ in range(5) ] + # generate some random C's, 70- 79

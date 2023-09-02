@@ -46,16 +46,13 @@ fig, axs = plt.subplots()
 #   between 0 and Range. In other words, the following command generates a list of 
 #   length 100 where each element is a number between 0 and 50
 data = [ 50*rand.random() for _ in range(100 ) ]
-bins = [ 0, 10, 20, 30, 40, 50 ]
-bin_labels = [ "0 - 10", "11 - 20", "21 - 30", "31 - 40", "41 - 50"]
 
 # Label everything appropriately
 plt.suptitle("Histogram of Random Numbers Between 0 and 50")
 plt.title(f"n = {len(data)}")
 axs.set_xlabel("Classes")
 axs.set_ylabel("Frequency")
-plt.xticks(ticks=bins, labels=bin_labels)
 
 # Generate and output
-axs.hist(data, bins=bins, align='left', color="lightblue", ec="red")
+axs.hist(data, bins=6, align='mid', color="lightblue", ec="red")
 plt.show()

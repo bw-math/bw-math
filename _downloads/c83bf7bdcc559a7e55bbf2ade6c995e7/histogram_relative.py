@@ -47,8 +47,6 @@ fig, axs = plt.subplots()
 #   between 0 and Range. In other words, the following command generates a list of 
 #   length 100 where each element is a number between 0 and 50
 data = [ 50*rand.random() for _ in range(100 ) ]
-bins = [ 0, 10, 20, 30, 40, 50 ]
-bin_labels = [ "0 - 10", "11 - 20", "21 - 30", "31 - 40", "41 - 50"]
 
 # NOTE: for the hist() function to plot percentages on the y-axis, each 
 #       observation must be assigned a weight that represents what "proportion
@@ -61,8 +59,7 @@ plt.title(f"n = {len(data)}")
 axs.set_xlabel("Classes")
 axs.set_ylabel("Frequency")
 axs.yaxis.set_major_formatter(PercentFormatter(1))
-plt.xticks(ticks=bins, labels=bin_labels)
 
 # Generate and output
-axs.hist(data, bins=bins, weights=weights, align='left', color="lightblue", ec="red")
+axs.hist(data, bins=6, weights=weights, align='mid', color="lightblue", ec="red")
 plt.show()
