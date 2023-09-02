@@ -7,11 +7,11 @@ Files
 CSV Files
 =========
 
-The following examples will load in a *CSV* file named ``example.csv``.
+The following example will load in a ``.csv`` file named ``example.csv``.
 
 .. important:: 
     
-    This example will only work if the script *py* file is saved in the same directory as the data *CSV* file.
+    This example will only work if the script ``.py`` file is saved in the same directory as the data ``.csv`` file.
 
 .. code-block:: python 
 
