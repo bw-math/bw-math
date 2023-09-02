@@ -239,3 +239,14 @@ Below you will find the first formal definition of *probability* in the history 
     6. Events are independent when the happening of any one of them does neither increase nor abate the probability of the rest. 
 
 At this point, we leave aside the historical narrative and take up the subject itself. 
+
+
+References
+==========
+
+- `An essay towards solving a problem in the doctrine of chances, Thomas Bayes <https://royalsocietypublishing.org/doi/10.1098/rstl.1763.0053>`
+- `Critique of Pure Reason, Immanuel Kant <https://www.gutenberg.org/files/4280/4280-h/4280-h.htm>`_ 
+- `Meditations on First Philosophy, Rene Descartes <http://www.classicallibrary.org/descartes/meditations/4.htm>`_
+- `Posterior Analytics, Aristotle <http://classics.mit.edu/Aristotle/posterior.1.i.html>`_
+- `Prior Analytics, Aristotle <https://classics.mit.edu/Aristotle/prior.1.i.html>`_
+- `Theatetus, Plato <http://classics.mit.edu/Plato/theatu.html>`_

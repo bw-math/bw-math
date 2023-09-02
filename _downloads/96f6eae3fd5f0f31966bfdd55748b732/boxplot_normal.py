@@ -61,16 +61,20 @@ bins = [50, 60, 70, 80, 90, 100]
 # Label the graph appropriately
 plt.suptitle("Histogram and Box Plot of Quiz Scores")
 plt.title(f"n = {len(data)}")
+
 ## Label Histogram Axes
 axs[0].set_xlabel("Score")
 axs[0].set_ylabel("Frequency")
+
 ## Label Boxplot Axes
 axs[1].set_xlabel("Score")
 axs[1].set_ylabel("Observation")
 
-# Generate and output
 ## Plot Histogram
-axs[0].hist(data,bins=bins,align='left', color="lightblue", ec="red")
+axs[0].hist(data, bins=bins, align='left', color="lightblue", ec="red")
+
 ## Plot Boxplot
 axs[1].boxplot(data)
+
+# Display image
 plt.show()

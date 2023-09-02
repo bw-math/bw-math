@@ -65,9 +65,11 @@ axs[0].set_ylabel("Frequency")
 axs[1].set_xlabel("Score")
 axs[1].set_ylabel("Observation")
 
-# Generate and output
 ## Plot Histogram
-axs[0].hist(data,bins=bins,align='left', color="lightblue", ec="red")
+axs[0].hist(data, bins=bins, align='left', color="lightblue", ec="red")
+
 ## Plot Boxplot
 axs[1].boxplot(data)
+
+## Display image
 plt.show()

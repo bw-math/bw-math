@@ -60,7 +60,7 @@ axs.set_xlabel("Grades")
 axs.set_ylabel("Frequency")
 
 # Plot data
-axs.hist(data, bins=6, range=(0,6), align='left', color="lightblue", ec="red")
+axs.hist(data, bins=6, align='left', color="lightblue", ec="red")
 
 # Show results
 plt.show()
