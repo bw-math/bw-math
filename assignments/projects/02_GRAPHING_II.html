@@ -400,13 +400,12 @@ document.write(`
 <section id="instructions">
 <span id="project-three-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><p>Create a folder named <cite>LASTNAME_FIRSTNAME_project_three</cite>, replacing <cite>LASTNAME</cite> and <cite>FIRSTNAME</cite> with your last name and first name, respectively.</p></li>
-<li><p>Download <strong>both</strong> <em>csv</em> datasets in the <a class="reference internal" href="#project-three-dataset"><span class="std std-ref">Datasets</span></a> section and place it in the new folder you created in step 1.</p></li>
+<li><p>Download <strong>both</strong> <em>csv</em> datasets in the <a class="reference internal" href="#project-three-dataset"><span class="std std-ref">Datasets</span></a> section and place them in the <em>Linux Files</em> folder on your file system.</p></li>
 <li><p>In the same folder, create a Python <em>py</em> script named <cite>project_three.py</cite>.</p></li>
 <li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Python docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-three-background"><span class="std std-ref">Background</span></a> section and the <a class="reference internal" href="#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
 <li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-three-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the <em>Project</em> section.</p></li>
-<li><p>When you are done, zip your folder and all its contents into a file named <cite>LASTNAME_FIRSTNAME_project_three.zip</cite></p></li>
+<li><p>When you are done, zip your folder and all its contents into a file named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_three.zip</span></code></p></li>
 <li><p>Upload the zip file here: TODO</p></li>
 </ol>
 <div class="admonition tip">
@@ -424,13 +423,11 @@ document.write(`
 <span id="project-three-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
 <section id="the-michelson-velocity-of-light-experiment">
 <h3>The Michelson Velocity of Light Experiment<a class="headerlink" href="#the-michelson-velocity-of-light-experiment" title="Permalink to this headline">#</a></h3>
-<p>The <cite>Michelson Velocity of Light Experiment&lt;https://www.gutenberg.org/files/11753/11753-h/11753-h.htm&gt;</cite> conducted in 1887 was a landmark experiment for several reasons.</p>
-<p>TODO</p>
-<p>remained one of most accurate estimations of the speed of light until modern times. Using a series of mirrors depicted below,</p>
+<p>The <cite>Michelson Velocity of Light Experiment&lt;https://www.gutenberg.org/files/11753/11753-h/11753-h.htm&gt;</cite> conducted in 1887 was the first time <a class="reference external" href="https://en.wikipedia.org/wiki/Albert_A._Michelson">Albert A. Michelson</a> successfully measured the speed of light. He would go on to do so several more times, eventually teaming up with <a class="reference external" href="https://en.wikipedia.org/wiki/Edward_W._Morley">Edward Morley</a>. Together, using the principles Michelson first developed in 1887, Michelson and Morley would demonstrate the speed of light was the same regardless of the state of motion of the emitting body. This would go on to have profound effects for physics in the early twentieth century. It would lead <a class="reference external" href="https://en.wikipedia.org/wiki/Albert_Einstein">Albert Einstein</a> to propose the <a class="reference external" href="https://en.wikipedia.org/wiki/Theory_of_relativity">theory of relativity</a>, one of the most significant intellectual developments in history of humanity.</p>
+<p>Michelson’s 1887 experimental results remained one of most accurate estimations of the speed of light until modern times. Using a series of mirrors depicted below,</p>
 <a class="reference internal image-reference" href="../../_images/michelson_experiment.png"><img alt="../../_images/michelson_experiment.png" class="align-center" src="../../_images/michelson_experiment.png" style="width: 60%;" /></a>
-<p>He was able to measure the fractional time difference in lights of ray arriving</p>
-<p>TODO</p>
-<p>While the theoretical details of the experiment are interesting in their own right (see link above for further detail!), for this lab, we will take the data as given and analyze it from a statistical perspective.</p>
+<p>He was able to divert light rays from an emitting body along separate paths and measure the fractional time difference it took for the rays to reach the same location.</p>
+<p>In this lab, we will be using his dataset to perform some statistical analysis.</p>
 </section>
 <section id="the-cavendish-density-of-the-earth-experiment">
 <h3>The Cavendish Density of the Earth Experiment<a class="headerlink" href="#the-cavendish-density-of-the-earth-experiment" title="Permalink to this headline">#</a></h3>
@@ -482,6 +479,7 @@ document.write(`
 <li><p>Estimate the 25 <sup>th</sup> percentile of this data set.</p></li>
 <li><p>Estimate the median of this data set.</p></li>
 <li><p>Estimate the range of this data set.</p></li>
+<li><p>Based on the boxplot, do you detect any possible outliers?</p></li>
 </ol>
 </div></blockquote>
 </li>
@@ -489,7 +487,7 @@ document.write(`
 <blockquote>
 <div><ol class="loweralpha simple">
 <li><p>What is the sample mean of the dataset?</p></li>
-<li><p>What is the percent error of this estimate with respect to the actual value.</p></li>
+<li><p>What is the percent error of this estimate with respect to the actual value?</p></li>
 </ol>
 </div></blockquote>
 </li>
@@ -516,10 +514,11 @@ document.write(`
 <li><p>Estimate the 25 <sup>th</sup> percentile of this data set.</p></li>
 <li><p>Estimate the median of this data set.</p></li>
 <li><p>Estimate the range of this data set.</p></li>
+<li><p>Based on the boxplot, do you detect any possible outliers?</p></li>
 </ol>
 </div></blockquote>
 </li>
-<li><p>The actual value of the speed of light, according to the best estimates we have today, is <img class="math" src="../../_images/math/1a73c7b41d050f8b924f653612fab468c802358a.png" alt="5.514 \frac{g}{cm^3}"/>. Use this information to answer the following questions in the body of your docstring.</p>
+<li><p>The actual denity of the Earth, according to the best estimates we have today, is <img class="math" src="../../_images/math/1a73c7b41d050f8b924f653612fab468c802358a.png" alt="5.514 \frac{g}{cm^3}"/>. Use this information to answer the following questions in the body of your docstring.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
 <li><p>What is the sample mean of the dataset?</p></li>
