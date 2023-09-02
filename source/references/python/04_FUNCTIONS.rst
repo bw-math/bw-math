@@ -453,14 +453,25 @@ Output
 Normal Variate
 **************
 
-TODO 
+``normalvariate(<mean : required>, <standard deviation : required>)``
+    The *normal variate* functions simulates a random draw from the :ref:`normal_distribution`.
+
+.. note:: 
+
+    We will not need this function until Unit 3 or 4. 
+
+This function is *extremely important* in this class. It will return a random draw from a normally distribution population. We can use it to simulate all sorts of outcomes and samples. By solving the :ref:`z_score` for the individual :math:`x`,
+
+.. math:: 
+
+    x = \mu + \sigma \cdot z 
 
 .. _python_creating_functions:
 
 Creating Functions
 ==================
 
-Occassionally, the *Standard Library* plus third-party packages will not be enough to do what we need to do. In those cases, we have no other options but to define our own function.
+Occassionally, the *Standard Library* will not be enough to do what we need to do. In those cases, we have no other options but to define our own function.
 
 Function Signatures
 -------------------
