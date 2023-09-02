@@ -65,7 +65,7 @@ Project
 
 a. Using :ref:`python_list_slicing`, break this list into two even lists of 500 random numbers each. Save the code in your script and label it with a comment ``# 5a``.
 
-b. Using :ref:`python_builtin_functions`, calculate the sum of each of the lists you found in *part a*. Save the code in your script and label it with a comment ``# 5b``. Before executing your code, answer the following questions and include each in a comment.
+b. Using :ref:`python_builtin_functions`, calculate the sum of each of the lists you found in *part a*. Save the code in your script and label it with a comment ``# 5b``. Before executing your code, answer the following questions and include each answer in the :ref:`docstring <python_docstring>`.
 
     i. How do you expect the sums to be compare? Will they be equal or unequal? Will be they be close together or far apart? Why? Justify your answer.
 
@@ -82,7 +82,7 @@ b. Using :ref:`python_builtin_functions`, calculate the sum of each of the lists
 Imports
 =======
 
-To complete this lab, you will need to import the ``math`` and the ``random`` package. Add the following line to the *top* of your *py* script,
+To complete this lab, you will need to import the ``random`` package. Add the following line to the *top* of your *py* script **underneath** your :ref:`docstring <python_docstring>`,
 
 .. code:: python
 
