@@ -76,13 +76,17 @@ Note the relation between *frequency* and *cumulative frequency*,
 
 .. math::
 
-    F(x_i) = \sum^{x_i}_{x_j = x_1} f(x_j)
+    F(x_i) = \sum^{i}_{j = 1} f(x_j)
+
+.. important:: 
+
+    Take note of the indices on the summation. The sum starts at the first observation and goes all the way up to the :math:`i^{\text{th}}` observation.
 
 Also note by definition,
 
 .. math::
 
-    F(max(S)) = n
+    F( max(S) ) = n
 
 .. _minimum:
 
@@ -122,7 +126,7 @@ Outlier
 Definition
     An unusual observation.
 
-What we mean by "*unusual*" depends on the data. GEnerally speaking, we mean something that roughly approximates, "*a data that is far outside what is expected*".
+What we mean by "*unusual*" depends on the data. Generally speaking, we mean something that roughly approximates, "*a data that is far outside what is expected*".
 
 If we are measuring :ref:`numerical data <data_characteristic>`, this might mean an observation that is much, much greater than or much, much less than the majority of the data. 
 
@@ -195,7 +199,7 @@ If the sample of data is specified as a set or list of data as in the following,
 Then the sample arithmetic mean can be calculated with the formula,
 
 .. math::
-    \bar{x} = \frac{\sum_{i}^n x_i}{n}
+    \bar{x} = \frac{\sum_{1}^n x_i}{n}
 
 This is known as the *sample mean formula* for the arithmetic mean.
 

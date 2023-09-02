@@ -506,10 +506,14 @@ document.write(`
 </dl>
 <p>Note the relation between <em>frequency</em> and <em>cumulative frequency</em>,</p>
 <div class="math">
-<p><img src="../../_images/math/8f3d1e2ea84be9d904a81a304c6b149657c85c6f.png" alt="F(x_i) = \sum^{x_i}_{x_j = x_1} f(x_j)"/></p>
-</div><p>Also note by definition,</p>
+<p><img src="../../_images/math/c313e640e54833949895a85b4c7dd0b225e12d23.png" alt="F(x_i) = \sum^{i}_{j = 1} f(x_j)"/></p>
+</div><div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Take note of the indices on the summation. The sum starts at the first observation and goes all the way up to the <img class="math" src="../../_images/math/46120da50630e2628b4be4249ef20342b1220fea.png" alt="i^{\text{th}}"/> observation.</p>
+</div>
+<p>Also note by definition,</p>
 <div class="math">
-<p><img src="../../_images/math/034497916e2b7279e5e834cc8fee0e55a881cf6a.png" alt="F(max(S)) = n"/></p>
+<p><img src="../../_images/math/1b61b4e64aa06c88be9141339405699fbf7e1743.png" alt="F( max(S) ) = n"/></p>
 </div></section>
 <section id="minimum">
 <span id="id6"></span><h3>Minimum<a class="headerlink" href="#minimum" title="Permalink to this headline">#</a></h3>
@@ -539,7 +543,7 @@ document.write(`
 <dt>Definition</dt><dd><p>An unusual observation.</p>
 </dd>
 </dl>
-<p>What we mean by “<em>unusual</em>” depends on the data. GEnerally speaking, we mean something that roughly approximates, “<em>a data that is far outside what is expected</em>”.</p>
+<p>What we mean by “<em>unusual</em>” depends on the data. Generally speaking, we mean something that roughly approximates, “<em>a data that is far outside what is expected</em>”.</p>
 <p>If we are measuring <a class="reference internal" href="00_INTRODUCTION.html#data-characteristic"><span class="std std-ref">numerical data</span></a>, this might mean an observation that is much, much greater than or much, much less than the majority of the data.</p>
 <p>If we are measuring <a class="reference internal" href="00_INTRODUCTION.html#data-characteristic"><span class="std std-ref">categorical data</span></a>, this might mean an observation is in infrequent.</p>
 </section>
@@ -584,7 +588,7 @@ document.write(`
 <p><img src="../../_images/math/96e63224bad5af018a81dada12df852a6ad4f18c.png" alt="S = \{ x_1, x_2, ... , x_n \}"/></p>
 </div><p>Then the sample arithmetic mean can be calculated with the formula,</p>
 <div class="math">
-<p><img src="../../_images/math/6c2c43714ec8b00fbe4f31fece8179db790ed6e0.png" alt="\bar{x} = \frac{\sum_{i}^n x_i}{n}"/></p>
+<p><img src="../../_images/math/9076f13c88b2c8cba3af4f02bd179f09f06f8779.png" alt="\bar{x} = \frac{\sum_{1}^n x_i}{n}"/></p>
 </div><p>This is known as the <em>sample mean formula</em> for the arithmetic mean.</p>
 <dl>
 <dt>Example</dt><dd><p>Suppose you survey 10 people and ask them how many of the 11 full-length, major motion picture <em>Star Wars</em> movies they have seen. Suppose the sample <strong>S</strong> of their responses is given below,</p>
