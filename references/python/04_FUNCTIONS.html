@@ -772,13 +772,23 @@ document.write(`
 </section>
 <section id="normal-variate">
 <span id="python-normal-variate-function"></span><h4>Normal Variate<a class="headerlink" href="#normal-variate" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
-</section>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">normalvariate(&lt;mean</span> <span class="pre">:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;standard</span> <span class="pre">deviation</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>normal variate</em> functions simulates a random draw from the <a class="reference internal" href="../../notes/probability/05_NORMAL_DISTRIBUTION.html#normal-distribution"><span class="std std-ref">Normal Distribution</span></a>.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We will not need this function until Unit 3 or 4.</p>
+</div>
+<p>This function is <em>extremely important</em> in this class. It will return a random draw from a normally distribution population. We can use it to simulate all sorts of outcomes and samples. By solving the <span class="xref std std-ref">z_score</span> for the individual <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/>,</p>
+<div class="math">
+<p><img src="../../_images/math/54f3cc08afa5b84490edf56eb6dd14b9b02fa250.png" alt="x = \mu + \sigma \cdot z"/></p>
+</div></section>
 </section>
 </section>
 <section id="creating-functions">
 <span id="python-creating-functions"></span><h2>Creating Functions<a class="headerlink" href="#creating-functions" title="Permalink to this headline">#</a></h2>
-<p>Occassionally, the <em>Standard Library</em> plus third-party packages will not be enough to do what we need to do. In those cases, we have no other options but to define our own function.</p>
+<p>Occassionally, the <em>Standard Library</em> will not be enough to do what we need to do. In those cases, we have no other options but to define our own function.</p>
 <section id="function-signatures">
 <h3>Function Signatures<a class="headerlink" href="#function-signatures" title="Permalink to this headline">#</a></h3>
 <p>A function in <strong>Python</strong> has four components its <code class="docutils literal notranslate"><span class="pre">def</span></code>, its <em>name</em>, its <em>arguments</em> and its <code class="docutils literal notranslate"><span class="pre">return</span></code> value. The following list breaks each of these components down,</p>
