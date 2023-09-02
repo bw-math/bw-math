@@ -65,9 +65,9 @@ AP Statistics is an introductory college-level statistics course that introduces
 
     Below, some of the projects that will be completed by the student are broken down by unit.
 
-    In Unit One, the student will examine categorical frequency distributions using the `Electric Vehicles Registered in Washington State <https://catalog.data.gov/dataset/electric-vehicle-population-data>`_ dataset. They will also examine distribution shapes with histograms using datasets such as `Old Faithful Eruption Times<https://www.stat.cmu.edu/~larry/all-of-statistics/=data/faithful.dat>`_, and `Length of Roman Emperor Reigns <https://historum.com/t/league-table-of-roman-emperors-by-length-of-reign.21418/>`_ 
+    In Unit One, the student will examine categorical frequency distributions using the `Electric Vehicles Registered in Washington State <https://catalog.data.gov/dataset/electric-vehicle-population-data>`_ dataset. They will also examine distribution shapes with histograms using datasets such as `Old Faithful Eruption Times <https://www.stat.cmu.edu/~larry/all-of-statistics/=data/faithful.dat>`_, and `Length of Roman Emperor Reigns <https://historum.com/t/league-table-of-roman-emperors-by-length-of-reign.21418/>`_ 
 
-    In Unit Two, the student will study and visualize the correlation in datasets such `Celebrity Twitter Data<https://www.kaggle.com/datasets/ahmedshahriarsakib/top-1000-twitter-celebrity-tweets-embeddings>`_ and `Challenger Explosion <https://www.randomservices.org/random/data/Challenger.html>`_ datasets. They will use this correlation to find the line of best fit. They will use the linear regression equation to make predictions and learn to interpret the meaning of residuals.
+    In Unit Two, the student will study and visualize the correlation in datasets such `Celebrity Twitter Data <https://www.kaggle.com/datasets/ahmedshahriarsakib/top-1000-twitter-celebrity-tweets-embeddings>`_ and `Challenger Explosion <https://www.randomservices.org/random/data/Challenger.html>`_ datasets. They will use this correlation to find the line of best fit. They will use the linear regression equation to make predictions and learn to interpret the meaning of residuals.
 
     In Unit Three, the student will learn how to detect and prevent bias using the `Vietnam Draft Data <https://www.randomservices.org/random/data/Draft.html>`_ dataset. 
 
