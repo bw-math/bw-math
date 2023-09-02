@@ -43,7 +43,7 @@ fig, axs = plt.subplots()
 # Generate Data
 # NOTE: You can add the contents of lists together with "+"
 data = ( 
-    [ 50*rand.random() for _ in range(15) ] + # generate some random F's, 0 - 49
+    [ rand.int(1, 50) for _ in range(15) ] + # generate some random F's, 0 - 49
     [ 9*rand.random() + 50 for _ in range(18) ] + # generate some random E's, 50 - 59 
     [ 9*rand.random() + 60 for _ in range(10) ] + # generate some random D's, 60 -69
     [ 9*rand.random() + 70 for _ in range(5) ] + # generate some random C's, 70- 79
@@ -52,11 +52,6 @@ data = (
 )
 
 
-# Set up classes (bins)
-bins = [ 50, 60, 70, 80, 90, 100 ]
-bin_labels = [ "0 - 50", "51 - 60", "61 - 70", "71 - 80", "81 - 90", "91 - 100"]
-plt.xticks(ticks=bins, labels=bin_labels)
-
 # Label the graph appropriately
 plt.suptitle("Histogram of Quiz Grades")
 plt.title(f"n = {len(data)}")
@@ -64,5 +59,5 @@ axs.set_xlabel("Grades")
 axs.set_ylabel("Frequency")
 
 # Generate and output
-axs.hist(data, bins=bins, align='left', color="lightblue", ec="red")
+axs.hist(data, bins=6, align='left', color="lightblue", ec="red")
 plt.show()

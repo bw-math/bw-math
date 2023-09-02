@@ -52,7 +52,6 @@ data = (
     [ 9*rand.random() + 80 for _ in range(5) ] + # generate some random B's, 80 - 89
     [ 10*rand.random() + 90 for _ in range(6) ] # generate some random A's, 90 - 100
 )
-bins = [50, 60, 70, 80, 90, 100]
 
 # Label the graph appropriately
 plt.suptitle("Histogram and Box Plot of Quiz Scores")
@@ -67,7 +66,7 @@ axs[1].set_xlabel("Score")
 axs[1].set_ylabel("Observation")
 
 ## Plot Histogram
-axs[0].hist(data, bins=bins, align='left', color="lightblue", ec="red")
+axs[0].hist(data, bins=6, align='left', color="lightblue", ec="red")
 
 ## Plot Boxplot
 axs[1].boxplot(data)

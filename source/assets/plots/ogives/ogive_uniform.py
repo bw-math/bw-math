@@ -52,11 +52,6 @@ data = (
 )
 
 
-# Set up classes (bins)
-bins = [ 50, 60, 70, 80, 90, 100 ]
-bin_labels = [ "0 - 50", "51 - 60", "61 - 70", "71 - 80", "81 - 90", "91 - 100"]
-plt.xticks(ticks=bins, labels=bin_labels)
-
 # Label everything
 plt.suptitle("Histogram of Quiz Grades")
 plt.title(f"n = {len(data)}")
@@ -64,5 +59,5 @@ axs.set_xlabel("Grades")
 axs.set_ylabel("Frequency")
 
 # Generate and output
-axs.hist(data, bins=bins, align='left', color="lightblue", ec="red", cumulative=True)
+axs.hist(data, bins=6, align='left', color="lightblue", ec="red", cumulative=True)
 plt.show()
