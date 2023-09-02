@@ -276,7 +276,7 @@ c. Suppose both corporations offered you a job for $36,000 a year as an entry-le
 
 12. **2016, Free Response, #2**
 
-Product advertisers studied the effects of television ads on children’s choices for two new snacks. The advertisers used two 30-second television ads in an experiment. One ad was for a new sugary snack called Choco-Zuties, and the other ad was for a new healthy snack called Apple-Zuties.
+Product advertisers studied the effects of television ads on children's choices for two new snacks. The advertisers used two 30-second television ads in an experiment. One ad was for a new sugary snack called Choco-Zuties, and the other ad was for a new healthy snack called Apple-Zuties.
 
 For the experiment, 75 children were randomly assigned to one of three groups, A, B, or C. Each child individually watched a 30-minute television program that was interrupted for 5 minutes of advertising. The advertising was the same for each group with the following exceptions.
 
@@ -288,3 +288,7 @@ After the program, the children were offered a choice between the two snacks. Th
 
 .. image:: ../../../assets/imgs/classwork/2016_apstats_frp_02.png
     :align: center
+
+a. Do the data provide convincing statistical evidence that there is an association between type of ad and children's choice of snack among all children similar to those who participated in the experiment?
+
+b. Write a few sentences describing the effect of each ad on children's choice of snack.
