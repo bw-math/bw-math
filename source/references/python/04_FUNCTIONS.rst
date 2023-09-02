@@ -195,7 +195,7 @@ When you import a package, it becomes available in that package's *namespace*. F
 
     import math
 
-The functions inside of the ``math`` package can be accessed through *dot notation*. The syntax for accessing a ``math`` function is given below,
+The functions inside of the ``math`` package are now available to be used through *dot notation*. The syntax for accessing a ``math`` function is given below,
 
     math.<function-name>
 
@@ -214,7 +214,7 @@ As an example,
 Ouput:
 
     6
-    
+
 We will be using two packages in particular from the *Standard Library* over and over again in this class, ``math`` and ``random``. 
 
 .. _python_math_package:
@@ -296,7 +296,7 @@ Ceil
     import math
 
     ceiling_test_1 = math.ceil(4.8)
-    ceiling_test_2 = mat.ceil(32.1)
+    ceiling_test_2 = math.ceil(32.1)
 
     print("ceil(4.8) = ", ceiling_test_1)
     print("ceil(32.1) = ", ceiling_test_2)
@@ -359,7 +359,10 @@ The ``random`` package is very appropriately named. It is used to generate rando
 Random Function
 ***************
 
-The simplest function in the ``random`` package is the ``random()``. The ``random()`` has no arguments; it will always return a number between *0* and *1*, excluding the endpoitns. The following code illustrates its use,
+``random()``
+    The *random* function returns a random number between 0 and 1.
+
+The simplest function in the ``random`` package is the ``random()``. The ``random()`` has no arguments; it will always return a number between *0* and *1*, excluding the endpoints. The following code illustrates its use,
 
 .. code:: python
 
@@ -381,11 +384,10 @@ Output:
 Random Integer Function
 ***********************
 
-The :ref:`python_random_function` will suffice for most purposes. Occassionally, we will need integer-valued random numbers instead of real-valued random numbers. To that end, we will need to use the ``randint()`` function. The syntax for the ``randint()`` is given below,
+``randint(<start: required, stop : required>)``
+    ``randint`` returns a random integer between ``<start>`` and ``<stop>``, including both endpoints.
 
-    randint(<start : required>, <stop : required>)
-
-``randint`` returns a random integer between ``<start>`` and ``<stop>``, including both endpoints.
+The :ref:`python_random_function` will suffice for most purposes. Occassionally, we will need integer-valued random numbers instead of real-valued random numbers. To that end, we will need to use the ``randint()`` function.
 
 The following code illustrates its use, 
 
@@ -404,9 +406,10 @@ Output:
 Random Choice Function
 **********************
 
-Another function we will need from the ``random`` package is the ``choice()`` method. The previous two functions we looked were for generating *quantitative data*. The ``choice()`` function, on the other hand, will generate *categorical data*. The syntax for ``choice`` is given below,
+``choice(<list : required>)``
+    The *choice* function returns a random selection for a list.
 
-    choice(<list of options>)
+Another function we will need from the ``random`` package is the ``choice()`` function. The previous two functions we looked were for generating *quantitative data*. The ``choice()`` function, on the other hand, will generate *categorical data*.
 
 The following code illustrates its use,
 
@@ -422,6 +425,28 @@ The following code illustrates its use,
 Output:
 
     this is a random choice from the list ['Augustus', 'Tiberius', 'Hadrian']: Tiberius
+
+Shuffle
+*******
+
+``shuffle(<list : required>)``
+    The *shuffle* functions randomly orders a list into a new list.
+
+The ``shuffle()`` function is the equivalent of shuffling a deck of cards, if the deck of cards were a :ref:`list <python_lists>`. 
+
+The following code illustrates it use,
+
+.. code:: python 
+
+    import random
+    
+    data = [ "a", "b", "c", "d" ]
+    random.shuffle(data)
+    print(data)
+
+Output
+
+    ['c', 'b', 'd', 'a']
 
 .. _python_normal_variate_function:
 
