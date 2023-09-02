@@ -49,12 +49,13 @@ fig, axs = plt.subplots(1, 2)
 # NOTE: You can add the contents of lists together with "+"
 data = ( 
     [ 9*rand.random() + 40 for _ in range(2) ] + # generate some random F's, 0 - 49
-    [ 9*rand.random() + 50 for _ in range(4) ] + # generate some random E's, 50 - 59 
-    [ 9*rand.random() + 60 for _ in range(5) ] + # generate some random D's, 60 -69
-    [ 9*rand.random() + 70 for _ in range(5) ] + # generate some random C's, 70- 79
-    [ 9*rand.random() + 80 for _ in range(3) ] + # generate some random B's, 80 - 89
+    [ 9*rand.random() + 50 for _ in range(5) ] + # generate some random E's, 50 - 59 
+    [ 9*rand.random() + 60 for _ in range(10) ] + # generate some random D's, 60 -69
+    [ 9*rand.random() + 70 for _ in range(10) ] + # generate some random C's, 70- 79
+    [ 9*rand.random() + 80 for _ in range(5) ] + # generate some random B's, 80 - 89
     [ 10*rand.random() + 90 for _ in range(2) ] # generate some random A's, 90 - 100
 )
+
 
 # Label the graph appropriately
 plt.suptitle("Histogram and Box Plot of Quiz Scores")

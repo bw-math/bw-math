@@ -615,6 +615,7 @@ Example
 
 .. image:: ../../assets/imgs/context/old_faithful.jpg
     :align: center
+    :height: 25
 
 The first column of this dataset represents the *length of an eruption in minutes* while the second column represents the *waiting time in minutes* until the next eruption.
 
