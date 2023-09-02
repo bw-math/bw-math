@@ -220,7 +220,7 @@ In this case, :math:`n(S)=10`. To find :math:`n(E \cap T)`, we count up all the 
 
 .. math::
 	
-	(\text{yes}_{t}, math:`\text{yes}_{e}`) \in E \cap T
+	(\text{yes}_{t}, \text{yes}_{e}) \in E \cap T
 	
 And similarly for the rest of the events.
 	
@@ -340,7 +340,7 @@ If you are given a sample of *n* data points :math:`S = \{ x_1, x_2, ... , x_n \
 +--------------------------------+-------------------------------+
 | ...                            | ...                           |
 +--------------------------------+-------------------------------+
-| :math:`f(LL_n \leq x <= UL_n)` | :math:`f(LL_n) \leq x < UL_n` |
+| :math:`LL_n \leq x \leq UL_n` | :math:`f(LL_n \leq x < UL_n)` |
 +--------------------------------+-------------------------------+
 
 .. important:: 
