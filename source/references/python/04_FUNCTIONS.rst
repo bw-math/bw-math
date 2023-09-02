@@ -433,7 +433,7 @@ Putting all four of these pieces together, let's create a simple function.
 
 Take note of the *indentation*. **Python** is very particular about *indentation* because that is how it groups functions together. A *function* definition must be indented once (with ``TAB``). All lines within the function must be the same *indentation* level. If you do not follow this requirement, you will get errors. Errors are bad. So, always pay your indentation.
 
-We can call this function after defined it by addressing it by its name and passing in an argument. Create a new :ref:`IDLE Notebook <python_idle>`, copy in the following function and try executing it with ``F5``,
+We can call this function after defining it by addressing it by its name (i.e., typing its name) and passing in an argument. Create a new :ref:`IDLE Notebook <python_idle>`, copy in the following function and try executing it with ``F5``,
 
 .. code:: python
 
