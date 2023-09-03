@@ -65,10 +65,10 @@ print(data)
 # this is a trick to sum a list of data where you only want to sum certain
 # elements of the list. For instance, to find `blue_balls`, we only want to 
 # sum the outcomes that include a shape of 'ball' and a color of 'blue'
-blue_balls = sum(1 for bit in data if bit[0] == shapes[0] and bit[1] == colors[1])
-red_balls = sum(1 for bit in data if bit[0] == shapes[0] and bit[1] == colors[0])
-blue_ducks = sum(1 for bit in data if bit[0] == shapes[1] and bit[1] == colors[1])
-red_ducks = sum(1 for bit in data if bit[0] == shapes[1] and bit[1] == colors[0])
+blue_balls = sum(1 for bit in data if bit[0] == "BALL" and bit[1] == "BLUE")
+red_balls = sum(1 for bit in data if bit[0] == "BALL" and bit[1] == "RED")
+blue_ducks = sum(1 for bit in data if bit[0] == "DUCK" and bit[1] == "BLUE")
+red_ducks = sum(1 for bit in data if bit[0] == "DUCK" and bit[1] == "RED")
 
 
 print(separator, "Joint Distribution", separator) 
