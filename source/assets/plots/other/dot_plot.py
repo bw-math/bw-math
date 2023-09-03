@@ -43,6 +43,8 @@ import matplotlib.pyplot as plt
 fig, axs = plt.subplots()
 
 # Generate Data
+# NOTE: the y-variable in the ordered pair is being increased by 1 in every iteration
+#       of range(). This is so the dots can be stacked.
 data = \
 [ (3, i+1) for i in range(2) ] +\
 [ (4, i+1) for i in range(3) ] +\
@@ -58,5 +60,9 @@ axs.set_xlabel("Grades")
 axs.set_ylabel("Frequency")
 
 # Generate and output
-axs.scatter([bit[0] for bit in data], [bit[1] for bit in data])
+# Get the x-coordinates and get the y-coordinates
+x_values = [bit[0] for bit in data]
+y_values = [bit[1] for bit in data]
+
+axs.scatter(x_values, y_values)
 plt.show()

@@ -8,6 +8,7 @@ Bishop Walsh A.P Statistics
 
    SPLASH
    SYLLABUS
+   DEMOS
    PRIZES
    notes/index
    assignments/index
