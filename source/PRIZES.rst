@@ -35,7 +35,7 @@ Teacher Instructions
 Datasets Required
 -----------------
 
-- :download:`Toss Simulation <assets/worksheets/Student_BestClass.pdf>`
+- :download:`Best Class <assets/worksheets/Student_BestClass.pdf>`
    - **Dataset** :download:`P4 <assets/worksheets/data/P4.8xl>`
    - **Dataset** :download:`P5 <assets/worksheets/data/P5.8xl>`
 - :download:`1 and 2 Variable Statistics <assets/worksheets/Student_1and2VariableReview.pdf>`
@@ -47,6 +47,6 @@ Datasets Required
 Teacher Instructions 
 ********************
 
-- :download:`Toss Simulation <assets/worksheets/Teacher_BestClass.pdf>`
+- :download:`Best Class <assets/worksheets/Teacher_BestClass.pdf>`
 - :download:`1 and 2 Variable Statistics <assets/worksheets/Teacher_1and2VariableReview.pdf>`
 - :download:`Two Way Tables <assets/worksheets/Teacher_StatTwoWay.pdf>`
