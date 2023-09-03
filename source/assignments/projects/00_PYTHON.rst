@@ -63,7 +63,7 @@ Project
 
 5. Take the *Random Numbers* dataset from the :ref:`project_zero_dataset` section and add it to your *py* script. Perform the following operations. Be sure to add :ref:`python_comments` where appropriate,
 
-a. Using :ref:`python_list_slicing`, break this list into two even lists of 500 random numbers each. Save the code in your script and label it with a comment ``# 5a``.
+a. Using :ref:`python_list_slicing`, break this list into two even lists of 5000 random numbers each. Save the code in your script and label it with a comment ``# 5a``.
 
 b. Using :ref:`python_builtin_functions`, calculate the sum of each of the lists you found in *part a*. Save the code in your script and label it with a comment ``# 5b``. Before executing your code, answer the following questions and include each answer in the :ref:`docstring <python_docstring>`.
 
