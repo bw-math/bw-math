@@ -23,9 +23,9 @@ import matplotlib
 
 ## NOTE: How-To: Run This Script On Your Computer
 #
-# To render the website, I have to use a "headless" backend to generate the images. 
-# If you want to run this script on your computer, comment out the following line 
-# with the "#" you see appended to each line of this comment:
+#       To render the website, I have to use a "headless" backend to generate the images. 
+#       If you want to run this script on your computer, comment out the following line 
+#       with the "#" you see appended to each line of this comment:
 
 matplotlib.use('agg')
 

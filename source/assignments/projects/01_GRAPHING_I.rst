@@ -23,7 +23,7 @@ Instructions
 6. Read the :ref:`bar_chart` section. Download the script files in that section onto your ChromeBook. Read through and execute them on your computer. 
 7. Read the :ref:`project_one_set_operations` section. 
 8. Perform all exercises and answer all questions in the :ref:`project_one_project` section. Label your script with comments as indicated in the *Project* section.
-9.  When you are done, zip your folder and all its contents into a file named ``LASTNAME_FIRSTNAME_project_one.zip``
+9.  When you are done, zip your script **and** your *csv* file into a file named ``LASTNAME_FIRSTNAME_project_one.zip``
 10. Upload the zip file here to the Google Classroom Project One Assignment.
 
 .. _project_one_background:
@@ -178,7 +178,9 @@ Recall a *stacked bar chart* is a way of visually representing a *conditional di
 	
 .. plot:: assets/plots/other/stacked_bar_chart.py
 
-This one is extremely tricky. `matplotlib <https://matplotlib.org/>`_ does not have a nice way of making stacked bar charts; Unforunately, the twenty-first century isn't all it's cracked up to be. In this timeline, you have to "stack" your bar charts yourself. Make sure to download this one and go through it step by step. The script has been well commented; every step has been detailed. 
+This one is extremely tricky, so read through it carefully. 
+
+`matplotlib <https://matplotlib.org/>`_ does not have a nice way of making stacked bar charts; Unforunately, the twenty-first century isn't all it's cracked up to be. In this timeline, you have to "stack" your bar charts yourself. Make sure to download this one and go through it step by step. The script has been well commented; every step has been detailed. 
 
 .. hint::
 	
@@ -285,3 +287,11 @@ The following table is the a preview of the data you will be using for this proj
 
 .. csv-table:: Electric Vehicles in Washington State
    :file: ../../assets/datasets/previews/electric_vehicle_population_data_preview.csv
+
+References
+==========
+
+- `matplotlib bar charts <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html>`_
+- `matplotlib colors <https://matplotlib.org/stable/gallery/color/named_colors.html>`_
+- `python dictionaries <https://docs.python.org/3/tutorial/datastructures.html#dictionaries>`_
+- `python string templating <https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals>`_

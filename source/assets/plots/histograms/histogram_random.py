@@ -21,9 +21,9 @@ import matplotlib
 
 ## NOTE: How-To: Run This Script On Your Computer
 #
-# To render the website, I have to use a "headless" backend to generate the images. 
-# If you want to run this script on your computer, comment out the following line 
-# with the "#" you see appended to each line of this comment:
+#       To render the website, I have to use a "headless" backend to generate the images. 
+#       If you want to run this script on your computer, comment out the following line 
+#       with the "#" you see appended to each line of this comment:
 
 matplotlib.use('agg')
 
@@ -47,9 +47,11 @@ fig, axs = plt.subplots()
 #   length 100 where each element is a number between 0 and 50
 data = [ 50*rand.random() for _ in range(100 ) ]
 
-# Label everything appropriately
+# Label the graph
 plt.suptitle("Histogram of Random Numbers Between 0 and 50")
 plt.title(f"n = {len(data)}")
+
+# Label the axes
 axs.set_xlabel("Classes")
 axs.set_ylabel("Frequency")
 
