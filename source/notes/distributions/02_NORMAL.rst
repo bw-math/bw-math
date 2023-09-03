@@ -71,9 +71,9 @@ TODO
 .. note:: 
     *Conditions*: 
     
-    :math:`n \cdot p >= 5`
+    :math:`n \cdot p \geq 5`
 
-    :math:`n \cdot (1 - p) >= 5`
+    :math:`n \cdot (1 - p) \geq 5`
 
 Poisson As An Approximation of the Normal
 -----------------------------------------

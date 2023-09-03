@@ -1,8 +1,8 @@
 .. _project_twelve:
 
-==========================
-Estimation II: Correlation
-==========================
+===============================
+Graphing V: Probability Density
+===============================
 
 TODO
 

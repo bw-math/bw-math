@@ -1,5 +1,7 @@
+.. _confidence_intervals:
+
 ====================
 Confidence Intervals
 ====================
 
-TBA
+TODO 
