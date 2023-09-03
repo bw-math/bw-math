@@ -1,4 +1,4 @@
-.. _project_five:
+.. _project_four:
 
 ====
 Bias
@@ -13,23 +13,24 @@ In this lab, you will perform some graphical analysis on a famously biased data 
 Instructions
 ============
 
-1. Create a folder named `LASTNAME_FIRSTNAME_project_five`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
-2. Download the *csv* dataset `below <project_five_dataset>`_ and place it in the new folder you created in step 1.
-3. In the same folder, create a Python *py* script named `project_five.py`
-4. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
-5. Read the :ref:`project_five_project` section.
-6. Perform all exercises and answer all questions in the :ref:`project_one_project` section. Label your script with comments as indicated in the instructions of each problem.
-7. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_five.zip`
-8. Upload the zip file here: TODO
+1. Download the *csv* dataset in the :ref:`project_four_dataset` section and place it in the ``Linux Files`` folder on your folder system where you save your ``.py`` scripts.
+2. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_four.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
+3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
+4. Read the :ref:`project_four_background` section.
+5. Read the :ref:`project_four_loading_data` section.
+6. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
+7. Perform all exercises and answer all questions in the :ref:`project_four_project` section. Label your script with comments as indicated in the instructions of each problem.
+8. When you are done,zip your script **and** the *csv* file in a zip file named ``LASTNAME_FIRSTNAME_project_four.zip``
+9. Upload the zip file to the Google Classroom Project Four Assignment.
 
-.. _project_five_loading_data:
+.. _project_four_loading_data:
 
 Loading In Data
 ===============
 
 TODO
 
-.. _project_five_background:
+.. _project_four_background:
 
 Background
 ==========
@@ -52,7 +53,7 @@ The method used to select individuals for service is highly controversial. Many 
 
 Slips of paper were then selected at random and anyone of eligible age who had a birthday on the date indicated would be drafted. The important point is *individuals who shared the same birthday* would be drafted at the same time. As example, two men who had the birthdays April 5:sup:`th`, 1946 and April 5:sup:`th`, 1947 would both be drafted in the event a slip of paper *"April 5"* was selected.
 
-.. _project_five_project:
+.. _project_four_project:
 
 Project
 =======
@@ -87,7 +88,7 @@ Project
    
    d. Discuss the results. Was the draft lottery fair? If not, why not? If so, why? Justify your answer.  
 
-.. _project_five_dataset:
+.. _project_four_dataset:
 
 Dataset
 =======

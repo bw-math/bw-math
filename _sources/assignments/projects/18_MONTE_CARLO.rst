@@ -1,4 +1,4 @@
-.. _project_nineteen:
+.. _project_eighteen:
 
 ======================
 Monte Carlo Simulation
@@ -9,37 +9,39 @@ TODO
 Instructions
 ============
 
-1. Create a folder named `LASTNAME_FIRSTNAME_project_nineteen`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
-2. Download the *csv* dataset `below <project_nineteen_dataset>`_ and place it in the new folder you created in step 1.
-3. In the same folder, create a Microsoft Word *docx* document named `project_nineteen.docx`.
-4. In the same folder, create a Python *py* script named `project_nineteen.py`
-5. Read the :ref:`project_nineteen_project` section.
-6. Answer the indicated questions in the :ref:`project_nineteen_project` section in the *.docx* document file.
-7. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_nineteen.zip`
-8. Upload the zip file here: TODO
+1. Download the *csv* dataset in the :ref:`project_eighteen_dataset` section and place it in the ``Linux Files`` folder on your folder system where you save your ``.py`` scripts.
+2. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_eighteen.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
+3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
+4. Read the :ref:`project_eighteen_background` section.
+5. Read the :ref:`project_eighteen_loading_data` section.
+6. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
+7. Perform all exercises and answer all questions in the :ref:`project_eighteen_project` section. Label your script with comments as indicated in the instructions of each problem.
+8. When you are done,zip your script **and** the *csv* file in a zip file named ``LASTNAME_FIRSTNAME_project_eighteen.zip``
+9. Upload the zip file to the Google Classroom Project Four Assignment.
 
-.. _project_nineteen_loading_data:
+
+.. _project_eighteen_loading_data:
 
 Loading In Data
 ===============
 
 TODO
 
-.. _project_nineteen_background:
+.. _project_eighteen_background:
 
 Background
 ==========
 
 TODO 
 
-.. _project_nineteen_project:
+.. _project_eighteen_project:
 
 Project
 =======
 
 TODO 
 
-.. _project_nineteen_dataset:
+.. _project_eighteen_dataset:
 
 Data Set
 ========

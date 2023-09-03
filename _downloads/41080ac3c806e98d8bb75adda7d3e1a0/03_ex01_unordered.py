@@ -44,6 +44,5 @@ mpl.rcParams['lines.linestyle'] = '--'
 for i in obs_order:
     plt.axvline(x=i)
 
-
 # Show results
 plt.show()

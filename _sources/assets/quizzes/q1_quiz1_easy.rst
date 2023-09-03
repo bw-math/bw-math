@@ -15,7 +15,7 @@ A medical researcher surveyed a large group of men and women about whether they 
 
 The responses were categorized as never, sometimes, or always. The frequencies of each category are shown in the following table.
 
-.. image:: ../../../assets/imgs/classwork/2019_apstats_frp_03.png
+.. image:: ../../assets/imgs/classwork/2019_apstats_frp_03.png
     :align: center
 
 

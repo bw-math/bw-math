@@ -132,7 +132,7 @@ This is getting closer to the truth. However, this picture is not yet complete; 
 
 The outcomes in a event determine the value of the random variable in the same way the values inputted into a function determine the output of the function. However, the input to a random variable is uncertain, therefore the output is likewise uncertain. The probability of an event occuring in the sample space is transferred, through the outcomes that determine the random variable, into the probability of a random variable assuming a particular value. An event (set) of outcomes in the *sample space* becomes an assignment of a particular value to a *random variable*,
 
-.. image:: ../../assets/imgs/probability/random_variable.png
+.. image:: ../../assets/imgs/probability/random_variable_events.png
     :align: center
 
 A random variable shows how events from the sample space (the domain) are transformed into events of the random variable (the range). 
@@ -163,7 +163,7 @@ TODO
 Expectation of a Sum
 --------------------
 
-:math:`E(X+Y)=E(X) + E(Y)`
+:math:`E(X+Y) = E(X) + E(Y)`
     TODO
 
 .. _variance:
@@ -172,21 +172,3 @@ Variance
 ========
 
 TODO 
-
-.. _bernoulli_distribution:
-
-Bernoulli Random Variable
-=========================
-
-.. math::
-    p(x) = P(X = x) = \begin{array}{ c l }
-        p       & \quad \textrm{if } x = 1 \\
-        1 - p   & \quad \textrm{if } x = 0
-    \end{array}
-
-.. _uniform_distribution:
-
-Uniform Random Variable
-=======================
-
-TODO

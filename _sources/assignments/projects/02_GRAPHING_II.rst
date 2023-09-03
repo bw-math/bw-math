@@ -1,8 +1,8 @@
 .. _project_two:
 
-=======================
-Graphing II: Histograms
-=======================
+====================================
+Graphing II: Histograms and Boxplots
+====================================
 
     What can be shown, cannot be said.
 
@@ -15,13 +15,15 @@ In this lab, you will get *even more* familiar with the statistical plotting fea
 Instructions
 ============
 
-1. Download **both** *csv* datasets in the :ref:`project_two_dataset` section and place them in the *Linux Files* folder on your file system.
-2. In the same folder, create a Python *py* script named `project_two.py`. 
+1. Download **both** *csv* datasets in the :ref:`project_two_dataset` section and place them in the ``Linux Files`` folder on your file system where you save your ``.py`` scripts.
+2. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_two.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
 3. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
-4. Read the :ref:`project_two_background` section and the :ref:`project_two_loading_data` section.
-5. Perform all exercises and answer all questions in the :ref:`project_two_project` section. Label your script with comments as indicated in the *Project* section.
-6. When you are done, zip your script **and** the *csv* files into a zip file named ``LASTNAME_FIRSTNAME_project_two.zip``
-7. Upload the zip file to the Google Classrom Project Two asignment.
+4. Read the :ref:`project_two_background` section
+5. Read the :ref:`project_two_loading_data` section.
+6. Load in the data from the ``.csv`` files using the technique outlined in the :ref:`project_three_loading_data` section.
+7. Perform all exercises and answer all questions in the :ref:`project_two_project` section. Label your script with comments as indicated in the *Project* section.
+8. When you are done, zip your script **and** the *csv* files into a zip file named ``LASTNAME_FIRSTNAME_project_two.zip``
+9. Upload the zip file to the Google Classrom Project Two asignment.
 
 Formulae
 ========
@@ -111,9 +113,11 @@ The line you want to pay attention in the script you just downloaded is,
 
     axs.hist(data, bins=6, align='left', color='lightblue', ec='red')
 
-Notice the first argument of this function is passed alone, without a name (i.e. without an expression ``x=y``). The first argument of the ``hist()`` function is *always* the sample of data you wish to plot; The ``data`` argument is simply a :ref:`list <python_lists>` of data. 
+The `hist() <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html>` function is :ref:`matplotlib`'s *histogram* graphing function. 
 
-The rest of the arguments are *named* (i.e. with an expression ``x=y``). The *named* arguments can be passed into the ``hist()`` function is any order. For example, this line will generate the same histogram,
+Notice the first argument of this function is passed in alone, without a name (i.e. without an expression ``x = y``). The first argument of the ``hist()`` function is *always* the sample of data you wish to plot; The ``data`` argument is simply a :ref:`list <python_lists>` of data. 
+
+The rest of the arguments are *named* (i.e. with an expression ``x = y``). The *named* arguments can be passed into the ``hist()`` function is any order. For example, this line will generate the same histogram,
 
 .. code:: python
 
