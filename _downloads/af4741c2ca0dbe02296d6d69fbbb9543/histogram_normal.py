@@ -6,7 +6,7 @@ Grant Moore
 Some Point In The Distant Past
 ******************************
 
-This script will generate a histogram for a sample of quiz grades.
+This script will generate a histogram for a randomly generated sample of quiz grades (where the grade is a percentage).
 
 .. note:: 
 
@@ -21,9 +21,9 @@ import matplotlib
 
 ## NOTE: How-To: Run This Script On Your Computer
 #
-# To render the website, I have to use a "headless" backend to generate the images. 
-# If you want to run this script on your computer, comment out the following line 
-# with the "#" you see appended to each line of this comment:
+#       To render the website, I have to use a "headless" backend to generate the images. 
+#       If you want to run this script on your computer, comment out the following line 
+#       with the "#" you see appended to each line of this comment:
 
 matplotlib.use('agg')
 
@@ -44,7 +44,7 @@ fig, axs = plt.subplots()
 # Generate Data
 # NOTE: You can add the contents of lists together with "+"
 data = ( 
-    [ 9*rand.random() + 40 for _ in range(2) ] + # generate some random F's, 0 - 49
+    [ 9*rand.random() + 40 for _ in range(2) ] + # generate some random F's, 40 - 49
     [ 9*rand.random() + 50 for _ in range(5) ] + # generate some random E's, 50 - 59 
     [ 9*rand.random() + 60 for _ in range(10) ] + # generate some random D's, 60 -69
     [ 9*rand.random() + 70 for _ in range(10) ] + # generate some random C's, 70- 79
@@ -52,14 +52,17 @@ data = (
     [ 10*rand.random() + 90 for _ in range(2) ] # generate some random A's, 90 - 100
 )
 
-# Label axes
-plt.suptitle("Histogram of Quiz Grades")
+# Label graph
+plt.suptitle('Histogram of Quiz Grades')
 plt.title(f"n = {len(data)}")
-axs.set_xlabel("Grades")
-axs.set_ylabel("Frequency")
 
-# Plot data
-axs.hist(data, bins=6, align='left', color="lightblue", ec="red")
+# Label axes
+axs.set_xlabel('Grades')
+axs.set_ylabel('Frequency')
+
+# Plot data on the axes
+# NOTE: classes are "bins" in matplotlib (and most other statistical applications)
+axs.hist(data, bins=6, align='left', color='lightblue', ec='red')
 
 # Show results
 plt.show()

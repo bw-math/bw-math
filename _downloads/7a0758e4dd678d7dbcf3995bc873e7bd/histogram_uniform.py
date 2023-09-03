@@ -21,9 +21,9 @@ import matplotlib
 
 ## NOTE: How-To: Run This Script On Your Computer
 #
-# To render the website, I have to use a "headless" backend to generate the images. 
-# If you want to run this script on your computer, comment out the following line 
-# with the "#" you see appended to each line of this comment:
+#       To render the website, I have to use a "headless" backend to generate the images. 
+#       If you want to run this script on your computer, comment out the following line 
+#       with the "#" you see appended to each line of this comment:
 
 matplotlib.use('agg')
 
@@ -51,9 +51,11 @@ data = (
     [ 10*rand.random() + 90 for _ in range(4) ] # generate some random A's, 90 - 100
 )
 
-# Label everything
+# Label Graph
 plt.suptitle("Histogram of Quiz Grades")
 plt.title(f"n = {len(data)}")
+
+# Label Axes
 axs.set_xlabel("Grades")
 axs.set_ylabel("Frequency")
 

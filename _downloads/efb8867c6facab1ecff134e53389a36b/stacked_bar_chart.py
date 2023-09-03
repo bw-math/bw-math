@@ -6,7 +6,7 @@ Grant Moore
 Some Point In The Distant Past
 ******************************
 
-This script will generate a stacked bar chart for a randomly generated set of bivariate data. The individual in the data is the object selected from a box of ducks and balls (Imagine that.) The individual may either be RED or BLUE, or the individual may either be a DUCK or BALL. 
+This script will generate a stacked bar chart for a randomly generated set of bivariate data. The individual in the data is the object selected from a box of ducks and balls (*Imagine that.*) The individual may either be **RED** or **BLUE**, or the individual may either be a **DUCK** or **BALL**. 
 
 .. note:: 
 
@@ -21,9 +21,9 @@ import matplotlib
 
 ## NOTE: How-To: Run This Script On Your Computer
 #
-# To render the website, I have to use a "headless" backend to generate the images. 
-# If you want to run this script on your computer, comment out the following line 
-# with the "#" you see appended to each line of this comment:
+#   To render the website, I have to use a "headless" backend to generate the images. 
+#   If you want to run this script on your computer, comment out the following line 
+#   with the "#" you see appended to each line of this comment:
 
 matplotlib.use('agg')
 
@@ -49,9 +49,10 @@ fig, axs = plt.subplots()
 shapes = [ "BALL", "DUCK" ]
 colors = [ "RED", "BLUE" ]
 
-# Use categories to generate random bivariate sample (shape, color) of 100 observations
+# Use categories with random.choice() to generate random bivariate sample 
+# (shape, color) of 100 observations
 data = [ (random.choice(shapes), random.choice(colors)) for _ in range(100) ]
-n = len(data) # although we already know it's a 100...still good to get in the habit.
+n = len(data) # although we already know it's a 100 (why?)...still good to get in the habit of calculating ``n``.
 
 # Print everything to see what is going on.
 separator = "-"*10 # wut? multiplying...a string? wut do?
@@ -65,10 +66,10 @@ print(data)
 # this is a trick to sum a list of data where you only want to sum certain
 # elements of the list. For instance, to find `blue_balls`, we only want to 
 # sum the outcomes that include a shape of 'ball' and a color of 'blue'
-blue_balls = sum(1 for bit in data if bit[0] == "BALL" and bit[1] == "BLUE")
-red_balls = sum(1 for bit in data if bit[0] == "BALL" and bit[1] == "RED")
-blue_ducks = sum(1 for bit in data if bit[0] == "DUCK" and bit[1] == "BLUE")
-red_ducks = sum(1 for bit in data if bit[0] == "DUCK" and bit[1] == "RED")
+blue_balls = sum(1 for obs in data if obs[0] == "BALL" and obs[1] == "BLUE")
+red_balls = sum(1 for obs in data if obs[0] == "BALL" and obs[1] == "RED")
+blue_ducks = sum(1 for obs in data if obs[0] == "DUCK" and obs[1] == "BLUE")
+red_ducks = sum(1 for obs in data if obs[0] == "DUCK" and obs[1] == "RED")
 
 
 print(separator, "Joint Distribution", separator) 
@@ -113,18 +114,18 @@ print("P(BALL | RED) : ", percent_of_red_that_are_balls)
 print("P(DUCK | RED) : ", percent_of_red_that_are_ducks)
 
 
-# unfortunately, there is no nice way of making stacked bar charts with matplotlib
-# you have to "manually" stack the bars on top of the category to which they correspond.
-# each time you stack, you add the height of the previous bar to tell matplotlib
-# to start the bar at the top of the previous bar.
+# NOTE: unfortunately, there is no nice way of making stacked bar charts with matplotlib
+#       you have to "manually" stack the bars on top of the category to which they correspond.
+#       each time you stack, you add the height of the previous bar to tell matplotlib
+#       to start the bar at the top of the previous bar.
 
-## Stack Conditional Distribution of Shape Given Red
-axs.bar("RED", percent_of_red_that_are_balls, color="yellow", ec="blue", width=0.5, label=shapes[0])
+# Stack Conditional Distribution of Shape Given Red
+axs.bar("RED", percent_of_red_that_are_balls, color="yellow", ec="blue", width=0.5, label="BALL")
 # add the previous percent to the `bottom` to stack
-axs.bar("RED", percent_of_red_that_are_ducks, color="lightgreen", ec="blue", width=0.5, bottom=percent_of_red_that_are_balls, label=shapes[1])
+axs.bar("RED", percent_of_red_that_are_ducks, color="lightgreen", ec="blue", width=0.5, bottom=percent_of_red_that_are_balls, label="DUCK")
 
-## Stack Conditional Distribution of Shape Given Blue
-# 	NOTE: don't label this group, or else you'll get two legends
+# Stack Conditional Distribution of Shape Given Blue
+# NOTE: don't label this group, or else you'll get two legends
 axs.bar("BLUE", percent_of_blue_that_are_balls, color="yellow", ec="blue", width=0.5)
 # add the previous percent to the `bottom` to stack
 axs.bar("BLUE", percent_of_blue_that_are_ducks, color="lightgreen", ec="blue", width=0.5, bottom=percent_of_blue_that_are_balls)

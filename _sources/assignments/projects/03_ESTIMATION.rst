@@ -1,4 +1,4 @@
-.. _project_two:
+.. _project_three:
 
 ==========
 Estimation
@@ -10,28 +10,28 @@ Estimation
 
 In this lab, you will use **Python** to calculate sample statistics.
 
-.. _project_two_instructions:
+.. _project_three_instructions:
 
 Instructions
 ============
 
-1. Create a folder named `LASTNAME_FIRSTNAME_project_two`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
-2. Download the *csv* dataset :ref:`below <project_two_dataset>` and place it in the new folder you created in step 1.
-3. In the same folder, create a Python *py* script named `project_two.py`
-4. Read the :ref:`project_two_project` section.
-5. Load in the data from the *csv* files using the technique outlined in the :ref:`project_two_loading_data` section.
-6. Perform all exercises and answer all questions in the :ref:`project_two_project` section. Label your script with comments as indicated in the instructions of each problem.
-7. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_two.zip`
+1. Create a folder named ``LASTNAME_FIRSTNAME_project_three``, replacing ``LASTNAME` and `FIRSTNAME`` with your last name and first name, respectively.
+2. Download the *csv* dataset :ref:`below <project_three_dataset>` and place it in the new folder you created in step 1.
+3. In the same folder, create a Python *py* script named `project_three.py`
+4. Read the :ref:`project_three_project` section.
+5. Load in the data from the *csv* files using the technique outlined in the :ref:`project_three_loading_data` section.
+6. Perform all exercises and answer all questions in the :ref:`project_three_project` section. Label your script with comments as indicated in the instructions of each problem.
+7. When you are done, zip your script **and** the *csv* file in a zip file named `LASTNAME_FIRSTNAME_project_three.zip`
 8. Upload the zip file here: TODO
    
-.. _project_two_background: 
+.. _project_three_background: 
 
 Background
 ==========
 
 TODO 
 
-.. _project_two_loading_data:
+.. _project_three_loading_data:
 
 Loading In Data
 ===============
@@ -57,7 +57,7 @@ The following code snippet will load in a *CSV* spreadsheet named ``example.csv`
     print(column_1)
 
 
-.. _project_two_project:
+.. _project_three_project:
 
 Project
 =======
@@ -78,7 +78,7 @@ Project
 
     *#1c* will require *two arguments*, the list of data and the percentile you wish to find.
 
-2. Load in the data from the :ref:`project_two_dataset` section. Note the length of a reign is separated in a ``Years`` column, a ``Months`` column and a ``Days``. To clean the data and compute the total length of a Roman Emperor's reign, apply the formula to each row of data, 
+2. Load in the data from the :ref:`project_three_dataset` section. Note the length of a reign is separated in a ``Years`` column, a ``Months`` column and a ``Days``. To clean the data and compute the total length of a Roman Emperor's reign, apply the formula to each row of data, 
 
 .. math:: 
 
@@ -86,7 +86,7 @@ Project
 
 Save the cleaned data in a new list. Label the list with a comment. 
 
-3. Using the functions created in #1, find the following statistics using the :ref:`project_two_dataset`. Label each computation with a comment.
+3. Using the functions created in #1, find the following statistics using the :ref:`project_three_dataset`. Label each computation with a comment.
 
     a. The mean length of a Roman Emperor's reign.
 
@@ -114,7 +114,7 @@ Save the cleaned data in a new list. Label the list with a comment.
 
     c. Interpret the results of *#a* and *#b*. What does this tell you about the distribution of Roman Emperors?
 
-.. _project_two_dataset:
+.. _project_three_dataset:
 
 Dataset
 =======

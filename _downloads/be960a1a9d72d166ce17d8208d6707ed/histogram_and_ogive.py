@@ -21,9 +21,9 @@ import matplotlib
 
 ## NOTE: How-To: Run This Script On Your Computer
 #
-# To render the website, I have to use a "headless" backend to generate the images. 
-# If you want to run this script on your computer, comment out the following line 
-# with the "#" you see appended to each line of this comment:
+#       To render the website, I have to use a "headless" backend to generate the images. 
+#       If you want to run this script on your computer, comment out the following line 
+#       with the "#" you see appended to each line of this comment:
 
 matplotlib.use('agg')
 
@@ -39,9 +39,9 @@ import random as rand
 ##################################################################################
 
 # Create New Figures and Axes
-    # NOTE: 2 axes are being created!
-    #       1 to graph the histogram
-    #       1 to graph the ogive
+# NOTE: 2 axes are being created!
+#       1 to graph the histogram
+#       1 to graph the ogive
 fig, axs = plt.subplots(1,2)
 
 # Generate Data
@@ -58,17 +58,19 @@ data = (
 # Label everything
 plt.suptitle("Histogram and Ogive of Quiz Scores")
 plt.title(f"n = {len(data)}")
-## Label Histogram 
+
+# Label Histogram 
 axs[0].set_xlabel("Grades")
 axs[0].set_ylabel("Frequency")
-## Label Ogive
+
+# Label Ogive
 axs[1].set_xlabel("Grades")
 axs[1].set_ylabel("Cumulative Frequency")
 
-# Generate and output
-## Plot histogram
+# Plot histogram
 axs[0].hist(data, bins=6, align='mid', color="lightblue", ec="red")
-## Plot ogive
+
+# Plot ogive
 axs[1].hist(data, bins=6, align='mid', color="lightblue", ec="red", cumulative=True)
 
 plt.show()

@@ -368,6 +368,11 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graphical-representations">Graphical Representations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">Histogram</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boxplots">Boxplots</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light">Velocity of Light</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-the-earth">Density of the Earth</a></li>
@@ -378,6 +383,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-the-earth-data">Density of the Earth Data</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
             </nav>
         </div>
@@ -390,7 +396,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="graphing-ii-histograms">
-<span id="project-three"></span><h1>Graphing II: Histograms<a class="headerlink" href="#graphing-ii-histograms" title="Permalink to this headline">#</a></h1>
+<span id="project-two"></span><h1>Graphing II: Histograms<a class="headerlink" href="#graphing-ii-histograms" title="Permalink to this headline">#</a></h1>
 <blockquote>
 <div><p>What can be shown, cannot be said.</p>
 <ul class="simple">
@@ -399,20 +405,16 @@ document.write(`
 </div></blockquote>
 <p>In this lab, you will get <em>even more</em> familiar with the statistical plotting features of <strong>Python</strong> using several famous datasets from the history of science.</p>
 <section id="instructions">
-<span id="project-three-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
+<span id="project-two-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><p>Download <strong>both</strong> <em>csv</em> datasets in the <a class="reference internal" href="#project-three-dataset"><span class="std std-ref">Datasets</span></a> section and place them in the <em>Linux Files</em> folder on your file system.</p></li>
-<li><p>In the same folder, create a Python <em>py</em> script named <cite>project_three.py</cite>.</p></li>
+<li><p>Download <strong>both</strong> <em>csv</em> datasets in the <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">Datasets</span></a> section and place them in the <em>Linux Files</em> folder on your file system.</p></li>
+<li><p>In the same folder, create a Python <em>py</em> script named <cite>project_two.py</cite>.</p></li>
 <li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Python docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
-<li><p>Read the <a class="reference internal" href="#project-three-background"><span class="std std-ref">Background</span></a> section and the <a class="reference internal" href="#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
-<li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-three-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the <em>Project</em> section.</p></li>
-<li><p>When you are done, zip your folder and all its contents into a file named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_three.zip</span></code></p></li>
-<li><p>Upload the zip file here: TODO</p></li>
+<li><p>Read the <a class="reference internal" href="#project-two-background"><span class="std std-ref">Background</span></a> section and the <a class="reference internal" href="#project-two-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the <em>Project</em> section.</p></li>
+<li><p>When you are done, zip your script <strong>and</strong> the <em>csv</em> files into a zip file named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_two.zip</span></code></p></li>
+<li><p>Upload the zip file to the Google Classrom Project Two asignment.</p></li>
 </ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You may need to refer to the <a class="reference internal" href="../../references/python/05_PLOTS.html#python-plotting"><span class="std std-ref">Plots</span></a> page for examples of various types of graphs.</p>
-</div>
 </section>
 <section id="formulae">
 <h2>Formulae<a class="headerlink" href="#formulae" title="Permalink to this headline">#</a></h2>
@@ -421,7 +423,7 @@ document.write(`
 <p><img src="../../_images/math/17d14ef48d395f9775a26d2741ea4b725f4815f0.png" alt="\text{percent error} = \frac{ \text{estimated - actual} }{ \text{actual} } \cdot 100"/></p>
 </div></section>
 <section id="background">
-<span id="project-three-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<span id="project-two-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
 <section id="the-michelson-velocity-of-light-experiment">
 <h3>The Michelson Velocity of Light Experiment<a class="headerlink" href="#the-michelson-velocity-of-light-experiment" title="Permalink to this headline">#</a></h3>
 <p>The <cite>Michelson Velocity of Light Experiment&lt;https://www.gutenberg.org/files/11753/11753-h/11753-h.htm&gt;</cite> conducted in 1887 was the first time <a class="reference external" href="https://en.wikipedia.org/wiki/Albert_A._Michelson">Albert A. Michelson</a> successfully measured the speed of light. He would go on to do so several more times, eventually teaming up with <a class="reference external" href="https://en.wikipedia.org/wiki/Edward_W._Morley">Edward Morley</a>. Together, using the principles Michelson first developed in 1887, Michelson and Morley would demonstrate the speed of light was the same regardless of the state of motion of the emitting body. This would go on to have profound effects for physics in the early twentieth century. It would lead <a class="reference external" href="https://en.wikipedia.org/wiki/Albert_Einstein">Albert Einstein</a> to propose the <a class="reference external" href="https://en.wikipedia.org/wiki/Theory_of_relativity">theory of relativity</a>, one of the most significant intellectual developments in history of humanity.</p>
@@ -437,8 +439,8 @@ document.write(`
 </section>
 </section>
 <section id="loading-in-data">
-<span id="project-three-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
-<p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="#project-three-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
+<span id="project-two-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
+<p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 
 <span class="c1"># read in data</span>
@@ -457,12 +459,60 @@ document.write(`
 </pre></div>
 </div>
 </section>
+<section id="graphical-representations">
+<span id="project-two-graphs"></span><h2>Graphical Representations<a class="headerlink" href="#graphical-representations" title="Permalink to this headline">#</a></h2>
+<section id="histogram">
+<h3>Histogram<a class="headerlink" href="#histogram" title="Permalink to this headline">#</a></h3>
+<p>Recall a histogram is a way of visualizing the frequency distribution of a sample of data,</p>
+<div class="math">
+<p><img src="../../_images/math/3c9c63d90e9a43708ff82b8f82232e4a4509a0cc.png" alt="f(x_i) = \frac{n(x_i)}{n}"/></p>
+</div><p>The following plot is a histogram generated with <a class="reference internal" href="../../references/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a> using <em>6</em> classes. Click on the <code class="docutils literal notranslate"><span class="pre">source</span></code> button in the top left corner to download the script. Read through the comments to see how it was constructed.</p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/af4741c2ca0dbe02296d6d69fbbb9543/histogram_normal.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/ace234f281e95d0ffe906dc5b5776507/histogram_normal.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/896988df4e6cc053d5d908c4e15065c2/histogram_normal.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/69aea2c2d783043412d307c1c1f6f235/histogram_normal.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/histogram_normal.png" class="plot-directive" src="../../_images/histogram_normal.png" />
+</figure>
+<p>The sample in this graph was randomly generated using a combination of the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-range-function"><span class="std std-ref">range() function</span></a> and the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-random-package"><span class="std std-ref">random() function</span></a>.</p>
+<p>The line you want to pay attention in the script you just downloaded is,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">axs</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;lightblue&#39;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Notice the first argument of this function is passed alone, without a name (i.e. without an expression <code class="docutils literal notranslate"><span class="pre">x=y</span></code>). The first argument of the <code class="docutils literal notranslate"><span class="pre">hist()</span></code> function is <em>always</em> the sample of data you wish to plot; The <code class="docutils literal notranslate"><span class="pre">data</span></code> argument is simply a <a class="reference internal" href="../../references/python/02_BASIC.html#python-lists"><span class="std std-ref">list</span></a> of data.</p>
+<p>The rest of the arguments are <em>named</em> (i.e. with an expression <code class="docutils literal notranslate"><span class="pre">x=y</span></code>). The <em>named</em> arguments can be passed into the <code class="docutils literal notranslate"><span class="pre">hist()</span></code> function is any order. For example, this line will generate the same histogram,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">axs</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;lightblue&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The only requirement is <em>data</em> must be passed in first. The other arguments may be passed in as you please.</p>
+<p>And there are many arguments you can pass into the <code class="docutils literal notranslate"><span class="pre">hist()</span></code> function. You can check out the <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html">hist() documentation on the matplotlib website</a> for a full list of arguments. The only <em>required</em> is the <code class="docutils literal notranslate"><span class="pre">data</span></code> argument.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">bin</span></code> argument is the number of <em>classes</em>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><em>bins</em> is a term you will frequently see when using computer programs that generate histograms. <em>bins</em> are <em>classes</em>.</p>
+</div>
+<p>The other arguments, <code class="docutils literal notranslate"><span class="pre">align</span></code>, <code class="docutils literal notranslate"><span class="pre">color</span></code> and <code class="docutils literal notranslate"><span class="pre">ec</span></code>, affect the <em>styling</em> of the graph.</p>
+<p><code class="docutils literal notranslate"><span class="pre">align</span></code> tells <a class="reference internal" href="../../references/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a> where to align the histogram bar. Valid values are <code class="docutils literal notranslate"><span class="pre">left</span></code>, <code class="docutils literal notranslate"><span class="pre">mid</span></code> and <code class="docutils literal notranslate"><span class="pre">right</span></code>. <code class="docutils literal notranslate"><span class="pre">left</span></code> aligns the histogram bars to the lower class limit. <code class="docutils literal notranslate"><span class="pre">mid</span></code> centers the histogram bars over the midpoint of each class. <code class="docutils literal notranslate"><span class="pre">right</span></code> will align the histogram bars with the upper class limit.</p>
+<p><code class="docutils literal notranslate"><span class="pre">color</span></code> is the color that fills the histogram bars. You can find a list of all the <em>named</em> colors on the <a class="reference external" href="https://matplotlib.org/stable/gallery/color/named_colors.html">color page of the matplotlib documentation</a>. Some of them are printed below for quick reference,</p>
+<ul class="simple">
+<li><p>maroon</p></li>
+<li><p>salmon</p></li>
+<li><p>chocolate</p></li>
+<li><p>darkorange</p></li>
+<li><p>springgreen</p></li>
+<li><p>navy</p></li>
+<li><p>hotpink</p></li>
+</ul>
+<p>As you can see, there are lots of options to make your graph nice and pretty.</p>
+</section>
+<section id="boxplots">
+<h3>Boxplots<a class="headerlink" href="#boxplots" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
 <section id="project">
-<span id="project-three-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
+<span id="project-two-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
 <section id="velocity-of-light">
 <h3>Velocity of Light<a class="headerlink" href="#velocity-of-light" title="Permalink to this headline">#</a></h3>
 <ol class="arabic">
-<li><p>Load the <a class="reference internal" href="#project-three-dataset"><span class="std std-ref">Velocity of Light</span></a> data into a <a class="reference internal" href="../../references/python/01_SETUP.html#python-scripts"><span class="std std-ref">Python Script</span></a> using the tecnique outlined in the <a class="reference internal" href="#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Load the <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">Velocity of Light</span></a> data into a <a class="reference internal" href="../../references/python/01_SETUP.html#python-scripts"><span class="std std-ref">Python Script</span></a> using the tecnique outlined in the <a class="reference internal" href="#project-two-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
 <li><p>Construct a histogram plot for this data sets using eight classes. Answer the following questions in the body of your docstring.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
@@ -497,7 +547,7 @@ document.write(`
 <section id="density-of-the-earth">
 <h3>Density of the Earth<a class="headerlink" href="#density-of-the-earth" title="Permalink to this headline">#</a></h3>
 <ol class="arabic">
-<li><p>Load the <a class="reference internal" href="#project-three-dataset"><span class="std std-ref">Density of the Earth</span></a> data into a <a class="reference internal" href="../../references/python/01_SETUP.html#python-scripts"><span class="std std-ref">Python Script</span></a> using the tecnique outlined in the <a class="reference internal" href="#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Load the <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">Density of the Earth</span></a> data into a <a class="reference internal" href="../../references/python/01_SETUP.html#python-scripts"><span class="std std-ref">Python Script</span></a> using the tecnique outlined in the <a class="reference internal" href="#project-two-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
 <li><p>Construct a histogram plot for this data sets using eight classes. Answer the following questions in the body of your docstring.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
@@ -531,7 +581,7 @@ document.write(`
 </section>
 </section>
 <section id="datasets">
-<span id="project-three-dataset"></span><h2>Datasets<a class="headerlink" href="#datasets" title="Permalink to this headline">#</a></h2>
+<span id="project-two-dataset"></span><h2>Datasets<a class="headerlink" href="#datasets" title="Permalink to this headline">#</a></h2>
 <section id="velocity-of-light-data">
 <h3>Velocity of Light Data<a class="headerlink" href="#velocity-of-light-data" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/5aa18cd2c2ca04b7636763fca781ca72/velocity_of_light_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
@@ -603,6 +653,13 @@ document.write(`
 <p>The first column corresponds to the experiment number (first, second, third, etc.). The second column is the <em>ratio of the density of Earth to the density of water</em>. Recall the density of water by definition is <img class="math" src="../../_images/math/53fe61fc6b56ada57fe4981393b357d6008bccb3.png" alt="1 \frac{g}{cm^3}"/>.</p>
 </section>
 </section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://matplotlib.org/stable/gallery/color/named_colors.html">matplotlib colors</a></p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html">matplotlib histogram function</a></p></li>
+</ul>
+</section>
 </section>
 
 
@@ -661,6 +718,11 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graphical-representations">Graphical Representations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">Histogram</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boxplots">Boxplots</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light">Velocity of Light</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-the-earth">Density of the Earth</a></li>
@@ -671,6 +733,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-the-earth-data">Density of the Earth Data</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
   </nav></div>
 
