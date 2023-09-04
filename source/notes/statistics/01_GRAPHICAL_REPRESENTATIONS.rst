@@ -251,17 +251,102 @@ As we study this table, keep in mind the following question,
 	
 Whenever we encounter something that sums to 100%, it is a fair guess it represents a type of *distribution*.
 
-Joint Probability Distribution
-******************************
+Joint Frequency Distribution
+****************************
 
-The most obvious to make this table equal *100%* is through its *joint probabilty distribution*. 
+The most obvious to make this table equal *100%* is through its *joint frequency distribution*. Each entry in the table must sum to the total number of observations,
+
+.. math::
+
+	n(E \cap T) + n(E \cap T^c) + n(E^c \cap T) + n(E^c \cap T^c) = n
 	
-TODO
+Where :math:`n` is the total number. In this case, we have,
+
+.. math::
+
+	3 + 4 + 2 + 1 = 10
+	
+We may also express this in terms of *relative joint frequency*, by dividing through by the total number of observations, 10,
+
+.. math::
+	
+	P(E \cap T) + P(E \cap T^c) + P(E^c \cap T) + P(E^c \cap T^c) = 1	
+	
+
+.. math::
+
+	\frac{3}{10} + \frac{4}{10} + \frac{2}{10} + \frac{1}{10} = 1
+
+Take note: each event, :math:`E \cap T`, :math:`E \cap T^c`, :math:`E^c \cap T` and :math:`E^c \cap T^c`, taken together divided the entire sample :math:`S` in groups that share no outcomes. In other words, each event is *mutually exclusive* with every other event. More than that, the events compass the *entire* sample space. 
+
+We call events that divide the *entire* sample into mutually exclusive groups a *partition* of the sample. 
+
+.. tip::
+
+	Think of an *event* as a *group* of outcomes. Or, more precisely, a :ref:`set <set_theory>`.
+
+.. important::
+
+	Any time a set of events *partition* an *entire* sample into sets of *mutually exclusive* outcomes, then those events form a *distribution*. 
 
 Marginal Probability Distribution
 *********************************
 
-TODO
+In the previous section, we observed both values of the categorical variable simultaneously. We may choose, for whatever reason, to ignore one of the variable. For example, if instead of asking every person in our example if they had seen the *Empire Strikes Back* **and** the *Two Towers*, we had only asked each individual the only first question, then we would have an ordinary frequency distribution. In others, ignoring the *y* variable, we can get the following distribution,
+
+
++---------------------------+---------------------------+
+| :math:`\text{yes}_{e}`    |  :math:`\text{no}_{e}`    | 
++---------------------------+---------------------------+
+|         7                 |            3              | 
++---------------------------+---------------------------+
+
+Notice this row represents the sum of each column in the original *joint frequency* distribution. Moreover, it must also total to *n*,
+
+.. math::
+
+	n(E) + n(E^c) = n 
+
+This may also be expressed in terms of percentages as,
+
+.. math::
+
+	P(E) + P(E^c) = 1
+	
+Similarly, if we had restricted our attention to only the question of whether people in the sample had seen the *Two Towers*, we would have,
+
+
++---------------------------+---------+
+|         x_i               |  f(x_i) |
++---------------------------+---------+
+| :math:`\text{yes}_{t}`    |    5    | 
++---------------------------+---------+
+| :math:`\text{no}_{t}`     |    5    | 
++---------------------------+---------+
+
+Notice this column represents the sum of each row in the original *joint frequency* distribution. Morever, it must also total to *n*,
+
+.. math::
+
+	n(T) + n(T^c) = n
+	
+Or, expressed in terms of percentages,
+
+.. math::
+
+	P(T) + P(T^c) = 1
+	
+.. important::
+
+	The equation,
+	
+	.. math::
+	
+		P(A) + P(A^c) = 1
+		
+	is known as the :ref:`law_of_complements`.
+	
+When one variable is ignored entirely, i.e. if only one variable is observed for each individual, the distribution formed by the *partition* is known as a *marginal frequency distribution*.
 
 Conditional Probability Distribution
 ************************************
@@ -273,9 +358,34 @@ TODO
 .. _grouped_frequency_distributions: 
 
 Grouped Distributions
----------------------
+---------------------                                                
 
-Ungrouped distributions can get cumbersome when the :ref:`range` of the data is very large or when there are a large number of unique observations drawn from a continuous population. For example, consider the following dataset which represents the eruption length and period between eruptions for the famous geyser `Old Faithful <https://en.wikipedia.org/wiki/Old_Faithful>`_ at Yellowstone National Park in Wymoing.
+Up to this point, we have been dealing with *categorical* data. An *ungrouped* distribution is very easily extracted from *categorical* data. When we consider *quantitative* data, the situation becomes more complicated.
+
+*Quantitative* data comes in two forms:
+
+- Discrete
+- Continuous
+
+.. topic:: Discrete Data
+
+	Discrete data are *countable*. 
+	
+	Examples
+		- Number of passengers on a train
+		- Number of goals scored in a soccer game
+		- Number of defective batteries in a sample of 100.
+		                                                                                                                                                                                                                                                                                                                                                            
+.. topic:: 
+
+	Continuous data are *uncountable*.
+	
+	Examples
+		- Temperature on a summer day
+		- Mass of a body
+		- The charge of an electron
+
+When the data are *discrete*, it *may* be possible to get by with an *ungrouped* distirbution, however *ungrouped* distributions can get cumbersome when the :ref:`range` of the data is very large or when there are a large number of unique observations drawn from a continuous population. For example, consider the following dataset which represents the eruption length and period between eruptions for the famous geyser `Old Faithful <https://en.wikipedia.org/wiki/Old_Faithful>`_ at Yellowstone National Park in Wymoing.
 
 .. csv-table:: Old Faithful Eruption and Waiting Times
    :file: ../../assets/datasets/previews/old_faithful_data_preview.csv
@@ -284,10 +394,6 @@ Attempting to create an ungrouped distribution of this data would be a futile ef
 
 Steps
 *****
-
-.. note:: 
-
-    The book introduces the additional concept of *class boundaries* which are rarely used in practice. The process for finding a *grouped frequency distribution* given below is more in line with the standard methods used in real-world applications.
 
 If you are given a sample of *n* data points :math:`S = \{ x_1, x_2, ... , x_n \}`, then the steps for finding a *grouped* frequency distribution are as follows,
 
