@@ -438,7 +438,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-distributions">Frequency Distributions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ungrouped-distributions">Ungrouped Distributions</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#two-way-tables">Two Way Tables</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#joint-probability-distribution">Joint Probability Distribution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#joint-frequency-distribution">Joint Frequency Distribution</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#marginal-probability-distribution">Marginal Probability Distribution</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-probability-distribution">Conditional Probability Distribution</a></li>
 </ul>
@@ -728,14 +728,85 @@ document.write(`
 <p>In what ways does this table add up to 100%?</p>
 </div>
 <p>Whenever we encounter something that sums to 100%, it is a fair guess it represents a type of <em>distribution</em>.</p>
-<section id="joint-probability-distribution">
-<h4>Joint Probability Distribution<a class="headerlink" href="#joint-probability-distribution" title="Permalink to this headline">#</a></h4>
-<p>The most obvious to make this table equal <em>100%</em> is through its <em>joint probabilty distribution</em>.</p>
-<p>TODO</p>
+<section id="joint-frequency-distribution">
+<h4>Joint Frequency Distribution<a class="headerlink" href="#joint-frequency-distribution" title="Permalink to this headline">#</a></h4>
+<p>The most obvious to make this table equal <em>100%</em> is through its <em>joint frequency distribution</em>. Each entry in the table must sum to the total number of observations,</p>
+<div class="math">
+<p><img src="../../_images/math/cbd2244b11df6d15feb853d03cd04d614a24376b.png" alt="n(E \cap T) + n(E \cap T^c) + n(E^c \cap T) + n(E^c \cap T^c) = n"/></p>
+</div><p>Where <img class="math" src="../../_images/math/a455464b27e42f679d79e9d14de742704e595a2e.png" alt="n"/> is the total number. In this case, we have,</p>
+<div class="math">
+<p><img src="../../_images/math/3c6e5de43aaa5e147b68151aa4adacf800ef54d9.png" alt="3 + 4 + 2 + 1 = 10"/></p>
+</div><p>We may also express this in terms of <em>relative joint frequency</em>, by dividing through by the total number of observations, 10,</p>
+<div class="math">
+<p><img src="../../_images/math/ee44cddc975fcf52c45bae2873e76d90d5102bc8.png" alt="P(E \cap T) + P(E \cap T^c) + P(E^c \cap T) + P(E^c \cap T^c) = 1"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/8a559bf80bee3be4dd39556a3999b7460ab72970.png" alt="\frac{3}{10} + \frac{4}{10} + \frac{2}{10} + \frac{1}{10} = 1"/></p>
+</div><p>Take note: each event, <img class="math" src="../../_images/math/d1338b059d54235e1ef8c86ebf4c479a6546b855.png" alt="E \cap T"/>, <img class="math" src="../../_images/math/9e191222c9c9e77a5cc5b18caac11608bd59f078.png" alt="E \cap T^c"/>, <img class="math" src="../../_images/math/303bafc6d753bb4a73adc4aca9897e3440083f2a.png" alt="E^c \cap T"/> and <img class="math" src="../../_images/math/365f9951e049ddb492e2ebf04408c23956cbad49.png" alt="E^c \cap T^c"/>, taken together divided the entire sample <img class="math" src="../../_images/math/23298f92ca8dc2a1ce6332eb7a21d5f2e9ae0bd8.png" alt="S"/> in groups that share no outcomes. In other words, each event is <em>mutually exclusive</em> with every other event. More than that, the events compass the <em>entire</em> sample space.</p>
+<p>We call events that divide the <em>entire</em> sample into mutually exclusive groups a <em>partition</em> of the sample.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Think of an <em>event</em> as a <em>group</em> of outcomes. Or, more precisely, a <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">set</span></a>.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Any time a set of events <em>partition</em> an <em>entire</em> sample into sets of <em>mutually exclusive</em> outcomes, then those events form a <em>distribution</em>.</p>
+</div>
 </section>
 <section id="marginal-probability-distribution">
 <h4>Marginal Probability Distribution<a class="headerlink" href="#marginal-probability-distribution" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
+<p>In the previous section, we observed both values of the categorical variable simultaneously. We may choose, for whatever reason, to ignore one of the variable. For example, if instead of asking every person in our example if they had seen the <em>Empire Strikes Back</em> <strong>and</strong> the <em>Two Towers</em>, we had only asked each individual the only first question, then we would have an ordinary frequency distribution. In others, ignoring the <em>y</em> variable, we can get the following distribution,</p>
+<table class="table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img class="math" src="../../_images/math/85300510f7135d1008f603bcbb241b7505bc9754.png" alt="\text{yes}_{e}"/></p></td>
+<td><p><img class="math" src="../../_images/math/6df6aa968a3a78fe048300948ab9816b1584e4a0.png" alt="\text{no}_{e}"/></p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>3</p></td>
+</tr>
+</tbody>
+</table>
+<p>Notice this row represents the sum of each column in the original <em>joint frequency</em> distribution. Moreover, it must also total to <em>n</em>,</p>
+<div class="math">
+<p><img src="../../_images/math/c1c2ac1fa148b37d260f65be74ac1440fe0fd067.png" alt="n(E) + n(E^c) = n"/></p>
+</div><p>This may also be expressed in terms of percentages as,</p>
+<div class="math">
+<p><img src="../../_images/math/9ff5b8bbe851acf58d1e5e2bb054d4f364c02937.png" alt="P(E) + P(E^c) = 1"/></p>
+</div><p>Similarly, if we had restricted our attention to only the question of whether people in the sample had seen the <em>Two Towers</em>, we would have,</p>
+<table class="table">
+<colgroup>
+<col style="width: 75%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>x_i</p></td>
+<td><p>f(x_i)</p></td>
+</tr>
+<tr class="row-even"><td><p><img class="math" src="../../_images/math/08e556c4ae78b99a39209029327fc7feec567c43.png" alt="\text{yes}_{t}"/></p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p><img class="math" src="../../_images/math/85f27e217b6b00a2ce8976e17d284c7c64a52f5e.png" alt="\text{no}_{t}"/></p></td>
+<td><p>5</p></td>
+</tr>
+</tbody>
+</table>
+<p>Notice this column represents the sum of each row in the original <em>joint frequency</em> distribution. Morever, it must also total to <em>n</em>,</p>
+<div class="math">
+<p><img src="../../_images/math/fb6a178803d3af550520aa426a0bbf6bec56f802.png" alt="n(T) + n(T^c) = n"/></p>
+</div><p>Or, expressed in terms of percentages,</p>
+<div class="math">
+<p><img src="../../_images/math/2bc887f3ebec4bc11208c867ab5a38b7dd557ed0.png" alt="P(T) + P(T^c) = 1"/></p>
+</div><div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The equation,</p>
+<div class="math">
+<p><img src="../../_images/math/ab7b4e33f3d0e27ea39baf70b27b1cc3cc8af0d6.png" alt="P(A) + P(A^c) = 1"/></p>
+</div><p>is known as the <a class="reference internal" href="../probability/00_INTRODUCTION.html#law-of-complements"><span class="std std-ref">Law of Complements</span></a>.</p>
+</div>
+<p>When one variable is ignored entirely, i.e. if only one variable is observed for each individual, the distribution formed by the <em>partition</em> is known as a <em>marginal frequency distribution</em>.</p>
 </section>
 <section id="conditional-probability-distribution">
 <h4>Conditional Probability Distribution<a class="headerlink" href="#conditional-probability-distribution" title="Permalink to this headline">#</a></h4>
@@ -745,7 +816,25 @@ document.write(`
 </section>
 <section id="grouped-distributions">
 <span id="grouped-frequency-distributions"></span><h3>Grouped Distributions<a class="headerlink" href="#grouped-distributions" title="Permalink to this headline">#</a></h3>
-<p>Ungrouped distributions can get cumbersome when the <a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html#range"><span class="std std-ref">Range</span></a> of the data is very large or when there are a large number of unique observations drawn from a continuous population. For example, consider the following dataset which represents the eruption length and period between eruptions for the famous geyser <a class="reference external" href="https://en.wikipedia.org/wiki/Old_Faithful">Old Faithful</a> at Yellowstone National Park in Wymoing.</p>
+<p>Up to this point, we have been dealing with <em>categorical</em> data. An <em>ungrouped</em> distribution is very easily extracted from <em>categorical</em> data. When we consider <em>quantitative</em> data, the situation becomes more complicated.</p>
+<p><em>Quantitative</em> data comes in two forms:</p>
+<ul class="simple">
+<li><p>Discrete</p></li>
+<li><p>Continuous</p></li>
+</ul>
+<div class="topic">
+<p class="topic-title">Discrete Data</p>
+<p>Discrete data are <em>countable</em>.</p>
+<dl class="simple">
+<dt>Examples</dt><dd><ul class="simple">
+<li><p>Number of passengers on a train</p></li>
+<li><p>Number of goals scored in a soccer game</p></li>
+<li><p>Number of defective batteries in a sample of 100.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<p>When the data are <em>discrete</em>, it <em>may</em> be possible to get by with an <em>ungrouped</em> distirbution, however <em>ungrouped</em> distributions can get cumbersome when the <a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html#range"><span class="std std-ref">Range</span></a> of the data is very large or when there are a large number of unique observations drawn from a continuous population. For example, consider the following dataset which represents the eruption length and period between eruptions for the famous geyser <a class="reference external" href="https://en.wikipedia.org/wiki/Old_Faithful">Old Faithful</a> at Yellowstone National Park in Wymoing.</p>
 <table class="table" id="id18">
 <caption><span class="caption-text">Old Faithful Eruption and Waiting Times</span><a class="headerlink" href="#id18" title="Permalink to this table">#</a></caption>
 <colgroup>
@@ -809,10 +898,6 @@ document.write(`
 <p>Attempting to create an ungrouped distribution of this data would be a futile effort. Therefore, the standard approach with datasets like this is to create an <em>grouped</em> frequency distribution.</p>
 <section id="steps">
 <h4>Steps<a class="headerlink" href="#steps" title="Permalink to this headline">#</a></h4>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The book introduces the additional concept of <em>class boundaries</em> which are rarely used in practice. The process for finding a <em>grouped frequency distribution</em> given below is more in line with the standard methods used in real-world applications.</p>
-</div>
 <p>If you are given a sample of <em>n</em> data points <img class="math" src="../../_images/math/d64d0815fc8a6ccc2f430c1c7db6e5edd8053a47.png" alt="S = \{ x_1, x_2, ... , x_n \}"/>, then the steps for finding a <em>grouped</em> frequency distribution are as follows,</p>
 <ol class="arabic simple">
 <li><p>Find the range of the data set.</p></li>
@@ -1322,7 +1407,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-distributions">Frequency Distributions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ungrouped-distributions">Ungrouped Distributions</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#two-way-tables">Two Way Tables</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#joint-probability-distribution">Joint Probability Distribution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#joint-frequency-distribution">Joint Frequency Distribution</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#marginal-probability-distribution">Marginal Probability Distribution</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-probability-distribution">Conditional Probability Distribution</a></li>
 </ul>
