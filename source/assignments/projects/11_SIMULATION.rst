@@ -1,4 +1,4 @@
-.. _project_ten:
+.. _project_eleven:
 
 ==========
 Simulation
@@ -9,15 +9,17 @@ Simulation
 Instructions
 ============
 
-1. Create a folder named `LASTNAME_FIRSTNAME_project_ten`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
-2. In the same folder, create a Microsoft Word *docx* document named `project_ten.docx`.
-3. In the same folder, create a Python *py* script named `project_ten.py`
-4. Read the :ref:`project_ten_project` section.
-5. Perform the indicated exercises in the :ref:`project_ten_project` section. Include answers in the *.docx* document file.
-6. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_ten.zip`
-7. Upload the zip file here: TODO
+1. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_eleven.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
+3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
+4. Read the :ref:`project_eleven_background` section.
+5. Read the :ref:`project_eleven_loading_data` section.
+6. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
+7. Perform all exercises and answer all questions in the :ref:`project_eleven_project` section. Label your script with comments as indicated in the instructions of each problem.
+8. When you are done, zip your script in a zip file named ``LASTNAME_FIRSTNAME_project_eleven.zip``
+9. Upload the zip file to the Google Classroom Project Four Assignment.
 
-.. _project_ten_background:
+
+.. _project_eleven_background:
 
 Background
 ==========
@@ -146,7 +148,7 @@ The key point is: we are *nesting* a list iteration within another list iteratio
         
 Note that in this example, since **A** is the set of pets and **B** is the set of owners, we can interpret :math:`A x B` as the set of all the possible :ref:`combinations` of pet owners. 
 
-.. _project_ten_project:
+.. _project_eleven_project:
 
 Project
 =======

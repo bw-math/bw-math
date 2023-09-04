@@ -15,16 +15,17 @@ In this lab, you will get familiar with the statistical plotting features of **P
 Instructions
 ============
 
-1. Download the *csv* dataset in the :ref:`project_one_dataset` section and place it in the ``Linux Files`` folder on your folder system (where you save your ``.py`` scripts.
-2. In the same folder, create a Python ``.py`` script named ``project_one.py``. 
-3. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
+1. Download the ``.csv`` dataset in the :ref:`project_one_dataset` section and place it in the ``Linux Files`` folder on your folder system where you save your ``.py`` scripts.
+2. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_one.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
+3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the :ref:`project_one_background` section.
 5. Read the :ref:`project_one_loading_data` section.
-6. Read the :ref:`bar_chart` section. Download the script files in that section onto your ChromeBook. Read through and execute them on your computer. 
+6. Read the :ref:`project_one_bar_chart` section. Download the script files in that section onto your ChromeBook. Read through and execute them on your computer. 
 7. Read the :ref:`project_one_set_operations` section. 
-8. Perform all exercises and answer all questions in the :ref:`project_one_project` section. Label your script with comments as indicated in the *Project* section.
-9.  When you are done, zip your folder and all its contents into a file named ``LASTNAME_FIRSTNAME_project_one.zip``
-10. Upload the zip file here to the Google Classroom Project One Assignment.
+8. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
+9. Perform all exercises and answer all questions in the :ref:`project_one_project` section. Label your script with comments as indicated in the *Project* section.
+10. When you are done, zip your script **and** your *csv* file into a file named ``LASTNAME_FIRSTNAME_project_one.zip``
+11. Upload the zip file to the Google Classroom Project One Assignment.
 
 .. _project_one_background:
 
@@ -140,12 +141,12 @@ The following code snippet will load in a *CSV* spreadsheet named ``example.csv`
     print(column_1)
 
 
-.. _bar_charts:
+.. _project_one_bar_charts:
 
 Bar Charts
 ==========
 
-.. _standard_bar_charts:
+.. _project_one_standard_bar_charts:
 
 No Frills
 ---------
@@ -163,9 +164,40 @@ Up until now we have been living in the stone age, creating these graphs by hand
 
 Click on the ``source`` button in the top left corner of the graph to download the *.py* script used to generate this graph. Examine the source code contained therein for generating a *Bar Chart*. Be sure to read the comments before you execute it, as you will need to tweak a setting to get it to run on your computer. 
 
+The key line to pay attention to in this script is the following,
+
+.. code:: python
+
+    axs.bar(relative_freq.keys(), relative_freq.values(), color="lightblue", ec="red", width=0.5)
+
+The `bar() <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html>`_ function is :ref:`matplotlib`'s *bar chart* graphing function. 
+
+The first argument of the ``bar()`` function is the values of the categorical variable you wish to plot. The second argument is the frequencies of each of the values. The *order* of each list that is passed in must be the same. For example,
+
+.. code:: python
+
+    values = [ "A", "B"]
+    frequencies = [5, 7]
+
+    axs.bar(values, frequencies, color="lightblue", ec="red", width=0.5)
+
+This code will create a bar chart with two values of a categorical variable on the ``x`` axis, ``A`` and ``B``. It will plot their respective frequencies, ``5`` and ``7``, on the y-axis.
+
+The two arguments, ``color`` and ``ec``, affect the styling of the bar chart. ``color`` determines the fill color of the bars and ``ec`` determines the outline color.
+
+.. note:: 
+
+    ``ec`` stands for "*edge color*"
+
+The full list of colors available to use in :ref:`matplotlib` is detailed in the following chart,
+
+.. image:: ../../assets/imgs/python/matplotlib_colors.png
+    :align: center
+
+Any value in this chart can be used an argument for ``color`` and ``ec``.
 This script is annotated with lots of comments for you to read. Give them a peak, and then let's meet over in the next section.
 
-.. _stacked_bar_charts:
+.. _project_one_stacked_bar_charts:
 
 Stacked
 -------
@@ -178,7 +210,9 @@ Recall a *stacked bar chart* is a way of visually representing a *conditional di
 	
 .. plot:: assets/plots/other/stacked_bar_chart.py
 
-This one is extremely tricky. `matplotlib <https://matplotlib.org/>`_ does not have a nice way of making stacked bar charts; Unforunately, the twenty-first century isn't all it's cracked up to be. In this timeline, you have to "stack" your bar charts yourself. Make sure to download this one and go through it step by step. The script has been well commented; every step has been detailed. 
+This one is extremely tricky, so read through it carefully. 
+
+`matplotlib <https://matplotlib.org/>`_ does not have a nice way of making stacked bar charts; Unforunately, the twenty-first century isn't all it's cracked up to be. In this timeline, you have to "stack" your bar charts yourself. Make sure to download this one and go through it step by step. The script has been well commented; every step has been detailed. 
 
 .. hint::
 	
@@ -285,3 +319,11 @@ The following table is the a preview of the data you will be using for this proj
 
 .. csv-table:: Electric Vehicles in Washington State
    :file: ../../assets/datasets/previews/electric_vehicle_population_data_preview.csv
+
+References
+==========
+
+- `matplotlib bar charts <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html>`_
+- `matplotlib colors <https://matplotlib.org/stable/gallery/color/named_colors.html>`_
+- `python dictionaries <https://docs.python.org/3/tutorial/datastructures.html#dictionaries>`_
+- `python string templating <https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals>`_

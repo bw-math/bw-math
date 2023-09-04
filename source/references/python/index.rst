@@ -26,7 +26,5 @@ Furthermore, all of the plots across the pages of this website were generated wi
    04_FUNCTIONS
    05_PLOTS
    06_FILES
-   ..
-      07_CONTROLS
-      08_WEB
-      09_EXAMPLES
+   07_CONTROLS
+   08_WEB

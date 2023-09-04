@@ -31,17 +31,17 @@ A research center conducted a national survey about teenage behavior. Teens were
 
 Hurricane damage amounts, in millions of dollars per acre, were estimated from insurance records for major hurricanes for the past three decades. A stratified random sample of five locations (based on categories of distance from the coast) was selected from each of three coastal regions in the southeastern United States. The three regions were Gulf Coast (Alabama, Louisiana, Mississippi), Florida, and Lower Atlantic (Georgia, South Carolina, North Carolina). Damage amounts in millions of dollars per acre, adjusted for inflation, are shown in the table below. The top row of this table represents the distance from the coast.
 
-.. topic:: Hurricane Damage Amounts In Millions of Dollars Per Acre
+**Hurricane Damage Amounts In Millions of Dollars Per Acre**
 
-+-----------------+---------------+-----------------+---------------+----------------+-----------------+
-|                 |   < 1 mile    |   1 to 2 miles  |  2 to 5 miles |  5 to 10 miles |  10 to 20 miles |
-+-----------------+---------------+-----------------+---------------+----------------+-----------------+
-| Gulf Coast      |     24.7      |       21.0      |     12.0      |      7.3       |      1.7        |
-+-----------------+---------------+-----------------+---------------+----------------+-----------------+
-| Florida         |     35.1      |       31.7      |     20.7      |       6.4      |      3.0        |
-+-----------------+---------------+-----------------+---------------+----------------+-----------------+
-| Lower Atlantic  |     21.8      |       15.7      |      12.6     |      1.2       |      0.3        |
-+-----------------+---------------+-----------------+---------------+----------------+-----------------+
++----------------+----------+--------------+--------------+---------------+----------------+
+|                | < 1 mile | 1 to 2 miles | 2 to 5 miles | 5 to 10 miles | 10 to 20 miles |
++----------------+----------+--------------+--------------+---------------+----------------+
+| Gulf Coast     | 24.7     | 21.0         | 12.0         | 7.3           | 1.7            |
++----------------+----------+--------------+--------------+---------------+----------------+
+| Florida        | 35.1     | 31.7         | 20.7         | 6.4           | 3.0            |
++----------------+----------+--------------+--------------+---------------+----------------+
+| Lower Atlantic | 21.8     | 15.7         | 12.6         | 1.2           | 0.3            |
++----------------+----------+--------------+--------------+---------------+----------------+
 
 
 Describe differences and similarities in the hurricane damage amounts among the three regions in a few sentences. Justify your answers with calculations. 

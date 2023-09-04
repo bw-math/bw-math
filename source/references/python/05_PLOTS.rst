@@ -157,26 +157,146 @@ This example will plot the ordered pairs :math:`(1, 8), (2, 9), (3, 7)`
 
     plot.show()
 
+Styling The Graph
+=================
+
+All graphing functions in **matplotlib** accept ``color`` and ``ec`` arguments. These arguments will determine the fill color and outline color of the graph, respectively. For instance, the following code will generate a histogram with light blue bars outlined in red,
+
+.. code:: python
+    
+    import random 
+    import matplotlib.pyplot as plot
+
+    fig, axes = plot.subplots()
+
+    # generate some random data
+    data = [ random.random() for _ in range(100) ]
+
+    axes.hist(data, color='lightblue', ec='red')
+
+    plot.show()
+
+The full list of colors available to use in :ref:`matplotlib` is detailed in the following chart,
+
+.. image:: ../../assets/imgs/python/matplotlib_colors.png
+    :align: center
+
 Gallery
 =======
 
 You can download the scripts used to generate any of these examples by clicking on the "*source*" link in the top right corner of the image. 
 
+.. _matplotlib_boxplot:
+
 Boxplot
 -------
 
+``plot.boxplot()``
+
+.. code:: python 
+
+    import matplotlib.pyplot as plot 
+
+    fig, axes = plot.subplots()
+    
+    # generate some random data
+    data = [ random.randint(1, 50) for _ in range(100 ) ]
+    
+    axes.boxplot(data)
+
+    plot.show() 
+    
 .. plot:: assets/plots/boxplots/boxplot_normal.py
+
+.. _matplotlib_barchart:
 
 Bar Chart
 ---------
 
+.. _matplotlib_standard_barchart:
+
 No Frills
 *********
+
+The code snippet below will generate a bar chart for the following frequency distribution,
+
++-----+------+
+| x   | f(x) |
++-----+------+
+| A   | 10   |
++-----+------+
+| B   | 12   |
++-----+------+
+
+.. code:: python 
+
+    import matplotlib.pyplot as plot 
+
+    fig, axes = plot.subplots()
+    
+    values = [ "A", "B"]
+    frequencies = [ 10, 12]
+    
+    axes.bar(values, frequencies)
+
+    plot.show() 
 
 .. plot:: assets/plots/other/bar_chart.py
 
 Stacked
 *******
+
+Suppose we have a sample of *bivarate categorical data*,
+
+.. math:: 
+
+    S = \{ (x_i, y_i) \}
+
+.. math:: 
+
+    i = 1, 2, ..., n
+
+where *x* can take on the values ``A`` and ``B`` and *y* can take on the values ``C`` and ``D``.
+
+Suppose further we have the *conditional distributions* for the variable *x* conditioned on the other variable *y*.
+
++-----+---------------------+
+| x   | :math:`P(x \mid C)` |
++-----+---------------------+
+| A   | 0.7                 |
++-----+---------------------+
+| B   | 0.3                 |
++-----+---------------------+
+
+
++-----+---------------------+
+| x   | :math:`P(x \mid D)` |
++-----+---------------------+
+| A   | 0.6                 |
++-----+---------------------+
+| B   | 0.4                 |
++-----+---------------------+
+
+The following code will generate a *stacked bar chart* to visualize the *association* between these two conditional distributions.
+
+.. code:: python 
+
+    import matplotlib.pyplot as plot 
+
+    fig, axes = plot.subplots()
+
+    conditional_frequencies_of_x_given_C = [ 0.7, 0.3]
+    conditional_frequencies_of_x_given_D = [ 0.6, 0.4]
+    
+    axes.bar( "C", conditional_frequencies_of_x_given_C[0], label="C", color="lightcyan")
+    axes.bar( "C", relative_frequencies_A[1], bottom=conditional_frequencies_of_x_given_C[1], label="D", color="gold")
+
+    # don't label the second distribution, or you will get two legends on the graph
+    axes.bar("D", conditional_frequencies_of_x_given_D[0], color="lightcyan")
+    axes.bar("D", relative_frequencies_A[1], bottom=conditional_frequencies_of_x_given_D[1], color="gold")
+
+    plot.legend()
+    plot.show() 
 
 .. plot:: assets/plots/other/stacked_bar_chart.py
 
@@ -217,6 +337,9 @@ Error Bars
 **********
 
 TODO 
+
+QQ Plots
+********
 
 Time Series
 -----------

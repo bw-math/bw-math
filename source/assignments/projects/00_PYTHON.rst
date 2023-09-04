@@ -13,7 +13,7 @@ In this lab, you will install **Python** and learn some of its basic functions. 
 Instructions
 ============
 
-1. Create a Python ``.py`` script named ``project_zero.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it.
+1. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_zero.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
 2. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 3. Perform all exercises and answer all questions in the :ref:`project_zero_project` section. Label your script with comments as indicated in the instructions of each problem.
 4. When you are done, zip your folder and all its contents in a file named ``LASTNAME_FIRSTNAME_project_zero.zip``

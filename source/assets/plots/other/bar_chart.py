@@ -21,9 +21,9 @@ import matplotlib
 
 ## NOTE: How-To: Run This Script On Your Computer
 #
-# To render the website, I have to use a "headless" backend to generate the images. 
-# If you want to run this script on your computer, comment out the following line 
-# with the "#" you see appended to each line of this comment:
+#       To render the website, I have to use a "headless" backend to generate the images. 
+#       If you want to run this script on your computer, comment out the following line 
+#       with the "#" you see appended to each line of this comment:
 
 matplotlib.use('agg')
 
@@ -41,34 +41,44 @@ import matplotlib.pyplot as plt
 fig, axs = plt.subplots()
 
 # Generate Data
-    # ``data``` is a dictionary. see python docs for more information: 
-    # https://docs.python.org/3/tutorial/datastructures.html#dictionaries
-    #
-    # Dictionaries are "key-value" pairs, i.e. a set of (key, value)
-    #  
-    #   { 
-    #       'key_1': value_1,
-    #       'key_2': value_2 
-    # }
-    # 
-    # "keys" are strings. they are like the "index" of a list. 
-    #
-    # Recall the third element of 
-    # 
-    #   this_list = [0, 1, 2]
-    # 
-    # Is accessed by through the bracket [] notation,
-    #
-    #   this_list[2]
-    #
-    # Dictionaries are a way of setting your own "index". Try loading the 
-    # the following dictionary into your Python shell and executing,
-    #
-    #   data['A']
-    #
-    #   data['B']
-    #
-    #   etc.
+# NOTE: ``data``` is a dictionary. Dictionaries are another "data type" in Python.
+#       see python documentation for more information: 
+#           https://docs.python.org/3/tutorial/datastructures.html#dictionaries
+#
+#       Dictionaries are "key-value" pairs, i.e. a set of ordered pairs (key, value)
+#  
+#       { 
+#           'key_1': value_1,
+#           'key_2': value_2 
+#       }
+# 
+#       "keys" are strings. they are like the "index" of a list. 
+#
+#       Recall the third element of 
+# 
+#           this_list = [0, 3, 9]
+# 
+#       Can be accessed by through the bracket [] notation,
+#
+#           print(this_list[2])
+#
+#       This would output,
+#
+#           9
+#
+#       Dictionaries are a way of setting your own "index". Try loading the 
+#       the following dictionary into your Python shell (i.e., copy and paste 
+#       the ``data`` variable) and executing,
+#
+#           print(data['A'])
+#
+#           print(data['B'])
+#
+#       You should see the following output,
+#
+#           12
+#       
+#           10
 data = {
     'A': 12,
     'B': 10,
@@ -79,33 +89,30 @@ data = {
 }
 
 # find the sum of frequencies
-    # frequencies are the "values", i.e. right-hand side, of the dictionary.
+# NOTE: frequencies are the "values", i.e. right-hand side, of the dictionary
+#       so we call the `values()` function **on** the ``data`` dictionary.
 total_observations = sum(data.values())
 
 # create the relative frequency distribution
-    # iterate over all (key, value) pairs in the dictionary, and divide each value by 
-    # the total number of observations
+# NOTE: iterate over all (key, value) pairs in the ``data`` dictionary, and divide 
+#       each value by the total number of observations
 relative_freq = { key: (value / total_observations) for key,value in data.items() }
 
 # Label the graph appropriately
 plt.suptitle("Bar Chart of Quiz Grades")
-
-# you can "template" strings with variables using f-strings. See python docs for more information:
-    # https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals
-    # essentially, we are "injecting" the value of the variable in the string before it gets 
-    # interpretted by Python and printed to screen.
+# NOTE: you can "template" strings with variables using f-strings. See python docs for more information:
+#       https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals
+#       essentially, we are "injecting" the value of the variable in the string before it gets 
+#       interpretted by Python and printed to screen, in the next line.
 plt.title(f"n = {total_observations}")
+
 # Set the axes labels
 axs.set_xlabel("Grades")
 axs.set_ylabel("Frequency")
 
-# Generate and output
-    # access dictionary "keys", i.e. 'A', 'B', 'C', 'D', 'E', 'F', with data.keys() (or relative_freq.keys())
-    # access dictionary "values", i.e. 12, 10, 8, 6, 4, 2 with data.values() (or relative_freq.values())
-
-# Frequency Distribution 
-# axs.bar(data.keys(), data.values(), color="lightblue", ec="red", width=0.5)
-
-# RELATIVE Frequency Distribution
+# Plot the bar chart
+# NOTE: access dictionary "keys", i.e. ['A', 'B', 'C', 'D', 'E', 'F'], with relative_freq.keys()
+# NOTE: access dictionary "values", i.e. [12, 10, 8, 6, 4, 2], with relative_freq.values()
 axs.bar(relative_freq.keys(), relative_freq.values(), color="lightblue", ec="red", width=0.5)
+
 plt.show()

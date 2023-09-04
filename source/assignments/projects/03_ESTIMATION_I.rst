@@ -1,8 +1,8 @@
-.. _project_two:
+.. _project_three:
 
-==========
-Estimation
-==========
+=====================================
+Estimation I: One Variable Statistics
+=====================================
 
     We must be careful not to confuse data with the abstractions we use to analyze them.
     
@@ -10,28 +10,29 @@ Estimation
 
 In this lab, you will use **Python** to calculate sample statistics.
 
-.. _project_two_instructions:
+.. _project_three_instructions:
 
 Instructions
 ============
 
-1. Create a folder named `LASTNAME_FIRSTNAME_project_two`, replacing `LASTNAME` and `FIRSTNAME` with your last name and first name, respectively.
-2. Download the *csv* dataset :ref:`below <project_two_dataset>` and place it in the new folder you created in step 1.
-3. In the same folder, create a Python *py* script named `project_two.py`
-4. Read the :ref:`project_two_project` section.
-5. Load in the data from the *csv* files using the technique outlined in the :ref:`project_two_loading_data` section.
-6. Perform all exercises and answer all questions in the :ref:`project_two_project` section. Label your script with comments as indicated in the instructions of each problem.
-7. When you are done, zip your folder and all its contents in a file named `LASTNAME_FIRSTNAME_project_two.zip`
-8. Upload the zip file here: TODO
+1. Download the ``.csv`` dataset :ref:`below <project_three_dataset>` and place it in the ``Linux Files`` folder where you saved your *.py* scripts.
+2. In the same folder, create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_three.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
+3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
+4. Read the :ref:`project_three_background` section.
+5. Read the :ref:`project_three_loading_data` section.
+4. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
+5. Perform all exercises and answer all questions in the :ref:`project_three_project` section. Label your script with comments as indicated in the instructions of each problem.
+6. When you are done, zip your script **and** the *csv* file in a zip file named ``LASTNAME_FIRSTNAME_project_three.zip``
+7. Upload the zip file to the Google Classroom Project Three Assignment.
    
-.. _project_two_background: 
+.. _project_three_background: 
 
 Background
 ==========
 
 TODO 
 
-.. _project_two_loading_data:
+.. _project_three_loading_data:
 
 Loading In Data
 ===============
@@ -57,7 +58,7 @@ The following code snippet will load in a *CSV* spreadsheet named ``example.csv`
     print(column_1)
 
 
-.. _project_two_project:
+.. _project_three_project:
 
 Project
 =======
@@ -78,7 +79,7 @@ Project
 
     *#1c* will require *two arguments*, the list of data and the percentile you wish to find.
 
-2. Load in the data from the :ref:`project_two_dataset` section. Note the length of a reign is separated in a ``Years`` column, a ``Months`` column and a ``Days``. To clean the data and compute the total length of a Roman Emperor's reign, apply the formula to each row of data, 
+2. Load in the data from the :ref:`project_three_dataset` section. Note the length of a reign is separated in a ``Years`` column, a ``Months`` column and a ``Days``. To clean the data and compute the total length of a Roman Emperor's reign, apply the formula to each row of data, 
 
 .. math:: 
 
@@ -86,7 +87,7 @@ Project
 
 Save the cleaned data in a new list. Label the list with a comment. 
 
-3. Using the functions created in #1, find the following statistics using the :ref:`project_two_dataset`. Label each computation with a comment.
+3. Using the functions created in #1, find the following statistics using the :ref:`project_three_dataset`. Label each computation with a comment.
 
     a. The mean length of a Roman Emperor's reign.
 
@@ -114,7 +115,7 @@ Save the cleaned data in a new list. Label the list with a comment.
 
     c. Interpret the results of *#a* and *#b*. What does this tell you about the distribution of Roman Emperors?
 
-.. _project_two_dataset:
+.. _project_three_dataset:
 
 Dataset
 =======
@@ -124,7 +125,7 @@ You can download the full dataset :download:`here <../../assets/datasets/roman_e
 The following table is the a preview of the data you will be using for this project. 
 
 .. csv-table:: Roman Emperor Reigns
-   :file: ../../assets/datasets/previews/earth_density_data_preview.csv
+   :file: ../../assets/datasets/previews/roman_emperors_data_preview.csv
 
 The meaning of the columns is as follows: 
 - ``Emperor`` is the name of the Roman Emperor.
