@@ -919,7 +919,7 @@ Notice, by definition,
 
 .. math::
 
-    F(x_i) = \sum^{x_i}_{x_j = x_1} f(x_j)
+    F(x_i) = \sum^{i}_{j = 1} f(x_j)
 
 .. warning::
 
