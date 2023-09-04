@@ -47,6 +47,8 @@ We can define the *Power Set* of a set **A** formally by quantifying over all se
 In English, "for all *B*, if *B* is a subset of *A*, then *B* belongs to the *Power Set of A*"
 
 
+.. _counting_principles:
+
 Counting Principles
 ===================
 
@@ -211,6 +213,7 @@ This leads directly to the first corollary of Combinatorics.
     .. math:: 
         n(A)=n \implies n(\mathcal{P}(A))=2^n
 
+.. _permutations:
 
 Permutations
 ============
@@ -265,7 +268,7 @@ TODO
     P_r^n = \frac{n!}{(n-r)!}
 
 
-.. _combination:
+.. _combinations:
 
 Combinations
 ============

@@ -7,4 +7,5 @@ Hypothesis Testing
    :caption: Contents:
 
    01_MEAN_TESTS
-   02_STDDEV_TESTS
+   02_PROPORTION_TESTS
+   03_STDDEV_TESTS

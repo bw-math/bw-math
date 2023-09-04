@@ -8,9 +8,11 @@ Distributions
    :maxdepth: 2
    :caption: Contents:
 
-   00_INTRODUCTION
-   01_BINOMIAL
-   02_NORMAL
-   03_T
-   04_CHI_SQUARED
-   05_F
+   00_BERNOULLI
+   01_GEOMETRIC
+   02_BINOMIAL
+   03_UNIFORM
+   04_NORMAL
+   05_T
+   06_CHI_SQUARED
+   07_F

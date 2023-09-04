@@ -512,7 +512,7 @@ Response Variable
 
 .. note:: 
 
-    *Indicator* variables are sometimes known as either *explanatory* variables or *independent variables.
+    *Indicator* variables are sometimes known as either *explanatory* variables or *independent variables*.
 
     *Response* variables are sometimes known as either *explicated* variables or *dependent variables*.
 
