@@ -401,7 +401,7 @@ Sample Spaces and Events
 
         S = \{ (r_1, r_1), (r_1, r_2), ..., (g, r_3), (g, g) \}
 
-    c. When you hear *with replacement*, think table. When you hear *without replacement*, think :ref:`tree_diagrams`. The reason for this is simple. It is very hard (if not impossible) to represent the act of *removing* an outcome from the sample space in tabular form, whereas it is very natural to represent it with a :ref:`tree diagram`
+    c. When you hear *with replacement*, think table. When you hear *without replacement*, think :ref:`tree_diagrams`. The reason for this is simple. It is very hard (if not impossible) to represent the act of *removing* an outcome from the sample space in tabular form, whereas it is very natural to represent it with a :ref:`tree diagram <tree_diagrams>`
 
     (INSERT DIAGRAM)
 
@@ -424,7 +424,7 @@ Sample Spaces and Events
 
     a. Events are *mutually exclusive* if they share no outcomes. If the first card has a larger number than the second card, then the second card cannot possibly be larger than the first card. In the other direction, if the second card is larger than the first card, then the first card cannot possibly be larger than the second card. In other words, there is no possible way for **A** to share any outcomes with **B**. Therefore, **A** and **B** are *mutually exclusive* by definition.
 
-    b. This part is a bit trickier to see. Recall that the union of complements is equal to the sample space (:ref:`universal set`),
+    b. This part is a bit trickier to see. Recall that the union of complements is equal to the sample space (:ref:`universal set <universal_set>`),
 
     .. image:: ../../../assets/imgs/sets/sets_complement.jpg
         :align: center 
@@ -574,21 +574,31 @@ shown in the table.
 
 One person from those surveyed will be selected at random.
 
-a. What is the probability that the person selected will be someone whose response is never and who is a
-woman?
+a. What is the probability that the person selected will be someone whose response is never and who is a woman?
 
-b. What is the probability that the person selected will be someone whose response is never or who is a
-woman?
+b. What is the probability that the person selected will be someone whose response is never or who is a woman?
 
-c. What is the probability that the person selected will be someone whose response is never given that the
-person is a woman?
+c. What is the probability that the person selected will be someone whose response is never given that the person is a woman?
 
-d. For the people surveyed, are the events of being a person whose response is never and being a woman
-independent? Justify your answer.
+d. For the people surveyed, are the events of being a person whose response is never and being a woman independent? Justify your answer.
 
 e. Assume that, in a large population, the probability that a person will always take medicine as prescribed is 0.54. If 5 people are selected at random from the population, what is the probability that at least 4 of the people selected will always take medicine as prescribed? Support your answer.
 
-13.  **2015, Multplie Choice, #32**
+
+13. **2003, Free Response, Form B, #2**
+
+A simple random sample of adults living in a suburb of a large city was selected. The age and annual income of each adult in the sample were recorded. The resulting data are summarized in the table below.
+
+.. image:: ../../../assets/imgs/classwork/2003_apstats_frp_formb_3.png
+    :align: center 
+
+a. What is the probability that a person chosen at random from those in this sample will be in the 31-45 age category?
+
+b. What is the probability that a person chosen at random from those in this sample whose incomes are over $50,000 will be in the 31-45 age category? Show your work.
+
+c. Based on your answers to parts *#a* and *#b*, is annual income independent of age category for those in this sample? Explain.
+
+14.  **2015, Multplie Choice, #32**
     
 A survey conducted by a national news network asked a random sample of U.S. adults whether they get most of their information about current events from newspapers, television, the internet, or some
 other source. The results, shown in the table below, are reported by age group of the respondents.

@@ -1,7 +1,0 @@
-.. _students_t_distribution:
-
-==============
-T Distribution
-==============
-
-TODO

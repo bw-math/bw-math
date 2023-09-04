@@ -1,4 +1,4 @@
-.. _distributions:
+.. _distributions_classwork:
 
 =============
 Distributions

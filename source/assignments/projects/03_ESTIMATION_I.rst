@@ -20,10 +20,10 @@ Instructions
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the :ref:`project_three_background` section.
 5. Read the :ref:`project_three_loading_data` section.
-4. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
-5. Perform all exercises and answer all questions in the :ref:`project_three_project` section. Label your script with comments as indicated in the instructions of each problem.
-6. When you are done, zip your script **and** the *csv* file in a zip file named ``LASTNAME_FIRSTNAME_project_three.zip``
-7. Upload the zip file to the Google Classroom Project Three Assignment.
+6. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
+7. Perform all exercises and answer all questions in the :ref:`project_three_project` section. Label your script with comments as indicated in the instructions of each problem.
+8. When you are done, zip your script **and** the *csv* file in a zip file named ``LASTNAME_FIRSTNAME_project_three.zip``
+9.  Upload the zip file to the Google Classroom Project Three Assignment.
    
 .. _project_three_background: 
 

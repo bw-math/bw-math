@@ -20,7 +20,7 @@ Instructions
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the :ref:`project_one_background` section.
 5. Read the :ref:`project_one_loading_data` section.
-6. Read the :ref:`project_one_bar_chart` section. Download the script files in that section onto your ChromeBook. Read through and execute them on your computer. 
+6. Read the :ref:`project_one_bar_charts` section. Download the script files in that section onto your ChromeBook. Read through and execute them on your computer. 
 7. Read the :ref:`project_one_set_operations` section. 
 8. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
 9. Perform all exercises and answer all questions in the :ref:`project_one_project` section. Label your script with comments as indicated in the *Project* section.

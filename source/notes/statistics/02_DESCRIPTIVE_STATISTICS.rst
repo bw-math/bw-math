@@ -174,10 +174,10 @@ Symbolic Expression
 Definition
     The largest value in a sample of observations
 
-.. _outlier:
+.. _outliers:
 
-Outlier
--------
+Outliers
+--------
 
 Definition
     An unusual observation.
@@ -909,11 +909,12 @@ Plugging in :math:`m = \frac{n+1}{2}`
     
     \pi_0.50 = \frac{x_{(\lceil \frac{n+1}{2} \rceil )} + x_{(\lfloor \frac{n+1}{2} \rfloor)}}{2}
 
+.. _skewness:
 
 Identifying Skewness
 ********************
 
-The median is important for helping identify :ref:`skewness <skew>` in data. To see why, consider the following example.
+The median is important for helping identify *skewness* in data. To see why, consider the following example.
 
 Example
     The annual income, measured to the nearest thousand, of a random sample of people is given below, 
@@ -928,7 +929,7 @@ It is always a good idea to start problems by looking at some sort :ref:`graphic
 
 .. plot:: assets/plots/examples/03_ex03_skewed.py
 
-One of the observations, the person with an annual income of *$2,000,000*, sits well outside the range of the rest of the observations. This feature of the sample, its :ref:`skew`, will manifest in the sample statistics as we move through this example. 
+One of the observations, the person with an annual income of *$2,000,000*, sits well outside the range of the rest of the observations. This feature of the sample, its *skew**, will manifest in the sample statistics as we move through this example. 
 
 The sample mean is calculated using the :ref:`formula <sample_mean_formula>`,
 
@@ -967,7 +968,7 @@ Take note, there is a large divergence between the value of the sample mean and 
 
 The observation of *$2,000,000* is an :ref:`outlier`, an unusual observation. This example illustrates when the sample mean is not a *resilient* measure of *centrality*; the presence of a single outlying observation in the sample *skews* the sample mean *towards* the outlying observation. The median, however, preserves its ability to measure *centrality* when the sample contains outliers. 
 
-This idea will allow us to develop a general rule of thumb for identifying the presence of :ref:`skew` in samples.   
+This idea will allow us to develop a general rule of thumb for identifying the presence of *skew* in samples.   
 
 Rule of Thumb
 *************
@@ -1013,7 +1014,7 @@ These results are summarized with the following rule of thumb,
     1. If median is much greater than mean, then the data are skewed to the left. In this case, we say the distribution has a "*left hand tail*".
     2. If the median is much less than the mean, then the data are skewed to right. In this case, we say the distribution has a "*right hand tail*".
    
-.. _z_score::
+.. _z_score:
 
 Z Score
 -------
@@ -1156,9 +1157,5 @@ Chebyshev's Theorem
 
 TODO
 
-.. _correlation: 
-
-Correlation
-===========
-
-TODO
+Empirical Rule
+==============

@@ -1,27 +1,30 @@
+.. _binomial_distribution:
+
 =====================
 Binomial Distribution
 =====================
 
-Motivation
-==========
+Definition
+-----------
+
+Recall a :ref:`bernoulli_random_variable` is defined over a sample space of binary outcomes, a success ``s`` that occurs with probability :math:`p` of success and a failure ``f`` that occurs with probability :math:`1-p`,
+
 .. math::
     Y = \begin{array}{ c l }
         1                 & \quad \textrm{with probability} p \\
         0                 & \quad \textrm{with probability } 1 - p
     \end{array}
 
-TODO 
-
-Consider a random variable defined as the sum of *n* **Bernoulli** random variables,
+Consider a random variable defined as the sum of :math:`n` **Bernoulli** random variables, :math:`Y_i`
 
 .. math:: 
     X = Y_1 + Y_2 + ... + Y_{n-1} + Y_n
 
-Where each :math:`Y_i` takes the value 1 with probabilitiy *p* or it takes the value 0 with probabilitiy *1 - p*.
+Where each :math:`Y_i` takes the value 1 with probability :math:`p` or it takes the value 0 with probabilitiy :math:`1 - p`
 
 TODO 
 
-From :ref:`conditional_probability` the probability of an intersection of :ref:`independent events <independence>` is the product of individual probabilitiy,
+From :ref:`conditional_probability`, the probability of an intersection of :ref:`independent events <independence>` is the product of individual probabilitiy,
 
 .. math:: 
 

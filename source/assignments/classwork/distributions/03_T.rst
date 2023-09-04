@@ -1,4 +1,4 @@
-.. _students_t_distribution:
+.. _students_t_distribution_classwork:
 
 ==============
 T Distribution

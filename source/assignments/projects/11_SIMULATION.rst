@@ -12,11 +12,10 @@ Instructions
 1. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_eleven.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the :ref:`project_eleven_background` section.
-5. Read the :ref:`project_eleven_loading_data` section.
-6. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
-7. Perform all exercises and answer all questions in the :ref:`project_eleven_project` section. Label your script with comments as indicated in the instructions of each problem.
-8. When you are done, zip your script in a zip file named ``LASTNAME_FIRSTNAME_project_eleven.zip``
-9. Upload the zip file to the Google Classroom Project Four Assignment.
+5. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
+6. Perform all exercises and answer all questions in the :ref:`project_eleven_project` section. Label your script with comments as indicated in the instructions of each problem.
+7. When you are done, zip your script in a zip file named ``LASTNAME_FIRSTNAME_project_eleven.zip``
+8. Upload the zip file to the Google Classroom Project Four Assignment.
 
 
 .. _project_eleven_background:
@@ -59,6 +58,8 @@ The following code snippet simulates flipping a fair coin 10 times,
             heads += 1
         else:
             tails += 1
+
+.. _cartesian_product:
 
 Cartesian Product
 -----------------
@@ -118,7 +119,7 @@ One aspect of :ref:`python_list_comprehension` we didn't touch on when we first 
 
 Let's break this example down. 
 
-The key point is: we are *nesting* a list iteration within another list iteration. When we write ``for p in pets``, this tells **Python** to step through each element of the list ``pets``, namely the elements ``dog``, then ``cat``, then ``fish``. For each element of the ``pets`` list, we then tell **Python** to iterate over the next list with the expression ``for o in owners``. This will iterate over the elements ``cleopatra``, then ``augustus``, then ``napolean``, for *each step in the first iteration*. Then we glue the results together in an ordered pair (:ref:`tuple`). This whole process is described below in sequence,
+The key point is: we are *nesting* a list iteration within another list iteration. When we write ``for p in pets``, this tells **Python** to step through each element of the list ``pets``, namely the elements ``dog``, then ``cat``, then ``fish``. For each element of the ``pets`` list, we then tell **Python** to iterate over the next list with the expression ``for o in owners``. This will iterate over the elements ``cleopatra``, then ``augustus``, then ``napolean``, for *each step in the first iteration*. Then we glue the results together in an ordered pair (:ref:`python_tuples`). This whole process is described below in sequence,
 
 * Iterate over ``pets``
     * Select element ``dog``
@@ -162,7 +163,7 @@ Project
     - Using five classes, plot the results using a histogram. Save the image and add it to your report. 
     - What are the class width and boundaries?
     - Comment on the shape of the distribution. Is the result consistent with what you expected? Explain any discrepancies.
-3. Using a :ref:`conditional control structure <python_control structures>`, simulate 100 flips of a fair coin. 
+3. Using a :ref:`conditional control structure <python_control_structures>`, simulate 100 flips of a fair coin. 
     - What do you expect the shape of the distribution to be? 
     - Plot the results using a histogram. Save the image and add it to your report.
     - Comment on the shape of the distribution. Is the result consistent with what you expected? Explain any discrepancies. 

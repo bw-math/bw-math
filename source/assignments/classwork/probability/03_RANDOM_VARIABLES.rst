@@ -12,6 +12,10 @@ Random Variables
 
 TODO
 
+?. **2005, Free Response, #2** 
+
+TODO
+
 ?. **2015, Free Response, #3**
 
 A shopping mall has three automated teller machines (ATMs). Because the machines receive heavy use, they sometimes stop working and need to be repaired. Let the random variable X represent the number of ATMs that are working when the mall opens on a randomly selected day. The table shows the probability distribution of X. Number of ATMs working when 

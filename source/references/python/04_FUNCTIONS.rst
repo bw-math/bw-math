@@ -460,11 +460,13 @@ Normal Variate
 
     We will not need this function until Unit 3 or 4. 
 
-This function is *extremely important* in this class. It will return a random draw from a normally distribution population. We can use it to simulate all sorts of outcomes and samples. By solving the :ref:`z_score` for the individual :math:`x`,
+This function is *extremely important* in this class. It will return a random draw from a normally distributed population. We can use it to simulate all sorts of outcomes and samples. By solving the :ref:`z_score` for the individual :math:`x`,
 
 .. math:: 
 
     x = \mu + \sigma \cdot z 
+
+We are able to simulate draws from arbitary normally distributed populations.
 
 .. _python_creating_functions:
 

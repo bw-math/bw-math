@@ -1,7 +1,7 @@
-.. _linear_regression:
+.. _regression_model:
 
-=================
-Linear Regression
-=================
+================
+Regression Model
+================
 
 TODO

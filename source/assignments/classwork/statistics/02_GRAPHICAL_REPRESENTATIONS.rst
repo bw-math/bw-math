@@ -258,8 +258,7 @@ b. The responses of the 100 students are summarized in the segmented bar graph s
 .. image:: ../../../assets/imgs/classwork/2014_apstats_frp_01b.png
     :align: center
 
-Write a few sentences summarizing what the graph reveals about the association between residential status
-and level of participation in extracurricular activities among the 100 students in the sample.
+Write a few sentences summarizing what the graph reveals about the association between residential status and level of participation in extracurricular activities among the 100 students in the sample.
 
 11. **2015, Free Response, #1**
 
@@ -292,3 +291,4 @@ After the program, the children were offered a choice between the two snacks. Th
 a. Do the data provide convincing statistical evidence that there is an association between type of ad and children's choice of snack among all children similar to those who participated in the experiment?
 
 b. Write a few sentences describing the effect of each ad on children's choice of snack.
+

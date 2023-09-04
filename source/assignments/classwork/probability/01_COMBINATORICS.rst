@@ -142,3 +142,18 @@ Probability
     c. Four of a Kind. Recall a Four of a Kind is a hand of cards where four cards all have the same face. 
 
     d. Full House. Recall a full house is a three of kind and a pair simultaneously. For example, Kings full of 8s is given by the sequence KKK88. 
+
+
+7. **2014, Free Response, #2**
+
+Nine sales representatives, 6 men and 3 women, at a small company wanted to attend a national convention. There were only enough travel funds to send 3 people. The manager selected 3 people to attend and stated that the people were selected at random. The 3 people selected were women. There were concerns that no men were selected to attend the convention.
+
+a. Calculate the probability that randomly selecting 3 people from a group of 6 men and 3 women will result in selecting 3 women.
+
+b.  Based on your answer to part *#a*, is there reason to doubt the manager's claim that the 3 people were selected at random? Explain.
+
+c. An alternative to calculating the exact probability is to conduct a simulation to estimate the probability. A proposed simulation process is described below.
+
+    Each trial in the simulation consists of rolling three fair, six-sided dice, one die for each of the convention attendees. For each die, rolling a 1, 2, 3, or 4 represents selecting a man; rolling a 5 or 6 represents selecting a woman. After 1,000 trials, the number of times the dice indicate selecting 3 women is recorded.
+
+Does the proposed process correctly simulate the random selection of 3 women from a group of 9 people consisting of 6 men and 3 women? Explain why or why not.
