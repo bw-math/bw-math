@@ -11,7 +11,7 @@ Motivation
 
 In the first few sections, we discussed the idea of *drawing a sample* and using it to make inferences about the *population* . Now we begin the study of how to apply these ideas quantitatively and make them more exact.
 
-We want to know the *parameters* of a population, but we do not have the entire population on hand to determine the values of these *parameters*. So, we *sample* the population and then calculate *point estimates*. *Point estimates* are *sample statistics* that represent our best guess of the *true* value of population *parameters.
+We want to know the *parameters* of a population, but we do not have the entire population on hand to determine the values of these *parameters*. So, we *sample* the population and then calculate *point estimates*. *Point estimates* are *sample statistics* that represent our best guess of the *true* value of population *parameters*.
 
 For example, in this section, we will introduce the idea of the *sample mean*, :math:`\bar{x}`. The *sample mean* is a *sample statistic*; It is an *estimate*. This in contrast to the *population mean*, :math:`\mu`, the *true* value of :math:`\bar{x}` we would get if we had access to entire population.
 
@@ -143,6 +143,40 @@ Also note by definition,
 .. math::
 
     P( max(S) ) = 1
+
+.. _joint_frequency:
+
+Joint Frequency
+---------------
+
+Symbolic Expression 
+    :math:`f(x_i \cap y_i)`
+
+Definition
+    The number of times a bivariate observation :math:`(x_i, y_i)` occurs in a sample of data.
+
+.. important::
+
+    The joint frequency is only defined when the sample is *bivariate*. 
+
+Conditional Relative Frequency
+------------------------------
+
+Symbolic Expression
+    :math:`P(x_i | y_i)`
+
+Definition 
+    The proportion of times the outcomes :math:`x_i` **and** :math:`y_i` are observed as compared to the number of times the outcome :math:`y_i` is observed alone. 
+
+By definition,
+
+.. math::
+
+    P(x_i | y_i) = \frac{n(x_i \cap y_i)}{n(y_i)}
+
+.. important::
+
+    Conditional frequencies are *always* relative. 
 
 .. _minimum:
 

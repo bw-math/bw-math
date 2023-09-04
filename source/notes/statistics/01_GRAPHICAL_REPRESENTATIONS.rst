@@ -150,14 +150,18 @@ Similarly, if **T** is the event of seeing the *Two Towers*, then :math:`T^c` is
 
 .. note::
 
-	**E** and :math:`E^c` *partition* the sample.
+	:math:`E` and :math:`E^c` *partition* the sample.
 	
-	**T** and :math:`T^c` *partition* the sample.
+	:math:`T` and :math:`T^c` *partition* the sample.
 	
 	*Complementary events* are a type of *partition*.
 
 We can compose the events and their complements with the *operation* of *intersection*,
 
+.. topic:: Belonging
+
+	The symbol :math:`\in` is the Greek letter *epsilon*. It represents the *relation of belonging*. We say *outcomes belong to events*.
+	
 .. admonition:: :math:`(\text{yes}_{e}, \text{yes}_{t}) \in E \cap T`
 
 	The event of seeing both movies.
@@ -182,23 +186,29 @@ We can compose the events and their complements with the *operation* of *interse
 	
 	In other words, not seeing the *Empire Strikes Back* **and** not seeing the *Two Towers*. 
 	
-.. topic:: Belonging
 
-	The symbol :math:`\in` is the Greek letter *epsilon*. It represents the *relation of belonging*. We say *outcomes belong to events*.
-	
-Then, with these definitions in hand, we can think of the table being filled like so,
+Notice, just like the pair of events :math:`E` and :math:`E^c` and the pair of events :math:`T` and :math:`T^c`, the four events
+
+- :math:`E \cap T`
+- :math:`E \cap T^c`
+- :math:`E^c \cap T`
+- :math:`E^c \cap T^c`
+
+form a *partition of the sample*. By this, we mean all of these events aggregated together comprise the *entire* sample :math:`S`.
+
+With these definitions in hand, we can think of the table being filled like so,
 
 +-------------------------+------------------------+-----------------------+
-| outcomes                | :math:`\text{yes}_{e}` | :math:`\text{no}_{e}` |
+|   events                | :math:`E`              | :math:`E^c`           |
 +-------------------------+------------------------+-----------------------+
-|  :math:`\text{yes}_{t}` | :math:`E \cap T`       | :math:`E^c \cap T`    |
+|  :math:`T`              | :math:`E \cap T`       | :math:`E^c \cap T`    |
 +-------------------------+------------------------+-----------------------+
-| :math:`\text{no}_{t}`   | :math:`E \cap T^c`     | :math:`E^c \cap T^c`  |
+|       :math:`T^c`       | :math:`E \cap T^c`     | :math:`E^c \cap T^c`  |
 +-------------------------+------------------------+-----------------------+
 
 .. note:: 
 
-	*Events* are composed of *outcomes*. 
+	*Events* are composed of *outcomes*. Or, as we phrased it above, *outcomes* belong to *events*. *Outcomes* represent the *values* the observable variables assumes; *Events* represent ways of "*parsing*" or "*grouping*" the outcomes into abstractions, otherwise known as :ref:`sets <set_theory>`.
 	
 	In symbols,
 	
@@ -251,6 +261,8 @@ As we study this table, keep in mind the following question,
 	
 Whenever we encounter something that sums to 100%, it is a fair guess it represents a type of *distribution*.
 
+.. _joint_frequency_distribution:
+
 Joint Frequency Distribution
 ****************************
 
@@ -289,8 +301,10 @@ We call events that divide the *entire* sample into mutually exclusive groups a 
 
 	Any time a set of events *partition* an *entire* sample into sets of *mutually exclusive* outcomes, then those events form a *distribution*. 
 
-Marginal Probability Distribution
-*********************************
+.. _marginal_frequency_distribution:
+
+Marginal Frequency Distribution
+*******************************
 
 In the previous section, we observed both values of the categorical variable simultaneously. We may choose, for whatever reason, to ignore one of the variable. For example, if instead of asking every person in our example if they had seen the *Empire Strikes Back* **and** the *Two Towers*, we had only asked each individual the only first question, then we would have an ordinary frequency distribution. In others, ignoring the *y* variable, we can get the following distribution,
 
@@ -301,7 +315,24 @@ In the previous section, we observed both values of the categorical variable sim
 |         7                 |            3              | 
 +---------------------------+---------------------------+
 
-Notice this row represents the sum of each column in the original *joint frequency* distribution. Moreover, it must also total to *n*,
+Notice this row represents the sum of each column in the original *joint frequency* distribution. 
+
+.. note:: 
+
+    You can think of this distribution being attached to the bottom *margin* of the joint frequency distribution as a row of *totals*,
+
+    +-------------------------+------------------------+-----------------------+
+    | outcomes                | :math:`\text{yes}_{e}` | :math:`\text{no}_{e}` |
+    +-------------------------+------------------------+-----------------------+
+    |  :math:`\text{yes}_{t}` |           3            |          2            |
+    +-------------------------+------------------------+-----------------------+
+    | :math:`\text{no}_{t}`   |           4            |          1            |
+    +-------------------------+------------------------+-----------------------+
+    |     Totals              |         7              |            3          | 
+    +-------------------------+------------------------+-----------------------+
+
+
+Moreover, it must also total to *n*,
 
 .. math::
 
@@ -324,7 +355,21 @@ Similarly, if we had restricted our attention to only the question of whether pe
 | :math:`\text{no}_{t}`     |    5    | 
 +---------------------------+---------+
 
-Notice this column represents the sum of each row in the original *joint frequency* distribution. Morever, it must also total to *n*,
+Notice this column represents the sum of each row in the original *joint frequency* distribution. 
+
+.. note::
+
+    You can think of this table being attached to the right *margin* of the *joint frequency distribution* as a column of *totals*,
+
+    +-------------------------+------------------------+-----------------------+-------+
+    | outcomes                | :math:`\text{yes}_{e}` | :math:`\text{no}_{e}` | Total |
+    +-------------------------+------------------------+-----------------------+-------+
+    |  :math:`\text{yes}_{t}` |           3            |          2            |   5   |
+    +-------------------------+------------------------+-----------------------+-------+
+    | :math:`\text{no}_{t}`   |           4            |          1            |   5   |
+    +-------------------------+------------------------+-----------------------+-------+
+
+Morever, it must also total to *n*,
 
 .. math::
 
@@ -348,12 +393,92 @@ Or, expressed in terms of percentages,
 	
 When one variable is ignored entirely, i.e. if only one variable is observed for each individual, the distribution formed by the *partition* is known as a *marginal frequency distribution*.
 
-Conditional Probability Distribution
-************************************
+.. _conditional_frequency_distribution:
 
-Yet another way to make this table equal *100%* is through its *conditional probability distribution*.
+Conditional Frequency Distribution
+**********************************
 
-TODO 
+Yet another way to make this table equal *100%* is through its *conditional frequency distribution*. A *conditional frequency distribution* can be understood as the distribution of one variable *given the value of the other variable*. 
+
+A more precise definition of a *conditional frequency* of :math:`x_i` given :math:`y_i` might go,
+
+    The *conditional frequency* is proportion of times the outcomes :math:`x_i` **and** :math:`y_i` are observed simultaneously as compared to the number of times the outcome :math:`y_i` is observed alone. 
+
+We can state this definition mathematically,
+
+.. math::
+
+    P(A | B) = \frac{n(A \cap B)}{n(B)}
+
+Where **A** is defined as the event of the variable :math:`x_i` being observed to be a particular value and **B** is defined as the event of the variable :math:`y_i` being observed to be a particular value.
+
+In other words, in the context of our example, where each variable may assume two values,
+
+.. math::
+
+    x = \text{yes}_e, \text{no}_e
+
+.. math::
+
+    y = \text{yes}_t, \text{no}_t
+
+We have the following outcomes that belong to **E**, the event of seeing the *Empire Strikes Back*,
+
+.. math::
+
+    (\text{yes}_e, \text{yes}_t) \in E
+
+.. math::
+
+    (\text{yes}_e, \text{no}_t) \in E
+
+And, likewise, we have the following outcomes that belong to **T**, the event of seeing the *Two Towers*,
+
+.. math::
+
+    (\text{yes}_e, \text{yes}_t) \in T
+
+.. math::
+
+    (\text{no}_e, \text{yes}_t) \in T
+
+The *conditional distribution* of either variable with respect to the other can be understood as follows:
+
+The *conditional distribution of people who have seen the Empire Strikes Back* answers the following question:
+
+- What percent of the people who have seen *Empire Strikes Back* have seen the *Two Towers*?
+- What percent of the people who have seen *Empire Strike Back* have *not* seen the *Two Towers*?
+
+In other words, *given* a person has seen *Empire Strikes Back*, the conditional distribution will tell you what *percent* of the **reduced** sample has seen or not seen the *Two Towers*.
+
+In this case, we are conditioning on the :math:`x` variable, the variable which measures whether or not someone has *Empire Strikes Back*. We may also *condition* on the :math:`y` variable, to get the *conditional distribution of people who have seen the Two Towers*. This distribution will answer the following questions,
+
+- What percent of the people who have seen *Two Towers* have seen the *Empire Strikes Back*?
+- What percent of the people who have seen *Two Towers* have *not* seen the *Empire Strikes Back*?
+
+
+.. important::
+
+    The questions:
+
+    - What percent of the people who have seen *Empire Strikes Back* have seen the *Two Towers*?
+    - What percent of the people who have seen *Two Towers* have seen the *Empire Strikes Back*?
+
+    are not asking the same question. The difference is subtle, but huge!
+
+In the first case, we are narrowing our attention down to *only* those people who have seen the *Empire Strikes Back* and asking what percent of them have seen the *Two Towers*. Therefore, to calculate the conditional frequency of *Two Towers* viewership given *Empire Strikes Back* viewership ,
+
+.. math::
+
+    P(T | E) = \frac{n(T \cap E)}{n(E)} = \frac{3}{7}
+
+Whereas in the second case, we are narrowing our attention down to *only* those people who have seen *Two Towers* and asking what percent of them have seen the *Empire Strikes Back*. Therefore, to calculate the conditional frequency of *Empire Strikes Back* viewership given *Two Towers* viewership,
+
+.. math::
+
+    P(E | T) = \frac{n(T \cap E)}{n(T)} = \frac{3}{5}
+
+In other words, a higher percentage of *Two Towers* viewers have also seen *Empire Strikes Back* than the percentage of *Empire Strikes Back* viewers who have also seen the *Two Towers*.
 
 .. _grouped_frequency_distributions: 
 
@@ -375,8 +500,8 @@ Up to this point, we have been dealing with *categorical* data. An *ungrouped* d
 		- Number of passengers on a train
 		- Number of goals scored in a soccer game
 		- Number of defective batteries in a sample of 100.
-		                                                                                                                                                                                                                                                                                                                                                            
-.. topic:: 
+                              
+.. topic:: Continuous Data
 
 	Continuous data are *uncountable*.
 	
@@ -385,7 +510,15 @@ Up to this point, we have been dealing with *categorical* data. An *ungrouped* d
 		- Mass of a body
 		- The charge of an electron
 
-When the data are *discrete*, it *may* be possible to get by with an *ungrouped* distirbution, however *ungrouped* distributions can get cumbersome when the :ref:`range` of the data is very large or when there are a large number of unique observations drawn from a continuous population. For example, consider the following dataset which represents the eruption length and period between eruptions for the famous geyser `Old Faithful <https://en.wikipedia.org/wiki/Old_Faithful>`_ at Yellowstone National Park in Wymoing.
+When the data are *discrete*, it *may* be possible to get by with an *ungrouped* distirbution, however *ungrouped* distributions can get cumbersome when the :ref:`range` of the data is very large. Consider a sample of data composed of the first 100 random natural numbers
+
+.. math::
+
+    S = \{ 97, 52, 93, ..., 10 \}
+
+In this case, counting the frequency of each individual observation can quickly become tedious.
+
+When the data are continuous, *ungrouped* distributions are no longer a tenable solution. For example, consider the following dataset which represents the eruption length and period between eruptions for the famous geyser `Old Faithful <https://en.wikipedia.org/wiki/Old_Faithful>`_ at Yellowstone National Park in Wymoing.
 
 .. csv-table:: Old Faithful Eruption and Waiting Times
    :file: ../../assets/datasets/previews/old_faithful_data_preview.csv
@@ -621,7 +754,7 @@ A *stem-and-leaf* plot is a *tabular summary* (table) where the first column, ca
 
 *Stem-and-leaf* plots are convenient for finding the :ref:`mode` of a distribution; the :ref:`mode` is simply the observation with the most number of leaves, in this case, ``46`` inches.
 
-.. _relative_frequency_distribution:
+.. _relative_frequency_plots:
 
 Relative Frequency Plots
 ************************
@@ -695,7 +828,8 @@ A histogram where each class is approximately level with every other class is kn
 
 A *uniform distribution* tells us each class is *equally likely*. In other words, if we were to randomly select an individual from this sample, there is an equal chance the selected individual will come from each class. 
 
-(TODO find good uniform data set)
+Example
+    Find yourself a die and roll it 30 or so times, keeping track of each outcome. Once you have a large enough sample, create and graph a frequency distribution. The resulting display will approximate a *uniform* distribution.
 
 Normal
 ******
@@ -706,22 +840,20 @@ A histogram where the classes are symmetric and decreasing around a common point
 
 The line of symmetry in a perfectly symmetrical distribution is the :ref:`median`. The reason for this can seen by equating the *area* under the distribution with the proportion of the sample that belongs to that area. Since the *areas* on either side of a symmetric distribution are equal,
 
-(TODO: fill between points)
+.. image:: ../../assets/imgs/statistics/normal_distribution_graphic.jpg
 
 It follows these areas both represent fifty percent of the distribution. 
 
 A *normal distribution* tells us classes closer to the :ref:`median` are more likely to be observed.
 
-
 Example
     :download:`Old Faithful Data Set <../../assets/datasets/old_faithful_data.csv>`.
-
 
 *Old Faithful* is a famous hot-water geyser in Yellowstone National Park that erupts every 45 minutes to 2 hours. 
 
 .. image:: ../../assets/imgs/context/old_faithful.jpg
+    :width: 200
     :align: center
-    :height: 25
 
 The first column of this dataset represents the *length of an eruption in minutes* while the second column represents the *waiting time in minutes* until the next eruption.
 
@@ -741,10 +873,7 @@ A histogram where two classes are more frequent than the other classes in the di
 .. plot:: assets/plots/histograms/histogram_bimodal.py
 
 Example
-    :download:`Old Faithful Data Set <../../assets/datasets/old_faithful_data.csv>`.
-
-
-(TODO: need bimodal dataset)
+    :download:`Meteorite Data Set <../../assets/datasets/meteorite_landings_data.csv>`.
 
 Skewed
 ******
@@ -752,7 +881,7 @@ Skewed
 Definition
     A *skew* is a feature of sample where more data is *clustered* on one side of the sample than the other. We say such data are "*skewed*", or that it exhibits "*skewness*". 
 
-A *skewed* distribution has *tails*, indicating the distribution is not symmetric (*asymmetric*). Individuals drawn from a *skewed* distribution are more likely to have extreme values. By "*extreme*" we mean values outside of the intervals where the majority of the distribution lies. 
+A *skewed* distribution has *tails*, indicating the distribution is not symmetric (or, *asymmetric*). Individuals drawn from a *skewed* distribution are more likely to have extreme values. By "*extreme*" we mean values outside of the intervals where the majority of the distribution lies. 
 
 **Skewed Right**
 
@@ -763,13 +892,11 @@ Example
 
 .. note::
 
-    We will construct the histogram for this dataset in class using **Python3**.
+    We will construct the histogram for this dataset in class using **Python3** in :ref:`project_three`.
 
 **Skewed Left**
 
 .. plot:: assets/plots/histograms/histogram_skewed_left.py
-
-(TODO: need skewed left dataset)
     
 .. _ogives:
 
@@ -802,27 +929,21 @@ In order to construct an *ogive* or a *cumulative frequency histogram*, we first
 
 Recall the *frequency distribution* created in the :ref:`ungrouped_frequency_distributions` section. The *cumulative frequency* of this distribution can be found by adding another column :math:`F(x_i)` that sums up the the individual frequencies of all the classes up to that class,
 
-+---------------------------+----------------+------------------------+
-| Class Limits              | :math:`f(x_i)` | :math:`F(x_i)`         |
-+---------------------------+----------------+------------------------+
-| :math:`5.3 <= x_i < 5.5`  | 3              | 3                      |
-+---------------------------+----------------+------------------------+
-| :math:`5.5 <= x < 5.7`    | 2              | 5 = 2 + 3              |
-+---------------------------+-----------------------------------------+
-| :math:`5.7 <= x < 5.9`    | 4              | 9 = 4 + 2 + 3          |
-+---------------------------+----------------+------------------------+
-| :math:`5.9 <= x < 6.1`    | 2              | 11 = 2 + 4 + 2 + 3     |
-+---------------------------+----------------+------------------------+
-| :math:`6.1 <= x <= 6.3`   | 1              | 12 = 1 + 2 + 4 + 2 + 3 |
-+---------------------------+----------------+------------------------+
++-----------------------------+----------------+------------------------+
+| Class Limits                | :math:`f(x_i)` | :math:`F(x_i)`         |
++-----------------------------+----------------+------------------------+
+| :math:`5.3 \leq  x_i < 5.5` | 3              | 3                      |
++-----------------------------+----------------+------------------------+
+| :math:`5.5 \leq x < 5.7`    | 2              | 5 = 2 + 3              |
++-----------------------------+-----------------------------------------+
+| :math:`5.7 \leq x < 5.9`    | 4              | 9 = 4 + 2 + 3          |
++-----------------------------+----------------+------------------------+
+| :math:`5.9 \leq x < 6.1`    | 2              | 11 = 2 + 4 + 2 + 3     |
++-----------------------------+----------------+------------------------+
+| :math:`6.1 \leq x \leq 6.3` | 1              | 12 = 1 + 2 + 4 + 2 + 3 |
++-----------------------------+----------------+------------------------+
 
 .. plot:: assets/plots/histograms/histogram_and_ogive.py
-
-
-.. note:: 
-    
-    Your book's authors call these types of graphs *ogives*. Be aware, you will almost never see these graphs referred to by that term. In practice, they are almost always called *cumulative frequency distributions*.
-
 
 Distribution Shapes
 -------------------
@@ -836,15 +957,27 @@ Uniform
 
 .. plot:: assets/plots/ogives/ogive_uniform.py
 
+.. note::
+
+    Notice each step in the ogive increase by roughly the same amount. This is because frequencies in a uniform distribution are roughly equal.
+
 Normal
 ******
 
 .. plot:: assets/plots/ogives/ogive_normal.py
 
+.. note::
+
+    Notice the steps in the graph increase in size up to the center and then decrease in size until the ogive levels off. This is because normal distributions are centered around the mean and drop off in frequency as distance from the mean increases. 
+
 Bimodal
 *******
 
 .. plot:: assets/plots/ogives/ogive_bimodal.py
+
+.. note::
+    
+    Notice there are two steps in the graph larger than the rest, due to the large frequencies of the modes in a bimodal distribution.
 
 Skewed
 ******
@@ -861,13 +994,26 @@ Variations
 Stacked Bar Chart
 *****************
 
+A *stacked bar chart* is a type of *ogive* that is used specifically for *categorical data*. In particular, it is meant to visualize the :ref:`conditional_frequency_distribution` of one categorical variable over all the values of the other categorical variable.
+
+TODO
+
 Boxplots
 ========
 
-While :ref:`histograms` and :ref:`ogives` provide a wealth of information about the sample distribution, they do not give us the whole picture. 
+While :ref:`histograms` and :ref:`ogives` provide a wealth of information about the sample distribution, they do not give us the whole picture. A *boxplot* can help fill in the blind spots, providing deeper insight in the nature of the distribution you are analyzing.
 
 Construction
 ------------
+
+Every *boxplot* requires five numbers. It may surprise you to find out (but probably not) these numbers are referred to as a *Five Number Summary*.
+
+.. important::
+
+    Statisticians are bad at naming things.
+
+Five Number Summary
+*******************
 
 1. Find the maximum observation.
 2. Find the 75 :sup:`th` percentile (*third quartile*)
