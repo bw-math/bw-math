@@ -1,4 +1,10 @@
-.. _uniform_random_variable:
+.. _uniform_distribution:
+
+====================
+Uniform Distribution
+====================
+
+TODO
 
 Uniform Random Variable
 =======================

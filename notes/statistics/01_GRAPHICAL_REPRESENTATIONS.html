@@ -151,9 +151,9 @@
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../distributions/00_BERNOULLI.html">Bernoulli Distribution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../distributions/01_GEOMETRIC.html">Geometric Distributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../distributions/02_BINOMIAL.html">Binomial Distribution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../distributions/03_UNIFORM.html">Uniform Random Variable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../distributions/03_UNIFORM.html">Uniform Distribution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../distributions/04_NORMAL.html">Normal Distribution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../distributions/05_T.html">T Distribution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../distributions/06_CHI_SQUARED.html"><img alt="\chi^2" class="math" src="../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
@@ -439,8 +439,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ungrouped-distributions">Ungrouped Distributions</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#two-way-tables">Two Way Tables</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#joint-frequency-distribution">Joint Frequency Distribution</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#marginal-probability-distribution">Marginal Probability Distribution</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-probability-distribution">Conditional Probability Distribution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#marginal-frequency-distribution">Marginal Frequency Distribution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-frequency-distribution">Conditional Frequency Distribution</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grouped-distributions">Grouped Distributions</a><ul class="nav section-nav flex-column">
@@ -467,24 +467,27 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ogives">Ogives</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Distribution Shapes</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Uniform</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Normal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Bimodal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Skewed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Distribution Shapes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Uniform</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Normal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Bimodal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Skewed</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Variations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Variations</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stacked-bar-chart">Stacked Bar Chart</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boxplots">Boxplots</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construction">Construction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Distribution Shapes</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Normal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Skewed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construction">Construction</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#five-number-summary">Five Number Summary</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Distribution Shapes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Normal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Skewed</a></li>
 </ul>
 </li>
 </ul>
@@ -627,11 +630,15 @@ document.write(`
 <p>Similarly, if <strong>T</strong> is the event of seeing the <em>Two Towers</em>, then <img class="math" src="../../_images/math/ece929855e9ef698564ae6a23d573a2d5f7b080b.png" alt="T^c"/> is the event of <strong>not</strong> seeing the <em>Two Towers</em>. We call <img class="math" src="../../_images/math/4eb565ac3ebed78308576a6544f6b90bde5e6ca6.png" alt="T"/> and <img class="math" src="../../_images/math/ece929855e9ef698564ae6a23d573a2d5f7b080b.png" alt="T^c"/> <em>complementary events</em>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>E</strong> and <img class="math" src="../../_images/math/eb42abbf880e2df5b750226e8c4ba1c02f3b0ded.png" alt="E^c"/> <em>partition</em> the sample.</p>
-<p><strong>T</strong> and <img class="math" src="../../_images/math/ece929855e9ef698564ae6a23d573a2d5f7b080b.png" alt="T^c"/> <em>partition</em> the sample.</p>
+<p><img class="math" src="../../_images/math/b2788c311640c2c81d4b3eb4c5693ac752fcbcb0.png" alt="E"/> and <img class="math" src="../../_images/math/eb42abbf880e2df5b750226e8c4ba1c02f3b0ded.png" alt="E^c"/> <em>partition</em> the sample.</p>
+<p><img class="math" src="../../_images/math/4eb565ac3ebed78308576a6544f6b90bde5e6ca6.png" alt="T"/> and <img class="math" src="../../_images/math/ece929855e9ef698564ae6a23d573a2d5f7b080b.png" alt="T^c"/> <em>partition</em> the sample.</p>
 <p><em>Complementary events</em> are a type of <em>partition</em>.</p>
 </div>
 <p>We can compose the events and their complements with the <em>operation</em> of <em>intersection</em>,</p>
+<div class="topic">
+<p class="topic-title">Belonging</p>
+<p>The symbol <img class="math" src="../../_images/math/785a3f2faf913319423672b6e4c3d6ebb885e898.png" alt="\in"/> is the Greek letter <em>epsilon</em>. It represents the <em>relation of belonging</em>. We say <em>outcomes belong to events</em>.</p>
+</div>
 <div class="admonition-math-text-yes-e-text-yes-t-in-e-cap-t admonition">
 <p class="admonition-title"><img class="math" src="../../_images/math/14a151f1593d650cb95126735aca26b492fe622d.png" alt="(\text{yes}_{e}, \text{yes}_{t}) \in E \cap T"/></p>
 <p>The event of seeing both movies.</p>
@@ -652,11 +659,15 @@ document.write(`
 <p>The event of seeing neither movie.</p>
 <p>In other words, not seeing the <em>Empire Strikes Back</em> <strong>and</strong> not seeing the <em>Two Towers</em>.</p>
 </div>
-<div class="topic">
-<p class="topic-title">Belonging</p>
-<p>The symbol <img class="math" src="../../_images/math/785a3f2faf913319423672b6e4c3d6ebb885e898.png" alt="\in"/> is the Greek letter <em>epsilon</em>. It represents the <em>relation of belonging</em>. We say <em>outcomes belong to events</em>.</p>
-</div>
-<p>Then, with these definitions in hand, we can think of the table being filled like so,</p>
+<p>Notice, just like the pair of events <img class="math" src="../../_images/math/b2788c311640c2c81d4b3eb4c5693ac752fcbcb0.png" alt="E"/> and <img class="math" src="../../_images/math/eb42abbf880e2df5b750226e8c4ba1c02f3b0ded.png" alt="E^c"/> and the pair of events <img class="math" src="../../_images/math/4eb565ac3ebed78308576a6544f6b90bde5e6ca6.png" alt="T"/> and <img class="math" src="../../_images/math/ece929855e9ef698564ae6a23d573a2d5f7b080b.png" alt="T^c"/>, the four events</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/d1338b059d54235e1ef8c86ebf4c479a6546b855.png" alt="E \cap T"/></p></li>
+<li><p><img class="math" src="../../_images/math/9e191222c9c9e77a5cc5b18caac11608bd59f078.png" alt="E \cap T^c"/></p></li>
+<li><p><img class="math" src="../../_images/math/303bafc6d753bb4a73adc4aca9897e3440083f2a.png" alt="E^c \cap T"/></p></li>
+<li><p><img class="math" src="../../_images/math/365f9951e049ddb492e2ebf04408c23956cbad49.png" alt="E^c \cap T^c"/></p></li>
+</ul>
+<p>form a <em>partition of the sample</em>. By this, we mean all of these events aggregated together comprise the <em>entire</em> sample <img class="math" src="../../_images/math/23298f92ca8dc2a1ce6332eb7a21d5f2e9ae0bd8.png" alt="S"/>.</p>
+<p>With these definitions in hand, we can think of the table being filled like so,</p>
 <table class="table">
 <colgroup>
 <col style="width: 35%" />
@@ -664,15 +675,15 @@ document.write(`
 <col style="width: 32%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p>outcomes</p></td>
-<td><p><img class="math" src="../../_images/math/85300510f7135d1008f603bcbb241b7505bc9754.png" alt="\text{yes}_{e}"/></p></td>
-<td><p><img class="math" src="../../_images/math/6df6aa968a3a78fe048300948ab9816b1584e4a0.png" alt="\text{no}_{e}"/></p></td>
+<tr class="row-odd"><td><p>events</p></td>
+<td><p><img class="math" src="../../_images/math/b2788c311640c2c81d4b3eb4c5693ac752fcbcb0.png" alt="E"/></p></td>
+<td><p><img class="math" src="../../_images/math/eb42abbf880e2df5b750226e8c4ba1c02f3b0ded.png" alt="E^c"/></p></td>
 </tr>
-<tr class="row-even"><td><p><img class="math" src="../../_images/math/08e556c4ae78b99a39209029327fc7feec567c43.png" alt="\text{yes}_{t}"/></p></td>
+<tr class="row-even"><td><p><img class="math" src="../../_images/math/4eb565ac3ebed78308576a6544f6b90bde5e6ca6.png" alt="T"/></p></td>
 <td><p><img class="math" src="../../_images/math/d1338b059d54235e1ef8c86ebf4c479a6546b855.png" alt="E \cap T"/></p></td>
 <td><p><img class="math" src="../../_images/math/303bafc6d753bb4a73adc4aca9897e3440083f2a.png" alt="E^c \cap T"/></p></td>
 </tr>
-<tr class="row-odd"><td><p><img class="math" src="../../_images/math/85f27e217b6b00a2ce8976e17d284c7c64a52f5e.png" alt="\text{no}_{t}"/></p></td>
+<tr class="row-odd"><td><p><img class="math" src="../../_images/math/ece929855e9ef698564ae6a23d573a2d5f7b080b.png" alt="T^c"/></p></td>
 <td><p><img class="math" src="../../_images/math/9e191222c9c9e77a5cc5b18caac11608bd59f078.png" alt="E \cap T^c"/></p></td>
 <td><p><img class="math" src="../../_images/math/365f9951e049ddb492e2ebf04408c23956cbad49.png" alt="E^c \cap T^c"/></p></td>
 </tr>
@@ -680,7 +691,7 @@ document.write(`
 </table>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><em>Events</em> are composed of <em>outcomes</em>.</p>
+<p><em>Events</em> are composed of <em>outcomes</em>. Or, as we phrased it above, <em>outcomes</em> belong to <em>events</em>. <em>Outcomes</em> represent the <em>values</em> the observable variables assumes; <em>Events</em> represent ways of “<em>parsing</em>” or “<em>grouping</em>” the outcomes into abstractions, otherwise known as <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">sets</span></a>.</p>
 <p>In symbols,</p>
 <div class="math">
 <p><img src="../../_images/math/f389702331e80afd32b27860a035b572c97bf1ca.png" alt="(\text{yes}_{t}, \text{yes}_{e}) \in E \cap T"/></p>
@@ -729,7 +740,7 @@ document.write(`
 </div>
 <p>Whenever we encounter something that sums to 100%, it is a fair guess it represents a type of <em>distribution</em>.</p>
 <section id="joint-frequency-distribution">
-<h4>Joint Frequency Distribution<a class="headerlink" href="#joint-frequency-distribution" title="Permalink to this headline">#</a></h4>
+<span id="id4"></span><h4>Joint Frequency Distribution<a class="headerlink" href="#joint-frequency-distribution" title="Permalink to this headline">#</a></h4>
 <p>The most obvious to make this table equal <em>100%</em> is through its <em>joint frequency distribution</em>. Each entry in the table must sum to the total number of observations,</p>
 <div class="math">
 <p><img src="../../_images/math/cbd2244b11df6d15feb853d03cd04d614a24376b.png" alt="n(E \cap T) + n(E \cap T^c) + n(E^c \cap T) + n(E^c \cap T^c) = n"/></p>
@@ -752,8 +763,8 @@ document.write(`
 <p>Any time a set of events <em>partition</em> an <em>entire</em> sample into sets of <em>mutually exclusive</em> outcomes, then those events form a <em>distribution</em>.</p>
 </div>
 </section>
-<section id="marginal-probability-distribution">
-<h4>Marginal Probability Distribution<a class="headerlink" href="#marginal-probability-distribution" title="Permalink to this headline">#</a></h4>
+<section id="marginal-frequency-distribution">
+<span id="id5"></span><h4>Marginal Frequency Distribution<a class="headerlink" href="#marginal-frequency-distribution" title="Permalink to this headline">#</a></h4>
 <p>In the previous section, we observed both values of the categorical variable simultaneously. We may choose, for whatever reason, to ignore one of the variable. For example, if instead of asking every person in our example if they had seen the <em>Empire Strikes Back</em> <strong>and</strong> the <em>Two Towers</em>, we had only asked each individual the only first question, then we would have an ordinary frequency distribution. In others, ignoring the <em>y</em> variable, we can get the following distribution,</p>
 <table class="table">
 <colgroup>
@@ -769,7 +780,37 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p>Notice this row represents the sum of each column in the original <em>joint frequency</em> distribution. Moreover, it must also total to <em>n</em>,</p>
+<p>Notice this row represents the sum of each column in the original <em>joint frequency</em> distribution.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can think of this distribution being attached to the bottom <em>margin</em> of the joint frequency distribution as a row of <em>totals</em>,</p>
+<table class="table">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 33%" />
+<col style="width: 32%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>outcomes</p></td>
+<td><p><img class="math" src="../../_images/math/85300510f7135d1008f603bcbb241b7505bc9754.png" alt="\text{yes}_{e}"/></p></td>
+<td><p><img class="math" src="../../_images/math/6df6aa968a3a78fe048300948ab9816b1584e4a0.png" alt="\text{no}_{e}"/></p></td>
+</tr>
+<tr class="row-even"><td><p><img class="math" src="../../_images/math/08e556c4ae78b99a39209029327fc7feec567c43.png" alt="\text{yes}_{t}"/></p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p><img class="math" src="../../_images/math/85f27e217b6b00a2ce8976e17d284c7c64a52f5e.png" alt="\text{no}_{t}"/></p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Totals</p></td>
+<td><p>7</p></td>
+<td><p>3</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Moreover, it must also total to <em>n</em>,</p>
 <div class="math">
 <p><img src="../../_images/math/c1c2ac1fa148b37d260f65be74ac1440fe0fd067.png" alt="n(E) + n(E^c) = n"/></p>
 </div><p>This may also be expressed in terms of percentages as,</p>
@@ -793,7 +834,37 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p>Notice this column represents the sum of each row in the original <em>joint frequency</em> distribution. Morever, it must also total to <em>n</em>,</p>
+<p>Notice this column represents the sum of each row in the original <em>joint frequency</em> distribution.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can think of this table being attached to the right <em>margin</em> of the <em>joint frequency distribution</em> as a column of <em>totals</em>,</p>
+<table class="table">
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 30%" />
+<col style="width: 29%" />
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>outcomes</p></td>
+<td><p><img class="math" src="../../_images/math/85300510f7135d1008f603bcbb241b7505bc9754.png" alt="\text{yes}_{e}"/></p></td>
+<td><p><img class="math" src="../../_images/math/6df6aa968a3a78fe048300948ab9816b1584e4a0.png" alt="\text{no}_{e}"/></p></td>
+<td><p>Total</p></td>
+</tr>
+<tr class="row-even"><td><p><img class="math" src="../../_images/math/08e556c4ae78b99a39209029327fc7feec567c43.png" alt="\text{yes}_{t}"/></p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p><img class="math" src="../../_images/math/85f27e217b6b00a2ce8976e17d284c7c64a52f5e.png" alt="\text{no}_{t}"/></p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+<td><p>5</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Morever, it must also total to <em>n</em>,</p>
 <div class="math">
 <p><img src="../../_images/math/fb6a178803d3af550520aa426a0bbf6bec56f802.png" alt="n(T) + n(T^c) = n"/></p>
 </div><p>Or, expressed in terms of percentages,</p>
@@ -808,10 +879,60 @@ document.write(`
 </div>
 <p>When one variable is ignored entirely, i.e. if only one variable is observed for each individual, the distribution formed by the <em>partition</em> is known as a <em>marginal frequency distribution</em>.</p>
 </section>
-<section id="conditional-probability-distribution">
-<h4>Conditional Probability Distribution<a class="headerlink" href="#conditional-probability-distribution" title="Permalink to this headline">#</a></h4>
-<p>Yet another way to make this table equal <em>100%</em> is through its <em>conditional probability distribution</em>.</p>
-<p>TODO</p>
+<section id="conditional-frequency-distribution">
+<span id="id6"></span><h4>Conditional Frequency Distribution<a class="headerlink" href="#conditional-frequency-distribution" title="Permalink to this headline">#</a></h4>
+<p>Yet another way to make this table equal <em>100%</em> is through its <em>conditional frequency distribution</em>. A <em>conditional frequency distribution</em> can be understood as the distribution of one variable <em>given the value of the other variable</em>.</p>
+<p>A more precise definition of a <em>conditional frequency</em> of <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> given <img class="math" src="../../_images/math/a6a65e11c7738a1100ce9f9b28c005bcd8906f60.png" alt="y_i"/> might go,</p>
+<blockquote>
+<div><p>The <em>conditional frequency</em> is proportion of times the outcomes <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> <strong>and</strong> <img class="math" src="../../_images/math/a6a65e11c7738a1100ce9f9b28c005bcd8906f60.png" alt="y_i"/> are observed simultaneously as compared to the number of times the outcome <img class="math" src="../../_images/math/a6a65e11c7738a1100ce9f9b28c005bcd8906f60.png" alt="y_i"/> is observed alone.</p>
+</div></blockquote>
+<p>We can state this definition mathematically,</p>
+<div class="math">
+<p><img src="../../_images/math/12d414b24c841118dca6aa6a7e968821b2e52892.png" alt="P(A | B) = \frac{n(A \cap B)}{n(B)}"/></p>
+</div><p>Where <strong>A</strong> is defined as the event of the variable <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> being observed to be a particular value and <strong>B</strong> is defined as the event of the variable <img class="math" src="../../_images/math/a6a65e11c7738a1100ce9f9b28c005bcd8906f60.png" alt="y_i"/> being observed to be a particular value.</p>
+<p>In other words, in the context of our example, where each variable may assume two values,</p>
+<div class="math">
+<p><img src="../../_images/math/8d73a7a6bc382b5e609f6e251d2fb73abac9de7b.png" alt="x = \text{yes}_e, \text{no}_e"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/d08180808f8a4667ba289796ce20a161cbb9b95e.png" alt="y = \text{yes}_t, \text{no}_t"/></p>
+</div><p>We have the following outcomes that belong to <strong>E</strong>, the event of seeing the <em>Empire Strikes Back</em>,</p>
+<div class="math">
+<p><img src="../../_images/math/2b17590d96ccd9835bc4764b145ad397fb936b85.png" alt="(\text{yes}_e, \text{yes}_t) \in E"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/972d7d2b65b9242d77ae099cb569f9b86b37cca8.png" alt="(\text{yes}_e, \text{no}_t) \in E"/></p>
+</div><p>And, likewise, we have the following outcomes that belong to <strong>T</strong>, the event of seeing the <em>Two Towers</em>,</p>
+<div class="math">
+<p><img src="../../_images/math/8ada8a49b9ce0e4df4773a84f1519b13bd170a95.png" alt="(\text{yes}_e, \text{yes}_t) \in T"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/2282284336f5c7583d195034861108606c5f6d8c.png" alt="(\text{no}_e, \text{yes}_t) \in T"/></p>
+</div><p>The <em>conditional distribution</em> of either variable with respect to the other can be understood as follows:</p>
+<p>The <em>conditional distribution of people who have seen the Empire Strikes Back</em> answers the following question:</p>
+<ul class="simple">
+<li><p>What percent of the people who have seen <em>Empire Strikes Back</em> have seen the <em>Two Towers</em>?</p></li>
+<li><p>What percent of the people who have seen <em>Empire Strike Back</em> have <em>not</em> seen the <em>Two Towers</em>?</p></li>
+</ul>
+<p>In other words, <em>given</em> a person has seen <em>Empire Strikes Back</em>, the conditional distribution will tell you what <em>percent</em> of the <strong>reduced</strong> sample has seen or not seen the <em>Two Towers</em>.</p>
+<p>In this case, we are conditioning on the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> variable, the variable which measures whether or not someone has <em>Empire Strikes Back</em>. We may also <em>condition</em> on the <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variable, to get the <em>conditional distribution of people who have seen the Two Towers</em>. This distribution will answer the following questions,</p>
+<ul class="simple">
+<li><p>What percent of the people who have seen <em>Two Towers</em> have seen the <em>Empire Strikes Back</em>?</p></li>
+<li><p>What percent of the people who have seen <em>Two Towers</em> have <em>not</em> seen the <em>Empire Strikes Back</em>?</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The questions:</p>
+<ul class="simple">
+<li><p>What percent of the people who have seen <em>Empire Strikes Back</em> have seen the <em>Two Towers</em>?</p></li>
+<li><p>What percent of the people who have seen <em>Two Towers</em> have seen the <em>Empire Strikes Back</em>?</p></li>
+</ul>
+<p>are not asking the same question. The difference is subtle, but huge!</p>
+</div>
+<p>In the first case, we are narrowing our attention down to <em>only</em> those people who have seen the <em>Empire Strikes Back</em> and asking what percent of them have seen the <em>Two Towers</em>. Therefore, to calculate the conditional frequency of <em>Two Towers</em> viewership given <em>Empire Strikes Back</em> viewership ,</p>
+<div class="math">
+<p><img src="../../_images/math/c7f8bfa4d25318cb6bf9199a0c6912ea9d5b8b1d.png" alt="P(T | E) = \frac{n(T \cap E)}{n(E)} = \frac{3}{7}"/></p>
+</div><p>Whereas in the second case, we are narrowing our attention down to <em>only</em> those people who have seen <em>Two Towers</em> and asking what percent of them have seen the <em>Empire Strikes Back</em>. Therefore, to calculate the conditional frequency of <em>Empire Strikes Back</em> viewership given <em>Two Towers</em> viewership,</p>
+<div class="math">
+<p><img src="../../_images/math/daf47a63e0afd773aa5949128f4e0dc5ed3472a8.png" alt="P(E | T) = \frac{n(T \cap E)}{n(T)} = \frac{3}{5}"/></p>
+</div><p>In other words, a higher percentage of <em>Two Towers</em> viewers have also seen <em>Empire Strikes Back</em> than the percentage of <em>Empire Strikes Back</em> viewers who have also seen the <em>Two Towers</em>.</p>
 </section>
 </section>
 <section id="grouped-distributions">
@@ -834,9 +955,25 @@ document.write(`
 </dd>
 </dl>
 </div>
-<p>When the data are <em>discrete</em>, it <em>may</em> be possible to get by with an <em>ungrouped</em> distirbution, however <em>ungrouped</em> distributions can get cumbersome when the <a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html#range"><span class="std std-ref">Range</span></a> of the data is very large or when there are a large number of unique observations drawn from a continuous population. For example, consider the following dataset which represents the eruption length and period between eruptions for the famous geyser <a class="reference external" href="https://en.wikipedia.org/wiki/Old_Faithful">Old Faithful</a> at Yellowstone National Park in Wymoing.</p>
-<table class="table" id="id18">
-<caption><span class="caption-text">Old Faithful Eruption and Waiting Times</span><a class="headerlink" href="#id18" title="Permalink to this table">#</a></caption>
+<div class="topic">
+<p class="topic-title">Continuous Data</p>
+<p>Continuous data are <em>uncountable</em>.</p>
+<dl class="simple">
+<dt>Examples</dt><dd><ul class="simple">
+<li><p>Temperature on a summer day</p></li>
+<li><p>Mass of a body</p></li>
+<li><p>The charge of an electron</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<p>When the data are <em>discrete</em>, it <em>may</em> be possible to get by with an <em>ungrouped</em> distirbution, however <em>ungrouped</em> distributions can get cumbersome when the <a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html#range"><span class="std std-ref">Range</span></a> of the data is very large. Consider a sample of data composed of the first 100 random natural numbers</p>
+<div class="math">
+<p><img src="../../_images/math/62e2b239c421c707aa6265d81acce1df5e194f1e.png" alt="S = \{ 97, 52, 93, ..., 10 \}"/></p>
+</div><p>In this case, counting the frequency of each individual observation can quickly become tedious.</p>
+<p>When the data are continuous, <em>ungrouped</em> distributions are no longer a tenable solution. For example, consider the following dataset which represents the eruption length and period between eruptions for the famous geyser <a class="reference external" href="https://en.wikipedia.org/wiki/Old_Faithful">Old Faithful</a> at Yellowstone National Park in Wymoing.</p>
+<table class="table" id="id22">
+<caption><span class="caption-text">Old Faithful Eruption and Waiting Times</span><a class="headerlink" href="#id22" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1034,7 +1171,7 @@ document.write(`
 </section>
 </section>
 <section id="histograms">
-<span id="id4"></span><h2>Histograms<a class="headerlink" href="#histograms" title="Permalink to this headline">#</a></h2>
+<span id="id7"></span><h2>Histograms<a class="headerlink" href="#histograms" title="Permalink to this headline">#</a></h2>
 <p>A <em>histogram</em> is a graphical representation of a <a class="reference internal" href="#frequency-distributions"><span class="std std-ref">frequency distribution</span></a>. The <em>classes</em> or <em>bins</em> are plotted on the <em>x-axis</em> against the frequency of each <em>class</em> on the <em>y-axis</em>.</p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/222fa3465e96c588fa760b265b98feec/histogram_random.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/47eb0d4ee1a9dff517e8e86ed5dc53c7/histogram_random.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/5fefdae5beeef8dac0a5278361105fe5/histogram_random.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/95464f689c054ccff8a0a32c47f5af98/histogram_random.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
@@ -1045,7 +1182,7 @@ document.write(`
 <span id="histogram-variatians"></span><h3>Variations<a class="headerlink" href="#variations" title="Permalink to this headline">#</a></h3>
 <p>A basic <em>histogram</em> can be modified to accomodate a variety of scenarios, depending on the specifics of the problem. In each case below, the sample’s frequency distribution is used as the basis for constructing the graph.</p>
 <section id="dot-plots">
-<span id="id5"></span><h4>Dot Plots<a class="headerlink" href="#dot-plots" title="Permalink to this headline">#</a></h4>
+<span id="id8"></span><h4>Dot Plots<a class="headerlink" href="#dot-plots" title="Permalink to this headline">#</a></h4>
 <p>Instead bars with differing heights, <em>dot plots</em> use <em>stacked dots</em> to represent the number of times each observation occurs, i.e. its frequency.</p>
 <p>Suppose a quiz with nine questions was administered to an A.P. Statistics course. The following sample represents the number of questions answered correctly by each student in this class,</p>
 <div class="math">
@@ -1058,7 +1195,7 @@ document.write(`
 <p><em>Dot plots</em> are a quick and easy to represent a sample of data graphically. When in doubt, throw together a dot plot to see if it gives you any clues about the distribution.</p>
 </section>
 <section id="stem-leaf-plots">
-<span id="id6"></span><h4>Stem-Leaf Plots<a class="headerlink" href="#stem-leaf-plots" title="Permalink to this headline">#</a></h4>
+<span id="id9"></span><h4>Stem-Leaf Plots<a class="headerlink" href="#stem-leaf-plots" title="Permalink to this headline">#</a></h4>
 <p>A <em>stem-leaf</em> plot is a type of histogram where the classes are determined by the leading digits of the observation values.</p>
 <p>For example, you measured the average annual rainfall in inches for Maryland over the course of 20 years and arrived at the following sample,</p>
 <div class="math">
@@ -1090,7 +1227,7 @@ document.write(`
 <p><em>Stem-and-leaf</em> plots are convenient for finding the <a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html#mode"><span class="std std-ref">Mode</span></a> of a distribution; the <a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html#mode"><span class="std std-ref">Mode</span></a> is simply the observation with the most number of leaves, in this case, <code class="docutils literal notranslate"><span class="pre">46</span></code> inches.</p>
 </section>
 <section id="relative-frequency-plots">
-<span id="relative-frequency-distribution"></span><h4>Relative Frequency Plots<a class="headerlink" href="#relative-frequency-plots" title="Permalink to this headline">#</a></h4>
+<span id="id10"></span><h4>Relative Frequency Plots<a class="headerlink" href="#relative-frequency-plots" title="Permalink to this headline">#</a></h4>
 <p><em>Relative frequency</em> histograms express the frequency of each class as a <em>percentage</em> of the total observations in the sample,</p>
 <div class="math">
 <p><img src="../../_images/math/b9f41fc9d1deabfb10807e599da1d8398e9f0967.png" alt="r(x_i) = \frac{f(x_i)}{n}"/></p>
@@ -1124,7 +1261,7 @@ document.write(`
 </section>
 </section>
 <section id="distribution-shapes">
-<span id="id7"></span><h3>Distribution Shapes<a class="headerlink" href="#distribution-shapes" title="Permalink to this headline">#</a></h3>
+<span id="id11"></span><h3>Distribution Shapes<a class="headerlink" href="#distribution-shapes" title="Permalink to this headline">#</a></h3>
 <p>The shape of the histogram tells a story about the distribution of the sample.</p>
 <section id="uniform">
 <span id="uniform-shape"></span><h4>Uniform<a class="headerlink" href="#uniform" title="Permalink to this headline">#</a></h4>
@@ -1134,7 +1271,10 @@ document.write(`
 <img alt="../../_images/histogram_uniform.png" class="plot-directive" src="../../_images/histogram_uniform.png" />
 </figure>
 <p>A <em>uniform distribution</em> tells us each class is <em>equally likely</em>. In other words, if we were to randomly select an individual from this sample, there is an equal chance the selected individual will come from each class.</p>
-<p>(TODO find good uniform data set)</p>
+<dl class="simple">
+<dt>Example</dt><dd><p>Find yourself a die and roll it 30 or so times, keeping track of each outcome. Once you have a large enough sample, create and graph a frequency distribution. The resulting display will approximate a <em>uniform</em> distribution.</p>
+</dd>
+</dl>
 </section>
 <section id="normal">
 <h4>Normal<a class="headerlink" href="#normal" title="Permalink to this headline">#</a></h4>
@@ -1144,7 +1284,7 @@ document.write(`
 <img alt="../../_images/histogram_normal.png" class="plot-directive" src="../../_images/histogram_normal.png" />
 </figure>
 <p>The line of symmetry in a perfectly symmetrical distribution is the <a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html#median"><span class="std std-ref">Median</span></a>. The reason for this can seen by equating the <em>area</em> under the distribution with the proportion of the sample that belongs to that area. Since the <em>areas</em> on either side of a symmetric distribution are equal,</p>
-<p>(TODO: fill between points)</p>
+<img alt="../../_images/normal_distribution_graphic.jpg" src="../../_images/normal_distribution_graphic.jpg" />
 <p>It follows these areas both represent fifty percent of the distribution.</p>
 <p>A <em>normal distribution</em> tells us classes closer to the <a class="reference internal" href="02_DESCRIPTIVE_STATISTICS.html#median"><span class="std std-ref">Median</span></a> are more likely to be observed.</p>
 <dl class="simple">
@@ -1152,7 +1292,7 @@ document.write(`
 </dd>
 </dl>
 <p><em>Old Faithful</em> is a famous hot-water geyser in Yellowstone National Park that erupts every 45 minutes to 2 hours.</p>
-<a class="reference internal image-reference" href="../../_images/old_faithful.jpg"><img alt="../../_images/old_faithful.jpg" class="align-center" src="../../_images/old_faithful.jpg" style="height: 25px;" /></a>
+<a class="reference internal image-reference" href="../../_images/old_faithful.jpg"><img alt="../../_images/old_faithful.jpg" class="align-center" src="../../_images/old_faithful.jpg" style="width: 200px;" /></a>
 <p>The first column of this dataset represents the <em>length of an eruption in minutes</em> while the second column represents the <em>waiting time in minutes</em> until the next eruption.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1171,10 +1311,9 @@ document.write(`
 <img alt="../../_images/histogram_bimodal.png" class="plot-directive" src="../../_images/histogram_bimodal.png" />
 </figure>
 <dl class="simple">
-<dt>Example</dt><dd><p><a class="reference download internal" download="" href="../../_downloads/1b98a8ccfb60a79a975a96e2eca8a57a/old_faithful_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">Old</span> <span class="pre">Faithful</span> <span class="pre">Data</span> <span class="pre">Set</span></code></a>.</p>
+<dt>Example</dt><dd><p><a class="reference download internal" download="" href="../../_downloads/ed4f0f2221f9c513c6bab2c52d1be282/meteorite_landings_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">Meteorite</span> <span class="pre">Data</span> <span class="pre">Set</span></code></a>.</p>
 </dd>
 </dl>
-<p>(TODO: need bimodal dataset)</p>
 </section>
 <section id="skewed">
 <h4>Skewed<a class="headerlink" href="#skewed" title="Permalink to this headline">#</a></h4>
@@ -1182,7 +1321,7 @@ document.write(`
 <dt>Definition</dt><dd><p>A <em>skew</em> is a feature of sample where more data is <em>clustered</em> on one side of the sample than the other. We say such data are “<em>skewed</em>”, or that it exhibits “<em>skewness</em>”.</p>
 </dd>
 </dl>
-<p>A <em>skewed</em> distribution has <em>tails</em>, indicating the distribution is not symmetric (<em>asymmetric</em>). Individuals drawn from a <em>skewed</em> distribution are more likely to have extreme values. By “<em>extreme</em>” we mean values outside of the intervals where the majority of the distribution lies.</p>
+<p>A <em>skewed</em> distribution has <em>tails</em>, indicating the distribution is not symmetric (or, <em>asymmetric</em>). Individuals drawn from a <em>skewed</em> distribution are more likely to have extreme values. By “<em>extreme</em>” we mean values outside of the intervals where the majority of the distribution lies.</p>
 <p><strong>Skewed Right</strong></p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/9e06d9e00ffef119241ca2734114f1da/histogram_skewed_right.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/9668e309e024fa01a93baba5831e241d/histogram_skewed_right.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d7e0d3fcc71ad93d419efc08cf29c0fa/histogram_skewed_right.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/61ec0bc654fe64c872c8f215be4c5710/histogram_skewed_right.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
@@ -1194,19 +1333,18 @@ document.write(`
 </dl>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>We will construct the histogram for this dataset in class using <strong>Python3</strong>.</p>
+<p>We will construct the histogram for this dataset in class using <strong>Python3</strong> in <a class="reference internal" href="../../assignments/projects/03_ESTIMATION_I.html#project-three"><span class="std std-ref">Estimation I: One Variable Statistics</span></a>.</p>
 </div>
 <p><strong>Skewed Left</strong></p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/32f8a358a2800c603464ccfc187c99d6/histogram_skewed_left.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/1a78b8836fba5a013efffcc94a37c554/histogram_skewed_left.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f05fafe9efa5c95cd70ebc0c1488c608/histogram_skewed_left.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d5c2a2759642f0c3c8270481387d7da0/histogram_skewed_left.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/histogram_skewed_left.png" class="plot-directive" src="../../_images/histogram_skewed_left.png" />
 </figure>
-<p>(TODO: need skewed left dataset)</p>
 </section>
 </section>
 </section>
 <section id="ogives">
-<span id="id8"></span><h2>Ogives<a class="headerlink" href="#ogives" title="Permalink to this headline">#</a></h2>
+<span id="id12"></span><h2>Ogives<a class="headerlink" href="#ogives" title="Permalink to this headline">#</a></h2>
 <p>An <em>ogive</em> is a histogram of the <em>cumulative frequency</em>. The difference between <em>frequency</em> and <em>cumulative frequency</em> is slight, but potent.</p>
 <dl>
 <dt>Frequency</dt><dd><p><img class="math" src="../../_images/math/905bd3c0445049b5e64f182e7238f2da96ada209.png" alt="f(x_i)"/></p>
@@ -1218,7 +1356,7 @@ document.write(`
 </dl>
 <p>Notice, by definition,</p>
 <div class="math">
-<p><img src="../../_images/math/8f3d1e2ea84be9d904a81a304c6b149657c85c6f.png" alt="F(x_i) = \sum^{x_i}_{x_j = x_1} f(x_j)"/></p>
+<p><img src="../../_images/math/c313e640e54833949895a85b4c7dd0b225e12d23.png" alt="F(x_i) = \sum^{i}_{j = 1} f(x_j)"/></p>
 </div><div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Be mindful of the <em>indices</em> in the summation. This summation says “<em>add up all the frequencies up to a certain observation</em> <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/>”.</p>
@@ -1227,30 +1365,30 @@ document.write(`
 <p>Recall the <em>frequency distribution</em> created in the <a class="reference internal" href="#ungrouped-frequency-distributions"><span class="std std-ref">Ungrouped Distributions</span></a> section. The <em>cumulative frequency</em> of this distribution can be found by adding another column <img class="math" src="../../_images/math/4e31378f88556ebbcb6f7c1f026b7d04c17b2ffe.png" alt="F(x_i)"/> that sums up the the individual frequencies of all the classes up to that class,</p>
 <table class="table">
 <colgroup>
-<col style="width: 40%" />
-<col style="width: 24%" />
-<col style="width: 36%" />
+<col style="width: 42%" />
+<col style="width: 23%" />
+<col style="width: 35%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Class Limits</p></td>
 <td><p><img class="math" src="../../_images/math/905bd3c0445049b5e64f182e7238f2da96ada209.png" alt="f(x_i)"/></p></td>
 <td><p><img class="math" src="../../_images/math/4e31378f88556ebbcb6f7c1f026b7d04c17b2ffe.png" alt="F(x_i)"/></p></td>
 </tr>
-<tr class="row-even"><td><p><img class="math" src="../../_images/math/1d4ea24440c110ce9586d132c5cc68b7e9891a15.png" alt="5.3 &lt;= x_i &lt; 5.5"/></p></td>
+<tr class="row-even"><td><p><img class="math" src="../../_images/math/8adea42a3b89bdc539357f0fbddd0b8c699ab6c2.png" alt="5.3 \leq  x_i &lt; 5.5"/></p></td>
 <td><p>3</p></td>
 <td><p>3</p></td>
 </tr>
-<tr class="row-odd"><td><p><img class="math" src="../../_images/math/3c1d94a9c19e9530daf47aa059a3acf5b108b777.png" alt="5.5 &lt;= x &lt; 5.7"/></p></td>
+<tr class="row-odd"><td><p><img class="math" src="../../_images/math/fc72ea587b0db637f6fcddc7695e0943a509d88b.png" alt="5.5 \leq x &lt; 5.7"/></p></td>
 <td colspan="2"><p>2              | 5 = 2 + 3</p></td>
 </tr>
-<tr class="row-even"><td><p><img class="math" src="../../_images/math/4bd01b4af339e44daab9c3bbe746ee04dcd8af04.png" alt="5.7 &lt;= x &lt; 5.9"/></p></td>
+<tr class="row-even"><td><p><img class="math" src="../../_images/math/8a06605e259982bc998308db8ce64891197df5b8.png" alt="5.7 \leq x &lt; 5.9"/></p></td>
 <td colspan="2"><p>4              | 9 = 4 + 2 + 3</p></td>
 </tr>
-<tr class="row-odd"><td><p><img class="math" src="../../_images/math/c8e90d129c6307a52e66a2611ac5f979ce687f4f.png" alt="5.9 &lt;= x &lt; 6.1"/></p></td>
+<tr class="row-odd"><td><p><img class="math" src="../../_images/math/e7d0b655c00163826e4dab32e9b2c788f24492be.png" alt="5.9 \leq x &lt; 6.1"/></p></td>
 <td><p>2</p></td>
 <td><p>11 = 2 + 4 + 2 + 3</p></td>
 </tr>
-<tr class="row-even"><td><p><img class="math" src="../../_images/math/a3ea9bff65a78b0bb5554ce7dbd0b30d93e2f975.png" alt="6.1 &lt;= x &lt;= 6.3"/></p></td>
+<tr class="row-even"><td><p><img class="math" src="../../_images/math/4072721c5135dc616d00b6b1f6ed17c4895e6d9a.png" alt="6.1 \leq x \leq 6.3"/></p></td>
 <td><p>1</p></td>
 <td><p>12 = 1 + 2 + 4 + 2 + 3</p></td>
 </tr>
@@ -1260,37 +1398,45 @@ document.write(`
 <figure class="align-default">
 <img alt="../../_images/histogram_and_ogive.png" class="plot-directive" src="../../_images/histogram_and_ogive.png" />
 </figure>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Your book’s authors call these types of graphs <em>ogives</em>. Be aware, you will almost never see these graphs referred to by that term. In practice, they are almost always called <em>cumulative frequency distributions</em>.</p>
-</div>
-<section id="id9">
-<h3>Distribution Shapes<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
+<section id="id13">
+<h3>Distribution Shapes<a class="headerlink" href="#id13" title="Permalink to this headline">#</a></h3>
 <p>All <em>cumulative frequency histograms</em> (<em>ogives</em>) are <em>monotonic</em>. A <em>monotonic</em> functions is <em>non-decreasing</em>. Another way of saying <em>non-decreasing</em> is to say “<em>always increases or stays the same</em>”. The reason for this should be clear: we are always adding quantities to the cumulative frequency as <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> increases. The <em>cumulative frequency</em> never <em>decreases</em>.</p>
 <p>Thus, it can sometimes be difficult to discern any features of the distribution from the cumulative frequency histogram. Nevertheless, closer inspection reveals a few things we can infer.</p>
-<section id="id10">
-<h4>Uniform<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h4>
+<section id="id14">
+<h4>Uniform<a class="headerlink" href="#id14" title="Permalink to this headline">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/cf9d84732060210e385e422e9e43e2da/ogive_uniform.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/9cfe1c940252628fb8143bece2808ca5/ogive_uniform.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/4f8361fd5cfbc65111c0db67b8344246/ogive_uniform.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/ec8a76468c148a0a828865af5f6705e5/ogive_uniform.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/ogive_uniform.png" class="plot-directive" src="../../_images/ogive_uniform.png" />
 </figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Notice each step in the ogive increase by roughly the same amount. This is because frequencies in a uniform distribution are roughly equal.</p>
+</div>
 </section>
-<section id="id11">
-<h4>Normal<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h4>
+<section id="id15">
+<h4>Normal<a class="headerlink" href="#id15" title="Permalink to this headline">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/6d9c2688f6b56401b31ba732b2a3f093/ogive_normal.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/1ba699d407e46a10113569128dee6591/ogive_normal.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/715b349d56782eca8b0a92e86423fa2f/ogive_normal.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/df6567eedb419390f4f287397da6cfcf/ogive_normal.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/ogive_normal.png" class="plot-directive" src="../../_images/ogive_normal.png" />
 </figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Notice the steps in the graph increase in size up to the center and then decrease in size until the ogive levels off. This is because normal distributions are centered around the mean and drop off in frequency as distance from the mean increases.</p>
+</div>
 </section>
-<section id="id12">
-<h4>Bimodal<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h4>
+<section id="id16">
+<h4>Bimodal<a class="headerlink" href="#id16" title="Permalink to this headline">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/b0866aec12ec26c3f271fc5be0f328f2/ogive_bimodal.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/8802afae3ca2b3b1d94aef013b1b5276/ogive_bimodal.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/19f53fcf9d5592ba3bd741c300fcdad5/ogive_bimodal.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/100ccf04d87f88304576316e74866755/ogive_bimodal.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/ogive_bimodal.png" class="plot-directive" src="../../_images/ogive_bimodal.png" />
 </figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Notice there are two steps in the graph larger than the rest, due to the large frequencies of the modes in a bimodal distribution.</p>
+</div>
 </section>
-<section id="id13">
-<h4>Skewed<a class="headerlink" href="#id13" title="Permalink to this headline">#</a></h4>
+<section id="id17">
+<h4>Skewed<a class="headerlink" href="#id17" title="Permalink to this headline">#</a></h4>
 <dl>
 <dt>Skewed Right</dt><dd><p>(<a class="reference download internal" download="" href="../../_downloads/3c63bdcc71c5f8b435590acfae2531f6/ogive_skewed_right.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/574b4ab261cc6ff4afa502e43f7ece41/ogive_skewed_right.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/2dc62a8ac5ea2b9c5ff40ea3ff6237ed/ogive_skewed_right.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/bd7f1de19273d0872ee096ea7d39eea2/ogive_skewed_right.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
@@ -1305,18 +1451,27 @@ document.write(`
 </dl>
 </section>
 </section>
-<section id="id14">
-<h3>Variations<a class="headerlink" href="#id14" title="Permalink to this headline">#</a></h3>
+<section id="id18">
+<h3>Variations<a class="headerlink" href="#id18" title="Permalink to this headline">#</a></h3>
 <section id="stacked-bar-chart">
 <h4>Stacked Bar Chart<a class="headerlink" href="#stacked-bar-chart" title="Permalink to this headline">#</a></h4>
+<p>A <em>stacked bar chart</em> is a type of <em>ogive</em> that is used specifically for <em>categorical data</em>. In particular, it is meant to visualize the <a class="reference internal" href="#conditional-frequency-distribution"><span class="std std-ref">Conditional Frequency Distribution</span></a> of one categorical variable over all the values of the other categorical variable.</p>
+<p>TODO</p>
 </section>
 </section>
 </section>
 <section id="boxplots">
 <h2>Boxplots<a class="headerlink" href="#boxplots" title="Permalink to this headline">#</a></h2>
-<p>While <a class="reference internal" href="#histograms"><span class="std std-ref">Histograms</span></a> and <a class="reference internal" href="#ogives"><span class="std std-ref">Ogives</span></a> provide a wealth of information about the sample distribution, they do not give us the whole picture.</p>
+<p>While <a class="reference internal" href="#histograms"><span class="std std-ref">Histograms</span></a> and <a class="reference internal" href="#ogives"><span class="std std-ref">Ogives</span></a> provide a wealth of information about the sample distribution, they do not give us the whole picture. A <em>boxplot</em> can help fill in the blind spots, providing deeper insight in the nature of the distribution you are analyzing.</p>
 <section id="construction">
 <h3>Construction<a class="headerlink" href="#construction" title="Permalink to this headline">#</a></h3>
+<p>Every <em>boxplot</em> requires five numbers. It may surprise you to find out (but probably not) these numbers are referred to as a <em>Five Number Summary</em>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Statisticians are bad at naming things.</p>
+</div>
+<section id="five-number-summary">
+<h4>Five Number Summary<a class="headerlink" href="#five-number-summary" title="Permalink to this headline">#</a></h4>
 <ol class="arabic simple">
 <li><p>Find the maximum observation.</p></li>
 <li><p>Find the 75 <sup>th</sup> percentile (<em>third quartile</em>)</p></li>
@@ -1329,18 +1484,19 @@ document.write(`
 <p>The maximum observation, the third quartile, the median, the firsrt quartile and the minimum are sometimes collectively known as the <em>five-number summary</em>.</p>
 </div>
 </section>
-<section id="id15">
-<h3>Distribution Shapes<a class="headerlink" href="#id15" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="id19">
+<h3>Distribution Shapes<a class="headerlink" href="#id19" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
-<section id="id16">
-<h4>Normal<a class="headerlink" href="#id16" title="Permalink to this headline">#</a></h4>
+<section id="id20">
+<h4>Normal<a class="headerlink" href="#id20" title="Permalink to this headline">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/96f6eae3fd5f0f31966bfdd55748b732/boxplot_normal.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/02cd14e26dd9dfd968ebaac6deb6edc0/boxplot_normal.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/e86491f6d04807b92f3a5b3763800529/boxplot_normal.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/8a8e9884227a1ed601c1cc58abef4988/boxplot_normal.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/boxplot_normal.png" class="plot-directive" src="../../_images/boxplot_normal.png" />
 </figure>
 </section>
-<section id="id17">
-<h4>Skewed<a class="headerlink" href="#id17" title="Permalink to this headline">#</a></h4>
+<section id="id21">
+<h4>Skewed<a class="headerlink" href="#id21" title="Permalink to this headline">#</a></h4>
 <p><strong>Skewed Right</strong></p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/45929d2918dc97fa5461a2450e2f6dd3/boxplot_skewed_right.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f5cf367c6ae66936ff746693f5d760f3/boxplot_skewed_right.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/271e2bb106dda2d3ba7dcda45402faa9/boxplot_skewed_right.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/788fae045977a9401a6af84e4274e18c/boxplot_skewed_right.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
@@ -1408,8 +1564,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ungrouped-distributions">Ungrouped Distributions</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#two-way-tables">Two Way Tables</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#joint-frequency-distribution">Joint Frequency Distribution</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#marginal-probability-distribution">Marginal Probability Distribution</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-probability-distribution">Conditional Probability Distribution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#marginal-frequency-distribution">Marginal Frequency Distribution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-frequency-distribution">Conditional Frequency Distribution</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grouped-distributions">Grouped Distributions</a><ul class="nav section-nav flex-column">
@@ -1436,24 +1592,27 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ogives">Ogives</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Distribution Shapes</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Uniform</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Normal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Bimodal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Skewed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Distribution Shapes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Uniform</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Normal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Bimodal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Skewed</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Variations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Variations</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stacked-bar-chart">Stacked Bar Chart</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boxplots">Boxplots</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construction">Construction</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Distribution Shapes</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Normal</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Skewed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#construction">Construction</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#five-number-summary">Five Number Summary</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Distribution Shapes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Normal</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Skewed</a></li>
 </ul>
 </li>
 </ul>

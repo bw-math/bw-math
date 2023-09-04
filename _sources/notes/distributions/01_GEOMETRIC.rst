@@ -1,8 +1,8 @@
 .. _geometric_distribution:
 
-=======================
-Geometric Distributions
-=======================
+======================
+Geometric Distribution
+======================
 
 TODO
 

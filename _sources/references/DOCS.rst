@@ -33,6 +33,7 @@ TODO: need bear measurements reference
 - `Density of the Earth <https://www.randomservices.org/random/data/Cavendish.html>`_
 - `London Weather <https://www.kaggle.com/datasets/emmanuelfwerr/london-weather-data>`_
 - `Manatee Mortality <https://myfwc.com/research/manatee/rescue-mortality-response/statistics/mortality/>`_
+- `Meteorite Landings <https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh>`_
 - `Old Faithful <https://www.stat.cmu.edu/~larry/all-of-statistics/=data/faithful.dat>`_
 - `Velocity of Light <https://www.randomservices.org/random/data/Michelson.html>`_
 
