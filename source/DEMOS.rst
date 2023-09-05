@@ -2,7 +2,7 @@
 Demonstrations
 ==============
 
-These are scripts will go over in class to illustrate key ideas from statistics. 
+Below you will find some **Python** scripts that demonstrate various statistical facts and theorems. We will go over them in class when the time comes. 
 
 Conditional Distributions
 -------------------------
