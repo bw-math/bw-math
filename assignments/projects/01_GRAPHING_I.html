@@ -436,6 +436,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicles-in-washington-state">Electric Vehicles in Washington State</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#make">Make</a></li>
@@ -453,8 +454,8 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-operations">Set Operations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">No Frills</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Stacked</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">No Frills</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Stacked</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
@@ -488,15 +489,55 @@ document.write(`
 <li><p>Download the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> dataset in the <a class="reference internal" href="#project-one-dataset"><span class="std std-ref">Datasets</span></a> section and place it in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your folder system where you save your <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts.</p></li>
 <li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_one.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">LASTNAME</span></code> and <code class="docutils literal notranslate"><span class="pre">FIRSTNAME</span></code> with your last and first name, respectively.</p></li>
 <li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-one-installs"><span class="std std-ref">Prerequisites</span></a> section. (We will do this part in class the day before the project!)</p></li>
 <li><p>Read the <a class="reference internal" href="#project-one-background"><span class="std std-ref">Background</span></a> section.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-one-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
-<li><p>Read the <a class="reference internal" href="#project-one-bar-charts"><span class="std std-ref">Bar Charts</span></a> section. Download the script files in that section onto your ChromeBook. Read through and execute them on your computer.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-one-bar-charts"><span class="std std-ref">Bar Charts</span></a> section. Download the script files in that section onto your ChromeBook. Read through them carefully and execute them on your computer.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-one-set-operations"><span class="std std-ref">Set Operations</span></a> section.</p></li>
 <li><p>Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file using the technique outlined in the <a class="reference internal" href="03_ESTIMATION_I.html#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
 <li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-one-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the <em>Project</em> section.</p></li>
 <li><p>When you are done, zip your script <strong>and</strong> your <em>csv</em> file into a file named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_one.zip</span></code></p></li>
 <li><p>Upload the zip file to the Google Classroom Project One Assignment.</p></li>
 </ol>
+</section>
+<section id="prerequisites">
+<span id="project-one-installs"></span><h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
+<p>We installed <strong>Python</strong> in <a class="reference internal" href="00_PYTHON.html#project-zero"><span class="std std-ref">our first project</span></a> and got familiar with some of its basic functionality, in particular <a class="reference internal" href="../../references/python/02_BASIC.html#python-lists"><span class="std std-ref">list variables</span></a> and the <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-operations"><span class="std std-ref">operations that can be performed on them</span></a>, skills that will be helpful in completing this project.</p>
+<p>We also discovered our ChromeBook’s <strong>Python</strong> installation is a bit different than a typical installation; it’s missing a few essential pieces that we will now install. In order to go further with <strong>Python</strong> in this class, we need to do the following.</p>
+<p>Open up a <em>Linux</em> terminal and type the command,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3-pip
+</pre></div>
+</div>
+<p>This command will install the <strong>Python Package Manager</strong> onto your computer. The <strong>Python Package Manager</strong>, or <code class="docutils literal notranslate"><span class="pre">pip</span></code> for short, allows us to install <strong>Python</strong> extensions. And that is exactly what we are going to do. Once the previous command completes, verify the installation with,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip3<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>You should see something along the lines of,</p>
+<blockquote>
+<div><p>pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)</p>
+</div></blockquote>
+<p>Your version may not match exactly. You should be fine as long as your <strong>Python</strong> version is above <em>3.7</em>.</p>
+<p>Now that <code class="docutils literal notranslate"><span class="pre">pip</span></code> is installed, let’s plug in the final pieces we need into our <strong>Python</strong> installation.</p>
+<p><a class="reference external" href="https://matplotlib.org/">matplotlib</a> will be used to generate graphical representations of data. <a class="reference external" href="https://docs.python.org/3/library/tkinter.html">tkinter</a> will be used to render the output of <a class="reference external" href="https://matplotlib.org/">matplotlib</a> into JPEG and PNG images. These packages can be installed through the command line.</p>
+<p>Type the following command into your <em>Linux</em> terminal,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip3<span class="w"> </span>install<span class="w"> </span>matplotlib<span class="w"> </span>tk
+</pre></div>
+</div>
+<img alt="../../_images/matplotlib_tk_install_done.png" class="align-center" src="../../_images/matplotlib_tk_install_done.png" />
+<p>Output:</p>
+<blockquote>
+<div><p>Defaulting to user installation because normal site-packages is not writeable</p>
+<dl class="simple">
+<dt>Collecting tk</dt><dd><p>Downloading tk-0.1.0-py3-none-any.whl (3.9 kB)</p>
+</dd>
+</dl>
+<p>…</p>
+<p>Installing collected packages: tk</p>
+<p>Successfully installed tk-0.1.0</p>
+</div></blockquote>
+<img alt="../../_images/matplotlib_tk_install_done.png" class="align-center" src="../../_images/matplotlib_tk_install_done.png" />
+<p>You should see the packages download and install into your system.</p>
+<p>That’s it! You are ready to plot some sweet statistical graphs.</p>
 </section>
 <section id="background">
 <span id="project-one-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
@@ -685,8 +726,8 @@ This script is annotated with lots of comments for you to read. Give them a peak
 </section>
 <section id="project">
 <span id="project-one-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
-<section id="id2">
-<h3>No Frills<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
+<section id="id4">
+<h3>No Frills<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
 <ol class="arabic simple">
 <li><p>Calculate the relative frequency of the following <strong>Makes</strong> of <em>Electric Vehicles</em>,</p></li>
 </ol>
@@ -695,26 +736,76 @@ This script is annotated with lots of comments for you to read. Give them a peak
 <li><p>CHEVROLET</p></li>
 <li><p>NISSAN</p></li>
 <li><p>TOYOTA</p></li>
-<li><p>VOLKWAGEN</p></li>
+<li><p>VOLKSWAGEN</p></li>
 </ul>
-<p>Save your commands and label them with comments. In a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: Out of these five values, what is the most frequent <strong>Make</strong> of <em>Electric Vehicle</em> in Washington State?</p>
+<p>Label your calculations with comments.</p>
 <ol class="arabic simple" start="2">
-<li><p>Using your answers to #1, construct a bar chart for <em>only</em> these five values of the <strong>Make</strong> categorical variable.</p></li>
+<li><p>Using your answers to #1, construct a bar chart for <em>only</em> these five values of the <strong>Make</strong> categorical variable. Label the commands used to render the graphs with comments.</p></li>
+<li><p>In the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a> at the top of your script, answer the following questions.</p></li>
 </ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you want to construct the entire frequency distribution and make a bar chart for it, I won’t stop you, but make sure it’s readable.</p>
-</div>
+<ol class="loweralpha simple">
+<li><p>Out of these five values, what is the most frequent <strong>Make</strong> of <em>Electric Vehicle</em> in Washington State?</p></li>
+<li><p>Find the <em>joint frequency distribution</em> of <strong>Make</strong> and <strong>Electric Vehicle Type</strong> for the same <strong>Makes</strong> as in <em>#1</em> and <em>#2</em>. In other words, fill out the following table,</p></li>
+</ol>
+<table class="table">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 38%" />
+<col style="width: 47%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>Battery Electric Vehicles (BEV)</p></td>
+<td><p>Plug-in Hybrid Electric Vehicle (PHEV)</p></td>
+</tr>
+<tr class="row-even"><td><p>TESLA</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+</tr>
+<tr class="row-odd"><td><p>CHEVROLET</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+</tr>
+<tr class="row-even"><td><p>NISSAN</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+</tr>
+<tr class="row-odd"><td><p>TOYOTA</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+</tr>
+<tr class="row-even"><td><p>VOLKSWAGEN</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+</tr>
+</tbody>
+</table>
+<ol class="loweralpha" start="3">
+<li><p>Compare and contrast the distribution of <em>eletric vehicle</em> <strong>Makes</strong> with the distribution of <strong>Electric Vehicle Types</strong>.</p>
+<blockquote>
+<div><ol class="lowerroman simple">
+<li><p>What does the <em>conditional distribution</em> of the <strong>Electric Vehicle Type</strong> for each of the five <strong>Makes</strong> considered tell you about the popularity of fully eletric versus hybrid cars?</p></li>
+<li><p>What does the <em>conditional distribution</em> of the <strong>Make</strong> for each <strong>Eletric Vehicle Type</strong> tell you about the manufacturers of <em>electric vehicles</em>? Which manufacturers are more likely to produce fully electric cars versus hybrid cars and visa versa?</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
 </section>
-<section id="id3">
-<h3>Stacked<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<section id="id5">
+<h3>Stacked<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
 <ol class="arabic simple">
 <li><p>Before starting this part of project, answer the following in a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>: Based on the information provided in the <a class="reference internal" href="#project-one-background"><span class="std std-ref">Background</span></a> section, how would you expect the <em>conditional distribution</em> of <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> given the <strong>Electric Vehicle Type</strong> to look? Do you expect fully electric vehicles to have greater eligibility for tax credits than hybrid vehicles? Why or why not?</p></li>
 <li><p>Answer the following questions. Label any commands you use to solve the problem with comments. Write your answers in the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a> at the top of the script.</p></li>
 </ol>
 <ol class="loweralpha simple">
-<li><p>What percentage of <em>electric vehicles</em> in Washington State are both <em>Battery Electric Vehicles (BEV)</em> and “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> ?</p></li>
-<li><p>What percentage of <em>Battery Electric Vehicles (BEV)</em> are “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong>?</p></li>
+<li><p>What percentage of <em>electric vehicles</em> in Washington State are “<em>Not eligible due to low battery range</em>” for the <strong>Clean Alternative Fuel (CAFV) Eligibility</strong> tax exemption?</p></li>
+<li><p>What percentage of <em>eletric vehicles</em> in Washington State are <em>Battery Electric Vehicles (BEV)</em>?</p></li>
+</ol>
+<ol class="upperalpha simple" start="3">
+<li><p>What percentage of <em>electric vehicles</em> in Washington State are both <em>Battery Electric Vehicles (BEV)</em> and “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> tax exemption?</p></li>
+</ol>
+<ol class="loweralpha simple" start="4">
+<li><p>What percentage of <em>Battery Electric Vehicles (BEV)</em> are “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> tax exemption?</p></li>
 <li><p>What percentage of “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> vehicles are <em>Battery Electric Vehicles (BEV)</em>?</p></li>
 </ol>
 <ol class="arabic simple" start="3">
@@ -730,8 +821,8 @@ This script is annotated with lots of comments for you to read. Give them a peak
 <h3>Electric Vehicle Dataset<a class="headerlink" href="#electric-vehicle-dataset" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/38b9a9c95bf197232fea6cd4646dd2da/electric_vehicle_population_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
-<table class="table" id="id4">
-<caption><span class="caption-text">Electric Vehicles in Washington State</span><a class="headerlink" href="#id4" title="Permalink to this table">#</a></caption>
+<table class="table" id="id6">
+<caption><span class="caption-text">Electric Vehicles in Washington State</span><a class="headerlink" href="#id6" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 6%" />
 <col style="width: 6%" />
@@ -826,6 +917,7 @@ This script is annotated with lots of comments for you to read. Give them a peak
 </tr>
 </tbody>
 </table>
+<p>The meaning of the columns was discussed in more detail in <a class="reference internal" href="#project-one-background"><span class="std std-ref">Background</span></a>. Refer to that section for further information on this dataset.</p>
 </section>
 </section>
 <section id="references">
@@ -888,6 +980,7 @@ This script is annotated with lots of comments for you to read. Give them a peak
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicles-in-washington-state">Electric Vehicles in Washington State</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#make">Make</a></li>
@@ -905,8 +998,8 @@ This script is annotated with lots of comments for you to read. Give them a peak
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-operations">Set Operations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">No Frills</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Stacked</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">No Frills</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Stacked</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">

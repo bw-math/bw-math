@@ -436,7 +436,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Random Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variable-or-random-function">Random Variable or Random Function?</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-of-functions">Review of Functions</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extension-of-the-concept-of-a-function">Extension of The Concept of a Function</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variables-and-events">Random Variables and Events</a></li>
@@ -471,8 +471,15 @@ document.write(`
 </dd>
 </dl>
 <p>The sample space for this simple game is given by,</p>
-<p>The amount of money you win or lose is a <em>random variable</em> that depends on the outcome of the coin flip, i.e. whether the event of <img class="math" src="../../_images/math/5b46d7ed5d3903f3de8013a2ec88c7a4021098b5.png" alt="H = \{ h \}"/> or the event <img class="math" src="../../_images/math/155660817668da4cc76d26044a203e79322499f7.png" alt="T = \{ *t* \}"/> from the sample space occurs. Using this information, we can define the <em>random variable</em> for the amount of money won or lost playing this game as follows,</p>
-<p>We can use a table to visualize the outcomes of this <em>random variable</em> and their associated probabilities,</p>
+<div class="math">
+<p><img src="../../_images/math/7302e9835f241c03dd9de7319669b28b9a9fd614.png" alt="S = \{ h, t \}"/></p>
+</div><p>The amount of money you win or lose is a <em>random variable</em> that depends on the outcome of the coin flip, i.e. whether the event of <img class="math" src="../../_images/math/5b46d7ed5d3903f3de8013a2ec88c7a4021098b5.png" alt="H = \{ h \}"/> or the event <img class="math" src="../../_images/math/155660817668da4cc76d26044a203e79322499f7.png" alt="T = \{ *t* \}"/> from the sample space occurs. Using this information, we can define the <em>random variable</em> for the amount of money won or lost playing this game as follows,</p>
+<div class="math">
+<p><img src="../../_images/math/3d51249378a02767ce53efd5a00bfaad226b5210.png" alt="\mathcal{X} = \begin{array}{ c l }
+    5       &amp; \quad \textrm{with } p(H) \\
+    -5      &amp; \quad \textrm{with } p(T)
+\end{array}"/></p>
+</div><p>We can use a table to visualize the outcomes of this <em>random variable</em> and their associated probabilities,</p>
 <table class="table">
 <colgroup>
 <col style="width: 29%" />
@@ -509,9 +516,14 @@ document.write(`
 <p><img src="../../_images/math/f423167351b822576217de03d3f2518016744b78.png" alt="\mathcal{X} \frac{\$}{gal} \cdot \text{4 gal }"/></p>
 </div><p>where <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is the price of gasoline measured in dollars per gallon.</p>
 </section>
-<section id="id2">
-<h2>Random Variables<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
-<p>A <em>random variable</em> is not very well named. A more suitable name would be <em>random function</em>. In this section, the reason for this will be explored. We will examine the connection between <em>random variables</em> and <em>functions</em>.</p>
+<section id="random-variable-or-random-function">
+<h2>Random Variable or Random Function?<a class="headerlink" href="#random-variable-or-random-function" title="Permalink to this headline">#</a></h2>
+<p>A <em>random variable</em> is not very well named.</p>
+<div class="admonition-reminder admonition">
+<p class="admonition-title">Reminder</p>
+<p>In case you have forgotten, statisticians are very bad at naming things.</p>
+</div>
+<p>A more suitable name would be <em>random function</em>. In this section, the reason for this will be explored. We will examine the connection between <em>random variables</em> and <em>functions</em>.</p>
 <section id="review-of-functions">
 <h3>Review of Functions<a class="headerlink" href="#review-of-functions" title="Permalink to this headline">#</a></h3>
 <p>Recall the concept of a <em>function</em> from your other mathematics classes. You probably remember a definition along the lines, “A function <img class="math" src="../../_images/math/4d080e94aa171bc1bba13b38e72317a67bac38e2.png" alt="f(x)"/> receives an input <em>x</em> and assigns to it a value <em>y</em>.” This definition has served you in your mathematics career up to this point, but it will no longer suffice. This is not <em>precisely</em> what a function is, though it is a close approximation. In order to understand what a <em>random variable</em> is, the concept of a <em>function</em> must be extended and enlarged to encompass a larger <em>set</em> of ideas (pun intended).</p>
@@ -521,7 +533,7 @@ document.write(`
 </section>
 <section id="extension-of-the-concept-of-a-function">
 <h3>Extension of The Concept of a Function<a class="headerlink" href="#extension-of-the-concept-of-a-function" title="Permalink to this headline">#</a></h3>
-<p>The concept of a <em>function</em> underwent a radical change in the early 20 <sup>th</sup> century as set theory was developed by people with names like <a class="reference external" href="https://en.wikipedia.org/wiki/Giuseppe_Peano">Guiseppe Peano</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Ernst_Zermelo">Ernst Zermelo</a> to formalize the foundation of mathematics. To see why the notion of a function had to be extended, consider the following propositions,</p>
+<p>The concept of a <em>function</em> underwent a radical change in the early 20 <sup>th</sup> century as set theory was developed by people with names like <a class="reference external" href="https://en.wikipedia.org/wiki/Giuseppe_Peano">Guiseppe Peano</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Ernst_Zermelo">Ernst Zermelo</a> to formalize the foundation of mathematics and make it so rigorous it was beyond reproach. To see why the notion of a function had to be extended, consider the following propositions,</p>
 <blockquote>
 <div><p>The set of all unicorns has zero elements.</p>
 <p>The set of all humans has seven billion elements.</p>
@@ -540,7 +552,7 @@ document.write(`
 </div><p>If the specifics were abstracted away, this would lead to an expression that looks like,</p>
 <div class="math">
 <p><img src="../../_images/math/8c882d4d882b84ec7b63377c993bf50486ff4244.png" alt="n(x) = y"/></p>
-</div><p>In each case, the cardinality of <em>something</em> is being asserted. In other words, a <em>value</em> is being assigned to an input, but what exactly is the input? Each proposition is asserting a property of an entire <a class="reference internal" href="../SET_THEORY.html#sets"><span class="std std-ref">set</span></a>; this suggests the constraint that functions are <em>numbers</em> be relaxed so that we may input <em>sets</em> into <em>funtions</em>.</p>
+</div><p>In each case, the cardinality of <em>something</em> is being asserted. In other words, a <em>value</em> is being assigned to an input, but what exactly is the input? Each proposition is asserting a property of an entire <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">set</span></a>; this suggests the constraint that functions are <em>numbers</em> be relaxed so that we may input <em>sets</em> into <em>funtions</em>.</p>
 <p>Put in the parlance of modern mathematics, a function <em>maps</em> a value to a given set. The set of all values that are mapped is likewise a set of <em>things</em>. This leds to the idea of a <em>function</em> as a map between sets. A <em>function</em> takes elements from one set and <em>maps</em> them to the elements of another set. This slight change in the way functions are talked about leads to a revision of the diagram given at the beginning of this section,</p>
 <img alt="../../_images/random_variable.png" class="align-center" src="../../_images/random_variable.png" />
 <p>This suggests we view random variables as <em>functions</em> of the outcomes in sample space,</p>
@@ -567,7 +579,7 @@ document.write(`
 </section>
 </section>
 <section id="expectation">
-<span id="id3"></span><h2>Expectation<a class="headerlink" href="#expectation" title="Permalink to this headline">#</a></h2>
+<span id="id2"></span><h2>Expectation<a class="headerlink" href="#expectation" title="Permalink to this headline">#</a></h2>
 <p>TODO</p>
 <section id="expectation-of-a-sum">
 <h3>Expectation of a Sum<a class="headerlink" href="#expectation-of-a-sum" title="Permalink to this headline">#</a></h3>
@@ -578,7 +590,7 @@ document.write(`
 </section>
 </section>
 <section id="variance">
-<span id="id4"></span><h2>Variance<a class="headerlink" href="#variance" title="Permalink to this headline">#</a></h2>
+<span id="id3"></span><h2>Variance<a class="headerlink" href="#variance" title="Permalink to this headline">#</a></h2>
 <p>TODO</p>
 </section>
 </section>
@@ -632,7 +644,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Random Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variable-or-random-function">Random Variable or Random Function?</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-of-functions">Review of Functions</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extension-of-the-concept-of-a-function">Extension of The Concept of a Function</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variables-and-events">Random Variables and Events</a></li>

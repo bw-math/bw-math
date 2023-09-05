@@ -21,12 +21,14 @@ Example
 
 The sample space for this simple game is given by,
     
-.. :math::
+.. math::
+    
     S = \{ h, t \}
 
 The amount of money you win or lose is a *random variable* that depends on the outcome of the coin flip, i.e. whether the event of :math:`H = \{ h \}` or the event :math:`T = \{ *t* \}` from the sample space occurs. Using this information, we can define the *random variable* for the amount of money won or lost playing this game as follows,
 
-.. :math::
+.. math::
+   
     \mathcal{X} = \begin{array}{ c l }
         5       & \quad \textrm{with } p(H) \\
         -5      & \quad \textrm{with } p(T)
@@ -65,10 +67,16 @@ The uncertainty in the price of gasoline becomes uncertainty in the weekly cost 
     
 where :math:`\mathcal{X}` is the price of gasoline measured in dollars per gallon.
 
-Random Variables
-================
+Random Variable or Random Function? 
+===================================
 
-A *random variable* is not very well named. A more suitable name would be *random function*. In this section, the reason for this will be explored. We will examine the connection between *random variables* and *functions*.
+A *random variable* is not very well named. 
+
+.. admonition:: Reminder
+
+    In case you have forgotten, statisticians are very bad at naming things.
+
+A more suitable name would be *random function*. In this section, the reason for this will be explored. We will examine the connection between *random variables* and *functions*.
 
 Review of Functions
 -------------------
@@ -84,7 +92,7 @@ And then you studied various types of algebraic functions, such as logs and sine
 Extension of The Concept of a Function
 --------------------------------------
 
-The concept of a *function* underwent a radical change in the early 20 :sup:`th` century as set theory was developed by people with names like `Guiseppe Peano <https://en.wikipedia.org/wiki/Giuseppe_Peano>`_ and `Ernst Zermelo <https://en.wikipedia.org/wiki/Ernst_Zermelo>`_ to formalize the foundation of mathematics. To see why the notion of a function had to be extended, consider the following propositions,
+The concept of a *function* underwent a radical change in the early 20 :sup:`th` century as set theory was developed by people with names like `Guiseppe Peano <https://en.wikipedia.org/wiki/Giuseppe_Peano>`_ and `Ernst Zermelo <https://en.wikipedia.org/wiki/Ernst_Zermelo>`_ to formalize the foundation of mathematics and make it so rigorous it was beyond reproach. To see why the notion of a function had to be extended, consider the following propositions,
 
     The set of all unicorns has zero elements.
 
@@ -113,7 +121,7 @@ If the specifics were abstracted away, this would lead to an expression that loo
 .. math:: 
     n(x) = y
 
-In each case, the cardinality of *something* is being asserted. In other words, a *value* is being assigned to an input, but what exactly is the input? Each proposition is asserting a property of an entire :ref:`set <sets>`; this suggests the constraint that functions are *numbers* be relaxed so that we may input *sets* into *funtions*.
+In each case, the cardinality of *something* is being asserted. In other words, a *value* is being assigned to an input, but what exactly is the input? Each proposition is asserting a property of an entire :ref:`set <set_theory>`; this suggests the constraint that functions are *numbers* be relaxed so that we may input *sets* into *funtions*.
 
 Put in the parlance of modern mathematics, a function *maps* a value to a given set. The set of all values that are mapped is likewise a set of *things*. This leds to the idea of a *function* as a map between sets. A *function* takes elements from one set and *maps* them to the elements of another set. This slight change in the way functions are talked about leads to a revision of the diagram given at the beginning of this section,
 
