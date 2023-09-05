@@ -27,10 +27,6 @@ import matplotlib
 
 matplotlib.use('agg')
 
-# And uncomment this line: 
-
-# matplotlib.use('tkagg')
-
 import matplotlib.pyplot as plt
 
 ##################################################################################
@@ -58,7 +54,7 @@ fig, axs = plt.subplots()
 # 
 #           this_list = [0, 3, 9]
 # 
-#       Can be accessed by through the bracket [] notation,
+#       Can be accessed by through the bracket [] notation by using the index,
 #
 #           print(this_list[2])
 #
@@ -96,6 +92,8 @@ total_observations = sum(data.values())
 # create the relative frequency distribution
 # NOTE: iterate over all (key, value) pairs in the ``data`` dictionary, and divide 
 #       each value by the total number of observations
+# NOTE: `data.items()` allows us to iterate over the (key, value) pairs in the 
+#	dictionary at the same time.
 relative_freq = { key: (value / total_observations) for key,value in data.items() }
 
 # Label the graph appropriately
@@ -111,8 +109,8 @@ axs.set_xlabel("Grades")
 axs.set_ylabel("Frequency")
 
 # Plot the bar chart
-# NOTE: access dictionary "keys", i.e. ['A', 'B', 'C', 'D', 'E', 'F'], with relative_freq.keys()
-# NOTE: access dictionary "values", i.e. [12, 10, 8, 6, 4, 2], with relative_freq.values()
+# NOTE: access dictionary "keys" list, i.e. ['A', 'B', 'C', 'D', 'E', 'F'], with relative_freq.keys()
+# NOTE: access dictionary "values" list, i.e. [12, 10, 8, 6, 4, 2], with relative_freq.values()
 axs.bar(relative_freq.keys(), relative_freq.values(), color="lightblue", ec="red", width=0.5)
 
 plt.show()

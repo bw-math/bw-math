@@ -13,10 +13,6 @@ This script will generate a dot plot for a (hard-coded) distribution of quiz gra
 ###                           IMPORT LIBRARIES                                 ###
 ##################################################################################
 
-import matplotlib
-
-matplotlib.use('tkagg')
-
 import matplotlib.pyplot as plt
 import math
 
