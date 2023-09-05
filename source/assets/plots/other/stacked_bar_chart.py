@@ -27,10 +27,6 @@ import matplotlib
 
 matplotlib.use('agg')
 
-# And uncomment this line: 
-
-# matplotlib.use('tkagg')
-
 import matplotlib.pyplot as plt
 import random
 
@@ -55,7 +51,9 @@ data = [ (random.choice(shapes), random.choice(colors)) for _ in range(100) ]
 n = len(data) # although we already know it's a 100 (why?)...still good to get in the habit of calculating ``n``.
 
 # Print everything to see what is going on.
-separator = "-"*10 # wut? multiplying...a string? wut do?
+separator = "-"*10 
+# multiplying a string extends it by that number of characters.
+# in other words, the line above will create the string "----------"
 print(separator, "SAMPLE OF DATA", separator) # curious, very curious
 print(data)
 
@@ -63,9 +61,11 @@ print(data)
 ## STEP 2: Find joint frequencies
 ####################################################################################
 
-# this is a trick to sum a list of data where you only want to sum certain
-# elements of the list. For instance, to find `blue_balls`, we only want to 
-# sum the outcomes that include a shape of 'ball' and a color of 'blue'
+# this is a trick to count the elements in a a list of data whn you only want to count
+# elements that satisfy a certain condition. For instance, to find `blue_balls`, we 
+# only want to sum the outcomes that include a shape of 'ball' and a color of 'blue'
+# NOTE: we access the x-value of the (shape, color) tuple the same way we
+#	access an element of a list, with the index.
 blue_balls = sum(1 for obs in data if obs[0] == "BALL" and obs[1] == "BLUE")
 red_balls = sum(1 for obs in data if obs[0] == "BALL" and obs[1] == "RED")
 blue_ducks = sum(1 for obs in data if obs[0] == "DUCK" and obs[1] == "BLUE")

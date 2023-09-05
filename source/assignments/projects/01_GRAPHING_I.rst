@@ -18,14 +18,75 @@ Instructions
 1. Download the ``.csv`` dataset in the :ref:`project_one_dataset` section and place it in the ``Linux Files`` folder on your folder system where you save your ``.py`` scripts.
 2. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_one.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
-4. Read the :ref:`project_one_background` section.
-5. Read the :ref:`project_one_loading_data` section.
-6. Read the :ref:`project_one_bar_charts` section. Download the script files in that section onto your ChromeBook. Read through and execute them on your computer. 
-7. Read the :ref:`project_one_set_operations` section. 
-8. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
-9. Perform all exercises and answer all questions in the :ref:`project_one_project` section. Label your script with comments as indicated in the *Project* section.
-10. When you are done, zip your script **and** your *csv* file into a file named ``LASTNAME_FIRSTNAME_project_one.zip``
-11. Upload the zip file to the Google Classroom Project One Assignment.
+4. Read the :ref:`project_one_installs` section. (We will do this part in class the day before the project!)
+5. Read the :ref:`project_one_background` section.
+6. Read the :ref:`project_one_loading_data` section.
+7. Read the :ref:`project_one_bar_charts` section. Download the script files in that section onto your ChromeBook. Read through them carefully and execute them on your computer. 
+8. Read the :ref:`project_one_set_operations` section. 
+9. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
+10. Perform all exercises and answer all questions in the :ref:`project_one_project` section. Label your script with comments as indicated in the *Project* section.
+11. When you are done, zip your script **and** your *csv* file into a file named ``LASTNAME_FIRSTNAME_project_one.zip``
+12. Upload the zip file to the Google Classroom Project One Assignment.
+
+.. _project_one_installs:
+
+Prerequisites
+=============
+
+We installed **Python** in :ref:`our first project <project_zero>` and got familiar with some of its basic functionality, in particular :ref:`list variables <python_lists>` and the :ref:`operations that can be performed on them <python_list_operations>`, skills that will be helpful in completing this project. 
+
+We also discovered our ChromeBook's **Python** installation is a bit different than a typical installation; it's missing a few essential pieces that we will now install. In order to go further with **Python** in this class, we need to do the following.
+
+Open up a *Linux* terminal and type the command,
+
+.. code:: shell
+
+	sudo apt-get install python3-pip
+	
+This command will install the **Python Package Manager** onto your computer. The **Python Package Manager**, or ``pip`` for short, allows us to install **Python** extensions. And that is exactly what we are going to do. Once the previous command completes, verify the installation with,
+
+.. code:: shell
+
+	pip3 --version
+	
+You should see something along the lines of,
+
+    pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)
+  
+Your version may not match exactly. You should be fine as long as your **Python** version is above *3.7*. 
+
+Now that ``pip`` is installed, let's plug in the final pieces we need into our **Python** installation.
+ 
+`matplotlib <https://matplotlib.org/>`_ will be used to generate graphical representations of data. `tkinter <https://docs.python.org/3/library/tkinter.html>`_ will be used to render the output of `matplotlib <https://matplotlib.org/>`_ into JPEG and PNG images. These packages can be installed through the command line. 
+
+Type the following command into your *Linux* terminal,
+
+.. code:: shell
+
+    pip3 install matplotlib tk
+
+.. image:: ../../assets/imgs/python/matplotlib_tk_install_done.png
+    :align: center 
+
+Output:
+
+    Defaulting to user installation because normal site-packages is not writeable
+
+    Collecting tk
+        Downloading tk-0.1.0-py3-none-any.whl (3.9 kB)
+    
+    ...
+
+    Installing collected packages: tk
+
+    Successfully installed tk-0.1.0
+
+.. image:: ../../assets/imgs/python/matplotlib_tk_install_done.png
+    :align: center 
+
+You should see the packages download and install into your system.
+
+That's it! You are ready to plot some sweet statistical graphs.
 
 .. _project_one_background:
 
@@ -139,7 +200,6 @@ The following code snippet will load in a *CSV* spreadsheet named ``example.csv`
     column_1 = [ float(row[0]) for row in columns ]
 
     print(column_1)
-
 
 .. _project_one_bar_charts:
 
@@ -275,16 +335,39 @@ No Frills
 - CHEVROLET
 - NISSAN
 - TOYOTA
-- VOLKWAGEN
+- VOLKSWAGEN
 
-Save your commands and label them with comments. In a :ref:`python_docstring`, answer the following question: Out of these five values, what is the most frequent **Make** of *Electric Vehicle* in Washington State?
+Label your calculations with comments.
 
-2. Using your answers to #1, construct a bar chart for *only* these five values of the **Make** categorical variable.
+2. Using your answers to #1, construct a bar chart for *only* these five values of the **Make** categorical variable. Label the commands used to render the graphs with comments.
 
-.. note:: 
+3. In the :ref:`python_docstring` at the top of your script, answer the following questions.
 
-    If you want to construct the entire frequency distribution and make a bar chart for it, I won't stop you, but make sure it's readable.
+a. Out of these five values, what is the most frequent **Make** of *Electric Vehicle* in Washington State?
 
+b. Find the *joint frequency distribution* of **Make** and **Electric Vehicle Type** for the same **Makes** as in *#1* and *#2*. In other words, fill out the following table,
+
+
++-------------+---------------------------------+-----------------------------------------+
+|             | Battery Electric Vehicles (BEV) |  Plug-in Hybrid Electric Vehicle (PHEV) |
++-------------+---------------------------------+-----------------------------------------+
+|  TESLA      |             ?                   |                    ?                    |
++-------------+---------------------------------+-----------------------------------------+
+| CHEVROLET   |             ?                   |                    ?                    |
++-------------+---------------------------------+-----------------------------------------+
+|   NISSAN    |             ?                   |                    ?                    |
++-------------+---------------------------------+-----------------------------------------+
+|   TOYOTA    |             ?                   |                    ?                    |
++-------------+---------------------------------+-----------------------------------------+
+|  VOLKSWAGEN |             ?                   |                    ?                    |
++-------------+---------------------------------+-----------------------------------------+
+
+c. Compare and contrast the distribution of *eletric vehicle* **Makes** with the distribution of **Electric Vehicle Types**. 
+
+	i. What does the *conditional distribution* of the **Electric Vehicle Type** for each of the five **Makes** considered tell you about the popularity of fully eletric versus hybrid cars?
+
+	ii. What does the *conditional distribution* of the **Make** for each **Eletric Vehicle Type** tell you about the manufacturers of *electric vehicles*? Which manufacturers are more likely to produce fully electric cars versus hybrid cars and visa versa?
+	
 Stacked
 -------
 
@@ -292,11 +375,15 @@ Stacked
    
 2. Answer the following questions. Label any commands you use to solve the problem with comments. Write your answers in the :ref:`python_docstring` at the top of the script.
 
-a. What percentage of *electric vehicles* in Washington State are both *Battery Electric Vehicles (BEV)* and "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility** ?
+a. What percentage of *electric vehicles* in Washington State are "*Not eligible due to low battery range*" for the **Clean Alternative Fuel (CAFV) Eligibility** tax exemption?
+ 
+b. What percentage of *eletric vehicles* in Washington State are *Battery Electric Vehicles (BEV)*? 
 
-b. What percentage of *Battery Electric Vehicles (BEV)* are "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility**?
+C. What percentage of *electric vehicles* in Washington State are both *Battery Electric Vehicles (BEV)* and "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility** tax exemption?
 
-c. What percentage of "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility** vehicles are *Battery Electric Vehicles (BEV)*?
+d. What percentage of *Battery Electric Vehicles (BEV)* are "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility** tax exemption?
+
+e. What percentage of "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility** vehicles are *Battery Electric Vehicles (BEV)*?
 
 
 3. Using this information obtained in *#3* and any additional information required, create a stacked bar chart for the *conditional distribution* of the **Clean Alternative Fuel Vehicle (CAFV) Eligibility** given the **Electric Vehicle Type**.
@@ -319,6 +406,8 @@ The following table is the a preview of the data you will be using for this proj
 
 .. csv-table:: Electric Vehicles in Washington State
    :file: ../../assets/datasets/previews/electric_vehicle_population_data_preview.csv
+
+The meaning of the columns was discussed in more detail in :ref:`project_one_background`. Refer to that section for further information on this dataset.
 
 References
 ==========

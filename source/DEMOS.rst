@@ -18,6 +18,13 @@ This script contains many useful functions for young statisticians seeking to ta
 
 :download:`Point Estimators <./assets/demos/stats.py>`
 
+Measuring Variation
+-------------------
+
+This script displays a dot plot of a sample of data and illustrates how the different measures of variation are affected by the slight alterations in the sample of data.
+
+:download:`Measuring Variation <./assets/demos/variation.py>`
+
 The Effect of Outliers
 ----------------------
 
@@ -46,4 +53,6 @@ This script shows how to work with the normal distribution in **Python**. It dem
 QQ Plot
 -------
 
-TODO
+This script show how to construct a QQ plot to assess the normality of a sample of data. 
+
+:download:`QQ Plot <./assets/demos/qq_plot.py>`
