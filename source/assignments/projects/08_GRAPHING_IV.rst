@@ -1,8 +1,8 @@
 .. _project_eight:
 
-==========================
-Estimation II: Correlation
-==========================
+========================
+Graphing IV: Correlation
+========================
 
 TODO
 

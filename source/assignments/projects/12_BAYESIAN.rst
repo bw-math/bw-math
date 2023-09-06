@@ -1,8 +1,8 @@
 .. _project_twelve:
 
-==========================
-Estimation II: Correlation
-==========================
+===================
+Bayesian Statistics
+===================
 
 TODO
 
