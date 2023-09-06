@@ -1,9 +1,5 @@
 import csv, os, sys
 
-import matplotlib
-
-# matplotlib.use('tkagg')
-
 import matplotlib.pyplot as plt
 
 # determine which directory the script is in.

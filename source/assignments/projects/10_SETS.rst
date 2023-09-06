@@ -1,8 +1,8 @@
 .. _project_ten:
 
-==========================
-Estimation II: SETS
-==========================
+=============
+Sample Spaces
+=============
 
 TODO
 
@@ -16,14 +16,14 @@ Instructions
 ============
 
 1. Download the *csv* dataset in the :ref:`project_ten_dataset` section and place it in the ``Linux Files`` folder on your folder system where you save your ``.py`` scripts.
-2. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_ten.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
+2. Create a Python ``.py`` script named ``GROUPNAME_project_ten.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``GROUPNAME`` with your group name.
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the :ref:`project_ten_background` section.
 5. Read the :ref:`project_ten_loading_data` section.
 6. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
 7. Perform all exercises and answer all questions in the :ref:`project_ten_project` section. Label your script with comments as indicated in the instructions of each problem.
-8. When you are done,zip your script **and** the *csv* file in a zip file named ``LASTNAME_FIRSTNAME_project_ten.zip``
-9. Upload the zip file to the Google Classroom Project Four Assignment.
+8. When you are done, zip your script **and** the *csv* file in a zip file named ``GROUPNAME_project_ten.zip``.
+9. Have *one* member of the group upload the zip file to the Google Classroom Project Four Assignment.
 
 .. _project_ten_loading_data:
 

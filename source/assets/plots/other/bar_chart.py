@@ -54,7 +54,7 @@ fig, axs = plt.subplots()
 # 
 #           this_list = [0, 3, 9]
 # 
-#       Can be accessed by through the bracket [] notation by using the index,
+#       Can be accessed through the bracket [] notation by using the index,
 #
 #           print(this_list[2])
 #
