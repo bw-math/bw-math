@@ -16,7 +16,7 @@ Instructions
 ============
 
 1. Download **both** *csv* datasets in the :ref:`project_two_dataset` section and place them in the ``Linux Files`` folder on your file system where you save your ``.py`` scripts.
-2. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_two.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
+2. Create a Python ``.py`` script named ``GROUPNAME_project_two.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``GROUPNAME`` with your group name.
 3. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the :ref:`project_two_background` section
 5. Read the :ref:`project_two_loading_data` section.
@@ -42,25 +42,46 @@ Background
 The Michelson Velocity of Light Experiment 
 ------------------------------------------
 
-The `Michelson Velocity of Light Experiment <https://www.gutenberg.org/files/11753/11753-h/11753-h.htm>` conducted in 1887 was the first time `Albert A. Michelson <https://en.wikipedia.org/wiki/Albert_A._Michelson>`_ successfully measured the speed of light. He would go on to do so several more times, eventually teaming up with `Edward Morley <https://en.wikipedia.org/wiki/Edward_W._Morley>`_. Together, using the principles Michelson first developed in 1887, Michelson and Morley would demonstrate the speed of light was the same regardless of the state of motion of the emitting body. This would go on to have profound effects for physics in the early twentieth century. It would lead `Albert Einstein <https://en.wikipedia.org/wiki/Albert_Einstein>`_ to propose the `theory of relativity <https://en.wikipedia.org/wiki/Theory_of_relativity>`_, one of the most significant intellectual developments in history of humanity. 
+The `Michelson Velocity of Light Experiment <https://www.gutenberg.org/files/11753/11753-h/11753-h.htm>` conducted in 1881 was the first time `Albert A. Michelson <https://en.wikipedia.org/wiki/Albert_A._Michelson>`_ successfully measured the speed of light. He would go on to do so several more times, eventually teaming up with `Edward Morley <https://en.wikipedia.org/wiki/Edward_W._Morley>`_. Together, using the principles Michelson first developed in 1881, Michelson and Morley would demonstrate in 1887 the speed of light was the same regardless of the state of motion of the emitting body. This would go on to have profound effects for physics in the early twentieth century. It would lead `Albert Einstein <https://en.wikipedia.org/wiki/Albert_Einstein>`_ to propose the `theory of relativity <https://en.wikipedia.org/wiki/Theory_of_relativity>`_, one of the most significant intellectual developments in history of humanity. 
 
-Michelson's 1887 experimental results remained one of most accurate estimations of the speed of light until modern times. Using a series of mirrors depicted below,
+Michelson's 1881 experimental results remained one of most accurate estimations of the speed of light until modern times. Using a series of mirrors depicted below, Michelson was able to divert light rays emitting from a common source along separate paths and then measure the fractional time difference it took for the rays to reach the same location.
 
 .. image:: ../../assets/imgs/context/michelson_experiment.png
     :width: 60%
     :align: center
 
-He was able to divert light rays from an emitting body along separate paths and measure the fractional time difference it took for the rays to reach the same location.
+.. topic:: Experimental Design
+	
+	The experiment is conducted within a closed and darkened small building at the U.S. Naval Academy. Light enters the building from one corner passing through a slit ``S`` whose location is precisely determined using a micrometer.
 
-In this lab, we will be using his dataset to perform some statistical analysis. 
+	The light then proceeds to hit a rotating mirror at the other end of the building's interior, ``R``, from whence it is reflected out of the building through an opening in a corner different from that of the source, ``L``.
 
+	The light beam travels outside to strike another (stationary) mirror, ``M`` which reflects it back into the building through the same corner it exited whereupon it then strikes the rotating mirror.
+	
+	`Source <https://great-northern-diver.github.io/loon.data/reference/michelson_1879.html>`_
+
+In this lab, we will analyze the dataset produced by Michelson in order to study typical distributions shapes encountered in science.
 
 The Cavendish Density of the Earth Experiment
 ---------------------------------------------
 
-Henry Cavendish performed the first modern, scientific experiment to measure the density of the Earth in 1797. Using the mutual gravitational attraction of two heavy metal balls attached to a `torsion balanace <https://en.wikipedia.org/wiki/Torsion_spring#Torsion_balance>`_ to twist a fiber of string, Cavendish measured the force of the tension produced. With `Newton's Laws of Motion <https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion>`_ , he was able to derive an expression that related this force to the mass of the Earth. 
+Henry Cavendish performed the first modern, scientific experiment to measure the density of the Earth in 1797, which allowed humans to calculate the mass of the Earth for the first time. 
 
-The estimate produced by Cavendish remained until modern times one of the most accurate and authoritative measures of the Earth's mass. In this lab, we will analyze the data produced by Cavendish.
+Using the mutual gravitational attraction of two heavy metal balls attached to a `torsion balanace <https://en.wikipedia.org/wiki/Torsion_spring#Torsion_balance>`_ to twist a fiber of string, Cavendish measured the force of the tension produced. 
+
+.. image:: ../../assets/imgs/context/cavendish_torsion_balance.png
+	:width: 60%
+	:align: center
+
+.. topic:: Experimental Design
+
+	Diagram viewed from above of the torsion pendulum used in the 1798 Cavendish experiment, the first accurate measurement of the density of the Earth, by Henry Cavendish. The pendulum consists of two small lead weights (h, h) hanging from a 6 foot horizontal wooden beam supported in the center by a fine torsion thread. The beam is protected from air currents inside a wooden box (A, A, A, A). The two large weights (W, W) attached to a separate suspension attract the small weights, causing the beam to rotate slightly. The rotation is read off of vernier scales (S) at either end of the rod. The large weights can be rotated to the other side of the torsion beam (w, w), causing the beam to rotate in the opposite direction.
+	
+	`Source <https://commons.wikimedia.org/wiki/File:Cavendish_experiment_schematic.png>`_
+
+With `Newton's Laws of Motion <https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion>`_ , he was able to derive an expression that related this force to the mass of the Earth. 
+
+Cavendish's dataset is an excellent historical example of using statistical inference to produce new knowledge about the world around us. 
 
 .. _project_two_loading_data:
 
