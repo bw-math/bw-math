@@ -15,7 +15,7 @@ In this lab, you will get familiar with the statistical plotting features of **P
 Instructions
 ============
 
-1. Download the ``.csv`` dataset in the :ref:`project_one_dataset` section and place it in the ``Linux Files`` folder on your folder system where you save your ``.py`` scripts.
+1. Download the ``.csv`` dataset in the :ref:`project_one_dataset` section and place it in the ``Linux Files`` folder on your ChromeBook's file system where you save your ``.py`` scripts.
 2. Create a Python ``.py`` script named ``GROUPNAME_project_one.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``GROUPNAME`` with your group name.
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the :ref:`project_one_installs` section. (We will do this part in class the day before the project!)
