@@ -13,6 +13,10 @@ This script will generate a dot plot for a (hard-coded) distribution of quiz gra
 ###                           IMPORT LIBRARIES                                 ###
 ##################################################################################
 
+import matplotlib as mpl 
+
+mpl.use("tkagg")
+
 import matplotlib.pyplot as plt
 import math
 
@@ -69,13 +73,13 @@ sample_mean = sum(x_values) / n
 axs.scatter(x_values, y_values)
 
 # Plot the mean as a vertical line
-plt.plot([sample_mean, sample_mean], [0, 10], linestyle="--", color="red")
+axs.plot([sample_mean, sample_mean], [0, 10], linestyle="--", color="red")
 
 # Plot sample median as a vertical line
-plt.plot([sample_median, sample_median], [0, 10], linestyle="--", color="green")
+axs.plot([sample_median, sample_median], [0, 10], linestyle="--", color="green")
 
 # Label
-plt.text(sample_mean + 1, 5, f"Sample Mean = {sample_mean}", color="red")
-plt.text(sample_mean + 1, 4.5, f"Sample Median = {sample_median}", color="green")
+axs.text(sample_mean + 1, 5, f"Sample Mean = {sample_mean}", color="red")
+axs.text(sample_mean + 1, 4.5, f"Sample Median = {sample_median}", color="green")
 
 plt.show()
