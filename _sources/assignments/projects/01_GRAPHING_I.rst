@@ -106,7 +106,7 @@ Recall the dataset from :ref:`graphical_representations_of_data_classwork` *#1*,
 
 This dataset was taken from `data.gov <https://data.gov/>`_. This is an excellent resource, if you ever find yourself in need of some data. We will be using this online database quite a bit once we get fully up to speed on **Python**.
 
-We examined the *Eletric Vehcile* dataset a little bit in class on the first week. We are now prepared to do a little more in-depth analysis. 
+We examined the *electric Vehcile* dataset a little bit in class on the first week. We are now prepared to do a little more in-depth analysis. 
 
 First, let's take a look at some of the variables being observed in this dataset.
 
@@ -366,11 +366,11 @@ b. Find the *joint frequency distribution* of **Make** and **Electric Vehicle Ty
 |  VOLKSWAGEN |             ?                   |                    ?                    |
 +-------------+---------------------------------+-----------------------------------------+
 
-c. Compare and contrast the distribution of *eletric vehicle* **Makes** with the distribution of **Electric Vehicle Types**. 
+c. Compare and contrast the distribution of *electric vehicle* **Makes** with the distribution of **Electric Vehicle Types**. 
 
-	i. What does the *conditional distribution* of the **Electric Vehicle Type** for each of the five **Makes** considered tell you about the popularity of fully eletric versus hybrid cars?
+	i. What does the *conditional distribution* of the **Electric Vehicle Type** for each of the five **Makes** considered tell you about the popularity of fully electric versus hybrid cars for each **Make**?
 
-	ii. What does the *conditional distribution* of the **Make** for each **Eletric Vehicle Type** tell you about the manufacturers of *electric vehicles*? Which manufacturers are more likely to produce fully electric cars versus hybrid cars and visa versa?
+	ii. What does the *conditional distribution* of the **Make** for each **Electric Vehicle Type** tell you about the manufacturers of *electric vehicles*? Which manufacturers are more likely to produce fully electric cars versus hybrid cars and visa versa?
 	
 Stacked
 -------
@@ -381,9 +381,9 @@ Stacked
 
 a. What percentage of *electric vehicles* in Washington State are "*Not eligible due to low battery range*" for the **Clean Alternative Fuel (CAFV) Eligibility** tax exemption?
  
-b. What percentage of *eletric vehicles* in Washington State are *Battery Electric Vehicles (BEV)*? 
+b. What percentage of *electric vehicles* in Washington State are *Battery Electric Vehicles (BEV)*? 
 
-c. What percentage of *eletric vehicles* in Washington State are *Plug-in Hybrid Electric Vehicle (PHEV)*? 
+c. What percentage of *electric vehicles* in Washington State are *Plug-in Hybrid Electric Vehicle (PHEV)*? 
 
 d. What percentage of *electric vehicles* in Washington State are both *Battery Electric Vehicles (BEV)* and "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility** tax exemption?
 
