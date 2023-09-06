@@ -1,8 +1,8 @@
 .. _project_ten:
 
-====
-SETS
-====
+=============
+Sample Spaces
+=============
 
 TODO
 
