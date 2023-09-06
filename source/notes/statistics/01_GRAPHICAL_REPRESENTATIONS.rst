@@ -994,9 +994,35 @@ Variations
 Stacked Bar Chart
 *****************
 
-A *stacked bar chart* is a type of *ogive* that is used specifically for *categorical data*. In particular, it is meant to visualize the :ref:`conditional_frequency_distribution` of one categorical variable over all the values of the other categorical variable.
+A *stacked bar chart* is a type of *ogive* that is used specifically for *categorical data*. In particular, it is meant to visualize the :ref:`conditional_frequency_distribution` of one categorical variable with respect to all the other values of the other categorical variable.
 
-TODO
+With a *stacked bar chart*, the sample is broken up into non-overlapping (:ref:`mutual exclusive <mutual_exclusion>`) groups. The *conditional distribution* of each group is plotted as a vertical bar that totals to 100%,
+
+.. plot:: assets/plots/other/stacked_bar_chart.py
+
+Each bar of the graph is *conditioned* on one variable. In this example, the *condition* is the event of a red object or a blue object. *Given* a blue object has been selected from the groups on the horizontal axis, the *conditional distribution* of shape (i.e., duck or ball) is plotted on the vertical axis.
+
+In this example, the *red* group is broken down into a distribution of *ducks* and *balls* according to the formulae,
+
+.. math::
+
+	P( \text{Duck} \mid \text{Red}) = \frac{n( \text{Duck and Red} ) }{n( \text{Red})}
+
+.. math::
+
+	P( \text{Ball} \mid \text{Red}) = \frac{n( \text{Ball and Red} ) }{n( \text{Red})}
+	
+Where as the *blue* group is broken down into a distribution of *ducks* and *balls* according to the formulae,
+
+.. math::
+
+	P( \text{Duck} \mid \text{Blue}) = \frac{n( \text{Duck and Blue} ) }{n( \text{Blue})}
+
+.. math::
+
+	P( \text{Ball} \mid \text{Blue}) = \frac{n( \text{Ball and Blue} ) }{n( \text{Blue})}
+	
+
 
 Boxplots
 ========
@@ -1024,12 +1050,14 @@ Five Number Summary
 
 .. note::
 
-    The maximum observation, the third quartile, the median, the firsrt quartile and the minimum are sometimes collectively known as the *five-number summary*.
-
+    These terms (minimum, percentile and maximum) are defined in the :ref:`point_estimation` section.
+    
+The middle three numbers, i.e. the third quartile, the median and the first quartile, from the *box* of the *boxplot*. The numbers on the ends, i.e. the maximum and minimum, are sometimes known as the *whiskers*. 
+ 
 Distribution Shapes
 -------------------
 
-TODO 
+A boxplot provides another window in a distribution's shape; A boxplot reveals the characteristic features of important distribution *shapes*.
 
 Normal
 ******
