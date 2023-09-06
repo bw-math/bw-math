@@ -368,9 +368,9 @@ b. Find the *joint frequency distribution* of **Make** and **Electric Vehicle Ty
 
 c. Compare and contrast the distribution of *eletric vehicle* **Makes** with the distribution of **Electric Vehicle Types**. 
 
-	i. What does the *conditional distribution* of the **Electric Vehicle Type** for each of the five **Makes** considered tell you about the popularity of fully eletric versus hybrid cars?
+	i. What does the *conditional distribution* of the **Electric Vehicle Type** for each of the five **Makes** considered tell you about the popularity of fully electric versus hybrid cars?
 
-	ii. What does the *conditional distribution* of the **Make** for each **Eletric Vehicle Type** tell you about the manufacturers of *electric vehicles*? Which manufacturers are more likely to produce fully electric cars versus hybrid cars and visa versa?
+	ii. What does the *conditional distribution* of the **Make** for each **Electric Vehicle Type** tell you about the manufacturers of *electric vehicles*? Which manufacturers are more likely to produce fully electric cars versus hybrid cars and visa versa?
 	
 Stacked
 -------
