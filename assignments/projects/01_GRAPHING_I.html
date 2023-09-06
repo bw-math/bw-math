@@ -246,11 +246,11 @@
 <li class="toctree-l3"><a class="reference internal" href="05_OUTLIERS.html">Outliers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="06_GRAPHING_III.html">Graphing III: Scatter Plots</a></li>
 <li class="toctree-l3"><a class="reference internal" href="07_ESTIMATION_II.html">Estimation II: Correlation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="08_GRAPHING_IV.html">Estimation II: Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08_GRAPHING_IV.html">Graphing IV: Correlation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="09_SAMPLING.html">Sampling</a></li>
-<li class="toctree-l3"><a class="reference internal" href="10_SETS.html">Estimation II: SETS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_SETS.html">SETS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="11_SIMULATION.html">Simulation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="12_BAYESIAN.html">Estimation II: Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="12_BAYESIAN.html">Bayesian Statistics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="13_GRAPHING_V.html">Graphing V: Probability Density</a></li>
 <li class="toctree-l3"><a class="reference internal" href="14_BINOMIAL.html">Binomial Distribution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="15_DISTRIBUTIONS.html">Other Distributions</a></li>
@@ -487,7 +487,7 @@ document.write(`
 <span id="project-one-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
 <li><p>Download the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> dataset in the <a class="reference internal" href="#project-one-dataset"><span class="std std-ref">Datasets</span></a> section and place it in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your folder system where you save your <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts.</p></li>
-<li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_one.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">LASTNAME</span></code> and <code class="docutils literal notranslate"><span class="pre">FIRSTNAME</span></code> with your last and first name, respectively.</p></li>
+<li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">GROUPNAME_project_one.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">GROUPNAME</span></code> with your group name.</p></li>
 <li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-one-installs"><span class="std std-ref">Prerequisites</span></a> section. (We will do this part in class the day before the project!)</p></li>
 <li><p>Read the <a class="reference internal" href="#project-one-background"><span class="std std-ref">Background</span></a> section.</p></li>
@@ -496,12 +496,16 @@ document.write(`
 <li><p>Read the <a class="reference internal" href="#project-one-set-operations"><span class="std std-ref">Set Operations</span></a> section.</p></li>
 <li><p>Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file using the technique outlined in the <a class="reference internal" href="03_ESTIMATION_I.html#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
 <li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-one-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the <em>Project</em> section.</p></li>
-<li><p>When you are done, zip your script <strong>and</strong> your <em>csv</em> file into a file named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_one.zip</span></code></p></li>
-<li><p>Upload the zip file to the Google Classroom Project One Assignment.</p></li>
+<li><p>When you are done, zip your script <strong>and</strong> your <em>csv</em> file into a file named <code class="docutils literal notranslate"><span class="pre">GROUPNAME_project_one.zip</span></code></p></li>
+<li><p>Have <em>one</em> member of your group upload the zip file to the Google Classroom Project One Assignment.</p></li>
 </ol>
 </section>
 <section id="prerequisites">
 <span id="project-one-installs"></span><h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We will do this in class together.</p>
+</div>
 <p>We installed <strong>Python</strong> in <a class="reference internal" href="00_PYTHON.html#project-zero"><span class="std std-ref">our first project</span></a> and got familiar with some of its basic functionality, in particular <a class="reference internal" href="../../references/python/02_BASIC.html#python-lists"><span class="std std-ref">list variables</span></a> and the <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-operations"><span class="std std-ref">operations that can be performed on them</span></a>, skills that will be helpful in completing this project.</p>
 <p>We also discovered our ChromeBook’s <strong>Python</strong> installation is a bit different than a typical installation; it’s missing a few essential pieces that we will now install. In order to go further with <strong>Python</strong> in this class, we need to do the following.</p>
 <p>Open up a <em>Linux</em> terminal and type the command,</p>
@@ -549,7 +553,7 @@ document.write(`
 </div></blockquote>
 <p>This dataset was taken from <a class="reference external" href="https://data.gov/">data.gov</a>. This is an excellent resource, if you ever find yourself in need of some data. We will be using this online database quite a bit once we get fully up to speed on <strong>Python</strong>.</p>
 <p>We examined the <em>Eletric Vehcile</em> dataset a little bit in class on the first week. We are now prepared to do a little more in-depth analysis.</p>
-<p>First, let’s take about some of the variables being observed in this dataset.</p>
+<p>First, let’s take a look at some of the variables being observed in this dataset.</p>
 <section id="make">
 <h4>Make<a class="headerlink" href="#make" title="Permalink to this headline">#</a></h4>
 <p>The <strong>Make</strong> variable represents the manufacturer of the car. The possible values for this variable are listed below,</p>
@@ -740,7 +744,7 @@ This script is annotated with lots of comments for you to read. Give them a peak
 </ul>
 <p>Label your calculations with comments.</p>
 <ol class="arabic simple" start="2">
-<li><p>Using your answers to #1, construct a bar chart for <em>only</em> these five values of the <strong>Make</strong> categorical variable. Label the commands used to render the graphs with comments.</p></li>
+<li><p>Using your answers to #1, construct a bar chart for <em>only</em> these five values of the <strong>Make</strong> categorical variable. Label the commands used to render the graph with comments.</p></li>
 <li><p>In the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a> at the top of your script, answer the following questions.</p></li>
 </ol>
 <ol class="loweralpha simple">
@@ -800,16 +804,20 @@ This script is annotated with lots of comments for you to read. Give them a peak
 <ol class="loweralpha simple">
 <li><p>What percentage of <em>electric vehicles</em> in Washington State are “<em>Not eligible due to low battery range</em>” for the <strong>Clean Alternative Fuel (CAFV) Eligibility</strong> tax exemption?</p></li>
 <li><p>What percentage of <em>eletric vehicles</em> in Washington State are <em>Battery Electric Vehicles (BEV)</em>?</p></li>
-</ol>
-<ol class="upperalpha simple" start="3">
+<li><p>What percentage of <em>eletric vehicles</em> in Washington State are <em>Plug-in Hybrid Electric Vehicle (PHEV)</em>?</p></li>
 <li><p>What percentage of <em>electric vehicles</em> in Washington State are both <em>Battery Electric Vehicles (BEV)</em> and “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> tax exemption?</p></li>
+<li><p>What percentage of <em>electric vehicles</em> in Washington State are both <em>Plug-in Hybrid Electric Vehicle (PHEV)</em> and “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> tax exemption?</p></li>
+<li><p>What percentage of <em>Battery Electric Vehicles (BEV)</em> are “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> tax exemption?</p></li>
 </ol>
 <ol class="loweralpha simple" start="4">
-<li><p>What percentage of <em>Battery Electric Vehicles (BEV)</em> are “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> tax exemption?</p></li>
+<li><p>What percentage of <em>Plug-in Hybrid Electric Vehicle (PHEV)</em> are “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> tax exemption?</p></li>
 <li><p>What percentage of “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> vehicles are <em>Battery Electric Vehicles (BEV)</em>?</p></li>
 </ol>
+<ol class="loweralpha simple" start="5">
+<li><p>What percentage of “<em>Not eligible due to low battery range</em>” for <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> vehicles are <em>Plug-in Hybrid Electric Vehicle (PHEV)</em>?</p></li>
+</ol>
 <ol class="arabic simple" start="3">
-<li><p>Using this information obtained in <em>#3</em> and any additional information required, create a stacked bar chart for the <em>conditional distribution</em> of the <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> given the <strong>Electric Vehicle Type</strong>.</p></li>
+<li><p>Using this information obtained in <em>#3</em> and any additional information required, create a stacked bar chart for the <em>conditional distribution</em> of the <strong>Electric Vehicle Type</strong> given the <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong>.</p></li>
 <li><p>What does your stacked bar chart from #3 tell you about the <em>association</em> between the <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> and the <strong>Electric Vehicle Type</strong>? Write your answer in your script’s <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a> and label the problem.</p></li>
 <li><p>Write a few sentences explaining the results from #2 - #4. Did the result turn out the way you expected? Why or why not?</p></li>
 </ol>

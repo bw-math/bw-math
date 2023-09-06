@@ -16,7 +16,7 @@ Instructions
 ============
 
 1. Download the ``.csv`` dataset in the :ref:`project_one_dataset` section and place it in the ``Linux Files`` folder on your folder system where you save your ``.py`` scripts.
-2. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_one.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
+2. Create a Python ``.py`` script named ``GROUPNAME_project_one.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``GROUPNAME`` with your group name.
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the :ref:`project_one_installs` section. (We will do this part in class the day before the project!)
 5. Read the :ref:`project_one_background` section.
@@ -25,13 +25,17 @@ Instructions
 8. Read the :ref:`project_one_set_operations` section. 
 9. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
 10. Perform all exercises and answer all questions in the :ref:`project_one_project` section. Label your script with comments as indicated in the *Project* section.
-11. When you are done, zip your script **and** your *csv* file into a file named ``LASTNAME_FIRSTNAME_project_one.zip``
-12. Upload the zip file to the Google Classroom Project One Assignment.
+11. When you are done, zip your script **and** your *csv* file into a file named ``GROUPNAME_project_one.zip``
+12. Have *one* member of your group upload the zip file to the Google Classroom Project One Assignment.
 
 .. _project_one_installs:
 
 Prerequisites
 =============
+
+.. note::
+
+    We will do this in class together.
 
 We installed **Python** in :ref:`our first project <project_zero>` and got familiar with some of its basic functionality, in particular :ref:`list variables <python_lists>` and the :ref:`operations that can be performed on them <python_list_operations>`, skills that will be helpful in completing this project. 
 
@@ -104,7 +108,7 @@ This dataset was taken from `data.gov <https://data.gov/>`_. This is an excellen
 
 We examined the *Eletric Vehcile* dataset a little bit in class on the first week. We are now prepared to do a little more in-depth analysis. 
 
-First, let's take about some of the variables being observed in this dataset.
+First, let's take a look at some of the variables being observed in this dataset.
 
 Make
 ****
@@ -339,7 +343,7 @@ No Frills
 
 Label your calculations with comments.
 
-2. Using your answers to #1, construct a bar chart for *only* these five values of the **Make** categorical variable. Label the commands used to render the graphs with comments.
+2. Using your answers to #1, construct a bar chart for *only* these five values of the **Make** categorical variable. Label the commands used to render the graph with comments.
 
 3. In the :ref:`python_docstring` at the top of your script, answer the following questions.
 
@@ -379,14 +383,22 @@ a. What percentage of *electric vehicles* in Washington State are "*Not eligible
  
 b. What percentage of *eletric vehicles* in Washington State are *Battery Electric Vehicles (BEV)*? 
 
-C. What percentage of *electric vehicles* in Washington State are both *Battery Electric Vehicles (BEV)* and "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility** tax exemption?
+c. What percentage of *eletric vehicles* in Washington State are *Plug-in Hybrid Electric Vehicle (PHEV)*? 
 
-d. What percentage of *Battery Electric Vehicles (BEV)* are "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility** tax exemption?
+d. What percentage of *electric vehicles* in Washington State are both *Battery Electric Vehicles (BEV)* and "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility** tax exemption?
+
+e. What percentage of *electric vehicles* in Washington State are both *Plug-in Hybrid Electric Vehicle (PHEV)* and "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility** tax exemption?
+
+f. What percentage of *Battery Electric Vehicles (BEV)* are "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility** tax exemption?
+
+d. What percentage of *Plug-in Hybrid Electric Vehicle (PHEV)* are "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility** tax exemption?
 
 e. What percentage of "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility** vehicles are *Battery Electric Vehicles (BEV)*?
 
+e. What percentage of "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility** vehicles are *Plug-in Hybrid Electric Vehicle (PHEV)*?
 
-3. Using this information obtained in *#3* and any additional information required, create a stacked bar chart for the *conditional distribution* of the **Clean Alternative Fuel Vehicle (CAFV) Eligibility** given the **Electric Vehicle Type**.
+
+3. Using this information obtained in *#3* and any additional information required, create a stacked bar chart for the *conditional distribution* of the **Electric Vehicle Type** given the **Clean Alternative Fuel Vehicle (CAFV) Eligibility**.
 
 4. What does your stacked bar chart from #3 tell you about the *association* between the **Clean Alternative Fuel Vehicle (CAFV) Eligibility** and the **Electric Vehicle Type**? Write your answer in your script's :ref:`python_docstring` and label the problem.
 
