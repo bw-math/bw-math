@@ -1053,16 +1053,28 @@ Five Number Summary
     These terms (minimum, percentile and maximum) are defined in the :ref:`point_estimation` section.
     
 The middle three numbers, i.e. the third quartile, the median and the first quartile, from the *box* of the *boxplot*. The numbers on the ends, i.e. the maximum and minimum, are sometimes known as the *whiskers*. 
+
+By definition, the *box* of the *boxplot* will show you where 50% of the distribution is centered. In other words, between the third quartile and the first quartile, you will find 50% of all observations in a sample.
  
 Distribution Shapes
 -------------------
 
-A boxplot provides another window in a distribution's shape; A boxplot reveals the characteristic features of important distribution *shapes*.
+A boxplot provides another window into a distribution by revealing the characteristic features of important distribution *shapes*.
+
+The comparative lengths of the boxplot *whiskers* show us in what direction the distribution is being pulled by :ref:`outliers <outlier>`.
+
+For this last reason, *boxplots* are often useful graphical tools for quickly identifying *outliers*. We will talk more about how to use *boxplots* to identify outlying observations when we get to the :ref:`interquartile_range` descriptive statistic in the next section.
+
+For now, we present various boxplots in order to exhibit how the distribution shape is manifested in the relative lengths of the whisker.
 
 Normal
 ******
 
 .. plot:: assets/plots/boxplots/boxplot_normal.py
+
+A *normal* boxplot has a *box* that sits evenly between its *whiskers*. The length of the left *whisker* is roughly equal to the length of the right *whisker*. There are no *outlying observations* to skew the whiskers. 
+
+Notice the red line that represents the *median* is roughly centered within the *box*.
 
 Skewed
 ******
@@ -1071,6 +1083,15 @@ Skewed
 
 .. plot:: assets/plots/boxplots/boxplot_skewed_right.py
 
+A *skewed right* boxplot has a *box* with lopsided *whiskers*. Its right *whisker* is pulled in the direction of the skew, i.e. towards the right. The presence of outlying observations on the right causes the distribution to *stretch* towards them. 
+
+Notice the red line that represents the median sits close to the left side of the *box*, where the majority of the distribution lies. 
+
+
 **Skewed Left**
 
 .. plot:: assets/plots/boxplots/boxplot_skewed_left.py
+
+A skewed left boxplot has a *box* with lopsided *whiskers*. Its left *whisker* is pulled in the direction of the skew, i.e towards the left. The presence of outlying observations on the left causes the distribution to *stretch* towards them.
+
+Notice the red line that represents the median sits close to the right side of the *box*, where the majority of the distribution lies.
