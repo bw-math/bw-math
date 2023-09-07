@@ -394,7 +394,7 @@ a. Out of these five values, what is the most frequent **Make** of *Electric Veh
 
 
 +-------------+---------------------------------+-----------------------------------------+
-|             | Battery Electric Vehicle (BEV) |  Plug-in Hybrid Electric Vehicle (PHEV) |
+|             | Battery Electric Vehicle (BEV)  |  Plug-in Hybrid Electric Vehicle (PHEV) |
 +-------------+---------------------------------+-----------------------------------------+
 |  TESLA      |             ?                   |                    ?                    |
 +-------------+---------------------------------+-----------------------------------------+
