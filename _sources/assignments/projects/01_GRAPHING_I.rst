@@ -223,7 +223,7 @@ Recall a standard bar chart is a way of visually representing the marginal frequ
 
 .. math::
 
-	f(A) = \frac{n(A)}{n(S)}
+	P(A) = \frac{n(A)}{n(S)}
 	
 	
 Up until now we have been living in the stone age, creating these graphs by hand. Welcome to the twenty-first century. Behold, the power of `matplotlib <https://matplotlib.org/>`_,
