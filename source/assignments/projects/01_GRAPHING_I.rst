@@ -200,8 +200,8 @@ The following code snippet will load in a *CSV* spreadsheet named ``example.csv`
     headers = raw_data[0]
     columns = raw_data[1:]
 
-    # grab first column from csv file and ensure it's a number (not a string)
-    column_1 = [ float(row[0]) for row in columns ]
+    # grab first column from csv file
+    column_1 = [ row[0] for row in columns ]
 
     print(column_1)
 
