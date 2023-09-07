@@ -28,7 +28,7 @@ Order of Operations
 
 .. math::
 
-    3 \cdot ( 3 \cdot x + 5) - 2 \cdot (2 \cdot x - 3)
+    3 \cdot ( 3 \cdot 2 + 5) - 2 \cdot (2 \cdot 4 - 3)
 
 Algebraic Expressions
 *********************
