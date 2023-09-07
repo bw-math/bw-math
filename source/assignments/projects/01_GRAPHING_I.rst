@@ -444,6 +444,7 @@ e. What percentage of "*Not eligible due to low battery range*" for **Clean Alte
 5. Write a few sentences explaining the results from #2 - #4. Did the result turn out the way you expected? Why or why not?
 
 6. Based on your answer to #4 in this section and #4 from the previous section, which manufacturers in Washington state benefit the most from the tax exemption? What does this tell you about the manufacturer with the *most* electric vehicles registered in Washington state?
+
 .. _project_one_dataset:
 
 Datasets
