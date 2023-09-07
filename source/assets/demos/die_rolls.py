@@ -14,7 +14,6 @@ The more die we roll and the more times we roll them, the closer the resulting d
 """
 
 import random 
-import matplotlib as mpl
 import matplotlib.pyplot as plot 
 
 def sum_dice(dice): 
