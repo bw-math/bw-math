@@ -4,10 +4,12 @@
 Files
 =====
 
+.. _csv_files:
+
 CSV Files
 =========
 
-The following example will load in a ``.csv`` file named ``example.csv``.
+The ``csv`` package gives us a way to load in data from an external ``.csv`` file. The following example will load in a ``.csv`` file named ``example.csv``, assuming the ``.csv`` file is saved in the same folder (directory) as the ``.py`` script.
 
 .. important:: 
     
