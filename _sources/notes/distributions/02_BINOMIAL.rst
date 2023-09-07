@@ -35,8 +35,12 @@ TODO
 Probabilitiy Distribution
 =========================
 
+TODO 
+
 .. math:: 
     p(x; n, p) = C^{n}_x \cdot p^{x} \cdot (1 - p)^{n-x}
+
+TODO
 
 .. plot:: assets/plots/distributions/binomial/binomial_distribution_01.py
 

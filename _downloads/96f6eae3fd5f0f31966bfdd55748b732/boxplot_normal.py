@@ -39,7 +39,7 @@ import random as rand
 # NOTE: 2 axes are being created!
     #       1 to graph the histogram
     #       1 to graph the boxplot
-fig, axs = plt.subplots(1, 2)
+(fig, axs) = plt.subplots(1, 2)
 
 # Generate Data
 # NOTE: You can add the contents of lists together with "+"

@@ -23,7 +23,7 @@ from matplotlib.ticker import PercentFormatter
 ###                                SCRIPT                                      ###
 ##################################################################################
 
-fig, axs = plt.subplots()
+(fig, axs) = plt.subplots()
 
 data = [ 0, 0, 1, 1, 1, 2, 2, 2, 2, 2 ]
 weights = [ 1/len(data) for _ in data ]

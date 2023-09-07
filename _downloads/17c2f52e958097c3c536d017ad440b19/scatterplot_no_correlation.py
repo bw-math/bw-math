@@ -20,7 +20,7 @@ import random as rand
 ##################################################################################
 
 # Create New Figures and Axes
-fig, axs = plt.subplots()
+(fig, axs) = plt.subplots()
 
 # Generate Data
 #   NOTE: Range x (Random Number Between 0, 1) + Lower Limit

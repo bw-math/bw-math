@@ -30,7 +30,7 @@ def binomial(n, p, x):
 ##################################################################################
 
 # Create New Figures and Axes
-fig, axs = plt.subplots()
+(fig, axs) = plt.subplots()
 
 n = 30
 p = 0.5

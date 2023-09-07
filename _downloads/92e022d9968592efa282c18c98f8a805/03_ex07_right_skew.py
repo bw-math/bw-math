@@ -22,7 +22,7 @@ import math
 ##################################################################################
 
 # Create New Figures and Axes
-fig, axs = plt.subplots()
+(fig, axs) = plt.subplots()
 
 # Generate data
 data = [ 

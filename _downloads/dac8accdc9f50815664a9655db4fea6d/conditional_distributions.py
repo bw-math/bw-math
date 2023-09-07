@@ -14,7 +14,6 @@ This script will generate a stacked bar chart for a randomly generated set of bi
 ###                           IMPORT LIBRARIES                                 ###
 ##################################################################################
 
-import matplotlib
 import matplotlib.pyplot as plt
 import random
 

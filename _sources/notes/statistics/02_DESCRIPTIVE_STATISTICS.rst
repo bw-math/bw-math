@@ -1000,7 +1000,7 @@ Finally, we apply the :ref:`general percentile formula <percentile_formula>`, wi
 
 Take note, there is a large divergence between the value of the sample mean and the value of median here. The sample mean in this example :math:`\bar{x}` has a value that is larger than every observation in the sample except one, the person with an annual income of *$2,000,000*, whereas the median is closer where the majority of observations lie. 
 
-The observation of *$2,000,000* is an :ref:`outlier`, an unusual observation. This example illustrates when the sample mean is not a *resilient* measure of *centrality*; the presence of a single outlying observation in the sample *skews* the sample mean *towards* the outlying observation. The median, however, preserves its ability to measure *centrality* when the sample contains outliers. 
+The observation of *$2,000,000* is an :ref:`outlier <outliers>`, an unusual observation. This example illustrates when the sample mean is not a *resilient* measure of *centrality*; the presence of a single outlying observation in the sample *skews* the sample mean *towards* the outlying observation. The median, however, preserves its ability to measure *centrality* when the sample contains outliers. 
 
 This idea will allow us to develop a general rule of thumb for identifying the presence of *skew* in samples.   
 

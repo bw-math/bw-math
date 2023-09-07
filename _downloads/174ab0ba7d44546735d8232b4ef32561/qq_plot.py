@@ -58,4 +58,9 @@ theory_percentiles = [ pair[1] for pair in qq ]
 # Create the plot
 fig, axes = plot.subplots()
 axes.scatter(ordered_observations, theory_percentiles)
+
+# Label the plot
+axes.set_xlabel("Ranked Observations")
+axes.set_ylabel("Theoretical Normal Percentiles")
+
 plot.show()

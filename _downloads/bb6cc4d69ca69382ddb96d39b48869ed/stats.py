@@ -22,6 +22,7 @@ def roll_dice(n):
 
 def marginal_frequency(sample, x):
 	freq = sum(1 for obs in sample if obs[0] == x)
+	return freq
 	
 def joint_frequency(sample, x, y):
 	"""
@@ -44,19 +45,19 @@ def sample_mean(sample):
 	return xbar
 
 def sample_percentile(sample, percentile):
-    	"""
-    	Calculate the sample percentile of a sample of data.
-    	"""
-    	sample.sort()
-    	n = len(sample)
-    	order = percentile * (n + 1)
-    	order_floor = math.floor(order)
-    	order_ceiling = math.ceil(order)
-    	lower_bound = sample[order_floor]
-    	upper_bound = sample[order_ceiling]
-    	percentile_delta = (upper_bound - lower_bound)
-    	result = lower_bound + percentile_delta * (order - order_floor)
-    	return result
+	"""
+	Calculate the sample percentile of a sample of data.
+	"""
+	sample.sort()
+	n = len(sample)
+	order = percentile * (n + 1)
+	order_floor = math.floor(order)
+	order_ceiling = math.ceil(order)
+	lower_bound = sample[order_floor]
+	upper_bound = sample[order_ceiling]
+	percentile_delta = (upper_bound - lower_bound)
+	result = lower_bound + percentile_delta * (order - order_floor)
+	return result
     
 def sample_std_deviation(sample):
 	"""

@@ -40,7 +40,7 @@ import matplotlib.pyplot as plt
 ##################################################################################
 
 # Create New Figures and Axes
-fig, axs = plt.subplots()
+(fig, axs) = plt.subplots()
 
 # Generate Data
 # NOTE: the y-variable in the ordered pair is being increased by 1 in every iteration

@@ -473,7 +473,9 @@ We are able to simulate draws from arbitary normally distributed populations.
 Statistics
 ----------
 
-**Python** also has a dedicated package specifically for statistical functions, named ``statistics``. We will encounter this package we will start calculating normal probabilities and percentiles in **Section 2.2**, and then become *extremely* familiar with it once we get to :ref:`sampling_distributions` and :ref:`central_limit_theorems`.
+**Python** also has a dedicated package specifically for statistical functions, named ``statistics``. We will encounter this package we will start calculating normal probabilities and percentiles in **Section 2.2**, and then become *extremely* familiar with it once we get to :ref:`sampling_distributions` and :ref:`central_limit_theorem`.
+
+.. _python_normal_distribution:
 
 Normal Distribution
 *******************
@@ -518,7 +520,26 @@ TODO
 Output:
 
 	P(X <= 106.74 ) = 0.75
-	
+
+.. _python_linear_regression:
+
+Linear Regression
+*****************
+
+TODO 
+
+**Correlation**
+
+TODO 
+
+**Line of Best Fit**
+
+TODO 
+
+**Pearson Correlation Coefficient**
+
+TODO
+
 .. _python_creating_functions:
 
 Creating Functions

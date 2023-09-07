@@ -34,7 +34,7 @@ def normal_density(x, mu = 0, sigma = 1):
 ##################################################################################
 
 # Create New Figures and Axes
-fig, axs = plt.subplots()
+(fig, axs) = plt.subplots()
 
 # NOTE: 
 #   n is the number of points in the graph

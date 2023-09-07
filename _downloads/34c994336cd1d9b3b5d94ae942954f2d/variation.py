@@ -36,7 +36,7 @@ def sample_std_deviation(sample):
 	return std_dev
 	
 # create figure and axes on which to plot
-fig, axes = plot.subplots()
+(fig, axes) = plot.subplots()
 
 # hardcode some data
 # NOTE: try changing the data set to see how it affects the variation
@@ -73,8 +73,8 @@ axes.set_ylabel("Frequency")
 axes.scatter(data, y_values)
 
 # Plot the mean as a vertical line
-plot.plot([xbar, xbar], [0, 10], linestyle="--", color="green")
-plot.text(xbar + 0.25, 5, f"Sample Mean = {round(xbar, 2)}", color="green")
+axes.plot([xbar, xbar], [0, 10], linestyle="--", color="green")
+axes.text(xbar + 0.25, 5, f"Sample Mean = {round(xbar, 2)}", color="green")
 
 # Plot deviations as horizontal lines
 for dev, height in zip(deviations, y_values):
@@ -82,6 +82,6 @@ for dev, height in zip(deviations, y_values):
 	color = "blue" if dev >= 0 else "red"
 	# add random offset to height so lines don't overlap
 	offset = (random.random() - 1) / 4
-	plot.plot([xbar, xbar + dev], [height + offset, height + offset], linestyle="--", color=color)
+	axes.plot([xbar, xbar + dev], [height + offset, height + offset], linestyle="--", color=color)
 	
 plot.show()
