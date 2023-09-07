@@ -218,7 +218,7 @@ Stratified
 **********
 
 Definition
-    To get *stratified* samples, the population is broken up into :ref:`mutually exclusive <mutually_exclusion>` groups. Then a *random* sample from every group is taken.
+    To get *stratified* samples, the population is broken up into :ref:`mutually exclusive <mutual_exclusion>` groups. Then a *random* sample from every group is taken.
 
 Example
     - Sampling a highschool by grouping the school into freshmen, sophomores, juniors and seniors. 
