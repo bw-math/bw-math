@@ -34,7 +34,7 @@ import matplotlib.pyplot as plt
 ##################################################################################
 
 # Create New Figures and Axes
-fig, axs = plt.subplots()
+(fig, axs) = plt.subplots()
 
 # Generate Data
 # NOTE: ``data``` is a dictionary. Dictionaries are another "data type" in Python.

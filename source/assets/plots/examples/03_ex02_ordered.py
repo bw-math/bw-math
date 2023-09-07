@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 ##################################################################################
 
 # Create New Figures and Axes
-fig, axs = plt.subplots()
+(fig, axs) = plt.subplots()
 
 # Generate data
 data = [ 6.5, -2.5, 4.3, 0.5, 7.0, -1.0, 5.0, 3.0, -1.5 ]

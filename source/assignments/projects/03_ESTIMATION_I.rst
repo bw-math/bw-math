@@ -79,6 +79,10 @@ Project
 
     *#1c* will require *two arguments*, the list of data and the percentile you wish to find.
 
+.. note::
+
+    We will do this part in class together.
+    
 2. Load in the data from the :ref:`project_three_dataset` section. Note the length of a reign is separated in a ``Years`` column, a ``Months`` column and a ``Days``. To clean the data and compute the total length of a Roman Emperor's reign, apply the formula to each row of data, 
 
 .. math:: 

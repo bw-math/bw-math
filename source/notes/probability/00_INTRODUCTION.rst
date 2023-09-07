@@ -516,7 +516,7 @@ Proof #2
 
         A \cap A^c = \varnothing
 
-    Therefore, :math:`A` and :math:`A^c` are *mutually exclusive*. So by :ref:`axiom_three`, we can say,
+    Therefore, :math:`A` and :math:`A^c` are *mutually exclusive*. So by :ref:`axiom_3`, we can say,
 
     .. math::
 

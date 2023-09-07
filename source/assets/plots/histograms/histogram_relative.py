@@ -37,7 +37,7 @@ import random as rand
 ##################################################################################
 
 # Create New Figures and Axes
-fig, axs = plt.subplots()
+(fig, axs) = plt.subplots()
 
 # Generate data
 # NOTE: Range*(Random Number Between 0 and 1) will give us a dataset of samples 

@@ -36,7 +36,7 @@ import random as rand
 ##################################################################################
 
 # Create new Figure and Axes
-fig, axs = plt.subplots(1, 2)
+(fig, axs) = plt.subplots(1, 2)
 
 # Generate Data
 # NOTE: You can add the contents of lists together with "+"

@@ -1,3 +1,5 @@
+.. _sampling_distributions:
+
 ======================
 Sampling Distributions
 ======================

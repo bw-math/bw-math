@@ -29,7 +29,7 @@ sodas = ["Coke", "Pepsi", "Sprite", "RC"]
 
 sample = [ random.choice(sodas) for _ in range(30) ]
 
-fig, axes = plot.subplots()
+(fig, axes) = plot.subplots()
 
 axes.pie(sample, sodas)
 

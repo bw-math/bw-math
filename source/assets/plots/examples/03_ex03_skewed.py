@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 ##################################################################################
 
 # Create New Figures and Axes
-fig, axs = plt.subplots()
+(fig, axs) = plt.subplots()
 
 # Generate data
 data = [ 50000, 65000, 45000, 30000, 120000, 200000, 70000, 56000, 55000, 2000000 ]

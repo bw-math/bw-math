@@ -1061,7 +1061,7 @@ Distribution Shapes
 
 A boxplot provides another window into a distribution by revealing the characteristic features of important distribution *shapes*.
 
-The comparative lengths of the boxplot *whiskers* show us in what direction the distribution is being pulled by :ref:`outliers <outlier>`.
+The comparative lengths of the boxplot *whiskers* show us in what direction the distribution is being pulled by :ref:`outliers <outliers>`.
 
 For this last reason, *boxplots* are often useful graphical tools for quickly identifying *outliers*. We will talk more about how to use *boxplots* to identify outlying observations when we get to the :ref:`interquartile_range` descriptive statistic in the next section.
 

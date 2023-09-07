@@ -58,7 +58,7 @@ Michelson's 1881 experimental results remained one of most accurate estimations 
 
 	The light beam travels outside to strike another (stationary) mirror, ``M`` which reflects it back into the building through the same corner it exited whereupon it then strikes the rotating mirror.
 	
-	`Source <https://great-northern-diver.github.io/loon.data/reference/michelson_1879.html>`_
+	`Source: Michelson Experiment <https://great-northern-diver.github.io/loon.data/reference/michelson_1879.html>`_
 
 In this lab, we will analyze the dataset produced by Michelson in order to study typical distributions shapes encountered in science.
 
@@ -77,7 +77,7 @@ Using the mutual gravitational attraction of two heavy metal balls attached to a
 
 	Diagram viewed from above of the torsion pendulum used in the 1798 Cavendish experiment, the first accurate measurement of the density of the Earth, by Henry Cavendish. The pendulum consists of two small lead weights (h, h) hanging from a 6 foot horizontal wooden beam supported in the center by a fine torsion thread. The beam is protected from air currents inside a wooden box (A, A, A, A). The two large weights (W, W) attached to a separate suspension attract the small weights, causing the beam to rotate slightly. The rotation is read off of vernier scales (S) at either end of the rod. The large weights can be rotated to the other side of the torsion beam (w, w), causing the beam to rotate in the opposite direction.
 	
-	`Source <https://commons.wikimedia.org/wiki/File:Cavendish_experiment_schematic.png>`_
+	`Source: Cavendish Experiment <https://commons.wikimedia.org/wiki/File:Cavendish_experiment_schematic.png>`_
 
 With `Newton's Laws of Motion <https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion>`_ , he was able to derive an expression that related this force to the mass of the Earth. 
 
