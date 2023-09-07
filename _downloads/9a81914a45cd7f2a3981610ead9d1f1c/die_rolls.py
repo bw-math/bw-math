@@ -17,8 +17,6 @@ import random
 import matplotlib as mpl
 import matplotlib.pyplot as plot 
 
-mpl.use("tkagg")
-
 def sum_dice(dice): 
     roll = sum([random.randint(1, 6) for _ in range(dice) ])
     return roll

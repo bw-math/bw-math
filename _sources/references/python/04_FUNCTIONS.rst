@@ -468,6 +468,57 @@ This function is *extremely important* in this class. It will return a random dr
 
 We are able to simulate draws from arbitary normally distributed populations.
 
+.. _python_stats_package:
+
+Statistics
+----------
+
+**Python** also has a dedicated package specifically for statistical functions, named ``statistics``. We will encounter this package we will start calculating normal probabilities and percentiles in **Section 2.2**, and then become *extremely* familiar with it once we get to :ref:`sampling_distributions` and :ref:`central_limit_theorems`.
+
+Normal Distribution
+*******************
+
+First, we need to create a *normal distribution* with a certain ``mean`` and ``std_dev`` (standard deviation),
+
+.. code:: python
+
+	import statistics
+	
+	mean = 100
+	std_dev = 10
+	
+	dist = statistics.NormalDist(mean, std)
+
+Once the distribution is created, we can ask it questions. The two most important questions we will ask this distribution in this class are:
+
+**Cumulative Distribution Function**
+
+TODO
+
+.. code:: python
+
+	prob = dist.cdf(120)
+	rounded_prob = round(prob, 2)
+	print("Prob(X <= 120) = ", rounded_prob)
+	
+Output:	
+
+	Prob(X < 120) = 0.98
+	
+**Inverse Cumulative Distribution Function**
+
+TODO 
+
+.. code:: python
+
+	third_quartile = dist.inv_cdf(0.75)
+	rounded_quartile = round(third_quartile,2)
+	print("P(X <= ", rounded_quartile , " ) = 0.75")
+	
+Output:
+
+	P(X <= 106.74 ) = 0.75
+	
 .. _python_creating_functions:
 
 Creating Functions

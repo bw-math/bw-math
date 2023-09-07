@@ -460,6 +460,10 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-variate">Normal Variate</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistics">Statistics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-distribution">Normal Distribution</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-functions">Creating Functions</a><ul class="nav section-nav flex-column">
@@ -862,6 +866,45 @@ document.write(`
 </div><p>We are able to simulate draws from arbitary normally distributed populations.</p>
 </section>
 </section>
+<section id="statistics">
+<span id="python-stats-package"></span><h3>Statistics<a class="headerlink" href="#statistics" title="Permalink to this headline">#</a></h3>
+<p><strong>Python</strong> also has a dedicated package specifically for statistical functions, named <code class="docutils literal notranslate"><span class="pre">statistics</span></code>. We will encounter this package we will start calculating normal probabilities and percentiles in <strong>Section 2.2</strong>, and then become <em>extremely</em> familiar with it once we get to <span class="xref std std-ref">sampling_distributions</span> and <span class="xref std std-ref">central_limit_theorems</span>.</p>
+<section id="normal-distribution">
+<h4>Normal Distribution<a class="headerlink" href="#normal-distribution" title="Permalink to this headline">#</a></h4>
+<p>First, we need to create a <em>normal distribution</em> with a certain <code class="docutils literal notranslate"><span class="pre">mean</span></code> and <code class="docutils literal notranslate"><span class="pre">std_dev</span></code> (standard deviation),</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span>
+
+<span class="n">mean</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">std_dev</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="n">dist</span> <span class="o">=</span> <span class="n">statistics</span><span class="o">.</span><span class="n">NormalDist</span><span class="p">(</span><span class="n">mean</span><span class="p">,</span> <span class="n">std</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Once the distribution is created, we can ask it questions. The two most important questions we will ask this distribution in this class are:</p>
+<p><strong>Cumulative Distribution Function</strong></p>
+<p>TODO</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">prob</span> <span class="o">=</span> <span class="n">dist</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
+<span class="n">rounded_prob</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">prob</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prob(X &lt;= 120) = &quot;</span><span class="p">,</span> <span class="n">rounded_prob</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>Prob(X &lt; 120) = 0.98</p>
+</div></blockquote>
+<p><strong>Inverse Cumulative Distribution Function</strong></p>
+<p>TODO</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">third_quartile</span> <span class="o">=</span> <span class="n">dist</span><span class="o">.</span><span class="n">inv_cdf</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span>
+<span class="n">rounded_quartile</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">third_quartile</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P(X &lt;= &quot;</span><span class="p">,</span> <span class="n">rounded_quartile</span> <span class="p">,</span> <span class="s2">&quot; ) = 0.75&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>P(X &lt;= 106.74 ) = 0.75</p>
+</div></blockquote>
+</section>
+</section>
 </section>
 <section id="creating-functions">
 <span id="python-creating-functions"></span><h2>Creating Functions<a class="headerlink" href="#creating-functions" title="Permalink to this headline">#</a></h2>
@@ -973,6 +1016,10 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#random-choice-function">Random Choice Function</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#shuffle">Shuffle</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-variate">Normal Variate</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistics">Statistics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-distribution">Normal Distribution</a></li>
 </ul>
 </li>
 </ul>

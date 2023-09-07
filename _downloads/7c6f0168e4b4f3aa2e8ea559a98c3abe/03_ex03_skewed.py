@@ -12,10 +12,6 @@ import matplotlib as mpl
 
 mpl.use('agg')
 
-# And uncomment this line: 
-
-# mpl.use('tkagg')
-
 import matplotlib.pyplot as plt
 
 ##################################################################################

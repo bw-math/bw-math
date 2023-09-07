@@ -15,9 +15,6 @@ This script will generate a stacked bar chart for a randomly generated set of bi
 ##################################################################################
 
 import matplotlib
-
-matplotlib.use('tkagg')
-
 import matplotlib.pyplot as plt
 import random
 
@@ -37,13 +34,13 @@ shapes = [ "BALL", "DUCK" ]
 colors = [ "RED", "BLUE" ]
 
 # Use categories to generate random bivariate sample (shape, color) of 100 observations
-data = [ (random.choice(shapes), random.choice(colors)) for _ in range(100) ]
+data = [ (random.choice(shapes), random.choice(colors)) for _ in range(10) ]
 n = len(data) # although we already know it's a 100...still good to get in the habit.
 
 # Print everything to see what is going on.
 separator = "-"*10 # wut? multiplying...a string? wut do?
 print(separator, "SAMPLE OF DATA", separator) # curious, very curious
-print(data)
+print(data[:10])
 
 ####################################################################################
 ## STEP 2: Find joint frequencies

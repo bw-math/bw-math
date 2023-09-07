@@ -994,9 +994,35 @@ Variations
 Stacked Bar Chart
 *****************
 
-A *stacked bar chart* is a type of *ogive* that is used specifically for *categorical data*. In particular, it is meant to visualize the :ref:`conditional_frequency_distribution` of one categorical variable over all the values of the other categorical variable.
+A *stacked bar chart* is a type of *ogive* that is used specifically for *categorical data*. In particular, it is meant to visualize the :ref:`conditional_frequency_distribution` of one categorical variable with respect to all the other values of the other categorical variable.
 
-TODO
+With a *stacked bar chart*, the sample is broken up into non-overlapping (:ref:`mutual exclusive <mutual_exclusion>`) groups. The *conditional distribution* of each group is plotted as a vertical bar that totals to 100%,
+
+.. plot:: assets/plots/other/stacked_bar_chart.py
+
+Each bar of the graph is *conditioned* on one variable. In this example, the *condition* is the event of a red object or a blue object. *Given* a blue object has been selected from the groups on the horizontal axis, the *conditional distribution* of shape (i.e., duck or ball) is plotted on the vertical axis.
+
+In this example, the *red* group is broken down into a distribution of *ducks* and *balls* according to the formulae,
+
+.. math::
+
+	P( \text{Duck} \mid \text{Red}) = \frac{n( \text{Duck and Red} ) }{n( \text{Red})}
+
+.. math::
+
+	P( \text{Ball} \mid \text{Red}) = \frac{n( \text{Ball and Red} ) }{n( \text{Red})}
+	
+Where as the *blue* group is broken down into a distribution of *ducks* and *balls* according to the formulae,
+
+.. math::
+
+	P( \text{Duck} \mid \text{Blue}) = \frac{n( \text{Duck and Blue} ) }{n( \text{Blue})}
+
+.. math::
+
+	P( \text{Ball} \mid \text{Blue}) = \frac{n( \text{Ball and Blue} ) }{n( \text{Blue})}
+	
+
 
 Boxplots
 ========
@@ -1024,17 +1050,31 @@ Five Number Summary
 
 .. note::
 
-    The maximum observation, the third quartile, the median, the firsrt quartile and the minimum are sometimes collectively known as the *five-number summary*.
+    These terms (minimum, percentile and maximum) are defined in the :ref:`point_estimation` section.
+    
+The middle three numbers, i.e. the third quartile, the median and the first quartile, from the *box* of the *boxplot*. The numbers on the ends, i.e. the maximum and minimum, are sometimes known as the *whiskers*. 
 
+By definition, the *box* of the *boxplot* will show you where 50% of the distribution is centered. In other words, between the third quartile and the first quartile, you will find 50% of all observations in a sample.
+ 
 Distribution Shapes
 -------------------
 
-TODO 
+A boxplot provides another window into a distribution by revealing the characteristic features of important distribution *shapes*.
+
+The comparative lengths of the boxplot *whiskers* show us in what direction the distribution is being pulled by :ref:`outliers <outlier>`.
+
+For this last reason, *boxplots* are often useful graphical tools for quickly identifying *outliers*. We will talk more about how to use *boxplots* to identify outlying observations when we get to the :ref:`interquartile_range` descriptive statistic in the next section.
+
+For now, we present various boxplots in order to exhibit how the distribution shape is manifested in the relative lengths of the whisker.
 
 Normal
 ******
 
 .. plot:: assets/plots/boxplots/boxplot_normal.py
+
+A *normal* boxplot has a *box* that sits evenly between its *whiskers*. The length of the left *whisker* is roughly equal to the length of the right *whisker*. There are no *outlying observations* to skew the whiskers. 
+
+Notice the red line that represents the *median* is roughly centered within the *box*.
 
 Skewed
 ******
@@ -1043,6 +1083,15 @@ Skewed
 
 .. plot:: assets/plots/boxplots/boxplot_skewed_right.py
 
+A *skewed right* boxplot has a *box* with lopsided *whiskers*. Its right *whisker* is pulled in the direction of the skew, i.e. towards the right. The presence of outlying observations on the right causes the distribution to *stretch* towards them. 
+
+Notice the red line that represents the median sits close to the left side of the *box*, where the majority of the distribution lies. 
+
+
 **Skewed Left**
 
 .. plot:: assets/plots/boxplots/boxplot_skewed_left.py
+
+A skewed left boxplot has a *box* with lopsided *whiskers*. Its left *whisker* is pulled in the direction of the skew, i.e towards the left. The presence of outlying observations on the left causes the distribution to *stretch* towards them.
+
+Notice the red line that represents the median sits close to the right side of the *box*, where the majority of the distribution lies.

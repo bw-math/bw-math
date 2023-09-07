@@ -12,10 +12,8 @@ This script shows how to find the QQ plot of a sample to assess normality. The s
 import math
 import random 
 import statistics
-import matplotlib as mpl
 import matplotlib.pyplot as plot 
 
-mpl.use("tkagg")
 
 def sample_mean(sample):
 	"""
