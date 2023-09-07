@@ -35,7 +35,7 @@ import random
 ##################################################################################
 
 # Create New Figures and Axes
-(fig, axs) = plt.subplots()
+(fig, axes) = plt.subplots()
 
 ####################################################################################
 ## STEP 1: Create Sample
@@ -120,16 +120,16 @@ print("P(DUCK | RED) : ", percent_of_red_that_are_ducks)
 #       to start the bar at the top of the previous bar.
 
 # Stack Conditional Distribution of Shape Given Red
-axs.bar("RED", percent_of_red_that_are_balls, color="yellow", ec="blue", width=0.5, label="BALL")
+axes.bar("RED", percent_of_red_that_are_balls, color="yellow", ec="blue", width=0.5, label="BALL")
 # add the previous percent to the `bottom` to stack
-axs.bar("RED", percent_of_red_that_are_ducks, color="lightgreen", ec="blue", width=0.5, bottom=percent_of_red_that_are_balls, label="DUCK")
+axes.bar("RED", percent_of_red_that_are_ducks, bottom=percent_of_red_that_are_balls, color="lightgreen", ec="blue", width=0.5,  label="DUCK")
 
 # Stack Conditional Distribution of Shape Given Blue
 # NOTE: don't label this group, or else you'll get two legends
-axs.bar("BLUE", percent_of_blue_that_are_balls, color="yellow", ec="blue", width=0.5)
+axes.bar("BLUE", percent_of_blue_that_are_balls, color="yellow", ec="blue", width=0.5)
 # add the previous percent to the `bottom` to stack
-axs.bar("BLUE", percent_of_blue_that_are_ducks, color="lightgreen", ec="blue", width=0.5, bottom=percent_of_blue_that_are_balls)
+axes.bar("BLUE", percent_of_blue_that_are_ducks,  bottom=percent_of_blue_that_are_balls, color="lightgreen", ec="blue", width=0.5,)
 
-axs.set_ylabel("Relative Frequency")
+axes.set_ylabel("Relative Frequency")
 plt.legend(loc="upper right")
 plt.show()

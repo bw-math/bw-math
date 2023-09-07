@@ -16,16 +16,16 @@ Instructions
 ============
 
 1. Download the ``.csv`` dataset in the :ref:`project_one_dataset` section and place it in the ``Linux Files`` folder on your ChromeBook's file system where you save your ``.py`` scripts.
-2. Create a Python ``.py`` script named ``GROUPNAME_project_one.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``GROUPNAME`` with your group name.
+2. Create a Python ``.py`` script named ``NAME_project_one.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``NAME`` with your name.
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
-4. Read the :ref:`project_one_installs` section. (We will do this part in class the day before the project!)
+4. Read the :ref:`project_one_installs` section. (We will do this part in class!)
 5. Read the :ref:`project_one_background` section.
-6. Read the :ref:`project_one_loading_data` section.
+6. Read the :ref:`project_one_loading_data` section. (We will do this part in class!)
 7. Read the :ref:`project_one_bar_charts` section. Download the script files in that section onto your ChromeBook. Read through them carefully and execute them on your computer. 
 8. Read the :ref:`project_one_set_operations` section. 
-9. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
+9. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section. (We will do this part in class!)
 10. Perform all exercises and answer all questions in the :ref:`project_one_project` section. Label your script with comments as indicated in the *Project* section.
-11. When you are done, zip your script **and** your *csv* file into a file named ``GROUPNAME_project_one.zip``
+11. When you are done, zip your script **and** your *csv* file into a file named ``NAME_project_one.zip``
 12. Have *one* member of your group upload the zip file to the Google Classroom Project One Assignment.
 
 .. _project_one_installs:
@@ -205,6 +205,10 @@ The following code snippet will load in a *CSV* spreadsheet named ``example.csv`
 
     print(column_1)
 
+.. note::
+
+    We will do this part in class together. 
+
 .. _project_one_bar_charts:
 
 Bar Charts
@@ -232,22 +236,37 @@ The key line to pay attention to in this script is the following,
 
 .. code:: python
 
-    axs.bar(relative_freq.keys(), relative_freq.values(), color="lightblue", ec="red", width=0.5)
+    axes.bar(relative_freq.keys(), relative_freq.values(), color="lightblue", ec="red", width=0.5)
 
 The `bar() <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html>`_ function is :ref:`matplotlib`'s *bar chart* graphing function. 
 
-The first argument of the ``bar()`` function is the values of the categorical variable you wish to plot. The second argument is the frequencies of each of the values. The *order* of each list that is passed in must be the same. For example,
+The first argument of the ``bar()`` function is the values of the categorical variable you wish to plot. The second argument is the frequencies of each of the values. The *order* of each list that is passed in must be the same. For example, if we have a sample of data,
+
+.. math::
+
+    S = \{ A, A, A, A, A, B, B, B, B, B, B, B \}
+
+We would graph its *frequency* distribution using the following code,
 
 .. code:: python
 
-    values = [ "A", "B"]
-    frequencies = [5, 7]
+    import matplotlib.pyplot as plot 
 
-    axs.bar(values, frequencies, color="lightblue", ec="red", width=0.5)
+    (fig, axes) = plot.subplots()
+
+    values = [ "A", "B"]
+    frequencies = [ 5, 7 ]
+
+    axes.bar(values, frequencies, color="lightblue", ec="red", width=0.5)
+
+    axes.set_xlabel("Categories")
+    axes.set_ylabel("Frequency")
+
+    plot.show()
 
 This code will create a bar chart with two values of a categorical variable on the ``x`` axis, ``A`` and ``B``. It will plot their respective frequencies, ``5`` and ``7``, on the y-axis.
 
-The two arguments, ``color`` and ``ec``, affect the styling of the bar chart. ``color`` determines the fill color of the bars and ``ec`` determines the outline color.
+The two arguments, ``color`` and ``ec``, affect the *styling* of the bar chart. ``color`` determines the fill color of the bars and ``ec`` determines the outline color.
 
 .. note:: 
 
@@ -259,6 +278,7 @@ The full list of colors available to use in :ref:`matplotlib` is detailed in the
     :align: center
 
 Any value in this chart can be used an argument for ``color`` and ``ec``.
+
 This script is annotated with lots of comments for you to read. Give them a peak, and then let's meet over in the next section.
 
 .. _project_one_stacked_bar_charts:
@@ -276,11 +296,32 @@ Recall a *stacked bar chart* is a way of visually representing a *conditional di
 
 This one is extremely tricky, so read through it carefully. 
 
+.. note::
+
+    We are performing the same calculations in this script that we performed in class on Thursday, September 7 :sup:`th` with the simulated distribution of shapes and colors. You should have your calculations saved in a file named ``stacked_bar_chart.py`` in your ``Linux Files`` folder on your ChromeBook.
+
 `matplotlib <https://matplotlib.org/>`_ does not have a nice way of making stacked bar charts; Unforunately, the twenty-first century isn't all it's cracked up to be. In this timeline, you have to "stack" your bar charts yourself. Make sure to download this one and go through it step by step. The script has been well commented; every step has been detailed. 
 
 .. hint::
 	
 	Your script comments should look like the ones in the scripts you just downloaded.
+
+The key lines to pay attention to in this script are the follwoing,
+
+.. code:: python
+
+    # Stack Conditional Distribution of Shape Given Red
+    axs.bar("RED", percent_of_red_that_are_balls, color="yellow", ec="blue", width=0.5, label="BALL")
+    # add the previous percent to the `bottom` to stack
+    axs.bar("RED", percent_of_red_that_are_ducks, bottom=percent_of_red_that_are_balls, color="lightgreen", ec="blue", width=0.5,  label="DUCK")
+
+    # Stack Conditional Distribution of Shape Given Blue
+    # NOTE: don't label this group, or else you'll get two legends
+    axs.bar("BLUE", percent_of_blue_that_are_balls, color="yellow", ec="blue", width=0.5)
+    # add the previous percent to the `bottom` to stack
+    axs.bar("BLUE", percent_of_blue_that_are_ducks,  bottom=percent_of_blue_that_are_balls, color="lightgreen", ec="blue", width=0.5,)
+
+We have to *manually* stack the bars on top of each category and then add the previous percentage to the ``bottom`` of the next bar. Note for ``RED``, we are passing in additional argument of ``bottom`` in the second line; this tells :ref:`matplotlib` to start the next bar at that height. Similarly for ``BLUE``.
 
 .. _project_one_set_operations:
 	
@@ -291,7 +332,7 @@ A set in **Python** is defined with a pair of curly brackets ``{ }``.
 
 .. code:: python
 
-	this_is_a_set = { "some", "things" }
+	emperors = { "Augustus", "Commodus", "Nero", "Hadrian" }
 	
 A :ref:`set variable <python_sets>` in **Python** is a special type of variable.  When you create a set, it won't distinguish between identical elements. In other words, *sets* do not allow duplicates. As an example,
 
@@ -309,7 +350,7 @@ Notice the repetitions of *a* and *b* are ignored. This property of *sets* is ex
 
 Suppose you have a list of categorical data such as,
 
-.. code ::
+.. code:: python
 
 	some_list = [ "A", "A", "B", "C", "D", "D", "D" ]
 	
@@ -317,7 +358,7 @@ Suppose, further, you didn't know how many values the categorical variable took 
 
 Rather than trying to determine what the *distinct* values are by hand, let **Python** do the hard work for you by converting the *list* into a *set*,
 
-.. code::
+.. code:: python
 	
 	set(some_list)
 	
@@ -349,11 +390,11 @@ Label your calculations with comments.
 
 a. Out of these five values, what is the most frequent **Make** of *Electric Vehicle* in Washington State?
 
-b. Find the *joint frequency distribution* of **Make** and **Electric Vehicle Type** for the same **Makes** as in *#1* and *#2*. In other words, fill out the following table,
+4. Find the *joint frequency distribution* of **Make** and **Electric Vehicle Type** for the same **Makes** as in *#1* and *#2*. In other words, fill out the following table,
 
 
 +-------------+---------------------------------+-----------------------------------------+
-|             | Battery Electric Vehicles (BEV) |  Plug-in Hybrid Electric Vehicle (PHEV) |
+|             | Battery Electric Vehicle (BEV) |  Plug-in Hybrid Electric Vehicle (PHEV) |
 +-------------+---------------------------------+-----------------------------------------+
 |  TESLA      |             ?                   |                    ?                    |
 +-------------+---------------------------------+-----------------------------------------+
@@ -366,11 +407,10 @@ b. Find the *joint frequency distribution* of **Make** and **Electric Vehicle Ty
 |  VOLKSWAGEN |             ?                   |                    ?                    |
 +-------------+---------------------------------+-----------------------------------------+
 
-c. Compare and contrast the distribution of *electric vehicle* **Makes** with the distribution of **Electric Vehicle Types**. 
+a. Which manufacturers produce more *Battery Electric Vehicles (BEV)* than *Plug-in Hybrid Eletric Vehicles (PHEV)*? In other words, what does the *conditional distribution* for the **Electric Vehicle Type** given the **Make** tell you about the manufacturers of *electric vehicles*? Which manufacturers are more likely to produce fully electric cars versus hybrid cars and visa versa?
 
-	i. What does the *conditional distribution* of the **Electric Vehicle Type** for each of the five **Makes** considered tell you about the popularity of fully electric versus hybrid cars for each **Make**?
+b. Which manufacturers produce more *Battery Electric Vehicles (BEV)* than their competitors? Which manufacturers produce more *Plug-in Hybrid Electric Vehicles (PHEV)* than their competitors? In other words, what does the *conditional distribution* for the **Make** given the **Electric Vehicle Type** tell you about the market for electric cars in Washington state?
 
-	ii. What does the *conditional distribution* of the **Make** for each **Electric Vehicle Type** tell you about the manufacturers of *electric vehicles*? Which manufacturers are more likely to produce fully electric cars versus hybrid cars and visa versa?
 	
 Stacked
 -------
@@ -397,13 +437,14 @@ e. What percentage of "*Not eligible due to low battery range*" for **Clean Alte
 
 e. What percentage of "*Not eligible due to low battery range*" for **Clean Alternative Fuel Vehicle (CAFV) Eligibility** vehicles are *Plug-in Hybrid Electric Vehicle (PHEV)*?
 
-
 3. Using this information obtained in *#3* and any additional information required, create a stacked bar chart for the *conditional distribution* of the **Electric Vehicle Type** given the **Clean Alternative Fuel Vehicle (CAFV) Eligibility**.
 
 4. What does your stacked bar chart from #3 tell you about the *association* between the **Clean Alternative Fuel Vehicle (CAFV) Eligibility** and the **Electric Vehicle Type**? Write your answer in your script's :ref:`python_docstring` and label the problem.
 
 5. Write a few sentences explaining the results from #2 - #4. Did the result turn out the way you expected? Why or why not?
-   
+
+6. Based on your answer to #4 in this section and #4 from the previous section, which manufacturers in Washington state benefit the most from the tax exemption? What does this tell you about the manufacturer with the *most* electric vehicles registered in Washington state?
+
 .. _project_one_dataset:
 
 Datasets

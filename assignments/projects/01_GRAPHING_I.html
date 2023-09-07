@@ -487,16 +487,16 @@ document.write(`
 <span id="project-one-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
 <li><p>Download the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> dataset in the <a class="reference internal" href="#project-one-dataset"><span class="std std-ref">Datasets</span></a> section and place it in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your ChromeBook’s file system where you save your <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts.</p></li>
-<li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">GROUPNAME_project_one.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">GROUPNAME</span></code> with your group name.</p></li>
+<li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">NAME_project_one.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">NAME</span></code> with your name.</p></li>
 <li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
-<li><p>Read the <a class="reference internal" href="#project-one-installs"><span class="std std-ref">Prerequisites</span></a> section. (We will do this part in class the day before the project!)</p></li>
+<li><p>Read the <a class="reference internal" href="#project-one-installs"><span class="std std-ref">Prerequisites</span></a> section. (We will do this part in class!)</p></li>
 <li><p>Read the <a class="reference internal" href="#project-one-background"><span class="std std-ref">Background</span></a> section.</p></li>
-<li><p>Read the <a class="reference internal" href="#project-one-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-one-loading-data"><span class="std std-ref">Loading In Data</span></a> section. (We will do this part in class!)</p></li>
 <li><p>Read the <a class="reference internal" href="#project-one-bar-charts"><span class="std std-ref">Bar Charts</span></a> section. Download the script files in that section onto your ChromeBook. Read through them carefully and execute them on your computer.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-one-set-operations"><span class="std std-ref">Set Operations</span></a> section.</p></li>
-<li><p>Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file using the technique outlined in the <a class="reference internal" href="03_ESTIMATION_I.html#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file using the technique outlined in the <a class="reference internal" href="03_ESTIMATION_I.html#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section. (We will do this part in class!)</p></li>
 <li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-one-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the <em>Project</em> section.</p></li>
-<li><p>When you are done, zip your script <strong>and</strong> your <em>csv</em> file into a file named <code class="docutils literal notranslate"><span class="pre">GROUPNAME_project_one.zip</span></code></p></li>
+<li><p>When you are done, zip your script <strong>and</strong> your <em>csv</em> file into a file named <code class="docutils literal notranslate"><span class="pre">NAME_project_one.zip</span></code></p></li>
 <li><p>Have <em>one</em> member of your group upload the zip file to the Google Classroom Project One Assignment.</p></li>
 </ol>
 </section>
@@ -643,6 +643,10 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="n">column_1</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We will do this part in class together.</p>
+</div>
 </section>
 <section id="bar-charts">
 <span id="project-one-bar-charts"></span><h2>Bar Charts<a class="headerlink" href="#bar-charts" title="Permalink to this headline">#</a></h2>
@@ -658,27 +662,39 @@ document.write(`
 </figure>
 <p>Click on the <code class="docutils literal notranslate"><span class="pre">source</span></code> button in the top left corner of the graph to download the <em>.py</em> script used to generate this graph. Examine the source code contained therein for generating a <em>Bar Chart</em>. Be sure to read the comments before you execute it, as you will need to tweak a setting to get it to run on your computer.</p>
 <p>The key line to pay attention to in this script is the following,</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">axs</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">relative_freq</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">relative_freq</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">axes</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">relative_freq</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">relative_freq</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html">bar()</a> function is <a class="reference internal" href="../../references/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a>’s <em>bar chart</em> graphing function.</p>
-<p>The first argument of the <code class="docutils literal notranslate"><span class="pre">bar()</span></code> function is the values of the categorical variable you wish to plot. The second argument is the frequencies of each of the values. The <em>order</em> of each list that is passed in must be the same. For example,</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">values</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">]</span>
-<span class="n">frequencies</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+<p>The first argument of the <code class="docutils literal notranslate"><span class="pre">bar()</span></code> function is the values of the categorical variable you wish to plot. The second argument is the frequencies of each of the values. The <em>order</em> of each list that is passed in must be the same. For example, if we have a sample of data,</p>
+<div class="math">
+<p><img src="../../_images/math/c1fe6405d9bd620d15f15576d2ce528432d54899.png" alt="S = \{ A, A, A, A, A, B, B, B, B, B, B, B \}"/></p>
+</div><p>We would graph its <em>frequency</em> distribution using the following code,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
 
-<span class="n">axs</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">frequencies</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span><span class="p">)</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">values</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">]</span>
+<span class="n">frequencies</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span> <span class="p">]</span>
+
+<span class="n">axes</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">frequencies</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Categories&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Frequency&quot;</span><span class="p">)</span>
+
+<span class="n">plot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>This code will create a bar chart with two values of a categorical variable on the <code class="docutils literal notranslate"><span class="pre">x</span></code> axis, <code class="docutils literal notranslate"><span class="pre">A</span></code> and <code class="docutils literal notranslate"><span class="pre">B</span></code>. It will plot their respective frequencies, <code class="docutils literal notranslate"><span class="pre">5</span></code> and <code class="docutils literal notranslate"><span class="pre">7</span></code>, on the y-axis.</p>
-<p>The two arguments, <code class="docutils literal notranslate"><span class="pre">color</span></code> and <code class="docutils literal notranslate"><span class="pre">ec</span></code>, affect the styling of the bar chart. <code class="docutils literal notranslate"><span class="pre">color</span></code> determines the fill color of the bars and <code class="docutils literal notranslate"><span class="pre">ec</span></code> determines the outline color.</p>
+<p>The two arguments, <code class="docutils literal notranslate"><span class="pre">color</span></code> and <code class="docutils literal notranslate"><span class="pre">ec</span></code>, affect the <em>styling</em> of the bar chart. <code class="docutils literal notranslate"><span class="pre">color</span></code> determines the fill color of the bars and <code class="docutils literal notranslate"><span class="pre">ec</span></code> determines the outline color.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><code class="docutils literal notranslate"><span class="pre">ec</span></code> stands for “<em>edge color</em>”</p>
 </div>
 <p>The full list of colors available to use in <a class="reference internal" href="../../references/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a> is detailed in the following chart,</p>
 <img alt="../../_images/matplotlib_colors.png" class="align-center" src="../../_images/matplotlib_colors.png" />
-<p>Any value in this chart can be used an argument for <code class="docutils literal notranslate"><span class="pre">color</span></code> and <code class="docutils literal notranslate"><span class="pre">ec</span></code>.
-This script is annotated with lots of comments for you to read. Give them a peak, and then let’s meet over in the next section.</p>
+<p>Any value in this chart can be used an argument for <code class="docutils literal notranslate"><span class="pre">color</span></code> and <code class="docutils literal notranslate"><span class="pre">ec</span></code>.</p>
+<p>This script is annotated with lots of comments for you to read. Give them a peak, and then let’s meet over in the next section.</p>
 </section>
 <section id="stacked">
 <span id="project-one-stacked-bar-charts"></span><h3>Stacked<a class="headerlink" href="#stacked" title="Permalink to this headline">#</a></h3>
@@ -690,17 +706,35 @@ This script is annotated with lots of comments for you to read. Give them a peak
 <img alt="../../_images/stacked_bar_chart.png" class="plot-directive" src="../../_images/stacked_bar_chart.png" />
 </figure>
 <p>This one is extremely tricky, so read through it carefully.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We are performing the same calculations in this script that we performed in class on Thursday, September 7 <sup>th</sup> with the simulated distribution of shapes and colors. You should have your calculations saved in a file named <code class="docutils literal notranslate"><span class="pre">stacked_bar_chart.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your ChromeBook.</p>
+</div>
 <p><a class="reference external" href="https://matplotlib.org/">matplotlib</a> does not have a nice way of making stacked bar charts; Unforunately, the twenty-first century isn’t all it’s cracked up to be. In this timeline, you have to “stack” your bar charts yourself. Make sure to download this one and go through it step by step. The script has been well commented; every step has been detailed.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>Your script comments should look like the ones in the scripts you just downloaded.</p>
 </div>
+<p>The key lines to pay attention to in this script are the follwoing,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Stack Conditional Distribution of Shape Given Red</span>
+<span class="n">axs</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="s2">&quot;RED&quot;</span><span class="p">,</span> <span class="n">percent_of_red_that_are_balls</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;yellow&quot;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;BALL&quot;</span><span class="p">)</span>
+<span class="c1"># add the previous percent to the `bottom` to stack</span>
+<span class="n">axs</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="s2">&quot;RED&quot;</span><span class="p">,</span> <span class="n">percent_of_red_that_are_ducks</span><span class="p">,</span> <span class="n">bottom</span><span class="o">=</span><span class="n">percent_of_red_that_are_balls</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;lightgreen&quot;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>  <span class="n">label</span><span class="o">=</span><span class="s2">&quot;DUCK&quot;</span><span class="p">)</span>
+
+<span class="c1"># Stack Conditional Distribution of Shape Given Blue</span>
+<span class="c1"># NOTE: don&#39;t label this group, or else you&#39;ll get two legends</span>
+<span class="n">axs</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="s2">&quot;BLUE&quot;</span><span class="p">,</span> <span class="n">percent_of_blue_that_are_balls</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;yellow&quot;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="c1"># add the previous percent to the `bottom` to stack</span>
+<span class="n">axs</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="s2">&quot;BLUE&quot;</span><span class="p">,</span> <span class="n">percent_of_blue_that_are_ducks</span><span class="p">,</span>  <span class="n">bottom</span><span class="o">=</span><span class="n">percent_of_blue_that_are_balls</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;lightgreen&quot;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,)</span>
+</pre></div>
+</div>
+<p>We have to <em>manually</em> stack the bars on top of each category and then add the previous percentage to the <code class="docutils literal notranslate"><span class="pre">bottom</span></code> of the next bar. Note for <code class="docutils literal notranslate"><span class="pre">RED</span></code>, we are passing in additional argument of <code class="docutils literal notranslate"><span class="pre">bottom</span></code> in the second line; this tells <a class="reference internal" href="../../references/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a> to start the next bar at that height. Similarly for <code class="docutils literal notranslate"><span class="pre">BLUE</span></code>.</p>
 </section>
 </section>
 <section id="set-operations">
 <span id="project-one-set-operations"></span><h2>Set Operations<a class="headerlink" href="#set-operations" title="Permalink to this headline">#</a></h2>
 <p>A set in <strong>Python</strong> is defined with a pair of curly brackets <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">}</span></code>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">this_is_a_set</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;some&quot;</span><span class="p">,</span> <span class="s2">&quot;things&quot;</span> <span class="p">}</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">emperors</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;Augustus&quot;</span><span class="p">,</span> <span class="s2">&quot;Commodus&quot;</span><span class="p">,</span> <span class="s2">&quot;Nero&quot;</span><span class="p">,</span> <span class="s2">&quot;Hadrian&quot;</span> <span class="p">}</span>
 </pre></div>
 </div>
 <p>A <a class="reference internal" href="../../references/python/03_SETS.html#python-sets"><span class="std std-ref">set variable</span></a> in <strong>Python</strong> is a special type of variable.  When you create a set, it won’t distinguish between identical elements. In other words, <em>sets</em> do not allow duplicates. As an example,</p>
@@ -715,12 +749,12 @@ This script is annotated with lots of comments for you to read. Give them a peak
 </div></blockquote>
 <p>Notice the repetitions of <em>a</em> and <em>b</em> are ignored. This property of <em>sets</em> is extremely useful for categorical data.</p>
 <p>Suppose you have a list of categorical data such as,</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">some_list</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span> <span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">some_list</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span> <span class="p">]</span>
 </pre></div>
 </div>
 <p>Suppose, further, you didn’t know how many values the categorical variable took on. In this particular case, it’s easy to see what the values are just by looking at the list (i.e. <code class="docutils literal notranslate"><span class="pre">A</span></code>, <code class="docutils literal notranslate"><span class="pre">B</span></code>, <code class="docutils literal notranslate"><span class="pre">C</span></code> and <code class="docutils literal notranslate"><span class="pre">D</span></code>), but in real world datasets, you could have <em>thousands of individual observations</em> to sort through to determine exactly how many values a categorical variable can assume.</p>
 <p>Rather than trying to determine what the <em>distinct</em> values are by hand, let <strong>Python</strong> do the hard work for you by converting the <em>list</em> into a <em>set</em>,</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="p">(</span><span class="n">some_list</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="p">(</span><span class="n">some_list</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Output:</p>
@@ -749,50 +783,13 @@ This script is annotated with lots of comments for you to read. Give them a peak
 </ol>
 <ol class="loweralpha simple">
 <li><p>Out of these five values, what is the most frequent <strong>Make</strong> of <em>Electric Vehicle</em> in Washington State?</p></li>
+</ol>
+<ol class="arabic simple" start="4">
 <li><p>Find the <em>joint frequency distribution</em> of <strong>Make</strong> and <strong>Electric Vehicle Type</strong> for the same <strong>Makes</strong> as in <em>#1</em> and <em>#2</em>. In other words, fill out the following table,</p></li>
 </ol>
-<table class="table">
-<colgroup>
-<col style="width: 15%" />
-<col style="width: 38%" />
-<col style="width: 47%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td></td>
-<td><p>Battery Electric Vehicles (BEV)</p></td>
-<td><p>Plug-in Hybrid Electric Vehicle (PHEV)</p></td>
-</tr>
-<tr class="row-even"><td><p>TESLA</p></td>
-<td><p>?</p></td>
-<td><p>?</p></td>
-</tr>
-<tr class="row-odd"><td><p>CHEVROLET</p></td>
-<td><p>?</p></td>
-<td><p>?</p></td>
-</tr>
-<tr class="row-even"><td><p>NISSAN</p></td>
-<td><p>?</p></td>
-<td><p>?</p></td>
-</tr>
-<tr class="row-odd"><td><p>TOYOTA</p></td>
-<td><p>?</p></td>
-<td><p>?</p></td>
-</tr>
-<tr class="row-even"><td><p>VOLKSWAGEN</p></td>
-<td><p>?</p></td>
-<td><p>?</p></td>
-</tr>
-</tbody>
-</table>
-<ol class="loweralpha" start="3">
-<li><p>Compare and contrast the distribution of <em>electric vehicle</em> <strong>Makes</strong> with the distribution of <strong>Electric Vehicle Types</strong>.</p>
-<blockquote>
-<div><ol class="lowerroman simple">
-<li><p>What does the <em>conditional distribution</em> of the <strong>Electric Vehicle Type</strong> for each of the five <strong>Makes</strong> considered tell you about the popularity of fully electric versus hybrid cars for each <strong>Make</strong>?</p></li>
-<li><p>What does the <em>conditional distribution</em> of the <strong>Make</strong> for each <strong>Electric Vehicle Type</strong> tell you about the manufacturers of <em>electric vehicles</em>? Which manufacturers are more likely to produce fully electric cars versus hybrid cars and visa versa?</p></li>
-</ol>
-</div></blockquote>
-</li>
+<ol class="loweralpha simple">
+<li><p>Which manufacturers produce more <em>Battery Electric Vehicles (BEV)</em> than <em>Plug-in Hybrid Eletric Vehicles (PHEV)</em>? In other words, what does the <em>conditional distribution</em> for the <strong>Electric Vehicle Type</strong> given the <strong>Make</strong> tell you about the manufacturers of <em>electric vehicles</em>? Which manufacturers are more likely to produce fully electric cars versus hybrid cars and visa versa?</p></li>
+<li><p>Which manufacturers produce more <em>Battery Electric Vehicles (BEV)</em> than their competitors? Which manufacturers produce more <em>Plug-in Hybrid Electric Vehicles (PHEV)</em> than their competitors? In other words, what does the <em>conditional distribution</em> for the <strong>Make</strong> given the <strong>Electric Vehicle Type</strong> tell you about the market for electric cars in Washington state?</p></li>
 </ol>
 </section>
 <section id="id5">
@@ -820,6 +817,7 @@ This script is annotated with lots of comments for you to read. Give them a peak
 <li><p>Using this information obtained in <em>#3</em> and any additional information required, create a stacked bar chart for the <em>conditional distribution</em> of the <strong>Electric Vehicle Type</strong> given the <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong>.</p></li>
 <li><p>What does your stacked bar chart from #3 tell you about the <em>association</em> between the <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> and the <strong>Electric Vehicle Type</strong>? Write your answer in your script’s <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a> and label the problem.</p></li>
 <li><p>Write a few sentences explaining the results from #2 - #4. Did the result turn out the way you expected? Why or why not?</p></li>
+<li><p>Based on your answer to #4 in this section and #4 from the previous section, which manufacturers in Washington state benefit the most from the tax exemption? What does this tell you about the manufacturer with the <em>most</em> electric vehicles registered in Washington state?</p></li>
 </ol>
 </section>
 </section>
