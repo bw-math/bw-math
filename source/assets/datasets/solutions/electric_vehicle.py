@@ -32,8 +32,56 @@ n = len(columns)
 
 make = [ row[6] for row in columns ]
 veh_type = [ row[8] for row in columns ]
+make_and_type = [ (row[6], row[8]) for row in columns ]
 eligibility = [row[9] for row in columns ]
 veh_and_elig = [ (row[8], row[9]) for row in columns ]
+
+freq_of_tesla = marginal_freq_x(make, "TESLA")
+freq_of_chev = marginal_freq_x(make, "CHEVROLET")
+freq_of_niss = marginal_freq_x(make, "NISSAN")
+freq_of_toy = marginal_freq_x(make, "TOYOTA")
+freq_of_vw = marginal_freq_x(make, "VOLKSWAGEN")
+
+joint_freq_of_tesla_and_bev = joint_freq_xy(make_and_type, "TESLA", "Battery Electric Vehicle (BEV)")
+joint_freq_of_tesla_and_phev = joint_freq_xy(make_and_type, "TESLA", "Plug-in Hybrid Electric Vehicle (PHEV)")
+
+joint_freq_of_chev_and_bev = joint_freq_xy(make_and_type, "CHEVROLET", "Battery Electric Vehicle (BEV)")
+joint_freq_of_chev_and_phev = joint_freq_xy(make_and_type, "CHEVROLET", "Plug-in Hybrid Electric Vehicle (PHEV)")
+
+joint_freq_of_niss_and_bev = joint_freq_xy(make_and_type, "NISSAN", "Battery Electric Vehicle (BEV)")
+joint_freq_of_niss_and_phev = joint_freq_xy(make_and_type, "NISSAN", "Plug-in Hybrid Electric Vehicle (PHEV)")
+
+joint_freq_of_toy_and_bev = joint_freq_xy(make_and_type, "TOYOTA", "Battery Electric Vehicle (BEV)")
+joint_freq_of_toy_and_phev = joint_freq_xy(make_and_type, "TOYOTA", "Plug-in Hybrid Electric Vehicle (PHEV)")
+
+joint_freq_of_vw_and_bev = joint_freq_xy(make_and_type, "VOLKSWAGEN", "Battery Electric Vehicle (BEV)")
+joint_freq_of_vw_and_phev = joint_freq_xy(make_and_type, "VOLKSWAGEN", "Plug-in Hybrid Electric Vehicle (PHEV)")
+
+print("    Marginal Distribution of Make      ")
+print("f(TESLA) = ", freq_of_tesla)
+print("f(CHEVROLET) = ", freq_of_chev)
+print("f(NISSAN) = ", freq_of_niss)
+print("f(TOYOTA) = ", freq_of_toy)
+print("f(VOLKSWAGEN) = ", freq_of_vw)
+print("\n\n")
+
+print("     Joint Distribution of Make AND Type       ")
+
+print("f(TESLA and BEV)", joint_freq_of_tesla_and_bev)
+print("f(TESLA and PHEV)", joint_freq_of_tesla_and_phev)
+
+print("f(CHEVROLET and BEV)", joint_freq_of_chev_and_bev)
+print("f(CHEVROLET and PHEV)", joint_freq_of_chev_and_phev)
+
+print("f(NISSAN and BEV)", joint_freq_of_niss_and_bev)
+print("f(NISSA and PHEV)", joint_freq_of_niss_and_phev)
+
+print("f(TOYOTA and BEV)", joint_freq_of_toy_and_bev)
+print("f(TOYOTA and PHEV)", joint_freq_of_toy_and_phev)
+
+print("f(VOLKSWAGEN and BEV)", joint_freq_of_vw_and_bev)
+print("f(VOLKSWAGEN and PHEV)", joint_freq_of_vw_and_phev)
+print("\n\n")
 
 marg_freq_of_not_eligible = marginal_freq_x(eligibility, "Not eligible due to low battery range")
 marg_freq_of_unknown = marginal_freq_x(eligibility, "Eligibility unknown as battery range has not been researched")
@@ -108,13 +156,13 @@ print("\n\n")
 fig, axes = plt.subplots()
 
 axes.bar("Eligible", joint_freq_of_elig_and_hybrid/marg_freq_of_eligible, color="lightcoral", ec="blue", label= "Hybrid")
-axes.bar("Eligible", joint_freq_of_elig_and_battery/marg_freq_of_eligible, color="lightgreen", ec="blue", bottom=joint_freq_of_elig_and_hybrid/marg_freq_of_eligible, label="Battery")
+axes.bar("Eligible", joint_freq_of_elig_and_battery/marg_freq_of_eligible, bottom=joint_freq_of_elig_and_hybrid/marg_freq_of_eligible, color="lightgreen", ec="blue", label="Battery")
 
 axes.bar("Unknown", joint_freq_of_unknown_and_hybrid/marg_freq_of_unknown, color="lightcoral", ec="blue")
-axes.bar("Unknown", joint_freq_of_unknown_and_battery/marg_freq_of_unknown, color="lightgreen", ec="blue", bottom=joint_freq_of_unknown_and_hybrid/marg_freq_of_unknown)
+axes.bar("Unknown", joint_freq_of_unknown_and_battery/marg_freq_of_unknown, bottom=joint_freq_of_unknown_and_hybrid/marg_freq_of_unknown, color="lightgreen", ec="blue")
 
 axes.bar("Not Eligible", joint_freq_of_not_elig_and_hybrid/marg_freq_of_not_eligible, color="lightcoral", ec="blue")
-axes.bar("Not Eligible", joint_freq_of_not_elig_and_battery/marg_freq_of_not_eligible, color="lightgreen", ec="blue", bottom=joint_freq_of_not_elig_and_hybrid/marg_freq_of_not_eligible)
+axes.bar("Not Eligible", joint_freq_of_not_elig_and_battery/marg_freq_of_not_eligible, bottom=joint_freq_of_not_elig_and_hybrid/marg_freq_of_not_eligible, color="lightgreen", ec="blue")
 
 axes.legend()
 plt.show()

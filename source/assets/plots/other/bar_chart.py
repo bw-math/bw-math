@@ -34,7 +34,7 @@ import matplotlib.pyplot as plt
 ##################################################################################
 
 # Create New Figures and Axes
-(fig, axs) = plt.subplots()
+(fig, axes) = plt.subplots()
 
 # Generate Data
 # NOTE: ``data``` is a dictionary. Dictionaries are another "data type" in Python.
@@ -48,7 +48,7 @@ import matplotlib.pyplot as plt
 #           'key_2': value_2 
 #       }
 # 
-#       "keys" are strings. they are like the "index" of a list. 
+#       "keys" are strings. they are like the "index" of a dictionary. 
 #
 #       Recall the third element of 
 # 
@@ -84,10 +84,18 @@ data = {
     'F': 2
 }
 
+# display the keys of the dictionary: [ 'A', 'B', 'C', 'D', 'E', 'F' ]
+print("keys: ", data.keys())
+# display the values of the dictionary: [ 12, 10, 8, 6, 4, 2 ]
+print("values: ", data.values())
+
 # find the sum of frequencies
 # NOTE: frequencies are the "values", i.e. right-hand side, of the dictionary
 #       so we call the `values()` function **on** the ``data`` dictionary.
 total_observations = sum(data.values())
+
+# display the number of observations
+print("total observations (n) = ", total_observations)
 
 # create the relative frequency distribution
 # NOTE: iterate over all (key, value) pairs in the ``data`` dictionary, and divide 
@@ -105,12 +113,12 @@ plt.suptitle("Bar Chart of Quiz Grades")
 plt.title(f"n = {total_observations}")
 
 # Set the axes labels
-axs.set_xlabel("Grades")
-axs.set_ylabel("Frequency")
+axes.set_xlabel("Grades")
+axes.set_ylabel("Frequency")
 
 # Plot the bar chart
 # NOTE: access dictionary "keys" list, i.e. ['A', 'B', 'C', 'D', 'E', 'F'], with relative_freq.keys()
 # NOTE: access dictionary "values" list, i.e. [12, 10, 8, 6, 4, 2], with relative_freq.values()
-axs.bar(relative_freq.keys(), relative_freq.values(), color="lightblue", ec="red", width=0.5)
+axes.bar(relative_freq.keys(), relative_freq.values(), color="lightblue", ec="red", width=0.5)
 
 plt.show()
