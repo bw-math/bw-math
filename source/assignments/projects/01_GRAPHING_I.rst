@@ -100,13 +100,13 @@ Background
 Electric Vehicles in Washington State 
 -------------------------------------
 
-Recall the dataset from :ref:`graphical_representations_of_data_classwork` *#1*,
+Recall the dataset we used in:ref:`#1 From the Classwork <graphical_representations_of_data_classwork>`,
 
     The United States Government General Services Administration maintains a huge database of public available information. One of the datasets they publish is the `Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) that are currently registered through Washington State Department of Licensing <https://catalog.data.gov/dataset/electric-vehicle-population-data>`_
 
 This dataset was taken from `data.gov <https://data.gov/>`_. This is an excellent resource, if you ever find yourself in need of some data. We will be using this online database quite a bit once we get fully up to speed on **Python**.
 
-We examined the *electric Vehcile* dataset a little bit in class on the first week. We are now prepared to do a little more in-depth analysis. 
+We examined the *electric vehicle* dataset a little bit in class on the first week. We are now prepared to do a little more in-depth analysis. 
 
 First, let's take a look at some of the variables being observed in this dataset.
 
@@ -173,7 +173,7 @@ Electric Vehicle Type
 
 Electric vehicles come in two varieties: vehicles that are fully electric and hybrid vehicles that revert to a gasoline engine when they run out of electric power. This `article from PC Magazine goes into greater detail about the differences between these two types of electric vehicles <https://www.pcmag.com/how-to/ev-vs-hev-vs-phev-what-are-the-types-of-electric-vehicles>`_
 
-The possible values of this variable are:
+The **Electric Vehicle Type** variable records what *type* of electric vehicle was registered with Washington State. The possible values of this variable are:
 
 - Battery Electric Vehicle (BEV)
 - Plug-in Hybrid Electric Vehicle (PHEV)
@@ -214,6 +214,10 @@ The following code snippet will load in a *CSV* spreadsheet named ``example.csv`
 Bar Charts
 ==========
 
+.. important::
+
+    Refer to :ref:`python_plotting` section for a more in-depth look at the various feature of :ref:`matplotlib`, the library we are using to create graphs.
+    
 .. _project_one_standard_bar_charts:
 
 No Frills
