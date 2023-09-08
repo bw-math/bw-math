@@ -26,7 +26,7 @@ Instructions
 9. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section. (We will do this part in class!)
 10. Perform all exercises and answer all questions in the :ref:`project_one_project` section. Label your script with comments as indicated in the *Project* section.
 11. When you are done, zip your script **and** your *csv* file into a file named ``NAME_project_one.zip``
-12. Have *one* member of your group upload the zip file to the Google Classroom Project One Assignment.
+12. Upload the zip file to the Google Classroom Project One Assignment.
 
 .. _project_one_installs:
 
@@ -217,7 +217,7 @@ Bar Charts
 .. important::
 
     Refer to :ref:`python_plotting` section for a more in-depth look at the various feature of :ref:`matplotlib`, the library we are using to create graphs.
-    
+
 .. _project_one_standard_bar_charts:
 
 No Frills
