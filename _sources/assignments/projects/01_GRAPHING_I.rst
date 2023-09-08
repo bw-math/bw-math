@@ -101,7 +101,7 @@ Background
 Electric Vehicles in Washington State 
 -------------------------------------
 
-Recall the dataset we used in:ref:`#1 From the Classwork <graphical_representations_of_data_classwork>`,
+Recall the dataset we used in :ref:`#1 From the Classwork <graphical_representations_of_data_classwork>`,
 
     The United States Government General Services Administration maintains a huge database of public available information. One of the datasets they publish is the `Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) that are currently registered through Washington State Department of Licensing <https://catalog.data.gov/dataset/electric-vehicle-population-data>`_
 
