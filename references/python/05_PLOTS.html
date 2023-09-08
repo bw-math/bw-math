@@ -565,7 +565,7 @@ document.write(`
 <p>The following code labels both the <em>x</em> and <em>y</em> axes in a plot,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
 
-<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span><span class="p">)</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 
 <span class="n">axes</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;x units&quot;</span><span class="p">)</span>
 <span class="n">axes</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;y units&quot;</span><span class="p">)</span>
@@ -580,7 +580,7 @@ document.write(`
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
 
 <span class="c1"># create two sets of axes</span>
-<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span><span class="p">)</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 
 <span class="c1"># plot the ordered pairs (4, 10) and (5, 11) on the first set of axes</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">])</span>
@@ -600,7 +600,7 @@ document.write(`
 <p>This example will plot the ordered pairs <img class="math" src="../../_images/math/d8f984479028d739ef9a97d3777f3f99534444fc.png" alt="(1, 8), (2, 9), (3, 7)"/></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
 
-<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span><span class="p">)</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 
 <span class="n">plot</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Ordered Pairs&quot;</span><span class="p">)</span>
 
@@ -618,7 +618,7 @@ document.write(`
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
 
-<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span><span class="p">)</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 
 <span class="c1"># generate some random data</span>
 <span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="p">]</span>
@@ -741,8 +741,8 @@ document.write(`
 
 <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 
-<span class="n">conditional_frequencies_of_x_given_C</span> <span class="o">=</span> <span class="p">[</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">]</span>
-<span class="n">conditional_frequencies_of_x_given_D</span> <span class="o">=</span> <span class="p">[</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">]</span>
+<span class="n">conditional_frequencies_of_x_given_C</span> <span class="o">=</span> <span class="p">[</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.3</span> <span class="p">]</span>
+<span class="n">conditional_frequencies_of_x_given_D</span> <span class="o">=</span> <span class="p">[</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.4</span> <span class="p">]</span>
 
 <span class="n">axes</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="n">conditional_frequencies_of_x_given_C</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;lightcyan&quot;</span><span class="p">)</span>
 <span class="n">axes</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="n">relative_frequencies_A</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">bottom</span><span class="o">=</span><span class="n">conditional_frequencies_of_x_given_C</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;gold&quot;</span><span class="p">)</span>

@@ -108,7 +108,7 @@ The following code labels both the *x* and *y* axes in a plot,
 
     import matplotlib.pyplot as plot 
 
-    fig, axes = plot.subplots()
+    (fig, axes) = plot.subplots()
 
     axes.set_xlabel("x units")
     axes.set_ylabel("y units")
@@ -125,7 +125,7 @@ When you pass in arguments to ``subplots``, it will return a *list* of axes. You
     import matplotlib.pyplot as plot
 
     # create two sets of axes 
-    fig, axes = plot.subplots(1, 2)
+    (fig, axes) = plot.subplots(1, 2)
 
     # plot the ordered pairs (4, 10) and (5, 11) on the first set of axes
     axes[0].scatter([4, 5], [10, 11])
@@ -147,7 +147,7 @@ This example will plot the ordered pairs :math:`(1, 8), (2, 9), (3, 7)`
 
     import matplotlib.pyplot as plot
 
-    fig, axes = plot.subplots()
+    (fig, axes) = plot.subplots()
 
     plot.title("Ordered Pairs")
 
@@ -167,7 +167,7 @@ All graphing functions in **matplotlib** accept ``color`` and ``ec`` arguments. 
     import random 
     import matplotlib.pyplot as plot
 
-    fig, axes = plot.subplots()
+    (fig, axes) = plot.subplots()
 
     # generate some random data
     data = [ random.random() for _ in range(100) ]
@@ -285,8 +285,8 @@ The following code will generate a *stacked bar chart* to visualize the *associa
 
     fig, axes = plot.subplots()
 
-    conditional_frequencies_of_x_given_C = [ 0.7, 0.3]
-    conditional_frequencies_of_x_given_D = [ 0.6, 0.4]
+    conditional_frequencies_of_x_given_C = [ 0.7, 0.3 ]
+    conditional_frequencies_of_x_given_D = [ 0.6, 0.4 ]
     
     axes.bar( "C", conditional_frequencies_of_x_given_C[0], label="C", color="lightcyan")
     axes.bar( "C", relative_frequencies_A[1], bottom=conditional_frequencies_of_x_given_C[1], label="D", color="gold")
@@ -341,6 +341,9 @@ TODO
 QQ Plots
 ********
 
+
+.. plot:: assets/plots/other/qq_plot.py
+    
 Time Series
 -----------
 

@@ -21,12 +21,7 @@ Section 1.1, pp. 24 - 30
 
 #13, #20, #22, #23 :sup:`*`, #25, #26, #31, #32, #38, #39
 
-Additional Question for *#23*:
-- TODO 
-- TODO
-- TODO 
-- TODO 
-- TODO 
+:sup:`*` Additional questions were written on the board for #23. 
 
 Section 1.2, pp. 47 - 54
 ------------------------
