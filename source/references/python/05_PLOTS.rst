@@ -50,12 +50,12 @@ When you import ``matplotlib`` into your scripts, the very first thing you shoul
 
     matplotlib.use('tkagg')
 
-This step is not, strictly speaking, necessary as most systems will default to using this library, but if you plots aren't showing up or you experience other weird errors, this is the likely culprit. In the event something goes wrong and you can't figure why, try adjusting this setting.
+This step is not, strictly speaking, necessary as most systems will default to using this library, but if your plots aren't showing up or you experience other weird errors, this is the likely culprit. In the event something goes wrong and you can't figure why, try adjusting this setting.
 
 Creating the Axes
 =================
 
-To create a plot, we use the ``pyplot`` library. The ``subplots()`` function within the ``pyplot`` library will generate an *x-y* plane canvas, called the *axes*.
+To create a plot, we use the ``pyplot`` library within ``matplotlib`` package. The ``subplots()`` function within the ``pyplot`` library will generate an *x-y* plane canvas, called the *axes*.
 
 The following code will create a *figure* and a set of *axes* on which we can graph.
 
@@ -64,7 +64,7 @@ The following code will create a *figure* and a set of *axes* on which we can gr
     # note: the `as` gives the library a short-cut name we can use.
     import matplotlib.pyplot as plot 
 
-    fig, axes = plot.subplots()
+    (fig, axes) = plot.subplots()
 
 .. note:: 
 
@@ -82,7 +82,7 @@ The following code adds a title to a plot,
 
     import matplotlib.pyplot as plot 
 
-    fig, axes = plot.subplots()
+    (fig, axes) = plot.subplots()
     
     plot.suptitle("This is the Main Title") 
 
@@ -95,7 +95,7 @@ The following code adds a subtitle to a plot,
 
     import matplotlib.pyplot as plot
 
-    fig, axes = plot.subplots()
+    (fig, axes) = plot.subplots()
 
     plot.title("This is the Sub Title")
 
