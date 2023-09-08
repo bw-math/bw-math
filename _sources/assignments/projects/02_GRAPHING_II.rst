@@ -8,7 +8,7 @@ Graphing II: Histograms and Boxplots
 
     - Ludwig Wittgenstein
 
-In this lab, you will get *even more* familiar with the statistical plotting features of **Python** using several famous datasets from the history of science.
+In this lab, you will get *even more* familiar with the statistical plotting features of **Python** using several famous datasets from the history of science. We will create histograms and boxplots to visualize the distributions of experimental data, and calculate sample statistics to summarize the data. 
 
 .. _project_two_instructions:
 
@@ -16,13 +16,13 @@ Instructions
 ============
 
 1. Download **both** *csv* datasets in the :ref:`project_two_dataset` section and place them in the ``Linux Files`` folder on your file system where you save your ``.py`` scripts.
-2. Create a Python ``.py`` script named ``GROUPNAME_project_two.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``GROUPNAME`` with your group name.
+2. Create a Python ``.py`` script named ``NAME_project_two.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``NAME`` with your name.
 3. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the :ref:`project_two_background` section
 5. Read the :ref:`project_two_loading_data` section.
 6. Load in the data from the ``.csv`` files using the technique outlined in the :ref:`project_three_loading_data` section.
 7. Perform all exercises and answer all questions in the :ref:`project_two_project` section. Label your script with comments as indicated in the *Project* section.
-8. When you are done, zip your script **and** the *csv* files into a zip file named ``LASTNAME_FIRSTNAME_project_two.zip``
+8. When you are done, zip your script **and** the *csv* files into a zip file named ``NAME_project_two.zip``
 9. Upload the zip file to the Google Classrom Project Two asignment.
 
 Formulae
@@ -42,9 +42,9 @@ Background
 The Michelson Velocity of Light Experiment 
 ------------------------------------------
 
-The `Michelson Velocity of Light Experiment <https://www.gutenberg.org/files/11753/11753-h/11753-h.htm>` conducted in 1881 was the first time `Albert A. Michelson <https://en.wikipedia.org/wiki/Albert_A._Michelson>`_ successfully measured the speed of light. He would go on to do so several more times, eventually teaming up with `Edward Morley <https://en.wikipedia.org/wiki/Edward_W._Morley>`_. Together, using the principles Michelson first developed in 1881, Michelson and Morley would demonstrate in 1887 the speed of light was the same regardless of the state of motion of the emitting body. This would go on to have profound effects for physics in the early twentieth century. It would lead `Albert Einstein <https://en.wikipedia.org/wiki/Albert_Einstein>`_ to propose the `theory of relativity <https://en.wikipedia.org/wiki/Theory_of_relativity>`_, one of the most significant intellectual developments in history of humanity. 
+The `Michelson Velocity of Light Experiment <https://www.gutenberg.org/files/11753/11753-h/11753-h.htm>`_ conducted in 1879 was the first time `Albert A. Michelson <https://en.wikipedia.org/wiki/Albert_A._Michelson>`_ successfully measured the speed of light. He would go on to do so several more times, eventually teaming up with `Edward Morley <https://en.wikipedia.org/wiki/Edward_W._Morley>`_. Together, using the principles Michelson first developed in 1879, Michelson and Morley would demonstrate in 1887 the speed of light was the same value regardless of the state of motion of the emitting body. This would go on to have profound effects for physics in the early twentieth century. It would lead `Albert Einstein <https://en.wikipedia.org/wiki/Albert_Einstein>`_ to propose the `theory of relativity <https://en.wikipedia.org/wiki/Theory_of_relativity>`_, one of the most significant intellectual developments in history of humanity. 
 
-Michelson's 1881 experimental results remained one of most accurate estimations of the speed of light until modern times. Using a series of mirrors depicted below, Michelson was able to divert light rays emitting from a common source along separate paths and then measure the fractional time difference it took for the rays to reach the same location.
+Michelson's 1879 experimental results remained one of most accurate estimations of the speed of light until modern times. Using a series of mirrors depicted below, Michelson was able to divert light rays emitting from a common source along separate paths and then measure the fractional time difference it took for the rays to reach the same location.
 
 .. image:: ../../assets/imgs/context/michelson_experiment.png
     :width: 60%
@@ -134,7 +134,7 @@ The line you want to pay attention in the script you just downloaded is,
 
     axs.hist(data, bins=6, align='left', color='lightblue', ec='red')
 
-The `hist() <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html>` function is :ref:`matplotlib`'s *histogram* graphing function. 
+The `hist() <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html>`_ function is :ref:`matplotlib`'s *histogram* graphing function. 
 
 Notice the first argument of this function is passed in alone, without a name (i.e. without an expression ``x = y``). The first argument of the ``hist()`` function is *always* the sample of data you wish to plot; The ``data`` argument is simply a :ref:`list <python_lists>` of data. 
 
