@@ -21,10 +21,10 @@ Instructions
 4. Read the :ref:`project_three_background` section.
 5. Read the :ref:`project_three_loading_data` section.
 6. Read the :ref:`project_three_functions` section.
-6. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
-7. Perform all exercises and answer all questions in the :ref:`project_three_project` section. Label your script with comments as indicated in the instructions of each problem.
-8. When you are done, zip your script **and** the *csv* file in a zip file named ``NAME_project_three.zip``
-9. Upload the zip file to the Google Classroom Project Three Assignment.
+7. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
+8. Perform all exercises and answer all questions in the :ref:`project_three_project` section. Label your script with comments as indicated in the instructions of each problem.
+9. When you are done, zip your script **and** the *csv* file in a zip file named ``NAME_project_three.zip``
+10. Upload the zip file to the Google Classroom Project Three Assignment.
    
 .. _project_three_background: 
 
@@ -35,7 +35,7 @@ In 27 BC, Julius Caesar's nephew, Octavian Caesar, was given the title *Augustus
 
 The Roman Empire would last for several centuries, absorbing large parts of what is now Europe, Africa and Asia into its boundaries. 
 
-.. image:: ../../assets/imgs/context/roman_empire_evoluation.gif
+.. image:: ../../assets/imgs/context/roman_empire_evolution.gif
     :align: center
 
 .. topic:: Evolution of the Roman Empire

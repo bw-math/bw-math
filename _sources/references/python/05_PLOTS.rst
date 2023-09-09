@@ -206,6 +206,10 @@ Boxplot
 
     plot.show() 
     
+.. topic:: Boxplot Example
+
+    Below is an example of a boxplot, unrelated to the above code snippet.
+
 .. plot:: assets/plots/boxplots/boxplot_normal.py
 
 .. _matplotlib_barchart:
@@ -240,6 +244,10 @@ The code snippet below will generate a bar chart for the following frequency dis
     axes.bar(values, frequencies)
 
     plot.show() 
+
+.. topic:: Barchart Example
+
+    Below is an example of a barchart, unrelated to the above code snippet. 
 
 .. plot:: assets/plots/other/bar_chart.py
 
@@ -297,6 +305,11 @@ The following code will generate a *stacked bar chart* to visualize the *associa
 
     plot.legend()
     plot.show() 
+
+
+.. topic:: Stacked Bar Chart Example
+
+    Below is an example of a stacked bar chart, unrelated to above code snippet.
 
 .. plot:: assets/plots/other/stacked_bar_chart.py
 
