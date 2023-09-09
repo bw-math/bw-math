@@ -10,7 +10,12 @@ This script will generate a bar chart for a (hard-coded) distribution of quiz gr
 
 .. note:: 
 
-    This script is written to run in a `Continuous Integration Pipeline <https://about.gitlab.com/topics/ci-cd/>`_. It is used to render images for the `AP Stats Bishop Walsh website <https://bishopwalshmath.org>`_. In other words, it is running in an environment without a desktop. Read comments below for more information on running it on your computer. 
+    This script is written to run in a `Continuous Integration Pipeline <https://about.gitlab.com/topics/ci-cd/>`_. 
+    
+    It is used to render images for the `AP Stats Bishop Walsh website <https://bishopwalshmath.org>`_. 
+    
+    In other words, it is running in an environment without a desktop. Read comments below for more information on running it on your computer. 
+
 """
 
 ##################################################################################
