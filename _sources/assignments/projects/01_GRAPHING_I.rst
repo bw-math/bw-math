@@ -217,7 +217,7 @@ Bar Charts
 
 .. important::
 
-    Refer to :ref:`python_plotting` section for a more in-depth look at the various feature of :ref:`matplotlib`, the library we are using to create graphs.
+    Refer to :ref:`python_plotting` section for a more in-depth look at the various features of :ref:`matplotlib`, the library we are using to create graphs.
 
 .. _project_one_standard_bar_charts:
 
@@ -235,7 +235,7 @@ Up until now we have been living in the stone age, creating these graphs by hand
 
 .. plot:: assets/plots/other/bar_chart.py
 
-Click on the ``source`` button in the top left corner of the graph to download the *.py* script used to generate this graph. Examine the source code contained therein for generating a *Bar Chart*. Be sure to read the comments before you execute it, as you will need to tweak a setting to get it to run on your computer. 
+Click on the ``Source Code`` button in the top left corner of the graph to download the *.py* script used to generate this graph. Examine the source code contained therein for generating a *Bar Chart* with :ref:`matplotlib <python_plotting>`. Be sure to read the comments before you execute it, as you will need to tweak a setting to get it to run on your computer. 
 
 The key line to pay attention to in this script is the following,
 
@@ -282,7 +282,7 @@ The full list of colors available to use in :ref:`matplotlib` is detailed in the
 .. image:: ../../assets/imgs/python/matplotlib_colors.png
     :align: center
 
-Any value in this chart can be used an argument for ``color`` and ``ec``.
+Any value in this chart can be used an argument for ``color`` or ``ec``.
 
 This script is annotated with lots of comments for you to read. Give them a peak, and then let's meet over in the next section.
 
