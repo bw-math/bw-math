@@ -14,13 +14,13 @@ Instructions
 ============
 
 1. Download the *csv* dataset in the :ref:`project_four_dataset` section and place it in the ``Linux Files`` folder on your folder system where you save your ``.py`` scripts.
-2. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_four.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
+2. Create a Python ``.py`` script named ``TNAME_project_four.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``TNAME`` with your name.
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the :ref:`project_four_background` section.
 5. Read the :ref:`project_four_loading_data` section.
 6. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
 7. Perform all exercises and answer all questions in the :ref:`project_four_project` section. Label your script with comments as indicated in the instructions of each problem.
-8. When you are done,zip your script **and** the *csv* file in a zip file named ``LASTNAME_FIRSTNAME_project_four.zip``
+8. When you are done,zip your script **and** the *csv* file in a zip file named ``NAME_project_four.zip``
 9. Upload the zip file to the Google Classroom Project Four Assignment.
 
 .. _project_four_loading_data:
@@ -35,19 +35,18 @@ TODO
 Background
 ==========
 
-In the years 1969, 1970, 1971 and 1972, the Selective Service System in the United States held a draft lottery by order of President Lyndon B. Johnson for men born between the dates of January 1, 1944 and December 31, 1950 [*]_. 
-
-.. [*] Vietnam War Draft Lottery
-    `source <https://en.wikipedia.org/wiki/Draft_lottery_(1969)>`_
+`In the years 1969, 1970, 1971 and 1972, the Selective Service System in the United States held a draft lottery by order of President Lyndon B. Johnson for men born between the dates of January 1, 1944 and December 31, 1950 <source <https://en.wikipedia.org/wiki/Draft_lottery_(1969)>`_. 
 
 Individuals born between these dates were to be selected at random and drafted into military service to fight in the Vietnam War.
 
-Method of Observation
----------------------
+Method of Selection
+-------------------
 
-The method used to select individuals for service is highly controversial. Many argued it was not truly random and unfairly selected certain groups of individuals over others. 
+The method used to select individuals for service is highly controversial. Many argued it was not truly random and unfairly selected certain groups of individuals over others. In this project we are going to investigate these claims and see if there is any statistical evidence to suggest they are true.
 
-365 days of the year were printed on sheets of paper and placed in a shoebox.
+To do this, we will need to understand how draftees were selected. 
+
+In attempt to randomize the selection, the Selective Service System held a draft lottery. 365 days of the year were printed on sheets of paper and placed in a shoebox,
 
     { January 1, January 2, ... , Feburary 1, February 2, ... , December 30, December 31 }
 
@@ -58,7 +57,7 @@ Slips of paper were then selected at random and anyone of eligible age who had a
 Project
 =======
 
-1. Discuss the following questions
+1. Discuss the following questions. Save your answer in the :ref:`docstring <python_docstring>`
    
     a. Is the selection method used for the draft random? Why or why not?
     
@@ -68,7 +67,7 @@ Project
     
     d. What are some possible sources of bias in the draft lottery? List the cases and identify the *type* of bias in each case.
 
-2. During the first year of the draft, 1969, months were put into the shoebox in ascending order. In other words, the birth dates in the month of December were first put in the bottom of the shoebox, then birth dates in November were placed on top of the December birth dates, then October birth dates were placed on top of the November birth dates, and so on up to January. The slips of paper were not mixed any further before the draft was selected. 
+2. During the first year of the draft, 1969, birthdates were put into the shoebox in ascending order of month. In other words, the birth dates in the month of December were first put in the bottom of the shoebox, then birth dates in November were placed on top of the December birth dates, then October birth dates were placed on top of the November birth dates, and so on up to January. The slips of paper were not mixed any further before the draft was selected. Using this new information, answer the following questions. Save your answer in the :ref:`docstring <python_docstring>`
 
     a. How does this information affect your answer to *#1a*? 
 
@@ -76,9 +75,11 @@ Project
 
     c. How does this information affect your answer to *#1d*?
 
-3. Using the birth month of the drafted individual as the bins, construct histograms for the years 1969, 1970, 1971, 1972. 
+This selection method was later revised in 1970, 1971 and 1972, once the distribution of data was examined in more detail.
 
-3. Based on the histograms constructed, describe the shape of the distribution for each year's draft lottery. 
+3. Using the birth month of the drafted individual as the bins, construct histograms for the years 1969, 1970, 1971 and 1972. 
+
+3. Based on the histograms constructed, describe the shape of the distribution for each year's draft lottery. Save your answer in the :ref:`docstring <python_docstring>`
    
    a. Are the graphs skewed, uniform, normal or bimodal?
    
