@@ -19,12 +19,13 @@ Instructions
 2. In the same folder, create a Python ``.py`` script named ``NAME_project_three.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``NAME`` with your  name.
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the :ref:`project_three_background` section.
-5. Read the :ref:`project_three_loading_data` section.
+5. Read the :ref:`project_three_required_imports` section.
 6. Read the :ref:`project_three_functions` section.
-7. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
-8. Perform all exercises and answer all questions in the :ref:`project_three_project` section. Label your script with comments as indicated in the instructions of each problem.
-9. When you are done, zip your script **and** the *csv* file in a zip file named ``NAME_project_three.zip``
-10. Upload the zip file to the Google Classroom Project Three Assignment.
+7. Read the :ref:`project_three_loading_data` section.
+8. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
+9. Perform all exercises and answer all questions in the :ref:`project_three_project` section. Label your script with comments as indicated in the instructions of each problem.
+10. When you are done, zip your script **and** the *csv* file in a zip file named ``NAME_project_three.zip``
+11. Upload the zip file to the Google Classroom Project Three Assignment.
    
 .. _project_three_background: 
 
@@ -46,9 +47,21 @@ The Roman Empire would last for several centuries, absorbing large parts of what
 
 Many people would go on to claim the title of *Roman Emperor* after Augustus Caesar died.
 
-Some of them, such as `Hadrian <https://en.wikipedia.org/wiki/Hadrian>` and `Marcus Aurelius <https://en.wikipedia.org/wiki/Marcus_Aurelius>`_ had long and peaceful reigns. Others, such as `Marcus Otho <https://en.wikipedia.org/wiki/Otho>`_ and `Didius Julianus <https://en.wikipedia.org/wiki/Didius_Julianus>`, only ruled for several months and their reigns were fraught with political upheaval and violence.
+Some of them, such as `Hadrian <https://en.wikipedia.org/wiki/Hadrian>`_ and `Marcus Aurelius <https://en.wikipedia.org/wiki/Marcus_Aurelius>`_ had long and peaceful reigns. Others, such as `Marcus Otho <https://en.wikipedia.org/wiki/Otho>`_ and `Didius Julianus <https://en.wikipedia.org/wiki/Didius_Julianus>`_, only ruled for several months and their reigns were fraught with political upheaval and violence.
 
 In this project, we are going to look at a dataset that represents the *length* of each Roman Emperor's reign. We will look at the distribution shape and various descriptive statistics of this dataset in order to draw conclusions and tell a story about the leadership of the Roman Empire using empirical evidence.
+
+.. _project_three_required_imports:
+
+Imports
+=======
+
+To complete this lab, you will need to import the following packages. Add these lines to the top of your ``.py`` script.
+
+.. code:: python
+
+    import matplotlib.pyplot
+    import math 
 
 .. _project_three_functions:
 
@@ -63,7 +76,37 @@ Functions
 
     Refer to :ref:`python_creating_functions` section for a more information on creating your own function in Python.
 
-TODO
+We have been only been *using* functions up to this point. In order to complete this lab, we will need to *create* a few functions that will calculate sample statistics. In particular, we are going to create four functions: ``sample_mean``, ``sample_std_deviation``, ``sample_median`` and ``sample_percentile``. These functions will accept a sample of data as an *argument* (or *input*) and then calculate a sample statistic and *return* its value.
+
+We can create the ``sample_mean`` function as follows,
+
+.. code:: python
+
+    def sample_mean(data):
+        n = len(data)
+        sumx = sum(data)
+        xbar = sumx / n
+        return xbar
+
+Take note of the *indentation*. Each line of the function is on the same *indentation* level. This is how **Python** separates functions from the commands you are executing. For more information about the syntactical components of a function defintion, refer to the :ref:`python_creating_functions` section.
+
+Now that we have defined our sample mean function, we can *call* it using its *name*,
+
+.. code:: python
+
+    some_data = [ 1, 2, 3, 4, 5 ]
+    xbar = sample_mean(some_data)
+    print("the sample mean is ", xbar)
+
+Output
+
+    the sample mean is 3.0
+
+
+In this project, we will create two more functions:
+
+- A function to calculate the sample standard deviation
+- A function to calulate a sample percentile.
 
 .. _project_three_loading_data:
 
@@ -90,27 +133,22 @@ The following code snippet will load in a *CSV* spreadsheet named ``example.csv`
 
     print(column_1)
 
-
 .. _project_three_project:
 
 Project
 =======
 
-1. Write a function that accepts a list of data an argument and computes the following sample statistics. Write a separate function for each exercise and label it with a comment. Name the function appropriately.
+1. Write a function that accepts a :ref:`list <python_lists>` of data as an argument and computes the following sample statistics. Write a separate function for each exercise and label it with a comment. Name the function appropriately.
 
     a. The sample mean of a dataset.
 
-    b. The sample median of a dataset.
+    b. The sample percentile of a dataset.
 
-    c. *Any* percentile of a dataset.
-
-    d. The sample variance of a dataset.
-
-    e. The sample standard deviation of a dataset.
+    c. The sample standard deviation of a dataset.
 
 .. tip:: 
 
-    *#1c* will require *two arguments*, the list of data and the percentile you wish to find.
+    *#1b* will require *two arguments*, the list of data and the percentile you wish to find.
 
 .. note::
 
@@ -167,6 +205,7 @@ The following table is the a preview of the data you will be using for this proj
    :file: ../../assets/datasets/previews/roman_emperors_data_preview.csv
 
 The meaning of the columns is as follows: 
+
 - ``Emperor`` is the name of the Roman Emperor.
 - ``Years`` is the number of years in the reign.
 - ``Months`` is the number of months in the reign.

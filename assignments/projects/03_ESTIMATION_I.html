@@ -438,6 +438,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imports">Imports</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
@@ -469,8 +470,9 @@ document.write(`
 <li><p>In the same folder, create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">NAME_project_three.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">NAME</span></code> with your  name.</p></li>
 <li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-three-background"><span class="std std-ref">Background</span></a> section.</p></li>
-<li><p>Read the <a class="reference internal" href="#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-three-required-imports"><span class="std std-ref">Imports</span></a> section.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-three-functions"><span class="std std-ref">Functions</span></a> section.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
 <li><p>Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file using the technique outlined in the <a class="reference internal" href="#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
 <li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-three-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the instructions of each problem.</p></li>
 <li><p>When you are done, zip your script <strong>and</strong> the <em>csv</em> file in a zip file named <code class="docutils literal notranslate"><span class="pre">NAME_project_three.zip</span></code></p></li>
@@ -488,8 +490,16 @@ document.write(`
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/File:Romempgif.gif">Source: Roman Empire</a></p>
 </div>
 <p>Many people would go on to claim the title of <em>Roman Emperor</em> after Augustus Caesar died.</p>
-<p>Some of them, such as <cite>Hadrian &lt;https://en.wikipedia.org/wiki/Hadrian&gt;</cite> and <a class="reference external" href="https://en.wikipedia.org/wiki/Marcus_Aurelius">Marcus Aurelius</a> had long and peaceful reigns. Others, such as <a class="reference external" href="https://en.wikipedia.org/wiki/Otho">Marcus Otho</a> and <cite>Didius Julianus &lt;https://en.wikipedia.org/wiki/Didius_Julianus&gt;</cite>, only ruled for several months and their reigns were fraught with political upheaval and violence.</p>
+<p>Some of them, such as <a class="reference external" href="https://en.wikipedia.org/wiki/Hadrian">Hadrian</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Marcus_Aurelius">Marcus Aurelius</a> had long and peaceful reigns. Others, such as <a class="reference external" href="https://en.wikipedia.org/wiki/Otho">Marcus Otho</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Didius_Julianus">Didius Julianus</a>, only ruled for several months and their reigns were fraught with political upheaval and violence.</p>
 <p>In this project, we are going to look at a dataset that represents the <em>length</em> of each Roman Emperor’s reign. We will look at the distribution shape and various descriptive statistics of this dataset in order to draw conclusions and tell a story about the leadership of the Roman Empire using empirical evidence.</p>
+</section>
+<section id="imports">
+<span id="project-three-required-imports"></span><h2>Imports<a class="headerlink" href="#imports" title="Permalink to this headline">#</a></h2>
+<p>To complete this lab, you will need to import the following packages. Add these lines to the top of your <code class="docutils literal notranslate"><span class="pre">.py</span></code> script.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span>
+<span class="kn">import</span> <span class="nn">math</span>
+</pre></div>
+</div>
 </section>
 <section id="functions">
 <span id="project-three-functions"></span><h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">#</a></h2>
@@ -501,7 +511,31 @@ document.write(`
 <p class="admonition-title">Important</p>
 <p>Refer to <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-creating-functions"><span class="std std-ref">Creating Functions</span></a> section for a more information on creating your own function in Python.</p>
 </div>
-<p>TODO</p>
+<p>We have been only been <em>using</em> functions up to this point. In order to complete this lab, we will need to <em>create</em> a few functions that will calculate sample statistics. In particular, we are going to create four functions: <code class="docutils literal notranslate"><span class="pre">sample_mean</span></code>, <code class="docutils literal notranslate"><span class="pre">sample_std_deviation</span></code>, <code class="docutils literal notranslate"><span class="pre">sample_median</span></code> and <code class="docutils literal notranslate"><span class="pre">sample_percentile</span></code>. These functions will accept a sample of data as an <em>argument</em> (or <em>input</em>) and then calculate a sample statistic and <em>return</em> its value.</p>
+<p>We can create the <code class="docutils literal notranslate"><span class="pre">sample_mean</span></code> function as follows,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sample_mean</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">sumx</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">xbar</span> <span class="o">=</span> <span class="n">sumx</span> <span class="o">/</span> <span class="n">n</span>
+    <span class="k">return</span> <span class="n">xbar</span>
+</pre></div>
+</div>
+<p>Take note of the <em>indentation</em>. Each line of the function is on the same <em>indentation</em> level. This is how <strong>Python</strong> separates functions from the commands you are executing. For more information about the syntactical components of a function defintion, refer to the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-creating-functions"><span class="std std-ref">Creating Functions</span></a> section.</p>
+<p>Now that we have defined our sample mean function, we can <em>call</em> it using its <em>name</em>,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">some_data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span> <span class="p">]</span>
+<span class="n">xbar</span> <span class="o">=</span> <span class="n">sample_mean</span><span class="p">(</span><span class="n">some_data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the sample mean is &quot;</span><span class="p">,</span> <span class="n">xbar</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output</p>
+<blockquote>
+<div><p>the sample mean is 3.0</p>
+</div></blockquote>
+<p>In this project, we will create two more functions:</p>
+<ul class="simple">
+<li><p>A function to calculate the sample standard deviation</p></li>
+<li><p>A function to calulate a sample percentile.</p></li>
+</ul>
 </section>
 <section id="loading-in-data">
 <span id="project-three-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
@@ -527,13 +561,11 @@ document.write(`
 <section id="project">
 <span id="project-three-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
 <ol class="arabic">
-<li><p>Write a function that accepts a list of data an argument and computes the following sample statistics. Write a separate function for each exercise and label it with a comment. Name the function appropriately.</p>
+<li><p>Write a function that accepts a <a class="reference internal" href="../../references/python/02_BASIC.html#python-lists"><span class="std std-ref">list</span></a> of data as an argument and computes the following sample statistics. Write a separate function for each exercise and label it with a comment. Name the function appropriately.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
 <li><p>The sample mean of a dataset.</p></li>
-<li><p>The sample median of a dataset.</p></li>
-<li><p><em>Any</em> percentile of a dataset.</p></li>
-<li><p>The sample variance of a dataset.</p></li>
+<li><p>The sample percentile of a dataset.</p></li>
 <li><p>The sample standard deviation of a dataset.</p></li>
 </ol>
 </div></blockquote>
@@ -541,7 +573,7 @@ document.write(`
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><em>#1c</em> will require <em>two arguments</em>, the list of data and the percentile you wish to find.</p>
+<p><em>#1b</em> will require <em>two arguments</em>, the list of data and the percentile you wish to find.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -628,11 +660,13 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p>The meaning of the columns is as follows:
-- <code class="docutils literal notranslate"><span class="pre">Emperor</span></code> is the name of the Roman Emperor.
-- <code class="docutils literal notranslate"><span class="pre">Years</span></code> is the number of years in the reign.
-- <code class="docutils literal notranslate"><span class="pre">Months</span></code> is the number of months in the reign.
-- <code class="docutils literal notranslate"><span class="pre">Days</span></code> is the number of days in the reign.</p>
+<p>The meaning of the columns is as follows:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Emperor</span></code> is the name of the Roman Emperor.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Years</span></code> is the number of years in the reign.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Months</span></code> is the number of months in the reign.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Days</span></code> is the number of days in the reign.</p></li>
+</ul>
 </section>
 </section>
 
@@ -686,6 +720,7 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imports">Imports</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
