@@ -438,6 +438,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a></li>
@@ -460,23 +461,46 @@ document.write(`
 <li><p>William James, 1907</p></li>
 </ul>
 </div></blockquote>
-<p>In this lab, you will use <strong>Python</strong> to calculate sample statistics and graphical representations for a dataset that represents the length of each Roman Emperor’s reign. You will use these statistics and graphs to draw conclusions about the distribution of Roman Emperor reigns.</p>
+<p>In this lab, we will use <strong>Python</strong> to calculate sample statistics and graphical representations for a dataset that represents the length of each Roman Emperor’s reign. we will use these statistics and graphs to draw conclusions about the distribution of Roman Emperor reigns.</p>
 <section id="instructions">
 <span id="project-three-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
 <li><p>Download the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> dataset <a class="reference internal" href="#project-three-dataset"><span class="std std-ref">below</span></a> and place it in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder where you saved your <em>.py</em> scripts.</p></li>
-<li><p>In the same folder, create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">GROUPNAME_project_three.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">GROUPNAME</span></code> with your last and first name, respectively.</p></li>
+<li><p>In the same folder, create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">NAME_project_three.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">NAME</span></code> with your  name.</p></li>
 <li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-three-background"><span class="std std-ref">Background</span></a> section.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
-<li><p>Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file using the technique outlined in the <a class="reference internal" href="#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
-<li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-three-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the instructions of each problem.</p></li>
-<li><p>When you are done, zip your script <strong>and</strong> the <em>csv</em> file in a zip file named <code class="docutils literal notranslate"><span class="pre">GROUPNAME_project_three.zip</span></code></p></li>
-<li><p>Have <em>one</em> member of the group pload the zip file to the Google Classroom Project Three Assignment.</p></li>
 </ol>
+<p>6. Read the <a class="reference internal" href="#project-three-functions"><span class="std std-ref">Functions</span></a> section.
+6. Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file using the technique outlined in the <a class="reference internal" href="#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section.
+7. Perform all exercises and answer all questions in the <a class="reference internal" href="#project-three-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the instructions of each problem.
+8. When you are done, zip your script <strong>and</strong> the <em>csv</em> file in a zip file named <code class="docutils literal notranslate"><span class="pre">NAME_project_three.zip</span></code>
+9. Upload the zip file to the Google Classroom Project Three Assignment.</p>
 </section>
 <section id="background">
 <span id="project-three-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<p>In 27 BC, Julius Caesar’s nephew, Octavian Caesar, was given the title <em>Augustus</em> by the Roman Senate. With this event, the city state of Rome had ceased to be <a class="reference external" href="https://en.wikipedia.org/wiki/Republic">republic</a>. Augustus Caesar had become the first emperor of the <a class="reference external" href="https://en.wikipedia.org/wiki/Roman_Empire">Roman Empire</a>.</p>
+<p>The Roman Empire would last for several centuries, absorbing large parts of what is now Europe, Africa and Asia into its boundaries.</p>
+<img alt="assets/imgs/context/roman_empire_evoluation.gif" class="align-center" src="assets/imgs/context/roman_empire_evoluation.gif" />
+<div class="topic">
+<p class="topic-title">Evolution of the Roman Empire</p>
+<p>Rome from the citystate by the Tiber to the fall of the Western Roman Empire</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/File:Romempgif.gif">Source: Roman Empire</a></p>
+</div>
+<p>Many people would go on to claim the title of <em>Roman Emperor</em> after Augustus Caesar died.</p>
+<p>Some of them, such as <cite>Hadrian &lt;https://en.wikipedia.org/wiki/Hadrian&gt;</cite> and <a class="reference external" href="https://en.wikipedia.org/wiki/Marcus_Aurelius">Marcus Aurelius</a> had long and peaceful reigns. Others, such as <a class="reference external" href="https://en.wikipedia.org/wiki/Otho">Marcus Otho</a> and <cite>Didius Julianus &lt;https://en.wikipedia.org/wiki/Didius_Julianus&gt;</cite>, only ruled for several months and their reigns were fraught with political upheaval and violence.</p>
+<p>In this project, we are going to look at a dataset that represents the <em>length</em> of each Roman Emperor’s reign. We will look at the distribution shape and various descriptive statistics of this dataset in order to draw conclusions and tell a story about the leadership of the Roman Empire using empirical evidence.</p>
+</section>
+<section id="functions">
+<span id="project-three-functions"></span><h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We will do this part in class together.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Refer to <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-creating-functions"><span class="std std-ref">Creating Functions</span></a> section for a more information on creating your own function in Python.</p>
+</div>
 <p>TODO</p>
 </section>
 <section id="loading-in-data">
@@ -541,13 +565,13 @@ document.write(`
 </ol>
 </div></blockquote>
 </li>
-<li><p>Compare the answers to <em>#2a</em> and <em>#2b</em>. What do these two answers tell you about the skew of this distribution? Interpret the skew in terms of Roman Emperors and the length of their reign, i.e. what does the skew tell you about Roman Emperor’s and the length of their reigns?</p></li>
-<li><p>Construct a relative frequency histogram and a cumulative relative frequency using 10 classes for this sample of data. Label the code for creating the plots with a comment. What type of distribution shape does this dataset have? Does this agree with your answer to <em>#4</em>? Explain.</p></li>
-<li><p>Construct a boxplot for this sample of data. Label the code for creating the plot with a comment. Based on the boxplot, are there any potential outliers in this dataset? Are the outliers Emperors who had long rules or short rules?</p></li>
+<li><p>Compare the answers to <em>#2a</em> and <em>#2b</em>. What do these two answers tell you about the skew of this distribution? Interpret the skew in terms of Roman Emperors and the length of their reign, i.e. what does the skew tell you about Roman Emperor’s and the length of their reigns? Save your answer in the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a>.</p></li>
+<li><p>Construct a relative frequency histogram and a cumulative relative frequency using 10 classes for this sample of data. Label the code for creating the plots with a comment. What type of distribution shape does this dataset have? Does this agree with your answer to <em>#4</em>? Explain. Save your answer in the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a>.</p></li>
+<li><p>Construct a boxplot for this sample of data. Label the code for creating the plot with a comment. Based on the boxplot, are there any potential outliers in this dataset? Are the outliers Emperors who had long rules or short rules? Save your answer in the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a>.</p></li>
 </ol>
 <ol class="arabic" start="6">
-<li><p>Find the coefficient of variation for this dataset. What does this statistic tell you about the distribution? Interpret the coefficient of variation in terms of Roman Emperors  and the length of their reign.</p></li>
-<li><p>Summarize the conclusions you can draw about Roman Emperors and the length of their reign. Answer the following questions in your summary.</p>
+<li><p>Find the coefficient of variation for this dataset. What does this statistic tell you about the distribution? Interpret the coefficient of variation in terms of Roman Emperors  and the length of their reign. Save your answer in the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a>.</p></li>
+<li><p>Summarize the conclusions you can draw about Roman Emperors and the length of their reign in your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a>. Answer the following questions in your summary.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
 <li><p>What percentage of Roman Emperors had reigns longer than 30 years?</p></li>
@@ -556,6 +580,7 @@ document.write(`
 </ol>
 </div></blockquote>
 </li>
+<li><p>Based on the graphs and descriptive statistics calculated in the previous problems, write a few sentences in the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> describing what the distribution of Roman Emperor reigns tells us about the Roman state.</p></li>
 </ol>
 </section>
 <section id="dataset">
@@ -661,6 +686,7 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a></li>
