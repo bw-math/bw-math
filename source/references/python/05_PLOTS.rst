@@ -354,7 +354,6 @@ TODO
 QQ Plots
 ********
 
-
 .. plot:: assets/plots/other/qq_plot.py
     
 Time Series
