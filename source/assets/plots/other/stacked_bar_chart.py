@@ -70,7 +70,7 @@ print(data)
 ## STEP 2: Find joint frequencies
 ####################################################################################
 
-# this is a trick to count the elements in a a list of data whn you only want to count
+# this is a trick to count the elements in a list of data when you only want to count
 # elements that satisfy a certain condition. For instance, to find `blue_balls`, we 
 # only want to sum the outcomes that include a shape of 'ball' and a color of 'blue'
 # NOTE: we access the x-value of the (shape, color) tuple the same way we
