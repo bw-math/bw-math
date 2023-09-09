@@ -860,9 +860,9 @@ The table below lists the names that have been given to special percentiles.
 Median
 -------
 
-The *median* of a dataset is the observation such that half of the sample is above it and half of the sample is above it. As the table in the previous section indicated, another way of saying this is the *median* is the *50* :sup:`th` percentile. 
+The *median* of a dataset is the observation such that half of the sample is less than or equal to it and half of the sample is greater than or equal to it. In other words, the *median* is the point in a dataset where half of the sample is above it and half of the sample is below it. As the table in the previous section indicated, another way of saying this is the *median* is the *50* :sup:`th` percentile. 
 
-First, let's state a quick shortcut formula for the median that you are probably familiar with, although you may not have seen it stated as precisely.
+In this section, we state a quick shortcut formula for the median that you are probably familiar with, although you may not have seen it stated as precisely.
 
 Shortcut
 ********
@@ -884,17 +884,17 @@ The percentile :math:`\pi_{0.50}` is given by,
 
 .. math:: 
 
-    \pi_0.50 = x_{(\lfloor m \rfloor)} + (x_{(\lceil m \rceil )} - x_{(\lfloor m \rfloor)}) \cdot (m - \lfloor m \rfloor)
+    \pi_{0.50} = x_{(\lfloor m \rfloor)} + (x_{(\lceil m \rceil )} - x_{(\lfloor m \rfloor)}) \cdot (m - \lfloor m \rfloor)
 
 Applying :math:`\lfloor m \rfloor = m = \lceil m \rceil`,
 
 .. math:: 
     
-    \pi_0.50 = x_{(m)} + (x_{(m)} - x_{(m)}) \cdot (m - m)
+    \pi_{0.50} = x_{(m)} + (x_{(m)} - x_{(m)}) \cdot (m - m)
 
 .. math:: 
 
-    \implies \pi_0.50 = x_{(m)} + 0 = x_{(m)}
+    \implies \pi_{0.50} = x_{(m)} + 0 = x_{(m)}
 
 Since :math:`m = \frac{n+1}{2}`,
 
@@ -906,7 +906,9 @@ Recalling the meaning of the term :math:`x_{(\frac{n+1}{2})}`, we see if the num
 
 .. topic:: Odd Sample: Median Shortcut
 
-    \pi_0.50 = x_{(\frac{n+1}{2})}
+    .. math::
+    
+        \pi_{0.50} = x_{(\frac{n+1}{2})}
 
 Sample is Even
 **************
@@ -923,27 +925,35 @@ Applying this information to the sample percentile formula,
 
 .. math::
 
-    \pi_0.50 = x_{(\lfloor m \rfloor)} + (x_{(\lceil m \rceil )} - x_{(\lfloor m \rfloor)}) \cdot \frac{1}{2}
+    \pi_{0.50} = x_{(\lfloor m \rfloor)} + (x_{(\lceil m \rceil )} - x_{(\lfloor m \rfloor)}) \cdot \frac{1}{2}
 
 Distributing the :math:`\frac{1}{2}`,
 
 .. math:: 
 
-    \pi_0.50 = x_{(\lfloor m \rfloor)} + \frac{x_{(\lceil m \rceil )}}{2} - \frac{x_{(\lfloor m \rfloor)}}{2}
+    \pi_{0.50} = x_{(\lfloor m \rfloor)} + \frac{x_{(\lceil m \rceil )}}{2} - \frac{x_{(\lfloor m \rfloor)}}{2}
 
 .. math:: 
 
-    \implies \pi_0.50 = \frac{x_{(\lceil m \rceil )}}{2} + \frac{x_{(\lfloor m \rfloor)}}{2}
+    \implies \pi_{0.50} = \frac{x_{(\lceil m \rceil )}}{2} + \frac{x_{(\lfloor m \rfloor)}}{2}
 
 .. math:: 
     
-    \implies \pi_0.50 = \frac{x_{(\lceil m \rceil )} + x_{(\lfloor m \rfloor)}}{2}
+    \implies \pi_{0.50} = \frac{x_{(\lceil m \rceil )} + x_{(\lfloor m \rfloor)}}{2}
 
 Plugging in :math:`m = \frac{n+1}{2}`
 
 .. math:: 
     
-    \pi_0.50 = \frac{x_{(\lceil \frac{n+1}{2} \rceil )} + x_{(\lfloor \frac{n+1}{2} \rfloor)}}{2}
+    \pi_{0.50} = \frac{x_{(\lceil \frac{n+1}{2} \rceil )} + x_{(\lfloor \frac{n+1}{2} \rfloor)}}{2}
+
+In other words, when the sample is even, the median is the *midpoint* of the middle two observations,
+
+.. topic:: Odd Sample: Median Shortcut
+
+    .. math::
+    
+        \pi_{0.50} = \frac{x_{(\lceil \frac{n+1}{2} \rceil )} + x_{(\lfloor \frac{n+1}{2} \rfloor)}}{2}
 
 .. _skewness:
 
@@ -965,7 +975,7 @@ It is always a good idea to start problems by looking at some sort :ref:`graphic
 
 .. plot:: assets/plots/examples/03_ex03_skewed.py
 
-One of the observations, the person with an annual income of *$2,000,000*, sits well outside the range of the rest of the observations. This feature of the sample, its *skew**, will manifest in the sample statistics as we move through this example. 
+One of the observations, the person with an annual income of *$2,000,000*, sits well outside the range of the rest of the observations. This feature of the sample, its *skew*, will manifest in the sample statistics as we move through this example. 
 
 The sample mean is calculated using the :ref:`formula <sample_mean_formula>`,
 
@@ -983,7 +993,7 @@ Then we order the sample,
 
 .. math:: 
 
-    S_{(o)} = \{ \$ 30000, \$ 45000, \$ 50000, \$ 55000, \$ 56000, \$ 65000, \$ 70000, \$ 120000, \$ 200000, , \$ 2000000 \}
+    S_{(o)} = \{ \$ 30000, \$ 45000, \$ 50000, \$ 55000, \$ 56000, \$ 65000, \$ 70000, \$ 120000, \$ 200000, \$ 2000000 \}
 
 Finally, we apply the :ref:`general percentile formula <percentile_formula>`, with :math:`x_{(5)} = \$ 56000` and :math:`x_{(6)} = \$ 65000`,
 
@@ -1031,17 +1041,17 @@ A histogram for a symmetrical distribution is given below, with the median and m
 
 .. plot:: assets/plots/examples/03_ex05_normal.py
 
-In this case, the mean and median do not *exactly* agree. The extent to which the mean and median do **not** agree is a measure of a distribution's departure from *normality*. The less *normal* (*symmetrical*) the distribution comes, the further apart the mean and median will split. Consider an extreme example like the following,
+In this case, the mean and median do not *exactly* agree. The extent to which the mean and median do **not** agree is a measure of a distribution's departure from *normality*. The less *normal* (*symmetrical*) the distribution becomes, the further apart the mean and median will split. Consider an extreme example like the following,
 
 .. plot:: assets/plots/examples/03_ex07_right_skew.py
 
-Most of the distribution is *clustered* to the left of the mean. The presence of the *right hand tail* on this distribution pulls the sample *towards* it. 
+Most of the distribution is *clustered* to the left of the mean. The presence of the *right hand tail* on this distribution pulls the sample mean *towards* it. 
 
 Consider the opposite case, where most of the data is clustered to the right of the mean,
 
 .. plot:: assets/plots/examples/03_ex06_left_skew.py
 
-As in the previous case, the presence of a *tails* acts sink towards which the mean is drawn. 
+As in the previous case, the presence of a *tails* acts like a sink towards which the mean is drawn. 
 
 These results are summarized with the following rule of thumb,
 

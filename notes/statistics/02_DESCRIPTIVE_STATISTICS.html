@@ -1187,8 +1187,8 @@ document.write(`
 </section>
 <section id="median">
 <span id="id24"></span><h3>Median<a class="headerlink" href="#median" title="Permalink to this headline">#</a></h3>
-<p>The <em>median</em> of a dataset is the observation such that half of the sample is above it and half of the sample is above it. As the table in the previous section indicated, another way of saying this is the <em>median</em> is the <em>50</em> <sup>th</sup> percentile.</p>
-<p>First, let’s state a quick shortcut formula for the median that you are probably familiar with, although you may not have seen it stated as precisely.</p>
+<p>The <em>median</em> of a dataset is the observation such that half of the sample is less than or equal to it and half of the sample is greater than or equal to it. In other words, the <em>median</em> is the point in a dataset where half of the sample is above it and half of the sample is below it. As the table in the previous section indicated, another way of saying this is the <em>median</em> is the <em>50</em> <sup>th</sup> percentile.</p>
+<p>In this section, we state a quick shortcut formula for the median that you are probably familiar with, although you may not have seen it stated as precisely.</p>
 <section id="shortcut">
 <h4>Shortcut<a class="headerlink" href="#shortcut" title="Permalink to this headline">#</a></h4>
 <p>Applying the <a class="reference internal" href="#percentile-formula"><span class="std std-ref">General Formula</span></a> to the special case of the median, i.e. <img class="math" src="../../_images/math/a18b3996a403dfc97e7c2db7cda1362e41caab6a.png" alt="p = 0.5"/>, we have <em>order</em> of the median as,</p>
@@ -1201,20 +1201,21 @@ document.write(`
 <p>If <em>n</em> is odd, then <em>n+1</em> is even (<em>divisibly be 2</em>). If <em>n+1</em> is even, then <em>m</em> is an integer. If <em>m</em> is an integer, then <img class="math" src="../../_images/math/1daf16020d9f969df695e027db9f4fa83c9e5433.png" alt="\lfloor m \rfloor = m = \lceil m \rceil"/>,</p>
 <p>The percentile <img class="math" src="../../_images/math/d2de40790989e44dbfe6fd614ad87ad1e3f6b876.png" alt="\pi_{0.50}"/> is given by,</p>
 <div class="math">
-<p><img src="../../_images/math/df872adde9d9a56657b35a263e93bdf795d72ce8.png" alt="\pi_0.50 = x_{(\lfloor m \rfloor)} + (x_{(\lceil m \rceil )} - x_{(\lfloor m \rfloor)}) \cdot (m - \lfloor m \rfloor)"/></p>
+<p><img src="../../_images/math/cba91a807a18445ad633b8d31a6aa231e11b2044.png" alt="\pi_{0.50} = x_{(\lfloor m \rfloor)} + (x_{(\lceil m \rceil )} - x_{(\lfloor m \rfloor)}) \cdot (m - \lfloor m \rfloor)"/></p>
 </div><p>Applying <img class="math" src="../../_images/math/1daf16020d9f969df695e027db9f4fa83c9e5433.png" alt="\lfloor m \rfloor = m = \lceil m \rceil"/>,</p>
 <div class="math">
-<p><img src="../../_images/math/1d86e5d8445d15a3cb7694032eef9833ab2e4655.png" alt="\pi_0.50 = x_{(m)} + (x_{(m)} - x_{(m)}) \cdot (m - m)"/></p>
+<p><img src="../../_images/math/67172a869383a78333fc51733d0c0231873fc394.png" alt="\pi_{0.50} = x_{(m)} + (x_{(m)} - x_{(m)}) \cdot (m - m)"/></p>
 </div><div class="math">
-<p><img src="../../_images/math/1a824b8276e32f0a31a555635f1bbe7bc0d8e362.png" alt="\implies \pi_0.50 = x_{(m)} + 0 = x_{(m)}"/></p>
+<p><img src="../../_images/math/db9ebee566e07da5be1d80a1bd213396d40e54f5.png" alt="\implies \pi_{0.50} = x_{(m)} + 0 = x_{(m)}"/></p>
 </div><p>Since <img class="math" src="../../_images/math/3cec8d46f44738c3c07379b20a6cf84cd8e5fce5.png" alt="m = \frac{n+1}{2}"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/4e4f76c94f61044c98d458591d8ae6670c12d4c7.png" alt="\implies \pi_0.50 = x_{(\frac{n+1}{2})}"/></p>
 </div><p>Recalling the meaning of the term <img class="math" src="../../_images/math/7b079881d836996f50ae7bfed891be959bbea84c.png" alt="x_{(\frac{n+1}{2})}"/>, we see if the number of samples is odd, then <em>median</em> is simply the <img class="math" src="../../_images/math/0df35ae86503d0bafec7ddba90e0ca0c9002db46.png" alt="\frac{n+1}{2}"/> <sup>th</sup> ordered observation.</p>
 <div class="topic">
 <p class="topic-title">Odd Sample: Median Shortcut</p>
-<p>pi_0.50 = x_{(frac{n+1}{2})}</p>
-</div>
+<div class="math">
+<p><img src="../../_images/math/093cf87b5373ce8dd6a1e9ae0092989629fba59f.png" alt="\pi_{0.50} = x_{(\frac{n+1}{2})}"/></p>
+</div></div>
 </section>
 <section id="sample-is-even">
 <h4>Sample is Even<a class="headerlink" href="#sample-is-even" title="Permalink to this headline">#</a></h4>
@@ -1224,18 +1225,24 @@ document.write(`
 </div><p>In other words, any fraction with a denominator of 2 is either a whole number or a decimal that ends in <em>0.5</em>.</p>
 <p>Applying this information to the sample percentile formula,</p>
 <div class="math">
-<p><img src="../../_images/math/d240d27e662cb31c9fa0da21efe451d72532f2df.png" alt="\pi_0.50 = x_{(\lfloor m \rfloor)} + (x_{(\lceil m \rceil )} - x_{(\lfloor m \rfloor)}) \cdot \frac{1}{2}"/></p>
+<p><img src="../../_images/math/6493ae78734ffa8c96c3cb32b6efd1fe78f67a74.png" alt="\pi_{0.50} = x_{(\lfloor m \rfloor)} + (x_{(\lceil m \rceil )} - x_{(\lfloor m \rfloor)}) \cdot \frac{1}{2}"/></p>
 </div><p>Distributing the <img class="math" src="../../_images/math/ba97e16c7f9569bc9ec9fb7e38da7355fb167ea5.png" alt="\frac{1}{2}"/>,</p>
 <div class="math">
-<p><img src="../../_images/math/f87be2da556ef29ed9aba947e297270ce5dd210d.png" alt="\pi_0.50 = x_{(\lfloor m \rfloor)} + \frac{x_{(\lceil m \rceil )}}{2} - \frac{x_{(\lfloor m \rfloor)}}{2}"/></p>
+<p><img src="../../_images/math/ff8f4984134680649d67cd76ce2c63b967a3969b.png" alt="\pi_{0.50} = x_{(\lfloor m \rfloor)} + \frac{x_{(\lceil m \rceil )}}{2} - \frac{x_{(\lfloor m \rfloor)}}{2}"/></p>
 </div><div class="math">
-<p><img src="../../_images/math/b9f582585b355d2093c59ee9c14278b54defcdd3.png" alt="\implies \pi_0.50 = \frac{x_{(\lceil m \rceil )}}{2} + \frac{x_{(\lfloor m \rfloor)}}{2}"/></p>
+<p><img src="../../_images/math/d6f1223ab1902c7c0b3cdde541bc4495f50d3fa3.png" alt="\implies \pi_{0.50} = \frac{x_{(\lceil m \rceil )}}{2} + \frac{x_{(\lfloor m \rfloor)}}{2}"/></p>
 </div><div class="math">
-<p><img src="../../_images/math/38f93864c2c54c4cbb93d0192c92aaa83ecf174c.png" alt="\implies \pi_0.50 = \frac{x_{(\lceil m \rceil )} + x_{(\lfloor m \rfloor)}}{2}"/></p>
+<p><img src="../../_images/math/90d7656338bda4c027f1b88be16fdc02670ac76e.png" alt="\implies \pi_{0.50} = \frac{x_{(\lceil m \rceil )} + x_{(\lfloor m \rfloor)}}{2}"/></p>
 </div><p>Plugging in <img class="math" src="../../_images/math/3cec8d46f44738c3c07379b20a6cf84cd8e5fce5.png" alt="m = \frac{n+1}{2}"/></p>
 <div class="math">
-<p><img src="../../_images/math/464572f946e7a59cbcaa729e248889a2c24cf646.png" alt="\pi_0.50 = \frac{x_{(\lceil \frac{n+1}{2} \rceil )} + x_{(\lfloor \frac{n+1}{2} \rfloor)}}{2}"/></p>
-</div></section>
+<p><img src="../../_images/math/51b1636c39886c2f5fa413462257c0ea57e59eae.png" alt="\pi_{0.50} = \frac{x_{(\lceil \frac{n+1}{2} \rceil )} + x_{(\lfloor \frac{n+1}{2} \rfloor)}}{2}"/></p>
+</div><p>In other words, when the sample is even, the median is the <em>midpoint</em> of the middle two observations,</p>
+<div class="topic">
+<p class="topic-title">Odd Sample: Median Shortcut</p>
+<div class="math">
+<p><img src="../../_images/math/51b1636c39886c2f5fa413462257c0ea57e59eae.png" alt="\pi_{0.50} = \frac{x_{(\lceil \frac{n+1}{2} \rceil )} + x_{(\lfloor \frac{n+1}{2} \rfloor)}}{2}"/></p>
+</div></div>
+</section>
 <section id="skewness">
 <span id="identifying-skewness"></span><h4>Identifying Skewness<a class="headerlink" href="#skewness" title="Permalink to this headline">#</a></h4>
 <p>The median is important for helping identify <em>skewness</em> in data. To see why, consider the following example.</p>
@@ -1251,7 +1258,7 @@ document.write(`
 <figure class="align-default">
 <img alt="../../_images/03_ex03_skewed.png" class="plot-directive" src="../../_images/03_ex03_skewed.png" />
 </figure>
-<p>One of the observations, the person with an annual income of <em>$2,000,000</em>, sits well outside the range of the rest of the observations. This feature of the sample, its <em>skew*</em>, will manifest in the sample statistics as we move through this example.</p>
+<p>One of the observations, the person with an annual income of <em>$2,000,000</em>, sits well outside the range of the rest of the observations. This feature of the sample, its <em>skew</em>, will manifest in the sample statistics as we move through this example.</p>
 <p>The sample mean is calculated using the <a class="reference internal" href="#sample-mean-formula"><span class="std std-ref">formula</span></a>,</p>
 <div class="math">
 <p><img src="../../_images/math/2f4829fa863095b24ab381a111326fe30db034f9.png" alt="\bar{x} = \frac{ \sum{x_i} }{n} = \$  291000"/></p>
@@ -1260,7 +1267,7 @@ document.write(`
 <p><img src="../../_images/math/babceaac7db915358a8a75738ae43f37a0a7887f.png" alt="m = 0.5 \cdot 11 = 5.5"/></p>
 </div><p>Then we order the sample,</p>
 <div class="math">
-<p><img src="../../_images/math/24b3daf49edf0473a7ca4cadb6ab2150f583a6ed.png" alt="S_{(o)} = \{ \$ 30000, \$ 45000, \$ 50000, \$ 55000, \$ 56000, \$ 65000, \$ 70000, \$ 120000, \$ 200000, , \$ 2000000 \}"/></p>
+<p><img src="../../_images/math/f4812ebb4be77ce852890c7c8958cb13494c0cca.png" alt="S_{(o)} = \{ \$ 30000, \$ 45000, \$ 50000, \$ 55000, \$ 56000, \$ 65000, \$ 70000, \$ 120000, \$ 200000, \$ 2000000 \}"/></p>
 </div><p>Finally, we apply the <a class="reference internal" href="#percentile-formula"><span class="std std-ref">general percentile formula</span></a>, with <img class="math" src="../../_images/math/dd8abd56b3c2b2584af89b2b9109149f992dada8.png" alt="x_{(5)} = \$ 56000"/> and <img class="math" src="../../_images/math/5040660abe7f514be1057a743a02e8005fe34950.png" alt="x_{(6)} = \$ 65000"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/81536d58c1dbe24e871ae8e59c865f441cc350ac.png" alt="\pi_{0.50} = x_{(5.5)} = x_{(\lfloor 5.5 \rfloor)} + (x_{(\lceil 5.5 \rceil)} - x_{(\lfloor 5.5 \rfloor)}) \cdot (5.5 - \lfloor 5.5 \rfloor)"/></p>
@@ -1291,18 +1298,18 @@ document.write(`
 <figure class="align-default">
 <img alt="../../_images/03_ex05_normal.png" class="plot-directive" src="../../_images/03_ex05_normal.png" />
 </figure>
-<p>In this case, the mean and median do not <em>exactly</em> agree. The extent to which the mean and median do <strong>not</strong> agree is a measure of a distribution’s departure from <em>normality</em>. The less <em>normal</em> (<em>symmetrical</em>) the distribution comes, the further apart the mean and median will split. Consider an extreme example like the following,</p>
+<p>In this case, the mean and median do not <em>exactly</em> agree. The extent to which the mean and median do <strong>not</strong> agree is a measure of a distribution’s departure from <em>normality</em>. The less <em>normal</em> (<em>symmetrical</em>) the distribution becomes, the further apart the mean and median will split. Consider an extreme example like the following,</p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/92e022d9968592efa282c18c98f8a805/03_ex07_right_skew.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/ba768c351ea572bba0fd195ac781b39b/03_ex07_right_skew.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/2ccbed2bb874e6f1ced16d068b8a1d5c/03_ex07_right_skew.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/59a12232c2e95b9eecc47bc699476a37/03_ex07_right_skew.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/03_ex07_right_skew.png" class="plot-directive" src="../../_images/03_ex07_right_skew.png" />
 </figure>
-<p>Most of the distribution is <em>clustered</em> to the left of the mean. The presence of the <em>right hand tail</em> on this distribution pulls the sample <em>towards</em> it.</p>
+<p>Most of the distribution is <em>clustered</em> to the left of the mean. The presence of the <em>right hand tail</em> on this distribution pulls the sample mean <em>towards</em> it.</p>
 <p>Consider the opposite case, where most of the data is clustered to the right of the mean,</p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/8a0bb6b6494f2a4850728783b0157916/03_ex06_left_skew.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d8474a91b7d06c388f38fcc005fe3e0b/03_ex06_left_skew.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/99815633e881ebd2a036fd5934a1dfa2/03_ex06_left_skew.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/c560666065136edc6e144e48239ce5a5/03_ex06_left_skew.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/03_ex06_left_skew.png" class="plot-directive" src="../../_images/03_ex06_left_skew.png" />
 </figure>
-<p>As in the previous case, the presence of a <em>tails</em> acts sink towards which the mean is drawn.</p>
+<p>As in the previous case, the presence of a <em>tails</em> acts like a sink towards which the mean is drawn.</p>
 <p>These results are summarized with the following rule of thumb,</p>
 <div class="topic">
 <p class="topic-title">Rule of Thumb for Skew</p>
