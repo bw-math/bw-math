@@ -116,7 +116,7 @@ Graphical Representations
 Histogram
 ---------
 
-Recall a histogram is a way of visualizing the frequency distribution of a sample of data,
+Recall a *histogram* is a way of visualizing the frequency distribution of a sample of data,
 
 .. math:: 
 
@@ -138,7 +138,7 @@ The `hist() <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.ht
 
 Notice the first argument of this function is passed in alone, without a name (i.e. without an expression ``x = y``). The first argument of the ``hist()`` function is *always* the sample of data you wish to plot; The ``data`` argument is simply a :ref:`list <python_lists>` of data. 
 
-The rest of the arguments are *named* (i.e. with an expression ``x = y``). The *named* arguments can be passed into the ``hist()`` function is any order. For example, this line will generate the same histogram,
+The rest of the arguments are *named* (i.e. with an expression ``x = y``). The *named* arguments can be passed into the ``hist()`` function in any order. For example, this line will generate the same histogram,
 
 .. code:: python
 
@@ -148,7 +148,7 @@ The only requirement is *data* must be passed in first. The other arguments may 
 
 And there are many arguments you can pass into the ``hist()`` function. You can check out the `hist() documentation on the matplotlib website <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html>`_ for a full list of arguments. The only *required* is the ``data`` argument. 
 
-The ``bin`` argument is the number of *classes*.
+The ``bin`` argument is the number of *classes*. If don't specify this, :ref:`matplotlib` will use its best judgement.
 
 .. important:: 
 
@@ -158,7 +158,7 @@ The other arguments, ``align``, ``color`` and ``ec``, affect the *styling* of th
 
 ``align`` tells :ref:`matplotlib` where to align the histogram bar. Valid values are ``left``, ``mid`` and ``right``. ``left`` aligns the histogram bars to the lower class limit. ``mid`` centers the histogram bars over the midpoint of each class. ``right`` will align the histogram bars with the upper class limit.
 
-``color`` is the color that fills the histogram bars. You can find a list of all the *named* colors on the `color page of the matplotlib documentation <https://matplotlib.org/stable/gallery/color/named_colors.html>`_. Some of them are printed below for quick reference,
+``color`` is the color that fills the histogram bars. We discussed this argument in the :ref:`Project One Bar Chart section<project_one_bar_charts>`. You can also find a list of all the *named* colors on the `color page of the matplotlib documentation <https://matplotlib.org/stable/gallery/color/named_colors.html>`_. Some of them are printed below for quick reference,
 
 - maroon
 - salmon
@@ -173,7 +173,62 @@ As you can see, there are lots of options to make your graph nice and pretty.
 Boxplots
 --------
 
-TODO 
+Recall a *boxplot* is a way of visualizing the *spread* of a distribution. In order to create one, a boxplot requires the :ref:`five_number_summary` of the distribution. The five sample statistics that are required are as follows,
+
+1. :ref:`maximum`
+2. :ref:`first quartile <special_percentiles>`
+3. :ref:`median`
+4. :ref:`third quartile <special_percentiles>` 
+5. :ref:`minimum`
+
+#2-#4 represent the *box* of the boxplot. #1 and #5 represent the *whiskers* of the boxplot. 
+
+For example, suppose we had a sample of *ordered* data,
+
+.. math::
+
+    S = \{ 1, 9, 10, 11, 20, 29, 30, 31, 39 \}
+
+The minimum and maximum are simply the first and last observation in a sample of *ordered* observations.
+
+The median is found by looking at the midpoint of the *ordered* sample, i.e. the observation where half of the sample is less than or equal to the value of the observation and half of the sample is greater than or equal to the value of the observation. 
+
+Similarly, the first and third quartile can be found by separating the sample into the lower half and upper half, where the median is included in both groupings,
+
+.. math::
+
+    S_{\text{lower half}} = \{ 1, 9, 10, 11, 20 \}
+
+.. math::
+
+    S_{\text{upper half}} = \{ 20, 29, 30, 31, 39 \}
+
+To find the first quartile (the *25* :sup:`th` percentile), we find the median of the lower half of the sample. In this case, it would be ``10``.
+
+To find the second quartile (the *75* :sup:`th` percentile), we find the median of the upper half of the sample. In this case it would be ``30``.
+
+If we were doing this by hand, we would find all of these numbers and draw the boxplot in the plane. However, we are using :ref:`matplotlib <python_plotting>` to create statistical graphs. 
+
+A boxplot for the example we were just discussing can be created in **Python** with the following snippet of code,
+
+.. code:: python
+
+    import matplotlib.pyplot as plot
+
+    data = [ 1, 9, 10, 11, 20, 29, 30, 31, 39 ]
+
+    # Create figure and axes to graph on
+    (fig, axes) = plot.subplots()
+
+    axes.boxplot(data, vert=False)
+
+    plot.title("Box Plot of Random Sample")
+    axes.set_xlabel("Random Numbers")
+    axes.set_ylabel("Sample")
+
+    plot.show()
+
+.. plot:: assets/plots/boxplots/boxplot_simple.py
 
 .. _project_two_project:
 

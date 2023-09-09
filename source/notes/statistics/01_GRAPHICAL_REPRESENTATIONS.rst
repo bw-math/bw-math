@@ -1022,24 +1022,26 @@ Where as the *blue* group is broken down into a distribution of *ducks* and *bal
 
 	P( \text{Ball} \mid \text{Blue}) = \frac{n( \text{Ball and Blue} ) }{n( \text{Blue})}
 	
-
+.. _boxplots: 
 
 Boxplots
 ========
 
 While :ref:`histograms` and :ref:`ogives` provide a wealth of information about the sample distribution, they do not give us the whole picture. A *boxplot* can help fill in the blind spots, providing deeper insight in the nature of the distribution you are analyzing.
 
+.. _boxplot_construction:
+
 Construction
 ------------
 
 Every *boxplot* requires five numbers. It may surprise you to find out (but probably not) these numbers are referred to as a *Five Number Summary*.
 
-.. important::
-
-    Statisticians are bad at naming things.
+.. _five_number_summary:
 
 Five Number Summary
 *******************
+
+To construct a boxplot, you must find the following:
 
 1. Find the maximum observation.
 2. Find the 75 :sup:`th` percentile (*third quartile*)
@@ -1047,12 +1049,11 @@ Five Number Summary
 4. Find the 25 :sup:`th` percentile (*first quartile*)
 5. Find the minimum observation.
 
-
 .. note::
 
     These terms (minimum, percentile and maximum) are defined in the :ref:`point_estimation` section.
     
-The middle three numbers, i.e. the third quartile, the median and the first quartile, from the *box* of the *boxplot*. The numbers on the ends, i.e. the maximum and minimum, are sometimes known as the *whiskers*. 
+The middle three numbers, i.e. the third quartile, the median and the first quartile, form the *box* of the *boxplot*. The numbers on the ends, i.e. the maximum and minimum, are sometimes known as the *whiskers*. 
 
 By definition, the *box* of the *boxplot* will show you where 50% of the distribution is centered. In other words, between the third quartile and the first quartile, you will find 50% of all observations in a sample.
  
