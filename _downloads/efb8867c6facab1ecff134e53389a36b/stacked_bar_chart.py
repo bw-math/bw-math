@@ -73,7 +73,7 @@ print(data)
 # this is a trick to count the elements in a list of data when you only want to count
 # elements that satisfy a certain condition. For instance, to find `blue_balls`, we 
 # only want to sum the outcomes that include a shape of 'ball' and a color of 'blue'
-# NOTE: we access the x-value of the (shape, color) tuple the same way we
+# NOTE: we access the x-value of the (shape, color) ordered pair the same way we
 #	access an element of a list, with the index.
 blue_balls = sum(1 for obs in data if obs[0] == "BALL" and obs[1] == "BLUE")
 red_balls = sum(1 for obs in data if obs[0] == "BALL" and obs[1] == "RED")

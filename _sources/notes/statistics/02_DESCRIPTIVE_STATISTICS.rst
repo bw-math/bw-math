@@ -711,6 +711,8 @@ Which corresponds to the fifth order statistic, or in this case, ``3.0`` minutes
 
     \pi_p = x_(5) = 3.0 \text{min}
 
+.. _percentile_interpolation:
+
 Interpolation
 *************
 

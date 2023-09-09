@@ -555,7 +555,7 @@ document.write(`
 <span id="project-two-graphs"></span><h2>Graphical Representations<a class="headerlink" href="#graphical-representations" title="Permalink to this headline">#</a></h2>
 <section id="histogram">
 <h3>Histogram<a class="headerlink" href="#histogram" title="Permalink to this headline">#</a></h3>
-<p>Recall a histogram is a way of visualizing the frequency distribution of a sample of data,</p>
+<p>Recall a <em>histogram</em> is a way of visualizing the frequency distribution of a sample of data,</p>
 <div class="math">
 <p><img src="../../_images/math/3c9c63d90e9a43708ff82b8f82232e4a4509a0cc.png" alt="f(x_i) = \frac{n(x_i)}{n}"/></p>
 </div><p>The following plot is a histogram generated with <a class="reference internal" href="../../references/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a> using <em>6</em> classes. Click on the <code class="docutils literal notranslate"><span class="pre">source</span></code> button in the top left corner to download the script. Read through the comments to see how it was constructed.</p>
@@ -570,20 +570,20 @@ document.write(`
 </div>
 <p>The <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html">hist()</a> function is <a class="reference internal" href="../../references/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a>’s <em>histogram</em> graphing function.</p>
 <p>Notice the first argument of this function is passed in alone, without a name (i.e. without an expression <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">y</span></code>). The first argument of the <code class="docutils literal notranslate"><span class="pre">hist()</span></code> function is <em>always</em> the sample of data you wish to plot; The <code class="docutils literal notranslate"><span class="pre">data</span></code> argument is simply a <a class="reference internal" href="../../references/python/02_BASIC.html#python-lists"><span class="std std-ref">list</span></a> of data.</p>
-<p>The rest of the arguments are <em>named</em> (i.e. with an expression <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">y</span></code>). The <em>named</em> arguments can be passed into the <code class="docutils literal notranslate"><span class="pre">hist()</span></code> function is any order. For example, this line will generate the same histogram,</p>
+<p>The rest of the arguments are <em>named</em> (i.e. with an expression <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">y</span></code>). The <em>named</em> arguments can be passed into the <code class="docutils literal notranslate"><span class="pre">hist()</span></code> function in any order. For example, this line will generate the same histogram,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">axs</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;lightblue&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The only requirement is <em>data</em> must be passed in first. The other arguments may be passed in as you please.</p>
 <p>And there are many arguments you can pass into the <code class="docutils literal notranslate"><span class="pre">hist()</span></code> function. You can check out the <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html">hist() documentation on the matplotlib website</a> for a full list of arguments. The only <em>required</em> is the <code class="docutils literal notranslate"><span class="pre">data</span></code> argument.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">bin</span></code> argument is the number of <em>classes</em>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">bin</span></code> argument is the number of <em>classes</em>. If don’t specify this, <a class="reference internal" href="../../references/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a> will use its best judgement.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><em>bins</em> is a term you will frequently see when using computer programs that generate histograms. <em>bins</em> are <em>classes</em>.</p>
 </div>
 <p>The other arguments, <code class="docutils literal notranslate"><span class="pre">align</span></code>, <code class="docutils literal notranslate"><span class="pre">color</span></code> and <code class="docutils literal notranslate"><span class="pre">ec</span></code>, affect the <em>styling</em> of the graph.</p>
 <p><code class="docutils literal notranslate"><span class="pre">align</span></code> tells <a class="reference internal" href="../../references/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a> where to align the histogram bar. Valid values are <code class="docutils literal notranslate"><span class="pre">left</span></code>, <code class="docutils literal notranslate"><span class="pre">mid</span></code> and <code class="docutils literal notranslate"><span class="pre">right</span></code>. <code class="docutils literal notranslate"><span class="pre">left</span></code> aligns the histogram bars to the lower class limit. <code class="docutils literal notranslate"><span class="pre">mid</span></code> centers the histogram bars over the midpoint of each class. <code class="docutils literal notranslate"><span class="pre">right</span></code> will align the histogram bars with the upper class limit.</p>
-<p><code class="docutils literal notranslate"><span class="pre">color</span></code> is the color that fills the histogram bars. You can find a list of all the <em>named</em> colors on the <a class="reference external" href="https://matplotlib.org/stable/gallery/color/named_colors.html">color page of the matplotlib documentation</a>. Some of them are printed below for quick reference,</p>
+<p><code class="docutils literal notranslate"><span class="pre">color</span></code> is the color that fills the histogram bars. We discussed this argument in the <a class="reference internal" href="01_GRAPHING_I.html#project-one-bar-charts"><span class="std std-ref">Project One Bar Chart section</span></a>. You can also find a list of all the <em>named</em> colors on the <a class="reference external" href="https://matplotlib.org/stable/gallery/color/named_colors.html">color page of the matplotlib documentation</a>. Some of them are printed below for quick reference,</p>
 <ul class="simple">
 <li><p>maroon</p></li>
 <li><p>salmon</p></li>
@@ -597,7 +597,49 @@ document.write(`
 </section>
 <section id="boxplots">
 <h3>Boxplots<a class="headerlink" href="#boxplots" title="Permalink to this headline">#</a></h3>
-<p>TODO</p>
+<p>Recall a <em>boxplot</em> is a way of visualizing the <em>spread</em> of a distribution. In order to create one, a boxplot requires the <a class="reference internal" href="../../notes/statistics/01_GRAPHICAL_REPRESENTATIONS.html#five-number-summary"><span class="std std-ref">Five Number Summary</span></a> of the distribution. The five sample statistics that are required are as follows,</p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="../../notes/statistics/02_DESCRIPTIVE_STATISTICS.html#maximum"><span class="std std-ref">Maximum</span></a></p></li>
+<li><p><a class="reference internal" href="../../notes/statistics/02_DESCRIPTIVE_STATISTICS.html#special-percentiles"><span class="std std-ref">first quartile</span></a></p></li>
+<li><p><a class="reference internal" href="../../notes/statistics/02_DESCRIPTIVE_STATISTICS.html#median"><span class="std std-ref">Median</span></a></p></li>
+<li><p><a class="reference internal" href="../../notes/statistics/02_DESCRIPTIVE_STATISTICS.html#special-percentiles"><span class="std std-ref">third quartile</span></a></p></li>
+<li><p><a class="reference internal" href="../../notes/statistics/02_DESCRIPTIVE_STATISTICS.html#minimum"><span class="std std-ref">Minimum</span></a></p></li>
+</ol>
+<p>#2-#4 represent the <em>box</em> of the boxplot. #1 and #5 represent the <em>whiskers</em> of the boxplot.</p>
+<p>For example, suppose we had a sample of <em>ordered</em> data,</p>
+<div class="math">
+<p><img src="../../_images/math/df51bff5ca81c41a34e1b9403896fee71694a5b5.png" alt="S = \{ 1, 9, 10, 11, 20, 29, 30, 31, 39 \}"/></p>
+</div><p>The minimum and maximum are simply the first and last observation in a sample of <em>ordered</em> observations.</p>
+<p>The median is found by looking at the midpoint of the <em>ordered</em> sample, i.e. the observation where half of the sample is less than or equal to the value of the observation and half of the sample is greater than or equal to the value of the observation.</p>
+<p>Similarly, the first and third quartile can be found by separating the sample into the lower half and upper half, where the median is included in both groupings,</p>
+<div class="math">
+<p><img src="../../_images/math/30c3257552a1df5fbb80a16e39c58e450d474475.png" alt="S_{\text{lower half}} = \{ 1, 9, 10, 11, 20 \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/20b77b6776fa2d46d68aac0683d959c735362b97.png" alt="S_{\text{upper half}} = \{ 20, 29, 30, 31, 39 \}"/></p>
+</div><p>To find the first quartile (the <em>25</em> <sup>th</sup> percentile), we find the median of the lower half of the sample. In this case, it would be <code class="docutils literal notranslate"><span class="pre">10</span></code>.</p>
+<p>To find the second quartile (the <em>75</em> <sup>th</sup> percentile), we find the median of the upper half of the sample. In this case it would be <code class="docutils literal notranslate"><span class="pre">30</span></code>.</p>
+<p>If we were doing this by hand, we would find all of these numbers and draw the boxplot in the plane. However, we are using <a class="reference internal" href="../../references/python/05_PLOTS.html#python-plotting"><span class="std std-ref">matplotlib</span></a> to create statistical graphs.</p>
+<p>A boxplot for the example we were just discussing can be created in <strong>Python</strong> with the following snippet of code,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">39</span> <span class="p">]</span>
+
+<span class="c1"># Create figure and axes to graph on</span>
+<span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span><span class="p">)</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">axes</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">vert</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">plot</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Box Plot of Random Sample&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Random Numbers&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">)</span>
+
+<span class="n">plot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>(<a class="reference download internal" download="" href="../../_downloads/8ec9060632e3255d4d12a4532008d378/boxplot_simple.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/44542c1c75134e0353ab48e79a44cc3a/boxplot_simple.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/541674ce05e3fb9ebd31129df8aeb0f9/boxplot_simple.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/377bbb14785eaad7f061310f8bab1c95/boxplot_simple.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/boxplot_simple.png" class="plot-directive" src="../../_images/boxplot_simple.png" />
+</figure>
 </section>
 </section>
 <section id="project">
