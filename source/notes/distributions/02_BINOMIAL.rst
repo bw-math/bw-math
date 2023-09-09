@@ -4,8 +4,10 @@
 Binomial Distribution
 =====================
 
-Definition
------------
+.. _binomial_random_variable:
+
+Binomial Random Variable
+========================
 
 Recall a :ref:`bernoulli_random_variable` is defined over a sample space of binary outcomes, a success ``s`` that occurs with probability :math:`p` of success and a failure ``f`` that occurs with probability :math:`1-p`,
 
