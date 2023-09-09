@@ -439,7 +439,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method-of-observation">Method of Observation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method-of-selection">Method of Selection</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
@@ -471,13 +471,13 @@ document.write(`
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
 <li><p>Download the <em>csv</em> dataset in the <a class="reference internal" href="#project-four-dataset"><span class="std std-ref">Dataset</span></a> section and place it in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your folder system where you save your <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts.</p></li>
-<li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_four.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">LASTNAME</span></code> and <code class="docutils literal notranslate"><span class="pre">FIRSTNAME</span></code> with your last and first name, respectively.</p></li>
+<li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">TNAME_project_four.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">TNAME</span></code> with your name.</p></li>
 <li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-four-background"><span class="std std-ref">Background</span></a> section.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-four-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
 <li><p>Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file using the technique outlined in the <a class="reference internal" href="03_ESTIMATION_I.html#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
 <li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-four-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the instructions of each problem.</p></li>
-<li><p>When you are done,zip your script <strong>and</strong> the <em>csv</em> file in a zip file named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_four.zip</span></code></p></li>
+<li><p>When you are done,zip your script <strong>and</strong> the <em>csv</em> file in a zip file named <code class="docutils literal notranslate"><span class="pre">NAME_project_four.zip</span></code></p></li>
 <li><p>Upload the zip file to the Google Classroom Project Four Assignment.</p></li>
 </ol>
 </section>
@@ -487,18 +487,13 @@ document.write(`
 </section>
 <section id="background">
 <span id="project-four-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
-<p>In the years 1969, 1970, 1971 and 1972, the Selective Service System in the United States held a draft lottery by order of President Lyndon B. Johnson for men born between the dates of January 1, 1944 and December 31, 1950 <a class="footnote-reference brackets" href="#id2" id="id1">*</a>.</p>
-<dl class="footnote brackets">
-<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">*</a></span></dt>
-<dd><p>Vietnam War Draft Lottery
-<a class="reference external" href="https://en.wikipedia.org/wiki/Draft_lottery_(1969)">source</a></p>
-</dd>
-</dl>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Draft_lottery_(1969)">In the years 1969, 1970, 1971 and 1972, the Selective Service System in the United States held a draft lottery by order of President Lyndon B. Johnson for men born between the dates of January 1, 1944 and December 31, 1950 &lt;source</a>.</p>
 <p>Individuals born between these dates were to be selected at random and drafted into military service to fight in the Vietnam War.</p>
-<section id="method-of-observation">
-<h3>Method of Observation<a class="headerlink" href="#method-of-observation" title="Permalink to this headline">#</a></h3>
-<p>The method used to select individuals for service is highly controversial. Many argued it was not truly random and unfairly selected certain groups of individuals over others.</p>
-<p>365 days of the year were printed on sheets of paper and placed in a shoebox.</p>
+<section id="method-of-selection">
+<h3>Method of Selection<a class="headerlink" href="#method-of-selection" title="Permalink to this headline">#</a></h3>
+<p>The method used to select individuals for service is highly controversial. Many argued it was not truly random and unfairly selected certain groups of individuals over others. In this project we are going to investigate these claims and see if there is any statistical evidence to suggest they are true.</p>
+<p>To do this, we will need to understand how draftees were selected.</p>
+<p>In attempt to randomize the selection, the Selective Service System held a draft lottery. 365 days of the year were printed on sheets of paper and placed in a shoebox,</p>
 <blockquote>
 <div><p>{ January 1, January 2, … , Feburary 1, February 2, … , December 30, December 31 }</p>
 </div></blockquote>
@@ -508,7 +503,7 @@ document.write(`
 <section id="project">
 <span id="project-four-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
 <ol class="arabic">
-<li><p>Discuss the following questions</p>
+<li><p>Discuss the following questions. Save your answer in the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a></p>
 <blockquote>
 <div><ol class="loweralpha simple">
 <li><p>Is the selection method used for the draft random? Why or why not?</p></li>
@@ -518,7 +513,7 @@ document.write(`
 </ol>
 </div></blockquote>
 </li>
-<li><p>During the first year of the draft, 1969, months were put into the shoebox in ascending order. In other words, the birth dates in the month of December were first put in the bottom of the shoebox, then birth dates in November were placed on top of the December birth dates, then October birth dates were placed on top of the November birth dates, and so on up to January. The slips of paper were not mixed any further before the draft was selected.</p>
+<li><p>During the first year of the draft, 1969, birthdates were put into the shoebox in ascending order of month. In other words, the birth dates in the month of December were first put in the bottom of the shoebox, then birth dates in November were placed on top of the December birth dates, then October birth dates were placed on top of the November birth dates, and so on up to January. The slips of paper were not mixed any further before the draft was selected. Using this new information, answer the following questions. Save your answer in the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a></p>
 <blockquote>
 <div><ol class="loweralpha simple">
 <li><p>How does this information affect your answer to <em>#1a</em>?</p></li>
@@ -527,10 +522,13 @@ document.write(`
 </ol>
 </div></blockquote>
 </li>
-<li><p>Using the birth month of the drafted individual as the bins, construct histograms for the years 1969, 1970, 1971, 1972.</p></li>
+</ol>
+<p>This selection method was later revised in 1970, 1971 and 1972, once the distribution of data was examined in more detail.</p>
+<ol class="arabic simple" start="3">
+<li><p>Using the birth month of the drafted individual as the bins, construct histograms for the years 1969, 1970, 1971 and 1972.</p></li>
 </ol>
 <ol class="arabic simple" start="3">
-<li><p>Based on the histograms constructed, describe the shape of the distribution for each year’s draft lottery.</p>
+<li><p>Based on the histograms constructed, describe the shape of the distribution for each year’s draft lottery. Save your answer in the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a></p>
 <ol class="loweralpha simple">
 <li><p>Are the graphs skewed, uniform, normal or bimodal?</p></li>
 <li><p>What is the mode of the birth month for each year?</p></li>
@@ -544,8 +542,8 @@ document.write(`
 <span id="project-four-dataset"></span><h2>Dataset<a class="headerlink" href="#dataset" title="Permalink to this headline">#</a></h2>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/257993626c7a7bafe318b70290252148/vietnam_draft_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
-<table class="table" id="id3">
-<caption><span class="caption-text">Vietnam Draft Lottery Data</span><a class="headerlink" href="#id3" title="Permalink to this table">#</a></caption>
+<table class="table" id="id1">
+<caption><span class="caption-text">Vietnam Draft Lottery Data</span><a class="headerlink" href="#id1" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 17%" />
 <col style="width: 17%" />
@@ -781,7 +779,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method-of-observation">Method of Observation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method-of-selection">Method of Selection</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
