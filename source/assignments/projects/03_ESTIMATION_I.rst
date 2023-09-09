@@ -8,7 +8,7 @@ Estimation I: One Variable Statistics
     
     - William James, 1907
 
-In this lab, you will use **Python** to calculate sample statistics and graphical representations for a dataset that represents the length of each Roman Emperor's reign. You will use these statistics and graphs to draw conclusions about the distribution of Roman Emperor reigns.
+In this lab, we will use **Python** to calculate sample statistics and graphical representations for a dataset that represents the length of each Roman Emperor's reign. we will use these statistics and graphs to draw conclusions about the distribution of Roman Emperor reigns.
 
 .. _project_three_instructions:
 
@@ -16,21 +16,54 @@ Instructions
 ============
 
 1. Download the ``.csv`` dataset :ref:`below <project_three_dataset>` and place it in the ``Linux Files`` folder where you saved your *.py* scripts.
-2. In the same folder, create a Python ``.py`` script named ``GROUPNAME_project_three.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``GROUPNAME`` with your last and first name, respectively.
+2. In the same folder, create a Python ``.py`` script named ``NAME_project_three.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``NAME`` with your  name.
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the :ref:`project_three_background` section.
 5. Read the :ref:`project_three_loading_data` section.
+6. Read the :ref:`project_three_functions` section.
 6. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
 7. Perform all exercises and answer all questions in the :ref:`project_three_project` section. Label your script with comments as indicated in the instructions of each problem.
-8. When you are done, zip your script **and** the *csv* file in a zip file named ``GROUPNAME_project_three.zip``
-9. Have *one* member of the group pload the zip file to the Google Classroom Project Three Assignment.
+8. When you are done, zip your script **and** the *csv* file in a zip file named ``NAME_project_three.zip``
+9. Upload the zip file to the Google Classroom Project Three Assignment.
    
 .. _project_three_background: 
 
 Background
 ==========
 
-TODO 
+In 27 BC, Julius Caesar's nephew, Octavian Caesar, was given the title *Augustus* by the Roman Senate. With this event, the city state of Rome had ceased to be `republic <https://en.wikipedia.org/wiki/Republic>`_. Augustus Caesar had become the first emperor of the `Roman Empire <https://en.wikipedia.org/wiki/Roman_Empire>`_. 
+
+The Roman Empire would last for several centuries, absorbing large parts of what is now Europe, Africa and Asia into its boundaries. 
+
+.. image:: ../../assets/imgs/context/roman_empire_evoluation.gif
+    :align: center
+
+.. topic:: Evolution of the Roman Empire
+
+    Rome from the citystate by the Tiber to the fall of the Western Roman Empire
+
+    `Source: Roman Empire <https://en.wikipedia.org/wiki/File:Romempgif.gif>`_
+
+Many people would go on to claim the title of *Roman Emperor* after Augustus Caesar died.
+
+Some of them, such as `Hadrian <https://en.wikipedia.org/wiki/Hadrian>` and `Marcus Aurelius <https://en.wikipedia.org/wiki/Marcus_Aurelius>`_ had long and peaceful reigns. Others, such as `Marcus Otho <https://en.wikipedia.org/wiki/Otho>`_ and `Didius Julianus <https://en.wikipedia.org/wiki/Didius_Julianus>`, only ruled for several months and their reigns were fraught with political upheaval and violence.
+
+In this project, we are going to look at a dataset that represents the *length* of each Roman Emperor's reign. We will look at the distribution shape and various descriptive statistics of this dataset in order to draw conclusions and tell a story about the leadership of the Roman Empire using empirical evidence.
+
+.. _project_three_functions:
+
+Functions
+=========
+
+.. note::
+
+    We will do this part in class together.
+
+.. important::
+
+    Refer to :ref:`python_creating_functions` section for a more information on creating your own function in Python.
+
+TODO
 
 .. _project_three_loading_data:
 
@@ -103,21 +136,23 @@ Save the cleaned data in a new list. Label the list with a comment.
 
     e. The sample standard deviation of a Roman Emperor's reign length. 
 
-4. Compare the answers to *#2a* and *#2b*. What do these two answers tell you about the skew of this distribution? Interpret the skew in terms of Roman Emperors and the length of their reign, i.e. what does the skew tell you about Roman Emperor's and the length of their reigns?
+4. Compare the answers to *#2a* and *#2b*. What do these two answers tell you about the skew of this distribution? Interpret the skew in terms of Roman Emperors and the length of their reign, i.e. what does the skew tell you about Roman Emperor's and the length of their reigns? Save your answer in the :ref:`docstring <python_docstring>`.
 
-5. Construct a relative frequency histogram and a cumulative relative frequency using 10 classes for this sample of data. Label the code for creating the plots with a comment. What type of distribution shape does this dataset have? Does this agree with your answer to *#4*? Explain.
+5. Construct a relative frequency histogram and a cumulative relative frequency using 10 classes for this sample of data. Label the code for creating the plots with a comment. What type of distribution shape does this dataset have? Does this agree with your answer to *#4*? Explain. Save your answer in the :ref:`docstring <python_docstring>`.
 
-6. Construct a boxplot for this sample of data. Label the code for creating the plot with a comment. Based on the boxplot, are there any potential outliers in this dataset? Are the outliers Emperors who had long rules or short rules? 
+6. Construct a boxplot for this sample of data. Label the code for creating the plot with a comment. Based on the boxplot, are there any potential outliers in this dataset? Are the outliers Emperors who had long rules or short rules? Save your answer in the :ref:`docstring <python_docstring>`.
 
-6. Find the coefficient of variation for this dataset. What does this statistic tell you about the distribution? Interpret the coefficient of variation in terms of Roman Emperors  and the length of their reign. 
+6. Find the coefficient of variation for this dataset. What does this statistic tell you about the distribution? Interpret the coefficient of variation in terms of Roman Emperors  and the length of their reign. Save your answer in the :ref:`docstring <python_docstring>`.
 
-7. Summarize the conclusions you can draw about Roman Emperors and the length of their reign. Answer the following questions in your summary.
+7. Summarize the conclusions you can draw about Roman Emperors and the length of their reign in your :ref:`docstring <python_docstring>`. Answer the following questions in your summary.
 
     a. What percentage of Roman Emperors had reigns longer than 30 years?
 
     b. What percentage of Roman Emperors had reigns shorter than 1 year?
 
     c. Interpret the results of *#a* and *#b*. What does this tell you about the distribution of Roman Emperors?
+
+8. Based on the graphs and descriptive statistics calculated in the previous problems, write a few sentences in the :ref:`docstring <python_docstring>` describing what the distribution of Roman Emperor reigns tells us about the Roman state. 
 
 .. _project_three_dataset:
 

@@ -228,7 +228,11 @@ A boxplot for the example we were just discussing can be created in **Python** w
 
     plot.show()
 
-.. plot:: assets/plots/boxplots/boxplot_simple.py
+.. plot:: assets/plots/boxplohttps://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.htmlts/boxplot_simple.py
+
+The `boxplot() <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html>` is, as you might have guessed, :ref:`matplotlib`'s way of generating boxplots. The first argument is the dataset we will wish to graph. The second argument is a *named* argument ``vert``. This controls the *direction* of the boxplot, i.e vertical versus horizontal.
+
+We have passed in a value of ``False``, meaning we want a *horizontal* boxplot. We always want our boxplots to align with our histograms; that is to say, we want the x-axis of both the histogram and the boxplot to represent the same values.
 
 .. _project_two_project:
 
@@ -261,7 +265,7 @@ Velocity of Light
     d. Estimate the range of this data set.
 
     e. Based on the boxplot, do you detect any possible outliers?  
-
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html
 4. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your docstring.
 
     a. What is the sample mean of the dataset?
@@ -334,4 +338,5 @@ References
 ==========
 
 - `matplotlib colors <https://matplotlib.org/stable/gallery/color/named_colors.html>`_
+- `matplotlib boxplot function <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html>`_
 - `matplotlib histogram function <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html>`_
