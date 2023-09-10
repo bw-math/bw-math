@@ -604,7 +604,7 @@ We find the weight of each sub-sample by finding the proportion of the entire sa
 	
 .. math::
 
-	S_2 = \frac{3}{10] = 0.30
+	S_2 = \frac{3}{10} = 0.30
 	
 .. math::
 

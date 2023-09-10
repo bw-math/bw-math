@@ -66,6 +66,8 @@ Cultural
     - :download:`Celebrity Twitter CSV <./assets/datasets/celebrity_twitter_data.csv>`
 - `Kentucky Derby Winning Times <https://www.kaggle.com/datasets/danbraswell/kentucky-derby-winners-18752022?resource=download>`_
     - :download:`Kentucky Derby Winning Times CSV <./assets/datasets/kentucky_derby_winners_data.csv>`
+- `Mega Millions Winning Numbers in New York since 2002 <https://catalog.data.gov/dataset/lottery-mega-millions-winning-numbers-beginning-2002>`_
+	- :download:`Mega Millions CSV <./assets/datasets/mega_millions_data.csv>`
 - `Pigeon Racing Times <https://github.com/joanby/python-ml-course/blob/master/datasets/pigeon-race/pigeon-racing.csv>`_
     - :download:`Pigeon Racing Times CSV <./assets/datasets/pigeon_racing_times_data.csv>`
 - `Marvel Movies <https://www.kaggle.com/datasets/joebeachcapital/marvel-movies>`_
