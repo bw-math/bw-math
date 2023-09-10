@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Graphing IV: Correlation &#8212; bishop-walsh-ap-stats  documentation</title>
+    <title>Residual Analysis &#8212; bishop-walsh-ap-stats  documentation</title>
   
   
   
@@ -247,7 +247,7 @@
 <li class="toctree-l3"><a class="reference internal" href="05_OUTLIERS.html">Outliers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="06_GRAPHING_III.html">Graphing III: Scatter Plots</a></li>
 <li class="toctree-l3"><a class="reference internal" href="07_ESTIMATION_II.html">Estimation II: Correlation</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Graphing IV: Correlation</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Residual Analysis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="09_SAMPLING.html">Sampling</a></li>
 <li class="toctree-l3"><a class="reference internal" href="10_SETS.html">Sample Spaces</a></li>
 <li class="toctree-l3"><a class="reference internal" href="11_SIMULATION.html">Simulation</a></li>
@@ -429,7 +429,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Graphing IV: Correlation</h1>
+    <h1>Residual Analysis</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -441,9 +441,17 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#old-faithful">Old Faithful</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kentucky-derby">Kentucky Derby</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Old Faithful</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kentucky-derby-winning-times">Kentucky Derby Winning Times</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -455,8 +463,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="graphing-iv-correlation">
-<span id="project-eight"></span><h1>Graphing IV: Correlation<a class="headerlink" href="#graphing-iv-correlation" title="Permalink to this headline">#</a></h1>
+  <section id="residual-analysis">
+<span id="project-eight"></span><h1>Residual Analysis<a class="headerlink" href="#residual-analysis" title="Permalink to this headline">#</a></h1>
 <p>TODO</p>
 <section id="instructions">
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
@@ -474,19 +482,177 @@ document.write(`
 </section>
 <section id="loading-in-data">
 <span id="project-eight-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
-<p>TODO</p>
+<p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="02_GRAPHING_II.html#project-two-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="c1"># read in data</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
+    <span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csv_file</span><span class="p">)</span>
+    <span class="n">raw_data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv_reader</span> <span class="p">]</span>
+
+<span class="c1"># separate headers from data</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+
+<span class="c1"># grab first column from csv file and ensure it&#39;s a number (not a string)</span>
+<span class="n">column_1</span> <span class="o">=</span> <span class="p">[</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">columns</span> <span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">column_1</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 <section id="background">
 <span id="project-eight-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
 <p>TODO</p>
+<section id="old-faithful">
+<h3>Old Faithful<a class="headerlink" href="#old-faithful" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="kentucky-derby">
+<h3>Kentucky Derby<a class="headerlink" href="#kentucky-derby" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
+</section>
 </section>
 <section id="project">
 <span id="project-eight-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
 <p>TODO</p>
+<p>RESIDUAL ANALYSIS!</p>
 </section>
 <section id="data-set">
 <span id="project-eight-dataset"></span><h2>Data Set<a class="headerlink" href="#data-set" title="Permalink to this headline">#</a></h2>
+<section id="id1">
+<h3>Old Faithful<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/1b98a8ccfb60a79a975a96e2eca8a57a/old_faithful_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
+<p>The following table is the a preview of the data you will be using for this project.</p>
+<table class="table" id="id2">
+<caption><span class="caption-text">Old Faithful Eruption and Waiting Times</span><a class="headerlink" href="#id2" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>eruptions</p></td>
+<td><p>waiting</p></td>
+</tr>
+<tr class="row-even"><td><p>3.6</p></td>
+<td><p>79</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.8</p></td>
+<td><p>54</p></td>
+</tr>
+<tr class="row-even"><td><p>3.333</p></td>
+<td><p>74</p></td>
+</tr>
+<tr class="row-odd"><td><p>2.283</p></td>
+<td><p>62</p></td>
+</tr>
+<tr class="row-even"><td><p>4.533</p></td>
+<td><p>85</p></td>
+</tr>
+<tr class="row-odd"><td><p>2.883</p></td>
+<td><p>55</p></td>
+</tr>
+<tr class="row-even"><td><p>4.7</p></td>
+<td><p>88</p></td>
+</tr>
+<tr class="row-odd"><td><p>3.6</p></td>
+<td><p>85</p></td>
+</tr>
+<tr class="row-even"><td><p>1.95</p></td>
+<td><p>51</p></td>
+</tr>
+<tr class="row-odd"><td><p>4.35</p></td>
+<td><p>85</p></td>
+</tr>
+<tr class="row-even"><td><p>1.833</p></td>
+<td><p>54</p></td>
+</tr>
+<tr class="row-odd"><td><p>3.917</p></td>
+<td><p>84</p></td>
+</tr>
+<tr class="row-even"><td><p>4.2</p></td>
+<td><p>78</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.75</p></td>
+<td><p>47</p></td>
+</tr>
+<tr class="row-even"><td><p>4.7</p></td>
+<td><p>83</p></td>
+</tr>
+<tr class="row-odd"><td><p>2.167</p></td>
+<td><p>52</p></td>
+</tr>
+</tbody>
+</table>
+<p>The first column represents the length of the eruption in minutes. The second column represents the waiting time until the next eruption.</p>
+</section>
+<section id="kentucky-derby-winning-times">
+<h3>Kentucky Derby Winning Times<a class="headerlink" href="#kentucky-derby-winning-times" title="Permalink to this headline">#</a></h3>
+<p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/db586a5f5383bb63ca026b8707274590/kentucky_derby_winners_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
+<p>The following table is the a preview of the data you will be using for this project.</p>
+<table class="table" id="id3">
+<caption><span class="caption-text">Kentucky Derby Winning Times</span><a class="headerlink" href="#id3" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>year</p></td>
+<td><p>winner</p></td>
+<td><p>jockey</p></td>
+<td><p>trainer</p></td>
+<td><p>owner</p></td>
+<td><p>distance</p></td>
+<td><p>track_condition</p></td>
+<td><p>time_string</p></td>
+<td><p>time_sec</p></td>
+<td><p>triple_crown_winner</p></td>
+</tr>
+<tr class="row-even"><td><p>2022</p></td>
+<td><p>Rich Strike</p></td>
+<td><p>Sonny Leon</p></td>
+<td><p>Eric Reed</p></td>
+<td><p>RED TR-Racing</p></td>
+<td><p>1.25</p></td>
+<td><p>Fast</p></td>
+<td><p>2:02.61</p></td>
+<td><p>122.61</p></td>
+<td><p>FALSE</p></td>
+</tr>
+<tr class="row-odd"><td><p>2021</p></td>
+<td><p>Mandaloun</p></td>
+<td><p>Florent Geroux</p></td>
+<td><p>Brad H. Cox</p></td>
+<td><p>Juddmonte Farm</p></td>
+<td><p>1.25</p></td>
+<td><p>Fast</p></td>
+<td><p>2:01.02</p></td>
+<td><p>121.02</p></td>
+<td><p>FALSE</p></td>
+</tr>
+<tr class="row-even"><td><p>2020</p></td>
+<td><p>Authentic</p></td>
+<td><p>John Velazquez</p></td>
+<td><p>Bob Baffert</p></td>
+<td><p>Spendthrift Farm LLC, MyRaceHorse Stable, Madaket Stables LLC, Starlight Racing</p></td>
+<td><p>1.25</p></td>
+<td><p>Fast</p></td>
+<td><p>2:00.61</p></td>
+<td><p>120.61</p></td>
+<td><p>FALSE</p></td>
+</tr>
+</tbody>
+</table>
 <p>TODO</p>
+</section>
 </section>
 </section>
 
@@ -540,9 +706,17 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#old-faithful">Old Faithful</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kentucky-derby">Kentucky Derby</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Old Faithful</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kentucky-derby-winning-times">Kentucky Derby Winning Times</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

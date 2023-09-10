@@ -247,7 +247,7 @@
 <li class="toctree-l3"><a class="reference internal" href="05_OUTLIERS.html">Outliers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="06_GRAPHING_III.html">Graphing III: Scatter Plots</a></li>
 <li class="toctree-l3"><a class="reference internal" href="07_ESTIMATION_II.html">Estimation II: Correlation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="08_GRAPHING_IV.html">Graphing IV: Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08_GRAPHING_IV.html">Residual Analysis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="09_SAMPLING.html">Sampling</a></li>
 <li class="toctree-l3"><a class="reference internal" href="10_SETS.html">Sample Spaces</a></li>
 <li class="toctree-l3"><a class="reference internal" href="11_SIMULATION.html">Simulation</a></li>
@@ -474,7 +474,7 @@ document.write(`
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
 <li><p>Download the <em>csv</em> dataset in the <a class="reference internal" href="#project-four-dataset"><span class="std std-ref">Dataset</span></a> section and place it in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your folder system where you save your <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts.</p></li>
-<li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">TNAME_project_four.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">TNAME</span></code> with your name.</p></li>
+<li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">TNAME_project_four.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">NAME</span></code> with your name.</p></li>
 <li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-four-background"><span class="std std-ref">Background</span></a> section.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-four-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
@@ -486,7 +486,24 @@ document.write(`
 </section>
 <section id="loading-in-data">
 <span id="project-four-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
-<p>TODO</p>
+<p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="02_GRAPHING_II.html#project-two-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="c1"># read in data</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
+    <span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csv_file</span><span class="p">)</span>
+    <span class="n">raw_data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv_reader</span> <span class="p">]</span>
+
+<span class="c1"># separate headers from data</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+
+<span class="c1"># grab first column from csv file and ensure it&#39;s a number (not a string)</span>
+<span class="n">column_1</span> <span class="o">=</span> <span class="p">[</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">columns</span> <span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">column_1</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 <section id="background">
 <span id="project-four-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
