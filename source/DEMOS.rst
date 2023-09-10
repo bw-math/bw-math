@@ -34,6 +34,15 @@ We will alter the distribution in class to see how it affects the sample mean an
 
 :download:`The Effects of Outliers <./assets/demos/outliers.py>`
 
+Scatter Plot of Twitter Data 
+----------------------------
+
+This script shows how to parse a CSV file and then create a scatter plot with it. To execute this script, you will need to download the Twitter dataset from :ref:`datasets` section and place it in the same folder where you download this script.
+
+This dataset is an example of :ref:`negative <negative_correlation>`, :ref:`non-linear <non_linear_correlation>` correlation. In other words, even though there is clearly a correlation in this dataset, we cannot use linear regression to fit a model.
+
+:download:`Twitter Data Scatter Plot <./assets/demos/scatter_plot.py>`
+
 Die Roll Simulation
 -------------------
 

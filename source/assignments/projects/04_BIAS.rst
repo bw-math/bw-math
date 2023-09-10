@@ -14,7 +14,7 @@ Instructions
 ============
 
 1. Download the *csv* dataset in the :ref:`project_four_dataset` section and place it in the ``Linux Files`` folder on your folder system where you save your ``.py`` scripts.
-2. Create a Python ``.py`` script named ``TNAME_project_four.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``TNAME`` with your name.
+2. Create a Python ``.py`` script named ``TNAME_project_four.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``NAME`` with your name.
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the :ref:`project_four_background` section.
 5. Read the :ref:`project_four_loading_data` section.
@@ -28,14 +28,32 @@ Instructions
 Loading In Data
 ===============
 
-TODO
+The following code snippet will load in a *CSV* spreadsheet named ``example.csv``, parse it into a list and then print it to screen, assuming that *CSV* file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in :ref:`project_two_dataset` section.
+
+.. code-block:: python 
+
+    import csv
+
+    # read in data
+    with open('example.csv') as csv_file:
+        csv_reader = csv.reader(csv_file)
+        raw_data = [ row for row in csv_reader ]
+
+    # separate headers from data
+    headers = raw_data[0]
+    columns = raw_data[1:]
+
+    # grab first column from csv file and ensure it's a number (not a string)
+    column_1 = [ float(row[0]) for row in columns ]
+
+    print(column_1)
 
 .. _project_four_background:
 
 Background
 ==========
 
-`In the years 1969, 1970, 1971 and 1972, the Selective Service System in the United States held a draft lottery by order of President Lyndon B. Johnson for men born between the dates of January 1, 1944 and December 31, 1950 <source <https://en.wikipedia.org/wiki/Draft_lottery_(1969)>`_. 
+`In the years 1969, 1970, 1971 and 1972, the Selective Service System in the United States held a draft lottery by order of President Lyndon B. Johnson for men born between the dates of January 1, 1944 and December 31, 1950 <https://en.wikipedia.org/wiki/Draft_lottery_(1969)>`_. 
 
 Individuals born between these dates were to be selected at random and drafted into military service to fight in the Vietnam War.
 
@@ -50,7 +68,7 @@ In attempt to randomize the selection, the Selective Service System held a draft
 
     { January 1, January 2, ... , Feburary 1, February 2, ... , December 30, December 31 }
 
-Slips of paper were then selected at random and anyone of eligible age who had a birthday on the date indicated would be drafted. The important point is *individuals who shared the same birthday* would be drafted at the same time. As example, two men who had the birthdays April 5:sup:`th`, 1946 and April 5:sup:`th`, 1947 would both be drafted in the event a slip of paper *"April 5"* was selected.
+Slips of paper were then selected at random and anyone of eligible age who had a birthday on the date indicated would be drafted. The important point is *individuals who shared the same birthday* would be drafted at the same time. As example, two men who had the birthdays April 5 :sup:`th`, 1946 and April 5 :sup:`th`, 1947 would both be drafted in the event a slip of paper *"April 5"* was selected.
 
 .. _project_four_project:
 

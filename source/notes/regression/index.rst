@@ -1,8 +1,8 @@
-.. _linear_regression:
+.. _regression:
 
-=================
-Linear Regression
-=================
+==========
+Regression
+==========
 
 .. toctree::
    :maxdepth: 2

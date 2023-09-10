@@ -13,10 +13,14 @@ TODO
 Scatter Plots
 =============
 
+.. _no_correlation:
+
 No Correlation
 --------------
 
 .. plot:: assets/plots/scatterplots/scatterplot_no_correlation.py
+
+.. _positive_correlation:
 
 Positive Correlation
 --------------------
@@ -31,6 +35,8 @@ Weak Correlation
 
 TODO
 
+.. _negative_correlation:
+
 Negative Correlation
 --------------------
 
@@ -44,7 +50,9 @@ Weak Correlation
 
 TODO
 
-Non-linear Correlations 
+.. _non_linear_correlation:
+
+Non-Linear Correlations 
 -----------------------
 
 TODO 
