@@ -2,6 +2,8 @@
 Datasets
 ========
 
+On this page you will find references and download links for all of the datasets we will use in class.
+
 Historical
 ----------
 
