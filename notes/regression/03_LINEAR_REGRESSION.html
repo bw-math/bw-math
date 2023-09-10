@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Regression Model &#8212; bishop-walsh-ap-stats  documentation</title>
+    <title>Linear Regression &#8212; bishop-walsh-ap-stats  documentation</title>
   
   
   
@@ -168,10 +168,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../hypotheses/03_STDDEV_TESTS.html">Hypothesis Tests for the Population Standard Deviation</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Linear Regression</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Regression</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="01_INTRODUCTION.html">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="02_CORRELATION.html">Correlation</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Regression Model</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Linear Regression</a></li>
 <li class="toctree-l3"><a class="reference internal" href="04_RESIDUAL_ANALYSIS.html">Residual Analysis</a></li>
 </ul>
 </li>
@@ -416,7 +416,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -427,11 +429,26 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Regression Model</h1>
+    <h1>Linear Regression</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regression-model">Regression Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mean-squared-error">Mean Squared Error</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sse-sum-squared-error">SSE: Sum Squared Error</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mse-mean-squared-error">MSE: Mean Squared Error</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-coefficients">Model Coefficients</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line-of-best-fit">Line of Best Fit</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -441,9 +458,62 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="regression-model">
-<span id="id1"></span><h1>Regression Model<a class="headerlink" href="#regression-model" title="Permalink to this headline">#</a></h1>
+  <section id="linear-regression">
+<span id="id1"></span><h1>Linear Regression<a class="headerlink" href="#linear-regression" title="Permalink to this headline">#</a></h1>
 <p>TODO</p>
+<section id="regression-model">
+<span id="id2"></span><h2>Regression Model<a class="headerlink" href="#regression-model" title="Permalink to this headline">#</a></h2>
+<p>TODO</p>
+<div class="math">
+<p><img src="../../_images/math/bec62f9554f9f4a8ec67c33753064a81601568f1.png" alt="\hat{y_i} = \mathcal{B}_1 \cdot x_i + \mathcal{B}_0 + \varepsilon"/></p>
+</div><p>Where the term <img class="math" src="../../_images/math/0eed12d652a9631f518a95377013d6b4ce51df2b.png" alt="\varepsilon"/> is a normally distributed error term centered around 0 with standard deviation equal to the <strong>mean squared error</strong> of the model,</p>
+<div class="math">
+<p><img src="../../_images/math/67e7c94b6270fb6497ead8d383f281b0fc8d81be.png" alt="\varepsilon \sim \mathcal{N}(0, \text{MSE})"/></p>
+</div><p>TODO</p>
+</section>
+<section id="mean-squared-error">
+<span id="id3"></span><h2>Mean Squared Error<a class="headerlink" href="#mean-squared-error" title="Permalink to this headline">#</a></h2>
+<p>The term <img class="math" src="../../_images/math/05e9139b5dc36ae95afe50a18ed79f86836f2377.png" alt="\hat{y}"/> is <strong>not</strong> the observed value of <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> in the bivariate sample of data that was used to calibrate the model. It is the <em>predicted</em> value of <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> given the <em>observed</em> value of <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/>. This is an <em>extremely</em> important point when talking about regression. The <em>model</em> equation is a <em>prediction</em>, and the prediction is not <em>exact</em>. Each <em>predicted value</em> of <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/>, <img class="math" src="../../_images/math/05e9139b5dc36ae95afe50a18ed79f86836f2377.png" alt="\hat{y}"/>, will deviate from the <em>observed</em> value of <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/>. The deviation, if the model is a good fit, should be <em>normally distributed</em> around 0.</p>
+<p>TODO</p>
+<section id="sse-sum-squared-error">
+<h3>SSE: Sum Squared Error<a class="headerlink" href="#sse-sum-squared-error" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
+<div class="math">
+<p><img src="../../_images/math/fdcef0abfcd2b8ac17230a4ba04a9228bb29afb9.png" alt="\sum_{i=1}^{n} (\hat{y}_i - y_i)^2"/></p>
+</div><p>TODO</p>
+</section>
+<section id="mse-mean-squared-error">
+<h3>MSE: Mean Squared Error<a class="headerlink" href="#mse-mean-squared-error" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
+<div class="math">
+<p><img src="../../_images/math/5d3506fbbd9f5e08d43578c9c99261d5c7d63b17.png" alt="\frac{\sum_{i=1}^n (\hat{y}_i - y_i)^2}{n-2}"/></p>
+</div><p>TODO</p>
+</section>
+</section>
+<section id="model-coefficients">
+<h2>Model Coefficients<a class="headerlink" href="#model-coefficients" title="Permalink to this headline">#</a></h2>
+<p>The regression model coefficients can be estimated by finding the values of <img class="math" src="../../_images/math/35a855c84cd1a67d98280e59ffe4eccf2cdb4e02.png" alt="\mathcal{B}_0"/> and <img class="math" src="../../_images/math/1d649dc63c66354071b3941d5d5dd0be062beb03.png" alt="\mathcal{B}_1"/> that <em>minimize</em> the MSE of the model.</p>
+<p>In other words,</p>
+<blockquote>
+<div><p>TODO: example. plug in various values of coefficients and demonstrate the MSE varies. Show there is a value that produces a minimum.</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to derive an algebraic expression for the coefficients, differential calculus is required. If you want an extra credit assignment related to this, talk to me outside of class.</p>
+</div>
+<p><img class="math" src="../../_images/math/35a855c84cd1a67d98280e59ffe4eccf2cdb4e02.png" alt="\mathcal{B}_0"/></p>
+<blockquote>
+<div><p>TODO</p>
+</div></blockquote>
+<p><img class="math" src="../../_images/math/1d649dc63c66354071b3941d5d5dd0be062beb03.png" alt="\mathcal{B}_1"/></p>
+<blockquote>
+<div><p>TODO</p>
+</div></blockquote>
+</section>
+<section id="line-of-best-fit">
+<h2>Line of Best Fit<a class="headerlink" href="#line-of-best-fit" title="Permalink to this headline">#</a></h2>
+<p>TODO</p>
+</section>
 </section>
 
 
@@ -485,6 +555,27 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regression-model">Regression Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mean-squared-error">Mean Squared Error</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sse-sum-squared-error">SSE: Sum Squared Error</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mse-mean-squared-error">MSE: Mean Squared Error</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-coefficients">Model Coefficients</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line-of-best-fit">Line of Best Fit</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
