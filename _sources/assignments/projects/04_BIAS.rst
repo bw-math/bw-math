@@ -35,7 +35,7 @@ TODO
 Background
 ==========
 
-`In the years 1969, 1970, 1971 and 1972, the Selective Service System in the United States held a draft lottery by order of President Lyndon B. Johnson for men born between the dates of January 1, 1944 and December 31, 1950 <source <https://en.wikipedia.org/wiki/Draft_lottery_(1969)>`_. 
+`In the years 1969, 1970, 1971 and 1972, the Selective Service System in the United States held a draft lottery by order of President Lyndon B. Johnson for men born between the dates of January 1, 1944 and December 31, 1950 <https://en.wikipedia.org/wiki/Draft_lottery_(1969)>`_. 
 
 Individuals born between these dates were to be selected at random and drafted into military service to fight in the Vietnam War.
 
@@ -50,7 +50,7 @@ In attempt to randomize the selection, the Selective Service System held a draft
 
     { January 1, January 2, ... , Feburary 1, February 2, ... , December 30, December 31 }
 
-Slips of paper were then selected at random and anyone of eligible age who had a birthday on the date indicated would be drafted. The important point is *individuals who shared the same birthday* would be drafted at the same time. As example, two men who had the birthdays April 5:sup:`th`, 1946 and April 5:sup:`th`, 1947 would both be drafted in the event a slip of paper *"April 5"* was selected.
+Slips of paper were then selected at random and anyone of eligible age who had a birthday on the date indicated would be drafted. The important point is *individuals who shared the same birthday* would be drafted at the same time. As example, two men who had the birthdays April 5 :sup:`th`, 1946 and April 5 :sup:`th`, 1947 would both be drafted in the event a slip of paper *"April 5"* was selected.
 
 .. _project_four_project:
 
