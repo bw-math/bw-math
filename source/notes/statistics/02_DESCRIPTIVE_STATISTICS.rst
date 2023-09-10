@@ -27,6 +27,17 @@ In general, as we move through this section, keep in mind the following table,
 
 The left hand column of this table represents the *true* value of a quantity that describes the population *distribution*. The right hand column represents the *estimated* value of this quantity as derived from the sample *distribution*.
 
+As we go through this section, keep in mind all the point estimators we introduce are sample statistics, not population parameters. In general, the population paramter is *never* known. We must always *estimate* its value.
+
+.. topic:: Population Parameter
+
+	The true value of a population characteristic.
+	
+.. topic:: Sample Statistic
+
+	An estimated value of a population characteristic calculated from a sample of the population.
+	
+	
 Definitions
 ===========
 
@@ -272,7 +283,7 @@ Measures of Centrality
 Arithmetic Mean
 ---------------
 
-The *arithmetic* mean is a sample statistic you have probably seen before; what you probably didn't know is it is not the *only* way of calculating the mean. You will see in the next few sections alternate ways of calculating a quantity that is meant to represent the *mean* of a sample. Each of these :ref:`sample statistics<sample_statistic>` represents a way of quantifying the notion of "*central tendency*"
+The *arithmetic* mean is a sample statistic you have probably seen before; what you probably didn't know is it is not the *only* way of calculating the mean. You will see in the next few sections alternate ways of calculating a quantity that is meant to represent the *mean* of a sample. Each of these *sample statistics* represents a way of quantifying the notion of "*central tendency*"
 
 Before getting to the good stuff, let's review the *arithmetic* mean. There are two equivalent ways of defining the *sample mean*. 
 
@@ -284,12 +295,14 @@ Sample Formula
 If the sample of data is specified as a set or list of data as in the following, 
 
 .. math:: 
+
     S = \{ x_1, x_2, ... , x_n \}
 
 Then the sample arithmetic mean can be calculated with the formula,
 
 .. math::
-    \bar{x} = \frac{\sum_{1}^n x_i}{n}
+
+    \bar{x}_A = \frac{\sum_{1}^n x_i}{n}
 
 This is known as the *sample mean formula* for the arithmetic mean.
 
@@ -297,6 +310,7 @@ Example
     Suppose you survey 10 people and ask them how many of the 11 full-length, major motion picture *Star Wars* movies they have seen. Suppose the sample **S** of their responses is given below,
 
     .. math::
+    
         S = \{ 6, 7, 9, 0, 1, 0, 3, 6, 3, 9 \}
 
     Find the average number of *Star Wars* movies seen by this sample of people.
@@ -305,7 +319,7 @@ Applying the *sample mean formula*,
     
 .. math::
 
-    \bar{x} = \frac{6 + 7 + 9 + 0 + 1 + 0 + 3 + 6 + 3 + 9}{10} = 3.5 movies
+    \bar{x}_A = \frac{6 + 7 + 9 + 0 + 1 + 0 + 3 + 6 + 3 + 9}{10} = 4.4 \text{ movies}
 
 .. note::
     
@@ -339,16 +353,19 @@ This way of representing a sample of data, where the first column stands for the
 Let us move on to the task at hand: calculating the sample mean. In this case, the formula for the arithmetic mean gives,
 
 .. math:: 
-    \bar{x} = \frac{16 + 16 + 17 + 18 + 16 + 17 + 17 + 17}{8}
+
+    \bar{x}_A = \frac{16 + 16 + 17 + 18 + 16 + 17 + 17 + 17}{8}
 
 If we collect all the terms in the numerator that are *like*, we may rewrite this as,
 
 .. math::
-    \bar{x} = \frac{3 \cdot 16 + 4 \cdot 17 + 1 \cdot 18}{8}
+
+    \bar{x}_A = \frac{3 \cdot 16 + 4 \cdot 17 + 1 \cdot 18}{8}
 
 Notice the first factor of each term in the numerator is simply frequency of that observation in the *frequency distribution* table, whereas the second factor is the actual value of the observation. In other words, each term of the numerator is of the form,
 
 .. math::
+
     x_i \cdot f(x_i)
 
 This recognization leads the following formula that comes in handy when sample distributions are given in terms of :ref:`frequency distributions <frequency_distributions>`
@@ -375,20 +392,56 @@ If the sample of data is specified as a frequency distribution as in the followi
 Then the sample arithmetic mean can be calculated with the formula, 
 
 .. math::
+
     \bar{x}_A = \sum_{i}^n x_i \cdot f(x_i)
 
 Example
-    TODO 
+    
+    	Taking the same example from the previous section, we had a sample of responses to the question of how many of *Star Wars* movies a group of people had seen,
+    	
+    	.. math::
+    		
+        	S = \{ 6, 7, 9, 0, 1, 0, 3, 6, 3, 9 \}
+        	
+        Use the frequency sample mean formula to find the sample mean of this data.
 
-+--------------+----------------+
-|  :math:`x_i` | :math:`f(x_i)` |
-+--------------+----------------+
-|      ??      |       ?        |
-+--------------+----------------+
-|      ??      |       ?        |
-+--------------+----------------+
-|      ??      |       ?        |
-+--------------+----------------+
+We summarize the sample with a :ref:`ungrouped_frequency_distribution`, adding a column to it that represents the *product* of the first two columns,
+
++--------------+----------------+--------------------------+
+|  :math:`x_i` | :math:`f(x_i)` | :math:`x_i \cdot f(x_i)` |
++--------------+----------------+--------------------------+
+|     0        |       2        |            0             |
++--------------+----------------+--------------------------+
+|     1        |       1        |            1             |
++--------------+----------------+--------------------------+
+|     2        |       0        |            0             |
++--------------+----------------+--------------------------+
+|     3        |       2        |            6             |
++--------------+----------------+--------------------------+
+|     4        |       0        |            0             |
++--------------+----------------+--------------------------+
+|     5        |       0        |            0             |
++--------------+----------------+--------------------------+
+|     6        |       2        |            12            |
++--------------+----------------+--------------------------+
+|     7        |       1        |            7             |
++--------------+----------------+--------------------------+
+|     8        |       0        |            0             |
++--------------+----------------+--------------------------+
+|     9        |       2        |            18            |
++--------------+----------------+--------------------------+
+
+Where we have included all possible observation values, even those that do not occur in the sample of data. 
+
+Take note, summarized in this way, the third column makes it apparent that observations with higher values, the ``9`` and ``6`` in this sample, while having the sample frequency as lower values like ``3`` and ``0``, contribute greater *weight* to the sample mean calculation. This property of the mean will appear in a different form when we talk about the effects of :ref:`skewness` in a few sections.
+
+To find the sample mean here, we average the values of the third column,
+
+.. math::
+
+	\bar{x} = \frac{1 + 6 + 12 + 7 + 18 }{10} = 4.4 \text{ movies}
+
+This idea, that the product of the observation and its frequency represent the *weight* of an observed value in the calculation of the sample mean leads directly to the next section.
 
 Weighted Mean
 *************
