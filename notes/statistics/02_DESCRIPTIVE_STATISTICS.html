@@ -513,12 +513,12 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">Motivation</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coefficient-of-variation">Coefficient of Variation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">Formula</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#degrees-of-freedom">Degrees of Freedom</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">Outliers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">Rule of Thumb</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coefficient-of-variation">Coefficient of Variation</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chebyshev-s-theorem">Chebyshev’s Theorem</a></li>
@@ -1573,28 +1573,38 @@ Transcript written on math.log.
 <p><img src="../../_images/math/754cdb6148d139ef3ccd106ede07d0a517a3998d.png" alt="S_1 = \{ 4, 5, 6 \}"/></p>
 </div><div class="math">
 <p><img src="../../_images/math/64764dd16c94c302613fa4e371cac7c99533c571.png" alt="S_2 = \{ 0, 5, 10 \}"/></p>
-</div><p>If we apply the <a class="reference internal" href="#sample-mean-formula"><span class="std std-ref">Sample Mean Formula</span></a> to <strong>S_1</strong>, we get,</p>
+</div><p>If we apply the <a class="reference internal" href="#sample-mean-formula"><span class="std std-ref">Sample Mean Formula</span></a> to <img class="math" src="../../_images/math/08dae650aba750710b182a0e7b1e63c09404075b.png" alt="S_1"/>, we get,</p>
 <div class="math">
 <p><img src="../../_images/math/731d19d595ef845f0be73d3e89ac402d9f4f966b.png" alt="\bar{x_1} = \frac{4 + 5 + 6}{3} = 5"/></p>
-</div><p>If we apply the <a class="reference internal" href="#sample-mean-formula"><span class="std std-ref">Sample Mean Formula</span></a> to <strong>S_1</strong>, we get,</p>
+</div><p>If we apply the <a class="reference internal" href="#sample-mean-formula"><span class="std std-ref">Sample Mean Formula</span></a> to <img class="math" src="../../_images/math/7a01e66959cdf273b6b3c5541280a7402771722e.png" alt="S_2"/>, we get,</p>
 <div class="math">
 <p><img src="../../_images/math/61b20517ad8af6edba19912e19909ded5c2e9e59.png" alt="\bar{x_2} = \frac{0 + 5 + 10}{3} = 5"/></p>
-</div><p>In both cases, we wind up with the same sample mean. If we summarizing these two samples of data to audience and the only information we gave them was the sample mean, they might erroneously conclude the samples were the same.</p>
+</div><p>In both cases, we wind up with the same sample mean. If we are summarizing these two samples of data to an audience and the only information we gave them was the sample mean, they might erroneously conclude the samples were the same.</p>
 <p>However, refering to the actual observations that make up either sample, it is clear the samples are <strong>not</strong> the same.</p>
 <p>Clearly, we need some other type of <span class="xref std std-ref">sample_statistic</span> to differentiate these two samples of data.</p>
 <p>In other words, the <em>sample mean</em> is <em>not enough</em> to completely describe a sample of data. In the language of mathematics, we say the sample mean is “<em>necessary, but not sufficient</em>” to determine a sample of data.</p>
 <p>But what exactly is different about these two samples? If we plot the samples separately on a number line and compare, we can see what is going on more clearly,</p>
 <p>(INSERT PICTURE)</p>
-<p>Fom the picture, it is obvious that <img class="math" src="../../_images/math/7a01e66959cdf273b6b3c5541280a7402771722e.png" alt="S_2"/> is more <em>spread out</em> around the mean than <img class="math" src="../../_images/math/08dae650aba750710b182a0e7b1e63c09404075b.png" alt="S_1"/>. To put it another way, <img class="math" src="../../_images/math/08dae650aba750710b182a0e7b1e63c09404075b.png" alt="S_1"/> is more tightly <em>clustered</em> around the mean than <img class="math" src="../../_images/math/7a01e66959cdf273b6b3c5541280a7402771722e.png" alt="S_2"/>. This <em>spread</em> or <em>clustering</em> is referred to as <em>variation</em>.</p>
+<p>From the picture, it is obvious that <img class="math" src="../../_images/math/7a01e66959cdf273b6b3c5541280a7402771722e.png" alt="S_2"/> is more <em>spread out</em> around the mean than <img class="math" src="../../_images/math/08dae650aba750710b182a0e7b1e63c09404075b.png" alt="S_1"/>. To put it another way, <img class="math" src="../../_images/math/08dae650aba750710b182a0e7b1e63c09404075b.png" alt="S_1"/> is more tightly <em>clustered</em> around the mean than <img class="math" src="../../_images/math/7a01e66959cdf273b6b3c5541280a7402771722e.png" alt="S_2"/>. This <em>spread</em> or <em>clustering</em> is referred to as <em>variation</em>.</p>
 <p>The goal of the next few sections is to come up with a way of quantifying and measuring this <em>variation</em>.</p>
 </section>
 <section id="interquartile-range">
 <span id="id30"></span><h3>Interquartile Range<a class="headerlink" href="#interquartile-range" title="Permalink to this headline">#</a></h3>
-<p>First up, we have the <em>interquartile range</em>.</p>
-<p>TODO</p>
+<p>First up, we have the <em>interquartile range</em>. The interquartile range is defined as the difference between the third quartile and the first quartiile,</p>
+<div class="math">
+<p><img src="../../_images/math/cd1593bc7c6a533e44fabec870f158486e68fdfe.png" alt="\text{IQR} = \pi_{0.75} - \pi_{0.50}"/></p>
+</div><p>This statistic, by definition, tells us the range between which 50% of the distribution is contained. Moreover, the 50% of the distribution contained in the <em>IQR</em> is centered around the median, since the median falls exactly in the middle of the first and third quartile.</p>
 <section id="rule-of-thumb-for-outliers">
 <h4>Rule of Thumb for Outliers<a class="headerlink" href="#rule-of-thumb-for-outliers" title="Permalink to this headline">#</a></h4>
-<p>(TODO: three times IQR)</p>
+<p>A general rule of thumb for identifying <em>outlying</em> observations with the <em>IQR</em> is given below,</p>
+<div class="topic">
+<p class="topic-title"><em>IQR</em> Rule for Outliers</p>
+<p>TODO</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The cutoff point for <em>outliers</em> determined the <em>IQR</em> rule is arbitrary. Beyond the idea that most of the distribution is contained within the <em>IQR</em> and the insight any observation well outside this range probably qualifies as an outlyer, there is no hard justification for this rule of thumb. It is merely a <a class="reference external" href="https://en.wikipedia.org/wiki/Heuristic">heuristic</a> developed by professionals to aid in developing intuition about data.</p>
+</div>
 </section>
 </section>
 <section id="absolute-variation">
@@ -1612,19 +1622,22 @@ Transcript written on math.log.
 <section id="standard-deviation">
 <span id="id33"></span><h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
+<section id="id34">
+<h4>Formula<a class="headerlink" href="#id34" title="Permalink to this headline">#</a></h4>
+<div class="math">
+<p><img src="../../_images/math/487d682c0c66f24d7a60f26cdc589ab4ededf79f.png" alt="s = \sqrt{  \frac{\sum^{n}_{i=1} (x_i - \bar{x})^2}{n-1} }"/></p>
+</div></section>
+<section id="degrees-of-freedom">
+<h4>Degrees of Freedom<a class="headerlink" href="#degrees-of-freedom" title="Permalink to this headline">#</a></h4>
+<p>TODO</p>
+</section>
 </section>
 <section id="coefficient-of-variation">
 <h3>Coefficient of Variation<a class="headerlink" href="#coefficient-of-variation" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
 <div class="math">
 <p><img src="../../_images/math/3f79723d3ee7fdbae983e83e374cccb75ae3ed44.png" alt="v = \frac{\bar{x}}{s} \cdot 100"/></p>
-</div></section>
-</section>
-<section id="id34">
-<h2>Outliers<a class="headerlink" href="#id34" title="Permalink to this headline">#</a></h2>
-<p>TODO</p>
-<section id="id35">
-<h3>Rule of Thumb<a class="headerlink" href="#id35" title="Permalink to this headline">#</a></h3>
-<p>TODO</p>
+</div><p>TODO</p>
 </section>
 </section>
 <section id="chebyshev-s-theorem">
@@ -1633,6 +1646,7 @@ Transcript written on math.log.
 </section>
 <section id="empirical-rule">
 <h2>Empirical Rule<a class="headerlink" href="#empirical-rule" title="Permalink to this headline">#</a></h2>
+<p>TODO</p>
 </section>
 </section>
 
@@ -1758,12 +1772,12 @@ Transcript written on math.log.
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">Motivation</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coefficient-of-variation">Coefficient of Variation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">Formula</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#degrees-of-freedom">Degrees of Freedom</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">Outliers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">Rule of Thumb</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coefficient-of-variation">Coefficient of Variation</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chebyshev-s-theorem">Chebyshev’s Theorem</a></li>
