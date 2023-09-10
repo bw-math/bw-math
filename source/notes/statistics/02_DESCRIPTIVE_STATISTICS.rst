@@ -1298,19 +1298,19 @@ Consider these two samples of data :math:`S_1` and :math:`S_2`,
 
     S_2 = \{ 0, 5, 10 \}
 
-If we apply the :ref:`Sample Mean Formula <sample_mean_formula>` to **S_1**, we get,
+If we apply the :ref:`Sample Mean Formula <sample_mean_formula>` to :math:`S_1`, we get,
 
 .. math::
 
     \bar{x_1} = \frac{4 + 5 + 6}{3} = 5
 
-If we apply the :ref:`Sample Mean Formula <sample_mean_formula>` to **S_1**, we get,
+If we apply the :ref:`Sample Mean Formula <sample_mean_formula>` to :math:`S_2`, we get,
 
 .. math::
 
     \bar{x_2} = \frac{0 + 5 + 10}{3} = 5
 
-In both cases, we wind up with the same sample mean. If we summarizing these two samples of data to audience and the only information we gave them was the sample mean, they might erroneously conclude the samples were the same.
+In both cases, we wind up with the same sample mean. If we are summarizing these two samples of data to an audience and the only information we gave them was the sample mean, they might erroneously conclude the samples were the same.
 
 However, refering to the actual observations that make up either sample, it is clear the samples are **not** the same.
 
@@ -1322,7 +1322,7 @@ But what exactly is different about these two samples? If we plot the samples se
 
 (INSERT PICTURE)
 
-Fom the picture, it is obvious that :math:`S_2` is more *spread out* around the mean than :math:`S_1`. To put it another way, :math:`S_1` is more tightly *clustered* around the mean than :math:`S_2`. This *spread* or *clustering* is referred to as *variation*.
+From the picture, it is obvious that :math:`S_2` is more *spread out* around the mean than :math:`S_1`. To put it another way, :math:`S_1` is more tightly *clustered* around the mean than :math:`S_2`. This *spread* or *clustering* is referred to as *variation*.
 
 The goal of the next few sections is to come up with a way of quantifying and measuring this *variation*.
 
@@ -1331,14 +1331,26 @@ The goal of the next few sections is to come up with a way of quantifying and me
 Interquartile Range
 -------------------
 
-First up, we have the *interquartile range*.
+First up, we have the *interquartile range*. The interquartile range is defined as the difference between the third quartile and the first quartiile,
 
-TODO
+.. math::
+
+	\text{IQR} = \pi_{0.75} - \pi_{0.50}
+	
+This statistic, by definition, tells us the range between which 50% of the distribution is contained. Moreover, the 50% of the distribution contained in the *IQR* is centered around the median, since the median falls exactly in the middle of the first and third quartile.
 
 Rule of Thumb for Outliers
 **************************
 
-(TODO: three times IQR)
+A general rule of thumb for identifying *outlying* observations with the *IQR* is given below,
+
+.. topic:: *IQR* Rule for Outliers
+
+	TODO
+
+.. important::
+
+	The cutoff point for *outliers* determined the *IQR* rule is arbitrary. Beyond the idea that most of the distribution is contained within the *IQR* and the insight any observation well outside this range probably qualifies as an outlyer, there is no hard justification for this rule of thumb. It is merely a `heuristic <https://en.wikipedia.org/wiki/Heuristic>`_ developed by professionals to aid in developing intuition about data.
 
 .. _absolute_variation:
 
@@ -1367,21 +1379,29 @@ Standard Deviation
 
 TODO
 
+Formula
+*******
+
+.. math::
+
+	s = \sqrt{  \frac{\sum^{n}_{i=1} (x_i - \bar{x})^2}{n-1} }
+
+Degrees of Freedom	
+******************
+
+TODO
+
 Coefficient of Variation
 ------------------------
 
-.. math:: 
+TODO 
+
+.. math::
+ 
     v = \frac{\bar{x}}{s} \cdot 100
 
-Outliers
-========
+TODO 
 
-TODO
-
-Rule of Thumb
--------------
-
-TODO
 
 .. _chebyshevs_theorem:
 
@@ -1392,3 +1412,5 @@ TODO
 
 Empirical Rule
 ==============
+
+TODO
