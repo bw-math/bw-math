@@ -520,41 +520,175 @@ Note, this agrees with first method we discussed in this section, namely calcula
 Formula
 *******
 
-If a sample of data **S** has been broken up into *m* groups, then 
+.. important::
+
+	We are dropping the *A* subscript from the sample mean formula in this section to provide a confusion of superscripts and subscripts. Keep in mind, even though it is not explicitly written, the sample means in this section refer to the *arithmetic* sample mean.
+	
+Suppose a sample of data **S** with *n* observations has been broken up into *m* groups, 
+
+.. math::
+
+	S_j = \{ x^{j}_i \}
+
+For :math:`j = 0, 1, 2, ..., m`. Note, by definition, 
+
+.. math::
+
+	\sum_{j=1}^m n(S_j) = n
+
+.. important::
+
+	Pay careful attention to the indices of the summation here. We are summing over the number of *groups*, **not** the number of observations. 
+	
+If these conditions are met, then we can calculate the sample mean of **S** as the weighted sum of each sub-sample :math:`S_j`,
 
 .. math:: 
 
-    \bar{x} = \sum_{j}^m \bar{x_j} \cdot w_j
+    	\bar{x} = \sum_{j}^m \bar{x^{j}_i} \cdot w_j
 
-Where 
+Where the weight :math:`w_j` is the proportion of observations that belong to group :math:`j`,
 
 .. math:: 
 
-    w_j = \frac{n(\{ x_j \})}{n}
+    	w_j = \frac{n(S_j)}{n}
+    
+Note, by definitions, the weights must sum to 1,
+
+.. math::
+	
+	
+	\sum_{j=1}^{m} w_j = 1
+	
+Or equivalently, the sum of the number of observations in each sub-sample must equal the total amount of observations in the entire sample,
+
+.. math::
+
+	\sum_{j=1}^{m} n( \{ x^{j}_i \}) 	
 
 Example
-    TODO 
+    Suppose you have samples of test scores from three different classes of A.P. Statistics students,
+    
+    .. math::
+    	
+    	S_1 = \{ 95, 98, 75, 88 \}
+    	
+    .. math::
+    
+    	S_2 = \{ 70, 75, 76 \}
+    	
+    .. math::
+    
+    	S_3 = \{ 81, 79, 83 \}
+    	
+    Find the sample of mean of all three classes.
 
+Here we have three groups :math:`j = 1, 2, 3`. 
+
+We first find the weights of each sample group. 
+
+The first sample has :math:`n_1 = 4`, the second sample has :math:`n_2 = 3` and the third sample has :math:`n_3 = 3`, thus we have,
+
+.. math::
+
+	n = n_1 + n_2 + n_3
+	
+.. math::
+	
+	n = 4 + 3 + 3 = 10
+	
+We find the weight of each sub-sample by finding the proportion of the entire sample that belongs it,
+
+.. math::
+
+	S_1 = \frac{4}{10} = 0.40
+	
+.. math::
+
+	S_2 = \frac{3}{10] = 0.30
+	
+.. math::
+
+	S_3 = \frac{3}{10} = 0.30
+
+Next we find the sample mean of each sub-sample,
+
+.. math::
+
+	\bar{x^{1}} = \frac{95 + 98 + 75 + 88}{4} = 89.0
+	
+.. math::
+
+	\bar{x^{2}} = \frac{70 + 75 + 76}{3} \approx 73.67
+	
+.. math::
+
+	\bar{x^{3}} = \frac{81 + 79 + 83}{3} = 81.0
+	
+Then, we can find the overall mean by *weighting* each sub-sample mean,
+
+.. math::
+
+	\bar{x} = \frac{4}{10} \cdot 89.0 + \frac{3}{10} \cdot 73.67 + \frac{3}{10} \cdot 81.0 = 82.0
+
+Which may also be verified by calcualting the sample mean from the entire sample directly,
+
+.. math:: 
+
+	\bar{x} = \frac{95 + 98 + 75 + 88 + 70 + 75 + 76 + 81 + 79 + 83}{10} = 82.0
+ 	
 .. _geometric_mean:
 
 Geometric Mean
 --------------
 
-The *geometric mean* is an alternate way of defining the *mean* of a sample data. 
+Let us consider *why* the arithmetic mean yields a measure of centrality. From the prior discussion of the weighted mean, it is apparent the sample mean formula is a measure of the *additive* center of a sample. We take *n* data points, add them up (perform *n* operations) and then divide by *n* (average). Each observation contributes its *weight* by adding to the total in the numerator of the arithmetic mean formula. Observations with more *weight* (higher values) contribute more heavily to the overall value of the arithmetic mean.
+
+There are, however, other ways of characterizing the *center* of a sample of data with other types of *sample statistics*. 
+
+The *geometric mean* is such an alternate way of defining the *mean* of a sample data. 
 
 The *geometric mean* is defined as,
 
 .. math::
     \bar{x}_G = (x_1 \cdot x_2 \cdot ... \cdot x_{n-1} \cdot x_n )^(1/n)
 
-TODO 
+The *geometric mean* is a measure of a sample's *multiplicative* center, rather than its *additive* center. 
+
+Example
+	Suppose you have a sample of data,
+	
+	.. math::
+	
+		S = \{ 10, 12, 14 \}
+		
+	Find the arithmetic sample mean and geometric sample mean. Compare and contrast their values.
+	
+First, let's start with what we know, the arithmetic mean,
+
+.. math::
+
+	\bar{x}_A = \frac{10 + 12 + 14}{3} = 12
+	
+Simple enough. Now let's try the *geometric sample mean*. In order to calculate the geometric mean, we *multiply* all of the observations rather than add them up. Then, to average a product, rather than dividing by the total number of observations, we take the n :sup:`th` root of the product,
+
+.. math::
+
+	\bar{x}_G = \frac{10 \cdot 12 \cdot 14}^{1/3} \approx 11.89
+
+Notice: the geometric mean is *less* than the arithmetic mean.
 
 .. _geometric_vs_arithmetic_mean:
 
 Geometric vs. Arithmetic Mean
 *****************************
 
-TODO
+So, which point estimate of centrality do we use? The arithmetic mean or the geometric mean?
+
+There are several reasons to prefer the arithmetic mean. Perhaps the simplest to understand at this point in your study of statistics is its simplicity: it is easy to calculate and easy to interpret. 
+
+The geometric mean, on the other hand, is not *as* easy to calculate. 
+
+Beyond that, there are more philosophical reasons for preferring the arithmetic mean over the geometric mean. These reasons we are not yet ready to discuss, as they require a deeper understanding of probability, :ref:`random_variables` and :ref:`central_limit_theorem`. Suffice to say, the arithmetic mean has very nice properties that lend themselves to statistical inference easier than the geometric mean do. 
 
 The Moral of the Story
 **********************
@@ -583,8 +717,6 @@ Mode
 
 Definition
     The *mode* is the most frequent of observation in a sample of data.
-
-TODO 
 
 Sample Proportion
 *****************
@@ -1120,6 +1252,10 @@ Z Score
 
 *Percentiles* are one way of describing location, but they are not the only way. We can also use *Z-Scores* to talk about the location of data. 
 
+*Z-scores* arise by inquiring into how we compare two different samples of data. 
+
+For example, the SAT and the ACT are two different tests that are meant to measure the aptitude of graduating high school seniors before they are granted entry to college. Both tests are measuring the same variable, the analytical ability of a student, but both tests use different scales to measure the observable. 
+
 Motivation
 **********
 
@@ -1141,8 +1277,6 @@ In the case of an individual selected from an entire population, the *z-score* f
     z = \frac{x_i - \mu}{\sigma}
 
 TODO 
-
-
 
 .. _measures_of_variation:
 
