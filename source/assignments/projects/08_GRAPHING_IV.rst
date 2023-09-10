@@ -95,6 +95,6 @@ You can download the full dataset :download:`here <../../assets/datasets/kentuck
 The following table is the a preview of the data you will be using for this project. 
 
 .. csv-table:: Kentucky Derby Winning Times
-   :file: ../../assets/datasets/previews/kentucky_derby_data_preview.csv
+   :file: ../../assets/datasets/previews/kentucky_derby_winners_data_preview.csv
 
 TODO
