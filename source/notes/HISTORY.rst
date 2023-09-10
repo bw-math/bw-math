@@ -244,7 +244,7 @@ At this point, we leave aside the historical narrative and take up the subject i
 References
 ==========
 
-- `An essay towards solving a problem in the doctrine of chances, Thomas Bayes <https://royalsocietypublishing.org/doi/10.1098/rstl.1763.0053>`
+- `An essay towards solving a problem in the doctrine of chances, Thomas Bayes <https://royalsocietypublishing.org/doi/10.1098/rstl.1763.0053>`_
 - `Critique of Pure Reason, Immanuel Kant <https://www.gutenberg.org/files/4280/4280-h/4280-h.htm>`_ 
 - `Meditations on First Philosophy, Rene Descartes <http://www.classicallibrary.org/descartes/meditations/4.htm>`_
 - `Posterior Analytics, Aristotle <http://classics.mit.edu/Aristotle/posterior.1.i.html>`_

@@ -6,7 +6,9 @@ Grant Moore
 Some Time In The Distant Past
 *****************************
 
-This script shows how to find the QQ plot of a sample to assess normality. The sample is ordered (i.e. the *order statistics* are found) and then the theoretical percentiles from the Normal Distribution are found for each order statistic.
+This script shows how to find the QQ plot of a sample to assess normality. 
+
+The sample is ordered (i.e. the *order statistics* are found) and then the theoretical percentiles from the Normal Distribution are found for each order statistic.
 """
 
 import math
