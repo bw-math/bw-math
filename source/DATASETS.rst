@@ -1,8 +1,12 @@
 
+.. _datasets:
+
 Datasets
 ========
 
 On this page you will find references and download links for all of the datasets we will use in class.
+
+.. _historical_datasets:
 
 Historical
 ----------
@@ -16,6 +20,8 @@ Historical
     - :download:`Roman Emperor Reigns CSV <./assets/datasets/roman_emperors_data.csv>`
 - `Vietnam Draft Lottery <https://www.randomservices.org/random/data/Draft.html>`_
     - :download:`Vietnam Draft Lottery CSV <./assets/datasets/vietnam_draft_data.csv>`
+
+.. _scientific_datasets:
 
 Scientific
 ----------
@@ -37,6 +43,8 @@ Scientific
 - `Velocity of Light <https://www.randomservices.org/random/data/Michelson.html>`_
     - :download:`Velocity of Light CSV <./assets/datasets/velocity_of_light_data.csv>`
 
+.. _economic_datasets:
+
 Economic
 --------
 
@@ -48,6 +56,8 @@ Economic
     - :download:`Electric Vehicles in WA CSV <./assets/datasets/electric_vehicle_population_data.csv>`
 - `Diamonds <https://www.kaggle.com/datasets/shivam2503/diamonds>`_
     - :download:`Diamonds CSV <./assets/datasets/diamonds_data.csv>`
+
+.. _cultural_datasets:
 
 Cultural
 --------
