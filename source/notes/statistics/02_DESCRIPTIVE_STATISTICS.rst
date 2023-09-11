@@ -405,7 +405,7 @@ Example
         	
         Use the frequency sample mean formula to find the sample mean of this data.
 
-We summarize the sample with a :ref:`ungrouped_frequency_distribution`, adding a column to it that represents the *product* of the first two columns,
+We summarize the sample with a :ref:`ungrouped_frequency_distributions`, adding a column to it that represents the *product* of the first two columns,
 
 +--------------+----------------+--------------------------+
 |  :math:`x_i` | :math:`f(x_i)` | :math:`x_i \cdot f(x_i)` |
@@ -673,7 +673,7 @@ Simple enough. Now let's try the *geometric sample mean*. In order to calculate 
 
 .. math::
 
-	\bar{x}_G = \frac{10 \cdot 12 \cdot 14}^{1/3} \approx 11.89
+	\bar{x}_G = (10 \cdot 12 \cdot 14)^{\frac{1}{3}} \approx 11.89
 
 Notice: the geometric mean is *less* than the arithmetic mean.
 
