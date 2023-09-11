@@ -34,8 +34,6 @@ c. An alternative to calculating the exact probability is to conduct a simulatio
 Does the proposed process correctly simulate the random selection of 3 women from a group of 9 people consisting of 6 men and 3 women? Explain why or why not.
 
 
-TODO 
-
 Probability
 -----------
 
