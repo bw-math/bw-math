@@ -1,16 +1,11 @@
 import csv, os, sys
 
-import matplotlib
-
-matplotlib.use('tkagg')
-
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plot
 
 # determine which directory the script is in.
 data_directory = os.path.dirname(os.path.dirname(os.path.abspath(sys.argv[0])))
 
-fig, axs = plt.subplots()
-# fig, axs = plt.subplots(1, 4)
+(fig, axs) = plot.subplots()
 
 # read in data
 with open(f'{data_directory}/velocity_of_light_data.csv') as csv_file:
@@ -28,4 +23,4 @@ print(column_1)
 
 axs.hist(column_1, bins=8)
 
-plt.show()
+plot.show()
