@@ -119,3 +119,20 @@ b. What proportion of sales agents achieved monthly sales volumes between $700,0
 c. For values between 10 and 11 on the horizontal axis, the cumulative relative frequency plot is flat. In the context of this question, explain what this means.
 
 d. A bonus is to be given to 20 percent of the sales agents. Those who achieved the highest monthly sales volume during the preceding month will receive a bonus. What is the minimum monthly sales volume an agent must have achieved to qualify for the bonus?
+
+6. **2007, Free Response, #1**
+
+The department of agriculture at a university was interested in determining whether a preservative was effective in reducing discoloration in frozen strawberries. A sample of 50 ripe strawberries was prepared for freezing. Then the sample was randomly divided into two groups of 25 strawberries each. Each strawberry was placed into a small plastic bag.
+
+The 25 bags in the control group were sealed. The preservative was added to the 25 bags containing strawberries in the treatment group, and then those bags were sealed. All bags were stored at 0⬚C for a period of 6 months. At the end of this time, after the strawberries were thawed, a technician rated each strawberry’s discoloration from 1 to 10, with a low score indicating little discoloration.
+
+The dotplots below show the distributions of discoloration rating for the control and treatment groups.
+
+.. image:: ../../../assets/imgs/classwork/2007_apstats_frp_01.png
+    :align: center
+
+a. Find the mean and median of both the test group and control group.
+
+b. Comment on the shape of the control distribution versus the shape of the test distribution. Justify your answer with calculations.
+
+c. Based on the dotplots and your answers to part *#a* and *#b*, comment on the effectiveness of the preservative in lowering the amount of discoloration in strawberries.

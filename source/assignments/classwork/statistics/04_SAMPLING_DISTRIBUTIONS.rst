@@ -5,7 +5,7 @@ Sampling Distributions
 ======================
 
 
-?. **2006, Free Response, #3**
+1. **2006, Free Response, #3**
 
 The depth from the surface of Earth to a refracting layer beneath the surface can be estimated using methods developed by seismologists. One method is based on the time required for vibrations to travel from a distant explosion to a receiving point. The depth measurement **M** is the sum of the true depth **D** and the random measurement error **E**. That is, :math:`M = D + E`. The measurement error **E** is assumed to be normally distributed with mean 0 feet and standard deviation 1.5 feet.
 
