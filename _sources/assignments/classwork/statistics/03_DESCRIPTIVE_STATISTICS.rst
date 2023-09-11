@@ -51,6 +51,9 @@ Which of the following is the median number of siblings for these 25 students?
 
 Robin works as a server in a small restaurant, where she can earn a tip (extra money) from each customer she serves. The histogram below shows the distribution of her 60 tip amounts for one day of work.
 
+.. image:: ../../../assets/imgs/classwork/2016_apstats_frp_01.png
+	:align: center
+
 a. Write a few sentences to describe the distribution of tip amounts for the day shown.
 
 b. One of the tip amounts was $8. If the $8 tip had been $18, what effect would the increase have had on the following statistics? Justify your answers.
@@ -82,7 +85,7 @@ b. If the parents want to maximize the percentage of having the Ping-Pong balls 
 
 c. Using the catapult that you chose in part *b*, how many centimeters from the target line should this catapult be placed? Explain why you chose this distance.
 
-?. **2003, Free Response, #1**
+4. **2003, Free Response, #1**
 
 Since Hill Valley High School eliminated the use of bells between classes, teachers have noticed that more
 students seem to be arriving to class a few minutes late. One teacher decided to collect data to determine whether
@@ -101,3 +104,18 @@ negative values are shown in the table below.
 a. Construct parallel boxplots using these data.
 
 b. Based on the boxplots in part *#a*, which of the two groups, students or teachers, tends to have watch times that are closer to the true time? Explain your choice.
+
+5. **2006, Free Response Form B, #1**
+
+A large regional real estate company keeps records of home sales for each of its sales agents. Each month, the company publishes the sales volume for each agent. Monthly sales volume is defined as the total sales price of all homes sold by the agent during a month. The figure below displays the cumulative relative frequency plot of the most recent monthly sales volume (in hundreds of thousands of dollars) for these agents.
+
+.. image:: ../../../assets/imgs/classwork/2016_apstats_frp_formb_01.png
+	:align: center
+	
+a. In the context of this question, explain what information is conveyed by the circled point.
+
+b. What proportion of sales agents achieved monthly sales volumes between $700,000 and $800,000 ?
+
+c. For values between 10 and 11 on the horizontal axis, the cumulative relative frequency plot is flat. In the context of this question, explain what this means.
+
+d. A bonus is to be given to 20 percent of the sales agents. Those who achieved the highest monthly sales volume during the preceding month will receive a bonus. What is the minimum monthly sales volume an agent must have achieved to qualify for the bonus?

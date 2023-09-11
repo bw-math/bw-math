@@ -808,7 +808,7 @@ Pie Charts
 
 In other words, the size of each slice of the pie represents the relative frequency of that class. 
 
-(TODO plot)
+.. plot:: assets/plots/other/pie_chart.py
 
 .. _distribution_shapes:
 

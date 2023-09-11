@@ -318,6 +318,11 @@ Dot Plot
 
 .. plot:: assets/plots/other/dot_plot.py
 
+Pie Chart
+---------
+
+.. plot:: assets/plots/other/pie_chart.py
+    
 Histogram
 ---------
 
