@@ -197,7 +197,7 @@ a. Find the terms of the *summation* by filling out the table,
     | Term  |   ?   |   ?   |   ?   |   ?   |   ?   |
     +-------+-------+-------+-------+-------+-------+
 
-b. Calculate the sum :math:` \sum_{i=1}^5 (i-3) \cdot (i + 3)`
+b. Calculate the sum :math:`\sum_{i=1}^5 (i-3) \cdot (i + 3)`
 
 4. Given 
 
