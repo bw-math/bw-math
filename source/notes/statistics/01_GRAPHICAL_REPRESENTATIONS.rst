@@ -873,7 +873,7 @@ A histogram where two classes are more frequent than the other classes in the di
 .. plot:: assets/plots/histograms/histogram_bimodal.py
 
 Example
-    :download:`Meteorite Data Set <../../assets/datasets/meteorite_landings_data.csv>`.
+    :download:`Pigeon Racing Speeds <../../assets/datasets/pigeon_racing_times_data.csv>`.
 
 Skewed
 ******

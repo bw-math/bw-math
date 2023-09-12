@@ -7,9 +7,11 @@ Class Work
    :maxdepth: 2
    :caption: Contents:
 
+   minutia/index
    set_theory/index
    probability/index
    statistics/index
    distributions/index
    hypotheses/index
    regression/index
+   
