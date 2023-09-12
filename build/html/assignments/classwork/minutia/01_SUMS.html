@@ -1,0 +1,944 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Sums &#8212; bishop-walsh-ap-stats  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/classwork/minutia/01_SUMS';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Set Theory" href="../set_theory/index.html" />
+    <link rel="prev" title="Minutia" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">bishop-walsh-ap-stats  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../SPLASH.html">AP Statistics</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../../SYLLABUS.html">Course Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../DATASETS.html">Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../DEMOS.html">Demonstrations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../PRIZES.html">Prize Corner</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../notes/index.html">Class Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../notes/HISTORY.html">Knowledge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../notes/SET_THEORY.html">Set Theory</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/01_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/02_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/03_SAMPLING_DISTRIBUTIONS.html">Sampling Distributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/04_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/00_BERNOULLI.html">Bernoulli Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/02_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/03_UNIFORM.html">Uniform Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/04_NORMAL.html">Normal Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/05_T.html">T Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/06_CHI_SQUARED.html"><img alt="\chi^2" class="math" src="../../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/07_F.html">F Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/hypotheses/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/hypotheses/01_MEAN_TESTS.html">Hypothesis Tests for the Population Mean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/hypotheses/02_PROPORTION_TESTS.html">Hypothesis Tests for the Population Proportion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/hypotheses/03_STDDEV_TESTS.html">Hypothesis Tests for the Population Standard Deviation</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/regression/index.html">Regression</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/regression/01_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/regression/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/regression/03_LINEAR_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/regression/04_RESIDUAL_ANALYSIS.html">Residual Analysis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">Assignments</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../homework/index.html">Homework</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/01_UNIT01.html">Unit 1 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/02_UNIT02.html">Unit 2 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/03_UNIT03.html">Unit 3 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/04_CHAP01_OS.html">Chapter 1 Homework (OpenStax Text)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/05_UNIT04.html">Unit 4 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/06_UNIT05.html">Unit 5 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/07_CHAP06_OS.html">Chapter 6 Homework (OpenStax Text)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/08_CHAP07_OS.html">Chapter 7 Homework (OpenStax Text)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/09_UNIT06.html">Unit 6 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/10_CHAP08_OS.html">Chapter 8 Homework (OpenStax Text)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/11_UNIT07.html">Unit 7 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/12_UNIT08.html">Unit 9 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/13_UNIT09.html">Unit 9 Homework</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Class Work</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 current active has-children"><a class="reference internal" href="index.html">Minutia</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l4 current active"><a class="current reference internal" href="#">Sums</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../set_theory/index.html">Set Theory</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../set_theory/01_INTRODUCTION.html">Set Theory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../set_theory/02_VENN_DIAGRAMS.html">Venn Diagrams</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/01_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/02_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/03_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/04_SAMPLING_DISTRIBUTIONS.html">Sampling Distributions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/05_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/00_INTRODUCTION.html">Probability Distributions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/01_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/02_NORMAL.html">Normal Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/03_T.html">T Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/04_CHI_SQUARED.html"><img alt="\chi^2" class="math" src="../../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/05_F.html">F Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../hypotheses/01_MEAN_TESTS.html">Hypothesis Tests for the Population Mean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../hypotheses/02_PROPORTION_TESTS.html">Hypothesis Tests for the Population Proportion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../hypotheses/03_STDDEV_TESTS.html">Hypothesis Tests for the Population Standard Deviation</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../regression/index.html">Linear Regression</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../regression/01_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../regression/02_LINEAR_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../regression/03_RESIDUAL_ANALYSIS.html">Residual Analysis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../projects/index.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/00_PYTHON.html">Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/01_GRAPHING_I.html">Graphing I: Bar Charts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/02_GRAPHING_II.html">Graphing II: Histograms and Boxplots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/03_ESTIMATION_I.html">Estimation I: One Variable Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/04_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/05_OUTLIERS.html">Outliers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/06_GRAPHING_III.html">Graphing III: Scatter Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/07_ESTIMATION_II.html">Estimation II: Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/08_GRAPHING_IV.html">Residual Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/09_SAMPLING.html">Sampling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/10_SETS.html">Sample Spaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/11_SIMULATION.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/12_BAYESIAN.html">Bayesian Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/13_GRAPHING_V.html">Graphing V: Probability Density</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/14_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/15_DISTRIBUTIONS.html">Other Distributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/16_NORMAL.html">Normal Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/17_FINANCE.html">Financial Applications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/18_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/19_DATA_MINING.html">Data Mining</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../references/index.html">References</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../references/TEXTS.html">Textbooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../references/EXAM.html">A.P. Statistics Exam</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../references/tables/index.html">Statistical Tables</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../references/tables/01_Z_TABLE.html">Z Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../references/tables/02_CHI_SQUARED_TABLE.html"><img alt="\chi^2" class="math" src="../../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../references/tables/03_T_TABLE.html">T Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../references/tables/04_PEARSON_TABLE.html">Pearson Correlation Coefficient Table</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../references/TI84.html">TI-84</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../references/python/index.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../references/python/SHELL.html">Online Python Shell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../references/python/01_SETUP.html">Python Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../references/python/02_BASIC.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../references/python/03_SETS.html">Sets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../references/python/04_FUNCTIONS.html">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../references/python/05_PLOTS.html">Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../references/python/06_FILES.html">Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../references/python/07_CONTROLS.html">Control Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../references/python/08_WEB.html">The Internet</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../maintenance/index.html">Maintenance</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../maintenance/LATEX.html">LaTex Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../maintenance/SPHINX.html">Sphinx</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/assignments/classwork/minutia/01_SUMS.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Sums</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#something-about-sums">Something About Sums</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-anatomy-of-sums">Some Anatomy of Sums</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-examples-of-sums">Some Examples of Sums</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sum-complications">Sum Complications</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="sums">
+<span id="summations"></span><h1>Sums<a class="headerlink" href="#sums" title="Permalink to this headline">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>There will be many obligatory <em>sum</em> puns on this page.</p>
+</div>
+<section id="something-about-sums">
+<h2>Something About Sums<a class="headerlink" href="#something-about-sums" title="Permalink to this headline">#</a></h2>
+<p><em>Some</em> mathematical expressions are <em>sums</em>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Told you.</p>
+</div>
+<p>A <em>sum</em> is a type of operation, like <em>+</em>, <em>-</em>, <em>x</em> and <em>%</em> (addition, subtraction, multiplication, division), but there is a key difference. The arithmetic operations mentioned in the previous sentence <em>operate</em> on <em>numbers</em>. The <em>sum</em> symbol operates on <em>sets</em>.</p>
+<section id="some-anatomy-of-sums">
+<h3>Some Anatomy of Sums<a class="headerlink" href="#some-anatomy-of-sums" title="Permalink to this headline">#</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><img class="math" src="../../../_images/math/92ae9cf12c36c88c900769f206e89cf45347ccab.png" alt="\sum"/> is the capital Greek letter, <em>epsilon</em>.</p>
+</div>
+<p>The different parts of the sum are: the <strong>upper limit</strong>, the <strong>lower limit</strong>, the <strong>term</strong> and the <strong>index</strong>. These components can be identified with the following diagram,</p>
+<img alt="../../../_images/summation_symbol.png" class="align-center" src="../../../_images/summation_symbol.png" />
+<p>A sum contains two important bits of information:</p>
+<ol class="arabic simple">
+<li><p>Instructions on how to construct each <em>term</em>.</p></li>
+<li><p>Instructions on how to combine each <em>term</em>.</p></li>
+</ol>
+</section>
+<section id="some-examples-of-sums">
+<h3>Some Examples of Sums<a class="headerlink" href="#some-examples-of-sums" title="Permalink to this headline">#</a></h3>
+<section id="example-1">
+<h4>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">#</a></h4>
+<div class="math">
+<p><img src="../../../_images/math/9f0230bb243de61d1f74a04fbf98484794d5fabb.png" alt="\sum_{i=1}^{5} i"/></p>
+</div><p>Let’s break it down, term by term. The first set of instructions a <em>sum</em> gives us is instructions on how to construct each <em>term</em> of the <em>sum</em>. The <em>index</em> tells us to look at the numbers <img class="math" src="../../../_images/math/2a4c76bb6bcb16276d7e2d97c60499f87104f066.png" alt="i = 1, 2, 3, 4, 5"/> and then create the term <img class="math" src="../../../_images/math/25417a5e102a0e11d442f6e4865508e47cf4b0aa.png" alt="i"/> for each one. We start at <img class="math" src="../../../_images/math/9148ef3121220ecfc8b23f0954d00c7e528b0b7b.png" alt="1"/> because the <em>lower limit</em> is <img class="math" src="../../../_images/math/d96801db5d46bf3176acd407b88f9bd1572bddac.png" alt="i = 1"/>. We go up to <img class="math" src="../../../_images/math/3dbaa3608d1eff9aabab1c710e034597bdc910b0.png" alt="5"/> because the <em>upper limit</em> is <img class="math" src="../../../_images/math/3dbaa3608d1eff9aabab1c710e034597bdc910b0.png" alt="5"/>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The <em>index</em> of a <em>sum</em> always increases by one, as you move from term to term.</p>
+</div>
+<p>A table will help visualize this,</p>
+<table class="table">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Index</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Term</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+</tr>
+</tbody>
+</table>
+<p>In this case, each <em>term</em> is equal to the <em>index</em> because the expression that defines the <em>term</em> is just <img class="math" src="../../../_images/math/25417a5e102a0e11d442f6e4865508e47cf4b0aa.png" alt="i"/>.</p>
+<p>Now that we know what each term of the <em>sum</em> is, we move on to the instructions that tell us how to <em>combine these terms</em>. To <em>sum</em>, we take each <em>term</em> of the <em>set</em> (the bottom row of the table) and add it up,</p>
+<div class="math">
+<p><img src="../../../_images/math/a23770b28a571c2a51b005c9fabc175b05df3db5.png" alt="\sum_{i=1}^5 i = 1 + 2 + 3 + 4 + 5 = 15"/></p>
+</div></section>
+<section id="example-2">
+<h4>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">#</a></h4>
+<p>Let’s make it more complicated. Suppose you were given the expression,</p>
+<div class="math">
+<p><img src="../../../_images/math/6605016a60aed73aa4140dea4711e8164e478620.png" alt="\sum_{i=1}^{4} \frac{i^2}{4}"/></p>
+</div><p>In the same fashion, we first determine the terms of the sum by looking at the values of the index for <img class="math" src="../../../_images/math/825da7b1b08cd21efb3f57fe36d45cc737728881.png" alt="i=1,2,3,4"/> (from the <em>lower limit</em> to the <em>upper limit</em>)</p>
+<table class="table">
+<colgroup>
+<col style="width: 4%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Index</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Term</p></td>
+<td><p><img class="math" src="../../../_images/math/1a8d112411e4dfb6853af2df742a485c02487f47.png" alt="\frac{1^2}{4} = \frac{1}{4}"/></p></td>
+<td><p><img class="math" src="../../../_images/math/212afc4de7686d5f4efa2af9e112399750b14266.png" alt="\frac{2^2}{4} = \frac{4}{4}"/></p></td>
+<td><p><img class="math" src="../../../_images/math/62dd77c8016fb32a410ae9b8359b479da8497784.png" alt="\frac{3^2}{4} = \frac{9}{4}"/></p></td>
+<td><p><img class="math" src="../../../_images/math/ccdef8e607caee955b1871ba5fafc55a987eb03a.png" alt="\frac{4^2}{4} = \frac{16}{4}"/></p></td>
+<td><p><img class="math" src="../../../_images/math/7346d141369376f1d075de42c0bceaa02443ebb4.png" alt="\frac{5^2}{4} = \frac{25}{4}"/></p></td>
+</tr>
+</tbody>
+</table>
+<p>Then, once we have each one, we add up each <em>term</em>,</p>
+<div class="math">
+<p><img src="../../../_images/math/0c4af9972c62273abeb66a333bf3b7a3f9fcc21b.png" alt="\sum_{i=1}^{4} \frac{i^2}{4} = \frac{1}{4} + \frac{4}{4} + \frac{9}{4} + \frac{16}{4} + \frac{25}{4} = \frac{55}{4} = 13.75"/></p>
+</div></section>
+</section>
+<section id="sum-complications">
+<h3>Sum Complications<a class="headerlink" href="#sum-complications" title="Permalink to this headline">#</a></h3>
+<p>Sometimes <em>sums</em> do not tell us <em>how</em> to make the terms of the summation; sometimes they tell us <em>what</em> the terms are. In other words, rather than giving us a <em>formula</em> involving the index, sometimes a sum will tell you to take <em>terms</em> from a particular <em>sample</em> (also known mathematically as a <em>set</em>).</p>
+<section id="example-3">
+<h4>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">#</a></h4>
+<p>Suppose you were given the following <em>sample</em> (<em>set</em>),</p>
+<div class="math">
+<p><img src="../../../_images/math/74892eec31e5695aca9ec62e12879d945504828e.png" alt="S = \{ 15, 12, 13, 17, 18 \}"/></p>
+</div><p>Each individual in this <em>sample</em> (<em>set</em>) can be <em>indexed</em>,</p>
+<div class="math">
+<p><img src="../../../_images/math/57fdc6a2f6b5d37ab1dc888fab98f769f62b730c.png" alt="S = \{ x_1, x_2, x_3, x_4, x_5 \}"/></p>
+</div><p>Where we have <em>indexed</em> each observation according to the scheme,</p>
+<table class="table">
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 54%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img class="math" src="../../../_images/math/25417a5e102a0e11d442f6e4865508e47cf4b0aa.png" alt="i"/></p></td>
+<td><p><img class="math" src="../../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/></p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>12</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>13</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>17</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>18</p></td>
+</tr>
+</tbody>
+</table>
+<p>If you are given a <em>sample</em> (<em>set</em>) and you encounter a <em>sum</em> that looks like,</p>
+<div class="math">
+<p><img src="../../../_images/math/7966f71733990a7ff4b746c2628aeee96876653a.png" alt="\sum_{i=1}^n x_i"/></p>
+</div><p>This type of <em>sum</em> is telling you to take each <em>term</em> (<em>member</em>) of the <em>indexed sample</em> (<em>set</em>) and sum them up.</p>
+<p>Going back to the example,</p>
+<div class="math">
+<p><img src="../../../_images/math/74892eec31e5695aca9ec62e12879d945504828e.png" alt="S = \{ 15, 12, 13, 17, 18 \}"/></p>
+</div><p>We can calculate the sum of this <em>sample</em> (<em>set</em>) <img class="math" src="../../../_images/math/23298f92ca8dc2a1ce6332eb7a21d5f2e9ae0bd8.png" alt="S"/> by summing up each <em>term</em>,</p>
+<div class="math">
+<p><img src="../../../_images/math/ad616659f2e800d4f5be254bc1a885898d8250d9.png" alt="\sum_{i = 1}^5 x_i = x_1 + x_2 + x_3 + x_4 + x_5 = 15 + 12 + 13 + 17 + 18 = 75"/></p>
+</div></section>
+</section>
+<section id="problems">
+<h3>Problems<a class="headerlink" href="#problems" title="Permalink to this headline">#</a></h3>
+<ol class="arabic simple">
+<li><p>Given</p></li>
+</ol>
+<div class="math">
+<p><img src="../../../_images/math/c998a776d52a41eea8f042510856c06f149bb559.png" alt="\sum_{i=1}^5 (2\cdot i + 1)"/></p>
+</div><ol class="loweralpha">
+<li><p>Find the terms of the <em>summation</em> by filling out the table,</p>
+<blockquote>
+<div><table class="table">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Index</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Term</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+<li><p>Calculate the sum <img class="math" src="../../../_images/math/7d5adefc55cf4eb4eb7928efcdceb0652eb45ba2.png" alt="\sum_{i=1}^5 (2\cdot i + 1)"/></p></li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><p>Given</p></li>
+</ol>
+<div class="math">
+<p><img src="../../../_images/math/c57bb05f647891d0c43dabf9aec83213429be62b.png" alt="\sum_{i=1}^5 (i - 3)^2"/></p>
+</div><ol class="loweralpha">
+<li><p>Find the terms of the <em>summation</em> by filling out the table,</p>
+<blockquote>
+<div><table class="table">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Index</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Term</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+<li><p>Calculate the sum <img class="math" src="../../../_images/math/95adf85c24953ec96fa6863dfc071630af04d61f.png" alt="\sum_{i=1}^5 (i - 3)^2"/></p></li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p>Given</p></li>
+</ol>
+<div class="math">
+<p><img src="../../../_images/math/eab3f72d993ffa759e1d3b0a3d6d0370cc008331.png" alt="\sum_{i=1}^5 (i-3) \cdot (i + 3)"/></p>
+</div><ol class="loweralpha">
+<li><p>Find the terms of the <em>summation</em> by filling out the table,</p>
+<blockquote>
+<div><table class="table">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Index</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Term</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+<li><p>Calculate the sum :math:` sum_{i=1}^5 (i-3) cdot (i + 3)`</p></li>
+</ol>
+<ol class="arabic simple" start="4">
+<li><p>Given</p></li>
+</ol>
+<div class="math">
+<p><img src="../../../_images/math/82f72ae06881badb3f1c9ebef52d2b6fd3faffed.png" alt="S = \{ 20, 18, 18, 21, 22 \}"/></p>
+</div><div class="math">
+<p><img src="../../../_images/math/aba983852ba099feda1e9f63972b7a4939b1d0dd.png" alt="\sum_{i=1}^{5} x_i"/></p>
+</div><ol class="loweralpha">
+<li><p>Find the terms of the <em>sumation</em> by filling out the table,</p>
+<blockquote>
+<div><table class="table">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Index</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Term</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+<li><p>Calculate the sum <img class="math" src="../../../_images/math/73da75bca905da53ea4447ea57056c72c2815f9d.png" alt="\sum_{i=1}^{5} x_i"/></p></li>
+</ol>
+<ol class="arabic simple" start="5">
+<li><p>Given</p></li>
+</ol>
+<div class="math">
+<p><img src="../../../_images/math/6d69da9ac33cca61450c1aa608dba03fc3a7b272.png" alt="S = \{ (3,4), (4,7), (5, 4), (6, 6), (7, 8) \}"/></p>
+</div><div class="math">
+<p><img src="../../../_images/math/62190c2289417f53f340350e1f156dcf96abb80c.png" alt="\sum_{i=1}^{5} (x_i - 5) \cdot (y_i - 5.8)"/></p>
+</div><ol class="loweralpha">
+<li><p>Find the terms of the <em>sumation</em> by filling out the table,</p>
+<blockquote>
+<div><table class="table">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Index</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Term</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+<li><p>Calculate the sum <img class="math" src="../../../_images/math/c732ca3251371f20ce15c08a43ed2876248e43ce.png" alt="\sum_{i=1}^{5} (x_i - 5) \cdot (y_i - 5.8)"/></p></li>
+</ol>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Minutia</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../set_theory/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Set Theory</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#something-about-sums">Something About Sums</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-anatomy-of-sums">Some Anatomy of Sums</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-examples-of-sums">Some Examples of Sums</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sum-complications">Sum Complications</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Grant Moore
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023, Grant Moore.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
