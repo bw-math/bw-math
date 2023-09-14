@@ -28,6 +28,8 @@ Scientific
 
 - `Alpha Particle Emissions <https://www.randomservices.org/random/data/Alpha.html>`_
     - :download:`Alpha Particle Emissions CSV <./assets/datasets/alpha_particle_emissions_data.csv>`
+- `Cicada Measurements <https://www.randomservices.org/random/data/Cicada.html>`_
+    - :download:`Cicada Measurements <./assets/datasets/cicada_data.csv>`
 - `Polar Bear Measurements <https://arcticdata.io/catalog/view/doi:10.5065/D60V89XD>`_
     - :download:`Polar Bear Measurements <./assets/datasets/bear_measurements_data.csv>`
 - `Density of the Earth <https://www.randomservices.org/random/data/Cavendish.html>`_

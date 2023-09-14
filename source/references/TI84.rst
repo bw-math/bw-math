@@ -30,7 +30,7 @@ Histograms (Ungrouped)
     :alt: Histograms (Ungrouped)
     :target: https://www.youtube.com/watch?v=AzsK0wnPfAg
 
-.. _ti84_histograms:
+.. _ti84_ogives:
 
 Ogives
 ------
