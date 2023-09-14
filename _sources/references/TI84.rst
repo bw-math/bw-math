@@ -21,6 +21,24 @@ Creating Lists
 Statistics
 ==========
 
+.. _ti84_histograms:
+
+Histograms (Ungrouped)
+----------------------
+
+.. image:: https://img.youtube.com/vi/AzsK0wnPfAg/maxresdefault.jpg
+    :alt: Histograms (Ungrouped)
+    :target: https://www.youtube.com/watch?v=AzsK0wnPfAg
+
+.. _ti84_ogives:
+
+Ogives
+------
+
+.. image:: https://img.youtube.com/vi/KH0b0OL_82Q/maxresdefault.jpg
+    :alt: Sample Percentiles
+    :target: https://www.youtube.com/watch?v=KH0b0OL_82Q
+
 .. _ti84_sample_percentiles:
 
 Sample Percentiles
