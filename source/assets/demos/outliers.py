@@ -6,7 +6,9 @@ Grant Moore
 Some Point In The Distant Past
 ******************************
 
-This script will generate a dot plot for a (hard-coded) distribution of quiz grades. It will then calculate the sample mean and sample median and plot them with red and green lines, respectively. We will alter the distribution of grades in class to see how it affects the sample mean and sample median.
+This script will generate a dot plot for a (hard-coded) distribution of quiz grades.
+It will then calculate the sample mean and sample median and plot them with red and green lines, respectively.
+We will alter the distribution of grades in class to see how it affects the sample mean and sample median.
 """
 
 ##################################################################################
@@ -27,7 +29,7 @@ fig, axs = plt.subplots()
 # NOTE: the y-variable in the ordered pair is being increased by 1 in every iteration
 #       of range(). This is so the dots can be stacked in a vertical line.
 data = \
-[ (3, i+1) for i in range(2) ] +\
+[ (3, i+1) for i in range(1) ] +\
 [ (4, i+1) for i in range(3) ] +\
 [ (5, i+1) for i in range(2) ] +\
 [ (6, i+1) for i in range(6) ] +\
