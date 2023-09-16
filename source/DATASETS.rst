@@ -28,6 +28,9 @@ Scientific
 
 - `Alpha Particle Emissions <https://www.randomservices.org/random/data/Alpha.html>`_
     - :download:`Alpha Particle Emissions CSV <./assets/datasets/alpha_particle_emissions_data.csv>`
+- `Atmospheric Radiation <https://www.gmcmap.com/index.asp>`_
+    - :download:`Raw Data CSV <./assets/datasets/geiger_counter_dc_data.csv>`
+    - :download:`Frequency Distribution <./assets/datasets/geiger_freq_data.csv>`
 - `Cicada Measurements <https://www.randomservices.org/random/data/Cicada.html>`_
     - :download:`Cicada Measurements <./assets/datasets/cicada_data.csv>`
 - `Polar Bear Measurements <https://arcticdata.io/catalog/view/doi:10.5065/D60V89XD>`_
