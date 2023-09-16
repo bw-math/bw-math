@@ -39,7 +39,7 @@ import random as rand
 
 # Generate data
 data = ( 
-    [ rand.randint(1, 50) for _ in range(5) ] + # generate some random F's, 0 - 49
+    [ rand.randint(40, 50) for _ in range(5) ] + # generate some random F's, 0 - 49
     [ 9*rand.random() + 50 for _ in range(4) ] + # generate some random E's, 50 - 59 
     [ 9*rand.random() + 60 for _ in range(5) ] + # generate some random D's, 60 -69
     [ 9*rand.random() + 70 for _ in range(5) ] + # generate some random C's, 70- 79
