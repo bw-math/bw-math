@@ -32,7 +32,7 @@ Instructions
 Background
 ==========
 
-In 27 BC, Julius Caesar's nephew, Octavian Caesar, was given the title *Augustus* by the Roman Senate. With this event, the city state of Rome had ceased to be `republic <https://en.wikipedia.org/wiki/Republic>`_. Augustus Caesar had become the first emperor of the `Roman Empire <https://en.wikipedia.org/wiki/Roman_Empire>`_. 
+In 27 BC, Julius Caesar's nephew, Octavian Caesar, was given the title *Augustus* by the Roman Senate. With this event, the city-state of Rome ceased to be a `republic <https://en.wikipedia.org/wiki/Republic>`_. Augustus Caesar became the first emperor of the `Roman Empire <https://en.wikipedia.org/wiki/Roman_Empire>`_. 
 
 The Roman Empire would last for several centuries, absorbing large parts of what is now Europe, Africa and Asia into its boundaries. 
 
@@ -41,7 +41,7 @@ The Roman Empire would last for several centuries, absorbing large parts of what
 
 .. topic:: Evolution of the Roman Empire
 
-    Rome from the citystate by the Tiber to the fall of the Western Roman Empire
+    Rome from the city-state by the Tiber to the fall of the Western Roman Empire
 
     `Source: Roman Empire <https://en.wikipedia.org/wiki/File:Romempgif.gif>`_
 
