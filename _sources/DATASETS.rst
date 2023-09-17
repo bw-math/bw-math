@@ -37,6 +37,8 @@ Scientific
     - :download:`Polar Bear Measurements <./assets/datasets/bear_measurements_data.csv>`
 - `Density of the Earth <https://www.randomservices.org/random/data/Cavendish.html>`_
     - :download:`Earth Density CSV <./assets/datasets/earth_density_data.csv>`
+- `Lettuce Growth <https://www.kaggle.com/datasets/jjayfabor/lettuce-growth-days>`_
+	- :download:`Lettuce Growth <./assets/datasets/lettuce_growth_data.csv>`
 - `London Weather <https://www.kaggle.com/datasets/emmanuelfwerr/london-weather-data>`_
     - :download:`London Weather CSV <./assets/datasets/london_weather_data.csv>`
 - `Manatee Mortality <https://myfwc.com/research/manatee/rescue-mortality-response/statistics/mortality/>`_
@@ -73,8 +75,14 @@ Cultural
     - :download:`Kentucky Derby Winning Times CSV <./assets/datasets/kentucky_derby_winners_data.csv>`
 - `Mega Millions Winning Numbers in New York since 2002 <https://catalog.data.gov/dataset/lottery-mega-millions-winning-numbers-beginning-2002>`_
 	- :download:`Mega Millions CSV <./assets/datasets/mega_millions_data.csv>`
+- `Plane Crashes 1908 - 2023 <https://www.kaggle.com/datasets/jogwums/air-crashes-full-data-1908-2023>`_
+	- :download:`Plane Crashes CSV <./assets/datasets/plane_crash_data.csv>`
 - `Pigeon Racing Times <https://github.com/joanby/python-ml-course/blob/master/datasets/pigeon-race/pigeon-racing.csv>`_
     - :download:`Pigeon Racing Times CSV <./assets/datasets/pigeon_racing_times_data.csv>`
 - `Marvel Movies <https://www.kaggle.com/datasets/joebeachcapital/marvel-movies>`_
     - :download:`Marvel Movies CSV <./assets/datasets/diamonds_data.csv>`
-
+- `Sega Games <https://www.kaggle.com/datasets/joebeachcapital/sega-games>`_
+	- :download:`Sega Games CSV <./assets/datasets/sega_games_data.csv>`
+- `Wine Quality <https://www.kaggle.com/datasets/joebeachcapital/wine-quality>`_
+	- :download:`Red Wine Quality CSV <./assets/datasets/wine_red_quality_data.csv>`
+	- :download:`White Wine Quality CSV <./assets/datasets/wine_white_quality_data.csv>`
