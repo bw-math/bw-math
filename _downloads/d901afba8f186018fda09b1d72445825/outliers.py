@@ -7,8 +7,11 @@ Some Point In The Distant Past
 ******************************
 
 This script will generate a dot plot for a (hard-coded) distribution of quiz grades.
-It will then calculate the sample mean and sample median and plot them with red and green lines, respectively.
-We will alter the distribution of grades in class to see how it affects the sample mean and sample median.
+It will then calculate the sample mean and sample median and plot them with red and
+green lines, respectively.
+
+We will alter the distribution of grades in class to see how it affects the sample mean
+and sample median.
 """
 
 ##################################################################################
@@ -34,7 +37,8 @@ data = \
 [ (5, i+1) for i in range(2) ] +\
 [ (6, i+1) for i in range(6) ] +\
 [ (7, i+1) for i in range(2) ] +\
-[ (9, i+1) for i in range(1) ] 
+[ (9, i+1) for i in range(5) ] +\
+[ (24, i+1) for i in range(1) ] 
 
 # calculate number of samples
 n = len(data)
