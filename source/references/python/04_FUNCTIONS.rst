@@ -473,12 +473,126 @@ We are able to simulate draws from arbitary normally distributed populations.
 Statistics
 ----------
 
-**Python** also has a dedicated package specifically for statistical functions, named ``statistics``. We will encounter this package we will start calculating normal probabilities and percentiles in **Section 2.2**, and then become *extremely* familiar with it once we get to :ref:`sampling_distributions` and :ref:`central_limit_theorem`.
+**Python** also has a dedicated package specifically for statistical functions, named ``statistics``. 
+
+.. _python_sample_mean:
+
+``mean(<list: required>)``
+    Calculates the sample mean of a univariate dataset passed in through ``list``.
+
+.. code:: python
+
+    import statistics as stat
+
+    data = [105, 129, 87, 86, 111, 111, 89, 81, 108, 92, 110,
+        100, 75, 105, 103, 109, 76, 119, 99, 91, 103, 129,
+        106, 101, 84, 111, 74, 87, 86, 103, 103, 106, 86,
+        111, 75, 87, 102, 121, 111, 88, 89, 101, 106, 95,
+        103, 107, 101, 81, 109, 104]
+
+    xbar = stat.mean(data)
+
+    print(xbar)
+
+Output:
+
+    99.12
+
+.. _python_sample_median:
+
+``median(<list : required>)``
+    Calculates the sample median of a univariate dataset passed in through ``list``.
+
+.. code:: python
+
+    import statistics as stat
+
+    data = [105, 129, 87, 86, 111, 111, 89, 81, 108, 92, 110,
+        100, 75, 105, 103, 109, 76, 119, 99, 91, 103, 129,
+        106, 101, 84, 111, 74, 87, 86, 103, 103, 106, 86,
+        111, 75, 87, 102, 121, 111, 88, 89, 101, 106, 95,
+        103, 107, 101, 81, 109, 104]
+
+    m = stat.median(data)
+
+    print(m)
+
+Output:
+
+    102.5
+
+.. _python_standard_deviation:
+
+``stdev(<list : required>)``
+    Calculates the sample standard deviation of a univariate dataset passed in through ``list``.
+
+.. code:: python
+
+    import statistics as stat
+
+    data = [105, 129, 87, 86, 111, 111, 89, 81, 108, 92, 110,
+        100, 75, 105, 103, 109, 76, 119, 99, 91, 103, 129,
+        106, 101, 84, 111, 74, 87, 86, 103, 103, 106, 86,
+        111, 75, 87, 102, 121, 111, 88, 89, 101, 106, 95,
+        103, 107, 101, 81, 109, 104]
+
+    s = stat.stdev(data)
+
+    print(s)
+
+Output:
+
+    13.388450703681062
+
+.. _python_quantiles: 
+
+Quantiles
+*********
+
+``quantiles(<list : required>, <n: required>)``
+    Divides the sample of data contained in ``list`` into a number of equally distributed groups determined by ``groupings``.  
+
+A *percentile* is defined technically as the division of the sample into one hundred equally distributed groups of individuals. Quartiles, similarily, are defined technically as the division of the sample into four equally distributed groups of individuals.
+
+A *quantile* is a generalization of this idea. A *quantile* divides the sample into ``n`` equally distributed groups of individuals. 
+
+.. warning::
+
+    ``n`` here is the *number of groupings*, not the number of observations.
+
+In terms of quantiles, percentiles are a special case of quantiles when ``n = 100``. Quartiles are a special case of quantiles when ``n = 4``. The following code snippet shows how to use ``quantiles()`` to calculate the quartiles of a distribution.
+
+.. code:: python
+
+    import statistics as stat
+
+    data = [105, 129, 87, 86, 111, 111, 89, 81, 108, 92, 110,
+        100, 75, 105, 103, 109, 76, 119, 99, 91, 103, 129,
+        106, 101, 84, 111, 74, 87, 86, 103, 103, 106, 86,
+        111, 75, 87, 102, 121, 111, 88, 89, 101, 106, 95,
+        103, 107, 101, 81, 109, 104]
+
+    # set n = 4 to calculate quartiles
+    quartiles = stat.quantiles(data, n=4)
+
+    print(quartiles)
+
+Output:
+    
+    [87.0, 102.5, 108.25]
+
+.. important::
+
+    The ``quantile()`` function use *interpolation*! In other words, the output may not correspond to observable values of the sample!
 
 .. _python_normal_distribution:
 
 Normal Distribution
 *******************
+
+.. note::
+
+    We do not need this function until Section 2.2
 
 First, we need to create a *normal distribution* with a certain ``mean`` and ``std_dev`` (standard deviation),
 
@@ -495,7 +609,13 @@ Once the distribution is created, we can ask it questions. The two most importan
 
 **Cumulative Distribution Function**
 
-TODO
+Recall the cumulative distribution function (CDF) of a sample of data tells you how much of a distribution is less than or equal to a certain value. Symbolically,
+
+.. math::
+
+    F(x_i) = P(\mathcal{X} \leq x_i)
+ 
+You can access the CDF of the normal distribution stored in ``dist`` using the ``cdf()`` function. Pass into the ``cdf()`` function the value whose percentage (probability) you would like to calculate (:math:`x_i` in above line). The following code snippet shows how to use the normal distribution created in the previous section to calculate cumulative percentages (probabilities),
 
 .. code:: python
 
@@ -505,26 +625,44 @@ TODO
 	
 Output:	
 
-	Prob(X < 120) = 0.98
+	Prob(X <= 120) = 0.98
 	
 **Inverse Cumulative Distribution Function**
 
-TODO 
+Every one-to-one function has an inverse; the cumulative distribution function is no different. The inverse CDF reverses the operation performed by the CDF. 
+
+In other words, if the CDF can be summarized through the following operation,
+
+.. math::
+
+    \text{observation} \rightarrow \text{CDF} \rightarrow \text{percentage}
+
+Then the inverse CDF operates in the reverse direction. Given a percentage, the inverse CDF tells you what observation in the sample corresponds to that percentage,
+
+.. math::
+
+    \text{percentage} \rightarrow \text{inverseCDF}e \rightarrow \text{observation}
+
+The following code snippet shows how to call the inverse cumulative distribution function on the normal distribution created in the previous sections. 
 
 .. code:: python
 
 	third_quartile = dist.inv_cdf(0.75)
 	rounded_quartile = round(third_quartile,2)
-	print("P(X <= ", rounded_quartile , " ) = 0.75")
+	print("P(X <= ", rounded_quartile , ") = 0.75")
 	
 Output:
 
-	P(X <= 106.74 ) = 0.75
+	P(X <= 106.74) = 0.75
 
 .. _python_linear_regression:
 
 Linear Regression
 *****************
+
+.. note::
+
+    We do not need these functions until Section 3.1 - 3.3.
 
 TODO 
 
