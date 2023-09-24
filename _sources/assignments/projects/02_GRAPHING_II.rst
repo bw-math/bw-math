@@ -28,11 +28,19 @@ Instructions
 Formulae
 ========
 
-Recall the formula for *percent error* is given by,
+Percent Error
+-------------
 
 .. math::
 
     \text{percent error} = \frac{ \text{estimated - actual} }{ \text{actual} } \cdot 100
+
+Coefficient of Variation
+------------------------
+
+.. math::
+
+    \text{CV} = \frac{s}{\bar{x}}
 
 .. _project_two_background: 
 
@@ -173,13 +181,13 @@ As you can see, there are lots of options to make your graph nice and pretty.
 Boxplots
 --------
 
-Recall a *boxplot* is a way of visualizing the *spread* of a distribution. In order to create one, a boxplot requires the :ref:`five_number_summary` of the distribution. The five sample statistics that are required are as follows,
+Recall a *boxplot* is a way of visualizing the *spread*, or *variation* of a distribution. In order to create one, a boxplot requires the :ref:`five_number_summary` of the distribution. The five sample statistics that are required are as follows,
 
-1. :ref:`maximum`
+1. :ref:`maximum <maximum>`
 2. :ref:`first quartile <special_percentiles>`
-3. :ref:`median`
+3. :ref:`median <median>`
 4. :ref:`third quartile <special_percentiles>` 
-5. :ref:`minimum`
+5. :ref:`minimum <minimum>`
 
 #2-#4 represent the *box* of the boxplot. #1 and #5 represent the *whiskers* of the boxplot. 
 
@@ -191,7 +199,7 @@ For example, suppose we had a sample of *ordered* data,
 
 The minimum and maximum are simply the first and last observation in a sample of *ordered* observations.
 
-The median is found by looking at the midpoint of the *ordered* sample, i.e. the observation where half of the sample is less than or equal to the value of the observation and half of the sample is greater than or equal to the value of the observation. 
+The median is found by looking at the midpoint of the *ordered* sample, i.e. the observation where half of the sample is less than or equal to the value of the observation and half of the sample is greater than the value of the observation. 
 
 Similarly, the first and third quartile can be found by separating the sample into the lower half and upper half, where the median is included in both groupings,
 
@@ -230,9 +238,16 @@ A boxplot for the example we were just discussing can be created in **Python** w
 
 .. plot:: assets/plots/boxplots/boxplot_simple.py
 
-The `boxplot() <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html>` is, as you might have guessed, :ref:`matplotlib`'s way of generating boxplots. The first argument is the dataset we will wish to graph. The second argument is a *named* argument ``vert``. This controls the *direction* of the boxplot, i.e vertical versus horizontal.
+The `boxplot() <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html>`_ is, as you might have guessed, :ref:`matplotlib`'s way of generating boxplots. The first argument is the dataset we will wish to graph. The second argument is a *named* argument ``vert``. This controls the *direction* of the boxplot, i.e vertical versus horizontal.
 
 We have passed in a value of ``False``, meaning we want a *horizontal* boxplot. We always want our boxplots to align with our histograms; that is to say, we want the x-axis of both the histogram and the boxplot to represent the same values.
+
+Sample Statistics
+=================
+
+Python has a `python_stats_package` library that provides functions for calculating common sample statistics. Hope over to the `python_stats_package` page and read through the list of functions that can be imported into your script. 
+
+For this lab, we will need the `python_sample_mean` function, the `python_quantiles` function and the `python_standard_deviation` function. The rest can be ignored for the time being.
 
 .. _project_two_project:
 
@@ -242,9 +257,9 @@ Project
 Velocity of Light
 -----------------
 
-1. Load the :ref:`Velocity of Light <project_two_dataset>` data into a :ref:`Python Script <python_scripts>` using the tecnique outlined in the :ref:`project_two_loading_data` section.
+1. Load the :ref:`Velocity of Light <project_two_dataset>` data into a :ref:`Python Script <python_scripts>` using the technique outlined in the :ref:`project_two_loading_data` section.
 
-2. Construct a histogram plot for this data sets using eight classes. Answer the following questions in the body of your docstring.
+2. Construct a histogram plot for this data sets using eight classes. Answer the following questions in the body of your :ref:`python_docstring`.
 
     a. What is the class width of your histogram? 
     
@@ -252,25 +267,29 @@ Velocity of Light
 
     c. What is the most frequent class?
 
-    d. What type of shape does this distribtion have? Is this expected? Why or why not? 
+    d. What type of shape does this distribtion have? Is this expected? Why or why not?
 
-3. Construct a boxplot for this data set. Using the boxplot, answer the following questions in the body of your docstring.
+3. Construct a boxplot for this data set. Using the boxplot, answer the following questions in the body of your :ref:`python_docstring.
 
-    a. Estimate the 75 :sup:`th` percentile of this data set. 
+    a. Estimate the 75 :sup:`th` percentile of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
 
-    b. Estimate the 25 :sup:`th` percentile of this data set.
+    b. Estimate the 25 :sup:`th` percentile of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
 
-    c. Estimate the median of this data set.
+    c. Estimate the median of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
 
     d. Estimate the range of this data set.
 
     e. Based on the boxplot, do you detect any possible outliers?  
 
-4. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your docstring.
+4. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your :ref:`python_docstrings`.
 
-    a. What is the sample mean of the dataset?
+    a. What is the sample mean of this dataset? Use the :ref:`python_sample_mean` function.
 
     b. What is the percent error of this estimate with respect to the actual value?
+
+    c. What is the sample standard deviation of this dataset? Use the :ref:`python_standard_deviation` function.
+
+    d. Find the coefficient of variation for this dataset.
 
 Density of the Earth 
 --------------------
@@ -289,21 +308,25 @@ Density of the Earth
 
 3. Construct a boxplot for this data set. Using the boxplot, answer the following questions in the body of your docstring.
 
-    a. Estimate the 75 :sup:`th` percentile of this data set. 
+    a. Estimate the 75 :sup:`th` percentile of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
 
-    b. Estimate the 25 :sup:`th` percentile of this data set.
+    b. Estimate the 25 :sup:`th` percentile of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
 
-    c. Estimate the median of this data set.
+    c. Estimate the median of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
 
     d. Estimate the range of this data set. 
 
-    e. Based on the boxplot, do you detect any possible outliers?  
+    e. Based on the boxplot, do you detect any possible outliers?
 
 4. The actual denity of the Earth, according to the best estimates we have today, is :math:`5.514 \frac{g}{cm^3}`. Use this information to answer the following questions in the body of your docstring.
 
     a. What is the sample mean of the dataset?
 
     b. What is the percent error of this estimate with respect to the actual value?
+
+    c. What is the sample standard deviation of this dataset? Use the :ref:`python_standard_deviation` function.
+
+    d. Find the coefficient of variation for this dataset.
 
 .. _project_two_dataset:
 
@@ -340,3 +363,4 @@ References
 - `matplotlib colors <https://matplotlib.org/stable/gallery/color/named_colors.html>`_
 - `matplotlib boxplot function <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html>`_
 - `matplotlib histogram function <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html>`_
+- `matplotlib statistics package <https://docs.python.org/3/library/statistics.html>`_

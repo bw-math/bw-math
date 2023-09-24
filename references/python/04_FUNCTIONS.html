@@ -469,6 +469,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistics">Statistics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quantiles">Quantiles</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-distribution">Normal Distribution</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-regression">Linear Regression</a></li>
 </ul>
@@ -877,9 +878,112 @@ document.write(`
 </section>
 <section id="statistics">
 <span id="python-stats-package"></span><h3>Statistics<a class="headerlink" href="#statistics" title="Permalink to this headline">#</a></h3>
-<p><strong>Python</strong> also has a dedicated package specifically for statistical functions, named <code class="docutils literal notranslate"><span class="pre">statistics</span></code>. We will encounter this package we will start calculating normal probabilities and percentiles in <strong>Section 2.2</strong>, and then become <em>extremely</em> familiar with it once we get to <a class="reference internal" href="../../notes/statistics/03_SAMPLING_DISTRIBUTIONS.html#sampling-distributions"><span class="std std-ref">Sampling Distributions</span></a> and <a class="reference internal" href="../../notes/statistics/03_SAMPLING_DISTRIBUTIONS.html#central-limit-theorem"><span class="std std-ref">Central Limit Theorem</span></a>.</p>
+<p><strong>Python</strong> also has a dedicated package specifically for statistical functions, named <code class="docutils literal notranslate"><span class="pre">statistics</span></code>.</p>
+<dl class="simple" id="python-sample-mean">
+<dt><code class="docutils literal notranslate"><span class="pre">mean(&lt;list:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>Calculates the sample mean of a univariate dataset passed in through <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">stat</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">105</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span>
+    <span class="mi">100</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">76</span><span class="p">,</span> <span class="mi">119</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span>
+    <span class="mi">106</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">84</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span>
+    <span class="mi">111</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">121</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span>
+    <span class="mi">103</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">104</span><span class="p">]</span>
+
+<span class="n">xbar</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">xbar</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>99.12</p>
+</div></blockquote>
+<dl class="simple" id="python-sample-median">
+<dt><code class="docutils literal notranslate"><span class="pre">median(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>Calculates the sample median of a univariate dataset passed in through <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">stat</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">105</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span>
+    <span class="mi">100</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">76</span><span class="p">,</span> <span class="mi">119</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span>
+    <span class="mi">106</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">84</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span>
+    <span class="mi">111</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">121</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span>
+    <span class="mi">103</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">104</span><span class="p">]</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>102.5</p>
+</div></blockquote>
+<dl class="simple" id="python-standard-deviation">
+<dt><code class="docutils literal notranslate"><span class="pre">stdev(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>Calculates the sample standard deviation of a univariate dataset passed in through <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">stat</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">105</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span>
+    <span class="mi">100</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">76</span><span class="p">,</span> <span class="mi">119</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span>
+    <span class="mi">106</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">84</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span>
+    <span class="mi">111</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">121</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span>
+    <span class="mi">103</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">104</span><span class="p">]</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">stdev</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>13.388450703681062</p>
+</div></blockquote>
+<section id="quantiles">
+<span id="python-quantiles"></span><h4>Quantiles<a class="headerlink" href="#quantiles" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">quantiles(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;n:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>Divides the sample of data contained in <code class="docutils literal notranslate"><span class="pre">list</span></code> into a number of equally distributed groups determined by <code class="docutils literal notranslate"><span class="pre">groupings</span></code>.</p>
+</dd>
+</dl>
+<p>A <em>percentile</em> is defined technically as the division of the sample into one hundred equally distributed groups of individuals. Quartiles, similarily, are defined technically as the division of the sample into four equally distributed groups of individuals.</p>
+<p>A <em>quantile</em> is a generalization of this idea. A <em>quantile</em> divides the sample into <code class="docutils literal notranslate"><span class="pre">n</span></code> equally distributed groups of individuals.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><code class="docutils literal notranslate"><span class="pre">n</span></code> here is the <em>number of groupings</em>, not the number of observations.</p>
+</div>
+<p>In terms of quantiles, percentiles are a special case of quantiles when <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">100</span></code>. Quartiles are a special case of quantiles when <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">4</span></code>. The following code snippet shows how to use <code class="docutils literal notranslate"><span class="pre">quantiles()</span></code> to calculate the quartiles of a distribution.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">stat</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">105</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span>
+    <span class="mi">100</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">76</span><span class="p">,</span> <span class="mi">119</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span>
+    <span class="mi">106</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">84</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span>
+    <span class="mi">111</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">121</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span>
+    <span class="mi">103</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">104</span><span class="p">]</span>
+
+<span class="c1"># set n = 4 to calculate quartiles</span>
+<span class="n">quartiles</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">quantiles</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">quartiles</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>[87.0, 102.5, 108.25]</p>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">quantile()</span></code> function use <em>interpolation</em>! In other words, the output may not correspond to observable values of the sample!</p>
+</div>
+</section>
 <section id="normal-distribution">
 <span id="python-normal-distribution"></span><h4>Normal Distribution<a class="headerlink" href="#normal-distribution" title="Permalink to this headline">#</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We do not need this function until Section 2.2</p>
+</div>
 <p>First, we need to create a <em>normal distribution</em> with a certain <code class="docutils literal notranslate"><span class="pre">mean</span></code> and <code class="docutils literal notranslate"><span class="pre">std_dev</span></code> (standard deviation),</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span>
 
@@ -891,7 +995,10 @@ document.write(`
 </div>
 <p>Once the distribution is created, we can ask it questions. The two most important questions we will ask this distribution in this class are:</p>
 <p><strong>Cumulative Distribution Function</strong></p>
-<p>TODO</p>
+<p>Recall the cumulative distribution function (CDF) of a sample of data tells you how much of a distribution is less than or equal to a certain value. Symbolically,</p>
+<div class="math">
+<p><img src="../../_images/math/8db4c06313651d2e27af5116167773689cd33f03.png" alt="F(x_i) = P(\mathcal{X} \leq x_i)"/></p>
+</div><p>You can access the CDF of the normal distribution stored in <code class="docutils literal notranslate"><span class="pre">dist</span></code> using the <code class="docutils literal notranslate"><span class="pre">cdf()</span></code> function. Pass into the <code class="docutils literal notranslate"><span class="pre">cdf()</span></code> function the value whose percentage (probability) you would like to calculate (<img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> in above line). The following code snippet shows how to use the normal distribution created in the previous section to calculate cumulative percentages (probabilities),</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">prob</span> <span class="o">=</span> <span class="n">dist</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
 <span class="n">rounded_prob</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">prob</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prob(X &lt;= 120) = &quot;</span><span class="p">,</span> <span class="n">rounded_prob</span><span class="p">)</span>
@@ -899,22 +1006,33 @@ document.write(`
 </div>
 <p>Output:</p>
 <blockquote>
-<div><p>Prob(X &lt; 120) = 0.98</p>
+<div><p>Prob(X &lt;= 120) = 0.98</p>
 </div></blockquote>
 <p><strong>Inverse Cumulative Distribution Function</strong></p>
-<p>TODO</p>
+<p>Every one-to-one function has an inverse; the cumulative distribution function is no different. The inverse CDF reverses the operation performed by the CDF.</p>
+<p>In other words, if the CDF can be summarized through the following operation,</p>
+<div class="math">
+<p><img src="../../_images/math/e79190e809cff30e14c1675073eb63775103acc1.png" alt="\text{observation} \rightarrow \text{CDF} \rightarrow \text{percentage}"/></p>
+</div><p>Then the inverse CDF operates in the reverse direction. Given a percentage, the inverse CDF tells you what observation in the sample corresponds to that percentage,</p>
+<div class="math">
+<p><img src="../../_images/math/1a7ce09d58c1a46f5aa23d707db2d132a07bf2f7.png" alt="\text{percentage} \rightarrow \text{inverseCDF}e \rightarrow \text{observation}"/></p>
+</div><p>The following code snippet shows how to call the inverse cumulative distribution function on the normal distribution created in the previous sections.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">third_quartile</span> <span class="o">=</span> <span class="n">dist</span><span class="o">.</span><span class="n">inv_cdf</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span>
 <span class="n">rounded_quartile</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">third_quartile</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P(X &lt;= &quot;</span><span class="p">,</span> <span class="n">rounded_quartile</span> <span class="p">,</span> <span class="s2">&quot; ) = 0.75&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P(X &lt;= &quot;</span><span class="p">,</span> <span class="n">rounded_quartile</span> <span class="p">,</span> <span class="s2">&quot;) = 0.75&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Output:</p>
 <blockquote>
-<div><p>P(X &lt;= 106.74 ) = 0.75</p>
+<div><p>P(X &lt;= 106.74) = 0.75</p>
 </div></blockquote>
 </section>
 <section id="linear-regression">
 <span id="python-linear-regression"></span><h4>Linear Regression<a class="headerlink" href="#linear-regression" title="Permalink to this headline">#</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We do not need these functions until Section 3.1 - 3.3.</p>
+</div>
 <p>TODO</p>
 <p><strong>Correlation</strong></p>
 <p>TODO</p>
@@ -1038,6 +1156,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistics">Statistics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quantiles">Quantiles</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-distribution">Normal Distribution</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-regression">Linear Regression</a></li>
 </ul>
