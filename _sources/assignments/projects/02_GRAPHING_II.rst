@@ -166,7 +166,7 @@ The other arguments, ``align``, ``color`` and ``ec``, affect the *styling* of th
 
 ``align`` tells :ref:`matplotlib` where to align the histogram bar. Valid values are ``left``, ``mid`` and ``right``. ``left`` aligns the histogram bars to the lower class limit. ``mid`` centers the histogram bars over the midpoint of each class. ``right`` will align the histogram bars with the upper class limit.
 
-``color`` is the color that fills the histogram bars. We discussed this argument in the :ref:`Project One Bar Chart section<project_one_bar_charts>`. You can also find a list of all the *named* colors on the `color page of the matplotlib documentation <https://matplotlib.org/stable/gallery/color/named_colors.html>`_. Some of them are printed below for quick reference,
+``color`` is the color that fills the histogram bars. We discussed this argument in the :ref:`Project One Bar Chart section <project_one_bar_charts>`. You can also find a list of all the *named* colors on the `color page of the matplotlib documentation <https://matplotlib.org/stable/gallery/color/named_colors.html>`_. Some of them are printed below for quick reference,
 
 - maroon
 - salmon
@@ -245,9 +245,9 @@ We have passed in a value of ``False``, meaning we want a *horizontal* boxplot. 
 Sample Statistics
 =================
 
-Python has a `python_stats_package` library that provides functions for calculating common sample statistics. Hope over to the `python_stats_package` page and read through the list of functions that can be imported into your script. 
+Python has a :Ref:`python_stats_package` library that provides functions for calculating common sample statistics. Hope over to the :ref:`python_stats_package` page and read through the list of functions that can be imported into your script. 
 
-For this lab, we will need the `python_sample_mean` function, the `python_quantiles` function and the `python_standard_deviation` function. The rest can be ignored for the time being.
+For this lab, we will need the :ref:`python_sample_mean` function, the :ref:`python_quantiles` function and the :ref:`python_standard_deviation` function. The rest can be ignored until later sections in the class.
 
 .. _project_two_project:
 
@@ -269,7 +269,7 @@ Velocity of Light
 
     d. What type of shape does this distribtion have? Is this expected? Why or why not?
 
-3. Construct a boxplot for this data set. Using the boxplot, answer the following questions in the body of your :ref:`python_docstring.
+3. Construct a boxplot for this data set. Using the boxplot, answer the following questions in the body of your :ref:`python_docstring`.
 
     a. Estimate the 75 :sup:`th` percentile of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
 
@@ -281,7 +281,7 @@ Velocity of Light
 
     e. Based on the boxplot, do you detect any possible outliers?  
 
-4. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your :ref:`python_docstrings`.
+4. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your :ref:`python_docstring`.
 
     a. What is the sample mean of this dataset? Use the :ref:`python_sample_mean` function.
 
@@ -318,15 +318,20 @@ Density of the Earth
 
     e. Based on the boxplot, do you detect any possible outliers?
 
-4. The actual denity of the Earth, according to the best estimates we have today, is :math:`5.514 \frac{g}{cm^3}`. Use this information to answer the following questions in the body of your docstring.
+4. The actual density of the Earth, according to the best estimates we have today, is :math:`5.514 \frac{g}{cm^3}`. Use this information to answer the following questions in the body of your docstring.
 
-    a. What is the sample mean of the dataset?
+    a. What is the sample mean of the dataset? Use the :ref:`python_sample_mean` function.
 
     b. What is the percent error of this estimate with respect to the actual value?
 
     c. What is the sample standard deviation of this dataset? Use the :ref:`python_standard_deviation` function.
 
     d. Find the coefficient of variation for this dataset.
+
+Comparative Measures
+--------------------
+
+1. Which experimental distribution of data has more variability? Justify your answer with sample statistics calculated in the previous two sections. 
 
 .. _project_two_dataset:
 

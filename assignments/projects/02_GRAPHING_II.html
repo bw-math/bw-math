@@ -464,6 +464,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light">Velocity of Light</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-the-earth">Density of the Earth</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparative-measures">Comparative Measures</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
@@ -665,8 +666,8 @@ document.write(`
 </section>
 <section id="sample-statistics">
 <h2>Sample Statistics<a class="headerlink" href="#sample-statistics" title="Permalink to this headline">#</a></h2>
-<p>Python has a <cite>python_stats_package</cite> library that provides functions for calculating common sample statistics. Hope over to the <cite>python_stats_package</cite> page and read through the list of functions that can be imported into your script.</p>
-<p>For this lab, we will need the <cite>python_sample_mean</cite> function, the <cite>python_quantiles</cite> function and the <cite>python_standard_deviation</cite> function. The rest can be ignored for the time being.</p>
+<p>Python has a <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-stats-package"><span class="std std-ref">Statistics</span></a> library that provides functions for calculating common sample statistics. Hope over to the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-stats-package"><span class="std std-ref">Statistics</span></a> page and read through the list of functions that can be imported into your script.</p>
+<p>For this lab, we will need the <span class="xref std std-ref">python_sample_mean</span> function, the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-quantiles"><span class="std std-ref">Quantiles</span></a> function and the <span class="xref std std-ref">python_standard_deviation</span> function. The rest can be ignored until later sections in the class.</p>
 </section>
 <section id="project">
 <span id="project-two-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
@@ -684,7 +685,7 @@ document.write(`
 </ol>
 </div></blockquote>
 </li>
-<li><p>Construct a boxplot for this data set. Using the boxplot, answer the following questions in the body of your :ref:<a href="#id1"><span class="problematic" id="id2">`</span></a>python_docstring.</p>
+<li><p>Construct a boxplot for this data set. Using the boxplot, answer the following questions in the body of your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
 <li><p>Estimate the 75 <sup>th</sup> percentile of this data set. Compare the value estimated from the boxplot to the value obtained through the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-quantiles"><span class="std std-ref">Quantiles</span></a> function.</p></li>
@@ -695,7 +696,7 @@ document.write(`
 </ol>
 </div></blockquote>
 </li>
-<li><p>The actual value of the speed of light, according to the best estimates we have today, is <img class="math" src="../../_images/math/868a4aab530b8d56986836c1b7d0d42918ce334b.png" alt="299,792,458 \frac{m}{s}"/>. Use this information to answer the following questions in the body of your <span class="xref std std-ref">python_docstrings</span>.</p>
+<li><p>The actual value of the speed of light, according to the best estimates we have today, is <img class="math" src="../../_images/math/868a4aab530b8d56986836c1b7d0d42918ce334b.png" alt="299,792,458 \frac{m}{s}"/>. Use this information to answer the following questions in the body of your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
 <li><p>What is the sample mean of this dataset? Use the <span class="xref std std-ref">python_sample_mean</span> function.</p></li>
@@ -732,16 +733,22 @@ document.write(`
 </ol>
 </div></blockquote>
 </li>
-<li><p>The actual denity of the Earth, according to the best estimates we have today, is <img class="math" src="../../_images/math/1a73c7b41d050f8b924f653612fab468c802358a.png" alt="5.514 \frac{g}{cm^3}"/>. Use this information to answer the following questions in the body of your docstring.</p>
+<li><p>The actual density of the Earth, according to the best estimates we have today, is <img class="math" src="../../_images/math/1a73c7b41d050f8b924f653612fab468c802358a.png" alt="5.514 \frac{g}{cm^3}"/>. Use this information to answer the following questions in the body of your docstring.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
-<li><p>What is the sample mean of the dataset?</p></li>
+<li><p>What is the sample mean of the dataset? Use the <span class="xref std std-ref">python_sample_mean</span> function.</p></li>
 <li><p>What is the percent error of this estimate with respect to the actual value?</p></li>
 <li><p>What is the sample standard deviation of this dataset? Use the <span class="xref std std-ref">python_standard_deviation</span> function.</p></li>
 <li><p>Find the coefficient of variation for this dataset.</p></li>
 </ol>
 </div></blockquote>
 </li>
+</ol>
+</section>
+<section id="comparative-measures">
+<h3>Comparative Measures<a class="headerlink" href="#comparative-measures" title="Permalink to this headline">#</a></h3>
+<ol class="arabic simple">
+<li><p>Which experimental distribution of data has more variability? Justify your answer with sample statistics calculated in the previous two sections.</p></li>
 </ol>
 </section>
 </section>
@@ -751,8 +758,8 @@ document.write(`
 <h3>Velocity of Light Data<a class="headerlink" href="#velocity-of-light-data" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/5aa18cd2c2ca04b7636763fca781ca72/velocity_of_light_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
-<table class="table" id="id3">
-<caption><span class="caption-text">Michelson’s Velocity of Light Data</span><a class="headerlink" href="#id3" title="Permalink to this table">#</a></caption>
+<table class="table" id="id1">
+<caption><span class="caption-text">Michelson’s Velocity of Light Data</span><a class="headerlink" href="#id1" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 100%" />
 </colgroup>
@@ -783,8 +790,8 @@ document.write(`
 <h3>Density of the Earth Data<a class="headerlink" href="#density-of-the-earth-data" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/cdfabab0d4b760ba1033cb33c1adaac8/earth_density_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
-<table class="table" id="id4">
-<caption><span class="caption-text">Cavendish’s Density of the Earth Data</span><a class="headerlink" href="#id4" title="Permalink to this table">#</a></caption>
+<table class="table" id="id2">
+<caption><span class="caption-text">Cavendish’s Density of the Earth Data</span><a class="headerlink" href="#id2" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -911,6 +918,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light">Velocity of Light</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-the-earth">Density of the Earth</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparative-measures">Comparative Measures</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
