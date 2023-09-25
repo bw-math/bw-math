@@ -348,7 +348,7 @@ The following table is the a preview of the data you will be using for this proj
 .. csv-table:: Michelson's Velocity of Light Data
    :file: ../../assets/datasets/previews/velocity_of_light_data_preview.csv
 
-The meaning of the column is clear from the column header: each observation measures the speed of light in meters per second, :math:`\frac{m}{s}`.
+The meaning of the column is clear from the column header: each observation measures the speed of light in meters per second, :math:`\frac{km}{s}`.
 
 Density of the Earth Data
 -------------------------
@@ -368,4 +368,4 @@ References
 - `matplotlib colors <https://matplotlib.org/stable/gallery/color/named_colors.html>`_
 - `matplotlib boxplot function <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html>`_
 - `matplotlib histogram function <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html>`_
-- `matplotlib statistics package <https://docs.python.org/3/library/statistics.html>`_
+- `pythonstatistics package <https://docs.python.org/3/library/statistics.html>`_
