@@ -83,6 +83,6 @@ Cultural
     - :download:`Marvel Movies CSV <./assets/datasets/diamonds_data.csv>`
 - `Sega Games <https://www.kaggle.com/datasets/joebeachcapital/sega-games>`_
 	- :download:`Sega Games CSV <./assets/datasets/sega_games_data.csv>`
-- `Wine Quality <https://www.kaggle.com/datasets/joebeachcapital/wine-quality>`_
+- `Wine Quality <http://www.vinhoverde.pt/en/>`_
 	- :download:`Red Wine Quality CSV <./assets/datasets/wine_red_quality_data.csv>`
 	- :download:`White Wine Quality CSV <./assets/datasets/wine_white_quality_data.csv>`
