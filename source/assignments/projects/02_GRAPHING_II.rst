@@ -18,10 +18,12 @@ Instructions
 1. Download **both** *csv* datasets in the :ref:`project_two_dataset` section and place them in the ``Linux Files`` folder on your file system where you save your ``.py`` scripts.
 2. Create a Python ``.py`` script named ``NAME_project_two.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``NAME`` with your name.
 3. Create a :ref:`Python docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
-4. Read the :ref:`project_two_background` section
-5. Read the :ref:`project_two_loading_data` section.
-6. Load in the data from the ``.csv`` files using the technique outlined in the :ref:`project_three_loading_data` section.
-7. Perform all exercises and answer all questions in the :ref:`project_two_project` section. Label your script with comments as indicated in the *Project* section.
+4. Read the :ref:`project_two_background` section.
+5. Read the :ref:`project_two_required_imports` section. Add the required imports to you ``.py`` script.
+6. Read the :ref:`project_two_graphs` section.
+7. Read the :ref:`project_two_sample_statistics` section.
+6. Load in the data from the ``.csv`` files using the technique outlined in the :ref:`project_two_loading_data` section.
+7. Perform all exercises and answer all questions in the :ref:`project_two_project` section. Label your script with comments or include your written answers in the :ref:`python_docstring` as indicated in the *Project* section.
 8. When you are done, zip your script **and** the *csv* files into a zip file named ``NAME_project_two.zip``
 9. Upload the zip file to the Google Classrom Project Two asignment.
 
@@ -103,6 +105,19 @@ Using the mutual gravitational attraction of two heavy metal balls attached to a
 With `Newton's Laws of Motion <https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion>`_ , he was able to derive an expression that related this force to the mass of the Earth. 
 
 Cavendish's dataset is an excellent historical example of using statistical inference to produce new knowledge about the world around us. 
+
+.. _project_two_required_imports:
+
+Required Imports
+================
+
+You will need to import the following libraries to complete this project,
+
+.. code:: python
+    
+    import csv
+    import matplotlib.pyplot as plot
+    import statistics as stats
 
 .. _project_two_loading_data:
 
@@ -419,19 +434,33 @@ Velocity of Light
 
     d. What is the approximate value of the interquartile range?
 
-5. TODO: outliers
+5. Using the :ref:`python_stats_package` library, calculate the following sample statistics. Label all of your calculations with comments.
 
-6. TODO: sample stats
+    a. The sample mean.
 
-7. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your :ref:`python_docstring`.
+    b. The sample median.
 
-    a. What is the sample mean of this dataset? Use the :ref:`python_sample_mean` function.
+    c. The sample standard deviation.
 
-    b. What is the percent error of this estimate with respect to the actual value?
+    d. The first quartile.
 
-    c. What is the sample standard deviation of this dataset? Use the :ref:`python_standard_deviation` function.
+    e. The third quartile.
 
-    d. Find the coefficient of variation for this dataset.
+    f. The interquartile range.
+
+    g. The coefficient of variation.
+
+6. Answer the following questions in your :ref:`python_docstring`. Label any calculations you perform to arrive at your answers with comments.
+
+    a. How many standard deviations away from the mean is the third quartile? 
+
+    b. How many standard deviations away from the mean is the first quartile?
+
+    c. Explain the results of part #b and #c. What features of the distribution cause these quantities to be approximately equal or unequal?
+
+7. Answer the following question in your :ref:`python_docstring`: Based on the IQR rule, are there any possible outliers in this dataset? 
+
+8. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your :ref:`python_docstring`: What is the percent error of Michelson's estimate with respect to the actual value?
 
 Density of the Earth 
 --------------------
@@ -464,24 +493,46 @@ Density of the Earth
 
     d. What is the approximate value of the interquartile range?
 
-5. TODO: outliers
+5. Using the :ref:`python_stats_package` library, calculate the following sample statistics. Label all of your calculations with comments.
 
-6. TODO: sample stats
+    a. The sample mean.
 
-7. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your :ref:`python_docstring`.
+    b. The sample median.
 
-    a. What is the sample mean of this dataset? Use the :ref:`python_sample_mean` function.
+    c. The sample standard deviation.
 
-    b. What is the percent error of this estimate with respect to the actual value?
+    d. The first quartile.
 
-    c. What is the sample standard deviation of this dataset? Use the :ref:`python_standard_deviation` function.
+    e. The third quartile.
 
-    d. Find the coefficient of variation for this dataset.
-    
+    f. The interquartile range.
+
+    g. The coefficient of variation.
+
+6. Answer the following questions in your :ref:`python_docstring`. Label any calculations you perform to arrive at your answers with comments.
+
+    a. How many standard deviations away from the mean is the third quartile? 
+
+    b. How many standard deviations away from the mean is the first quartile?
+
+    c. Explain the results of part #b and #c. What features of the distribution cause these quantities to be approximately equal or unequal?
+
+7. Answer the following question in your :ref:`python_docstring`: Based on the IQR rule, are there any possible outliers in this dataset? 
+
+8. The actual value of the density of the Earth, according to the best estimates we have today, is :math:`5.515 \frac{g}{cm^2}`. Use this information to answer the following questions in the body of your :ref:`python_docstring`: What is the percent error of Cavendish's estimate with respect to the actual value?
+
 Comparative Analysis
 --------------------
 
-1. Which experimental distribution of data has more variability? Justify your answer with sample statistics calculated in the previous two sections. 
+1. Answer the following questions in your :ref:`python_docstring`.
+
+    a. Which experimental distribution of data has more variability? Justify your answer with sample statistics calculated in the previous two sections. 
+
+    b. Which distribution is more skewed and in which direction does the skew lie? Justify your answer with sample statistics calculated in the previous two sections.
+
+    c. Which experiment yielded a more accurate measure with respect to modern estimates? Justify your answer with sample statistics calculated in the previous two sections.
+
+    d. We have encountered normal distributions in a wide array of seemingly unrelated subjects: geyser durations, wine acidity, alpha particle emissions and now: the speed of light and the density of earth. We have not yet explained why the phenomenon of normality occurs so often (so often, you might call it *normal*), but that will soon change. As a precursor of things to come, answer the following question to the best of your current ability: Based on what you have learned so far in this course, why do you think normal distributions occur so often in nature?
 
 .. _project_two_dataset:
 
