@@ -39,7 +39,7 @@ data = [ 1, 9, 10, 11, 20, 29, 30, 31, 39 ]
 # Create figure and axes to graph on
 (fig, axes) = plot.subplots()
 
-axes.boxplot(data, vert=False)
+axes.boxplot(data, vert=False, whis=(0,100))
 
 plot.title("Box Plot of Random Sample")
 axes.set_xlabel("Random Numbers")

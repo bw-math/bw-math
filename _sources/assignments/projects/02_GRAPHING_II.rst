@@ -42,6 +42,19 @@ Coefficient of Variation
 
     \text{CV} = \frac{s}{\bar{x}}
 
+IQR Rule for Outliers
+---------------------
+
+If :math:`x_i` satisfies either of the following conditions, then it is considered an *outlier*,
+
+.. math::
+
+    x_i \geq Q_3 + 1.5 \cdot IQR
+
+.. math:: 
+
+    x_i \leq Q_1 - 1.5 \cdot IQR
+
 .. _project_two_background: 
 
 Background
@@ -50,7 +63,7 @@ Background
 The Michelson Velocity of Light Experiment 
 ------------------------------------------
 
-The `Michelson Velocity of Light Experiment <https://www.gutenberg.org/files/11753/11753-h/11753-h.htm>`_ conducted in 1879 was the first time `Albert A. Michelson <https://en.wikipedia.org/wiki/Albert_A._Michelson>`_ successfully measured the speed of light. He would go on to do so several more times, eventually teaming up with `Edward Morley <https://en.wikipedia.org/wiki/Edward_W._Morley>`_. Together, using the principles Michelson first developed in 1879, Michelson and Morley would demonstrate in 1887 the speed of light was the same value regardless of the state of motion of the emitting body. This would go on to have profound effects for physics in the early twentieth century. It would lead `Albert Einstein <https://en.wikipedia.org/wiki/Albert_Einstein>`_ to propose the `theory of relativity <https://en.wikipedia.org/wiki/Theory_of_relativity>`_, one of the most significant intellectual developments in history of humanity. 
+The `Michelson Velocity of Light Experiment <https://www.gutenberg.org/files/11753/11753-h/11753-h.htm>`_ conducted in 1879 was the first time `Albert A. Michelson <https://en.wikipedia.org/wiki/Albert_A._Michelson>`_ successfully measured the speed of light. He would go on to do so several more times, eventually teaming up with `Edward Morley <https://en.wikipedia.org/wiki/Edward_W._Morley>`_. Together, using the principles Michelson first developed in 1879, Michelson and Morley would demonstrate in 1887 the speed of light was the same value regardless of the state of motion of the emitting body. This would go on to have profound effects for physics in the early twentieth century; It would lead `Albert Einstein <https://en.wikipedia.org/wiki/Albert_Einstein>`_ to propose the `theory of relativity <https://en.wikipedia.org/wiki/Theory_of_relativity>`_, one of the most significant intellectual developments in the history of humanity. 
 
 Michelson's 1879 experimental results remained one of most accurate estimations of the speed of light until modern times. Using a series of mirrors depicted below, Michelson was able to divert light rays emitting from a common source along separate paths and then measure the fractional time difference it took for the rays to reach the same location.
 
@@ -116,10 +129,16 @@ The following code snippet will load in a *CSV* spreadsheet named ``example.csv`
 
     print(column_1)
 
+.. important::
+
+    This is *slighlty* different from how we did it in the first project. **Python** reads in the *.csv* file as plain text, even the numbers. In other words, Python interprets an observation of, say, ```2``` as a string of text that says "2"; this is fine and dandy when dealing with categorical data because we represent categories with :ref:`python_strings`. When we are dealing with quantitative data, we have to tell **Python** to convert the plain text to a :ref:`float <python_floats>` data type (Recall *floats* are *decimal* valued data types). The ``float()`` function in the code snippet above converts the plain text to a numeric value and stores it in a variable.
+
 .. _project_two_graphs:
 
 Graphical Representations
 =========================
+
+.. _project_two_histograms:
 
 Histogram
 ---------
@@ -128,9 +147,34 @@ Recall a *histogram* is a way of visualizing the frequency distribution of a sam
 
 .. math:: 
 
-    f(x_i) = \frac{n(x_i)}{n}
+    f(x_i) \sim \text{number of times} x_i {occurs}
 
-The following plot is a histogram generated with :ref:`matplotlib` using *6* classes. Click on the ``source`` button in the top left corner to download the script. Read through the comments to see how it was constructed. 
+The following code snippet shows how to create a histogram for a relatively simple distribution of data,
+
+.. code:: python
+
+    import matplotlib.pyplot as plot
+
+    data = [ 1, 9, 10, 11, 20, 29, 30, 31, 39 ]
+
+    # Create figure and axes to graph on
+    (fig, axes) = plot.subplots()
+
+    axes.hist(data)
+
+    plot.title("Histogram of Random Sample")
+    axes.set_xlabel("Random Numbers")
+    axes.set_ylabel("Sample")
+
+    plot.show()
+
+.. plot:: assets/plots/histograms/histogram_simple.py
+
+Notice how easy and painless the whole process is! All we have to do is pass in a list of data to the ``hist()`` function and *matplotlib* will create a gloriously beautiful picture. 
+
+That is all well and good, but often we need a little more control over the features of our histogram. Luckily, *matplotlib* gives you the ability to tweak and fiddle to your heart's content. 
+
+As another (more complex) example, the following plot is a histogram generated with :ref:`matplotlib` using *6* classes. Click on the ``source`` button in the top left corner to download the script. Read through the comments to see how it was constructed. 
 
 .. plot:: assets/plots/histograms/histogram_normal.py
 
@@ -178,6 +222,57 @@ The other arguments, ``align``, ``color`` and ``ec``, affect the *styling* of th
 
 As you can see, there are lots of options to make your graph nice and pretty.
 
+.. _project_two_cumulative_frequency_histograms:
+
+Cumulative Frequency Histograms
+-------------------------------
+
+Recall the *cumulative* frequency of a distribution is defined as the sum of frequencies up to a certain observation,
+
+.. math::
+
+    F(x_i) = \sum_{x_1}^{x_i} x_j
+
+We sometimes call :math:`F(x_i)` the *cumulative distribution function* (**CDF**). It tells how much of a distribution is *less than or equal* to a certain observation. In symbols,
+
+.. math::
+
+    F(x_i) = P(X \leq x_i)
+    
+When we first introduced the **CDF**, we graphed it using a modified histogram where we stacked up the frequencies. 
+
+.. note::
+
+    This is different from how our calculators represent this graph. Our calculators use a line graph to plot the CDF.
+
+**Python** also uses a modified histogram to graph the **CDF**. In fact, **CDF**s are generated using the same ``hist()`` function as regular histograms; the only difference between regular histograms and cumulative histograms in **Python** is the arguments you pass into the ``hist()`` function. 
+
+The following code snippet generates a **CDF** for a sample of data,
+
+.. code:: python
+
+    import matplotlib.pyplot as plt
+
+    (fig, axes) = plt.subplots()
+
+    data = [ 1, 9, 10, 11, 20, 29, 30, 31, 39 ]
+
+    plt.suptitle('Cumulative Histogram of Random Sample')
+    plt.title(f"n = {len(data)}")
+
+    axes.set_xlabel("Grades")
+    axes.set_ylabel("Cumulative Frequency")
+
+    axes.hist(data, bins=6, cumulative=True, density=True)
+
+    plt.show()
+
+.. plot:: assets/plots/ogives/ogive_simple.py
+
+To create a **CDF**, all we have to do is pass in two extra arguments to ``hist()``, the ``cumulative`` argument and ``density`` argument. For **CDF**s, both of these arguments are set to ``True``. ``cumulative`` tells *matplotlib* to accumulate the frequencies and stack them as it graphs the frequency distribution. ``density`` tells *matplotlib** to scale the vertical axis to 1. 
+
+.. _project_two_boxplots:
+
 Boxplots
 --------
 
@@ -197,25 +292,11 @@ For example, suppose we had a sample of *ordered* data,
 
     S = \{ 1, 9, 10, 11, 20, 29, 30, 31, 39 \}
 
-The minimum and maximum are simply the first and last observation in a sample of *ordered* observations.
+If we were doing this by hand, we would find all of the sample statistics in the Five Number Summary and draw the boxplot in the xy-plane (as we have many times). However, we are using :ref:`matplotlib <python_plotting>` to create statistical graphs and *matplotlib* will do a lot of heavy-lifting for us.
 
-The median is found by looking at the midpoint of the *ordered* sample, i.e. the observation where half of the sample is less than or equal to the value of the observation and half of the sample is greater than the value of the observation. 
+.. note::
 
-Similarly, the first and third quartile can be found by separating the sample into the lower half and upper half, where the median is included in both groupings,
-
-.. math::
-
-    S_{\text{lower half}} = \{ 1, 9, 10, 11, 20 \}
-
-.. math::
-
-    S_{\text{upper half}} = \{ 20, 29, 30, 31, 39 \}
-
-To find the first quartile (the *25* :sup:`th` percentile), we find the median of the lower half of the sample. In this case, it would be ``10``.
-
-To find the second quartile (the *75* :sup:`th` percentile), we find the median of the upper half of the sample. In this case it would be ``30``.
-
-If we were doing this by hand, we would find all of these numbers and draw the boxplot in the plane. However, we are using :ref:`matplotlib <python_plotting>` to create statistical graphs. 
+    We will also talk about how to make **Python** calculate all these sample statistics for us in the :ref:`project_two_sample_statistics` section down below.
 
 A boxplot for the example we were just discussing can be created in **Python** with the following snippet of code,
 
@@ -228,7 +309,7 @@ A boxplot for the example we were just discussing can be created in **Python** w
     # Create figure and axes to graph on
     (fig, axes) = plot.subplots()
 
-    axes.boxplot(data, vert=False)
+    axes.boxplot(data, vert=False, whis=(0,100))
 
     plot.title("Box Plot of Random Sample")
     axes.set_xlabel("Random Numbers")
@@ -238,9 +319,62 @@ A boxplot for the example we were just discussing can be created in **Python** w
 
 .. plot:: assets/plots/boxplots/boxplot_simple.py
 
-The `boxplot() <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html>`_ is, as you might have guessed, :ref:`matplotlib`'s way of generating boxplots. The first argument is the dataset we will wish to graph. The second argument is a *named* argument ``vert``. This controls the *direction* of the boxplot, i.e vertical versus horizontal.
+The `boxplot() <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html>`_ is, as you might have guessed, :ref:`matplotlib`'s way of generating boxplots. The first argument is the dataset we will wish to graph. 
 
-We have passed in a value of ``False``, meaning we want a *horizontal* boxplot. We always want our boxplots to align with our histograms; that is to say, we want the x-axis of both the histogram and the boxplot to represent the same values.
+The second argument is a *named* argument ``vert``. This controls the *direction* of the boxplot, i.e vertical versus horizontal. We have passed in a value of ``False``, meaning we want a *horizontal* boxplot. We always want our boxplots to align with our histograms; that is to say, we want the x-axis of both the histogram and the boxplot to represent the same values.
+
+The third argument, ``whis``, is an ordered pair that controls where the whiskers of the boxplot are drawn. The first number in the ordered paired is the lower percentile you wish to graph; the second number in the ordered pair is the upper percentile you wish to graph. We have passed in ```(0,100)``` to indicate the whiskers will be drawn at the 0 :sup:`th` and the 100 :sup:`th` percentile; in other words, at the minimum and maximum values of the distribution.
+
+.. _project_two_simultaneous_plots:
+
+Simultaneous Plots
+------------------
+
+*matplotlib* is capable of graphing multiple plots at once. To do this, we create multiple sets of ``axes``. We control the number of ``axes`` *matplotlib* creates by passing in arguments to the ``subplot()``. 
+
+The following code snippet will create a histogram and boxplot on the plot and then display it to the user,
+
+.. code:: python
+
+    .. code:: python
+
+    import matplotlib.pyplot as plot
+
+    data = [ 1, 9, 10, 11, 20, 29, 30, 31, 39 ]
+
+    # Create figure and axes to graph on
+    (fig, axes) = plot.subplots(1, 2)
+
+    axes[0].hist(data)
+    axes[1].boxplot(data, vert=False, whis=(0,100))
+
+    plot.title("Box Plot of Random Sample")
+    axes.set_xlabel("Random Numbers")
+    axes.set_ylabel("Sample")
+
+    plot.show()
+
+.. plot:: assets/plots/other/boxplot_and_histogram.py
+
+There are several things to notice about this code. 
+
+First: We are passing in a ```1``` and a ```2``` to the ``subplots()`` function. When you pass arguments into ``subplots()``, it creates multiple *figures* and multiple *axes*. In this class, we don't care about *figures*, but because we want to create multiple axes, we still have to pass in a ```1```; *matplotlib* always interprets the first argument to the ``subplots()`` function as the number of *figures* to create. The second argument to the ``subplots()`` function is the important bit; we are passing in a ```2```, which tells *matplotlib* to create two sets of axes. It will return these axes as a :ref:`list <python_lists>`, which brings us the second important point.
+
+Second: We plot the histogram on one set of axes and we plot the boxplot on another set of axes. Because we passed ```2``` into the *matplotlib* function, the ``axes`` variable is now a :ref:`list <python_lists>` of *axes*. We have to access each individual axes through its *index* and bracket notation. The line,
+
+.. code:: python
+    
+    axes[0].hist(data)
+
+calls the ``hist()`` function on the first set of axes. The line,
+
+.. code:: python
+
+    axes[1].boxplot(data, vert=False, whis=(0,100))
+
+calls the ``boxplot()`` function on the second set of axes. 
+
+.. _project_two_sample_statistics:
 
 Sample Statistics
 =================
@@ -259,29 +393,37 @@ Velocity of Light
 
 1. Load the :ref:`Velocity of Light <project_two_dataset>` data into a :ref:`Python Script <python_scripts>` using the technique outlined in the :ref:`project_two_loading_data` section.
 
-2. Construct a histogram plot for this data sets using eight classes. Answer the following questions in the body of your :ref:`python_docstring`.
+2. Construct a histogram plot for this dataset using eight classes. Answer the following questions in the body of your :ref:`python_docstring`.
 
-    a. What is the class width of your histogram? 
-    
-    b. What are the class limits for each class? 
+    a. What type of shape does this distribtion have? 
 
-    c. What is the most frequent class?
+    b. Based on your answer to part *a*, how do you expect the sample mean to compare to the sample median?
 
-    d. What type of shape does this distribtion have? Is this expected? Why or why not?
+3. Construct a cumulative frequency histogram for this dataset *on the same graph as your histogram*. Using the CDF, answer the following questions in the body of your :ref:`python_docstring`.
 
-3. Construct a boxplot for this data set. Using the boxplot, answer the following questions in the body of your :ref:`python_docstring`.
+    a. What is the approximate value of the third quartile? 
 
-    a. Estimate the 75 :sup:`th` percentile of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
+    b. What is the approximate value of the first quartile?
 
-    b. Estimate the 25 :sup:`th` percentile of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
+    c. What is the approximate value of the median?
 
-    c. Estimate the median of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
+    d. What is the approximate value of the interquartile range?
 
-    d. Estimate the range of this data set.
+4. Construct a boxplot for this dataset *on the same graph as your histogram and CDF*. Using the boxplot, answer the following questions in the body of your :ref:`python_docstring`.
 
-    e. Based on the boxplot, do you detect any possible outliers?  
+    a. What is the approximate value of the third quartile?
 
-4. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your :ref:`python_docstring`.
+    b. What is the approximate value of the first quartile?
+
+    c. What is the approximate value of the median?
+
+    d. What is the approximate value of the interquartile range?
+
+5. TODO: outliers
+
+6. TODO: sample stats
+
+7. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your :ref:`python_docstring`.
 
     a. What is the sample mean of this dataset? Use the :ref:`python_sample_mean` function.
 
@@ -296,39 +438,47 @@ Density of the Earth
 
 1. Load the :ref:`Density of the Earth <project_two_dataset>` data into a :ref:`Python Script <python_scripts>` using the tecnique outlined in the :ref:`project_two_loading_data` section.
 
-2. Construct a histogram plot for this data sets using eight classes. Answer the following questions in the body of your docstring.
+2. Construct a histogram plot for this dataset using eight classes. Answer the following questions in the body of your :ref:`python_docstring`.
 
-    a. What is the class width of your histogram? 
-    
-    b. What are the class limits for each class? 
+    a. What type of shape does this distribtion have? 
 
-    c. What is the most frequent class?
+    b. Based on your answer to part *a*, how do you expect the sample mean to compare to the sample median?
 
-    d. What type of shape does this distribtion have? Is this expected? Why or why not?
+3. Construct a cumulative frequency histogram for this dataset *on the same graph as your histogram*. Using the CDF, answer the following questions in the body of your :ref:`python_docstring`.
 
-3. Construct a boxplot for this data set. Using the boxplot, answer the following questions in the body of your docstring.
+    a. What is the approximate value of the third quartile? 
 
-    a. Estimate the 75 :sup:`th` percentile of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
+    b. What is the approximate value of the first quartile?
 
-    b. Estimate the 25 :sup:`th` percentile of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
+    c. What is the approximate value of the median?
 
-    c. Estimate the median of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
+    d. What is the approximate value of the interquartile range?
 
-    d. Estimate the range of this data set. 
+4. Construct a boxplot for this dataset *on the same graph as your histogram and CDF*. Using the boxplot, answer the following questions in the body of your :ref:`python_docstring`.
 
-    e. Based on the boxplot, do you detect any possible outliers?
+    a. What is the approximate value of the third quartile?
 
-4. The actual density of the Earth, according to the best estimates we have today, is :math:`5.514 \frac{g}{cm^3}`. Use this information to answer the following questions in the body of your docstring.
+    b. What is the approximate value of the first quartile?
 
-    a. What is the sample mean of the dataset? Use the :ref:`python_sample_mean` function.
+    c. What is the approximate value of the median?
+
+    d. What is the approximate value of the interquartile range?
+
+5. TODO: outliers
+
+6. TODO: sample stats
+
+7. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your :ref:`python_docstring`.
+
+    a. What is the sample mean of this dataset? Use the :ref:`python_sample_mean` function.
 
     b. What is the percent error of this estimate with respect to the actual value?
 
     c. What is the sample standard deviation of this dataset? Use the :ref:`python_standard_deviation` function.
 
     d. Find the coefficient of variation for this dataset.
-
-Comparative Measures
+    
+Comparative Analysis
 --------------------
 
 1. Which experimental distribution of data has more variability? Justify your answer with sample statistics calculated in the previous two sections. 
@@ -368,4 +518,4 @@ References
 - `matplotlib colors <https://matplotlib.org/stable/gallery/color/named_colors.html>`_
 - `matplotlib boxplot function <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html>`_
 - `matplotlib histogram function <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html>`_
-- `pythonstatistics package <https://docs.python.org/3/library/statistics.html>`_
+- `python statistics package <https://docs.python.org/3/library/statistics.html>`_
