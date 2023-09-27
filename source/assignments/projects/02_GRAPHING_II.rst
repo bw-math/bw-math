@@ -42,6 +42,19 @@ Coefficient of Variation
 
     \text{CV} = \frac{s}{\bar{x}}
 
+IQR Rule for Outliers
+---------------------
+
+If :math:`x_i` satisfies either of the following conditions, then it is considered an *outlier*,
+
+.. math::
+
+    x_i \geq Q_3 + 1.5 \cdot IQR
+
+.. math:: 
+
+    x_i \leq Q_1 - 1.5 \cdot IQR
+
 .. _project_two_background: 
 
 Background
@@ -209,6 +222,55 @@ The other arguments, ``align``, ``color`` and ``ec``, affect the *styling* of th
 
 As you can see, there are lots of options to make your graph nice and pretty.
 
+.. _project_two_cumulative_frequency_histograms:
+
+Cumulative Frequency Histograms
+-------------------------------
+
+Recall the *cumulative* frequency of a distribution is defined as the sum of frequencies up to a certain observation,
+
+.. math::
+
+    F(x_i) = \sum_{x_1}^{x_i} x_j
+
+We sometimes call :math:`F(x_i)` the *cumulative distribution function* (**CDF**). It tells how much of a distribution is *less than or equal* to a certain observation. In symbols,
+
+.. math::
+
+    F(x_i) = P(X \leq x_i)
+    
+When we first introduced the **CDF**, we graphed it using a modified histogram where we stacked up the frequencies. 
+
+.. note::
+
+    This is different from how our calculators represent this graph. Our calculators use a line graph to plot the CDF.
+
+**Python** also uses a modified histogram to graph the **CDF**. In fact, **CDF**s are generated using the same ``hist()`` function as regular histograms; the only difference between regular histograms and cumulative histograms in **Python** is the arguments you pass into the ``hist()`` function. 
+
+The following code snippet generates a **CDF** for a sample of data,
+
+.. code:: python
+
+    import matplotlib.pyplot as plt
+
+    (fig, axes) = plt.subplots()
+
+    data = [ 1, 9, 10, 11, 20, 29, 30, 31, 39 ]
+
+    plt.suptitle('Cumulative Histogram of Random Sample')
+    plt.title(f"n = {len(data)}")
+
+    axes.set_xlabel("Grades")
+    axes.set_ylabel("Cumulative Frequency")
+
+    axes.hist(data, bins=6, cumulative=True, density=True)
+
+    plt.show()
+
+.. plot:: assets/plots/ogives/ogive_simple.py
+
+To create a **CDF**, all we have to do is pass in two extra arguments to ``hist()``, the ``cumulative`` argument and ``density`` argument. For **CDF**s, both of these arguments are set to ``True``. ``cumulative`` tells *matplotlib* to accumulate the frequencies and stack them as it graphs the frequency distribution. ``density`` tells *matplotlib** to scale the vertical axis to 1. 
+
 .. _project_two_boxplots:
 
 Boxplots
@@ -331,29 +393,37 @@ Velocity of Light
 
 1. Load the :ref:`Velocity of Light <project_two_dataset>` data into a :ref:`Python Script <python_scripts>` using the technique outlined in the :ref:`project_two_loading_data` section.
 
-2. Construct a histogram plot for this data sets using eight classes. Answer the following questions in the body of your :ref:`python_docstring`.
+2. Construct a histogram plot for this dataset using eight classes. Answer the following questions in the body of your :ref:`python_docstring`.
 
-    a. What is the class width of your histogram? 
-    
-    b. What are the class limits for each class? 
+    a. What type of shape does this distribtion have? 
 
-    c. What is the most frequent class?
+    b. Based on your answer to part *a*, how do you expect the sample mean to compare to the sample median?
 
-    d. What type of shape does this distribtion have? Is this expected? Why or why not?
+3. Construct a cumulative frequency histogram for this dataset *on the same graph as your histogram*. Using the CDF, answer the following questions in the body of your :ref:`python_docstring`.
 
-3. Construct a boxplot for this data set. Using the boxplot, answer the following questions in the body of your :ref:`python_docstring`.
+    a. What is the approximate value of the third quartile? 
 
-    a. Estimate the 75 :sup:`th` percentile of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
+    b. What is the approximate value of the first quartile?
 
-    b. Estimate the 25 :sup:`th` percentile of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
+    c. What is the approximate value of the median?
 
-    c. Estimate the median of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
+    d. What is the approximate value of the interquartile range?
 
-    d. Estimate the range of this data set.
+4. Construct a boxplot for this dataset *on the same graph as your histogram and CDF*. Using the boxplot, answer the following questions in the body of your :ref:`python_docstring`.
 
-    e. Based on the boxplot, do you detect any possible outliers?  
+    a. What is the approximate value of the third quartile?
 
-4. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your :ref:`python_docstring`.
+    b. What is the approximate value of the first quartile?
+
+    c. What is the approximate value of the median?
+
+    d. What is the approximate value of the interquartile range?
+
+5. TODO: outliers
+
+6. TODO: sample stats
+
+7. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your :ref:`python_docstring`.
 
     a. What is the sample mean of this dataset? Use the :ref:`python_sample_mean` function.
 
@@ -368,39 +438,47 @@ Density of the Earth
 
 1. Load the :ref:`Density of the Earth <project_two_dataset>` data into a :ref:`Python Script <python_scripts>` using the tecnique outlined in the :ref:`project_two_loading_data` section.
 
-2. Construct a histogram plot for this data sets using eight classes. Answer the following questions in the body of your docstring.
+2. Construct a histogram plot for this dataset using eight classes. Answer the following questions in the body of your :ref:`python_docstring`.
 
-    a. What is the class width of your histogram? 
-    
-    b. What are the class limits for each class? 
+    a. What type of shape does this distribtion have? 
 
-    c. What is the most frequent class?
+    b. Based on your answer to part *a*, how do you expect the sample mean to compare to the sample median?
 
-    d. What type of shape does this distribtion have? Is this expected? Why or why not?
+3. Construct a cumulative frequency histogram for this dataset *on the same graph as your histogram*. Using the CDF, answer the following questions in the body of your :ref:`python_docstring`.
 
-3. Construct a boxplot for this data set. Using the boxplot, answer the following questions in the body of your docstring.
+    a. What is the approximate value of the third quartile? 
 
-    a. Estimate the 75 :sup:`th` percentile of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
+    b. What is the approximate value of the first quartile?
 
-    b. Estimate the 25 :sup:`th` percentile of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
+    c. What is the approximate value of the median?
 
-    c. Estimate the median of this data set. Compare the value estimated from the boxplot to the value obtained through the :ref:`python_quantiles` function.
+    d. What is the approximate value of the interquartile range?
 
-    d. Estimate the range of this data set. 
+4. Construct a boxplot for this dataset *on the same graph as your histogram and CDF*. Using the boxplot, answer the following questions in the body of your :ref:`python_docstring`.
 
-    e. Based on the boxplot, do you detect any possible outliers?
+    a. What is the approximate value of the third quartile?
 
-4. The actual density of the Earth, according to the best estimates we have today, is :math:`5.514 \frac{g}{cm^3}`. Use this information to answer the following questions in the body of your docstring.
+    b. What is the approximate value of the first quartile?
 
-    a. What is the sample mean of the dataset? Use the :ref:`python_sample_mean` function.
+    c. What is the approximate value of the median?
+
+    d. What is the approximate value of the interquartile range?
+
+5. TODO: outliers
+
+6. TODO: sample stats
+
+7. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your :ref:`python_docstring`.
+
+    a. What is the sample mean of this dataset? Use the :ref:`python_sample_mean` function.
 
     b. What is the percent error of this estimate with respect to the actual value?
 
     c. What is the sample standard deviation of this dataset? Use the :ref:`python_standard_deviation` function.
 
     d. Find the coefficient of variation for this dataset.
-
-Comparative Measures
+    
+Comparative Analysis
 --------------------
 
 1. Which experimental distribution of data has more variability? Justify your answer with sample statistics calculated in the previous two sections. 

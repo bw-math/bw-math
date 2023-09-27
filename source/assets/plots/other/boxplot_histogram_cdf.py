@@ -25,10 +25,9 @@ import matplotlib
 #       If you want to run this script on your computer, comment out the following line 
 #       with the "#" you see appended to each line of this comment:
 
-# matplotlib.use('agg')
+matplotlib.use('agg')
 
 import matplotlib.pyplot as plt
-import random as rand
 
 ##################################################################################
 ###                                SCRIPT                                      ###
@@ -43,9 +42,11 @@ import random as rand
 #   The second argument is the number of axes you wish to plot on. We are creating one
 #   set for the histogram and one set for the boxplot.
 # NOTE: subplots(1, 2) will return a *list* of axes.
-(fig, axes) = plt.subplots(1, 2)
+(fig, axes) = plt.subplots(1, 3)
 
 # Generate Data
+# NOTE: You can add the contents of lists together with "+" the same way you add 
+#       numbers. This is type of addition is known as "concatenation" of lists.
 data = [ 1, 9, 10, 11, 20, 29, 30, 31, 39 ]
 
 # Label graph
@@ -60,14 +61,19 @@ plt.title(f"n = {len(data)}")
 axes[0].set_xlabel('Grades')
 axes[0].set_ylabel('Frequency')
 
-## Label Boxplot
+## Label CDF
 axes[1].set_xlabel("Grades")
-axes[1].set_ylabel("Sample")
+axes[1].set_ylabel("Cumulative Frequency")
+
+## Label Boxplot
+axes[2].set_xlabel("Grades")
+axes[2].set_ylabel("Sample")
 
 # Plot data on the axes
 # NOTE: classes are "bins" in matplotlib (and most other statistical applications)
 axes[0].hist(data, bins=6, align='left', color='lightblue', ec='red')
-axes[1].boxplot(data, vert=False, whis=(0,100))
+axes[1].hist(data, bins=6, cumulative=True, density=True)
+axes[2].boxplot(data, vert=False, whis=(0,100))
 
 # Show results
 plt.show()
