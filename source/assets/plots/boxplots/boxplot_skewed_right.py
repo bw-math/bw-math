@@ -65,7 +65,7 @@ axs[1].set_ylabel("Observation")
 axs[0].hist(data, bins=6, align='mid', color="lightblue", ec="red")
 
 ## Plot Boxplot
-axs[1].boxplot(data, vert=False)
+axs[1].boxplot(data, vert=False, whis=(0,100))
 
 ## Display Image
 plt.show()

@@ -50,7 +50,7 @@ Background
 The Michelson Velocity of Light Experiment 
 ------------------------------------------
 
-The `Michelson Velocity of Light Experiment <https://www.gutenberg.org/files/11753/11753-h/11753-h.htm>`_ conducted in 1879 was the first time `Albert A. Michelson <https://en.wikipedia.org/wiki/Albert_A._Michelson>`_ successfully measured the speed of light. He would go on to do so several more times, eventually teaming up with `Edward Morley <https://en.wikipedia.org/wiki/Edward_W._Morley>`_. Together, using the principles Michelson first developed in 1879, Michelson and Morley would demonstrate in 1887 the speed of light was the same value regardless of the state of motion of the emitting body. This would go on to have profound effects for physics in the early twentieth century. It would lead `Albert Einstein <https://en.wikipedia.org/wiki/Albert_Einstein>`_ to propose the `theory of relativity <https://en.wikipedia.org/wiki/Theory_of_relativity>`_, one of the most significant intellectual developments in history of humanity. 
+The `Michelson Velocity of Light Experiment <https://www.gutenberg.org/files/11753/11753-h/11753-h.htm>`_ conducted in 1879 was the first time `Albert A. Michelson <https://en.wikipedia.org/wiki/Albert_A._Michelson>`_ successfully measured the speed of light. He would go on to do so several more times, eventually teaming up with `Edward Morley <https://en.wikipedia.org/wiki/Edward_W._Morley>`_. Together, using the principles Michelson first developed in 1879, Michelson and Morley would demonstrate in 1887 the speed of light was the same value regardless of the state of motion of the emitting body. This would go on to have profound effects for physics in the early twentieth century; It would lead `Albert Einstein <https://en.wikipedia.org/wiki/Albert_Einstein>`_ to propose the `theory of relativity <https://en.wikipedia.org/wiki/Theory_of_relativity>`_, one of the most significant intellectual developments in the history of humanity. 
 
 Michelson's 1879 experimental results remained one of most accurate estimations of the speed of light until modern times. Using a series of mirrors depicted below, Michelson was able to divert light rays emitting from a common source along separate paths and then measure the fractional time difference it took for the rays to reach the same location.
 
@@ -116,10 +116,16 @@ The following code snippet will load in a *CSV* spreadsheet named ``example.csv`
 
     print(column_1)
 
+.. important::
+
+    This is *slighlty* different from how we did it in the first project. **Python** reads in the *.csv* file as plain text, even the numbers. In other words, Python interprets an observation of, say, ```2``` as a string of text that says "2"; this is fine and dandy when dealing with categorical data because we represent categories with :ref:`python_strings`. When we are dealing with quantitative data, we have to tell **Python** to convert the plain text to a :ref:`float <python_floats>` data type (Recall *floats* are *decimal* valued data types). The ``float()`` function in the code snippet above converts the plain text to a numeric value and stores it in a variable.
+
 .. _project_two_graphs:
 
 Graphical Representations
 =========================
+
+.. _project_two_histograms:
 
 Histogram
 ---------
@@ -128,9 +134,34 @@ Recall a *histogram* is a way of visualizing the frequency distribution of a sam
 
 .. math:: 
 
-    f(x_i) = \frac{n(x_i)}{n}
+    f(x_i) \sim \text{number of times} x_i {occurs}
 
-The following plot is a histogram generated with :ref:`matplotlib` using *6* classes. Click on the ``source`` button in the top left corner to download the script. Read through the comments to see how it was constructed. 
+The following code snippet shows how to create a histogram for a relatively simple distribution of data,
+
+.. code:: python
+
+    import matplotlib.pyplot as plot
+
+    data = [ 1, 9, 10, 11, 20, 29, 30, 31, 39 ]
+
+    # Create figure and axes to graph on
+    (fig, axes) = plot.subplots()
+
+    axes.hist(data)
+
+    plot.title("Histogram of Random Sample")
+    axes.set_xlabel("Random Numbers")
+    axes.set_ylabel("Sample")
+
+    plot.show()
+
+.. plot:: assets/plots/histograms/histogram_simple.py
+
+Notice how easy and painless the whole process is! All we have to do is pass in a list of data to the ``hist()`` function and *matplotlib* will create a gloriously beautiful picture. 
+
+That is all well and good, but often we need a little more control over the features of our histogram. Luckily, *matplotlib* gives you the ability to tweak and fiddle to your heart's content. 
+
+As another (more complex) example, the following plot is a histogram generated with :ref:`matplotlib` using *6* classes. Click on the ``source`` button in the top left corner to download the script. Read through the comments to see how it was constructed. 
 
 .. plot:: assets/plots/histograms/histogram_normal.py
 
@@ -178,6 +209,8 @@ The other arguments, ``align``, ``color`` and ``ec``, affect the *styling* of th
 
 As you can see, there are lots of options to make your graph nice and pretty.
 
+.. _project_two_boxplots:
+
 Boxplots
 --------
 
@@ -197,25 +230,11 @@ For example, suppose we had a sample of *ordered* data,
 
     S = \{ 1, 9, 10, 11, 20, 29, 30, 31, 39 \}
 
-The minimum and maximum are simply the first and last observation in a sample of *ordered* observations.
+If we were doing this by hand, we would find all of the sample statistics in the Five Number Summary and draw the boxplot in the xy-plane (as we have many times). However, we are using :ref:`matplotlib <python_plotting>` to create statistical graphs and *matplotlib* will do a lot of heavy-lifting for us.
 
-The median is found by looking at the midpoint of the *ordered* sample, i.e. the observation where half of the sample is less than or equal to the value of the observation and half of the sample is greater than the value of the observation. 
+.. note::
 
-Similarly, the first and third quartile can be found by separating the sample into the lower half and upper half, where the median is included in both groupings,
-
-.. math::
-
-    S_{\text{lower half}} = \{ 1, 9, 10, 11, 20 \}
-
-.. math::
-
-    S_{\text{upper half}} = \{ 20, 29, 30, 31, 39 \}
-
-To find the first quartile (the *25* :sup:`th` percentile), we find the median of the lower half of the sample. In this case, it would be ``10``.
-
-To find the second quartile (the *75* :sup:`th` percentile), we find the median of the upper half of the sample. In this case it would be ``30``.
-
-If we were doing this by hand, we would find all of these numbers and draw the boxplot in the plane. However, we are using :ref:`matplotlib <python_plotting>` to create statistical graphs. 
+    We will also talk about how to make **Python** calculate all these sample statistics for us in the :ref:`project_two_sample_statistics` section down below.
 
 A boxplot for the example we were just discussing can be created in **Python** with the following snippet of code,
 
@@ -228,7 +247,7 @@ A boxplot for the example we were just discussing can be created in **Python** w
     # Create figure and axes to graph on
     (fig, axes) = plot.subplots()
 
-    axes.boxplot(data, vert=False)
+    axes.boxplot(data, vert=False, whis=(0,100))
 
     plot.title("Box Plot of Random Sample")
     axes.set_xlabel("Random Numbers")
@@ -238,9 +257,62 @@ A boxplot for the example we were just discussing can be created in **Python** w
 
 .. plot:: assets/plots/boxplots/boxplot_simple.py
 
-The `boxplot() <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html>`_ is, as you might have guessed, :ref:`matplotlib`'s way of generating boxplots. The first argument is the dataset we will wish to graph. The second argument is a *named* argument ``vert``. This controls the *direction* of the boxplot, i.e vertical versus horizontal.
+The `boxplot() <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html>`_ is, as you might have guessed, :ref:`matplotlib`'s way of generating boxplots. The first argument is the dataset we will wish to graph. 
 
-We have passed in a value of ``False``, meaning we want a *horizontal* boxplot. We always want our boxplots to align with our histograms; that is to say, we want the x-axis of both the histogram and the boxplot to represent the same values.
+The second argument is a *named* argument ``vert``. This controls the *direction* of the boxplot, i.e vertical versus horizontal. We have passed in a value of ``False``, meaning we want a *horizontal* boxplot. We always want our boxplots to align with our histograms; that is to say, we want the x-axis of both the histogram and the boxplot to represent the same values.
+
+The third argument, ``whis``, is an ordered pair that controls where the whiskers of the boxplot are drawn. The first number in the ordered paired is the lower percentile you wish to graph; the second number in the ordered pair is the upper percentile you wish to graph. We have passed in ```(0,100)``` to indicate the whiskers will be drawn at the 0 :sup:`th` and the 100 :sup:`th` percentile; in other words, at the minimum and maximum values of the distribution.
+
+.. _project_two_simultaneous_plots:
+
+Simultaneous Plots
+------------------
+
+*matplotlib* is capable of graphing multiple plots at once. To do this, we create multiple sets of ``axes``. We control the number of ``axes`` *matplotlib* creates by passing in arguments to the ``subplot()``. 
+
+The following code snippet will create a histogram and boxplot on the plot and then display it to the user,
+
+.. code:: python
+
+    .. code:: python
+
+    import matplotlib.pyplot as plot
+
+    data = [ 1, 9, 10, 11, 20, 29, 30, 31, 39 ]
+
+    # Create figure and axes to graph on
+    (fig, axes) = plot.subplots(1, 2)
+
+    axes[0].hist(data)
+    axes[1].boxplot(data, vert=False, whis=(0,100))
+
+    plot.title("Box Plot of Random Sample")
+    axes.set_xlabel("Random Numbers")
+    axes.set_ylabel("Sample")
+
+    plot.show()
+
+.. plot:: assets/plots/other/boxplot_and_histogram.py
+
+There are several things to notice about this code. 
+
+First: We are passing in a ```1``` and a ```2``` to the ``subplots()`` function. When you pass arguments into ``subplots()``, it creates multiple *figures* and multiple *axes*. In this class, we don't care about *figures*, but because we want to create multiple axes, we still have to pass in a ```1```; *matplotlib* always interprets the first argument to the ``subplots()`` function as the number of *figures* to create. The second argument to the ``subplots()`` function is the important bit; we are passing in a ```2```, which tells *matplotlib* to create two sets of axes. It will return these axes as a :ref:`list <python_lists>`, which brings us the second important point.
+
+Second: We plot the histogram on one set of axes and we plot the boxplot on another set of axes. Because we passed ```2``` into the *matplotlib* function, the ``axes`` variable is now a :ref:`list <python_lists>` of *axes*. We have to access each individual axes through its *index* and bracket notation. The line,
+
+.. code:: python
+    
+    axes[0].hist(data)
+
+calls the ``hist()`` function on the first set of axes. The line,
+
+.. code:: python
+
+    axes[1].boxplot(data, vert=False, whis=(0,100))
+
+calls the ``boxplot()`` function on the second set of axes. 
+
+.. _project_two_sample_statistics:
 
 Sample Statistics
 =================
@@ -368,4 +440,4 @@ References
 - `matplotlib colors <https://matplotlib.org/stable/gallery/color/named_colors.html>`_
 - `matplotlib boxplot function <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html>`_
 - `matplotlib histogram function <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html>`_
-- `pythonstatistics package <https://docs.python.org/3/library/statistics.html>`_
+- `python statistics package <https://docs.python.org/3/library/statistics.html>`_

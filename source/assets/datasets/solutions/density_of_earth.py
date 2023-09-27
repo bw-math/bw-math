@@ -8,7 +8,7 @@ data_directory = os.path.dirname(os.path.dirname(os.path.abspath(sys.argv[0])))
 (fig, axs) = plot.subplots(1, 2)
 
 # read in data
-with open(f'{data_directory}/velocity_of_light_data.csv') as csv_file:
+with open(f'{data_directory}/earth_density_data.csv') as csv_file:
     csv_reader = csv.reader(csv_file)
     raw_data = [ row for row in csv_reader ]
 
