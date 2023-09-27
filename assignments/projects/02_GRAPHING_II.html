@@ -450,6 +450,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cavendish-density-of-the-earth-experiment">The Cavendish Density of the Earth Experiment</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-imports">Required Imports</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graphical-representations">Graphical Representations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">Histogram</a></li>
@@ -497,10 +498,12 @@ document.write(`
 <li><p>Download <strong>both</strong> <em>csv</em> datasets in the <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">Datasets</span></a> section and place them in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system where you save your <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts.</p></li>
 <li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">NAME_project_two.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">NAME</span></code> with your name.</p></li>
 <li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Python docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
-<li><p>Read the <a class="reference internal" href="#project-two-background"><span class="std std-ref">Background</span></a> section</p></li>
-<li><p>Read the <a class="reference internal" href="#project-two-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
-<li><p>Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> files using the technique outlined in the <a class="reference internal" href="03_ESTIMATION_I.html#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
-<li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the <em>Project</em> section.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-two-background"><span class="std std-ref">Background</span></a> section.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-two-required-imports"><span class="std std-ref">Required Imports</span></a> section. Add the required imports to you <code class="docutils literal notranslate"><span class="pre">.py</span></code> script.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-two-graphs"><span class="std std-ref">Graphical Representations</span></a> section.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-two-sample-statistics"><span class="std std-ref">Sample Statistics</span></a> section.</p></li>
+<li><p>Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> files using the technique outlined in the <a class="reference internal" href="#project-two-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section. Label your script with comments or include your written answers in the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a> as indicated in the <em>Project</em> section.</p></li>
 <li><p>When you are done, zip your script <strong>and</strong> the <em>csv</em> files into a zip file named <code class="docutils literal notranslate"><span class="pre">NAME_project_two.zip</span></code></p></li>
 <li><p>Upload the zip file to the Google Classrom Project Two asignment.</p></li>
 </ol>
@@ -555,6 +558,15 @@ document.write(`
 <p>With <a class="reference external" href="https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion">Newton’s Laws of Motion</a> , he was able to derive an expression that related this force to the mass of the Earth.</p>
 <p>Cavendish’s dataset is an excellent historical example of using statistical inference to produce new knowledge about the world around us.</p>
 </section>
+</section>
+<section id="required-imports">
+<span id="project-two-required-imports"></span><h2>Required Imports<a class="headerlink" href="#required-imports" title="Permalink to this headline">#</a></h2>
+<p>You will need to import the following libraries to complete this project,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
+<span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">stats</span>
+</pre></div>
+</div>
 </section>
 <section id="loading-in-data">
 <span id="project-two-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
@@ -809,18 +821,30 @@ document.write(`
 </ol>
 </div></blockquote>
 </li>
-<li><p>TODO: outliers</p></li>
-<li><p>TODO: sample stats</p></li>
-<li><p>The actual value of the speed of light, according to the best estimates we have today, is <img class="math" src="../../_images/math/868a4aab530b8d56986836c1b7d0d42918ce334b.png" alt="299,792,458 \frac{m}{s}"/>. Use this information to answer the following questions in the body of your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>.</p>
+<li><p>Using the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-stats-package"><span class="std std-ref">Statistics</span></a> library, calculate the following sample statistics. Label all of your calculations with comments.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
-<li><p>What is the sample mean of this dataset? Use the <span class="xref std std-ref">python_sample_mean</span> function.</p></li>
-<li><p>What is the percent error of this estimate with respect to the actual value?</p></li>
-<li><p>What is the sample standard deviation of this dataset? Use the <span class="xref std std-ref">python_standard_deviation</span> function.</p></li>
-<li><p>Find the coefficient of variation for this dataset.</p></li>
+<li><p>The sample mean.</p></li>
+<li><p>The sample median.</p></li>
+<li><p>The sample standard deviation.</p></li>
+<li><p>The first quartile.</p></li>
+<li><p>The third quartile.</p></li>
+<li><p>The interquartile range.</p></li>
+<li><p>The coefficient of variation.</p></li>
 </ol>
 </div></blockquote>
 </li>
+<li><p>Answer the following questions in your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>. Label any calculations you perform to arrive at your answers with comments.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>How many standard deviations away from the mean is the third quartile?</p></li>
+<li><p>How many standard deviations away from the mean is the first quartile?</p></li>
+<li><p>Explain the results of part #b and #c. What features of the distribution cause these quantities to be approximately equal or unequal?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Answer the following question in your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>: Based on the IQR rule, are there any possible outliers in this dataset?</p></li>
+<li><p>The actual value of the speed of light, according to the best estimates we have today, is <img class="math" src="../../_images/math/868a4aab530b8d56986836c1b7d0d42918ce334b.png" alt="299,792,458 \frac{m}{s}"/>. Use this information to answer the following questions in the body of your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>: What is the percent error of Michelson’s estimate with respect to the actual value?</p></li>
 </ol>
 </section>
 <section id="density-of-the-earth">
@@ -855,24 +879,45 @@ document.write(`
 </ol>
 </div></blockquote>
 </li>
-<li><p>TODO: outliers</p></li>
-<li><p>TODO: sample stats</p></li>
-<li><p>The actual value of the speed of light, according to the best estimates we have today, is <img class="math" src="../../_images/math/868a4aab530b8d56986836c1b7d0d42918ce334b.png" alt="299,792,458 \frac{m}{s}"/>. Use this information to answer the following questions in the body of your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>.</p>
+<li><p>Using the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-stats-package"><span class="std std-ref">Statistics</span></a> library, calculate the following sample statistics. Label all of your calculations with comments.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
-<li><p>What is the sample mean of this dataset? Use the <span class="xref std std-ref">python_sample_mean</span> function.</p></li>
-<li><p>What is the percent error of this estimate with respect to the actual value?</p></li>
-<li><p>What is the sample standard deviation of this dataset? Use the <span class="xref std std-ref">python_standard_deviation</span> function.</p></li>
-<li><p>Find the coefficient of variation for this dataset.</p></li>
+<li><p>The sample mean.</p></li>
+<li><p>The sample median.</p></li>
+<li><p>The sample standard deviation.</p></li>
+<li><p>The first quartile.</p></li>
+<li><p>The third quartile.</p></li>
+<li><p>The interquartile range.</p></li>
+<li><p>The coefficient of variation.</p></li>
 </ol>
 </div></blockquote>
 </li>
+<li><p>Answer the following questions in your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>. Label any calculations you perform to arrive at your answers with comments.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>How many standard deviations away from the mean is the third quartile?</p></li>
+<li><p>How many standard deviations away from the mean is the first quartile?</p></li>
+<li><p>Explain the results of part #b and #c. What features of the distribution cause these quantities to be approximately equal or unequal?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Answer the following question in your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>: Based on the IQR rule, are there any possible outliers in this dataset?</p></li>
+<li><p>The actual value of the density of the Earth, according to the best estimates we have today, is <img class="math" src="../../_images/math/e2ab4c96b12e3eddab5741ab1ee994342f6c856a.png" alt="5.515 \frac{g}{cm^2}"/>. Use this information to answer the following questions in the body of your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>: What is the percent error of Cavendish’s estimate with respect to the actual value?</p></li>
 </ol>
 </section>
 <section id="comparative-analysis">
 <h3>Comparative Analysis<a class="headerlink" href="#comparative-analysis" title="Permalink to this headline">#</a></h3>
-<ol class="arabic simple">
+<ol class="arabic">
+<li><p>Answer the following questions in your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
 <li><p>Which experimental distribution of data has more variability? Justify your answer with sample statistics calculated in the previous two sections.</p></li>
+<li><p>Which distribution is more skewed and in which direction does the skew lie? Justify your answer with sample statistics calculated in the previous two sections.</p></li>
+<li><p>Which experiment yielded a more accurate measure with respect to modern estimates? Justify your answer with sample statistics calculated in the previous two sections.</p></li>
+<li><p>We have encountered normal distributions in a wide array of seemingly unrelated subjects: geyser durations, wine acidity, alpha particle emissions and now: the speed of light and the density of earth. We have not yet explained why the phenomenon of normality occurs so often (so often, you might call it <em>normal</em>), but that will soon change. As a precursor of things to come, answer the following question to the best of your current ability: Based on what you have learned so far in this course, why do you think normal distributions occur so often in nature?</p></li>
+</ol>
+</div></blockquote>
+</li>
 </ol>
 </section>
 </section>
@@ -1033,6 +1078,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cavendish-density-of-the-earth-experiment">The Cavendish Density of the Earth Experiment</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-imports">Required Imports</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graphical-representations">Graphical Representations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">Histogram</a></li>
