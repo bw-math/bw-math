@@ -22,10 +22,10 @@ Instructions
 5. Read the :ref:`project_two_required_imports` section. Add the required imports to you ``.py`` script.
 6. Read the :ref:`project_two_graphs` section.
 7. Read the :ref:`project_two_sample_statistics` section.
-6. Load in the data from the ``.csv`` files using the technique outlined in the :ref:`project_two_loading_data` section.
-7. Perform all exercises and answer all questions in the :ref:`project_two_project` section. Label your script with comments or include your written answers in the :ref:`python_docstring` as indicated in the *Project* section.
-8. When you are done, zip your script **and** the *csv* files into a zip file named ``NAME_project_two.zip``
-9. Upload the zip file to the Google Classrom Project Two asignment.
+8. Load in the data from the ``.csv`` files using the technique outlined in the :ref:`project_two_loading_data` section.
+9. Perform all exercises and answer all questions in the :ref:`project_two_project` section. Label your script with comments or include your written answers in the :ref:`python_docstring` as indicated in the *Project* section.
+10. When you are done, zip your script **and** the *csv* files into a zip file named ``NAME_project_two.zip``
+11. Upload the zip file to the Google Classrom Project Two asignment.
 
 Formulae
 ========
