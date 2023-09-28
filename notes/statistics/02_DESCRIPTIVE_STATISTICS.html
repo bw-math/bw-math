@@ -1031,7 +1031,7 @@ document.write(`
 <p>The <em>geometric mean</em> is such an alternate way of defining the <em>mean</em> of a sample data.</p>
 <p>The <em>geometric mean</em> is defined as,</p>
 <div class="math">
-<p><img src="../../_images/math/4af36249ae79e207d3653021760fdc732ad16cf3.png" alt="\bar{x}_G = (x_1 \cdot x_2 \cdot ... \cdot x_{n-1} \cdot x_n )^(1/n)"/></p>
+<p><img src="../../_images/math/f2c771e5f96baf391938a2bdafdb090f66b4e922.png" alt="\bar{x}_G = (x_1 \cdot x_2 \cdot ... \cdot x_{n-1} \cdot x_n )^(\frac{1}{n})"/></p>
 </div><p>The <em>geometric mean</em> is a measure of a sample’s <em>multiplicative</em> center, rather than its <em>additive</em> center.</p>
 <dl>
 <dt>Example</dt><dd><p>Suppose you have a sample of data,</p>
@@ -1103,7 +1103,7 @@ document.write(`
 <p>To see what is meant by the term <em>ordinality</em>, suppose you have a sample of <a class="reference internal" href="00_INTRODUCTION.html#data-characteristic"><span class="std std-ref">quantiative data</span></a> <img class="math" src="../../_images/math/42f6eba29127a8a12bce070ee5bec81d715bb94a.png" alt="\{ x_i \}"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/3484309044fbce023bb6dcec342c3b458755db4c.png" alt="S = \{ x_1, x_2, ..., x_i, ... , x_n \}"/></p>
-</div><p>The <em>m</em> <sup>th</sup> order statistic, <img class="math" src="../../_images/math/9c9a612bf35d753230009040b6c3793875943065.png" alt="x_(m)"/> is the <em>m</em> <sup>th</sup> observation in the ordered sample <img class="math" src="../../_images/math/5d620f0ce538f3de3eb335cc4055b53e87d01e83.png" alt="S_{(o)}"/>,</p>
+</div><p>The <em>m</em> <sup>th</sup> order statistic, <img class="math" src="../../_images/math/5b7911294f5ce25e14a533686eb676195fc547f4.png" alt="x_{(m)}"/> is the <em>m</em> <sup>th</sup> observation in the ordered sample <img class="math" src="../../_images/math/5d620f0ce538f3de3eb335cc4055b53e87d01e83.png" alt="S_{(o)}"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/1f7001b6c9563ef6a87614c8d8ea688561d605d6.png" alt="S_{(o)} = \{ x_{(1)}, x_{(2)}, ... x_{(m)}, ..., x_{(n)} \}"/></p>
 </div><p>After the data set is sorted, the new index (subscript) <code class="docutils literal notranslate"><span class="pre">(m)</span></code> attached to the observation is called the <em>order</em> of the observation.</p>
@@ -1113,7 +1113,7 @@ document.write(`
 <p><img src="../../_images/math/bf1b316825604ca7acfe0a63a59d9e35cc33d614.png" alt="S = \{ 5.1 \text{ years }, 3.2 \text{ years }, 6.7 \text{ years }, 1.4 \text{ years } \}"/></p>
 </div></dd>
 </dl>
-<p>Then the ordered sample <img class="math" src="../../_images/math/39a336dc46dbad90451b21c5e41867b9b6d29b1a.png" alt="S_(o)"/> is given</p>
+<p>Then the ordered sample <img class="math" src="../../_images/math/5d620f0ce538f3de3eb335cc4055b53e87d01e83.png" alt="S_{(o)}"/> is given</p>
 <div class="math">
 <p><img src="../../_images/math/dd140803b63534b92e31e5e49815c65d45331750.png" alt="S_{(o)} = \{ 1.4 \text{ years }, 3.3 \text{ years }, 5.1 \text{ years }, 6.7 \text{ years } \}"/></p>
 </div><p>The 1 <sup>st</sup> <em>order statistic</em> <img class="math" src="../../_images/math/7aa70a4ac203aa2ed9e0d040185bef92f3124ff4.png" alt="x_{(1)}"/> is <em>1.4 years</em>, the 2 <sup>nd</sup> <em>order statistic</em> <img class="math" src="../../_images/math/a80b5a6e88cbf3dc6b46afda81c9782c19ea1c3d.png" alt="x_{(2)}"/> is <em>3.3 years</em>, the 3 <sup>rd</sup> <em>order statistic</em> <img class="math" src="../../_images/math/39e7cee1481ddc7014c78ff87e86ef6eb058c23d.png" alt="x_{(3)}"/> is <em>5.1 years</em> and the 4 <sup>th</sup> <em>order statistic</em> <img class="math" src="../../_images/math/7ef1dbe8243c3bdcae773590e381306bfc7c1619.png" alt="x_{(4)}"/> is <em>6.7 years</em>. Another way of saying this would be the <em>order</em> of <em>1.4 years</em> is 1, the <em>order</em> of <em>3.3 years</em> is 2, the <em>order</em> of <em>5.1 years</em> is 3 and the <em>order</em> of <em>6 years</em> is 4.</p>
@@ -1123,7 +1123,7 @@ document.write(`
 <hr class="docutils" />
 <p>The range is a measure of the <em>total variation</em> of a sample of data.</p>
 <dl>
-<dt>Definition</dt><dd><p>The <em>range</em> of a sample of data <img class="math" src="../../_images/math/4c955d656d607e948e29508a6e07f063fc321a82.png" alt="\{ x_1, x_2, ..., x_n \}"/> is the difference between its last order statistic, <img class="math" src="../../_images/math/1d006456f2f63e37d4bcc91123ed75c273d4c88b.png" alt="x_(n),"/> and its first order statistic, <img class="math" src="../../_images/math/a47b6fd542f432e7daefc592084c3e0c329b620a.png" alt="x_(1)"/></p>
+<dt>Definition</dt><dd><p>The <em>range</em> of a sample of data <img class="math" src="../../_images/math/4c955d656d607e948e29508a6e07f063fc321a82.png" alt="\{ x_1, x_2, ..., x_n \}"/> is the difference between its last order statistic, <img class="math" src="../../_images/math/840923866ab219069c51ee8b21f80041f06b7d02.png" alt="x_{(n)},"/> and its first order statistic, <img class="math" src="../../_images/math/7aa70a4ac203aa2ed9e0d040185bef92f3124ff4.png" alt="x_{(1)}"/></p>
 <div class="math">
 <p><img src="../../_images/math/822556b4d0c5d7658bd41dd76545d41073544fe2.png" alt="\text{Range}(\{ x_i \}) = x_{(n)} - x_{(1)}"/></p>
 </div></dd>
@@ -1159,7 +1159,7 @@ document.write(`
 <p><img src="../../_images/math/f206c2fd202dcdc5e6501f3bc3356b9174e4169d.png" alt="m = p \cdot (n+1)"/></p>
 </div></dd>
 </dl>
-<p>We denote the order statistic <img class="math" src="../../_images/math/9c9a612bf35d753230009040b6c3793875943065.png" alt="x_(m)"/> which satisfies this formula as the <img class="math" src="../../_images/math/feef0d56168a273f4d2b0aefb4c2b025aa9c358c.png" alt="\pi_p"/> percentile,</p>
+<p>We denote the order statistic <img class="math" src="../../_images/math/5b7911294f5ce25e14a533686eb676195fc547f4.png" alt="x_{(m)}"/> which satisfies this formula as the <img class="math" src="../../_images/math/feef0d56168a273f4d2b0aefb4c2b025aa9c358c.png" alt="\pi_p"/> percentile,</p>
 <div class="math">
 <p><img src="../../_images/math/b37e9beab0eb0ea979af7dc1f2dc68fc437b707a.png" alt="\pi_p = x_{(m)}"/></p>
 </div><dl>
@@ -1188,13 +1188,13 @@ document.write(`
 <p><img src="../../_images/math/0eefe230a10e43d898fb217f4568b3ce07907021.png" alt="m = 0.20 \cdot (9 + 1) = 2"/></p>
 </div><p>This tells us the 20 <sup>th</sup> percentile is the second order statistic, or in this case <code class="docutils literal notranslate"><span class="pre">-1.5</span></code> minutes, i.e.,</p>
 <div class="math">
-<p><img src="../../_images/math/af335fc0c4b8dacc2d183232f816363ee698dbb1.png" alt="\pi_{.20} = x_(2) = -1.5 \text{min}"/></p>
+<p><img src="../../_images/math/b7d0a1dee271820250333d44fb07d165aaf6e651.png" alt="\pi_{.20} = x_{(2)} = -1.5 \text{min}"/></p>
 </div><p>Similarly, to find the 50 <sup>th</sup> percentile, we find the <em>order</em> in which it occurs in the sample,</p>
 <div class="math">
 <p><img src="../../_images/math/4dbbbe58fdd5f0b35025d4984011d3a18f2c36af.png" alt="m = 0.5 \cdot (9 + 1) = 5"/></p>
 </div><p>Which corresponds to the fifth order statistic, or in this case, <code class="docutils literal notranslate"><span class="pre">3.0</span></code> minutes,</p>
 <div class="math">
-<p><img src="../../_images/math/c789a6df6a557604fcbce68a8f0394b690b392a1.png" alt="\pi_p = x_(5) = 3.0 \text{min}"/></p>
+<p><img src="../../_images/math/fc58601a660e64320d8e572186ebb87e820a9d76.png" alt="\pi_p = x_{(5)} = 3.0 \text{min}"/></p>
 </div></section>
 <section id="interpolation">
 <span id="percentile-interpolation"></span><h4>Interpolation<a class="headerlink" href="#interpolation" title="Permalink to this headline">#</a></h4>
@@ -1202,7 +1202,7 @@ document.write(`
 <dl>
 <dt>Example</dt><dd><p>Consider the same experiment of measuring bus waiting times, with the same sample data,</p>
 <div class="math">
-<p><img src="../../_images/math/9dc845aec65205df7b61a09210a12fb86ca4233b.png" alt="S_(o)= \{ -2.5 \text{min}, -1.5 \text{min}, -1.0 \text{min}, 0.5 \text{min}, 3.0 \text{min}, 4.3 \text{min}, 5.0 \text{min}, 6.5 \text{min}, 7.0 \text{min} \}"/></p>
+<p><img src="../../_images/math/0506de3808e73735b09b85cc1aed7b3ec8e48636.png" alt="S_{(o)}= \{ -2.5 \text{min}, -1.5 \text{min}, -1.0 \text{min}, 0.5 \text{min}, 3.0 \text{min}, 4.3 \text{min}, 5.0 \text{min}, 6.5 \text{min}, 7.0 \text{min} \}"/></p>
 </div><p>Find the following percentiles: 25 <sup>th</sup> percentile.</p>
 </dd>
 </dl>
@@ -1210,16 +1210,16 @@ document.write(`
 <div class="math">
 <p><img src="../../_images/math/f6bd1947ec765960ec3548475fd9176f22f7d355.png" alt="m = 0.25 \cdot (9 + 1) = 2.5"/></p>
 </div><p>There is no observation which corresponds to a fractional order. To estimate the percentile in this case, we use <em>linear interpolation</em>, using the <em>order</em> of the observation as the <em>x</em> variable and the value of the observation as the <em>y</em> variable.</p>
-<p>To do this, we take the order statistics on each side of <img class="math" src="../../_images/math/8495ae1b818dd679b280aec2d92783e46f635b1b.png" alt="m = 2.5"/>, in this case <img class="math" src="../../_images/math/90e7ebfd8e3b95ec32b0a9de3822a9f6e7ce6bf6.png" alt="x_(2)"/> and <img class="math" src="../../_images/math/4d4db9f2fecd7c84e20fcca913e05892963a53aa.png" alt="x_(3)"/>, and find the slope of the line that connects them,</p>
+<p>To do this, we take the order statistics on each side of <img class="math" src="../../_images/math/8495ae1b818dd679b280aec2d92783e46f635b1b.png" alt="m = 2.5"/>, in this case <img class="math" src="../../_images/math/a80b5a6e88cbf3dc6b46afda81c9782c19ea1c3d.png" alt="x_{(2)}"/> and <img class="math" src="../../_images/math/39e7cee1481ddc7014c78ff87e86ef6eb058c23d.png" alt="x_{(3)}"/>, and find the slope of the line that connects them,</p>
 <div class="math">
 <p><img src="../../_images/math/915566408986e348d0d674b9474ffc5387216c40.png" alt="\text{slope} = \frac{x_{(3)} - x_{(2)}}{3-2} = x_{(3)} - x_{(2)}"/></p>
-</div><p>Then we find the point on this line that corresponds to <img class="math" src="../../_images/math/394de2473f2bc2edbfa81a2c618bf5a5008a5cb5.png" alt="(2.5, x_(2.5))"/> (using the point-slope formula with the point <img class="math" src="../../_images/math/3362fff25ba0d24cd3b2e4b970b4ff0fc687cf25.png" alt="(3, x_{(3)}"/> as the sample point!), which will serve as the estimate of the 25 <sup>th</sup> percentile,</p>
+</div><p>Then we find the point on this line that corresponds to <img class="math" src="../../_images/math/26c778c6038f316c4f5378b59d9b073efa9f8a56.png" alt="(2.5, x_{(2.5)})"/> (using the point-slope formula with the point <img class="math" src="../../_images/math/3362fff25ba0d24cd3b2e4b970b4ff0fc687cf25.png" alt="(3, x_{(3)}"/> as the sample point!), which will serve as the estimate of the 25 <sup>th</sup> percentile,</p>
 <div class="math">
 <p><img src="../../_images/math/8377d37aada2798349fa19ff3d65458f3049f3c8.png" alt="\text{slope} = \frac{x_{(3)} - x_{(2.5)}}{3 - 2.5} = x_{(3)} - x_{(2)}"/></p>
 </div><p>Sovling this for <img class="math" src="../../_images/math/cfadd0fe3e007f7ce086fb740fec66e42f9190ee.png" alt="x_{(2.5)}"/>, we obtain,</p>
 <div class="math">
 <p><img src="../../_images/math/9a45c76f7ebd5cf5f1f23b285ef00522dc18edff.png" alt="x_{(2.5)} = x_{(3)} - (x_{(3)} - x_{(2)}) \cdot (3 - 2.5) \text{      Equation 1}"/></p>
-</div><p>Or equivalently (plugging <img class="math" src="../../_images/math/90e7ebfd8e3b95ec32b0a9de3822a9f6e7ce6bf6.png" alt="x_(2)"/> into the point-slope formula instead of <img class="math" src="../../_images/math/39e7cee1481ddc7014c78ff87e86ef6eb058c23d.png" alt="x_{(3)}"/>),</p>
+</div><p>Or equivalently (plugging <img class="math" src="../../_images/math/a80b5a6e88cbf3dc6b46afda81c9782c19ea1c3d.png" alt="x_{(2)}"/> into the point-slope formula instead of <img class="math" src="../../_images/math/39e7cee1481ddc7014c78ff87e86ef6eb058c23d.png" alt="x_{(3)}"/>),</p>
 <div class="math">
 <p><img src="../../_images/math/f6ec7494fe453e1b461948eba662f4f9e502c24c.png" alt="x_{(2.5)} = x_{(2)} + (x_{(3)} - x_{(2)}) \cdot (2.5 - 2) \text{      Equation 2}"/></p>
 </div><p>Notice in <em>Equation 1</em>, we are subtracting a quantity from the third order statistic, <img class="math" src="../../_images/math/39e7cee1481ddc7014c78ff87e86ef6eb058c23d.png" alt="x_{(3)}"/>, whereas in <em>Equation 2</em> we are adding a quantity to the second order statistic, <img class="math" src="../../_images/math/7ef1dbe8243c3bdcae773590e381306bfc7c1619.png" alt="x_{(4)}"/>. In other words, to find the percentile of a sample data where the percentile does not correspond to an actual observation we may either subtract a corective quantity from the next largest observation, or add a corrective quantity to the next smallest observation.</p>
@@ -1234,7 +1234,7 @@ document.write(`
 <p>Before moving onto the next section where we give the general formula for calculating the <em>sample percentile</em>, let us note both <em>Equation 1</em> and <em>Equation 2</em> can be rewritten in terms of the <a class="reference internal" href="#floor-function"><span class="std std-ref">Floor Function</span></a> and the <a class="reference internal" href="#ceiling-function"><span class="std std-ref">Ceiling Function</span></a>,</p>
 <div class="math">
 <p><img src="../../_images/math/052827ed37c4d62773174c0e25a440024a3fea88.png" alt="x_{(2.5)} = x_{(\lceil 2.5 \rceil)} - (x_{(\lceil 2.5 \rceil)} - x_{(\lfloor 2.5 \rfloor)}) \cdot (\lceil 2.5 \rceil - 2.5) \text{      Equation 1, Redux}"/></p>
-</div><p>Or equivalently (plugging <img class="math" src="../../_images/math/90e7ebfd8e3b95ec32b0a9de3822a9f6e7ce6bf6.png" alt="x_(2)"/> into the point-slope formula instead of <img class="math" src="../../_images/math/39e7cee1481ddc7014c78ff87e86ef6eb058c23d.png" alt="x_{(3)}"/>),</p>
+</div><p>Or equivalently (plugging <img class="math" src="../../_images/math/a80b5a6e88cbf3dc6b46afda81c9782c19ea1c3d.png" alt="x_{(2)}"/> into the point-slope formula instead of <img class="math" src="../../_images/math/39e7cee1481ddc7014c78ff87e86ef6eb058c23d.png" alt="x_{(3)}"/>),</p>
 <div class="math">
 <p><img src="../../_images/math/bf835ee03acd49dd6686d4b910929b98fbc7be3b.png" alt="x_{(2.5)} = x_{(\lfloor 2.5 \rfloor)} + (x_{(\lceil 2.5 \rceil)} - x_{(\lfloor 2.5 \rfloor)}) \cdot (2.5 - \lfloor 2.5 \rfloor) \text{      Equation 2, Redux}"/></p>
 </div></section>

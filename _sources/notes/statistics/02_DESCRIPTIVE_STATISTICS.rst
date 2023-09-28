@@ -650,7 +650,7 @@ The *geometric mean* is such an alternate way of defining the *mean* of a sample
 The *geometric mean* is defined as,
 
 .. math::
-    \bar{x}_G = (x_1 \cdot x_2 \cdot ... \cdot x_{n-1} \cdot x_n )^(1/n)
+    \bar{x}_G = (x_1 \cdot x_2 \cdot ... \cdot x_{n-1} \cdot x_n )^(\frac{1}{n})
 
 The *geometric mean* is a measure of a sample's *multiplicative* center, rather than its *additive* center. 
 
@@ -756,7 +756,7 @@ To see what is meant by the term *ordinality*, suppose you have a sample of :ref
 
     S = \{ x_1, x_2, ..., x_i, ... , x_n \}
 
-The *m* :sup:`th` order statistic, :math:`x_(m)` is the *m* :sup:`th` observation in the ordered sample :math:`S_{(o)}`,
+The *m* :sup:`th` order statistic, :math:`x_{(m)}` is the *m* :sup:`th` observation in the ordered sample :math:`S_{(o)}`,
 
 .. math:: 
 
@@ -772,7 +772,7 @@ Example
         S = \{ 5.1 \text{ years }, 3.2 \text{ years }, 6.7 \text{ years }, 1.4 \text{ years } \}
 
 
-Then the ordered sample :math:`S_(o)` is given
+Then the ordered sample :math:`S_{(o)}` is given
 
 .. math:: 
 
@@ -791,7 +791,7 @@ Range
 The range is a measure of the *total variation* of a sample of data.
 
 Definition
-    The *range* of a sample of data :math:`\{ x_1, x_2, ..., x_n \}` is the difference between its last order statistic, :math:`x_(n),` and its first order statistic, :math:`x_(1)` 
+    The *range* of a sample of data :math:`\{ x_1, x_2, ..., x_n \}` is the difference between its last order statistic, :math:`x_{(n)},` and its first order statistic, :math:`x_{(1)}` 
 
     .. math::
 
@@ -841,7 +841,7 @@ Formula
 
         m = p \cdot (n+1)
 
-We denote the order statistic :math:`x_(m)` which satisfies this formula as the :math:`\pi_p` percentile,
+We denote the order statistic :math:`x_{(m)}` which satisfies this formula as the :math:`\pi_p` percentile,
 
 .. math:: 
 
@@ -882,7 +882,7 @@ This tells us the 20 :sup:`th` percentile is the second order statistic, or in t
 
 .. math:: 
 
-    \pi_{.20} = x_(2) = -1.5 \text{min}
+    \pi_{.20} = x_{(2)} = -1.5 \text{min}
 
 Similarly, to find the 50 :sup:`th` percentile, we find the *order* in which it occurs in the sample,
 
@@ -894,7 +894,7 @@ Which corresponds to the fifth order statistic, or in this case, ``3.0`` minutes
 
 .. math:: 
 
-    \pi_p = x_(5) = 3.0 \text{min}
+    \pi_p = x_{(5)} = 3.0 \text{min}
 
 .. _percentile_interpolation:
 
@@ -908,7 +908,7 @@ Example
 
     .. math::
 
-        S_(o)= \{ -2.5 \text{min}, -1.5 \text{min}, -1.0 \text{min}, 0.5 \text{min}, 3.0 \text{min}, 4.3 \text{min}, 5.0 \text{min}, 6.5 \text{min}, 7.0 \text{min} \}
+        S_{(o)}= \{ -2.5 \text{min}, -1.5 \text{min}, -1.0 \text{min}, 0.5 \text{min}, 3.0 \text{min}, 4.3 \text{min}, 5.0 \text{min}, 6.5 \text{min}, 7.0 \text{min} \}
 
     Find the following percentiles: 25 :sup:`th` percentile. 
 
@@ -921,13 +921,13 @@ When we try to apply the formula to determine the order statistic which correspo
 There is no observation which corresponds to a fractional order. To estimate the percentile in this case, we use *linear interpolation*, using the *order* of the observation as the *x* variable and the value of the observation as the *y* variable. 
 
 
-To do this, we take the order statistics on each side of :math:`m = 2.5`, in this case :math:`x_(2)` and :math:`x_(3)`, and find the slope of the line that connects them,
+To do this, we take the order statistics on each side of :math:`m = 2.5`, in this case :math:`x_{(2)}` and :math:`x_{(3)}`, and find the slope of the line that connects them,
 
 .. math:: 
 
     \text{slope} = \frac{x_{(3)} - x_{(2)}}{3-2} = x_{(3)} - x_{(2)}
 
-Then we find the point on this line that corresponds to :math:`(2.5, x_(2.5))` (using the point-slope formula with the point :math:`(3, x_{(3)}` as the sample point!), which will serve as the estimate of the 25 :sup:`th` percentile,
+Then we find the point on this line that corresponds to :math:`(2.5, x_{(2.5)})` (using the point-slope formula with the point :math:`(3, x_{(3)}` as the sample point!), which will serve as the estimate of the 25 :sup:`th` percentile,
 
 .. math::
 
@@ -939,7 +939,7 @@ Sovling this for :math:`x_{(2.5)}`, we obtain,
 
     x_{(2.5)} = x_{(3)} - (x_{(3)} - x_{(2)}) \cdot (3 - 2.5) \text{      Equation 1}
 
-Or equivalently (plugging :math:`x_(2)` into the point-slope formula instead of :math:`x_{(3)}`),
+Or equivalently (plugging :math:`x_{(2)}` into the point-slope formula instead of :math:`x_{(3)}`),
 
 .. math:: 
 
@@ -969,7 +969,7 @@ Before moving onto the next section where we give the general formula for calcul
 
     x_{(2.5)} = x_{(\lceil 2.5 \rceil)} - (x_{(\lceil 2.5 \rceil)} - x_{(\lfloor 2.5 \rfloor)}) \cdot (\lceil 2.5 \rceil - 2.5) \text{      Equation 1, Redux}
 
-Or equivalently (plugging :math:`x_(2)` into the point-slope formula instead of :math:`x_{(3)}`),
+Or equivalently (plugging :math:`x_{(2)}` into the point-slope formula instead of :math:`x_{(3)}`),
 
 .. math:: 
 
