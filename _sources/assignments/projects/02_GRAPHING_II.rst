@@ -146,7 +146,7 @@ The following code snippet will load in a *CSV* spreadsheet named ``example.csv`
 
 .. important::
 
-    This is *slighlty* different from how we did it in the first project. **Python** reads in the *.csv* file as plain text, even the numbers. In other words, Python interprets an observation of, say, ```2``` as a string of text that says "2"; this is fine and dandy when dealing with categorical data because we represent categories with :ref:`python_strings`. When we are dealing with quantitative data, we have to tell **Python** to convert the plain text to a :ref:`float <python_floats>` data type (Recall *floats* are *decimal* valued data types). The ``float()`` function in the code snippet above converts the plain text to a numeric value and stores it in a variable.
+    This is *slightly* different from how we did it in the first project. **Python** reads in the *.csv* file as plain text, even the numbers. In other words, Python interprets an observation of, say, ``2`` as a string of text that says ``"2"``; this is fine and dandy when dealing with categorical data because we represent categories with :ref:`strings <python_strings>`. When we are dealing with quantitative data, we have to tell **Python** to convert the plain text to a :ref:`float <python_floats>` data type (Recall *floats* are *decimal* valued data types). The ``float()`` function in the code snippet above converts the plain text to a numeric value and stores it in a variable.
 
 .. _project_two_graphs:
 
@@ -162,9 +162,9 @@ Recall a *histogram* is a way of visualizing the frequency distribution of a sam
 
 .. math:: 
 
-    f(x_i) \sim \text{number of times} x_i {occurs}
+    f(x_i) \sim \text{number of times } x_i { occurs}
 
-The following code snippet shows how to create a histogram for a relatively simple distribution of data,
+The following code snippet shows how to create a histogram for a simple distribution of quantitative data,
 
 .. code:: python
 
@@ -213,7 +213,7 @@ The rest of the arguments are *named* (i.e. with an expression ``x = y``). The *
 
 The only requirement is *data* must be passed in first. The other arguments may be passed in as you please.
 
-And there are many arguments you can pass into the ``hist()`` function. You can check out the `hist() documentation on the matplotlib website <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html>`_ for a full list of arguments. The only *required* is the ``data`` argument. 
+And there are many arguments you can pass into the ``hist()`` function. You can check out the `hist() documentation on the matplotlib website <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html>`_ for a full list of arguments. To repeat: the only *required* argument is the ``data`` argument. 
 
 The ``bin`` argument is the number of *classes*. If don't specify this, :ref:`matplotlib` will use its best judgement.
 
@@ -260,7 +260,7 @@ When we first introduced the **CDF**, we graphed it using a modified histogram w
 
     This is different from how our calculators represent this graph. Our calculators use a line graph to plot the CDF.
 
-**Python** also uses a modified histogram to graph the **CDF**. In fact, **CDF**s are generated using the same ``hist()`` function as regular histograms; the only difference between regular histograms and cumulative histograms in **Python** is the arguments you pass into the ``hist()`` function. 
+**Python** also uses a modified histogram to graph the **CDF**. In fact, **CDFs** are generated using the same ``hist()`` function as regular histograms; the only difference between regular histograms and cumulative histograms in **Python** is the arguments you pass into the ``hist()`` function. 
 
 The following code snippet generates a **CDF** for a sample of data,
 
@@ -284,7 +284,7 @@ The following code snippet generates a **CDF** for a sample of data,
 
 .. plot:: assets/plots/ogives/ogive_simple.py
 
-To create a **CDF**, all we have to do is pass in two extra arguments to ``hist()``, the ``cumulative`` argument and ``density`` argument. For **CDF**s, both of these arguments are set to ``True``. ``cumulative`` tells *matplotlib* to accumulate the frequencies and stack them as it graphs the frequency distribution. ``density`` tells *matplotlib** to scale the vertical axis to 1. 
+To create a **CDF**, all we have to do is pass in two extra arguments to ``hist()``, the ``cumulative`` argument and ``density`` argument. For **CDFs**, both of these arguments are set to ``True``. ``cumulative`` tells *matplotlib* to accumulate the frequencies and stack them as it graphs the frequency distribution. ``density`` tells *matplotlib** to scale the vertical axis to 1. 
 
 .. _project_two_boxplots:
 

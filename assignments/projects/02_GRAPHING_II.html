@@ -590,7 +590,7 @@ document.write(`
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>This is <em>slighlty</em> different from how we did it in the first project. <strong>Python</strong> reads in the <em>.csv</em> file as plain text, even the numbers. In other words, Python interprets an observation of, say, <code class="docutils literal notranslate"><span class="pre">`2`</span></code> as a string of text that says “2”; this is fine and dandy when dealing with categorical data because we represent categories with <a class="reference internal" href="../../references/python/02_BASIC.html#python-strings"><span class="std std-ref">Strings</span></a>. When we are dealing with quantitative data, we have to tell <strong>Python</strong> to convert the plain text to a <a class="reference internal" href="../../references/python/02_BASIC.html#python-floats"><span class="std std-ref">float</span></a> data type (Recall <em>floats</em> are <em>decimal</em> valued data types). The <code class="docutils literal notranslate"><span class="pre">float()</span></code> function in the code snippet above converts the plain text to a numeric value and stores it in a variable.</p>
+<p>This is <em>slightly</em> different from how we did it in the first project. <strong>Python</strong> reads in the <em>.csv</em> file as plain text, even the numbers. In other words, Python interprets an observation of, say, <code class="docutils literal notranslate"><span class="pre">2</span></code> as a string of text that says <code class="docutils literal notranslate"><span class="pre">&quot;2&quot;</span></code>; this is fine and dandy when dealing with categorical data because we represent categories with <a class="reference internal" href="../../references/python/02_BASIC.html#python-strings"><span class="std std-ref">strings</span></a>. When we are dealing with quantitative data, we have to tell <strong>Python</strong> to convert the plain text to a <a class="reference internal" href="../../references/python/02_BASIC.html#python-floats"><span class="std std-ref">float</span></a> data type (Recall <em>floats</em> are <em>decimal</em> valued data types). The <code class="docutils literal notranslate"><span class="pre">float()</span></code> function in the code snippet above converts the plain text to a numeric value and stores it in a variable.</p>
 </div>
 </section>
 <section id="graphical-representations">
@@ -599,8 +599,8 @@ document.write(`
 <span id="project-two-histograms"></span><h3>Histogram<a class="headerlink" href="#histogram" title="Permalink to this headline">#</a></h3>
 <p>Recall a <em>histogram</em> is a way of visualizing the frequency distribution of a sample of data,</p>
 <div class="math">
-<p><img src="../../_images/math/9badadcab22a0e615634c9f1155e2f657cc469fe.png" alt="f(x_i) \sim \text{number of times} x_i {occurs}"/></p>
-</div><p>The following code snippet shows how to create a histogram for a relatively simple distribution of data,</p>
+<p><img src="../../_images/math/a6b606274e2783808bbb2cc9bb03292f91affa55.png" alt="f(x_i) \sim \text{number of times } x_i { occurs}"/></p>
+</div><p>The following code snippet shows how to create a histogram for a simple distribution of quantitative data,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
 
 <span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">39</span> <span class="p">]</span>
@@ -640,7 +640,7 @@ document.write(`
 </pre></div>
 </div>
 <p>The only requirement is <em>data</em> must be passed in first. The other arguments may be passed in as you please.</p>
-<p>And there are many arguments you can pass into the <code class="docutils literal notranslate"><span class="pre">hist()</span></code> function. You can check out the <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html">hist() documentation on the matplotlib website</a> for a full list of arguments. The only <em>required</em> is the <code class="docutils literal notranslate"><span class="pre">data</span></code> argument.</p>
+<p>And there are many arguments you can pass into the <code class="docutils literal notranslate"><span class="pre">hist()</span></code> function. You can check out the <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html">hist() documentation on the matplotlib website</a> for a full list of arguments. To repeat: the only <em>required</em> argument is the <code class="docutils literal notranslate"><span class="pre">data</span></code> argument.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">bin</span></code> argument is the number of <em>classes</em>. If don’t specify this, <a class="reference internal" href="../../references/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a> will use its best judgement.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -673,7 +673,7 @@ document.write(`
 <p class="admonition-title">Note</p>
 <p>This is different from how our calculators represent this graph. Our calculators use a line graph to plot the CDF.</p>
 </div>
-<p><strong>Python</strong> also uses a modified histogram to graph the <strong>CDF</strong>. In fact, <strong>CDF**s are generated using the same ``hist()`` function as regular histograms; the only difference between regular histograms and cumulative histograms in **Python</strong> is the arguments you pass into the <code class="docutils literal notranslate"><span class="pre">hist()</span></code> function.</p>
+<p><strong>Python</strong> also uses a modified histogram to graph the <strong>CDF</strong>. In fact, <strong>CDFs</strong> are generated using the same <code class="docutils literal notranslate"><span class="pre">hist()</span></code> function as regular histograms; the only difference between regular histograms and cumulative histograms in <strong>Python</strong> is the arguments you pass into the <code class="docutils literal notranslate"><span class="pre">hist()</span></code> function.</p>
 <p>The following code snippet generates a <strong>CDF</strong> for a sample of data,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
@@ -696,7 +696,7 @@ document.write(`
 <figure class="align-default">
 <img alt="../../_images/ogive_simple.png" class="plot-directive" src="../../_images/ogive_simple.png" />
 </figure>
-<p>To create a <strong>CDF</strong>, all we have to do is pass in two extra arguments to <code class="docutils literal notranslate"><span class="pre">hist()</span></code>, the <code class="docutils literal notranslate"><span class="pre">cumulative</span></code> argument and <code class="docutils literal notranslate"><span class="pre">density</span></code> argument. For <strong>CDF**s, both of these arguments are set to ``True``. ``cumulative`` tells *matplotlib* to accumulate the frequencies and stack them as it graphs the frequency distribution. ``density`` tells *matplotlib</strong> to scale the vertical axis to 1.</p>
+<p>To create a <strong>CDF</strong>, all we have to do is pass in two extra arguments to <code class="docutils literal notranslate"><span class="pre">hist()</span></code>, the <code class="docutils literal notranslate"><span class="pre">cumulative</span></code> argument and <code class="docutils literal notranslate"><span class="pre">density</span></code> argument. For <strong>CDFs</strong>, both of these arguments are set to <code class="docutils literal notranslate"><span class="pre">True</span></code>. <code class="docutils literal notranslate"><span class="pre">cumulative</span></code> tells <em>matplotlib</em> to accumulate the frequencies and stack them as it graphs the frequency distribution. <code class="docutils literal notranslate"><span class="pre">density</span></code> tells <em>matplotlib*</em> to scale the vertical axis to 1.</p>
 </section>
 <section id="boxplots">
 <span id="project-two-boxplots"></span><h3>Boxplots<a class="headerlink" href="#boxplots" title="Permalink to this headline">#</a></h3>
