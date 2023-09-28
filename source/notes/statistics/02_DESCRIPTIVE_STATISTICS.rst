@@ -1346,7 +1346,13 @@ A general rule of thumb for identifying *outlying* observations with the *IQR* i
 
 .. topic:: *IQR* Rule for Outliers
 
-	TODO
+    Any observation :math:`x_i` that satisfies the following two conditions may be an outlier.
+
+	.. math::
+
+        x_i \geq Q_3 + 1.5 \cdot IQR
+
+        x_i \leq Q_1 - 1.5 \codt IQR
 
 .. important::
 
