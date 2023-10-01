@@ -4,8 +4,19 @@
 Sampling Distributions
 ======================
 
+.. _central_limit_theorem:
+
+Central Limit Theorem
+=====================
+
+The **Central Limit Theorem** is one of the most important theorems in statistics. The **Central Limit Theorem** is what allows us to use the :ref:`Normal Distribution <normal_distribution>` to make inferences about the :ref:`population <population>`
+
+TODO
+
+.. _clt_motivation:
+
 Motivation
-==========
+----------
 
 Consider a pop-quiz made up of two questions administered to a population of a 100 students. Suppose you conducted a census of how many questions each student got right on the pop-quiz. In other words, suppose you knew the probability distribution for the *population* was given by,  
 
@@ -53,12 +64,3 @@ All possible samples **S**:sub:`i` are enumerated below in :ref:`list_notation`
     :math:`S_8 = \{ 2, 1 \}`
 
     :math:`S_9 = \{ 2, 2 \}`
-
-.. _central_limit_theorem:
-
-Central Limit Theorem
-=====================
-
-The **Central Limit Theorem** is one of the most important theorems in statistics. The **Central Limit Theorem** is what allows us to use the :ref:`Normal Distribution <normal_distribution>` to make inferences about the :ref:`population <population>`
-
-TODO
