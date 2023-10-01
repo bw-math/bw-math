@@ -95,24 +95,34 @@ Independence
 
 TODO
 
-?. **2016, Free Response, #4**
-
-A company manufactures model rockets that require igniters to launch. Once an igniter is used to launch a rocket, the igniter cannot be reused. Sometimes an igniter fails to operate correctly, and the rocket does not launch. The company estimates that the overall failure rate, defined as the percent of all igniters that fail to operate correctly, is 15 percent.
-
-A company engineer develops a new igniter, called the super igniter, with the intent of lowering the failure rate. To test the performance of the super igniters, the engineer uses the following process.
-
-- Step 1: One super igniter is selected at random and used in a rocket.
-- Step 2: If the rocket launches, another super igniter is selected at random and used in a rocket.
-
-Step 2 is repeated until the process stops. The process stops when a super igniter fails to operate correctly or32 super igniters have successfully launched rockets, whichever comes first. Assume that super igniter failures are independent.
-
-a. If the failure rate of the super igniters is 15 percent, what is the probability that the first 30 super igniters selected using the testing process successfully launch rockets?
-
-b. Given that the first 30 super igniters successfully launch rockets, what is the probability that the first failure occurs on the thirty-first or the thirty-second super igniter tested if the failure rate of the super igniters is 15 percent?
-
-c. Given that the first 30 super igniters successfully launch rockets, is it reasonable to believe that the failure rate of the super igniters is less than 15 percent? Explain.
-
 A.P. Exam Practice
 ------------------
 
-?. **2018 Free Response, #3a-b**
+1. **2018 Free Response, #3**
+
+Approximately 3.5 percent of all children born in a certain region are from multiple births (that is, twins, triplets, etc.). Of the children born in the region who are from multiple births, 22 percent are left-handed. Of the children born in the region who are from single births, 11 percent are left-handed.
+
+a. What is the probability that a randomly selected child born in the region is left-handed?
+
+b. What is the probability that a randomly selected child born in the region is a child from a multiple birth, given that the child selected is left-handed?
+
+c. A random sample of 20 children born in the region will be selected. What is the probability that the sample will have at least 3 children who are left-handed?
+
+2. **2016, #Free Response, #3**
+
+A medical researcher surveyed a large group of men and women about whether they take medicine as prescribed. The responses were categorized as never, sometimes, or always. The relative frequency of each category is shown in the table.
+
+.. image:: ../../../assets/imgs/classwork/2019_apstats_frp_3.png
+    :align: center
+
+One person from those surveyed will be selected at random.
+
+a. What is the probability that the person selected will be someone whose response is never and who is a woman?
+
+b. What is the probability that the person selected will be someone whose response is never or who is a woman?
+
+c. What is the probability that the person selected will be someone whose response is never given that the person is a woman?
+
+d. For the people surveyed, are the events of being a person whose response is never and being a woman independent? Justify your answer.
+
+e. Assume that, in a large population, the probability that a person will always take medicine as prescribed is 0.54. If 5 people are selected at random from the population, what is the probability that at least 4 of the people selected will always take medicine as prescribed? Support your answer.

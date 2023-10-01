@@ -1415,8 +1415,3 @@ Chebyshev's Theorem
 ===================
 
 TODO
-
-Empirical Rule
-==============
-
-TODO
