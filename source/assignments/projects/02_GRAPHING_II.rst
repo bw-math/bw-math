@@ -460,7 +460,9 @@ Velocity of Light
 
 7. Answer the following question in your :ref:`python_docstring`: Based on the IQR rule, are there any possible outliers in this dataset? 
 
-8. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your :ref:`python_docstring`: What is the percent error of Michelson's estimate with respect to the actual value?
+8. Write a few sentences describing Michelson's distribution of data. Use sample statistics to describe the center of the distribution, the shape of the distribution and the variability of the distribution. 
+
+9. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your :ref:`python_docstring`: What is the percent error of Michelson's estimate with respect to the actual value?
 
 Density of the Earth 
 --------------------
@@ -519,7 +521,9 @@ Density of the Earth
 
 7. Answer the following question in your :ref:`python_docstring`: Based on the IQR rule, are there any possible outliers in this dataset? 
 
-8. The actual value of the density of the Earth, according to the best estimates we have today, is :math:`5.515 \frac{g}{cm^2}`. Use this information to answer the following questions in the body of your :ref:`python_docstring`: What is the percent error of Cavendish's estimate with respect to the actual value?
+8. Write a few sentences describing Cavendish's distribution of data. Use sample statistics to describe the center of the distribution, the shape of the distribution and the variability of the distribution. 
+
+9. The actual value of the density of the Earth, according to the best estimates we have today, is :math:`5.515 \frac{g}{cm^2}`. Use this information to answer the following questions in the body of your :ref:`python_docstring`: What is the percent error of Cavendish's estimate with respect to the actual value?
 
 Comparative Analysis
 --------------------
