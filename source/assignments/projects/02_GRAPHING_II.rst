@@ -424,6 +424,8 @@ Velocity of Light
 
     d. What is the approximate value of the interquartile range?
 
+    e. On what intervals is the CDF steepest? On what intervals is it approximately flat? Explain what these intervals means in terms of the speed of light. 
+    
 4. Construct a boxplot for this dataset *on the same graph as your histogram and CDF*. Using the boxplot, answer the following questions in the body of your :ref:`python_docstring`.
 
     a. What is the approximate value of the third quartile?
@@ -433,6 +435,8 @@ Velocity of Light
     c. What is the approximate value of the median?
 
     d. What is the approximate value of the interquartile range?
+    
+    e. What does the boxplot tell you about the *shape* of the distribution? Express the answer in terms of the variable being measured. In other words, what does the boxplot tell you about this distribution of measurements? Is it centered? Is it skewed? 
 
 5. Using the :ref:`python_stats_package` library, calculate the following sample statistics. Label all of your calculations with comments.
 
@@ -460,7 +464,7 @@ Velocity of Light
 
 7. Answer the following question in your :ref:`python_docstring`: Based on the IQR rule, are there any possible outliers in this dataset? 
 
-8. Write a few sentences describing Michelson's distribution of data. Use sample statistics to describe the center of the distribution, the shape of the distribution and the variability of the distribution. 
+8. Write a few sentences in your :ref:`python_docstring` describing Michelson's distribution of data. Use sample statistics to describe the center of the distribution, the shape of the distribution and the variability of the distribution. 
 
 9. The actual value of the speed of light, according to the best estimates we have today, is :math:`299,792,458 \frac{m}{s}`. Use this information to answer the following questions in the body of your :ref:`python_docstring`: What is the percent error of Michelson's estimate with respect to the actual value?
 
@@ -484,6 +488,8 @@ Density of the Earth
     c. What is the approximate value of the median?
 
     d. What is the approximate value of the interquartile range?
+    
+    e. On what intervals is the CDF steepest? On what intervals is it approximately flat? Explain what these intervals means in terms of the density of earth. 
 
 4. Construct a boxplot for this dataset *on the same graph as your histogram and CDF*. Using the boxplot, answer the following questions in the body of your :ref:`python_docstring`.
 
@@ -494,6 +500,8 @@ Density of the Earth
     c. What is the approximate value of the median?
 
     d. What is the approximate value of the interquartile range?
+    
+     e. What does the boxplot tell you about the *shape* of the distribution? Express the answer in terms of the variable being measured. In other words, what does the boxplot tell you about this distribution of measurements? Is it centered? Is it skewed? 
 
 5. Using the :ref:`python_stats_package` library, calculate the following sample statistics. Label all of your calculations with comments.
 
@@ -521,7 +529,7 @@ Density of the Earth
 
 7. Answer the following question in your :ref:`python_docstring`: Based on the IQR rule, are there any possible outliers in this dataset? 
 
-8. Write a few sentences describing Cavendish's distribution of data. Use sample statistics to describe the center of the distribution, the shape of the distribution and the variability of the distribution. 
+8. Write a few sentences in your :ref:`python_docstring` describing Cavendish's distribution of data. Use sample statistics to describe the center of the distribution, the shape of the distribution and the variability of the distribution. 
 
 9. The actual value of the density of the Earth, according to the best estimates we have today, is :math:`5.515 \frac{g}{cm^2}`. Use this information to answer the following questions in the body of your :ref:`python_docstring`: What is the percent error of Cavendish's estimate with respect to the actual value?
 
