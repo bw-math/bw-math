@@ -162,7 +162,7 @@ Recall a *histogram* is a way of visualizing the frequency distribution of a sam
 
 .. math:: 
 
-    f(x_i) \sim \text{number of times } x_i { occurs}
+    f(x_i) \sim \text{number of times } x_i \text{ occurs}
 
 The following code snippet shows how to create a histogram for a simple distribution of quantitative data,
 
