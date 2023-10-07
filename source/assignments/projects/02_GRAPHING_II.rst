@@ -246,7 +246,7 @@ Recall the *cumulative* frequency of a distribution is defined as the sum of fre
 
 .. math::
 
-    F(x_i) = \sum_{x_1}^{x_i} x_j
+    F(x_i) = \sum_{x_1}^{x_i} \frac{f(x_j)}{n}
 
 We sometimes call :math:`F(x_i)` the *cumulative distribution function* (**CDF**). It tells how much of a distribution is *less than or equal* to a certain observation. In symbols,
 
