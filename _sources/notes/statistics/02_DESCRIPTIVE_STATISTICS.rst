@@ -1250,7 +1250,7 @@ These results are summarized with the following rule of thumb,
 Z Score
 -------
 
-*Percentiles* are one way of describing location, but they are not the only way. We can also use *Z-Scores* to talk about the location of data. 
+*Percentiles* are one way of describing location, but they are not the only way. We can also use *Z-Scores* to talk about the location of data points in a sample. 
 
 *Z-scores* arise by inquiring into how we compare two different samples of data. 
 
@@ -1420,5 +1420,15 @@ TODO
 
 Data Transformations
 ====================
+
+TODO
+
+Adding or Subtracting A Constant
+--------------------------------
+
+TODO
+
+Multiplying Or Dividing By A Constant
+-------------------------------------
 
 TODO
