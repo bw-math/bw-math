@@ -244,19 +244,16 @@
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/projects/index.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/00_PYTHON.html">Python</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/01_GRAPHING_I.html">Graphing I: Bar Charts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/02_GRAPHING_II.html">Graphing II: Histograms and Boxplots</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/04_BIAS.html">Bias</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/05_OUTLIERS.html">Outliers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/06_GRAPHING_III.html">Graphing III: Scatter Plots</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/07_ESTIMATION_II.html">Estimation II: Correlation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/08_GRAPHING_IV.html">Residual Analysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/10_SETS.html">Sample Spaces</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/11_SIMULATION.html">Simulation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/13_GRAPHING_V.html">Graphing V: Probability Density</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/14_BINOMIAL.html">Binomial Distribution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/15_DISTRIBUTIONS.html">Other Distributions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/16_NORMAL.html">Normal Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/01_BARCHARTS.html">Bar Charts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/03_NORMAL.html">Normality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/04_CORRELATION.html">Scatter Plots and Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/05_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/06_RESIDUALS.html">Residual Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/07_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/08_SIMULATION.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/09_DENSITY.html">Probability Density</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/10_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/11_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
 </ul>
 </li>
 </ul>
@@ -974,11 +971,9 @@ document.write(`
 </section>
 <section id="normal-distribution">
 <span id="python-normal-distribution"></span><h4>Normal Distribution<a class="headerlink" href="#normal-distribution" title="Permalink to this headline">#</a></h4>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We do not need this function until Section 2.2</p>
-</div>
-<p>First, we need to create a <em>normal distribution</em> with a certain <code class="docutils literal notranslate"><span class="pre">mean</span></code> and <code class="docutils literal notranslate"><span class="pre">std_dev</span></code> (standard deviation),</p>
+<p><strong>Python</strong> provides a way of calculating normal probabilities and percentiles, but it is a bit different from the other functions we have encountered so far. <strong>Python</strong> represents a normal distribution with an <code class="docutils literal notranslate"><span class="pre">object</span></code>. An <code class="docutils literal notranslate"><span class="pre">object</span></code> is a type of <strong>Python</strong> variable. The variables we have dealt with heretofore have been <em>literal</em> variables, meaning they are simply bits of raw data. An <code class="docutils literal notranslate"><span class="pre">object</span></code> is a different type of variable; an object has <em>properties</em> that can be accessed and <em>functions</em> that can be called.</p>
+<p>An example will make this clearer.</p>
+<p>First, we need to create a <em>normal distribution</em> with a certain <code class="docutils literal notranslate"><span class="pre">mean</span></code> and <code class="docutils literal notranslate"><span class="pre">std_dev</span></code> (standard deviation). These are properties of the <em>normal distribution</em> object,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span>
 
 <span class="n">mean</span> <span class="o">=</span> <span class="mi">100</span>
@@ -987,7 +982,18 @@ document.write(`
 <span class="n">dist</span> <span class="o">=</span> <span class="n">statistics</span><span class="o">.</span><span class="n">NormalDist</span><span class="p">(</span><span class="n">mean</span><span class="p">,</span> <span class="n">std</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Once the distribution is created, we can ask it questions. The two most important questions we will ask this distribution in this class are:</p>
+<p>Notice the <code class="docutils literal notranslate"><span class="pre">mean</span></code> and <code class="docutils literal notranslate"><span class="pre">std_dev</span></code> are passed into the <code class="docutils literal notranslate"><span class="pre">NormalDist()</span></code> and the result is stored in <code class="docutils literal notranslate"><span class="pre">dist</span></code>. <code class="docutils literal notranslate"><span class="pre">dist</span></code> is a variable, but it is not a simple one like a <code class="docutils literal notranslate"><span class="pre">float</span></code> or a <code class="docutils literal notranslate"><span class="pre">string</span></code>. <code class="docutils literal notranslate"><span class="pre">dist</span></code> is a <em>normal distribution</em> <code class="docutils literal notranslate"><span class="pre">object</span></code>.</p>
+<p>Once the distribution is created, we can ask it questions.</p>
+<p>The two most important questions we will ask this distribution in this class are:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In computer science, when an <code class="docutils literal notranslate"><span class="pre">object</span></code> is created, we say the <code class="docutils literal notranslate"><span class="pre">object</span></code> is <em>instantiated</em>.</p>
+</div>
+<ol class="arabic simple">
+<li><p>What is the probability of event <strong>X</strong> occuring?</p></li>
+<li><p>What event <strong>X</strong> corresponds to a given probability?</p></li>
+</ol>
+<p>These questions are answered by, respectively, the <strong>cumulative distribution function</strong> and the <strong>inverse cumulative distribution function</strong>.</p>
 <p><strong>Cumulative Distribution Function</strong></p>
 <p>Recall the cumulative distribution function (CDF) of a sample of data tells you how much of a distribution is less than or equal to a certain value. Symbolically,</p>
 <div class="math">
@@ -1006,10 +1012,10 @@ document.write(`
 <p>Every one-to-one function has an inverse; the cumulative distribution function is no different. The inverse CDF reverses the operation performed by the CDF.</p>
 <p>In other words, if the CDF can be summarized through the following operation,</p>
 <div class="math">
-<p><img src="../../_images/math/e79190e809cff30e14c1675073eb63775103acc1.png" alt="\text{observation} \rightarrow \text{CDF} \rightarrow \text{percentage}"/></p>
+<p><img src="../../_images/math/e67644be4ef68dd6f87a9002157b5b22f9a0f786.png" alt="\text{input: observation} \rightarrow \text{function: CDF} \rightarrow \text{output: percentage}"/></p>
 </div><p>Then the inverse CDF operates in the reverse direction. Given a percentage, the inverse CDF tells you what observation in the sample corresponds to that percentage,</p>
 <div class="math">
-<p><img src="../../_images/math/1a7ce09d58c1a46f5aa23d707db2d132a07bf2f7.png" alt="\text{percentage} \rightarrow \text{inverseCDF}e \rightarrow \text{observation}"/></p>
+<p><img src="../../_images/math/fc84b1fd115d98b83035bfaa79ffc6da4eab56cb.png" alt="\text{input: percentage} \rightarrow \text{function: inverseCDF} \rightarrow \text{output: observation}"/></p>
 </div><p>The following code snippet shows how to call the inverse cumulative distribution function on the normal distribution created in the previous sections.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">third_quartile</span> <span class="o">=</span> <span class="n">dist</span><span class="o">.</span><span class="n">inv_cdf</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span>
 <span class="n">rounded_quartile</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">third_quartile</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>

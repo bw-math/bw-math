@@ -590,11 +590,11 @@ Output:
 Normal Distribution
 *******************
 
-.. note::
+**Python** provides a way of calculating normal probabilities and percentiles, but it is a bit different from the other functions we have encountered so far. **Python** represents a normal distribution with an ``object``. An ``object`` is a type of **Python** variable. The variables we have dealt with heretofore have been *literal* variables, meaning they are simply bits of raw data. An ``object`` is a different type of variable; an object has *properties* that can be accessed and *functions* that can be called. 
 
-    We do not need this function until Section 2.2
+An example will make this clearer.
 
-First, we need to create a *normal distribution* with a certain ``mean`` and ``std_dev`` (standard deviation),
+First, we need to create a *normal distribution* with a certain ``mean`` and ``std_dev`` (standard deviation). These are properties of the *normal distribution* object,
 
 .. code:: python
 
@@ -605,7 +605,22 @@ First, we need to create a *normal distribution* with a certain ``mean`` and ``s
 	
 	dist = statistics.NormalDist(mean, std)
 
-Once the distribution is created, we can ask it questions. The two most important questions we will ask this distribution in this class are:
+Notice the ``mean`` and ``std_dev`` are passed into the ``NormalDist()`` and the result is stored in ``dist``. ``dist`` is a variable, but it is not a simple one like a ``float`` or a ``string``. ``dist`` is a *normal distribution* ``object``.
+	
+	
+Once the distribution is created, we can ask it questions. 
+
+
+The two most important questions we will ask this distribution in this class are:
+
+.. note::
+
+	In computer science, when an ``object`` is created, we say the ``object`` is *instantiated*.
+	
+1. What is the probability of event **X** occuring?
+2. What event **X** corresponds to a given probability?
+
+These questions are answered by, respectively, the **cumulative distribution function** and the **inverse cumulative distribution function**.
 
 **Cumulative Distribution Function**
 
@@ -635,13 +650,13 @@ In other words, if the CDF can be summarized through the following operation,
 
 .. math::
 
-    \text{observation} \rightarrow \text{CDF} \rightarrow \text{percentage}
+    \text{input: observation} \rightarrow \text{function: CDF} \rightarrow \text{output: percentage}
 
 Then the inverse CDF operates in the reverse direction. Given a percentage, the inverse CDF tells you what observation in the sample corresponds to that percentage,
 
 .. math::
 
-    \text{percentage} \rightarrow \text{inverseCDF}e \rightarrow \text{observation}
+    \text{input: percentage} \rightarrow \text{function: inverseCDF} \rightarrow \text{output: observation}
 
 The following code snippet shows how to call the inverse cumulative distribution function on the normal distribution created in the previous sections. 
 
