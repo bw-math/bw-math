@@ -1,8 +1,8 @@
 .. _project_one:
 
-======================
-Graphing I: Bar Charts 
-======================
+==========
+Bar Charts 
+==========
 
     The picture is a model of reality.
 

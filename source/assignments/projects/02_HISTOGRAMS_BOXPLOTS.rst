@@ -1,8 +1,8 @@
 .. _project_two:
 
-====================================
-Graphing II: Histograms and Boxplots
-====================================
+=======================
+Histograms and Boxplots
+=======================
 
     What can be shown, cannot be said.
 

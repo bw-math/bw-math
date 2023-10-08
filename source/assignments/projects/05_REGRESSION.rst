@@ -1,25 +1,25 @@
-.. _project_six:
+.. _project_seven:
 
-===========================
-Graphing III: Scatter Plots
-===========================
+=================
+Linear Regression
+=================
 
 TODO
 
 Instructions
 ============
 
-1. Download the *csv* dataset in the :ref:`project_six_dataset` section and place it in the ``Linux Files`` folder on your folder system where you save your ``.py`` scripts.
-2. Create a Python ``.py`` script named ``NAME_project_six.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``NAME`` with your name.
+1. Download the *csv* dataset in the :ref:`project_seven_dataset` section and place it in the ``Linux Files`` folder on your folder system where you save your ``.py`` scripts.
+2. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_seven.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
-4. Read the :ref:`project_six_background` section.
-5. Read the :ref:`project_six_loading_data` section.
+4. Read the :ref:`project_seven_background` section.
+5. Read the :ref:`project_seven_loading_data` section.
 6. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
-7. Perform all exercises and answer all questions in the :ref:`project_six_project` section. Label your script with comments as indicated in the instructions of each problem.
-8. When you are done, zip your script **and** the *csv* file in a zip file named ``NAME_project_six.zip``
-9. Upload the zip file to the Google Classroom Project Six Assignment.
+7. Perform all exercises and answer all questions in the :ref:`project_seven_project` section. Label your script with comments as indicated in the instructions of each problem.
+8. When you are done,zip your script **and** the *csv* file in a zip file named ``LASTNAME_FIRSTNAME_project_seven.zip``
+9. Upload the zip file to the Google Classroom Project Four Assignment.
 
-.. _project_six_loading_data:
+.. _project_seven_loading_data:
 
 Loading In Data
 ===============
@@ -45,7 +45,7 @@ The following code snippet will load in a *CSV* spreadsheet named ``example.csv`
     print(column_1)
 
 
-.. _project_six_background:
+.. _project_seven_background:
 
 Background
 ==========
@@ -62,41 +62,14 @@ Kentucky Derby
 
 TODO 
 
-.. _project_six_project:
+.. _project_seven_project:
 
 Project
 =======
 
 TODO 
 
-Old Faithful
-------------
-
-TODO
-
-?. Construct a scatter plot for this dataset using the **Eruption Length** as the *indicator* variable and the **Waiting Time** as the *response* variable.
-
-?. Describe the correlation in this dataset. Is it positive, negative or neutral? Is it linear or non-linear? 
-
-?. Based on your answer to the previous question, would a linear regression model be a good fit for this dataset?
-
-
-Kentucky Derby
---------------
-
-TODO 
-
-?. Construct a scatter plot for this dataset using the **Year** as the *indicator variable* and the **Winning Time** as the *response* variable.
-
-.. note::
-
-    This type of scatter plot, where the horizontal axis represents time, is known as a :ref:`time_series`.
-
-?. Describe the correlation in this dataset. Is it positive, negative or neutral? Is it linear or non-linear? 
-
-?. Based on your answer to the previous question, would a linear regression model be a good fit for this dataset?
-
-.. _project_six_dataset:
+.. _project_seven_dataset:
 
 Data Set
 ========

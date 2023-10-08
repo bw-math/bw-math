@@ -6,6 +6,8 @@ Monte Carlo Simulation
 
 TODO
 
+estimate pi with monte carlo!
+
 Instructions
 ============
 

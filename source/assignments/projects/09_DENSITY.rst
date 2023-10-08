@@ -1,8 +1,8 @@
 .. _project_thirteen:
 
-===============================
-Graphing V: Probability Density
-===============================
+===================
+Probability Density
+===================
 
 TODO
 
