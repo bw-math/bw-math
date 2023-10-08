@@ -46,13 +46,13 @@ A Normal Distribution is *parameterized* by its mean, :math:`\mu`, and its stand
 
 .. math::
 
-	X ~ \mathcal{N}(\mu, \sigma)
+	\matchal{X} \sim \mathcal{N}(\mu, \sigma)
 
 Recall a sample of data can be :ref:`transformed <data_transformations>` by applying algebraic operations to each observations. For instance, we can :ref:`standardize <z_score>` each observation :math:`X` into a *z-score* by subtracting the mean of the distribution and dividing by the standard deviation of the distribution,
 
 .. math::
 
-	Z = \frac{X - \mu}{\sigma}
+	\mathcal{Z} = \frac{\mathcal{X} - \mu}{\sigma}
 
 
 .. _project_three_loading_data:
@@ -99,7 +99,7 @@ The following code snippet illustrates how to create and use a *Normal Distribut
 	# Use the Normal Distribution object to calculate probabilities
 	prob = dist.cdf(120)
 	rounded_prob = round(prob, 2)
-	print("Prob(X <= 120) = ", rounded_prob)
+	print("P(X <= 120) = ", rounded_prob)
 	
 	# Use the Normal Distribution object to calculate percentiles
 	third_quartile = dist.inv_cdf(0.75)
@@ -108,7 +108,8 @@ The following code snippet illustrates how to create and use a *Normal Distribut
 	
 		
 Output:
-	Prob(X <= 120) = 0.98
+	P(X <= 120) = 0.98
+
 	P(X <= 106.74) = 0.75
 
 For a more comprehensive explanation of ``NormalDist()`` from the ``statistics`` package and its various uses, refer to the :ref:`Python Normal Distribution page <python_normal_distribution>`.
@@ -144,6 +145,19 @@ e. TODO inverse
 f. TODO inverse
 
 2. Create a Normal Distribution ``object`` with a mean of 50 and a standard deviation of 10. Use this object to answer the following questions.
+
+a. TODO: cdf
+
+b. TODO: cdf 
+
+c. TODO: cdf
+
+d. TODO: inverse
+
+e. TODO: inverse
+
+f. TODO: inverse
+
 
 Measuring Normality
 -------------------
