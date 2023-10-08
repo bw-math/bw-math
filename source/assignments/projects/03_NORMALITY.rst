@@ -7,7 +7,8 @@ Normality
 	All models are wrong, but some are useful.
 	
 	- George Box
-TODO
+
+*Normality* is an important phenomenon because of its far-reaching power. The concept of *normality* will allows us to draw *statistical inferences*.
 
 Instructions
 ============
@@ -20,6 +21,38 @@ Instructions
 6. Perform all exercises and answer all questions in the :ref:`project_three_project` section. Label your script with comments as indicated in the instructions of each problem.
 7. When you are done,zip your script **and** the *csv* file in a zip file named ``LASTNAME_FIRSTNAME_project_three.zip``
 8. Upload the zip file to the Google Classroom Project Four Assignment.
+
+.. _project_three_background:
+
+Background 
+==========
+
+Normality arises when observations being randomly drawn from a population are *independent* and *identically distributed*. In other words, if a series of experiments are performed where each experiment is the same as the last in every respect, then the outcomes of all the experiments taken together should be approximately normal. 
+
+.. hint::
+
+	Recall our die roll experiment from class. The underlying population distribution was uniform (each face of the die is an *equally likely* outcome), but when the outcomes of each independent die roll were summed together, the resulting distribution became normal. 
+
+A departure from normality can suggest several things: 
+
+1. The selection process was not random.
+2. The observations are not *independent*.
+3. The observations are not being drawn from the exact same population.
+
+Normal Distribution
+-------------------
+
+A Normal Distribution is *parameterized* by its mean, :math:`\mu`, and its standard deviation, :math:`\sigma`. If a single observation is being drawn from this Normal Distribution, we write,
+
+.. math::
+
+	X ~ \mathcal{N}(\mu, \sigma)
+
+Recall a sample of data can be :ref:`transformed <data_transformations>` by applying algebraic operations to each observations. For instance, we can :ref:`standardize <z_score>` each observation :math:`X` into a *z-score* by subtracting the mean of the distribution and dividing by the standard deviation of the distribution,
+
+.. math::
+
+	Z = \frac{X - \mu}{\sigma}
 
 
 .. _project_three_loading_data:

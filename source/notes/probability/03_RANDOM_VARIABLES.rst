@@ -148,13 +148,12 @@ A random variable shows how events from the sample space (the domain) are transf
 Random Variables and Events
 ---------------------------
 
-
 .. _density_function:
 
 Density Function 
     TODO 
 
-    The *density function* should be familiar. We have already encountered its statistical analogue, :ref:`frequency`. The probability density of a random variable at a certain value is analogously to the *frequency* of an observation in a sample of data.
+    The *density function* should be familiar. We have already encountered its statistical analogue, :ref:`frequency`. The probability density of a random variable at a certain value is analogous to the *frequency* of an observation in a sample of data.
     
 .. _distribution_function:
 

@@ -1404,7 +1404,7 @@ TODO
 
 .. math::
  
-    v = \frac{\bar{x}}{s} \cdot 100
+    v = \frac{s}{\bar{x}} \cdot 100
 
 TODO 
 
@@ -1413,5 +1413,12 @@ TODO
 
 Chebyshev's Theorem
 ===================
+
+TODO
+
+.. _data_transformations:
+
+Data Transformations
+====================
 
 TODO

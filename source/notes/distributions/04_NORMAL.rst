@@ -5,7 +5,7 @@ Normal Distribution
 ===================
 
 
-The **Normal Distribution** is the foundation of :ref:`inferential statistics <inferential_statistic>`.
+The **Normal Distribution** is the foundation of :ref:`inferential statistics <inferential_statistic>`. 
 
 .. _normality:
 
@@ -17,7 +17,41 @@ Normality
 Introduction
 ------------
 
-TODO 
+Normality arises when observations being randomly drawn from a :ref:`population` are *independent* and *identically distributed*. In other words, if a series of experiments are performed where each experiment is the same as the last in every respect, then the outcomes of all the experiments taken together should be approximately normal. 
+
+.. important::
+
+    *Independence* and *Identically Distributed* are mathematical concepts with precise defintions. We will talk more about them when we get to :ref:`probability <probability_introduction>` 
+
+In order to explain the origin of normality, it is instructive to consider a simple example. 
+
+Consider the experiment of rolling a single die. Think about what the *ideal* relative frequency distribution for this experiment should look like. 
+
+A die has six sides and each one is equally likely. If we let :math:`\mathcal{X}` represent the outcome a rolling a single die, we can express the relation of all outcomes being equally likely with the following equation, 
+
+.. math::
+
+    P(\mathcal{X}=1) = P(\mathcal{X}=2) = P(\mathcal{X}=3) = P(\mathcal{X}=4) = P(\mathcal{X}=5) = P(\mathcal{X}=6)
+
+To say the same thing in a different way, the :ref:`probability <probability_introduction>` of all outcomes should be the same,
+
+.. math::
+
+    P(\mathcal{X}=i) = p \text{   i = 1, 2, 3, 4, 5, 6 }
+
+The *ideal* histogram (in other words, the distribution of the *population*) would look perfectly uniform,
+
+.. plot:: assets/plots/distributions/examples/04_ex01_die_roll.py
+
+Consider now the experiment of rolling 10 die. The *relative* frequency of each outcome in the *ideal distribution* will not change, since the new die being rolled consist of the same outcomes as the original die; Outcomes are added to the experiment in the same proportion. 
+
+TODO
+
+A departure from normality can suggest several things: 
+
+1. The selection process was not random.
+2. The observations are not *independent*.
+3. The observations are not being drawn from the exact same population.
 
 
 .. _normal_distribution:
@@ -127,7 +161,7 @@ TODO
 .. note:: 
     *Conditions*: 
         
-    :math:`	\lambda >> 0`
+    :math:`	\lambda \leq \leq 0`
 
 .. _assessing_normality:
 
