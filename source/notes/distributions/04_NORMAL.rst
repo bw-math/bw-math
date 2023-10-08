@@ -41,7 +41,7 @@ To say the same thing in a different way, the :ref:`probability <probability_int
 
 The *ideal* histogram (in other words, the distribution of the *population*) would look perfectly uniform,
 
-.. plot:: assets/plots/distributions/examples/04_ex01_die_roll.py
+.. plot:: assets/plots/examples/04_ex01_die_roll.py
 
 Consider now the experiment of rolling 10 die. The *relative* frequency of each outcome in the *ideal distribution* will not change, since the new die being rolled consist of the same outcomes as the original die; Outcomes are added to the experiment in the same proportion. 
 
@@ -54,10 +54,10 @@ A departure from normality can suggest several things:
 3. The observations are not being drawn from the exact same population.
 
 
-.. _normal_distribution:
+.. _normal_calculations:
 
-Probability Distribution
-------------------------
+Normal Calculations
+-------------------
 
 TODO
 
@@ -72,25 +72,15 @@ Cumulative Distribution Function
 
 TODO
 
-.. _inverse_normal_cdf:
+.. _normal_inverse_cdf:
 
 Inverse Cumulative Distribution Function
 ****************************************
 
 TODO
 
-.. _normal_outliers:
-
-Outliers
---------
-
-TODO 
-
-.. _central_limit_theorem:
-
-
 Symmetry
-========
+--------
 
 TODO 
 
@@ -105,11 +95,7 @@ Empirical Rule
 TODO 
 
 .. image:: ../../assets/imgs/distributions/normal/normal_distribution_empirical_rule.png
-
-Pearson Skew Index
-==================
-
-TODO 
+    :align: center
 
 Effects of Parameters
 =====================
@@ -131,6 +117,20 @@ To summarize,
 .. note:: 
     1. By changing the mean of the *normal distribution*, the *location* of the distribution changes.
     2. By changing the standard deviation of the *normal distribution*, the *spread* of the distribution changes. 
+
+.. _assessing_normality:
+
+Assessing Normality
+===================
+
+TODO
+
+.. _qq_plots: 
+
+QQ Plots
+--------
+
+TODO
 
 Relation To Other Distributions
 ===============================
@@ -162,15 +162,3 @@ TODO
     *Conditions*: 
         
     :math:`	\lambda \leq \leq 0`
-
-.. _assessing_normality:
-
-Assessing Normality
-===================
-
-TODO
-
-.. _qq_plots: 
-
-QQ Plots
---------

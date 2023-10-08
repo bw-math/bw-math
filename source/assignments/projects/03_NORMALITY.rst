@@ -8,18 +8,18 @@ Normality
 	
 	- George Box
 
-*Normality* is an important phenomenon because of its far-reaching power. The concept of *normality* will allows us to draw *statistical inferences*.
+*Normality* is an important phenomenon because of its far-reaching power. The concept of *normality* will allows us to draw *statistical inferences*. In this project, we will learn how to perform :ref:`normal_calculations` using **Python**. Using these techniques, we will compare theoretically determined population parameters to empirically determined sample statistics in order to see how the Normal Distribution is used to model populations. 
 
 Instructions
 ============
 
-1. Download **both** *csv* datasets in the :ref:`project_two_dataset` section and place them in the ``Linux Files`` folder on your file system where you save your ``.py`` scripts.
-2. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_three.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
+1. Download **all three** *csv* datasets in the :ref:`project_three_dataset` section and place them in the ``Linux Files`` folder on your file system where you save your ``.py`` scripts.
+2. Create a Python ``.py`` script named ``NAME_project_three.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``AME`` with your name.
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the :ref:`project_three_background` section.
-5. Load in the data from the ``.csv`` files using the technique outlined in the :ref:`project_two_loading_data` section.
+5. Load in the data from the ``.csv`` files using the technique outlined in the :ref:`project_three_loading_data` section.
 6. Perform all exercises and answer all questions in the :ref:`project_three_project` section. Label your script with comments as indicated in the instructions of each problem.
-7. When you are done,zip your script **and** the *csv* file in a zip file named ``LASTNAME_FIRSTNAME_project_three.zip``
+7. When you are done, zip your script **and** the *csv* file in a zip file named ``NAME_project_three.zip``
 8. Upload the zip file to the Google Classroom Project Four Assignment.
 
 .. _project_three_background:
