@@ -245,7 +245,7 @@
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/projects/index.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/00_PYTHON.html">Python</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/01_BARCHARTS.html">Bar Charts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/03_NORMAL.html">Normality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/03_NORMALITY.html">Normality</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/04_CORRELATION.html">Scatter Plots and Correlation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/05_REGRESSION.html">Linear Regression</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/projects/06_RESIDUALS.html">Residual Analysis</a></li>
@@ -480,7 +480,28 @@ document.write(`
 <span id="id2"></span><h2>Normality<a class="headerlink" href="#normality" title="Permalink to this headline">#</a></h2>
 <section id="introduction">
 <span id="normality-introduction"></span><h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h3>
+<p>Normality arises when observations being randomly drawn from a <a class="reference internal" href="../statistics/00_INTRODUCTION.html#population"><span class="std std-ref">Population</span></a> are <em>independent</em> and <em>identically distributed</em>. In other words, if a series of experiments are performed where each experiment is the same as the last in every respect, then the outcomes of all the experiments taken together should be approximately normal.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><em>Independence</em> and <em>Identically Distributed</em> are mathematical concepts with precise defintions. We will talk more about them when we get to <a class="reference internal" href="../probability/00_INTRODUCTION.html#probability-introduction"><span class="std std-ref">probability</span></a></p>
+</div>
+<p>In order to explain the origin of normality, it is instructive to consider a simple example.</p>
+<p>Consider the experiment of rolling a single die. Think about what the <em>ideal</em> relative frequency distribution for this experiment should look like.</p>
+<p>A die has six sides and each one is equally likely. If we let <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> represent the outcome a rolling a single die, we can express the relation of all outcomes being equally likely with the following equation,</p>
+<div class="math">
+<p><img src="../../_images/math/cc6b24990b6ad5755754482ed312cf51604d23c1.png" alt="P(\mathcal{X}=1) = P(\mathcal{X}=2) = P(\mathcal{X}=3) = P(\mathcal{X}=4) = P(\mathcal{X}=5) = P(\mathcal{X}=6)"/></p>
+</div><p>To say the same thing in a different way, the <a class="reference internal" href="../probability/00_INTRODUCTION.html#probability-introduction"><span class="std std-ref">probability</span></a> of all outcomes should be the same,</p>
+<div class="math">
+<p><img src="../../_images/math/bbae6f33043b7739dd44c7530ca06b15024fa2a1.png" alt="P(\mathcal{X}=i) = p \text{   i = 1, 2, 3, 4, 5, 6 }"/></p>
+</div><p>The <em>ideal</em> histogram (in other words, the distribution of the <em>population</em>) would look perfectly uniform,</p>
+<p>Consider now the experiment of rolling 10 die. The <em>relative</em> frequency of each outcome in the <em>ideal distribution</em> will not change, since the new die being rolled consist of the same outcomes as the original die; Outcomes are added to the experiment in the same proportion.</p>
 <p>TODO</p>
+<p>A departure from normality can suggest several things:</p>
+<ol class="arabic simple">
+<li><p>The selection process was not random.</p></li>
+<li><p>The observations are not <em>independent</em>.</p></li>
+<li><p>The observations are not being drawn from the exact same population.</p></li>
+</ol>
 </section>
 <section id="probability-distribution">
 <span id="id3"></span><h3>Probability Distribution<a class="headerlink" href="#probability-distribution" title="Permalink to this headline">#</a></h3>
@@ -566,7 +587,7 @@ document.write(`
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><em>Conditions</em>:</p>
-<p>:math:`     lambda &gt;&gt; 0`</p>
+<p>:math:`     lambda leq leq 0`</p>
 </div>
 </section>
 </section>

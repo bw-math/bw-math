@@ -4,11 +4,6 @@
 Point Estimation
 ================
 
-TODO: MOAR 
-
-A.P. Exam Practice
-------------------
-
 1. **2019, Free Response, #1**
 
 The sizes, in square feet, of the 20 rooms in a student residence hall at a certain university are summarized in the following histogram.
@@ -26,6 +21,7 @@ b. Summary statistics for the sizes are given in the following table.
 Determine whether there are potential outliers in the data. Then use the following grid to sketch a boxplot of room size.
 
 .. image:: ../../../assets/imgs/classwork/2019_apstats_frp_01c.png
+    :align: center
     
 c. What characteristic of the shape of the distribution of room size is apparent from the histogram but not from the boxplot?
 
@@ -87,12 +83,7 @@ c. Using the catapult that you chose in part *b*, how many centimeters from the 
 
 4. **2003, Free Response, #1**
 
-Since Hill Valley High School eliminated the use of bells between classes, teachers have noticed that more
-students seem to be arriving to class a few minutes late. One teacher decided to collect data to determine whether
-the students’ and teachers’ watches are displaying the correct time. At exactly 12:00 noon, the teacher asked
-9 randomly selected students and 9 randomly selected teachers to record the times on their watches to the nearest
-half minute. The ordered data showing minutes after 12:00 as positive values and minutes before 12:00 as
-negative values are shown in the table below.
+Since Hill Valley High School eliminated the use of bells between classes, teachers have noticed that more students seem to be arriving to class a few minutes late. One teacher decided to collect data to determine whether the students' and teachers' watches are displaying the correct time. At exactly 12:00 noon, the teacher asked 9 randomly selected students and 9 randomly selected teachers to record the times on their watches to the nearest half minute. The ordered data showing minutes after 12:00 as positive values and minutes before 12:00 as negative values are shown in the table below.
 
 
 +----------+------+------+------+------+------+------+-----+-----+-----+
@@ -124,7 +115,7 @@ d. A bonus is to be given to 20 percent of the sales agents. Those who achieved 
 
 The department of agriculture at a university was interested in determining whether a preservative was effective in reducing discoloration in frozen strawberries. A sample of 50 ripe strawberries was prepared for freezing. Then the sample was randomly divided into two groups of 25 strawberries each. Each strawberry was placed into a small plastic bag.
 
-The 25 bags in the control group were sealed. The preservative was added to the 25 bags containing strawberries in the treatment group, and then those bags were sealed. All bags were stored at 0⬚C for a period of 6 months. At the end of this time, after the strawberries were thawed, a technician rated each strawberry’s discoloration from 1 to 10, with a low score indicating little discoloration.
+The 25 bags in the control group were sealed. The preservative was added to the 25 bags containing strawberries in the treatment group, and then those bags were sealed. All bags were stored at 0⬚C for a period of 6 months. At the end of this time, after the strawberries were thawed, a technician rated each strawberry's discoloration from 1 to 10, with a low score indicating little discoloration.
 
 The dotplots below show the distributions of discoloration rating for the control and treatment groups.
 
