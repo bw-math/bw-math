@@ -48,7 +48,7 @@ A Normal Distribution is *parameterized* by its mean, :math:`\mu`, and its stand
 
 	\mathcal{X} \sim \mathcal{N}(\mu, \sigma)
 
-Recall a sample of data can be :ref:`transformed <data_transformations>` by applying algebraic operations to each observations. For instance, we can :ref:`standardize <z_score>` each observation :math:`X` into a *z-score* by subtracting the mean of the distribution and dividing by the standard deviation of the distribution,
+Recall a sample of data can be :ref:`transformed <data_transformations>` by applying algebraic operations to each observations. For instance, we can :ref:`standardize <z_score>` each observation :math:`x_i` into a *z-score* by subtracting the mean of the distribution and dividing by the standard deviation of the distribution,
 
 .. math::
 
@@ -146,11 +146,11 @@ f. TODO inverse
 
 2. Create a Normal Distribution ``object`` with a mean of 50 and a standard deviation of 10. Use this object to answer the following questions.
 
-a. TODO: cdf
+a. :math:`P(X \leq 65)`
 
-b. TODO: cdf 
+b. :math:`P(X \geq 45)`
 
-c. TODO: cdf
+c. :math:`P(38 \leq X \leq 62)`
 
 d. TODO: inverse
 
