@@ -443,7 +443,8 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sets">Data Sets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#celebrity-twitter">Celebrity Twitter</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Old Faithful</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kentucky-derby-winning-times">Kentucky Derby Winning Times</a></li>
 </ul>
@@ -460,24 +461,24 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="linear-regression">
-<span id="project-seven"></span><h1>Linear Regression<a class="headerlink" href="#linear-regression" title="Permalink to this headline">#</a></h1>
+<span id="project-five"></span><h1>Linear Regression<a class="headerlink" href="#linear-regression" title="Permalink to this headline">#</a></h1>
 <p>TODO</p>
 <section id="instructions">
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><p>Download the <em>csv</em> dataset in the <a class="reference internal" href="07_BIAS.html#project-seven-dataset"><span class="std std-ref">Dataset</span></a> section and place it in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your folder system where you save your <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts.</p></li>
-<li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_seven.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">LASTNAME</span></code> and <code class="docutils literal notranslate"><span class="pre">FIRSTNAME</span></code> with your last and first name, respectively.</p></li>
+<li><p>Download the <em>csv</em> dataset in the <a class="reference internal" href="#project-five-dataset"><span class="std std-ref">Data Sets</span></a> section and place it in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your folder system where you save your <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts.</p></li>
+<li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_five.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">LASTNAME</span></code> and <code class="docutils literal notranslate"><span class="pre">FIRSTNAME</span></code> with your last and first name, respectively.</p></li>
 <li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
-<li><p>Read the <a class="reference internal" href="07_BIAS.html#project-seven-background"><span class="std std-ref">Background</span></a> section.</p></li>
-<li><p>Read the <a class="reference internal" href="07_BIAS.html#project-seven-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-five-background"><span class="std std-ref">Background</span></a> section.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-five-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
 <li><p>Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file using the technique outlined in the <a class="reference internal" href="03_NORMALITY.html#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
-<li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="07_BIAS.html#project-seven-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the instructions of each problem.</p></li>
-<li><p>When you are done,zip your script <strong>and</strong> the <em>csv</em> file in a zip file named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_seven.zip</span></code></p></li>
-<li><p>Upload the zip file to the Google Classroom Project Four Assignment.</p></li>
+<li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-five-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the instructions of each problem.</p></li>
+<li><p>When you are done,zip your script <strong>and</strong> the <em>csv</em> file in a zip file named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_five.zip</span></code></p></li>
+<li><p>Upload the zip file to the Google Classroom Project Five Assignment.</p></li>
 </ol>
 </section>
 <section id="loading-in-data">
-<span id="project-seven-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
+<span id="project-five-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
 <p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="02_HISTOGRAMS_BOXPLOTS.html#project-two-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 
@@ -498,7 +499,7 @@ document.write(`
 </div>
 </section>
 <section id="background">
-<span id="project-seven-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<span id="project-five-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
 <p>TODO</p>
 <section id="old-faithful">
 <h3>Old Faithful<a class="headerlink" href="#old-faithful" title="Permalink to this headline">#</a></h3>
@@ -510,16 +511,21 @@ document.write(`
 </section>
 </section>
 <section id="project">
-<span id="project-seven-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
+<span id="project-five-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
 <p>TODO</p>
 </section>
-<section id="data-set">
-<span id="project-seven-dataset"></span><h2>Data Set<a class="headerlink" href="#data-set" title="Permalink to this headline">#</a></h2>
-<p>TODO</p>
+<section id="data-sets">
+<span id="project-five-dataset"></span><h2>Data Sets<a class="headerlink" href="#data-sets" title="Permalink to this headline">#</a></h2>
+<section id="celebrity-twitter">
+<h3>Celebrity Twitter<a class="headerlink" href="#celebrity-twitter" title="Permalink to this headline">#</a></h3>
+<p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/2572aadc823c943b2c11cfa5442f0098/celebrity_twitter_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></p>
+<p>The following table is a preview of the data you will be using for this project.</p>
+<p>The fifth column represents the number of followers for a given Twitter user. The sixth column represents the number of tweets for a given Twitter user.</p>
+</section>
 <section id="id1">
 <h3>Old Faithful<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/1b98a8ccfb60a79a975a96e2eca8a57a/old_faithful_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
-<p>The following table is the a preview of the data you will be using for this project.</p>
+<p>The following table is a preview of the data you will be using for this project.</p>
 <table class="table" id="id2">
 <caption><span class="caption-text">Old Faithful Eruption and Waiting Times</span><a class="headerlink" href="#id2" title="Permalink to this table">#</a></caption>
 <colgroup>
@@ -580,7 +586,7 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p>The first column represents the length of the eruption in minutes. The second column represents the waiting time until the next eruption.</p>
+<p>The first column represents the length of the eruption in minutes. The second column represents the waiting time in minutes until the next eruption.</p>
 </section>
 <section id="kentucky-derby-winning-times">
 <h3>Kentucky Derby Winning Times<a class="headerlink" href="#kentucky-derby-winning-times" title="Permalink to this headline">#</a></h3>
@@ -647,7 +653,7 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p>TODO</p>
+<p>The first column represents the year of the race. The ninth column represents the winning time in seconds.</p>
 </section>
 </section>
 </section>
@@ -708,7 +714,8 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sets">Data Sets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#celebrity-twitter">Celebrity Twitter</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Old Faithful</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kentucky-derby-winning-times">Kentucky Derby Winning Times</a></li>
 </ul>

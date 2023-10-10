@@ -14,13 +14,13 @@ Instructions
 ============
 
 1. Download **all three** *csv* datasets in the :ref:`project_three_dataset` section and place them in the ``Linux Files`` folder on your file system where you save your ``.py`` scripts.
-2. Create a Python ``.py`` script named ``NAME_project_three.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``AME`` with your name.
+2. Create a Python ``.py`` script named ``NAME_project_three.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``NAME`` with your name.
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the :ref:`project_three_background` section.
 5. Load in the data from the ``.csv`` files using the technique outlined in the :ref:`project_three_loading_data` section.
 6. Perform all exercises and answer all questions in the :ref:`project_three_project` section. Label your script with comments as indicated in the instructions of each problem.
 7. When you are done, zip your script **and** the *csv* file in a zip file named ``NAME_project_three.zip``
-8. Upload the zip file to the Google Classroom Project Four Assignment.
+8. Upload the zip file to the Google Classroom Project Three Assignment.
 
 .. _project_three_background:
 
