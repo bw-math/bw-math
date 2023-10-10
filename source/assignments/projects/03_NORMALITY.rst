@@ -46,7 +46,7 @@ A Normal Distribution is *parameterized* by its mean, :math:`\mu`, and its stand
 
 .. math::
 
-	\matchal{X} \sim \mathcal{N}(\mu, \sigma)
+	\mathcal{X} \sim \mathcal{N}(\mu, \sigma)
 
 Recall a sample of data can be :ref:`transformed <data_transformations>` by applying algebraic operations to each observations. For instance, we can :ref:`standardize <z_score>` each observation :math:`X` into a *z-score* by subtracting the mean of the distribution and dividing by the standard deviation of the distribution,
 
@@ -62,7 +62,7 @@ Loading In Data
 
 The following code snippet will load in a *CSV* spreadsheet named ``example.csv``, parse it into a list and then print it to screen, assuming that *CSV* file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in :ref:`project_two_dataset` section.
 
-.. code-block:: python 
+.. code:: python 
 
     import csv
 
