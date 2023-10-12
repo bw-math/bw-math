@@ -82,7 +82,7 @@ You can download the full dataset :download:`here <../../assets/datasets/celebri
 The following table is a preview of the data you will be using for this project.
 
 .. csv-table:: Celebrity Twitter Followers and Tweet Count
-    :file: ../../assets/datasets/previews/celebrity_twitter_data_preview.csv-table
+    :file: ../../assets/datasets/previews/celebrity_twitter_data_preview.csv
 
 The fifth column represents the number of followers for a given Twitter user. The sixth column represents the number of tweets for a given Twitter user.
 

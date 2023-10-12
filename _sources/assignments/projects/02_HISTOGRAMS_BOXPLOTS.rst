@@ -396,7 +396,7 @@ Sample Statistics
 
 Python has a :Ref:`python_stats_package` library that provides functions for calculating common sample statistics. Hope over to the :ref:`python_stats_package` page and read through the list of functions that can be imported into your script. 
 
-For this lab, we will need the :ref:`python_sample_mean` function, the :ref:`python_quantiles` function and the :ref:`python_standard_deviation` function. The rest can be ignored until later sections in the class.
+For this lab, we will need the :ref:`python_sample_mean` function, the :ref:`python_quantiles` function` and the :ref:`python_standard_deviation` function. The rest can be ignored until later sections in the class.
 
 .. _project_two_project:
 
