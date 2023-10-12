@@ -1,16 +1,22 @@
-.. _prize_corner:
+.. _substitutes:
 
-============
-Prize Corner
-============
+===========
+Substitutes
+===========
 
-Congratulations. You have tempted fate and won. 
+.. topic:: Instructions for the Substitute.
 
-.. danger:: 
+	If you are reading this, then I have probably been sucked into a jet engine or struck by falling debris. As such, I will not be able to teach this class until they are able to reassemble my pieces into a Frankenstein-esque monster. 
+	
+	In the meantime, you will find resources on this page to keep the class occupied while you catch up on your precious sleep. 
+	
+.. important::
 
-    You may not be so lucky next time.
-
-For now, bask in the glory of victory and take your pick from the spoils of war. Select a worksheet while everyone else takes their quiz. 
+	Before class starts, throw a slab of raw meat into the center of the room. Allow the students to fight over said meat until a clear victor emerges. After the students have settled down and submitted to the alpha, you may start class.
+	
+.. important::
+	
+	Some of these worksheets require datasets. These datasets will need imported on the students' calculator. You can have the students connect to the *ViewSonic* by plugging into the USB splitter. Then, you will need to open the *TI-Connect* software and send the dataset to their calculators.  One of the students (not Sejal) should be able to figure out how to import the data. 
 
 TI-84 Worksheets
 ================

@@ -10,7 +10,7 @@ Bishop Walsh A.P Statistics
    SYLLABUS
    DATASETS
    DEMOS
-   PRIZES
+   SUBSTITUTE
    notes/index
    assignments/index
    references/index
