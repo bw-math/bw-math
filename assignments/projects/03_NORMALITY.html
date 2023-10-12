@@ -443,24 +443,30 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-objects">Normal Objects</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-three-ideal-plots">Ideal Plots</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qq-plots">QQ Plots</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-calculations">Normal Calculations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-normality">Measuring Normality</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light">Velocity of Light</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#old-faithful">Old Faithful</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graphing-normality">Graphing Normality</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Velocity of Light</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Velocity of Light</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Old Faithful</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#celebrity-twitter">Celebrity Twitter</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Old Faithful</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assessing-normality">Assessing Normality</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Velocity of Light</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Old Faithful</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light-data">Velocity of Light Data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Old Faithful</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Celebrity Twitter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Old Faithful</a></li>
 </ul>
 </li>
 </ul>
@@ -568,6 +574,10 @@ document.write(`
 </dl>
 <p>For a more comprehensive explanation of <code class="docutils literal notranslate"><span class="pre">NormalDist()</span></code> from the <code class="docutils literal notranslate"><span class="pre">statistics</span></code> package and its various uses, refer to the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-normal-distribution"><span class="std std-ref">Python Normal Distribution page</span></a>.</p>
 </section>
+<section id="project-three-ideal-plots">
+<span id="ideal-plots"></span><h2>Ideal Plots<a class="headerlink" href="#project-three-ideal-plots" title="Permalink to this headline">#</a></h2>
+<p>TODO</p>
+</section>
 <section id="qq-plots">
 <span id="project-three-qq-plots"></span><h2>QQ Plots<a class="headerlink" href="#qq-plots" title="Permalink to this headline">#</a></h2>
 <p>TODO</p>
@@ -583,9 +593,9 @@ document.write(`
 <li><p><img class="math" src="../../_images/math/e1eed65acbfda8dd0e5f18b21e89262f17bccd42.png" alt="P(Z \leq 1.751)"/></p></li>
 <li><p><img class="math" src="../../_images/math/5d3a29675950ef99ce927a545ead4ba7dce93b38.png" alt="P(Z \geq 0.888)"/></p></li>
 <li><p><img class="math" src="../../_images/math/193959c6dab1bb7fa7f915f7833f59c923ca39f3.png" alt="P(-1.234 \leq Z \leq 0.545)"/></p></li>
-<li><p>TODO inverse</p></li>
-<li><p>TODO inverse</p></li>
-<li><p>TODO inverse</p></li>
+<li><p><img class="math" src="../../_images/math/4515978729742f202f1eb530ea4345e4bb7289b6.png" alt="P(Z \leq Z_{\pi}) = 0.975"/></p></li>
+<li><p><img class="math" src="../../_images/math/a9421b3b88ba68b781986d5381907c1e1544ddb1.png" alt="P(Z \geq Z_{\pi}) = 0.025"/></p></li>
+<li><p><img class="math" src="../../_images/math/0792db5dae8d89283d571f03e9198f3082f6fe9b.png" alt="P(Z_{\pi^1} \leq Z \leq Z_{\pi^2}) = 0.50"/></p></li>
 </ol>
 <ol class="arabic simple" start="2">
 <li><p>Create a Normal Distribution <code class="docutils literal notranslate"><span class="pre">object</span></code> with a mean of 50 and a standard deviation of 10. Use this object to answer the following questions.</p></li>
@@ -594,9 +604,9 @@ document.write(`
 <li><p><img class="math" src="../../_images/math/58d35d4c9aa904d2ea37fe9efd0b39fdc8d43599.png" alt="P(X \leq 65)"/></p></li>
 <li><p><img class="math" src="../../_images/math/110c14a1bcc4a0c2a2ff3a98456db7df0560c5b9.png" alt="P(X \geq 45)"/></p></li>
 <li><p><img class="math" src="../../_images/math/df68a9c5383788abc6f8091a0daf6fdab73ca773.png" alt="P(38 \leq X \leq 62)"/></p></li>
-<li><p>TODO: inverse</p></li>
-<li><p>TODO: inverse</p></li>
-<li><p>TODO: inverse</p></li>
+<li><p><img class="math" src="../../_images/math/4515978729742f202f1eb530ea4345e4bb7289b6.png" alt="P(Z \leq Z_{\pi}) = 0.975"/></p></li>
+<li><p><img class="math" src="../../_images/math/a9421b3b88ba68b781986d5381907c1e1544ddb1.png" alt="P(Z \geq Z_{\pi}) = 0.025"/></p></li>
+<li><p><img class="math" src="../../_images/math/0792db5dae8d89283d571f03e9198f3082f6fe9b.png" alt="P(Z_{\pi^1} \leq Z \leq Z_{\pi^2}) = 0.50"/></p></li>
 </ol>
 </section>
 <section id="measuring-normality">
@@ -607,11 +617,17 @@ document.write(`
 <li><p>Find the following percentiles in Michelson’s Velocity of Light distribution.</p></li>
 </ol>
 <ol class="loweralpha simple">
-<li><p>95 <sup>th</sup> percentile</p></li>
+<li><p>99 <sup>th</sup> percentile</p></li>
+<li><p>97.5 <sup>th</sup> percentile</p></li>
 <li><p>84 <sup>th</sup> percentile</p></li>
 <li><p>16 <sup>th</sup> percentile</p></li>
-<li><p>5 <sup>th</sup> percentile</p></li>
+<li><p>2.5 <sup>th</sup> percentile</p></li>
+<li><p>1 <sup>th</sup> percentile</p></li>
 </ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Use the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-quantiles"><span class="std std-ref">Quantiles</span></a> function from <a class="reference internal" href="02_HISTOGRAMS_BOXPLOTS.html#project-two"><span class="std std-ref">Histograms and Boxplots</span></a>!</p>
+</div>
 <ol class="arabic simple" start="2">
 <li><p>Find the Z-score for each percentile found in the previous problem.</p></li>
 <li><p>Create a Standard Normal Distribution <code class="docutils literal notranslate"><span class="pre">object</span></code>. Use this object to find the theoretical percentile for each Z-score found in the previous problem.</p></li>
@@ -624,55 +640,57 @@ document.write(`
 <li><p>Find the following percentiles in the Old Faithful eruption duration distribution.</p></li>
 </ol>
 <ol class="loweralpha simple">
-<li><p>95 <sup>th</sup> percentile</p></li>
+<li><p>99 <sup>th</sup> percentile</p></li>
+<li><p>97.5 <sup>th</sup> percentile</p></li>
 <li><p>84 <sup>th</sup> percentile</p></li>
 <li><p>16 <sup>th</sup> percentile</p></li>
-<li><p>5 <sup>th</sup> percentile</p></li>
+<li><p>2.5 <sup>th</sup> percentile</p></li>
+<li><p>1 <sup>th</sup> percentile</p></li>
 </ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Use the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-quantiles"><span class="std std-ref">Quantiles</span></a> function from <a class="reference internal" href="02_HISTOGRAMS_BOXPLOTS.html#project-two"><span class="std std-ref">Histograms and Boxplots</span></a>!</p>
+</div>
 <ol class="arabic simple" start="2">
 <li><p>Find the Z-score for each percentile found in the previous problem.</p></li>
 <li><p>Create a Standard Normal Distribution <code class="docutils literal notranslate"><span class="pre">object</span></code>. Use this object to find the theoretical percentile for each Z-score found in the previous problem.</p></li>
 <li><p>How do the sample percentiles found in #1 compare to the theoretical percentiles found in #3?</p></li>
 </ol>
 </section>
+</section>
+<section id="graphing-normality">
+<h3>Graphing Normality<a class="headerlink" href="#graphing-normality" title="Permalink to this headline">#</a></h3>
 <section id="id1">
 <h4>Velocity of Light<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h4>
 <ol class="arabic simple">
-<li><p>Find the following percentiles in the number of Celebrity Twitter followers distribution.</p></li>
+<li><p>Create a histogram with 10 classes for the Velocity of Light data. Ensure the axes are appropriately labeled and the tick marks are set to the class limits. Use <code class="docutils literal notranslate"><span class="pre">density=True</span></code> to make a relative frequency histogram.</p></li>
+<li><p>Create a Normal <code class="docutils literal notranslate"><span class="pre">object</span></code>. Use the mean and standard deviation of the Velocity of Light data as the distribution parameters.</p></li>
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">pdf()</span></code> density function to graph the ideal Normal distribution for the Velocity of Light data.</p></li>
 </ol>
-<ol class="loweralpha simple">
-<li><p>95 <sup>th</sup> percentile</p></li>
-<li><p>84 <sup>th</sup> percentile</p></li>
-<li><p>16 <sup>th</sup> percentile</p></li>
-<li><p>5 <sup>th</sup> percentile</p></li>
-</ol>
-<ol class="arabic simple" start="2">
-<li><p>Find the Z-score for each percentile found in the previous problem.</p></li>
-<li><p>Create a Standard Normal Distribution <code class="docutils literal notranslate"><span class="pre">object</span></code>. Use this object to find the theoretical percentile for each Z-score found in the previous problem.</p></li>
-</ol>
-<p>4. How do the sample percentiles found in #1 compare to the theoretical percentiles found in #3?
-Assessing Normality
-——————-</p>
 </section>
 <section id="id2">
-<h4>Velocity of Light<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h4>
+<h4>Old Faithful<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h4>
+<ol class="arabic simple">
+<li><p>Create a histogram with 10 classes for the Old Faithful data. Ensure the axes are appropriately labeled and the tick marks are set to the class limits. Use <code class="docutils literal notranslate"><span class="pre">density=True</span></code> to make a relative frequency histogram.</p></li>
+<li><p>Create a Normal <code class="docutils literal notranslate"><span class="pre">object</span></code>. Use the mean and standard deviation of the Old Faithful data as the distribution parameters.</p></li>
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">pdf()</span></code> density function to graph the ideal Normal distribution for the Old Faithful data.</p></li>
+</ol>
+</section>
+</section>
+<section id="assessing-normality">
+<h3>Assessing Normality<a class="headerlink" href="#assessing-normality" title="Permalink to this headline">#</a></h3>
+<section id="id3">
+<h4>Velocity of Light<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h4>
 <ol class="arabic simple">
 <li><p>Create a QQ plot for Michelson’s Velocity of Light distribution.</p></li>
-<li><p>Based on the QQ plot, is Michelson’s distribution approximately normal? Why or why not?</p></li>
+<li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: Based on the QQ plot, is Michelson’s distribution approximately normal? Why or why not?</p></li>
 </ol>
 </section>
-<section id="id3">
-<h4>Old Faithful<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h4>
+<section id="id4">
+<h4>Old Faithful<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h4>
 <ol class="arabic simple">
 <li><p>Create a QQ plot for Old Faithful’s eruption duration.</p></li>
-<li><p>Based on the QQ plot, is Old Faithful’s eruption duration approximately normal? Why or why not?</p></li>
-</ol>
-</section>
-<section id="celebrity-twitter">
-<h4>Celebrity Twitter<a class="headerlink" href="#celebrity-twitter" title="Permalink to this headline">#</a></h4>
-<ol class="arabic simple">
-<li><p>Create a QQ plot for the number of Celebrity Twitter followers.</p></li>
-<li><p>Based on the QQ plot, is the number of Celebrity Twitter followers normal? Why or why not?</p></li>
+<li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: Based on the QQ plot, is Old Faithful’s eruption duration approximately normal? Why or why not?</p></li>
 </ol>
 </section>
 </section>
@@ -715,8 +733,8 @@ Assessing Normality
 </table>
 <p>The meaning of the column is clear from the column header: each observation measures the speed of light in meters per second, <img class="math" src="../../_images/math/5ae5e370f87dbb343d8b2a860c4c15c185ad158b.png" alt="\frac{km}{s}"/>.</p>
 </section>
-<section id="id4">
-<h3>Old Faithful<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
+<section id="id5">
+<h3>Old Faithful<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/1b98a8ccfb60a79a975a96e2eca8a57a/old_faithful_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
 <table class="table" id="id7">
@@ -779,11 +797,7 @@ Assessing Normality
 </tr>
 </tbody>
 </table>
-<p>TODO</p>
-</section>
-<section id="id5">
-<h3>Celebrity Twitter<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
-<p>TODO</p>
+<p>The first column represents the length of the eruption in minutes. The second column represents the waiting time in minutes until the next eruption.</p>
 </section>
 </section>
 </section>
@@ -843,24 +857,30 @@ Assessing Normality
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-objects">Normal Objects</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-three-ideal-plots">Ideal Plots</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qq-plots">QQ Plots</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-calculations">Normal Calculations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measuring-normality">Measuring Normality</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light">Velocity of Light</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#old-faithful">Old Faithful</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graphing-normality">Graphing Normality</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Velocity of Light</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Velocity of Light</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Old Faithful</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#celebrity-twitter">Celebrity Twitter</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Old Faithful</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assessing-normality">Assessing Normality</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Velocity of Light</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Old Faithful</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light-data">Velocity of Light Data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Old Faithful</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Celebrity Twitter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Old Faithful</a></li>
 </ul>
 </li>
 </ul>

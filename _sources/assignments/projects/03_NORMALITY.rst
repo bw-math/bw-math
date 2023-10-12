@@ -114,13 +114,19 @@ Output:
 
 For a more comprehensive explanation of ``NormalDist()`` from the ``statistics`` package and its various uses, refer to the :ref:`Python Normal Distribution page <python_normal_distribution>`.
  
+.. _project_three_ideal_plots:
+
+Ideal Plots
+===========
+
+TODO 
+
 .. _project_three_qq_plots:
 
 QQ Plots
 ========
 
 TODO
-
 
 .. _project_three_project:
 
@@ -138,11 +144,11 @@ b. :math:`P(Z \geq 0.888)`
 
 c. :math:`P(-1.234 \leq Z \leq 0.545)`
 
-d. TODO inverse
+d. :math:`P(Z \leq Z_{\pi}) = 0.975`
 
-e. TODO inverse
+e. :math:`P(Z \geq Z_{\pi}) = 0.025`
 
-f. TODO inverse
+f. :math:`P(Z_{\pi^1} \leq Z \leq Z_{\pi^2}) = 0.50`
 
 2. Create a Normal Distribution ``object`` with a mean of 50 and a standard deviation of 10. Use this object to answer the following questions.
 
@@ -152,12 +158,11 @@ b. :math:`P(X \geq 45)`
 
 c. :math:`P(38 \leq X \leq 62)`
 
-d. TODO: inverse
+d. :math:`P(Z \leq Z_{\pi}) = 0.975`
 
-e. TODO: inverse
+e. :math:`P(Z \geq Z_{\pi}) = 0.025`
 
-f. TODO: inverse
-
+f. :math:`P(Z_{\pi^1} \leq Z \leq Z_{\pi^2}) = 0.50`
 
 Measuring Normality
 -------------------
@@ -167,10 +172,16 @@ Velocity of Light
 
 1. Find the following percentiles in Michelson's Velocity of Light distribution.
 
-a. 95 :sup:`th` percentile
-b. 84 :sup:`th` percentile
-c. 16 :sup:`th` percentile
-d. 5 :sup:`th` percentile
+a. 99 :sup:`th` percentile
+b. 97.5 :sup:`th` percentile
+c. 84 :sup:`th` percentile
+d. 16 :sup:`th` percentile
+e. 2.5 :sup:`th` percentile
+f. 1 :sup:`th` percentile
+
+.. hint::
+
+	Use the :ref:`python_quantiles` function from :ref:`project_two`!
 
 2. Find the Z-score for each percentile found in the previous problem.
 
@@ -183,32 +194,44 @@ Old Faithful
 
 1. Find the following percentiles in the Old Faithful eruption duration distribution.
 
-a. 95 :sup:`th` percentile
-b. 84 :sup:`th` percentile
-c. 16 :sup:`th` percentile
-d. 5 :sup:`th` percentile
+a. 99 :sup:`th` percentile
+b. 97.5 :sup:`th` percentile
+c. 84 :sup:`th` percentile
+d. 16 :sup:`th` percentile
+e. 2.5 :sup:`th` percentile
+f. 1 :sup:`th` percentile
+
+.. hint::
+
+	Use the :ref:`python_quantiles` function from :ref:`project_two`!
 
 2. Find the Z-score for each percentile found in the previous problem.
 
 3. Create a Standard Normal Distribution ``object``. Use this object to find the theoretical percentile for each Z-score found in the previous problem.
 
 4. How do the sample percentiles found in #1 compare to the theoretical percentiles found in #3? 
+
+Graphing Normality
+------------------
 
 Velocity of Light
 *****************
 
-1. Find the following percentiles in the number of Celebrity Twitter followers distribution.
+1. Create a histogram with 10 classes for the Velocity of Light data. Ensure the axes are appropriately labeled and the tick marks are set to the class limits. Use ``density=True`` to make a relative frequency histogram. 
 
-a. 95 :sup:`th` percentile
-b. 84 :sup:`th` percentile
-c. 16 :sup:`th` percentile
-d. 5 :sup:`th` percentile
+2. Create a Normal ``object``. Use the mean and standard deviation of the Velocity of Light data as the distribution parameters.
 
-2. Find the Z-score for each percentile found in the previous problem.
+3. Use the ``pdf()`` density function to graph the ideal Normal distribution for the Velocity of Light data. 
 
-3. Create a Standard Normal Distribution ``object``. Use this object to find the theoretical percentile for each Z-score found in the previous problem.
+Old Faithful
+************
 
-4. How do the sample percentiles found in #1 compare to the theoretical percentiles found in #3? 
+1. Create a histogram with 10 classes for the Old Faithful data. Ensure the axes are appropriately labeled and the tick marks are set to the class limits. Use ``density=True`` to make a relative frequency histogram. 
+
+2. Create a Normal ``object``. Use the mean and standard deviation of the Old Faithful data as the distribution parameters.
+
+3. Use the ``pdf()`` density function to graph the ideal Normal distribution for the Old Faithful data. 
+
 Assessing Normality
 -------------------
 
@@ -217,22 +240,15 @@ Velocity of Light
 
 1. Create a QQ plot for Michelson's Velocity of Light distribution.
 
-2. Based on the QQ plot, is Michelson's distribution approximately normal? Why or why not?
+2. In your :ref:`python_docstring`, answer the following question: Based on the QQ plot, is Michelson's distribution approximately normal? Why or why not?
 
 Old Faithful
 ************
 
 1. Create a QQ plot for Old Faithful's eruption duration.
 
-2. Based on the QQ plot, is Old Faithful's eruption duration approximately normal? Why or why not?
+2. In your :ref:`python_docstring`, answer the following question: Based on the QQ plot, is Old Faithful's eruption duration approximately normal? Why or why not?
 
-Celebrity Twitter
-*****************
-
-1. Create a QQ plot for the number of Celebrity Twitter followers.
-
-2. Based on the QQ plot, is the number of Celebrity Twitter followers normal? Why or why not?
- 
 .. _project_three_dataset:
 
 Datasets
@@ -264,9 +280,4 @@ The following table is the a preview of the data you will be using for this proj
 .. csv-table:: Old Faithful Geyser Duration and Wait Time
    :file: ../../assets/datasets/previews/old_faithful_data_preview.csv
 
-TODO
-
-Celebrity Twitter
------------------
-
-TODO
+The first column represents the length of the eruption in minutes. The second column represents the waiting time in minutes until the next eruption.
