@@ -119,7 +119,7 @@ For a more comprehensive explanation of ``NormalDist()`` from the ``statistics``
 Ideal Plots
 -----------
 
-TODO 
+
 
 .. _project_three_qq_plots:
 
