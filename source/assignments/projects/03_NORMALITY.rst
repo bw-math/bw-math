@@ -117,14 +117,15 @@ For a more comprehensive explanation of ``NormalDist()`` from the ``statistics``
 .. _project_three_ideal_plots:
 
 Ideal Plots
-===========
+-----------
 
 TODO 
 
 .. _project_three_qq_plots:
 
 QQ Plots
-========
+--------
+
 
 TODO
 
