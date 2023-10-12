@@ -222,10 +222,11 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="../distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../distributions/00_INTRODUCTION.html">Probability Distributions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../distributions/01_BINOMIAL.html">Binomial Distribution</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../distributions/02_NORMAL.html">Normal Distribution</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../distributions/03_T.html">T Distribution</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../distributions/04_CHI_SQUARED.html"><img alt="\chi^2" class="math" src="../../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../distributions/05_F.html">F Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/02_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/03_NORMAL.html">Normal Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/04_T.html">T Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/05_CHI_SQUARED.html"><img alt="\chi^2" class="math" src="../../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/06_F.html">F Distribution</a></li>
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -412,9 +413,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -430,15 +429,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#binomial-random-variables">Binomial Random Variables</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-random-variables">Geometric Random Variables</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -459,10 +449,15 @@ document.write(`
 </ul>
 </div></blockquote>
 </li>
+<li><p>TODO</p></li>
+<li><p><strong>2019, Free Response, #5</strong></p></li>
 </ol>
-<p>TODO</p>
-<p>?. <strong>2005, Free Response, #2</strong></p>
-<p>TODO</p>
+<p>A company that manufactures smartphones developed a new battery that has a longer life span than that of a traditional battery. From the date of purchase of a smartphone, the distribution of the life span of the new battery is approximately normal with mean 30 months and standard deviation 8 months. For the price of $50, the company offers a two-year warranty on the new battery for customers who purchase a smartphone. The warranty guarantees that the smartphone will be replaced at no cost to the customer if the battery no longer works within 24 months from the date of purchase.</p>
+<ol class="loweralpha simple">
+<li><p>In how many months from the date of purchase is it expected that 25 percent of the batteries will no longer work? Justify your answer.</p></li>
+<li><p>Suppose one customer who purchases the warranty is selected at random. What is the probability that the customer selected will require a replacement within 24 months from the date of purchase because the battery no longer works?</p></li>
+<li><p>The company has a gain of $50 for each customer who purchases a warranty but does not require a replacement. The company has a loss (negative gain) of $150 for each customer who purchases a warranty and does require a replacement. What is the expected value of the gain for the company for each warranty purchased?</p></li>
+</ol>
 <ol class="arabic simple" start="2">
 <li><p><strong>2015, Free Response, #3</strong></p></li>
 </ol>
@@ -474,42 +469,6 @@ document.write(`
 <li><p>What is the probability that all three ATMs are working when the mall opens, given that at least one ATM is working?</p></li>
 <li><p>Given that at least one ATM is working when the mall opens, would the expected value of the number of ATMs that are working be less than, equal to, or greater than the expected value from part <em>b</em>? Explain.</p></li>
 </ol>
-<section id="binomial-random-variables">
-<h2>Binomial Random Variables<a class="headerlink" href="#binomial-random-variables" title="Permalink to this headline">#</a></h2>
-<ol class="arabic simple">
-<li><p><strong>2014, Free Response, #2</strong></p></li>
-</ol>
-<p>Nine sales representatives, 6 men and 3 women, at a small company wanted to attend a national convention. There were only enough travel funds to send 3 people. The manager selected 3 people to attend and stated that the people were selected at random. The 3 people selected were women. There were concerns that no men were selected to attend the convention.</p>
-<ol class="loweralpha simple">
-<li><p>Calculate the probability that randomly selecting 3 people from a group of 6 men and 3 women will result in selecting 3 women.</p></li>
-<li><p>Based on your answer to part <em>a</em>, is there reason to doubt the manager’s claim that the 3 people were selected at random? Explain.</p></li>
-<li><p>An alternative to calculating the exact probability is to conduct a simulation to estimate the probability. A proposed simulation process is described below.</p></li>
-</ol>
-<div class="topic">
-<p class="topic-title">Proposed Simulation</p>
-<p>Each trial in the simulation consists of rolling three fair, six-sided dice, one die for each of the convention attendees. For each die, rolling a 1, 2, 3, or 4 represents selecting a man; rolling a 5 or 6 represents selecting a woman. After 1,000 trials, the number of times the dice indicate selecting 3 women is recorded.</p>
-</div>
-<p>Does the proposed process correctly simulate the random selection of 3 women from a group of 9 people consisting of 6 men and 3 women? Explain why or why not.</p>
-</section>
-<section id="geometric-random-variables">
-<h2>Geometric Random Variables<a class="headerlink" href="#geometric-random-variables" title="Permalink to this headline">#</a></h2>
-<ol class="arabic simple">
-<li><p><strong>2016, Free Response, #4</strong></p></li>
-</ol>
-<p>A company manufactures model rockets that require igniters to launch. Once an igniter is used to launch a rocket, the igniter cannot be reused. Sometimes an igniter fails to operate correctly, and the rocket does not launch. The company estimates that the overall failure rate, defined as the percent of all igniters that fail to operate correctly, is 15 percent.</p>
-<p>A company engineer develops a new igniter, called the super igniter, with the intent of lowering the failure rate.</p>
-<p>To test the performance of the super igniters, the engineer uses the following process.</p>
-<blockquote>
-<div><p>Step 1: One super igniter is selected at random and used in a rocket.
-Step 2: If the rocket launches, another super igniter is selected at random and used in a rocket.</p>
-</div></blockquote>
-<p>Step 2 is repeated until the process stops. The process stops when a super igniter fails to operate correctly or 32 super igniters have successfully launched rockets, whichever comes first. Assume that super igniter failures are independent.</p>
-<ol class="loweralpha simple">
-<li><p>If the failure rate of the super igniters is 15 percent, what is the probability that the first 30 super igniters selected using the testing process successfully launch rockets?</p></li>
-<li><p>Given that the first 30 super igniters successfully launch rockets, what is the probability that the first failure occurs on the thirty-first or the thirty-second super igniter tested if the failure rate of the super igniters is 15 percent?</p></li>
-<li><p>Given that the first 30 super igniters successfully launch rockets, is it reasonable to believe that the failure rate of the super igniters is less than 15 percent? Explain.</p></li>
-</ol>
-</section>
 </section>
 
 
@@ -551,21 +510,6 @@ Step 2: If the rocket launches, another super igniter is selected at random and 
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#binomial-random-variables">Binomial Random Variables</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-random-variables">Geometric Random Variables</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

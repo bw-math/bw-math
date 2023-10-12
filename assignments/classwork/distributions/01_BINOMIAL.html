@@ -46,7 +46,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/classwork/distributions/01_BINOMIAL';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Normal Distribution" href="02_NORMAL.html" />
+    <link rel="next" title="Geometric Distribution" href="02_GEOMETRIC.html" />
     <link rel="prev" title="Probability Distributions" href="00_INTRODUCTION.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
@@ -222,10 +222,11 @@
 <li class="toctree-l3 current active has-children"><a class="reference internal" href="index.html">Distributions</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="00_INTRODUCTION.html">Probability Distributions</a></li>
 <li class="toctree-l4 current active"><a class="current reference internal" href="#">Binomial Distribution</a></li>
-<li class="toctree-l4"><a class="reference internal" href="02_NORMAL.html">Normal Distribution</a></li>
-<li class="toctree-l4"><a class="reference internal" href="03_T.html">T Distribution</a></li>
-<li class="toctree-l4"><a class="reference internal" href="04_CHI_SQUARED.html"><img alt="\chi^2" class="math" src="../../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
-<li class="toctree-l4"><a class="reference internal" href="05_F.html">F Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_NORMAL.html">Normal Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="04_T.html">T Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="05_CHI_SQUARED.html"><img alt="\chi^2" class="math" src="../../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06_F.html">F Distribution</a></li>
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -465,6 +466,30 @@ document.write(`
 <li><p>Let X represent the number of consumers in the sample who prefer Citrus Fresh. Assuming there is no difference in consumer preference, find the probability for each possible value of X. Record the x-values and the corresponding probabilities in the table below.</p></li>
 </ol>
 <img alt="../../../_images/2006_apstats_frp_formb_06.png" class="align-center" src="../../../_images/2006_apstats_frp_formb_06.png" />
+<ol class="arabic simple" start="3">
+<li><p><strong>2003, Free Response, #3</strong></p></li>
+</ol>
+<p>Men’s shirt sizes are determined by their neck sizes. Suppose that men’s neck sizes are approximately normally distributed with mean 15.7 inches and standard deviation 0.7 inch. A retailer sells men’s shirts in sizes S, M, L, XL, where the shirt sizes are defined in the table below.</p>
+<img alt="../../../_images/2003_apstats_frp_3.png" class="align-center" src="../../../_images/2003_apstats_frp_3.png" />
+<ol class="loweralpha simple">
+<li><p>Because the retailer only stocks the sizes listed above, what proportion of customers will find that the retailer does not carry any shirts in their sizes? Show your work.</p></li>
+<li><p>Using a sketch of a normal curve, illustrate the proportion of men whose shirt size is M. Calculate this proportion.</p></li>
+<li><p>Of 12 randomly selected customers, what is the probability that exactly 4 will request size M ? Show your work.</p></li>
+</ol>
+<ol class="arabic simple" start="4">
+<li><p><strong>2014, Free Response, #2</strong></p></li>
+</ol>
+<p>Nine sales representatives, 6 men and 3 women, at a small company wanted to attend a national convention. There were only enough travel funds to send 3 people. The manager selected 3 people to attend and stated that the people were selected at random. The 3 people selected were women. There were concerns that no men were selected to attend the convention.</p>
+<ol class="loweralpha simple">
+<li><p>Calculate the probability that randomly selecting 3 people from a group of 6 men and 3 women will result in selecting 3 women.</p></li>
+<li><p>Based on your answer to part <em>a</em>, is there reason to doubt the manager’s claim that the 3 people were selected at random? Explain.</p></li>
+<li><p>An alternative to calculating the exact probability is to conduct a simulation to estimate the probability. A proposed simulation process is described below.</p></li>
+</ol>
+<div class="topic">
+<p class="topic-title">Proposed Simulation</p>
+<p>Each trial in the simulation consists of rolling three fair, six-sided dice, one die for each of the convention attendees. For each die, rolling a 1, 2, 3, or 4 represents selecting a man; rolling a 5 or 6 represents selecting a woman. After 1,000 trials, the number of times the dice indicate selecting 3 women is recorded.</p>
+</div>
+<p>Does the proposed process correctly simulate the random selection of 3 women from a group of 9 people consisting of 6 men and 3 women? Explain why or why not.</p>
 </section>
 
 
@@ -489,11 +514,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="02_NORMAL.html"
+       href="02_GEOMETRIC.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Normal Distribution</p>
+        <p class="prev-next-title">Geometric Distribution</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
