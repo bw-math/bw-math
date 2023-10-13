@@ -79,23 +79,95 @@ Inverse Cumulative Distribution Function
 
 TODO
 
+.. _normal_symmetry:
+
 Symmetry
 --------
 
 TODO 
 
+.. _z_table_reference:
+
 Z-Tables
 ========
 
-TODO 
+These days we have calculators that can perform almost any calculation you can imagine, but back in the old days, aspiring mathematicians needed to be familiar with *tables*. Many functions in trigonometry and algebra do not have closed form algorithms for their exact calculation, so their values must be looked up in a *table*.
+
+For example, :math:`sin(x)` is a trigonometric quantity defined as the ratio of sides in a right triangle. It is, in general, impossible to calculate the exact value of :math:`sin(x)` for an arbitrary :math:`x` without more advanced techniques introduced in Calculus. For this reason, before the advent of modern computing, values of *sin* were tabulated in tables like the following,
+
+(TODO: insert picture)
+
+Similarly, the Standard Normal distribution is defined by a density curve whose area is not easily calculated without a substantial amount of math-power (like horse-power, but with math). In order to aid in calculations, statisticians of the past tabulated the values of the Standard Normal and devised a way of representing the CDF of the Standard Values through a two-way table,
+
+.. image:: ../../assets/imgs/tables/table_positive_z.png
+	:align: center
+
+This table can answers questions like,
+
+.. math::
+
+	P(\mathcal{Z} \leq 1.45)
+	
+
+First, we find the row that corresponds to the two leading digits, `1.4`. 
+
+.. image:: ../../assets/imgs/tables/table_positive_z_step1.png
+	:align: center
+
+Then, we find the column that corresonds to the last decimal spot, `0.05`. 
+
+.. image:: ../../assets/imgs/tables/table_positive_z_step2.png
+	:align: center
+
+This tells us that `92.65%` of the Standard Normal distribution has a distance less than or equal to 1.45 standard deviations from the mean.
+ 
+.. _empirical_rule:
 
 Empirical Rule
 ==============
 
 TODO 
 
+.. topic:: Empirical Rule
+
+	68% of a distribution is within one standard deviation of the mean.
+	
+	95% of a distribution is within two standard deviations of the mean.
+	
+	99% of a distribution is within three standard deviations of the mean.
+	
+.. topic:: Empirical Rule (Mathematical Version, x Distributions)
+
+	.. math::
+		
+		P(\bar{x} - \sigma \leq \mathcal{X} \leq \bar{x} + \sigma) = 0.68
+	
+	.. math::
+		
+		P(\bar{x} - 2 \cdot \sigma \leq \mathcal{X} \leq \bar{x} + 2 \cdot \sigma) = 0.95
+
+.. topic:: Empirical Rule (Mathematical Version, z Distributions)
+
+	.. math::
+		
+		P(-1 \leq \mathcal{Z} \leq 1) = 0.68
+	
+	.. math::
+		
+		P(-2 \leq \mathcal{Z} \leq 2) = 0.95
+		
+	.. math::
+		
+		P(-3 \leq \mathcal{Z} \leq 3) = 0.99
+
+The *Empirical Rule* can be visualized through the area underneath the Normal curve,
+
 .. image:: ../../assets/imgs/distributions/normal/normal_distribution_empirical_rule.png
     :align: center
+
+TODO
+
+.. _normal_parameters:
 
 Effects of Parameters
 =====================
