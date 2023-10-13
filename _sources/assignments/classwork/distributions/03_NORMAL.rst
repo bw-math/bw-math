@@ -37,8 +37,44 @@ Normal Distribution
 	d. 0.25
 	
 	e. 0.10
+	
+4. **The Empirical Rule**
 
-3. **2017, Free Response, #3**
+Since the Z-Table is the cumulative distribution function for the Standard Normal distribution, The :ref:`empirical_rule` can be derived through a Z-table. Recall the :ref:`empirical_rule` states,
+
+.. topic:: Empirical Rule
+
+	68% of a distribution is within one standard deviation of the mean.
+	
+	95% of a distribution is within two standard deviations of the mean.
+	
+	99% of a distribution is within three standard deviations of the mean.
+	
+This can be stated more precisely in terms of the **Z** distributions as follows,
+
+.. topic:: Empirical Rule (Mathematical Version, z Distributions)
+
+	.. math::
+		
+		P(-1 \leq \mathcal{Z} \leq 1) = 0.68
+	
+	.. math::
+		
+		P(-2 \leq \mathcal{Z} \leq 2) = 0.95
+		
+	.. math::
+		
+		P(-3 \leq \mathcal{Z} \leq 3) = 0.99
+
+The *Empirical Rule* is an approximation, meant for quick calculations. It is not exact, as you will soon discover.
+
+	a. Use a :ref:`z_table` to find the exact value of :math:`P(-1 \leq \mathcal{Z} \leq 1)`
+	
+	b. Use a :ref:`z_table` to find the exact value of :math:`P(-2 \leq \mathcal{Z} \leq 2)`
+	
+	c. Use a :ref:`z_table` to find the exact value of :math:`P(-3 \leq \mathcal{Z} \leq 3)`
+
+5. **2017, Free Response, #3**
 
 A grocery store purchases melons from two distributors, J and K. Distributor J provides melons from organic farms. The distribution of the diameters of the melons from Distributor J is approximately normal with mean 133 millimeters (mm) and standard deviation 5 mm.
 
@@ -50,7 +86,7 @@ A grocery store purchases melons from two distributors, J and K. Distributor J p
 
 		ii. Given that a melon selected at random from the grocery store has a diameter greater than 137 mm, what is the probability that the melon will be from Distributor J?
     
-4. **2011, Free Response, #1**
+6. **2011, Free Response, #1**
 
 A professional sports team evaluates potential players for a certain position based on two main characteristics, speed and strength.
 
@@ -80,7 +116,7 @@ A professional sports team evaluates potential players for a certain position ba
 
 	c. The characteristics of speed and strength are considered to be of equal importance to the team in selecting a player for the position. Based on the information about the means and standard deviations of the speed and strength data for all players and the measurements listed in the table below for Players A and B, which player should the team select if the team can only select one of the two players? Justify your answer.
 
-5. **2013, Free Response, #3**
+7. **2013, Free Response, #3**
 
 Each full carton of Grade A eggs consists of 1 randomly selected empty cardboard container and 12 randomly selected eggs. The weights of such full cartons are approximately normally distributed with a mean of 840 grams and a standard deviation of 7.9 grams.
 

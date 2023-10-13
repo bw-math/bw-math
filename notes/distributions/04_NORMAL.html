@@ -528,21 +528,57 @@ document.write(`
 </section>
 </section>
 <section id="symmetry">
-<h3>Symmetry<a class="headerlink" href="#symmetry" title="Permalink to this headline">#</a></h3>
+<span id="normal-symmetry"></span><h3>Symmetry<a class="headerlink" href="#symmetry" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
 </section>
 </section>
 <section id="z-tables">
-<h2>Z-Tables<a class="headerlink" href="#z-tables" title="Permalink to this headline">#</a></h2>
-<p>TODO</p>
+<span id="z-table-reference"></span><h2>Z-Tables<a class="headerlink" href="#z-tables" title="Permalink to this headline">#</a></h2>
+<p>These days we have calculators that can perform almost any calculation you can imagine, but back in the old days, aspiring mathematicians needed to be familiar with <em>tables</em>. Many functions in trigonometry and algebra do not have closed form algorithms for their exact calculation, so their values must be looked up in a <em>table</em>.</p>
+<p>For example, <img class="math" src="../../_images/math/fb982de8f45c7385e7ddfd680b2456e77d320f72.png" alt="sin(x)"/> is a trigonometric quantity defined as the ratio of sides in a right triangle. It is, in general, impossible to calculate the exact value of <img class="math" src="../../_images/math/fb982de8f45c7385e7ddfd680b2456e77d320f72.png" alt="sin(x)"/> for an arbitrary <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> without more advanced techniques introduced in Calculus. For this reason, before the advent of modern computing, values of <em>sin</em> were tabulated in tables like the following,</p>
+<p>(TODO: insert picture)</p>
+<p>Similarly, the Standard Normal distribution is defined by a density curve whose area is not easily calculated without a substantial amount of math-power (like horse-power, but with math). In order to aid in calculations, statisticians of the past tabulated the values of the Standard Normal and devised a way of representing the CDF of the Standard Values through a two-way table,</p>
+<img alt="../../_images/table_positive_z.png" class="align-center" src="../../_images/table_positive_z.png" />
+<p>This table can answers questions like,</p>
+<div class="math">
+<p><img src="../../_images/math/d95ca8052b17f13955d73a273d80e9e7f59f7636.png" alt="P(\mathcal{Z} \leq 1.45)"/></p>
+</div><p>First, we find the row that corresponds to the two leading digits, <cite>1.4</cite>.</p>
+<img alt="../../_images/table_positive_z_example_step1.png" class="align-center" src="../../_images/table_positive_z_example_step1.png" />
+<p>Then, we find the column that corresonds to the last decimal spot, <cite>0.05</cite>.</p>
+<img alt="../../_images/table_positive_z_example_step2.png" class="align-center" src="../../_images/table_positive_z_example_step2.png" />
+<p>This tells us that <cite>92.65%</cite> of the Standard Normal distribution has a distance less than or equal to 1.45 standard deviations from the mean.</p>
 </section>
 <section id="empirical-rule">
-<h2>Empirical Rule<a class="headerlink" href="#empirical-rule" title="Permalink to this headline">#</a></h2>
+<span id="id4"></span><h2>Empirical Rule<a class="headerlink" href="#empirical-rule" title="Permalink to this headline">#</a></h2>
 <p>TODO</p>
+<div class="topic">
+<p class="topic-title">Empirical Rule</p>
+<p>68% of a distribution is within one standard deviation of the mean.</p>
+<p>95% of a distribution is within two standard deviations of the mean.</p>
+<p>99% of a distribution is within three standard deviations of the mean.</p>
+</div>
+<div class="topic">
+<p class="topic-title">Empirical Rule (Mathematical Version, x Distributions)</p>
+<div class="math">
+<p><img src="../../_images/math/2d97dc69d0eef9a613c9395c65cb8663ad0332aa.png" alt="P(\bar{x} - \sigma \leq \mathcal{X} \leq \bar{x} + \sigma) = 0.68"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/a8ef109d3a66ae0cd051b6f13cedaf2d720fc064.png" alt="P(\bar{x} - 2 \cdot \sigma \leq \mathcal{X} \leq \bar{x} + 2 \cdot \sigma) = 0.95"/></p>
+</div></div>
+<div class="topic">
+<p class="topic-title">Empirical Rule (Mathematical Version, z Distributions)</p>
+<div class="math">
+<p><img src="../../_images/math/237870855f2746e9b5496289a5f82b119c4b3f83.png" alt="P(-1 \leq \mathcal{Z} \leq 1) = 0.68"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/7805e2bae072c61235c1f3d57730803ffa88d581.png" alt="P(-2 \leq \mathcal{Z} \leq 2) = 0.95"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/dbfba8a4d12ac272f366d7872fef560937192c53.png" alt="P(-3 \leq \mathcal{Z} \leq 3) = 0.99"/></p>
+</div></div>
+<p>The <em>Empirical Rule</em> can be visualized through the area underneath the Normal curve,</p>
 <img alt="../../_images/normal_distribution_empirical_rule.png" class="align-center" src="../../_images/normal_distribution_empirical_rule.png" />
+<p>TODO</p>
 </section>
 <section id="effects-of-parameters">
-<h2>Effects of Parameters<a class="headerlink" href="#effects-of-parameters" title="Permalink to this headline">#</a></h2>
+<span id="normal-parameters"></span><h2>Effects of Parameters<a class="headerlink" href="#effects-of-parameters" title="Permalink to this headline">#</a></h2>
 <section id="varying-the-mean">
 <h3>Varying the Mean<a class="headerlink" href="#varying-the-mean" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
@@ -565,10 +601,10 @@ document.write(`
 </section>
 </section>
 <section id="assessing-normality">
-<span id="id4"></span><h2>Assessing Normality<a class="headerlink" href="#assessing-normality" title="Permalink to this headline">#</a></h2>
+<span id="id5"></span><h2>Assessing Normality<a class="headerlink" href="#assessing-normality" title="Permalink to this headline">#</a></h2>
 <p>TODO</p>
 <section id="qq-plots">
-<span id="id5"></span><h3>QQ Plots<a class="headerlink" href="#qq-plots" title="Permalink to this headline">#</a></h3>
+<span id="id6"></span><h3>QQ Plots<a class="headerlink" href="#qq-plots" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
 </section>
 </section>
