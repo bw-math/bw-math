@@ -111,12 +111,12 @@ This table can answers questions like,
 
 First, we find the row that corresponds to the two leading digits, `1.4`. 
 
-.. image:: ../../assets/imgs/tables/table_positive_z_step1.png
+.. image:: ../../assets/imgs/tables/table_positive_z_example_step1.png
 	:align: center
 
 Then, we find the column that corresonds to the last decimal spot, `0.05`. 
 
-.. image:: ../../assets/imgs/tables/table_positive_z_step2.png
+.. image:: ../../assets/imgs/tables/table_positive_z_example_step2.png
 	:align: center
 
 This tells us that `92.65%` of the Standard Normal distribution has a distance less than or equal to 1.45 standard deviations from the mean.
