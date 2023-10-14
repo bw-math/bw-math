@@ -803,6 +803,8 @@ Percentile
 **********
 **********
 
+.. _order_statistics: 
+
 Motivation
 **********
 
