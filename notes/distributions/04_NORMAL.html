@@ -605,7 +605,35 @@ document.write(`
 <p>TODO</p>
 <section id="qq-plots">
 <span id="id6"></span><h3>QQ Plots<a class="headerlink" href="#qq-plots" title="Permalink to this headline">#</a></h3>
-<p>TODO</p>
+<p>A common technique for assessing the <em>normality</em> of a sample distribution is to generate a <em>Quantile-Quantile Plot</em>, or <em>QQ Plot</em> for short. QQ plots provide a visual representation of a sample’s <em>normality</em> by plotting the percentiles of a sample distribution against the percentiles of the theoretical Normal Distribution.</p>
+<p>The exact steps for generating a QQ plot are given below,</p>
+<ol class="arabic simple">
+<li><p>Find the :ref`order statistics &lt;order_statistics&gt;` of the distribution. In other words, sort the sample in <em>ascending</em> order.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Step 1 is equivalent to finding the <a class="reference internal" href="../statistics/02_DESCRIPTIVE_STATISTICS.html#percentile"><span class="std std-ref">percentiles</span></a> of the sample distribution.</p>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Standarize the sorted sample, i.e. find each observation’s <a class="reference internal" href="../statistics/02_DESCRIPTIVE_STATISTICS.html#z-score"><span class="std std-ref">Z Score</span></a>.</p></li>
+<li><p>Find the theoretical percentiles from the Standard Normal Distribution for each ordered observation.</p></li>
+<li><p>Plot the actual percentiles versus the theoretical percentiles in the x-y plane.</p></li>
+</ol>
+<p>Consider the following simplified example. Let the sample <img class="math" src="../../_images/math/23298f92ca8dc2a1ce6332eb7a21d5f2e9ae0bd8.png" alt="S"/> be given by,</p>
+<div class="math">
+<p><img src="../../_images/math/17637e056e6e0f6a7b79650cf650bcf5048f1760.png" alt="S = \{ 10, 15, 20, 30 \}"/></p>
+</div><p>The sample statistics for this distribution are given by,</p>
+<div class="math">
+<p><img src="../../_images/math/9f43dfc7a27795a004011212b5686c5305087310.png" alt="\bar{x} = 18.75"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/34a027d82d93893bb2d64dfb1ca96ce8c585c180.png" alt="s \approx 8.54"/></p>
+</div><p>Standardizing each observation and rounding to the second decimal spot,</p>
+<div class="math">
+<p><img src="../../_images/math/caa908fa9baa6a7fd2a1a27450380f9a021e835f.png" alt="Z = \{ -1.02, -0.44, 0.15, 1.32 \}"/></p>
+</div><p>Then, we construct the theoretical percentiles of the Standard Normal distribution for a sample of size <img class="math" src="../../_images/math/3c11a2cfe6a421231b6c392290b07d68a6c08dbc.png" alt="n = 4"/>. To do so, we take the inverse CDF of the sample percentile,</p>
+<div class="math">
+<p><img src="../../_images/math/001f8f5e4028015c2118efea208f5f4cf9ed8114.png" alt="\Phi^{-1}(\frac{i}/n)"/></p>
+</div><p>For <img class="math" src="../../_images/math/03f38a8c8d48a90e41e923a3929b4ba43bcccacb.png" alt="i = 1, 2, ... , n -1"/>. Note we drop the last data point. The maximum observation would correspond to the</p>
 </section>
 </section>
 <section id="relation-to-other-distributions">

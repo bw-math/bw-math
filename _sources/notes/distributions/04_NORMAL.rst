@@ -202,7 +202,51 @@ TODO
 QQ Plots
 --------
 
-TODO
+A common technique for assessing the *normality* of a sample distribution is to generate a *Quantile-Quantile Plot*, or *QQ Plot* for short. QQ plots provide a visual representation of a sample's *normality* by plotting the percentiles of a sample distribution against the percentiles of the theoretical Normal Distribution. 
+
+The exact steps for generating a QQ plot are given below,
+
+1. Find the :ref`order statistics <order_statistics>` of the distribution. In other words, sort the sample in *ascending* order.
+
+.. note::
+
+	Step 1 is equivalent to finding the :ref:`percentiles <percentile>` of the sample distribution.
+
+2. Standarize the sorted sample, i.e. find each observation's :ref:`z_score`.
+
+3. Find the theoretical percentiles from the Standard Normal Distribution for each ordered observation.
+
+4. Plot the actual percentiles versus the theoretical percentiles in the x-y plane.
+
+Consider the following simplified example. Let the sample :math:`S` be given by,
+
+.. math::
+
+	S = \{ 10, 15, 20, 30 \}	
+	
+The sample statistics for this distribution are given by,
+
+.. math::
+
+	\bar{x} = 18.75
+	
+.. math::
+
+	s \approx 8.54
+	
+Standardizing each observation and rounding to the second decimal spot,
+
+.. math::
+	
+	Z = \{ -1.02, -0.44, 0.15, 1.32 \}
+	
+Then, we construct the theoretical percentiles of the Standard Normal distribution for a sample of size :math:`n = 4`. To do so, we take the inverse CDF of the sample percentile,
+
+.. math::
+
+	\Phi^{-1}(\frac{i}/n)
+	
+For :math:`i = 1, 2, ... , n -1`. Note we drop the last data point. The maximum observation would correspond to the 
 
 Relation To Other Distributions
 ===============================
