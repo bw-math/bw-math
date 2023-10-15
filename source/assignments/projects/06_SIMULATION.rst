@@ -1,4 +1,4 @@
-.. _project_eleven:
+.. _project_six:
 
 ==========
 Simulation
@@ -9,16 +9,16 @@ Simulation
 Instructions
 ============
 
-1. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_eleven.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
+1. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_six.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
-4. Read the :ref:`project_eleven_background` section.
+4. Read the :ref:`project_six_background` section.
 5. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_three_loading_data` section.
-6. Perform all exercises and answer all questions in the :ref:`project_eleven_project` section. Label your script with comments as indicated in the instructions of each problem.
-7. When you are done, zip your script in a zip file named ``LASTNAME_FIRSTNAME_project_eleven.zip``
+6. Perform all exercises and answer all questions in the :ref:`project_six_project` section. Label your script with comments as indicated in the instructions of each problem.
+7. When you are done, zip your script in a zip file named ``LASTNAME_FIRSTNAME_project_six.zip``
 8. Upload the zip file to the Google Classroom Project Four Assignment.
 
 
-.. _project_eleven_background:
+.. _project_six_background:
 
 Background
 ==========
@@ -149,7 +149,7 @@ The key point is: we are *nesting* a list iteration within another list iteratio
         
 Note that in this example, since **A** is the set of pets and **B** is the set of owners, we can interpret :math:`A x B` as the set of all the possible :ref:`combinations` of pet owners. 
 
-.. _project_eleven_project:
+.. _project_six_project:
 
 Project
 =======
