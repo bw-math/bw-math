@@ -46,8 +46,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/projects/03_NORMALITY';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Scatter Plots and Correlation" href="04_CORRELATION.html" />
-    <link rel="prev" title="Histograms and Boxplots" href="02_HISTOGRAMS_BOXPLOTS.html" />
+    <link rel="next" title="Scatter Plots and Correlation" href="04_REGRESSION.html" />
+    <link rel="prev" title="Histograms and Boxplots" href="02_QUANTITATIVE.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -245,17 +245,15 @@
 </li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Projects</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="00_PYTHON.html">Python</a></li>
-<li class="toctree-l3"><a class="reference internal" href="01_BARCHARTS.html">Bar Charts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="02_HISTOGRAMS_BOXPLOTS.html">Histograms and Boxplots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_CATEGORICAL.html">Bar Charts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_QUANTITATIVE.html">Histograms and Boxplots</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Normality</a></li>
-<li class="toctree-l3"><a class="reference internal" href="04_CORRELATION.html">Scatter Plots and Correlation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="05_REGRESSION.html">Linear Regression</a></li>
-<li class="toctree-l3"><a class="reference internal" href="06_RESIDUALS.html">Residual Analysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="07_BIAS.html">Bias</a></li>
-<li class="toctree-l3"><a class="reference internal" href="08_SIMULATION.html">Simulation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="09_DENSITY.html">Probability Density</a></li>
-<li class="toctree-l3"><a class="reference internal" href="10_BINOMIAL.html">Binomial Distribution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="11_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_REGRESSION.html">Scatter Plots and Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_SIMULATION.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07_DENSITY.html">Probability Density</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
 </ul>
 </li>
 </ul>
@@ -529,7 +527,7 @@ document.write(`
 </section>
 <section id="loading-in-data">
 <span id="project-three-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
-<p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="02_HISTOGRAMS_BOXPLOTS.html#project-two-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
+<p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="02_QUANTITATIVE.html#project-two-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 
 <span class="c1"># read in data</span>
@@ -627,7 +625,7 @@ document.write(`
 </ol>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p>Use the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-quantiles"><span class="std std-ref">Quantiles</span></a> function from <a class="reference internal" href="02_HISTOGRAMS_BOXPLOTS.html#project-two"><span class="std std-ref">Histograms and Boxplots</span></a>!</p>
+<p>Use the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-quantiles"><span class="std std-ref">Quantiles</span></a> function from <a class="reference internal" href="02_QUANTITATIVE.html#project-two"><span class="std std-ref">Histograms and Boxplots</span></a>!</p>
 </div>
 <ol class="arabic simple" start="2">
 <li><p>Find the Z-score for each percentile found in the previous problem.</p></li>
@@ -650,7 +648,7 @@ document.write(`
 </ol>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p>Use the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-quantiles"><span class="std std-ref">Quantiles</span></a> function from <a class="reference internal" href="02_HISTOGRAMS_BOXPLOTS.html#project-two"><span class="std std-ref">Histograms and Boxplots</span></a>!</p>
+<p>Use the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-quantiles"><span class="std std-ref">Quantiles</span></a> function from <a class="reference internal" href="02_QUANTITATIVE.html#project-two"><span class="std std-ref">Histograms and Boxplots</span></a>!</p>
 </div>
 <ol class="arabic simple" start="2">
 <li><p>Find the Z-score for each percentile found in the previous problem.</p></li>
@@ -702,7 +700,7 @@ document.write(`
 <h3>Velocity of Light Data<a class="headerlink" href="#velocity-of-light-data" title="Permalink to this headline">#</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You may already have this dataset downloaded into your <em>Linux Files</em> directory from when we did <a class="reference internal" href="02_HISTOGRAMS_BOXPLOTS.html#project-two"><span class="std std-ref">Histograms and Boxplots</span></a>.</p>
+<p>You may already have this dataset downloaded into your <em>Linux Files</em> directory from when we did <a class="reference internal" href="02_QUANTITATIVE.html#project-two"><span class="std std-ref">Histograms and Boxplots</span></a>.</p>
 </div>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/5aa18cd2c2ca04b7636763fca781ca72/velocity_of_light_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
@@ -816,7 +814,7 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="02_HISTOGRAMS_BOXPLOTS.html"
+       href="02_QUANTITATIVE.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
@@ -825,7 +823,7 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="04_CORRELATION.html"
+       href="04_REGRESSION.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
