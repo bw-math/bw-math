@@ -1,8 +1,8 @@
 .. _project_four:
 
-=============================
-Scatter Plots and Correlation
-=============================
+=================
+Linear Regression
+=================
 
 	Mathematicians do not study objects, but relations among objects; they are indifferent to the replacement of objects by others as long as relations do not changbe. Matter is not imporant, only form interests them.
 	
@@ -145,6 +145,9 @@ TODO
 
 Celebrity Twitter
 -----------------
+
+Scatter Plot
+************
 
 1. Construct a scatter plot for this dataset using the **Tweet Count** as the *indicator* variable and the **Follower Count** as the *response* variable.
 

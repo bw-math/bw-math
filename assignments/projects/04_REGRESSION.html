@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Scatter Plots and Correlation &#8212; bishop-walsh-ap-stats  documentation</title>
+    <title>Linear Regression &#8212; bishop-walsh-ap-stats  documentation</title>
   
   
   
@@ -248,7 +248,7 @@
 <li class="toctree-l3"><a class="reference internal" href="01_CATEGORICAL.html">Bar Charts</a></li>
 <li class="toctree-l3"><a class="reference internal" href="02_QUANTITATIVE.html">Histograms and Boxplots</a></li>
 <li class="toctree-l3"><a class="reference internal" href="03_NORMALITY.html">Normality</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Scatter Plots and Correlation</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Linear Regression</a></li>
 <li class="toctree-l3"><a class="reference internal" href="05_BIAS.html">Bias</a></li>
 <li class="toctree-l3"><a class="reference internal" href="06_SIMULATION.html">Simulation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="07_DENSITY.html">Probability Density</a></li>
@@ -424,7 +424,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Scatter Plots and Correlation</h1>
+    <h1>Linear Regression</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -459,16 +459,17 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Celebrity Twitter</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Correlation</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Regression</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Residual Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Scatter Plot</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Correlation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Regression</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Residual Analysis</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sets">Data Sets</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Celebrity Twitter</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Old Faithful</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Celebrity Twitter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Old Faithful</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spice-girls-song-length">Spice Girls Song Length</a></li>
 </ul>
 </li>
@@ -483,8 +484,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="scatter-plots-and-correlation">
-<span id="project-four"></span><h1>Scatter Plots and Correlation<a class="headerlink" href="#scatter-plots-and-correlation" title="Permalink to this headline">#</a></h1>
+  <section id="linear-regression">
+<span id="project-four"></span><h1>Linear Regression<a class="headerlink" href="#linear-regression" title="Permalink to this headline">#</a></h1>
 <blockquote>
 <div><p>Mathematicians do not study objects, but relations among objects; they are indifferent to the replacement of objects by others as long as relations do not changbe. Matter is not imporant, only form interests them.</p>
 <ul class="simple">
@@ -604,33 +605,36 @@ document.write(`
 </section>
 <section id="id6">
 <h3>Celebrity Twitter<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
+<section id="id7">
+<h4>Scatter Plot<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h4>
 <ol class="arabic simple">
 <li><p>Construct a scatter plot for this dataset using the <strong>Tweet Count</strong> as the <em>indicator</em> variable and the <strong>Follower Count</strong> as the <em>response</em> variable.</p></li>
 <li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, describe the correlation in this dataset. Is it positive, negative or neutral? Is it linear or non-linear? Is it strong or weak?</p></li>
 <li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: Based on your answer to the previous question, would a linear regression model be a good fit for this dataset?</p></li>
 </ol>
-<section id="id7">
-<h4>Correlation<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
 </section>
 <section id="id8">
-<h4>Regression<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h4>
+<h4>Correlation<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="id9">
-<h4>Residual Analysis<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h4>
+<h4>Regression<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="id10">
+<h4>Residual Analysis<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h4>
 <p>TODO</p>
 </section>
 </section>
 </section>
 <section id="data-sets">
 <span id="project-four-dataset"></span><h2>Data Sets<a class="headerlink" href="#data-sets" title="Permalink to this headline">#</a></h2>
-<section id="id10">
-<h3>Celebrity Twitter<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h3>
+<section id="id11">
+<h3>Celebrity Twitter<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/2572aadc823c943b2c11cfa5442f0098/celebrity_twitter_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></p>
 <p>The following table is a preview of the data you will be using for this project.</p>
-<table class="table" id="id12">
-<caption><span class="caption-text">Celebrity Twitter Followers and Tweet Count</span><a class="headerlink" href="#id12" title="Permalink to this table">#</a></caption>
+<table class="table" id="id13">
+<caption><span class="caption-text">Celebrity Twitter Followers and Tweet Count</span><a class="headerlink" href="#id13" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 17%" />
 <col style="width: 17%" />
@@ -714,12 +718,12 @@ document.write(`
 </table>
 <p>The fifth column represents the number of followers for a given Twitter user. The sixth column represents the number of tweets for a given Twitter user.</p>
 </section>
-<section id="id11">
-<h3>Old Faithful<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h3>
+<section id="id12">
+<h3>Old Faithful<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/1b98a8ccfb60a79a975a96e2eca8a57a/old_faithful_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is a preview of the data you will be using for this project.</p>
-<table class="table" id="id13">
-<caption><span class="caption-text">Old Faithful Eruption and Waiting Times</span><a class="headerlink" href="#id13" title="Permalink to this table">#</a></caption>
+<table class="table" id="id14">
+<caption><span class="caption-text">Old Faithful Eruption and Waiting Times</span><a class="headerlink" href="#id14" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -862,16 +866,17 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Celebrity Twitter</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Correlation</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Regression</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Residual Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Scatter Plot</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Correlation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Regression</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Residual Analysis</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sets">Data Sets</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Celebrity Twitter</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Old Faithful</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Celebrity Twitter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Old Faithful</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spice-girls-song-length">Spice Girls Song Length</a></li>
 </ul>
 </li>
