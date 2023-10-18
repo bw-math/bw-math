@@ -31,6 +31,9 @@ Scientific
 - `Atmospheric Radiation <https://www.gmcmap.com/index.asp>`_
     - :download:`Raw Data CSV <./assets/datasets/geiger_counter_dc_data.csv>`
     - :download:`Frequency Distribution <./assets/datasets/geiger_freq_data.csv>`
+- `Bird Collisions <https://datadryad.org/stash/dataset/doi:10.5061/dryad.8rr0498>`
+    - :download:`Cleveland, OH Collisions <./assets/datasets/bird_collision_cleveland_data.csv>`
+    - :download:`Chicago, IL Collisions <./assets/datasets/bird_collision_chicago_data.csv>`
 - `Cicada Measurements <https://www.randomservices.org/random/data/Cicada.html>`_
     - :download:`Cicada Measurements <./assets/datasets/cicada_data.csv>`
 - `Polar Bear Measurements <https://arcticdata.io/catalog/view/doi:10.5065/D60V89XD>`_
@@ -81,8 +84,10 @@ Cultural
     - :download:`Pigeon Racing Times CSV <./assets/datasets/pigeon_racing_times_data.csv>`
 - `Marvel Movies <https://www.kaggle.com/datasets/joebeachcapital/marvel-movies>`_
     - :download:`Marvel Movies CSV <./assets/datasets/diamonds_data.csv>`
-- `Sega Games <https://www.kaggle.com/datasets/joebeachcapital/sega-games>`_
-	- :download:`Sega Games CSV <./assets/datasets/sega_games_data.csv>`
+- `Super Mario Kart Rainbow Road World Records <https://mkwrs.com/smk/display.php?track=Rainbow%20Road>`
+	- :download:`Rainbow Road CSV <./assets/datasets/rainbow_road_world_record_data.csv>`
+- `Spice Girls Songs <https://github.com/jacquietran/spice_girls_data/tree/main>`
+	- :download:`Song CSV <./assets/datasets/spice_girl_song_data.csv>`
 - `Wine Quality <http://www.vinhoverde.pt/en/>`_
 	- :download:`Red Wine Quality CSV <./assets/datasets/wine_red_quality_data.csv>`
 	- :download:`White Wine Quality CSV <./assets/datasets/wine_white_quality_data.csv>`
