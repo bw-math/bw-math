@@ -10,7 +10,7 @@ import matplotlib
 # If you want to run this script on your computer, comment out the following line 
 # with the "#" you see appended to each line of this comment:
 
-matplotlib.use('agg')
+matplotlib.use('tkagg')
 
 import matplotlib.pyplot as plt
 import math
@@ -34,38 +34,33 @@ def normal_density(x, mu = 0, sigma = 1):
 ##################################################################################
 
 # Create New Figures and Axes
-(fig, axs) = plt.subplots()
+(fig, axs) = plt.subplots(1, 3, sharey=True)
 
 # NOTE: 
 #   n is the number of points in the graph
 #   mu is the mean of the normal distribution
 #   sigma is the standard deviation of the normal distribution
-n = 100
-mu = 10
-sigma = 0.1
+n = 1000
 
-# NOTE: By the empirical rule, 99% of the data is within 3 standard deviations of the mean
-#   so go out four standard deviations on either side of the mean to get the interval,
-#
-#   [ mu - 4 * sigma, mu + 4 * sigma ]
-#
-#   The length of this interval is,
-#
-#   d = (mu + 4 * sigma) - (mu - 4 * sigma) = 8 * sigma
-graph_interval = 8 * sigma
-graph_step = graph_interval / n
-graph_start = mu - 4 * sigma
+mu = 10
+
+standard_deviations = [ 2, 5, 10 ]
+
+
+graph_start = 0
+graph_end = 20
+graph_step = (graph_end - graph_start) / n
+x_data = [ graph_start + i * graph_step for i in range(n) ]
+
+for index, sigma in enumerate(standard_deviations):
+    # Generate normal data    
+    y_data = [ normal_density(x, mu, sigma) for x in x_data ]
+    axs[index].plot(x_data, y_data)
+    axs[index].set_xlabel("x")
+    axs[index].set_ylabel("p(x)")
 
 # Label the graph appropriately
-plt.suptitle("Normal Distribution")
-plt.title(f"mu = {mu}, sigma = {sigma}")
-axs.set_xlabel("x")
-axs.set_ylabel("p(x)")
+plt.suptitle("Normal Distribution, mu = 10")
+plt.title(f"sigma = 2, 5, 10")
 
-# Generate normal data
-x_data = [ graph_start + i * graph_step for i in range(n) ]
-y_data = [ normal_density(x, mu, sigma) for x in x_data ]
-
-# Generate and output
-plt.plot(x_data, y_data)
 plt.show()

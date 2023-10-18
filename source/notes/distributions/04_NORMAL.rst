@@ -5,7 +5,7 @@ Normal Distribution
 ===================
 
 
-The **Normal Distribution** is the foundation of :ref:`inferential statistics <inferential_statistic>`. 
+The **Normal Distribution** is the foundation of :ref:`inferential statistics <inferential_statistic>`. The **Normal Distribution** represents the *ideal population* distribution for a sample that is approximately normal. 
 
 .. _normality:
 
@@ -59,25 +59,60 @@ A departure from normality can suggest several things:
 Normal Calculations
 -------------------
 
-TODO
+When we calculate Normal probabilities, we usually work with *z distributions*, where each observation :math:`x_i` has been converted into a :ref:`z_score` :math:`z_i`,
 
-.. plot:: assets/plots/distributions/normal/normal_distribution_01.py
+.. math::
 
-.. plot:: assets/plots/distributions/normal/normal_distribution_02.py
+	z_i = \frac{x_i - \mu}{\sigma}
+	
+The reason for this transformation is easily understood by recalling the :ref:`data transformation theorems <data_transformations>` that state the mean of a *z distribtion* will always be 0 and the standard deviation of a *z distribution* will always be 1. 
 
+If an observation :math:`\mathcal{X}` drawn from a population follows a Normal distribution with mean :math:`\mu` and standard deviation :math:`\sigma`, we write,
+
+.. math::
+
+	\mathcal{X} \sim \mathcal{N}(\mu, \sigma)
+	
+Then, the corresponding *z distribution* can be written,
+
+.. math::
+
+	\mathcal{Z} \sim \mathcal{N}(0, 1)
+	
+	
 .. _normal_cdf:
 
 Cumulative Distribution Function
 ********************************
 
-TODO
+The cumulative distribution function (CDF) for the Normal distribution is an extremely important function in mathematics. Symbolically, it is written,
+
+.. math::
+
+	\Phi(z) = P(\mathcal{Z} \leq z) = p
+	
+This function, recall, represents the area of the density curve below the point :math:`z`. In other words, This function tells us the *percentage* :math:`p` of the Standard Normal distribution that is less than or equal to the point :math:`z`. To put it yet another way, it tells us what percentage :math:`p` of the original Normal distribution is less than or equal to :math:`z` standard deviations away from the mean.
+
+Graphically, we can think of the Normal CDF at a point, :math:`\Phi(z)` as representing the shaded area to the left of :math:`z`. For example, the quantity :math:`\Phi(0.5)` can be visualized as the shaded region under the density curve,
+
+.. plot:: assets/plots/distributions/normal/normal_distribution_cdf.py
 
 .. _normal_inverse_cdf:
 
 Inverse Cumulative Distribution Function
 ****************************************
 
-TODO
+Every well-behaved function has an inverse. The CDF of the Normal Distribution is no different. The inverse CDF is denoted,
+
+.. math::
+
+	\Phi^{-1}(p) = z
+	
+The CDF tells us, given a value of :math:`z`, what percent of the distribution is below :math:`z`. The inverse CDF, on the other hand, tells us, given a value of :math:`p`, what observation :math:`z` corresponds to that percentile. It is the point :math:`z` on the Normal density curve such that the shaded area below :math:`z` is equal to :math:`p`.
+
+As an example, if we were interested in the 35 :sup:`th` percentile of the Standard Normal distribution, the inverse CDF would tell us the point :math:`z` such that 35% of the distribution is less than or equal to that point, i.e. the point where the area to the left of the :math:`z` is 35%.
+
+.. plot:: assets/plots/distributions/normal/normal_distribution_inverse.py
 
 .. _normal_symmetry:
 
@@ -182,7 +217,7 @@ Varying the Standard Deviation
 
 By changing the :ref:`standard_deviation`, the shape of the distribution changes. As the :ref:`standard_deviation` increase, the graph spreads out. This is because :ref:`standard_deviation` is a :ref:`measure of variation<measures_of_variation>`. In other words, :ref:`standard_deviation` quantifies how the distribution is spread out along the *x*-axis.
 
-.. plot:: assets/plots/distributions/normal/normal_distribution_03.py
+.. plot:: assets/plots/distributions/normal/normal_distribution_parameters.py
 
 To summarize,
 
