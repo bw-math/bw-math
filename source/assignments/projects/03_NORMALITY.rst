@@ -13,7 +13,7 @@ Normality
 Instructions
 ============
 
-1. Download **all three** *csv* datasets in the :ref:`project_three_dataset` section and place them in the ``Linux Files`` folder on your file system where you save your ``.py`` scripts.
+1. Download **both** *csv* datasets in the :ref:`project_three_dataset` section and place them in the ``Linux Files`` folder on your file system where you save your ``.py`` scripts.
 2. Create a Python ``.py`` script named ``NAME_project_three.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``NAME`` with your name.
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the :ref:`project_three_background` section.
@@ -67,7 +67,7 @@ The cumulative distribution function (CDF) for the Normal distribution is an ext
 
 .. math::
 
-	\Phi(z) = P(Z \leq z) = p
+	\Phi(z) = P(\mathcal{Z} \leq z) = p
 	
 This function, recall, represents the area of the density curve below the point :math:`z`. In other words, This function tells us the *percentage* :math:`p` of the Standard Normal distribution that is less than or equal to the point :math:`z`. To put it yet another way, it tells us what percentage :math:`p` of the original Normal distribution is less than or equal to :math:`z` standard deviations away from the mean.
 
@@ -146,7 +146,7 @@ For a more comprehensive explanation of ``NormalDist()`` from the ``statistics``
 Ideal Plots
 -----------
 
-The *ideal* distribution is another word the *population* distribution. The Normal ``object`` in **Python** has a function for calculating the density of the Normal curve at a point. This allows us to plot the *ideal* distribution over top of the sample distribution to see how they compare. 
+The *ideal* distribution is another word for the *population* distribution. The Normal ``object`` in **Python** has a function for calculating the density of the Normal curve at a point. This allows us to plot the *ideal* distribution over top of the sample distribution to see how they compare. 
 
 .. math::
 
@@ -220,6 +220,9 @@ In short, we need to perform the following operations,
 	s = stat.mean(data)
 	n = len(data)
 	
+	# sort data
+	z_actual.sort()
+	
 	# standardize
 	z_actual = [ (obs - xbar)/s for obs in data ]
 	z_theoretical = [ dist.inv_cdf((i+1)/(n+1)) for i in range(n)  ]
@@ -290,6 +293,10 @@ f. 1 :sup:`th` percentile
 
 	Use the :ref:`python_quantiles` function from :ref:`project_two`!
 
+.. hint:: 
+
+	In order to get the 97.5 :sup:`th` and the 2.5 :sup:`th` sample percentiles, you will need to use n = 200 in the ``quantiles`` function!
+	
 2. Find the Z-score for each percentile found in the previous problem.
 
 3. Create a Standard Normal Distribution ``object``. Use this object to find the theoretical percentile for each Z-score found in the previous problem.
@@ -311,6 +318,10 @@ f. 1 :sup:`th` percentile
 .. hint::
 
 	Use the :ref:`python_quantiles` function from :ref:`project_two`!
+
+.. hint:: 
+
+	In order to get the 97.5 :sup:`th` and the 2.5 :sup:`th` sample percentiles, you will need to use n = 200 in the ``quantiles`` function!
 
 2. Find the Z-score for each percentile found in the previous problem.
 
