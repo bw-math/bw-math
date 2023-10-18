@@ -79,7 +79,6 @@ Then, the corresponding *z distribution* can be written,
 
 	\mathcal{Z} \sim \mathcal{N}(0, 1)
 	
-	
 .. _normal_cdf:
 
 Cumulative Distribution Function
