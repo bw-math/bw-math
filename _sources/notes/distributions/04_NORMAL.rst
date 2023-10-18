@@ -244,9 +244,34 @@ Then, we construct the theoretical percentiles of the Standard Normal distributi
 
 .. math::
 
-	\Phi^{-1}(\frac{i}/n)
+	\Phi^{-1}(\frac{i}{n+1})
 	
-For :math:`i = 1, 2, ... , n -1`. Note we drop the last data point. The maximum observation would correspond to the 
+For :math:`i = 1, 2, ... , n `. Note the denominator of :math:`n+1`. If it is surprising the denominator is :math:`n+1` instead of `n`, read through the :ref:`order statistics section <order_statistics>`. There are *n* observations, but these values divide the number line into *n + 1* intervals.
+
+In this example, we would find,
+
+.. math:: 
+	
+	Z_{\text{theoretical}} = \{ \Phi^{-1}(\frac{1}{5}), \Phi^{-1}(\frac{2}{5}), \Phi^{-1}(\frac{3}{5}), \Phi^{-1}(\frac{4}{5) \}
+	
+.. math::
+
+	Z_{\text{theoretical}} = \{ -0.842, -0.253, 0.253, 0.842 }
+	
+After constructing the theoretical percentiles, we create a scatter plot using the order paired,
+
+	( actual percentile, theoretical percentiles )
+	
+If the sample distribution is Normal, we should observe a linear relationship between the x-value and the y-value of this scatter plot. The following plot is the QQ plot summarizes the normality of this example,
+
+.. plot:: assets/plots/distributions/other/qq_plot_simple.py
+
+We notice an approximately linear relationship between the observed percentiles and the theoretical percentile, and thus we conclude there is no evidence to suggest the distribution is not normal.
+
+.. important::
+
+	The phrasing here is important! We have **not** shown the distribution is Normal. We have only provided evidence to contradict the claim the distribution is **not** Normal. In other words, we have demonstrated the falsity of a negative claim; we have not demonstrated the truth of a postive claim.
+
 
 Relation To Other Distributions
 ===============================

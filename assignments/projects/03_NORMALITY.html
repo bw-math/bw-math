@@ -436,7 +436,11 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-distribution">Normal Distribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-distribution">Normal Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cumulative-distribution-function">Cumulative Distribution Function</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#inverse-cumulative-distribution-function">Inverse Cumulative Distribution Function</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
@@ -492,7 +496,7 @@ document.write(`
 <section id="instructions">
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><p>Download <strong>all three</strong> <em>csv</em> datasets in the <a class="reference internal" href="#project-three-dataset"><span class="std std-ref">Datasets</span></a> section and place them in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system where you save your <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts.</p></li>
+<li><p>Download <strong>both</strong> <em>csv</em> datasets in the <a class="reference internal" href="#project-three-dataset"><span class="std std-ref">Datasets</span></a> section and place them in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system where you save your <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts.</p></li>
 <li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">NAME_project_three.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">NAME</span></code> with your name.</p></li>
 <li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-three-background"><span class="std std-ref">Background</span></a> section.</p></li>
@@ -520,10 +524,27 @@ document.write(`
 <p>A Normal Distribution is <em>parameterized</em> by its mean, <img class="math" src="../../_images/math/18b19e5f315a11447a2f609580b5706d0feb0e26.png" alt="\mu"/>, and its standard deviation, <img class="math" src="../../_images/math/3c6db7079834573bbfc4f914a807e23ebd2079f2.png" alt="\sigma"/>. If a single observation is being drawn from this Normal Distribution, we write,</p>
 <div class="math">
 <p><img src="../../_images/math/405870b29dbba679c3670e702055c7a30f2056b7.png" alt="\mathcal{X} \sim \mathcal{N}(\mu, \sigma)"/></p>
-</div><p>Recall a sample of data can be <a class="reference internal" href="../../notes/statistics/02_DESCRIPTIVE_STATISTICS.html#data-transformations"><span class="std std-ref">transformed</span></a> by applying algebraic operations to each observations. For instance, we can <a class="reference internal" href="../../notes/statistics/02_DESCRIPTIVE_STATISTICS.html#z-score"><span class="std std-ref">standardize</span></a> each observation <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> into a <em>z-score</em> by subtracting the mean of the distribution and dividing by the standard deviation of the distribution,</p>
+</div><p>Recall a sample of data can be <a class="reference internal" href="../../notes/statistics/02_DESCRIPTIVE_STATISTICS.html#data-transformations"><span class="std std-ref">transformed</span></a> by applying algebraic operations to each observation. For instance, we can <a class="reference internal" href="../../notes/statistics/02_DESCRIPTIVE_STATISTICS.html#z-score"><span class="std std-ref">standardize</span></a> each observation <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> into a <em>z-score</em> by subtracting the mean of the distribution and dividing by the standard deviation of the distribution,</p>
 <div class="math">
 <p><img src="../../_images/math/461a58be4d757adade31c4e91da02cdb11a53a03.png" alt="\mathcal{Z} = \frac{\mathcal{X} - \mu}{\sigma}"/></p>
-</div></section>
+</div><p>This is a special distribution, as we have seen. Any distribution that has this type of transformation applied to it will have a mean of 0 and a standard deviation of 1. In symbols, we write,</p>
+<div class="math">
+<p><img src="../../_images/math/22eda12b5ac2abfe54aa4637c28615784a9ca62d.png" alt="\mathcal{Z} \sim \mathcal{N}(0, 1)"/></p>
+</div><section id="cumulative-distribution-function">
+<h4>Cumulative Distribution Function<a class="headerlink" href="#cumulative-distribution-function" title="Permalink to this headline">#</a></h4>
+<p>The cumulative distribution function (CDF) for the Normal distribution is an extremely important function in mathematics. Symbolically, it is written,</p>
+<div class="math">
+<p><img src="../../_images/math/b59e0fa425f21cdfcff06dbf6797308c416177c0.png" alt="\Phi(z) = P(\mathcal{Z} \leq z) = p"/></p>
+</div><p>This function, recall, represents the area of the density curve below the point <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/>. In other words, This function tells us the <em>percentage</em> <img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/> of the Standard Normal distribution that is less than or equal to the point <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/>. To put it yet another way, it tells us what percentage <img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/> of the original Normal distribution is less than or equal to <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/> standard deviations away from the mean.</p>
+</section>
+<section id="inverse-cumulative-distribution-function">
+<h4>Inverse Cumulative Distribution Function<a class="headerlink" href="#inverse-cumulative-distribution-function" title="Permalink to this headline">#</a></h4>
+<p>Every well-behaved function has an inverse. The CDF of the Normal Distribution is no different. The inverse CDF is denoted,</p>
+<div class="math">
+<p><img src="../../_images/math/4abed2f7b1ac148ea8365881bca883dc03037359.png" alt="\Phi^{-1}(p) = z"/></p>
+</div><p>The CDF tells us, given a value of <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/>, what percent of the distribution is below <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/>. The inverse CDF, on the other hand, tells us, given a value of <img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/>, what observation <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/> corresponds to that percentile. It is the point <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/> on the Normal density curve such that the shaded area below <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/> is equal to <img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/>.</p>
+</section>
+</section>
 </section>
 <section id="loading-in-data">
 <span id="project-three-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
@@ -575,10 +596,285 @@ document.write(`
 <p>For a more comprehensive explanation of <code class="docutils literal notranslate"><span class="pre">NormalDist()</span></code> from the <code class="docutils literal notranslate"><span class="pre">statistics</span></code> package and its various uses, refer to the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-normal-distribution"><span class="std std-ref">Python Normal Distribution page</span></a>.</p>
 <section id="project-three-ideal-plots">
 <span id="ideal-plots"></span><h3>Ideal Plots<a class="headerlink" href="#project-three-ideal-plots" title="Permalink to this headline">#</a></h3>
+<p>The <em>ideal</em> distribution is another word for the <em>population</em> distribution. The Normal <code class="docutils literal notranslate"><span class="pre">object</span></code> in <strong>Python</strong> has a function for calculating the density of the Normal curve at a point. This allows us to plot the <em>ideal</em> distribution over top of the sample distribution to see how they compare.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">import random
+import statistics as stat
+import matplotlib.pyplot as mpl
+
+data = [ 1, 1, 2, 2, 2, 2, 3, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8 ]
+# manually define bins
+bins = [ 1, 3, 6, 9 ]
+(fig, axes) = mpl.subplots()
+
+# calculate sample stats
+xbar = stat.mean(data)
+s = stat.mean(data)
+n = len(data)
+
+# create ideal (population) distribution
+dist = stat.NormalDist(xbar, s)
+
+# find actual density
+density = [ dist.pdf(b) for b in bins ]
+
+# plot actual histogram
+axes.hist(data, bins=bins, density=True, color=&quot;lightblue&quot;, ec=&quot;red&quot;)
+
+# plot density curve on top
+axes.plot(bins, density)
+
+# show
+mpl.show()</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! You can't use `macro parameter character #' in math mode.
+&lt;argument&gt; ...3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8 ] ##
+                                                   manually define bins bins...
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;argument&gt; ...3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8 ] ##
+                                                   manually define bins bins...
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+
+Overfull \hbox (185.89359pt too wide) detected at line 37
+[]
+[1] (./math.aux) )
+(see the transcript file for additional information)
+Output written on math.dvi (1 page, 1204 bytes).
+Transcript written on math.log.
+</p>
+</div>
+<p>This gives us a way of seeing how well the Normal density curve fits the data. This can be useful for <em>assessing</em> the normality of a distribution. However, a more foolproof method of checking the normality of a sample is given in the next section.</p>
 </section>
 <section id="qq-plots">
 <span id="project-three-qq-plots"></span><h3>QQ Plots<a class="headerlink" href="#qq-plots" title="Permalink to this headline">#</a></h3>
-<p>TODO</p>
+<p>A common technique for assessing the <em>normality</em> of a sample distribution is to generate a <em>Quantile-Quantile Plot</em>, or <em>QQ Plot</em> for short. QQ plots provide a visual representation of a sample’s <em>normality</em> by plotting the percentiles of a sample distribution against the percentiles of the theoretical Normal Distribution.</p>
+<p>The exact steps for generating a QQ plot are given below,</p>
+<ol class="arabic simple">
+<li><p>Find the :ref`order statistics &lt;order_statistics&gt;` of the distribution. In other words, sort the sample in <em>ascending</em> order.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Step 1 is equivalent to finding the <a class="reference internal" href="../../notes/statistics/02_DESCRIPTIVE_STATISTICS.html#percentile"><span class="std std-ref">percentiles</span></a> of the sample distribution.</p>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Standarize the sorted sample, i.e. find each observation’s <a class="reference internal" href="../../notes/statistics/02_DESCRIPTIVE_STATISTICS.html#z-score"><span class="std std-ref">Z Score</span></a>.</p></li>
+<li><p>Find the theoretical percentiles from the Standard Normal Distribution for each ordered observation.</p></li>
+<li><p>Plot the actual percentiles versus the theoretical percentiles in the x-y plane.</p></li>
+</ol>
+<p>Read through the <a class="reference internal" href="../../notes/distributions/04_NORMAL.html#qq-plots"><span class="std std-ref">QQ plots</span></a> section for a more detailed explanation and an accompanying explanation.</p>
+<p>In short, we need to perform the following operations,</p>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">import statistics as stat
+import matplotlib.pyplot as plot
+
+data = [ 5, 10, 7, 1, 6, 9 ]
+dist = stat.NormalDist(0, 1)
+(fig, axes) = plot.subplots()
+
+# calculate sample stats
+xbar = stat.mean(data)
+s = stat.mean(data)
+n = len(data)
+
+# sort data
+z_actual.sort()
+
+# standardize
+z_actual = [ (obs - xbar)/s for obs in data ]
+z_theoretical = [ dist.inv_cdf((i+1)/(n+1)) for i in range(n)  ]
+
+# plot
+axes.scatter( z_actual, z_theoretical )
+
+# label
+axes.set_xlabel(&quot;Ranked Z-Scores&quot;)
+axes.set_ylabel(&quot;Theoretical Z-Scores&quot;)
+
+# show
+plot.show()</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+! You can't use `macro parameter character #' in math mode.
+&lt;recently read&gt; ##
+                  
+l.37 \end{aligned}\end{align*}
+                              
+
+Overfull \hbox (177.84296pt too wide) detected at line 37
+[]
+[1] (./math.aux) )
+(see the transcript file for additional information)
+Output written on math.dvi (1 page, 1308 bytes).
+Transcript written on math.log.
+</p>
+</div>
 </section>
 </section>
 <section id="project">
@@ -603,9 +899,9 @@ document.write(`
 <li><p><img class="math" src="../../_images/math/58d35d4c9aa904d2ea37fe9efd0b39fdc8d43599.png" alt="P(X \leq 65)"/></p></li>
 <li><p><img class="math" src="../../_images/math/110c14a1bcc4a0c2a2ff3a98456db7df0560c5b9.png" alt="P(X \geq 45)"/></p></li>
 <li><p><img class="math" src="../../_images/math/df68a9c5383788abc6f8091a0daf6fdab73ca773.png" alt="P(38 \leq X \leq 62)"/></p></li>
-<li><p><img class="math" src="../../_images/math/4515978729742f202f1eb530ea4345e4bb7289b6.png" alt="P(Z \leq Z_{\pi}) = 0.975"/></p></li>
-<li><p><img class="math" src="../../_images/math/a9421b3b88ba68b781986d5381907c1e1544ddb1.png" alt="P(Z \geq Z_{\pi}) = 0.025"/></p></li>
-<li><p><img class="math" src="../../_images/math/0792db5dae8d89283d571f03e9198f3082f6fe9b.png" alt="P(Z_{\pi^1} \leq Z \leq Z_{\pi^2}) = 0.50"/></p></li>
+<li><p><img class="math" src="../../_images/math/f704cec06a928de8ca6e4317ad3c43459017798c.png" alt="P(Z \leq X_{\pi}) = 0.975"/></p></li>
+<li><p><img class="math" src="../../_images/math/9fb97e187b557a62c1087c0b966b800e408edd5f.png" alt="P(Z \geq X_{\pi}) = 0.025"/></p></li>
+<li><p><img class="math" src="../../_images/math/d0327cc0fe59488faf9f19f382a9d6024eb4995e.png" alt="P(X_{\pi^1} \leq X \leq X_{\pi^2}) = 0.50"/></p></li>
 </ol>
 </section>
 <section id="measuring-normality">
@@ -613,7 +909,7 @@ document.write(`
 <section id="velocity-of-light">
 <h4>Velocity of Light<a class="headerlink" href="#velocity-of-light" title="Permalink to this headline">#</a></h4>
 <ol class="arabic simple">
-<li><p>Find the following percentiles in Michelson’s Velocity of Light distribution.</p></li>
+<li><p>Find the following sample percentiles in Michelson’s Velocity of Light sample distribution.</p></li>
 </ol>
 <ol class="loweralpha simple">
 <li><p>99 <sup>th</sup> percentile</p></li>
@@ -627,6 +923,10 @@ document.write(`
 <p class="admonition-title">Hint</p>
 <p>Use the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-quantiles"><span class="std std-ref">Quantiles</span></a> function from <a class="reference internal" href="02_QUANTITATIVE.html#project-two"><span class="std std-ref">Histograms and Boxplots</span></a>!</p>
 </div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>In order to get the 97.5 <sup>th</sup> and the 2.5 <sup>th</sup> sample percentiles, you will need to use n = 200 in the <code class="docutils literal notranslate"><span class="pre">quantiles</span></code> function!</p>
+</div>
 <ol class="arabic simple" start="2">
 <li><p>Find the Z-score for each percentile found in the previous problem.</p></li>
 <li><p>Create a Standard Normal Distribution <code class="docutils literal notranslate"><span class="pre">object</span></code>. Use this object to find the theoretical percentile for each Z-score found in the previous problem.</p></li>
@@ -636,7 +936,7 @@ document.write(`
 <section id="old-faithful">
 <h4>Old Faithful<a class="headerlink" href="#old-faithful" title="Permalink to this headline">#</a></h4>
 <ol class="arabic simple">
-<li><p>Find the following percentiles in the Old Faithful eruption duration distribution.</p></li>
+<li><p>Find the following sample percentiles in the Old Faithful eruption duration sample distribution.</p></li>
 </ol>
 <ol class="loweralpha simple">
 <li><p>99 <sup>th</sup> percentile</p></li>
@@ -649,6 +949,10 @@ document.write(`
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>Use the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-quantiles"><span class="std std-ref">Quantiles</span></a> function from <a class="reference internal" href="02_QUANTITATIVE.html#project-two"><span class="std std-ref">Histograms and Boxplots</span></a>!</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>In order to get the 97.5 <sup>th</sup> and the 2.5 <sup>th</sup> sample percentiles, you will need to use n = 200 in the <code class="docutils literal notranslate"><span class="pre">quantiles</span></code> function!</p>
 </div>
 <ol class="arabic simple" start="2">
 <li><p>Find the Z-score for each percentile found in the previous problem.</p></li>
@@ -851,7 +1155,11 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-distribution">Normal Distribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-distribution">Normal Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cumulative-distribution-function">Cumulative Distribution Function</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#inverse-cumulative-distribution-function">Inverse Cumulative Distribution Function</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>

@@ -13,7 +13,7 @@ Normality
 Instructions
 ============
 
-1. Download **all three** *csv* datasets in the :ref:`project_three_dataset` section and place them in the ``Linux Files`` folder on your file system where you save your ``.py`` scripts.
+1. Download **both** *csv* datasets in the :ref:`project_three_dataset` section and place them in the ``Linux Files`` folder on your file system where you save your ``.py`` scripts.
 2. Create a Python ``.py`` script named ``NAME_project_three.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``NAME`` with your name.
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the :ref:`project_three_background` section.
@@ -48,12 +48,39 @@ A Normal Distribution is *parameterized* by its mean, :math:`\mu`, and its stand
 
 	\mathcal{X} \sim \mathcal{N}(\mu, \sigma)
 
-Recall a sample of data can be :ref:`transformed <data_transformations>` by applying algebraic operations to each observations. For instance, we can :ref:`standardize <z_score>` each observation :math:`x_i` into a *z-score* by subtracting the mean of the distribution and dividing by the standard deviation of the distribution,
+Recall a sample of data can be :ref:`transformed <data_transformations>` by applying algebraic operations to each observation. For instance, we can :ref:`standardize <z_score>` each observation :math:`x_i` into a *z-score* by subtracting the mean of the distribution and dividing by the standard deviation of the distribution,
 
 .. math::
 
 	\mathcal{Z} = \frac{\mathcal{X} - \mu}{\sigma}
 
+This is a special distribution, as we have seen. Any distribution that has this type of transformation applied to it will have a mean of 0 and a standard deviation of 1. In symbols, we write,
+
+.. math::
+
+	\mathcal{Z} \sim \mathcal{N}(0, 1)
+	
+Cumulative Distribution Function
+********************************
+
+The cumulative distribution function (CDF) for the Normal distribution is an extremely important function in mathematics. Symbolically, it is written,
+
+.. math::
+
+	\Phi(z) = P(\mathcal{Z} \leq z) = p
+	
+This function, recall, represents the area of the density curve below the point :math:`z`. In other words, This function tells us the *percentage* :math:`p` of the Standard Normal distribution that is less than or equal to the point :math:`z`. To put it yet another way, it tells us what percentage :math:`p` of the original Normal distribution is less than or equal to :math:`z` standard deviations away from the mean.
+
+Inverse Cumulative Distribution Function
+****************************************
+
+Every well-behaved function has an inverse. The CDF of the Normal Distribution is no different. The inverse CDF is denoted,
+
+.. math::
+
+	\Phi^{-1}(p) = z
+	
+The CDF tells us, given a value of :math:`z`, what percent of the distribution is below :math:`z`. The inverse CDF, on the other hand, tells us, given a value of :math:`p`, what observation :math:`z` corresponds to that percentile. It is the point :math:`z` on the Normal density curve such that the shaded area below :math:`z` is equal to :math:`p`.
 
 .. _project_three_loading_data:
 
@@ -119,15 +146,97 @@ For a more comprehensive explanation of ``NormalDist()`` from the ``statistics``
 Ideal Plots
 -----------
 
+The *ideal* distribution is another word for the *population* distribution. The Normal ``object`` in **Python** has a function for calculating the density of the Normal curve at a point. This allows us to plot the *ideal* distribution over top of the sample distribution to see how they compare. 
 
+.. math::
+
+	import random
+	import statistics as stat
+	import matplotlib.pyplot as mpl
+	
+	data = [ 1, 1, 2, 2, 2, 2, 3, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8 ]
+	# manually define bins
+	bins = [ 1, 3, 6, 9 ]
+	(fig, axes) = mpl.subplots()
+	
+	# calculate sample stats
+	xbar = stat.mean(data)
+	s = stat.mean(data)
+	n = len(data)
+	
+	# create ideal (population) distribution
+	dist = stat.NormalDist(xbar, s)
+	
+	# find actual density
+	density = [ dist.pdf(b) for b in bins ]
+	
+	# plot actual histogram
+	axes.hist(data, bins=bins, density=True, color="lightblue", ec="red")
+
+	# plot density curve on top
+	axes.plot(bins, density) 
+	
+	# show
+	mpl.show()
+	
+This gives us a way of seeing how well the Normal density curve fits the data. This can be useful for *assessing* the normality of a distribution. However, a more foolproof method of checking the normality of a sample is given in the next section.
 
 .. _project_three_qq_plots:
 
 QQ Plots
 --------
 
+A common technique for assessing the *normality* of a sample distribution is to generate a *Quantile-Quantile Plot*, or *QQ Plot* for short. QQ plots provide a visual representation of a sample's *normality* by plotting the percentiles of a sample distribution against the percentiles of the theoretical Normal Distribution. 
 
-TODO
+The exact steps for generating a QQ plot are given below,
+
+1. Find the :ref`order statistics <order_statistics>` of the distribution. In other words, sort the sample in *ascending* order.
+
+.. note::
+
+	Step 1 is equivalent to finding the :ref:`percentiles <percentile>` of the sample distribution.
+
+2. Standarize the sorted sample, i.e. find each observation's :ref:`z_score`.
+
+3. Find the theoretical percentiles from the Standard Normal Distribution for each ordered observation.
+
+4. Plot the actual percentiles versus the theoretical percentiles in the x-y plane.
+
+Read through the :ref:`QQ plots <qq_plots>` section for a more detailed explanation and an accompanying explanation.
+
+In short, we need to perform the following operations,
+
+.. math::
+
+	import statistics as stat
+	import matplotlib.pyplot as plot
+	
+	data = [ 5, 10, 7, 1, 6, 9 ]
+	dist = stat.NormalDist(0, 1)
+	(fig, axes) = plot.subplots()
+	
+	# calculate sample stats
+	xbar = stat.mean(data)
+	s = stat.mean(data)
+	n = len(data)
+	
+	# sort data
+	z_actual.sort()
+	
+	# standardize
+	z_actual = [ (obs - xbar)/s for obs in data ]
+	z_theoretical = [ dist.inv_cdf((i+1)/(n+1)) for i in range(n)  ]
+	
+	# plot
+	axes.scatter( z_actual, z_theoretical )
+	
+	# label
+	axes.set_xlabel("Ranked Z-Scores")
+	axes.set_ylabel("Theoretical Z-Scores")
+	
+	# show
+	plot.show()
+	
 
 .. _project_three_project:
 
@@ -159,11 +268,11 @@ b. :math:`P(X \geq 45)`
 
 c. :math:`P(38 \leq X \leq 62)`
 
-d. :math:`P(Z \leq Z_{\pi}) = 0.975`
+d. :math:`P(Z \leq X_{\pi}) = 0.975`
 
-e. :math:`P(Z \geq Z_{\pi}) = 0.025`
+e. :math:`P(Z \geq X_{\pi}) = 0.025`
 
-f. :math:`P(Z_{\pi^1} \leq Z \leq Z_{\pi^2}) = 0.50`
+f. :math:`P(X_{\pi^1} \leq X \leq X_{\pi^2}) = 0.50`
 
 Measuring Normality
 -------------------
@@ -171,7 +280,7 @@ Measuring Normality
 Velocity of Light
 *****************
 
-1. Find the following percentiles in Michelson's Velocity of Light distribution.
+1. Find the following sample percentiles in Michelson's Velocity of Light sample distribution.
 
 a. 99 :sup:`th` percentile
 b. 97.5 :sup:`th` percentile
@@ -184,6 +293,10 @@ f. 1 :sup:`th` percentile
 
 	Use the :ref:`python_quantiles` function from :ref:`project_two`!
 
+.. hint:: 
+
+	In order to get the 97.5 :sup:`th` and the 2.5 :sup:`th` sample percentiles, you will need to use n = 200 in the ``quantiles`` function!
+	
 2. Find the Z-score for each percentile found in the previous problem.
 
 3. Create a Standard Normal Distribution ``object``. Use this object to find the theoretical percentile for each Z-score found in the previous problem.
@@ -193,7 +306,7 @@ f. 1 :sup:`th` percentile
 Old Faithful
 ************
 
-1. Find the following percentiles in the Old Faithful eruption duration distribution.
+1. Find the following sample percentiles in the Old Faithful eruption duration sample distribution.
 
 a. 99 :sup:`th` percentile
 b. 97.5 :sup:`th` percentile
@@ -205,6 +318,10 @@ f. 1 :sup:`th` percentile
 .. hint::
 
 	Use the :ref:`python_quantiles` function from :ref:`project_two`!
+
+.. hint:: 
+
+	In order to get the 97.5 :sup:`th` and the 2.5 :sup:`th` sample percentiles, you will need to use n = 200 in the ``quantiles`` function!
 
 2. Find the Z-score for each percentile found in the previous problem.
 

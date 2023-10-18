@@ -630,8 +630,180 @@ document.write(`
 <p><img src="../../_images/math/caa908fa9baa6a7fd2a1a27450380f9a021e835f.png" alt="Z = \{ -1.02, -0.44, 0.15, 1.32 \}"/></p>
 </div><p>Then, we construct the theoretical percentiles of the Standard Normal distribution for a sample of size <img class="math" src="../../_images/math/3c11a2cfe6a421231b6c392290b07d68a6c08dbc.png" alt="n = 4"/>. To do so, we take the inverse CDF of the sample percentile,</p>
 <div class="math">
-<p><img src="../../_images/math/001f8f5e4028015c2118efea208f5f4cf9ed8114.png" alt="\Phi^{-1}(\frac{i}/n)"/></p>
-</div><p>For <img class="math" src="../../_images/math/03f38a8c8d48a90e41e923a3929b4ba43bcccacb.png" alt="i = 1, 2, ... , n -1"/>. Note we drop the last data point. The maximum observation would correspond to the</p>
+<p><img src="../../_images/math/a8984bd885ec3a035a10d3489698957cca5aa1fb.png" alt="\Phi^{-1}(\frac{i}{n+1})"/></p>
+</div><p>For <img class="math" src="../../_images/math/ca9f4615f9bf38f29bde55132f27ea64cded5f2a.png" alt="i = 1, 2, ... , n"/>. If it is surprising the denominator is <img class="math" src="../../_images/math/3257ff5f24446ed5552c93f0804681a7ec8d3920.png" alt="n+1"/> instead of <cite>n</cite>, read through the <a class="reference internal" href="../statistics/02_DESCRIPTIVE_STATISTICS.html#id22"><span class="std std-ref">order statistics section</span></a>. There are <em>n</em> observations, but these values divide the number line into <em>n + 1</em> intervals.</p>
+<p>In this example, we would find,</p>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">Z_{\text{theoretical}} = \{ \Phi^{-1}(\frac{1}{5}), \Phi^{-1}(\frac{2}{5}), \Phi^{-1}(\frac{3}{5}), \Phi^{-1}(\frac{4}{5) \}</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd))
+Runaway argument?
+Z_{\text {theoretical}} = \{ \Phi ^{-1}(\frac {1}{5}), \Phi ^{-1}(\frac \ETC.
+! File ended while scanning use of \split.
+&lt;inserted text&gt; 
+                \par 
+&lt;*&gt; math.tex
+            
+! Emergency stop.
+&lt;*&gt; math.tex
+            
+No pages of output.
+Transcript written on math.log.
+</p>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">Z_{\text{theoretical}} = \{ -0.842, -0.253, 0.253, 0.842 }</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Argument of \split has an extra }.
+&lt;inserted text&gt; 
+                \par 
+l.16 ...ical}} = \{ -0.842, -0.253, 0.253, 0.842 }
+                                                  \end{split}
+Runaway argument?
+Z_{\text {theoretical}} = \{ -0.842, -0.253, 0.253, 0.842 
+! Paragraph ended before \split was complete.
+&lt;to be read again&gt; 
+                   \par 
+l.16 ...ical}} = \{ -0.842, -0.253, 0.253, 0.842 }
+                                                  \end{split}
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...ical}} = \{ -0.842, -0.253, 0.253, 0.842 }
+                                                  \end{split}
+! Missing \endgroup inserted.
+&lt;inserted text&gt; 
+                \endgroup 
+l.16 ...ical}} = \{ -0.842, -0.253, 0.253, 0.842 }
+                                                  \end{split}
+! Missing \endgroup inserted.
+&lt;inserted text&gt; 
+                \endgroup 
+l.16 ...ical}} = \{ -0.842, -0.253, 0.253, 0.842 }
+                                                  \end{split}
+! Display math should end with $$.
+&lt;to be read again&gt; 
+                   \tex_par:D 
+l.16 ...ical}} = \{ -0.842, -0.253, 0.253, 0.842 }
+                                                  \end{split}
+! Extra }, or forgotten \endgroup.
+&lt;recently read&gt; }
+                 
+l.16 ...ical}} = \{ -0.842, -0.253, 0.253, 0.842 }
+                                                  \end{split}
+! Misplaced \crcr.
+\endsplit -&gt;\crcr 
+                  \egroup \egroup \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ... -0.842, -0.253, 0.253, 0.842 }\end{split}
+                                                  
+! Extra }, or forgotten \endgroup.
+\endsplit -&gt;\crcr \egroup 
+                          \egroup \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ... -0.842, -0.253, 0.253, 0.842 }\end{split}
+                                                  
+! Extra }, or forgotten \endgroup.
+\endsplit -&gt;\crcr \egroup \egroup 
+                                  \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ... -0.842, -0.253, 0.253, 0.842 }\end{split}
+                                                  
+
+! LaTeX Error: \begin{equation*} on input line 15 ended by \end{split}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H &lt;return&gt;  for immediate help.
+ ...                                              
+                                                  
+l.16 ... -0.842, -0.253, 0.253, 0.842 }\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ... -0.842, -0.253, 0.253, 0.842 }\end{split}
+                                                  
+
+! LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H &lt;return&gt;  for immediate help.
+ ...                                              
+                                                  
+l.17 \end{equation*}
+                    
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.17 \end{equation*}
+                    
+! Extra \endgroup.
+&lt;recently read&gt; \endgroup 
+                          
+l.17 \end{equation*}
+                    
+[1] (./math.aux) )
+(see the transcript file for additional information)
+Output written on math.dvi (1 page, 192 bytes).
+Transcript written on math.log.
+</p>
+</div>
+<p>After constructing the theoretical percentiles, we create a scatter plot using the order paired,</p>
+<blockquote>
+<div><p>( actual percentile, theoretical percentiles )</p>
+</div></blockquote>
+<p>If the sample distribution is Normal, we should observe a linear relationship between the x-value and the y-value of this scatter plot. The following plot is the QQ plot summarizes the normality of this example,</p>
+<p>We notice an approximately linear relationship between the observed percentiles and the theoretical percentile, and thus we conclude there is no evidence to suggest the distribution is not normal.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The phrasing here is important! We have <strong>not</strong> shown the distribution is Normal. We have only provided evidence to contradict the claim the distribution is <strong>not</strong> Normal. In other words, we have demonstrated the falsity of a negative claim; we have not demonstrated the truth of a postive claim.</p>
+</div>
 </section>
 </section>
 <section id="relation-to-other-distributions">
