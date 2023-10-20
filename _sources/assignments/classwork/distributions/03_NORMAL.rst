@@ -6,23 +6,23 @@ Normal Distribution
 
 1. Sketch a Standard Normal distribution in the x-y plane. Shade in the areas indicated in the problems below. Label the axes. Label each area with the percentage of the distribution that corresponds to the shaded region. Use a :ref:`z_table` to find the exact percentage.
 
-	a. :math:`P(Z \leq -1.62)`
+	a. :math:`P( \mathcal{Z} \leq -1.62)`
 
-	b. :math:`P(Z \geq 1.62)`
+	b. :math:`P( \mathcal{Z} \geq 1.62)`
 
-	c. :math:`P(Z \leq -1.96)`
+	c. :math:`P( \mathcal{Z} \leq -1.96)`
 
-	d. :math:`P(Z \geq 1.96)`
+	d. :math:`P( \mathcal{Z} \geq 1.96)`
 
 	e. What is the relationship between parts *a* and *b*, and parts *c* and *d*? What characteristic of the Standard Normal distribution is being shown here? 
 
 2. Sketch a Standard Normal distribution in the x-y plane. Shade in the areas indicated in the problems below. Label the axes. Label each area with the percentage of the distribution that corresponds to the shaded region. Use a :ref:`z_table` to find the exact percentage.
 
-	a. :math:`P(-1.5 \leq Z \leq 1.5)`
+	a. :math:`P(-1.5 \leq \mathcal{Z} \leq 1.5)`
 
-	b. :math:`P(-1.5 \leq Z \leq 0)`
+	b. :math:`P(-1.5 \leq \mathcal{Z} \leq 0)`
 
-	c. :math:`P(0 \leq Z \leq 1.5)`
+	c. :math:`P(0 \leq \mathcal{Z} \leq 1.5)`
 
 	d. What is the relationship between parts *a*, *b* and *c*? Explain the result graphically. 
 
