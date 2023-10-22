@@ -44,7 +44,7 @@ c. Find the value of :math:`x` where :math:`\frac{d}{dx}(\rho (x) ) = 0`
 
 d. Find the **values** of :math:`x` where :math:`\frac{d^2}{{dx}^2}(\rho (x)) = 0`
 
-e. Suppose :math:`\mu=10` and :math:`\sigma=2`. Use a graphing utility (`Desmos is good for this <https://desmos.com>`) to plot the Normal density function. Draw vertical lines at the values of :math:`x` found in *part c* and *part d*. 
+e. Suppose :math:`\mu=10` and :math:`\sigma=2`. Use a graphing utility (`Desmos is good for this <https://desmos.com>`_) to plot the Normal density function. Draw vertical lines at the values of :math:`x` found in *part c* and *part d*. 
 
 f. Find the **equation** of the tangent line at the following points (yes, all of them),
 
