@@ -18,13 +18,19 @@ Chain Rule
 
 1. **The Gaussian Function**
 
-The Normal density function, sometimes called the *Gaussian* function in honor of Johann Carl Friedrich Gauss who discovered its formula, is an important function in statistics. Graphically, the Normal density curve is a *bell curve*. Its functional form is given by,
+The Normal density function, sometimes called the *Gaussian* function in honor of Johann Carl Friedrich Gauss who discovered its formula, is an important function in statistics. 
+
+Graphically, the Normal density curve is a *bell curve*. Roughly speaking, the value of the *Gaussian* function at a point :math:`x` represents the *probability* of making an observation :math:`x`, when the observation is randomly selected from a population of values whose arithmetical average is :math:`\mu`.
+
+The *Gaussian* function is given by,
 
 .. math::
 
 	\rho ( x ) = \frac{ 1 }{ \sqrt{2 \cdot \pi \cdot \sigma^2} } \cdot e ^ { - \frac{ (x-\mu)^2  }{ 2 \cdot \sigma^2} }
 	
-The constants, :math:`\mu` and :math:`\sigma`, are *parameters* of the density function. These parameters determine the shape and curvature of the bell curve. They are *known* quantities; in other words, they may be held constant and treated as numbers. Use the Normal density function to answer the following questions.
+The constants, :math:`\mu` and :math:`\sigma`, are *parameters* of the density function. These parameters determine the shape and curvature of the bell curve. They are *known* quantities; in other words, they may be held constant and treated as numbers. 
+
+Use the Normal density function to answer the following questions.
 
 
 a. Find :math:`\frac{d}{dx}(\rho (x) )`
