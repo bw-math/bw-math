@@ -1,31 +1,62 @@
-.. _chain_rule_classwork:
+.. _implicit_differentiation_classwork:
 
-==========
-Chain Rule 
-==========
+========================
+Implicit Differentiation
+========================
 
-1. The Normal density function, sometimes called the *Gaussian* function in honor of Johann Carl Friedrich Gauss who discovered its formula, is an important function in statistics. Graphically, the Normal density curve is a *bell curve*. Its functional form is given by,
+1. Use implicit differentiation to find :math:`\frac{dy}{dx}` for each of the following,
+
+a. 
+
+b.
+
+c.
+
+d.
+
+e.
+
+2. **Natural Log Derivative**
+
+The formula for the derivative of the natural log, :math:`ln(x)`, can be derived with *implicit differentiation*. To do so, recall the differentiaion rule for exponential functions,
+
+.. topic:: Exponential Derivative
+
+	.. math::
+	
+		\frac{d}{dx}(e^x) = e^x
+		
+Then define *y* as,
 
 .. math::
 
-	\rho ( x ) = \frac{ 1 }{ sqrt{2 \cdot \pi \cdot \sigma^2} } \cdot e ^ { - \frac{ (x-\mu)^2  }{ 2 \cdot \sigma^2} }
+	y = \ln(x)
 	
-The constants, :math:`\mu` and :math:`\sigma`, are *parameters* of the density function. These parameters determine the shape and curvature of the bell curve. They are *known* quantities; in other words, they may be held constant and treated as numbers. Use the Normal density function to answer the following questions.
+Use *implicit differentiation* to derive the formula for,
 
+.. math::
+	
+	\frac{d}{dx}(ln(x)) = \frac{1}{x}
+	
+.. hint::
+	
+	Solve for :math:`x` and then apply the *Chain Rule*.
+	
+3. **Inverse Trigonometric Derivatives**
 
-a. Find :math:`\frac{d}{dx}(\rho (x) )`
+In class we used *implicit differentiation* to derive, 
 
+.. math::
 
-b. Find :math:`\frac{d^2}{{dx}^2}(\rho (x))`
+	\frac{d}{dx}( \arcsin(x) ) = \frac{1}{sqrt{1-x^2}}
+	
+Using a similar process, find the derivatives of the following inverse trigonometric functions,
 
+a. :math:`f(x) = \arccos(x)`
 
-c. Find the value of :math:`x` where :math:`\frac{d}{dx}(\rho (x) ) = 0`
+b. :math:`f(x) = \arctan(x)`
 
+.. hint::
 
-d. Find the **values** of :math:`x` where :math:`\frac{d^2}{{dx}^2}(\rho (x)) = 0`
-
-
-e. Suppose :math:`\mu=10` and :math:`\sigma=2`. Use a graphing utility to plot the Normal density function. Draw vertical lines at the values of :math:`x` found in *part c* and *part d*. 
-
-f. Describe what is happening to the tangent line at each point on the curve labelled in *part e*. 
+	Remember to draw a diagram of the unit circle. Express *x* and *y* in terms of lengths and angles!
 

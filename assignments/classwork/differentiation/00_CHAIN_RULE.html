@@ -46,7 +46,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/classwork/differentiation/00_CHAIN_RULE';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Chain Rule" href="01_IMPLICIT_DIFFERENTIATION.html" />
+    <link rel="next" title="Implicit Differentiation" href="01_IMPLICIT_DIFFERENTIATION.html" />
     <link rel="prev" title="Differentiation" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
@@ -201,7 +201,7 @@
 </li>
 <li class="toctree-l3 current active has-children"><a class="reference internal" href="index.html">Differentiation</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l4 current active"><a class="current reference internal" href="#">Chain Rule</a></li>
-<li class="toctree-l4"><a class="reference internal" href="01_IMPLICIT_DIFFERENTIATION.html">Chain Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="01_IMPLICIT_DIFFERENTIATION.html">Implicit Differentiation</a></li>
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../set_theory/index.html">Set Theory</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -453,26 +453,43 @@ document.write(`
 <p><img src="../../../_images/math/1aa6f4ba12d51c2c33e58e1d615faff6b8c63227.png" alt="\frac{d}{dx}( f \circ g (x) ) = f^{\prime}(g(x)) \cdot g^{\prime} (x)"/></p>
 </div></div>
 <ol class="arabic simple">
-<li><p>The Normal density function, sometimes called the <em>Gaussian</em> function in honor of Johann Carl Friedrich Gauss who discovered its formula, is an important function in statistics. Graphically, the Normal density curve is a <em>bell curve</em>. Its functional form is given by,</p></li>
+<li><p><strong>The Gaussian Function</strong></p></li>
 </ol>
+<p>The Normal density function, sometimes called the <em>Gaussian</em> function in honor of Johann Carl Friedrich Gauss who discovered its formula, is an important function in statistics. Graphically, the Normal density curve is a <em>bell curve</em>. Its functional form is given by,</p>
 <div class="math">
 <p><img src="../../../_images/math/0dead1a90a999d06be75eb8466d5d4932ac8a012.png" alt="\rho ( x ) = \frac{ 1 }{ sqrt{2 \cdot \pi \cdot \sigma^2} } \cdot e ^ { - \frac{ (x-\mu)^2  }{ 2 \cdot \sigma^2} }"/></p>
 </div><p>The constants, <img class="math" src="../../../_images/math/18b19e5f315a11447a2f609580b5706d0feb0e26.png" alt="\mu"/> and <img class="math" src="../../../_images/math/3c6db7079834573bbfc4f914a807e23ebd2079f2.png" alt="\sigma"/>, are <em>parameters</em> of the density function. These parameters determine the shape and curvature of the bell curve. They are <em>known</em> quantities; in other words, they may be held constant and treated as numbers. Use the Normal density function to answer the following questions.</p>
-<ol class="loweralpha simple">
+<ol class="loweralpha">
 <li><p>Find <img class="math" src="../../../_images/math/245555d7498c0cd39fb944f67c413455e47a424c.png" alt="\frac{d}{dx}(\rho (x) )"/></p></li>
 <li><p>Find <img class="math" src="../../../_images/math/552a7aa560553e3e3ea1fe4ebe50c3150755827a.png" alt="\frac{d^2}{{dx}^2}(\rho (x))"/></p></li>
 <li><p>Find the value of <img class="math" src="../../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> where <img class="math" src="../../../_images/math/4182582114c4aea4c0fedac1f6a6365a11c726a1.png" alt="\frac{d}{dx}(\rho (x) ) = 0"/></p></li>
 <li><p>Find the <strong>values</strong> of <img class="math" src="../../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> where <img class="math" src="../../../_images/math/2f4eae175960f5c6cb06afd418e2209b178e5fc7.png" alt="\frac{d^2}{{dx}^2}(\rho (x)) = 0"/></p></li>
-<li><p>Suppose <img class="math" src="../../../_images/math/2f3ea5e6a62bcb7d79614d5943e01e4ca8b6cea9.png" alt="\mu=10"/> and <img class="math" src="../../../_images/math/e114799095610fb521b5e6648a467b2dc2d3bf3e.png" alt="\sigma=2"/>. Use a graphing utility to plot the Normal density function. Draw vertical lines at the values of <img class="math" src="../../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> found in <em>part c</em> and <em>part d</em>.</p></li>
-<li><p>Describe what is happening to the tangent line at each point on the curve labelled in <em>part e</em>.</p></li>
+<li><p>Suppose <img class="math" src="../../../_images/math/2f3ea5e6a62bcb7d79614d5943e01e4ca8b6cea9.png" alt="\mu=10"/> and <img class="math" src="../../../_images/math/e114799095610fb521b5e6648a467b2dc2d3bf3e.png" alt="\sigma=2"/>. Use a graphing utility (<cite>Desmos is good&lt;https://desmos.com&gt;</cite>) to plot the Normal density function. Draw vertical lines at the values of <img class="math" src="../../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> found in <em>part c</em> and <em>part d</em>.</p></li>
+<li><p>Find the <strong>equation</strong> of the tangent line at the following points (yes, all of them),</p>
+<blockquote>
+<div><ol class="lowerroman simple">
+<li><p><img class="math" src="../../../_images/math/80869ddbb1e0a5837fa92c5bae1383ebd0075801.png" alt="x = 17"/></p></li>
+<li><p><img class="math" src="../../../_images/math/6ff581db3818c6627aa269da1fa7c840b9bb2d69.png" alt="x = 15"/></p></li>
+<li><p><img class="math" src="../../../_images/math/b43f6cb83f394146cd602ae4e04230041bc1b086.png" alt="x = 13"/></p></li>
+<li><p><img class="math" src="../../../_images/math/4ee3bc2effd4efc94ddb96824777e0a7308a728e.png" alt="x = 11"/></p></li>
+<li><p><img class="math" src="../../../_images/math/b0dd850e6d2e17c0713026f09cf384f047c5d3df.png" alt="x = 9"/></p></li>
+<li><p><img class="math" src="../../../_images/math/eae864458ca6dcd8a15497bddbe4892ffbce8f2f.png" alt="x = 7"/></p></li>
+<li><p><img class="math" src="../../../_images/math/d34d0143b0dadd903a6e475d5ab4484fb1d768a8.png" alt="x = 5"/></p></li>
+<li><p><img class="math" src="../../../_images/math/9cfde9192e0c5ccf5b5813fbef737e0794b5cf1b.png" alt="x = 3"/></p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Plot the tangent lines using the same graphing utility</p></li>
+<li><p>Describe what is happening to the derivative at each point on the curve labelled in <em>part e</em>.</p></li>
 </ol>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p>Take a small <img class="math" src="../../../_images/math/3b200d7d3acc0268b503a05ff74e5eb822cfc3d8.png" alt="\delta x"/> on either side of the <em>critical points</em> found in <em>part c</em> and <em>part d</em> and plug them into the derivative. What is happening to the value of the derivative as it <em>approaches</em> these points?</p>
+<p>What happens to the <em>direction</em> of the tangent line at each of the <em>critical points</em> found in <em>part e</em>?</p>
 </div>
 <ol class="arabic simple" start="2">
-<li><p>Recall the <em>Product Rule</em> and <em>Quotient Rule</em> for differentiation,</p></li>
+<li><p><strong>Deriving the Quotient Rule</strong></p></li>
 </ol>
+<p>Recall the <em>Product Rule</em> and <em>Quotient Rule</em> for differentiation,</p>
 <div class="topic">
 <p class="topic-title">The Product Rule</p>
 <div class="math">
@@ -520,7 +537,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Chain Rule</p>
+        <p class="prev-next-title">Implicit Differentiation</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

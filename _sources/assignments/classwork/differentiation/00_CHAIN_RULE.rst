@@ -16,7 +16,9 @@ Chain Rule
 	
 		\frac{d}{dx}( f \circ g (x) ) = f^{\prime}(g(x)) \cdot g^{\prime} (x)
 
-1. The Normal density function, sometimes called the *Gaussian* function in honor of Johann Carl Friedrich Gauss who discovered its formula, is an important function in statistics. Graphically, the Normal density curve is a *bell curve*. Its functional form is given by,
+1. **The Gaussian Function**
+
+The Normal density function, sometimes called the *Gaussian* function in honor of Johann Carl Friedrich Gauss who discovered its formula, is an important function in statistics. Graphically, the Normal density curve is a *bell curve*. Its functional form is given by,
 
 .. math::
 
@@ -36,16 +38,38 @@ c. Find the value of :math:`x` where :math:`\frac{d}{dx}(\rho (x) ) = 0`
 
 d. Find the **values** of :math:`x` where :math:`\frac{d^2}{{dx}^2}(\rho (x)) = 0`
 
+e. Suppose :math:`\mu=10` and :math:`\sigma=2`. Use a graphing utility (`Desmos is good<https://desmos.com>`) to plot the Normal density function. Draw vertical lines at the values of :math:`x` found in *part c* and *part d*. 
 
-e. Suppose :math:`\mu=10` and :math:`\sigma=2`. Use a graphing utility to plot the Normal density function. Draw vertical lines at the values of :math:`x` found in *part c* and *part d*. 
+f. Find the **equation** of the tangent line at the following points (yes, all of them),
 
-f. Describe what is happening to the tangent line at each point on the curve labelled in *part e*. 
+	i. :math:`x = 17`
+	
+	ii. :math:`x = 15`
+	
+	iii. :math:`x = 13`
+	
+	iv. :math:`x = 11`
+	
+	v. :math:`x = 9`
+	
+	vi. :math:`x = 7`
+	
+	vii. :math:`x = 5` 
+	
+	viii. :math:`x = 3`
 
-.. hint::
+g. Plot the tangent lines using the same graphing utility 
 
-	Take a small :math:`\delta x` on either side of the *critical points* found in *part c* and *part d* and plug them into the derivative. What is happening to the value of the derivative as it *approaches* these points? 
+h. Describe what is happening to the derivative at each point on the curve labelled in *part e*. 
 
-2. Recall the *Product Rule* and *Quotient Rule* for differentiation,
+.. hint:: 
+
+	What happens to the *direction* of the tangent line at each of the *critical points* found in *part e*?
+
+
+2. **Deriving the Quotient Rule**
+
+Recall the *Product Rule* and *Quotient Rule* for differentiation,
 	
 .. topic:: The Product Rule
 
