@@ -43,9 +43,9 @@ The *ideal* histogram (in other words, the distribution of the *population*) wou
 
 .. plot:: assets/plots/examples/04_ex01_die_roll.py
 
-Consider now the experiment of rolling 10 die. The *relative* frequency of each outcome in the *ideal distribution* will not change, since the new die being rolled consist of the same outcomes as the original die; Outcomes are added to the experiment in the same proportion. 
+Consider now the experiment of rolling 30 die. The *relative* frequency of each outcome in the *ideal distribution* will not change, since the new die being rolled consist of the same outcomes as the original die; Outcomes are added to the experiment in the same proportion. 
 
-TODO
+Take this experiment of rolling 30 die and repreat 
 
 A departure from normality can suggest several things: 
 
