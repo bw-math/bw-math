@@ -148,7 +148,7 @@ Ideal Plots
 
 The *ideal* distribution is another word for the *population* distribution. The Normal ``object`` in **Python** has a function for calculating the density of the Normal curve at a point. This allows us to plot the *ideal* distribution over top of the sample distribution to see how they compare. 
 
-.. math::
+.. code:: python
 
 	import random
 	import statistics as stat
@@ -206,7 +206,7 @@ Read through the :ref:`QQ plots <qq_plots>` section for a more detailed explanat
 
 In short, we need to perform the following operations,
 
-.. math::
+.. code:: python
 
 	import statistics as stat
 	import matplotlib.pyplot as plot
@@ -248,31 +248,31 @@ Normal Calculations
 
 1. Create a Standard Normal Distribution ``object``. Use this ``object`` to answer the following questions.
 
-a. :math:`P(Z \leq 1.751)`
+a. :math:`P(\mathcal{Z} \leq 1.751)`
 
-b. :math:`P(Z \geq 0.888)`
+b. :math:`P(\mathcal{Z} \geq 0.888)`
 
-c. :math:`P(-1.234 \leq Z \leq 0.545)`
+c. :math:`P(-1.234 \leq \mathcal{Z} \leq 0.545)`
 
-d. :math:`P(Z \leq Z_{\pi}) = 0.975`
+d. :math:`P(\mathcal{Z} \leq z_{\pi}) = 0.975`
 
-e. :math:`P(Z \geq Z_{\pi}) = 0.025`
+e. :math:`P(\mathcal{Z} \geq z_{\pi}) = 0.025`
 
-f. :math:`P(Z_{\pi^1} \leq Z \leq Z_{\pi^2}) = 0.50`
+f. :math:`P(z_{\pi^1} \leq \mathcal{Z} \leq z_{\pi^2}) = 0.50`
 
 2. Create a Normal Distribution ``object`` with a mean of 50 and a standard deviation of 10. Use this object to answer the following questions.
 
-a. :math:`P(X \leq 65)`
+a. :math:`P(\mathcal{X} \leq 65)`
 
-b. :math:`P(X \geq 45)`
+b. :math:`P(\mathcal{X} \geq 45)`
 
-c. :math:`P(38 \leq X \leq 62)`
+c. :math:`P(38 \leq \mathcal{X} \leq 62)`
 
-d. :math:`P(Z \leq X_{\pi}) = 0.975`
+d. :math:`P(\mathcal{X} \leq x_{\pi}) = 0.975`
 
-e. :math:`P(Z \geq X_{\pi}) = 0.025`
+e. :math:`P(\mathcal{X} \geq x_{\pi}) = 0.025`
 
-f. :math:`P(X_{\pi^1} \leq X \leq X_{\pi^2}) = 0.50`
+f. :math:`P(x_{\pi^1} \leq \mathcal{X} \leq x_{\pi^2}) = 0.50`
 
 Measuring Normality
 -------------------
