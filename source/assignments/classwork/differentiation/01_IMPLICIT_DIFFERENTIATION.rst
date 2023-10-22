@@ -4,19 +4,63 @@
 Implicit Differentiation
 ========================
 
-1. Use implicit differentiation to find :math:`\frac{dy}{dx}` for each of the following,
+1. **Introduction**
 
-a. 
+For each of the following problems:
 
-b.
+- Find :math:`y^{\prime}` by solving the equation for :math:`y` and differentiating directly.
+- Find :math:`y^{\prime}` by implicit differentiation.
+- Check the derivatives obtained through both methods are the same.
 
-c.
+a. :math:`\frac{x}{y^3} = 1`
 
-d.
+b. :math:`x^2 + y^3 = 4`
 
-e.
+2. **Applications**
 
-2. **Natural Log Derivative**
+Use implicit differentiation to solve the following problems:
+
+a. :math:`2 \cdot y^3 + 4 \cdot x^2 - y = x^6` 
+
+b. :math:`7 \cdot y^2 + \sin(3x) 12 - y^4`
+
+c. :math:`e^x - \sin(y) = x`
+
+d. :math:`\cos(x^2 + 2y) + x \cdot e^{y^2} = 1`
+
+e. :math:`\tan(x^2 \cdot y^4) = 3x + y^2`
+
+3. **A Pointless Problem**
+
+.. important::
+
+	Take time to appreciate the pun here. If you don't get it yet, you will.
+
+Consider the function :math:`f(x,y)`,
+
+.. math::
+
+	x^2 + y^2 = 9
+
+a. Plot this function in the x-y plane. (`Desmos is good for this <https://desmos.com>`). What kind of graph is this?
+
+.. important::
+
+	Do you get it now?!
+	
+b. Use implicit differentiation to find :math:`\frac{dy}{dx}`. Express the answer as a function of :math:`x` only.
+
+c. Find the equation of the tangent line at the points :math:`(\pm frac{3 \cdot sqrt{2}}{2}, \pm frac{3 \cdot sqrt{2}}{2})`
+
+d. Plot the tangent lines on top of the graph you created in *part a*. 
+
+e. Find the points :math:`(x,y)` where the tangent lines found in *part c* intersect. 
+
+f. Plot the points found in *part e* on top of the graphs you created in *part a* and *part d*.
+
+g. What is the *area* of the quadrilateral formed by the tangent lines in *part c*? 
+
+4. **Natural Log Derivative**
 
 The formula for the derivative of the natural log, :math:`ln(x)`, can be derived with *implicit differentiation*. To do so, recall the differentiaion rule for exponential functions,
 
@@ -42,7 +86,7 @@ Use *implicit differentiation* to derive the formula for,
 	
 	Solve for :math:`x` and then apply the *Chain Rule*.
 	
-3. **Inverse Trigonometric Derivatives**
+5. **Inverse Trigonometric Derivatives**
 
 In class we used *implicit differentiation* to derive, 
 
