@@ -22,7 +22,7 @@ The Normal density function, sometimes called the *Gaussian* function in honor o
 
 .. math::
 
-	\rho ( x ) = \frac{ 1 }{ sqrt{2 \cdot \pi \cdot \sigma^2} } \cdot e ^ { - \frac{ (x-\mu)^2  }{ 2 \cdot \sigma^2} }
+	\rho ( x ) = \frac{ 1 }{ \sqrt{2 \cdot \pi \cdot \sigma^2} } \cdot e ^ { - \frac{ (x-\mu)^2  }{ 2 \cdot \sigma^2} }
 	
 The constants, :math:`\mu` and :math:`\sigma`, are *parameters* of the density function. These parameters determine the shape and curvature of the bell curve. They are *known* quantities; in other words, they may be held constant and treated as numbers. Use the Normal density function to answer the following questions.
 
@@ -38,7 +38,7 @@ c. Find the value of :math:`x` where :math:`\frac{d}{dx}(\rho (x) ) = 0`
 
 d. Find the **values** of :math:`x` where :math:`\frac{d^2}{{dx}^2}(\rho (x)) = 0`
 
-e. Suppose :math:`\mu=10` and :math:`\sigma=2`. Use a graphing utility (`Desmos is good<https://desmos.com>`) to plot the Normal density function. Draw vertical lines at the values of :math:`x` found in *part c* and *part d*. 
+e. Suppose :math:`\mu=10` and :math:`\sigma=2`. Use a graphing utility (`Desmos is good for this <https://desmos.com>`) to plot the Normal density function. Draw vertical lines at the values of :math:`x` found in *part c* and *part d*. 
 
 f. Find the **equation** of the tangent line at the following points (yes, all of them),
 
@@ -58,7 +58,7 @@ f. Find the **equation** of the tangent line at the following points (yes, all o
 	
 	viii. :math:`x = 3`
 
-g. Plot the tangent lines using the same graphing utility 
+g. Plot the tangent lines on top of the Normal density function using the same graphing utility. 
 
 h. Describe what is happening to the derivative at each point on the curve labelled in *part e*. 
 
