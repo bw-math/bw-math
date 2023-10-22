@@ -443,16 +443,55 @@ document.write(`
   <section id="implicit-differentiation">
 <span id="implicit-differentiation-classwork"></span><h1>Implicit Differentiation<a class="headerlink" href="#implicit-differentiation" title="Permalink to this headline">#</a></h1>
 <ol class="arabic simple">
-<li><p>Use implicit differentiation to find <img class="math" src="../../../_images/math/caf1d8b832d9de86ca9b6af6f8119d4058fff3ed.png" alt="\frac{dy}{dx}"/> for each of the following,</p></li>
+<li><p><strong>Introduction</strong></p></li>
 </ol>
+<p>For each of the following problems:</p>
+<ul class="simple">
+<li><p>Find <img class="math" src="../../../_images/math/6f10113f0d4982c24c9d2b0dd307c14a5bf72db5.png" alt="y^{\prime}"/> by solving the equation for <img class="math" src="../../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> and differentiating directly.</p></li>
+<li><p>Find <img class="math" src="../../../_images/math/6f10113f0d4982c24c9d2b0dd307c14a5bf72db5.png" alt="y^{\prime}"/> by implicit differentiation.</p></li>
+<li><p>Check the derivatives obtained through both methods are the same.</p></li>
+</ul>
 <ol class="loweralpha simple">
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li><p><img class="math" src="../../../_images/math/10d72330eb026dc050b86fa9ff412baefb863cd7.png" alt="\frac{x}{y^3} = 1"/></p></li>
+<li><p><img class="math" src="../../../_images/math/90c205a27d9e3b296af4a839389da33bde6c133d.png" alt="x^2 + y^3 = 4"/></p></li>
 </ol>
 <ol class="arabic simple" start="2">
+<li><p><strong>Applications</strong></p></li>
+</ol>
+<p>Use implicit differentiation to solve the following problems:</p>
+<ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/121b2b5c1786d0192f44b6239031ef81b4e08fb6.png" alt="2 \cdot y^3 + 4 \cdot x^2 - y = x^6"/></p></li>
+<li><p><img class="math" src="../../../_images/math/f84768364808fc81bf2fffa3a746b89e21a3401f.png" alt="7 \cdot y^2 + \sin(3x) 12 - y^4"/></p></li>
+<li><p><img class="math" src="../../../_images/math/931317295ef9e94830b29bff77f7debf5df0b6d7.png" alt="e^x - \sin(y) = x"/></p></li>
+<li><p><img class="math" src="../../../_images/math/52431ae8d98966f93327485740b8bee8824c5f68.png" alt="\cos(x^2 + 2y) + x \cdot e^{y^2} = 1"/></p></li>
+<li><p><img class="math" src="../../../_images/math/ab6ecb0df667b28fff49bc8d130960fa0081cad2.png" alt="\tan(x^2 \cdot y^4) = 3x + y^2"/></p></li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p><strong>A Pointless Problem</strong></p></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Take time to appreciate the pun here. If you don’t get it yet, you will.</p>
+</div>
+<p>Consider the function <img class="math" src="../../../_images/math/ffacbd0273fe6c9c2bef6b500408d7da386617c2.png" alt="f(x,y)"/>,</p>
+<div class="math">
+<p><img src="../../../_images/math/bfec551c29f86d916c97062e6918fcfb94f92316.png" alt="x^2 + y^2 = 9"/></p>
+</div><ol class="loweralpha simple">
+<li><p>Plot this function in the x-y plane. (<cite>Desmos is good for this &lt;https://desmos.com&gt;</cite>). What kind of graph is this?</p></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Do you get it now?!</p>
+</div>
+<ol class="loweralpha simple" start="2">
+<li><p>Use implicit differentiation to find <img class="math" src="../../../_images/math/caf1d8b832d9de86ca9b6af6f8119d4058fff3ed.png" alt="\frac{dy}{dx}"/>. Express the answer as a function of <img class="math" src="../../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> only.</p></li>
+<li><p>Find the equation of the tangent line at the points <img class="math" src="../../../_images/math/91cc28a42589558245ff51d8f518517816cd8e98.png" alt="(\pm frac{3 \cdot sqrt{2}}{2}, \pm frac{3 \cdot sqrt{2}}{2})"/></p></li>
+<li><p>Plot the tangent lines on top of the graph you created in <em>part a</em>.</p></li>
+<li><p>Find the points <img class="math" src="../../../_images/math/1af9052392c22a5a0dcb8efd28afe78baf5b054c.png" alt="(x,y)"/> where the tangent lines found in <em>part c</em> intersect.</p></li>
+<li><p>Plot the points found in <em>part e</em> on top of the graphs you created in <em>part a</em> and <em>part d</em>.</p></li>
+<li><p>What is the <em>area</em> of the quadrilateral formed by the tangent lines in <em>part c</em>?</p></li>
+</ol>
+<ol class="arabic simple" start="4">
 <li><p><strong>Natural Log Derivative</strong></p></li>
 </ol>
 <p>The formula for the derivative of the natural log, <img class="math" src="../../../_images/math/5d28ad167e91c0ae6261291d6d8466ce143ba8ad.png" alt="ln(x)"/>, can be derived with <em>implicit differentiation</em>. To do so, recall the differentiaion rule for exponential functions,</p>
@@ -471,7 +510,7 @@ document.write(`
 <p class="admonition-title">Hint</p>
 <p>Solve for <img class="math" src="../../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> and then apply the <em>Chain Rule</em>.</p>
 </div>
-<ol class="arabic simple" start="3">
+<ol class="arabic simple" start="5">
 <li><p><strong>Inverse Trigonometric Derivatives</strong></p></li>
 </ol>
 <p>In class we used <em>implicit differentiation</em> to derive,</p>
