@@ -462,13 +462,19 @@ document.write(`
 <p><img src="../../../_images/math/92a42ae641123624e82cf1d8f4a06322aae23199.png" alt="\rho ( x ) = \frac{ 1 }{ \sqrt{2 \cdot \pi \cdot \sigma^2} } \cdot e ^ { - \frac{ (x-\mu)^2  }{ 2 \cdot \sigma^2} }"/></p>
 </div><p>The constants, <img class="math" src="../../../_images/math/18b19e5f315a11447a2f609580b5706d0feb0e26.png" alt="\mu"/> and <img class="math" src="../../../_images/math/3c6db7079834573bbfc4f914a807e23ebd2079f2.png" alt="\sigma"/>, are <em>parameters</em> of the density function. These parameters determine the shape and curvature of the bell curve. They are <em>known</em> quantities; in other words, they may be held constant and treated as numbers.</p>
 <p>Use the Normal density function to answer the following questions.</p>
-<ol class="loweralpha">
+<ol class="loweralpha simple">
 <li><p>Find <img class="math" src="../../../_images/math/245555d7498c0cd39fb944f67c413455e47a424c.png" alt="\frac{d}{dx}(\rho (x) )"/></p></li>
 <li><p>Find <img class="math" src="../../../_images/math/552a7aa560553e3e3ea1fe4ebe50c3150755827a.png" alt="\frac{d^2}{{dx}^2}(\rho (x))"/></p></li>
-<li><p>Find the value of <img class="math" src="../../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> where <img class="math" src="../../../_images/math/4182582114c4aea4c0fedac1f6a6365a11c726a1.png" alt="\frac{d}{dx}(\rho (x) ) = 0"/></p></li>
-<li><p>Find the <strong>values</strong> of <img class="math" src="../../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> where <img class="math" src="../../../_images/math/2f4eae175960f5c6cb06afd418e2209b178e5fc7.png" alt="\frac{d^2}{{dx}^2}(\rho (x)) = 0"/></p></li>
+<li><p>Find the value of <img class="math" src="../../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> where <img class="math" src="../../../_images/math/4182582114c4aea4c0fedac1f6a6365a11c726a1.png" alt="\frac{d}{dx}(\rho (x) ) = 0"/>. Solve symbolically in terms of <img class="math" src="../../../_images/math/18b19e5f315a11447a2f609580b5706d0feb0e26.png" alt="\mu"/> and <img class="math" src="../../../_images/math/3c6db7079834573bbfc4f914a807e23ebd2079f2.png" alt="\sigma"/>.</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><img class="math" src="../../../_images/math/12a8a88412fee6e3c9971035429527b7c460b85f.png" alt="e^x"/> never equals 0!</p>
+</div>
+<ol class="loweralpha" start="4">
+<li><p>Find the <strong>values</strong> of <img class="math" src="../../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> where <img class="math" src="../../../_images/math/2f4eae175960f5c6cb06afd418e2209b178e5fc7.png" alt="\frac{d^2}{{dx}^2}(\rho (x)) = 0"/>. What is the value of <img class="math" src="../../../_images/math/94da1864ecb655046d2441b2e1429d18df1b0488.png" alt="\rho^{\prime}(x)"/> at these points? Solve symbolically in terms of <img class="math" src="../../../_images/math/18b19e5f315a11447a2f609580b5706d0feb0e26.png" alt="\mu"/> and <img class="math" src="../../../_images/math/3c6db7079834573bbfc4f914a807e23ebd2079f2.png" alt="\sigma"/>.</p></li>
 <li><p>Suppose <img class="math" src="../../../_images/math/2f3ea5e6a62bcb7d79614d5943e01e4ca8b6cea9.png" alt="\mu=10"/> and <img class="math" src="../../../_images/math/e114799095610fb521b5e6648a467b2dc2d3bf3e.png" alt="\sigma=2"/>. Use a graphing utility (<a class="reference external" href="https://desmos.com">Desmos is good for this</a>) to plot the Normal density function. Draw vertical lines at the values of <img class="math" src="../../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> found in <em>part c</em> and <em>part d</em>.</p></li>
-<li><p>Find the <strong>equation</strong> of the tangent line at the following points (yes, all of them),</p>
+<li><p>Suppose <img class="math" src="../../../_images/math/2f3ea5e6a62bcb7d79614d5943e01e4ca8b6cea9.png" alt="\mu=10"/> and <img class="math" src="../../../_images/math/e114799095610fb521b5e6648a467b2dc2d3bf3e.png" alt="\sigma=2"/>. Find the <strong>equation</strong> of the tangent line at the following points (yes, all of them). Round to four decimal places where appropriate.</p>
 <blockquote>
 <div><ol class="lowerroman simple">
 <li><p><img class="math" src="../../../_images/math/80869ddbb1e0a5837fa92c5bae1383ebd0075801.png" alt="x = 17"/></p></li>
@@ -482,12 +488,15 @@ document.write(`
 </ol>
 </div></blockquote>
 </li>
-<li><p>Plot the tangent lines on top of the Normal density function using the same graphing utility.</p></li>
-<li><p>Describe what is happening to the derivative at each point on the curve labelled in <em>part e</em>.</p></li>
+<li><p>Plot the tangent lines on top of the Normal density function using the same graphing utility as <em>part e</em>.</p></li>
+<li><p>Find the value of <img class="math" src="../../../_images/math/25030db57dc6c5df7e7c327e3d6dea5f8bf02064.png" alt="\rho^{\prime \prime}(x)"/> at each point in <em>part f</em>.</p></li>
+<li><p>Suppose <img class="math" src="../../../_images/math/2f3ea5e6a62bcb7d79614d5943e01e4ca8b6cea9.png" alt="\mu=10"/> and <img class="math" src="../../../_images/math/e114799095610fb521b5e6648a467b2dc2d3bf3e.png" alt="\sigma=2"/>. Plot the first and second derivative of the given Normal density curve on the same graph as <em>part e</em>.</p></li>
+<li><p>What happens to the Normal density function at the point found in <em>part c</em>?</p></li>
+<li><p>What happens to the Normal density function at the points found in <em>part d</em>?</p></li>
 </ol>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p>What happens to the <em>direction</em> of the tangent line at each of the <em>critical points</em> found in <em>part e</em>?</p>
+<p>What happens to the <em>direction</em> of the tangent line at each of the <em>critical points</em> found in <em>part d</em>? Look at the tangent lines plotted in <em>part g</em>!</p>
 </div>
 <ol class="arabic simple" start="2">
 <li><p><strong>Deriving the Quotient Rule</strong></p></li>
