@@ -50,7 +50,7 @@ a. Plot this function in the x-y plane. (`Desmos is good for this <https://desmo
 	
 b. Use implicit differentiation to find :math:`\frac{dy}{dx}`. Express the answer as a function of :math:`x` only.
 
-c. Find the equation of the tangent line at the points :math:`(\pm frac{3 \cdot sqrt{2}}{2}, \pm frac{3 \cdot sqrt{2}}{2})`
+c. Find the equation of the tangent line at the points :math:`(\pm \frac{3 \cdot \sqrt{2}}{2}, \pm \frac{3 \cdot \sqrt{2}}{2})`
 
 d. Plot the tangent lines on top of the graph you created in *part a*. 
 
@@ -92,7 +92,7 @@ In class we used *implicit differentiation* to derive,
 
 .. math::
 
-	\frac{d}{dx}( \arcsin(x) ) = \frac{1}{sqrt{1-x^2}}
+	\frac{d}{dx}( \arcsin(x) ) = \frac{1}{\sqrt{1-x^2}}
 	
 Using a similar process, find the derivatives of the following inverse trigonometric functions,
 
