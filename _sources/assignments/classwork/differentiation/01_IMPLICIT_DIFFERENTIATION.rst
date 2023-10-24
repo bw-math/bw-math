@@ -143,7 +143,7 @@ b. Find the coordinates of a point on the curve at which the line tangent to the
 
 c. Find the coordinates of a point on the curve at which the line tangent to the curve is vertical, or explain why no such point exists.
 
-d. A particle is moving along the curve. At the instance when the particle is at the point :math:`(\frac{1}{2}, -2)`, its horizontal position is increasing at a rate of :math:`\frac{dx}{dt}=\frac{2}{3} unit per second. What is the value of :math:`\frac{dy}{dt}`, the rate of change of the particle's vertical position, at that instant?
+d. A particle is moving along the curve. At the instance when the particle is at the point :math:`(\frac{1}{2}, -2)`, its horizontal position is increasing at a rate of :math:`\frac{dx}{dt}=\frac{2}{3}` units per second. What is the value of :math:`\frac{dy}{dt}`, the rate of change of the particle's vertical position, at that instant?
 
 
 
