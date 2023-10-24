@@ -106,7 +106,7 @@ b. :math:`f(x) = \arctan(x)`
 	
 6. **2005, Free Response Form B, #5**
 
-5. Consider the curve given by y 2 = 2 + xy .
+5. Consider the curve given by,
 
 .. math::
 

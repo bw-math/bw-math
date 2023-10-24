@@ -113,7 +113,7 @@ c. Find a common denominator and simplify the expression in *part b*.
 
 3. **2005, Free Response Form B, #3**
 
-A particle moves along the x-axis so that its velocity v at time t, for 0 £ t £ 5 :math:`0 \leq t \leq 5`, is given by
+A particle moves along the x-axis so that its velocity v at time t, for :math:`0 \leq t \leq 5`, is given by
 
 .. math::
 
