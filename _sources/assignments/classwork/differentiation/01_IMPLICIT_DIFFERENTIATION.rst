@@ -103,4 +103,47 @@ b. :math:`f(x) = \arctan(x)`
 .. hint::
 
 	Remember to draw a diagram of the unit circle. Express *x* and *y* in terms of lengths and angles!
+	
+6. **2005, Free Response Form B, #5**
+
+5. Consider the curve given by y 2 = 2 + xy .
+
+.. math::
+
+	y ^2 = 2 + xy
+	
+a. Show that
+
+.. math:: 
+
+	\frac{dy}{dx} = \frac{y}{2y -x}
+
+b. Find all points :math:`(x,y)` on the curve where the line tangent to the curve has slope :math:`\frac{1}{2}`.
+
+c. Show that there are no points :math:`(x,y)` on the curve where the line tangent to the curve is horizontal.
+
+d. Let x and y be functions of time t that are related by the equation :math:`y^2 = 2 + xy` . At time :math:`t = 5`, the value
+of :math:`y` is 3 and :math:`\frac{dy}{dt} = 6`. Find the value of :math:`\frac{dx}{dt}` at time :math:`t = 5`.
+
+7. **2023, Free Response, #6**
+
+Consider the curve given by the equation, 
+
+.. math::
+
+	6xy = 2 + y^3
+	
+a. Show that,
+
+.. math::
+
+	\frac{dy}{dx} = \frac{2y}{y^2 - 2x}
+	
+b. Find the coordinates of a point on the curve at which the line tangent to the curve is horizontal, or explain why no such point exists.
+
+c. Find the coordinates of a point on the curve at which the line tangent to the curve is vertical, or explain why no such point exists.
+
+d. A particle is moving along the curve. At the instance when the particle is at the point :math:`(\frac{1}{2}, -2)`, its horizontal position is increasing at a rate of :math:`\frac{dx}{dt}=\frac{2}{3} unit per second. What is the value of :math:`\frac{dy}{dt}`, the rate of change of the particle's vertical position, at that instant?
+
+
 
