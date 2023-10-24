@@ -66,7 +66,6 @@ h. Describe what is happening to the derivative at each point on the curve label
 
 	What happens to the *direction* of the tangent line at each of the *critical points* found in *part e*?
 
-
 2. **Deriving the Quotient Rule**
 
 Recall the *Product Rule* and *Quotient Rule* for differentiation,
@@ -96,3 +95,21 @@ a. Write the quotient :math:`\frac{f(x)}{g(x)}` as a product using a negative ex
 b. Take the derivative of the expression in *part a* by applying the *Product Rule* and then the *Chain Rule*.
 
 c. Find a common denominator and simplify the expression in *part b*. 
+
+3. **2005, Free Response Form B, #3**
+
+A particle moves along the x-axis so that its velocity v at time t, for 0 £ t £ 5 :math:`0 \leq t \leq 5`, is given by
+
+.. math::
+
+	v(t) = \ln(t^2 - 3t +3)
+	
+The particle is at position :math:`x=8` at time :math:`t=0`.
+
+a.Find the acceleration of the particle at time t = 4.
+
+b. Find all times t in the open interval :math:`0 < t < 5` at which the particle changes direction. During which time intervals, for :math:`0 \leq t \leq 5`, does the particle travel to the left?
+
+c. Find the position of the particle at time :math:`t = 2`.
+
+d. Find the average speed of the particle over the interval :math:`0 \leq t \leq 2`
