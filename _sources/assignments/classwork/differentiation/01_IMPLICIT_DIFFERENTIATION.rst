@@ -22,7 +22,7 @@ Use implicit differentiation to solve the following problems:
 
 a. :math:`2 \cdot y^3 + 4 \cdot x^2 - y = x^6` 
 
-b. :math:`7 \cdot y^2 + \sin(3x) 12 - y^4`
+b. :math:`7 \cdot y^2 + \sin(3x) = 12 - y^4`
 
 c. :math:`e^x - \sin(y) = x`
 
@@ -106,7 +106,7 @@ b. :math:`f(x) = \arctan(x)`
 	
 6. **2005, Free Response Form B, #5**
 
-5. Consider the curve given by y 2 = 2 + xy .
+Consider the curve given by,
 
 .. math::
 
@@ -144,6 +144,3 @@ b. Find the coordinates of a point on the curve at which the line tangent to the
 c. Find the coordinates of a point on the curve at which the line tangent to the curve is vertical, or explain why no such point exists.
 
 d. A particle is moving along the curve. At the instance when the particle is at the point :math:`(\frac{1}{2}, -2)`, its horizontal position is increasing at a rate of :math:`\frac{dx}{dt}=\frac{2}{3}` units per second. What is the value of :math:`\frac{dy}{dt}`, the rate of change of the particle's vertical position, at that instant?
-
-
-
