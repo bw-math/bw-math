@@ -42,7 +42,7 @@ Consider the function :math:`f(x,y)`,
 
 	x^2 + y^2 = 9
 
-a. Plot this function in the x-y plane. (`Desmos is good for this <https://desmos.com>`). What kind of graph is this?
+a. Plot this function in the x-y plane. (`Desmos is good for this <https://desmos.com>`_). What kind of graph is this?
 
 .. important::
 
