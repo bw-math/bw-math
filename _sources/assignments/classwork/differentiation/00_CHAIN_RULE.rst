@@ -121,7 +121,7 @@ A particle moves along the x-axis so that its velocity v at time t, for :math:`0
 	
 The particle is at position :math:`x=8` at time :math:`t=0`.
 
-a.Find the acceleration of the particle at time t = 4.
+a. Find the acceleration of the particle at time t = 4.
 
 b. Find all times t in the open interval :math:`0 < t < 5` at which the particle changes direction. During which time intervals, for :math:`0 \leq t \leq 5`, does the particle travel to the left?
 
