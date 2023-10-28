@@ -1,10 +1,14 @@
 .. _project_seven:
 
-===================
-Probability Density
-===================
+======================
+Monte Carlo Simulation
+======================
 
 TODO
+
+estimate pi with monte carlo!
+
+random walks! demonstrate the effect of drift and stochastic processes!
 
 Instructions
 ============
