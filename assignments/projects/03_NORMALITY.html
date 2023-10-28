@@ -257,9 +257,8 @@
 <li class="toctree-l3"><a class="reference internal" href="04_REGRESSION.html">Linear Regression</a></li>
 <li class="toctree-l3"><a class="reference internal" href="05_BIAS.html">Bias</a></li>
 <li class="toctree-l3"><a class="reference internal" href="06_SIMULATION.html">Simulation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="07_DENSITY.html">Probability Density</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="08_BINOMIAL.html">Binomial Distribution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="09_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
 </ul>
 </li>
 </ul>
@@ -498,11 +497,19 @@ document.write(`
 <li><p>George Box</p></li>
 </ul>
 </div></blockquote>
-<p><em>Normality</em> is an important phenomenon because of its far-reaching power. The concept of <em>normality</em> will allows us to draw <em>statistical inferences</em>. In this project, we will learn how to perform <a class="reference internal" href="../../notes/distributions/04_NORMAL.html#normal-calculations"><span class="std std-ref">Normal Calculations</span></a> using <strong>Python</strong>. Using these techniques, we will compare theoretically determined population parameters to empirically determined sample statistics in order to see how the Normal Distribution is used to model populations.</p>
+<p><em>Normality</em> is an important phenomenon because of its far-reaching power. Due to the <strong>Central Limit Theorem</strong>, the distribution of the sample mean becomes Normal as the number of experiments and the number of observations per experiment increases. Due to the <strong>Law of Large Numbers</strong>, as these numbers increase, the distribution of the sample mean becomes centered around the <em>true</em> population mean. Using these two facts, <em>normality</em> allows us to draw <em>statistical inferences</em> about population parameters using a sample drawn from an arbitrarily distributed population.</p>
+<p>The averaging effect of the <strong>Central Limit Theorem</strong> is more pronounced when the population being sampled is itself Normal (in mathematical terms, we say the <em>sample distribution converges to the population distribution</em> more quickly when the population is Normal); This assumption is not required, though. Any population distribution can be transformed into a Normal distribution by averaging observations drawn from its pool of outcomes. Recall the die roll simulation from class, where a uniformly distributed population became Normal when observations were averaged.</p>
+<p>For this reason, we are often interested in determining whether a given population is normally distributed. In this project, we will learn how to perform <a class="reference internal" href="../../notes/distributions/04_NORMAL.html#normal-calculations"><span class="std std-ref">Normal Calculations</span></a> using <strong>Python</strong>. Using these techniques, we will compare theoretically determined population parameters to empirically determined sample statistics in order to see how the Normal Distribution can be used to model population distributions.</p>
 <section id="instructions">
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
 <li><p>Download <strong>both</strong> <em>csv</em> datasets in the <a class="reference internal" href="#project-three-dataset"><span class="std std-ref">Datasets</span></a> section and place them in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system where you save your <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you haven’t deleted anything, you will already have the Velocity of Light data in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code>.</p>
+</div>
+<ol class="arabic simple" start="2">
 <li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">NAME_project_three.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">NAME</span></code> with your name.</p></li>
 <li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-three-background"><span class="std std-ref">Background</span></a> section.</p></li>
@@ -533,15 +540,15 @@ document.write(`
 </div><p>Recall a sample of data can be <a class="reference internal" href="../../notes/statistics/02_DESCRIPTIVE_STATISTICS.html#data-transformations"><span class="std std-ref">transformed</span></a> by applying algebraic operations to each observation. For instance, we can <a class="reference internal" href="../../notes/statistics/02_DESCRIPTIVE_STATISTICS.html#z-score"><span class="std std-ref">standardize</span></a> each observation <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> into a <em>z-score</em> by subtracting the mean of the distribution and dividing by the standard deviation of the distribution,</p>
 <div class="math">
 <p><img src="../../_images/math/461a58be4d757adade31c4e91da02cdb11a53a03.png" alt="\mathcal{Z} = \frac{\mathcal{X} - \mu}{\sigma}"/></p>
-</div><p>This is a special distribution, as we have seen. Any distribution that has this type of transformation applied to it will have a mean of 0 and a standard deviation of 1. In symbols, we write,</p>
+</div><p>This is a special distribution, as we have seen. If the <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> distribution is Normal, then the <img class="math" src="../../_images/math/1d74e5da619d26fe1722fa453097be62e18ce3ce.png" alt="\mathcal{Z}"/> is a <em>Standard Normal</em>. Any distribution that has this type of transformation applied to it will have a mean of 0 and a standard deviation of 1. In symbols, we write,</p>
 <div class="math">
 <p><img src="../../_images/math/22eda12b5ac2abfe54aa4637c28615784a9ca62d.png" alt="\mathcal{Z} \sim \mathcal{N}(0, 1)"/></p>
 </div><section id="cumulative-distribution-function">
 <h4>Cumulative Distribution Function<a class="headerlink" href="#cumulative-distribution-function" title="Permalink to this headline">#</a></h4>
-<p>The cumulative distribution function (CDF) for the Normal distribution is an extremely important function in mathematics. Symbolically, it is written,</p>
+<p>The cumulative distribution function (CDF) for the Standard Normal distribution is an extremely important function in mathematics. Symbolically, it is written,</p>
 <div class="math">
 <p><img src="../../_images/math/b59e0fa425f21cdfcff06dbf6797308c416177c0.png" alt="\Phi(z) = P(\mathcal{Z} \leq z) = p"/></p>
-</div><p>This function, recall, represents the area of the density curve below the point <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/>. In other words, This function tells us the <em>percentage</em> <img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/> of the Standard Normal distribution that is less than or equal to the point <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/>. To put it yet another way, it tells us what percentage <img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/> of the original Normal distribution is less than or equal to <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/> standard deviations away from the mean.</p>
+</div><p>This function, recall, represents the area of the density curve below the point <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/>. In other words, this function tells us the <em>percentage</em> <img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/> of the Standard Normal distribution that is less than or equal to the point <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/>. To put it yet another way, it tells us what percentage <img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/> of the original Normal distribution is less than or equal to <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/> standard deviations away from the mean.</p>
 </section>
 <section id="inverse-cumulative-distribution-function">
 <h4>Inverse Cumulative Distribution Function<a class="headerlink" href="#inverse-cumulative-distribution-function" title="Permalink to this headline">#</a></h4>
@@ -594,11 +601,11 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P(X &lt;= &quot;</span><span class="p">,</span> <span class="n">rounded_quartile</span> <span class="p">,</span> <span class="s2">&quot;) = 0.75&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<dl>
-<dt>Output:</dt><dd><p>P(X &lt;= 120) = 0.98</p>
+<p>Output:</p>
+<blockquote>
+<div><p>P(X &lt;= 120) = 0.98</p>
 <p>P(X &lt;= 106.74) = 0.75</p>
-</dd>
-</dl>
+</div></blockquote>
 <p>For a more comprehensive explanation of <code class="docutils literal notranslate"><span class="pre">NormalDist()</span></code> from the <code class="docutils literal notranslate"><span class="pre">statistics</span></code> package and its various uses, refer to the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-normal-distribution"><span class="std std-ref">Python Normal Distribution page</span></a>.</p>
 <section id="project-three-ideal-plots">
 <span id="ideal-plots"></span><h3>Ideal Plots<a class="headerlink" href="#project-three-ideal-plots" title="Permalink to this headline">#</a></h3>
@@ -607,40 +614,58 @@ document.write(`
 <span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">stat</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">mpl</span>
 
-<span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span> <span class="p">]</span>
-<span class="c1"># manually define bins</span>
-<span class="n">bins</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span> <span class="p">]</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">12</span> <span class="p">]</span>
 <span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span><span class="p">)</span> <span class="o">=</span> <span class="n">mpl</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="c1"># find range of data sample_min</span>
+<span class="n">sample_min</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">sample_max</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="c1"># divide range in 1000 sub-intervals</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="p">(</span><span class="n">sample_max</span> <span class="o">-</span> <span class="n">sample_min</span><span class="p">)</span><span class="o">/</span><span class="n">m</span>
 
 <span class="c1"># calculate sample stats</span>
 <span class="n">xbar</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">stdev</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 
 <span class="c1"># create ideal (population) distribution</span>
 <span class="n">dist</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">NormalDist</span><span class="p">(</span><span class="n">xbar</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
 
 <span class="c1"># find actual density</span>
-<span class="n">density</span> <span class="o">=</span> <span class="p">[</span> <span class="n">dist</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">bins</span> <span class="p">]</span>
+<span class="c1">## create density axis by iterating over 1000</span>
+<span class="c1">## calculate the x-value for each sub-interval</span>
+<span class="c1">## i.e., add multiples of the delta to the sample_min</span>
+<span class="n">density_axis</span> <span class="o">=</span> <span class="p">[</span> <span class="n">sample_min</span> <span class="o">+</span> <span class="n">i</span> <span class="o">*</span> <span class="n">delta</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">)</span> <span class="p">]</span>
+<span class="c1">## calculate the density for each x-value</span>
+<span class="n">density</span> <span class="o">=</span> <span class="p">[</span> <span class="n">dist</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">density_axis</span> <span class="p">]</span>
 
 <span class="c1"># plot actual histogram</span>
-<span class="n">axes</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="n">bins</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Histogram&quot;</span><span class="p">)</span>
 
 <span class="c1"># plot density curve on top</span>
-<span class="n">axes</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">bins</span><span class="p">,</span> <span class="n">density</span><span class="p">)</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">density_axis</span><span class="p">,</span> <span class="n">density</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Ideal&quot;</span><span class="p">)</span>
+
+<span class="c1"># label graph</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">mpl</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Sample vs. Ideal Distribution&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Density&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Observation&quot;</span><span class="p">)</span>
 
 <span class="c1"># show</span>
 <span class="n">mpl</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+<p>The graph below displays the results of this code snippet,</p>
 <p>This gives us a way of seeing how well the Normal density curve fits the data. This can be useful for <em>assessing</em> the normality of a distribution. However, a more foolproof method of checking the normality of a sample is given in the next section.</p>
 </section>
 <section id="qq-plots">
 <span id="project-three-qq-plots"></span><h3>QQ Plots<a class="headerlink" href="#qq-plots" title="Permalink to this headline">#</a></h3>
-<p>A common technique for assessing the <em>normality</em> of a sample distribution is to generate a <em>Quantile-Quantile Plot</em>, or <em>QQ Plot</em> for short. QQ plots provide a visual representation of a sample’s <em>normality</em> by plotting the percentiles of a sample distribution against the percentiles of the theoretical Normal Distribution.</p>
+<p>A common technique for assessing the <em>normality</em> of a sample distribution is to generate a <em>Quantile-Quantile Plot</em>, or <em>QQ Plot</em> for short. QQ plots provide a visual representation of a sample’s <em>normality</em> by plotting the percentiles of a sample distribution against the percentiles of the theoretical Normal Distribution from which it was drawn.</p>
 <p>The exact steps for generating a QQ plot are given below,</p>
 <ol class="arabic simple">
-<li><p>Find the :ref`order statistics &lt;order_statistics&gt;` of the distribution. In other words, sort the sample in <em>ascending</em> order.</p></li>
+<li><p>Find the <a class="reference internal" href="../../notes/statistics/02_DESCRIPTIVE_STATISTICS.html#id22"><span class="std std-ref">order statistics</span></a> of the sample distribution. In other words, sort the sample in <em>ascending</em> order.</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -666,10 +691,12 @@ document.write(`
 <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 
 <span class="c1"># sort data</span>
-<span class="n">z_actual</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="n">data</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
 
 <span class="c1"># standardize</span>
 <span class="n">z_actual</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="n">obs</span> <span class="o">-</span> <span class="n">xbar</span><span class="p">)</span><span class="o">/</span><span class="n">s</span> <span class="k">for</span> <span class="n">obs</span> <span class="ow">in</span> <span class="n">data</span> <span class="p">]</span>
+
+<span class="c1"># generate theoretical percentiles</span>
 <span class="n">z_theoretical</span> <span class="o">=</span> <span class="p">[</span> <span class="n">dist</span><span class="o">.</span><span class="n">inv_cdf</span><span class="p">((</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>  <span class="p">]</span>
 
 <span class="c1"># plot</span>
@@ -683,6 +710,11 @@ document.write(`
 <span class="n">plot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+<p>The graph below displays the results of this code snippet,</p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/b367257ce0a83645b7d0051c9b65c2e3/qq_plot_example.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/14302cc2e63e37eb01088a24acbb0556/qq_plot_example.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/3f71ea2663ee5361c5f3a2aa6f46ba24/qq_plot_example.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/365b33be5df17a89356fd0c8ee059eb9/qq_plot_example.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/qq_plot_example.png" class="plot-directive" src="../../_images/qq_plot_example.png" />
+</figure>
 </section>
 </section>
 <section id="project">
@@ -775,6 +807,12 @@ document.write(`
 <h4>Velocity of Light<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h4>
 <ol class="arabic simple">
 <li><p>Create a histogram with 10 classes for the Velocity of Light data. Ensure the axes are appropriately labeled and the tick marks are set to the class limits. Use <code class="docutils literal notranslate"><span class="pre">density=True</span></code> to make a relative frequency histogram.</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Make sure to use the class limits for the tick marks!</p>
+</div>
+<ol class="arabic simple" start="2">
 <li><p>Create a Normal <code class="docutils literal notranslate"><span class="pre">object</span></code>. Use the mean and standard deviation of the Velocity of Light data as the distribution parameters.</p></li>
 <li><p>Use the <code class="docutils literal notranslate"><span class="pre">pdf()</span></code> density function to graph the ideal Normal distribution for the Velocity of Light data.</p></li>
 </ol>
@@ -783,6 +821,12 @@ document.write(`
 <h4>Old Faithful<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h4>
 <ol class="arabic simple">
 <li><p>Create a histogram with 10 classes for the Old Faithful data. Ensure the axes are appropriately labeled and the tick marks are set to the class limits. Use <code class="docutils literal notranslate"><span class="pre">density=True</span></code> to make a relative frequency histogram.</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Make sure to use the class limits for the tick marks!</p>
+</div>
+<ol class="arabic simple" start="2">
 <li><p>Create a Normal <code class="docutils literal notranslate"><span class="pre">object</span></code>. Use the mean and standard deviation of the Old Faithful data as the distribution parameters.</p></li>
 <li><p>Use the <code class="docutils literal notranslate"><span class="pre">pdf()</span></code> density function to graph the ideal Normal distribution for the Old Faithful data.</p></li>
 </ol>
