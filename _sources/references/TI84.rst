@@ -56,3 +56,10 @@ Sample Percentiles Redux
 .. image:: https://img.youtube.com/vi/zrfFdfODW7k/maxresdefault.jpg
     :alt: Sample Percentiles Redux
     :target: https://www.youtube.com/watch?v=zrfFdfODW7k
+    
+Central Limit Theorem
+---------------------
+
+.. image:: https://img.youtube.com/vi/PUiOgwlS_fM/maxresdefault.jpg
+    :alt: Central Limit Theorem
+    :target: https://www.youtube.com/watch?v=PUiOgwlS_fM
