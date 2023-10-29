@@ -174,6 +174,40 @@ Output:
 
 ``enumerate()`` pulls the index of the observation from the list and allows you to use it in the ``<expr>`` of :ref:`python_list_comprehension`. This is especially useful for time series data, as this example illustrates.
 
+.. _python_zip_function:
+
+Zip Function
+------------
+
+``zip(<list_one: required>, <list_two: required>)``
+	The *zip* function allows you to iterate over two lists simultaneously.
+	
+Suppose you had two lists of equal length,
+
+.. code:: python
+
+	list_one = [ 1, 2, 3 ]
+	list_two = [ 4, 5, 6 ]
+	
+Using the ``zip()`` function, you can step over both lists at the same time and perform operations on elements that correspond to the same index. For example, the following code will take corresponding elements of the two lists defined above and sum them together,
+
+.. code:: python
+
+	zipped_list = [ one + two for (one, two) in zip(list_one, list_two) ]
+	print(zipped_list)
+	
+Output:
+
+	[5, 7, 9]
+
+To break it down step by step, the ``zip()`` function returns an ordered pair ``(one, two)`` three times. The first time, the ordered pair is ``(1, 4)``, where the ``1`` is pulled from ``list_one`` and the ``4`` is pulled from ``list_two``; the expression in the *list generator* then sums the elements of each list. The second time, ``zip()`` returns ``(2, 5)`. The third time, the ``zip()`` function returns ``(3, 6)``. 
+
+Note, the order of the elements in the ordered pair returned by ``zip()`` corresponds to the order in which the lists were passed into the function.
+
+.. note::
+ 	
+	The ``zip()`` function will be useful when we get to bivariate data.
+
 .. _python_standard_library:
 
 Standard Library Functions
@@ -477,6 +511,9 @@ Statistics
 
 .. _python_sample_mean:
 
+Mean
+****
+
 ``mean(<list: required>)``
     Calculates the sample mean of a univariate dataset passed in through ``list``.
 
@@ -500,6 +537,9 @@ Output:
 
 .. _python_sample_median:
 
+Median
+******
+
 ``median(<list : required>)``
     Calculates the sample median of a univariate dataset passed in through ``list``.
 
@@ -522,6 +562,9 @@ Output:
     102.5
 
 .. _python_standard_deviation:
+
+Standard Deviation
+******************
 
 ``stdev(<list : required>)``
     Calculates the sample standard deviation of a univariate dataset passed in through ``list``.
@@ -670,28 +713,29 @@ Output:
 
 	P(X <= 106.74) = 0.75
 
+.. _python_correlation:
+
+Correlation
+***********
+
+``correlation(<x_list: required>, <y_list: required>)``
+	The *correlation* functions returns the sample correlation coefficient for a sample of bivariate data.
+	
+TODO 
+
 .. _python_linear_regression:
 
 Linear Regression
 *****************
 
+``linear_regression(<x_list: required>, <y_list: required>)``
+	The *linear regression* function returns the regression model parameters for a sample of bivariate data.
+	
 .. note::
 
     We do not need these functions until Section 3.1 - 3.3.
 
 TODO 
-
-**Correlation**
-
-TODO 
-
-**Line of Best Fit**
-
-TODO 
-
-**Pearson Correlation Coefficient**
-
-TODO
 
 .. _python_creating_functions:
 

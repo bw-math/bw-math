@@ -446,6 +446,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#min-function">Min Function</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#range-function">Range Function</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerate-function">Enumerate Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zip-function">Zip Function</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-library-functions">Standard Library Functions</a><ul class="nav section-nav flex-column">
@@ -465,8 +466,12 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistics">Statistics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mean">Mean</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#median">Median</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quantiles">Quantiles</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-distribution">Normal Distribution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation">Correlation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-regression">Linear Regression</a></li>
 </ul>
 </li>
@@ -628,6 +633,33 @@ document.write(`
 <p>[(0, 101.5), (1, 100), (2, 105.25), (3, 107.1), (4, 104.56)]</p>
 </div></blockquote>
 <p><code class="docutils literal notranslate"><span class="pre">enumerate()</span></code> pulls the index of the observation from the list and allows you to use it in the <code class="docutils literal notranslate"><span class="pre">&lt;expr&gt;</span></code> of <a class="reference internal" href="02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a>. This is especially useful for time series data, as this example illustrates.</p>
+</section>
+<section id="zip-function">
+<span id="python-zip-function"></span><h3>Zip Function<a class="headerlink" href="#zip-function" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">zip(&lt;list_one:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;list_two:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>zip</em> function allows you to iterate over two lists simultaneously.</p>
+</dd>
+</dl>
+<p>Suppose you had two lists of equal length,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">list_one</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">]</span>
+<span class="n">list_two</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span> <span class="p">]</span>
+</pre></div>
+</div>
+<p>Using the <code class="docutils literal notranslate"><span class="pre">zip()</span></code> function, you can step over both lists at the same time and perform operations on elements that correspond to the same index. For example, the following code will take corresponding elements of the two lists defined above and sum them together,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">zipped_list</span> <span class="o">=</span> <span class="p">[</span> <span class="n">one</span> <span class="o">+</span> <span class="n">two</span> <span class="k">for</span> <span class="p">(</span><span class="n">one</span><span class="p">,</span> <span class="n">two</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">list_one</span><span class="p">,</span> <span class="n">list_two</span><span class="p">)</span> <span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">zipped_list</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>[5, 7, 9]</p>
+</div></blockquote>
+<p>To break it down step by step, the <code class="docutils literal notranslate"><span class="pre">zip()</span></code> function returns an ordered pair <code class="docutils literal notranslate"><span class="pre">(one,</span> <span class="pre">two)</span></code> three times. The first time, the ordered pair is <code class="docutils literal notranslate"><span class="pre">(1,</span> <span class="pre">4)</span></code>, where the <code class="docutils literal notranslate"><span class="pre">1</span></code> is pulled from <code class="docutils literal notranslate"><span class="pre">list_one</span></code> and the <code class="docutils literal notranslate"><span class="pre">4</span></code> is pulled from <code class="docutils literal notranslate"><span class="pre">list_two</span></code>; the expression in the <em>list generator</em> then sums the elements of each list. The second time, <code class="docutils literal notranslate"><span class="pre">zip()</span></code> returns <code class="docutils literal notranslate"><span class="pre">(2,</span> <span class="pre">5)`.</span> <span class="pre">The</span> <span class="pre">third</span> <span class="pre">time,</span> <span class="pre">the</span> <span class="pre">``zip()</span></code> function returns <code class="docutils literal notranslate"><span class="pre">(3,</span> <span class="pre">6)</span></code>.</p>
+<p>Note, the order of the elements in the ordered pair returned by <code class="docutils literal notranslate"><span class="pre">zip()</span></code> corresponds to the order in which the lists were passed into the function.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">zip()</span></code> function will be useful when we get to bivariate data.</p>
+</div>
 </section>
 </section>
 <section id="standard-library-functions">
@@ -875,7 +907,9 @@ document.write(`
 <section id="statistics">
 <span id="python-stats-package"></span><h3>Statistics<a class="headerlink" href="#statistics" title="Permalink to this headline">#</a></h3>
 <p><strong>Python</strong> also has a dedicated package specifically for statistical functions, named <code class="docutils literal notranslate"><span class="pre">statistics</span></code>.</p>
-<dl class="simple" id="python-sample-mean">
+<section id="mean">
+<span id="python-sample-mean"></span><h4>Mean<a class="headerlink" href="#mean" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">mean(&lt;list:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>Calculates the sample mean of a univariate dataset passed in through <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
 </dd>
 </dl>
@@ -896,7 +930,10 @@ document.write(`
 <blockquote>
 <div><p>99.12</p>
 </div></blockquote>
-<dl class="simple" id="python-sample-median">
+</section>
+<section id="median">
+<span id="python-sample-median"></span><h4>Median<a class="headerlink" href="#median" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">median(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>Calculates the sample median of a univariate dataset passed in through <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
 </dd>
 </dl>
@@ -917,7 +954,10 @@ document.write(`
 <blockquote>
 <div><p>102.5</p>
 </div></blockquote>
-<dl class="simple" id="python-standard-deviation">
+</section>
+<section id="standard-deviation">
+<span id="python-standard-deviation"></span><h4>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">stdev(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>Calculates the sample standard deviation of a univariate dataset passed in through <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
 </dd>
 </dl>
@@ -938,6 +978,7 @@ document.write(`
 <blockquote>
 <div><p>13.388450703681062</p>
 </div></blockquote>
+</section>
 <section id="quantiles">
 <span id="python-quantiles"></span><h4>Quantiles<a class="headerlink" href="#quantiles" title="Permalink to this headline">#</a></h4>
 <dl class="simple">
@@ -1032,18 +1073,24 @@ document.write(`
 <div><p>P(X &lt;= 106.74) = 0.75</p>
 </div></blockquote>
 </section>
+<section id="correlation">
+<span id="python-correlation"></span><h4>Correlation<a class="headerlink" href="#correlation" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">correlation(&lt;x_list:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;y_list:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>correlation</em> functions returns the sample correlation coefficient for a sample of bivariate data.</p>
+</dd>
+</dl>
+<p>TODO</p>
+</section>
 <section id="linear-regression">
 <span id="python-linear-regression"></span><h4>Linear Regression<a class="headerlink" href="#linear-regression" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">linear_regression(&lt;x_list:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;y_list:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>linear regression</em> function returns the regression model parameters for a sample of bivariate data.</p>
+</dd>
+</dl>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>We do not need these functions until Section 3.1 - 3.3.</p>
 </div>
-<p>TODO</p>
-<p><strong>Correlation</strong></p>
-<p>TODO</p>
-<p><strong>Line of Best Fit</strong></p>
-<p>TODO</p>
-<p><strong>Pearson Correlation Coefficient</strong></p>
 <p>TODO</p>
 </section>
 </section>
@@ -1142,6 +1189,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#min-function">Min Function</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#range-function">Range Function</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerate-function">Enumerate Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zip-function">Zip Function</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-library-functions">Standard Library Functions</a><ul class="nav section-nav flex-column">
@@ -1161,8 +1209,12 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistics">Statistics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mean">Mean</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#median">Median</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quantiles">Quantiles</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-distribution">Normal Distribution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation">Correlation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-regression">Linear Regression</a></li>
 </ul>
 </li>

@@ -441,7 +441,9 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation">Correlation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-regression-model">Linear Regression Model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#residuals">Residuals</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#old-faithful">Old Faithful</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spice-girls-songs">Spice Girls Songs</a></li>
@@ -451,40 +453,47 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bivariate-analysis">Bivariate Analysis</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scatter-plots">Scatter Plots</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation">Correlation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regression-model">Regression Model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Correlation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regression-parameters">Regression Parameters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#line-of-best-fit">Line of Best Fit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Residuals</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Old Faithful</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Old Faithful</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scatter-plot">Scatter Plot</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Correlation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Correlation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#regression">Regression</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#residual-analysis">Residual Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spice-girl-song-length">Spice Girl Song Length</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Scatter Plot</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Correlation</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Regression</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Residual Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Scatter Plot</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Correlation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Regression</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Residual Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Conclusion</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Celebrity Twitter</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Scatter Plot</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Correlation</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Regression</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Residual Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Celebrity Twitter</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Scatter Plot</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Correlation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Regression</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Residual Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Conclusion</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-data-transformations">Extra Credit: Data Transformations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sets">Data Sets</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Celebrity Twitter</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Old Faithful</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Celebrity Twitter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Old Faithful</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spice-girls-song-length">Spice Girls Song Length</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
             </nav>
         </div>
@@ -504,7 +513,8 @@ document.write(`
 <li><p>Henri Poincare</p></li>
 </ul>
 </div></blockquote>
-<p>TODO</p>
+<p>In this project, we will take the techniques we have learned for bivariate data analysis and apply to them to three datasets from real life. We will examine and classify the correlation between variables and then use sample statistics to determine whether the relationship observed between the variables is significant. We will fit a <a class="reference internal" href="../../notes/regression/03_LINEAR_REGRESSION.html#linear-regression"><span class="std std-ref">Linear Regression Model</span></a> to the data and use the model parameters to make predictions and extrapolations.</p>
+<p>In order to do this, as you may have guessed, we will use <strong>Python</strong>; <strong>Python</strong> provides several functions that make bivariate analysis a quick and painless process.</p>
 <section id="instructions">
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
@@ -522,18 +532,28 @@ document.write(`
 </section>
 <section id="background">
 <span id="project-four-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<section id="correlation">
+<h3>Correlation<a class="headerlink" href="#correlation" title="Permalink to this headline">#</a></h3>
+<p>The correlation coefficient is defined by the formula,</p>
+<div class="math">
+<p><img src="../../_images/math/864d75bd74be8ac9fe820f1e5d4db601c99c7faa.png" alt="r_xy = \frac{1}{n-1} \cdot \sum_{i=1}^{n} (\frac{x_i - \bar{x}}{s_x}) \cdot (\frac{y_i - \bar{y}}{s_y})"/></p>
+</div><p>Notice the correlation coefficient is the average of a product of z-scores. In this formula, both the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> and <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variable are standardized and the product of each z-score is summed and then divided by <img class="math" src="../../_images/math/ec53ca5d93c2168c1d1e781814461402465ea2b1.png" alt="n-1"/> to find the average. When the z-scores of the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> and <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variable are simultaneously positive or simultaneously negative, this results in a positive correlation. When the z-scores of the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> and <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variable simultaneously take on opposite signs (i.e. when one is negative, the other is positive and visa versa), this results in a negative correlation.</p>
+</section>
 <section id="linear-regression-model">
 <h3>Linear Regression Model<a class="headerlink" href="#linear-regression-model" title="Permalink to this headline">#</a></h3>
 <p>The <em>Linear Regression Model</em> is a special statistical method for modelling the linear relationship that exists between correlated variables. A regression model (not necessarily <em>linear</em>) applies to a sample of bivariate data,</p>
 <div class="math">
 <p><img src="../../_images/math/7f5b1e10900b59ac952f409eed14a57c3471bd65.png" alt="S = \{ (x_1, y_1), (x_2, y_2), ... , (x_n, y_n) \}"/></p>
-</div><p>Where <img class="math" src="../../_images/math/a455464b27e42f679d79e9d14de742704e595a2e.png" alt="n"/> is the total number of samples. The <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> variable is referred to as the <strong>predictor</strong> variable (or sometimes the <strong>independent</strong> variable); the <img class="math" src="../../_images/math/a6a65e11c7738a1100ce9f9b28c005bcd8906f60.png" alt="y_i"/> variable is referred to as the <strong>response</strong> varaible (or sometimes the <strong>dependent</strong> variable). If a statistically significant <em>linear</em> correlation exists between the predictor and response variable, the <em>Linear Regression Model</em> can be used to <em>predict</em> a value of <img class="math" src="../../_images/math/a6a65e11c7738a1100ce9f9b28c005bcd8906f60.png" alt="y_i"/> given a value of <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/>. The <em>model equation</em> for <img class="math" src="../../_images/math/2b43834c8aeeab767b1745588c23952867da39c5.png" alt="\hat{y_i}"/> is given by,</p>
+</div><p>Where <img class="math" src="../../_images/math/a455464b27e42f679d79e9d14de742704e595a2e.png" alt="n"/> is the total number of samples. The <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> variable is referred to as the <em>predictor</em> variable (or sometimes the <em>independent</em> variable); the <img class="math" src="../../_images/math/a6a65e11c7738a1100ce9f9b28c005bcd8906f60.png" alt="y_i"/> variable is referred to as the <em>response</em> varaible (or sometimes the <em>dependent</em> variable). If a statistically significant <em>linear</em> correlation exists between the predictor and response variable, the <em>Linear Regression Model</em> can be used to <em>predict</em> a value of <img class="math" src="../../_images/math/a6a65e11c7738a1100ce9f9b28c005bcd8906f60.png" alt="y_i"/> given a value of <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/>. The <em>model equation</em> for <img class="math" src="../../_images/math/2b43834c8aeeab767b1745588c23952867da39c5.png" alt="\hat{y_i}"/> is given by,</p>
 <div class="math">
 <p><img src="../../_images/math/5fc5395ec0f385793dca0fa890e0660952e2247b.png" alt="\hat{y_i} = \mathcal{B}_1 \cdot x_i + \mathcal{B}_0 + \varepsilon_i"/></p>
-</div><p>Where the term <img class="math" src="../../_images/math/4bd908e64b008b199a49d68691add02a11467590.png" alt="\varepsilon_i"/> is a normally distributed error term centered around 0 with standard deviation equal to the <strong>mean squared error</strong> of the model,</p>
+</div><p>Where the term <img class="math" src="../../_images/math/4bd908e64b008b199a49d68691add02a11467590.png" alt="\varepsilon_i"/> is a normally distributed error term centered around 0 with standard deviation equal to the <em>mean squared error</em> of the model,</p>
 <div class="math">
 <p><img src="../../_images/math/67e7c94b6270fb6497ead8d383f281b0fc8d81be.png" alt="\varepsilon \sim \mathcal{N}(0, \text{MSE})"/></p>
-</div><p>The error term :<cite>varepsilon_i</cite> is sometimes called a residual. The value of a residual for a given <img class="math" src="../../_images/math/25417a5e102a0e11d442f6e4865508e47cf4b0aa.png" alt="i"/> can be found by subtracing the actual value of <img class="math" src="../../_images/math/a6a65e11c7738a1100ce9f9b28c005bcd8906f60.png" alt="y_i"/> from the <em>predicted value</em> <img class="math" src="../../_images/math/2b43834c8aeeab767b1745588c23952867da39c5.png" alt="\hat{y_i}"/>,</p>
+</div></section>
+<section id="residuals">
+<h3>Residuals<a class="headerlink" href="#residuals" title="Permalink to this headline">#</a></h3>
+<p>The error term :<cite>varepsilon_i</cite> is sometimes called a residual. The value of a residual for a given <img class="math" src="../../_images/math/25417a5e102a0e11d442f6e4865508e47cf4b0aa.png" alt="i"/> can be found by subtracing the actual value of <img class="math" src="../../_images/math/a6a65e11c7738a1100ce9f9b28c005bcd8906f60.png" alt="y_i"/> from the <em>predicted value</em> <img class="math" src="../../_images/math/2b43834c8aeeab767b1745588c23952867da39c5.png" alt="\hat{y_i}"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/0101f96ff26b0d70158ae68e173e84c51e754e88.png" alt="\varepsilon_i = \hat{y_i} - y_i"/></p>
 </div><p>A crucial assumption of the <em>Linear Regression Model</em> is the normality of the residuals. If this assumption is violated, then there is evidence to suggest the model is incomplete, i.e. there is another variable influencing the <em>response</em> variable. Moreover, if the normality assumption is violated, the model can no longer be used to extrapolate outside of the range of the <em>predictor variable</em>.</p>
@@ -582,109 +602,317 @@ document.write(`
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">mpl</span>
 <span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">stat</span>
 
-<span class="n">bivariate_data</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">),</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">13</span><span class="p">),</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">),</span> <span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">19</span><span class="p">)</span> <span class="p">]</span>
-<span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span><span class="p">)</span> <span class="o">=</span> <span class="n">mpl</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="c1"># you can break long lists over multiple lines!</span>
+<span class="n">bivariate_data</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="p">]</span>
+<span class="c1"># note: we are creating THREE subplots!</span>
+<span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span><span class="p">)</span> <span class="o">=</span> <span class="n">mpl</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The sections that follow assume you have these lines added to the top of your script.</p>
 <section id="scatter-plots">
 <h3>Scatter Plots<a class="headerlink" href="#scatter-plots" title="Permalink to this headline">#</a></h3>
+<p>A scatterplot is a very simple and easy to understand graphical representation of data. The predictor variable is plotted on the horizontal axis versus the response variable on the vertical axis. A scatterplot can be created in <a class="reference internal" href="../../references/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a> using the <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html">scatter()</a> function,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># separate x and y data</span>
+<span class="n">x_data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">obs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">obs</span> <span class="ow">in</span> <span class="n">bivariate_data</span> <span class="p">]</span>
+<span class="n">y_data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">obs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">obs</span> <span class="ow">in</span> <span class="n">bivariate_data</span> <span class="p">]</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x_data</span><span class="p">,</span> <span class="n">y_data</span><span class="p">)</span>
+
+<span class="c1"># label axes</span>
+<span class="n">mpl</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Scatterplot Example&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;y observation&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;x observation&quot;</span><span class="p">)</span>
+
+<span class="n">mpl</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <em>x</em> and <em>y</em> variables must be split into separate lists before calling the <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html">scatter()</a> function.</p>
+</div>
+<p>The code snippet shown above will create the following graph,</p>
+<p>Inspecting a scatterplot is often a good first step in determining whether a correlation exists between two variables. For example, the dummy data we created in the previous section has an obvious <em>positive</em>, <em>linear</em> relationship. When a linear relationship exists between variables, the correlation coefficient can be used to quantify the strength of the relationship.</p>
 </section>
-<section id="correlation">
-<h3>Correlation<a class="headerlink" href="#correlation" title="Permalink to this headline">#</a></h3>
+<section id="id2">
+<h3>Correlation<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
+<p>The correlation coefficient can be easily calculated using the <code class="docutils literal notranslate"><span class="pre">statistics</span></code> package in <strong>Python</strong>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">correlation()</span></code> function was introduced into the <code class="docutils literal notranslate"><span class="pre">statistics</span></code> package in version <em>3.10</em> of <strong>Python</strong>. If you are on an earlier version, the code in this section not work! Email me or talk to me after class and we will get you sorted!</p>
+</div>
+<p>The following snippet illustrates its calculation,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">correlation</span><span class="p">(</span><span class="n">x_data</span><span class="p">,</span> <span class="n">y_data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;correlation coefficient: &quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>correlation coefficient:  0.9195</p>
+</div></blockquote>
+<p>A correlation near 1 suggests a strong relationship. To establish statistical significance, we compare this sample and correlation coefficient against the <span class="xref std std-ref">pearson_correlation_coefficient_table</span>. If the absolute value of the correlation coefficient is greater than the table value, we say there is a <em>statistically significant</em> correlation.</p>
+<p>We will explore <em>why</em> we compare the sample correlation to the table in a later chapter, we start talking about <a class="reference internal" href="../../notes/statistics/03_SAMPLING_DISTRIBUTIONS.html#sampling-distributions"><span class="std std-ref">Sampling Distributions</span></a> and <span class="xref std std-ref">statistical_significance</span>.</p>
 </section>
-<section id="regression-model">
-<h3>Regression Model<a class="headerlink" href="#regression-model" title="Permalink to this headline">#</a></h3>
-<p>TODO</p>
+<section id="regression-parameters">
+<h3>Regression Parameters<a class="headerlink" href="#regression-parameters" title="Permalink to this headline">#</a></h3>
+<p>The regression parameters, <img class="math" src="../../_images/math/35a855c84cd1a67d98280e59ffe4eccf2cdb4e02.png" alt="\mathcal{B}_0"/> and <img class="math" src="../../_images/math/1d649dc63c66354071b3941d5d5dd0be062beb03.png" alt="\mathcal{B}_1"/>, can also be easily calculated using the <code class="docutils literal notranslate"><span class="pre">statistics</span></code> package in <strong>Python</strong>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">linear_regression()</span></code> function was introduced into the <code class="docutils literal notranslate"><span class="pre">statistics</span></code> package in version <em>3.10</em> of <strong>Python</strong>. If you are on an earlier version, the code in this section not work! Email me or talk to me after class and we will get you sorted!</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">slope</span><span class="p">,</span> <span class="n">intercept</span><span class="p">)</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">linear_regression</span><span class="p">(</span><span class="n">x_data</span><span class="p">,</span> <span class="n">y_data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;beta zero: &quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">slope</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;beta one: &quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">intercept</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+</pre></div>
+</div>
+<dl>
+<dt>Output:</dt><dd><p>beta zero:  0.1765</p>
+<p>beta one:  0.4706</p>
+</dd>
+</dl>
+<p>Notice the output of the <code class="docutils literal notranslate"><span class="pre">linear_regression</span></code> function is an ordered pair (in <strong>Python</strong>, ordered pairs are called <a class="reference internal" href="../../references/python/02_BASIC.html#python-tuples"><span class="std std-ref">Tuples</span></a>). The first element of the ordered pair is the <code class="docutils literal notranslate"><span class="pre">slope</span></code> of the <em>Linear Regression Model</em>, or symbolically <img class="math" src="../../_images/math/1d649dc63c66354071b3941d5d5dd0be062beb03.png" alt="\mathcal{B}_1"/>; the second element of the ordered pair is the <code class="docutils literal notranslate"><span class="pre">intercept</span></code> of the <em>Linear Regression Model</em>, or symbolically <img class="math" src="../../_images/math/35a855c84cd1a67d98280e59ffe4eccf2cdb4e02.png" alt="\mathcal{B}_0"/>.</p>
+</section>
+<section id="line-of-best-fit">
+<h3>Line of Best Fit<a class="headerlink" href="#line-of-best-fit" title="Permalink to this headline">#</a></h3>
+<p>The Regression line can be plotted over top the scatter plot using the <code class="docutils literal notranslate"><span class="pre">plot()</span></code> function from <a class="reference internal" href="../../references/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a>. In order to use the <code class="docutils literal notranslate"><span class="pre">plot()</span></code> function, we will need to create a list of data representing <img class="math" src="../../_images/math/05e9139b5dc36ae95afe50a18ed79f86836f2377.png" alt="\hat{y}"/>. This can be done by iterating over the <code class="docutils literal notranslate"><span class="pre">x_data</span></code> list with <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a>,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">predicted_y</span> <span class="o">=</span> <span class="p">[</span> <span class="n">slope</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">intercept</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">x_data</span> <span class="p">]</span>
+</pre></div>
+</div>
+<p>Then, we pass the <code class="docutils literal notranslate"><span class="pre">x_data</span></code> and <code class="docutils literal notranslate"><span class="pre">predicted_y</span></code> list in the <code class="docutils literal notranslate"><span class="pre">plot()</span></code> function,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_data</span><span class="p">,</span> <span class="n">predicted_y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;regression line&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Note you can change the <code class="docutils literal notranslate"><span class="pre">color</span></code> of the line and add a label to it. The label will not appear, unless the legend is shown on the graph. To display the label on a legend, you can call,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Before calling,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mpl</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h3>Residuals<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<p>The final step of the regression process is validating the model assumptions; in other words, we must check to make the distribution of residuals is approximately normal. In order to do this, we must first create a list containing the residuals. To create the list of residuals, we will use the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-zip-function"><span class="std std-ref">Zip Function</span></a>. The <code class="docutils literal notranslate"><span class="pre">zip()</span></code> function allows us to iterate over two list simultaneously. The following code snippet steps over the <code class="docutils literal notranslate"><span class="pre">predicted_y</span></code> and <code class="docutils literal notranslate"><span class="pre">y_data</span></code> lists <em>at the same time</em>, grabbing elements with the same index along the way,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">residuals</span> <span class="o">=</span> <span class="p">[</span> <span class="n">yhat</span> <span class="o">-</span> <span class="n">y</span> <span class="k">for</span> <span class="p">(</span><span class="n">yhat</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">predicted_y</span><span class="p">,</span> <span class="n">y_data</span><span class="p">)</span> <span class="p">]</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The order of <code class="docutils literal notranslate"><span class="pre">(y_hat,</span> <span class="pre">y)</span></code> corresponds to the order in which <code class="docutils literal notranslate"><span class="pre">predicted_y</span></code> and <code class="docutils literal notranslate"><span class="pre">y_data</span></code> are passed into the <code class="docutils literal notranslate"><span class="pre">zip()</span></code> function.</p>
+</div>
+<p>Once we have the list of residuals, we can create a <em>histogram</em> of their distribution,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">residuals</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This provides a quick way of checking the <em>normality</em> of the residuals, but a better way is constructing a <a class="reference internal" href="03_NORMALITY.html#project-three-qq-plots"><span class="std std-ref">QQ Plot</span></a>, as we did in the previous project. Refer to the <a class="reference internal" href="03_NORMALITY.html#project-three"><span class="std std-ref">Normality project page</span></a> to review the logic behind the construction of a <em>QQ Plot</em>. The code is reproduced below without explanation,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">residuals</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="n">res_n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">residuals</span><span class="p">)</span>
+<span class="n">res_mean</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">residuals</span><span class="p">)</span>
+<span class="n">res_sd</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">stdev</span><span class="p">(</span><span class="n">residuals</span><span class="p">)</span>
+<span class="n">standardized_res</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="n">r</span> <span class="o">-</span> <span class="n">res_mean</span><span class="p">)</span><span class="o">/</span><span class="n">res_sd</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">residuals</span> <span class="p">]</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">NormalDist</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">theoretical_per</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="o">.</span><span class="n">inv_cdf</span><span class="p">((</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">res_n</span><span class="p">)</span> <span class="p">]</span>
+</pre></div>
+</div>
+<p>After the standardized distribution and the theoretical distribution are found, they can be plotted using a <em>scatterplot</em>,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">standardized_res</span><span class="p">,</span> <span class="n">theoretical_per</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;ranked z-scores&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;theoretical z-scores&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Recall a Normal distribution should have a linear <em>QQ Plot</em>. Any departures from linearity imply the underlying distribution is not Normal.</p>
 </section>
 </section>
 <section id="project">
 <span id="project-four-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
-<p>TODO</p>
-<section id="id1">
-<h3>Old Faithful<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<section id="id4">
+<h3>Old Faithful<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
 <section id="scatter-plot">
 <h4>Scatter Plot<a class="headerlink" href="#scatter-plot" title="Permalink to this headline">#</a></h4>
 <ol class="arabic simple">
-<li><p>Construct a scatter plot for this dataset using the <strong>Eruption Length</strong> as the <em>indicator</em> variable and the <strong>Waiting Time</strong> as the <em>response</em> variable.</p></li>
+<li><p>Construct a scatter plot for this dataset using the <strong>Eruption Length</strong> as the <em>predictor</em> variable and the <strong>Waiting Time</strong> as the <em>response</em> variable. Ensure the graph is labelled appropriately.</p></li>
 <li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, describe the correlation in this dataset. Is it positive, negative or neutral? Is it linear or non-linear? Is it strong or weak?</p></li>
 <li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: Based on your answer to the previous question, would a linear regression model be a good fit for this dataset?</p></li>
 </ol>
 </section>
-<section id="id2">
-<h4>Correlation<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
+<section id="id5">
+<h4>Correlation<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h4>
+<ol class="arabic simple">
+<li><p>Using the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-correlation"><span class="std std-ref">Correlation</span></a> function, calculate the correlation between the <strong>Eruption Length</strong> and the <strong>Waiting Time</strong>. Label the calculation with a comment and print the correlation to screen.</p></li>
+<li><p>Calculate the total number of samples using the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-length-function"><span class="std std-ref">Length Function</span></a>. Label the calculation with a comment and print the number of samples to screen.</p></li>
+<li><p>Consult the <span class="xref std std-ref">pearson_correlation_coefficient_table</span> and determine the critical value for a statistically significant correlation. In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: Is the correlation between the <strong>Eruption Length</strong> and <strong>Waiting Time</strong> statistically significant?</p></li>
+</ol>
 </section>
 <section id="regression">
 <h4>Regression<a class="headerlink" href="#regression" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
+<ol class="arabic simple">
+<li><p>Using the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-linear-regression"><span class="std std-ref">Linear Regression</span></a> function, calculate the model parameters for the Linear Regression Model. Label the calculations with comments and print the model coefficients to screen.</p></li>
+<li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, interpret the meaning of the regression parameters in terms of the variables being observed.</p></li>
+<li><p>Using <a class="reference internal" href="../../references/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a>’s <code class="docutils literal notranslate"><span class="pre">plot()</span></code> function, plot the regression line on top of the scatterplot. Label the line with a <span class="xref std std-ref">python_string</span> that contains the <em>Linear Regression Model</em> line of best fit. Make sure to display the legend on the graph.</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Make sure the <code class="docutils literal notranslate"><span class="pre">color</span></code> of the regression line is set to something different than the color of the scatterplot points.</p>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Make an <em>extrapolation</em> using the <em>Linear Regression Model</em>. Label the calculation with comments. In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, write a sentence explaining the <em>meaning</em> of the calculated value.</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Recall an <em>extrapolation</em> is when the <em>Linear Regression Model</em> is used to predict a value of <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> <em>outside of the observed range of x</em>.</p>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: Based on your answer to <em>#3</em> in the previous section (the one about statistical significance), should this extrapolation be used to make a prediction? Why or why not?</p></li>
+</ol>
 </section>
 <section id="residual-analysis">
 <h4>Residual Analysis<a class="headerlink" href="#residual-analysis" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
+<ol class="arabic simple">
+<li><p>Create a <em>histogram</em> for the distribution of residuals for the <em>Linear Regression Model</em>. In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, describe the distribution residuals in a few sentence. Be sure to include descriptions of: shape, location, variation and outliers.</p></li>
+<li><p>Create a <em>QQ plot</em> for the distribution of residuals for the <em>Linear Regression Model</em>. In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: does the <em>QQ Plot</em> for the residuals support or contradict the model assumption of normality?</p></li>
+</ol>
+</section>
+<section id="conclusion">
+<h4>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">#</a></h4>
+<ol class="arabic simple">
+<li><p>Are the assumptions of the <em>Linear Regression Model</em> satisifed by this dataset? In other words, is the <em>Linear Regression Model</em> a good way of modelling the relationship between the two variables? Why or why not?</p></li>
+</ol>
 </section>
 </section>
 <section id="spice-girl-song-length">
 <h3>Spice Girl Song Length<a class="headerlink" href="#spice-girl-song-length" title="Permalink to this headline">#</a></h3>
-<section id="id3">
-<h4>Scatter Plot<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h4>
+<section id="id6">
+<h4>Scatter Plot<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h4>
 <ol class="arabic simple">
-<li><p>Construct a scatter plot for this dataset using the <strong>Track Number</strong> as the <em>indicator variable</em> and the <strong>Song Length</strong> as the <em>response</em> variable.</p></li>
-</ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This type of scatter plot, where the horizontal axis represents time, is known as a <a class="reference internal" href="../../notes/regression/01_INTRODUCTION.html#time-series"><span class="std std-ref">Time Series</span></a>.</p>
-</div>
-<ol class="arabic simple" start="2">
+<li><p>Construct a scatter plot for this dataset using the <strong>Track Number</strong> as the <em>predictor variable</em> and the <strong>Song Length</strong> as the <em>response</em> variable. Ensure the graph is labelled appropriately.</p></li>
 <li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, describe the correlation in this dataset. Is it positive, negative or neutral? Is it linear or non-linear? Is it strong or weak?</p></li>
 <li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: Based on your answer to the previous question, would a linear regression model be a good fit for this dataset?</p></li>
 </ol>
-</section>
-<section id="id4">
-<h4>Correlation<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
-</section>
-<section id="id5">
-<h4>Regression<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
-</section>
-<section id="id6">
-<h4>Residual Analysis<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
-</section>
 </section>
 <section id="id7">
-<h3>Celebrity Twitter<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
-<section id="id8">
-<h4>Scatter Plot<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h4>
+<h4>Correlation<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h4>
 <ol class="arabic simple">
-<li><p>Construct a scatter plot for this dataset using the <strong>Tweet Count</strong> as the <em>indicator</em> variable and the <strong>Follower Count</strong> as the <em>response</em> variable.</p></li>
-<li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, describe the correlation in this dataset. Is it positive, negative or neutral? Is it linear or non-linear? Is it strong or weak?</p></li>
-<li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: Based on your answer to the previous question, would a linear regression model be a good fit for this dataset?</p></li>
+<li><p>Using the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-correlation"><span class="std std-ref">Correlation</span></a> function, calculate the correlation between the <strong>Track Number</strong> and the <strong>Song Length</strong>. Label the calculation with a comment and print the correlation to screen.</p></li>
+<li><p>Calculate the total number of samples using the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-length-function"><span class="std std-ref">Length Function</span></a>. Label the calculation with a comment and print the number of samples to screen.</p></li>
+<li><p>Consult the <span class="xref std std-ref">pearson_correlation_coefficient_table</span> and determine the critical value for a statistically significant correlation. In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: Is the correlation between the <strong>Track Number</strong> and <strong>Song Length</strong> statistically significant?</p></li>
+</ol>
+</section>
+<section id="id8">
+<h4>Regression<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h4>
+<ol class="arabic simple">
+<li><p>Using the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-linear-regression"><span class="std std-ref">Linear Regression</span></a> function, calculate the model parameters for the Linear Regression Model. Label the calculations with comments and print the model coefficients to screen.</p></li>
+<li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, interpret the meaning of the regression parameters in terms of the variables being observed.</p></li>
+<li><p>Using <a class="reference internal" href="../../references/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a>’s <code class="docutils literal notranslate"><span class="pre">plot()</span></code> function, plot the regression line on top of the scatterplot. Label the line with a <span class="xref std std-ref">python_string</span> that contains the <em>Linear Regression Model</em> line of best fit. Make sure to display the legend on the graph.</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Make sure the <code class="docutils literal notranslate"><span class="pre">color</span></code> of the regression line is set to something different than the color of the scatterplot points.</p>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Make an <em>extrapolation</em> using the <em>Linear Regression Model</em>. Label the calculation with comments. In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, write a sentence explaining the <em>meaning</em> of the calculated value.</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Recall an <em>extrapolation</em> is when the <em>Linear Regression Model</em> is used to predict a value of <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> <em>outside of the observed range of x</em>.</p>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: Based on your answer to <em>#3</em> in the previous section (the one about statistical significance), should this extrapolation be used to make a prediction? Why or why not?</p></li>
 </ol>
 </section>
 <section id="id9">
-<h4>Correlation<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
+<h4>Residual Analysis<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h4>
+<ol class="arabic simple">
+<li><p>Create a <em>histogram</em> for the distribution of residuals for the <em>Linear Regression Model</em>. In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, describe the distribution residuals in a few sentence. Be sure to include descriptions of: shape, location, variation and outliers.</p></li>
+<li><p>Create a <em>QQ plot</em> for the distribution of residuals for the <em>Linear Regression Model</em>. In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: does the <em>QQ Plot</em> for the residuals support or contradict the model assumption of normality?</p></li>
+</ol>
 </section>
 <section id="id10">
-<h4>Regression<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
+<h4>Conclusion<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h4>
+<ol class="arabic simple">
+<li><p>Are the assumptions of the <em>Linear Regression Model</em> satisifed by this dataset? In other words, is the <em>Linear Regression Model</em> a good way of modelling the relationship between the two variables? Why or why not?</p></li>
+</ol>
+</section>
 </section>
 <section id="id11">
-<h4>Residual Analysis<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
+<h3>Celebrity Twitter<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h3>
+<section id="id12">
+<h4>Scatter Plot<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h4>
+<ol class="arabic simple">
+<li><p>Construct a scatter plot for this dataset using the <strong>Tweet Count</strong> as the <em>predictor</em> variable and the <strong>Follower Count</strong> as the <em>response</em> variable. Ensure the graph is labelled appropriately.</p></li>
+<li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, describe the correlation in this dataset. Is it positive, negative or neutral? Is it linear or non-linear? Is it strong or weak?</p></li>
+<li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: Based on your answer to the previous question, would a linear regression model be a good fit for this dataset?</p></li>
+</ol>
+</section>
+<section id="id13">
+<h4>Correlation<a class="headerlink" href="#id13" title="Permalink to this headline">#</a></h4>
+<ol class="arabic simple">
+<li><p>Using the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-correlation"><span class="std std-ref">Correlation</span></a> function, calculate the correlation between the <strong>Tweet Count</strong> and the <strong>Follower Count</strong>. Label the calculation with a comment and print the correlation to screen.</p></li>
+<li><p>Calculate the total number of samples using the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-length-function"><span class="std std-ref">Length Function</span></a>. Label the calculation with a comment and print the number of samples to screen.</p></li>
+<li><p>Consult the <span class="xref std std-ref">pearson_correlation_coefficient_table</span> and determine the critical value for a statistically significant correlation. In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: Is the correlation between the <strong>Tweet Count</strong> and <strong>Follower Count</strong> statistically significant?</p></li>
+</ol>
+</section>
+<section id="id14">
+<h4>Regression<a class="headerlink" href="#id14" title="Permalink to this headline">#</a></h4>
+<ol class="arabic simple">
+<li><p>Using the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-linear-regression"><span class="std std-ref">Linear Regression</span></a> function, calculate the model parameters for the Linear Regression Model. Label the calculations with comments and print the model coefficients to screen.</p></li>
+<li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, interpret the meaning of the regression parameters in terms of the variables being observed.</p></li>
+<li><p>Using <a class="reference internal" href="../../references/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a>’s <code class="docutils literal notranslate"><span class="pre">plot()</span></code> function, plot the regression line on top of the scatterplot. Label the line with a <span class="xref std std-ref">python_string</span> that contains the <em>Linear Regression Model</em> line of best fit. Make sure to display the legend on the graph.</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Make sure the <code class="docutils literal notranslate"><span class="pre">color</span></code> of the regression line is set to something different than the color of the scatterplot points.</p>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Make an <em>extrapolation</em> using the <em>Linear Regression Model</em>. Label the calculation with comments. In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, write a sentence explaining the <em>meaning</em> of the calculated value.</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Recall an <em>extrapolation</em> is when the <em>Linear Regression Model</em> is used to predict a value of <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> <em>outside of the observed range of x</em>.</p>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: Based on your answer to <em>#3</em> in the previous section (the one about statistical significance), should this extrapolation be used to make a prediction? Why or why not?</p></li>
+</ol>
+</section>
+<section id="id15">
+<h4>Residual Analysis<a class="headerlink" href="#id15" title="Permalink to this headline">#</a></h4>
+<ol class="arabic simple">
+<li><p>Create a <em>histogram</em> for the distribution of residuals for the <em>Linear Regression Model</em>. In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, describe the distribution residuals in a few sentence. Be sure to include descriptions of: shape, location, variation and outliers.</p></li>
+<li><p>Create a <em>QQ plot</em> for the distribution of residuals for the <em>Linear Regression Model</em>. In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: does the <em>QQ Plot</em> for the residuals support or contradict the model assumption of normality?</p></li>
+</ol>
+</section>
+<section id="id16">
+<h4>Conclusion<a class="headerlink" href="#id16" title="Permalink to this headline">#</a></h4>
+<ol class="arabic simple">
+<li><p>Are the assumptions of the <em>Linear Regression Model</em> satisifed by this dataset? In other words, is the <em>Linear Regression Model</em> a good way of modelling the relationship between the two variables? Why or why not?</p></li>
+</ol>
 </section>
 </section>
+</section>
+<section id="extra-credit-data-transformations">
+<span id="project-four-extra-credit"></span><h2>Extra Credit: Data Transformations<a class="headerlink" href="#extra-credit-data-transformations" title="Permalink to this headline">#</a></h2>
+<p>One of the three datasets we have examined in this lab has a non-linear correlation. In order to fit a <em>Linear Regression Model</em> to this dataset, one of the variables must be transformed before the model parameters are estimated. In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, explain which of the calculated correlation is non-linear and then answer the following question:</p>
+<ol class="arabic simple">
+<li><p>What type of data transformation would make the relationship between the variables linear?</p></li>
+</ol>
+<p>Then, taking the transformation you have identified, transform the indicated dataset and re-apply the analysis we have done in this lab: create the graphical representations, perform the calculations, write the analysis and then answer the following question:</p>
+<ol class="arabic simple" start="2">
+<li><p>Compare the <strong>mean square error</strong> of both models. In other words, once the dataset is transformed and a model is fitted to the transformed data, what happens to the <strong>mean square error</strong> of the prediction? Label your calculations with comments.</p></li>
+</ol>
 </section>
 <section id="data-sets">
 <span id="project-four-dataset"></span><h2>Data Sets<a class="headerlink" href="#data-sets" title="Permalink to this headline">#</a></h2>
-<section id="id12">
-<h3>Celebrity Twitter<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h3>
+<section id="id17">
+<h3>Celebrity Twitter<a class="headerlink" href="#id17" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/2572aadc823c943b2c11cfa5442f0098/celebrity_twitter_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></p>
 <p>The following table is a preview of the data you will be using for this project.</p>
-<table class="table" id="id14">
-<caption><span class="caption-text">Celebrity Twitter Followers and Tweet Count</span><a class="headerlink" href="#id14" title="Permalink to this table">#</a></caption>
+<table class="table" id="id19">
+<caption><span class="caption-text">Celebrity Twitter Followers and Tweet Count</span><a class="headerlink" href="#id19" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 17%" />
 <col style="width: 17%" />
@@ -768,12 +996,12 @@ document.write(`
 </table>
 <p>The fifth column represents the number of followers for a given Twitter user. The sixth column represents the number of tweets for a given Twitter user.</p>
 </section>
-<section id="id13">
-<h3>Old Faithful<a class="headerlink" href="#id13" title="Permalink to this headline">#</a></h3>
+<section id="id18">
+<h3>Old Faithful<a class="headerlink" href="#id18" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/1b98a8ccfb60a79a975a96e2eca8a57a/old_faithful_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is a preview of the data you will be using for this project.</p>
-<table class="table" id="id15">
-<caption><span class="caption-text">Old Faithful Eruption and Waiting Times</span><a class="headerlink" href="#id15" title="Permalink to this table">#</a></caption>
+<table class="table" id="id20">
+<caption><span class="caption-text">Old Faithful Eruption and Waiting Times</span><a class="headerlink" href="#id20" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -838,8 +1066,8 @@ document.write(`
 <h3>Spice Girls Song Length<a class="headerlink" href="#spice-girls-song-length" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <code class="xref download docutils literal notranslate"><span class="pre">here</span></code>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
-<table class="table" id="id16">
-<caption><span class="caption-text">Spice Girl Song Lengths</span><a class="headerlink" href="#id16" title="Permalink to this table">#</a></caption>
+<table class="table" id="id21">
+<caption><span class="caption-text">Spice Girl Song Lengths</span><a class="headerlink" href="#id21" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 11%" />
 <col style="width: 11%" />
@@ -927,6 +1155,15 @@ document.write(`
 <p>The third column represents the song length in milliseconds. The fifth column represents the track number of the song on the studio album on which it was released.</p>
 </section>
 </section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html">matplotlib: hist()</a></p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html">matplotlib: plot()</a></p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html">matplotlib: scatter()</a></p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/statistics.html">python statistics</a></p></li>
+</ul>
+</section>
 </section>
 
 
@@ -979,7 +1216,9 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation">Correlation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-regression-model">Linear Regression Model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#residuals">Residuals</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#old-faithful">Old Faithful</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spice-girls-songs">Spice Girls Songs</a></li>
@@ -989,40 +1228,47 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bivariate-analysis">Bivariate Analysis</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scatter-plots">Scatter Plots</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation">Correlation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regression-model">Regression Model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Correlation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regression-parameters">Regression Parameters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#line-of-best-fit">Line of Best Fit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Residuals</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Old Faithful</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Old Faithful</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scatter-plot">Scatter Plot</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Correlation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Correlation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#regression">Regression</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#residual-analysis">Residual Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spice-girl-song-length">Spice Girl Song Length</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Scatter Plot</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Correlation</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Regression</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Residual Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Scatter Plot</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Correlation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Regression</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Residual Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Conclusion</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Celebrity Twitter</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Scatter Plot</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Correlation</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Regression</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Residual Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Celebrity Twitter</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Scatter Plot</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Correlation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Regression</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Residual Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Conclusion</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-data-transformations">Extra Credit: Data Transformations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sets">Data Sets</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Celebrity Twitter</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Old Faithful</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Celebrity Twitter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Old Faithful</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spice-girls-song-length">Spice Girls Song Length</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
   </nav></div>
 
