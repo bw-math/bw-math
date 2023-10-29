@@ -208,7 +208,7 @@ The *ideal* distribution is another word for the *population* distribution. The 
 	
 The graph below displays the results of this code snippet,
 
-.. plot:: assets/plots/distribution/normal/normal_distribution_pdf.py
+.. plot:: assets/plots/distributions/normal/normal_distribution_pdf.py
 
 This gives us a way of seeing how well the Normal density curve fits the data. This can be useful for *assessing* the normality of a distribution. However, a more foolproof method of checking the normality of a sample is given in the next section.
 
@@ -294,7 +294,7 @@ d. :math:`P(\mathcal{Z} \leq z_{\pi}) = 0.975`
 
 e. :math:`P(\mathcal{Z} \geq z_{\pi}) = 0.025`
 
-f. :math:`P(z_{\pi^1} \leq \mathcal{Z} \leq z_{\pi^2}) = 0.50`
+f. :math:`P(z_{\pi_1} \leq \mathcal{Z} \leq z_{\pi_2}) = 0.50`
 
 2. Create a Normal Distribution ``object`` with a mean of 50 and a standard deviation of 10. Use this object to answer the following questions.
 
@@ -308,7 +308,7 @@ d. :math:`P(\mathcal{X} \leq x_{\pi}) = 0.975`
 
 e. :math:`P(\mathcal{X} \geq x_{\pi}) = 0.025`
 
-f. :math:`P(x_{\pi^1} \leq \mathcal{X} \leq x_{\pi^2}) = 0.50`
+f. :math:`P(x_{\pi_1} \leq \mathcal{X} \leq x_{\pi_2}) = 0.50`
 
 Measuring Normality
 -------------------

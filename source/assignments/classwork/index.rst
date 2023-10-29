@@ -8,6 +8,7 @@ Class Work
    :caption: Contents:
 
    minutia/index
+   exams/index
    differentiation/index
    set_theory/index
    probability/index

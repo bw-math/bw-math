@@ -111,7 +111,10 @@ b. Does the experiment have a control group? Explain your answer.
 
 c. Describe how the treatments can be randomly assigned to the experimental units so that each treatment has the same number of units.
 
+8. **2009, Free Response Form B, #3**
 
-8. **2004, Free Response, #4**
+A French study was conducted in the 1990s to compare the effectiveness of using an instrument called a cardiopump with the effectiveness of using traditional cardiopulmonary resuscitation (CPR) in saving lives of heart attack victims. Heart attack patients in participating cities were treated with either a cardiopump or CPR, depending on whether the individual’s heart attack occurred on an even-numbered or an odd-numbered day of the month. Before the start of the study, a coin was tossed to determine which treatment, a cardiopump or CPR, was given on the even-numbered days. The other treatment was given on the odd-numbered days. In total, 754 patients were treated with a cardiopump, and 37 survived at least one year; while 746 patients were treated with CPR, and 15 survived at least one year.
 
-TODO
+a. The conditions for inference are satisfied in the study. State the conditions and indicate how they are satisfied.
+
+b. Perform a statistical test to determine whether the survival rate for patients treated with a cardiopump is significantly higher than the survival rate for patients treated with CPR.
