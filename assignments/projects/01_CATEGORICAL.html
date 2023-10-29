@@ -454,7 +454,6 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-one-bar-charts">Bar Charts</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-frills">No Frills</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stacked">Stacked</a></li>
@@ -467,6 +466,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-data">Loading Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicle-dataset">Electric Vehicle Dataset</a></li>
 </ul>
 </li>
@@ -499,10 +499,10 @@ document.write(`
 <li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-one-installs"><span class="std std-ref">Prerequisites</span></a> section. (We will do this part in class!)</p></li>
 <li><p>Read the <a class="reference internal" href="#project-one-background"><span class="std std-ref">Background</span></a> section.</p></li>
-<li><p>Read the <a class="reference internal" href="#project-one-loading-data"><span class="std std-ref">Loading In Data</span></a> section. (We will do this part in class!)</p></li>
+<li><p>Read the <a class="reference internal" href="#project-one-loading-data"><span class="std std-ref">Loading Data</span></a> section. (We will do this part in class!)</p></li>
 <li><p>Read the <a class="reference internal" href="#project-one-bar-charts"><span class="std std-ref">Bar Charts</span></a> section. Download the script files in that section onto your ChromeBook. Read through them carefully and execute them on your computer.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-one-set-operations"><span class="std std-ref">Set Operations</span></a> section.</p></li>
-<li><p>Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file using the technique outlined in the <a class="reference internal" href="03_NORMALITY.html#project-three-loading-data"><span class="std std-ref">Loading In Data</span></a> section. (We will do this part in class!)</p></li>
+<li><p>Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file using the technique outlined in the <a class="reference internal" href="03_NORMALITY.html#project-three-loading-data"><span class="std std-ref">Loading Data</span></a> section. (We will do this part in class!)</p></li>
 <li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-one-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the <em>Project</em> section.</p></li>
 <li><p>Keep in mind, there is a section dedicated to <a class="reference internal" href="../../references/python/05_PLOTS.html#python-plotting"><span class="std std-ref">Plots</span></a> underneath the <a class="reference internal" href="../../references/python/index.html#python-reference"><span class="std std-ref">References &gt; Python &gt; Plotting</span></a> on the left-hand menu of the site.</p></li>
 <li><p>When you are done, zip your script <strong>and</strong> your <em>csv</em> file into a file named <code class="docutils literal notranslate"><span class="pre">NAME_project_one.zip</span></code></p></li>
@@ -631,31 +631,6 @@ document.write(`
 <p><em>BEV</em> electric vehicles are <em>fully electric</em>. <em>PHEV</em> use hybrid engines; when <em>PHEV</em> engines run out of power, they start using gasoline.</p>
 </section>
 </section>
-</section>
-<section id="loading-in-data">
-<span id="project-one-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
-<p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="#project-one-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
-
-<span class="c1"># read in data</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
-    <span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csv_file</span><span class="p">)</span>
-    <span class="n">raw_data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv_reader</span> <span class="p">]</span>
-
-<span class="c1"># separate headers from data</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">columns</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
-
-<span class="c1"># grab first column from csv file</span>
-<span class="n">column_1</span> <span class="o">=</span> <span class="p">[</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">columns</span> <span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">column_1</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We will do this part in class together.</p>
-</div>
 </section>
 <section id="project-one-bar-charts">
 <span id="id2"></span><h2>Bar Charts<a class="headerlink" href="#project-one-bar-charts" title="Permalink to this headline">#</a></h2>
@@ -869,6 +844,31 @@ document.write(`
 </section>
 <section id="datasets">
 <span id="project-one-dataset"></span><h2>Datasets<a class="headerlink" href="#datasets" title="Permalink to this headline">#</a></h2>
+<section id="loading-data">
+<span id="project-one-loading-data"></span><h3>Loading Data<a class="headerlink" href="#loading-data" title="Permalink to this headline">#</a></h3>
+<p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="#project-one-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="c1"># read in data</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
+    <span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csv_file</span><span class="p">)</span>
+    <span class="n">raw_data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv_reader</span> <span class="p">]</span>
+
+<span class="c1"># separate headers from data</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+
+<span class="c1"># grab first column from csv file</span>
+<span class="n">column_1</span> <span class="o">=</span> <span class="p">[</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">columns</span> <span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">column_1</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We will do this part in class together.</p>
+</div>
+</section>
 <section id="electric-vehicle-dataset">
 <h3>Electric Vehicle Dataset<a class="headerlink" href="#electric-vehicle-dataset" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/38b9a9c95bf197232fea6cd4646dd2da/electric_vehicle_population_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
@@ -1042,7 +1042,6 @@ document.write(`
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-one-bar-charts">Bar Charts</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-frills">No Frills</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stacked">Stacked</a></li>
@@ -1055,6 +1054,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-data">Loading Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-vehicle-dataset">Electric Vehicle Dataset</a></li>
 </ul>
 </li>

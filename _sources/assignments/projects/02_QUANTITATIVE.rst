@@ -119,35 +119,6 @@ You will need to import the following libraries to complete this project,
     import matplotlib.pyplot as plot
     import statistics as stats
 
-.. _project_two_loading_data:
-
-Loading In Data
-===============
-
-The following code snippet will load in a *CSV* spreadsheet named ``example.csv``, parse it into a list and then print it to screen, assuming that *CSV* file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in :ref:`project_two_dataset` section.
-
-.. code-block:: python 
-
-    import csv
-
-    # read in data
-    with open('example.csv') as csv_file:
-        csv_reader = csv.reader(csv_file)
-        raw_data = [ row for row in csv_reader ]
-
-    # separate headers from data
-    headers = raw_data[0]
-    columns = raw_data[1:]
-
-    # grab first column from csv file and ensure it's a number (not a string)
-    column_1 = [ float(row[0]) for row in columns ]
-
-    print(column_1)
-
-.. important::
-
-    This is *slightly* different from how we did it in the first project. **Python** reads in the *.csv* file as plain text, even the numbers. In other words, Python interprets an observation of, say, ``2`` as a string of text that says ``"2"``; this is fine and dandy when dealing with categorical data because we represent categories with :ref:`strings <python_strings>`. When we are dealing with quantitative data, we have to tell **Python** to convert the plain text to a :ref:`float <python_floats>` data type (Recall *floats* are *decimal* valued data types). The ``float()`` function in the code snippet above converts the plain text to a numeric value and stores it in a variable.
-
 .. _project_two_graphs:
 
 Graphical Representations
@@ -550,6 +521,35 @@ Comparative Analysis
 
 Datasets
 ========
+
+.. _project_two_loading_data:
+
+Loading Data
+------------
+
+The following code snippet will load in a *CSV* spreadsheet named ``example.csv``, parse it into a list and then print it to screen, assuming that *CSV* file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in :ref:`project_two_dataset` section.
+
+.. code-block:: python 
+
+    import csv
+
+    # read in data
+    with open('example.csv') as csv_file:
+        csv_reader = csv.reader(csv_file)
+        raw_data = [ row for row in csv_reader ]
+
+    # separate headers from data
+    headers = raw_data[0]
+    columns = raw_data[1:]
+
+    # grab first column from csv file and ensure it's a number (not a string)
+    column_1 = [ float(row[0]) for row in columns ]
+
+    print(column_1)
+
+.. important::
+
+    This is *slightly* different from how we did it in the first project. **Python** reads in the *.csv* file as plain text, even the numbers. In other words, Python interprets an observation of, say, ``2`` as a string of text that says ``"2"``; this is fine and dandy when dealing with categorical data because we represent categories with :ref:`strings <python_strings>`. When we are dealing with quantitative data, we have to tell **Python** to convert the plain text to a :ref:`float <python_floats>` data type (Recall *floats* are *decimal* valued data types). The ``float()`` function in the code snippet above converts the plain text to a numeric value and stores it in a variable.
 
 Velocity of Light Data
 ----------------------

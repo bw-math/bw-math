@@ -444,7 +444,6 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method-of-selection">Method of Selection</a></li>
 </ul>
@@ -456,6 +455,8 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-data">Loading Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vietnam-draft-lottery-data">Vietnam Draft Lottery Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning-the-data-set">Cleaning the Data Set</a></li>
 </ul>
 </li>
@@ -486,33 +487,12 @@ document.write(`
 <li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">NAME_project_five.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">NAME</span></code> with your name.</p></li>
 <li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-five-background"><span class="std std-ref">Background</span></a> section.</p></li>
-<li><p>Read the <a class="reference internal" href="#project-five-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
-<li><p>Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file using the technique outlined in the <a class="reference internal" href="#project-five-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Read the <a class="reference internal" href="#project-five-loading-data"><span class="std std-ref">Loading Data</span></a> section.</p></li>
+<li><p>Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file using the technique outlined in the <a class="reference internal" href="#project-five-loading-data"><span class="std std-ref">Loading Data</span></a> section.</p></li>
 <li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-five-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the instructions of each problem.</p></li>
 <li><p>When you are done, zip your script <strong>and</strong> the <em>csv</em> file in a zip file named <code class="docutils literal notranslate"><span class="pre">NAME_project_five.zip</span></code></p></li>
 <li><p>Upload the zip file to the Google Classroom Project Three Assignment.</p></li>
 </ol>
-</section>
-<section id="loading-in-data">
-<span id="project-five-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
-<p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="02_QUANTITATIVE.html#project-two-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
-
-<span class="c1"># read in data</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
-    <span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csv_file</span><span class="p">)</span>
-    <span class="n">raw_data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv_reader</span> <span class="p">]</span>
-
-<span class="c1"># separate headers from data</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">columns</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
-
-<span class="c1"># grab first column from csv file and ensure it&#39;s a number (not a string)</span>
-<span class="n">column_1</span> <span class="o">=</span> <span class="p">[</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">columns</span> <span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">column_1</span><span class="p">)</span>
-</pre></div>
-</div>
 </section>
 <section id="background">
 <span id="project-five-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
@@ -635,6 +615,29 @@ print(x_var)
 </section>
 <section id="dataset">
 <span id="project-five-dataset"></span><h2>Dataset<a class="headerlink" href="#dataset" title="Permalink to this headline">#</a></h2>
+<section id="loading-data">
+<span id="project-five-loading-data"></span><h3>Loading Data<a class="headerlink" href="#loading-data" title="Permalink to this headline">#</a></h3>
+<p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="02_QUANTITATIVE.html#project-two-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="c1"># read in data</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
+    <span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csv_file</span><span class="p">)</span>
+    <span class="n">raw_data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv_reader</span> <span class="p">]</span>
+
+<span class="c1"># separate headers from data</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+
+<span class="c1"># grab first column from csv file and ensure it&#39;s a number (not a string)</span>
+<span class="n">column_1</span> <span class="o">=</span> <span class="p">[</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">columns</span> <span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">column_1</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="vietnam-draft-lottery-data">
+<h3>Vietnam Draft Lottery Data<a class="headerlink" href="#vietnam-draft-lottery-data" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/257993626c7a7bafe318b70290252148/vietnam_draft_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
 <table class="table" id="id1">
@@ -793,6 +796,7 @@ print(x_var)
 <div><p>D = 1, 2, 3, … , 30, 31</p>
 </div></blockquote>
 <p>And <em>N69</em>, <em>N70</em>, <em>N71</em> and <em>N72</em> represent the number of individuals selected with a given birth date in the years 1969, 1970, 1971 and 1972, respectively.</p>
+</section>
 <section id="cleaning-the-data-set">
 <h3>Cleaning the Data Set<a class="headerlink" href="#cleaning-the-data-set" title="Permalink to this headline">#</a></h3>
 <p>The <em>experimental unit</em> in this lab is a date. Each entry in the datasets corresponds to a particular birthdate, i.e. a month and day. For example, the first row of the dataset looks like,</p>
@@ -872,7 +876,6 @@ print(x_var)
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method-of-selection">Method of Selection</a></li>
 </ul>
@@ -884,6 +887,8 @@ print(x_var)
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-data">Loading Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vietnam-draft-lottery-data">Vietnam Draft Lottery Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning-the-data-set">Cleaning the Data Set</a></li>
 </ul>
 </li>

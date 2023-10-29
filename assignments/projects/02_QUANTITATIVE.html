@@ -456,7 +456,6 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-imports">Required Imports</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graphical-representations">Graphical Representations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">Histogram</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cumulative-frequency-histograms">Cumulative Frequency Histograms</a></li>
@@ -472,6 +471,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-data">Loading Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light-data">Velocity of Light Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-the-earth-data">Density of the Earth Data</a></li>
 </ul>
@@ -507,7 +507,7 @@ document.write(`
 <li><p>Read the <a class="reference internal" href="#project-two-required-imports"><span class="std std-ref">Required Imports</span></a> section. Add the required imports to you <code class="docutils literal notranslate"><span class="pre">.py</span></code> script.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-two-graphs"><span class="std std-ref">Graphical Representations</span></a> section.</p></li>
 <li><p>Read the <a class="reference internal" href="#project-two-sample-statistics"><span class="std std-ref">Sample Statistics</span></a> section.</p></li>
-<li><p>Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> files using the technique outlined in the <a class="reference internal" href="#project-two-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> files using the technique outlined in the <a class="reference internal" href="#project-two-loading-data"><span class="std std-ref">Loading Data</span></a> section.</p></li>
 <li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-two-project"><span class="std std-ref">Project</span></a> section. Label your script with comments or include your written answers in the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a> as indicated in the <em>Project</em> section.</p></li>
 <li><p>When you are done, zip your script <strong>and</strong> the <em>csv</em> files into a zip file named <code class="docutils literal notranslate"><span class="pre">NAME_project_two.zip</span></code></p></li>
 <li><p>Upload the zip file to the Google Classrom Project Two asignment.</p></li>
@@ -571,31 +571,6 @@ document.write(`
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
 <span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">stats</span>
 </pre></div>
-</div>
-</section>
-<section id="loading-in-data">
-<span id="project-two-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
-<p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
-
-<span class="c1"># read in data</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
-    <span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csv_file</span><span class="p">)</span>
-    <span class="n">raw_data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv_reader</span> <span class="p">]</span>
-
-<span class="c1"># separate headers from data</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">columns</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
-
-<span class="c1"># grab first column from csv file and ensure it&#39;s a number (not a string)</span>
-<span class="n">column_1</span> <span class="o">=</span> <span class="p">[</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">columns</span> <span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">column_1</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>This is <em>slightly</em> different from how we did it in the first project. <strong>Python</strong> reads in the <em>.csv</em> file as plain text, even the numbers. In other words, Python interprets an observation of, say, <code class="docutils literal notranslate"><span class="pre">2</span></code> as a string of text that says <code class="docutils literal notranslate"><span class="pre">&quot;2&quot;</span></code>; this is fine and dandy when dealing with categorical data because we represent categories with <a class="reference internal" href="../../references/python/02_BASIC.html#python-strings"><span class="std std-ref">strings</span></a>. When we are dealing with quantitative data, we have to tell <strong>Python</strong> to convert the plain text to a <a class="reference internal" href="../../references/python/02_BASIC.html#python-floats"><span class="std std-ref">float</span></a> data type (Recall <em>floats</em> are <em>decimal</em> valued data types). The <code class="docutils literal notranslate"><span class="pre">float()</span></code> function in the code snippet above converts the plain text to a numeric value and stores it in a variable.</p>
 </div>
 </section>
 <section id="graphical-representations">
@@ -797,7 +772,7 @@ document.write(`
 <section id="velocity-of-light">
 <h3>Velocity of Light<a class="headerlink" href="#velocity-of-light" title="Permalink to this headline">#</a></h3>
 <ol class="arabic">
-<li><p>Load the <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">Velocity of Light</span></a> data into a <a class="reference internal" href="../../references/python/01_SETUP.html#python-scripts"><span class="std std-ref">Python Script</span></a> using the technique outlined in the <a class="reference internal" href="#project-two-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Load the <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">Velocity of Light</span></a> data into a <a class="reference internal" href="../../references/python/01_SETUP.html#python-scripts"><span class="std std-ref">Python Script</span></a> using the technique outlined in the <a class="reference internal" href="#project-two-loading-data"><span class="std std-ref">Loading Data</span></a> section.</p></li>
 <li><p>Construct a histogram plot for this dataset using eight classes. Answer the following questions in the body of your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
@@ -858,7 +833,7 @@ document.write(`
 <section id="density-of-the-earth">
 <h3>Density of the Earth<a class="headerlink" href="#density-of-the-earth" title="Permalink to this headline">#</a></h3>
 <ol class="arabic">
-<li><p>Load the <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">Density of the Earth</span></a> data into a <a class="reference internal" href="../../references/python/01_SETUP.html#python-scripts"><span class="std std-ref">Python Script</span></a> using the tecnique outlined in the <a class="reference internal" href="#project-two-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
+<li><p>Load the <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">Density of the Earth</span></a> data into a <a class="reference internal" href="../../references/python/01_SETUP.html#python-scripts"><span class="std std-ref">Python Script</span></a> using the tecnique outlined in the <a class="reference internal" href="#project-two-loading-data"><span class="std std-ref">Loading Data</span></a> section.</p></li>
 <li><p>Construct a histogram plot for this dataset using eight classes. Answer the following questions in the body of your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
@@ -938,6 +913,31 @@ document.write(`
 </section>
 <section id="datasets">
 <span id="project-two-dataset"></span><h2>Datasets<a class="headerlink" href="#datasets" title="Permalink to this headline">#</a></h2>
+<section id="loading-data">
+<span id="project-two-loading-data"></span><h3>Loading Data<a class="headerlink" href="#loading-data" title="Permalink to this headline">#</a></h3>
+<p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="c1"># read in data</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
+    <span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csv_file</span><span class="p">)</span>
+    <span class="n">raw_data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv_reader</span> <span class="p">]</span>
+
+<span class="c1"># separate headers from data</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="n">raw_data</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+
+<span class="c1"># grab first column from csv file and ensure it&#39;s a number (not a string)</span>
+<span class="n">column_1</span> <span class="o">=</span> <span class="p">[</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">columns</span> <span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">column_1</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This is <em>slightly</em> different from how we did it in the first project. <strong>Python</strong> reads in the <em>.csv</em> file as plain text, even the numbers. In other words, Python interprets an observation of, say, <code class="docutils literal notranslate"><span class="pre">2</span></code> as a string of text that says <code class="docutils literal notranslate"><span class="pre">&quot;2&quot;</span></code>; this is fine and dandy when dealing with categorical data because we represent categories with <a class="reference internal" href="../../references/python/02_BASIC.html#python-strings"><span class="std std-ref">strings</span></a>. When we are dealing with quantitative data, we have to tell <strong>Python</strong> to convert the plain text to a <a class="reference internal" href="../../references/python/02_BASIC.html#python-floats"><span class="std std-ref">float</span></a> data type (Recall <em>floats</em> are <em>decimal</em> valued data types). The <code class="docutils literal notranslate"><span class="pre">float()</span></code> function in the code snippet above converts the plain text to a numeric value and stores it in a variable.</p>
+</div>
+</section>
 <section id="velocity-of-light-data">
 <h3>Velocity of Light Data<a class="headerlink" href="#velocity-of-light-data" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/5aa18cd2c2ca04b7636763fca781ca72/velocity_of_light_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
@@ -1081,7 +1081,6 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-imports">Required Imports</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graphical-representations">Graphical Representations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">Histogram</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cumulative-frequency-histograms">Cumulative Frequency Histograms</a></li>
@@ -1097,6 +1096,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-data">Loading Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light-data">Velocity of Light Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-of-the-earth-data">Density of the Earth Data</a></li>
 </ul>
