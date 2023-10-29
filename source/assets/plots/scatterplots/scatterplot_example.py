@@ -19,7 +19,13 @@ matplotlib.use('agg')
 import matplotlib.pyplot as mpl
 import statistics as stat
 
-bivariate_data = [ (1,2), (3,8), (5,6), (7, 13), (9, 21), (11, 19) ]
+bivariate_data = [
+    (2, 1), (8, 3), (1, 1), (2, 0), (9, 4), (3, 2), (5, 3),
+    (1, 0), (7, 3), (6, 3), (3, 2), (0, 0), (0, 1), (8, 4),
+    (0, 0), (3, 1), (4, 3), (7, 3), (1, 1), (10, 6), (6, 4),
+    (3, 2), (7, 3), (6, 2), (9, 5), (5, 3), (1, 1), (4, 2),
+    (1, 0), (7, 3)
+]
 (fig, axes) = mpl.subplots()
 
 # separate x and y data

@@ -347,8 +347,12 @@ f. 1 :sup:`th` percentile
 Old Faithful
 ************
 
-1. Find the following sample percentiles in the Old Faithful eruption duration sample distribution.
+1. Find the following sample percentiles in the Old Faithful **eruption duration** sample distribution.
 
+.. important::
+
+	We are *only* looking at the **eruption duration** variable!
+	
 a. 99 :sup:`th` percentile
 
 b. 97.5 :sup:`th` percentile
@@ -381,7 +385,7 @@ Graphing Normality
 Velocity of Light
 *****************
 
-1. Create a histogram with 10 classes for the Velocity of Light data. Ensure the axes are appropriately labeled and the tick marks are set to the class limits. Use ``density=True`` to make a relative frequency histogram. 
+1. Create a histogram with 10 classes for the Velocity of Light data. Ensure the axes are appropriately labeled and the tick marks are set to the class limits. Use ``density=True`` to convert the histogram into a density (recall density is defined as :math:`\rho=\frac{p}{\delta x }`). 
 
 .. hint::
 
@@ -394,15 +398,19 @@ Velocity of Light
 Old Faithful
 ************
 
-1. Create a histogram with 10 classes for the Old Faithful data. Ensure the axes are appropriately labeled and the tick marks are set to the class limits. Use ``density=True`` to make a relative frequency histogram. 
+1. Create a histogram with 10 classes for the Old Faithful duration data. Ensure the axes are appropriately labeled and the tick marks are set to the class limits. Use ``density=True`` to convert the histogram into a density (recall density is defined as :math:`\rho=\frac{p}{\delta x }`). 
 
 .. hint::
 
 	Make sure to use the class limits for the tick marks!
 	
-2. Create a Normal ``object``. Use the mean and standard deviation of the Old Faithful data as the distribution parameters.
+.. important::
 
-3. Use the ``pdf()`` density function to graph the ideal Normal distribution for the Old Faithful data. 
+	We are *only* looking at the **eruption duration** variable!
+	
+2. Create a Normal ``object``. Use the mean and standard deviation of the Old Faithful eruption duration data as the distribution parameters.
+
+3. Use the ``pdf()`` density function to graph the ideal Normal distribution for the Old Faithful eruption duration data. 
 
 Assessing Normality
 -------------------
@@ -419,6 +427,10 @@ Old Faithful
 
 1. Create a QQ plot for Old Faithful's eruption duration.
 
+.. important::
+
+	We are *only* looking at the **eruption duration** variable!
+	
 2. In your :ref:`python_docstring`, answer the following question: Based on the QQ plot, is Old Faithful's eruption duration approximately normal? Why or why not?
 
 .. _project_three_dataset:
