@@ -290,7 +290,7 @@ In this example, we would find,
 	
 .. math::
 
-	Z_{\text{theoretical}} = \{ -0.842, -0.253, 0.253, 0.842 }
+	Z_{\text{theoretical}} = \{ -0.842, -0.253, 0.253, 0.842 \}
 	
 After constructing the theoretical percentiles, we create a scatter plot using the order paired,
 
@@ -298,7 +298,7 @@ After constructing the theoretical percentiles, we create a scatter plot using t
 	
 If the sample distribution is Normal, we should observe a linear relationship between the x-value and the y-value of this scatter plot. The following plot is the QQ plot summarizes the normality of this example,
 
-.. plot:: assets/plots/distributions/other/qq_plot_simple.py
+.. plot:: assets/plots/other/qq_plot_simple.py
 
 We notice an approximately linear relationship between the observed percentiles and the theoretical percentile, and thus we conclude there is no evidence to suggest the distribution is not normal.
 

@@ -32,7 +32,7 @@ In order to differentiate between the statistics relationing to the *x* and *y* 
 	
 .. math::
 	
-	s_{y}^2 = \frac{1}{n-1} \cdot \sum{i=1}^{n} (y_i - \bar{y})^2
+	s_{y}^2 = \frac{1}{n-1} \cdot \sum_{i=1}^{n} (y_i - \bar{y})^2
 	
 Assessing Correlation
 *********************
@@ -62,6 +62,7 @@ TODO
 .. math::
 	
 	s_{y}^2 = \frac{1}{n-1} \cdot \sum{i=1}^{n} (y_i - \bar{y})^2
+	
 Definition
 ==========
 
@@ -70,17 +71,17 @@ Version 1
 
 TODO: justification. make some plots.
 
-.. math::
-
 Version 2
 ---------
+
+TODO: shortcut for version 2
 
 Version 3
 ---------
 
-TODO
+TODO: justifcation, again.
 
 .. math::
 
-	r_{xy} = \frac{1}{n-1} \cdot \sum_{i=1}^{n} \frac{x_i - \bar{x}}{s_x} \frac{y_i - \bar{y}}{s_y}
+	r_{xy} = \frac{1}{n-1} \cdot \sum_{i=1}^{n} (\frac{x_i - \bar{x}}{s_x}) \cdot (\frac{y_i - \bar{y}}{s_y})
 	
