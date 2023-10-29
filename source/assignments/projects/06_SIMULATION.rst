@@ -4,6 +4,12 @@
 Simulation
 ==========
 
+```{epigraph}
+Your mind makes it real.
+
+-- Morpheus, The Matrix
+```
+
 **Python** allows us to simulate experiments that would otherwise be tedious to perform. In this lab, we will explore a few techniques for *simulation*.
 
 Instructions

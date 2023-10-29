@@ -4,9 +4,11 @@
 Normality
 =========
 
-	All models are wrong, but some are useful.
+```{epigraph}
+All models are wrong, but some are useful.
 	
-	- George Box
+-- George Box
+```
 
 *Normality* is an important phenomenon because of its far-reaching power. Due to the **Central Limit Theorem**, the distribution of the sample mean becomes Normal as the number of experiments and the number of observations per experiment increases. Due to the **Law of Large Numbers**, as these numbers increase, the distribution of the sample mean becomes centered around the *true* population mean. Using these two facts, *normality* allows us to draw *statistical inferences* about population parameters using a sample drawn from an arbitrarily distributed population. 
 

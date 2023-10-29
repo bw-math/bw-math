@@ -4,6 +4,12 @@
 Monte Carlo Simulation
 ======================
 
+```{epigraph}
+'Tis but fortune. All is fortune.
+
+-- William Shakespeare, The Twelfeth Night
+```
+
 TODO
 
 estimate pi with monte carlo!

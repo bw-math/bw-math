@@ -4,9 +4,11 @@
 Linear Regression
 =================
 
-	Mathematicians do not study objects, but relations among objects; they are indifferent to the replacement of objects by others as long as relations do not change. Matter is not imporant, only form interests them.
+```{epigraph}
+Mathematicians do not study objects, but relations among objects; they are indifferent to the replacement of objects by others as long as relations do not change. Matter is not imporant, only form interests them.
 	
-	- Henri Poincare
+-- Henri Poincare
+```
 
 In this project, we will take the techniques we have learned for bivariate data analysis and apply to them to three datasets from real life. We will examine and classify the correlation between variables and then use sample statistics to determine whether the relationship observed between the variables is significant. We will fit a :ref:`Linear Regression Model <linear_regression>` to the data and use the model parameters to make predictions and extrapolations.
 

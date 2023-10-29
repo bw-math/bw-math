@@ -4,9 +4,11 @@
 Bias
 ====
 
-    There's something happening here, but what it is ain't exactly clear.
+```
+There's something happening here, but what it is ain't exactly clear.
 
-    - Buffalo Springfield
+-- Buffalo Springfield
+```
 
 In this lab, you will perform some graphical analysis on a famously biased data set and use statistical reasoning to draw conclusions about the method of observation used to generate the data.
 

@@ -4,9 +4,11 @@
 Histograms and Boxplots
 =======================
 
-    What can be shown, cannot be said.
+```{epigraph}
+What can be shown, cannot be said.
 
-    - Ludwig Wittgenstein
+- Ludwig Wittgenstein
+```
 
 In this lab, you will get *even more* familiar with the statistical plotting features of **Python** using several famous datasets from the history of science. We will create histograms and boxplots to visualize the distributions of experimental data, and calculate sample statistics to summarize the data. 
 
