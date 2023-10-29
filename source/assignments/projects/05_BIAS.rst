@@ -23,31 +23,6 @@ Instructions
 8. When you are done, zip your script **and** the *csv* file in a zip file named ``NAME_project_five.zip``
 9. Upload the zip file to the Google Classroom Project Three Assignment.
 
-.. _project_five_loading_data:
-
-Loading In Data
-===============
-
-The following code snippet will load in a *CSV* spreadsheet named ``example.csv``, parse it into a list and then print it to screen, assuming that *CSV* file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in :ref:`project_two_dataset` section.
-
-.. code-block:: python 
-
-    import csv
-
-    # read in data
-    with open('example.csv') as csv_file:
-        csv_reader = csv.reader(csv_file)
-        raw_data = [ row for row in csv_reader ]
-
-    # separate headers from data
-    headers = raw_data[0]
-    columns = raw_data[1:]
-
-    # grab first column from csv file and ensure it's a number (not a string)
-    column_1 = [ float(row[0]) for row in columns ]
-
-    print(column_1)
-
 .. _project_five_background:
 
 Background
@@ -189,6 +164,34 @@ This selection method was later revised in 1970, 1971 and 1972, once the distrib
 
 Dataset
 =======
+
+.. _project_five_loading_data:
+
+Loading Data
+------------
+
+The following code snippet will load in a *CSV* spreadsheet named ``example.csv``, parse it into a list and then print it to screen, assuming that *CSV* file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in :ref:`project_two_dataset` section.
+
+.. code-block:: python 
+
+    import csv
+
+    # read in data
+    with open('example.csv') as csv_file:
+        csv_reader = csv.reader(csv_file)
+        raw_data = [ row for row in csv_reader ]
+
+    # separate headers from data
+    headers = raw_data[0]
+    columns = raw_data[1:]
+
+    # grab first column from csv file and ensure it's a number (not a string)
+    column_1 = [ float(row[0]) for row in columns ]
+
+    print(column_1)
+
+Vietnam Draft Lottery Data
+--------------------------
 
 You can download the full dataset :download:`here <../../assets/datasets/vietnam_draft_data.csv>`.
 
