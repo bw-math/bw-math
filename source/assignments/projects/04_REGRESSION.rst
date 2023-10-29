@@ -29,6 +29,17 @@ Instructions
 Background
 ==========
 
+Correlation
+-----------
+
+The correlation coefficient is defined by the formula,
+
+.. math::
+
+	r_xy = \frac{1}{n-1} \cdot \sum_{i=1}^{n} (\frac{x_i - \bar{x}}{s_x}) \cdot (\frac{y_i - \bar{y}}{s_y})
+	
+Notice the correlation coefficient is the average of a product of z-scores. In this formula, both the :math:`x` and :math:`y` variable are standardized and the product of each z-score is summed and then divided by :math:`n-1` to find the average. When the z-scores of the :math:`x` and :math:`y` variable are simultaneously positive or simultaneously negative, this results in a positive correlation. When the z-scores of the :math:`x` and :math:`y` variable simultaneously take on opposite signs (i.e. when one is negative, the other is positive and visa versa), this results in a negative correlation.
+
 Linear Regression Model
 -----------------------
 
@@ -38,13 +49,13 @@ The *Linear Regression Model* is a special statistical method for modelling the 
 
 	S = \{ (x_1, y_1), (x_2, y_2), ... , (x_n, y_n) \}
 	
-Where :math:`n` is the total number of samples. The :math:`x_i` variable is referred to as the **predictor** variable (or sometimes the **independent** variable); the :math:`y_i` variable is referred to as the **response** varaible (or sometimes the **dependent** variable). If a statistically significant *linear* correlation exists between the predictor and response variable, the *Linear Regression Model* can be used to *predict* a value of :math:`y_i` given a value of :math:`x_i`. The *model equation* for :math:`\hat{y_i}` is given by,
+Where :math:`n` is the total number of samples. The :math:`x_i` variable is referred to as the *predictor* variable (or sometimes the *independent* variable); the :math:`y_i` variable is referred to as the *response* varaible (or sometimes the *dependent* variable). If a statistically significant *linear* correlation exists between the predictor and response variable, the *Linear Regression Model* can be used to *predict* a value of :math:`y_i` given a value of :math:`x_i`. The *model equation* for :math:`\hat{y_i}` is given by,
 
 .. math::
 
     \hat{y_i} = \mathcal{B}_1 \cdot x_i + \mathcal{B}_0 + \varepsilon_i
 
-Where the term :math:`\varepsilon_i` is a normally distributed error term centered around 0 with standard deviation equal to the **mean squared error** of the model,
+Where the term :math:`\varepsilon_i` is a normally distributed error term centered around 0 with standard deviation equal to the *mean squared error* of the model,
 
 .. math::
 
@@ -125,13 +136,51 @@ The sections that follow assume you have these lines added to the top of your sc
 Scatter Plots
 -------------
 
+A scatterplot is a very simple and easy to understand graphical representation of data. The predictor variable is plotted on the horizontal axis versus the response variable on the vertical axis. A scatterplot can be created in :ref:`matplotlib` using the `scatter() <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html>`_ function, 
+
+.. code:: python
+
+	# separate x and y data
+	x_data = [ obs[0] for obs in bivariate_data ]
+	y_data = [ obs[1] for obs in bivariate_data ]
+
+	axes.scatter(x_data, y_data)
+
+	# label axes
+	mpl.title("Scatterplot Example")
+	axes.set_ylabel("y observation")
+	axes.set_xlabel("x observation")
+
+	mpl.show()
+
+.. note::
+
+	The *x* and *y* variables must be split into separate lists before calling the `scatter() <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html>`_ function.
+	
+The code snippet shown above will create the following graph,
+
 .. plot:: assets/plots/plots/scatterplots/scatterplot_example.py
+
+Inspecting a scatterplot is often a good first step in determining whether a correlation exists between two variables. For example, the dummy data we created in the previous section has an obvious *positive*, *linear* relationship. When a linear relationship exists between variables, the correlation coefficient can be used to quantify the strength of the relationship.
 
 Correlation
 -----------
 
-Regression Model
-----------------
+The correlation coefficient can be easily calculated using the ``stats`` package in **Python**. The following snippet illustrates its calculation,
+
+.. code:: python
+
+	r = stat.correlation(x_data, y_data)
+	print("correlation coefficient: ", round(r, 4))
+	
+Output:
+
+	correlation coefficient:  0.9332
+
+A correlation near 1 suggests a strong relationship. To establish statistical significance, we compare this sample and correlation coefficient against the :ref:`pearson_correlation_coefficient_table`. 
+
+Regression Parameters
+---------------------
 
 TODO
 
@@ -267,3 +316,8 @@ The following table is the a preview of the data you will be using for this proj
    :file: ../../assets/datasets/previews/spice_girls_song_data_preview.csv
 
 The third column represents the song length in milliseconds. The fifth column represents the track number of the song on the studio album on which it was released.
+
+References
+==========
+
+- `matplotlib: scatter plots<https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html>`_

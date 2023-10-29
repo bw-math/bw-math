@@ -22,12 +22,15 @@ import statistics as stat
 bivariate_data = [ (1,2), (3,8), (5,6), (7, 13), (9, 21), (11, 19) ]
 (fig, axes) = mpl.subplots()
 
+# separate x and y data
 x_data = [ obs[0] for obs in bivariate_data ]
 y_data = [ obs[1] for obs in bivariate_data ]
 
-
 axes.scatter(x_data, y_data)
 
+# label axes
+mpl.title("Scatterplot Example")
 axes.set_ylabel("y observation")
 axes.set_xlabel("x observation")
+
 mpl.show()
