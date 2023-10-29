@@ -245,9 +245,7 @@ The responses of the 100 students are summarized in the frequency table shown.
 .. image:: ../../../assets/imgs/classwork/2014_apstats_frp_01a.png
     :align: center 
 
-a. Calculate the proportion of on campus students in the sample who participate in at least one extracurricular
-activity and the proportion of off campus students in the sample who participate in at least one
-extracurricular activity.
+a. Calculate the proportion of on campus students in the sample who participate in at least one extracurricular activity and the proportion of off campus students in the sample who participate in at least one extracurricular activity.
 
     On campus proportion:
 
@@ -291,4 +289,15 @@ After the program, the children were offered a choice between the two snacks. Th
 a. Do the data provide convincing statistical evidence that there is an association between type of ad and children's choice of snack among all children similar to those who participated in the experiment?
 
 b. Write a few sentences describing the effect of each ad on children's choice of snack.
+
+13. **2009, Free Response Form B, #1**
+
+.. image:: ../../../assets/imgs/classwork/2009_apstats_frp_formb_01.png
+    :align: center
+    
+As gasoline prices have increased in recent years, many drivers have expressed concern about the taxes they pay on gasoline for their cars. In the United States, gasoline taxes are imposed by both the federal government and by individual states. The boxplot above shows the distribution of the state gasoline taxes, in cents per gallon, for all 50 states on January 1, 2006.
+
+a. Based on the boxplot, what are the approximate values of the median and the interquartile range of the distribution of state gasoline taxes, in cents per gallon? Mark and label the boxplot to indicate how you found the approximated values.
+
+b. The federal tax imposed on gasoline was 18.4 cents per gallon at the time the state taxes were in effect. The federal gasoline tax was added to the state gasoline tax for each state to create a new distribution of combined gasoline taxes. What are approximate values, in cents per gallon, of the median and interquartile range of the new distribution of combined gasoline taxes? Justify your answer.
 

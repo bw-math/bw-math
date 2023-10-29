@@ -127,3 +127,21 @@ a. Find the mean and median of both the test group and control group.
 b. Comment on the shape of the control distribution versus the shape of the test distribution. Justify your answer with calculations.
 
 c. Based on the dotplots and your answers to part *#a* and *#b*, comment on the effectiveness of the preservative in lowering the amount of discoloration in strawberries.
+
+7. **2021, Free Response, #1**
+
+The length of stay in a hospital after receiving a particular treatment is of interest to the patient, the hospital, and insurance providers. Of particular interest are unusually short or long lengths of stay. A random sample of 50 patients who received the treatment was selected, and the length of stay, in number of days, was recorded for each patient. The results are summarized in the following table and are shown in the dotplot.
+
+.. image:: ../../../assets/imgs/classwork/2021_apstats_frp_01.png
+    :align: center
+    
+a. Determine the five-number summary of the distribution of length of stay.
+
+b. Consider two rules for identifying outliers, method A and method B. Let method A represent the 1.5 x IQR rule, and let method B represent the 2 standard deviations rule.
+
+	i. Using method A, determine any data points that are potential outliers in the distribution of length of
+stay. Justify your answer.
+
+	ii. The mean length of stay for the sample is 7.42 days with a standard deviation of 2.37 days. Using method B, determine any data points that are potential outliers in the distribution of length of stay. Justify your answer.
+	
+c. Explain why method A might identify more data points as potential outliers than method B for a distribution that is strongly skewed to the right.
