@@ -465,13 +465,13 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graphing-normality">Graphing Normality</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Velocity of Light</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Old Faithful</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Velocity of Light</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Old Faithful</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assessing-normality">Assessing Normality</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Velocity of Light</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Old Faithful</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Velocity of Light</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Old Faithful</a></li>
 </ul>
 </li>
 </ul>
@@ -479,7 +479,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-data">Loading Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light-data">Velocity of Light Data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Old Faithful</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Old Faithful</a></li>
 </ul>
 </li>
 </ul>
@@ -495,12 +495,10 @@ document.write(`
                   
   <section id="normality">
 <span id="project-three"></span><h1>Normality<a class="headerlink" href="#normality" title="Permalink to this headline">#</a></h1>
-<blockquote>
-<div><p>All models are wrong, but some are useful.</p>
-<ul class="simple">
-<li><p>George Box</p></li>
-</ul>
-</div></blockquote>
+<p><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a>{epigraph}
+All models are wrong, but some are useful.</p>
+<p>– George Box
+<a href="#id5"><span class="problematic" id="id6">``</span></a><a href="#id7"><span class="problematic" id="id8">`</span></a></p>
 <p><em>Normality</em> is an important phenomenon because of its far-reaching power. Due to the <strong>Central Limit Theorem</strong>, the distribution of the sample mean becomes Normal as the number of experiments and the number of observations per experiment increases. Due to the <strong>Law of Large Numbers</strong>, as these numbers increase, the distribution of the sample mean becomes centered around the <em>true</em> population mean. Using these two facts, <em>normality</em> allows us to draw <em>statistical inferences</em> about population parameters using a sample drawn from an arbitrarily distributed population.</p>
 <p>The averaging effect of the <strong>Central Limit Theorem</strong> is more pronounced when the population being sampled is itself Normal (in mathematical terms, we say the <em>sample distribution converges to the population distribution</em> more quickly when the population is Normal); This assumption is not required, though. Any population distribution can be transformed into a Normal distribution by averaging observations drawn from its pool of outcomes. Recall the die roll simulation from class, where a uniformly distributed population became Normal when observations were averaged.</p>
 <p>For this reason, we are often interested in determining whether a given population is normally distributed. In this project, we will learn how to perform <a class="reference internal" href="../../notes/distributions/04_NORMAL.html#normal-calculations"><span class="std std-ref">Normal Calculations</span></a> using <strong>Python</strong>. Using these techniques, we will compare theoretically determined population parameters to empirically determined sample statistics in order to see how the Normal Distribution can be used to model population distributions.</p>
@@ -794,8 +792,8 @@ document.write(`
 </section>
 <section id="graphing-normality">
 <h3>Graphing Normality<a class="headerlink" href="#graphing-normality" title="Permalink to this headline">#</a></h3>
-<section id="id1">
-<h4>Velocity of Light<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h4>
+<section id="id9">
+<h4>Velocity of Light<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h4>
 <ol class="arabic simple">
 <li><p>Create a histogram with 10 classes for the Velocity of Light data. Ensure the axes are appropriately labeled and the tick marks are set to the class limits. Use <code class="docutils literal notranslate"><span class="pre">density=True</span></code> to convert the histogram into a density (recall density is defined as <img class="math" src="../../_images/math/66f1920ac3c64c16d293f28d55a46f73701f7a53.png" alt="\rho=\frac{p}{\delta x }"/>).</p></li>
 </ol>
@@ -808,8 +806,8 @@ document.write(`
 <li><p>Use the <code class="docutils literal notranslate"><span class="pre">pdf()</span></code> density function to graph the ideal Normal distribution for the Velocity of Light data.</p></li>
 </ol>
 </section>
-<section id="id2">
-<h4>Old Faithful<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h4>
+<section id="id10">
+<h4>Old Faithful<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h4>
 <ol class="arabic simple">
 <li><p>Create a histogram with 10 classes for the Old Faithful duration data. Ensure the axes are appropriately labeled and the tick marks are set to the class limits. Use <code class="docutils literal notranslate"><span class="pre">density=True</span></code> to convert the histogram into a density (recall density is defined as <img class="math" src="../../_images/math/66f1920ac3c64c16d293f28d55a46f73701f7a53.png" alt="\rho=\frac{p}{\delta x }"/>).</p></li>
 </ol>
@@ -829,15 +827,15 @@ document.write(`
 </section>
 <section id="assessing-normality">
 <h3>Assessing Normality<a class="headerlink" href="#assessing-normality" title="Permalink to this headline">#</a></h3>
-<section id="id3">
-<h4>Velocity of Light<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h4>
+<section id="id11">
+<h4>Velocity of Light<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h4>
 <ol class="arabic simple">
 <li><p>Create a QQ plot for Michelson’s Velocity of Light distribution.</p></li>
 <li><p>In your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: Based on the QQ plot, is Michelson’s distribution approximately normal? Why or why not?</p></li>
 </ol>
 </section>
-<section id="id4">
-<h4>Old Faithful<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h4>
+<section id="id12">
+<h4>Old Faithful<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h4>
 <ol class="arabic simple">
 <li><p>Create a QQ plot for Old Faithful’s eruption duration.</p></li>
 </ol>
@@ -882,8 +880,8 @@ document.write(`
 </div>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/5aa18cd2c2ca04b7636763fca781ca72/velocity_of_light_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
-<table class="table" id="id6">
-<caption><span class="caption-text">Michelson’s Velocity of Light Data</span><a class="headerlink" href="#id6" title="Permalink to this table">#</a></caption>
+<table class="table" id="id14">
+<caption><span class="caption-text">Michelson’s Velocity of Light Data</span><a class="headerlink" href="#id14" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 100%" />
 </colgroup>
@@ -910,12 +908,12 @@ document.write(`
 </table>
 <p>The meaning of the column is clear from the column header: each observation measures the speed of light in meters per second, <img class="math" src="../../_images/math/5ae5e370f87dbb343d8b2a860c4c15c185ad158b.png" alt="\frac{km}{s}"/>.</p>
 </section>
-<section id="id5">
-<h3>Old Faithful<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
+<section id="id13">
+<h3>Old Faithful<a class="headerlink" href="#id13" title="Permalink to this headline">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/1b98a8ccfb60a79a975a96e2eca8a57a/old_faithful_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
-<table class="table" id="id7">
-<caption><span class="caption-text">Old Faithful Geyser Duration and Wait Time</span><a class="headerlink" href="#id7" title="Permalink to this table">#</a></caption>
+<table class="table" id="id15">
+<caption><span class="caption-text">Old Faithful Geyser Duration and Wait Time</span><a class="headerlink" href="#id15" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1049,13 +1047,13 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graphing-normality">Graphing Normality</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Velocity of Light</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Old Faithful</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Velocity of Light</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Old Faithful</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assessing-normality">Assessing Normality</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Velocity of Light</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Old Faithful</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Velocity of Light</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Old Faithful</a></li>
 </ul>
 </li>
 </ul>
@@ -1063,7 +1061,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-data">Loading Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-of-light-data">Velocity of Light Data</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Old Faithful</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Old Faithful</a></li>
 </ul>
 </li>
 </ul>

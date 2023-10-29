@@ -4,9 +4,11 @@
 Bar Charts 
 ==========
 
-    The picture is a model of reality.
+```{epigraph}
+The picture is a model of reality.
 
-    - Ludwig Wittgenstein
+-- Ludwig Wittgenstein
+```
 
 In this lab, you will get familiar with the statistical plotting features of **Python** using a dataset we have already seen. We will explore the association between two categorical variables and determine if a relationship exists.
 
