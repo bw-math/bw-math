@@ -1,8 +1,8 @@
-.. _distributions_classwork:
+.. _celebration_classwork:
 
-=============
-Distributions
-=============
+=========================
+Celebrations of Knowledge
+=========================
 
 .. toctree::
    :maxdepth: 2
