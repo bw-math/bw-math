@@ -16,8 +16,7 @@ a. Determine the five-number summary of the distribution of length of stay.
 
 b. Consider two rules for identifying outliers, method A and method B. Let method A represent the 1.5 x IQR rule, and let method B represent the 2 standard deviations rule.
 
-	i. Using method A, determine any data points that are potential outliers in the distribution of length of
-stay. Justify your answer.
+	i. Using method A, determine any data points that are potential outliers in the distribution of length of stay. Justify your answer.
 
 	ii. The mean length of stay for the sample is 7.42 days with a standard deviation of 2.37 days. Using method B, determine any data points that are potential outliers in the distribution of length of stay. Justify your answer.
 	
