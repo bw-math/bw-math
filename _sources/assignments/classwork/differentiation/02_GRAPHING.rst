@@ -74,3 +74,37 @@ c. For :math:`0 \leq x \leq \pi` and :math:`y \geq 0`, find the coordinates of t
 
 d. Determine whether f has a relative minimum, a relative maximum, or neither at the point found in *part c*. Justify your answer.
 
+5. **2006, Free Response, Form B, #2**
+
+.. image:: ../../../assets/imgs/classwork/2006_apcalc_frp_formb_02.png
+	:align: center
+
+Let :math:`f`` be the function defined for :math:`x \geq 0` with :math:`f (0) = 5` and :math:`f(0)=5` and :math:`f^{\prime}` the first derivative of :math:`f`, given by :math:`f^{\prime}( x ) = e ^{ - \frac{x}{4} } \cdot \sin{x^2}`. The graph of :math:`y = f( x )` is shown above.
+
+a. Use the graph of f ¢ to determine whether the graph of f is concave up, concave down, or neither on the interval :math:`1.7 < x < 1.9`. Explain your reasoning.
+
+b. On the interval :math:`0 \leq x \leq 3`, find the value of x at which f has an absolute maximum. Justify your answer.
+
+c. Write an equation for the line tangent to the graph of :math:`f` at :math:`x = 2`.
+
+
+6. **2006, Free Response, Form B, #3**
+
+.. image:: ../../../assets/imgs/classwork/2006_apcalc_frp_formb_03.png
+	:align: center
+
+
+
+The figure above is the graph of a function of x, which models the height of a skateboard ramp. The function meets the following requirements.
+
+	i. At :math:`x = 0`, the value of the function is 0, and the slope of the graph of the function is 0.
+	ii. At :math:`x = 4`, the value of the function is 1, and the slope of the graph of the function is 1.
+	iii. Between :math:`x = 0` and :math:`x = 4`, the function is increasing.
+
+a. Let :math:`f(x) = a x ^ 2` , where :math:`a` is a nonzero constant. Show that it is not possible to find a value for a so that :math:`f` meets requirement *ii* above.
+
+b. Let :math:`g(x) = cx^3 - \frac{x^2}{16}`, where :math:`c` is a nonzero constant. Find the value of :math:`c` so that g meets requirement *ii* above. Show the work that leads to your answer.
+
+c. Using the function :math:`g` and your value of :math:`c` from part *b*, show that :math:`g` does not meet requirement *iii* above.
+
+d. Let :math:`h(x) = \frac{x^n}{k}`, where :math:`k` is a nonzero constant and :math:`n` is a postive integer. Find the values of :math:`k` and :math:`n` so that :math:`h` meets requirement *ii* above. Show that *h* also meets requirements *i* and *ii* above.
