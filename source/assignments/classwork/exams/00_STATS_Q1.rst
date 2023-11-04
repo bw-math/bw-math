@@ -93,6 +93,14 @@ Calculate and interpret the z-score for a player in this position who can lift a
 
 c. The characteristics of speed and strength are considered to be of equal importance to the team in selecting a player for the position. Based on the information about the means and standard deviations of the speed and strength data for all players and the measurements listed in the table below for Players A and B, which player should the team select if the team can only select one of the two players? Justify your answer.
 
++-------------------------+------------------+--------------------------+
+|                         | Player A         |    Player B              |
++-------------------------+------------------+--------------------------+
+| Time to run 40 yards    |  4.42 seconds    |      4.57 seconds        |
++-------------------------+------------------+--------------------------+
+| Amount of weight lifted |  370 pounds      |      375 pounds          |
++-------------------------+------------------+--------------------------+
+
 5. **2019, Free Response, #5**
 
 A company that manufactures smartphones developed a new battery that has a longer life span than that of a traditional battery. From the date of purchase of a smartphone, the distribution of the life span of the new battery is approximately normal with mean 30 months and standard deviation 8 months. For the price of $50, the company offers a two-year warranty on the new battery for customers who purchase a smartphone. The warranty guarantees that the smartphone will be replaced at no cost to the customer if the battery no longer works within 24 months from the date of purchase.
