@@ -61,3 +61,11 @@ c. An alternative to calculating the exact probability is to conduct a simulatio
     Each trial in the simulation consists of rolling three fair, six-sided dice, one die for each of the convention attendees. For each die, rolling a 1, 2, 3, or 4 represents selecting a man; rolling a 5 or 6 represents selecting a woman. After 1,000 trials, the number of times the dice indicate selecting 3 women is recorded.
 
 Does the proposed process correctly simulate the random selection of 3 women from a group of 9 people consisting of 6 men and 3 women? Explain why or why not.
+
+5. **2007, Free Response Form B, #2**
+
+TODO
+
+6. **2009, Free Response, #2**
+
+TODO: only a and b

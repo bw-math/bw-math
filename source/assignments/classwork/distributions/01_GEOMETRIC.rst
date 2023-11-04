@@ -22,3 +22,15 @@ a. If the failure rate of the super igniters is 15 percent, what is the probabil
 b. Given that the first 30 super igniters successfully launch rockets, what is the probability that the first failure occurs on the thirty-first or the thirty-second super igniter tested if the failure rate of the super igniters is 15 percent?
 
 c. Given that the first 30 super igniters successfully launch rockets, is it reasonable to believe that the failure rate of the super igniters is less than 15 percent? Explain.
+
+2. **2011, Free Response, #3**
+
+An airline claims that there is a 0.10 probability that a coach-class ticket holder who flies frequently will be upgraded to first class on any flight. This outcome is independent from flight to flight. Sam is a frequent flier who always purchases coach-class tickets.
+
+a. What is the probability that Sam’s first upgrade will occur after the third flight?
+
+b. What is the probability that Sam will be upgraded exactly 2 times in his next 20 flights?
+
+c. Sam will take 104 flights next year. Would you be surprised if Sam receives more than 20 upgrades
+to first class during the year? Justify your answer.
+

@@ -138,3 +138,28 @@ a. When a new blood sample arrives at the lab, it will be tested to determine wh
 b. Among the blood samples examined in the training program that provided positive ELISA results for HIV, what proportion actually contained HIV?
 
 c. When a blood sample yields a positive ELISA result, two more ELISAs are performed on the same blood sample. If at least one of the two additional ELISAs is positive, the blood sample is subjected to a more expensive and more accurate test to make a definitive determination of whether HIV is present in the sample. Repeated ELISAs on the same sample are generally assumed to be independent. Under the assumption of independence, what is the probability that a new blood sample that comes into the lab will be subjected to the more expensive test if that sample does not contain HIV?
+
+4. **2003, Free Response Form B, #2**
+
+A simple random sample of adults living in a suburb of a large city was selected. The age and annual income of each adult in the sample were recorded. The resulting data are summarized in the table below, where the rows represent the number in that age group and the columns represent the number in that income bracket,
+
++----------+-------------------+-------------------+--------------+-------+
+|          | $25,000 - $35,000 | $35,001 - $50,000 | Over $50,000 | Total |
++----------+-------------------+-------------------+--------------+-------+
+| 21 - 30  |     8             |         15        |         27   |  50   |
++----------+-------------------+-------------------+--------------+-------+
+| 31 - 45  |      22           |         32        |       35     | 89    |
++----------+-------------------+-------------------+--------------+-------+
+| 46 - 60  |      12           |        14         |       27     |  53   |
++----------+-------------------+-------------------+--------------+-------+
+| Over 60  |      5            |        3          |      7       |  15   |
++----------+-------------------+-------------------+--------------+-------+
+| Total    |      47           |       64          |       96     |  207  |
++----------+-------------------+-------------------+--------------+-------+
+
+a. What is the probability that a person chosen at random from those in this sample will be in the 31-45 age category?
+
+b. What is the probability that a person chosen at random from those in this sample whose incomes are over $50,000 will be in the 31-45 age category? Show your work.
+
+c. Based on your answers to parts (a) and (b), is annual income independent of age category for those in this sample? Explain.
+

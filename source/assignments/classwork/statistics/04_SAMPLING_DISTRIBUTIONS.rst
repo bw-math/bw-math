@@ -27,3 +27,42 @@ b. Suppose three independent depth measurements are taken at the point where the
     What is the complement of "*at least one*"? Refer to :ref:`square_of_opposition`!
 
 c. What is the probability that the mean of the three independent depth measurements taken at the point where the true depth is 2 feet will be negative?
+
+3. **2004, Free Response Form B, #3**
+
+Trains carry bauxite ore from a mine in Canada to an aluminum processing plant in northern New York state in hopper cars. Filling equipment is used to load ore into the hopper cars. When functioning properly, the actual weights of ore loaded into each car by the filling equipment at the mine are approximately normally distributed with a mean of 70 tons and a standard deviation of 0.9 ton. If the mean is greater than 70 tons, the loading mechanism is overfilling.
+
+a. If the filling equipment is functioning properly, what is the probability that the weight of the ore in a randomly selected car will be 70.7 tons or more? Show your work.
+
+b. Suppose that the weight of ore in a randomly selected car is 70.7 tons. Would that fact make you suspect that the loading mechanism is overfilling the cars? Justify your answer.
+
+c. If the filling equipment is functioning properly, what is the probability that a random sample of 10 cars will have a mean ore weight of 70.7 tons or more? Show your work.
+
+d. Based on your answer in part (c), if a random sample of 10 cars had a mean ore weight of 70.7 tons, would you suspect that the loading mechanism was overfilling the cars? Justify your answer.
+
+4. **2007, Free Response, #3**
+
+Big Town Fisheries recently stocked a new lake in a city park with 2,000 fish of various sizes. The distribution of the lengths of these fish is approximately normal.
+
+a. Big Town Fisheries claims that the mean length of the fish is 8 inches. If the claim is true, which of the following would be more likely?
+
+	A random sample of 15 fish having a mean length that is greater than 10 inches
+
+or
+
+	A random sample of 50 fish having a mean length that is greater than 10 inches
+
+Justify your answer.
+
+b. Suppose the standard deviation of the sampling distribution of the sample mean for random samples of size 50 is 0.3 inch. If the mean length of the fish is 8 inches, use the normal distribution to compute the probability that a random sample of 50 fish will have a mean length less than 7.5 inches.
+
+c. Suppose the distribution of fish lengths in this lake was nonnormal but had the same mean and standard deviation. Would it still be appropriate to use the normal distribution to compute the probability in *part b* ? Justify your answer.
+
+5. **2009, Free Response, #2**
+
+TODO
+
+6. **2010, Free Response, #2**
+
+TODO
+
