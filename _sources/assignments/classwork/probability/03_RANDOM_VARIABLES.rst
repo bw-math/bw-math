@@ -59,3 +59,21 @@ a. In how many months from the date of purchase is it expected that 25 percent o
 b. Suppose one customer who purchases the warranty is selected at random. What is the probability that the customer selected will require a replacement within 24 months from the date of purchase because the battery no longer works?
 
 c. The company has a gain of $50 for each customer who purchases a warranty but does not require a replacement. The company has a loss (negative gain) of $150 for each customer who purchases a warranty and does require a replacement. What is the expected value of the gain for the company for each warranty purchased?
+
+5. **2003, Free Response Form B, #5**
+
+TODO
+
+6. **2005, Free Response Form B, #2**
+
+TODO
+
+7. **2008, Free Response Form B, #5**
+
+TODO
+
+8. **2008, Free Response, #3**
+
+TODO
+
+ 
