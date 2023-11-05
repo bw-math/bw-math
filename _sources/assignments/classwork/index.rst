@@ -6,9 +6,9 @@ Class Work
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
-   minutia/index
-   exams/index
+   
+   celebrations/index
+   algebra/index
    differentiation/index
    set_theory/index
    probability/index
