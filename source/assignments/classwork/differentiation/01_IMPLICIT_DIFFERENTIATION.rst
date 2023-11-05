@@ -144,3 +144,13 @@ b. Find the coordinates of a point on the curve at which the line tangent to the
 c. Find the coordinates of a point on the curve at which the line tangent to the curve is vertical, or explain why no such point exists.
 
 d. A particle is moving along the curve. At the instance when the particle is at the point :math:`(\frac{1}{2}, -2)`, its horizontal position is increasing at a rate of :math:`\frac{dx}{dt}=\frac{2}{3}` units per second. What is the value of :math:`\frac{dy}{dt}`, the rate of change of the particle's vertical position, at that instant?
+
+8. **2015, Free Response, #6**
+
+Consider the curve given by the equation :math:`y^3 - xy = 2`. It can be shown that :math:`\frac{dy}{dx} = \frac{y}{3y^2 - x}`.
+
+a. Write an equation for the line tangent to the curve at the point :math:`(-1, 1)`.
+
+b. Find the coordinates of all points on the curve at which the line tangent to the curve at that point is vertical. 
+
+c. Evaluate :math:`\frac{d^2 y}{dx^2}` at the point on the curve where :math:`x = -1` and :math:`y = 1`. 

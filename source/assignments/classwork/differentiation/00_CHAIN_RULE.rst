@@ -128,3 +128,63 @@ b. Find all times t in the open interval :math:`0 < t < 5` at which the particle
 c. Find the position of the particle at time :math:`t = 2`.
 
 d. Find the average speed of the particle over the interval :math:`0 \leq t \leq 2`
+
+4. **2023, Free Response, #5**
+
++-----------------------+--------------------+---------+-----+----+
+|          x            |        0           |     2   |  4  |  7 |
++-----------------------+--------------------+---------+-----+----+
+| :math:`f(x)`          |       10           |     7   |  4  | 5  |
++-----------------------+--------------------+---------+-----+----+
+| :math:`f^{\prime}(x)  | :math:`\frac{3}{2} |    -8   | 3   |  6 |
++-----------------------+--------------------+---------+-----+----+
+| :math:`g(x)`          |          1         |    2    |  -3 | 0  |
++-----------------------+--------------------+---------+-----+----+
+| :math:`g^{\prime}(x)` |       5            |    4    |  2  | 8  |
++-----------------------+--------------------+---------+-----+----+
+
+
+The functions :math:`f` and :math:`g` are twice differentiable. The table shown gives the values of the functions and their first derivatives at selected values of x.
+
+a. Let :math:`h` be the function defined by :math:`h(x)=f(g(x))`. Find :math:`h^{\prime}(7)`. Show the work that leads to your answer.
+
+b. Let :math:`k` be a differentiable function such that :math:`k^{\prime}=(f(x))^2 \cdot g(x)`. Is the graph of :math:`k` concave up or down at the point where :math:`x = 4`? Give a reason for your answer.
+
+5. **2016, Free Response, #6**
+
+TODO
+
+6. **2017, Free Response, #6**
+
+.. image:: ../../../assets/imgs/classwork/2017_apcalc_frp_06.png
+	:align: center
+	
++-------+--------------+-----------------------+
+|   x   | :math:`g(x)` | :math:`g^{\prime}(x)` |
++-------+--------------+-----------------------+
+|  -5   |     10       |          -3           |
++-------+--------------+-----------------------+
+|  -4   |     5        |           -1          |
++-------+--------------+-----------------------+
+|  -3   |     2        |          4            |
++-------+--------------+-----------------------+
+|  -2   |    3         |          1            |
++-------+--------------+-----------------------+
+|  -1   |    1         |         -2            |
++-------+--------------+-----------------------+
+|  0    |     0        |          -3           |
++-------+--------------+-----------------------+
+
+Let :math:`f` be the function defined by :math:`f(x)=\cos{2x} + e^{\sin(x)}`.
+
+Let :math:`g` be a differentiable function. The table above gives values of :math:`g` and its derivative :math:`g^{\prime}` at selected values of :math:`x`.
+
+Let :math:`h` be the function whose graph, consisting of five line segments, is shown in the figure above.
+
+a. Find the slope of the line tangent to the graph of :math:`f` at :math:`x = \pi`.
+
+b. Let :math:`k` be the function defined by :math:`k(x)=h(f(x))`. Find :math:`k^{\prime}(\pi)`.
+
+c. Let :math:`m` be the function defined by :math:`m(x) = g(-2x) \cdot h(x)`. Find :math:`m^{\prime}(2)`.
+
+d. Is there a number :math:`c` in the closed interval :math:`[-5, -3]` such that :math:`g^{\prime}(c) = -4`? Justify your answer.

@@ -1,9 +1,12 @@
 .. _celebration_statistics_one:
 
-===========
+====================================
+Statistics: Celebration of Knowledge
+====================================
+
+
 Quarter One
 ===========
-
 
 1. **2021, Free Response, #1**
 

@@ -1,7 +1,7 @@
-.. _minutia_classwork:
+.. _algebra_classwork:
 
 =======
-Minutia 
+Algebra
 =======
 
 .. toctree::
