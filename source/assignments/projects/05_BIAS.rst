@@ -114,10 +114,11 @@ Output:
 	 
 	 Add the following line underneath the ``print`` statement in the code snippet above for a fun Easter Egg!
 	 
-	 if index != 4:
-	 	print("\t Yay!")
-	 else:
-	 	print("\t Boo!")
+  .. code:: python
+	   if index != 4:
+	 	   print("\t Yay!")
+	   else:
+	 	   print("\t Boo!")
 	 	
 The ``enumerate()`` function allows us to *step* over each element of a list and grab the index while we do it.
  
