@@ -152,7 +152,23 @@ b. Let :math:`k` be a differentiable function such that :math:`k^{\prime}=(f(x))
 
 5. **2016, Free Response, #6**
 
-TODO
++-------+--------------+-----------------------+--------------+-----------------------+
+|   x   | :math:`f(x)` | :math:`f^{\prime}(x)` | :math:`g(x)` | :math:`g^{\prime}(x)` |
++-------+--------------+-----------------------+--------------+-----------------------+
+|   1   |     -6       |           3           |       2      |        8              |
++-------+--------------+-----------------------+--------------+-----------------------+
+|   2   |     2        |           -2          |       -3     |        0              |
++-------+--------------+-----------------------+--------------+-----------------------+
+|   3   |     8        |          7            |        6     |        2              |
++-------+--------------+-----------------------+--------------+-----------------------+
+|  6    |    4         |          5            |       3      |        -1             |
++-------+--------------+-----------------------+--------------+-----------------------+
+
+The function :math:`f` and `g` have continuous second derivatives. The table above gives values of the functions and their derivatives at selected values of :math:`x`.
+
+a. Let :math:`k(x) = f(g(x)))`. Write an equation for the line tangent to the graph of :math:`k` at :math:`x=3`.
+
+b. Let :math:`h(x) = \frac{g(x)}{f(x)}`. Find :math:`h^{\prime}(1)`.
 
 6. **2017, Free Response, #6**
 
