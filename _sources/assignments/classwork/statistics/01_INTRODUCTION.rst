@@ -1,4 +1,4 @@
-.. _statistics_introduciton_classwork:
+.. _statistics_introduction_classwork:
 
 ============
 Introduction

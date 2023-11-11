@@ -12,6 +12,7 @@ Class Work
    differentiation/index
    set_theory/index
    probability/index
+   experiments/index
    statistics/index
    distributions/index
    hypotheses/index
