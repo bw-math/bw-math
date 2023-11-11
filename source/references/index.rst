@@ -6,9 +6,10 @@ References
    :maxdepth: 2
    :caption: Contents:
 
-   RESOURCES
-   EXAM
+   00_EXAM
+   01_RESOURCES
+   02_TI84
+   03_SUBSTITUTE
    tables/index
-   TI84
    python/index
 

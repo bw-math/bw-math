@@ -18,16 +18,26 @@ Creating Lists
 
 .. _ti84_statistics:
 
+Calculus
+========
+
+Tangent Lines
+-------------
+
+.. image:: https://img.youtube.com/vi/goH_4rnJqmU/maxresdefault.jpg
+    :alt: Tangent Lines
+    :target: https://www.youtube.com/watch?v=goH_4rnJqmU
+
 Statistics
 ==========
 
 .. _ti84_histograms:
 
-Histograms (Ungrouped)
+Histograms (Discrete)
 ----------------------
 
 .. image:: https://img.youtube.com/vi/AzsK0wnPfAg/maxresdefault.jpg
-    :alt: Histograms (Ungrouped)
+    :alt: Histograms (Discrete)
     :target: https://www.youtube.com/watch?v=AzsK0wnPfAg
 
 .. _ti84_ogives:
@@ -57,9 +67,29 @@ Sample Percentiles Redux
     :alt: Sample Percentiles Redux
     :target: https://www.youtube.com/watch?v=zrfFdfODW7k
     
+.. _ti84_central_limit_theorem:
+
 Central Limit Theorem
 ---------------------
 
 .. image:: https://img.youtube.com/vi/PUiOgwlS_fM/maxresdefault.jpg
     :alt: Central Limit Theorem
     :target: https://www.youtube.com/watch?v=PUiOgwlS_fM
+   
+.. _ti84_monte_carlo_simulation:
+ 
+Monte Carlo Simulation
+----------------------
+
+.. image:: https://img.youtube.com/vi/gLaFSwyoGHU/maxresdefault.jpg
+    :alt: Monte Carlo Simulation
+    :target: https://www.youtube.com/watch?v=gLaFSwyoGHU
+    
+.. _ti84_population_distributions:
+
+Population Distributions
+------------------------
+
+.. image:: https://img.youtube.com/vi/lDnkKUqA4nk/maxresdefault.jpg
+    :alt: Monte Carlo Simulation
+    :target: https://www.youtube.com/watch?v=lDnkKUqA4nk

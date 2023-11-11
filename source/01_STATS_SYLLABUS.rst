@@ -1,6 +1,6 @@
-===============
-Course Syllabus
-===============
+========================
+AP Stats Course Syllabus
+========================
 
 Advanced Placement Statistics
 =============================

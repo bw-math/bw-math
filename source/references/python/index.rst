@@ -19,7 +19,7 @@ Furthermore, all of the plots across the pages of this website were generated wi
    :maxdepth: 2
    :caption: Contents:
 
-   SHELL
+   00_SHELL
    01_SETUP
    02_BASIC
    03_SETS
@@ -28,3 +28,4 @@ Furthermore, all of the plots across the pages of this website were generated wi
    06_FILES
    07_CONTROLS
    08_WEB
+   09_DEMOS

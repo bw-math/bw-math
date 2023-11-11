@@ -39,7 +39,13 @@ Random Services
 ---------------
 
 - `randomservices.com <https://www.randomservices.org/>`_
+
 Spurious Correlations
 ---------------------
 
 - `tylervigen.com/spurious-correlation <https://www.tylervigen.com/spurious-correlations>`_
+
+Texas Instrument
+----------------
+
+- `Probability and Statistics Worksheets <https://education.ti.com/en/84activitycentral/us/statistics>`_
