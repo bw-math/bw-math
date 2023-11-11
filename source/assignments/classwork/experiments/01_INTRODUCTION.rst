@@ -11,21 +11,7 @@ Introduction
 Discussion Questions
 --------------------
 
-1. **2012, Practice Exam, #10** 
-   
-A compact disc manufacturer wanted to determine which of two different cover designs for a newly released CD will generate more sales. The manufacturer chose 70 stores to sell the CD. Thirty-five of these stores were randomly assigned to sell CDs with one of the cover designs and the other 35 were assigned to sell the CDs with the other cover design. The manufacturer recorded the number of CDs sold at each of the stores and found a significant difference between the mean number of CDs sold for the two cover designs. Which of the following gives the conclusion that should be made based on the results and provides the best explanation for the conclusion?
-
-    (A) It is not reasonable to conclude that the difference in sales was caused by the different cover designs because this was not an experiment.
-
-    (B) It is not reasonable to conclude that the difference in sales was caused by the different cover designs because there was no control group for comparison.
-
-    (C) It is not reasonable to conclude that the difference in sales was caused by the different cover designs because the 70 stores were not randomly chosen.
-
-    (D) It is reasonable to conclude that the difference in sales was caused by the different cover designs because the cover designs were randomly assigned to stores.
-    
-    (E) It is reasonable to conclude that the difference in sales was caused by the different cover designs because the sample size was large.
-
-2. **2012, Practice Exam, #11** 
+1. **2012, Practice Exam, #11** 
    
 The manager of a public swimming pool wants to compare the effectiveness of two laundry detergents, Detergent A and Detergent B, in cleaning the towels that are used daily. As each dirty towel is turned in, it is placed into the only washing machine on the premises. When the washing machine contains 20 towels, the manager flips a coin to determine whether Detergent A or Detergent B will be used for that load. The cleanliness of the load of towels is rated on a scale of 1 to 10 by a person who does not know which detergent was used. The manager continues this experiment for many days. Which of the following best describes the manager's study?
 
@@ -38,42 +24,6 @@ The manager of a public swimming pool wants to compare the effectiveness of two 
     (D) A matched-pairs design with Detergent A and Detergent B as the pair
 
     (E) An observational study
-
-3. **2012, Practice Exam, #12** 
-
-In the design of a survey, which of the following best explains how to minimize response bias?
-
-    (A) Increase the sample size.
-
-    (B) Decrease the sample size.
-
-    (C) Randomly select the sample.
-
-    (D) Increase the number of questions in the survey.
-
-    (E) Carefully word and field-test survey questions.
-
-4. **2012, Practice Exam #15** 
-
-A polling firm is interested in surveying a representative sample of registered voters in the United States. The firm has automated its sampling so that random phone numbers within the United States are called. Each time a number is called, the procedure below is followed.
-
-- If there is no response or if an answering machine is reached, another number is automatically called.
-- If a person answers, a survey worker verifies that the person is at least 18 years of age.
-- If the person is not at least 18 years of age, no response is recorded, and another number is called.
-- If the person is at least 18 years of age, that person is surveyed.
-  
-Some people claim the procedure being used does not permit the results to be extended to all registered voters. Which of the following is NOT a legitimate concern about the procedure being used?
-
-    (A) Registered voters with children under the age of 18 years may be underrepresented in the sample.
-
-    (B) Registered voters with unlisted telephone numbers may be underrepresented in the sample.
-
-    (C) Registered voters who have more than one telephone number may be overrepresented in the sample.
-
-    (D) Registered voters who live in households consisting of more than one voter may be underrepresented.
-
-    (E) People who are not registered to vote may bias the sample results.
-
 
 5. **2006, Free Response, #5** 
    
@@ -110,11 +60,3 @@ a. Identify the treatments, experimental units, and response variable of the exp
 b. Does the experiment have a control group? Explain your answer.
 
 c. Describe how the treatments can be randomly assigned to the experimental units so that each treatment has the same number of units.
-
-8. **2009, Free Response Form B, #3**
-
-A French study was conducted in the 1990s to compare the effectiveness of using an instrument called a cardiopump with the effectiveness of using traditional cardiopulmonary resuscitation (CPR) in saving lives of heart attack victims. Heart attack patients in participating cities were treated with either a cardiopump or CPR, depending on whether the individual’s heart attack occurred on an even-numbered or an odd-numbered day of the month. Before the start of the study, a coin was tossed to determine which treatment, a cardiopump or CPR, was given on the even-numbered days. The other treatment was given on the odd-numbered days. In total, 754 patients were treated with a cardiopump, and 37 survived at least one year; while 746 patients were treated with CPR, and 15 survived at least one year.
-
-a. The conditions for inference are satisfied in the study. State the conditions and indicate how they are satisfied.
-
-b. Perform a statistical test to determine whether the survival rate for patients treated with a cardiopump is significantly higher than the survival rate for patients treated with CPR.

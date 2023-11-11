@@ -10,6 +10,7 @@ Class Notes
    HISTORY
    SET_THEORY
    probability/index
+   experiments/index
    statistics/index
    distributions/index
    hypotheses/index
