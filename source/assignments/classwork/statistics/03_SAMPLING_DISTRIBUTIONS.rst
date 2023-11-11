@@ -58,11 +58,36 @@ b. Suppose the standard deviation of the sampling distribution of the sample mea
 
 c. Suppose the distribution of fish lengths in this lake was nonnormal but had the same mean and standard deviation. Would it still be appropriate to use the normal distribution to compute the probability in *part b* ? Justify your answer.
 
+
+5. **2008, Free Response Form B, #2**
+
+Four different statistics have been proposed as estimators of a population parameter. To investigate the behavior of these estimators, 500 random samples are selected from a known population and each statistic is calculated for each sample. The true value of the population parameter is 75. The graphs below show the distribution of values for each statistic.
+
+.. image:: ../../../assets/imgs/classwork/2006_apstats_frp_formb_04.png
+	:align: center
+	
+a. Which of the statistics appear to be unbiased estimators of the population parameter? How can you tell?
+
+b. Which of statistics A or B would be a better estimator of the population parameter? Explain your choice.
+
+c. Which of statistics C or D would be a better estimator of the population parameter? Explain your choice.
+
+	
 5. **2009, Free Response, #2**
 
-TODO
+A tire manufacturer designed a new tread pattern for its all-weather tires. Repeated tests were conducted on cars of approximately the same weight traveling at 60 miles per hour. The tests showed that the new tread pattern enables the cars to stop completely in an average distance of 125 feet with a standard deviation of 6.5 feet and that the stopping distances are approximately normally distributed.
+
+a. What is the 70th percentile of the distribution of stopping distances?
+
+b. What is the probability that at least 2 cars out of 5 randomly selected cars in the study will stop in a distance that is greater than the distance calculated in *part a*?
+
+c. What is the probability that a randomly selected sample of 5 cars in the study will have a mean stopping distance of at least 130 feet?
 
 6. **2010, Free Response, #2**
 
-TODO
+A local radio station plays 40 rock-and-roll songs during each 4-hour show. The program director at the station needs to know the total amount of airtime for the 40 songs so that time can also be programmed during the show for news and advertisements. The distribution of the lengths of rock-and-roll songs, in minutes, is roughly symmetric with a mean length of 3.9 minutes and a standard deviation of 1.1 minutes.
+
+a. Describe the sampling distribution of the sample mean song lengths for random samples of 40 rock-and-roll songs.\
+
+b. If the program manager schedules 80 minutes of news and advertisements for the 4-hour (240-minute) show, only 160 minutes are available for music. Approximately what is the probability that the total amount of time needed to play 40 randomly selected rock-and-roll songs exceeds the available airtime?
 

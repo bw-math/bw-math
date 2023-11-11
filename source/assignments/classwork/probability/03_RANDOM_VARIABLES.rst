@@ -74,6 +74,64 @@ TODO
 
 8. **2008, Free Response, #3**
 
-TODO
+A local arcade is hosting a tournament in which contestants play an arcade game with possible scores ranging from 0 to 20. The arcade has set up multiple game tables so that all contestants can play the game at the same time; thus contestant scores are independent. Each contestant’s score will be recorded as he or she finishes, and the contestant with the highest score is the winner.
 
- 
+After practicing the game many times, Josephine, one of the contestants, has established the probability distribution of her scores, shown in the table below.
+
+.. topic:: Josephine's Distribution
+
+	+-------------+------+------+------+------+
+	| Score       | 16   | 17   | 18   | 19   |
+ 	+-------------+------+------+------+------+
+ 	| Probability | 0.10 | 0.30 | 0.40 | 0.20 |
+ 	+-------------+------+------+------+------+
+ 	
+Crystal, another contestant, has also practiced many times. The probability distribution for her scores is shown in the table below.
+
+.. topic:: Crystal's Distribution
+
+	+-------------+------+------+------+
+	| Score       | 17   | 18   | 19   |
+ 	+-------------+------+------+------+
+ 	| Probability | 0.45 | 0.40 | 0.15 |
+ 	+-------------+------+------+------+
+ 	
+a. Calculate the expected score for each player.
+
+b. Suppose that Josephine scores 16 and Crystal scores 17. The difference (Josephine minus Crystal) of their scores is -1. List all combinations of possible scores for Josephine and Crystal that will produce a difference (Josephine minus Crystal) of -1, and calculate the probability for each combination.
+
+c. Find the probability that the difference (Josephine minus Crystal) in their scores is -1.
+
+d. The table below lists all the possible differences in the scores between Josephine and Crystal and some associated probabilities.
+
+
+.. topic:: Distribution (Josephine minus Crystal)
+
+	+-------------+-------+--------+--------+--------+-------+-------+
+	| Difference  | -3    | -2     | -1     | 0      | 1     | 2     | 
+	+-------------+-------+--------+--------+--------+-------+-------+
+	| Probability | 0.015 |   ?    |   ?    | 0.325  | 0.260 | 0.090 |
+	+-------------+-------+--------+--------+--------+-------+-------+
+	
+Complete the table and calculate the probability that Crystal’s score will be higher than Josephine’s score.
+
+9. **2010, Free Response Form B, #3**
+
+A test consisting of 25 multiple-choice questions with 5 answer choices for each question is administered. For each question, there is only 1 correct answer.
+
+a. Let :math:`\mathcal{X}` be the number of correct answers if a student guesses randomly from the 5 choices for each of the 25 questions. What is the probability distribution of :math:`\mathcal{X}`?
+
+This test, like many multiple-choice tests, is scored using a penalty for guessing. The test score is determined
+by awarding 1 point for each question answered correctly, deducting 0.25 point for each question answered
+incorrectly, and ignoring any question that is omitted. That is, the test score is calculated using the following
+formula.
+
+	Score = (1 x number of correct answers) – (0.25 x number of incorrect answers) + (0 x number of omits)
+
+For example, the score for a student who answers 17 questions correctly, answers 3 questions incorrectly, and omits 5 questions is
+
+	Score = (1 x 17) - (0.25 x 3) + (0 x 5) = 16.25.
+	
+b. Suppose a student knows the correct answers for 18 questions, answers those 18 questions correctly, and chooses randomly from the 5 choices for each of the other 7 questions. Show that the expected value of the student’s score is 18 when using the scoring formula above.
+
+c. A score of at least 20 is needed to pass the test. Suppose a student knows the correct answers for 18 questions, answers those 18 questions correctly, and chooses randomly from the 5 choices for each of the other 7 questions. What is the probability that the student will pass the test?
