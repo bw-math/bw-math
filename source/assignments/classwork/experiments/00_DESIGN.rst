@@ -1,8 +1,8 @@
 .. _experimental_design_introduction_classwork:
 
-============
-Introduction
-============
+======
+Design
+======
 
 .. topic:: Instructions
 
@@ -33,23 +33,23 @@ A study was conducted to determine whether a newly developed hitch would be able
 
 After the plot was plowed, the hitch was changed from the standard one to the new one, a process that takes a substantial amount of time. Then the second plot was plowed using the new hitch. Twenty-five measurements of draft were also recorded at randomly selected points in this plot.
 
-    a. What was the response variable in this study?
+a. What was the response variable in this study?
  
-    b. Identify the treatments.
+b. Identify the treatments.
  
-    c. What were the experimental units?
+c. What were the experimental units?
 
-    d. Given that the goal of the study is to determine whether a newly developed hitch reduces draft compared to the standard hitch, was randomization used properly in this study? Justify your answer.
+d. Given that the goal of the study is to determine whether a newly developed hitch reduces draft compared to the standard hitch, was randomization used properly in this study? Justify your answer.
 
-    e. Given that the goal of the study is to determine whether a newly developed hitch reduces draft compared to the standard hitch, was replication used properly in this study? Justify your answer.
+e. Given that the goal of the study is to determine whether a newly developed hitch reduces draft compared to the standard hitch, was replication used properly in this study? Justify your answer.
 
-    f. Plot of land is a confounding variable in this experiment. Explain why. 
+f. Plot of land is a confounding variable in this experiment. Explain why. 
 
 3. **2010, Free Response, #1** 
    
 Agricultural experts are trying to develop a bird deterrent to reduce costly damage to crops in the United States. An experiment is to be conducted using garlic oil to study its effectiveness as a nontoxic, environmentally safe bird repellant. The experiment will use European starlings, a bird species that causes considerable damage annually to the corn crop in the United States. Food granules made from corn are to be infused with garlic oil in each of five concentrations of garlic —0 percent, 2 percent, 10 percent, 25 percent, and 50 percent. The researchers will determine the adverse reaction of the birds to the repellant by measuring the number of food granules consumed during a two-hour period following overnight food deprivation. There are forty birds available for the experiment, and the researchers will use eight birds for each concentration of garlic. Each bird will be kept in a separate cage and provided with the same number of food granules.
 
-    a. For the experiment, identify: the treatments, the experimental units, the response that will be measured.
+a. For the experiment, identify: the treatments, the experimental units, the response that will be measured.
 
 4. **2019, Free Response, #2** 
    
@@ -79,8 +79,7 @@ a. Previous research has shown that male birds do not avoid solid colors. Howeve
 
 
 	Treatment 1: A red background with narrow blue stripes
-
-And
+	
 
 	Treatment 2: A blue background with narrow red stripes
 
@@ -113,3 +112,43 @@ a. For convenience, the apartment building owner wants to use a cluster sampling
 
 b. An alternative sampling method would be to select a stratified random sample of eight apartments, where the strata are apartments with children and apartments with no children. A stratified random sample of size eight might include two randomly selected apartments with children and six randomly selected apartments with no children. In the context of this situation, give one statistical advantage of selecting such a stratified sample as opposed to a cluster sample of eight apartments using the floors as clusters.
 
+9. Students are designing an experiment to compare the productivity of two varieties of dwarf fruit trees. The site for the experiment is a field that is bordered by a densely forested area on the west side. The field has been divided into eight plots of approximately the same area. The students have decided that the test plots should be blocked. Four trees, each of two varieties, will be assigned at random to the
+four plots within each block, with one tree planted in each plot.
+
+The two blocking schemes shown below are under consideration. For each scheme, one block is identified by the white region and the other block indicated by the grey region in the figures.
+
+.. image:: ../../../assets/imgs/classwork/noblestatmen_design_03.png
+	:align: center
+	
+a. Which of the blocking schemes , A or B, is better for this experiment? Explain.
+
+b. Even though the students have decided to block, they must randomly assign the varieties of the trees to the plots within each block. What is the purpose of this randomization in the context of the experiment?
+
+9. The dentists in a dental clinic would like to determine if there is a difference between the number of new cavities in people who eat an apple a day and in people who eat less than one apple a week. They are going to conduct a study with 50 people in each group.
+
+Fifty clinics patients who report that they routinely eat an apple a day and 50 clinic patients who report that they eat less than one apple a week will be identified. The dentists will examine the patients and their records to determine the number of new cavities the patients have had over the past two years. They will then compare the number of new cavities in the two groups.
+
+a. Why is this an observational study and not an experiment?
+
+b. Explain the concept of confounding in the context of this study. Include an example of a possible confounding variable.
+
+c. If the mean number of new cavities for those who ate an apple a day was statistically significantly smaller than the mean number of new cavities for those who ate less than one apple a week, could one conclude that the lower number of new cavities can be attributed to eating an apple a day? Explain.
+
+10. A biologist is interested in studying the effect of growth-enhancing nutrients an differernt salinity (salt) levels in water on the growth of shrimps. The biologist has ordered a large shipment of young tiger shrimps from a supply house for use in the study. The experiment is to be conducted in a laboratory where 10 tiger shrimps are placed randomly into each of 12 similar tanks in a controlled environment.
+
+The biologist is planning to use 3 different growth-enhancing nutrients (A, B, and C) and two different
+salinity levels (low and high).
+
+a. List the treatments that the biologist plans to use in this experiment.
+
+b. Using the treatments listed in part (a), describe a completely randomized design that will allow the biologist to compare the shrimps’ growth after 3 weeks.
+
+c. Give one statistical advantage to having only tiger shrimps in the experiment. Explain why this is an advantage.
+
+d. Give one statistical disadvantage to having only tiger shrimps in the experiment. Explain why this is a disadvantage.
+
+11. A manufacturer of boots plans to conduct an experiment to compare a new method of waterproofing to the current method. The appearance of the boots is not changed by either method. The company recruits 100 volunteers in Seattle, where it rains frequently, to wear the boots as they normally would for 6 months. At the end of the 6 months, the boots will be returned to the company to be evaluated for water damage.
+
+a. Describe a design for this experiment that uses the 100 volunteers. Include a few sentences on how it would be implemented.
+
+b. Could your design be double blind? Explain

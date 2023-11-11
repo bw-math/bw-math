@@ -6,7 +6,7 @@ References
    :maxdepth: 2
    :caption: Contents:
 
-   TEXTS
+   RESOURCES
    EXAM
    tables/index
    TI84
