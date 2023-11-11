@@ -9,4 +9,5 @@ Experimental Design
    
    00_INTRODUCTION
    01_INFERENCE
-   02_BIAS  
+   02_BIAS
+   03_HYPOTHESES  
