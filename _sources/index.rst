@@ -6,11 +6,9 @@ Bishop Walsh A.P Statistics
    :maxdepth: 2
    :caption: Contents:
 
-   SPLASH
-   SYLLABUS
-   DATASETS
-   DEMOS
-   SUBSTITUTE
+   00_SPLASH
+   01_STATS_SYLLABUS
+   02_DATASETS
    notes/index
    assignments/index
    references/index
