@@ -13,7 +13,7 @@ a. Perform a test of significance to determine whether the mean amount of juice 
 b. To determine whether this sample of four bottles provides convincing evidence that the standard deviation of the amount of juice dispensed is greater than 0.05 ounce, a simulation study was performed. In the simulation study, 300 samples, each of size 4, were randomly generated from a normal population with a mean of 12.1 and a standard deviation of 0.05. The sample standard deviation was computed for each
 of the 300 samples. The dotplot below displays the values of the sample standard deviations.
 
-.. image:: ../../../assets/imgs/classwork/2006_apstats_frp_formb_05.png
+.. image:: ../../../assets/imgs/classwork/2009_apstats_frp_formb_05.png
 	:align: center
 	
 Use the results of this simulation study to explain why you think the sample provides or does not provide
@@ -48,7 +48,7 @@ Investigators at the U.S. Department of Agriculture wished to compare methods of
 +----------+------+------+------+------+------+------+------+------+------+-------+
 | Specimen | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 10    |
 +----------+------+------+------+------+------+------+------+------+------+-------+
-| Method A | 22.7 | 23.6 | 24.0 | 27.1 | 27.4 | 27.8 | 34. 4| 35.2 | 40.4 | 46. 8 |
+| Method A | 22.7 | 23.6 | 24.0 | 27.1 | 27.4 | 27.8 | 34.4 | 35.2 | 40.4 | 46. 8 |
 +----------+------+------+------+------+------+------+------+------+------+-------+
 | Method B | 23.0 | 23.1 | 23.7 | 26.5 | 26.6 | 27.1 | 33.2 | 35.0 | 40.5 | 47.8  |
 +----------+------+------+------+------+------+------+------+------+------+-------+

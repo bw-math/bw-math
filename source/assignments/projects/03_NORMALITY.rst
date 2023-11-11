@@ -48,7 +48,7 @@ A departure from normality can suggest several things:
 
 1. The selection process was not random.
 2. The observations are not *independent*.
-3. The observations are not being drawn from the exact same population.
+3. The observations are not being drawn from the same population.
 
 Normal Distribution
 -------------------
