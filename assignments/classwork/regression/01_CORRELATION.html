@@ -201,7 +201,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../homework/13_UNIT09.html">Unit 9 Homework</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Class Work</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Classwork</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l3 has-children"><a class="reference internal" href="../celebrations/index.html">Celebrations of Knowledge</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../celebrations/00_STATS_Q1.html">Statistics: Quarter One</a></li>
 </ul>
@@ -436,7 +436,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -452,6 +454,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scatter-plots">Scatter Plots</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -463,15 +473,55 @@ document.write(`
                   
   <section id="correlation">
 <h1>Correlation<a class="headerlink" href="#correlation" title="Permalink to this headline">#</a></h1>
-<p>TODO</p>
+<section id="scatter-plots">
+<h2>Scatter Plots<a class="headerlink" href="#scatter-plots" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
 <li><p><strong>2008, Free Response, #4</strong></p></li>
 </ol>
-<p>TODO</p>
+<p>An experiment was conducted to study the effect of temperature on the reliability of an electronic device used in an undersea communications system. The experiment was done in a laboratory where tanks of seawater were maintained at either 10 C, 30 C, 50 C, or 70 C. After the electronic devices were submerged in the tanks for 5,000 hours, each device was inspected to determine if it was still working. The following table provides information on the number of devices tested at each temperature and the number of working devices at the end of the 5,000-hour test.</p>
+<table class="table">
+<colgroup>
+<col style="width: 48%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Seawater temperature</p></td>
+<td><p>10 C</p></td>
+<td><p>30 C</p></td>
+<td><p>50 C</p></td>
+<td><p>70 C</p></td>
+</tr>
+<tr class="row-even"><td><p># of working devices</p></td>
+<td><p>29</p></td>
+<td><p>42</p></td>
+<td><p>21</p></td>
+<td><p>12</p></td>
+</tr>
+<tr class="row-odd"><td><p># of devices tested</p></td>
+<td><p>30</p></td>
+<td><p>50</p></td>
+<td><p>30</p></td>
+<td><p>20</p></td>
+</tr>
+</tbody>
+</table>
+<p>You may assume that the result for any single device is not influenced by the result for any other device.</p>
+<ol class="loweralpha simple">
+<li><p>Using the information in the table, construct a scatterplot that would be useful for showing the effect of water temperature on the ability of the devices to work for at least 5,000 hours.</p></li>
+</ol>
+<img alt="assets/imgs/context/cartesian_plane_blank.png" class="align-center" src="assets/imgs/context/cartesian_plane_blank.png" />
+<ol class="loweralpha simple" start="2">
+<li><p>Comment on any trend or pattern that is revealed by the scatterplot you constructed.</p></li>
+<li><p>An estimate of the proportion of devices that would work after 5,000 hours of submersion in 40 C seawater can be obtained by averaging the estimates at 30 C and 50 C. Compute this estimate and the associated standard error.</p></li>
+</ol>
 <ol class="arabic simple" start="2">
 <li><p><strong>2010, Free Response, #1</strong></p></li>
 </ol>
 <p>TODO</p>
+</section>
 </section>
 
 
@@ -513,6 +563,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scatter-plots">Scatter Plots</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
