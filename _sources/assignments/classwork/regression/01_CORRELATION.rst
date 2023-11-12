@@ -30,5 +30,50 @@ c. An estimate of the proportion of devices that would work after 5,000 hours of
 
 2. **2010, Free Response, #1**
 
-TODO
+Agricultural experts are trying to develop a bird deterrent to reduce costly damage to crops in the United States. An experiment is to be conducted using garlic oil to study its effectiveness as a nontoxic, environmentally safe bird repellant. The experiment will use European starlings, a bird species that causes considerable damage annually to the corn crop in the United States. Food granules made from corn are to be infused with garlic oil in each of five concentrations of garlic: 0 percent, 2 percent, 10 percent, 25 percent, and 50 percent. 
+
+The researchers will determine the adverse reaction of the birds to the repellant by measuring the number of food granules consumed during a two-hour period following overnight food deprivation. There are forty birds available for the experiment, and the researchers will use eight birds for each concentration of garlic. Each bird will be kept in a separate cage and provided with the same number of food granules.
+
+a. For the experiment, identify
+	
+	i. the treatments
+
+	ii. the experimental units
+
+	iii. the response that will be measured
+
+b. After performing the experiment, the researchers recorded the data shown in the table below.
+
++---------------------------------------+----+-----+-----+-----+-----+
+| Garlic oil concentration              | 0% |  2% | 10% | 25% | 50% |
++---------------------------------------+----+-----+-----+-----+-----+
+| Mean number of food granules consumed | 58 |  48 | 29  | 24  |  20 |
++---------------------------------------+----+-----+-----+-----+-----+
+| Number of birds                       | 8  |  8  |  8  |  8  |  8  |
++---------------------------------------+----+-----+-----+-----+-----+
+
+	i. Construct a graph of the data that could be used to investigate the appropriateness of a linear regression model for analyzing the results of the experiment.
+	
+.. image:: ../../../assets/imgs/context/cartesian_plane_blank.png
+	:align: center
+	
+	ii. Based on your graph, do you think a linear regression model is appropriate? Explain.
+	
+3. **2012, Free Response, #1**
+
+The scatterplot below displays the price in dollars and quality rating for 14 different sewing machines.
+
+.. image:: ../../../assets/imgs/classwork/2012_apstats_frp_01_1.png
+	:align: center
+	
+a. Describe the nature of the association between price and quality rating for the sewing machines.
+
+b. One of the 14 sewing machines substantially affects the appropriateness of using a linear regression model to predict quality rating based on price. Report the approximate price and quality rating of that machine and explain your choice.
+
+c. Chris is interested in buying one of the 14 sewing machines. He will consider buying only those machines for which there is no other machine that has both higher quality and lower price. On the scatterplot reproduced below, circle all data points corresponding to machines that Chris will consider buying.
+
+.. image:: ../../../assets/imgs/classwork/2012_apstats_frp_01_2.png
+	:align: center
+	
+
 
