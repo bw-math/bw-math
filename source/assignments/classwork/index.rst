@@ -1,7 +1,7 @@
 .. _classwork:
 
-Class Work
-===========
+Classwork
+=========
 
 .. toctree::
    :maxdepth: 2
