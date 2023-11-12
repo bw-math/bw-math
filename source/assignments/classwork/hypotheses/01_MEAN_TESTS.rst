@@ -57,5 +57,28 @@ Is there a significant difference in the mean amount of E. coli bacteria detecte
 
 7. **2011, Free Response, #4**
 
-TODO
+High cholesterol levels in people can be reduced by exercise, diet, and medication. Twenty middle-aged males with cholesterol readings between 220 and 240 milligrams per deciliter (mg/dL) of blood were randomly selected from the population of such male patients at a large local hospital. Ten of the 20 males were randomly assigned to group A, advised on appropriate exercise and diet, and also received a placebo. The other 10 males were assigned to group B, received the same advice on appropriate exercise and diet, but received a drug
+intended to reduce cholesterol instead of a placebo. After three months, posttreatment cholesterol readings were taken for all 20 males and compared to pretreatment cholesterol readings. The tables below give the reduction in cholesterol level (pretreatment reading minus posttreatment reading) for each male in the study.
+
+.. topic:: Group A (placebo)
+
+	+----------------------+---+----+---+---+----+---+----+---+----+---+
+	| Reduction (in mg/dL) | 2 | 19 | 8 | 4 | 12 | 8 | 17 | 7 | 24 | 1 |
+	+----------------------+---+----+---+---+----+---+----+---+----+---+
+	
+	Mean Reduction: 10.20
+	
+	Standard Deviation of Reduction: 7.66
+	
+.. topic:: Group B (cholestrol drug)
+
+	+----------------------+----+----+----+----+----+----+----+----+---+----+
+	| Reduction (in mg/dL) | 30 | 19 | 18 | 17 | 20 | -4 | 23 | 10 | 9 | 22 |
+	+----------------------+----+----+----+----+----+----+----+----+---+----+
+	
+	Mean Reduction: 16.40
+	
+	Standard Deviation of Reduction: 9.40
+	
+Do the data provide convincing evidence, at the :math:`\alphra = 0.01` level, that the cholesterol drug is effective in producing a reduction in mean cholesterol level beyond that produced by exercise and diet?
 

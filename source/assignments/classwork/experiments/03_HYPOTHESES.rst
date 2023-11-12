@@ -49,3 +49,25 @@ a. Interpret what this p-value measures in the context of this study.
 b. Based on this p-value and study design, what conclusion should be drawn in the context of this study? Use a significance level of α = 0.05.
 
 c. Based on your conclusion in *part b*, which type of error, Type I or Type II, could have been made? What is one potential consequence of this error?
+
+4. **2012, Free Response, #5**
+
+A recent report stated that less than 35 percent of the adult residents in a certain city will be able to pass a
+physical fitness test. Consequently, the city’s Recreation Department is trying to convince the City Council to
+fund more physical fitness programs. The council is facing budget constraints and is skeptical of the report. The
+council will fund more physical fitness programs only if the Recreation Department can provide convincing
+evidence that the report is true.
+The Recreation Department plans to collect data from a sample of 185 adult residents in the city. A test of
+significance will be conducted at a significance level of a = 0.05 for the following hypotheses.
+
+	:math:`H_0`:  :math:`p = 0.35`
+
+	:math:`H_a`: :math:`p < 0.35`
+	
+where *p* is the proportion of adult residents in the city who are able to pass the physical fitness test.
+
+a. Describe what a Type II error would be in the context of the study, and also describe a consequence of making this type of error.
+
+b. The Recreation Department recruits 185 adult residents who volunteer to take the physical fitness test. The test is passed by 77 of the 185 volunteers, resulting in a *p-value* of 0.97 for the hypotheses stated above. If it was reasonable to conduct a test of significance for the hypotheses stated above using the data collected from the 185 volunteers, what would the p-value of 0.97 lead you to conclude?
+
+c. Describe the primary flaw in the study described in *part b*, and explain why it is a concern.
