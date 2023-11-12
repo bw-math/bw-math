@@ -140,7 +140,14 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/experiments/index.html">Experimental Design</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/experiments/index.html">Experimental Design</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/01_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/02_DESIGN.html">Experimental Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/03_DATA.html">Data</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/04_INFERENCE.html">Inference</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -457,13 +464,53 @@ document.write(`
   <section id="related-rates">
 <span id="related-rates-classwork"></span><h1>Related Rates<a class="headerlink" href="#related-rates" title="Permalink to this headline">#</a></h1>
 <ol class="arabic simple">
-<li><p><strong>2005, Free Response, #4</strong></p></li>
+<li><p>Water is draining out of the bottom of a 5000-gallon tank. The volume <em>V</em> of the water (in gallons) remaining in the tank after <em>t</em> minutes is given by the following formula:</p></li>
 </ol>
-<p>TODO</p>
+<div class="math">
+<p><img src="../../../_images/math/26d384bbcc16149993d97a16a65e388219719266.png" alt="V = 5000 (1 - \frac{t}{40})^2"/></p>
+</div><ol class="loweralpha simple">
+<li><p>Find a formula for <img class="math" src="../../../_images/math/bf1fb240602a87716a4ffab87212c28e93843861.png" alt="\frac{dV}{dt}"/> in terms of <em>t</em>.</p></li>
+<li><p>How quickly is the water initially draining from the tank?</p></li>
+<li><p>How quickly is the water draining from the tank at <img class="math" src="../../../_images/math/8a8d9a5874b6dcac0f797dfd8305b72857dba412.png" alt="t = 30 \text{minutes}"/>?</p></li>
+</ol>
 <ol class="arabic simple" start="2">
-<li><p><strong>2005, Free Response Form B, #2</strong></p></li>
+<li><p>In the theory of electrical circuits, <em>Ohm’s Law</em> describe the relationship between the voltage <em>V</em> across a resistor, the electrical current <em>I</em> passing through the resistor, and a quantity <em>R</em> known as the resistance. The law can be written as follows:</p></li>
 </ol>
-<p>TODO</p>
+<div class="math">
+<p><img src="../../../_images/math/77ab8059c8febdb7f1a071d898c1c1f3abafeb78.png" alt="V = IR"/></p>
+</div><p>Usually voltage is measured in volts, current is measured in amperes (amps), and resistance is measured in ohms, where :math:<a href="#id1"><span class="problematic" id="id2">`</span></a>1 text{ohm}=frac{1 text{volt}}{text{amp}}. In a circuit with variable resistance, the quantities <em>V</em>, <em>I</em> and <em>R</em>, all depend on time.</p>
+<ol class="loweralpha simple">
+<li><p>Take the derivative of <em>Ohm’s Law</em> to find an equation relating <img class="math" src="../../../_images/math/bf1fb240602a87716a4ffab87212c28e93843861.png" alt="\frac{dV}{dt}"/>, <img class="math" src="../../../_images/math/2b00c521dbb6c44d10d73115d141fddc93567908.png" alt="\frac{dI}{dt}"/> and <img class="math" src="../../../_images/math/b6e1a13559f04f3e85b2cba8012a01a44d02e836.png" alt="\frac{dR}{dt}"/>.</p></li>
+<li><p>Suppose the current is increasing at a rate of :math:<a href="#id3"><span class="problematic" id="id4">`</span></a>0.3 frac{text{amps}}{text{sec}}, while the resistance is holding steady at 4 ohms. How quickly is the voltage across the resistor increasing?</p></li>
+<li><p>Now suppose the voltage across the resistor is held constant at 20 volts, while the resistance is steadily increased at a rate of :math:<a href="#id5"><span class="problematic" id="id6">`</span></a>0.4 frac{text{ohms}}{text{sec}}. What is the current through the resistor when the resistance reaches 10 ohms?</p></li>
+<li><p>In the same scenario as <em>part c</em>, at what rate is the current changing at that time? Is it increasing or decreasing?</p></li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p>Boat A is sailing north away from a dock, while boat B is sailing west towards the same dock:</p></li>
+</ol>
+<img alt="../../../_images/jimbelk_hw4_03.png" class="align-center" src="../../../_images/jimbelk_hw4_03.png" />
+<ol class="loweralpha simple">
+<li><p>Find an equation that relates <img class="math" src="../../../_images/math/7281b334531061fc02817b6ca8bb8db31f3343dc.png" alt="\frac{dA}{dt}"/>, <img class="math" src="../../../_images/math/5e31b63f0ec6b53b517daed2a60b6204e4564e5c.png" alt="\frac{dB}{dt}"/> and <img class="math" src="../../../_images/math/36773a84512cbfe93659e6a0ffe3377f994b87bd.png" alt="\frac{dL}{dt}"/>.</p></li>
+<li><p>Is <img class="math" src="../../../_images/math/7281b334531061fc02817b6ca8bb8db31f3343dc.png" alt="\frac{dA}{dt}"/> positive or negative? What about <img class="math" src="../../../_images/math/5e31b63f0ec6b53b517daed2a60b6204e4564e5c.png" alt="\frac{dB}{dt}"/>? Explain.</p></li>
+<li><p>Suppose that boat A is 30 kilometers north of the dock, and is sailing north at a rate of <img class="math" src="../../../_images/math/0572b3d99d8c9c8295e7cd2d4bd191542e334d5c.png" alt="10 \frac{\text{km}}{\text{hour}}"/>. Meanwhile, boat B is 40 kilometers east of the dock and is sailing west at a rate of <img class="math" src="../../../_images/math/f2513a9bf619a8e1add244d4ba41a0e08e07bca0.png" alt="15 \frac{\text{km}}{\text{hour}}"/>. What is the present distance between the two boats?</p></li>
+<li><p>In the same scenario as <em>part c</em>, what is <img class="math" src="../../../_images/math/7281b334531061fc02817b6ca8bb8db31f3343dc.png" alt="\frac{dA}{dt}"/>?? What is <img class="math" src="../../../_images/math/5e31b63f0ec6b53b517daed2a60b6204e4564e5c.png" alt="\frac{dB}{dt}"/>?</p></li>
+</ol>
+<ol class="loweralpha simple" start="3">
+<li><p>In the same scenario as <em>part c</em> and <em>part d</em>, how quickly is the distance between the boats changing? Is the distance increasing or decreasing?</p></li>
+</ol>
+<ol class="arabic simple" start="4">
+<li><p>A positively charged particle is flying in the vicinity of a charged conductor. The electric potential energy of the particle is given by the formula,</p></li>
+</ol>
+<div class="math">
+<p><img src="../../../_images/math/94721e1b5716314025d9e0fd6aa691f0050a9bd1.png" alt="E = k_{e} \cdot \frac{qQ}{r}"/></p>
+</div><p>Where <em>q</em> is the charge of the particle, <em>Q</em> is the charge on the conductor and <em>r</em> is the distance between them. <img class="math" src="../../../_images/math/a650af47b86b784cc59deadf779cc4ed2c6787eb.png" alt="k_{e}"/> is an electrical field constant with a known value of <img class="math" src="../../../_images/math/362ecef969b03858bf9ed2e2c48865b3b32e3e3c.png" alt="k_{e} = 0.90 cm \cdot \frac{J}{{\mu C}^2}"/>.</p>
+<ol class="loweralpha simple">
+<li><p>Assuming <em>q</em> and <em>Q</em> are constant, find a formula for <img class="math" src="../../../_images/math/899b4b9eb7aa11807b268a4021b936dd1ddde0c6.png" alt="\frac{dE}{dt}"/> in terms of <em>q</em>, <em>Q</em>, <img class="math" src="../../../_images/math/160029b3b221a9e80decee63aa52f796b7ee6abf.png" alt="k_e"/>, <em>r</em> and <img class="math" src="../../../_images/math/01224dcaf2a6afda0f63657a67169c42cbe630d0.png" alt="\frac{dr}{dt}"/>.</p></li>
+<li><p>At a certain instant, a particle with a charge of <img class="math" src="../../../_images/math/c0fee44f1afb642fe03ac0189515a36d616dc20b.png" alt="1.5 \mu C"/> is 20 centimeters away from a conductor, and is flying directly towards the conductor at a rate of <img class="math" src="../../../_images/math/3ce09b2c95363f2dafd590b386a7ef1425d5504c.png" alt="2 \frac{\text{cm}}{\text{s}}"/>. Given that the conductor has a charge of <img class="math" src="../../../_images/math/d870ec13b8846b8bb8cba887f34da5a509f77945.png" alt="4.0 \mu C"/>, how quickly is the electrical potential energy of the particle increasing?</p></li>
+</ol>
+<ol class="arabic simple" start="5">
+<li><p><em>Boyle’s Law</em> states that when a sample gas is compressed at a constant temperature, the pressure <em>P</em> and volume <em>V</em> satisfy the equation <img class="math" src="../../../_images/math/e5178c27924dad1e70d1d96a9e19ca95207ad7df.png" alt="PV = c"/>, where <em>c</em> is a constant. Suppose that at a certain instant, the volume is 600 cubic centimeters, the pressure is <em>150 kPA</em> (<em>kilo-pascals</em>) and the pressure is increasing at a rate of <img class="math" src="../../../_images/math/d5af0a4b544d860ffde11df57c52e11e4b0726f0.png" alt="20 \frac{\text{kPA}}{\text{min}}"/>. At what rate is the volume decreasing at this instant?</p></li>
+</ol>
 </section>
 
 

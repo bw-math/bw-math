@@ -46,6 +46,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/experiments/00_INTRODUCTION';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Bias" href="01_BIAS.html" />
+    <link rel="prev" title="Experimental Design" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -123,12 +125,12 @@
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../00_SPLASH.html">Bishop Walsh Math</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="../../01_STATS_SYLLABUS.html">AP Stats Course Syllabus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../02_DATASETS.html">Datasets</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../index.html">Class Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Class Notes</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../HISTORY.html">Knowledge</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../SET_THEORY.html">Set Theory</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -138,7 +140,14 @@
 <li class="toctree-l3"><a class="reference internal" href="../probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="index.html">Experimental Design</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Experimental Design</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_DESIGN.html">Experimental Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_DATA.html">Data</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="04_INFERENCE.html">Inference</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -452,6 +461,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment">Experiment</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#individual">Individual</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population">Population</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample">Sample</a><ul class="nav section-nav flex-column">
@@ -471,36 +481,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-terminology">Other Terminology</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-inference">Statistical Inference</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#null-and-alternate-hypotheses">Null and Alternate Hypotheses</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#controls">Controls</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confounding-variables">Confounding Variables</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-fallacies">Statistical Fallacies</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bias">Bias</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#selection-bias">Selection Bias</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#response-bias">Response bias</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#observer-bias">Observer Bias</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation-vs-causation">Correlation Vs. Causation</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experimental-design">Experimental Design</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Definitions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#blind-studies">Blind Studies</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matched-pairs">Matched Pairs</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#randomized-blocks">Randomized Blocks</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionality">Dimensionality</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristic">Characteristic</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scale">Scale</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-statistics">Types of Statistics</a></li>
 </ul>
             </nav>
         </div>
@@ -558,8 +538,17 @@ document.write(`
 </section>
 <section id="definitions">
 <h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
+<section id="experiment">
+<span id="id1"></span><h3>Experiment<a class="headerlink" href="#experiment" title="Permalink to this headline">#</a></h3>
+<p>An experiment is the quintessential foundation of statistics. By its universal nature, its definition is a bit hard to pin down; an <em>experiment</em> in statistics is an elementary concept, yet still multifaceted in its simplicity.</p>
+<p>The primary characteristic of an <em>experiment</em> is its randomness. Put another way, an <em>experiment</em> is an event with an uncertain outcome. It is the task of statistics to tell us how much of the uncertainty in an experiment’s outcome is due to lack of information and how much is due to random error.</p>
+<p>But an <em>experiment</em> is more than just randomness; an <em>experiment</em> also denotes an organized and controlled event being measured by human observers. An <em>experiment</em> is meant to exhibit some property of the natural world being studied. The phenomenon in question is isolated from all external effects, so that the only <em>variables</em> influencing the <em>outcome</em> of the <em>experiment</em> are the ones being measured.</p>
+<p>All of this is done so that humans (us) may learn the relationships that govern empirical quantities. We, as inquisitive beings inhabiting an existence apart from us, naturally objectify and quantify the world around us; we turn it into relations of space and time, mass and motion, temperature and pressure; we categorize it into genus and species, into maps and contours, into recognizable patterns. All of this is done so we may see the lines of interaction that connect concepts. The <em>experiment</em> is conducted to help us draw these lines.</p>
+<p>However, the <em>uncertainty</em> of the experimental outcome prevents, on a fundamental level, a direct line from being drawn from outcome to explanation. There is never <em>certainty</em> the observed outcome is due to explanatory power of a relationship with another observed variable, or if the outcome is due to random chance.</p>
+<p>For this reason, when we conduct experiments, the best we can do is make an assumption about the state of the universe and then make observations. If the observations made contradict the assumption we started with, then we should like to conclude the assumption is false and discard it from the corpus of knowledge. It is also the task of statistics to help us decide whether the evidence gathered from observations is sufficient and <em>statistically signficant</em> enough to draw the inference desired: that we should reject the prior assumption due to evidence found to the contrary.</p>
+</section>
 <section id="individual">
-<span id="id1"></span><h3>Individual<a class="headerlink" href="#individual" title="Permalink to this headline">#</a></h3>
+<span id="id2"></span><h3>Individual<a class="headerlink" href="#individual" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
 <dt>Definition</dt><dd><p>A single observation.</p>
 </dd>
@@ -573,7 +562,7 @@ document.write(`
 <p>If we are measuring what percent of the country’s population supports a certain government policy, then the <em>individuals</em> in the experiment will be the people sampled. The <em>unit</em> of each <em>individual observation</em> would be the binary units, <em>Y</em> or <em>N</em>, that represent the possible outcomes of answers, “<em>Yes</em>” or “<em>No</em>”</p>
 </section>
 <section id="population">
-<span id="id2"></span><h3>Population<a class="headerlink" href="#population" title="Permalink to this headline">#</a></h3>
+<span id="id3"></span><h3>Population<a class="headerlink" href="#population" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
 <dt>Definition</dt><dd><p>The <em>population</em> is the set of all possible individuals that can be observed in a given experiment.</p>
 </dd>
@@ -620,7 +609,7 @@ document.write(`
 <p>At the same time, we need a <em>representative</em> sample because we do not want the data to give a false impression of the population we are trying to observe.</p>
 <p>Often, these two goals are at odds with one another. In order to make a sample <em>representative</em>, you must impose some sort of order on the way you sample the population, but doing so then affects the <em>randomness</em> of the sample. Finding the right balance between these two directives is the topic of the next section.</p>
 <section id="sampling-techniques">
-<span id="id3"></span><h3>Sampling Techniques<a class="headerlink" href="#sampling-techniques" title="Permalink to this headline">#</a></h3>
+<span id="id4"></span><h3>Sampling Techniques<a class="headerlink" href="#sampling-techniques" title="Permalink to this headline">#</a></h3>
 <section id="random">
 <span id="random-sampling"></span><h4>Random<a class="headerlink" href="#random" title="Permalink to this headline">#</a></h4>
 <dl class="simple">
@@ -749,7 +738,7 @@ document.write(`
 <dt>Defintion</dt><dd><p>To get a <em>clustered</em> sample, the population is broken up into <em>random</em> groups and then each group is randomly sampled.</p>
 </dd>
 <dt>Example</dt><dd><ul class="simple">
-<li><p>Looking at a map of a city and breaking it into grid of squares. Then, selecting a few squares and drawing a sample from each square.</p></li>
+<li><p>Looking at a map of a city and breaking it into grid of squares. Then, selecting a few squares and drawing a sample from each selected square.</p></li>
 <li><p>Surveying people entering supermarkets across a city.</p></li>
 <li><p>Looking at the employees of the top three local banks by revenue to determine the average salary of a bank employee.</p></li>
 </ul>
@@ -788,553 +777,6 @@ document.write(`
 </div></blockquote>
 </section>
 </section>
-<section id="statistical-inference">
-<h2>Statistical Inference<a class="headerlink" href="#statistical-inference" title="Permalink to this headline">#</a></h2>
-<p>Once we have data to analyze, we apply the <em>statistical inference</em> to see what it tells us.</p>
-<p><em>Statistical inference</em> is the process of using a sample of data to reach new conclusions about the population from which it was drawn.</p>
-<section id="null-and-alternate-hypotheses">
-<h3>Null and Alternate Hypotheses<a class="headerlink" href="#null-and-alternate-hypotheses" title="Permalink to this headline">#</a></h3>
-<p>Usually in statistics we are concerned with <em>hypotheses</em> and whether or not, based on the available data, there is sufficient evidence to reject one hypothesis in favor of another.</p>
-<p>For example, we might like to know whether a new type of fuel is cleaner and more efficient than standard gasoline. In this case, we would start by assuming the <em>null hypothesis</em> that the efficiency of the new fuel is the same as standard gasoline. We would then establish an experiment designed to test this hypothesis against the <em>alternate hypothesis</em> that the new fuel is more efficient than standard gasoline.</p>
-<div class="topic">
-<p class="topic-title">Null Hypothesis</p>
-<div class="math">
-<p><img src="../../_images/math/edeb0afd8d66c42ea3173a1504e1710fe09b1645.png" alt="H_{ \varnothing }"/></p>
-</div><p>The <em>null hypothesis</em> is the prior assumption we bring to the <em>experiment</em>. It represents the “<em>status quo</em>”.</p>
-<p>The term “<em>null</em>” in <em>null hypothesis</em> means “<em>none</em>” or “<em>empty</em>”, as in nothing has been accomplished with the <em>null hypothesis</em>. It represents “<em>no change to the state of our knowledge about the world</em>”</p>
-</div>
-<div class="topic">
-<p class="topic-title">Alternate Hypothesis</p>
-<div class="math">
-<p><img src="../../_images/math/4ae51d24d6e24fb2b7bb0cd9f5dec2bc072fb176.png" alt="H_a"/></p>
-</div><p>The <em>alternate hypothesis</em> is the theory we would like to test with the experiment. It represents the “<em>overturning of the status quo</em>” in favor of a new explanation.</p>
-</div>
-<p>We assume the <em>null hypothesis</em> in order to test the validity of the <em>alternate hypothesis</em>. If we find sufficient evidence the <em>null hypothesis</em> is not true, we reject it in favor of the <em>alternate hypothesis</em>.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>We never <em>prove</em> the null hypothesis true. It is always <em>assumed</em> true in order to determine whether there is sufficient evidence to conclude it is false.</p>
-</div>
-</section>
-<section id="controls">
-<h3>Controls<a class="headerlink" href="#controls" title="Permalink to this headline">#</a></h3>
-<p>In the example of testing the efficiency of a new type of fuel against standard gasoline, notice we are asking a question about two different populations: the population of cars that use the new type of fuel and the population of cars that use standard gasoline. Specifically, we are asking if there is a <em>statistically significance</em> difference between the efficiency of either group.</p>
-<img alt="../../_images/fuel_efficiency_null_versus_alternate.jpg" class="align-center" src="../../_images/fuel_efficiency_null_versus_alternate.jpg" />
-<p>The first group is referred to as the <em>test</em> group, the sample to which a <em>treatment</em> has been applied and whose efficacy we would like to test.</p>
-<p>The second group is referred to as the <em>control group</em>, the sample to which no <em>treatments</em> have been applied and which acts as a baseline against which we can judge the effects of the <em>treatment</em>.</p>
-</section>
-<section id="confounding-variables">
-<h3>Confounding Variables<a class="headerlink" href="#confounding-variables" title="Permalink to this headline">#</a></h3>
-<p>Let us continue to consider the example experiment of testing the efficiency of a new type of fuel against standard gasoline.</p>
-<p>To truly isolate the experiment from any <em>confounding variables</em>, we should restrict our populations to certain <em>makes</em> and <em>models</em> of cars. Otherwise, we would not be sure if the results of our experiments were due to the efficiency of the new fuel, or variations in the engine running the fuel.</p>
-<p>A <em>confounding variable</em> is a variable that affects the experiment, but is not measured, whether due to poor experimental design or due to the nature of the interaction.</p>
-<p>To see what is meant by “<em>due to the nature of the interaction</em>”, suppose the new type of fuel whose efficiency is being tested loses some of its potency at higher elevations (due to the effects of gravity on its chemical composition, let’s say). If some of the data we collect from the cars using the new fuel type is collected from high-altitude locations, then the data will show the effects of this dependence, without our being aware. We might then erroneously conclude the new fuel does not possess the anticipated efficiency gains, call the experiment a wash and go home sad.</p>
-<p>For this reason, we must be very careful to always consider what variables for which we haven’t accounted might be influencing the samples we observe. In other words, we must always be mindful of <em>confounding variables</em> and their effects.</p>
-</section>
-</section>
-<section id="statistical-fallacies">
-<h2>Statistical Fallacies<a class="headerlink" href="#statistical-fallacies" title="Permalink to this headline">#</a></h2>
-<section id="bias">
-<span id="id4"></span><h3>Bias<a class="headerlink" href="#bias" title="Permalink to this headline">#</a></h3>
-<p><em>Bias</em> is a type of systematic error that arises when the sample data that is used to draw conclusions about the population does not accurately reflect the population.</p>
-<section id="selection-bias">
-<h4>Selection Bias<a class="headerlink" href="#selection-bias" title="Permalink to this headline">#</a></h4>
-<dl class="simple">
-<dt>Definition</dt><dd><p><em>Selection bias</em> occurs when the sampling method is not representative of the entire population.</p>
-</dd>
-</dl>
-<p>As an extreme example to illustrate the meaning of this type of <em>bias</em>, if you were interested in making assertions about the average height of a United States citizens, selecting a sample of 100 elementary schoolers would lead you to make wildly erroneous conclusions.</p>
-<p>A famous example of <em>how to avoid selection bias</em> is the work of Abraham Wald during World War II. Wald was a statistican at Columbia University who was analyzing damage done to aircraft that had taken enemy fire. Had he only used the sample as his disposal, the aircraft that <em>survived</em> the war and made their way to Columbia University to be examined by him, he would have erroneously concluded the areas where craft sustained major damaged needed re-inforced with armor.</p>
-<a class="reference internal image-reference" href="../../_images/wald_plane_armor.png"><img alt="../../_images/wald_plane_armor.png" class="align-center" src="../../_images/wald_plane_armor.png" style="width: 50%;" /></a>
-<p>However, the sample he was looking at only represented <em>aircraft that had survived</em>, not the entire population of aircraft. In other words, the sample was not <em>representative</em> of the <em>aircraft that had not survived</em>, and thus could not be used to draw inferences about where on the body of the aircraft to re-inforce with armor.</p>
-<p>Instead, he reasoned, the areas where the surviving aircraft had not sustained damage were likely the areas the <em>aircraft that had not survived</em> <strong>had</strong> sustained damage. Counter-intuitively (but statistically sound), he proposed re-inforcing the areas on the surviving planes where there was no damage.</p>
-<p>His statistical insight led to a reduction in the number of aircraft causalities during the war.</p>
-</section>
-<section id="response-bias">
-<h4>Response bias<a class="headerlink" href="#response-bias" title="Permalink to this headline">#</a></h4>
-<dl class="simple">
-<dt>Definition</dt><dd><p><em>Response bias</em> occurs when the sampling method is over-representative or under-representative of certain segments of the population.</p>
-</dd>
-</dl>
-<p>A typical example of this kind of bias can be found in cold-calling telephone surveys. Most people are likely to ignore robo-calls for political polls, and the set of people who do answer the calls are likely not an accurate representation of the entire population.</p>
-<p>A famous example of this kind of bias is the <a class="reference external" href="https://en.wikipedia.org/wiki/Dewey_Defeats_Truman">1948 Election Between Thomas Dewey and Harry Truman</a>. The polling data the Chicago Tribune relied on showed Dewey winning by a huge margin <a class="footnote-reference brackets" href="#id6" id="id5">*</a></p>
-<p>The results of the polls versus the actual result of the election are shown below,</p>
-<dl class="footnote brackets">
-<dt class="label" id="id6"><span class="brackets"><a class="fn-backref" href="#id5">*</a></span></dt>
-<dd><p>The 1948 Presidential Election polls <a class="reference external" href="https://www.randomservices.org/random/data/Election1948.html">source</a></p>
-</dd>
-</dl>
-<table class="table">
-<colgroup>
-<col style="width: 26%" />
-<col style="width: 24%" />
-<col style="width: 18%" />
-<col style="width: 15%" />
-<col style="width: 18%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Candidate</p></th>
-<th class="head"><p>Crossley</p></th>
-<th class="head"><p>Gallup</p></th>
-<th class="head"><p>Roper</p></th>
-<th class="head"><p>Actual</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Truman</p></td>
-<td><p>45</p></td>
-<td><p>44</p></td>
-<td><p>38</p></td>
-<td><p>50</p></td>
-</tr>
-<tr class="row-odd"><td><p>Dewey</p></td>
-<td><p>50</p></td>
-<td><p>50</p></td>
-<td><p>53</p></td>
-<td><p>45</p></td>
-</tr>
-<tr class="row-even"><td><p>Other</p></td>
-<td><p>5</p></td>
-<td><p>6</p></td>
-<td><p>9</p></td>
-<td><p>5</p></td>
-</tr>
-</tbody>
-</table>
-<p>While polls will never agree 100% of the time with reality, the error in this case was extreme. Upon investigating what went wrong, it was discovered the pollsters at the organizations of Crossley, Gallup and Roper were told to survey a certain number of people. Beyond that, they were free to choose who to include in the survey. They ended up calling their friends, family and close relatives. This led to the data they collected being <em>biased</em>, resulting in an infamous photograph,</p>
-<img alt="../../_images/dewey_defeats_truman.jpg" class="align-center" src="../../_images/dewey_defeats_truman.jpg" />
-</section>
-<section id="observer-bias">
-<h4>Observer Bias<a class="headerlink" href="#observer-bias" title="Permalink to this headline">#</a></h4>
-<dl class="simple">
-<dt>Definition</dt><dd><p><em>Observer Bias</em> occurs when the act of observation changes that which is being observed.</p>
-</dd>
-</dl>
-<p>Examples of this type of bias can crop up when pollsters ask leading questions, such as, “Do you <em>still</em> drink coffee?” versus the more neutral phrasing, “Do you drink coffee?”. Depending on how the question is phrased, a different answer might be given.</p>
-<p>A more famous example of this type of bias is the <a class="reference external" href="https://en.wikipedia.org/wiki/Milgram_experiment">Milgram Experiment</a> conducted by Dr. Stanley Milgrim at Yale University. The <em>Milford Experiment</em> was a psychological study wherein participants were told they were testing the effects of phyiscal punishment, in form of an electric shock, on the memory. Participants were to be paired off as <em>teacher</em> and <em>learner</em>. The <em>learner</em> would be asked to memorize a series of words, and then asked to recite them. If they got the words wrong in the recitation, the <em>teacher</em> would administer an electric shock to the <em>learner</em>. Each time a wrong answer was given, the voltage of the electric shock was increased.</p>
-<a class="reference external image-reference" href="https://www.youtube.com/watch?v=Kzd6Ew3TraA"><img alt="Milgram Experiment" src="https://img.youtube.com/vi/Kzd6Ew3TraA/maxresdefault.jpg" /></a>
-<div class="admonition-milgram-experiment admonition">
-<p class="admonition-title">Milgram Experiment</p>
-<p>Click on the image to play the video.</p>
-</div>
-<p>Unbeknownst to the participants of the study, this wasn’t the actual experiment. In reality, the <em>learner</em> in every experiment was a paid actor and the electric shocks weren’t real. The actor would intentionally get answers wrong and then pretend to be in pain when the <em>teacher</em> was administering the fake electric shocks. The <em>teacher</em> was the real object of study. Dr. Milgram was trying to see how much pain a randomly selected individual would inflict on someone else simply because they were told to do it.</p>
-<p>When participants expressed unease or concern, the researchers running the study, intentionally dressed in white lab coats to give the appearance of authority, would give one of the following responses,</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Please continue.</p></li>
-<li><p>The experiment requires that you continue.</p></li>
-<li><p>It is absolutely essential that you continue.</p></li>
-<li><p>You have no other choice; you must go on.</p></li>
-</ul>
-</div></blockquote>
-<p>The actor would get many questions wrong, forcing the <em>teacher</em> to increase the voltage of the shock. Most, but not all, participants would quit before reaching the maximum voltage. Dr. Milgrim found 14 of the 40 participants in the original study would increase the voltage of the shock all the way up to the maximum amount, as long as a researcher was there to instruct him or her to continue.</p>
-<p>Subsequent variations of this experiment have shown the <em>way</em> the researcher responds to the participant’s concern after hearing the actor cry out in pain significantly affects the results. In Dr. Milgram’s original experiment, the responses were phrased in such a way as to imply the actor’s pain was for the “<em>good of the experiment</em>”. If instead of saying,</p>
-<blockquote>
-<div><p>The experiment requires that you continue.</p>
-</div></blockquote>
-<p>Researchers instead said,</p>
-<blockquote>
-<div><p>You are ordered to continue.</p>
-</div></blockquote>
-<p>The results were vastly different. With this slight change, the results were nowhere near as large as in Dr. Milgrim’s original experiment; Participants were more more likely to quit before reaching the maximum shock threshold. In other words, when the participants did not believe there to be a “<em>greater good</em>” at stake they would quit at greater rates than if they did.</p>
-<p>The key takeway from the <em>Milgram experiment</em> is <em>how</em> you make the observation may change <em>what</em> you are observing.</p>
-</section>
-</section>
-<section id="correlation-vs-causation">
-<h3>Correlation Vs. Causation<a class="headerlink" href="#correlation-vs-causation" title="Permalink to this headline">#</a></h3>
-<p>The phenomenon of <em>correlation</em>, a statistical quantity we will study in much greater detail later on in the class, can be summed up succintly,</p>
-<blockquote>
-<div><p>Correlation is the tendency of two variables to vary together, either positively or negatively.</p>
-</div></blockquote>
-<p>As an illustrative example of <em>positive correlation</em>, the average speed of a car on a highway is <em>positively correlated</em> with the number of speeding tickets received by its driver. The faster one goes on the highway, the more tickets one receives <em>on average</em>.</p>
-<p>As an illustrative example of <em>negative correlation</em>, the number of cigarettes smoked a week is negatively correlated with the lifespan of the smoker. The more cigarettes smoked a week, the shorter the lifespan of the smoker <em>on average</em>.</p>
-<p>In these examples, the two variables being measured are related through a <em>causal mechanism</em>, i.e. we can think of one variable being the “<em>cause</em>” of the other.</p>
-<p>In the first example, state speeding laws determine the nature of the correlation between the variable “<em>average highway speed</em>” and the variable “<em>number of tickets</em>, so we say “<em>speeding causes tickets</em>””</p>
-<p>In the second case, the facts of biology determine the the nature of the correlation between the variable “<em>number of cigarettes smoked</em>” and the variable “<em>lifespan</em>”, so we say “<em>smoking causes shorter lifespans</em>”.</p>
-<p>In each of these cases, we can identify “<em>how</em>” one variable determines the value of the other.</p>
-<p><strong>However</strong>, correlated variables do not necessarily imply a <em>causal relationship</em> between the quantities being observed, i.e. correlation does not imply a relationship of cause and effect.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Correlation <img class="math" src="../../_images/math/d16520bee5763ea016f6fe0a7d903dfecc22c8ca.png" alt="\neq"/> Causation</p>
-</div>
-<p>The following image illustrates why we cannot infer <em>causation</em> from <em>correlation</em>,</p>
-<img alt="../../_images/spurious_correlation.jpeg" class="align-center" src="../../_images/spurious_correlation.jpeg" />
-</section>
-</section>
-<section id="experimental-design">
-<span id="id7"></span><h2>Experimental Design<a class="headerlink" href="#experimental-design" title="Permalink to this headline">#</a></h2>
-<p>The key to eliminating bias and preventing fallacies is <em>good experimental design</em>.</p>
-<section id="id8">
-<h3>Definitions<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h3>
-<dl class="simple">
-<dt>Experimental Unit</dt><dd><p>The entity (person, object, thing) being observed in an experiment.</p>
-</dd>
-<dt>Treatment</dt><dd><p>The condition applied in an experiment.</p>
-</dd>
-</dl>
-<div class="topic">
-<p class="topic-title">Phraseology</p>
-<p>The <em>experimental unit</em> receives <em>treatments</em>.</p>
-<p><em>Treatments</em> are applied to <em>experimental units</em>.</p>
-</div>
-<dl class="simple">
-<dt>Indicator Variable</dt><dd><p>An <em>indicator</em> variable is the variable over which the researcher has control.</p>
-</dd>
-<dt>Response Variable</dt><dd><p>A <em>response</em> variable is the variable measured by the researcher.</p>
-</dd>
-</dl>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><em>Indicator</em> variables are sometimes known as either <em>explanatory</em> variables or <em>independent variables</em>.</p>
-<p><em>Response</em> variables are sometimes known as either <em>explicated</em> variables or <em>dependent variables</em>.</p>
-</div>
-<dl class="simple">
-<dt>Example</dt><dd><p>A researcher changes the pH concentration of a solution and measures the temperature at various concentrations.</p>
-</dd>
-</dl>
-<p>In this example, the <em>indicator</em> or <em>explanatory</em> variable is the <em>pH contentration</em>. The researcher is able to change the amount of acid or base that is added to the solution. The <em>response</em> variable is the temperature of the solution.</p>
-</section>
-<section id="blind-studies">
-<h3>Blind Studies<a class="headerlink" href="#blind-studies" title="Permalink to this headline">#</a></h3>
-<p>The concept of <em>blind studies</em> mainly applies to the areas of psychology and medicine. These sciences deal with human nature and humans are, if nothing else, peculiar creatures. Their expectations can influence the results of the experiment.</p>
-<p>In medical studies, the <em>test</em> group will receive the real treatment while the <em>control</em> group will receive a <em>placebo</em> treatment. For example, in testing whether a certain drug treats a medical condition, the <em>control</em> group would receive a sugar pill. Yet it sometimes occurs the <em>control</em> group experiences the effects of the <em>real treatment</em> simply by <em>expecting</em> the effect,</p>
-<a class="reference external image-reference" href="https://www.youtube.com/watch?v=mSEr3A-pMsw"><img alt="Placebo Effect" src="https://img.youtube.com/vi/mSEr3A-pMsw/maxresdefault.jpg" /></a>
-<div class="admonition-placebo-effect-video admonition">
-<p class="admonition-title">Placebo Effect Video</p>
-<p>Click on the image to watch the video.</p>
-</div>
-<div class="topic">
-<p class="topic-title">Placebo Effect</p>
-<p>The <em>Placebo Effect</em> occurs when individuals in the <em>control group</em> appear as if they have received <em>treatment</em>.</p>
-</div>
-<p>To minimize the <em>Placebo Effect</em>, <em>single blind</em> and <em>double blind</em> studies are performed.</p>
-<dl class="simple">
-<dt>Single Blind</dt><dd><p>In a single blind study, the participant does not know whether he or she is in the <em>control</em> or <em>test</em> group. However, the researcher <em>does</em> know.</p>
-</dd>
-<dt>Double Blind</dt><dd><p>In a double blind study, neither the participant nor the researcher administering the treatment know if the individual is in the <em>control</em> or <em>test</em> group.</p>
-</dd>
-</dl>
-</section>
-<section id="matched-pairs">
-<h3>Matched Pairs<a class="headerlink" href="#matched-pairs" title="Permalink to this headline">#</a></h3>
-<p>A <em>matched pairs</em> design is an experimental design where researchers match pairs of participants by relevant characteristics. Then the researchers randomly assign one person from each pair to the treatment group and the other to the control group. This type of experiment is also known as a matching pairs design.</p>
-<p>An ideal example of a <em>matched pairs design</em> would be twins,</p>
-<img alt="../../_images/twins.jpg" class="align-center" src="../../_images/twins.jpg" />
-<p>If one of the twins is submitted to a <em>treatment</em>, their genetically identical counterpart serves as a nearly perfect <em>control</em>.</p>
-</section>
-<section id="randomized-blocks">
-<h3>Randomized Blocks<a class="headerlink" href="#randomized-blocks" title="Permalink to this headline">#</a></h3>
-<p>A <em>randomized block</em> experiment should be understood a series of identical experiments, where each <em>block</em> of the population sampled is composed of the same distribution of individuals.</p>
-<p>A <em>randomized block</em> design is commonly encountered in <em>agricultural</em> applications. Consider a farmer who wants to test a new type of seed against his usual stock to determine if the yield is higher. In a <em>randomized block</em> experiment, he would break his plots of land into <em>blocks</em>, and then partition each block into segments, call them <em>A</em>, <em>B</em>, <em>C</em> and <em>D</em>,</p>
-<img alt="../../_images/randomized_blocks.png" class="align-center" src="../../_images/randomized_blocks.png" />
-<p>The type of seed would be planted in the <em>A</em> segment of each block, i.e. the <em>A</em> segment would receive a <em>treatment</em>, while the other segments would be planted with the farmer’s usual stock. Data would then be collected from each block and analyzed in isolation to determine if the new type of seed has any benefits.</p>
-<p>In essence, each <em>block</em> represents a separate experiment, where the treated group is tested against the control group.</p>
-</section>
-</section>
-<section id="classifications-of-data">
-<span id="data-classification"></span><h2>Classifications of Data<a class="headerlink" href="#classifications-of-data" title="Permalink to this headline">#</a></h2>
-<p>The data we collect from an experiment is classified according to several factors.</p>
-<section id="dimensionality">
-<span id="data-dimensionality"></span><h3>Dimensionality<a class="headerlink" href="#dimensionality" title="Permalink to this headline">#</a></h3>
-<p>Definition</p>
-<blockquote>
-<div><p>The <em>dimension</em> of a dataset is the number of values associated with a single observation.</p>
-</div></blockquote>
-<dl class="simple">
-<dt>Univariate</dt><dd><p><img class="math" src="../../_images/math/02ff3586e2dbe8a38e918ae4cbfbae022878a4e2.png" alt="\{ x_1, x_2, x_3 \}"/></p>
-</dd>
-</dl>
-<p><em>Univariate</em> data consists of observations that each contain a single value.</p>
-<dl class="simple">
-<dt>Example</dt><dd><p>Experimental data from Henri Cavendish’s density of the Earth experiments. Density is expressed as a ratio of the density of water. See <a class="reference internal" href="../../assignments/projects/01_CATEGORICAL.html#project-one"><span class="std std-ref">Bar Charts</span></a> for more information about this dataset.</p>
-</dd>
-</dl>
-<table class="table" id="id9">
-<caption><span class="caption-text">Density of the Earth</span><a class="headerlink" href="#id9" title="Permalink to this table">#</a></caption>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>Density</p></td>
-</tr>
-<tr class="row-even"><td><p>5.5</p></td>
-</tr>
-<tr class="row-odd"><td><p>5.61</p></td>
-</tr>
-<tr class="row-even"><td><p>4.88</p></td>
-</tr>
-<tr class="row-odd"><td><p>5.07</p></td>
-</tr>
-<tr class="row-even"><td><p>5.26</p></td>
-</tr>
-<tr class="row-odd"><td><p>5.55</p></td>
-</tr>
-<tr class="row-even"><td><p>5.36</p></td>
-</tr>
-<tr class="row-odd"><td><p>5.29</p></td>
-</tr>
-<tr class="row-even"><td><p>5.58</p></td>
-</tr>
-<tr class="row-odd"><td><p>5.65</p></td>
-</tr>
-<tr class="row-even"><td><p>5.57</p></td>
-</tr>
-</tbody>
-</table>
-<dl class="simple">
-<dt>Bivariate</dt><dd><p><img class="math" src="../../_images/math/167e4d5ca72db146183c8baacc90e6f72eff7044.png" alt="\{ (x_1, y_1), (x_2, y_2), ... , (x_n, y_n)\}"/></p>
-</dd>
-</dl>
-<p><em>Bivariate</em> data consists of observations that each contain two values (i.e. an <em>pair</em>)</p>
-<dl class="simple">
-<dt>Example</dt><dd><p>Data from the Challenger space shuttle explosion showing the atmospheric temperature versus the erosion index of the O-ring seal. The failure of the O-ring seal at lower temperatures was not accounted for prior to launch.</p>
-</dd>
-</dl>
-<table class="table" id="id10">
-<caption><span class="caption-text">Challenger Space Shuttle Erosion Data</span><a class="headerlink" href="#id10" title="Permalink to this table">#</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>Temp</p></td>
-<td><p>Erosion</p></td>
-</tr>
-<tr class="row-even"><td><p>66.0</p></td>
-<td><p>0.0</p></td>
-</tr>
-<tr class="row-odd"><td><p>70.0</p></td>
-<td><p>53.0</p></td>
-</tr>
-<tr class="row-even"><td><p>69.0</p></td>
-<td><p>0.0</p></td>
-</tr>
-<tr class="row-odd"><td><p>68.0</p></td>
-<td><p>0.0</p></td>
-</tr>
-<tr class="row-even"><td><p>67.0</p></td>
-<td><p>0.0</p></td>
-</tr>
-<tr class="row-odd"><td><p>63.0</p></td>
-<td><p>0.0</p></td>
-</tr>
-<tr class="row-even"><td><p>70.0</p></td>
-<td><p>28.0</p></td>
-</tr>
-<tr class="row-odd"><td><p>78.0</p></td>
-<td><p>0.0</p></td>
-</tr>
-<tr class="row-even"><td><p>67.0</p></td>
-<td><p>0.0</p></td>
-</tr>
-</tbody>
-</table>
-<dl class="simple">
-<dt>Multivariate</dt><dd><p><img class="math" src="../../_images/math/fbbdfa3f3d502368b86e9fae2abae1163ef1f8b8.png" alt="\{ (x_{1}^1, x_{2}^1, ... , x_{n}^1 ), (x_{1}^2, x_{2}^2, ... , x_{n}^2 ), ... ,(x_{1}^m, x_{2}^m, ... , x_{n}^m )"/></p>
-</dd>
-</dl>
-<p><em>Multivariate</em> data consists of observations that each contain an arbitrary number of values (i.e. a <em>vector</em>)</p>
-<dl class="simple">
-<dt>Example</dt><dd><p>Body measurements from a sample of grizzly bears.</p>
-</dd>
-</dl>
-<table class="table" id="id11">
-<caption><span class="caption-text">Bear Measurements</span><a class="headerlink" href="#id11" title="Permalink to this table">#</a></caption>
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>AGE</p></td>
-<td><p>MONTH</p></td>
-<td><p>SEX (1=M)</p></td>
-<td><p>HEADLEN</p></td>
-<td><p>HEADWDTH</p></td>
-<td><p>NECK</p></td>
-<td><p>LENGTH</p></td>
-<td><p>CHEST</p></td>
-<td><p>WEIGHT</p></td>
-</tr>
-<tr class="row-even"><td><p>19</p></td>
-<td><p>7</p></td>
-<td><p>1</p></td>
-<td><p>11.0</p></td>
-<td><p>5.5</p></td>
-<td><p>16.0</p></td>
-<td><p>53.0</p></td>
-<td><p>26.0</p></td>
-<td><p>80</p></td>
-</tr>
-<tr class="row-odd"><td><p>55</p></td>
-<td><p>7</p></td>
-<td><p>1</p></td>
-<td><p>16.5</p></td>
-<td><p>9.0</p></td>
-<td><p>28.0</p></td>
-<td><p>67.5</p></td>
-<td><p>45.0</p></td>
-<td><p>344</p></td>
-</tr>
-<tr class="row-even"><td><p>81</p></td>
-<td><p>9</p></td>
-<td><p>1</p></td>
-<td><p>15.5</p></td>
-<td><p>8.0</p></td>
-<td><p>31.0</p></td>
-<td><p>72.0</p></td>
-<td><p>54.0</p></td>
-<td><p>416</p></td>
-</tr>
-<tr class="row-odd"><td><p>115</p></td>
-<td><p>7</p></td>
-<td><p>1</p></td>
-<td><p>17.0</p></td>
-<td><p>10.0</p></td>
-<td><p>31.5</p></td>
-<td><p>72.0</p></td>
-<td><p>49.0</p></td>
-<td><p>348</p></td>
-</tr>
-<tr class="row-even"><td><p>104</p></td>
-<td><p>8</p></td>
-<td><p>0</p></td>
-<td><p>15.5</p></td>
-<td><p>6.5</p></td>
-<td><p>22.0</p></td>
-<td><p>62.0</p></td>
-<td><p>35.0</p></td>
-<td><p>166</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="characteristic">
-<span id="data-characteristic"></span><h3>Characteristic<a class="headerlink" href="#characteristic" title="Permalink to this headline">#</a></h3>
-<dl class="simple">
-<dt>Definition</dt><dd><p>The <em>characteristic</em> of a dataset is the <em>type</em> of data being observed.</p>
-</dd>
-<dt>Qualitative</dt><dd><p><img class="math" src="../../_images/math/d221136315bf843518abf458398fd263e8b838dc.png" alt="\{ \text{red}, \text{blue}, \text{yellow} \}"/></p>
-</dd>
-</dl>
-<p>Qualitative data are categorical.</p>
-<dl class="simple">
-<dt>Example</dt><dd><ul class="simple">
-<li><p>The favorite color of a sample of people.</p></li>
-<li><p>A group of people’s answer to supporting a new tax reform law.</p></li>
-<li><p>Movies that feature Kevin Bacon.</p></li>
-<li><p>Words that appear in a novel.</p></li>
-</ul>
-</dd>
-<dt>Quantitative</dt><dd><p>Quantitative data are numerical.</p>
-</dd>
-</dl>
-<p>These are two types of <em>quantitative</em> data, <em>discrete</em> and <em>continuous</em>.</p>
-<dl class="simple">
-<dt>Discrete Quantitative</dt><dd><p><img class="math" src="../../_images/math/dff2242d6d91fa1f3c6719f5c232e81e9f532fd9.png" alt="\{ 1, 2, 3, 4, 5, ... \}"/></p>
-</dd>
-</dl>
-<p><em>Discrete quantitative</em> data are countable.</p>
-<dl class="simple">
-<dt>Example</dt><dd><ul class="simple">
-<li><p>Students in a class.</p></li>
-<li><p>Petals on a clover</p></li>
-<li><p>The championships won by a football team.</p></li>
-<li><p>M&amp;M’s in a bag.</p></li>
-</ul>
-</dd>
-<dt>Continuous Quantitative</dt><dd><p><img class="math" src="../../_images/math/b939635cce776f2bf5a93b9770b88ddc1ac8e084.png" alt="\{ 1.0, 1.01, 1.001, 1.0001, 1.00001, ... \}"/></p>
-</dd>
-</dl>
-<p><em>Continuous quantitative</em> data are infinitely divisible</p>
-<dl class="simple">
-<dt>Example</dt><dd><ul class="simple">
-<li><p>The temperature of a gallon of water under various pressures.</p></li>
-<li><p>The speed of a train.</p></li>
-<li><p>The weight of a coin.</p></li>
-<li><p>The amount of rainfall in a region.</p></li>
-</ul>
-</dd>
-</dl>
-</section>
-<section id="scale">
-<h3>Scale<a class="headerlink" href="#scale" title="Permalink to this headline">#</a></h3>
-<img alt="../../_images/measurement_scales.jpg" class="align-center" src="../../_images/measurement_scales.jpg" />
-<dl class="simple">
-<dt>Nominal Level</dt><dd><p>Unordered, categorical data.</p>
-</dd>
-</dl>
-<p><em>Nominal data</em> is the simplest type of data. A <em>nominal scale</em> or <em>level</em> is a way of labelling and separating individuals in a sample into groups.</p>
-<dl class="simple">
-<dt>Example</dt><dd><ul class="simple">
-<li><p>The favorite color of each person in a sample of data.</p></li>
-<li><p>The political party affiliation of each person in a sample of data.</p></li>
-<li><p>The nationality of each person in a sample of data.</p></li>
-</ul>
-</dd>
-<dt>Ordinal Level</dt><dd><p>Ordered, categorical data.</p>
-</dd>
-</dl>
-<p><em>Ordinal data</em> is a step above <em>nominal data</em>. It is <em>categorical</em>, but an order can be imposed on it.</p>
-<dl class="simple">
-<dt>Example</dt><dd><ul class="simple">
-<li><p>Answers to a customer satisfaction survey: <code class="docutils literal notranslate"><span class="pre">DISSATISFIED</span></code>, <code class="docutils literal notranslate"><span class="pre">NEUTRAL</span></code>, <code class="docutils literal notranslate"><span class="pre">SATISIFED</span></code></p></li>
-<li><p>Grades on a quiz: <code class="docutils literal notranslate"><span class="pre">A</span></code>, <code class="docutils literal notranslate"><span class="pre">B</span></code>, <code class="docutils literal notranslate"><span class="pre">C</span></code>, <code class="docutils literal notranslate"><span class="pre">D</span></code>, <code class="docutils literal notranslate"><span class="pre">E</span></code>, <code class="docutils literal notranslate"><span class="pre">F</span></code>.</p></li>
-</ul>
-</dd>
-<dt>Interval Level</dt><dd><p>Ordered, numerical data.</p>
-</dd>
-</dl>
-<p><em>Interval level</em> is a step above <em>ordinal data</em>. The data are ordered, but now the <em>difference</em> between observations is defined. In other words, with an <em>interval level</em>, the distance between two observation <img class="math" src="../../_images/math/3f72613f77d1720ad07cc485a55e4a2fd2a96947.png" alt="x_2"/> and <img class="math" src="../../_images/math/e564d43fd97a8499ef8ceb6167286e4ae267704d.png" alt="x_1"/> can be defined as <img class="math" src="../../_images/math/f6c8b0671815b918f9d477e20dcd80c8651e170d.png" alt="x_2 - x_1"/></p>
-<dl class="simple">
-<dt>Example</dt><dd><ul class="simple">
-<li><p>A historical time series of the Consumer Price Index</p></li>
-<li><p>The IQs of a random sample of people.</p></li>
-<li><p>The SAT scores of the graduating class of seniors.</p></li>
-</ul>
-</dd>
-<dt>Ratio Level</dt><dd><p>Ordered, numerical data.</p>
-</dd>
-</dl>
-<p><em>Ratio level</em> is the final level of data. The data are ordered, the difference between two datapoints can be computed <img class="math" src="../../_images/math/f6c8b0671815b918f9d477e20dcd80c8651e170d.png" alt="x_2 - x_1"/> and there is a <em>true zero</em>. With a <em>ratio level</em>, it makes sense to have an observation of <em>0</em>.</p>
-<dl class="simple">
-<dt>Example</dt><dd><ul class="simple">
-<li><p>Measurements from a scale, i.e. the weight of a mass.</p></li>
-<li><p>Measurements from a thermometer, i.e the temperature of a body.</p></li>
-<li><p>The amount of rainfall in a region over a period of a week.</p></li>
-</ul>
-</dd>
-</dl>
-</section>
-</section>
-<section id="types-of-statistics">
-<span id="statistics-defintions"></span><h2>Types of Statistics<a class="headerlink" href="#types-of-statistics" title="Permalink to this headline">#</a></h2>
-<dl class="simple" id="sample-statistic">
-<dt>Sample Statistic</dt><dd><p>A piece of information calculated from sample of data.</p>
-</dd>
-</dl>
-<p><em>Sample statistics</em> are used to summarize the features of a dataset. They are broken down into two main categories.</p>
-<dl class="simple" id="descriptive-statistic">
-<dt>Descriptive Statistic</dt><dd><p>A sample statisic used to visualize and approximate the shape and spread of a population.</p>
-</dd>
-</dl>
-<dl class="simple" id="inferential-statistic">
-<dt>Inferential Statistic</dt><dd><p>A sample statistic used to make inferences about the population.</p>
-</dd>
-</dl>
-<p>One of the most important <em>descriptive statistics</em> is the <em>sample mean</em>,</p>
-<div class="math">
-<p><img src="../../_images/math/67460ba4e9f579743807de2c249b2dce331cf6ba.png" alt="\bar{x} = \frac{ \sum^n_{i = 1} x_i } {n}"/></p>
-</div><p>One of the most important <em>inferential statistics</em> is the <em>Z-score</em> of the <em>sample mean</em>,</p>
-<div class="math">
-<p><img src="../../_images/math/4db094222f440d20280f49086363e8c0e7b8aa84.png" alt="Z = \frac{ \bar{x} - \mu }{ \frac{ \sigma }{\sqrt n} }"/></p>
-</div><p>If these formulae make no sense yet, don’t worry! That is to be expected. They are listed here, so you can start forming a picture of the things to come. By the end of this class, these two formulae will become your best friends.</p>
-</section>
 </section>
 
 
@@ -1349,6 +791,24 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Experimental Design</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="01_BIAS.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Bias</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
@@ -1369,6 +829,7 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment">Experiment</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#individual">Individual</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population">Population</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample">Sample</a><ul class="nav section-nav flex-column">
@@ -1388,36 +849,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-terminology">Other Terminology</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-inference">Statistical Inference</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#null-and-alternate-hypotheses">Null and Alternate Hypotheses</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#controls">Controls</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confounding-variables">Confounding Variables</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-fallacies">Statistical Fallacies</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bias">Bias</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#selection-bias">Selection Bias</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#response-bias">Response bias</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#observer-bias">Observer Bias</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation-vs-causation">Correlation Vs. Causation</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experimental-design">Experimental Design</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Definitions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#blind-studies">Blind Studies</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matched-pairs">Matched Pairs</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#randomized-blocks">Randomized Blocks</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications-of-data">Classifications of Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionality">Dimensionality</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristic">Characteristic</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scale">Scale</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-statistics">Types of Statistics</a></li>
 </ul>
   </nav></div>
 

@@ -140,7 +140,14 @@
 <li class="toctree-l3"><a class="reference internal" href="../probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../experiments/index.html">Experimental Design</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../experiments/index.html">Experimental Design</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../experiments/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../experiments/01_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../experiments/02_DESIGN.html">Experimental Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../experiments/03_DATA.html">Data</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../experiments/04_INFERENCE.html">Inference</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Statistics</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
@@ -730,8 +737,8 @@ document.write(`
 </dd>
 </dl>
 <p>What we mean by “<em>unusual</em>” depends on the data. Generally speaking, we mean something that roughly approximates, “<em>a data that is far outside what is expected</em>”.</p>
-<p>If we are measuring <a class="reference internal" href="../experiments/00_INTRODUCTION.html#data-characteristic"><span class="std std-ref">numerical data</span></a>, this might mean an observation that is much, much greater than or much, much less than the majority of the data.</p>
-<p>If we are measuring <a class="reference internal" href="../experiments/00_INTRODUCTION.html#data-characteristic"><span class="std std-ref">categorical data</span></a>, this might mean an observation is in infrequent.</p>
+<p>If we are measuring <a class="reference internal" href="../experiments/03_DATA.html#data-characteristic"><span class="std std-ref">numerical data</span></a>, this might mean an observation that is much, much greater than or much, much less than the majority of the data.</p>
+<p>If we are measuring <a class="reference internal" href="../experiments/03_DATA.html#data-characteristic"><span class="std std-ref">categorical data</span></a>, this might mean an observation is in infrequent.</p>
 </section>
 <section id="floor-function">
 <span id="id12"></span><h3>Floor Function<a class="headerlink" href="#floor-function" title="Permalink to this headline">#</a></h3>
@@ -1084,7 +1091,7 @@ document.write(`
 </section>
 <section id="categorical-measures">
 <h3>Categorical Measures<a class="headerlink" href="#categorical-measures" title="Permalink to this headline">#</a></h3>
-<p>The <a class="reference internal" href="#arithmetic-mean"><span class="std std-ref">Arithmetic Mean</span></a> and the <a class="reference internal" href="#geometric-mean"><span class="std std-ref">Geometric Mean</span></a> only apply if the data being measured is <a class="reference internal" href="../experiments/00_INTRODUCTION.html#data-characteristic"><span class="std std-ref">quantitative data</span></a>. If, however, the data being measured is categorical is nature, we do not have these tools available to us. Instead, we use the next two measures of central tendency to get a picture of the distribution shape.</p>
+<p>The <a class="reference internal" href="#arithmetic-mean"><span class="std std-ref">Arithmetic Mean</span></a> and the <a class="reference internal" href="#geometric-mean"><span class="std std-ref">Geometric Mean</span></a> only apply if the data being measured is <a class="reference internal" href="../experiments/03_DATA.html#data-characteristic"><span class="std std-ref">quantitative data</span></a>. If, however, the data being measured is categorical is nature, we do not have these tools available to us. Instead, we use the next two measures of central tendency to get a picture of the distribution shape.</p>
 <section id="mode">
 <span id="id18"></span><h4>Mode<a class="headerlink" href="#mode" title="Permalink to this headline">#</a></h4>
 <dl class="simple">
@@ -1118,7 +1125,7 @@ document.write(`
 <section id="order-statistics">
 <h3>Order Statistics<a class="headerlink" href="#order-statistics" title="Permalink to this headline">#</a></h3>
 <p>An <em>order</em> statistic gives you information about the <em>ordinality</em> of a sample. The term “<em>ordinality</em>” refers to the <em>structural</em> or <em>sequential</em> nature of a sample.</p>
-<p>To see what is meant by the term <em>ordinality</em>, suppose you have a sample of <a class="reference internal" href="../experiments/00_INTRODUCTION.html#data-characteristic"><span class="std std-ref">quantiative data</span></a> <img class="math" src="../../_images/math/42f6eba29127a8a12bce070ee5bec81d715bb94a.png" alt="\{ x_i \}"/>,</p>
+<p>To see what is meant by the term <em>ordinality</em>, suppose you have a sample of <a class="reference internal" href="../experiments/03_DATA.html#data-characteristic"><span class="std std-ref">quantiative data</span></a> <img class="math" src="../../_images/math/42f6eba29127a8a12bce070ee5bec81d715bb94a.png" alt="\{ x_i \}"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/3484309044fbce023bb6dcec342c3b458755db4c.png" alt="S = \{ x_1, x_2, ..., x_i, ... , x_n \}"/></p>
 </div><p>The <em>m</em> <sup>th</sup> order statistic, <img class="math" src="../../_images/math/5b7911294f5ce25e14a533686eb676195fc547f4.png" alt="x_{(m)}"/> is the <em>m</em> <sup>th</sup> observation in the ordered sample <img class="math" src="../../_images/math/5d620f0ce538f3de3eb335cc4055b53e87d01e83.png" alt="S_{(o)}"/>,</p>
@@ -1164,7 +1171,7 @@ document.write(`
 <dt>Preliminary Definition</dt><dd><p>If a sample of data has been ordered from lowest value to highest value, then the <img class="math" src="../../_images/math/5a370fe464b17da9be1d8a2676ab8d230c8cf781.png" alt="(p \cdot 100 \%)^{\text{th}}"/><sup>th</sup> percentile of the sample is the observation such that <img class="math" src="../../_images/math/a566ed8661544f8306fcf210a010daec074a1279.png" alt="(p \cdot 100 \%)"/> percent of the sample is less than or equal that value.</p>
 </dd>
 </dl>
-<p>From this definition, it should be clear <em>percentiles</em> only have meaning with respect to <a class="reference internal" href="../experiments/00_INTRODUCTION.html#data-characteristic"><span class="std std-ref">quantitative data</span></a>. To <em>order</em> a sample of data <img class="math" src="../../_images/math/42f6eba29127a8a12bce070ee5bec81d715bb94a.png" alt="\{ x_i \}"/>, the relation <img class="math" src="../../_images/math/d76c7ed0ff409d0cf3d522ad624844e7eccd9687.png" alt="x_{i-1} &lt; x_i"/> must have meaning.</p>
+<p>From this definition, it should be clear <em>percentiles</em> only have meaning with respect to <a class="reference internal" href="../experiments/03_DATA.html#data-characteristic"><span class="std std-ref">quantitative data</span></a>. To <em>order</em> a sample of data <img class="math" src="../../_images/math/42f6eba29127a8a12bce070ee5bec81d715bb94a.png" alt="\{ x_i \}"/>, the relation <img class="math" src="../../_images/math/d76c7ed0ff409d0cf3d522ad624844e7eccd9687.png" alt="x_{i-1} &lt; x_i"/> must have meaning.</p>
 <p><em>Order statistics</em> give us a way to precisely define a percentile. <em>Order statistics</em> divide the interval on which the sample is measured into <img class="math" src="../../_images/math/3257ff5f24446ed5552c93f0804681a7ec8d3920.png" alt="n+1"/> intervals, pictured below,</p>
 <img alt="../../_images/order_statistics.jpg" class="align-center" src="../../_images/order_statistics.jpg" />
 <p>Note all of the intervals are <em>below</em> the order statistic except the last one, which is <em>above</em> its order statistic. Hence <img class="math" src="../../_images/math/3257ff5f24446ed5552c93f0804681a7ec8d3920.png" alt="n+1"/>.</p>

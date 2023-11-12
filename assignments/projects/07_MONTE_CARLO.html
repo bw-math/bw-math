@@ -140,7 +140,14 @@
 <li class="toctree-l3"><a class="reference internal" href="../../notes/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/experiments/index.html">Experimental Design</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/experiments/index.html">Experimental Design</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/01_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/02_DESIGN.html">Experimental Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/03_DATA.html">Data</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/04_INFERENCE.html">Inference</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -453,10 +460,15 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integration">Integration</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-pi">Estimating Pi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#areas-under-curves">Areas Under Curves</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a></li>
 </ul>
             </nav>
         </div>
@@ -470,42 +482,77 @@ document.write(`
                   
   <section id="monte-carlo-simulation">
 <span id="project-seven"></span><h1>Monte Carlo Simulation<a class="headerlink" href="#monte-carlo-simulation" title="Permalink to this headline">#</a></h1>
-<p><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a>{epigraph}
-‘Tis but fortune. All is fortune.</p>
-<p>– William Shakespeare, The Twelfeth Night
-<a href="#id5"><span class="problematic" id="id6">``</span></a><a href="#id7"><span class="problematic" id="id8">`</span></a></p>
-<p>TODO</p>
-<p>estimate pi with monte carlo!</p>
-<p>random walks! demonstrate the effect of drift and stochastic processes!</p>
+<blockquote class="epigraph">
+<div><p>‘Tis but fortune. All is fortune.</p>
+<p class="attribution">—William Shakespeare, The Twelfeth Night</p>
+</div></blockquote>
+<p><em>Monte Carlo Simulation</em> is a modelling technique from statistics with many applications in different fields. The essence of <em>Monte Carlo Simulation</em> lies in interpretting randomly generated numbers as outcomes in an experiment. In this project, we will take a look at several ways of using the interpretation of random numbers to model physical processes in order to estimate quantities of interest.</p>
 <section id="instructions">
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
-<ol class="arabic simple">
-<li><p>Download the <em>csv</em> dataset in the <a class="reference internal" href="#project-seven-dataset"><span class="std std-ref">Data Set</span></a> section and place it in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your folder system where you save your <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts.</p></li>
-<li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_seven.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">LASTNAME</span></code> and <code class="docutils literal notranslate"><span class="pre">FIRSTNAME</span></code> with your last and first name, respectively.</p></li>
-<li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
-<li><p>Read the <a class="reference internal" href="#project-seven-background"><span class="std std-ref">Background</span></a> section.</p></li>
-<li><p>Read the <a class="reference internal" href="#project-seven-loading-data"><span class="std std-ref">Loading In Data</span></a> section.</p></li>
-<li><p>Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file using the technique outlined in the <a class="reference internal" href="03_NORMALITY.html#project-three-loading-data"><span class="std std-ref">Loading Data</span></a> section.</p></li>
-<li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-seven-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the instructions of each problem.</p></li>
-<li><p>When you are done,zip your script <strong>and</strong> the <em>csv</em> file in a zip file named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_seven.zip</span></code></p></li>
-<li><p>Upload the zip file to the Google Classroom Project Four Assignment.</p></li>
-</ol>
-</section>
-<section id="loading-in-data">
-<span id="project-seven-loading-data"></span><h2>Loading In Data<a class="headerlink" href="#loading-in-data" title="Permalink to this headline">#</a></h2>
-<p>TODO</p>
+<p>1. Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_seven.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">LASTNAME</span></code> and <code class="docutils literal notranslate"><span class="pre">FIRSTNAME</span></code> with your last and first name, respectively.
+3. Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.
+4. Read the <a class="reference internal" href="#project-seven-background"><span class="std std-ref">Background</span></a> section.
+5. Perform all exercises and answer all questions in the <a class="reference internal" href="#project-seven-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the instructions of each problem.
+6. When you are done, zip your script <strong>and</strong> the <em>csv</em> file in a zip file named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_seven.zip</span></code>
+7. Upload the zip file to the Google Classroom Project Four Assignment.</p>
 </section>
 <section id="background">
 <span id="project-seven-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<section id="integration">
+<h3>Integration<a class="headerlink" href="#integration" title="Permalink to this headline">#</a></h3>
+<p>In calculus, <em>integration</em> is a technique for finding the area under a curve <img class="math" src="../../_images/math/4d080e94aa171bc1bba13b38e72317a67bac38e2.png" alt="f(x)"/>. <em>Monte Carlo Simulation</em> gives us an alternative way of approaching the same set of problems. According to the <a class="reference internal" href="../../notes/probability/00_INTRODUCTION.html#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a>,</p>
+<div class="math">
+<p><img src="../../_images/math/34ba842f8e489b81065ff45c7d6371927e8b6a51.png" alt="P(A) = \frac{n(A)}{n(S)}"/></p>
+</div><p>Where <img class="math" src="../../_images/math/534ec862789190f4e1c0ee776c13e4f478f5e83f.png" alt="n(A)"/> is the total number of outcomes that belong to the event <img class="math" src="../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/> and <img class="math" src="../../_images/math/cf90e0c29ef4a62a7df7e7e01dc977d6d0f6b908.png" alt="n(S)"/> is the total number of outcomes in the entire <em>sample space</em>. This definition applies to <em>discrete</em> events. When the events in question are continuous, we adjust the interpretation of <img class="math" src="../../_images/math/534ec862789190f4e1c0ee776c13e4f478f5e83f.png" alt="n(A)"/> to mean the relative <em>area</em> of the event <img class="math" src="../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/> as compared to the area of the total sample space <img class="math" src="../../_images/math/cf90e0c29ef4a62a7df7e7e01dc977d6d0f6b908.png" alt="n(S)"/>.</p>
+<p>By simulating all the outcomes in <img class="math" src="../../_images/math/23298f92ca8dc2a1ce6332eb7a21d5f2e9ae0bd8.png" alt="S"/> and determining which belong to <img class="math" src="../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/>, we can estimate the <em>area</em> of the event <img class="math" src="../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/>. This simple idea underlies everything that follows.</p>
+<section id="estimating-pi">
+<h4>Estimating Pi<a class="headerlink" href="#estimating-pi" title="Permalink to this headline">#</a></h4>
+<p>To see this technique in action, let’s look at a simple example. Consider a cirlce inscribed in a square of with a side of length 1, centered at the origin <img class="math" src="../../_images/math/31bf821aab9bc165f96beb2232d40c7731bfffd7.png" alt="(0,0)"/>.</p>
 <p>TODO</p>
+<p>Due to the Law of Large Numbers, as the number of simulations increases, the approximation of <img class="math" src="../../_images/math/d09fee429254e78bb7496d8ad79b073269af9e61.png" alt="\pi"/> converges to its true value.</p>
+<img alt="../../_images/monte_carlo_pi_100.png" class="align-center" src="../../_images/monte_carlo_pi_100.png" />
+<img alt="../../_images/monte_carlo_pi_1000.png" class="align-center" src="../../_images/monte_carlo_pi_1000.png" />
+<img alt="../../_images/monte_carlo_pi_10000.png" class="align-center" src="../../_images/monte_carlo_pi_10000.png" />
+</section>
+<section id="areas-under-curves">
+<h4>Areas Under Curves<a class="headerlink" href="#areas-under-curves" title="Permalink to this headline">#</a></h4>
+<p>The same technique used to estimate <img class="math" src="../../_images/math/d09fee429254e78bb7496d8ad79b073269af9e61.png" alt="\pi"/> can be applied to an arbitrary curve <img class="math" src="../../_images/math/4d080e94aa171bc1bba13b38e72317a67bac38e2.png" alt="f(x)"/>. Take the example of the following linear function on the interval <img class="math" src="../../_images/math/a05f4eae491f5062b09f3c1b0e391f8c6f3d4b02.png" alt="[0,1]"/>,</p>
+<div class="math">
+<p><img src="../../_images/math/dd998a73218c5e5edf7c0a7d3a33e88611fcd12d.png" alt="f(x) = 0.5 \cdot x"/></p>
+</div><p>(TODO: insert picture)</p>
+<p>From the graph, we see the area can be calculated using the formula for the area of a triangle. The base of the triangle is <img class="math" src="../../_images/math/9148ef3121220ecfc8b23f0954d00c7e528b0b7b.png" alt="1"/> and the height of the triangle is <img class="math" src="../../_images/math/ba97e16c7f9569bc9ec9fb7e38da7355fb167ea5.png" alt="\frac{1}{2}"/>, which leads to an exact area of,</p>
+<div class="math">
+<p><img src="../../_images/math/91f78205841092c5aaf6e226703cb2c7336dcd2d.png" alt="A = \frac{1}{2} \cdot b \cdot h = 0.25"/></p>
+</div><p>Let us apply the technique of Monte Carlo integration to see how we can use random number generation to approximate this value. While this simple example can be calculated exactly using geometrical arguments, the area under the curve of more complicated function is not so easily determined; the universality of Monte Carlo integration can nevertheless be applied to an arbitrary curve without alteration.</p>
+<p>TODO</p>
+</section>
+</section>
 </section>
 <section id="project">
 <span id="project-seven-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
 <p>TODO</p>
-</section>
-<section id="data-set">
-<span id="project-seven-dataset"></span><h2>Data Set<a class="headerlink" href="#data-set" title="Permalink to this headline">#</a></h2>
-<p>TODO</p>
+<ol class="arabic simple">
+<li><p>Use Monte Carlo Integration to estimate the area under the curve <img class="math" src="../../_images/math/43351c541e04e74c653d11d4c5b887b3412da6a9.png" alt="f(x) = x^2"/> from <img class="math" src="../../_images/math/98610ffc249b51ce9f3bef4b3ba75573b055e97f.png" alt="x = 0"/> to <img class="math" src="../../_images/math/08ef539ad9669bdfc49deb9fd0ca8e262e0c8550.png" alt="x = 1"/>.</p></li>
+</ol>
+<ol class="loweralpha simple">
+<li><p>The actual value of the area is <img class="math" src="../../_images/math/9443979ea746fc8888cceeab44ccb87aa227629f.png" alt="\frac{1}{3}"/>. About how many simulations do you have to perform in order to get within two decimal places of accuracy?</p></li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><p>Use Monte Carlo Integration to estimate the area under the curve <img class="math" src="../../_images/math/dd863c96de36f3fef6acb37880e46cbdaef3f8b4.png" alt="f(x) = e^x"/> from <img class="math" src="../../_images/math/98610ffc249b51ce9f3bef4b3ba75573b055e97f.png" alt="x = 0"/> to <img class="math" src="../../_images/math/08ef539ad9669bdfc49deb9fd0ca8e262e0c8550.png" alt="x = 1"/>.</p></li>
+</ol>
+<ol class="loweralpha simple">
+<li><p>The actual value of the area is <img class="math" src="../../_images/math/b997bccb0d440e19638fa3e9118c4dfb8eea1be6.png" alt="e - 1"/>. About how many simulations do you have to perform in order to get within two decimal places of accuracy?</p></li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p>Use Monte Carlo Integration to estimate the area under the curve <img class="math" src="../../_images/math/2254c6bcf17adb7f07eb936febb758d33490b20c.png" alt="f(z) = \frac{1}{sqrt{2 \pi}} \cdot e^(-z^2)"/> from <img class="math" src="../../_images/math/e5420af2e841256799f28c17df6cb3162f6f1638.png" alt="z = -3"/> to <img class="math" src="../../_images/math/9fdcac93f9fccf9a8db19792a52b259d060b025f.png" alt="z = 3"/></p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>This function is the Standard Normal density function! Think about what the empirical rule says about the percentage of the distribution that is contained in the interval <img class="math" src="../../_images/math/46df3ce13ee096bf9dc228173af3f024e86e9f7f.png" alt="[-3, 3]"/>.</p>
+</div>
+<ol class="loweralpha simple">
+<li><p>The actual value of this area is <img class="math" src="../../_images/math/f27e0ded55c3278df6c2d0d0eb8efe38f90489c7.png" alt="0.9973000656"/>. About how many simulation do you have to perform in order to get within two decimal places of accuracy?</p></li>
+</ol>
 </section>
 </section>
 
@@ -558,10 +605,15 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-in-data">Loading In Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integration">Integration</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-pi">Estimating Pi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#areas-under-curves">Areas Under Curves</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-set">Data Set</a></li>
 </ul>
   </nav></div>
 
