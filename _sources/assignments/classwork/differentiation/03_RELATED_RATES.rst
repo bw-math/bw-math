@@ -24,13 +24,13 @@ c. How quickly is the water draining from the tank at :math:`t = 30 \text{minute
 
 	V = IR
 	
-Usually voltage is measured in volts, current is measured in amperes (amps), and resistance is measured in ohms, where :math:`1 \text{ohm}=\frac{1 \text{volt}}{\text{amp}}. In a circuit with variable resistance, the quantities *V*, *I* and *R*, all depend on time.
+Usually voltage is measured in volts, current is measured in amperes (amps), and resistance is measured in ohms, where :math:`1 \text{ohm}=\frac{1 \text{volt}}{\text{amp}}`. In a circuit with variable resistance, the quantities *V*, *I* and *R*, all depend on time.
 
 a. Take the derivative of *Ohm's Law* to find an equation relating :math:`\frac{dV}{dt}`, :math:`\frac{dI}{dt}` and :math:`\frac{dR}{dt}`.
 
-b. Suppose the current is increasing at a rate of :math:`0.3 \frac{\text{amps}}{\text{sec}}, while the resistance is holding steady at 4 ohms. How quickly is the voltage across the resistor increasing?
+b. Suppose the current is increasing at a rate of :math:`0.3 \frac{\text{amps}}{\text{sec}}`, while the resistance is holding steady at 4 ohms. How quickly is the voltage across the resistor increasing?
 
-c. Now suppose the voltage across the resistor is held constant at 20 volts, while the resistance is steadily increased at a rate of :math:`0.4 \frac{\text{ohms}}{\text{sec}}. What is the current through the resistor when the resistance reaches 10 ohms?
+c. Now suppose the voltage across the resistor is held constant at 20 volts, while the resistance is steadily increased at a rate of :math:`0.4 \frac{\text{ohms}}{\text{sec}}`. What is the current through the resistor when the resistance reaches 10 ohms?
 
 d. In the same scenario as *part c*, at what rate is the current changing at that time? Is it increasing or decreasing?
 
