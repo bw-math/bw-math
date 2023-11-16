@@ -3,10 +3,6 @@
 ===============
 Unit 3 Homework 
 ===============
-
-.. note:: 
-    
-    From the *Starnes and Tabor* textbook.
     
 Collecting Data 
 ===============
