@@ -4,10 +4,6 @@
 Unit 1 Homework 
 ===============
 
-.. note:: 
-    
-    From the *Starnes and Tabor* textbook.
-
 Exploring One-Variable Data
 ===========================
 
