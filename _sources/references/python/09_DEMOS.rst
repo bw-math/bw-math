@@ -64,6 +64,15 @@ This script shows how to work with the normal distribution in **Python**. It dem
 QQ Plot
 -------
 
-This script show how to construct a QQ plot to assess the normality of a sample of data. 
+This script shows how to construct a QQ plot to assess the normality of a sample of data. 
 
 :download:`QQ Plot <./assets/demos/qq_plot.py>`
+
+Least Squares Regression
+------------------------
+
+This script illustrates how the regression parameters for the slope and intercept of the line of best fit are estimated used least squares.
+
+:download:`Least Squares <./assets/demos/least_squares.py>`
+
+.. plot:: assets/demos/least_squares.py
