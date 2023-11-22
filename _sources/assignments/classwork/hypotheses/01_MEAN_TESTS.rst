@@ -80,5 +80,5 @@ intended to reduce cholesterol instead of a placebo. After three months, posttre
 	
 	Standard Deviation of Reduction: 9.40
 	
-Do the data provide convincing evidence, at the :math:`\alphra = 0.01` level, that the cholesterol drug is effective in producing a reduction in mean cholesterol level beyond that produced by exercise and diet?
+Do the data provide convincing evidence, at the :math:`\alpha = 0.01` level, that the cholesterol drug is effective in producing a reduction in mean cholesterol level beyond that produced by exercise and diet?
 
