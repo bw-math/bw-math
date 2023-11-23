@@ -16,7 +16,7 @@ For the following problems, you are given,
 
 .. math:: 
 
-    A = \{ 1, 2, 3, \}
+    A = \{ 1, 2, 3 \}
 
 .. math:: 
 
@@ -32,7 +32,19 @@ For the following problems, you are given,
 
 Where **S** is the universal set and **A**, **B**, **C** and **D** are subsets of **S**.
 
-1. **Set Operations** Write the elements of each of the following sets in :ref:`list_notation`,
+1. **Membership** Determine whether each of the following propositions is *true* or *false*.
+
+	a. :math:`2 \in A`
+	
+	b. :math:`5 \notin B`
+	
+	c. :math:`3 \in D`
+	
+	d. :math:`A \in S`
+	
+	e. :math:`A \notin S`
+	
+2. **Set Operations** Write the elements of each of the following sets in :ref:`list_notation`,
 
     a. :math:`A^c`
 
@@ -50,7 +62,7 @@ Where **S** is the universal set and **A**, **B**, **C** and **D** are subsets o
 
     h. :math:`C \cap B`
 
-2. **Cardinality** Answer each of the following problems,
+3. **Cardinality** Answer each of the following problems,
 
     a. :math:`n(C)`
 
@@ -62,7 +74,7 @@ Where **S** is the universal set and **A**, **B**, **C** and **D** are subsets o
 
     e. **Spoiler Alert** Why does *part d* equal *part a*?
 
-3. **De Morgan's Laws**. Write the elements of each of the following sets in :ref:`list_notation`. Use the answers from #1 where appriopriate.
+4. **De Morgan's Laws**. Write the elements of each of the following sets in :ref:`list_notation`. Use the answers from #1 where appriopriate.
 
     a. :math:`(A^c) \cup (B^c)``
 
@@ -74,7 +86,7 @@ Where **S** is the universal set and **A**, **B**, **C** and **D** are subsets o
 
     e. Based on the answers to *part a - d*, what conclusions can you draw about the relationship that exists between the operations of *complementation*, *intersection* and *union*?
 
-4. **Absorption Laws** Write the elements of each of the following sets in :ref:`list_notation`. Use the answers from #1 where appriopriate.
+5. **Absorption Laws** Write the elements of each of the following sets in :ref:`list_notation`. Use the answers from #1 where appriopriate.
 
     a. :math:`A \cup (A \cap B)`
 
@@ -82,7 +94,7 @@ Where **S** is the universal set and **A**, **B**, **C** and **D** are subsets o
 
     c. Based on the answers to *part a - b*, what conclusions can you draw about the relationship that exists between the operations of *intersection* and *union*?
 
-5. **Distributive Laws** Write the elements of each of the following sets in :ref:`list_notation`. User the answers from #1 where appriopriate.
+6. **Distributive Laws** Write the elements of each of the following sets in :ref:`list_notation`. User the answers from #1 where appriopriate.
 
     a. :math:`C \cup (A \cap B)`
 
@@ -94,7 +106,7 @@ Where **S** is the universal set and **A**, **B**, **C** and **D** are subsets o
 
     e. Based on the answers to *part a - d*, what conclusions can you draw about the relationship that exists between the operations of *intersection* and *union*?
 
-6. **Counting Laws**. Find the cardinality of each of the following sets. 
+7. **Counting Laws**. Find the cardinality of each of the following sets. 
 
     a. :math:`D`
 
@@ -104,7 +116,7 @@ Where **S** is the universal set and **A**, **B**, **C** and **D** are subsets o
 
     d. :math:`n(D \cup C)`
 
-7. **Equivalence and Equality**. Determine whether each of the following propositions is *true* or *false*.
+8. **Equivalence and Equality**. Determine whether each of the following propositions is *true* or *false*.
 
     a. :math:`A = B`
 
@@ -114,20 +126,20 @@ Where **S** is the universal set and **A**, **B**, **C** and **D** are subsets o
 
     d. :math:`A \equiv B \implies A = B`
 
-8. **Subsets** Determine whether each of the following propositions is *true* or *false*.
+9. **Subsets** Determine whether each of the following propositions is *true* or *false*.
 
     a. :math:`B \subseteq C`
 
     b. :math:`B^c \subseteq C^c`
 
     c. :math:`C^c \subseteq B^c`
-
-9. **Symbolic Expressions** Write a symbolic proposition that expresses the results of #8 in the form of an "*if...then...*" conditional statement.
+    
+10. **Symbolic Expressions** Write a symbolic proposition that expresses the results of #8 in the form of an "*if...then...*" conditional statement.
 
 .. tip:: 
     Don't forget to :ref:`quantify <universal_quantification>` the proposition.
 
-10. **Proofs** Suppose you are given two sets **E** and **F**. Using the properties of sets discussed in class and the ones covered in this classwork, derive an identity for each of the following expressions,
+11. **Proofs** Suppose you are given two sets **E** and **F**. Using the properties of sets discussed in class and the ones covered in this classwork, derive an identity for each of the following expressions,
 
     a. :math:`(E \cap F^c) \cup (E \cap F)`
 
