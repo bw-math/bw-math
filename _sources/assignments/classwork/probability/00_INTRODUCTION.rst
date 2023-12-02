@@ -557,8 +557,6 @@ is called the *symmetric difference of* **A** *and* **B**. Prove the probability
 
     *Hint #2*: Recall (TODO link) :math:`A - B = A \cap B^C`
 
-TODO: one more
-
 A.P. Exam Practice
 ==================
 

@@ -34,7 +34,7 @@ Applications
 .. image:: ../../../assets/imgs/problems/conditional_probability_venn_diagram.jpg
     :align: center
 
-1. Paging through a magazine, you notice a interesting survey of randomly selected individuals who were each asked two questions. The first question was "Do you believe the Earth is flat or round?". The second question was, "Do you think Finland is a `real country <https://knowyourmeme.com/memes/finland-does-not-exist>`?" The results are given in the table below, 
+1. Paging through a magazine, you notice a interesting survey of randomly selected individuals who were each asked two questions. The first question was "Do you believe the Earth is flat or round?". The second question was, "Do you think Finland is a `real country <https://knowyourmeme.com/memes/finland-does-not-exist>`_ ?" The results are given in the table below, 
 
 +---------+------+-------+
 |         | Flat | Round |
@@ -68,7 +68,7 @@ Applications
 
 .. hint:: 
 
-    :ref:`Reduce the sample space <reduction_of_the_sample_space>` and then use :math:`combinatorics`.
+    :ref:`Reduce the sample space <reduction_of_the_sample_space>` and then use :ref:`combinatorics`.
 
 Law of Intersections
 --------------------
@@ -94,6 +94,7 @@ Independence
 ------------
 
 TODO
+
 
 A.P. Exam Practice
 ------------------

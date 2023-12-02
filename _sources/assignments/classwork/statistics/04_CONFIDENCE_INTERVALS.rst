@@ -43,6 +43,14 @@ a. Interpret the 95 percent confidence level in this context.
 
 The humane society selected a random sample of households in its county and used the sample to estimate the proportion of all households that own at least one dog. The conditions for calculating a 95 percent confidence interval for the proportion of households in this county that own at least one dog were checked and verified, and the resulting confidence interval was 0.417 ± 0.119.
 
-b. A national pet products association claimed that 39 percent of all American households owned at least one dog. Does the humane society’s interval estimate provide evidence that the proportion of dog owners in its county is different from the claimed national proportion? Explain.
-(c) How many households were selected in the humane society’s sample? Show how you obtained your answer.
+b. A national pet products association claimed that 39 percent of all American households owned at least one dog. Does the humane society's interval estimate provide evidence that the proportion of dog owners in its county is different from the claimed national proportion? Explain.
 
+c. How many households were selected in the humane society's sample? Show how you obtained your answer.
+
+3. **2022, Free Response, #4**
+
+A survey conducted by a national research center asked a random sample of 920 teenagers in the United States how often they use a video streaming service. From the sample, 59% answered that they use a video streaming service every day.
+
+a. Construct and interpret a 95% confidence interval for the proportion of all teenagers in the United States who would respond that they use a video streaming service every day.
+
+b. Based on the confidence interval in *part a*, do the sample data provide convincing statistical evidence that the proportion of all teenagers in the United States who would respond that they use a video streaming service every day is not 0.5 ? Justify your answer.
