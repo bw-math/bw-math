@@ -31,6 +31,4 @@ a. What is the probability that Sam’s first upgrade will occur after the third
 
 b. What is the probability that Sam will be upgraded exactly 2 times in his next 20 flights?
 
-c. Sam will take 104 flights next year. Would you be surprised if Sam receives more than 20 upgrades
-to first class during the year? Justify your answer.
-
+c. Sam will take 104 flights next year. Would you be surprised if Sam receives more than 20 upgrades to first class during the year? Justify your answer.

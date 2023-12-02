@@ -2,11 +2,34 @@
 Linear Regression
 =================
 
-2. **2016, Free Response, #6**
+1. **2016, Free Response, #6**
 
-TODO
+A newspaper in Germany reported that the more semesters needed to complete an academic program at the university, the greater the starting salary in the first year of a job. The report was based on a study that used a random sample of 24 people who had recently completed an academic program. Information was collected on the number of semesters each person in the sample needed to complete the program and the starting salary, in thousands of euros, for the first year of a job. The data are shown in the scatterplot below.
 
-3. **2011, Free Response, #5**
+.. image:: ../../../assets/imgs/classwork/2016_apstats_frp_06a.png
+	:align: center
+
+a. Does the scatterplot support the newspaper report about number of semesters and starting salary? Justify your answer.
+
+b. The table below shows computer output from a linear regression analysis on the data.
+
+.. image:: ../../../assets/imgs/classwork/2016_apstats_frp_06b.png
+	:align: center
+
+Identify the slope of the least-squares regression line, and interpret the slope in context.
+
+c. An independent researcher received the data from the newspaper and conducted a new analysis by separating the data into three groups based on the major of each person. A revised scatterplot identifying the major of each person is shown below.
+
+.. image:: ../../../assets/imgs/classwork/2016_apstats_frp_06c.png
+	:align: center
+
+i. Based on the people in the sample, describe the association between starting salary and number of semesters for the business majors.
+
+ii. Based on the people in the sample, compare the median starting salaries for the three majors.
+
+iii. Based on the analysis conducted by the independent researcher, how could the newspaper report be modified to give a better description of the relationship between the number of semesters and the starting salary for the people in the sample?
+
+2. **2011, Free Response, #5**
 
 Windmills generate electricity by transferring energy from wind to a turbine. A study was conducted to examine the relationship between wind velocity in miles per hour (mph) and electricity production in amperes for one particular windmill. For the windmill, measurements were taken on twenty-five randomly selected days, and the computer output for the regression analysis for predicting electricity production based on wind velocity is given below. The regression model assumptions were checked and determined to be reasonable over the interval of wind speeds represented in the data, which were from 10 miles per hour to 40 miles per hour.
 
@@ -21,3 +44,26 @@ c. What proportion of the variation in electricity production is explained by it
 
 d. Is there statistically convincing evidence that electricity production by the windmill is related to wind velocity? Explain.
 
+3. **2022, Free Response, #1**
+
+a. A biologist gathered data on the length, in millimeters (mm), and the mass, in grams (g) , for 11 bullfrogs. The data are shown in Plot 1.
+
+.. image:: ../../../assets/imgs/classwork/2022_apstats_frp_01a.png
+	:align: center
+
+a. Based on the scatterplot, describe the relationship between mass and length, in context.
+
+b. From the data, the biologist calculated the least-squares regression line for predicting mass from length. The least-squares regression line is shown in Plot 2 .
+
+.. image:: ../../../assets/imgs/classwork/2022_apstats_frp_01b.png
+	:align: center
+
+Identify and interpret the slope of the least-squares regression line in context.
+
+c. Interpret the coefficient of determination of the least-squares regression line, :math:`r^2 \approx 0.819`, in context.
+
+d. From Plot 2 , consider the residuals of the 11 bullfrogs.
+
+i. Based on the plot, approximately what is the length and mass of the bullfrog with the largest absolute value residual?
+
+ii. Does the least-squares regression line overestimate or underestimate the mass of the bullfrog identified in part *d-i*? Explain your answer.

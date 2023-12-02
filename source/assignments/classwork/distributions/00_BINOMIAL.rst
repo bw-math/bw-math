@@ -69,3 +69,38 @@ TODO
 6. **2009, Free Response, #2**
 
 TODO: only a and b
+
+
+7. **2022, Free Response, #3** 
+
+A machine at a manufacturing company is programmed to fill shampoo bottles such that the amount of shampoo in each bottle is normally distributed with mean 0.60 liter and standard deviation 0.04 liter. Let the random variable **A** represent the amount of shampoo, in liters, that is inserted into a bottle by the filling machine.
+
+a. A bottle is considered to be underfilled if it has less than 0.50 liter of shampoo. Determine the probability that a randomly selected bottle of shampoo will be underfilled. Show your work.
+
+
+b. After the bottles are filled, they are placed in boxes of 10 bottles per box. After the bottles are placed in the boxes, several boxes are placed in a crate for shipping to a beauty supply warehouse. The manufacturing company's contract with the beauty supply warehouse states that one box will be randomly selected from a crate. If 2 or more bottles in the selected box are underfilled, the entire crate will be rejected and sent back to the manufacturing company.
+
+The beauty supply warehouse manager is interested in the probability that a crate shipped to the warehouse will be rejected. Assume that the amounts of shampoo in the bottles are independent of each other.
+
+    i. Define the random variable of interest for the warehouse manager and state how the random variable is distributed.
+
+    ii. Determine the probability that a crate will be rejected by the warehouse manager. Show your work.
+
+c. To reduce the number of crates rejected by the beauty supply warehouse manager, the manufacturing company is considering adjusting the programming of the filling machine so that the amount of shampoo in each bottle is normally distributed with mean 0.56 liter and standard deviation 0.03 liter.
+
+Would you recommend that the manufacturing company use the original programming of the filling machine or the adjusted programming of the filling machine? Provide a statistical justification for your choice.
+
+8. **2021, Free Response, #3**
+
+To increase morale among employees, a company began a program in which one employee is randomly
+selected each week to receive a gift card. Each of the company's 200 employees is equally likely to be selected each week, and the same employee could be selected more than once. Each week’s selection is independent from every other week.
+
+a. Consider the probability that a particular employee receives at least one gift card in a 52 -week year.
+
+    i. Define the random variable of interest and state how the random variable is distributed.
+
+    ii. Determine the probability that a particular employee receives at least one gift card in a 52 -week year. Show your work.
+
+b. Calculate and interpret the expected value for the number of gift cards a particular employee will receive in a 52 -week year. Show your work.
+
+c. Suppose that Agatha, an employee at the company, never receives a gift card for an entire 52 -week year. Based on her experience, does Agatha have a strong argument that the selection process was not truly random? Explain your answer.

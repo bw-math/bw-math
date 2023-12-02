@@ -152,3 +152,7 @@ d. Give one statistical disadvantage to having only tiger shrimps in the experim
 a. Describe a design for this experiment that uses the 100 volunteers. Include a few sentences on how it would be implemented.
 
 b. Could your design be double blind? Explain
+
+12. **2016, Free Response, #3**
+
+TODO
