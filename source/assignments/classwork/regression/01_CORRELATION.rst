@@ -54,7 +54,7 @@ b. After performing the experiment, the researchers recorded the data shown in t
 
 	i. Construct a graph of the data that could be used to investigate the appropriateness of a linear regression model for analyzing the results of the experiment.
 	
-.. image:: ../../../assets/imgs/context/cartesian_plane_blank.png
+.. image:: ../../../assets/imgs/context/cartesian_plane_blank.jpg
 	:align: center
 	
 	ii. Based on your graph, do you think a linear regression model is appropriate? Explain.

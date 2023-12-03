@@ -65,3 +65,17 @@ In *League of Legends*, a player's Effective Health when defending against phsyi
 where **H** is health and **A** is armor.
 
 Health costs 2.5 gold per unit and Armor costs 18 gold per unit. You have 3600 gold, and you need to optimize the effectiveness of your health and armor to survive as long as possible against enemy team's attack. How much of each should you buy?
+
+9. **River Problem**
+
+You are standing at the edge of a slow-moving river which is one mile wide and wish to return to your campground on the opposite side of the river. See figure below.
+
+
+.. image:: ../../../assets/imgs/classwork/custom_optimization_river.png
+	:align: center
+
+You can swim at 2 mph and walk at 3 mph. You must first swim across the river to any point on the opposite bank. From there walk to the campground, which is two miles from the point directly across the river from where you start your swim. What route will take the least amount of time?
+
+10. **Orchard Problem**
+
+There are 50 apple trees in an orchard. Each tree produces 800 apples. For each additional tree planted in the orchard, the output per tree drops by 10 apples. How many trees should be added to the existing orchard in order to maximize the total output of trees ?
