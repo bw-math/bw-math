@@ -4,9 +4,6 @@
 Unit 1 Homework 
 ===============
 
-Exploring One-Variable Data
-===========================
-
 Introduction, pp. 7 -8
 ----------------------
 
