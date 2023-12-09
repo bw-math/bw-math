@@ -21,6 +21,7 @@ f. Find the probability distribution :math:`P(\mathcal{X}=x)` for all values of 
 g. Find the expectation :math:`E(\mathcal{X})` of the sum of two die rolls.
 
 h. Find the variance :math:`Var(\mathcal{X})` of the sum of two die rolls. 
+
 	
 2. A random variable **X** is defined as the sum of two six-sided die rolls. 
 
