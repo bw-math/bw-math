@@ -9,10 +9,15 @@ Sample Spaces and Events
 
 1. Describe the sample spaces of the following experiments with a set using :ref:`list_notation`
 
-    a. Flipping a two-sided coin three times
-    b. Rolling a six-sided die
-    c. Rolling two six-sided dice
-    d. Flipping a two-sided coin and if it lands on heads rolling a six-sided die.
+a. Flipping a coin two times
+
+b. Flipping a coin three times.	
+
+c. Rolling a six-sided die
+
+d. Rolling two six-sided dice
+
+e. Flipping a two-sided coin and if it lands on heads rolling a six-sided die.
 
 .. collapse:: Solution #1
 
@@ -81,11 +86,15 @@ Sample Spaces and Events
 
 2. Two dice are rolled. Let **E** be the event the sum of the outcomes is odd. Let **F** be the event of at least one *1* appearing on one of the die. Describe the elements of the following events in :ref:`list_notation` and interpret the meaning of each event.
 
-    a. :math:`E \cap F`
-    b. :math:`E^c \cap F`
-    c. :math:`E^c \cap F^c`
-    d. :math:`E \cup F`
-    e. :math:`E \cup F^c`
+a. :math:`E \cap F`
+
+b. :math:`E^c \cap F`
+
+c. :math:`E^c \cap F^c`
+    
+d. :math:`E \cup F`
+
+e. :math:`E \cup F^c`
 
 .. collapse:: Solution #2
 
@@ -369,9 +378,11 @@ Sample Spaces and Events
     .. note:: 
         *Hint*: Let *r* :sub:`1`, *r* :sub:`2` and *r* :sub:`3` represent the *outcome* of drawing each of the respective red balls. 
 
-    a. Selecting one ball at random.
-    b. Selecting two balls at random and :ref:`with_replacement` (i.e. putting the ball you drew back into the back after you draw it).
-    c. Selecting two balls at random and :ref:`without_replacement` (i.e. *not* putting the ball back after you draw it)
+a. Selecting one ball at random.
+
+b. Selecting two balls at random and :ref:`with_replacement` (i.e. putting the ball you drew back into the back after you draw it).
+
+c. Selecting two balls at random and :ref:`without_replacement` (i.e. *not* putting the ball back after you draw it)
 
 .. collapse:: Solution #3
 
@@ -437,10 +448,9 @@ Sample Spaces and Events
 
     Consider the outcome of drawing a red card with the number *2* along with a black card with the number *2*. In this case, it is neither true that the first card is larger than the second card nor is it true the second card is larger than the first card. Then, there is atleast one outcome in the sample space that belongs to neither of the events. Therefore, we can conclude **A** and **B** are *not* complements of one another.
 
-Applications
-============
-   
-5. You roll two dice. The find the probability of the following events. 
+5. A box contains three red balls and five blue balls. Define a sample sapce for the experiment of selecting three balls that are drawn from the box, one by one, with replacement.
+
+6. You roll two dice. The find the probability of the following events. 
    
     a. The sum of the numbers rolled is 7.
     b. The sum of the numbers rolled on the dice is 3 or 5.
@@ -511,7 +521,7 @@ Applications
 
     f. *part d* and *part e* are complements. Part *d* can be rephrased as "*at least one of the die is even*". By the :ref:`square_of_opposition`, the complement of "*atleast one*" is "*none*". This can be verified by summing the probabilities of both events and verifying they add to one, 
 
-6. You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,
+7. You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,
 
     a. The card is a king.
 
@@ -527,14 +537,17 @@ Applications
     
     g. The card is neither nor a queen.
 
-7. You select a number randomly between 1 and 1000. What is the probability the number selected is divisible by 5?
+8. You select a number randomly between 1 and 1000. What is the probability the number selected is divisible by 5?
 
-TODO: ONE MORE
+9. Among 33 students in a class, 17 of them earned A's on the midterm exam, 14 earned A's on the final exam and 11 did not earn A's on either examination. What is the probability that a randomly selected student from this class earned an A on both exams?
+
+10. The coefficients of the quadratic equation :math:`x^2 + bx + c = 0` are determined by tossing a fair die twice. The first outcome is *b* and the second outcome is *c*. Find the probability the equation has real roots.
+
 
 Probability Proofs
 ==================
 
-8. Let **A** and **B** be two events, not necessarily mutually exclusive. Prove the following inequality
+10. Let **A** and **B** be two events, not necessarily mutually exclusive. Prove the following inequality
 
 .. math:: 
     P(A \cap B) \geq P(A) + P(B) - 1
@@ -542,7 +555,7 @@ Probability Proofs
 .. note:: 
     *Hint*: Use the :ref:`law_of_unions` and :ref:`axiom_1`
 
-9. Let **A** and **B** be two events, not necessarily mutually exclusive. The event,
+11. Let **A** and **B** be two events, not necessarily mutually exclusive. The event,
     
 .. math:: 
     (A - B) \cap (B - A)

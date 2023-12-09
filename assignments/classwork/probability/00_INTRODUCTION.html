@@ -461,7 +461,6 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-spaces-and-events">Sample Spaces and Events</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-proofs">Probability Proofs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
 </ul>
@@ -479,17 +478,15 @@ document.write(`
 <span id="probability-introduction-classwork"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
 <section id="sample-spaces-and-events">
 <h2>Sample Spaces and Events<a class="headerlink" href="#sample-spaces-and-events" title="Permalink to this headline">#</a></h2>
-<ol class="arabic">
-<li><p>Describe the sample spaces of the following experiments with a set using <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a></p>
-<blockquote>
-<div><ol class="loweralpha simple">
-<li><p>Flipping a two-sided coin three times</p></li>
+<ol class="arabic simple">
+<li><p>Describe the sample spaces of the following experiments with a set using <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a></p></li>
+</ol>
+<ol class="loweralpha simple">
+<li><p>Flipping a coin two times</p></li>
+<li><p>Flipping a coin three times.</p></li>
 <li><p>Rolling a six-sided die</p></li>
 <li><p>Rolling two six-sided dice</p></li>
 <li><p>Flipping a two-sided coin and if it lands on heads rolling a six-sided die.</p></li>
-</ol>
-</div></blockquote>
-</li>
 </ol>
 <details class="summary-solution-1">
 <summary>Solution #1</summary><ol class="loweralpha simple">
@@ -595,18 +592,15 @@ document.write(`
 <ol class="loweralpha simple" start="4">
 <li><p><img class="math" src="../../../_images/math/8534363167df1fc8e38d6cdf79b5abfca7a04663.png" alt="S = \{ t, h1, h2, h3, h4, h5, h6 \}"/></p></li>
 </ol>
-</details><ol class="arabic" start="2">
-<li><p>Two dice are rolled. Let <strong>E</strong> be the event the sum of the outcomes is odd. Let <strong>F</strong> be the event of at least one <em>1</em> appearing on one of the die. Describe the elements of the following events in <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a> and interpret the meaning of each event.</p>
-<blockquote>
-<div><ol class="loweralpha simple">
+</details><ol class="arabic simple" start="2">
+<li><p>Two dice are rolled. Let <strong>E</strong> be the event the sum of the outcomes is odd. Let <strong>F</strong> be the event of at least one <em>1</em> appearing on one of the die. Describe the elements of the following events in <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a> and interpret the meaning of each event.</p></li>
+</ol>
+<ol class="loweralpha simple">
 <li><p><img class="math" src="../../../_images/math/72f2056c1b56ffff779f8685f9aecee16c662a71.png" alt="E \cap F"/></p></li>
 <li><p><img class="math" src="../../../_images/math/ea19490380e8c1f1193d10878cecea37d051e0b5.png" alt="E^c \cap F"/></p></li>
 <li><p><img class="math" src="../../../_images/math/1e20132630e741089c48db1c91ad7e5d2b0929a5.png" alt="E^c \cap F^c"/></p></li>
 <li><p><img class="math" src="../../../_images/math/4e84dcf55459fdeac82f6c0147aa9a3153de784c.png" alt="E \cup F"/></p></li>
 <li><p><img class="math" src="../../../_images/math/71c73355e9e589d6df9bb350b0c68fff992556db.png" alt="E \cup F^c"/></p></li>
-</ol>
-</div></blockquote>
-</li>
 </ol>
 <details class="summary-solution-2">
 <summary>Solution #2</summary><p>The sample space from #1c will be useful here, so let’s copy it for reference,</p>
@@ -2041,13 +2035,13 @@ document.write(`
 <p class="admonition-title">Note</p>
 <p><em>Hint</em>: Let <em>r</em> <sub>1</sub>, <em>r</em> <sub>2</sub> and <em>r</em> <sub>3</sub> represent the <em>outcome</em> of drawing each of the respective red balls.</p>
 </div>
+</div></blockquote>
+</li>
+</ol>
 <ol class="loweralpha simple">
 <li><p>Selecting one ball at random.</p></li>
 <li><p>Selecting two balls at random and <span class="xref std std-ref">with_replacement</span> (i.e. putting the ball you drew back into the back after you draw it).</p></li>
 <li><p>Selecting two balls at random and <span class="xref std std-ref">without_replacement</span> (i.e. <em>not</em> putting the ball back after you draw it)</p></li>
-</ol>
-</div></blockquote>
-</li>
 </ol>
 <details class="summary-solution-3">
 <summary>Solution #3</summary><ol class="loweralpha simple">
@@ -2131,10 +2125,8 @@ document.write(`
 <p>Then, there are no outcomes outside of the outcomes contained in <img class="math" src="../../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/> plus the outcomes contained in <img class="math" src="../../../_images/math/2ef75eec66003e588055d751eaddd391b6eccea0.png" alt="A^c"/>. For, if there were, these two sets would not be complements of one another.</p>
 <p>If we can show there is an outcome in the sample space <strong>S</strong> that does not belong to <em>either</em> <img class="math" src="../../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/> <em>or</em> <img class="math" src="../../../_images/math/3a7a214c98a4440c624d51173249c2fb0d99e2c4.png" alt="B"/>, then it must follow that <strong>A</strong> and <strong>B</strong> are <em>not</em> complements, since their union does not equal the entire sample space.</p>
 <p>Consider the outcome of drawing a red card with the number <em>2</em> along with a black card with the number <em>2</em>. In this case, it is neither true that the first card is larger than the second card nor is it true the second card is larger than the first card. Then, there is atleast one outcome in the sample space that belongs to neither of the events. Therefore, we can conclude <strong>A</strong> and <strong>B</strong> are <em>not</em> complements of one another.</p>
-</details></section>
-<section id="applications">
-<h2>Applications<a class="headerlink" href="#applications" title="Permalink to this headline">#</a></h2>
-<ol class="arabic" start="5">
+</details><ol class="arabic" start="5">
+<li><p>A box contains three red balls and five blue balls. Define a sample sapce for the experiment of selecting three balls that are drawn from the box, one by one, with replacement.</p></li>
 <li><p>You roll two dice. The find the probability of the following events.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
@@ -2308,7 +2300,7 @@ document.write(`
 <li><p><img class="math" src="../../../_images/math/e730815474f8905c8f2f015a0188088ec1fda7c2.png" alt="\frac{9}{36} = \frac{1}{4}"/></p></li>
 <li><p><em>part d</em> and <em>part e</em> are complements. Part <em>d</em> can be rephrased as “<em>at least one of the die is even</em>”. By the <a class="reference internal" href="../../../notes/SET_THEORY.html#square-of-opposition"><span class="std std-ref">Aristotle’s Square of Opposition</span></a>, the complement of “<em>atleast one</em>” is “<em>none</em>”. This can be verified by summing the probabilities of both events and verifying they add to one,</p></li>
 </ol>
-</details><ol class="arabic" start="6">
+</details><ol class="arabic" start="7">
 <li><p>You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,</p>
 <blockquote>
 <div><ol class="loweralpha simple">
@@ -2323,12 +2315,13 @@ document.write(`
 </div></blockquote>
 </li>
 <li><p>You select a number randomly between 1 and 1000. What is the probability the number selected is divisible by 5?</p></li>
+<li><p>Among 33 students in a class, 17 of them earned A’s on the midterm exam, 14 earned A’s on the final exam and 11 did not earn A’s on either examination. What is the probability that a randomly selected student from this class earned an A on both exams?</p></li>
+<li><p>The coefficients of the quadratic equation <img class="math" src="../../../_images/math/2ac64c25e38b63cf649779ed3622cf61ca3c1703.png" alt="x^2 + bx + c = 0"/> are determined by tossing a fair die twice. The first outcome is <em>b</em> and the second outcome is <em>c</em>. Find the probability the equation has real roots.</p></li>
 </ol>
-<p>TODO: ONE MORE</p>
 </section>
 <section id="probability-proofs">
 <h2>Probability Proofs<a class="headerlink" href="#probability-proofs" title="Permalink to this headline">#</a></h2>
-<ol class="arabic simple" start="8">
+<ol class="arabic simple" start="10">
 <li><p>Let <strong>A</strong> and <strong>B</strong> be two events, not necessarily mutually exclusive. Prove the following inequality</p></li>
 </ol>
 <div class="math">
@@ -2337,7 +2330,7 @@ document.write(`
 <p class="admonition-title">Note</p>
 <p><em>Hint</em>: Use the <a class="reference internal" href="../../../notes/probability/00_INTRODUCTION.html#law-of-unions"><span class="std std-ref">Law of Unions</span></a> and <a class="reference internal" href="../../../notes/probability/00_INTRODUCTION.html#axiom-1"><span class="std std-ref">Axiom 1</span></a></p>
 </div>
-<ol class="arabic simple" start="9">
+<ol class="arabic simple" start="11">
 <li><p>Let <strong>A</strong> and <strong>B</strong> be two events, not necessarily mutually exclusive. The event,</p></li>
 </ol>
 <div class="math">
@@ -2510,7 +2503,6 @@ table below.</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-spaces-and-events">Sample Spaces and Events</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-proofs">Probability Proofs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
 </ul>
