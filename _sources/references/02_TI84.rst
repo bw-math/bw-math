@@ -54,14 +54,15 @@ Ogives
 Sample Percentiles
 ------------------
 
+Part 1
+******
+
 .. image:: https://img.youtube.com/vi/5TXzhpTnk4Q/maxresdefault.jpg
     :alt: Sample Percentiles
     :target: https://www.youtube.com/watch?v=5TXzhpTnk4Q
 
-.. _ti84_sample_percentiles_redux:
-
-Sample Percentiles Redux
-------------------------
+Part 2
+******
 
 .. image:: https://img.youtube.com/vi/zrfFdfODW7k/maxresdefault.jpg
     :alt: Sample Percentiles Redux
@@ -93,3 +94,28 @@ Population Distributions
 .. image:: https://img.youtube.com/vi/lDnkKUqA4nk/maxresdefault.jpg
     :alt: Monte Carlo Simulation
     :target: https://www.youtube.com/watch?v=lDnkKUqA4nk
+    
+Estimating Pi
+-------------
+
+Part 1
+******
+
+.. image:: https://img.youtube.com/vi/qSR0jIKeMmU/maxresdefault.jpg
+	:alt: Estimating Pi With Simulation 1/3
+	:target: https://www.youtube.com/watch?v=qSR0jIKeMmU
+
+Part 2
+******
+
+.. image:: https://img.youtube.com/vi/J9ILZhPYds4/maxresdefault.jpg
+	:alt: Estimating Pi With Simulation 2/3
+	:target: https://www.youtube.com/watch?v=J9ILZhPYds4
+	
+QQ Plots
+--------
+
+.. image:: https://img.youtube.com/vi/EylKq7hdO78/maxresdefault.jpg
+	:alt: QQ Plots
+	:target: https://www.youtube.com/watch?v=EylKq7hdO78
+
