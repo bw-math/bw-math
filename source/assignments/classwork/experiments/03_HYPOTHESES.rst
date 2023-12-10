@@ -71,3 +71,7 @@ a. Describe what a Type II error would be in the context of the study, and also 
 b. The Recreation Department recruits 185 adult residents who volunteer to take the physical fitness test. The test is passed by 77 of the 185 volunteers, resulting in a *p-value* of 0.97 for the hypotheses stated above. If it was reasonable to conduct a test of significance for the hypotheses stated above using the data collected from the 185 volunteers, what would the p-value of 0.97 lead you to conclude?
 
 c. Describe the primary flaw in the study described in *part b*, and explain why it is a concern.
+
+5. **2018, Free Response, #6**
+
+TODO (GOOD ONE TO GO OVER IN GREAT DETAIL!)

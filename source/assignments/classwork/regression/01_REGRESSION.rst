@@ -64,6 +64,35 @@ c. Interpret the coefficient of determination of the least-squares regression li
 
 d. From Plot 2 , consider the residuals of the 11 bullfrogs.
 
-i. Based on the plot, approximately what is the length and mass of the bullfrog with the largest absolute value residual?
+	i. Based on the plot, approximately what is the length and mass of the bullfrog with the largest absolute value residual?
 
-ii. Does the least-squares regression line overestimate or underestimate the mass of the bullfrog identified in part *d-i*? Explain your answer.
+	ii. Does the least-squares regression line overestimate or underestimate the mass of the bullfrog identified in part *d-i*? Explain your answer.
+	
+4. **2018, Free Response, #1**
+
+The manager of a grocery store selected a random sample of 11 customers to investigate the relationship between the number of customers in a checkout line and the time to finish checkout. As soon as the selected customer entered the end of a checkout line, data were collected on the number of customers in line who were in front of the selected customer and the time, in seconds, until the selected customer was finished with the checkout. The data are shown in the following scatterplot along with the corresponding least-squares regression line and computer output.
+
+.. image:: ../../../assets/imgs/classwork/2018_apstats_frp_01.png
+	:align: center
+	
+a. Identify and interpret in context the estimate of the intercept for the least-squares regression line.
+
+b. Identify and interpret in context the coefficient of determination, :math:`r^2`.
+
+c. One of the data points was determined to be an outlier. Circle the point on the scatterplot and explain why the point is considered an outlier.
+
+5. **2017, Free Response, #1**
+
+Researchers studying a pack of gray wolves in North America collected data on the length **x**, in meters, from nose to tip of tail, and the weight y, in kilograms, of the wolves. A scatterplot of weight versus length revealed a relationship between the two variables described as positive, linear, and strong.
+
+a. For the situation described above, explain what is meant by each of the following words.
+
+	i. Positive:
+
+	ii. Linear:
+
+	iii. Strong:
+	
+b. The data collected from the wolves were used to create the least-squares equation :math:`hat{y}_i = -16.46 + 35.02 \cdot x_i`. Interpret the meaning of the slope of the least-squares regression line in context.
+
+c. One wolf in the pack with a length of :math:`1.4` meters had a residual of :math:`-9.67` kilograms. What was the weight of the wolf?
