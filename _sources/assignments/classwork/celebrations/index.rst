@@ -9,3 +9,4 @@ Celebrations of Knowledge
    :caption: Contents:
 
    00_STATS_Q1
+   01_STATS_Q2

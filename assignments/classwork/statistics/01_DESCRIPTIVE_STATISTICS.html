@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Point Estimation &#8212; bishop-walsh-ap-stats  documentation</title>
+    <title>Point Estimation &#8212; bishop-walsh-math  documentation</title>
   
   
   
@@ -46,8 +46,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/classwork/statistics/01_DESCRIPTIVE_STATISTICS';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Graphical Representations of Data" href="02_GRAPHICAL_REPRESENTATIONS.html" />
-    <link rel="prev" title="Statistics" href="index.html" />
+    <link rel="next" title="Sampling Distributions" href="02_SAMPLING_DISTRIBUTIONS.html" />
+    <link rel="prev" title="Graphical Representations of Data" href="00_GRAPHICAL_REPRESENTATIONS.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -119,45 +119,63 @@
   
   
   
-    <p class="title logo__title">bishop-walsh-ap-stats  documentation</p>
+    <p class="title logo__title">bishop-walsh-math  documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../../SPLASH.html">AP Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../00_SPLASH.html">Bishop Walsh Math</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="../../../SYLLABUS.html">Course Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../01_STATS_SYLLABUS.html">AP Stats Course Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../02_DATASETS.html">Datasets</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../../notes/index.html">Class Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../notes/HISTORY.html">A Brief History of Knowledge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../notes/HISTORY.html">Knowledge</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../notes/SET_THEORY.html">Set Theory</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/00_INTRODUCTION.html">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/01_COMBINATORICS.html">Combinatorics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/02_CONDITIONAL.html">Conditional Probability</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/04_BINOMIAL_DISTRIBUTION.html">Binomial Distribution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/05_NORMAL_DISTRIBUTION.html">Normal Distribution</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/experiments/index.html">Experimental Design</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/01_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/02_DESIGN.html">Experimental Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/03_DATA.html">Data</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/04_INFERENCE.html">Inference</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/00_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/01_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/02_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/03_SAMPLING_DISTRIBUTIONS.html">Sampling Distributions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/04_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/05_CHI_SQUARED_DISTRIBUTION.html"><img alt="\chi^2" class="math" src="../../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/06_T_DISTRIBUTION.html">T Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/02_SAMPLING_DISTRIBUTIONS.html">Sampling Distributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/03_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/00_BERNOULLI.html">Bernoulli Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/02_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/03_UNIFORM.html">Uniform Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/04_NORMAL.html">Normal Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/05_T.html">T Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/06_CHI_SQUARED.html"><img alt="\chi^2" class="math" src="../../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/07_F.html">F Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../notes/hypotheses/00_INTRODUCTION.html">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../notes/hypotheses/01_MEAN_TESTS.html">Hypothesis Tests for the Population Mean</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../notes/hypotheses/02_STDDEV_TESTS.html">Hypothesis Tests for the Population Standard Deviation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/hypotheses/02_PROPORTION_TESTS.html">Hypothesis Tests for the Population Proportion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/hypotheses/03_STDDEV_TESTS.html">Hypothesis Tests for the Population Standard Deviation</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/regression/index.html">Linear Regression</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/regression/index.html">Regression</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../notes/regression/01_INTRODUCTION.html">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../notes/regression/02_CORRELATION.html">Correlation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../notes/regression/03_LINEAR_REGRESSION.html">Linear Regression</a></li>
@@ -166,90 +184,115 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">Assignments</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../homework/index.html">Homework</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../homework/01_CHAP01.html">Chapter 1 Homework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../homework/02_CHAP02.html">Chapter 2 Homework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../homework/03_CHAP03.html">Chapter 3 Homework</a></li>
-
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">Assignments</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../homework/index.html">Homework</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/01_UNIT01.html">Unit 1 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/02_UNIT02.html">Unit 2 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/03_UNIT03.html">Unit 3 Homework</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../homework/04_CHAP01_OS.html">Chapter 1 Homework (OpenStax Text)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../homework/05_CHAP04.html">Chapter 4 Homework</a></li>
-
-<li class="toctree-l3"><a class="reference internal" href="../../homework/06_CHAP05.html">Chapter 5 Homework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../homework/07_CHAP06.html">Chapter 6 Homework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../homework/08_CHAP07.html">Chapter 7 Homework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../homework/09_CHAP08.html">Chapter 8 Homework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../homework/10_CHAP09.html">Chapter 9 Homework</a></li>
-
-<li class="toctree-l3"><a class="reference internal" href="../../homework/11_CHAP10.html">Chapter 10 Homework</a></li>
-
+<li class="toctree-l3"><a class="reference internal" href="../../homework/05_UNIT04.html">Unit 4 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/06_UNIT05.html">Unit 5 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/07_CHAP06_OS.html">Chapter 6 Homework (OpenStax Text)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/08_CHAP07_OS.html">Chapter 7 Homework (OpenStax Text)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/09_UNIT06.html">Unit 6 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/10_CHAP08_OS.html">Chapter 8 Homework (OpenStax Text)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/11_UNIT07.html">Unit 7 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/12_UNIT08.html">Unit 9 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../homework/13_UNIT09.html">Unit 9 Homework</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Class Work</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l3 has-children"><a class="reference internal" href="../set_theory/index.html">Set Theory</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Classwork</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../celebrations/index.html">Celebrations of Knowledge</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/00_STATS_Q1.html">Statistics: Quarter One</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/01_STATS_Q2.html">Statistics: Quarter Two</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../algebra/index.html">Algebra</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../algebra/01_SUMS.html">Sums</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../differentiation/index.html">Differentiation</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/00_CHAIN_RULE.html">Chain Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/01_IMPLICIT_DIFFERENTIATION.html">Implicit Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/02_GRAPHING.html">Graphing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/03_RELATED_RATES.html">Related Rates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/04_OPTIMIZATION.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/05_THEOREMS.html">Theorems</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../set_theory/index.html">Set Theory</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../set_theory/01_INTRODUCTION.html">Set Theory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../set_theory/02_VENN_DIAGRAMS.html">Venn Diagrams</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../probability/00_INTRODUCTION.html">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../probability/01_COMBINATORICS.html">Combinatorics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../probability/02_CONDITIONAL.html">Conditional Probability</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../probability/04_BINOMIAL_DISTRIBUTION.html">Binomial Distribution</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../probability/05_NORMAL_DISTRIBUTION.html">Normal Distribution</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current active has-children"><a class="reference internal" href="index.html">Statistics</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../experiments/index.html">Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/00_DESIGN.html">Design</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/01_INFERENCE.html">Inference</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/02_BIAS.html">Bias</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/03_HYPOTHESES.html">Hypotheses</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current active has-children"><a class="reference internal" href="index.html">Statistics</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="00_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
 <li class="toctree-l4 current active"><a class="current reference internal" href="#">Point Estimation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="02_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="03_SAMPLING_DISTRIBUTIONS.html">Sampling Distributions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="04_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
-<li class="toctree-l4"><a class="reference internal" href="05_CHI_SQUARED_DISTRIBUTION.html"><img alt="\chi^2" class="math" src="../../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
-<li class="toctree-l4"><a class="reference internal" href="06_T_DISTRIBUTION.html">T Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_SAMPLING_DISTRIBUTIONS.html">Sampling Distributions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/00_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/02_NORMAL.html">Normal Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../hypotheses/01_MEAN_TESTS.html">Hypothesis Tests for the Population Mean</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../hypotheses/02_STDDEV_TESTS.html">Hypothesis Tests for the Population Standard Deviation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../hypotheses/02_PROPORTION_TESTS.html">Hypothesis Tests for the Population Proportion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../hypotheses/03_STDDEV_TESTS.html">Hypothesis Tests for the Population Standard Deviation</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../regression/index.html">Linear Regression</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../regression/01_CORRELATION.html">Correlation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../regression/02_LINEAR_REGRESSION.html">Linear Regression</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../regression/03_RESIDUAL_ANALYSIS.html">Residual Analysis</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../regression/index.html">Linear Regression</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../regression/00_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../regression/01_REGRESSION.html">Linear Regression</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../projects/index.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../projects/index.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../projects/00_PYTHON.html">Python</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../projects/01_GRAPHING.html">Graphing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../projects/02_ESTIMATION.html">Estimation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../projects/03_BIAS.html">Bias</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../projects/04_OUTLIERS.html">Outliers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../projects/05_POLLING.html">Polling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/01_CATEGORICAL.html">Bar Charts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/02_QUANTITATIVE.html">Histograms and Boxplots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/03_NORMALITY.html">Normality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/04_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/05_BIAS.html">Bias</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../projects/06_SIMULATION.html">Simulation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../projects/08_Z_TABLE.html">Applications</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../projects/09_FINANCE.html">Financial Analysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../projects/10_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/07_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../projects/08_BINOMIAL.html">Binomial Distribution</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../references/index.html">References</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../references/TEXTS.html">Textbooks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../references/EXAM.html">A.P. Statistics Exam</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../../references/tables/index.html">Statistical Tables</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../references/index.html">References</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../references/00_EXAM.html">A.P. Statistics Exam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../references/01_RESOURCES.html">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../references/02_TI84.html">TI-84</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../references/03_SUBSTITUTE.html">Substitutes</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../references/tables/index.html">Statistical Tables</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../references/tables/01_Z_TABLE.html">Z Table</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../references/tables/02_CHI_SQUARED_TABLE.html"><img alt="\chi^2" class="math" src="../../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Table</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../references/tables/03_T_TABLE.html">T Table</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../references/tables/04_PEARSON_TABLE.html">Pearson Correlation Coefficient Table</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../../references/TI84.html">TI-84</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../../references/python/index.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../references/python/SHELL.html">Online Python Shell</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../references/python/index.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../references/python/00_SHELL.html">Online Python Shell</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../references/python/01_SETUP.html">Python Setup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../references/python/02_BASIC.html">Basics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../references/python/03_SETS.html">Sets</a></li>
@@ -257,10 +300,15 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../references/python/05_PLOTS.html">Plots</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../references/python/06_FILES.html">Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../references/python/07_CONTROLS.html">Control Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../references/python/08_WEB.html">The Internet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../references/python/09_DEMOS.html">Demonstrations</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../../references/LATEX.html">LaTex Reference</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../references/DOCS.html">Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../maintenance/index.html">Maintenance</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../maintenance/LATEX.html">LaTex Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../maintenance/SPHINX.html">Sphinx</a></li>
 </ul>
 </li>
 </ul>
@@ -413,6 +461,173 @@ document.write(`
                   
   <section id="point-estimation">
 <span id="point-estimation-classwork"></span><h1>Point Estimation<a class="headerlink" href="#point-estimation" title="Permalink to this headline">#</a></h1>
+<ol class="arabic simple">
+<li><p><strong>2019, Free Response, #1</strong></p></li>
+</ol>
+<p>The sizes, in square feet, of the 20 rooms in a student residence hall at a certain university are summarized in the following histogram.</p>
+<img alt="../../../_images/2019_apstats_frp_01a.png" class="align-center" src="../../../_images/2019_apstats_frp_01a.png" />
+<ol class="loweralpha simple">
+<li><p>Based on the histogram, write a few sentences describing the distribution of room size in the residence hall.</p></li>
+<li><p>Summary statistics for the sizes are given in the following table.</p></li>
+</ol>
+<img alt="../../../_images/2019_apstats_frp_01b.png" class="align-center" src="../../../_images/2019_apstats_frp_01b.png" />
+<p>Determine whether there are potential outliers in the data. Then use the following grid to sketch a boxplot of room size.</p>
+<img alt="../../../_images/2019_apstats_frp_01c.png" class="align-center" src="../../../_images/2019_apstats_frp_01c.png" />
+<ol class="loweralpha simple" start="3">
+<li><p>What characteristic of the shape of the distribution of room size is apparent from the histogram but not from the boxplot?</p></li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><p><strong>2015, Multiple Choice #8</strong></p></li>
+</ol>
+<p>The 25 students in one professor’s introductory statistics course at a large university were surveyed and asked to report the number of siblings that they have. The histogram below displays the data collected in the survey.</p>
+<img alt="../../../_images/2015_apstats_mc_08.png" src="../../../_images/2015_apstats_mc_08.png" />
+<p>Which of the following is the median number of siblings for these 25 students?</p>
+<blockquote>
+<div><ol class="upperalpha simple">
+<li><p>1</p></li>
+<li><p>1.5</p></li>
+<li><p>2</p></li>
+<li><p>2.5</p></li>
+<li><p>3</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>2016, Free Response, #1</strong></p></li>
+</ol>
+<p>Robin works as a server in a small restaurant, where she can earn a tip (extra money) from each customer she serves. The histogram below shows the distribution of her 60 tip amounts for one day of work.</p>
+<img alt="../../../_images/2016_apstats_frp_01.png" class="align-center" src="../../../_images/2016_apstats_frp_01.png" />
+<ol class="loweralpha">
+<li><p>Write a few sentences to describe the distribution of tip amounts for the day shown.</p></li>
+<li><p>One of the tip amounts was $8. If the $8 tip had been $18, what effect would the increase have had on the following statistics? Justify your answers.</p>
+<blockquote>
+<div><p>The mean:</p>
+<p>The median:</p>
+</div></blockquote>
+</li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p><strong>2006, Free Response, #1</strong></p></li>
+</ol>
+<p>Two parents have each built a toy catapult for use in a game at an elementary school fair. To play the game, students will attempt to launch Ping-Pong balls from the catapults so that the balls land within a 5-centimeter band. A target line will be drawn through the middle of the band, as shown in the figure below. All points on the target line are equidistant from the launching location.</p>
+<img alt="../../../_images/2006_apstats_frp_1a.png" class="align-center" src="../../../_images/2006_apstats_frp_1a.png" />
+<p>If a ball lands within the shaded band, the student will win a prize. The parents have constructed the two catapults according to slightly different plans. They want to test these
+catapults before building additional ones. Under identical conditions, the parents launch 40 Ping-Pong balls from each catapult and measure the distance that the ball travels before landing. Distances to the nearest centimeter are graphed in the dotplots below.</p>
+<img alt="../../../_images/2006_apstats_frp_1b.png" class="align-center" src="../../../_images/2006_apstats_frp_1b.png" />
+<ol class="loweralpha simple">
+<li><p>Comment on any similarities and any differences in the two distributions of distances traveled by balls launched from catapult A and catapult B.</p></li>
+<li><p>If the parents want to maximize the percentage of having the Ping-Pong balls land within the band, which one of the two catapults, A or B, would be better to use than the other? Justify your choice.</p></li>
+<li><p>Using the catapult that you chose in part <em>b</em>, how many centimeters from the target line should this catapult be placed? Explain why you chose this distance.</p></li>
+</ol>
+<ol class="arabic simple" start="4">
+<li><p><strong>2003, Free Response, #1</strong></p></li>
+</ol>
+<p>Since Hill Valley High School eliminated the use of bells between classes, teachers have noticed that more students seem to be arriving to class a few minutes late. One teacher decided to collect data to determine whether the students’ and teachers’ watches are displaying the correct time. At exactly 12:00 noon, the teacher asked 9 randomly selected students and 9 randomly selected teachers to record the times on their watches to the nearest half minute. The ordered data showing minutes after 12:00 as positive values and minutes before 12:00 as negative values are shown in the table below.</p>
+<table class="table">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Students</p></td>
+<td><p>-4.5</p></td>
+<td><p>-3.0</p></td>
+<td><p>-0.5</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0.5</p></td>
+<td><p>0.5</p></td>
+<td><p>1.5</p></td>
+<td><p>5.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Teachers</p></td>
+<td><p>-2.0</p></td>
+<td><p>-1.5</p></td>
+<td><p>-1.5</p></td>
+<td><p>-1.0</p></td>
+<td><p>-1.0</p></td>
+<td><p>-0.5</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0.5</p></td>
+</tr>
+</tbody>
+</table>
+<ol class="loweralpha simple">
+<li><p>Construct parallel boxplots using these data.</p></li>
+<li><p>Based on the boxplots in part <em>#a</em>, which of the two groups, students or teachers, tends to have watch times that are closer to the true time? Explain your choice.</p></li>
+</ol>
+<ol class="arabic simple" start="5">
+<li><p><strong>2006, Free Response Form B, #1</strong></p></li>
+</ol>
+<p>A large regional real estate company keeps records of home sales for each of its sales agents. Each month, the company publishes the sales volume for each agent. Monthly sales volume is defined as the total sales price of all homes sold by the agent during a month. The figure below displays the cumulative relative frequency plot of the most recent monthly sales volume (in hundreds of thousands of dollars) for these agents.</p>
+<img alt="../../../_images/2016_apstats_frp_formb_01.png" class="align-center" src="../../../_images/2016_apstats_frp_formb_01.png" />
+<ol class="loweralpha simple">
+<li><p>In the context of this question, explain what information is conveyed by the circled point.</p></li>
+<li><p>What proportion of sales agents achieved monthly sales volumes between $700,000 and $800,000 ?</p></li>
+<li><p>For values between 10 and 11 on the horizontal axis, the cumulative relative frequency plot is flat. In the context of this question, explain what this means.</p></li>
+<li><p>A bonus is to be given to 20 percent of the sales agents. Those who achieved the highest monthly sales volume during the preceding month will receive a bonus. What is the minimum monthly sales volume an agent must have achieved to qualify for the bonus?</p></li>
+</ol>
+<ol class="arabic simple" start="6">
+<li><p><strong>2007, Free Response, #1</strong></p></li>
+</ol>
+<p>The department of agriculture at a university was interested in determining whether a preservative was effective in reducing discoloration in frozen strawberries. A sample of 50 ripe strawberries was prepared for freezing. Then the sample was randomly divided into two groups of 25 strawberries each. Each strawberry was placed into a small plastic bag.</p>
+<p>The 25 bags in the control group were sealed. The preservative was added to the 25 bags containing strawberries in the treatment group, and then those bags were sealed. All bags were stored at 0⬚C for a period of 6 months. At the end of this time, after the strawberries were thawed, a technician rated each strawberry’s discoloration from 1 to 10, with a low score indicating little discoloration.</p>
+<p>The dotplots below show the distributions of discoloration rating for the control and treatment groups.</p>
+<img alt="../../../_images/2007_apstats_frp_01.png" class="align-center" src="../../../_images/2007_apstats_frp_01.png" />
+<ol class="loweralpha simple">
+<li><p>Find the mean and median of both the test group and control group.</p></li>
+<li><p>Comment on the shape of the control distribution versus the shape of the test distribution. Justify your answer with calculations.</p></li>
+<li><p>Based on the dotplots and your answers to part <em>#a</em> and <em>#b</em>, comment on the effectiveness of the preservative in lowering the amount of discoloration in strawberries.</p></li>
+</ol>
+<ol class="arabic simple" start="7">
+<li><p><strong>2021, Free Response, #1</strong></p></li>
+</ol>
+<p>The length of stay in a hospital after receiving a particular treatment is of interest to the patient, the hospital, and insurance providers. Of particular interest are unusually short or long lengths of stay. A random sample of 50 patients who received the treatment was selected, and the length of stay, in number of days, was recorded for each patient. The results are summarized in the following table and are shown in the dotplot.</p>
+<img alt="../../../_images/2021_apstats_frp_01.png" class="align-center" src="../../../_images/2021_apstats_frp_01.png" />
+<ol class="loweralpha">
+<li><p>Determine the five-number summary of the distribution of length of stay.</p></li>
+<li><p>Consider two rules for identifying outliers, method A and method B. Let method A represent the 1.5 x IQR rule, and let method B represent the 2 standard deviations rule.</p>
+<blockquote>
+<div><ol class="lowerroman simple">
+<li><p>Using method A, determine any data points that are potential outliers in the distribution of length of</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+<p>stay. Justify your answer.</p>
+<blockquote>
+<div><ol class="lowerroman simple" start="2">
+<li><p>The mean length of stay for the sample is 7.42 days with a standard deviation of 2.37 days. Using method B, determine any data points that are potential outliers in the distribution of length of stay. Justify your answer.</p></li>
+</ol>
+</div></blockquote>
+<ol class="loweralpha simple" start="3">
+<li><p>Explain why method A might identify more data points as potential outliers than method B for a distribution that is strongly skewed to the right.</p></li>
+</ol>
+<ol class="arabic simple" start="8">
+<li><p><strong>Question Bank</strong></p></li>
+</ol>
+<p>To determine the amount of sugar in a typical serving of breakfast cereal, a student randomly selected 60 boxes of different types of cereal from the shelves of a large grocery store.</p>
+<p>The student noticed that the side panels of some of the cereal boxes showed sugar content based on one-cup servings, while others showed sugar content based on three-quarter-cup servings. Many of the cereal boxes with side panels that showed three-quarter-cup servings were ones that appealed to young children, and the student wondered whether there might be some difference in the sugar content of the cereals that showed different-size servings on their side panels. To investigate the question, the data were separated into two groups. One group consisted of 29 cereals that showed one-cup serving sizes; the other group consisted of 31 cereals that showed three-quarter-cup serving sizes. The boxplots shown below display sugar content (in grams) per serving of the cereals for each of the two serving sizes.</p>
+<img alt="../../../_images/data_transformations_01.png" class="align-center" src="../../../_images/data_transformations_01.png" />
+<p>Two box plots are shown using the same horizontal axis, which shows sugar content per serving in grams and is labeled from 0 to 22 in increments of 2. The bottom plot is for three quarters of a cup. The box extends from 8 to 12 with a vertical line at 10 dividing it into two regions. A horizontal line off the left of the box extends to 4 and a horizontal line off the right extends to 14. The top plot is for one cup. The box extends from 4 to 14 with a vertical line at 12 dividing it into two regions. A horizontal line off the left of the box extends to 0 and a horizontal line off the right extends to 20.</p>
+<ol class="loweralpha simple">
+<li><p>Write a few sentences to compare the distributions of sugar content per serving for the two serving sizes of cereals.</p></li>
+</ol>
+<p>After analyzing the boxplots on the preceding page, the student decided that instead of a comparison of sugar content per recommended serving, it might be more appropriate to compare sugar content for equal-size servings. To compare the amount of sugar in serving sizes of one cup each, the amount of sugar in each of the cereals showing three-quarter-cup servings on their side panels was multiplied by 4/3. The bottom boxplot shown below displays sugar content (in grams) per cup for those cereals that showed a serving size of three-quarter-cup on their side panels.</p>
+<img alt="../../../_images/data_transformations_01.png" class="align-center" src="../../../_images/data_transformations_01.png" />
+<p>Two box plots are shown using the same horizontal axis, which shows adjusted sugar content per serving in grams and is labeled from 0 to 22 in increments of 2. The bottom plot is for three quarters of a cup. The box extends from 10 to 16 with a vertical line at 13 dividing it into two regions. A horizontal line off the left of the box extends to 5 and a horizontal line off the right extends to 20. The top plot is for one cup. The box extends from 4 to 14 with a vertical line at 12 dividing it into two regions. A horizontal line off the left of the box extends to 0 and a horizontal line off the right extends to 20.</p>
+<ol class="loweralpha simple" start="2">
+<li><p>What new information about sugar content do the boxplots above provide?</p></li>
+<li><p>Based on the boxplots shown above on this page, how would you expect the mean amounts of sugar per cup to compare for the different recommended serving sizes? Explain.</p></li>
+</ol>
 </section>
 
 
@@ -428,20 +643,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="index.html"
+       href="00_GRAPHICAL_REPRESENTATIONS.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Statistics</p>
+        <p class="prev-next-title">Graphical Representations of Data</p>
       </div>
     </a>
     <a class="right-next"
-       href="02_GRAPHICAL_REPRESENTATIONS.html"
+       href="02_SAMPLING_DISTRIBUTIONS.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Graphical Representations of Data</p>
+        <p class="prev-next-title">Sampling Distributions</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
