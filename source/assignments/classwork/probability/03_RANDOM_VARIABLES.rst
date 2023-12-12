@@ -4,13 +4,40 @@
 Random Variables
 ================
 
-1. A random variable **X** is defined as the sum of two six-sided die rolls. 
+1. A random variable **X** is defined as the number of heads in three coin flips.
 
-    - List the sample space for this random variable.
-    - Find the probability distribution :math:`P(X=x)` for all values of *x*.
+a. List the elements of the sample space for this random variable.
 
+b. Write the elements of the sample space that belong to the event :math:`\mathcal{X}=0` in set notation.
 
-2. TODO
+c. Write the elements of the sample space that belong to the event :math:`\mathcal{X}=1` in set notation.
+
+d. Write the elements of the sample space that belong to the event :math:`\mathcal{X}=2` in set notation.
+
+e. Write the elements of the sample space that belong to the event :math:`\mathcal{X}=3` in set notation.
+
+f. Find the probability distribution :math:`P(\mathcal{X}=x)` for all values of *x*. 
+
+g. Find the expectation :math:`E(\mathcal{X})` of the sum of two die rolls.
+
+h. Find the variance :math:`Var(\mathcal{X})` of the sum of two die rolls. 
+
+	
+2. A random variable **X** is defined as the sum of two six-sided die rolls. 
+
+a. List the elements of the sample space for this random variable.
+
+b. Write the elements of the sample space that belong to the event :math:`\mathcal{X}=6` in set notation.
+
+c. Write the elements of the sample space that belong to the event :math:`\mathcal{X}=7` in set notation.
+
+d. Write the elements of the sample space that belong to the event :math:`\mathcal{X}=8` in set notation.
+
+e. Find the probability distribution :math:`P(\mathcal{X}=x)` for all values of *x*.
+
+f. Find the expectation :math:`E(\mathcal{X})` of the sum of two die rolls.
+
+g. Find the variance :math:`Var(\mathcal{X})` of the sum of two die rolls. 
 
 
 3. **2019, Free Response, #5**

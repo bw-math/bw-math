@@ -11,7 +11,7 @@ Graphing
 +-----------------------+--------------------+---------+-----+----+
 | :math:`f(x)`          |       10           |     7   |  4  | 5  |
 +-----------------------+--------------------+---------+-----+----+
-| :math:`f^{\prime}(x)  | :math:`\frac{3}{2} |    -8   | 3   |  6 |
+| :math:`f^{\prime}(x)` | :math:`\frac{3}{2}`|    -8   | 3   |  6 |
 +-----------------------+--------------------+---------+-----+----+
 | :math:`g(x)`          |          1         |    2    |  -3 | 0  |
 +-----------------------+--------------------+---------+-----+----+
@@ -29,7 +29,7 @@ b. Let :math:`k` be a differentiable function such that :math:`k^{\prime}=(f(x))
 
 Consider the function :math:`y=f(x)` whose curve is given by the equation :math:`2y^2 - 6 = y \sin{x}` for :math:`y > 0`.
 
-a. Show that :math:`\frac{dy}{dx}=\frac{y \cos{x}}{4y - \sin{x}}.
+a. Show that :math:`\frac{dy}{dx}=\frac{y \cos{x}}{4y - \sin{x}}`.
 
 b. Write an equation for the line tangent to the curve at the point :math:`(0, \sqrt{3})`.
 

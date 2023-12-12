@@ -7,31 +7,15 @@ Combinatorics
 Counting
 --------
 
-1. 
+1. TODO
    
-2.
+2. TODO
 
-3.
+3. TODO
 
-4.
+4. TODO
 
-5.
-
-6. **2014, Free Response, #2**
-
-Nine sales representatives, 6 men and 3 women, at a small company wanted to attend a national convention. There were only enough travel funds to send 3 people. The manager selected 3 people to attend and stated that
-the people were selected at random. The 3 people selected were women. There were concerns that no men were selected to attend the convention.
-
-a. Calculate the probability that randomly selecting 3 people from a group of 6 men and 3 women will result
-in selecting 3 women.
-
-b. Based on your answer to part *a*, is there reason to doubt the manager's claim that the 3 people were selected at random? Explain.
-
-c. An alternative to calculating the exact probability is to conduct a simulation to estimate the probability. A proposed simulation process is described below.
-
-    Each trial in the simulation consists of rolling three fair, six-sided dice, one die for each of the convention attendees. For each die, rolling a 1, 2, 3, or 4 represents selecting a man; rolling a 5 or 6 represents selecting a woman. After 1,000 trials, the number of times the dice indicate selecting 3 women is recorded.
-
-Does the proposed process correctly simulate the random selection of 3 women from a group of 9 people consisting of 6 men and 3 women? Explain why or why not.
+5. TODO
 
 
 Probability
@@ -155,3 +139,12 @@ c. An alternative to calculating the exact probability is to conduct a simulatio
     Each trial in the simulation consists of rolling three fair, six-sided dice, one die for each of the convention attendees. For each die, rolling a 1, 2, 3, or 4 represents selecting a man; rolling a 5 or 6 represents selecting a woman. After 1,000 trials, the number of times the dice indicate selecting 3 women is recorded.
 
 Does the proposed process correctly simulate the random selection of 3 women from a group of 9 people consisting of 6 men and 3 women? Explain why or why not.
+
+8. **2018, Free Response, #3**
+
+Approximately 3.5 percent of all children born in a certain region are from multiple births (that is, twins, triplets, etc.). Of the children born in the region who are from multiple births, 22 percent are left-handed. Of the children
+born in the region who are from single births, 11 percent are left-handed.
+
+a. What is the probability that a randomly selected child born in the region is left-handed?
+
+b. A random sample of 20 children born in the region will be selected. What is the probability that the sample will have at least 3 children who are left-handed?

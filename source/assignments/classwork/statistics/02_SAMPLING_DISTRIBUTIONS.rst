@@ -91,3 +91,6 @@ a. Describe the sampling distribution of the sample mean song lengths for random
 
 b. If the program manager schedules 80 minutes of news and advertisements for the 4-hour (240-minute) show, only 160 minutes are available for music. Approximately what is the probability that the total amount of time needed to play 40 randomly selected rock-and-roll songs exceeds the available airtime?
 
+7. **2019, Free Response, #6**
+
+TODO (THIS IS A GOOD ONE TO GO OVER IN GREAT DETAIL!)

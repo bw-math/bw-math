@@ -9,10 +9,213 @@ Sample Spaces and Events
 
 1. Describe the sample spaces of the following experiments with a set using :ref:`list_notation`
 
-    a. Flipping a two-sided coin three times
-    b. Rolling a six-sided die
-    c. Rolling two six-sided dice
-    d. Flipping a two-sided coin and if it lands on heads rolling a six-sided die.
+a. Flipping a coin two times
+
+b. Flipping a coin three times.	
+
+c. Rolling a six-sided die
+
+d. Rolling two six-sided dice
+
+e. Flipping a two-sided coin and if it lands on heads rolling a six-sided die.
+
+
+2. Two dice are rolled. Let **E** be the event the sum of the outcomes is odd. Let **F** be the event of at least one *1* appearing on one of the die. Describe the elements of the following events in :ref:`list_notation` and interpret the meaning of each event.
+
+a. :math:`E \cap F`
+
+b. :math:`E^c \cap F`
+
+c. :math:`E^c \cap F^c`
+    
+d. :math:`E \cup F`
+
+e. :math:`E \cup F^c`
+
+
+3. Three red balls and one green ball are placed into a box. Describe the sample spaces of the following experiments with a set using :ref:`list_notation`.
+
+    .. note:: 
+        *Hint*: Let *r* :sub:`1`, *r* :sub:`2` and *r* :sub:`3` represent the *outcome* of drawing each of the respective red balls. 
+
+a. Selecting one ball at random.
+
+b. Selecting two balls at random and :ref:`with_replacement` (i.e. putting the ball you drew back into the back after you draw it).
+
+c. Selecting two balls at random and :ref:`without_replacement` (i.e. *not* putting the ball back after you draw it)
+
+
+4. A deck of six cards consists of three black cards numbered *1*, *2*, *3* and three red cards numbered *1*, *2*, *3*. You draw two cards :ref:`without_replacement`. Let **A** be the event the second card has a larger number than the first card. Let **B** be the event the first card has a larger number than the second card.
+   
+a. Are **A** and **B** mutually exclusive?
+
+b. Are **A** and **B** complements?
+
+
+
+5. You roll two dice. The find the probability of the following events. 
+   
+a. The sum of the numbers rolled is 7.
+
+b. The sum of the numbers rolled on the dice is 3 or 5.
+
+c. The numbers rolled are both even. 
+
+d. One of the numbers rolled is even.
+
+e. Neither of the numbers rolled are even.
+
+f. Is part *e* the complement of part *c* or part *d*?
+
+
+6. A box contains three red balls and five blue balls. Define a sample sapce for the experiment of selecting three balls that are drawn from the box, one by one, with replacement.
+
+
+7. You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,
+
+a. The card is a king.
+
+b. The card is a spade.
+
+c. The card is a king or spade.
+
+d. The card is a 4 or Jack.
+
+e. The card is black. 
+
+f. The card is black or a queen. 
+    
+g. The card is neither nor a queen.
+
+
+8. You select a number randomly between 1 and 1000. What is the probability the number selected is divisible by 5?
+
+
+9. Among 33 students in a class, 17 of them earned A's on the midterm exam, 14 earned A's on the final exam and 11 did not earn A's on either examination. What is the probability that a randomly selected student from this class earned an A on both exams?
+
+
+10. The coefficients of the quadratic equation :math:`x^2 + bx + c = 0` are determined by tossing a fair die twice. The first outcome is *b* and the second outcome is *c*. Find the probability the equation has real roots.
+
+
+Probability Proofs
+==================
+
+10. Let **A** and **B** be two events, not necessarily mutually exclusive. Prove the following inequality
+
+.. math:: 
+    P(A \cap B) \geq P(A) + P(B) - 1
+
+.. note:: 
+    *Hint*: Use the :ref:`law_of_unions` and :ref:`axiom_1`
+
+
+11. Let **A** and **B** be two events, not necessarily mutually exclusive. The event,
+    
+.. math:: 
+    (A - B) \cap (B - A)
+
+is called the *symmetric difference of* **A** *and* **B**. Prove the probability of the *symmetric difference of* **A** *and* **B** is equal to,
+
+.. math:: 
+    P(A) + P(B) - 2 \cdot P(A \cap B)
+
+.. note:: 
+    *Hint #1*: Draw a :ref:`Venn Diagram <venn_diagrams>` of **A** and **B**, assuming the events are *not* mutually exclusive. Label the area that correspodned to the *symmetric difference of* **A** *and* **B**. 
+
+    *Hint #2*: Recall (TODO link) :math:`A - B = A \cap B^C`
+
+
+A.P. Exam Practice
+==================
+
+12. **2019, Free Response, #3** 
+    
+A medical researcher surveyed a large group of men and women about whether they take medicine as prescribed.
+
+The responses were categorized as never, sometimes, or always. The relative frequency of each category is
+shown in the table.
+
+.. image:: ../../../assets/imgs/classwork/2019_apstats_frp_03.png
+    :align: center
+
+One person from those surveyed will be selected at random.
+
+a. What is the probability that the person selected will be someone whose response is never and who is a woman?
+
+b. What is the probability that the person selected will be someone whose response is never or who is a woman?
+
+c. What is the probability that the person selected will be someone whose response is never given that the person is a woman?
+
+d. For the people surveyed, are the events of being a person whose response is never and being a woman independent? Justify your answer.
+
+e. Assume that, in a large population, the probability that a person will always take medicine as prescribed is 0.54. If 5 people are selected at random from the population, what is the probability that at least 4 of the people selected will always take medicine as prescribed? Support your answer.
+
+
+13. **2003, Free Response, Form B, #2**
+
+A simple random sample of adults living in a suburb of a large city was selected. The age and annual income of each adult in the sample were recorded. The resulting data are summarized in the table below.
+
+.. image:: ../../../assets/imgs/classwork/2003_apstats_frp_formb_3.png
+    :align: center 
+
+a. What is the probability that a person chosen at random from those in this sample will be in the 31-45 age category?
+
+b. What is the probability that a person chosen at random from those in this sample whose incomes are over $50,000 will be in the 31-45 age category? Show your work.
+
+c. Based on your answers to parts *#a* and *#b*, is annual income independent of age category for those in this sample? Explain.
+
+14.  **2015, Multplie Choice, #32**
+    
+A survey conducted by a national news network asked a random sample of U.S. adults whether they get most of their information about current events from newspapers, television, the internet, or some
+other source. The results, shown in the table below, are reported by age group of the respondents.
+
++---------+------------+------------+----------+-------+-------+
+|         | Newspapers | Television | Internet | Other | Total |
++---------+------------+------------+----------+-------+-------+
+| 18 -34  | 12         | 35         | 40       | 6     | 93    |
++---------+------------+------------+----------+-------+-------+
+| 35 -54  | 16         | 55         | 20       | 8     | 99    |
++---------+------------+------------+----------+-------+-------+
+| Over 55 | 33         | 60         | 5        | 5     | 103   |
++---------+------------+------------+----------+-------+-------+
+| Total   | 61         | 150        | 65       | 19    | 295   |
++---------+------------+------------+----------+-------+-------+
+
+If primary news source is independent of age group, which of the following expressions is equal to
+the expected number of respondents who are aged 35 to 54, inclusive, and get most of their
+information about current events from the internet?
+
+    (A) :math:`\frac{99 \cdot 65}{295}`
+
+    (B) :math:`\frac{99 \cdot 150}{295}`
+
+    (C) :math:`\frac{20 \cdot 65}{99}`
+
+    (D) :math:`\frac{20 \cdot 99}{295}`
+
+    (E) :math:`\frac{20 \cdot 65}{295}`
+
+15.  **2012, Practice Exam, #23** 
+
+A local company is interested in supporting environmentally friendly initiatives such as carpooling among employees. The company surveyed all of the 200 employees at the downtown offices. Employees responded as to whether or not they own a car and to the location of the home where they live. The results are shown in the
+table below.
+
+.. image:: ../../../assets/imgs/classwork/2012_apstats_pe_23.png
+    :align: center 
+
+Which of the following statements about a randomly chosen person from these 200 employees is true?
+
+    (A) If the person owns a car, he or she is more likely to live elsewhere in the city than to live in the downtown area in the city.
+
+    (B) If the person does not own a car, he or she is more likely to live outside the city than to live in the city (downtown area or elsewhere).
+
+    (C) The person is more likely to own a car if he or she lives in the city (downtown area or elsewhere) than if he or she lives outside the city.
+
+    (D) The person is more likely to live in the downtown area in the city than elsewhere in the city.
+
+    (E) The person is more likely to own a car than not to own a car.
+    
+    
 
 .. collapse:: Solution #1
 
@@ -79,13 +282,6 @@ Sample Spaces and Events
 
     d. :math:`S = \{ t, h1, h2, h3, h4, h5, h6 \}`
 
-2. Two dice are rolled. Let **E** be the event the sum of the outcomes is odd. Let **F** be the event of at least one *1* appearing on one of the die. Describe the elements of the following events in :ref:`list_notation` and interpret the meaning of each event.
-
-    a. :math:`E \cap F`
-    b. :math:`E^c \cap F`
-    c. :math:`E^c \cap F^c`
-    d. :math:`E \cup F`
-    e. :math:`E \cup F^c`
 
 .. collapse:: Solution #2
 
@@ -363,15 +559,8 @@ Sample Spaces and Events
     +-------+--------+--------+---------+----------+--------+--------+
     |   6   | (6, 1) | (6, 6) |  (6, 3) |  (6, 4)  | (6, 5) | (6, 6) |
     +-------+--------+--------+---------+----------+--------+--------+
+    
 
-3. Three red balls and one green ball are placed into a box. Describe the sample spaces of the following experiments with a set using :ref:`list_notation`.
-
-    .. note:: 
-        *Hint*: Let *r* :sub:`1`, *r* :sub:`2` and *r* :sub:`3` represent the *outcome* of drawing each of the respective red balls. 
-
-    a. Selecting one ball at random.
-    b. Selecting two balls at random and :ref:`with_replacement` (i.e. putting the ball you drew back into the back after you draw it).
-    c. Selecting two balls at random and :ref:`without_replacement` (i.e. *not* putting the ball back after you draw it)
 
 .. collapse:: Solution #3
 
@@ -413,10 +602,7 @@ Sample Spaces and Events
 
         S = \{ (r_1, r_2), (r_1, r_3), (r_1, g), (r_2, r_1), (r_2, r_3), (r_2, g), (r_3, r_1), (r_3, r_2), (r_3, g), (g, r_1), (g, r_2), (g, r_3) \}
 
-4. A deck of six cards consists of three black cards numbered *1*, *2*, *3* and three red cards numbered *1*, *2*, *3*. You draw two cards :ref:`without_replacement`. Let **A** be the event the second card has a larger number than the first card. Let **B** be the event the first card has a larger number than the second card.
-   
-    a. Are **A** and **B** mutually exclusive?
-    b. Are **A** and **B** complements?
+
 
 .. collapse:: Solution #4
 
@@ -436,19 +622,8 @@ Sample Spaces and Events
     If we can show there is an outcome in the sample space **S** that does not belong to *either* :math:`A` *or* :math:`B`, then it must follow that **A** and **B** are *not* complements, since their union does not equal the entire sample space. 
 
     Consider the outcome of drawing a red card with the number *2* along with a black card with the number *2*. In this case, it is neither true that the first card is larger than the second card nor is it true the second card is larger than the first card. Then, there is atleast one outcome in the sample space that belongs to neither of the events. Therefore, we can conclude **A** and **B** are *not* complements of one another.
-
-Applications
-============
-   
-5. You roll two dice. The find the probability of the following events. 
-   
-    a. The sum of the numbers rolled is 7.
-    b. The sum of the numbers rolled on the dice is 3 or 5.
-    c. The numbers rolled are both even. 
-    d. One of the numbers rolled is even.
-    e. Neither of the numbers rolled are even.
-    f. Is part *e* the complement of part *c* or part *d*?
-
+    
+    
 .. collapse:: Solution #5
 
     Ah, our old friend. We found the sample of this experiment back in *#1* and then examined some events defined on it in *#2*. Let us copy the results over for quick reference,
@@ -511,140 +686,3 @@ Applications
 
     f. *part d* and *part e* are complements. Part *d* can be rephrased as "*at least one of the die is even*". By the :ref:`square_of_opposition`, the complement of "*atleast one*" is "*none*". This can be verified by summing the probabilities of both events and verifying they add to one, 
 
-6. You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,
-
-    a. The card is a king.
-
-    b. The card is a spade.
-
-    c. The card is a king or spade.
-
-    d. The card is a 4 or Jack.
-
-    e. The card is black. 
-
-    f. The card is black or a queen. 
-    
-    g. The card is neither nor a queen.
-
-7. You select a number randomly between 1 and 1000. What is the probability the number selected is divisible by 5?
-
-TODO: ONE MORE
-
-Probability Proofs
-==================
-
-8. Let **A** and **B** be two events, not necessarily mutually exclusive. Prove the following inequality
-
-.. math:: 
-    P(A \cap B) \geq P(A) + P(B) - 1
-
-.. note:: 
-    *Hint*: Use the :ref:`law_of_unions` and :ref:`axiom_1`
-
-9. Let **A** and **B** be two events, not necessarily mutually exclusive. The event,
-    
-.. math:: 
-    (A - B) \cap (B - A)
-
-is called the *symmetric difference of* **A** *and* **B**. Prove the probability of the *symmetric difference of* **A** *and* **B** is equal to,
-
-.. math:: 
-    P(A) + P(B) - 2 \cdot P(A \cap B)
-
-.. note:: 
-    *Hint #1*: Draw a :ref:`Venn Diagram <venn_diagrams>` of **A** and **B**, assuming the events are *not* mutually exclusive. Label the area that correspodned to the *symmetric difference of* **A** *and* **B**. 
-
-    *Hint #2*: Recall (TODO link) :math:`A - B = A \cap B^C`
-
-TODO: one more
-
-A.P. Exam Practice
-==================
-
-12. **2019, Free Response, #3** 
-    
-A medical researcher surveyed a large group of men and women about whether they take medicine as prescribed.
-
-The responses were categorized as never, sometimes, or always. The relative frequency of each category is
-shown in the table.
-
-.. image:: ../../../assets/imgs/classwork/2019_apstats_frp_03.png
-    :align: center
-
-One person from those surveyed will be selected at random.
-
-a. What is the probability that the person selected will be someone whose response is never and who is a woman?
-
-b. What is the probability that the person selected will be someone whose response is never or who is a woman?
-
-c. What is the probability that the person selected will be someone whose response is never given that the person is a woman?
-
-d. For the people surveyed, are the events of being a person whose response is never and being a woman independent? Justify your answer.
-
-e. Assume that, in a large population, the probability that a person will always take medicine as prescribed is 0.54. If 5 people are selected at random from the population, what is the probability that at least 4 of the people selected will always take medicine as prescribed? Support your answer.
-
-
-13. **2003, Free Response, Form B, #2**
-
-A simple random sample of adults living in a suburb of a large city was selected. The age and annual income of each adult in the sample were recorded. The resulting data are summarized in the table below.
-
-.. image:: ../../../assets/imgs/classwork/2003_apstats_frp_formb_3.png
-    :align: center 
-
-a. What is the probability that a person chosen at random from those in this sample will be in the 31-45 age category?
-
-b. What is the probability that a person chosen at random from those in this sample whose incomes are over $50,000 will be in the 31-45 age category? Show your work.
-
-c. Based on your answers to parts *#a* and *#b*, is annual income independent of age category for those in this sample? Explain.
-
-14.  **2015, Multplie Choice, #32**
-    
-A survey conducted by a national news network asked a random sample of U.S. adults whether they get most of their information about current events from newspapers, television, the internet, or some
-other source. The results, shown in the table below, are reported by age group of the respondents.
-
-+---------+------------+------------+----------+-------+-------+
-|         | Newspapers | Television | Internet | Other | Total |
-+---------+------------+------------+----------+-------+-------+
-| 18 -34  | 12         | 35         | 40       | 6     | 93    |
-+---------+------------+------------+----------+-------+-------+
-| 35 -54  | 16         | 55         | 20       | 8     | 99    |
-+---------+------------+------------+----------+-------+-------+
-| Over 55 | 33         | 60         | 5        | 5     | 103   |
-+---------+------------+------------+----------+-------+-------+
-| Total   | 61         | 150        | 65       | 19    | 295   |
-+---------+------------+------------+----------+-------+-------+
-
-If primary news source is independent of age group, which of the following expressions is equal to
-the expected number of respondents who are aged 35 to 54, inclusive, and get most of their
-information about current events from the internet?
-
-    (A) :math:`\frac{99 \cdot 65}{295}`
-
-    (B) :math:`\frac{99 \cdot 150}{295}`
-
-    (C) :math:`\frac{20 \cdot 65}{99}`
-
-    (D) :math:`\frac{20 \cdot 99}{295}`
-
-    (E) :math:`\frac{20 \cdot 65}{295}`
-
-15.  **2012, Practice Exam, #23** 
-
-A local company is interested in supporting environmentally friendly initiatives such as carpooling among employees. The company surveyed all of the 200 employees at the downtown offices. Employees responded as to whether or not they own a car and to the location of the home where they live. The results are shown in the
-table below.
-
-.. image:: ../../../assets/imgs/classwork/2012_apstats_pe_23.png
-    :align: center 
-
-Which of the following statements about a randomly chosen person from these 200 employees is true?
-
-    (A) If the person owns a car, he or she is more likely to live elsewhere in the city than to live in the downtown area in the city.
-
-    (B) If the person does not own a car, he or she is more likely to live outside the city than to live in the city (downtown area or elsewhere).
-
-    (C) The person is more likely to own a car if he or she lives in the city (downtown area or elsewhere) than if he or she lives outside the city.
-
-    (D) The person is more likely to live in the downtown area in the city than elsewhere in the city.
-
-    (E) The person is more likely to own a car than not to own a car.

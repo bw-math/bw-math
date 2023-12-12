@@ -34,7 +34,7 @@ Applications
 .. image:: ../../../assets/imgs/problems/conditional_probability_venn_diagram.jpg
     :align: center
 
-1. Paging through a magazine, you notice a interesting survey of randomly selected individuals who were each asked two questions. The first question was "Do you believe the Earth is flat or round?". The second question was, "Do you think Finland is a `real country <https://knowyourmeme.com/memes/finland-does-not-exist>`?" The results are given in the table below, 
+7. Paging through a magazine, you notice a interesting survey of randomly selected individuals who were each asked two questions. The first question was "Do you believe the Earth is flat or round?". The second question was, "Do you think Finland is a `real country <https://knowyourmeme.com/memes/finland-does-not-exist>`_ ?" The results are given in the table below, 
 
 +---------+------+-------+
 |         | Flat | Round |
@@ -44,21 +44,21 @@ Applications
 | Doesn't | 12   | 35    |
 +---------+------+-------+
 
-    a. Draw a :ref:`Venn Diagram <venn_diagrams>` that represents the results.
+a. Draw a :ref:`Venn Diagram <venn_diagrams>` that represents the results.
 
-    b. How many people were included in this survey?
+b. How many people were included in this survey?
 
-    c. What is the probability a randomly selected in this survey person believes the Earth is flat?
+c. What is the probability a randomly selected in this survey person believes the Earth is flat?
 
-    d. What is the probability a randomly selected in this survey person believes Finland doesn't exist?
+d. What is the probability a randomly selected in this survey person believes Finland doesn't exist?
 
-    e. Of the people who believe the Earth is round, what percentage of them believe Finland exists?
+e. Of the people who believe the Earth is round, what percentage of them believe Finland exists?
 
-    f. If a randomly selected person believes Finland doesn't exist, what is the probability he or she believes the Earth is flat?
+f. If a randomly selected person believes Finland doesn't exist, what is the probability he or she believes the Earth is flat?
 
-    g. If a randomly selected person believes the Earth is flat, what is the probability he or she doesn't believe Finland exists?
+g. If a randomly selected person believes the Earth is flat, what is the probability he or she doesn't believe Finland exists?
 
-    h. **Spoiler Alert** Why is the answer to *part f* different from the answer to *part g*?
+h. **Spoiler Alert** Why is the answer to *part f* different from the answer to *part g*?
 
 .. warning:: 
 
@@ -68,7 +68,7 @@ Applications
 
 .. hint:: 
 
-    :ref:`Reduce the sample space <reduction_of_the_sample_space>` and then use :math:`combinatorics`.
+    :ref:`Reduce the sample space <reduction_of_the_sample_space>` and then use :ref:`combinatorics`.
 
 Law of Intersections
 --------------------
@@ -94,6 +94,7 @@ Independence
 ------------
 
 TODO
+
 
 A.P. Exam Practice
 ------------------
@@ -163,3 +164,10 @@ b. What is the probability that a person chosen at random from those in this sam
 
 c. Based on your answers to parts (a) and (b), is annual income independent of age category for those in this sample? Explain.
 
+5. **2018, Free Response, #3**
+
+Approximately 3.5 percent of all children born in a certain region are from multiple births (that is, twins, triplets, etc.). Of the children born in the region who are from multiple births, 22 percent are left-handed. Of the children born in the region who are from single births, 11 percent are left-handed.
+
+a. What is the probability that a randomly selected child born in the region is left-handed?
+
+b. What is the probability that a randomly selected child born in the region is a child from a multiple birth, given that the child selected is left-handed?

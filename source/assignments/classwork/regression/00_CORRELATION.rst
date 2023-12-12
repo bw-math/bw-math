@@ -21,7 +21,7 @@ You may assume that the result for any single device is not influenced by the re
 
 a. Using the information in the table, construct a scatterplot that would be useful for showing the effect of water temperature on the ability of the devices to work for at least 5,000 hours.
 
-.. image:: ../../../assets/imgs/context/cartesian_plane_blank.png
+.. image:: ../../../assets/imgs/context/cartesian_plane_blank.jpg
 	:align: center
 
 b. Comment on any trend or pattern that is revealed by the scatterplot you constructed.
@@ -54,7 +54,7 @@ b. After performing the experiment, the researchers recorded the data shown in t
 
 	i. Construct a graph of the data that could be used to investigate the appropriateness of a linear regression model for analyzing the results of the experiment.
 	
-.. image:: ../../../assets/imgs/context/cartesian_plane_blank.png
+.. image:: ../../../assets/imgs/context/cartesian_plane_blank.jpg
 	:align: center
 	
 	ii. Based on your graph, do you think a linear regression model is appropriate? Explain.
@@ -74,6 +74,32 @@ c. Chris is interested in buying one of the 14 sewing machines. He will consider
 
 .. image:: ../../../assets/imgs/classwork/2012_apstats_frp_01_2.png
 	:align: center
-	
 
+4. **2021, Free Response, #6**
+
+Attendance at games for a certain baseball team is being investigated by the team owner. The following boxplots summarize the attendance, measured as average number of attendees per game, for 47 years of the team's existence. The boxplots include the 30 years of games played in the old stadium and the 17 years played in the new stadium.
+
+.. image:: ../../../assets/imgs/classwork/2021_apstats_frp_06a.png
+	:align: center
+
+a. Compare the distributions of average attendance between the old and new stadiums.
+
+b. The following scatterplot shows average attendance versus year,
+
+.. image:: ../../../assets/imgs/classwork/2021_apstats_frp_06b.png
+	:align: center
+
+Compare the trends in average attendance over time between the old and new stadium.
+
+c. Consider the following scatterplots,
+
+.. image:: ../../../assets/imgs/classwork/2021_apstats_frp_06c.png
+	:align: center
+
+	i. Graph I shows the average attendance versus number of games won for each year. Describe the
+relationship between the variables.
+
+	ii. Graph II shows the same information as Graph I, but also indicates the old and new stadiums. Does Graph II suggest that the rate at which attendance changes as number of games won increases is different in the new stadium compared to the old stadium? Explain your reasoning. 
+
+d. Consider the three variables: number of games won, year, and stadium. Based on the graphs, explain how one of those variables could be a confounding variable in the relationship between average attendance and the other variables.
 

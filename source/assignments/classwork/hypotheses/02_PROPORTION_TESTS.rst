@@ -40,4 +40,7 @@ A survey organization conducted telephone interviews in December 2008 in which 1
 Of the 1,009 adults surveyed, 676 responded “yes.” In December 2007, 622 of 1,020 randomly selected adults in the United States had responded “yes” to the same question. Do the data provide convincing evidence that the proportion of adults in the United States who would respond “yes” to the question changed from December 2007
 to December 2008 ?
 
+6. **2022, Free Response, #6**
+
+TODO
 

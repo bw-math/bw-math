@@ -84,10 +84,10 @@ Cultural
     - :download:`Pigeon Racing Times CSV <./assets/datasets/pigeon_racing_times_data.csv>`
 - `Marvel Movies <https://www.kaggle.com/datasets/joebeachcapital/marvel-movies>`_
     - :download:`Marvel Movies CSV <./assets/datasets/diamonds_data.csv>`
-- `Super Mario Kart Rainbow Road World Records <https://mkwrs.com/smk/display.php?track=Rainbow%20Road>`
+- `Super Mario Kart Rainbow Road World Records <https://mkwrs.com/smk/display.php?track=Rainbow%20Road>`_
 	- :download:`Rainbow Road CSV <./assets/datasets/rainbow_road_world_record_data.csv>`
 - `Spice Girls Songs <https://github.com/jacquietran/spice_girls_data/tree/main>`
-	- :download:`Song CSV <./assets/datasets/spice_girl_song_data.csv>`
+	- :download:`Song CSV <./assets/datasets/spice_girl_song_data.csv>`_
 - `Wine Quality <http://www.vinhoverde.pt/en/>`_
 	- :download:`Red Wine Quality CSV <./assets/datasets/wine_red_quality_data.csv>`
 	- :download:`White Wine Quality CSV <./assets/datasets/wine_white_quality_data.csv>`

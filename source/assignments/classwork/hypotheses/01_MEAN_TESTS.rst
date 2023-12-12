@@ -80,5 +80,26 @@ intended to reduce cholesterol instead of a placebo. After three months, posttre
 	
 	Standard Deviation of Reduction: 9.40
 	
-Do the data provide convincing evidence, at the :math:`\alphra = 0.01` level, that the cholesterol drug is effective in producing a reduction in mean cholesterol level beyond that produced by exercise and diet?
+Do the data provide convincing evidence, at the :math:`\alpha = 0.01` level, that the cholesterol drug is effective in producing a reduction in mean cholesterol level beyond that produced by exercise and diet?
 
+8. **2022, Free Response, #5**
+
+TODO
+
+9. **2018, Free Response, #4**
+
+The anterior cruciate ligament (ACL) is one of the ligaments that help stabilize the knee. Surgery is often recommended if the ACL is completely torn, and recovery time from the surgery can be lengthy. A medical center developed a new surgical procedure designed to reduce the average recovery time from the surgery. To test the effectiveness of the new procedure, a study was conducted in which 210 patients needing surgery to repair a torn ACL were randomly assigned to receive either the standard procedure or the new procedure.
+
+a. Based on the design of the study, would a statistically significant result allow the medical center to conclude that the new procedure causes a reduction in recovery time compared to the standard procedure, for patients similar to those in the study? Explain your answer.
+
+b. Summary statistics on the recovery times from the surgery are shown in the table.
+
++-------------------+-------------+---------------------------+-----------------------------------------+
+| Type of Procedure | Sample Size | Mean Recovery Time (Days) | Standard Deviation Recovery Time (Days) |
++-------------------+-------------+---------------------------+-----------------------------------------+
+|     Standard      |    110      |         217               |                 34                      |
++-------------------+-------------+---------------------------+-----------------------------------------+
+|       New         |    100      |         186               |                 29                      |
++-------------------+-------------+---------------------------+-----------------------------------------+
+
+Do the data provide convincing statistical evidence that those who receive the new procedure will have less recovery time from the surgery, on average, than those who receive the standard procedure, for patients similar to those in the study?

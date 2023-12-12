@@ -16,7 +16,7 @@ For the following problems, you are given,
 
 .. math:: 
 
-    A = \{ 1, 2, 3, \}
+    A = \{ 1, 2, 3, 19 \}
 
 .. math:: 
 
@@ -32,37 +32,57 @@ For the following problems, you are given,
 
 Where **S** is the universal set and **A**, **B**, **C** and **D** are subsets of **S**.
 
-1. **Set Operations** Write the elements of each of the following sets in :ref:`list_notation`,
+1. **Membership** 
 
-    a. :math:`A^c`
+Determine whether each of the following propositions is *true* or *false*.
 
-    b. :math:`B^c`
+	a. :math:`2 \in A`
+	
+	b. :math:`5 \notin B`
+	
+	c. :math:`3 \in D`
+	
+	d. :math:`A \in S`
+	
+	e. :math:`A \notin S`
+	
+2. **Set Operations** 
 
-    c. :math:`A \cap B`
+Write the elements of each of the following sets in :ref:`list_notation`,
 
-    d. :math:`A \cup B`
+    	a. :math:`A^c`
 
-    e. :math:`C \cup A`
+    	b. :math:`B^c`
 
-    f. :math:`C \cup B`
+    	c. :math:`A \cap B`
+	
+    	d. :math:`A \cup B`
+
+    	e. :math:`C \cup A`
+
+    	f. :math:`C \cup B`
     
-    g. :math:`C \cap A`
+    	g. :math:`C \cap A`
 
-    h. :math:`C \cap B`
+    	h. :math:`C \cap B`
 
-2. **Cardinality** Answer each of the following problems,
+3. **Cardinality Laws** 
 
-    a. :math:`n(C)`
+Answer each of the following problems,
 
-    b. :math:`n(C^c)`
+    	a. :math:`n(C)`
 
-    c. :math:`n(S)`
+    	b. :math:`n(C^c)`
 
-    d. :math:`n(S) - n(C^c)`
+    	c. :math:`n(S)`
 
-    e. **Spoiler Alert** Why does *part d* equal *part a*?
+    	d. :math:`n(S) - n(C^c)`
 
-3. **De Morgan's Laws**. Write the elements of each of the following sets in :ref:`list_notation`. Use the answers from #1 where appriopriate.
+    	e. **Spoiler Alert** Why does *part d* equal *part a*?
+
+4. **De Morgan's Laws**. 
+
+Write the elements of each of the following sets in :ref:`list_notation`. Use the answers from #1 where appriopriate.
 
     a. :math:`(A^c) \cup (B^c)``
 
@@ -74,7 +94,9 @@ Where **S** is the universal set and **A**, **B**, **C** and **D** are subsets o
 
     e. Based on the answers to *part a - d*, what conclusions can you draw about the relationship that exists between the operations of *complementation*, *intersection* and *union*?
 
-4. **Absorption Laws** Write the elements of each of the following sets in :ref:`list_notation`. Use the answers from #1 where appriopriate.
+5. **Absorption Laws** 
+
+Write the elements of each of the following sets in :ref:`list_notation`. Use the answers from #1 where appriopriate.
 
     a. :math:`A \cup (A \cap B)`
 
@@ -82,7 +104,9 @@ Where **S** is the universal set and **A**, **B**, **C** and **D** are subsets o
 
     c. Based on the answers to *part a - b*, what conclusions can you draw about the relationship that exists between the operations of *intersection* and *union*?
 
-5. **Distributive Laws** Write the elements of each of the following sets in :ref:`list_notation`. User the answers from #1 where appriopriate.
+6. **Distributive Laws** 
+
+Write the elements of each of the following sets in :ref:`list_notation`. User the answers from #1 where appriopriate.
 
     a. :math:`C \cup (A \cap B)`
 
@@ -94,17 +118,23 @@ Where **S** is the universal set and **A**, **B**, **C** and **D** are subsets o
 
     e. Based on the answers to *part a - d*, what conclusions can you draw about the relationship that exists between the operations of *intersection* and *union*?
 
-6. **Counting Laws**. Find the cardinality of each of the following sets. 
+7. **Counting Laws**. 
 
-    a. :math:`D`
+Find the cardinality of each of the following sets. 
 
-    b. :math:`D \cap C`
+    	a. :math:`n(D)`
 
-    c. :math:`(D \cap C)^c`
+	b. :math:`n(C)`
+	
+    	c. :math:`D \cap C`
 
-    d. :math:`n(D \cup C)`
+    	d. :math:`(D \cap C)^c`
 
-7. **Equivalence and Equality**. Determine whether each of the following propositions is *true* or *false*.
+    	e. :math:`n(D \cup C)`
+
+8. **Equivalence and Equality**. 
+
+Determine whether each of the following propositions is *true* or *false*.
 
     a. :math:`A = B`
 
@@ -114,20 +144,29 @@ Where **S** is the universal set and **A**, **B**, **C** and **D** are subsets o
 
     d. :math:`A \equiv B \implies A = B`
 
-8. **Subsets** Determine whether each of the following propositions is *true* or *false*.
+9. **Subsets** 
+
+Determine whether each of the following propositions is *true* or *false*.
 
     a. :math:`B \subseteq C`
 
     b. :math:`B^c \subseteq C^c`
 
     c. :math:`C^c \subseteq B^c`
+    
+10. **Symbolic Propositions**
 
-9. **Symbolic Expressions** Write a symbolic proposition that expresses the results of #8 in the form of an "*if...then...*" conditional statement.
+Let **E**, **F** and **G** be three events. Determine which of the following statements are correct and which are incorrect. Justify your answers.
 
-.. tip:: 
-    Don't forget to :ref:`quantify <universal_quantification>` the proposition.
+	a. :math:`(F^c \cap G) \cup (E^c \cap G) = G \cap ((F \cup E)^c)`
+	
+	b. :math:`((E \cup F)^c) \cap G = (E^c) \cap (F^c) \cap (G)`
 
-10. **Proofs** Suppose you are given two sets **E** and **F**. Using the properties of sets discussed in class and the ones covered in this classwork, derive an identity for each of the following expressions,
+	c. :math:`((E \cap F) \cup (E \cap G) \cup (F \cap G)) \subset (E \cup F \cup G)`
+	 
+11. **Deductive Proofs** 
+
+Suppose you are given two sets **E** and **F**. Using the properties of sets discussed in class and the ones covered in this classwork, derive an identity for each of the following expressions,
 
     a. :math:`(E \cap F^c) \cup (E \cap F)`
 
