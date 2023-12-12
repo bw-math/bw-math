@@ -21,7 +21,7 @@ You may assume that the result for any single device is not influenced by the re
 
 a. Using the information in the table, construct a scatterplot that would be useful for showing the effect of water temperature on the ability of the devices to work for at least 5,000 hours.
 
-.. image:: ../../../assets/imgs/context/cartesian_plane_blank.png
+.. image:: ../../../assets/imgs/context/cartesian_plane_blank.jpg
 	:align: center
 
 b. Comment on any trend or pattern that is revealed by the scatterplot you constructed.
