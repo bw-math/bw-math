@@ -31,7 +31,7 @@ Scientific
 - `Atmospheric Radiation <https://www.gmcmap.com/index.asp>`_
     - :download:`Raw Data CSV <./assets/datasets/geiger_counter_dc_data.csv>`
     - :download:`Frequency Distribution <./assets/datasets/geiger_freq_data.csv>`
-- `Bird Collisions <https://datadryad.org/stash/dataset/doi:10.5061/dryad.8rr0498>`
+- `Bird Collisions <https://datadryad.org/stash/dataset/doi:10.5061/dryad.8rr0498>`_
     - :download:`Cleveland, OH Collisions <./assets/datasets/bird_collision_cleveland_data.csv>`
     - :download:`Chicago, IL Collisions <./assets/datasets/bird_collision_chicago_data.csv>`
 - `Cicada Measurements <https://www.randomservices.org/random/data/Cicada.html>`_
@@ -86,8 +86,8 @@ Cultural
     - :download:`Marvel Movies CSV <./assets/datasets/diamonds_data.csv>`
 - `Super Mario Kart Rainbow Road World Records <https://mkwrs.com/smk/display.php?track=Rainbow%20Road>`_
 	- :download:`Rainbow Road CSV <./assets/datasets/rainbow_road_world_record_data.csv>`
-- `Spice Girls Songs <https://github.com/jacquietran/spice_girls_data/tree/main>`
-	- :download:`Song CSV <./assets/datasets/spice_girl_song_data.csv>`_
+- `Spice Girls Songs <https://github.com/jacquietran/spice_girls_data/tree/main>`_
+	- :download:`Song CSV <./assets/datasets/spice_girl_song_data.csv>`
 - `Wine Quality <http://www.vinhoverde.pt/en/>`_
 	- :download:`Red Wine Quality CSV <./assets/datasets/wine_red_quality_data.csv>`
 	- :download:`White Wine Quality CSV <./assets/datasets/wine_white_quality_data.csv>`
