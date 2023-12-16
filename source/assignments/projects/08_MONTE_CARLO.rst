@@ -1,4 +1,4 @@
-.. _project_seven:
+.. _project_eight:
 
 ======================
 Monte Carlo Simulation
@@ -16,15 +16,15 @@ Monte Carlo Simulation
 Instructions
 ============
 
-1. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_seven.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
+1. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_eight.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
 3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
-4. Read the :ref:`project_seven_background` section.
-5. Perform all exercises and answer all questions in the :ref:`project_seven_project` section. Label your script with comments as indicated in the instructions of each problem.
-6. When you are done, zip your script **and** the *csv* file in a zip file named ``LASTNAME_FIRSTNAME_project_seven.zip``
+4. Read the :ref:`project_eight_background` section.
+5. Perform all exercises and answer all questions in the :ref:`project_eight_project` section. Label your script with comments as indicated in the instructions of each problem.
+6. When you are done, zip your script **and** the *csv* file in a zip file named ``LASTNAME_FIRSTNAME_project_eight.zip``
 7. Upload the zip file to the Google Classroom Project Four Assignment.
 
 
-.. _project_seven_background:
+.. _project_eight_background:
 
 Background
 ==========
@@ -82,7 +82,7 @@ Let us apply the technique of Monte Carlo integration to see how we can use rand
 
 TODO
 
-.. _project_seven_project:
+.. _project_eight_project:
 
 Project
 =======
