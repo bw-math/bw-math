@@ -9,4 +9,4 @@ Assignments
    homework/index
    classwork/index
    projects/index
-   calculators/index
+   calculator/index
