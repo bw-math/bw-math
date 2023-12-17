@@ -7,3 +7,4 @@ Set Theory
 
    01_INTRODUCTION
    02_VENN_DIAGRAMS
+   03_LOGIC

@@ -223,6 +223,7 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="../set_theory/index.html">Set Theory</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../set_theory/01_INTRODUCTION.html">Set Theory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../set_theory/02_VENN_DIAGRAMS.html">Venn Diagrams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../set_theory/03_LOGIC.html">Symbolic Logic</a></li>
 </ul>
 </li>
 <li class="toctree-l3 current active has-children"><a class="reference internal" href="index.html">Probability</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
@@ -479,52 +480,52 @@ document.write(`
 <span id="probability-introduction-classwork"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
 <section id="sample-spaces-and-events">
 <h2>Sample Spaces and Events<a class="headerlink" href="#sample-spaces-and-events" title="Permalink to this headline">#</a></h2>
-<ol class="arabic simple">
-<li><p>Describe the sample spaces of the following experiments with a set using <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a></p></li>
-</ol>
-<ol class="loweralpha simple">
+<ol class="arabic">
+<li><p>Describe the sample spaces of the following experiments with a set using <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a></p>
+<blockquote>
+<div><ol class="loweralpha simple">
 <li><p>Flipping a coin two times</p></li>
 <li><p>Flipping a coin three times.</p></li>
 <li><p>Rolling a six-sided die</p></li>
 <li><p>Rolling two six-sided dice</p></li>
 <li><p>Flipping a two-sided coin and if it lands on heads rolling a six-sided die.</p></li>
 </ol>
-<ol class="arabic simple" start="2">
-<li><p>Two dice are rolled. Let <strong>E</strong> be the event the sum of the outcomes is odd. Let <strong>F</strong> be the event of at least one <em>1</em> appearing on one of the die. Describe the elements of the following events in <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a> and interpret the meaning of each event.</p></li>
-</ol>
-<ol class="loweralpha simple">
+</div></blockquote>
+</li>
+<li><p>Two dice are rolled. Let <strong>E</strong> be the event the sum of the outcomes is odd. Let <strong>F</strong> be the event of at least one <em>1</em> appearing on one of the die. Describe the elements of the following events in <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a> and interpret the meaning of each event.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
 <li><p><img class="math" src="../../../_images/math/72f2056c1b56ffff779f8685f9aecee16c662a71.png" alt="E \cap F"/></p></li>
 <li><p><img class="math" src="../../../_images/math/ea19490380e8c1f1193d10878cecea37d051e0b5.png" alt="E^c \cap F"/></p></li>
 <li><p><img class="math" src="../../../_images/math/1e20132630e741089c48db1c91ad7e5d2b0929a5.png" alt="E^c \cap F^c"/></p></li>
 <li><p><img class="math" src="../../../_images/math/4e84dcf55459fdeac82f6c0147aa9a3153de784c.png" alt="E \cup F"/></p></li>
 <li><p><img class="math" src="../../../_images/math/71c73355e9e589d6df9bb350b0c68fff992556db.png" alt="E \cup F^c"/></p></li>
 </ol>
-<ol class="arabic" start="3">
-<li><p>Three red balls and one green ball are placed into a box. Describe the sample spaces of the following experiments with a set using <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a>.</p>
-<blockquote>
-<div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><em>Hint</em>: Let <em>r</em> <sub>1</sub>, <em>r</em> <sub>2</sub> and <em>r</em> <sub>3</sub> represent the <em>outcome</em> of drawing each of the respective red balls.</p>
-</div>
 </div></blockquote>
 </li>
+<li><p>Three red balls and one green ball are placed into a box. Describe the sample spaces of the following experiments with a set using <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a>.</p></li>
 </ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Let <em>r</em> <sub>1</sub>, <em>r</em> <sub>2</sub> and <em>r</em> <sub>3</sub> represent the <em>outcome</em> of drawing each of the respective red balls.</p>
 <ol class="loweralpha simple">
 <li><p>Selecting one ball at random.</p></li>
 <li><p>Selecting two balls at random and <span class="xref std std-ref">with_replacement</span> (i.e. putting the ball you drew back into the back after you draw it).</p></li>
 <li><p>Selecting two balls at random and <span class="xref std std-ref">without_replacement</span> (i.e. <em>not</em> putting the ball back after you draw it)</p></li>
 </ol>
-<ol class="arabic simple" start="4">
-<li><p>A deck of six cards consists of three black cards numbered <em>1</em>, <em>2</em>, <em>3</em> and three red cards numbered <em>1</em>, <em>2</em>, <em>3</em>. You draw two cards <span class="xref std std-ref">without_replacement</span>. Let <strong>A</strong> be the event the second card has a larger number than the first card. Let <strong>B</strong> be the event the first card has a larger number than the second card.</p></li>
-</ol>
-<ol class="loweralpha simple">
+</div>
+<ol class="arabic" start="4">
+<li><p>A deck of six cards consists of three black cards numbered <em>1</em>, <em>2</em>, <em>3</em> and three red cards numbered <em>1</em>, <em>2</em>, <em>3</em>. You draw two cards <span class="xref std std-ref">without_replacement</span>. Let <strong>A</strong> be the event the second card has a larger number than the first card. Let <strong>B</strong> be the event the first card has a larger number than the second card.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
 <li><p>Are <strong>A</strong> and <strong>B</strong> mutually exclusive?</p></li>
 <li><p>Are <strong>A</strong> and <strong>B</strong> complements?</p></li>
 </ol>
-<ol class="arabic simple" start="5">
-<li><p>You roll two dice. Find the probability of the following events.</p></li>
-</ol>
-<ol class="loweralpha simple">
+</div></blockquote>
+</li>
+<li><p>You roll two dice. Find the probability of the following events.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
 <li><p>The sum of the numbers rolled is 7.</p></li>
 <li><p>The sum of the numbers rolled on the dice is 3 or 5.</p></li>
 <li><p>The numbers rolled are both even.</p></li>
@@ -532,10 +533,11 @@ document.write(`
 <li><p>Neither of the numbers rolled are even.</p></li>
 <li><p>Is part <em>e</em> the complement of part <em>c</em> or part <em>d</em>?</p></li>
 </ol>
-<ol class="arabic simple" start="6">
-<li><p>A box contains three red balls and five blue balls.</p></li>
-</ol>
-<ol class="loweralpha simple">
+</div></blockquote>
+</li>
+<li><p>A box contains three red balls and five blue balls.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
 <li><p>Define a sample space for the experiment of selecting three balls that are drawn from the box, one by one, with replacement.</p></li>
 <li><p>Find the probability of selecting all red balls.</p></li>
 <li><p>Find the probability of selecting atleast one red ball.</p></li>
@@ -543,10 +545,11 @@ document.write(`
 <li><p>What do you notice about parts <em>c</em> and <em>d</em>? Of what is this an example?</p></li>
 <li><p>Find the probability of selecting two blue balls and one red ball.</p></li>
 </ol>
-<ol class="arabic simple" start="7">
-<li><p>You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,</p></li>
-</ol>
-<ol class="loweralpha simple">
+</div></blockquote>
+</li>
+<li><p>You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,</p>
+<blockquote>
+<div><ol class="loweralpha simple">
 <li><p>The card is a king.</p></li>
 <li><p>The card is a spade.</p></li>
 <li><p>The card is a king or spade.</p></li>
@@ -555,7 +558,8 @@ document.write(`
 <li><p>The card is black or a queen.</p></li>
 <li><p>The card is neither nor a queen.</p></li>
 </ol>
-<ol class="arabic simple" start="8">
+</div></blockquote>
+</li>
 <li><p>You select a number randomly between 1 and 1000. What is the probability the number selected is divisible by 5?</p></li>
 <li><p>Among 33 students in a class, 17 of them earned A’s on the midterm exam, 14 earned A’s on the final exam and 11 did not earn A’s on either examination. What is the probability that a randomly selected student from this class earned an A on both exams?</p></li>
 <li><p>The coefficients of the quadratic equation <img class="math" src="../../../_images/math/2ac64c25e38b63cf649779ed3622cf61ca3c1703.png" alt="x^2 + bx + c = 0"/> are determined by tossing a fair die twice. The first outcome is <em>b</em> and the second outcome is <em>c</em>. Find the probability the equation has real roots.</p></li>
@@ -564,26 +568,30 @@ document.write(`
 <section id="probability-proofs">
 <h2>Probability Proofs<a class="headerlink" href="#probability-proofs" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple" start="10">
+<li><p>TODO: prove some basic probability things</p></li>
 <li><p>Let <strong>A</strong> and <strong>B</strong> be two events, not necessarily mutually exclusive. Prove the following inequality</p></li>
 </ol>
 <div class="math">
 <p><img src="../../../_images/math/1c90eb45e00a57a13e96fbb29eb0bed7e8e17c85.png" alt="P(A \cap B) \geq P(A) + P(B) - 1"/></p>
-</div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><em>Hint</em>: Use the <a class="reference internal" href="../../../notes/probability/00_INTRODUCTION.html#law-of-unions"><span class="std std-ref">Law of Unions</span></a> and <a class="reference internal" href="../../../notes/probability/00_INTRODUCTION.html#axiom-1"><span class="std std-ref">Axiom 1</span></a></p>
+</div><div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Use the <a class="reference internal" href="../../../notes/probability/00_INTRODUCTION.html#law-of-unions"><span class="std std-ref">Law of Unions</span></a> and <a class="reference internal" href="../../../notes/probability/00_INTRODUCTION.html#axiom-1"><span class="std std-ref">Axiom 1</span></a></p>
 </div>
-<ol class="arabic simple" start="11">
-<li><p>Let <strong>A</strong> and <strong>B</strong> be two events, not necessarily mutually exclusive. The event,</p></li>
+<ol class="arabic simple" start="12">
+<li><p><strong>Symmetric Difference</strong> Let <strong>A</strong> and <strong>B</strong> be two events, not necessarily mutually exclusive. The event,</p></li>
 </ol>
 <div class="math">
 <p><img src="../../../_images/math/ef2c01c98cbd53ffe272f6f7a385465bb9a296b7.png" alt="(A - B) \cap (B - A)"/></p>
 </div><p>is called the <em>symmetric difference of</em> <strong>A</strong> <em>and</em> <strong>B</strong>. Prove the probability of the <em>symmetric difference of</em> <strong>A</strong> <em>and</em> <strong>B</strong> is equal to,</p>
 <div class="math">
 <p><img src="../../../_images/math/0ac01dfdf7639005bf60d884b871bae2ea580ed6.png" alt="P(A) + P(B) - 2 \cdot P(A \cap B)"/></p>
-</div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><em>Hint #1</em>: Draw a <a class="reference internal" href="../../../notes/SET_THEORY.html#venn-diagrams"><span class="std std-ref">Venn Diagram</span></a> of <strong>A</strong> and <strong>B</strong>, assuming the events are <em>not</em> mutually exclusive. Label the area that correspodned to the <em>symmetric difference of</em> <strong>A</strong> <em>and</em> <strong>B</strong>.</p>
-<p><em>Hint #2</em>: Recall (TODO link) <img class="math" src="../../../_images/math/0bf2bc31d1c9ca98372f1fe5b44190df263dd714.png" alt="A - B = A \cap B^C"/></p>
+</div><div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Draw a <a class="reference internal" href="../../../notes/SET_THEORY.html#venn-diagrams"><span class="std std-ref">Venn Diagram</span></a> of <strong>A</strong> and <strong>B</strong>, assuming the events are <em>not</em> mutually exclusive. Label the area that correspodned to the <em>symmetric difference of</em> <strong>A</strong> <em>and</em> <strong>B</strong>.</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Recall (TODO link) <img class="math" src="../../../_images/math/0bf2bc31d1c9ca98372f1fe5b44190df263dd714.png" alt="A - B = A \cap B^C"/></p>
 </div>
 </section>
 <section id="a-p-exam-practice">
