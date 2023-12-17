@@ -17,11 +17,16 @@ Instructions
 ============
 
 1. Create a Python ``.py`` script named ``LASTNAME_FIRSTNAME_project_six.py`` in your ``Linux Files`` folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace ``LASTNAME`` and ``FIRSTNAME`` with your last and first name, respectively.
-3. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
-4. Read the :ref:`project_six_background` section.
-6. Perform all exercises and answer all questions in the :ref:`project_six_project` section. Label your script with comments where appropriate.
-7. When you are done, zip your script in a zip file named ``LASTNAME_FIRSTNAME_project_six.zip``
-8. Upload the zip file to the Google Classroom Project Six Assignment.
+
+2.. Create a :ref:`docstring <python_docstring>` at the very top of the script file. Keep all written answers in this area of the script.
+
+3. Read the :ref:`project_six_background` section.
+
+4. Perform all exercises and answer all questions in the :ref:`project_six_project` section. Label your script with comments where appropriate.
+
+5. When you are done, zip your script in a zip file named ``LASTNAME_FIRSTNAME_project_six.zip``
+
+6. Upload the zip file to the Google Classroom Project Six Assignment.
 
 
 .. _project_six_background:
@@ -176,9 +181,9 @@ The following code snippet simulates flipping a fair coin 10 times, stores the s
 Project
 =======
 
-1. Using the techniques described in the :ref:`project_six_background` section, simulate flipping 10 coins. Perform the simulation 200 times. 
+1. Consider the experiment of flipping 10 fair coins. Using the techniques described in the :ref:`project_six_background` section, simulate flipping 10 coins. Perform the simulation 200 times. 
 
-a. Calculate the mean and standard deviation of the simulated sampling distribution.
+a. Calculate the mean and standard deviation of the simulated sampling distribution. In the :ref:`docstring <python_docstring>`, write a sentence or two interpretting the meaning of these sample statistics in the context of the sampling distributions.
 
 b. Plot the results using a histogram. Label the axes appropriately. Ensure the histogram class limits are set to 0, 1, 2, ..., 9, 10.
 
@@ -208,20 +213,29 @@ f. In the :ref:`docstring <python_docstring>`, answer the following question: Wh
 
 g. In the :ref:`docstring <python_docstring>`, answer the following question: Based on the results of your simulation, what is the probability of observing 9 or more heads in a series of 10 coin flips?
 
+2. Approximately 2% of the world's population has blonde hair. Consider the experiment of selecting 30 people at random from the world's population and recording the number of people in the sample with blonde hair. Using the techniques described in the :ref:`project_six_background` section, simulate the hair color of a sample of 30 people. Perform the simulation 500 times.
 
-2. Using the techniques described in the :ref:`project_six_background` section, simulate 10 rolls of a six-sided die. Perform the simulation 500 times.
+a. Calculate the mean and standard deviation of the simulated sampling distribution. In the :ref:`docstring <python_docstring>`, write a sentence or two interpretting the meaning of these sample statistics in the context of the sampling distributions.
+
+b. Plot the results using a histogram. Label the axes appropriately. Ensure the histogram class limits are set to 0, 1, 2, 3, ..., 29, 30.
+
+c. In the :ref:`docstring <python_docstring>`, describe the simulated distribution in a few sentences. What value is the distribution centered around? What type of shape does the distribution have? 
+
+d. In the :ref:`docstring <python_docstring>`, answer the following question: What happens to the variation in the simulation distribution as you increase the number of people sampled?
+
+e. In the :ref:`docstring <python_docstring>`, answer the following question: What happens to the variation in the simulation distribution as you increase the number of simulations?
+
+
+3. Consider the experiment of rolling 10 six-sided die. Using the techniques described in the :ref:`project_six_background` section, simulate 10 rolls of a six-sided die. Perform the simulation 500 times.
 
 .. hint::
 
 	This one is easier to simulate if you use ``randint()`` instead of ``random()``!
 	
-a. Calculate the mean and standard deviation of the simulated sampling distribution.
+a. Calculate the mean and standard deviation of the simulated sampling distribution. In the :ref:`docstring <python_docstring>`, write a sentence or two interpretting the meaning of these sample statistics in the context of the sampling distributions.
 
 b. Plot the results using a histogram. Label the axes appropriately. Ensure the histogram class limits are set to 1, 2, 3, 4, 5, 6.
 
 c. In the :ref:`docstring <python_docstring>`, describe the simulated distribution in a few sentences. What value is the distribution centered around? What type of shape does the distribution have? Of what theorem in statistics is this an example?
 
 d. In the :ref:`docstring <python_docstring>`, answer the following question: what would happen to the shape of the distribution if you simulated rolling a 12-sided die instead of a six-sided die? What features mentioned in *part c* would change? What features would stay the same?
-
-
-3. 
