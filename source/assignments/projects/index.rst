@@ -1,7 +1,7 @@
-.. _projects:
+.. _python_projects:
 
-Projects
-========
+Python Projects
+===============
 
 .. toctree::
    :maxdepth: 2
