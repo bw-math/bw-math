@@ -1,7 +1,7 @@
-.. _projects:
+.. _python_projects:
 
-Projects
-========
+Python Projects
+===============
 
 .. toctree::
    :maxdepth: 2
@@ -14,5 +14,6 @@ Projects
    04_REGRESSION
    05_BIAS
    06_SIMULATION
-   07_MONTE_CARLO
-   08_BINOMIAL
+   07_SETS
+   08_MONTE_CARLO
+   09_BINOMIAL

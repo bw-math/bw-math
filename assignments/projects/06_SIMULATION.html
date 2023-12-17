@@ -46,7 +46,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/projects/06_SIMULATION';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Monte Carlo Simulation" href="07_MONTE_CARLO.html" />
+    <link rel="next" title="Sample Spaces" href="07_SETS.html" />
     <link rel="prev" title="Bias" href="05_BIAS.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
@@ -265,7 +265,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Projects</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Python Projects</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="00_PYTHON.html">Python</a></li>
 <li class="toctree-l3"><a class="reference internal" href="01_CATEGORICAL.html">Bar Charts</a></li>
 <li class="toctree-l3"><a class="reference internal" href="02_QUANTITATIVE.html">Histograms and Boxplots</a></li>
@@ -273,8 +273,9 @@
 <li class="toctree-l3"><a class="reference internal" href="04_REGRESSION.html">Linear Regression</a></li>
 <li class="toctree-l3"><a class="reference internal" href="05_BIAS.html">Bias</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Simulation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="07_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="08_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07_SETS.html">Sample Spaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_BINOMIAL.html">Binomial Distribution</a></li>
 </ul>
 </li>
 </ul>
@@ -459,14 +460,10 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loops">Loops</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#law-of-large-numbers">Law of Large Numbers</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#python">Python</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cartesian-product">Cartesian Product</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Definition</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Python</a></li>
 </ul>
 </li>
 </ul>
@@ -489,303 +486,185 @@ document.write(`
 <div><p>Your mind makes it real.</p>
 <p class="attribution">—Morpheus, The Matrix</p>
 </div></blockquote>
-<p><strong>Python</strong> allows us to simulate experiments that would otherwise be tedious to perform. In this lab, we will explore a few techniques for <em>simulation</em>.</p>
+<p><em>Simulation</em> is a way of modelling outcomes of random processes. The idea relies on interpretting the results of random number generation as outcomes in an experiment. We have encountered this idea a few times in class already, but now that we have the concepts of probability in our catalogue of knowledge, we are ready to study simulation in detail.</p>
+<p><strong>Python</strong> has all the tools necessary to simulate experiments that would otherwise be tedious to perform. In this lab, we will explore a few techniques for conducting <em>simulations</em> to model the outcomes of random processes.</p>
 <section id="instructions">
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
 <p>1. Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_six.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">LASTNAME</span></code> and <code class="docutils literal notranslate"><span class="pre">FIRSTNAME</span></code> with your last and first name, respectively.
 3. Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the <a class="reference internal" href="#project-six-background"><span class="std std-ref">Background</span></a> section.
-5. Load in the data from the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file using the technique outlined in the <a class="reference internal" href="03_NORMALITY.html#project-three-loading-data"><span class="std std-ref">Loading Data</span></a> section.
-6. Perform all exercises and answer all questions in the <a class="reference internal" href="#project-six-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the instructions of each problem.
+6. Perform all exercises and answer all questions in the <a class="reference internal" href="#project-six-project"><span class="std std-ref">Project</span></a> section. Label your script with comments where appropriate.
 7. When you are done, zip your script in a zip file named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_six.zip</span></code>
-8. Upload the zip file to the Google Classroom Project Four Assignment.</p>
+8. Upload the zip file to the Google Classroom Project Six Assignment.</p>
 </section>
 <section id="background">
 <span id="project-six-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<section id="loops">
+<h3>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">#</a></h3>
+<p>Loops are essential to the concept of <em>simulation</em>. A loop is a programmatic construct for repeating a block of instructions. As with many things in computer science and mathematics, this is easier to see than to say. Consider the following example,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">pet</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;hippopotamus&quot;</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">pet</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>cat</p>
+<p>dog</p>
+<p>hippopotamus</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">pet</span></code> variable is a <em>local</em> variable. It only exists within the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop block. If you try to reference <code class="docutils literal notranslate"><span class="pre">pet</span></code> outside of the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop, you will get an <strong>Undefined</strong> error.</p>
+</div>
+<p>This snippet of code uses a <em>for-loop</em> to iterate over the list containing the elements, <code class="docutils literal notranslate"><span class="pre">dog</span></code>, <code class="docutils literal notranslate"><span class="pre">cat</span></code> and <code class="docutils literal notranslate"><span class="pre">hippopotamus</span></code>. Each time it iterates over the list, it stores the current element in the <code class="docutils literal notranslate"><span class="pre">pet</span></code> variable. The body of the loop then uses the <code class="docutils literal notranslate"><span class="pre">pet</span></code> variable and prints it to screen. We see in the output each element of the list is output to screen; this is because the loop passes each element of the list into the <code class="docutils literal notranslate"><span class="pre">pet</span></code> variable and then executes the code in the body of the loop. Once there are no more elements in the list, the loop halts.</p>
+<p><code class="docutils literal notranslate"><span class="pre">for</span></code> loops can be used in conjunction with the <code class="docutils literal notranslate"><span class="pre">range()</span></code> function to iterate over sequences of integers starting at 0,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>0</p>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>4</p>
+</div></blockquote>
+<p>Note the output in the preceding example starts at 0 and ends at 4. The <code class="docutils literal notranslate"><span class="pre">range()</span></code> function iterates over all the natural numbers from 0 up to, but not including, the value inputted into the function.</p>
+<p>Loops can be chained together to form <em>nested</em> loops,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">pet</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">]:</span>
+        <span class="k">for</span> <span class="n">owner</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;rory&quot;</span><span class="p">,</span> <span class="s2">&quot;sophia&quot;</span><span class="p">,</span> <span class="s2">&quot;sejal&quot;</span><span class="p">,</span> <span class="s2">&quot;rachael&quot;</span><span class="p">,</span> <span class="s2">&quot;lydia&quot;</span><span class="p">]:</span>
+
+                <span class="nb">print</span><span class="p">(</span><span class="n">owner</span><span class="p">,</span> <span class="s2">&quot; has a &quot;</span><span class="p">,</span> <span class="n">pet</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>rory  has a  dog</p>
+<p>sophia  has a  dog</p>
+<p>sejal  has a  dog</p>
+<p>rachael  has a  dog</p>
+<p>lydia  has a  dog</p>
+<p>rory  has a  cat</p>
+<p>sophia  has a  cat</p>
+<p>sejal  has a  cat</p>
+<p>rachael  has a  cat</p>
+<p>lydia  has a  cat</p>
+</div></blockquote>
+<p>The order of operations in a <em>nested</em> loop is important! For each iteration of the <em>outer</em> loop (the one iterating over pets), the <em>inner</em> loop (the one iterating over owners) is executed in its entirety.</p>
+</section>
 <section id="law-of-large-numbers">
 <h3>Law of Large Numbers<a class="headerlink" href="#law-of-large-numbers" title="Permalink to this headline">#</a></h3>
 <section id="definition">
 <h4>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">#</a></h4>
-<p>Consider the experiment of flipping a fair coin ten times. Intuitively, if the coin is truly fair, we should get five heads and five tails. However, in practice, this rarely occurs. Since each flip of the coin is <a class="reference internal" href="../../notes/probability/02_CONDITIONAL.html#independence"><span class="std std-ref">independent</span></a> of the previous coin flip, the fact we get a head on the first flip in no way influences the probability of getting a head on the second flip. Therefore, the chances are actually getting an even number of heads and tails is minimal.</p>
-<p>The <em>Law of Large Numbers</em> gives a tool for understanding this result. It says: if we perform the experiment of flipping a fair coin, the more times we flip it the closer it will get to our expectations.</p>
-<p>TODO</p>
+<p>Consider the experiment of flipping a fair coin ten times. We intuitively understand that, if the coin is truly fair, we should get an approximately even amount of heads and tails. However, the chances of getting exactly five heads and exactly five tails in one sequence of ten coin flips is incredibly small. Since each flip of the coin is <a class="reference internal" href="../../notes/probability/02_CONDITIONAL.html#independence"><span class="std std-ref">independent</span></a> of the previous coin flip, the fact we get a head on the first flip in no way influences the probability of getting a head on the second flip. The second coin flip has no responsibility to come out as tails if the first flip was heads.</p>
+<p>The <em>Law of Large Numbers</em> gives a tool for understanding this result. First, we take the experiment of flipping a fair coin ten times and perform this experiment itself a large number of times, let us say 100 times. For each experiment of ten coin flips, we count the number of heads and the number of tails. If we then take the result of each repetition of the experiment and average them all together, the average value will be close to the true value. The more times we repeat the experiment, i.e. the more samples we create to pool into the average value, the closer and closer the overall average becomes. In the limit, as the number of repetitions becomes infinite, the average value of the experiment equals its true value. In other words, if we replicate our experiment enough times, the average result will approximate its true value. In this case, we should observe, after a large number of repetitions, the approximate proportion of heads to be 50% and the approximate proportion of tails to be 50%.</p>
 </section>
 <section id="python">
 <h4>Python<a class="headerlink" href="#python" title="Permalink to this headline">#</a></h4>
-<p>Using <a class="reference internal" href="../../references/python/07_CONTROLS.html#python-control-structures"><span class="std std-ref">Control Structures</span></a> and a few <cite>python_builtin_functions</cite>, we can simulate experiments involving uncertainty and see the <em>Law of Large Numbers</em> in action. The key idea is using random numbers to represent random draws from a population. If we think of a random number between 0 and 1 as an observation, then we can use logic to construct the experiment.</p>
-<p>For example, let the event of getting a random number less than 0.5 correspond to the event of getting heads in a coin flip. Let the event of getting number between 0.5 and 1 correspond to the event of getting a tail. Then, by simulating random numbers between 0 and 1, we can interpret the results as outcomes of flipping a coin.</p>
-<p>The following code snippet simulates flipping a fair coin 10 times,</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<p>Using the <a class="reference internal" href="../../references/python/07_CONTROLS.html#python-control-structures"><span class="std std-ref">Control Structures</span></a> introduced in the preceding section and a few <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-builtin-functions"><span class="std std-ref">Built-In Functions</span></a> we have used in previous projects, we can simulate the outcomes of random experiments and see the <em>Law of Large Numbers</em> in action.</p>
+<p>The key idea is using random numbers to represent random draws from a population. If we think of a random number between 0 and 1 as an observation, i.e. an outcome in an experiment, then we can use the random numbers to model the distribution of the experiment.</p>
+<p>For example, let the event of getting a random number less than 0.5 correspond to the event of getting heads in a coin flip. Let the event of getting number between 0.5 and 1 correspond to the event of getting a tail. Then, by simulating random numbers between 0 and 1 and interpretting the results as outcomes of flipping a coin, we can derive a probability distribution for the experiment of flipping a single coin.</p>
+<p>The following code snippet simulates flipping a fair coin 10 times, stores the simulation in a list</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">mpl</span>
 
-<span class="n">heads</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">tails</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="c1"># simulation parameters</span>
+<span class="n">no_simulations</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">no_coins</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">coin_prob</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="c1"># simulation results</span>
+<span class="n">head_dist</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-    <span class="n">flip</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+<span class="c1"># simulation loop</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">no_simulations</span><span class="p">):</span>
+        <span class="c1"># resetting simulation variables</span>
+        <span class="n">sim_heads</span> <span class="o">=</span> <span class="mi">0</span>
 
-    <span class="k">if</span> <span class="n">flip</span> <span class="o">&gt;=</span> <span class="mf">0.5</span><span class="p">:</span>
-        <span class="n">heads</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">tails</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="c1"># start simulation</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">no_coins</span><span class="p">):</span>
+
+                <span class="c1"># simulating a single coin flip</span>
+                <span class="n">flip</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+
+                <span class="c1"># checking if simulated outcome = heads</span>
+                <span class="k">if</span> <span class="n">flip</span> <span class="o">&gt;=</span> <span class="n">coin_prob</span><span class="p">:</span>
+                        <span class="n">sim_heads</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="c1"># end simulation</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;simulation #&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2"> number of heads: &quot;</span><span class="p">,</span> <span class="n">sim_heads</span><span class="p">)</span>
+
+        <span class="n">head_dist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sim_heads</span><span class="p">)</span>
+
+<span class="c1"># create histogram of heads distribution</span>
+<span class="c1">## manually create bins to prevent weird histogram classes</span>
+<span class="n">bins</span> <span class="o">=</span> <span class="p">[</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">no_coins</span><span class="p">)</span> <span class="p">]</span>
+<span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span><span class="p">)</span> <span class="o">=</span> <span class="n">mpl</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">head_dist</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;lightblue&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Number of Heads&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Frequency&quot;</span><span class="p">)</span>
+<span class="n">mpl</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</section>
-</section>
-<section id="cartesian-product">
-<span id="id1"></span><h3>Cartesian Product<a class="headerlink" href="#cartesian-product" title="Permalink to this headline">#</a></h3>
-<section id="id2">
-<h4>Definition<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h4>
-<p>There are other types of <a class="reference internal" href="../../notes/SET_THEORY.html#set-operations"><span class="std std-ref">Operations</span></a> that we didn’t cover in class. One of the more important operations we skipped over is the <em>Carteisan Product</em>; we will now take the time to study this operation in particular, as it is helpful for understanding certain <a class="reference internal" href="../../notes/probability/00_INTRODUCTION.html#sample-spaces"><span class="std std-ref">Sample Spaces and Events</span></a>. Several of the problems in this lab will serve as illustrative examples so you may begin to understand what is meant by this operation.</p>
-<p>We start with the <em>formal definition</em>. The <em>Cartesian Product</em> of two sets <strong>A</strong> and <strong>B</strong>, <img class="math" src="../../_images/math/2585d6047bf922ae659301c891c9437f6d3ddd6d.png" alt="A x B"/>, is defined as,</p>
-<div class="math">
-<p><img src="../../_images/math/e9a2e77b2ae6967bb09c171eefa18795c14609d7.png" alt="A x B = \{ \forall x \in A, y \in B: (x, y) \}"/></p>
-</div><p>In plain English,</p>
-<blockquote>
-<div><p>The <em>Cartesian Product</em> of two sets <strong>A</strong> and <strong>B</strong>, <img class="math" src="../../_images/math/2585d6047bf922ae659301c891c9437f6d3ddd6d.png" alt="A x B"/> is the set of all ordered pairs (<em>x</em>, <em>y</em>) such that <em>x</em> belongs to <strong>A</strong> and <em>y</em> belongs to <strong>B</strong>.</p>
-</div></blockquote>
-<p>An example will help to show what is meant. Consider the two sets <strong>A</strong> and <strong>B</strong>,</p>
-<div class="math">
-<p><img src="../../_images/math/9bcb364ce9a1327bb6068fc8c0378df0bfaa9ef8.png" alt="A = \{ a, b, c \}"/></p>
-</div><div class="math">
-<p><img src="../../_images/math/0dbfac2c6c4495d7b44d9cbfbdf7436622568d3c.png" alt="B = \{ d, e, f \}"/></p>
-</div><p>A simple way to visualize the <em>Cartesian Product</em> is by forming a table where the top row corresponds to the elements of <strong>A</strong> and the first column corresponds to elements of <strong>B</strong>. Then, in each entry, write the ordered pair formed by the intersection of rows and columns,</p>
-<table class="table">
-<colgroup>
-<col style="width: 19%" />
-<col style="width: 27%" />
-<col style="width: 27%" />
-<col style="width: 27%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td></td>
-<td><p>a</p></td>
-<td><p>b</p></td>
-<td><p>c</p></td>
-</tr>
-<tr class="row-even"><td><p>d</p></td>
-<td><p>(a,d)</p></td>
-<td><p>(b,d)</p></td>
-<td><p>(c,d)</p></td>
-</tr>
-<tr class="row-odd"><td><p>e</p></td>
-<td><p>(a,e)</p></td>
-<td><p>(b,e)</p></td>
-<td><p>(c,e)</p></td>
-</tr>
-<tr class="row-even"><td><p>f</p></td>
-<td><p>(a,f)</p></td>
-<td><p>(b,f)</p></td>
-<td><p>(c,f)</p></td>
-</tr>
-</tbody>
-</table>
-<p>The <em>Cartesian Product</em> is the set of all entries in this table,</p>
-<div class="math">
-<p><img src="../../_images/math/fd7f5e6dd9b478b296ebd86d80cb721a3fa05786.png" alt="A x B = \{ (a,d), (b,d), (c,d), (a,e), (b,e), (c,e), (a,f), (b,f), (c,f) \}"/></p>
-</div></section>
-<section id="id3">
-<h4>Python<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h4>
-<p>You can generate a <em>Cartesian Product</em> in <strong>Python</strong> by using <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a>.</p>
-<p>One aspect of <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a> we didn’t touch on when we first introduced it is the ability to <em>chain together</em> generator expressions to iterate over multiple lists simultaneously. Consider the following example,</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pets</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;fish&quot;</span> <span class="p">]</span>
-<span class="n">owners</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;cleopatra&quot;</span><span class="p">,</span> <span class="s2">&quot;augustus&quot;</span><span class="p">,</span> <span class="s2">&quot;napolean&quot;</span><span class="p">]</span>
-<span class="n">pet_cross_owners</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="n">o</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">owners</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">pets</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">pets_cross_owners</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Let’s break this example down.</p>
-<p>The key point is: we are <em>nesting</em> a list iteration within another list iteration. When we write <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">p</span> <span class="pre">in</span> <span class="pre">pets</span></code>, this tells <strong>Python</strong> to step through each element of the list <code class="docutils literal notranslate"><span class="pre">pets</span></code>, namely the elements <code class="docutils literal notranslate"><span class="pre">dog</span></code>, then <code class="docutils literal notranslate"><span class="pre">cat</span></code>, then <code class="docutils literal notranslate"><span class="pre">fish</span></code>. For each element of the <code class="docutils literal notranslate"><span class="pre">pets</span></code> list, we then tell <strong>Python</strong> to iterate over the next list with the expression <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">o</span> <span class="pre">in</span> <span class="pre">owners</span></code>. This will iterate over the elements <code class="docutils literal notranslate"><span class="pre">cleopatra</span></code>, then <code class="docutils literal notranslate"><span class="pre">augustus</span></code>, then <code class="docutils literal notranslate"><span class="pre">napolean</span></code>, for <em>each step in the first iteration</em>. Then we glue the results together in an ordered pair (<a class="reference internal" href="../../references/python/02_BASIC.html#python-tuples"><span class="std std-ref">Tuples</span></a>). This whole process is described below in sequence,</p>
-<ul class="simple">
-<li><dl class="simple">
-<dt>Iterate over <code class="docutils literal notranslate"><span class="pre">pets</span></code></dt><dd><ul>
-<li><dl class="simple">
-<dt>Select element <code class="docutils literal notranslate"><span class="pre">dog</span></code></dt><dd><ul>
-<li><dl class="simple">
-<dt>Iterate over <code class="docutils literal notranslate"><span class="pre">owners</span></code></dt><dd><ul>
-<li><dl class="simple">
-<dt>Select element <code class="docutils literal notranslate"><span class="pre">cleopatra</span></code></dt><dd><ul>
-<li><p>Form ordered pair: (“dog”, “cleopatra”)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Select element <code class="docutils literal notranslate"><span class="pre">augustus</span></code></dt><dd><ul>
-<li><p>Form ordered pair: (“dog”, “augustus”)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Select element <code class="docutils literal notranslate"><span class="pre">napolean</span></code></dt><dd><ul>
-<li><p>Form ordered pair: (“dog”, “napolean”)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Select element <code class="docutils literal notranslate"><span class="pre">cat</span></code></dt><dd><ul>
-<li><dl class="simple">
-<dt>Iterate over <code class="docutils literal notranslate"><span class="pre">owners</span></code></dt><dd><ul>
-<li><dl class="simple">
-<dt>Select element <code class="docutils literal notranslate"><span class="pre">cleopatra</span></code></dt><dd><ul>
-<li><p>Form orderer pair: (“cat”, “cleopatra”)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Select element <code class="docutils literal notranslate"><span class="pre">augustus</span></code></dt><dd><ul>
-<li><p>Form ordered pair: (“cat”, “augustus”)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Select element <code class="docutils literal notranslate"><span class="pre">napolean</span></code></dt><dd><ul>
-<li><p>Form ordered pair: (“cat”, “napolean”)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Select element <code class="docutils literal notranslate"><span class="pre">fish</span></code></dt><dd><ul>
-<li><dl class="simple">
-<dt>Iterate over <code class="docutils literal notranslate"><span class="pre">owners</span></code></dt><dd><ul>
-<li><dl class="simple">
-<dt>Select element <code class="docutils literal notranslate"><span class="pre">cleopatra</span></code></dt><dd><ul>
-<li><p>Form ordered pair: (“fish”, “cleopatra”)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Select element <code class="docutils literal notranslate"><span class="pre">augustus</span></code></dt><dd><ul>
-<li><p>Form ordered pair: (“fish”, “augustus”)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Select element <code class="docutils literal notranslate"><span class="pre">napolean</span></code></dt><dd><ul>
-<li><p>Form ordered pair: (“fish”, “napolean”)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-<p>Note that in this example, since <strong>A</strong> is the set of pets and <strong>B</strong> is the set of owners, we can interpret <img class="math" src="../../_images/math/2585d6047bf922ae659301c891c9437f6d3ddd6d.png" alt="A x B"/> as the set of all the possible <a class="reference internal" href="../../notes/probability/01_COMBINATORICS.html#combinations"><span class="std std-ref">Combinations</span></a> of pet owners.</p>
 </section>
 </section>
 </section>
 <section id="project">
 <span id="project-six-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><dl class="simple">
-<dt>Using the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-random-function"><span class="std std-ref">randint() function</span></a>, simulate 100 random <strong>integer</strong> between 0 and 1.</dt><dd><ul class="simple">
-<li><p>What do you expect the shape of the distribution to be?</p></li>
-<li><p>Plot the results using a histogram. Save the image and add it to your report.</p></li>
-<li><p>Comment on the shape of the distribution. Is the result consistent with what you expected? Explain any discrepancies.</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Using the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-random-function"><span class="std std-ref">rand() function</span></a>, simulate 100 random <strong>floats</strong> between 0 and 1.</dt><dd><ul class="simple">
-<li><p>What do you expect the shape of the distribution to be?</p></li>
-<li><p>Using five classes, plot the results using a histogram. Save the image and add it to your report.</p></li>
-<li><p>What are the class width and boundaries?</p></li>
-<li><p>Comment on the shape of the distribution. Is the result consistent with what you expected? Explain any discrepancies.</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Using a <a class="reference internal" href="../../references/python/07_CONTROLS.html#python-control-structures"><span class="std std-ref">conditional control structure</span></a>, simulate 100 flips of a fair coin.</dt><dd><ul class="simple">
-<li><p>What do you expect the shape of the distribution to be?</p></li>
-<li><p>Plot the results using a histogram. Save the image and add it to your report.</p></li>
-<li><p>Comment on the shape of the distribution. Is the result consistent with what you expected? Explain any discrepancies.</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Using a <a class="reference internal" href="../../references/python/07_CONTROLS.html#python-control-structures"><span class="std std-ref">conditional control structure</span></a>, simulate 100 flips of an <strong>unfair</strong> coin. Assume the probability of a head is 0.75.</dt><dd><ul class="simple">
-<li><p>What do you expect the shape of the distribution to be?</p></li>
-<li><p>Plot the results using a histogram. Save the image and add it to your report.</p></li>
-<li><p>Comment on the shape of the distribution. Is the result consistent with what you expected? Explain any discrepancies.</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Using a <a class="reference internal" href="../../references/python/07_CONTROLS.html#python-control-structures"><span class="std std-ref">conditional control structure</span></a>, simulate 100 rolls of a six-sided die. Plot the results using a histogram.</dt><dd><ul class="simple">
-<li><p>What do you expect the shape of the distribution to be?</p></li>
-<li><p>Plot the results using a histogram. Save the image and add it to your report.</p></li>
-<li><p>Comment on the shape of the distribution. Is the result consistent with what you expected? Explain any discrepancies.</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Using the <a class="reference internal" href="#cartesian-product"><span class="std std-ref">Cartesian Product</span></a>, create a sample space that represents rolling two six-sided die.</dt><dd><ul class="simple">
-<li><p>Print the results and include them in your report.</p></li>
-<li><p>Using the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-length-function"><span class="std std-ref">Length Function</span></a>, find the total number of elements in the <em>Cartesian Product</em>. Include the result in your report.</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Consider taking a two question multiple-choice pop quiz. Each question has four possible answers: <em>a</em>, <em>b</em>, <em>c</em> and <em>d</em>. Using the <a class="reference internal" href="#cartesian-product"><span class="std std-ref">Cartesian Product</span></a>, create a sample space that represents all the different ways you can answer the questions on this pop-quiz.</dt><dd><ul class="simple">
-<li><p>Print the results and include them in your report.</p></li>
-<li><p>What is the probability of getting a 100% of this quiz if you randomly guess an answer for each question?</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Using the techniques discussed in this lab, simulate a list of data that could represent the IQs for a <em>population</em> of 30 students.</dt><dd><ul class="simple">
-<li><p>Plot the results using a histogram. Save the image and add it to your report.</p></li>
-<li><p>Comment on the shape of the distribution. Is the result consistent with what you expected? Explain any discrepancies.</p></li>
-<li><p>Is this an accurate simulation of IQs? Why or why not? If not, how could it be improved?</p></li>
-<li><p>Consider selecting two students from this population <span class="xref std std-ref">with_replacement</span>. What would the sample space for this experiment look like? Include your answer in the result.</p></li>
-</ul>
-</dd>
-</dl>
-</li>
+<li><p>Using the techniques described in the <a class="reference internal" href="#project-six-background"><span class="std std-ref">Background</span></a> section, simulate flipping 10 coins. Perform the simulation 200 times.</p></li>
 </ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>IQs generally don’t go below 60 or above 140.</p>
+<ol class="loweralpha simple">
+<li><p>Calculate the mean and standard deviation of the simulated sampling distribution.</p></li>
+<li><p>Plot the results using a histogram. Label the axes appropriately. Ensure the histogram class limits are set to 0, 1, 2, …, 9, 10.</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">bins</span></code> argument on the <code class="docutils literal notranslate"><span class="pre">hist()</span></code> function to change the class limits! Refer to <a class="reference internal" href="02_QUANTITATIVE.html#project-two"><span class="std std-ref">Histograms and Boxplots</span></a> for more information on changing the histogram class limits!</p>
 </div>
+<ol class="loweralpha simple" start="3">
+<li><p>In the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a>, describe the simulated distribution in a few sentences. What value is the distribution centered around? What type of shape does the distribution have? Of what theorem in statistics is this an example?</p></li>
+<li><p>In the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a>, answer the following question: What would happen to the distribution if you increased the number of coins being flipped? What features mentioned in <em>part c</em> would change? What features would stay the same?</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Test it out yourself by changing the number of coins in your code!</p>
+</div>
+<ol class="loweralpha simple" start="5">
+<li><p>In the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a>, answer the following question: What would happen to the shape of the distribution if you increased the number of simulations being performed? What features mentioned in <em>part c</em> would change? What features would stay the same?</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Test it out yourself by changing the number of simulations in your code!</p>
+</div>
+<ol class="loweralpha simple" start="6">
+<li><p>In the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a>, answer the following question: What would happen to the shape of the distribution if you flipped an <em>unfair</em> coin, i.e. what would happen if you changed the probability of getting a head? What features mentioned in <em>part c</em> would change? What features would stay the same?</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Test it out yourself by changing the probability of getting heads in your code!</p>
+</div>
+<ol class="loweralpha simple" start="7">
+<li><p>In the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a>, answer the following question: Based on the results of your simulation, what is the probability of observing 9 or more heads in a series of 10 coin flips?</p></li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><p>Using the techniques described in the <a class="reference internal" href="#project-six-background"><span class="std std-ref">Background</span></a> section, simulate 10 rolls of a six-sided die. Perform the simulation 500 times.</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>This one is easier to simulate if you use <code class="docutils literal notranslate"><span class="pre">randint()</span></code> instead of <code class="docutils literal notranslate"><span class="pre">random()</span></code>!</p>
+</div>
+<ol class="loweralpha simple">
+<li><p>Calculate the mean and standard deviation of the simulated sampling distribution.</p></li>
+<li><p>Plot the results using a histogram. Label the axes appropriately. Ensure the histogram class limits are set to 1, 2, 3, 4, 5, 6.</p></li>
+<li><p>In the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a>, describe the simulated distribution in a few sentences. What value is the distribution centered around? What type of shape does the distribution have? Of what theorem in statistics is this an example?</p></li>
+<li><p>In the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a>, answer the following question: what would happen to the shape of the distribution if you simulated rolling a 12-sided die instead of a six-sided die? What features mentioned in <em>part c</em> would change? What features would stay the same?</p></li>
+</ol>
+<ol class="arabic simple" start="3">
+<li></li>
+</ol>
 </section>
 </section>
 
@@ -811,11 +690,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="07_MONTE_CARLO.html"
+       href="07_SETS.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Monte Carlo Simulation</p>
+        <p class="prev-next-title">Sample Spaces</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -839,14 +718,10 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loops">Loops</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#law-of-large-numbers">Law of Large Numbers</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#python">Python</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cartesian-product">Cartesian Product</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Definition</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Python</a></li>
 </ul>
 </li>
 </ul>

@@ -53,7 +53,7 @@ b. Are **A** and **B** complements?
 
 
 
-5. You roll two dice. The find the probability of the following events. 
+5. You roll two dice. Find the probability of the following events. 
    
 a. The sum of the numbers rolled is 7.
 
@@ -68,7 +68,19 @@ e. Neither of the numbers rolled are even.
 f. Is part *e* the complement of part *c* or part *d*?
 
 
-6. A box contains three red balls and five blue balls. Define a sample sapce for the experiment of selecting three balls that are drawn from the box, one by one, with replacement.
+6. A box contains three red balls and five blue balls. 
+
+a. Define a sample space for the experiment of selecting three balls that are drawn from the box, one by one, with replacement.
+
+b. Find the probability of selecting all red balls. 
+
+c. Find the probability of selecting atleast one red ball.
+
+d. Find the probability of selecting no red balls.
+
+e. What do you notice about parts *c* and *d*? Of what is this an example?
+
+f. Find the probability of selecting two blue balls and one red ball. 
 
 
 7. You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,

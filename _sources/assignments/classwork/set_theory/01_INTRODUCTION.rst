@@ -8,7 +8,7 @@ Set Theory
 
     Start a fresh page in your classwork notebook. Write today's date in the margin of the page. Clearly label and solve each of the following. Show your work and circle the anwer. 
 
-For the following problems, you are given,
+For the problems #1 -9, you are given,
 
 .. math:: 
     
@@ -131,6 +131,8 @@ Find the cardinality of each of the following sets.
     	d. :math:`(D \cap C)^c`
 
     	e. :math:`n(D \cup C)`
+    	
+    	f. Why does :math:`n(D) + n(C) \neq n(D \cup C)`?
 
 8. **Equivalence and Equality**. 
 
@@ -153,7 +155,7 @@ Determine whether each of the following propositions is *true* or *false*.
     b. :math:`B^c \subseteq C^c`
 
     c. :math:`C^c \subseteq B^c`
-    
+
 10. **Symbolic Propositions**
 
 Let **E**, **F** and **G** be three events. Determine which of the following statements are correct and which are incorrect. Justify your answers.
