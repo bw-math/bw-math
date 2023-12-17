@@ -9,95 +9,96 @@ Sample Spaces and Events
 
 1. Describe the sample spaces of the following experiments with a set using :ref:`list_notation`
 
-a. Flipping a coin two times
+	a. Flipping a coin two times
 
-b. Flipping a coin three times.	
+	b. Flipping a coin three times.	
 
-c. Rolling a six-sided die
+	c. Rolling a six-sided die
 
-d. Rolling two six-sided dice
+	d. Rolling two six-sided dice
 
-e. Flipping a two-sided coin and if it lands on heads rolling a six-sided die.
+	e. Flipping a two-sided coin and if it lands on heads rolling a six-sided die.
 
 
 2. Two dice are rolled. Let **E** be the event the sum of the outcomes is odd. Let **F** be the event of at least one *1* appearing on one of the die. Describe the elements of the following events in :ref:`list_notation` and interpret the meaning of each event.
 
-a. :math:`E \cap F`
+	a. :math:`E \cap F`
 
-b. :math:`E^c \cap F`
+	b. :math:`E^c \cap F`
 
-c. :math:`E^c \cap F^c`
-    
-d. :math:`E \cup F`
+	c. :math:`E^c \cap F^c`
+	    
+	d. :math:`E \cup F`
 
-e. :math:`E \cup F^c`
+	e. :math:`E \cup F^c`
 
 
 3. Three red balls and one green ball are placed into a box. Describe the sample spaces of the following experiments with a set using :ref:`list_notation`.
 
-    .. note:: 
-        *Hint*: Let *r* :sub:`1`, *r* :sub:`2` and *r* :sub:`3` represent the *outcome* of drawing each of the respective red balls. 
+.. hint:: 
 
-a. Selecting one ball at random.
+	Let *r* :sub:`1`, *r* :sub:`2` and *r* :sub:`3` represent the *outcome* of drawing each of the respective red balls. 
 
-b. Selecting two balls at random and :ref:`with_replacement` (i.e. putting the ball you drew back into the back after you draw it).
+	a. Selecting one ball at random.
 
-c. Selecting two balls at random and :ref:`without_replacement` (i.e. *not* putting the ball back after you draw it)
+	b. Selecting two balls at random and :ref:`with_replacement` (i.e. putting the ball you drew back into the back after you draw it).
+
+	c. Selecting two balls at random and :ref:`without_replacement` (i.e. *not* putting the ball back after you draw it)
 
 
 4. A deck of six cards consists of three black cards numbered *1*, *2*, *3* and three red cards numbered *1*, *2*, *3*. You draw two cards :ref:`without_replacement`. Let **A** be the event the second card has a larger number than the first card. Let **B** be the event the first card has a larger number than the second card.
    
-a. Are **A** and **B** mutually exclusive?
+	a. Are **A** and **B** mutually exclusive?
 
-b. Are **A** and **B** complements?
+	b. Are **A** and **B** complements?
 
 
 
 5. You roll two dice. Find the probability of the following events. 
    
-a. The sum of the numbers rolled is 7.
+	a. The sum of the numbers rolled is 7.
 
-b. The sum of the numbers rolled on the dice is 3 or 5.
+	b. The sum of the numbers rolled on the dice is 3 or 5.
 
-c. The numbers rolled are both even. 
+	c. The numbers rolled are both even. 
 
-d. One of the numbers rolled is even.
+	d. One of the numbers rolled is even.
 
-e. Neither of the numbers rolled are even.
+	e. Neither of the numbers rolled are even.
 
-f. Is part *e* the complement of part *c* or part *d*?
+	f. Is part *e* the complement of part *c* or part *d*?
 
 
 6. A box contains three red balls and five blue balls. 
 
-a. Define a sample space for the experiment of selecting three balls that are drawn from the box, one by one, with replacement.
+	a. Define a sample space for the experiment of selecting three balls that are drawn from the box, one by one, with replacement.
 
-b. Find the probability of selecting all red balls. 
+	b. Find the probability of selecting all red balls. 
 
-c. Find the probability of selecting atleast one red ball.
+	c. Find the probability of selecting atleast one red ball.
 
-d. Find the probability of selecting no red balls.
+	d. Find the probability of selecting no red balls.
 
-e. What do you notice about parts *c* and *d*? Of what is this an example?
+	e. What do you notice about parts *c* and *d*? Of what is this an example?
 
-f. Find the probability of selecting two blue balls and one red ball. 
+	f. Find the probability of selecting two blue balls and one red ball. 
 
 
 7. You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,
 
-a. The card is a king.
+	a. The card is a king.
 
-b. The card is a spade.
+	b. The card is a spade.
 
-c. The card is a king or spade.
+	c. The card is a king or spade.
 
-d. The card is a 4 or Jack.
+	d. The card is a 4 or Jack.
 
-e. The card is black. 
+	e. The card is black. 
 
-f. The card is black or a queen. 
-    
-g. The card is neither nor a queen.
+	f. The card is black or a queen. 
+	    
+	g. The card is neither nor a queen.
 
 
 8. You select a number randomly between 1 and 1000. What is the probability the number selected is divisible by 5?
@@ -112,29 +113,38 @@ g. The card is neither nor a queen.
 Probability Proofs
 ==================
 
-10. Let **A** and **B** be two events, not necessarily mutually exclusive. Prove the following inequality
+10. TODO: prove some basic probability things
+
+11. Let **A** and **B** be two events, not necessarily mutually exclusive. Prove the following inequality
 
 .. math:: 
+
     P(A \cap B) \geq P(A) + P(B) - 1
 
-.. note:: 
-    *Hint*: Use the :ref:`law_of_unions` and :ref:`axiom_1`
+.. hint::
+
+	Use the :ref:`law_of_unions` and :ref:`axiom_1`
 
 
-11. Let **A** and **B** be two events, not necessarily mutually exclusive. The event,
+12. **Symmetric Difference** Let **A** and **B** be two events, not necessarily mutually exclusive. The event,
     
 .. math:: 
+
     (A - B) \cap (B - A)
 
 is called the *symmetric difference of* **A** *and* **B**. Prove the probability of the *symmetric difference of* **A** *and* **B** is equal to,
 
 .. math:: 
+
     P(A) + P(B) - 2 \cdot P(A \cap B)
 
-.. note:: 
-    *Hint #1*: Draw a :ref:`Venn Diagram <venn_diagrams>` of **A** and **B**, assuming the events are *not* mutually exclusive. Label the area that correspodned to the *symmetric difference of* **A** *and* **B**. 
+.. hint:: 
 
-    *Hint #2*: Recall (TODO link) :math:`A - B = A \cap B^C`
+	Draw a :ref:`Venn Diagram <venn_diagrams>` of **A** and **B**, assuming the events are *not* mutually exclusive. Label the area that correspodned to the *symmetric difference of* **A** *and* **B**. 
+
+.. hint::
+	
+	Recall (TODO link) :math:`A - B = A \cap B^C`
 
 
 A.P. Exam Practice
