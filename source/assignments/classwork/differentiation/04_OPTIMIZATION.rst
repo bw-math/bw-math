@@ -14,7 +14,7 @@ You have a :math:`5 m^2` sheet of cardboard on hand and you want to make a box w
 
 .. image:: ../../../assets/imgs/classwork/custom_optimization_box.png
 	:align: center
-    :width: 60%
+    	:width: 60%
 
 .. note::
 
@@ -74,7 +74,7 @@ You are standing at the edge of a slow-moving river which is one mile wide and w
 
 .. image:: ../../../assets/imgs/classwork/custom_optimization_river.png
 	:align: center
-    :width: 60%
+    	:width: 60%
 
 You can swim at 2 mph and walk at 3 mph. You must first swim across the river to any point on the opposite bank. From there walk to the campground, which is two miles from the point directly across the river from where you start your swim. What route will take the least amount of time?
 
