@@ -9,7 +9,7 @@ Calculus: Quarter Two
 .. image:: ../../../assets/imgs/classwork/2006_apcalc_frp_formb_02.png
 	:align: center
 
-Let :math:`f`` be the function defined for :math:`x \geq 0` with :math:`f (0) = 5` and :math:`f(0)=5` and :math:`f^{\prime}` the first derivative of :math:`f`, given by :math:`f^{\prime}( x ) = e ^{ - \frac{x}{4} } \cdot \sin{x^2}`. The graph of :math:`y = f^{\prime}( x )` is shown above.
+Let :math:`f`` be the function defined for :math:`x \geq 0` with :math:`f (0) = 5` and :math:`f^{\prime}`, the first derivative of :math:`f`, given by :math:`f^{\prime}( x ) = e ^{ - \frac{x}{4} } \cdot \sin{x^2}`. The graph of :math:`y = f^{\prime}( x )` is shown above.
 
 a. Use the graph of :math:`f^{\prime}` to determine whether the graph of :math:`f` is concave up, concave down, or neither on the interval :math:`1.7 < x < 1.9`. Explain your reasoning.
 
