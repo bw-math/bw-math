@@ -4,6 +4,9 @@
 Calculus: Quarter Two
 =====================
 
+Celebration of Knowledge
+========================
+
 1. **2006, Free Response, Form B, #2**
 
 .. image:: ../../../assets/imgs/classwork/2006_apcalc_frp_formb_02.png
