@@ -32,21 +32,10 @@ For the problems #1 -9, you are given,
 
 Where **S** is the universal set and **A**, **B**, **C** and **D** are subsets of **S**.
 
-1. **Membership** 
-
-Determine whether each of the following propositions is *true* or *false*.
-
-	a. :math:`2 \in A`
+Defintions
+==========
 	
-	b. :math:`5 \notin B`
-	
-	c. :math:`3 \in D`
-	
-	d. :math:`A \in S`
-	
-	e. :math:`A \notin S`
-	
-2. **Set Operations** 
+1. **Set Operations** 
 
 Write the elements of each of the following sets in :ref:`list_notation`,
 
@@ -66,7 +55,10 @@ Write the elements of each of the following sets in :ref:`list_notation`,
 
     	h. :math:`C \cap B`
 
-3. **Cardinality Laws** 
+Laws
+====
+
+2. **Cardinality Laws** 
 
 Answer each of the following problems,
 
@@ -80,7 +72,7 @@ Answer each of the following problems,
 
     	e. **Spoiler Alert** Why does *part d* equal *part a*?
 
-4. **De Morgan's Laws**. 
+3. **De Morgan's Laws**. 
 
 Write the elements of each of the following sets in :ref:`list_notation`. Use the answers from #1 where appriopriate.
 
@@ -94,7 +86,7 @@ Write the elements of each of the following sets in :ref:`list_notation`. Use th
 
     e. Based on the answers to *part a - d*, what conclusions can you draw about the relationship that exists between the operations of *complementation*, *intersection* and *union*?
 
-5. **Absorption Laws** 
+4. **Absorption Laws** 
 
 Write the elements of each of the following sets in :ref:`list_notation`. Use the answers from #1 where appriopriate.
 
@@ -104,7 +96,7 @@ Write the elements of each of the following sets in :ref:`list_notation`. Use th
 
     c. Based on the answers to *part a - b*, what conclusions can you draw about the relationship that exists between the operations of *intersection* and *union*?
 
-6. **Distributive Laws** 
+5. **Distributive Laws** 
 
 Write the elements of each of the following sets in :ref:`list_notation`. User the answers from #1 where appriopriate.
 
@@ -118,7 +110,7 @@ Write the elements of each of the following sets in :ref:`list_notation`. User t
 
     e. Based on the answers to *part a - d*, what conclusions can you draw about the relationship that exists between the operations of *intersection* and *union*?
 
-7. **Counting Laws**. 
+6. **Counting Laws**. 
 
 Find the cardinality of each of the following sets. 
 
@@ -134,6 +126,23 @@ Find the cardinality of each of the following sets.
     	
     	f. Why does :math:`n(D) + n(C) \neq n(D \cup C)`?
 
+Relations
+=========
+
+7. **Membership** 
+
+Determine whether each of the following propositions is *true* or *false*.
+
+	a. :math:`2 \in A`
+	
+	b. :math:`5 \notin B`
+	
+	c. :math:`3 \in D`
+	
+	d. :math:`A \in S`
+	
+	e. :math:`A \notin S`
+	
 8. **Equivalence and Equality**. 
 
 Determine whether each of the following propositions is *true* or *false*.
@@ -156,7 +165,22 @@ Determine whether each of the following propositions is *true* or *false*.
 
     c. :math:`C^c \subseteq B^c`
 
-10. **Symbolic Propositions**
+10. **Power Sets**
+
+Write the following sets in list notation.
+
+	a. The set of all subsets of :math:`D`.
+	
+	b. The set of all subsets of :math:`B`.
+	
+	c. The set of all subsets of :math:`A`.
+	
+	d. In general, for a set **P** with *n* elements, how many subsets can be formed from **P**?
+	 
+Theorems
+========
+
+11. **Symbolic Propositions**
 
 Let **E**, **F** and **G** be three events. Determine which of the following statements are correct and which are incorrect. Justify your answers.
 
@@ -166,7 +190,7 @@ Let **E**, **F** and **G** be three events. Determine which of the following sta
 
 	c. :math:`((E \cap F) \cup (E \cap G) \cup (F \cap G)) \subset (E \cup F \cup G)`
 	 
-11. **Deductive Proofs** 
+12. **Deductive Proofs** 
 
 Suppose you are given two sets **E** and **F**. Using the properties of sets discussed in class and the ones covered in this classwork, derive an identity for each of the following expressions,
 

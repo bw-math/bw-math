@@ -52,9 +52,24 @@ Sample Spaces and Events
 
 	b. Are **A** and **B** complements?
 
+6. At a certain university, every year eight of the 12 professors are granted University Merit Awards. This year among the nominated faculty are Dr. Jones, Dr. Smith and Dr. Brown. Let **A**, **B** and **C** denote the events, resepctively, that these professors will be given awards. In terms of **A**, **B** and **C**, find a symbolic expresion for each of the following compound events,
+ 
+ 	a. The award goes only to Dr. Jones.
+ 
+	b. Atleast one of the three get the award.
+ 
+	c. None of the three get the award.
+ 	
+ 	e. Exactly two of them get the award.
+ 
+ 	d. Exactly one of them get the award.
+ 	
+ 	f. Dr. Jones or Dr. Smith get the award, but not both.
+ 
+Classical Definition
+====================
 
-
-5. You roll two dice. Find the probability of the following events. 
+7. You roll two dice. Find the probability of the following events. 
    
 	a. The sum of the numbers rolled is 7.
 
@@ -69,7 +84,7 @@ Sample Spaces and Events
 	f. Is part *e* the complement of part *c* or part *d*?
 
 
-6. A box contains three red balls and five blue balls. 
+8. A box contains three red balls and five blue balls. 
 
 	a. Define a sample space for the experiment of selecting three balls that are drawn from the box, one by one, with replacement.
 
@@ -84,7 +99,7 @@ Sample Spaces and Events
 	f. Find the probability of selecting two blue balls and one red ball. 
 
 
-7. You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,
+9. You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,
 
 	a. The card is a king.
 
@@ -101,17 +116,15 @@ Sample Spaces and Events
 	g. The card is neither nor a queen.
 
 
-8. You select a number randomly between 1 and 1000. What is the probability the number selected is divisible by 5?
+10. You select a number randomly between 1 and 1000. What is the probability the number selected is divisible by 5?
+
+11. Among 33 students in a class, 17 of them earned A's on the midterm exam, 14 earned A's on the final exam and 11 did not earn A's on either examination. What is the probability that a randomly selected student from this class earned an A on both exams?
+
+12. The coefficients of the quadratic equation :math:`x^2 + bx + c = 0` are determined by tossing a fair die twice. The first outcome is *b* and the second outcome is *c*. Find the probability the equation has real roots.
 
 
-9. Among 33 students in a class, 17 of them earned A's on the midterm exam, 14 earned A's on the final exam and 11 did not earn A's on either examination. What is the probability that a randomly selected student from this class earned an A on both exams?
-
-
-10. The coefficients of the quadratic equation :math:`x^2 + bx + c = 0` are determined by tossing a fair die twice. The first outcome is *b* and the second outcome is *c*. Find the probability the equation has real roots.
-
-
-Probability Proofs
-==================
+Proofs
+======
 
 10. TODO: prove some basic probability things
 
@@ -150,46 +163,44 @@ is called the *symmetric difference of* **A** *and* **B**. Prove the probability
 A.P. Exam Practice
 ==================
 
-12. **2019, Free Response, #3** 
+1. **2019, Free Response, #3** 
     
 A medical researcher surveyed a large group of men and women about whether they take medicine as prescribed.
 
-The responses were categorized as never, sometimes, or always. The relative frequency of each category is
-shown in the table.
+The responses were categorized as never, sometimes, or always. The relative frequency of each category is shown in the table.
 
 .. image:: ../../../assets/imgs/classwork/2019_apstats_frp_03.png
     :align: center
 
 One person from those surveyed will be selected at random.
 
-a. What is the probability that the person selected will be someone whose response is never and who is a woman?
+	a. What is the probability that the person selected will be someone whose response is never and who is a woman?
 
-b. What is the probability that the person selected will be someone whose response is never or who is a woman?
+	b. What is the probability that the person selected will be someone whose response is never or who is a woman?
 
-c. What is the probability that the person selected will be someone whose response is never given that the person is a woman?
+	c. What is the probability that the person selected will be someone whose response is never given that the person is a woman?
 
-d. For the people surveyed, are the events of being a person whose response is never and being a woman independent? Justify your answer.
+	d. For the people surveyed, are the events of being a person whose response is never and being a woman independent? Justify your answer.
 
-e. Assume that, in a large population, the probability that a person will always take medicine as prescribed is 0.54. If 5 people are selected at random from the population, what is the probability that at least 4 of the people selected will always take medicine as prescribed? Support your answer.
+	e. Assume that, in a large population, the probability that a person will always take medicine as prescribed is 0.54. If 5 people are selected at random from the population, what is the probability that at least 4 of the people selected will always take medicine as prescribed? Support your answer.
 
 
-13. **2003, Free Response, Form B, #2**
+2. **2003, Free Response, Form B, #2**
 
 A simple random sample of adults living in a suburb of a large city was selected. The age and annual income of each adult in the sample were recorded. The resulting data are summarized in the table below.
 
 .. image:: ../../../assets/imgs/classwork/2003_apstats_frp_formb_3.png
     :align: center 
 
-a. What is the probability that a person chosen at random from those in this sample will be in the 31-45 age category?
+	a. What is the probability that a person chosen at random from those in this sample will be in the 31-45 age category?
 
-b. What is the probability that a person chosen at random from those in this sample whose incomes are over $50,000 will be in the 31-45 age category? Show your work.
+	b. What is the probability that a person chosen at random from those in this sample whose incomes are over $50,000 will be in the 31-45 age category? Show your work.
 
-c. Based on your answers to parts *#a* and *#b*, is annual income independent of age category for those in this sample? Explain.
+	c. Based on your answers to parts *#a* and *#b*, is annual income independent of age category for those in this sample? Explain.
 
-14.  **2015, Multplie Choice, #32**
+3.  **2015, Multplie Choice, #32**
     
-A survey conducted by a national news network asked a random sample of U.S. adults whether they get most of their information about current events from newspapers, television, the internet, or some
-other source. The results, shown in the table below, are reported by age group of the respondents.
+A survey conducted by a national news network asked a random sample of U.S. adults whether they get most of their information about current events from newspapers, television, the internet, or some other source. The results, shown in the table below, are reported by age group of the respondents.
 
 +---------+------------+------------+----------+-------+-------+
 |         | Newspapers | Television | Internet | Other | Total |
@@ -203,9 +214,7 @@ other source. The results, shown in the table below, are reported by age group o
 | Total   | 61         | 150        | 65       | 19    | 295   |
 +---------+------------+------------+----------+-------+-------+
 
-If primary news source is independent of age group, which of the following expressions is equal to
-the expected number of respondents who are aged 35 to 54, inclusive, and get most of their
-information about current events from the internet?
+If primary news source is independent of age group, which of the following expressions is equal to the expected number of respondents who are aged 35 to 54, inclusive, and get most of their information about current events from the internet?
 
     (A) :math:`\frac{99 \cdot 65}{295}`
 
@@ -217,10 +226,9 @@ information about current events from the internet?
 
     (E) :math:`\frac{20 \cdot 65}{295}`
 
-15.  **2012, Practice Exam, #23** 
+4.  **2012, Practice Exam, #23** 
 
-A local company is interested in supporting environmentally friendly initiatives such as carpooling among employees. The company surveyed all of the 200 employees at the downtown offices. Employees responded as to whether or not they own a car and to the location of the home where they live. The results are shown in the
-table below.
+A local company is interested in supporting environmentally friendly initiatives such as carpooling among employees. The company surveyed all of the 200 employees at the downtown offices. Employees responded as to whether or not they own a car and to the location of the home where they live. The results are shown in the table below.
 
 .. image:: ../../../assets/imgs/classwork/2012_apstats_pe_23.png
     :align: center 
@@ -238,71 +246,74 @@ Which of the following statements about a randomly chosen person from these 200 
     (E) The person is more likely to own a car than not to own a car.
     
     
+Solutions
+=========
 
-.. collapse:: Solution #1
+1. 
 
-    a. Let *h* represent a single coin flip landing on heads. Let *t* represent a single coin flip landing on tails. A :ref:`tree diagram <tree_diagrams>` is useful for visualizing the sample space here,
+a. Let *h* represent a single coin flip landing on heads. Let *t* represent a single coin flip landing on tails. A :ref:`tree diagram <tree_diagrams>` is useful for visualizing the sample space here,
 
-    (TODO: insert image)
+(TODO: insert image)
 
-    Collecting the endpoints of the diagram into a set,
+Collecting the endpoints of the diagram into a set,
 
-    .. math::
+.. math::
 
-        S = \{ hhh, hht, hth, thh, tth, tht, htt, ttt \}
+	S = \{ hhh, hht, hth, thh, tth, tht, htt, ttt \}
 
-    b. Let *1*, *2*, *3*, *4*, *5* and *6* represent rolling a die with that number of dots. Then,
+b. Let *1*, *2*, *3*, *4*, *5* and *6* represent rolling a die with that number of dots. Then,
 
-    .. math:: 
+.. math:: 
 
-        S = \{ 1, 2, 3, 4, 5, 6 \}
+	S = \{ 1, 2, 3, 4, 5, 6 \}
 
-    c. Construct a table where the first column represents the outcome of the first die and the first row represents the outcome of the second die. Fill in each entry of the table by listing the outcomes as an ordered pair (*x*, *y*),
+c. Construct a table where the first column represents the outcome of the first die and the first row represents the outcome of the second die. Fill in each entry of the table by listing the outcomes as an ordered pair (*x*, *y*),
 
-    +-------+--------+--------+---------+----------+--------+--------+
-    |       |    1   |   2    |    3    |   4      |    5   |   6    |
-    +-------+--------+--------+---------+----------+--------+--------+
-    |   1   | (1, 1) | (1, 2) |  (1, 3) |  (1, 4)  | (1, 5) | (1, 6) | 
-    +-------+--------+--------+---------+----------+--------+--------+
-    |   2   | (2, 1) | (2, 2) |  (2, 3) |  (2, 4)  | (2, 5) | (2, 6) |
-    +-------+--------+--------+---------+----------+--------+--------+
-    |   3   | (3, 1) | (3, 2) |  (3, 3) |  (3, 4)  | (3, 5) | (3, 6) |
-    +-------+--------+--------+---------+----------+--------+--------+
-    |   4   | (4, 1) | (4, 2) |  (4, 3) |  (4, 4)  | (4, 5) | (4, 6) |
-    +-------+--------+--------+---------+----------+--------+--------+
-    |   5   | (5, 1) | (5, 2) |  (5, 3) |  (5, 4)  | (5, 5) | (5, 6) |
-    +-------+--------+--------+---------+----------+--------+--------+
-    |   6   | (6, 1) | (6, 6) |  (6, 3) |  (6, 4)  | (6, 5) | (6, 6) |
-    +-------+--------+--------+---------+----------+--------+--------+
++-------+--------+--------+---------+----------+--------+--------+
+|       |    1   |   2    |    3    |   4      |    5   |   6    |
++-------+--------+--------+---------+----------+--------+--------+
+|   1   | (1, 1) | (1, 2) |  (1, 3) |  (1, 4)  | (1, 5) | (1, 6) | 
++-------+--------+--------+---------+----------+--------+--------+
+|   2   | (2, 1) | (2, 2) |  (2, 3) |  (2, 4)  | (2, 5) | (2, 6) |
++-------+--------+--------+---------+----------+--------+--------+
+|   3   | (3, 1) | (3, 2) |  (3, 3) |  (3, 4)  | (3, 5) | (3, 6) |
++-------+--------+--------+---------+----------+--------+--------+
+|   4   | (4, 1) | (4, 2) |  (4, 3) |  (4, 4)  | (4, 5) | (4, 6) |
++-------+--------+--------+---------+----------+--------+--------+
+|   5   | (5, 1) | (5, 2) |  (5, 3) |  (5, 4)  | (5, 5) | (5, 6) |
++-------+--------+--------+---------+----------+--------+--------+
+|   6   | (6, 1) | (6, 6) |  (6, 3) |  (6, 4)  | (6, 5) | (6, 6) |
++-------+--------+--------+---------+----------+--------+--------+
 
-    If we were so included, we could conclude the problem by listing these ordered pairs in :ref:`list_notation`,
+If we were so included, we could conclude the problem by listing these ordered pairs in :ref:`list_notation`,
 
-    .. math::
+.. math::
 
-        S =\{ (1,1), (1,2), ..., (6,5), (6,6) \}
+	S =\{ (1,1), (1,2), ..., (6,5), (6,6) \}
 
-    If we were presenting this set as a sample of data, we would not be able to "...", unless it was understood by the audience how the set of the ordered pairs were being generated. However, listing all of these elements (6 rows by 6 columns = 36 entries/elements) would be tedious and time consuming. As an alternative, let us write the same set using :ref:`quantifier_notation`. To do so, let the set **A** be ,
+If we were presenting this set as a sample of data, we would not be able to "...", unless it was understood by the audience how the set of the ordered pairs were being generated. However, listing all of these elements (6 rows by 6 columns = 36 entries/elements) would be tedious and time consuming. As an alternative, let us write the same set using :ref:`quantifier_notation`. To do so, let the set **A** be ,
 
-    .. math::
-        A = \{ 1, 2, 3, 4, 5, 6 \}
+.. math::
+	
+	A = \{ 1, 2, 3, 4, 5, 6 \}
 
-    We can *quantify* over the elements in set **A** *twice* to arrive at an alternate solution.
+We can *quantify* over the elements in set **A** *twice* to arrive at an alternate solution.
 
-    .. math::
+.. math::
 
-        S = \{ \forall x \in A, y \in A: (x, y) \}
+	S = \{ \forall x \in A, y \in A: (x, y) \}
 
-    .. note::
+.. note::
 
         Technically, in the solution, we are using a bit of short-hand. The way it is written there is *implicitly* two quantification occuring. For all selecting all the elements in **A** through :math:`\forall x`, and then for each element we have selected, we are selecting each element of **A** again through :math:`\forall y` 
         
-        If we wanted to be as precise as possible, we should write,
+	If we wanted to be as precise as possible, we should write,
 
         :math:`S = \{ \forall x \in A: (\forall y \in A: (x,y)) \}`
 
         However, this is overly complicated and not very clear; There is nothing gained by adopting this notation. If this were an post-graduate level course in the foundations of set theory, we would be much more careful with how we formulate propositions in our symbolic language. However, we will continue using short-hand when applicable.
 
-    d. :math:`S = \{ t, h1, h2, h3, h4, h5, h6 \}`
+d. :math:`S = \{ t, h1, h2, h3, h4, h5, h6 \}`
 
 
 .. collapse:: Solution #2
