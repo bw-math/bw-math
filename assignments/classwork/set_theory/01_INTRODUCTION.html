@@ -440,7 +440,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -456,6 +458,17 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#defintions">Defintions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laws">Laws</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations">Relations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -483,20 +496,9 @@ document.write(`
 </div><div class="math">
 <p><img src="../../../_images/math/0a1d638427b4eaa468db76233e099434e43ecc45.png" alt="D = \{ 31, 50 \}"/></p>
 </div><p>Where <strong>S</strong> is the universal set and <strong>A</strong>, <strong>B</strong>, <strong>C</strong> and <strong>D</strong> are subsets of <strong>S</strong>.</p>
+<section id="defintions">
+<h2>Defintions<a class="headerlink" href="#defintions" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><p><strong>Membership</strong></p></li>
-</ol>
-<p>Determine whether each of the following propositions is <em>true</em> or <em>false</em>.</p>
-<blockquote>
-<div><ol class="loweralpha simple">
-<li><p><img class="math" src="../../../_images/math/d2ab1e43c217d48888ac6ea20f95435b1e71e379.png" alt="2 \in A"/></p></li>
-<li><p><img class="math" src="../../../_images/math/82790c476b92889008b125e4b9341c415f47f0a1.png" alt="5 \notin B"/></p></li>
-<li><p><img class="math" src="../../../_images/math/a9210ee7c85173b9e39da4d1aa30a51ba1c88fb2.png" alt="3 \in D"/></p></li>
-<li><p><img class="math" src="../../../_images/math/b1a40e822b4ad59954018842e70c06070e568234.png" alt="A \in S"/></p></li>
-<li><p><img class="math" src="../../../_images/math/07a6b3b606a64039432cec5196204b46aab697eb.png" alt="A \notin S"/></p></li>
-</ol>
-</div></blockquote>
-<ol class="arabic simple" start="2">
 <li><p><strong>Set Operations</strong></p></li>
 </ol>
 <p>Write the elements of each of the following sets in <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a>,</p>
@@ -512,7 +514,10 @@ document.write(`
 <li><p><img class="math" src="../../../_images/math/448c731d535beb3ca68f5b8b6fc5f6d8c924b789.png" alt="C \cap B"/></p></li>
 </ol>
 </div></blockquote>
-<ol class="arabic simple" start="3">
+</section>
+<section id="laws">
+<h2>Laws<a class="headerlink" href="#laws" title="Permalink to this headline">#</a></h2>
+<ol class="arabic simple" start="2">
 <li><p><strong>Cardinality Laws</strong></p></li>
 </ol>
 <p>Answer each of the following problems,</p>
@@ -525,7 +530,7 @@ document.write(`
 <li><p><strong>Spoiler Alert</strong> Why does <em>part d</em> equal <em>part a</em>?</p></li>
 </ol>
 </div></blockquote>
-<ol class="arabic simple" start="4">
+<ol class="arabic simple" start="3">
 <li><p><strong>De Morgan’s Laws</strong>.</p></li>
 </ol>
 <p>Write the elements of each of the following sets in <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a>. Use the answers from #1 where appriopriate.</p>
@@ -538,7 +543,7 @@ document.write(`
 <li><p>Based on the answers to <em>part a - d</em>, what conclusions can you draw about the relationship that exists between the operations of <em>complementation</em>, <em>intersection</em> and <em>union</em>?</p></li>
 </ol>
 </div></blockquote>
-<ol class="arabic simple" start="5">
+<ol class="arabic simple" start="4">
 <li><p><strong>Absorption Laws</strong></p></li>
 </ol>
 <p>Write the elements of each of the following sets in <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a>. Use the answers from #1 where appriopriate.</p>
@@ -549,7 +554,7 @@ document.write(`
 <li><p>Based on the answers to <em>part a - b</em>, what conclusions can you draw about the relationship that exists between the operations of <em>intersection</em> and <em>union</em>?</p></li>
 </ol>
 </div></blockquote>
-<ol class="arabic simple" start="6">
+<ol class="arabic simple" start="5">
 <li><p><strong>Distributive Laws</strong></p></li>
 </ol>
 <p>Write the elements of each of the following sets in <a class="reference internal" href="../../../notes/SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a>. User the answers from #1 where appriopriate.</p>
@@ -562,7 +567,7 @@ document.write(`
 <li><p>Based on the answers to <em>part a - d</em>, what conclusions can you draw about the relationship that exists between the operations of <em>intersection</em> and <em>union</em>?</p></li>
 </ol>
 </div></blockquote>
-<ol class="arabic simple" start="7">
+<ol class="arabic simple" start="6">
 <li><p><strong>Counting Laws</strong>.</p></li>
 </ol>
 <p>Find the cardinality of each of the following sets.</p>
@@ -574,6 +579,22 @@ document.write(`
 <li><p><img class="math" src="../../../_images/math/50757c25142cf5e7836fa68a5d30539a95b614c9.png" alt="(D \cap C)^c"/></p></li>
 <li><p><img class="math" src="../../../_images/math/0099dc736eadc9d531a80463cc4e2ea32ca51fff.png" alt="n(D \cup C)"/></p></li>
 <li><p>Why does <img class="math" src="../../../_images/math/b82ea979802198436a02181590c1cc3eca4325a2.png" alt="n(D) + n(C) \neq n(D \cup C)"/>?</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="relations">
+<h2>Relations<a class="headerlink" href="#relations" title="Permalink to this headline">#</a></h2>
+<ol class="arabic simple" start="7">
+<li><p><strong>Membership</strong></p></li>
+</ol>
+<p>Determine whether each of the following propositions is <em>true</em> or <em>false</em>.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/d2ab1e43c217d48888ac6ea20f95435b1e71e379.png" alt="2 \in A"/></p></li>
+<li><p><img class="math" src="../../../_images/math/82790c476b92889008b125e4b9341c415f47f0a1.png" alt="5 \notin B"/></p></li>
+<li><p><img class="math" src="../../../_images/math/a9210ee7c85173b9e39da4d1aa30a51ba1c88fb2.png" alt="3 \in D"/></p></li>
+<li><p><img class="math" src="../../../_images/math/b1a40e822b4ad59954018842e70c06070e568234.png" alt="A \in S"/></p></li>
+<li><p><img class="math" src="../../../_images/math/07a6b3b606a64039432cec5196204b46aab697eb.png" alt="A \notin S"/></p></li>
 </ol>
 </div></blockquote>
 <ol class="arabic simple" start="8">
@@ -600,6 +621,21 @@ document.write(`
 </ol>
 </div></blockquote>
 <ol class="arabic simple" start="10">
+<li><p><strong>Power Sets</strong></p></li>
+</ol>
+<p>Write the following sets in list notation.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>The set of all subsets of <img class="math" src="../../../_images/math/f3e0934201efbb32db343299944572dec5cbd93a.png" alt="D"/>.</p></li>
+<li><p>The set of all subsets of <img class="math" src="../../../_images/math/3a7a214c98a4440c624d51173249c2fb0d99e2c4.png" alt="B"/>.</p></li>
+<li><p>The set of all subsets of <img class="math" src="../../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/>.</p></li>
+<li><p>In general, for a set <strong>P</strong> with <em>n</em> elements, how many subsets can be formed from <strong>P</strong>?</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="theorems">
+<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">#</a></h2>
+<ol class="arabic simple" start="11">
 <li><p><strong>Symbolic Propositions</strong></p></li>
 </ol>
 <p>Let <strong>E</strong>, <strong>F</strong> and <strong>G</strong> be three events. Determine which of the following statements are correct and which are incorrect. Justify your answers.</p>
@@ -610,7 +646,7 @@ document.write(`
 <li><p><img class="math" src="../../../_images/math/fa0b5b5dd9690ff3d988ac5fc1d7f3d22eb56495.png" alt="((E \cap F) \cup (E \cap G) \cup (F \cap G)) \subset (E \cup F \cup G)"/></p></li>
 </ol>
 </div></blockquote>
-<ol class="arabic simple" start="11">
+<ol class="arabic simple" start="12">
 <li><p><strong>Deductive Proofs</strong></p></li>
 </ol>
 <p>Suppose you are given two sets <strong>E</strong> and <strong>F</strong>. Using the properties of sets discussed in class and the ones covered in this classwork, derive an identity for each of the following expressions,</p>
@@ -624,6 +660,7 @@ document.write(`
 <p class="admonition-title">Hint</p>
 <p>Use the distributive laws from #5 and then use the <cite>Complement Theorems &lt;complement_theorems&gt;</cite></p>
 </div>
+</section>
 </section>
 
 
@@ -665,6 +702,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#defintions">Defintions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laws">Laws</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations">Relations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -463,8 +463,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#counting">Counting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-principle">Counting Principle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations">Permutations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations">Combinations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability">Probability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solutions">Solutions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Probability</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -478,19 +485,143 @@ document.write(`
                   
   <section id="combinatorics">
 <span id="combinatorics-classwork"></span><h1>Combinatorics<a class="headerlink" href="#combinatorics" title="Permalink to this headline">#</a></h1>
-<section id="counting">
-<h2>Counting<a class="headerlink" href="#counting" title="Permalink to this headline">#</a></h2>
+<section id="counting-principle">
+<h2>Counting Principle<a class="headerlink" href="#counting-principle" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><p>TODO</p></li>
-<li><p>TODO</p></li>
+<li><p><strong>A Matter of Outfits</strong></p></li>
+</ol>
+<ol class="loweralpha simple">
+<li><p>A man has 5 shirts and 3 ties. How many different outfits can he wear?</p></li>
+<li><p>A woman has 5 blouses and 8 skirts. How many different outfits can she wear?</p></li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><p><strong>Digits</strong></p></li>
+</ol>
+<ol class="loweralpha simple">
+<li><p>How many four-digit numbers can be formed using the digits <em>0, 1, 2, 3, 4, 5, 6, 7, 8</em> and <em>9</em> if the first digit cannot be a 0? Repeated digits are allowed.</p></li>
+<li><p>How many five-digit numbers can be formed using the digits <em>0, 1, 2, 3, 4, 5, 6, 7, 8</em> and <em>9</em> if the first digit cannot be 0 or 1? Repeated digits are still allowed.</p></li>
+</ol>
+<ol class="arabic simple" start="3">
 <li><p>TODO</p></li>
 <li><p>TODO</p></li>
 <li><p>TODO</p></li>
 </ol>
 </section>
+<section id="permutations">
+<h2>Permutations<a class="headerlink" href="#permutations" title="Permalink to this headline">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Definition</strong></p></li>
+</ol>
+<ol class="loweralpha simple">
+<li><p>Consider the set of objects,</p></li>
+</ol>
+<div class="math">
+<p><img src="../../../_images/math/55f34f9f9e70d9d126e5ee0f29f180df9f95360f.png" alt="\{ \text{Ry}, \text{Gage}, \text{Cora} \}"/></p>
+</div><p>Use this set for the following problems.</p>
+<blockquote>
+<div><ol class="lowerroman simple">
+<li><p>List all ordered arrangement these objects choosing 3 at a time without replacement. What is <img class="math" src="../../../_images/math/3e71ca92f71060cb88f274c9ac3f7c96f22b361b.png" alt="P^{3}_3"/>?</p></li>
+<li><p>List all ordered arrangement these objects choosing 2 at a time without replacement. What is <img class="math" src="../../../_images/math/2eee65f4c62da18cbf2958927b4c8ab296be46ea.png" alt="P^{3}_2"/>?</p></li>
+<li><p>List all ordered arrangment of these objects choosing 1 at a time without replacement. What is math:<cite>P^{3}_1</cite>?</p></li>
+</ol>
+</div></blockquote>
+<ol class="loweralpha simple" start="2">
+<li><p>Consider the set of objects,</p></li>
+</ol>
+<div class="math">
+<p><img src="../../../_images/math/68b9a57f88f1186b18b8761e31f963def6d4cb28.png" alt="\{ \text{Rory}, \text{Lydia}, \text{Sejal}, \text{Rachael}, \text{Sophia} \}"/></p>
+</div><p>Use this set for the following problems:</p>
+<blockquote>
+<div><ol class="lowerroman simple">
+<li><p>List all ordered arrangement these objects choosing 5 at a time without replacement. What is <img class="math" src="../../../_images/math/e31e0560ad45a2421407553330764daa87e805bb.png" alt="P^{5}_5"/>?</p></li>
+<li><p>List all ordered arrangment of these objects choosing 4 at a time without replacement. What is math:<cite>P^{5}_4</cite>?</p></li>
+<li><p>List all ordered arrangement these objects choosing 3 at a time without replacement. What is <img class="math" src="../../../_images/math/b248bd853bdc24115a5c80c8606e33f76d12fce2.png" alt="P^{5}_3"/>?</p></li>
+<li><p>List all ordered arrangment of these objects choosing 2 at a time without replacement. What is math:<cite>P^{5}_2</cite>?</p></li>
+<li><p>List all ordered arrangement these objects choosing 1 at a time without replacement. What is <img class="math" src="../../../_images/math/f45cf2c1e84a2dd8058b9da0fa5fde7905caa95e.png" alt="P^{5}_1"/>?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Codes</strong></p></li>
+</ol>
+<ol class="loweralpha simple">
+<li><p>How many two-letter codes can be formed using the letters <em>A</em>, <em>B</em>, <em>C</em> and <em>D</em>? Repeated letters are allowed.</p></li>
+<li><p>How many two-letter codes can be formed using the letters <em>A</em>, <em>B</em>, <em>C</em>, <em>D</em> and <em>E</em>? Repeated letters are allowed.</p></li>
+<li><p>How many different three-letter codes are there if only the letters <em>A</em>, <em>B</em>, <em>C</em>, <em>D</em> and <em>E</em> can be used and no letter can be used more than once?</p></li>
+<li><p>How many different four letter codes are there if only the letters <em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>, <em>E</em> and <em>F</em> can be used and no letter can be used more than once?</p></li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p><strong>Words</strong></p></li>
+</ol>
+</section>
+<section id="combinations">
+<h2>Combinations<a class="headerlink" href="#combinations" title="Permalink to this headline">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Definition</strong></p></li>
+</ol>
+<ol class="loweralpha simple">
+<li><p>Consider the set of objects,</p></li>
+</ol>
+<div class="math">
+<p><img src="../../../_images/math/55f34f9f9e70d9d126e5ee0f29f180df9f95360f.png" alt="\{ \text{Ry}, \text{Gage}, \text{Cora} \}"/></p>
+</div><p>Use this set for the following problems.</p>
+<blockquote>
+<div><ol class="lowerroman simple">
+<li><p>List all combinations of these objets taken 3 at a time.What is <img class="math" src="../../../_images/math/cb41db945913ab20e5229f3aa11f0e014332743a.png" alt="C^{3}_3"/>?</p></li>
+<li><p>List all combinations of these objets taken 2 at a time. What is <img class="math" src="../../../_images/math/c4b4a735d8488c03b28262f87fc67d94d107b3f5.png" alt="C^{3}_2"/>?</p></li>
+<li><p>List all combinations of these objets taken 1 at a time. What is math:<cite>C^{3}_1</cite>?</p></li>
+</ol>
+</div></blockquote>
+<ol class="loweralpha simple" start="2">
+<li><p>Consider the set of objects,</p></li>
+</ol>
+<div class="math">
+<p><img src="../../../_images/math/68b9a57f88f1186b18b8761e31f963def6d4cb28.png" alt="\{ \text{Rory}, \text{Lydia}, \text{Sejal}, \text{Rachael}, \text{Sophia} \}"/></p>
+</div><p>Use this set for the following problems:</p>
+<blockquote>
+<div><ol class="lowerroman simple">
+<li><p>List all combinations of these objets taken 5 at a time. What is <img class="math" src="../../../_images/math/82c0ae7778117bfc35284d333e4429b9620ec6a8.png" alt="C^{5}_5"/>?</p></li>
+<li><p>List all combinations of these objets taken 4 at a time. What is math:<cite>C^{5}_4</cite>?</p></li>
+<li><p>List all combinations of these objets taken 3 at a time.What is <img class="math" src="../../../_images/math/4ebcd0551cd5b389ba569af5e252c4906b85122b.png" alt="C^{5}_3"/>?</p></li>
+<li><p>List all combinations of these objets taken 2 at a time. What is math:<cite>C^{5}_2</cite>?</p></li>
+<li><p>List all combinations of these objets taken 1 at a time. What is <img class="math" src="../../../_images/math/45ef6e5fb110682fb4e6bfa1970ee1475b3a7cf4.png" alt="C^{5}_1"/>?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Committees</strong></p></li>
+</ol>
+<ol class="loweralpha simple">
+<li><p>In how many ways can a committee of 4 students be formed from a pool of 7 students?</p></li>
+<li><p>In how many ways can a committee of 3 professors be formed from a department having 8 professors?</p></li>
+<li><p>A student dance committee is to be formed consisting of 2 boys and 3 girls. If the memberships is be chosen from 4 boys and 8 girls, how many different committees are possible?</p></li>
+<li><p>The student relations committee of a college consists of 2 administrators, 3 faculty members and 5 students. Four administrators, 8 faculty members and 20 students are eligible to serve. How many different committees are possible?</p></li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p><strong>Selecting Objects</strong></p></li>
+</ol>
+<ol class="loweralpha">
+<li><p>An urn contains 7 white balls and 3 red balls. Three balls are selected. In how many ways can the 3 balls be drawn from the total of 10 balls in each of the following cases:</p>
+<blockquote>
+<div><ol class="lowerroman simple">
+<li><p>If 2 balls are white and 1 is red?</p></li>
+<li><p>If all 3 balls are white?</p></li>
+<li><p>If all 3 balls are red?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>An urn contains 165 red balls and 10 white balls. Five balls are selected. In how many ways can the 5 balls be drawn from the total of 25 balls in each of the following cases:</p>
+<blockquote>
+<div><ol class="lowerroman simple">
+<li><p>If all 5 balls are red?</p></li>
+<li><p>If 3 balls are red and two balls are white?</p></li>
+<li><p>If atleast 4 are red balls?</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+</section>
 <section id="probability">
 <h2>Probability<a class="headerlink" href="#probability" title="Permalink to this headline">#</a></h2>
-<ol class="arabic simple">
+<ol class="arabic">
 <li><p>A bank PIN is selected at random from 4 digits.</p>
 <ol class="loweralpha simple">
 <li><p>What is the probability all of the digits are the same?</p></li>
@@ -498,23 +629,7 @@ document.write(`
 <li><p>What is the probability the PIN starts with the number 7?</p></li>
 </ol>
 </li>
-<li><p>Let <strong>S</strong> be the sample space for flipping a fair, two-sided coin three times. Let <strong>A</strong> be the event of atleast one heads. Find <img class="math" src="../../../_images/math/0fb5c3fd8b5f12426f9ce700fdf2d4e704905cd2.png" alt="P(A)"/>.</p></li>
-</ol>
-<details class="summary-solution-8">
-<summary>Solution #8</summary><p>The word “<em>atleast</em>” is a red flag in problems involving probability. If you see the word “<em>atleast</em>”, it is a fair bet you will need to find the complement of a set at some point. To see why, note the way this problem is phrase can be interpretted with the <a class="reference internal" href="../../../notes/SET_THEORY.html#square-of-opposition"><span class="std std-ref">Aristotle’s Square of Opposition</span></a>. The <em>Square of Opposition</em> is pictured below for quick reference,</p>
-<img alt="../../../_images/square_of_opposition.jpg" class="align-center" src="../../../_images/square_of_opposition.jpg" />
-<p>The <em>Square</em> tells us the complement of “<em>some are</em>” (“atleast one”) is “<em>none are</em>”. Therefore, we can express the probability this problem is seeking with the <a class="reference internal" href="../../../notes/probability/00_INTRODUCTION.html#law-of-complements"><span class="std std-ref">Law of Complements</span></a>,</p>
-<div class="math">
-<p><img src="../../../_images/math/a1a6c5cd83324277a225dee0378f2b3800284f89.png" alt="P(A) = 1 - P(A^c)"/></p>
-</div><p>Where <img class="math" src="../../../_images/math/2ef75eec66003e588055d751eaddd391b6eccea0.png" alt="A^c"/> corresponds to the event of getting <em>no heads</em>.</p>
-<p>This is equivalent to getting all tails, which is a much simpler event to find, because it only has one outcome, namely <code class="docutils literal notranslate"><span class="pre">ttt</span></code>.</p>
-<p>To calculate the probability of this event, we apply the <a class="reference internal" href="../../../notes/probability/01_COMBINATORICS.html#counting-principle"><span class="std std-ref">The Fundamental Counting Principle</span></a> to find the total number of ways the experiment can occur. Each flip has two outcomes, heads or tails. There are three flips in total. Thus,</p>
-<div class="math">
-<p><img src="../../../_images/math/bdc107e373f3d98d5375c94e890f36df4829a5a2.png" alt="n(S) = 2 \cdot 2 \cdot 2 = 8"/></p>
-</div><p>The probability sought can then be calculated as,</p>
-<div class="math">
-<p><img src="../../../_images/math/2041567036f20070144e5f51bcbfa75e18861280.png" alt="P(A) = 1 - \frac{1}{8} = \frac{7}{8}"/></p>
-</div></details><ol class="arabic" start="2">
+<li><p>Consider the experiment of flipping a fair, two-sided coin three times. Let <strong>A</strong> be the event of atleast one heads. Find <img class="math" src="../../../_images/math/0fb5c3fd8b5f12426f9ce700fdf2d4e704905cd2.png" alt="P(A)"/>.</p></li>
 <li><p>A bag contains 4 red and 5 green balls. Two balls are drawn at random from the bag <em>with replacement</em>.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
@@ -532,7 +647,7 @@ document.write(`
 <blockquote>
 <div><p>rg, gr</p>
 </div></blockquote>
-<p>In both cases you would have exactly one green ball.</p>
+<p>In both cases you would have exactly one green ball, but each sequence would correspond to a different order of outcomes.</p>
 </div>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
@@ -584,6 +699,11 @@ document.write(`
 </ol>
 </div></blockquote>
 </li>
+</ol>
+</section>
+<section id="a-p-exam-practice">
+<h2>A.P. Exam Practice<a class="headerlink" href="#a-p-exam-practice" title="Permalink to this headline">#</a></h2>
+<ol class="arabic simple">
 <li><p><strong>2014, Free Response, #2</strong></p></li>
 </ol>
 <p>Nine sales representatives, 6 men and 3 women, at a small company wanted to attend a national convention. There were only enough travel funds to send 3 people. The manager selected 3 people to attend and stated that the people were selected at random. The 3 people selected were women. There were concerns that no men were selected to attend the convention.</p>
@@ -597,7 +717,7 @@ document.write(`
 </li>
 </ol>
 <p>Does the proposed process correctly simulate the random selection of 3 women from a group of 9 people consisting of 6 men and 3 women? Explain why or why not.</p>
-<ol class="arabic simple" start="8">
+<ol class="arabic simple" start="2">
 <li><p><strong>2018, Free Response, #3</strong></p></li>
 </ol>
 <p>Approximately 3.5 percent of all children born in a certain region are from multiple births (that is, twins, triplets, etc.). Of the children born in the region who are from multiple births, 22 percent are left-handed. Of the children
@@ -606,6 +726,27 @@ born in the region who are from single births, 11 percent are left-handed.</p>
 <li><p>What is the probability that a randomly selected child born in the region is left-handed?</p></li>
 <li><p>A random sample of 20 children born in the region will be selected. What is the probability that the sample will have at least 3 children who are left-handed?</p></li>
 </ol>
+</section>
+<section id="solutions">
+<h2>Solutions<a class="headerlink" href="#solutions" title="Permalink to this headline">#</a></h2>
+<section id="id1">
+<h3>Probability<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<ol class="arabic simple" start="2">
+<li><p>The word “<em>atleast</em>” is a red flag in problems involving probability. If you see the word “<em>atleast</em>”, it is a fair bet you will need to find the complement of a set at some point. To see why, note the way this problem is phrase can be interpretted with the <a class="reference internal" href="../../../notes/SET_THEORY.html#square-of-opposition"><span class="std std-ref">Aristotle’s Square of Opposition</span></a>. The <em>Square of Opposition</em> is pictured below for quick reference,</p></li>
+</ol>
+<img alt="../../../_images/square_of_opposition.jpg" class="align-center" src="../../../_images/square_of_opposition.jpg" />
+<p>The <em>Square</em> tells us the complement of “<em>some are</em>” (“atleast one”) is “<em>none are</em>”. Therefore, we can express the probability this problem is seeking with the <a class="reference internal" href="../../../notes/probability/00_INTRODUCTION.html#law-of-complements"><span class="std std-ref">Law of Complements</span></a>,</p>
+<div class="math">
+<p><img src="../../../_images/math/a1a6c5cd83324277a225dee0378f2b3800284f89.png" alt="P(A) = 1 - P(A^c)"/></p>
+</div><p>Where <img class="math" src="../../../_images/math/2ef75eec66003e588055d751eaddd391b6eccea0.png" alt="A^c"/> corresponds to the event of getting <em>no heads</em>.</p>
+<p>This is equivalent to getting all tails, which is a much simpler event to find, because it only has one outcome, namely <code class="docutils literal notranslate"><span class="pre">ttt</span></code>.</p>
+<p>To calculate the probability of this event, we apply the <a class="reference internal" href="../../../notes/probability/01_COMBINATORICS.html#counting-principle"><span class="std std-ref">The Fundamental Counting Principle</span></a> to find the total number of ways the experiment can occur. Each flip has two outcomes, heads or tails. There are three flips in total. Thus,</p>
+<div class="math">
+<p><img src="../../../_images/math/bdc107e373f3d98d5375c94e890f36df4829a5a2.png" alt="n(S) = 2 \cdot 2 \cdot 2 = 8"/></p>
+</div><p>The probability sought can then be calculated as,</p>
+<div class="math">
+<p><img src="../../../_images/math/2041567036f20070144e5f51bcbfa75e18861280.png" alt="P(A) = 1 - \frac{1}{8} = \frac{7}{8}"/></p>
+</div></section>
 </section>
 </section>
 
@@ -657,8 +798,15 @@ born in the region who are from single births, 11 percent are left-handed.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#counting">Counting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-principle">Counting Principle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#permutations">Permutations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combinations">Combinations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability">Probability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solutions">Solutions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Probability</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
