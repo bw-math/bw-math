@@ -93,7 +93,13 @@ ONE OR TWO MORE
 Independence
 ------------
 
-TODO
+1. In a certain game, you perform three tasks. You flip a quarter, and win if you get heads. You roll a single die, and win if you get a six. You pick a card from a full playing-card deck, and win if you pick a card in the suit of spades. If any of these task are successful, then you win the game. What is the probability of winning?
+
+.. hint::
+
+	You win in the case you get a head or you get a six or you get a spade. Don't forget to account for the overlapping events!
+	
+TODO MORE
 
 
 A.P. Exam Practice

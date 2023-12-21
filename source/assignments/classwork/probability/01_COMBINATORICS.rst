@@ -19,12 +19,6 @@ a. How many four-digit numbers can be formed using the digits *0, 1, 2, 3, 4, 5,
 	
 b. How many five-digit numbers can be formed using the digits *0, 1, 2, 3, 4, 5, 6, 7, 8* and *9* if the first digit cannot be 0 or 1? Repeated digits are still allowed.
 
-3. TODO
-
-4. TODO
-
-5. TODO
-
 Permutations
 ============
 
@@ -42,7 +36,7 @@ Use this set for the following problems.
 	
 	ii. List all ordered arrangement these objects choosing 2 at a time without replacement. What is :math:`P^{3}_2`?
 
-	iii. List all ordered arrangment of these objects choosing 1 at a time without replacement. What is math:`P^{3}_1`?
+	iii. List all ordered arrangment of these objects choosing 1 at a time without replacement. What is :math:`P^{3}_1`?
 
 b. Consider the set of objects,
 
@@ -54,11 +48,11 @@ Use this set for the following problems:
 
 	i. List all ordered arrangement these objects choosing 5 at a time without replacement. What is :math:`P^{5}_5`?
 
-	ii. List all ordered arrangment of these objects choosing 4 at a time without replacement. What is math:`P^{5}_4`?
+	ii. List all ordered arrangment of these objects choosing 4 at a time without replacement. What is :math:`P^{5}_4`?
 	
 	iii. List all ordered arrangement these objects choosing 3 at a time without replacement. What is :math:`P^{5}_3`?
 
-	iv. List all ordered arrangment of these objects choosing 2 at a time without replacement. What is math:`P^{5}_2`?
+	iv. List all ordered arrangment of these objects choosing 2 at a time without replacement. What is :math:`P^{5}_2`?
 	
 	v. List all ordered arrangement these objects choosing 1 at a time without replacement. What is :math:`P^{5}_1`?
 	
@@ -74,6 +68,7 @@ d. How many different four letter codes are there if only the letters *A*, *B*, 
 
 3. **Words**
 
+TODO
 
 Combinations
 ============
@@ -92,7 +87,7 @@ Use this set for the following problems.
 	
 	ii. List all combinations of these objets taken 2 at a time. What is :math:`C^{3}_2`?
 
-	iii. List all combinations of these objets taken 1 at a time. What is math:`C^{3}_1`?
+	iii. List all combinations of these objets taken 1 at a time. What is :math:`C^{3}_1`?
 
 b. Consider the set of objects,
 
@@ -104,11 +99,11 @@ Use this set for the following problems:
 
 	i. List all combinations of these objets taken 5 at a time. What is :math:`C^{5}_5`?
 
-	ii. List all combinations of these objets taken 4 at a time. What is math:`C^{5}_4`?
+	ii. List all combinations of these objets taken 4 at a time. What is :math:`C^{5}_4`?
 	
 	iii. List all combinations of these objets taken 3 at a time.What is :math:`C^{5}_3`?
 
-	iv. List all combinations of these objets taken 2 at a time. What is math:`C^{5}_2`?
+	iv. List all combinations of these objets taken 2 at a time. What is :math:`C^{5}_2`?
 	
 	v. List all combinations of these objets taken 1 at a time. What is :math:`C^{5}_1`?
 
