@@ -93,7 +93,15 @@ ONE OR TWO MORE
 Independence
 ------------
 
-1. In a certain game, you perform three tasks. You flip a quarter, and win if you get heads. You roll a single die, and win if you get a six. You pick a card from a full playing-card deck, and win if you pick a card in the suit of spades. If any of these task are successful, then you win the game. What is the probability of winning?
+1. **Concepts**
+
+a. You flip two fair coins. What is the probability of getting two heads?
+
+b. You draw a single card from a standard deck of 52 cards. What is the probability of getting a king of hearts?
+
+c. What is the probability of getting exactly three sixs in three die rolls?
+ 
+4. In a certain game, you perform three tasks. You flip a quarter, and win if you get heads. You roll a single die, and win if you get a six. You pick a card from a full playing-card deck, and win if you pick a card in the suit of spades. If any of these task are successful, then you win the game. What is the probability of winning?
 
 .. hint::
 

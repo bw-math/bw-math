@@ -4,6 +4,13 @@
 Binomial Distribution
 =====================
 
+1. What is the probability of getting exactly three *1*'s in 10 rolls of a six-sided die?
+
+TODO: MORE
+
+A.P. Exam Practice
+==================
+
 1. **2004, Free Response, #3**
 
 At an archaeological site that was an ancient swamp, the bones from 20 brontosaur skeletons have been unearthed. The bones do not show any sign of disease or malformation. It is thought that these animals wandered into a deep area of the swamp and became trapped in the swamp bottom. The 20 left femur bones (thigh bones) were located and 4 of these left femurs are to be randomly selected without replacement for DNA testing to determine gender.
