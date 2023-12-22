@@ -8,6 +8,7 @@ Class Notes
    :caption: Contents:
 
    HISTORY
+   LOGIC
    SET_THEORY
    probability/index
    experiments/index

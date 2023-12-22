@@ -4,6 +4,7 @@
 Introduction
 ============
 
+
 Sample Spaces and Events
 ========================
 
@@ -52,7 +53,7 @@ Sample Spaces and Events
 
 	b. Are **A** and **B** complements?
 
-6. At a certain university, every year eight of the 12 professors are granted University Merit Awards. This year among the nominated faculty are Dr. Jones, Dr. Smith and Dr. Brown. Let **A**, **B** and **C** denote the events, resepctively, that these professors will be given awards. In terms of **A**, **B** and **C**, find a symbolic expresion for each of the following compound events,
+6. At a certain university, every year eight of the 12 professors are granted University Merit Awards. This year among the nominated faculty are Dr. Jones, Dr. Smith and Dr. Brown. Let **A**, **B** and **C** denote the events, resepctively, that these professors will be given awards. In terms of **A**, **B** and **C**, find a symbolic expression for each of the following compound events,
  
  	a. The award goes only to Dr. Jones.
  
@@ -66,10 +67,19 @@ Sample Spaces and Events
  	
  	f. Dr. Jones or Dr. Smith get the award, but not both.
  
+ 7. Define a sample space for the experiment of drawing two coins from a purse that contains two quarters, three nickels, one dime and four pennies. For the same experiment, describe the following events:
+ 
+ 	a. drawing 26 cents.
+ 	
+ 	b. drawing more than 9 cents but less than 25 cents.
+ 	
+ 	c. drawing 29 cents.
+ 	
+ 
 Classical Definition
 ====================
 
-7. You roll two dice. Find the probability of the following events. 
+1. You roll two dice. Find the probability of the following events. 
    
 	a. The sum of the numbers rolled is 7.
 
@@ -84,7 +94,7 @@ Classical Definition
 	f. Is part *e* the complement of part *c* or part *d*?
 
 
-8. A box contains three red balls and five blue balls. 
+2. A box contains three red balls and five blue balls. 
 
 	a. Define a sample space for the experiment of selecting three balls that are drawn from the box, one by one, with replacement.
 
@@ -99,7 +109,7 @@ Classical Definition
 	f. Find the probability of selecting two blue balls and one red ball. 
 
 
-9. You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,
+3. You have a standard deck of 52 playing cards. You shuffle the cards into a random order and deal yourself exactly one card. Find the probabilities of the following events,
 
 	a. The card is a king.
 
@@ -114,21 +124,39 @@ Classical Definition
 	f. The card is black or a queen. 
 	    
 	g. The card is neither nor a queen.
+	
 
+4. You select a number randomly between 1 and 1000. What is the probability the number selected is divisible by 5?
 
-10. You select a number randomly between 1 and 1000. What is the probability the number selected is divisible by 5?
+5. Among 33 students in a class, 17 of them earned A's on the midterm exam, 14 earned A's on the final exam and 11 did not earn A's on either examination. What is the probability that a randomly selected student from this class earned an A on both exams?
 
-11. Among 33 students in a class, 17 of them earned A's on the midterm exam, 14 earned A's on the final exam and 11 did not earn A's on either examination. What is the probability that a randomly selected student from this class earned an A on both exams?
+6. Suppose that the probability a student at a school is a male and skips at least one day of school during the school year is 0.12. Suppose the corresponding probability for a female is 0.06. What is the probability of randomly selecting a student at this school who will skip at least one day of school during the next 12 months?
 
-12. The coefficients of the quadratic equation :math:`x^2 + bx + c = 0` are determined by tossing a fair die twice. The first outcome is *b* and the second outcome is *c*. Find the probability the equation has real roots.
+7. Suppose that 75% of all investor invest in the stock market and 45% of them in invest in fixed income bonds. If 85% of investors invest in the stock market or fixed income bonds, what percentage invest in both?
+
+8. Suppose at the next Comic-Con, you sample 400 super nerds. 300 of them like *Star Wars* or *Star Trek* or both, 160 of them like *Star Trek*, and 120 of them like *Star Wars* and *Star Trek*. What is the probability that a super nerd selected at random from this sample likes *Star Wars*?
+               
+9. The coefficients of the quadratic equation :math:`x^2 + bx + c = 0` are determined by tossing a fair die twice. The first outcome is *b* and the second outcome is *c*. Find the probability the equation has real roots.
 
 
 Proofs
 ======
 
-10. TODO: prove some basic probability things
+1. **Basic Proofs**
 
-11. Let **A** and **B** be two events, not necessarily mutually exclusive. Prove the following inequality
+Prove the following theorems using the :ref:`axioms_of_probability`,
+
+	a. **Complement Theorem** For any event **A**, :math:`P(A^c) = 1 - P(A)`
+	
+	b. **Difference Theorem** If :math:`A \subseteq B`, then :math:`P(B - A) = P(B \cap A^c) = P(B) - P(A)`.
+	
+	c. **Inequality Theorem** If :math:`A \subseteq B`, then :math:`P(A) \leq P(B)`.
+	
+	d. **Union Theorem** For any events **A** and **B**, :math:`P(A \cup B) = P(A) + P(B) - P(A \cap B)`.
+
+2. **Advanced Proofs**
+
+a. Let **A** and **B** be two events, not necessarily mutually exclusive. Prove the following inequality
 
 .. math:: 
 
@@ -139,7 +167,9 @@ Proofs
 	Use the :ref:`law_of_unions` and :ref:`axiom_1`
 
 
-12. **Symmetric Difference** Let **A** and **B** be two events, not necessarily mutually exclusive. The event,
+b. **Advanced Proof #2** 
+
+Let **A** and **B** be two events, not necessarily mutually exclusive. The event,
     
 .. math:: 
 
@@ -157,7 +187,7 @@ is called the *symmetric difference of* **A** *and* **B**. Prove the probability
 
 .. hint::
 	
-	Recall (TODO link) :math:`A - B = A \cap B^C`
+	Recall the :ref:`set_difference` operation :math:`A - B = A \cap B^C`
 
 
 A.P. Exam Practice
@@ -244,6 +274,11 @@ Which of the following statements about a randomly chosen person from these 200 
     (D) The person is more likely to live in the downtown area in the city than elsewhere in the city.
 
     (E) The person is more likely to own a car than not to own a car.
+    
+    
+    
+    
+    
     
     
 Solutions
