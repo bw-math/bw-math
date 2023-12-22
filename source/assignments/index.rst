@@ -8,5 +8,5 @@ Assignments
 
    homework/index
    classwork/index
-   projects/index
+   python/index
    calculator/index
