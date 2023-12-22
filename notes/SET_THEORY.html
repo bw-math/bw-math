@@ -47,7 +47,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Probability" href="probability/index.html" />
-    <link rel="prev" title="Knowledge" href="HISTORY.html" />
+    <link rel="prev" title="Symbolic Logic" href="LOGIC.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -132,6 +132,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../02_DATASETS.html">Datasets</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Class Notes</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="HISTORY.html">Knowledge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LOGIC.html">Symbolic Logic</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Set Theory</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="probability/00_INTRODUCTION.html">Introduction</a></li>
@@ -185,20 +186,7 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../assignments/index.html">Assignments</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../assignments/homework/index.html">Homework</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../assignments/homework/01_UNIT01.html">Unit 1 Homework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../assignments/homework/02_UNIT02.html">Unit 2 Homework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../assignments/homework/03_UNIT03.html">Unit 3 Homework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../assignments/homework/04_CHAP01_OS.html">Chapter 1 Homework (OpenStax Text)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../assignments/homework/05_UNIT04.html">Unit 4 Homework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../assignments/homework/06_UNIT05.html">Unit 5 Homework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../assignments/homework/07_CHAP06_OS.html">Chapter 6 Homework (OpenStax Text)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../assignments/homework/08_CHAP07_OS.html">Chapter 7 Homework (OpenStax Text)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../assignments/homework/09_UNIT06.html">Unit 6 Homework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../assignments/homework/10_CHAP08_OS.html">Chapter 8 Homework (OpenStax Text)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../assignments/homework/11_UNIT07.html">Unit 7 Homework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../assignments/homework/12_UNIT08.html">Unit 9 Homework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../assignments/homework/13_UNIT09.html">Unit 9 Homework</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../assignments/homework/index.html">Homework</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../assignments/classwork/index.html">Classwork</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -463,18 +451,6 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminaries">Preliminaries</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logic">Logic</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#proposition">Proposition</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#truth-table">Truth Table</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#operations">Operations</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#implication">Implication</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#universal-quantification">Universal Quantification</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#existential-quantification">Existential Quantification</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#domain-of-discourse">Domain of Discourse</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elements">Elements</a></li>
@@ -500,7 +476,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equality">Equality</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-operations">Operations</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operations">Operations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complement">Complement</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#union">Union</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intersection">Intersection</a></li>
@@ -545,7 +521,7 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#universal-negative-case">Universal Negative Case</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#existential-positive-case">Existential Positive Case</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#existential-negative-case">Existential Negative Case</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">Square of Opposition</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">Square of Opposition</a></li>
 </ul>
 </li>
 </ul>
@@ -563,87 +539,17 @@ document.write(`
                   
   <section id="set-theory">
 <span id="id1"></span><h1>Set Theory<a class="headerlink" href="#set-theory" title="Permalink to this headline">#</a></h1>
-<section id="preliminaries">
-<h2>Preliminaries<a class="headerlink" href="#preliminaries" title="Permalink to this headline">#</a></h2>
-<section id="logic">
-<span id="symbolic-logic"></span><h3>Logic<a class="headerlink" href="#logic" title="Permalink to this headline">#</a></h3>
-<p>In order to develop the theory of sets precisely, we will first need a few concepts from <em>logic</em>.</p>
-<section id="proposition">
-<span id="id2"></span><h4>Proposition<a class="headerlink" href="#proposition" title="Permalink to this headline">#</a></h4>
-<dl class="simple">
-<dt>Symbolic Expression</dt><dd><p><img class="math" src="../_images/math/329a4059b6588ddc5291a9958408e7158452bc53.png" alt="p, q, r"/></p>
-</dd>
-<dt>Definition</dt><dd><p>A sentence that can be judged either <em>true</em> or <em>false</em>.</p>
-</dd>
-</dl>
-</section>
-<section id="truth-table">
-<span id="id3"></span><h4>Truth Table<a class="headerlink" href="#truth-table" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
-</section>
-<section id="operations">
-<span id="logic-operations"></span><h4>Operations<a class="headerlink" href="#operations" title="Permalink to this headline">#</a></h4>
-<p>TODO</p>
-</section>
-<section id="implication">
-<span id="id4"></span><h4>Implication<a class="headerlink" href="#implication" title="Permalink to this headline">#</a></h4>
-<dl class="simple">
-<dt>Symbolic Expression</dt><dd><p><img class="math" src="../_images/math/149848db043cfb0a5e9cb8d3f76888f81894e6a5.png" alt="p \implies q"/></p>
-</dd>
-<dt>Definition</dt><dd><p>A symbolic representation of a <em>conditional</em> (if-then) relationship between two <em>propositions</em>.</p>
-</dd>
-</dl>
-<p>This type of proposition can be translated into English in the following ways,</p>
-<ol class="arabic simple">
-<li><p>“if <em>p</em>, then <em>q</em>”</p></li>
-<li><p>“whenever <em>p</em>, then <em>q</em>”</p></li>
-<li><p>“<em>p</em> implies <em>q</em>”</p></li>
-<li><p>“<em>q</em> follows from <em>p</em>”</p></li>
-</ol>
-</section>
-<section id="universal-quantification">
-<span id="id5"></span><h4>Universal Quantification<a class="headerlink" href="#universal-quantification" title="Permalink to this headline">#</a></h4>
-<dl class="simple">
-<dt>Symbolic Expression</dt><dd><p><img class="math" src="../_images/math/6c690fd3b495a4f8d1680f489d2e1e172274cd48.png" alt="\forall p: q"/></p>
-</dd>
-<dt>Definition</dt><dd><p>A symbolic representation of a universal proposition.</p>
-</dd>
-</dl>
-<p>This type of proposition can be translated into English in the following ways,</p>
-<ol class="arabic simple">
-<li><p>“for all <em>p</em>, <em>q</em>”</p></li>
-<li><p>“for every <em>p</em>, <em>q</em>”</p></li>
-<li><p>“for each <em>p</em>, <em>q</em>”</p></li>
-</ol>
-</section>
-<section id="existential-quantification">
-<span id="id6"></span><h4>Existential Quantification<a class="headerlink" href="#existential-quantification" title="Permalink to this headline">#</a></h4>
-<dl class="simple">
-<dt>Symbolic Expression</dt><dd><p><img class="math" src="../_images/math/3a9bb8c5ceff40bb8422433a0418db4dbcb13ac4.png" alt="\exists p: q"/></p>
-</dd>
-<dt>Definition</dt><dd><p>A symbolic representation of an existential proposition.</p>
-</dd>
-</dl>
-<p>This type of proposition can be translated into English in the following ways,</p>
-<ol class="arabic simple">
-<li><p>“there exists a <em>p</em> such that <em>q</em>”</p></li>
-<li><p>“for some <em>p</em>, <em>q</em>”</p></li>
-<li><p>“there is a <em>p</em> that <em>q</em>”</p></li>
-</ol>
-</section>
-</section>
-</section>
 <section id="definitions">
 <h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
 <section id="domain-of-discourse">
-<span id="id7"></span><h3>Domain of Discourse<a class="headerlink" href="#domain-of-discourse" title="Permalink to this headline">#</a></h3>
+<span id="id2"></span><h3>Domain of Discourse<a class="headerlink" href="#domain-of-discourse" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
 <dt>Definition</dt><dd><p>The <em>domain of discourse</em> is subject matter we are treating.</p>
 </dd>
 </dl>
 </section>
 <section id="elements">
-<span id="id8"></span><h3>Elements<a class="headerlink" href="#elements" title="Permalink to this headline">#</a></h3>
+<span id="id3"></span><h3>Elements<a class="headerlink" href="#elements" title="Permalink to this headline">#</a></h3>
 <dl>
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../_images/math/20d6a1c77137e7fc63db49a2186054b269af01c1.png" alt="x,y,x"/> (<em>lowercase letters</em>)</p>
 <p><img class="math" src="../_images/math/3b27c6bfd0a0830505b6509e8b3e867ba65cea30.png" alt="x_1, x_2, ... , x_n"/> (<em>lowercase letters with subscripts</em>)</p>
@@ -653,7 +559,7 @@ document.write(`
 </dl>
 </section>
 <section id="sets">
-<span id="id9"></span><h3>Sets<a class="headerlink" href="#sets" title="Permalink to this headline">#</a></h3>
+<span id="id4"></span><h3>Sets<a class="headerlink" href="#sets" title="Permalink to this headline">#</a></h3>
 <dl>
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../_images/math/c1aa5e31bee7731e9792fb0b9760c002197de969.png" alt="A,B,C"/> (<em>upper case letters</em>)</p>
 <p><img class="math" src="../_images/math/ee2574d3596b3553624606616f77d378b51dea21.png" alt="A_1, A_2, ... , A_n"/> (<em>uppercase letters with subscripts</em>)</p>
@@ -667,7 +573,7 @@ document.write(`
 </div>
 </section>
 <section id="cardinality">
-<span id="id10"></span><h3>Cardinality<a class="headerlink" href="#cardinality" title="Permalink to this headline">#</a></h3>
+<span id="id5"></span><h3>Cardinality<a class="headerlink" href="#cardinality" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../_images/math/534ec862789190f4e1c0ee776c13e4f478f5e83f.png" alt="n(A)"/></p>
 </dd>
@@ -676,7 +582,7 @@ document.write(`
 </dl>
 </section>
 <section id="universal-set">
-<span id="id11"></span><h3>Universal Set<a class="headerlink" href="#universal-set" title="Permalink to this headline">#</a></h3>
+<span id="id6"></span><h3>Universal Set<a class="headerlink" href="#universal-set" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../_images/math/23298f92ca8dc2a1ce6332eb7a21d5f2e9ae0bd8.png" alt="S"/></p>
 </dd>
@@ -685,7 +591,7 @@ document.write(`
 </dl>
 </section>
 <section id="null-set">
-<span id="id12"></span><h3>Null Set<a class="headerlink" href="#null-set" title="Permalink to this headline">#</a></h3>
+<span id="id7"></span><h3>Null Set<a class="headerlink" href="#null-set" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../_images/math/4d7ffaeaa90a71e9aedb567d46ba48bcb8c4ec80.png" alt="\varnothing"/></p>
 </dd>
@@ -694,7 +600,7 @@ document.write(`
 </dl>
 </section>
 <section id="natural-numbers">
-<span id="id13"></span><h3>Natural Numbers<a class="headerlink" href="#natural-numbers" title="Permalink to this headline">#</a></h3>
+<span id="id8"></span><h3>Natural Numbers<a class="headerlink" href="#natural-numbers" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
 <dt>Symbolic Expresison</dt><dd><p><img class="math" src="../_images/math/453896d96e7397619da7c8d46796c4904cfc2a5c.png" alt="\mathbb{N}"/></p>
 </dd>
@@ -703,7 +609,7 @@ document.write(`
 </dl>
 </section>
 <section id="real-numbers">
-<span id="id14"></span><h3>Real Numbers<a class="headerlink" href="#real-numbers" title="Permalink to this headline">#</a></h3>
+<span id="id9"></span><h3>Real Numbers<a class="headerlink" href="#real-numbers" title="Permalink to this headline">#</a></h3>
 <dl class="simple">
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../_images/math/1483d3014b3dd6403a406685ba29142ee3a9c764.png" alt="\mathbb{R}"/></p>
 </dd>
@@ -715,13 +621,13 @@ document.write(`
 <section id="notation">
 <h2>Notation<a class="headerlink" href="#notation" title="Permalink to this headline">#</a></h2>
 <section id="list-notation">
-<span id="id15"></span><h3>List Notation<a class="headerlink" href="#list-notation" title="Permalink to this headline">#</a></h3>
+<span id="id10"></span><h3>List Notation<a class="headerlink" href="#list-notation" title="Permalink to this headline">#</a></h3>
 <div class="math">
 <p><img src="../_images/math/9d9d56d6853698c59a59a322b9a3883a0b1c8c15.png" alt="A = \{ a, b, c, ... \}"/></p>
 </div><p>In <em>list notation</em>, all of the elements that belong to <strong>A</strong> are <em>explicitly</em> written between a pair of brackets with commas separating each element.</p>
 </section>
 <section id="quantifier-notation">
-<span id="id16"></span><h3>Quantifier Notation<a class="headerlink" href="#quantifier-notation" title="Permalink to this headline">#</a></h3>
+<span id="id11"></span><h3>Quantifier Notation<a class="headerlink" href="#quantifier-notation" title="Permalink to this headline">#</a></h3>
 <div class="math">
 <p><img src="../_images/math/1f406e8380dff5a3efc3f81b1e66c978dcaa302e.png" alt="A = \{ \forall x: F(x) \}"/></p>
 </div><p>In <em>quantifier notation</em>, all of the elements that belong to <strong>A</strong> are <em>implicitly</em> written between a pair of brackets with a formula that specifies the conditions for membership.</p>
@@ -740,7 +646,7 @@ document.write(`
 </dl>
 </section>
 <section id="venn-diagrams">
-<span id="id17"></span><h2>Venn Diagrams<a class="headerlink" href="#venn-diagrams" title="Permalink to this headline">#</a></h2>
+<span id="id12"></span><h2>Venn Diagrams<a class="headerlink" href="#venn-diagrams" title="Permalink to this headline">#</a></h2>
 <p>A <em>Venn Diagram</em> is a visual representation of sets. The universal set is represent as rectangle and sets are represented as circles within this rectangle. The simplest <em>Venn Diagram</em> is a graphic of a single set <strong>A</strong> shown against the universal set <strong>S</strong>,</p>
 <img alt="../_images/sets_simple.jpg" class="align-center" src="../_images/sets_simple.jpg" />
 <p>You will sometimes set <em>Venn Diagrams</em> with the elements of the sets written in, as in the following picture,</p>
@@ -750,7 +656,7 @@ document.write(`
 <section id="relations">
 <span id="set-relations"></span><h2>Relations<a class="headerlink" href="#relations" title="Permalink to this headline">#</a></h2>
 <section id="subset">
-<span id="id18"></span><h3>Subset<a class="headerlink" href="#subset" title="Permalink to this headline">#</a></h3>
+<span id="id13"></span><h3>Subset<a class="headerlink" href="#subset" title="Permalink to this headline">#</a></h3>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../_images/math/de2b893138da1f4032fea64eade1533eed5eb60e.png" alt="A \subseteq B"/></p>
@@ -765,7 +671,7 @@ document.write(`
 <p>This diagram represents the relationship <img class="math" src="../_images/math/d47d4abd77f8c220c227bb878ecc832f9ea96a52.png" alt="A \subseteq B"/>.</p>
 </section>
 <section id="proper-subset">
-<span id="id19"></span><h3>Proper Subset<a class="headerlink" href="#proper-subset" title="Permalink to this headline">#</a></h3>
+<span id="id14"></span><h3>Proper Subset<a class="headerlink" href="#proper-subset" title="Permalink to this headline">#</a></h3>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../_images/math/b0130aeceff05f789b654788662dc910994114ca.png" alt="A \subset B"/></p>
@@ -820,10 +726,10 @@ document.write(`
 <p><img src="../_images/math/4b153daf42b9e4a4e292bd3ce4af9f746424fa0e.png" alt="A \equiv B \not \Rightarrow A = B"/></p>
 </div></section>
 </section>
-<section id="set-operations">
-<span id="id20"></span><h2>Operations<a class="headerlink" href="#set-operations" title="Permalink to this headline">#</a></h2>
+<section id="operations">
+<span id="set-operations"></span><h2>Operations<a class="headerlink" href="#operations" title="Permalink to this headline">#</a></h2>
 <section id="complement">
-<span id="id21"></span><h3>Complement<a class="headerlink" href="#complement" title="Permalink to this headline">#</a></h3>
+<span id="id15"></span><h3>Complement<a class="headerlink" href="#complement" title="Permalink to this headline">#</a></h3>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../_images/math/081ad39e649541259707f03e1dece0849a3b5572.png" alt="A^c"/></p>
@@ -859,7 +765,7 @@ document.write(`
 </div></div></blockquote>
 </section>
 <section id="union">
-<span id="id22"></span><h3>Union<a class="headerlink" href="#union" title="Permalink to this headline">#</a></h3>
+<span id="id16"></span><h3>Union<a class="headerlink" href="#union" title="Permalink to this headline">#</a></h3>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../_images/math/888ddb12ea65a9e5fb8d5232a34f768ddf4f5306.png" alt="A \cup B"/></p>
@@ -894,7 +800,7 @@ document.write(`
 </div></div></blockquote>
 </section>
 <section id="intersection">
-<span id="id23"></span><h3>Intersection<a class="headerlink" href="#intersection" title="Permalink to this headline">#</a></h3>
+<span id="id17"></span><h3>Intersection<a class="headerlink" href="#intersection" title="Permalink to this headline">#</a></h3>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../_images/math/4a09bf76fbfe7fd3ac1878768a4895e92f25df75.png" alt="A \cap B"/></p>
@@ -955,7 +861,7 @@ document.write(`
 </div><p>This will be important when we apply these ideas to <a class="reference internal" href="probability/index.html#probability"><span class="std std-ref">Probability</span></a>. For this reason, we will give two versions of each theorem, when possible. One version will be phrased in terms of sets and the other version will be phrased in terms of cardinalities.</p>
 </div>
 <section id="identity-theorems">
-<span id="id24"></span><h3>Identity Theorems<a class="headerlink" href="#identity-theorems" title="Permalink to this headline">#</a></h3>
+<span id="id18"></span><h3>Identity Theorems<a class="headerlink" href="#identity-theorems" title="Permalink to this headline">#</a></h3>
 <section id="theorem-1">
 <span id="identity-theorem-one"></span><h4>Theorem 1<a class="headerlink" href="#theorem-1" title="Permalink to this headline">#</a></h4>
 <dl>
@@ -1046,9 +952,9 @@ document.write(`
 </section>
 </section>
 <section id="subset-theorems">
-<span id="id25"></span><h3>Subset Theorems<a class="headerlink" href="#subset-theorems" title="Permalink to this headline">#</a></h3>
+<span id="id19"></span><h3>Subset Theorems<a class="headerlink" href="#subset-theorems" title="Permalink to this headline">#</a></h3>
 <section id="subset-theorem-one">
-<span id="id26"></span><h4>Theorem 1<a class="headerlink" href="#subset-theorem-one" title="Permalink to this headline">#</a></h4>
+<span id="id20"></span><h4>Theorem 1<a class="headerlink" href="#subset-theorem-one" title="Permalink to this headline">#</a></h4>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../_images/math/8f1e7a5f69f7a28a1b39a33ae369154b03c951e5.png" alt="A \cap B \subseteq A"/></p>
@@ -1060,7 +966,7 @@ document.write(`
 <p>The intersection of <strong>A</strong> and <strong>B</strong> is a subset of <strong>A</strong>.</p>
 </section>
 <section id="subset-theorem-two">
-<span id="id27"></span><h4>Theorem 2<a class="headerlink" href="#subset-theorem-two" title="Permalink to this headline">#</a></h4>
+<span id="id21"></span><h4>Theorem 2<a class="headerlink" href="#subset-theorem-two" title="Permalink to this headline">#</a></h4>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../_images/math/541b2db7263cad6154970693bca5bcca4ca80e87.png" alt="A \subseteq A \cup B"/></p>
@@ -1072,7 +978,7 @@ document.write(`
 <p><strong>A</strong> is a subset of the union of <strong>A</strong> and <strong>B</strong>.</p>
 </section>
 <section id="subset-theorem-three">
-<span id="id28"></span><h4>Theorem 3<a class="headerlink" href="#subset-theorem-three" title="Permalink to this headline">#</a></h4>
+<span id="id22"></span><h4>Theorem 3<a class="headerlink" href="#subset-theorem-three" title="Permalink to this headline">#</a></h4>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../_images/math/d666d0b08acaff4f5583afe43535444e057b1fc6.png" alt="A \cap B \subseteq A \cup B"/></p>
@@ -1084,7 +990,7 @@ document.write(`
 <p>The intersection of two sets <strong>A</strong> and <strong>B</strong> is a subset of the union of those same two sets.</p>
 </section>
 <section id="subset-theorem-four">
-<span id="id29"></span><h4>Theorem 4<a class="headerlink" href="#subset-theorem-four" title="Permalink to this headline">#</a></h4>
+<span id="id23"></span><h4>Theorem 4<a class="headerlink" href="#subset-theorem-four" title="Permalink to this headline">#</a></h4>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../_images/math/a88239fa9fc705130917443468208494728642f4.png" alt="A \subseteq B \implies A \cap B = A"/></p>
@@ -1128,7 +1034,7 @@ document.write(`
 </div><p>The lesson here is: the relation of “<em>less than or equal to</em>” between cardinalities does not equate to the relation of “<em>subset of</em>” between two sets. While the concepts are related, this theorem illustrates they must regarded as separate <em>ideas</em>.</p>
 </section>
 <section id="subset-theorem-five">
-<span id="id30"></span><h4>Theorem 5<a class="headerlink" href="#subset-theorem-five" title="Permalink to this headline">#</a></h4>
+<span id="id24"></span><h4>Theorem 5<a class="headerlink" href="#subset-theorem-five" title="Permalink to this headline">#</a></h4>
 <blockquote>
 <div><div class="math">
 <p><img src="../_images/math/45292bbb37c0b9ad99cb48f48e3e1e74ab20ae17.png" alt="A \subseteq B \implies A \cup B = B"/></p>
@@ -1136,7 +1042,7 @@ document.write(`
 <p>If <strong>A</strong> is a subset of <strong>B</strong>, then the union of <strong>A</strong> and <strong>B</strong> is equal to <strong>B</strong></p>
 </section>
 <section id="subset-theorem-six">
-<span id="id31"></span><h4>Theorem 6<a class="headerlink" href="#subset-theorem-six" title="Permalink to this headline">#</a></h4>
+<span id="id25"></span><h4>Theorem 6<a class="headerlink" href="#subset-theorem-six" title="Permalink to this headline">#</a></h4>
 <blockquote>
 <div><div class="math">
 <p><img src="../_images/math/18197d5d03e75d448a3f05c1eb35da16a60e6368.png" alt="A \subseteq B \text{ and } B \subset C \implies A \subseteq C"/></p>
@@ -1149,9 +1055,9 @@ document.write(`
 </section>
 </section>
 <section id="complement-theorems">
-<span id="id32"></span><h3>Complement Theorems<a class="headerlink" href="#complement-theorems" title="Permalink to this headline">#</a></h3>
+<span id="id26"></span><h3>Complement Theorems<a class="headerlink" href="#complement-theorems" title="Permalink to this headline">#</a></h3>
 <section id="complement-theorem-one">
-<span id="id33"></span><h4>Theorem 1<a class="headerlink" href="#complement-theorem-one" title="Permalink to this headline">#</a></h4>
+<span id="id27"></span><h4>Theorem 1<a class="headerlink" href="#complement-theorem-one" title="Permalink to this headline">#</a></h4>
 <blockquote>
 <div><div class="math">
 <p><img src="../_images/math/2314c220fa6ccf93ee4d1b97a984d413286d53b1.png" alt="(A^c)^c = A"/></p>
@@ -1178,7 +1084,7 @@ document.write(`
 </div></div></blockquote>
 </section>
 <section id="complement-theorem-two">
-<span id="id34"></span><h4>Theorem 2<a class="headerlink" href="#complement-theorem-two" title="Permalink to this headline">#</a></h4>
+<span id="id28"></span><h4>Theorem 2<a class="headerlink" href="#complement-theorem-two" title="Permalink to this headline">#</a></h4>
 <blockquote>
 <div><div class="math">
 <p><img src="../_images/math/1bfdea2655c561dc3eb5427c22f98c21cb0912a0.png" alt="A \cup A^c = S"/></p>
@@ -1204,7 +1110,7 @@ document.write(`
 </div></div></blockquote>
 </section>
 <section id="complement-theorem-three">
-<span id="id35"></span><h4>Theorem 3<a class="headerlink" href="#complement-theorem-three" title="Permalink to this headline">#</a></h4>
+<span id="id29"></span><h4>Theorem 3<a class="headerlink" href="#complement-theorem-three" title="Permalink to this headline">#</a></h4>
 <blockquote>
 <div><div class="math">
 <p><img src="../_images/math/ecd164bcc81a3f25076e11c0863bcc41c2a263f2.png" alt="A \cap A ^c = \varnothing"/></p>
@@ -1228,9 +1134,9 @@ document.write(`
 </section>
 </section>
 <section id="counting-theorems">
-<span id="id36"></span><h3>Counting Theorems<a class="headerlink" href="#counting-theorems" title="Permalink to this headline">#</a></h3>
+<span id="id30"></span><h3>Counting Theorems<a class="headerlink" href="#counting-theorems" title="Permalink to this headline">#</a></h3>
 <section id="counting-theorem-one">
-<span id="id37"></span><h4>Theorem 1<a class="headerlink" href="#counting-theorem-one" title="Permalink to this headline">#</a></h4>
+<span id="id31"></span><h4>Theorem 1<a class="headerlink" href="#counting-theorem-one" title="Permalink to this headline">#</a></h4>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../_images/math/6bc17668bcfa8e67d816e45b951dad3a11193f88.png" alt="n(A \cup B) = n(A) + n(B) - n(A \cap B)"/></p>
@@ -1265,7 +1171,7 @@ document.write(`
 </div></div></blockquote>
 </section>
 <section id="counting-theorem-two">
-<span id="id38"></span><h4>Theorem 2<a class="headerlink" href="#counting-theorem-two" title="Permalink to this headline">#</a></h4>
+<span id="id32"></span><h4>Theorem 2<a class="headerlink" href="#counting-theorem-two" title="Permalink to this headline">#</a></h4>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../_images/math/533cc2357067e3f6df865e09478b7a316ba572f4.png" alt="n(A) + n(A^c) = n(S)"/></p>
@@ -1398,8 +1304,8 @@ document.write(`
 <h4>Existential Negative Case<a class="headerlink" href="#existential-negative-case" title="Permalink to this headline">#</a></h4>
 <p>TODO</p>
 </section>
-<section id="id39">
-<h4>Square of Opposition<a class="headerlink" href="#id39" title="Permalink to this headline">#</a></h4>
+<section id="id33">
+<h4>Square of Opposition<a class="headerlink" href="#id33" title="Permalink to this headline">#</a></h4>
 <p>Finally, we come to the <em>square of opposition</em>, a visual device for remembering everything that has been covered in this section.</p>
 <p>The <em>square of opposition</em> is constructed by first drawing a table,</p>
 <table class="table">
@@ -1451,12 +1357,12 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="HISTORY.html"
+       href="LOGIC.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Knowledge</p>
+        <p class="prev-next-title">Symbolic Logic</p>
       </div>
     </a>
     <a class="right-next"
@@ -1486,18 +1392,6 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preliminaries">Preliminaries</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logic">Logic</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#proposition">Proposition</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#truth-table">Truth Table</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#operations">Operations</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#implication">Implication</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#universal-quantification">Universal Quantification</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#existential-quantification">Existential Quantification</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#domain-of-discourse">Domain of Discourse</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elements">Elements</a></li>
@@ -1523,7 +1417,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equality">Equality</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-operations">Operations</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operations">Operations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complement">Complement</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#union">Union</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intersection">Intersection</a></li>
@@ -1568,7 +1462,7 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#universal-negative-case">Universal Negative Case</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#existential-positive-case">Existential Positive Case</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#existential-negative-case">Existential Negative Case</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">Square of Opposition</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">Square of Opposition</a></li>
 </ul>
 </li>
 </ul>
