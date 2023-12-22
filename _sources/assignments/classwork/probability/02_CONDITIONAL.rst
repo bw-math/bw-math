@@ -13,19 +13,21 @@ Applications
 
 3. In a sample of 100 adultS, 45 of them owned a dog, 30 of them owned a cat and 18 of them owned a dog and a cat. What percentage of those who have a dog also have a cat?
 
-4. Suppose two fair dice have been tossed.
+4. Suppose 15% of the population of a country have auburn hair and are left-handed, while a total of 25% of the population have auburn hair.  What percent of those with auburn hair are left-handed?
+
+5. Suppose two fair dice have been tossed.
 
     a. What is the probability of a sum of 5 if they land on different numbers?
 
     b. If the total of their top faces is found to be divisible by 5, what is the probability that both of them have landed on five?
 
-5. A box contains three coins: two regular coins and a double-sided coin with heads on both sides. You select a coin at random and flip it. 
+6. A box contains three coins: two regular coins and a double-sided coin with heads on both sides. You select a coin at random and flip it. 
 
     a. What is the probability it lands heads up?
 
     b. If it lands heads up, what is the probability you have selected the double-sided coin?
 
-6. You are given the following :ref:`Venn Diagram <venn_diagrams>` below. 
+7. You are given the following :ref:`Venn Diagram <venn_diagrams>` below. 
 
     a. Find :math:`P(A \mid B)`
 
@@ -34,7 +36,7 @@ Applications
 .. image:: ../../../assets/imgs/problems/conditional_probability_venn_diagram.jpg
     :align: center
 
-7. Paging through a magazine, you notice a interesting survey of randomly selected individuals who were each asked two questions. The first question was "Do you believe the Earth is flat or round?". The second question was, "Do you think Finland is a `real country <https://knowyourmeme.com/memes/finland-does-not-exist>`_ ?" The results are given in the table below, 
+8. Paging through a magazine, you notice a interesting survey of randomly selected individuals who were each asked two questions. The first question was "Do you believe the Earth is flat or round?". The second question was, "Do you think Finland is a `real country <https://knowyourmeme.com/memes/finland-does-not-exist>`_ ?" The results are given in the table below, 
 
 +---------+------+-------+
 |         | Flat | Round |
@@ -44,19 +46,21 @@ Applications
 | Doesn't | 12   | 35    |
 +---------+------+-------+
 
-a. Draw a :ref:`Venn Diagram <venn_diagrams>` that represents the results.
+Use this table to answer the following problems.
 
-b. How many people were included in this survey?
+	a. Draw a :ref:`Venn Diagram <venn_diagrams>` that represents the results.
 
-c. What is the probability a randomly selected in this survey person believes the Earth is flat?
+	b. How many people were included in this survey?
 
-d. What is the probability a randomly selected in this survey person believes Finland doesn't exist?
+	c. What is the probability a randomly selected in this survey person believes the Earth is flat?
 
-e. Of the people who believe the Earth is round, what percentage of them believe Finland exists?
+	d. What is the probability a randomly selected in this survey person believes Finland doesn't exist?
 
-f. If a randomly selected person believes Finland doesn't exist, what is the probability he or she believes the Earth is flat?
+	e. Of the people who believe the Earth is round, what percentage of them believe Finland exists?
 
-g. If a randomly selected person believes the Earth is flat, what is the probability he or she doesn't believe Finland exists?
+	f. If a randomly selected person believes Finland doesn't exist, what is the probability he or she believes the Earth is flat?
+
+	g. If a randomly selected person believes the Earth is flat, what is the probability he or she doesn't believe Finland exists?
 
 h. **Spoiler Alert** Why is the answer to *part f* different from the answer to *part g*?
 
@@ -70,18 +74,20 @@ h. **Spoiler Alert** Why is the answer to *part f* different from the answer to 
 
     :ref:`Reduce the sample space <reduction_of_the_sample_space>` and then use :ref:`combinatorics`.
 
-Law of Intersections
+Law of Multiplication
 --------------------
 
 9. You shuffle a deck of playing cards and deal yourself two cards at random.
 
-    a. If the first card is a king, what is the probability the second card is a king?
+	a. If the first card is a king, what is the probability the second card is a king?
 
-    b. What is the probability both cards are kings? 
+	b. What is the probability both cards are kings? 
 
-    c. What is the difference between the meanings of *part a* and *part b*?
+	c. What is the difference between the meanings of *part a* and *part b*?
 
-10. 100 sci-fi fans were polled by the reporters at  *Imporant News Weekly*. 64 of those polled preferred *Star Wars* to *Star Trek*, while the rest of them, due to poor life choices, preferred *Star Trek* to *Star Wars*. Of the people who preferred *Star Wars*, 75% of them thought *The Empire Strikes Back* was the best of the film in the `ennealogy <https://en.wiktionary.org/wiki/ennealogy>_`. Of the people who preferred *Star Trek*, only half of them thought *The Empire Strike Back* was the best film in the series. 
+	d. What is the probability of *not* getting a pair?
+
+10. 100 sci-fi fans were polled by the reporters at  *Imporant News Weekly*. 64 of those polled preferred *Star Wars* to *Star Trek*, while the rest of them, due to poor life choices, preferred *Star Trek* to *Star Wars*. Of the people who preferred *Star Wars*, 75% of them thought *The Empire Strikes Back* was the best of the film in the `ennealogy <https://en.wiktionary.org/wiki/ennealogy>`_. Of the people who preferred *Star Trek*, only half of them thought *The Empire Strike Back* was the best film in the series. 
 
     a. What percent of people preferred *Star Wars* over *Star Trek* and thought *The Empire Strikes Back* was the best film in the series?
 
@@ -95,11 +101,13 @@ Independence
 
 1. **Concepts**
 
-a. You flip two fair coins. What is the probability of getting two heads?
+Use conditional probability to solve the following problems.
 
-b. You draw a single card from a standard deck of 52 cards. What is the probability of getting a king of hearts?
+	a. You flip two fair coins. What is the probability of getting two heads?
 
-c. What is the probability of getting exactly three sixs in three die rolls?
+	b. You draw a single card from a standard deck of 52 cards. What is the probability of getting a king of hearts?
+
+	c. What is the probability of getting exactly three sixs in three die rolls?
  
 4. In a certain game, you perform three tasks. You flip a quarter, and win if you get heads. You roll a single die, and win if you get a six. You pick a card from a full playing-card deck, and win if you pick a card in the suit of spades. If any of these task are successful, then you win the game. What is the probability of winning?
 

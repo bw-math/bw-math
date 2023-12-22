@@ -1,0 +1,684 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Python &#8212; bishop-walsh-math  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/python/00_PYTHON';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Bar Charts" href="01_CATEGORICAL.html" />
+    <link rel="prev" title="Python Projects" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">bishop-walsh-math  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../00_SPLASH.html">Bishop Walsh Math</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../01_STATS_SYLLABUS.html">AP Stats Course Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../02_DATASETS.html">Datasets</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/index.html">Class Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/HISTORY.html">Knowledge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/LOGIC.html">Symbolic Logic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/SET_THEORY.html">Set Theory</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/experiments/index.html">Experimental Design</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/01_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/02_DESIGN.html">Experimental Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/03_DATA.html">Data</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/04_INFERENCE.html">Inference</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/statistics/00_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/statistics/01_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/statistics/02_SAMPLING_DISTRIBUTIONS.html">Sampling Distributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/statistics/03_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/00_BERNOULLI.html">Bernoulli Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/02_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/03_UNIFORM.html">Uniform Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/04_NORMAL.html">Normal Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/05_T.html">T Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/06_CHI_SQUARED.html"><img alt="\chi^2" class="math" src="../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/07_F.html">F Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/hypotheses/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/hypotheses/01_MEAN_TESTS.html">Hypothesis Tests for the Population Mean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/hypotheses/02_PROPORTION_TESTS.html">Hypothesis Tests for the Population Proportion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/hypotheses/03_STDDEV_TESTS.html">Hypothesis Tests for the Population Standard Deviation</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/regression/index.html">Regression</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/regression/01_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/regression/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/regression/03_LINEAR_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/regression/04_RESIDUAL_ANALYSIS.html">Residual Analysis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Assignments</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../homework/index.html">Homework</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../classwork/index.html">Classwork</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../classwork/celebrations/index.html">Celebrations of Knowledge</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/celebrations/00_STATS_Q1.html">Statistics: Quarter One</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/celebrations/02_STATS_Q2.html">Statistics: Quarter Two</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/celebrations/03_CALC_Q2.html">Calculus: Quarter Two</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../classwork/algebra/index.html">Algebra</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/algebra/01_SUMS.html">Sums</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../classwork/differentiation/index.html">Differentiation</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/differentiation/00_CHAIN_RULE.html">Chain Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/differentiation/01_IMPLICIT_DIFFERENTIATION.html">Implicit Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/differentiation/02_GRAPHING.html">Graphing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/differentiation/03_RELATED_RATES.html">Related Rates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/differentiation/04_OPTIMIZATION.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/differentiation/05_THEOREMS.html">Theorems</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../classwork/set_theory/index.html">Set Theory</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/set_theory/01_INTRODUCTION.html">Set Theory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/set_theory/02_VENN_DIAGRAMS.html">Venn Diagrams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/set_theory/03_LOGIC.html">Symbolic Logic</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../classwork/probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../classwork/experiments/index.html">Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/experiments/00_DESIGN.html">Design</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/experiments/01_INFERENCE.html">Inference</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/experiments/02_BIAS.html">Bias</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/experiments/03_HYPOTHESES.html">Hypotheses</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../classwork/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/statistics/00_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/statistics/01_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/statistics/02_SAMPLING_DISTRIBUTIONS.html">Sampling Distributions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/statistics/03_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../classwork/distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/distributions/00_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/distributions/02_NORMAL.html">Normal Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../classwork/hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/hypotheses/01_MEAN_TESTS.html">Hypothesis Tests for the Population Mean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/hypotheses/02_PROPORTION_TESTS.html">Hypothesis Tests for the Population Proportion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/hypotheses/03_STDDEV_TESTS.html">Hypothesis Tests for the Population Standard Deviation</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../classwork/regression/index.html">Linear Regression</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/regression/00_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../classwork/regression/01_REGRESSION.html">Linear Regression</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Python Projects</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_CATEGORICAL.html">Bar Charts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_QUANTITATIVE.html">Histograms and Boxplots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_NORMALITY.html">Normality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_SIMULATION.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07_SETS.html">Sample Spaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_BINOMIAL.html">Binomial Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../calculator/index.html">Calculator Projects</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../references/index.html">References</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../references/00_EXAM.html">A.P. Statistics Exam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../references/01_RESOURCES.html">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../references/02_TI84.html">TI-84</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../references/03_SUBSTITUTE.html">Substitutes</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../references/tables/index.html">Statistical Tables</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../references/tables/01_Z_TABLE.html">Z Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/tables/02_CHI_SQUARED_TABLE.html"><img alt="\chi^2" class="math" src="../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/tables/03_T_TABLE.html">T Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/tables/04_PEARSON_TABLE.html">Pearson Correlation Coefficient Table</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../references/python/index.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/00_SHELL.html">Online Python Shell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/01_SETUP.html">Python Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/02_BASIC.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/03_SETS.html">Sets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/04_FUNCTIONS.html">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/05_PLOTS.html">Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/06_FILES.html">Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/07_CONTROLS.html">Control Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/08_WEB.html">The Internet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../references/python/09_DEMOS.html">Demonstrations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../maintenance/index.html">Maintenance</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../maintenance/LATEX.html">LaTex Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maintenance/SPHINX.html">Sphinx</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/assignments/python/00_PYTHON.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Python</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imports">Imports</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#natural-numbers">Natural Numbers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-numbers">Random Numbers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="python">
+<span id="project-zero"></span><h1>Python<a class="headerlink" href="#python" title="Permalink to this headline">#</a></h1>
+<blockquote class="epigraph">
+<div><p>What I cannot create, I do not understand.</p>
+<p class="attribution">—Richard Feynman</p>
+</div></blockquote>
+<p>In this lab, you will install <strong>Python</strong> and learn some of its basic functions. The goal is to get familiar with using <strong>Python</strong>.</p>
+<section id="instructions">
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
+<ol class="arabic simple">
+<li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_zero.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">LASTNAME</span></code> and <code class="docutils literal notranslate"><span class="pre">FIRSTNAME</span></code> with your last and first name, respectively.</p></li>
+<li><p>Create a <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">Python docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
+<li><p>Perform all exercises and answer all questions in the <a class="reference internal" href="#project-zero-project"><span class="std std-ref">Project</span></a> section. Label your script with comments as indicated in the instructions of each problem.</p></li>
+<li><p>When you are done, zip your folder and all its contents in a file named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_zero.zip</span></code></p></li>
+<li><p>Upload the zip file to the Google Classroom Project Zero assignment.</p></li>
+</ol>
+</section>
+<section id="background">
+<span id="project-zero-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<p>Like windmills and Heineken, <strong>Python</strong> is a product of the Netherlands. It was invented in the 1980s by Guido van Rossum, an engineer at <strong>Microsoft</strong>. Technically, <strong>Python</strong> is a language <a class="reference external" href="https://docs.python.org/3/reference/index.html">specification</a>, a set of grammatical rules and syntax. Any program that <em>implements</em> this specification is considered “<strong>Python</strong>”. The actual implementation details vary depending on which <strong>Python</strong> <a class="reference external" href="https://www.jython.org/jython-old-sites/archive/21/docs/differences.html">engine you are running</a>. Popular implementations of <strong>Python</strong> have been written in <strong>Java</strong> and <strong>C</strong>. However, these are details we will never need to know. We are <em>using</em> <strong>Python</strong> as an already built tool, not <em>studying</em> <strong>Python</strong> in order to understand how it was built.</p>
+<p><strong>Python</strong> is a very popular tool. Google <a class="reference external" href="https://www.google.com/search?q=python+in+data+science">python AND data science</a> and you will get a half billion results.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The upper-case “AND” in the search suggestion is a <a class="reference external" href="https://ahrefs.com/blog/google-advanced-search-operators/">Google search operator</a>. Learn how to Google effectively and it will save a ton of time!</p>
+</div>
+<p>In the last decade, <strong>Python</strong> has become the go-to tool for conducting data analysis. There is a reason for this: <strong>Python</strong> is easy to learn and easy to use. You don’t need any prior programming experience (although a few math classes help!), so you can focus on the problems you are actually solving rather than learning syntax.</p>
+<p><a class="reference external" href="https://docs.python.org/3/tutorial/index.html">Python has excellent documentation</a>. If you are ever in doubt (or just want to know more), try using the search bar on the documentation to find an answer:</p>
+<img alt="../../_images/python_doc_search.png" src="../../_images/python_doc_search.png" />
+<p>In addition, you can refer to the <a class="reference internal" href="../../references/python/index.html#python-reference"><span class="std std-ref">Python</span></a> section on this web site, where you will find some resources dedicated to the topics in this class.</p>
+</section>
+<section id="project">
+<span id="project-zero-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
+<ol class="arabic">
+<li><p>Head over to the <a class="reference internal" href="../../references/python/01_SETUP.html#python-setup"><span class="std std-ref">Python Setup</span></a> page and prepare your ChromeBook for Python.</p></li>
+<li><p>Read through the <a class="reference internal" href="../../references/python/02_BASIC.html#python-basics"><span class="std std-ref">Basics</span></a> and the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-functions"><span class="std std-ref">Functions</span></a> pages. Try the examples on your ChromeBook as you read through these pages. Use them as a reference to complete the exercises that follow.</p></li>
+<li><p>Add the required <code class="docutils literal notranslate"><span class="pre">import</span></code> statements from <a class="reference internal" href="#project-zero-imports"><span class="std std-ref">Imports</span></a> to the top of your <em>py</em> script.</p></li>
+<li><p>Take the <em>Natural Numbers</em> dataset from the <a class="reference internal" href="#project-zero-dataset"><span class="std std-ref">Datasets</span></a> section and add it to your <em>py</em> script. Perform the following operations. Be sure to add <a class="reference internal" href="../../references/python/02_BASIC.html#python-comments"><span class="std std-ref">Comments</span></a> where appriopriate.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Using <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-slicing"><span class="std std-ref">Slicing</span></a> and the <code class="docutils literal notranslate"><span class="pre">natural_numbers</span></code> list, create a list of all the <em>even</em> numbers between 1 and 100. Save the code in your script and label it with a comment <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">4a</span></code>.</p></li>
+<li><p>Using <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-slicing"><span class="std std-ref">Slicing</span></a> and the <code class="docutils literal notranslate"><span class="pre">natural</span> <span class="pre">numbers</span></code> list, create a list of all the <em>odd</em> numbers between 1 and 100. Save the code in your script and label it with a comment <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">4b</span></code>.</p></li>
+<li><p>Using <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a> and the <code class="docutils literal notranslate"><span class="pre">natural</span> <span class="pre">numbers</span></code> list, a create a list of the first 100 <em>squares</em>. Recall a sequence of <em>n</em> square numbers is given by <img class="math" src="../../_images/math/7f032b77ef06f2a295162b1306c394f0148df6df.png" alt="1, 4, 9, 16, ..., n^2"/>. Save the code in your script and lavel it with a comment <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">4c</span></code>.</p></li>
+<li><p>Using <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a> and the <code class="docutils literal notranslate"><span class="pre">natural</span> <span class="pre">numbers</span></code> list, a create a list that represents the first 100 values of the function <img class="math" src="../../_images/math/b887e607ee519905e9b3b8211ee6280ac7333765.png" alt="f(n) = \frac{1}{n}"/>, where <code class="docutils literal notranslate"><span class="pre">n</span></code> must be a natural number.</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Take the <em>Random Numbers</em> dataset from the <a class="reference internal" href="#project-zero-dataset"><span class="std std-ref">Datasets</span></a> section and add it to your <em>py</em> script. Perform the following operations. Be sure to add <a class="reference internal" href="../../references/python/02_BASIC.html#python-comments"><span class="std std-ref">Comments</span></a> where appropriate,</p></li>
+</ol>
+<ol class="loweralpha">
+<li><p>Using <a class="reference internal" href="../../references/python/02_BASIC.html#python-list-slicing"><span class="std std-ref">Slicing</span></a>, break this list into two even lists of 5000 random numbers each. Save the code in your script and label it with a comment <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">5a</span></code>.</p></li>
+<li><p>Using <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-builtin-functions"><span class="std std-ref">Built-In Functions</span></a>, calculate the sum of each of the lists you found in <em>part a</em>. Save the code in your script and label it with a comment <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">5b</span></code>. Before executing your code, answer the following questions and include each answer in the <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a>.</p>
+<blockquote>
+<div><ol class="lowerroman simple">
+<li><p>How do you expect the sums to be compare? Will they be equal or unequal? Will be they be close together or far apart? Why? Justify your answer.</p></li>
+<li><p>Calculate the difference between both sums, i.e. if <code class="docutils literal notranslate"><span class="pre">n</span></code> is the variable that contains the sum of your first list and <code class="docutils literal notranslate"><span class="pre">m</span></code> is the variable that contains the sum of your second list, find the value of <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">-</span> <span class="pre">m</span></code>. Should this value be positive, negative or zero?</p></li>
+<li><p>Re-execute your code. Did you do it? Go ahead and do it again, just to be safe. Alright, are you done? Do it one more time, but this time do it with <em>feeling</em>. Do you get the same results each time? How do the results compare? Explain.</p></li>
+<li><p>If you performed this experiment a 100 times, what do you expect the difference of the sum of these lists to be on average?</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+<ol class="arabic simple" start="6">
+<li><p>Now it’s your turn to generate some data. Using the <a class="reference internal" href="../../references/python/04_FUNCTIONS.html#python-choice-function"><span class="std std-ref">Random Choice Function</span></a> and the techniques studied so far, generate a list of data that represents the experiment of asking 100 randomly selected people whether they prefer Mayor McCheese, The Hamburglar, Grimace or Ronald McDonald as McDonald’s mascot. Save the code in your script and lavel it with a comment <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">6a</span></code>.</p></li>
+</ol>
+</section>
+<section id="imports">
+<span id="project-zero-imports"></span><h2>Imports<a class="headerlink" href="#imports" title="Permalink to this headline">#</a></h2>
+<p>To complete this lab, you will need to import the <code class="docutils literal notranslate"><span class="pre">random</span></code> package. Add the following line to the <em>top</em> of your <em>py</em> script <strong>underneath</strong> your <a class="reference internal" href="../../references/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a>,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+</pre></div>
+</div>
+</section>
+<section id="datasets">
+<span id="project-zero-dataset"></span><h2>Datasets<a class="headerlink" href="#datasets" title="Permalink to this headline">#</a></h2>
+<section id="natural-numbers">
+<h3>Natural Numbers<a class="headerlink" href="#natural-numbers" title="Permalink to this headline">#</a></h3>
+<p>Copy and paste the following <a class="reference internal" href="../../references/python/02_BASIC.html#python-lists"><span class="std std-ref">list variable</span></a> into your <em>py</em> script to generate the natural numbers <em>1</em> to <em>100</em>,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">natural_numbers</span> <span class="o">=</span> <span class="p">[</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="random-numbers">
+<h3>Random Numbers<a class="headerlink" href="#random-numbers" title="Permalink to this headline">#</a></h3>
+<p>Copy and paste the following <a class="reference internal" href="../../references/python/02_BASIC.html#python-lists"><span class="std std-ref">list variable</span></a> into your <em>py</em> script to generate 10000 random numbers.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">random_numbers</span> <span class="o">=</span> <span class="p">[</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span> <span class="p">]</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/">Python Documentation</a></p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/tutorial/index.html">Python Tutorial</a></p></li>
+</ul>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Python Projects</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="01_CATEGORICAL.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Bar Charts</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imports">Imports</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#natural-numbers">Natural Numbers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-numbers">Random Numbers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Grant Moore
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023, Grant Moore.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

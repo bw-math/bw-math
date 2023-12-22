@@ -40,6 +40,8 @@ Sample Spaces and Events
 
 	Let *r* :sub:`1`, *r* :sub:`2` and *r* :sub:`3` represent the *outcome* of drawing each of the respective red balls. 
 
+Use this sample space to answer the following questions.
+
 	a. Selecting one ball at random.
 
 	b. Selecting two balls at random and :ref:`with_replacement` (i.e. putting the ball you drew back into the back after you draw it).

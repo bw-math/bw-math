@@ -109,13 +109,15 @@ Use this set for the following problems:
 
 2. **Committees**
 
-a. In how many ways can a committee of 4 students be formed from a pool of 7 students?
+Solve these thrilling problems about committees.
 
-b. In how many ways can a committee of 3 professors be formed from a department having 8 professors?
+	a. In how many ways can a committee of 4 students be formed from a pool of 7 students?
 
-c. A student dance committee is to be formed consisting of 2 boys and 3 girls. If the memberships is be chosen from 4 boys and 8 girls, how many different committees are possible?
+	b. In how many ways can a committee of 3 professors be formed from a department having 8 professors?
 
-d. The student relations committee of a college consists of 2 administrators, 3 faculty members and 5 students. Four administrators, 8 faculty members and 20 students are eligible to serve. How many different committees are possible?
+	c. A student dance committee is to be formed consisting of 2 boys and 3 girls. If the memberships is be chosen from 4 boys and 8 girls, how many different committees are possible?
+
+	d. The student relations committee of a college consists of 2 administrators, 3 faculty members and 5 students. Four administrators, 8 faculty members and 20 students are eligible to serve. How many different committees are possible?
 
 3. **Selecting Objects**
 
