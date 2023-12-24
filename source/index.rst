@@ -11,5 +11,5 @@ Bishop Walsh Mathematics
    syllabi/index
    notes/index
    assignments/index
-   references/index
+   resources/index
    maintenance/index
