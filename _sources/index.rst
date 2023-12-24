@@ -7,8 +7,8 @@ Bishop Walsh Mathematics
    :caption: Contents:
 
    00_SPLASH
+   01_DATASETS
    syllabi/index
-   02_DATASETS
    notes/index
    assignments/index
    references/index

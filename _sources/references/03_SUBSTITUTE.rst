@@ -37,7 +37,7 @@ No Datasets Required
 Teacher Instructions
 ********************
 - :download:`Birthday Problem <../assets/worksheets/Teacher_BirthdayProblem.pdf>`
-- :download:`Dice <./assets/worksheets/Teacher_Dice.pdf>`
+- :download:`Dice <../assets/worksheets/Teacher_Dice.pdf>`
 - :download:`Counting Principles <../assets/worksheets/Teacher_CountingPrinciple.pdf>`
 - :download:`Independence <../assets/worksheets/Teacher_Independence.pdf>`
 - :download:`Probability Density <../assets/worksheets/Teacher_Density.pdf>`
@@ -50,7 +50,7 @@ Datasets Required
 - :download:`Distributions <../assets/worksheets/Student_Distributions.pdf>`
    - **Dataset** :download:`P4 <../assets/worksheets/data/P4.8xl>`
    - **Dataset** :download:`P5 <../assets/worksheets/data/P5.8xl>`
-- :download:`Histograms and Boxplots <./assets/worksheets/Student_HistogramsBoxplots.pdf>`
+- :download:`Histograms and Boxplots <../assets/worksheets/Student_HistogramsBoxplots.pdf>`
     - **Dataset** :download:`AVG <../assets/worksheets/data/AVG.8xl>`
     - **Dataset** :download:`LONG <../assets/worksheets/data/LONG.8xl>`
     - **Dataset** :download:`TDS <../assets/worksheets/data/TDS.8xl>`
