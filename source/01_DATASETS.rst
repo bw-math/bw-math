@@ -87,7 +87,7 @@ Cultural
 - `Super Mario Kart Rainbow Road World Records <https://mkwrs.com/smk/display.php?track=Rainbow%20Road>`_
 	- :download:`Rainbow Road CSV <./assets/datasets/rainbow_road_world_record_data.csv>`
 - `Spice Girls Songs <https://github.com/jacquietran/spice_girls_data/tree/main>`_
-	- :download:`Song CSV <./assets/datasets/spice_girl_song_data.csv>`
+	- :download:`Song CSV <./assets/datasets/spice_girls_song_data.csv>`
 - `Wine Quality <http://www.vinhoverde.pt/en/>`_
 	- :download:`Red Wine Quality CSV <./assets/datasets/wine_red_quality_data.csv>`
 	- :download:`White Wine Quality CSV <./assets/datasets/wine_white_quality_data.csv>`
