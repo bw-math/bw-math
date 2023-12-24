@@ -141,7 +141,6 @@ b. Consider two rules for identifying outliers, method A and method B. Let metho
 
 	i. Using method A, determine any data points that are potential outliers in the distribution of length of
 stay. Justify your answer.
-
 	ii. The mean length of stay for the sample is 7.42 days with a standard deviation of 2.37 days. Using method B, determine any data points that are potential outliers in the distribution of length of stay. Justify your answer.
 	
 c. Explain why method A might identify more data points as potential outliers than method B for a distribution that is strongly skewed to the right.

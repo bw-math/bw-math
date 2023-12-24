@@ -286,7 +286,7 @@ In this example, we would find,
 
 .. math:: 
 	
-	Z_{ \text{theoretical} } = \{ \Phi^{-1}(\frac{1}{5}), \Phi^{-1}(\frac{2}{5}), \Phi^{-1}(\frac{3}{5}), \Phi^{-1}(\frac{4}{5) \}
+	Z_{ \text{theoretical} } = \{ \Phi^{-1}(\frac{1}{5}), \Phi^{-1}(\frac{2}{5}), \Phi^{-1}(\frac{3}{5}), \Phi^{-1}(\frac{4}{5}) \}
 	
 .. math::
 
