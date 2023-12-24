@@ -1,0 +1,1261 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Functions &#8212; bishop-walsh-math  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'resources/python/04_FUNCTIONS';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">bishop-walsh-math  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../00_SPLASH.html">Bishop Walsh Math</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../01_DATASETS.html">Datasets</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../syllabi/index.html">Course Syllabi</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../syllabi/00_STATS_SYLLABUS.html">AP Statistics Course Syllabus</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/index.html">Class Notes</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/HISTORY.html">Knowledge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/LOGIC.html">Symbolic Logic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/SET_THEORY.html">Set Theory</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/experiments/index.html">Experimental Design</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/01_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/02_DESIGN.html">Experimental Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/03_DATA.html">Data</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/04_INFERENCE.html">Inference</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/statistics/00_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/statistics/01_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/statistics/02_SAMPLING_DISTRIBUTIONS.html">Sampling Distributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/statistics/03_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/00_BERNOULLI.html">Bernoulli Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/02_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/03_UNIFORM.html">Uniform Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/04_NORMAL.html">Normal Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/05_T.html">T Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/06_CHI_SQUARED.html"><img alt="\chi^2" class="math" src="../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/07_F.html">F Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/hypotheses/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/hypotheses/01_MEAN_TESTS.html">Hypothesis Tests for the Population Mean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/hypotheses/02_PROPORTION_TESTS.html">Hypothesis Tests for the Population Proportion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/hypotheses/03_STDDEV_TESTS.html">Hypothesis Tests for the Population Standard Deviation</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/regression/index.html">Regression</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/regression/01_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/regression/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/regression/03_LINEAR_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/regression/04_RESIDUAL_ANALYSIS.html">Residual Analysis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../assignments/index.html">Assignments</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/homework/index.html">Homework</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/01_UNIT01.html">Unit 1 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/02_UNIT02.html">Unit 2 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/03_UNIT03.html">Unit 3 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/04_UNIT04.html">Unit 4 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/05_UNIT05.html">Unit 5 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/06_UNIT06.html">Unit 6 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/07_UNIT07.html">Unit 7 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/08_UNIT08.html">Unit 9 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/09_UNIT09.html">Unit 9 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/10_CHAP01_OS.html">Chapter 1 Homework (OpenStax Text)</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/classwork/index.html">Classwork</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/celebrations/index.html">Celebrations of Knowledge</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/00_STATS_Q1.html">Statistics: Quarter One</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/02_STATS_Q2.html">Statistics: Quarter Two</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/03_CALC_Q2.html">Calculus: Quarter Two</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/algebra/index.html">Algebra</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/algebra/01_SUMS.html">Sums</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/differentiation/index.html">Differentiation</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/00_CHAIN_RULE.html">Chain Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/01_IMPLICIT_DIFFERENTIATION.html">Implicit Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/02_GRAPHING.html">Graphing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/03_RELATED_RATES.html">Related Rates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/04_OPTIMIZATION.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/05_THEOREMS.html">Theorems</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/set_theory/index.html">Set Theory</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/set_theory/01_INTRODUCTION.html">Set Theory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/set_theory/02_VENN_DIAGRAMS.html">Venn Diagrams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/set_theory/03_LOGIC.html">Symbolic Logic</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/experiments/index.html">Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/experiments/00_DESIGN.html">Design</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/experiments/01_INFERENCE.html">Inference</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/experiments/02_BIAS.html">Bias</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/experiments/03_HYPOTHESES.html">Hypotheses</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/00_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/01_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/02_SAMPLING_DISTRIBUTIONS.html">Sampling Distributions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/03_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/distributions/00_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/distributions/02_NORMAL.html">Normal Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/hypotheses/01_MEAN_TESTS.html">Hypothesis Tests for the Population Mean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/hypotheses/02_PROPORTION_TESTS.html">Hypothesis Tests for the Population Proportion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/hypotheses/03_STDDEV_TESTS.html">Hypothesis Tests for the Population Standard Deviation</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/regression/index.html">Linear Regression</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/regression/00_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/regression/01_REGRESSION.html">Regression Model</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/python/index.html">Python Projects</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/00_PYTHON.html">Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/01_CATEGORICAL.html">Bar Charts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/02_QUANTITATIVE.html">Histograms and Boxplots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/03_NORMALITY.html">Normality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/04_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/05_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/06_SIMULATION.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/07_SETS.html">Sample Spaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/08_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/09_BINOMIAL.html">Binomial Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/calculator/index.html">Calculator Projects</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/00_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/01_PI_ESTIMATION.html">Simulation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../maintenance/index.html">Maintenance</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../maintenance/LATEX.html">LaTex Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maintenance/SPHINX.html">Sphinx</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/resources/python/04_FUNCTIONS.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Functions</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#built-in-functions">Built-In Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#length-function">Length Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sum-function">Sum Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#max-function">Max Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#min-function">Min Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#range-function">Range Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerate-function">Enumerate Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zip-function">Zip Function</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-library-functions">Standard Library Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math">Math</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#square-root">Square Root</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#natural-base-e">Natural Base e</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ceil">Ceil</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#floor">Floor</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random">Random</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#random-function">Random Function</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#random-integer-function">Random Integer Function</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#random-choice-function">Random Choice Function</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#shuffle">Shuffle</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-variate">Normal Variate</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistics">Statistics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mean">Mean</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#median">Median</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quantiles">Quantiles</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-distribution">Normal Distribution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation">Correlation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-regression">Linear Regression</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-functions">Creating Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#function-signatures">Function Signatures</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#function-example">Function Example</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="functions">
+<span id="python-functions"></span><h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">#</a></h1>
+<p>This page details <strong>Python</strong> functions we will frequently need to use.</p>
+<p>The arguments of functions are specified between angular brackets <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code>, with the name of the argument on the left hand side and the type of argument on the right hand side. For example, the definition,</p>
+<blockquote>
+<div><p>my_function(&lt;this_argument : required&gt;, &lt;that_argument : optional&gt;)</p>
+</div></blockquote>
+<p>Says the function <code class="docutils literal notranslate"><span class="pre">my_function</span></code> has a <em>required</em> argument named <code class="docutils literal notranslate"><span class="pre">this_argument</span></code> and an <em>optional</em> argument named <code class="docutils literal notranslate"><span class="pre">that_argument</span></code>.</p>
+<section id="built-in-functions">
+<span id="python-builtin-functions"></span><h2>Built-In Functions<a class="headerlink" href="#built-in-functions" title="Permalink to this headline">#</a></h2>
+<section id="length-function">
+<span id="python-length-function"></span><h3>Length Function<a class="headerlink" href="#length-function" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">len(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>length</em> function is used to find how many elements are in a list.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span> <span class="p">]</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>5</p>
+</div></blockquote>
+</section>
+<section id="sum-function">
+<span id="python-sum-function"></span><h3>Sum Function<a class="headerlink" href="#sum-function" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">sum(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The sum function totals all the elements in a list.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span> <span class="p">]</span>
+<span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>8</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">sum</span></code> function is only defined if the list contains numerical data.</p>
+</div>
+</section>
+<section id="max-function">
+<span id="python-max-function"></span><h3>Max Function<a class="headerlink" href="#max-function" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">max(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>max</em> function finds the largest element in a list.</p>
+</dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">89</span> <span class="p">]</span>
+<span class="n">m</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>89</p>
+</div></blockquote>
+</section>
+<section id="min-function">
+<span id="python-min-function"></span><h3>Min Function<a class="headerlink" href="#min-function" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">min(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>min</em> function returns the smallest element in a list.</p>
+</dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">16</span> <span class="p">]</span>
+<span class="n">m</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>-5</p>
+</div></blockquote>
+</section>
+<section id="range-function">
+<span id="python-range-function"></span><h3>Range Function<a class="headerlink" href="#range-function" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">range(&lt;start</span> <span class="pre">:</span> <span class="pre">optional&gt;,</span> <span class="pre">&lt;stop</span> <span class="pre">:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;step</span> <span class="pre">:</span> <span class="pre">optional&gt;)</span></code></dt><dd><p>The <em>range</em> function generates an <em>iterable</em> sequence of numbers.</p>
+</dd>
+</dl>
+<p>Note only the <code class="docutils literal notranslate"><span class="pre">stop</span></code> argument is required. If only one argument is passed to the <em>range</em> function, then it is assumed to represent the <code class="docutils literal notranslate"><span class="pre">stop</span></code> argument.</p>
+<p>The <em>range</em> function is typically used with <a class="reference internal" href="02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a> to generate large lists of data quickly. For example, the following code snippet will create and print the list <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5,</span> <span class="pre">6,</span> <span class="pre">7,</span> <span class="pre">8,</span> <span class="pre">9]</span></code>,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">]</span>
+</pre></div>
+</div>
+<p>Notice the output does not include the endpoint <em>10</em>. The <em>range</em> function is exclusive with respect to the <code class="docutils literal notranslate"><span class="pre">stop</span></code> endpoint. This is so we can use the length function and get a result that makes sense,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">]</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">length</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</p>
+<p>10</p>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Notice the list in the output <em>doesn’t include</em> 10.</p>
+</div>
+<p>In other words, the <em>range</em> function excludes the endpoint so the length of the returned list will equal whatever number was originally passed into the <em>range</em> function.</p>
+<p>You can use the <code class="docutils literal notranslate"><span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">step</span></code> arguments to generate arbitrary lists of data according to a rule. The following command will iterate through the numbers <code class="docutils literal notranslate"><span class="pre">2</span></code> to <code class="docutils literal notranslate"><span class="pre">19</span></code> in steps of <code class="docutils literal notranslate"><span class="pre">2</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>[2, 4, 6, 8, 10, 12, 14, 16, 18]</p>
+</div></blockquote>
+</section>
+<section id="enumerate-function">
+<span id="python-enumerate-function"></span><h3>Enumerate Function<a class="headerlink" href="#enumerate-function" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">enumerate(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>enumerate</em> function allows you to <em>index</em> the elements in a list.</p>
+</dd>
+</dl>
+<p>Suppose you had a sample of closing stock prices observed over one business week,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">stock_prices</span> <span class="o">=</span> <span class="p">[</span> <span class="mf">101.5</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mf">105.25</span><span class="p">,</span> <span class="mf">107.10</span><span class="p">,</span> <span class="mf">104.56</span> <span class="p">]</span>
+</pre></div>
+</div>
+<p>If you wanted to plot this as a <a class="reference internal" href="../../notes/regression/01_INTRODUCTION.html#time-series"><span class="std std-ref">Time Series</span></a> to get a sense for any trends in the price, you would order the observations by day and plot the stock prices against the order in which they occured.</p>
+<p>We already have the <em>y-axis</em> of the time series; we need to generate the <em>x-axis</em>. An easy way to do this is to <code class="docutils literal notranslate"><span class="pre">enumerate()</span></code> the list,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">order</span> <span class="o">=</span> <span class="p">[</span> <span class="n">index</span> <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">price</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">stock_prices</span><span class="p">)</span> <span class="p">]</span>
+<span class="n">pairs</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">price</span><span class="p">)</span> <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">price</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">stock_prices</span><span class="p">)</span> <span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;order: &quot;</span><span class="p">,</span> <span class="n">order</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;pairs: &quot;</span><span class="p">,</span> <span class="n">pairs</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>[0, 1, 2, 3, 4]</p>
+<p>[(0, 101.5), (1, 100), (2, 105.25), (3, 107.1), (4, 104.56)]</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">enumerate()</span></code> pulls the index of the observation from the list and allows you to use it in the <code class="docutils literal notranslate"><span class="pre">&lt;expr&gt;</span></code> of <a class="reference internal" href="02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a>. This is especially useful for time series data, as this example illustrates.</p>
+</section>
+<section id="zip-function">
+<span id="python-zip-function"></span><h3>Zip Function<a class="headerlink" href="#zip-function" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">zip(&lt;list_one:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;list_two:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>zip</em> function allows you to iterate over two lists simultaneously.</p>
+</dd>
+</dl>
+<p>Suppose you had two lists of equal length,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">list_one</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">]</span>
+<span class="n">list_two</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span> <span class="p">]</span>
+</pre></div>
+</div>
+<p>Using the <code class="docutils literal notranslate"><span class="pre">zip()</span></code> function, you can step over both lists at the same time and perform operations on elements that correspond to the same index. For example, the following code will take corresponding elements of the two lists defined above and sum them together,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">zipped_list</span> <span class="o">=</span> <span class="p">[</span> <span class="n">one</span> <span class="o">+</span> <span class="n">two</span> <span class="k">for</span> <span class="p">(</span><span class="n">one</span><span class="p">,</span> <span class="n">two</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">list_one</span><span class="p">,</span> <span class="n">list_two</span><span class="p">)</span> <span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">zipped_list</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>[5, 7, 9]</p>
+</div></blockquote>
+<p>To break it down step by step, the <code class="docutils literal notranslate"><span class="pre">zip()</span></code> function returns an ordered pair <code class="docutils literal notranslate"><span class="pre">(one,</span> <span class="pre">two)</span></code> three times. The first time, the ordered pair is <code class="docutils literal notranslate"><span class="pre">(1,</span> <span class="pre">4)</span></code>, where the <code class="docutils literal notranslate"><span class="pre">1</span></code> is pulled from <code class="docutils literal notranslate"><span class="pre">list_one</span></code> and the <code class="docutils literal notranslate"><span class="pre">4</span></code> is pulled from <code class="docutils literal notranslate"><span class="pre">list_two</span></code>; the expression in the <em>list generator</em> then sums the elements of each list. The second time, <code class="docutils literal notranslate"><span class="pre">zip()</span></code> returns <code class="docutils literal notranslate"><span class="pre">(2,</span> <span class="pre">5)`.</span> <span class="pre">The</span> <span class="pre">third</span> <span class="pre">time,</span> <span class="pre">the</span> <span class="pre">``zip()</span></code> function returns <code class="docutils literal notranslate"><span class="pre">(3,</span> <span class="pre">6)</span></code>.</p>
+<p>Note, the order of the elements in the ordered pair returned by <code class="docutils literal notranslate"><span class="pre">zip()</span></code> corresponds to the order in which the lists were passed into the function.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">zip()</span></code> function will be useful when we get to bivariate data.</p>
+</div>
+</section>
+</section>
+<section id="standard-library-functions">
+<span id="python-standard-library"></span><h2>Standard Library Functions<a class="headerlink" href="#standard-library-functions" title="Permalink to this headline">#</a></h2>
+<p>In addition to the functions accessible by default in <strong>Python</strong>, there are also a large number of functions you can <code class="docutils literal notranslate"><span class="pre">import</span></code> to extend the basic functionality of <strong>Python</strong>. These functions reside in the <em>Standard Library</em>.</p>
+<p>The syntax for importing an additional package is simply,</p>
+<blockquote>
+<div><p>import &lt;package-name&gt;</p>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The angular brackets <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code> are not part of the code. They represent the <em>grammatical rules</em> for importing.</p>
+</div>
+<p>When you import a package, it becomes available in that package’s <em>namespace</em>. For example, if you import <code class="docutils literal notranslate"><span class="pre">math</span></code>,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+</pre></div>
+</div>
+<p>The functions inside of the <code class="docutils literal notranslate"><span class="pre">math</span></code> package are now available to be used through <em>dot notation</em>. The syntax for accessing a <code class="docutils literal notranslate"><span class="pre">math</span></code> function is given below,</p>
+<blockquote>
+<div><p>math.&lt;function-name&gt;</p>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The angular brackets <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code> are not part of the code. They represent the <em>grammatical rules</em> for accessing a function through <em>dot notation</em>.</p>
+</div>
+<p>As an example,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">36</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Ouput:</p>
+<blockquote>
+<div><p>6</p>
+</div></blockquote>
+<p>We will be using two packages in particular from the <em>Standard Library</em> over and over again in this class, <code class="docutils literal notranslate"><span class="pre">math</span></code> and <code class="docutils literal notranslate"><span class="pre">random</span></code>.</p>
+<section id="math">
+<span id="python-math-package"></span><h3>Math<a class="headerlink" href="#math" title="Permalink to this headline">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">math</span></code> has all sorts of goodies in it. Unfortunately, we won’t need most of them. The ones we will need are detailed below.</p>
+<section id="square-root">
+<span id="python-square-root-function"></span><h4>Square Root<a class="headerlink" href="#square-root" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">sqrt(&lt;</span> <span class="pre">value</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>square root</em> function calculates the square root of a number.</p>
+</dd>
+</dl>
+<p>Mathematically, the argument to this function is the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> in the following algebraic expression,</p>
+<div class="math">
+<p><img src="../../_images/math/b628e983913ad16e1fd8b984d0b1d6dee7fae2d7.png" alt="\sqrt{x}"/></p>
+</div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">root</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">36</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the square root of 36 is : &quot;</span><span class="p">,</span> <span class="n">root</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>the square root of 36 is : 6</p>
+</div></blockquote>
+</section>
+<section id="natural-base-e">
+<span id="python-e-function"></span><h4>Natural Base e<a class="headerlink" href="#natural-base-e" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">exp(&lt;exponent</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>e</em> function raises the number <em>e</em> to the given exponent.</p>
+</dd>
+</dl>
+<p>The argument to this function is the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> in the following expression,</p>
+<div class="math">
+<p><img src="../../_images/math/54005a7046b36dc5119415a0fd1c2d6e763d2454.png" alt="e ^ {x}"/></p>
+</div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">e</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">e_squared</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the value of e is: &quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the value of e squared is: &quot;</span><span class="p">,</span> <span class="n">e_squared</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>the value of e is: 2.718281828459045</p>
+<p>the value of e squared is: 7.38905609893065</p>
+</div></blockquote>
+</section>
+<section id="ceil">
+<span id="python-ceiling-function"></span><h4>Ceil<a class="headerlink" href="#ceil" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">ceil(&lt;value</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>ceiling</em> function always rounds a number up to the next integer (whole-number)</p>
+</dd>
+</dl>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The <em>celing function</em> will <strong>always</strong> round up, even in cases like <code class="docutils literal notranslate"><span class="pre">2.3</span></code>, where ordinarily we would round down.</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">ceiling_test_1</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">4.8</span><span class="p">)</span>
+<span class="n">ceiling_test_2</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">32.1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ceil(4.8) = &quot;</span><span class="p">,</span> <span class="n">ceiling_test_1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ceil(32.1) = &quot;</span><span class="p">,</span> <span class="n">ceiling_test_2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>ceil(4.8) = 5</p>
+<p>ceil(32.1) = 33</p>
+</div></blockquote>
+</section>
+<section id="floor">
+<span id="python-floor-function"></span><h4>Floor<a class="headerlink" href="#floor" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">floor(&lt;value</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>floor</em> function always rounds a number down to the previous integer (whole-number)</p>
+</dd>
+</dl>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The <em>floor</em> function <strong>always</strong> rounds down, even in cases like <code class="docutils literal notranslate"><span class="pre">2.7</span></code>, where ordinarily we would round up.</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">floor_test_1</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="mf">4.8</span><span class="p">)</span>
+<span class="n">floor_test_2</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="mf">32.1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;floor(4.8) = &quot;</span><span class="p">,</span> <span class="n">floor_test_1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;floor(32.1) = &quot;</span><span class="p">,</span> <span class="n">floor_test_2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>floor(4.8) = 4</p>
+<p>floor(32.1) = 32</p>
+</div></blockquote>
+</section>
+</section>
+<section id="random">
+<span id="python-random-package"></span><h3>Random<a class="headerlink" href="#random" title="Permalink to this headline">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">random</span></code> package is very appropriately named. It is used to generate random data of all types. Let’s take a look.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The numbers returned by <code class="docutils literal notranslate"><span class="pre">random</span></code> are not <em>actually</em> random. They are generated with a complex cryptographic algorithm whose details are well beyond the scope of this course. Suffice to say, <em>how</em> random numbers are generated by computer programs is an active area of research with lots of investment dollars being poured into it.</p>
+<p>Truly random numbers are a valuable commodity; they are used by investment banks to simulate financial outcomes, they are used by companies to train machine learning algorithms, they are used by militaries to conduct war-games, etc.</p>
+<p>The numbers that are returned by <code class="docutils literal notranslate"><span class="pre">random</span></code> are what are called <a class="reference external" href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">pseudo-random numbers</a>. <em>Pseudo-random numbers</em> approximate the properties we would expect random numbers to have, but if you look too closely you might start to notice they are not <em>truly</em> random. So don’t look too closely; For the purposes of this class, we may assume anything returned by the <code class="docutils literal notranslate"><span class="pre">random</span></code> package is actually random.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Due to the nature of the <code class="docutils literal notranslate"><span class="pre">random</span></code> package, if you are following along on your ChromeBook, you will get different output than the examples.</p>
+</div>
+<section id="random-function">
+<span id="python-random-function"></span><h4>Random Function<a class="headerlink" href="#random-function" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">random()</span></code></dt><dd><p>The <em>random</em> function returns a random number between 0 and 1.</p>
+</dd>
+</dl>
+<p>The simplest function in the <code class="docutils literal notranslate"><span class="pre">random</span></code> package is the <code class="docutils literal notranslate"><span class="pre">random()</span></code>. The <code class="docutils literal notranslate"><span class="pre">random()</span></code> has no arguments; it will always return a number between <em>0</em> and <em>1</em>, excluding the endpoints. The following code illustrates its use,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is a random number between 0 and 1: &quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>this is a random number between 0 and 1: 0.7886516803637625</p>
+</div></blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Be careful to distinguish the <code class="docutils literal notranslate"><span class="pre">random</span></code> <em>package</em> from the <code class="docutils literal notranslate"><span class="pre">random()</span></code> <em>function</em>. The <code class="docutils literal notranslate"><span class="pre">random</span></code> <em>package</em> is a <a class="reference external" href="https://realpython.com/python-namespaces-scope/">namespace</a> for <em>naming</em> functions. The <code class="docutils literal notranslate"><span class="pre">random()</span></code> function is an operation that produce output.</p>
+</div>
+</section>
+<section id="random-integer-function">
+<span id="python-randint-function"></span><h4>Random Integer Function<a class="headerlink" href="#random-integer-function" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">randint(&lt;start:</span> <span class="pre">required,</span> <span class="pre">stop</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p><code class="docutils literal notranslate"><span class="pre">randint</span></code> returns a random integer between <code class="docutils literal notranslate"><span class="pre">&lt;start&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;stop&gt;</span></code>, including both endpoints.</p>
+</dd>
+</dl>
+<p>The <a class="reference internal" href="#python-random-function"><span class="std std-ref">Random Function</span></a> will suffice for most purposes. Occassionally, we will need integer-valued random numbers instead of real-valued random numbers. To that end, we will need to use the <code class="docutils literal notranslate"><span class="pre">randint()</span></code> function.</p>
+<p>The following code illustrates its use,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is a random integer between 1 and 5, including 1 and 5: &quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>this is a random integer between 1 and 5, including 1 and 5: 2</p>
+</div></blockquote>
+</section>
+<section id="random-choice-function">
+<span id="python-choice-function"></span><h4>Random Choice Function<a class="headerlink" href="#random-choice-function" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">choice(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>choice</em> function returns a random selection for a list.</p>
+</dd>
+</dl>
+<p>Another function we will need from the <code class="docutils literal notranslate"><span class="pre">random</span></code> package is the <code class="docutils literal notranslate"><span class="pre">choice()</span></code> function. The previous two functions we looked were for generating <em>quantitative data</em>. The <code class="docutils literal notranslate"><span class="pre">choice()</span></code> function, on the other hand, will generate <em>categorical data</em>.</p>
+<p>The following code illustrates its use,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">options</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;Augustus&quot;</span><span class="p">,</span> <span class="s2">&quot;Tiberius&quot;</span><span class="p">,</span> <span class="s2">&quot;Hadrian&quot;</span> <span class="p">]</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this is a random choice from the list &quot;</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="s2">&quot; : &quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>this is a random choice from the list [‘Augustus’, ‘Tiberius’, ‘Hadrian’]: Tiberius</p>
+</div></blockquote>
+</section>
+<section id="shuffle">
+<h4>Shuffle<a class="headerlink" href="#shuffle" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">shuffle(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>shuffle</em> functions randomly orders a list into a new list.</p>
+</dd>
+</dl>
+<p>The <code class="docutils literal notranslate"><span class="pre">shuffle()</span></code> function is the equivalent of shuffling a deck of cards, if the deck of cards were a <a class="reference internal" href="02_BASIC.html#python-lists"><span class="std std-ref">list</span></a>.</p>
+<p>The following code illustrates it use,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span> <span class="p">]</span>
+<span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output</p>
+<blockquote>
+<div><p>[‘c’, ‘b’, ‘d’, ‘a’]</p>
+</div></blockquote>
+</section>
+<section id="normal-variate">
+<span id="python-normal-variate-function"></span><h4>Normal Variate<a class="headerlink" href="#normal-variate" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">normalvariate(&lt;mean</span> <span class="pre">:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;standard</span> <span class="pre">deviation</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>normal variate</em> functions simulates a random draw from the <a class="reference internal" href="../../notes/distributions/04_NORMAL.html#normal-distribution"><span class="std std-ref">Normal Distribution</span></a>.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We will not need this function until Unit 3 or 4.</p>
+</div>
+<p>This function is <em>extremely important</em> in this class. It will return a random draw from a normally distributed population. We can use it to simulate all sorts of outcomes and samples. By solving the <a class="reference internal" href="../../notes/statistics/01_DESCRIPTIVE_STATISTICS.html#z-score"><span class="std std-ref">Z Score</span></a> for the individual <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/>,</p>
+<div class="math">
+<p><img src="../../_images/math/54f3cc08afa5b84490edf56eb6dd14b9b02fa250.png" alt="x = \mu + \sigma \cdot z"/></p>
+</div><p>We are able to simulate draws from arbitary normally distributed populations.</p>
+</section>
+</section>
+<section id="statistics">
+<span id="python-stats-package"></span><h3>Statistics<a class="headerlink" href="#statistics" title="Permalink to this headline">#</a></h3>
+<p><strong>Python</strong> also has a dedicated package specifically for statistical functions, named <code class="docutils literal notranslate"><span class="pre">statistics</span></code>.</p>
+<section id="mean">
+<span id="python-sample-mean"></span><h4>Mean<a class="headerlink" href="#mean" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">mean(&lt;list:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>Calculates the sample mean of a univariate dataset passed in through <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">stat</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">105</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span>
+    <span class="mi">100</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">76</span><span class="p">,</span> <span class="mi">119</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span>
+    <span class="mi">106</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">84</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span>
+    <span class="mi">111</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">121</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span>
+    <span class="mi">103</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">104</span><span class="p">]</span>
+
+<span class="n">xbar</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">xbar</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>99.12</p>
+</div></blockquote>
+</section>
+<section id="median">
+<span id="python-sample-median"></span><h4>Median<a class="headerlink" href="#median" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">median(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>Calculates the sample median of a univariate dataset passed in through <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">stat</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">105</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span>
+    <span class="mi">100</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">76</span><span class="p">,</span> <span class="mi">119</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span>
+    <span class="mi">106</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">84</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span>
+    <span class="mi">111</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">121</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span>
+    <span class="mi">103</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">104</span><span class="p">]</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>102.5</p>
+</div></blockquote>
+</section>
+<section id="standard-deviation">
+<span id="python-standard-deviation"></span><h4>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">stdev(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>Calculates the sample standard deviation of a univariate dataset passed in through <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">stat</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">105</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span>
+    <span class="mi">100</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">76</span><span class="p">,</span> <span class="mi">119</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span>
+    <span class="mi">106</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">84</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span>
+    <span class="mi">111</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">121</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span>
+    <span class="mi">103</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">104</span><span class="p">]</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">stdev</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>13.388450703681062</p>
+</div></blockquote>
+</section>
+<section id="quantiles">
+<span id="python-quantiles"></span><h4>Quantiles<a class="headerlink" href="#quantiles" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">quantiles(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;n:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>Divides the sample of data contained in <code class="docutils literal notranslate"><span class="pre">list</span></code> into a number of equally distributed groups determined by <code class="docutils literal notranslate"><span class="pre">groupings</span></code>.</p>
+</dd>
+</dl>
+<p>A <em>percentile</em> is defined technically as the division of the sample into one hundred equally distributed groups of individuals. Quartiles, similarily, are defined technically as the division of the sample into four equally distributed groups of individuals.</p>
+<p>A <em>quantile</em> is a generalization of this idea. A <em>quantile</em> divides the sample into <code class="docutils literal notranslate"><span class="pre">n</span></code> equally distributed groups of individuals.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><code class="docutils literal notranslate"><span class="pre">n</span></code> here is the <em>number of groupings</em>, not the number of observations.</p>
+</div>
+<p>In terms of quantiles, percentiles are a special case of quantiles when <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">100</span></code>. Quartiles are a special case of quantiles when <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">4</span></code>. The following code snippet shows how to use <code class="docutils literal notranslate"><span class="pre">quantiles()</span></code> to calculate the quartiles of a distribution.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">stat</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">105</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span>
+    <span class="mi">100</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">76</span><span class="p">,</span> <span class="mi">119</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">129</span><span class="p">,</span>
+    <span class="mi">106</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">84</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span>
+    <span class="mi">111</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">121</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span>
+    <span class="mi">103</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">109</span><span class="p">,</span> <span class="mi">104</span><span class="p">]</span>
+
+<span class="c1"># set n = 4 to calculate quartiles</span>
+<span class="n">quartiles</span> <span class="o">=</span> <span class="n">stat</span><span class="o">.</span><span class="n">quantiles</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">quartiles</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>[87.0, 102.5, 108.25]</p>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">quantile()</span></code> function use <em>interpolation</em>! In other words, the output may not correspond to observable values of the sample!</p>
+</div>
+</section>
+<section id="normal-distribution">
+<span id="python-normal-distribution"></span><h4>Normal Distribution<a class="headerlink" href="#normal-distribution" title="Permalink to this headline">#</a></h4>
+<p><strong>Python</strong> provides a way of calculating normal probabilities and percentiles, but it is a bit different from the other functions we have encountered so far. <strong>Python</strong> represents a normal distribution with an <code class="docutils literal notranslate"><span class="pre">object</span></code>. An <code class="docutils literal notranslate"><span class="pre">object</span></code> is a type of <strong>Python</strong> variable. The variables we have dealt with heretofore have been <em>literal</em> variables, meaning they are simply bits of raw data. An <code class="docutils literal notranslate"><span class="pre">object</span></code> is a different type of variable; an object has <em>properties</em> that can be accessed and <em>functions</em> that can be called.</p>
+<p>An example will make this clearer.</p>
+<p>First, we need to create a <em>normal distribution</em> with a certain <code class="docutils literal notranslate"><span class="pre">mean</span></code> and <code class="docutils literal notranslate"><span class="pre">std_dev</span></code> (standard deviation). These are properties of the <em>normal distribution</em> object,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span>
+
+<span class="n">mean</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">std_dev</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="n">dist</span> <span class="o">=</span> <span class="n">statistics</span><span class="o">.</span><span class="n">NormalDist</span><span class="p">(</span><span class="n">mean</span><span class="p">,</span> <span class="n">std</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Notice the <code class="docutils literal notranslate"><span class="pre">mean</span></code> and <code class="docutils literal notranslate"><span class="pre">std_dev</span></code> are passed into the <code class="docutils literal notranslate"><span class="pre">NormalDist()</span></code> and the result is stored in <code class="docutils literal notranslate"><span class="pre">dist</span></code>. <code class="docutils literal notranslate"><span class="pre">dist</span></code> is a variable, but it is not a simple one like a <code class="docutils literal notranslate"><span class="pre">float</span></code> or a <code class="docutils literal notranslate"><span class="pre">string</span></code>. <code class="docutils literal notranslate"><span class="pre">dist</span></code> is a <em>normal distribution</em> <code class="docutils literal notranslate"><span class="pre">object</span></code>.</p>
+<p>Once the distribution is created, we can ask it questions.</p>
+<p>The two most important questions we will ask this distribution in this class are:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In computer science, when an <code class="docutils literal notranslate"><span class="pre">object</span></code> is created, we say the <code class="docutils literal notranslate"><span class="pre">object</span></code> is <em>instantiated</em>.</p>
+</div>
+<ol class="arabic simple">
+<li><p>What is the probability of event <strong>X</strong> occuring?</p></li>
+<li><p>What event <strong>X</strong> corresponds to a given probability?</p></li>
+</ol>
+<p>These questions are answered by, respectively, the <strong>cumulative distribution function</strong> and the <strong>inverse cumulative distribution function</strong>.</p>
+<p><strong>Cumulative Distribution Function</strong></p>
+<p>Recall the cumulative distribution function (CDF) of a sample of data tells you how much of a distribution is less than or equal to a certain value. Symbolically,</p>
+<div class="math">
+<p><img src="../../_images/math/8db4c06313651d2e27af5116167773689cd33f03.png" alt="F(x_i) = P(\mathcal{X} \leq x_i)"/></p>
+</div><p>You can access the CDF of the normal distribution stored in <code class="docutils literal notranslate"><span class="pre">dist</span></code> using the <code class="docutils literal notranslate"><span class="pre">cdf()</span></code> function. Pass into the <code class="docutils literal notranslate"><span class="pre">cdf()</span></code> function the value whose percentage (probability) you would like to calculate (<img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> in above line). The following code snippet shows how to use the normal distribution created in the previous section to calculate cumulative percentages (probabilities),</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">prob</span> <span class="o">=</span> <span class="n">dist</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
+<span class="n">rounded_prob</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">prob</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prob(X &lt;= 120) = &quot;</span><span class="p">,</span> <span class="n">rounded_prob</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>Prob(X &lt;= 120) = 0.98</p>
+</div></blockquote>
+<p><strong>Inverse Cumulative Distribution Function</strong></p>
+<p>Every one-to-one function has an inverse; the cumulative distribution function is no different. The inverse CDF reverses the operation performed by the CDF.</p>
+<p>In other words, if the CDF can be summarized through the following operation,</p>
+<div class="math">
+<p><img src="../../_images/math/e67644be4ef68dd6f87a9002157b5b22f9a0f786.png" alt="\text{input: observation} \rightarrow \text{function: CDF} \rightarrow \text{output: percentage}"/></p>
+</div><p>Then the inverse CDF operates in the reverse direction. Given a percentage, the inverse CDF tells you what observation in the sample corresponds to that percentage,</p>
+<div class="math">
+<p><img src="../../_images/math/fc84b1fd115d98b83035bfaa79ffc6da4eab56cb.png" alt="\text{input: percentage} \rightarrow \text{function: inverseCDF} \rightarrow \text{output: observation}"/></p>
+</div><p>The following code snippet shows how to call the inverse cumulative distribution function on the normal distribution created in the previous sections.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">third_quartile</span> <span class="o">=</span> <span class="n">dist</span><span class="o">.</span><span class="n">inv_cdf</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span>
+<span class="n">rounded_quartile</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">third_quartile</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P(X &lt;= &quot;</span><span class="p">,</span> <span class="n">rounded_quartile</span> <span class="p">,</span> <span class="s2">&quot;) = 0.75&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>P(X &lt;= 106.74) = 0.75</p>
+</div></blockquote>
+</section>
+<section id="correlation">
+<span id="python-correlation"></span><h4>Correlation<a class="headerlink" href="#correlation" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">correlation(&lt;x_list:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;y_list:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>correlation</em> functions returns the sample correlation coefficient for a sample of bivariate data.</p>
+</dd>
+</dl>
+<p>TODO</p>
+</section>
+<section id="linear-regression">
+<span id="python-linear-regression"></span><h4>Linear Regression<a class="headerlink" href="#linear-regression" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">linear_regression(&lt;x_list:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;y_list:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>linear regression</em> function returns the regression model parameters for a sample of bivariate data.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We do not need these functions until Section 3.1 - 3.3.</p>
+</div>
+<p>TODO</p>
+</section>
+</section>
+</section>
+<section id="creating-functions">
+<span id="python-creating-functions"></span><h2>Creating Functions<a class="headerlink" href="#creating-functions" title="Permalink to this headline">#</a></h2>
+<p>Occassionally, the <em>Standard Library</em> will not be enough to do what we need to do. In those cases, we have no other options but to define our own function.</p>
+<section id="function-signatures">
+<h3>Function Signatures<a class="headerlink" href="#function-signatures" title="Permalink to this headline">#</a></h3>
+<p>A function in <strong>Python</strong> has four components its <code class="docutils literal notranslate"><span class="pre">def</span></code>, its <em>name</em>, its <em>arguments</em> and its <code class="docutils literal notranslate"><span class="pre">return</span></code> value. The following list breaks each of these components down,</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">def</span></code> is a <em>keyword</em> that informs <strong>Python</strong> you are about to define a function. You must <em>always</em> precede a function with <code class="docutils literal notranslate"><span class="pre">def</span></code>.</p></li>
+<li><p>The function <em>name</em> is how you will access the function. You have already encountered several function <em>names</em> with <code class="docutils literal notranslate"><span class="pre">range()</span></code> and <code class="docutils literal notranslate"><span class="pre">sum()</span></code>.</p></li>
+<li><p>The <em>arguments</em> are the input that is passed into the function. <em>Arguments</em> are variables.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">return</span></code> value is data the function outputs.</p></li>
+</ol>
+</section>
+<section id="function-example">
+<h3>Function Example<a class="headerlink" href="#function-example" title="Permalink to this headline">#</a></h3>
+<p>Putting all four of these pieces together, let’s create a simple function.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fancy</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+    <span class="n">sentence</span> <span class="o">=</span> <span class="n">word</span> <span class="o">+</span> <span class="s2">&quot; is fancy!&quot;</span>
+    <span class="k">return</span> <span class="n">sentence</span>
+</pre></div>
+</div>
+<p>Take note of the <em>indentation</em>. <strong>Python</strong> is very particular about <em>indentation</em> because that is how it groups functions together. A <em>function</em> definition must be indented once (with <code class="docutils literal notranslate"><span class="pre">TAB</span></code>). All lines within the function must be the same <em>indentation</em> level. If you do not follow this requirement, you will get errors. Errors are bad. So, always pay your indentation.</p>
+<p>We can call this function after defining it by addressing it by its name (i.e., typing its name) and passing in an argument. Create a new <a class="reference internal" href="01_SETUP.html#python-idle"><span class="std std-ref">IDLE Notebook</span></a>, copy in the following function and try executing it with <code class="docutils literal notranslate"><span class="pre">F5</span></code>,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fancy</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+    <span class="n">sentence</span> <span class="o">=</span> <span class="s2">&quot;fancy &quot;</span> <span class="o">+</span> <span class="n">word</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span>
+    <span class="k">return</span> <span class="n">sentence</span>
+
+<span class="n">fancified_taco</span> <span class="o">=</span> <span class="n">fancy</span><span class="p">(</span><span class="s2">&quot;taco&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fancified_taco</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>fancy taco!</p>
+</div></blockquote>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#built-in-functions">Built-In Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#length-function">Length Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sum-function">Sum Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#max-function">Max Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#min-function">Min Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#range-function">Range Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerate-function">Enumerate Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zip-function">Zip Function</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-library-functions">Standard Library Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#math">Math</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#square-root">Square Root</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#natural-base-e">Natural Base e</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ceil">Ceil</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#floor">Floor</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random">Random</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#random-function">Random Function</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#random-integer-function">Random Integer Function</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#random-choice-function">Random Choice Function</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#shuffle">Shuffle</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-variate">Normal Variate</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistics">Statistics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mean">Mean</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#median">Median</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quantiles">Quantiles</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normal-distribution">Normal Distribution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation">Correlation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-regression">Linear Regression</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-functions">Creating Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#function-signatures">Function Signatures</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#function-example">Function Example</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Grant Moore
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023, Grant Moore.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

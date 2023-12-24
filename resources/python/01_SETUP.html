@@ -1,0 +1,903 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Python Setup &#8212; bishop-walsh-math  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'resources/python/01_SETUP';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">bishop-walsh-math  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../00_SPLASH.html">Bishop Walsh Math</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../01_DATASETS.html">Datasets</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../syllabi/index.html">Course Syllabi</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../syllabi/00_STATS_SYLLABUS.html">AP Statistics Course Syllabus</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../notes/index.html">Class Notes</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/HISTORY.html">Knowledge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/LOGIC.html">Symbolic Logic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../notes/SET_THEORY.html">Set Theory</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/experiments/index.html">Experimental Design</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/01_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/02_DESIGN.html">Experimental Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/03_DATA.html">Data</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../notes/experiments/04_INFERENCE.html">Inference</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/statistics/00_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/statistics/01_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/statistics/02_SAMPLING_DISTRIBUTIONS.html">Sampling Distributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/statistics/03_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/00_BERNOULLI.html">Bernoulli Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/02_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/03_UNIFORM.html">Uniform Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/04_NORMAL.html">Normal Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/05_T.html">T Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/06_CHI_SQUARED.html"><img alt="\chi^2" class="math" src="../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/distributions/07_F.html">F Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/hypotheses/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/hypotheses/01_MEAN_TESTS.html">Hypothesis Tests for the Population Mean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/hypotheses/02_PROPORTION_TESTS.html">Hypothesis Tests for the Population Proportion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/hypotheses/03_STDDEV_TESTS.html">Hypothesis Tests for the Population Standard Deviation</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../notes/regression/index.html">Regression</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/regression/01_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/regression/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/regression/03_LINEAR_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notes/regression/04_RESIDUAL_ANALYSIS.html">Residual Analysis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../assignments/index.html">Assignments</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/homework/index.html">Homework</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/01_UNIT01.html">Unit 1 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/02_UNIT02.html">Unit 2 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/03_UNIT03.html">Unit 3 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/04_UNIT04.html">Unit 4 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/05_UNIT05.html">Unit 5 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/06_UNIT06.html">Unit 6 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/07_UNIT07.html">Unit 7 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/08_UNIT08.html">Unit 9 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/09_UNIT09.html">Unit 9 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/10_CHAP01_OS.html">Chapter 1 Homework (OpenStax Text)</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/classwork/index.html">Classwork</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/celebrations/index.html">Celebrations of Knowledge</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/00_STATS_Q1.html">Statistics: Quarter One</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/02_STATS_Q2.html">Statistics: Quarter Two</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/03_CALC_Q2.html">Calculus: Quarter Two</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/algebra/index.html">Algebra</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/algebra/01_SUMS.html">Sums</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/differentiation/index.html">Differentiation</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/00_CHAIN_RULE.html">Chain Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/01_IMPLICIT_DIFFERENTIATION.html">Implicit Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/02_GRAPHING.html">Graphing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/03_RELATED_RATES.html">Related Rates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/04_OPTIMIZATION.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/05_THEOREMS.html">Theorems</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/set_theory/index.html">Set Theory</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/set_theory/01_INTRODUCTION.html">Set Theory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/set_theory/02_VENN_DIAGRAMS.html">Venn Diagrams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/set_theory/03_LOGIC.html">Symbolic Logic</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/experiments/index.html">Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/experiments/00_DESIGN.html">Design</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/experiments/01_INFERENCE.html">Inference</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/experiments/02_BIAS.html">Bias</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/experiments/03_HYPOTHESES.html">Hypotheses</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/00_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/01_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/02_SAMPLING_DISTRIBUTIONS.html">Sampling Distributions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/03_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/distributions/00_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/distributions/02_NORMAL.html">Normal Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/hypotheses/01_MEAN_TESTS.html">Hypothesis Tests for the Population Mean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/hypotheses/02_PROPORTION_TESTS.html">Hypothesis Tests for the Population Proportion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/hypotheses/03_STDDEV_TESTS.html">Hypothesis Tests for the Population Standard Deviation</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/regression/index.html">Linear Regression</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/regression/00_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/regression/01_REGRESSION.html">Regression Model</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/python/index.html">Python Projects</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/00_PYTHON.html">Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/01_CATEGORICAL.html">Bar Charts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/02_QUANTITATIVE.html">Histograms and Boxplots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/03_NORMALITY.html">Normality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/04_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/05_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/06_SIMULATION.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/07_SETS.html">Sample Spaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/08_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/09_BINOMIAL.html">Binomial Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/calculator/index.html">Calculator Projects</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/00_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/01_PI_ESTIMATION.html">Simulation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../maintenance/index.html">Maintenance</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../maintenance/LATEX.html">LaTex Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maintenance/SPHINX.html">Sphinx</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/resources/python/01_SETUP.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Python Setup</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-installation">Python Installation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chromeos">ChromeOS</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-update-chromeos">Step 1: Update ChromeOS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-enable-linux-subsystem">Step 2: Enable Linux Subsystem</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-explore-a-little">Step 3: Explore A Little</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-install-python">Step 3: Install Python</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-install-libraries">Step 4: Install Libraries</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-operating-systems">Other Operating Systems</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretter">Interpretter</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scripts">Scripts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-idle">IDLE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#packages">Packages</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#third-party-packages">Third-Party Packages</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="python-setup">
+<span id="id1"></span><h1>Python Setup<a class="headerlink" href="#python-setup" title="Permalink to this headline">#</a></h1>
+<p><strong>Python</strong> will run on virtually any device with a processor. It supports all operating systems: Windows, Mac and Linux.</p>
+<section id="python-installation">
+<h2>Python Installation<a class="headerlink" href="#python-installation" title="Permalink to this headline">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ensure you are connected to the internet before attempting any of the commands on this page, especially <a class="reference internal" href="#python-packages"><span class="std std-ref">Packages</span></a> section. When you install third-party libraries into <strong>Python</strong>, your computer needs to reach out to the <a class="reference external" href="https://pypi.org/">Python Package Index (PyPi)</a>, where all of the extra libraries are stored.</p>
+</div>
+<section id="chromeos">
+<h3>ChromeOS<a class="headerlink" href="#chromeos" title="Permalink to this headline">#</a></h3>
+<section id="step-1-update-chromeos">
+<h4>Step 1: Update ChromeOS<a class="headerlink" href="#step-1-update-chromeos" title="Permalink to this headline">#</a></h4>
+<p>Ensure you are on the latest version of the ChromeOS operating system.</p>
+<img alt="../../_images/update_chrome_os.png" class="align-center" src="../../_images/update_chrome_os.png" />
+</section>
+<section id="step-2-enable-linux-subsystem">
+<h4>Step 2: Enable Linux Subsystem<a class="headerlink" href="#step-2-enable-linux-subsystem" title="Permalink to this headline">#</a></h4>
+<a class="reference external image-reference" href="https://www.youtube.com/watch?v=LauMdnSRWa8"><img alt="Enable Linux Subsystem" src="https://img.youtube.com/vi/LauMdnSRWa8/maxresdefault.jpg" /></a>
+<div class="admonition-enable-linux-subsystem-video admonition">
+<p class="admonition-title">Enable Linux Subsystem Video</p>
+<p>Click on the image to play the video.</p>
+</div>
+<p>Enable and install Linux subsystem in the Settings menu,</p>
+<img alt="../../_images/developer_mode.png" class="align-center" src="../../_images/developer_mode.png" />
+<p>This will give you access to something called the <em>command line</em> (sometimes called a <em>terminal</em> or a <em>shell</em>). The <em>command line</em> is a direct interface to the operating system of your laptop. Let’s take a look.</p>
+</section>
+<section id="step-3-explore-a-little">
+<h4>Step 3: Explore A Little<a class="headerlink" href="#step-3-explore-a-little" title="Permalink to this headline">#</a></h4>
+<p>A new world has now opened up to you, the world of <em>Linux</em>. Let’s take a little while to familiarize ourselves with it before moving on to <strong>Python</strong>. Open Linux command line (<em>terminal</em>),</p>
+<img alt="../../_images/terminal.png" class="align-center" src="../../_images/terminal.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Pin the Linux terminal to your dock for quick access. At the bottom of the screen,</p>
+<img alt="../../_images/dock.png" class="align-center" src="../../_images/dock.png" />
+<p>Right click the <em>terminal icon</em> (or whatever the equivalent of right-click is on the ChromeBook you are using) and then pin it,</p>
+<img alt="../../_images/pin.png" class="align-center" src="../../_images/pin.png" />
+<p>In this image, it’s already pinned. In place of <code class="docutils literal notranslate"><span class="pre">Unpinned</span></code>, you will see <code class="docutils literal notranslate"><span class="pre">Pinned</span></code>.</p>
+</div>
+<p>This is your <em>operating system</em>. Let’s try a few commands here and see what we can see. You can type (or copy and paste) the next command directly into the <em>cursor</em> of the terminal,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
+</pre></div>
+</div>
+<p>Press <code class="docutils literal notranslate"><span class="pre">ENTER</span></code> and you shoud see the words “<em>Hello World</em>” print to screen. The <code class="docutils literal notranslate"><span class="pre">echo</span></code> command, as you might have guessed, simply prints the words (a <em>string</em> of text) you give it back to screen,</p>
+<img alt="../../_images/echo.png" src="../../_images/echo.png" />
+<p>Not very useful. Let’s try something a little more interesting,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>df
+</pre></div>
+</div>
+<p>Press <code class="docutils literal notranslate"><span class="pre">ENTER</span></code> and you will see something along the lines of (the actual output will vary from computer to computer),</p>
+<img alt="../../_images/df.png" class="align-center" src="../../_images/df.png" />
+<p>These are your computer filesystems. This is where all of the data on your computer lives. Let’s not mess around with it. While you can’t physically break your computer by entering commands, it is possible to break your <em>operating system</em> to the point where it will need re-installed. That is not something you want to happen. For that reason, let’s move on to other, safer areas.</p>
+<p>The <em>Linux</em> world is a hierarchy of files. Everything in <em>Linux</em> is a file, even folders.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Folders are called <em>directories</em> in Linux.</p>
+</div>
+<p>You can imagine a tree like the following picture exists somewhere inside your computer,</p>
+<img alt="../../_images/folder_system.png" class="align-center" src="../../_images/folder_system.png" />
+<p>When you open your <em>terminal</em>, you open it <em>in</em> one of the folders in this tree. The <em>terminal</em> allows you traverse the different nodes and branches of this tree. To see where you currently located in the tree, type the following command and press <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">pwd</span>
+</pre></div>
+</div>
+<img alt="../../_images/pwd.png" class="align-center" src="../../_images/pwd.png" />
+<p>This stands for “<em>present working directory</em>”. When you type <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>, you will see a file path print to screen. This is the directory where you terminal is currently idling. You can see the contents of the <em>present working directory</em> with the command,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ls
+</pre></div>
+</div>
+<p>This will list the contents of the directory to screen,</p>
+<img alt="../../_images/ls.png" class="align-center" src="../../_images/ls.png" />
+<p>You can <em>change directories</em> with the next command,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>&lt;path&gt;
+</pre></div>
+</div>
+<p>Where <code class="docutils literal notranslate"><span class="pre">&lt;path&gt;</span></code> is the location of the directory into which you would like to go.</p>
+<p>You can move <em>up</em> the file hierarchy by typing,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>..
+</pre></div>
+</div>
+<p>If you then print the <em>present working directory</em>, you will see the directory you were just in.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">pwd</span>
+</pre></div>
+</div>
+<p>Alright, that was fun. However, this class isn’t about learning the ins and outs of <em>Linux</em>. This section was merely to show you for what the terminal is used: issuing commands.</p>
+</section>
+<section id="step-3-install-python">
+<h4>Step 3: Install Python<a class="headerlink" href="#step-3-install-python" title="Permalink to this headline">#</a></h4>
+<p><strong>Python</strong> <em>should</em> come pre-installed in most <em>Linux</em> distributions. Open a terminal and verify your installation with the following command,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>3.10.12</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Any version of <strong>Python</strong> greater than <em>3.7</em> will be sufficient for the purposes of this class.</p>
+</div>
+<img alt="../../_images/python_version.png" class="align-center" src="../../_images/python_version.png" />
+<p>If you get an error along the lines of “<em>bash: python command not found</em>”, you will need to install <strong>Python</strong>. You can do this through the <em>Linux</em> package repository, an online library of software that you can install from the command line,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure you install <strong>Python3</strong>. <strong>Python2</strong>, an older version, is still available to be installed. If you encounter any unknown errors through the course of this class, the first thing you should check is what <em>version</em> of <strong>Python</strong> you are running.</p>
+</div>
+<p>Once this command completes, verify you installation by printing the version to screen,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>3.10.12</p>
+</div></blockquote>
+</section>
+<section id="step-4-install-libraries">
+<h4>Step 4: Install Libraries<a class="headerlink" href="#step-4-install-libraries" title="Permalink to this headline">#</a></h4>
+<a class="reference external image-reference" href="https://www.youtube.com/watch?v=Wm7KgJcts8s"><img alt="Installing Libraries" src="https://img.youtube.com/vi/Wm7KgJcts8s/maxresdefault.jpg" /></a>
+<div class="admonition-install-libraries admonition">
+<p class="admonition-title">Install Libraries</p>
+<p>Click on the image to play the video.</p>
+</div>
+<p><strong>Python</strong> alone is not enough. We need to plugin some additional functionality to the bare bones installation of <strong>Python</strong>.</p>
+<p>In order to create graphics, we need a graphics library.</p>
+<p>The following command installs a PNG/JPEG rendering engine on your ChromeBook,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3-tk
+</pre></div>
+</div>
+<p>We are currently installing from the <em>Linux</em> package repository. We will need a way to install <strong>Python</strong> packages as well.</p>
+<p>The following command installs the <strong>Python</strong> package manager,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3-pip
+</pre></div>
+</div>
+<p>Lastly, while the command line is fun tool, it would be nice to have an text editor to develop <strong>Python</strong> programs. <em>IDLE</em> is the solution to this problem. We will talk more about this editor in the next section. For now, you can install it with the following command,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>idle3
+</pre></div>
+</div>
+<p>Congratulation, you are now setup to run <strong>Python</strong> scripts on your ChromeBook.</p>
+</section>
+</section>
+<section id="other-operating-systems">
+<h3>Other Operating Systems<a class="headerlink" href="#other-operating-systems" title="Permalink to this headline">#</a></h3>
+<p>If you want to install <strong>Python</strong> on your home PC or laptop, you can download the official installer on found the <a class="reference external" href="https://www.python.org/downloads/">Python website</a> and follow the steps in this section,</p>
+<ol class="arabic simple">
+<li><p>Go to <em>https://www.python.org/downloads*</em> and click the <strong>Download</strong> button,</p></li>
+</ol>
+<img alt="../../_images/install_step_1.png" src="../../_images/install_step_1.png" />
+<ol class="arabic simple" start="2">
+<li><p>Download the appriopriate operating system distribution,</p></li>
+</ol>
+<img alt="../../_images/install_step_2.png" src="../../_images/install_step_2.png" />
+<ol class="arabic simple" start="3">
+<li><p>Ensure the option “<em>Add Python to the PATH</em>” is checked,</p></li>
+</ol>
+<img alt="../../_images/install_step_3.png" src="../../_images/install_step_3.png" />
+<ol class="arabic simple" start="4">
+<li><p>Ensure all of the following options are checked,</p></li>
+</ol>
+<img alt="../../_images/install_step_4.png" src="../../_images/install_step_4.png" />
+<ol class="arabic simple" start="5">
+<li><p>All of the other defaults are fine. Proceed with the installation. When it is done, you will now have icons for the <strong>Python</strong> interpreter and <a class="reference internal" href="#python-idle"><span class="std std-ref">IDLE</span></a> in your start menu (or your app launcher, if you’re one of the weird <em>Mac</em> people.)</p></li>
+</ol>
+</section>
+</section>
+<section id="interpretter">
+<span id="python-interpretter"></span><h2>Interpretter<a class="headerlink" href="#interpretter" title="Permalink to this headline">#</a></h2>
+<a class="reference external image-reference" href="https://www.youtube.com/watch?v=lHqt-dLR8iU"><img alt="Python Interpretter and IDLE" src="https://img.youtube.com/vi/lHqt-dLR8iU/maxresdefault.jpg" /></a>
+<div class="admonition-python-interpretter-and-idle admonition">
+<p class="admonition-title">Python Interpretter and IDLE</p>
+<p>Click on the image to play the video.</p>
+</div>
+<p>Once <strong>Python</strong> is installed, you will have access to the <cite>python</cite> command on the terminal. Open a <em>Linux</em> and verify your installation with the following command,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>If you see a version print out, you are good to go. If you get an error that says “<em>bash: python command not found</em>”, head back to the previous section and make sure you completed all of the steps.</p>
+<p>You can start an <em>interpretter</em> session with,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0] on linux</p>
+<p>Type “help”, “copyright”, “credits” or “license” for more information.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>This will bring up the <strong>Python</strong> <em>shell</em>, which allows you to enter commands and expressions line by line. If your version does not exactly match the output above, you will be fine as long as you are on atleast <em>Version 3.7</em> of <strong>Python</strong>.</p>
+<p>Up to this point we have been allowing <em>Linux</em> to intrepret our commands. We are now handing off that responsiblity to <strong>Python</strong>. Like <em>Linux</em>, <strong>Python</strong> <em>interprets</em> your commands after you type <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>.</p>
+<p>For example, type the following arithmetical expression and then type <code class="docutils literal notranslate"><span class="pre">ENTER</span></code> to execute it,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">+</span> <span class="mi">7</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>12</p>
+</div></blockquote>
+<p>You can also print text to screen with the <cite>print()</cite> function, similar to (but not exactly like) <em>Linux</em>’s <code class="docutils literal notranslate"><span class="pre">echo</span></code> function,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>Hello world</p>
+</div></blockquote>
+<p>We won’t use the <em>interpretter</em> much in this class, but it is a handy tool to quickly check if a expression you had in mind is syntactical. For example, you might want to square a number and try,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="o">^</span> <span class="mi">3</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>0</p>
+</div></blockquote>
+<p>However, this is not how you raise a number to a power in <strong>Python</strong>. Instead you use the “**” operator,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span> <span class="o">**</span> <span class="mi">2</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>4</p>
+</div></blockquote>
+<p>The <em>interpretter</em> allows you to experiment with <strong>Python</strong> and get a feel for it. However, as previously mentioned, for this class, we will almost always be writing <a class="reference internal" href="#python-scripts"><span class="std std-ref">Scripts</span></a>.</p>
+<p>To exit the <em>interpretter</em>, type and execute,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">exit</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="scripts">
+<span id="python-scripts"></span><h2>Scripts<a class="headerlink" href="#scripts" title="Permalink to this headline">#</a></h2>
+<p><strong>Python</strong> scripts are files that have a <code class="docutils literal notranslate"><span class="pre">.py</span></code> extension. <code class="docutils literal notranslate"><span class="pre">.py</span></code> files are just files containing plain text, but anything that ends in <code class="docutils literal notranslate"><span class="pre">.py</span></code> will be understood by the <strong>Python</strong> <a class="reference internal" href="#python-interpretter"><span class="std std-ref">Interpretter</span></a> as a set of executable instrutions, so you can’t write just any text in this file. You have to write words that exist in the <a class="reference external" href="https://docs.python.org/3/reference/index.html">Python language</a>. Anytime we do a lab in this class, you will be writing a <em>script</em>.</p>
+<p>As an example, create a new file named <code class="docutils literal notranslate"><span class="pre">test.py</span></code> and open it in a text editor (actually, you will want to use <a class="reference internal" href="#python-idle"><span class="std std-ref">IDLE</span></a>, but we haven’t gotten to that part yet, so any old text editor will do for now)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">the_meaning_of_life</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The meaning of life is: &quot;</span><span class="p">,</span> <span class="n">the_meaning_of_life</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Save the file and open a <em>Linux</em> terminal (or command prompt if you are using your personal computer). Pass the name of the file to the <strong>Python</strong> interpretter and something magical will happen,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>test.py
+</pre></div>
+</div>
+<p>The following text should print to screen,</p>
+<blockquote>
+<div><p>The meaning of life is: 42</p>
+</div></blockquote>
+<p>Congratulations, you have just written your first Python script. In the labs for this class, when you are asked to create and run a <strong>Python</strong> script, this is essentially what you will be doing:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>creating a <code class="docutils literal notranslate"><span class="pre">.py</span></code> file</p></li>
+<li><p>telling the <strong>Python</strong> interpretter your file name.</p></li>
+</ul>
+</div></blockquote>
+<p>However, <em>IDLE</em> will make this whole process much less painful, so continue onto the next section, dear reader.</p>
+</section>
+<section id="python-idle">
+<span id="idle"></span><h2>IDLE<a class="headerlink" href="#python-idle" title="Permalink to this headline">#</a></h2>
+<p><strong>Python</strong> (usually) ships with a program named <em>IDLE</em>. <a class="reference external" href="https://docs.python.org/3/library/idle.html">IDLE</a> stands for <em>Integrated Development and Learning Environment</em>. <em>IDLE</em> is a text editor integrated with a <strong>Python</strong> interpretter. It provides <a class="reference external" href="https://en.wikipedia.org/wiki/Syntax_highlighting#Support_in_text_editors">syntax highlighting</a>, the ability to save and execute scripts, and a debugger for stepping through the programs. In other words, it’s got what we need.</p>
+<p>Open up an <em>IDLE</em> session,</p>
+<img alt="../../_images/idle_shell.png" src="../../_images/idle_shell.png" />
+<p>This is another version of the <strong>Python</strong> interpretter we encountered a few sections ago, sometimes referred to as a <a class="reference external" href="https://en.wikipedia.org/wiki/Shell_(computing)">shell</a>. You can execute the exact same commands in this <em>shell</em> as in the previous section, e.g.,</p>
+<img alt="../../_images/idle_shell_command.png" src="../../_images/idle_shell_command.png" />
+<p>If you navigate to the <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span> <span class="pre">File</span></code> menu option in the top left corner to the <em>IDLE</em> shell (you may also hit the <code class="docutils literal notranslate"><span class="pre">CTRL</span> <span class="pre">+</span> <span class="pre">N</span></code> keys at the same time), it will open a text editor,</p>
+<img alt="../../_images/idle_editor.png" src="../../_images/idle_editor.png" />
+<p>You can type commands into this editor, as pictured. You can run these commands by navigating to the <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">&gt;</span> <span class="pre">Run</span> <span class="pre">Module</span></code> menu option in the top left corner (you may also hit <code class="docutils literal notranslate"><span class="pre">F5</span></code>). It will then prompt you to save the script, if you haven’t already. After saving it, the <em>IDLE</em> shell will reappear with the results of your script,</p>
+<img alt="../../_images/idle_editor_results.png" src="../../_images/idle_editor_results.png" />
+<p>We will sometimes call the <em>IDLE</em> text editor a <em>notebook</em>.</p>
+</section>
+<section id="packages">
+<span id="python-packages"></span><h2>Packages<a class="headerlink" href="#packages" title="Permalink to this headline">#</a></h2>
+<p>By default, Python comes installed with the <a class="reference external" href="https://docs.python.org/3/library/index.html">Standard Library</a>. The <strong>Standard Library</strong> is a collection of common functions and utilities. For instance, the <cite>math</cite> library is part of the <strong>Standard Library</strong>. <cite>math</cite> contains functions for computing trigonemtric ratios, calculating powers and roots, etc. You can use <cite>math</cite> functions by first <cite>import</cite>-ing the library and accessing its content with <em>dot notation</em>. Start an interpretter session and type,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">answer</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">factorial</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Output:</dt><dd><p>2432902008176640000</p>
+</dd>
+</dl>
+<p>This sequence of commands imports the <cite>math</cite> library, calls the factorial function with <em>dot notation</em> to compute <img class="math" src="../../_images/math/7e451da68a24c1d66570895ec95c4e54480e6920.png" alt="n!"/>, stores the answer in the variable <cite>answer</cite>, and then prints it to screen.</p>
+<section id="third-party-packages">
+<span id="python-third-party"></span><h3>Third-Party Packages<a class="headerlink" href="#third-party-packages" title="Permalink to this headline">#</a></h3>
+<p><cite>math</cite> has plenty of functions that will be useful in this class, but it doesn’t have <em>everything</em> we need. Luckily, <strong>Python</strong> has a <em>package manager</em> that allows you to install third-party libraries. You use the <code class="docutils literal notranslate"><span class="pre">pip</span></code> command anytime you need to install any additional libraries or pacakges into <strong>Python</strong>. Open up a Linux Terminal and type,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip3<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Your output may not be exactly the same, depending on the version of <strong>Python 3</strong> you are using.</p>
+</div>
+<p>You should see the version number print to screen. If you happen to see an error message that says something along the lines of <code class="docutils literal notranslate"><span class="pre">`bash:</span> <span class="pre">pip3</span> <span class="pre">command</span> <span class="pre">not</span> <span class="pre">found`</span></code>, then you will need to install <code class="docutils literal notranslate"><span class="pre">pip3</span></code> from the <em>Linux</em> package repository with the following command,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3-pip
+</pre></div>
+</div>
+<p>After this installation is complete, try verifying the <code class="docutils literal notranslate"><span class="pre">pip</span></code> version again,</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip3<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><p>pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)</p>
+</div></blockquote>
+<p>Now that you have <code class="docutils literal notranslate"><span class="pre">pip3</span></code>, we will need to install two additional packages for this class. <a class="reference external" href="https://matplotlib.org/">matplotlib</a> will be used to generate graphical representations of data. <a class="reference external" href="https://docs.python.org/3/library/tkinter.html">tkinter</a> will be used to render the output of <a class="reference external" href="https://matplotlib.org/">matplotlib</a> into JPEG and PNG images. These packages can be installed through the command line. Open the Linux terminal on your ChromeBook (or the command prompt on your personal computer),</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip3<span class="w"> </span>install<span class="w"> </span>matplotlib<span class="w"> </span>tk
+</pre></div>
+</div>
+<img alt="../../_images/matplotlib_tk_install_done.png" class="align-center" src="../../_images/matplotlib_tk_install_done.png" />
+<p>Output:</p>
+<blockquote>
+<div><p>Defaulting to user installation because normal site-packages is not writeable</p>
+<dl class="simple">
+<dt>Collecting tk</dt><dd><p>Downloading tk-0.1.0-py3-none-any.whl (3.9 kB)</p>
+</dd>
+</dl>
+<p>…</p>
+<p>Installing collected packages: tk</p>
+<p>Successfully installed tk-0.1.0</p>
+</div></blockquote>
+<img alt="../../_images/matplotlib_tk_install_done.png" class="align-center" src="../../_images/matplotlib_tk_install_done.png" />
+<p>You should see the packages download and install into your system.</p>
+<p>See the <a class="reference internal" href="05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a> section to learn more about using <em>matplotlib</em> to generate plots of data.</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-installation">Python Installation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chromeos">ChromeOS</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-update-chromeos">Step 1: Update ChromeOS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-enable-linux-subsystem">Step 2: Enable Linux Subsystem</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-explore-a-little">Step 3: Explore A Little</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-install-python">Step 3: Install Python</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-install-libraries">Step 4: Install Libraries</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-operating-systems">Other Operating Systems</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretter">Interpretter</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scripts">Scripts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-idle">IDLE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#packages">Packages</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#third-party-packages">Third-Party Packages</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Grant Moore
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023, Grant Moore.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
