@@ -117,7 +117,7 @@ four plots within each block, with one tree planted in each plot.
 
 The two blocking schemes shown below are under consideration. For each scheme, one block is identified by the white region and the other block indicated by the grey region in the figures.
 
-.. image:: ../../../assets/imgs/classwork/noblestatmen_design_03.png
+.. image:: ../../../assets/imgs/classwork/noblestatman_design_03.png
 	:align: center
 	
 a. Which of the blocking schemes , A or B, is better for this experiment? Explain.

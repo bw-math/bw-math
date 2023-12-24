@@ -219,10 +219,10 @@ One person from those surveyed will be selected at random.
 
 2. **2003, Free Response, Form B, #2**
 
-A simple random sample of adults living in a suburb of a large city was selected. The age and annual income of each adult in the sample were recorded. The resulting data are summarized in the table below.
-
 .. image:: ../../../assets/imgs/classwork/2003_apstats_frp_formb_3.png
-    :align: center 
+	:align: center 
+	
+A simple random sample of adults living in a suburb of a large city was selected. The age and annual income of each adult in the sample were recorded. The resulting data are summarized in the above table.
 
 	a. What is the probability that a person chosen at random from those in this sample will be in the 31-45 age category?
 

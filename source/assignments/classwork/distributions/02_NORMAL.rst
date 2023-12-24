@@ -138,7 +138,7 @@ Each full carton of Grade A eggs consists of 1 randomly selected empty cardboard
 
 	Let the random variable **X** be the weight of a single randomly selected Grade A egg.
 
-	    i. What is the mean of **X **?
+	    i. What is the mean of **X**?
 	    
 	    ii. What is the standard deviation of **X** ?
 
