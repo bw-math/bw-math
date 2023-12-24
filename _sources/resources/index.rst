@@ -1,6 +1,8 @@
-==========
-References
-==========
+.. _resources:
+
+=========
+Resources
+=========
 
 .. toctree::
    :maxdepth: 2
