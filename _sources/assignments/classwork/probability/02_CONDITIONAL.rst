@@ -74,8 +74,8 @@ h. **Spoiler Alert** Why is the answer to *part f* different from the answer to 
 
     :ref:`Reduce the sample space <reduction_of_the_sample_space>` and then use :ref:`combinatorics`.
 
-Law of Multiplication
---------------------
+Multiplication Law
+------------------
 
 9. You shuffle a deck of playing cards and deal yourself two cards at random.
 

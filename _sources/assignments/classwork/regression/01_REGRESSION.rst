@@ -1,6 +1,6 @@
-=================
-Linear Regression
-=================
+================
+Regression Model
+================
 
 1. **2016, Free Response, #6**
 

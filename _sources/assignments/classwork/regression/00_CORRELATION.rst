@@ -52,10 +52,12 @@ b. After performing the experiment, the researchers recorded the data shown in t
 | Number of birds                       | 8  |  8  |  8  |  8  |  8  |
 +---------------------------------------+----+-----+-----+-----+-----+
 
-	i. Construct a graph of the data that could be used to investigate the appropriateness of a linear regression model for analyzing the results of the experiment.
-	
 .. image:: ../../../assets/imgs/context/cartesian_plane_blank.jpg
 	:align: center
+
+Use this table and graph for the following problems,
+
+	i. Construct a graph of the data that could be used to investigate the appropriateness of a linear regression model for analyzing the results of the experiment.
 	
 	ii. Based on your graph, do you think a linear regression model is appropriate? Explain.
 	
@@ -95,6 +97,8 @@ c. Consider the following scatterplots,
 
 .. image:: ../../../assets/imgs/classwork/2021_apstats_frp_06c.png
 	:align: center
+
+Use these graphs to answer the following questions,
 
 	i. Graph I shows the average attendance versus number of games won for each year. Describe the
 relationship between the variables.
