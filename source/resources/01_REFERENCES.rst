@@ -1,8 +1,8 @@
-.. _resources:
+.. _references:
 
-=========
-Resources
-=========
+==========
+References
+==========
 
 Textbooks
 =========
@@ -26,6 +26,15 @@ Introductory Statistics
 
 - `Introductory Statistics Textbook <https://openstax.org/details/books/introductory-statistics>`_
 
+
+Programs
+========
+
+TI Connect CE
+-------------
+
+- `Download <https://education.ti.com/en-au/products/computer-software/ti-connect-ce-sw>`_
+- `Documentation <https://education.ti.com/html/eguides/connectivity/TI-Connect-CE/EN/Content/EG_Splash_Page/TI-Connect_CE_SW_84.HTML>`_
 
 Websites
 ========

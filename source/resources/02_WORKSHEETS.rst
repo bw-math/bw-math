@@ -1,28 +1,25 @@
-.. _substitutes:
+.. _worksheets:
 
-===========
-Substitutes
-===========
+==========
+Worksheets
+==========
 
 .. topic:: Instructions for the Substitute.
 
 	If you are reading this, then I have probably been sucked into a jet engine or struck by falling debris. As such, I will not be able to teach this class until they are able to reassemble my pieces into a Frankenstein-esque monster. 
 	
-	In the meantime, you will find resources on this page to keep the class occupied while you catch up on your precious sleep. 
-	
-.. important::
+	In the meantime, you will find resources on this page to keep the class occupied.
 
-	Before class starts, throw a slab of raw meat into the center of the room. Allow the students to fight over said meat until a clear victor emerges. After the students have settled down and submitted to the alpha, you may start class.
-	
-.. important::
-	
-	Some of these worksheets require datasets. These datasets will need imported on the students' calculator. You can have the students connect to the *ViewSonic* by plugging into the USB splitter. Then, you will need to open the *TI-Connect* software and send the dataset to their calculators.  One of the students (not Sejal) should be able to figure out how to import the data. 
 
 TI-84 Worksheets
 ================
 
 `Kindly provided by Texas Instruments <https://education.ti.com/en/84activitycentral/us/statistics>`_.
 
+.. important::
+	
+	Some of these worksheets require datasets. These datasets will need imported onto the students' calculators. Use the `TI Connect CE <https://education.ti.com/html/eguides/connectivity/TI-Connect-CE/EN/Index.HTML>`_ program installed on the classroom *ViewSonic* to export the data onto the students' calculators. Hook up the calculators using miniUSB cables and then send the data using the options menu in the *TI Connect CE* program.
+	
 No Datasets Required
 --------------------
 

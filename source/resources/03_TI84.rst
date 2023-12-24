@@ -94,7 +94,24 @@ Population Distributions
 .. image:: https://img.youtube.com/vi/lDnkKUqA4nk/maxresdefault.jpg
     :alt: Monte Carlo Simulation
     :target: https://www.youtube.com/watch?v=lDnkKUqA4nk
-    
+	
+QQ Plots
+--------
+
+.. image:: https://img.youtube.com/vi/EylKq7hdO78/maxresdefault.jpg
+	:alt: QQ Plots
+	:target: https://www.youtube.com/watch?v=EylKq7hdO78
+	
+Projects
+========
+
+Correlation
+-----------
+
+.. image:: https://img.youtube.com/vi/6xtN2i2FbsQ/maxresdefault.jpg
+	:alt: Correlation
+	:target: https://www.youtube.com/watch?v=6xtN2i2FbsQ
+	
 Estimating Pi
 -------------
 
@@ -111,11 +128,6 @@ Part 2
 .. image:: https://img.youtube.com/vi/J9ILZhPYds4/maxresdefault.jpg
 	:alt: Estimating Pi With Simulation 2/3
 	:target: https://www.youtube.com/watch?v=J9ILZhPYds4
-	
-QQ Plots
---------
 
-.. image:: https://img.youtube.com/vi/EylKq7hdO78/maxresdefault.jpg
-	:alt: QQ Plots
-	:target: https://www.youtube.com/watch?v=EylKq7hdO78
+	
 
