@@ -1,13 +1,13 @@
-===========================
-Bishop Walsh A.P Statistics
-===========================
+========================
+Bishop Walsh Mathematics
+========================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    00_SPLASH
-   01_STATS_SYLLABUS
+   syllabi/index
    02_DATASETS
    notes/index
    assignments/index

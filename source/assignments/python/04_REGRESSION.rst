@@ -23,10 +23,10 @@ Instructions
 4. Read the :ref:`project_four_background` section.
 5. Read the :ref:`project_four_loading_data` section.
 6. Read the :ref:`project_four_bivariate_analysis` section.
-6. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_four_loading_data` section.
-7. Perform all exercises and answer all questions in the :ref:`project_four_project` section. Label your script with comments as indicated in the instructions of each problem.
-8. When you are done, zip your script **and** the *csv* files in a zip file named ``NAME_project_four.zip``
-9. Upload the zip file to the Google Classroom Project Four Assignment.
+7. Load in the data from the ``.csv`` file using the technique outlined in the :ref:`project_four_loading_data` section.
+8. Perform all exercises and answer all questions in the :ref:`project_four_project` section. Label your script with comments as indicated in the instructions of each problem.
+9. When you are done, zip your script **and** the *csv* files in a zip file named ``NAME_project_four.zip``
+10. Upload the zip file to the Google Classroom Project Four Assignment.
 
 .. _project_four_background:
 
