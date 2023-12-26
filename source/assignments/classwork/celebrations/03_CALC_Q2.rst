@@ -89,7 +89,7 @@ c. Let :math:`m` be the function defined by :math:`m(x) = g(-2x) \cdot h(x)`. Fi
 .. image:: ../../../assets/imgs/classwork/2015_apcalc_frp_05.png
 	:align: center
 	
-The figure above shows the graph of :math:`f^{\prime}`, the derivative of a twice-differentiable function :math:`f`, on the interval :math:`[-3,4]`. The graph of :math:`f^{\prime}` has horizontal tangents at :math:`x=-1`, :math:`x=-1`, and :math:`x=3`.
+The figure above shows the graph of :math:`f^{\prime}`, the derivative of a twice-differentiable function :math:`f`, on the interval :math:`[-3,4]`. The graph of :math:`f^{\prime}` has horizontal tangents at :math:`x=-1`, :math:`x=1`, and :math:`x=3`.
 
 a. Find all x-coordinates at which f has a relative maximum. Give a reason for your answer.
 
