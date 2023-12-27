@@ -4,7 +4,9 @@
 Geometric Distribution 
 ======================
 
-1. **2016, Free Response, #4**
+1. From an ordinary deck of 52 cards, you draw cards at random and with replacement, until the first ace is drawn. what is the probability that atleast five draws are needed?
+
+2. **2016, Free Response, #4**
 
 A company manufactures model rockets that require igniters to launch. Once an igniter is used to launch a rocket, the igniter cannot be reused. Sometimes an igniter fails to operate correctly, and the rocket does not launch. The company estimates that the overall failure rate, defined as the percent of all igniters that fail to operate correctly, is 15 percent.
 
@@ -23,7 +25,7 @@ b. Given that the first 30 super igniters successfully launch rockets, what is t
 
 c. Given that the first 30 super igniters successfully launch rockets, is it reasonable to believe that the failure rate of the super igniters is less than 15 percent? Explain.
 
-2. **2011, Free Response, #3**
+3. **2011, Free Response, #3**
 
 An airline claims that there is a 0.10 probability that a coach-class ticket holder who flies frequently will be upgraded to first class on any flight. This outcome is independent from flight to flight. Sam is a frequent flier who always purchases coach-class tickets.
 
