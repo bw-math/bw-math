@@ -66,10 +66,6 @@ c. How many different three-letter codes are there if only the letters *A*, *B*,
 
 d. How many different four letter codes are there if only the letters *A*, *B*, *C*, *D*, *E* and *F* can be used and no letter can be used more than once?
 
-3. **Words**
-
-TODO
-
 Combinations
 ============
 
@@ -172,7 +168,7 @@ Probability
 
     For part c, the event of getting two green balls is :ref:`mutually exclusive <mutual_exclusion>` with the event of getting exactly one green ball. 
 
-3. A bag contains 4 red and 5 green balls. Two balls are drawn at random from the bag *without replacement*. 
+4. A bag contains 4 red and 5 green balls. Two balls are drawn at random from the bag *without replacement*. 
 
     a. What is the probability all of them are red?
 
@@ -182,7 +178,7 @@ Probability
 
     d. Why does *part a + part b + part c* equal 1?
 
-4. **Lottery** In Maryland's state lottery, 48 balls numbered 1 through 48 are placed into a spinner and well mixed. Six of them are drawn at random, without replacement. There are three prizes awarded based on how many numbers a player is able to guess. 
+5. **Lottery** In Maryland's state lottery, 48 balls numbered 1 through 48 are placed into a spinner and well mixed. Six of them are drawn at random, without replacement. There are three prizes awarded based on how many numbers a player is able to guess. 
 
     a. If the six numbers drawn match the numbers the player has chosen, the player wins the grand prize. Find the probability of winning the grand prize if a single lottery ticket is purchased.
 
@@ -196,7 +192,7 @@ Probability
     
     A player not winning is the complement of the event of the player winning the grand prize *or* the player winning the second place prize *or* the player winning the third place prize.
 
-5. **The Birthday Problem**
+6. **The Birthday Problem**
 
     a. Suppose three people are in a room. What is the probability there is at least one shared birthday among these three people?
 
@@ -205,7 +201,7 @@ Probability
     c. Suppose thirty people are in a room. What is the probability there is at least one shared birthday among these thirty people?
 
     
-6. **Five Card Poker** Find the probability of getting the following hands in 5-card poker. 
+7. **Five Card Poker** Find the probability of getting the following hands in 5-card poker. 
 
     a. Royal Flush. Recall a Royal Flush is a hand of cards all of the same suit given by the sequence of faces 10JQKA
 
@@ -244,8 +240,20 @@ b. A random sample of 20 children born in the region will be selected. What is t
 Solutions
 =========
 
+Counting Principle
+------------------
+
+TODO
+
+Combinations
+------------
+
+TODO 
+
 Probability
 -----------
+
+TODO
 
 2. The word "*atleast*" is a red flag in problems involving probability. If you see the word "*atleast*", it is a fair bet you will need to find the complement of a set at some point. To see why, note the way this problem is phrase can be interpretted with the :ref:`square_of_opposition`. The *Square of Opposition* is pictured below for quick reference,
 
