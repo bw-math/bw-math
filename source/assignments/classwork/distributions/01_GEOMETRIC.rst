@@ -4,7 +4,6 @@
 Geometric Distribution 
 ======================
 
-<<<<<<< HEAD
 1. **Conditions for Geometric Random Variable**
 
 Determine whether each of the following experiments satisfy the conditions for a Geometric Random Variable.
@@ -58,11 +57,11 @@ To test the performance of the super igniters, the engineer uses the following p
 
 Step 2 is repeated until the process stops. The process stops when a super igniter fails to operate correctly or 32 super igniters have successfully launched rockets, whichever comes first. Assume that super igniter failures are independent.
 
-a. If the failure rate of the super igniters is 15 percent, what is the probability that the first 30 super igniters selected using the testing process successfully launch rockets?
+	a. If the failure rate of the super igniters is 15 percent, what is the probability that the first 30 super igniters selected using the testing process successfully launch rockets?
 
-b. Given that the first 30 super igniters successfully launch rockets, what is the probability that the first failure occurs on the thirty-first or the thirty-second super igniter tested if the failure rate of the super igniters is 15 percent?
+	b. Given that the first 30 super igniters successfully launch rockets, what is the probability that the first failure occurs on the thirty-first or the thirty-second super igniter tested if the failure rate of the super igniters is 15 percent?
 
-c. Given that the first 30 super igniters successfully launch rockets, is it reasonable to believe that the failure rate of the super igniters is less than 15 percent? Explain.
+	c. Given that the first 30 super igniters successfully launch rockets, is it reasonable to believe that the failure rate of the super igniters is less than 15 percent? Explain.
 
 3. **2011, Free Response, #3**
 
@@ -72,8 +71,8 @@ c. Given that the first 30 super igniters successfully launch rockets, is it rea
 	
 An airline claims that there is a 0.10 probability that a coach-class ticket holder who flies frequently will be upgraded to first class on any flight. This outcome is independent from flight to flight. Sam is a frequent flier who always purchases coach-class tickets.
 
-a. What is the probability that Sam’s first upgrade will occur after the third flight?
+	a. What is the probability that Sam’s first upgrade will occur after the third flight?
 
-b. What is the probability that Sam will be upgraded exactly 2 times in his next 20 flights?
+	b. What is the probability that Sam will be upgraded exactly 2 times in his next 20 flights?
 
-c. Sam will take 104 flights next year. Would you be surprised if Sam receives more than 20 upgrades to first class during the year? Justify your answer.
+	c. Sam will take 104 flights next year. Would you be surprised if Sam receives more than 20 upgrades to first class during the year? Justify your answer.
