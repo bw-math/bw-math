@@ -31,10 +31,15 @@ to answer the following questions.
 		ii. If you perform :math:`n` trials where each trial has a probability of success :math:`p`, how many successes do you expect to get on average? 
 	
 	b. If :math:`n=10` and :math:`p=0.5`, find :math:`P(X=3)`.
+	
 	c. If :math:`n=10` and :math:`p=0.5`, find :math:`P(X=4)`.
+	
 	d. If :math:`n=10` and :math:`p=0.5`, find :math:`P(X=5)`. 
+	
 	e. If :math:`n=10` and :math:`p=0.5`, find :math:`P(X=6)`.
+	
 	f. If :math:`n=10` and :math:`p=0.5`, find :math:`P(X=7)`.
+	
 	g. Write a few sentence in plain English interpretting the results of *part b - f*. What happens to Binomial probabilities on either side of the *expected value* of the distribution as you move away from that point? What features of the distribution are apparent from the calculations performed in *parts b - f*? 
 
 3. **Applications**

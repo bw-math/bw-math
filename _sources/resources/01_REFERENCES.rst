@@ -26,9 +26,24 @@ Introductory Statistics
 
 - `Introductory Statistics Textbook <https://openstax.org/details/books/introductory-statistics>`_
 
+.. _openstax_statistics:
+
+Statistics
+**********
+
+- `Statistics Textbook <https://openstax.org/details/books/statistics>`_
 
 Programs
 ========
+
+.. _python_links:
+
+Python
+------
+- `Download <https://www.python.org/downloads/>`_
+- `Documentation <https://docs.python.org/3/index.html>`_
+
+.. _ti_connect_links:
 
 TI Connect CE
 -------------
@@ -39,22 +54,37 @@ TI Connect CE
 Websites
 ========
 
+.. _noble_statman:
+
 Noble Statman
 -------------
 
 - `noblestatman.com <https://noblestatman.com/index.html>`_
+
+.. _random_services:
 
 Random Services
 ---------------
 
 - `randomservices.com <https://www.randomservices.org/>`_
 
+.. _spurious_correlations:
+
 Spurious Correlations
 ---------------------
 
 - `tylervigen.com/spurious-correlation <https://www.tylervigen.com/spurious-correlations>`_
 
+.. _ti_worksheets:
+
 Texas Instrument
 ----------------
 
 - `Probability and Statistics Worksheets <https://education.ti.com/en/84activitycentral/us/statistics>`_
+
+.. _whitman_college:
+
+Whitman College
+---------------
+
+- `Introduction to Higher Mathematics <https://www.whitman.edu/mathematics/higher_math_online/>`_
