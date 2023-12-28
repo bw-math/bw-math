@@ -24,13 +24,13 @@ Use the Geometric Probability Density Function,
 	
 to answer the following questions.
 
-	a. If :math:`p=0.1`, what is `P(X=1)`?
+	a. If :math:`p=0.1`, what is :math:`P(\mathcal{X}=1)`?
 	
-	b. If :math:`p=0.1`, what is `P(X=10)`?
+	b. If :math:`p=0.1`, what is :math:`P(\mathcal{X}=10)`?
 	
-	c. If :math:`p=0.9`, what is `P(X=1)`?
+	c. If :math:`p=0.9`, what is :math:`P(\mathcal{X}=1)`?
 	
-	d. If :math:`p=0.9`, what is `P(X=10)`?
+	d. If :math:`p=0.9`, what is :math:`P(\mathcal{X}=10)`?
 	
 	e. Write a few sentences in plain English that explains how changing the parameter *p* of the Geometric Distribution affects the probability of its outcomes.
 
