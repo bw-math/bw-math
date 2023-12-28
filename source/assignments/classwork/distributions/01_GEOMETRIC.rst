@@ -41,7 +41,7 @@ Use the properties of probability and the Geometric Distribution to solve the fo
 	a. From an ordinary deck of 52 cards, you draw cards at random and with replacement, until the first ace is drawn. what is the probability that atleast five draws are needed?
 
 	
-	b. TODO
+	b. A certain basketball player makes a foul shot 45% of the time. Suppose this player stands on the foul line and continues shooting until he makes two baskets. What is the probability that (i) the first basket occurs on the sixth shot? (ii) the first and second baskets occur on the fourth and eighth shots, respectively?
 	
 	c. TODO
 	
