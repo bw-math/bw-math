@@ -4,9 +4,48 @@
 Geometric Distribution 
 ======================
 
-1. From an ordinary deck of 52 cards, you draw cards at random and with replacement, until the first ace is drawn. what is the probability that atleast five draws are needed?
+<<<<<<< HEAD
+1. **Conditions for Geometric Random Variable**
 
-2. **2016, Free Response, #4**
+Determine whether each of the following experiments satisfy the conditions for a Geometric Random Variable.
+
+	a. TODO
+	
+	b. TODO
+	
+	c. TODO
+	
+2. **Probability Density**
+
+Use the Geometric Probability Density Function,
+
+.. math::
+
+	P(\mathcal{X}=x) = (1-p)^{x-1} \cdot p
+	
+to answer the following questions.
+
+	a. If :math:`p=0.1`, what is `P(X=1)`?
+	b. If :math:`p=0.1`, what is `P(X=10)`?
+	c. If :math:`p=0.9`, what is `P(X=1)`?
+	d. If :math:`p=0.9`, what is `P(X=10)`?
+	e. Write a few sentences in plain English that explains how changing the parameter *p* of the Geometric Distribution affects the probability of its outcomes.
+
+3. **Applications**
+
+Use the properties of probability and the Geometric Distribution to solve the following problems.
+
+	a. From an ordinary deck of 52 cards, you draw cards at random and with replacement, until the first ace is drawn. what is the probability that atleast five draws are needed?
+
+	
+	b. TODO
+	
+	c. TODO
+	
+A.P. Exam Practice
+==================
+
+1. **2016, Free Response, #4**
 
 A company manufactures model rockets that require igniters to launch. Once an igniter is used to launch a rocket, the igniter cannot be reused. Sometimes an igniter fails to operate correctly, and the rocket does not launch. The company estimates that the overall failure rate, defined as the percent of all igniters that fail to operate correctly, is 15 percent.
 
@@ -27,6 +66,10 @@ c. Given that the first 30 super igniters successfully launch rockets, is it rea
 
 3. **2011, Free Response, #3**
 
+.. warning::
+
+	The problem requires more than the Geometric Distribution to solve.
+	
 An airline claims that there is a 0.10 probability that a coach-class ticket holder who flies frequently will be upgraded to first class on any flight. This outcome is independent from flight to flight. Sam is a frequent flier who always purchases coach-class tickets.
 
 a. What is the probability that Sam’s first upgrade will occur after the third flight?

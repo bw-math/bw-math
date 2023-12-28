@@ -4,9 +4,46 @@
 Binomial Distribution
 =====================
 
-1. What is the probability of getting exactly three *1*'s in 10 rolls of a six-sided die?
+1. **Conditions for Binomial Random Variable**
 
-TODO: MORE
+Determine whether each of the following experiments satisfies the conditions for a Binomial Random Variable.
+
+	a. TODO
+	
+	b. TODO
+	
+	c. TODO
+
+2. **Probability Density**
+
+Use the Binomial Probability Density Function,
+
+.. math::
+
+	P(\mathcal{X}=x) = C^{n}_{r} \cdot p^x \cdot (1-p)^(n-x)
+	
+to answer the following questions.
+
+	a. Before performing any calculations, answer the following questions. 
+	
+		i. If you flip a fair coin ten times, how many heads do you expect to get on average? 
+		
+		ii. If you perform :math:`n` trials where each trial has a probability of success :math:`p`, how many successes do you expect to get on average? 
+	
+	b. If :math:`n=10` and :math:`p=0.5`, find :math:`P(X=3)`.
+	c. If :math:`n=10` and :math:`p=0.5`, find :math:`P(X=4)`.
+	d. If :math:`n=10` and :math:`p=0.5`, find :math:`P(X=5)`. 
+	e. If :math:`n=10` and :math:`p=0.5`, find :math:`P(X=6)`.
+	f. If :math:`n=10` and :math:`p=0.5`, find :math:`P(X=7)`.
+	g. Write a few sentence in plain English interpretting the results of *part b - f*. What happens to Binomial probabilities on either side of the *expected value* of the distribution as you move away from that point? What features of the distribution are apparent from the calculations performed in *parts b - f*? 
+
+3. **Applications**
+
+	a. TODO
+	
+	b. TODO
+	
+	c. TODO
 
 A.P. Exam Practice
 ==================
