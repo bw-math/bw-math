@@ -25,9 +25,13 @@ Use the Geometric Probability Density Function,
 to answer the following questions.
 
 	a. If :math:`p=0.1`, what is `P(X=1)`?
+	
 	b. If :math:`p=0.1`, what is `P(X=10)`?
+	
 	c. If :math:`p=0.9`, what is `P(X=1)`?
+	
 	d. If :math:`p=0.9`, what is `P(X=10)`?
+	
 	e. Write a few sentences in plain English that explains how changing the parameter *p* of the Geometric Distribution affects the probability of its outcomes.
 
 3. **Applications**
@@ -53,6 +57,7 @@ A company engineer develops a new igniter, called the super igniter, with the in
 To test the performance of the super igniters, the engineer uses the following process.
 
     Step 1: One super igniter is selected at random and used in a rocket.
+    
     Step 2: If the rocket launches, another super igniter is selected at random and used in a rocket.
 
 Step 2 is repeated until the process stops. The process stops when a super igniter fails to operate correctly or 32 super igniters have successfully launched rockets, whichever comes first. Assume that super igniter failures are independent.
