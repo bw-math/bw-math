@@ -4,6 +4,7 @@
 Geometric Distribution 
 ======================
 
+<<<<<<< HEAD
 1. **Conditions for Geometric Random Variable**
 
 Determine whether each of the following experiments satisfy the conditions for a Geometric Random Variable.
@@ -32,7 +33,10 @@ to answer the following questions.
 
 3. **Applications**
 
-	a. TODO
+Use the properties of probability and the Geometric Distribution to solve the following problems.
+
+	a. From an ordinary deck of 52 cards, you draw cards at random and with replacement, until the first ace is drawn. what is the probability that atleast five draws are needed?
+
 	
 	b. TODO
 	
@@ -60,7 +64,7 @@ b. Given that the first 30 super igniters successfully launch rockets, what is t
 
 c. Given that the first 30 super igniters successfully launch rockets, is it reasonable to believe that the failure rate of the super igniters is less than 15 percent? Explain.
 
-2. **2011, Free Response, #3**
+3. **2011, Free Response, #3**
 
 .. warning::
 
