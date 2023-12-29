@@ -13,6 +13,3 @@ Distributions
    02_BINOMIAL
    03_UNIFORM
    04_NORMAL
-   05_T
-   06_CHI_SQUARED
-   07_F
