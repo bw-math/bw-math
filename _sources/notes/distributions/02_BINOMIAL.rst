@@ -39,8 +39,8 @@ TODO
 
 .. _binomial_conditions:
 
-Binomial Conditions
--------------------
+Conditions
+----------
 
 In order for an experiment to be *Binomial*, the experiment must the conditions just discussed. The summary below provides a list of each condition.
 
@@ -51,6 +51,31 @@ In order for an experiment to be *Binomial*, the experiment must the conditions 
 	3. Each trial must have a binary outcome, usually denoted success or failure.  
 	4. The probability of success is the same in each trial.
 	
+
+.. _binomial_parameters
+
+Parameters
+----------
+
+The Binomial Distribution has two parameters.
+
+.. topic:: Binomial Parameters
+	
+	1. :math:`n`: The number of trials.
+
+	2. :math:`p`: The probability of success in a single trial.
+
+TODO
+
+.. plot:: assets/plots/distributions/binomial/binomial_distribution_01.py
+
+.. plot:: assets/plots/distributions/binomial/binomial_distribution_02.py
+
+.. plot:: assets/plots/distributions/binomial/binomial_distribution_03.py
+
+.. plot:: assets/plots/distributions/binomial/binomial_distribution_04.py
+
+
 Probabilitiy Distribution
 =========================
 
@@ -90,25 +115,3 @@ Standard Deviation
 TODO
 
 derive through rules of independent random variable sums
-
-.. _binomial_parameters
-
-Distribution Parameters
------------------------
-
-The Binomial Distribution has two parameters:
-
-1. :math:`n`: The number of trials.
-2. :math:`p`: The probability of success in a single trial.
-
-TODO
-
-.. plot:: assets/plots/distributions/binomial/binomial_distribution_01.py
-
-.. plot:: assets/plots/distributions/binomial/binomial_distribution_02.py
-
-.. plot:: assets/plots/distributions/binomial/binomial_distribution_03.py
-
-.. plot:: assets/plots/distributions/binomial/binomial_distribution_04.py
-
-

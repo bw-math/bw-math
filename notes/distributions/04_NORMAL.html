@@ -46,7 +46,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/distributions/04_NORMAL';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="T Distribution" href="05_T.html" />
+    <link rel="next" title="Hypothesis Testing" href="../hypotheses/index.html" />
     <link rel="prev" title="Uniform Distribution" href="03_UNIFORM.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
@@ -167,9 +167,6 @@
 <li class="toctree-l3"><a class="reference internal" href="02_BINOMIAL.html">Binomial Distribution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="03_UNIFORM.html">Uniform Distribution</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Normal Distribution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="05_T.html">T Distribution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="06_CHI_SQUARED.html"><img alt="\chi^2" class="math" src="../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="07_F.html">F Distribution</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -478,9 +475,16 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#z-tables">Z-Tables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#empirical-rule">Empirical Rule</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effects-of-parameters">Effects of Parameters</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#varying-the-mean">Varying the Mean</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#varying-the-standard-deviation">Varying the Standard Deviation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parameters">Parameters</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mean">Mean</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#varying-the-mean-parameter">Varying the Mean Parameter</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#varying-the-standard-deviation-parameter">Varying the Standard Deviation Parameter</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assessing-normality">Assessing Normality</a><ul class="nav section-nav flex-column">
@@ -513,11 +517,9 @@ document.write(`
 <p>Normality arises when observations being randomly drawn from a <a class="reference internal" href="../experiments/00_INTRODUCTION.html#population"><span class="std std-ref">Population</span></a> are <em>independent</em> and <em>identically distributed</em>. In other words, if a series of experiments are performed where each experiment is the same as the last in every respect, then the outcomes of all the experiments taken together should be approximately normal.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><em>Independence</em> and <em>Identically Distributed</em> are mathematical concepts with precise defintions. We will talk more about them when we get to <a class="reference internal" href="../probability/00_INTRODUCTION.html#probability-introduction"><span class="std std-ref">probability</span></a></p>
+<p><em>Independence</em> and <em>Identically Distributed</em> are mathematical concepts with precise defintions. We will talk more about them in the section on <a class="reference internal" href="../probability/00_INTRODUCTION.html#probability-introduction"><span class="std std-ref">probability</span></a></p>
 </div>
-<p>In order to explain the origin of normality, it is instructive to consider a simple example.</p>
-<p>Consider the experiment of rolling a single die. Think about what the <em>ideal</em> relative frequency distribution for this experiment should look like.</p>
-<p>A die has six sides and each one is equally likely. If we let <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> represent the outcome a rolling a single die, we can express the relation of all outcomes being equally likely with the following equation,</p>
+<p>In order to explain the origin of normality, it is instructive to consider a simple example.  Consider the experiment of rolling a single die. Think about what the <em>ideal</em> relative frequency distribution for this experiment should look like. A die has six sides and each one is equally likely. If we let <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> represent the outcome a rolling a single die, we can express the relation of all outcomes being equally likely with the following equation,</p>
 <div class="math">
 <p><img src="../../_images/math/cc6b24990b6ad5755754482ed312cf51604d23c1.png" alt="P(\mathcal{X}=1) = P(\mathcal{X}=2) = P(\mathcal{X}=3) = P(\mathcal{X}=4) = P(\mathcal{X}=5) = P(\mathcal{X}=6)"/></p>
 </div><p>To say the same thing in a different way, the <a class="reference internal" href="../probability/00_INTRODUCTION.html#probability-introduction"><span class="std std-ref">probability</span></a> of all outcomes should be the same,</p>
@@ -529,7 +531,8 @@ document.write(`
 <img alt="../../_images/04_ex01_die_roll.png" class="plot-directive" src="../../_images/04_ex01_die_roll.png" />
 </figure>
 <p>Consider now the experiment of rolling 30 die. The <em>relative</em> frequency of each outcome in the <em>ideal distribution</em> will not change, since the new die being rolled consist of the same outcomes as the original die; Outcomes are added to the experiment in the same proportion.</p>
-<p>Take this experiment of rolling 30 die and repreat</p>
+<p>Take this experiment of rolling 30 die and repeat</p>
+<p>TODO</p>
 <p>A departure from normality can suggest several things:</p>
 <ol class="arabic simple">
 <li><p>The selection process was not random.</p></li>
@@ -539,22 +542,23 @@ document.write(`
 </section>
 <section id="normal-calculations">
 <span id="id3"></span><h3>Normal Calculations<a class="headerlink" href="#normal-calculations" title="Permalink to this headline">#</a></h3>
-<p>When we calculate Normal probabilities, we usually work with <em>z distributions</em>, where each observation <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> has been converted into a <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#z-score"><span class="std std-ref">Z Score</span></a> <img class="math" src="../../_images/math/9b48cf83ba01291162ac7d5298ce9a45261a900d.png" alt="z_i"/>,</p>
+<p>When we calculate Normal probabilities, we usually work with <em>Z distributions</em>, where each observation <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> has been converted into a <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#z-score"><span class="std std-ref">Z Score</span></a> <img class="math" src="../../_images/math/9b48cf83ba01291162ac7d5298ce9a45261a900d.png" alt="z_i"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/9d48a5caf4fb1daed5e32d1ce236b58475e84f12.png" alt="z_i = \frac{x_i - \mu}{\sigma}"/></p>
-</div><p>The reason for this transformation is easily understood by recalling the <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#data-transformations"><span class="std std-ref">data transformation theorems</span></a> that state the mean of a <em>z distribtion</em> will always be 0 and the standard deviation of a <em>z distribution</em> will always be 1.</p>
+</div><p>The reason for this transformation is easily understood by recalling the <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#data-transformations"><span class="std std-ref">data transformation theorems</span></a> that state the mean of a <em>Z distribution</em> will always be 0 and the standard deviation of a <em>Z distribution</em> will always be 1.</p>
 <p>If an observation <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> drawn from a population follows a Normal distribution with mean <img class="math" src="../../_images/math/18b19e5f315a11447a2f609580b5706d0feb0e26.png" alt="\mu"/> and standard deviation <img class="math" src="../../_images/math/3c6db7079834573bbfc4f914a807e23ebd2079f2.png" alt="\sigma"/>, we write,</p>
 <div class="math">
 <p><img src="../../_images/math/405870b29dbba679c3670e702055c7a30f2056b7.png" alt="\mathcal{X} \sim \mathcal{N}(\mu, \sigma)"/></p>
-</div><p>Then, the corresponding <em>z distribution</em> can be written,</p>
+</div><p>Then, the corresponding <em>Z distribution</em> can be written,</p>
 <div class="math">
 <p><img src="../../_images/math/22eda12b5ac2abfe54aa4637c28615784a9ca62d.png" alt="\mathcal{Z} \sim \mathcal{N}(0, 1)"/></p>
-</div><section id="cumulative-distribution-function">
+</div><p>TODO</p>
+<section id="cumulative-distribution-function">
 <span id="normal-cdf"></span><h4>Cumulative Distribution Function<a class="headerlink" href="#cumulative-distribution-function" title="Permalink to this headline">#</a></h4>
 <p>The cumulative distribution function (CDF) for the Normal distribution is an extremely important function in mathematics. Symbolically, it is written,</p>
 <div class="math">
 <p><img src="../../_images/math/b59e0fa425f21cdfcff06dbf6797308c416177c0.png" alt="\Phi(z) = P(\mathcal{Z} \leq z) = p"/></p>
-</div><p>This function, recall, represents the area of the density curve below the point <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/>. In other words, This function tells us the <em>percentage</em> <img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/> of the Standard Normal distribution that is less than or equal to the point <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/>. To put it yet another way, it tells us what percentage <img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/> of the original Normal distribution is less than or equal to <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/> standard deviations away from the mean.</p>
+</div><p>This function represents the area under the density curve to the left of the point <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/>. In other words, This function tells us the <em>percentage</em> <img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/> of the Standard Normal distribution that is less than or equal to the point <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/>. To put it yet another way, it tells us what percentage <img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/> of the original Normal distribution is less than or equal to <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/> standard deviations away from the mean.</p>
 <p>Graphically, we can think of the Normal CDF at a point, <img class="math" src="../../_images/math/a6392e85b7ed169cdfd12d02f6adf9896b95e010.png" alt="\Phi(z)"/> as representing the shaded area to the left of <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/>. For example, the quantity <img class="math" src="../../_images/math/3ee0431ee5e57adc381395e824bcaead730cb1bc.png" alt="\Phi(0.5)"/> can be visualized as the shaded region under the density curve,</p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/be066d16e9221b0fee06d03a71357c8d/normal_distribution_cdf.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/7333c377f64a73ddc9be10ab0e429896/normal_distribution_cdf.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/c36613be277e7b3fd2ea094c21c4cdb5/normal_distribution_cdf.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/433051ac82cb8cadfcecf797ef822917/normal_distribution_cdf.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
@@ -624,25 +628,49 @@ document.write(`
 <img alt="../../_images/normal_distribution_empirical_rule.png" class="align-center" src="../../_images/normal_distribution_empirical_rule.png" />
 <p>TODO</p>
 </section>
-<section id="effects-of-parameters">
-<span id="normal-parameters"></span><h2>Effects of Parameters<a class="headerlink" href="#effects-of-parameters" title="Permalink to this headline">#</a></h2>
-<section id="varying-the-mean">
-<h3>Varying the Mean<a class="headerlink" href="#varying-the-mean" title="Permalink to this headline">#</a></h3>
+<section id="parameters">
+<span id="normal-parameters"></span><h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">#</a></h2>
+<section id="mean">
+<h3>Mean<a class="headerlink" href="#mean" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
+<section id="varying-the-mean-parameter">
+<h4>Varying the Mean Parameter<a class="headerlink" href="#varying-the-mean-parameter" title="Permalink to this headline">#</a></h4>
 <p>TODO</p>
 </section>
-<section id="varying-the-standard-deviation">
-<h3>Varying the Standard Deviation<a class="headerlink" href="#varying-the-standard-deviation" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="standard-deviation">
+<h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">#</a></h3>
+<section id="varying-the-standard-deviation-parameter">
+<h4>Varying the Standard Deviation Parameter<a class="headerlink" href="#varying-the-standard-deviation-parameter" title="Permalink to this headline">#</a></h4>
 <p>By changing the <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#standard-deviation"><span class="std std-ref">Standard Deviation</span></a>, the shape of the distribution changes. As the <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#standard-deviation"><span class="std std-ref">Standard Deviation</span></a> increase, the graph spreads out. This is because <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#standard-deviation"><span class="std std-ref">Standard Deviation</span></a> is a <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#measures-of-variation"><span class="std std-ref">measure of variation</span></a>. In other words, <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#standard-deviation"><span class="std std-ref">Standard Deviation</span></a> quantifies how the distribution is spread out along the <em>x</em>-axis.</p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/3d3051ca9623335482f2e77b110810ce/normal_distribution_parameters.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/5daa779cc6596fe3f03024eb483ab286/normal_distribution_parameters.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/056e28716a2fdab553980ab47daddf63/normal_distribution_parameters.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f1c2894c5824918a9a8e8fda0b9e34d3/normal_distribution_parameters.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/normal_distribution_parameters.png" class="plot-directive" src="../../_images/normal_distribution_parameters.png" />
 </figure>
+</section>
+</section>
+<section id="summary">
+<h3>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">#</a></h3>
 <p>To summarize,</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<ol class="arabic simple">
-<li><p>By changing the mean of the <em>normal distribution</em>, the <em>location</em> of the distribution changes.</p></li>
-<li><p>By changing the standard deviation of the <em>normal distribution</em>, the <em>spread</em> of the distribution changes.</p></li>
+<div class="topic">
+<p class="topic-title">Effects of Varying The Normal Parameters</p>
+<ol class="arabic">
+<li><p>By changing the mean of the <em>Normal distribution</em>, the <em>location</em> of the distribution changes.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Increasing the mean shifts the distribution to the right.</p></li>
+<li><p>Decreasing the mean shifts the distribution to the left.</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>By changing the standard deviation of the <em>Normal distribution</em>, the <em>spread</em> of the distribution changes.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>As the standard deviation becomes larger, the distribution become flatter and more spread out around the mean.</p></li>
+<li><p>As the standard deviation becomes smaller, the distribution clusters around the mean in a sharper and sharper peak.</p></li>
+</ol>
+</div></blockquote>
+</li>
 </ol>
 </div>
 </section>
@@ -708,19 +736,17 @@ document.write(`
 <section id="normal-as-an-approximation-of-the-binomial">
 <span id="normal-binomial-approximation"></span><h3>Normal As An Approximation of the Binomial<a class="headerlink" href="#normal-as-an-approximation-of-the-binomial" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><em>Conditions</em>:</p>
-<p><img class="math" src="../../_images/math/7d592a67f70a9521c882f006486bc2af5a24c6cc.png" alt="n \cdot p \geq 5"/></p>
-<p><img class="math" src="../../_images/math/c3b721af28be5f7f98862c3759d203e31d19ac4b.png" alt="n \cdot (1 - p) \geq 5"/></p>
+<div class="topic">
+<p class="topic-title">Conditions for Approximation</p>
+<p><img class="math" src="../../_images/math/6b30de0e332b92010da2762c839988229faa518e.png" alt="n \cdot p \geq 10"/></p>
+<p><img class="math" src="../../_images/math/9c2f23d9afa387a8e41ff4fdbc09d4cd3383bd14.png" alt="n \cdot (1 - p) \geq 10"/></p>
 </div>
 </section>
 <section id="poisson-as-an-approximation-of-the-normal">
 <span id="normal-poisson-approximation"></span><h3>Poisson As An Approximation of the Normal<a class="headerlink" href="#poisson-as-an-approximation-of-the-normal" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><em>Conditions</em>:</p>
+<div class="topic">
+<p class="topic-title">Conditions for Approximation</p>
 <p>:math:`     lambda leq leq 0`</p>
 </div>
 </section>
@@ -749,11 +775,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="05_T.html"
+       href="../hypotheses/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">T Distribution</p>
+        <p class="prev-next-title">Hypothesis Testing</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -787,9 +813,16 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#z-tables">Z-Tables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#empirical-rule">Empirical Rule</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effects-of-parameters">Effects of Parameters</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#varying-the-mean">Varying the Mean</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#varying-the-standard-deviation">Varying the Standard Deviation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parameters">Parameters</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mean">Mean</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#varying-the-mean-parameter">Varying the Mean Parameter</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#varying-the-standard-deviation-parameter">Varying the Standard Deviation Parameter</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assessing-normality">Assessing Normality</a><ul class="nav section-nav flex-column">

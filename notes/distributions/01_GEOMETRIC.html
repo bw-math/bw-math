@@ -167,9 +167,6 @@
 <li class="toctree-l3"><a class="reference internal" href="02_BINOMIAL.html">Binomial Distribution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="03_UNIFORM.html">Uniform Distribution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="04_NORMAL.html">Normal Distribution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="05_T.html">T Distribution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="06_CHI_SQUARED.html"><img alt="\chi^2" class="math" src="../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Distribution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="07_F.html">F Distribution</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -467,11 +464,18 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-random-variable">Geometric Random Variable</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-density">Probability Density</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution">Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-conditions">Geometric Conditions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Geometric Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-density-function">Probability Density Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cumulative-distribution-function">Cumulative Distribution Function</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-series">Geometric Series</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation">Expectation</a></li>
 </ul>
 </li>
 </ul>
@@ -490,18 +494,50 @@ document.write(`
 <p>TODO</p>
 <section id="geometric-random-variable">
 <span id="id2"></span><h2>Geometric Random Variable<a class="headerlink" href="#geometric-random-variable" title="Permalink to this headline">#</a></h2>
+<section id="definition">
+<h3>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
-<section id="probability-density">
-<span id="geometric-probability-density"></span><h3>Probability Density<a class="headerlink" href="#probability-density" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="geometric-conditions">
+<h3>Geometric Conditions<a class="headerlink" href="#geometric-conditions" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
+<div class="topic">
+<p class="topic-title">Conditions for Geometric Random Variable</p>
+<ol class="arabic simple">
+<li><p>The trials must be independent.</p></li>
+<li><p>The probability of each trial must be the same.</p></li>
+</ol>
+</div>
+<p>TODO</p>
+</section>
+<section id="parameters">
+<h3>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">#</a></h3>
+<p>A Geometric Random Variable has single parameter.</p>
+<div class="topic">
+<p class="topic-title">Geometric Parameters</p>
+<ol class="arabic simple">
+<li><p><img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/>: the probability of success in a single trial.</p></li>
+</ol>
+</div>
+</section>
+</section>
+<section id="id3">
+<span id="id4"></span><h2>Geometric Distribution<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
+<p>TODO</p>
+<section id="probability-density-function">
+<span id="geometric-pdf"></span><h3>Probability Density Function<a class="headerlink" href="#probability-density-function" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
 <div class="math">
-<p><img src="../../_images/math/909fe216d5829571f85e29e05a88adf13fe43b4e.png" alt="P(X = x) = \sum_{i=1}^{x} (1-p)^{x-1} \cdot p"/></p>
-</div></section>
-<section id="distribution">
-<h3>Distribution<a class="headerlink" href="#distribution" title="Permalink to this headline">#</a></h3>
+<p><img src="../../_images/math/c8e4bb1b4e4115080cf0d4d670d45f1ded3e9989.png" alt="P(\mathcal{X} = x) = \sum_{i=1}^{x} (1-p)^{x-1} \cdot p"/></p>
+</div><p>TODO
+.. _geometric_cdf:</p>
+</section>
+<section id="cumulative-distribution-function">
+<h3>Cumulative Distribution Function<a class="headerlink" href="#cumulative-distribution-function" title="Permalink to this headline">#</a></h3>
 <p>TODO</p>
 <p>In order to show the geometric density represents a distribution, we must show the probability of all outcomes sums to 1. In order to do this, we must first talk about the <em>geometric series</em>.</p>
 <section id="geometric-series">
-<span id="id3"></span><h4>Geometric Series<a class="headerlink" href="#geometric-series" title="Permalink to this headline">#</a></h4>
+<span id="id5"></span><h4>Geometric Series<a class="headerlink" href="#geometric-series" title="Permalink to this headline">#</a></h4>
 <p>A geometric series is defined as the sum of powers of <code class="docutils literal notranslate"><span class="pre">r</span></code>,</p>
 <div class="math">
 <p><img src="../../_images/math/fcb1af8ea27d1239946182ea22a7814a5f01b637.png" alt="\sum_{i=1}^{n} r^i = r + r^2 + r^3 + ... + r^n"/></p>
@@ -511,6 +547,9 @@ document.write(`
 </div><p>Each term on the right hand side can be identified with the areas of successive squares in the following picture,</p>
 <img alt="../../_images/geometric_series.png" class="align-center" src="../../_images/geometric_series.png" />
 </section>
+</section>
+<section id="expectation">
+<h3>Expectation<a class="headerlink" href="#expectation" title="Permalink to this headline">#</a></h3>
 </section>
 </section>
 </section>
@@ -564,11 +603,18 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-random-variable">Geometric Random Variable</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-density">Probability Density</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution">Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-conditions">Geometric Conditions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Geometric Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-density-function">Probability Density Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cumulative-distribution-function">Cumulative Distribution Function</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-series">Geometric Series</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation">Expectation</a></li>
 </ul>
 </li>
 </ul>

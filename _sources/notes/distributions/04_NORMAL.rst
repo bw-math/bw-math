@@ -21,13 +21,9 @@ Normality arises when observations being randomly drawn from a :ref:`population`
 
 .. important::
 
-    *Independence* and *Identically Distributed* are mathematical concepts with precise defintions. We will talk more about them when we get to :ref:`probability <probability_introduction>` 
+    *Independence* and *Identically Distributed* are mathematical concepts with precise defintions. We will talk more about them in the section on :ref:`probability <probability_introduction>` 
 
-In order to explain the origin of normality, it is instructive to consider a simple example. 
-
-Consider the experiment of rolling a single die. Think about what the *ideal* relative frequency distribution for this experiment should look like. 
-
-A die has six sides and each one is equally likely. If we let :math:`\mathcal{X}` represent the outcome a rolling a single die, we can express the relation of all outcomes being equally likely with the following equation, 
+In order to explain the origin of normality, it is instructive to consider a simple example.  Consider the experiment of rolling a single die. Think about what the *ideal* relative frequency distribution for this experiment should look like. A die has six sides and each one is equally likely. If we let :math:`\mathcal{X}` represent the outcome a rolling a single die, we can express the relation of all outcomes being equally likely with the following equation, 
 
 .. math::
 
@@ -45,7 +41,9 @@ The *ideal* histogram (in other words, the distribution of the *population*) wou
 
 Consider now the experiment of rolling 30 die. The *relative* frequency of each outcome in the *ideal distribution* will not change, since the new die being rolled consist of the same outcomes as the original die; Outcomes are added to the experiment in the same proportion. 
 
-Take this experiment of rolling 30 die and repreat 
+Take this experiment of rolling 30 die and repeat 
+
+TODO
 
 A departure from normality can suggest several things: 
 
@@ -59,13 +57,13 @@ A departure from normality can suggest several things:
 Normal Calculations
 -------------------
 
-When we calculate Normal probabilities, we usually work with *z distributions*, where each observation :math:`x_i` has been converted into a :ref:`z_score` :math:`z_i`,
+When we calculate Normal probabilities, we usually work with *Z distributions*, where each observation :math:`x_i` has been converted into a :ref:`z_score` :math:`z_i`,
 
 .. math::
 
 	z_i = \frac{x_i - \mu}{\sigma}
 	
-The reason for this transformation is easily understood by recalling the :ref:`data transformation theorems <data_transformations>` that state the mean of a *z distribtion* will always be 0 and the standard deviation of a *z distribution* will always be 1. 
+The reason for this transformation is easily understood by recalling the :ref:`data transformation theorems <data_transformations>` that state the mean of a *Z distribution* will always be 0 and the standard deviation of a *Z distribution* will always be 1. 
 
 If an observation :math:`\mathcal{X}` drawn from a population follows a Normal distribution with mean :math:`\mu` and standard deviation :math:`\sigma`, we write,
 
@@ -73,12 +71,14 @@ If an observation :math:`\mathcal{X}` drawn from a population follows a Normal d
 
 	\mathcal{X} \sim \mathcal{N}(\mu, \sigma)
 	
-Then, the corresponding *z distribution* can be written,
+Then, the corresponding *Z distribution* can be written,
 
 .. math::
 
 	\mathcal{Z} \sim \mathcal{N}(0, 1)
 	
+TODO
+
 .. _normal_cdf:
 
 Cumulative Distribution Function
@@ -90,7 +90,7 @@ The cumulative distribution function (CDF) for the Normal distribution is an ext
 
 	\Phi(z) = P(\mathcal{Z} \leq z) = p
 	
-This function, recall, represents the area of the density curve below the point :math:`z`. In other words, This function tells us the *percentage* :math:`p` of the Standard Normal distribution that is less than or equal to the point :math:`z`. To put it yet another way, it tells us what percentage :math:`p` of the original Normal distribution is less than or equal to :math:`z` standard deviations away from the mean.
+This function represents the area under the density curve to the left of the point :math:`z`. In other words, This function tells us the *percentage* :math:`p` of the Standard Normal distribution that is less than or equal to the point :math:`z`. To put it yet another way, it tells us what percentage :math:`p` of the original Normal distribution is less than or equal to :math:`z` standard deviations away from the mean.
 
 Graphically, we can think of the Normal CDF at a point, :math:`\Phi(z)` as representing the shaded area to the left of :math:`z`. For example, the quantity :math:`\Phi(0.5)` can be visualized as the shaded region under the density curve,
 
@@ -203,26 +203,47 @@ TODO
 
 .. _normal_parameters:
 
-Effects of Parameters
-=====================
+Parameters
+==========
 
-Varying the Mean
-----------------
+Mean
+----
 
 TODO 
 
-Varying the Standard Deviation
-------------------------------
+Varying the Mean Parameter
+**************************
+
+TODO
+
+Standard Deviation
+------------------
+
+Varying the Standard Deviation Parameter
+****************************************
 
 By changing the :ref:`standard_deviation`, the shape of the distribution changes. As the :ref:`standard_deviation` increase, the graph spreads out. This is because :ref:`standard_deviation` is a :ref:`measure of variation<measures_of_variation>`. In other words, :ref:`standard_deviation` quantifies how the distribution is spread out along the *x*-axis.
 
 .. plot:: assets/plots/distributions/normal/normal_distribution_parameters.py
 
+Summary
+-------
+
 To summarize,
 
-.. note:: 
-    1. By changing the mean of the *normal distribution*, the *location* of the distribution changes.
-    2. By changing the standard deviation of the *normal distribution*, the *spread* of the distribution changes. 
+.. topic:: Effects of Varying The Normal Parameters
+
+	1. By changing the mean of the *Normal distribution*, the *location* of the distribution changes. 
+		
+		a. Increasing the mean shifts the distribution to the right. 
+		
+		b. Decreasing the mean shifts the distribution to the left.
+		 
+	2. By changing the standard deviation of the *Normal distribution*, the *spread* of the distribution changes. 
+
+		a. As the standard deviation becomes larger, the distribution become flatter and more spread out around the mean. 
+		
+		b. As the standard deviation becomes smaller, the distribution clusters around the mean in a sharper and sharper peak. 
 
 .. _assessing_normality:
 
@@ -319,12 +340,11 @@ Normal As An Approximation of the Binomial
 
 TODO 
 
-.. note:: 
-    *Conditions*: 
-    
-    :math:`n \cdot p \geq 5`
+.. topic:: Conditions for Approximation
+   
+    :math:`n \cdot p \geq 10`
 
-    :math:`n \cdot (1 - p) \geq 5`
+    :math:`n \cdot (1 - p) \geq 10`
 
 .. _normal_poisson_approximation:
 
@@ -333,7 +353,6 @@ Poisson As An Approximation of the Normal
 
 TODO
 
-.. note:: 
-    *Conditions*: 
+.. topic:: Conditions for Approximation
         
     :math:`	\lambda \leq \leq 0`

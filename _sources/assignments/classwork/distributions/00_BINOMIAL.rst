@@ -95,6 +95,29 @@ to answer the following questions.
 	
 	c. TODO
 
+	d. TODO
+	
+4. **Normal Approximation**
+
+The :ref:`normal_distribution` can be used to approximate the Binomal Distribution under certain conditions. These conditions are given below for quick reference,
+
+.. topic:: Conditions for Binomial Approximation
+   
+    :math:`n \cdot p \geq 10`
+
+    :math:`n \cdot (1 - p) \geq 10`
+    
+Use these conditions to determine whether the following Binomial Random Variables can be approximated with the Normal Distribution. In each case, calculate the exact Binomial probability. If the Normal approximation is applicable, calculate the approximate probability and compare it to the exact value. 
+
+	a. TODO
+	
+	b. TODO
+	
+	c. TODO
+	
+	d. TODO
+	
+    
 A.P. Exam Practice
 ==================
 

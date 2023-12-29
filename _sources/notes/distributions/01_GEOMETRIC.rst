@@ -11,18 +11,57 @@ TODO
 Geometric Random Variable
 =========================
 
+Definition
+----------
+
+TODO
+
+Geometric Conditions
+--------------------
+
+TODO
+
+.. topic:: Conditions for Geometric Random Variable
+
+	1. The trials must be independent.
+	
+	2. The probability of each trial must be the same. 
+	
+
+TODO
+
+Parameters
+----------
+
+A Geometric Random Variable has single parameter.
+
+.. topic:: Geometric Parameters
+
+	1. :math:`p`: the probability of success in a single trial.
+
+.. _geometric_distribution:
+
+Geometric Distribution
+======================
+
 TODO 
 
-.. _geometric_probability_density:
+.. _geometric_pdf:
 
-Probability Density
--------------------
+Probability Density Function
+----------------------------
+
+TODO
+
 .. math:: 
 
-    P(X = x) = \sum_{i=1}^{x} (1-p)^{x-1} \cdot p
+    P(\mathcal{X} = x) = \sum_{i=1}^{x} (1-p)^{x-1} \cdot p
 
-Distribution
-------------
+TODO
+.. _geometric_cdf:
+
+Cumulative Distribution Function
+--------------------------------
 
 TODO
 
@@ -49,3 +88,7 @@ Each term on the right hand side can be identified with the areas of successive 
 
 .. image:: ../../assets/imgs/context/geometric_series.png
     :align: center
+    
+Expectation
+-----------
+
