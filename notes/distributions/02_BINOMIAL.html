@@ -466,8 +466,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#binomial-random-variable">Binomial Random Variable</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitiy-distribution">Probabilitiy Distribution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#binomial-random-variable">Binomial Random Variable</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binomial-conditions">Binomial Conditions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitiy-distribution">Probabilitiy Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-density-function">Probability Density Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cumulative-distribution-function">Cumulative Distribution Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation">Expectation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution-parameters">Distribution Parameters</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -483,6 +494,8 @@ document.write(`
 <span id="id1"></span><h1>Binomial Distribution<a class="headerlink" href="#binomial-distribution" title="Permalink to this headline">#</a></h1>
 <section id="binomial-random-variable">
 <span id="id2"></span><h2>Binomial Random Variable<a class="headerlink" href="#binomial-random-variable" title="Permalink to this headline">#</a></h2>
+<section id="definition">
+<h3>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">#</a></h3>
 <p>Recall a <a class="reference internal" href="00_BERNOULLI.html#bernoulli-random-variable"><span class="std std-ref">Bernoulli Random Variable</span></a> is defined over a sample space of binary outcomes, a success <code class="docutils literal notranslate"><span class="pre">s</span></code> that occurs with probability <img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/> of success and a failure <code class="docutils literal notranslate"><span class="pre">f</span></code> that occurs with probability <img class="math" src="../../_images/math/be2e833b4c758ac181423d98ee2ea9e75e3ce6d1.png" alt="1-p"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/ad4f8b0dccaba7438c93f8148d4996136d2fed80.png" alt="Y = \begin{array}{ c l }
@@ -499,12 +512,51 @@ document.write(`
 <p><img src="../../_images/math/758e88bf826c2920344ea5f44b9d15e06ed2b8e2.png" alt="P(A \cap B) = P(A) \cdot P(B)"/></p>
 </div><p>TODO</p>
 </section>
+<section id="binomial-conditions">
+<span id="id3"></span><h3>Binomial Conditions<a class="headerlink" href="#binomial-conditions" title="Permalink to this headline">#</a></h3>
+<p>In order for an experiment to be <em>Binomial</em>, the experiment must the conditions just discussed. The summary below provides a list of each condition.</p>
+<div class="topic">
+<p class="topic-title">Binomial Conditions</p>
+<ol class="arabic simple">
+<li><p>The number of trials <img class="math" src="../../_images/math/a455464b27e42f679d79e9d14de742704e595a2e.png" alt="n"/> must be fixed.</p></li>
+<li><p>Each trial must be independent of the others.</p></li>
+<li><p>Each trial must have a binary outcome, usually denoted success or failure.</p></li>
+<li><p>The probability of success is the same in each trial.</p></li>
+</ol>
+</div>
+</section>
+</section>
 <section id="probabilitiy-distribution">
 <h2>Probabilitiy Distribution<a class="headerlink" href="#probabilitiy-distribution" title="Permalink to this headline">#</a></h2>
 <p>TODO</p>
+<section id="probability-density-function">
+<span id="binomial-pdf"></span><h3>Probability Density Function<a class="headerlink" href="#probability-density-function" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
 <div class="math">
 <p><img src="../../_images/math/de66976eb35426ad797bfc7da9e4cb343c6794f0.png" alt="p(x; n, p) = C^{n}_x \cdot p^{x} \cdot (1 - p)^{n-x}"/></p>
-</div><p>TODO</p>
+</div></section>
+<section id="cumulative-distribution-function">
+<span id="binomial-cdf"></span><h3>Cumulative Distribution Function<a class="headerlink" href="#cumulative-distribution-function" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="expectation">
+<span id="binomial-expectation"></span><h3>Expectation<a class="headerlink" href="#expectation" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
+<p>derive through rules of independent random variable sums</p>
+</section>
+<section id="standard-deviation">
+<span id="binomial-standard-deviation"></span><h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">#</a></h3>
+<p>TODO</p>
+<p>derive through rules of independent random variable sums</p>
+</section>
+<section id="distribution-parameters">
+<h3>Distribution Parameters<a class="headerlink" href="#distribution-parameters" title="Permalink to this headline">#</a></h3>
+<p>The Binomial Distribution has two parameters:</p>
+<ol class="arabic simple">
+<li><p><img class="math" src="../../_images/math/a455464b27e42f679d79e9d14de742704e595a2e.png" alt="n"/>: The number of trials.</p></li>
+<li><p><img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/>: The probability of success in a single trial.</p></li>
+</ol>
+<p>TODO</p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/720dd2d45a933889101d0ce9d00632c5/binomial_distribution_01.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/77a50413f6ded6b536c03368a8c6353b/binomial_distribution_01.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f261afea5b6ec6ad2f84a29095331391/binomial_distribution_01.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/3f9bb6c368b85480cf55c0f03bdaddcb/binomial_distribution_01.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/binomial_distribution_01.png" class="plot-directive" src="../../_images/binomial_distribution_01.png" />
@@ -521,6 +573,7 @@ document.write(`
 <figure class="align-default">
 <img alt="../../_images/binomial_distribution_04.png" class="plot-directive" src="../../_images/binomial_distribution_04.png" />
 </figure>
+</section>
 </section>
 </section>
 
@@ -572,8 +625,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#binomial-random-variable">Binomial Random Variable</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitiy-distribution">Probabilitiy Distribution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#binomial-random-variable">Binomial Random Variable</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binomial-conditions">Binomial Conditions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitiy-distribution">Probabilitiy Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-density-function">Probability Density Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cumulative-distribution-function">Cumulative Distribution Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation">Expectation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution-parameters">Distribution Parameters</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

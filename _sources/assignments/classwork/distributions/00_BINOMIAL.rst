@@ -6,14 +6,59 @@ Binomial Distribution
 
 1. **Conditions for Binomial Random Variable**
 
-Determine whether each of the following experiments satisfies the conditions for a Binomial Random Variable.
+The :ref:`conditions for a Binomial Random Variable <binomial_conditions>` are given below,
 
-	a. TODO
-	
-	b. TODO
-	
-	c. TODO
+.. topic:: Binomial Conditions
 
+	1. The number of trials :math:`n` must be fixed.
+	
+	2. Each trial must be independent of the others.
+	
+	3. Each trial must have a binary outcome, usually denoted success or failure.  
+	
+	4. The probability of success is the same in each trial.
+	
+Determine whether each of the following experiments satisfies the conditions for a Binomial Random Variable. If it does not satisfy the conditions for a Binomial Random Variable, state which condition is violated and why.
+
+	a. A student is taking a multiple choice quiz. The quiz has 10 questions, with four possible answers each. Each question has only one correct answer. The student randomly guesses on each question. Let
+	
+	.. math::
+	
+		\mathcal{X} = \text{number of correct guesses}
+	
+	Is :math:`mathcal{X}` a Binomial Random Variable"
+	
+	b. A manager oversees 11 female employees and 9 male employees. They need to pick 3 of these employees to go on a business trip, so the manager places all 20 names in a hat and chooses at random. Let 
+	.. math::
+
+		\mathcal{X} = \text{number of female employees chosen}
+	
+	Is :math:`\mathcal{X}` a Binomial Random Variable?
+	
+	c. You deal yourself a hand of 5 cards from a standard deck of 52 cards. Let
+	
+	.. math::
+		
+		\mathcal{X} = \text{number of Aces dealt}
+	
+	Is :math:`\mathcal{X}` a Binomial Random Variable?
+	
+	d. You deal yourself a single card from a standard deck of 52 cards, place it back into the deck and reshuffle. You repeat this process 10 times. Let
+	
+	.. math::
+	
+		\mathcal{X} = \text{number of Aces dealt}
+	
+	Is :math:`\mathcal{X}` a Binomial Random Variable?
+
+	e. `15% of the world's population has seen atleast one Star Wars film <https://www.explainxkcd.com/wiki/index.php/1769:_Never_Seen_Star_Wars>`_. You ask 20 students whether or not they have seen a Star Wars film. Let 
+	
+	.. math::
+	
+		\mathcal{X} = \text{number of people who have seen atleast one Star Wars film}
+		
+	Is :math:`mathcal{X}` a Binomial Random Variable?
+	
 2. **Probability Density**
 
 Use the Binomial Probability Density Function,
