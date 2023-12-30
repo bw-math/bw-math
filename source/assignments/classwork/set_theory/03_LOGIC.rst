@@ -1,10 +1,37 @@
 Symbolic Logic
 ==============
 
+Propositions
+------------
+
+1. **Truth Tables**
+
+Construct a :ref:`truth table <truth_tables>` to determine if the following symbolic propositions are tautologies, contradictions or contingencies.
+
+	a. TODO 
+
+	b. TODO
+
+	c. TODO
+
+	d. TODO
+
+2. **Carnap's Method**
+
+Use :ref:`carnaps_method` to determine if the following symbolic propositions are tautologies, contradictions or contingencies.
+
+	a. TODO
+	
+	b. TODO
+	
+	c. TODO
+	
+	d. TODO
+
 Symbolic Arguments
 ------------------
 
-1. Construct a :ref:`truth table <truth_tables>` to determine if the following arguments are tautologies, contradictions or contingent. 
+1. Construct a :ref:`truth table <truth_tables>` to determine if the following arguments are tautologies, contradictions or contingencies.
 
 	a. TODO
 	
