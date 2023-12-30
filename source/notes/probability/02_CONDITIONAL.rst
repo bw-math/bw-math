@@ -9,16 +9,20 @@ Probability is merely a guess. It is based on whatever currently available infor
 Motivation
 ==========
 
-Example 
-    Suppose three red balls numbered 1 - 3 and four green balls numbered 1 - 4 are placed into a box. A friend selects a ball at random from the box without showing you what she selected. 
-        1. What is the probability the ball she selected has the number 2 written on it?
-        2. If she now tells you the ball she selected is red, how does this affect the probability in part 1? 
+.. topic:: Example
+
+
+	Suppose three red balls numbered 1 - 3 and four green balls numbered 1 - 4 are placed into a box. A friend selects a ball at random from the box without showing you what she selected. 
+
+	        1. What is the probability the ball she selected has the number 2 written on it?
+	        
+	        2. If she now tells you the ball she selected is red, how does this affect the probability in part 1? 
 
 Let **A** represent the event of selecting a ball numbered 2. Let **B** represent the event of selecting a red ball. Then :math:`n(A) = 2`, :math:`n(B)=3` and :math:`n(S) = 7` (Why?) Without taking into account the second part of the problem yet, the :ref:`classical_definition` yields the probability the ball she selected has the number 2 written it,
 
 .. math::   
 
-    P(A) = \frac{2}{7} \approx 0.286
+    	P(A) = \frac{2}{7} \approx 0.286
 
 This number represents the probability of **A** *without any further information* provided about the sample space. 
 
@@ -28,24 +32,27 @@ Applying the :ref:`classical_definition` to this *reduced* sample space, we get 
 
 .. math:: 
     
-    P(A \mid B) = \frac{1}{3} \approx 0.333
+    	P(A \mid B) = \frac{1}{3} \approx 0.333
 
 In other words, knowing the event a red ball was selected has *increased* the probability the ball has the number 2 written onit. Taking a look at the original sample space, this should be intuitive. There are less red balls than green balls, so more probability is "concentrated" in the red number 2 ball when the green balls are removed from the sample space.  
 
 In order to further understand what is going, return to the point in time when your friend has not yet revealed the color she has selected, i.e. before the information the ball is red has become available. Before you know the ball is red, the probability of it being red is given by,
 
 .. math:: 
-    P(B) = \frac{3}{7}
+    
+    	P(B) = \frac{3}{7}
 
 The probability of it being *red and having the number 2 written on it* is the probability of the :ref:`intersection` of **A** and **B**. Noting :math:`A \cap B` has only outcome in it (Why?), the outcome of a red ball with the number 2 has a probability, 
 
 .. math:: 
-    P(A \cap B) = \frac{1}{7}
+    
+    	P(A \cap B) = \frac{1}{7}
 
 If the event **B** has occurred, then the only way the event **A** can now occur is through the event :math:`A /cap B`. The *conditional* probability of **A** given the occurrence of **B** is the ratio of ways **A** and **B** can occur to the ways **B** alone can occur,
 
 .. math:: 
-    P(A \mid B) = \frac{\frac{1}{7}}{\frac{3}{7}} = \frac{1}{3} \approx 0.333
+
+    	P(A \mid B) = \frac{\frac{1}{7}}{\frac{3}{7}} = \frac{1}{3} \approx 0.333
 
 .. _conditional_probability_formula:
 
@@ -55,19 +62,23 @@ Condtional Probability Formula
 Abstracting from the details from the previous example, the *conditional probability* of an event **A** given the occurrence of an event **B** is defined by the following formula,
 
 .. math::
-    P(A \mid B) = \frac{P(A \cap B)}{P(B)}
+    
+    	P(A \mid B) = \frac{P(A \cap B)}{P(B)}
 
 An equivalent formula is given in terms of the :ref:`cardinality` of the sets :math:`A \cap B` and **B**,
 
 .. math:: 
-    P(A \mid B) = \frac{n(A \cap B)}{n(B)}
-
-Example 
-    TODO 
-
-.. collapse:: Solution
     
-    TODO
+    	P(A \mid B) = \frac{n(A \cap B)}{n(B)}
+
+
+.. topic:: Example
+
+    	TODO 
+
+.. topic:: Solution
+    
+	TODO
     
 .. note::
 
@@ -97,7 +108,7 @@ The following example and its accompanying solutions serve to illustrate how con
 	
 	A fair, two-sided coin with heads and tails on either side is placed into a box alongside a double-sided coin that has heads on both sides. You select a coin at random from the box and, without looking at which coin you picked, flip it. If the coin lands on heads, what is the probability you selected the two-sided coin?
 
-.. note:: Solution #1: Application of Conditional Probability Formula
+.. topic:: Solution #1: Application of Conditional Probability Formula
 
 
 	Before solving the problem, first define the :ref:`sample space <sample_space>` and identify the events that correspond to its various outcomes.
@@ -193,7 +204,7 @@ The following example and its accompanying solutions serve to illustrate how con
 	
 	        P(D \mid H) = \frac{\frac{1}{2}}{\frac{3}{4}} = \frac{1}{2} \cdot \frac{4}{3} = \frac{2}{3}
 
-.. note:: Solution #2: Reduction of Sample Space Formula
+.. topic:: Solution #2: Reduction of Sample Space Formula
 
 	There is another way of looking at this problem. The fact that it is known the outcome of the coin flip was heads effectively *reduces* the sample space **S** from,
 
@@ -341,7 +352,9 @@ Complementary Intersections
 
 	For any events :math:`A` and :math:`B`,
 	
-	P(A) = P(A \cap B) + P (A \cap B^c)
+	..  math::
+	
+		P(A) = P(A \cap B) + P (A \cap B^c)
 	
 In order to prove this corrollary, consider the following identity,
 
@@ -378,7 +391,9 @@ Plugging these definitions into the *Complementary Intersection* corrollary tran
 
 .. topic:: Law of Total Probability
 
-	P(A) = P(A \mid B) \cdot P(B) + P(A \mid B^c) \cdot P(B^c)
+	.. math::
+	
+		P(A) = P(A \mid B) \cdot P(B) + P(A \mid B^c) \cdot P(B^c)
 	
 
 The following example illustrates an application of the *Law of Total Probability*,
