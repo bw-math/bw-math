@@ -1149,14 +1149,14 @@ document.write(`
 <span id="id30"></span><h3>Counting Theorems<a class="headerlink" href="#counting-theorems" title="Permalink to this headline">#</a></h3>
 <section id="counting-theorem-one">
 <span id="id31"></span><h4>Theorem 1<a class="headerlink" href="#counting-theorem-one" title="Permalink to this headline">#</a></h4>
-<dl>
-<dt>Symbolic Expression</dt><dd><div class="math">
+<p>Symbolic Expression</p>
+<blockquote>
+<div><div class="math">
 <p><img src="../_images/math/6bc17668bcfa8e67d816e45b951dad3a11193f88.png" alt="n(A \cup B) = n(A) + n(B) - n(A \cap B)"/></p>
-</div></dd>
-</dl>
+</div></div></blockquote>
 <p>The number of elements in <strong>A</strong> or <strong>B</strong> is equal to the number of elements in <strong>A</strong> plus the number of elements in <strong>B</strong>, minus the elements <strong>A</strong> and <strong>B</strong> have in common.</p>
 <p>This is another theorem most easily understood by considering the following <a class="reference internal" href="#venn-diagrams"><span class="std std-ref">venn diagram</span></a>,</p>
-<img alt="../_images/sets_union_overlapping.jpg" src="../_images/sets_union_overlapping.jpg" />
+<img alt="../_images/sets_union_overlapping.jpg" class="align-center" src="../_images/sets_union_overlapping.jpg" />
 <p>The area encompassed by both circles is the union <img class="math" src="../_images/math/47b7d7c58a0d8fba34b3e6c9b40a295769c86482.png" alt="A \cup B"/>. The overlap in the circles is intersection <img class="math" src="../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/>.</p>
 <p>Consider how we count up elements in <strong>A</strong> or <strong>B</strong>. We first count up the elements in <strong>A</strong>, including the elemetns in the overlap. We then count up the elements in <strong>B</strong>, which includes the overlap again. In other words, by calculating <img class="math" src="../_images/math/277334ce14621a0893a2881b4e0ab79816e71e54.png" alt="n(A) + n(B)"/>, we have counted up the elements in <img class="math" src="../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/> <em>twice</em>. To fix this overcount, we need to subtract the number elements of in <img class="math" src="../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/>. Whence we arrive at the theorem.</p>
 <p>Example</p>

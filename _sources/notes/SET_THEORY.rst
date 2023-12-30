@@ -882,15 +882,17 @@ Theorem 1
 *********
 
 Symbolic Expression 
+
     .. math::
-        
-        n(A \cup B) = n(A) + n(B) - n(A \cap B)
+    
+    	n(A \cup B) = n(A) + n(B) - n(A \cap B)
 
 The number of elements in **A** or **B** is equal to the number of elements in **A** plus the number of elements in **B**, minus the elements **A** and **B** have in common.
 
 This is another theorem most easily understood by considering the following :ref:`venn diagram <venn_diagrams>`,
 
 .. image:: ../assets/imgs/sets/sets_union_overlapping.jpg
+	:align: center
 
 The area encompassed by both circles is the union :math:`A \cup B`. The overlap in the circles is intersection :math:`A \cap B`. 
 
@@ -899,8 +901,8 @@ Consider how we count up elements in **A** or **B**. We first count up the eleme
 Example 
 
     .. math::
-        
-        A = \{ \text{ google }, \text{ facebook }, \text{ apple } \}
+    
+    	A = \{ \text{ google }, \text{ facebook }, \text{ apple } \}
 
     .. math:: 
         

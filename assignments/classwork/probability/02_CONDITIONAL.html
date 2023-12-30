@@ -463,7 +463,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-space-reduction">Sample Space Reduction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplication-law">Multiplication Law</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#independence">Independence</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
@@ -480,21 +481,46 @@ document.write(`
                   
   <section id="conditional-probability">
 <span id="conditional-classwork"></span><h1>Conditional Probability<a class="headerlink" href="#conditional-probability" title="Permalink to this headline">#</a></h1>
-<section id="applications">
-<h2>Applications<a class="headerlink" href="#applications" title="Permalink to this headline">#</a></h2>
-<ol class="arabic">
+<section id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">#</a></h2>
+<p>Recall the definition <a class="reference internal" href="../../../notes/probability/02_CONDITIONAL.html#conditional-probability"><span class="std std-ref">Conditional Probability</span></a> is given by,</p>
+<div class="topic">
+<p class="topic-title">Conditional Probability Definition</p>
+<p>In terms of probabilities,</p>
+<div class="math">
+<p><img src="../../../_images/math/e1777d91a3f43071e182c7b67e8f802cc7774280.png" alt="P(A \mid B) = \frac{P(A \cap B)}{P(B)}"/></p>
+</div><p>In terms of cardinalities,</p>
+<div class="math">
+<p><img src="../../../_images/math/5b7cd1a0ab9a994a8d9a706676c34428b9b35a58.png" alt="P(A \mid B) = \frac{n(A \cap B)}{n(B)}"/></p>
+</div></div>
+<p>Use this definition to solve the following problems.</p>
+<ol class="arabic simple">
 <li><p>In a highschool, there are 287 students. 92 of the students play football. 50 of them play football <em>and</em> basketball. What is the probability a randomly selected football player also plays basketball?</p></li>
-<li><p>A bag contains 3 red marbles and 4 blue marbles. Two marbles are drawn at random <em>without replacement</em>. If the first marble drawn is red, what is the probability the second marble is blue?</p></li>
 <li><p>In a sample of 100 adultS, 45 of them owned a dog, 30 of them owned a cat and 18 of them owned a dog and a cat. What percentage of those who have a dog also have a cat?</p></li>
 <li><p>Suppose 15% of the population of a country have auburn hair and are left-handed, while a total of 25% of the population have auburn hair.  What percent of those with auburn hair are left-handed?</p></li>
-<li><p>Suppose two fair dice have been tossed.</p>
+<li><p>You are given the following <a class="reference internal" href="../../../notes/SET_THEORY.html#venn-diagrams"><span class="std std-ref">Venn Diagram</span></a>,</p></li>
+</ol>
+<img alt="../../../_images/conditional_probability_venn_diagram.jpg" class="align-center" src="../../../_images/conditional_probability_venn_diagram.jpg" />
+<p>Use this Venn Diagram to answer the following questions.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
-<li><p>What is the probability of a sum of 5 if they land on different numbers?</p></li>
-<li><p>If the total of their top faces is found to be divisible by 5, what is the probability that both of them have landed on five?</p></li>
+<li><p>Find <img class="math" src="../../../_images/math/1bda804fd56f49078dfb6fd39fcb34645d7094cd.png" alt="P(A \mid B)"/></p></li>
+<li><p>Find <img class="math" src="../../../_images/math/bda5f2bce74ff4450585aa5bc4710ef8db08d89f.png" alt="P(B \mid A)"/></p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic" start="5">
+<li><p>You shuffle a deck of playing cards and deal yourself two cards at random.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>If the first card is a king, what is the probability the second card is a king?</p></li>
+<li><p>What is the probability both cards are kings?</p></li>
+<li><p>What is the difference between the meanings of <em>part a</em> and <em>part b</em>?</p></li>
+<li><p>What is the probability of <em>not</em> getting a pair of kings?</p></li>
 </ol>
 </div></blockquote>
 </li>
+</ol>
+<ol class="arabic" start="4">
 <li><p>A box contains three coins: two regular coins and a double-sided coin with heads on both sides. You select a coin at random and flip it.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
@@ -503,16 +529,7 @@ document.write(`
 </ol>
 </div></blockquote>
 </li>
-<li><p>You are given the following <a class="reference internal" href="../../../notes/SET_THEORY.html#venn-diagrams"><span class="std std-ref">Venn Diagram</span></a> below.</p>
-<blockquote>
-<div><ol class="loweralpha simple">
-<li><p>Find <img class="math" src="../../../_images/math/1bda804fd56f49078dfb6fd39fcb34645d7094cd.png" alt="P(A \mid B)"/></p></li>
-<li><p>Find <img class="math" src="../../../_images/math/bda5f2bce74ff4450585aa5bc4710ef8db08d89f.png" alt="P(B \mid A)"/></p></li>
 </ol>
-</div></blockquote>
-</li>
-</ol>
-<img alt="../../../_images/conditional_probability_venn_diagram.jpg" class="align-center" src="../../../_images/conditional_probability_venn_diagram.jpg" />
 <ol class="arabic simple" start="8">
 <li><p>Paging through a magazine, you notice a interesting survey of randomly selected individuals who were each asked two questions. The first question was “Do you believe the Earth is flat or round?”. The second question was, “Do you think Finland is a <a class="reference external" href="https://knowyourmeme.com/memes/finland-does-not-exist">real country</a> ?” The results are given in the table below,</p></li>
 </ol>
@@ -547,16 +564,28 @@ document.write(`
 <li><p>Of the people who believe the Earth is round, what percentage of them believe Finland exists?</p></li>
 <li><p>If a randomly selected person believes Finland doesn’t exist, what is the probability he or she believes the Earth is flat?</p></li>
 <li><p>If a randomly selected person believes the Earth is flat, what is the probability he or she doesn’t believe Finland exists?</p></li>
+<li><p><strong>Spoiler Alert</strong> Why is the answer to <em>part f</em> different from the answer to <em>part g</em>?</p></li>
 </ol>
 </div></blockquote>
-<ol class="loweralpha simple" start="8">
-<li><p><strong>Spoiler Alert</strong> Why is the answer to <em>part f</em> different from the answer to <em>part g</em>?</p></li>
+</section>
+<section id="sample-space-reduction">
+<h2>Sample Space Reduction<a class="headerlink" href="#sample-space-reduction" title="Permalink to this headline">#</a></h2>
+<ol class="arabic">
+<li><p>A bag contains 3 red marbles and 4 blue marbles. Two marbles are drawn at random <em>without replacement</em>. If the first marble drawn is red, what is the probability the second marble is blue?</p></li>
+<li><p>Suppose two fair dice have been tossed.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the probability of the faces sum to 5 if they land on different numbers?</p></li>
+<li><p>If the total of their top faces is found to be divisible by 5, what is the probability that both of them have landed on five?</p></li>
+</ol>
+</div></blockquote>
+</li>
 </ol>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Challenge Problem Ahead</p>
 </div>
-<ol class="arabic simple" start="8">
+<ol class="arabic simple" start="3">
 <li><p>In a small lake, it is estimated that there are approximately 105 fish, of which 40 are trout and 64 are carp. A fisherman caught eight fish. What is the probability that exactly two of them are trout if we know that at least three of them are not?</p></li>
 </ol>
 <div class="admonition hint">
@@ -566,22 +595,15 @@ document.write(`
 </section>
 <section id="multiplication-law">
 <h2>Multiplication Law<a class="headerlink" href="#multiplication-law" title="Permalink to this headline">#</a></h2>
-<ol class="arabic" start="9">
-<li><p>You shuffle a deck of playing cards and deal yourself two cards at random.</p>
+<ol class="arabic">
+<li><p>TODO</p></li>
+<li><p>100 sci-fi fans were polled by the reporters at  <em>Imporant News Weekly</em>. 64 of those polled preferred <em>Star Wars</em> to <em>Star Trek</em>, while the rest of them, due to poor life choices, preferred <em>Star Trek</em> to <em>Star Wars</em>. Of the people who preferred <em>Star Wars</em>, 75% of them thought <em>The Empire Strikes Back</em> was the best of the film in the <a class="reference external" href="https://en.wiktionary.org/wiki/ennealogy">ennealogy</a>. Of the people who preferred <em>Star Trek</em>, only half of them thought <em>The Empire Strike Back</em> was the best film in the series.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
-<li><p>If the first card is a king, what is the probability the second card is a king?</p></li>
-<li><p>What is the probability both cards are kings?</p></li>
-<li><p>What is the difference between the meanings of <em>part a</em> and <em>part b</em>?</p></li>
-<li><p>What is the probability of <em>not</em> getting a pair?</p></li>
-</ol>
-</div></blockquote>
-</li>
-<li><p>100 sci-fi fans were polled by the reporters at  <em>Imporant News Weekly</em>. 64 of those polled preferred <em>Star Wars</em> to <em>Star Trek</em>, while the rest of them, due to poor life choices, preferred <em>Star Trek</em> to <em>Star Wars</em>. Of the people who preferred <em>Star Wars</em>, 75% of them thought <em>The Empire Strikes Back</em> was the best of the film in the <a class="reference external" href="https://en.wiktionary.org/wiki/ennealogy">ennealogy</a>. Of the people who preferred <em>Star Trek</em>, only half of them thought <em>The Empire Strike Back</em> was the best film in the series.</p>
-<ol class="loweralpha simple">
 <li><p>What percent of people preferred <em>Star Wars</em> over <em>Star Trek</em> and thought <em>The Empire Strikes Back</em> was the best film in the series?</p></li>
 <li><p>What percent of people preferred <em>Star Trek</em> over <em>Star Wars</em> and thought <em>The Empire Strikes Back</em> <strong>wasn’t</strong> the best film in the series?</p></li>
 </ol>
+</div></blockquote>
 </li>
 </ol>
 <p>ONE OR TWO MORE</p>
@@ -591,7 +613,7 @@ document.write(`
 <ol class="arabic simple">
 <li><p><strong>Concepts</strong></p></li>
 </ol>
-<p>Use conditional probability to solve the following problems.</p>
+<p>Use conditional probability and independence to solve the following problems.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
 <li><p>You flip two fair coins. What is the probability of getting two heads?</p></li>
@@ -757,7 +779,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-space-reduction">Sample Space Reduction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplication-law">Multiplication Law</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#independence">Independence</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
