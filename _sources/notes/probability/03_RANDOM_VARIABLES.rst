@@ -4,71 +4,77 @@
 Random Variables
 ================
 
-Many things in life are *uncertain*. Nevertheless, *uncertainy* doesn't equate to *unpredictability*. Even though events may be *uncertain*, we can still make *predictions* about their outcome based on our knowledge of the sample space.
+Many things in life are *uncertain*. Nevertheless, *uncertainy* doesn't equate to *unpredictability*. Even though events may be *uncertain*, we can still make *predictions* about their outcome based on our knowledge of the sample space. Before we can do that, we need to talk about *random variables* and how they can be used to model processes in the real world.
 
 Definition
 ==========
 
-.. _random_variable: 
+The following sentences all say the same thing in slightly different ways.
 
-Random Variable
-    :math:`\mathcal{X}`
+	1. A *random variable* :math:`\mathcal{X}` is an *uncertain* quantity. 
 
-    A *random variable* is a quantity whose value is *uncertain*; A *random variable* depends on a random event.
+	2. A *random variable* :math:`\mathcal{X}` depends on the outcome of random event.
+	
+	3. A *random variable*  :math:`\mathcal{X}` is a function whose input is determined by a random process.
 
-Example
-    A friend flips a fair, two-sided coin. If it lands on heads, he will pay you five dollars. If it lands on tails, you have to pay him five dollars. 
+.. topic:: Example #1-A
 
-The sample space for this simple game is given by,
+	A friend flips a fair, two-sided coin. If it lands on heads, he will pay you five dollars. If it lands on tails, you have to pay him five dollars. 
+
+.. topic:: Solution #1-A
+
+	The sample space for this simple game is given by,
     
-.. math::
+	.. math::
     
-    S = \{ h, t \}
+    		S = \{ h, t \}
 
-The amount of money you win or lose is a *random variable* that depends on the outcome of the coin flip, i.e. whether the event of :math:`H = \{ h \}` or the event :math:`T = \{ *t* \}` from the sample space occurs. Using this information, we can define the *random variable* for the amount of money won or lost playing this game as follows,
+	The amount of money you win or lose is a *random variable* that depends on the outcome of the coin flip, i.e. whether the event of :math:`H = \{ h \}` or the event :math:`T = \{ *t* \}` from the sample space occurs. Using this information, we can define the *random variable* for the amount of money won or lost playing this game as follows,
 
-.. math::
+	.. math::
    
-    \mathcal{X} = \begin{array}{ c l }
-        5       & \quad \textrm{with } p(H) \\
-        -5      & \quad \textrm{with } p(T)
-    \end{array}
+		\mathcal{X} = \begin{array}{ c l }
+			5       & \quad \textrm{with } p(H) \\
+			-5      & \quad \textrm{with } p(T)
+    				\end{array}
 
 
-We can use a table to visualize the outcomes of this *random variable* and their associated probabilities,
+	We can use a table to visualize the outcomes of this *random variable* and their associated probabilities,
 
-+------+---------------+
-|   x  |   P(X = x)    |
-+------+---------------+
-|  5   |   P(H) = 0.5  |
-+------+---------------+
-| -5   |   P(T) = 0.5  |
-+------+---------------+
+	+------+---------------+
+	|   x  |   P(X = x)    |
+	+------+---------------+
+	|  5   |   P(H) = 0.5  |
+	+------+---------------+
+	| -5   |   P(T) = 0.5  |
+	+------+---------------+
 
-Notice this is similar in form and function to a :ref:`frequency distribution <frequency_distributions>`.
+	Notice this is similar in form and function to a :ref:`frequency distribution <frequency_distributions>`.
 
-Example
-    Suppose you own a car that gets 30 miles per gallon of gasoline. Due to your commute, you drive your car approximately 120 miles every week. Describe the cost of operating your car as a random variable measured in dollars.
+.. topic:: Example #2
+
+	Suppose you own a car that gets 30 miles per gallon of gasoline. Due to your commute, you drive your car approximately 120 miles every week. Describe the cost of operating your car as a random variable measured in dollars.
     
-Your weekly cost of keeping your tank full is given by the expression
+	Your weekly cost of keeping your tank full is given by the expression
 
-    (Weekly Cost of Gas) = (Price per Gallon of Gasoline) :math:`\cdot` (Gallons Used)
+		(Weekly Cost of Gas) = (Price per Gallon of Gasoline) :math:`\cdot` (Gallons Used)
 
-If we assume you drive the exactly same amount every week, the second term on the right hand side of the expression can be written as,
+	If we assume you drive the exactly same amount every week, the second term on the right hand side of the expression can be written as,
 
-    (Gallons Used) = :math:`\frac{120 miles}{30 mpg} = 4 gallons`
+    		(Gallons Used) = :math:`\frac{120 miles}{30 mpg} = 4 gallons`
 
-The price per gallon of gasoline, however, is an *uncertain* quantity; it depends on many extranenous factors, such as political conditions, shipping costs, taxes and tariffs, weather and climate, etc. Because of this, the price changes from day to day. 
+	The price per gallon of gasoline, however, is an *uncertain* quantity; it depends on many extranenous factors, such as political conditions, shipping costs, taxes and tariffs, weather and climate, etc. Because of this, the price changes from day to day. 
 
-The uncertainty in the price of gasoline becomes uncertainty in the weekly cost of driving your car. Therefore, we can model the weekly cost of gas as a *random variable*,
+	The uncertainty in the price of gasoline becomes uncertainty in the weekly cost of driving your car. Therefore, we can model the weekly cost of gas as a *random variable*,
 
-.. math::
-    \mathcal{X} \frac{\$}{gal} \cdot \text{4 gal }
+	.. math::
     
-where :math:`\mathcal{X}` is the price of gasoline measured in dollars per gallon.
+    		\mathcal{X} \frac{\$}{gal} \cdot \text{4 gal }
+    
+	where :math:`\mathcal{X}` is the price of gasoline measured in dollars per gallon.
 
 Random Variable or Random Function? 
-===================================
+-----------------------------------
 
 A *random variable* is not very well named. 
 
@@ -79,7 +85,7 @@ A *random variable* is not very well named.
 A more suitable name would be *random function*. In this section, the reason for this will be explored. We will examine the connection between *random variables* and *functions*.
 
 Review of Functions
--------------------
+*******************
 
 Recall the concept of a *function* from your other mathematics classes. You probably remember a definition along the lines, "A function :math:`f(x)` receives an input *x* and assigns to it a value *y*." This definition has served you in your mathematics career up to this point, but it will no longer suffice. This is not *precisely* what a function is, though it is a close approximation. In order to understand what a *random variable* is, the concept of a *function* must be extended and enlarged to encompass a larger *set* of ideas (pun intended). 
 
@@ -90,7 +96,7 @@ When the concept of *functions* is first taught, students are encouraged to trea
 And then you studied various types of algebraic functions, such as logs and sines. You learned about the joy of factoring and finding roots. You plotted curves and found inflection points. Life was idyllic; It seemed as though nothing could ever shatter the peace and serenity you were blessed with amidst the glory of algebra. However, this is not the whole story.
 
 Extension of The Concept of a Function
---------------------------------------
+**************************************
 
 The concept of a *function* underwent a radical change in the early 20 :sup:`th` century as set theory was developed by people with names like `Guiseppe Peano <https://en.wikipedia.org/wiki/Giuseppe_Peano>`_ and `Ernst Zermelo <https://en.wikipedia.org/wiki/Ernst_Zermelo>`_ to formalize the foundation of mathematics and make it so rigorous it was beyond reproach. To see why the notion of a function had to be extended, consider the following propositions,
 
@@ -105,21 +111,26 @@ The concept of a *function* underwent a radical change in the early 20 :sup:`th`
 These statements could be translated into :ref:`set theoretic <set_theory>` symbols in the following way,
 
 .. math:: 
-    n(\{ \forall x: x \in U \}) = 0
-
-.. math:: 
-    n(\{ \forall x: x \in H \}) = 7,000,000,000
+    
+    	n(\{ \forall x: x \in U \}) = 0
 
 .. math::
-    n(\mathbb{N}) = \infty
+	
+	n(\{ \forall x: x \in H \}) = 7,000,000,000
 
-.. math:: 
-    n(P) = \infty
+.. math::
+
+	n(\mathbb{N}) = \infty
+
+.. math::
+	
+	n(P) = \infty
 
 If the specifics were abstracted away, this would lead to an expression that looks like,
 
 .. math:: 
-    n(x) = y
+
+	n(x) = y
 
 In each case, the cardinality of *something* is being asserted. In other words, a *value* is being assigned to an input, but what exactly is the input? Each proposition is asserting a property of an entire :ref:`set <set_theory>`; this suggests the constraint that functions are *numbers* be relaxed so that we may input *sets* into *funtions*.
 
@@ -131,12 +142,17 @@ Put in the parlance of modern mathematics, a function *maps* a value to a given 
 This suggests we view random variables as *functions* of the outcomes in sample space, 
 
 .. math:: 
-    \mathcal{X} = f(A)
+	
+	\mathcal{X} = f(A)
 
 .. math:: 
-    \text{where} A \subseteq S
+	
+	\text{where} A \subseteq S
 
 This is getting closer to the truth. However, this picture is not yet complete; it doesn't include probability. The outcomes in the sample space are *uncertain*.
+
+Random Variables and Events
+***************************
 
 The outcomes in a event determine the value of the random variable in the same way the values inputted into a function determine the output of the function. However, the input to a random variable is uncertain, therefore the output is likewise uncertain. The probability of an event occuring in the sample space is transferred, through the outcomes that determine the random variable, into the probability of a random variable assuming a particular value. An event (set) of outcomes in the *sample space* becomes an assignment of a particular value to a *random variable*,
 
@@ -145,20 +161,25 @@ The outcomes in a event determine the value of the random variable in the same w
 
 A random variable shows how events from the sample space (the domain) are transformed into events of the random variable (the range). 
 
-Random Variables and Events
----------------------------
 
-.. _density_function:
+Properties
+==========
 
-Density Function 
-    TODO 
+.. _pdf:
 
-    The *density function* should be familiar. We have already encountered its statistical analogue, :ref:`frequency`. The probability density of a random variable at a certain value is analogous to the *frequency* of an observation in a sample of data.
+Probability Density Function
+----------------------------
+
+The *density function* should be familiar. We have already encountered its statistical analogue, :ref:`frequency`. The probability density of a random variable at a certain value is analogous to the *frequency* of an observation in a sample of data.
+
+TODO
     
-.. _distribution_function:
+.. _cdf:
 
-Distribution Function
-    TODO 
+Cumulative Distribution Function
+--------------------------------    
+
+TODO 
 
 .. _expectation:
 
@@ -167,15 +188,45 @@ Expectation
 
 TODO
 
-Expectation of a Sum
---------------------
-
-:math:`E(X+Y) = E(X) + E(Y)`
-    TODO
-
 .. _variance:
 
 Variance
 ========
 
 TODO 
+
+Transformation
+==============
+
+Expectation of a Sum
+--------------------
+
+TODO
+
+.. topic:: Expectation of a Sum
+
+	Suppose :math:`\mathcal{Y}` and :math:`\mathcal{Z}` are random variables, not necessarily independent. If :math:`\mathcal{X} = \mathcal{Y] + \mathcal{Z}`, then
+	
+	.. math::
+	
+		E(\mathcal{X}) = E(\mathcal{Y}) + E(\mathcal{Z})
+
+TODO
+
+Variance of a Sum
+-----------------
+
+TODO
+
+.. topic:: Variance of a Sum
+
+	Suppose :math:`\mathcal{Y}` and :math:`\mathcal{Z}` are *independent* random variables. If :math:`\mathcal{X} = \mathcal{Y] + \mathcal{Z}`, then
+	
+	.. math::
+	
+		Var(\mathcal{X}) = Var(\mathcal{Y}) + Var(\mathcal{Z})
+		
+	Or, in terms of standard deviations,
+	
+	.. math::
+		\sigma_x = sqrt{\sigma_y^2 + \sigma_z^2}

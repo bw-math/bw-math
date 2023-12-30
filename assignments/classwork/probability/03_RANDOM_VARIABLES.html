@@ -440,7 +440,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -456,6 +458,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -467,10 +478,12 @@ document.write(`
                   
   <section id="random-variables">
 <span id="random-variable-classwork"></span><h1>Random Variables<a class="headerlink" href="#random-variables" title="Permalink to this headline">#</a></h1>
-<ol class="arabic simple">
-<li><p>A random variable <strong>X</strong> is defined as the number of heads in three coin flips.</p></li>
-</ol>
-<ol class="loweralpha simple">
+<section id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">#</a></h2>
+<ol class="arabic">
+<li><p>A random variable <strong>X</strong> is defined as the number of heads in three coin flips.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
 <li><p>List the elements of the sample space for this random variable.</p></li>
 <li><p>Write the elements of the sample space that belong to the event <img class="math" src="../../../_images/math/976ed9723b3aa1c4e0f5b9c7fb3669e9f48dac92.png" alt="\mathcal{X}=0"/> in set notation.</p></li>
 <li><p>Write the elements of the sample space that belong to the event <img class="math" src="../../../_images/math/3b296b3e5593ce0876d5eebbacb501080557b576.png" alt="\mathcal{X}=1"/> in set notation.</p></li>
@@ -480,10 +493,11 @@ document.write(`
 <li><p>Find the expectation <img class="math" src="../../../_images/math/3353061d7e0843bdfb6c20f234dfa5e35fccb171.png" alt="E(\mathcal{X})"/> of the sum of two die rolls.</p></li>
 <li><p>Find the variance <img class="math" src="../../../_images/math/26cc350b477c68dfe426f7543ada145c166a1add.png" alt="Var(\mathcal{X})"/> of the sum of two die rolls.</p></li>
 </ol>
-<ol class="arabic simple" start="2">
-<li><p>A random variable <strong>X</strong> is defined as the sum of two six-sided die rolls.</p></li>
-</ol>
-<ol class="loweralpha simple">
+</div></blockquote>
+</li>
+<li><p>A random variable <strong>X</strong> is defined as the sum of two six-sided die rolls.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
 <li><p>List the elements of the sample space for this random variable.</p></li>
 <li><p>Write the elements of the sample space that belong to the event <img class="math" src="../../../_images/math/2dcbcc15c5d939c7e51d3c2cf9662b3476b1b190.png" alt="\mathcal{X}=6"/> in set notation.</p></li>
 <li><p>Write the elements of the sample space that belong to the event <img class="math" src="../../../_images/math/8d63e298dcbf2a9841083f51a586de996c50ef18.png" alt="\mathcal{X}=7"/> in set notation.</p></li>
@@ -492,6 +506,66 @@ document.write(`
 <li><p>Find the expectation <img class="math" src="../../../_images/math/3353061d7e0843bdfb6c20f234dfa5e35fccb171.png" alt="E(\mathcal{X})"/> of the sum of two die rolls.</p></li>
 <li><p>Find the variance <img class="math" src="../../../_images/math/26cc350b477c68dfe426f7543ada145c166a1add.png" alt="Var(\mathcal{X})"/> of the sum of two die rolls.</p></li>
 </ol>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="theorems">
+<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">#</a></h2>
+<div class="topic">
+<p class="topic-title">Expectation of a Sum</p>
+<p>Suppose <img class="math" src="../../../_images/math/ad6daa2629cc37a5667723358ec601482bea795c.png" alt="\mathcal{Y}"/> and <img class="math" src="../../../_images/math/1d74e5da619d26fe1722fa453097be62e18ce3ce.png" alt="\mathcal{Z}"/> are random variables, not necessarily independent. If <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\mathcal{X} = \mathcal{Y] + \mathcal{Z}</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd))
+Runaway argument?
+{Y] + \mathcal {Z}$ \end {document} 
+! File ended while scanning use of \math&#64;egroup.
+&lt;inserted text&gt; 
+                \par 
+&lt;*&gt; math.tex
+            
+! Emergency stop.
+&lt;*&gt; math.tex
+            
+No pages of output.
+Transcript written on math.log.
+</p>
+</div>
+, then</p>
+<div class="math">
+<p><img src="../../../_images/math/4e72d6fafb90045a13178b32d2045ca918e06760.png" alt="E(\mathcal{X}) = E(\mathcal{Y}) + E(\mathcal{Z})"/></p>
+</div></div>
+<ol class="arabic simple">
+<li><p>TODO</p></li>
+</ol>
+<p>2. TODO
+A.P. Exam Practice
+==================</p>
 <ol class="arabic simple" start="3">
 <li><p><strong>2019, Free Response, #5</strong></p></li>
 </ol>
@@ -694,6 +768,7 @@ formula.</p>
 <li><p>Based on last year’s event, the charity anticipates that the Spin the Pointer game will be played 1,000 times. The charity would like to know the probability of obtaining a net contribution of at least $500 in 1,000 plays of the game. The mean and standard deviation of the net contribution to the charity in 1,000 plays of the game are $700 and $92.79, respectively. Use the normal distribution to approximate the probability that the charity would obtain a net contribution of at least $500 in 1,000 plays of the game.</p></li>
 </ol>
 </section>
+</section>
 
 
                 </article>
@@ -734,6 +809,21 @@ formula.</p>
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

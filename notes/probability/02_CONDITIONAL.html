@@ -505,16 +505,16 @@ document.write(`
 <p>Probability is merely a guess. It is based on whatever currently available information we have. If new information about the outcomes in the sample space becomes available, the probability assigned to the remaining events must be updated to take into account the new state of the world (or more accurately, <a class="reference internal" href="../HISTORY.html#knowledge"><span class="std std-ref">knowledge</span></a> of the new state of the world). <em>Conditional probability</em> is the tool for incorporating <em>new</em> information into probability calculations.</p>
 <section id="motivation">
 <h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h2>
-<dl class="simple">
-<dt>Example</dt><dd><dl class="simple">
-<dt>Suppose three red balls numbered 1 - 3 and four green balls numbered 1 - 4 are placed into a box. A friend selects a ball at random from the box without showing you what she selected.</dt><dd><ol class="arabic simple">
+<div class="topic">
+<p class="topic-title">Example</p>
+<p>Suppose three red balls numbered 1 - 3 and four green balls numbered 1 - 4 are placed into a box. A friend selects a ball at random from the box without showing you what she selected.</p>
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>What is the probability the ball she selected has the number 2 written on it?</p></li>
 <li><p>If she now tells you the ball she selected is red, how does this affect the probability in part 1?</p></li>
 </ol>
-</dd>
-</dl>
-</dd>
-</dl>
+</div></blockquote>
+</div>
 <p>Let <strong>A</strong> represent the event of selecting a ball numbered 2. Let <strong>B</strong> represent the event of selecting a red ball. Then <img class="math" src="../../_images/math/8a7422defc6557c43eb9a268ccf4a93b30f33f5c.png" alt="n(A) = 2"/>, <img class="math" src="../../_images/math/8e104e2f55ccd280c7686805ce14057a443e869f.png" alt="n(B)=3"/> and <img class="math" src="../../_images/math/14586d87557c2ecd2e194e38005daa3f62bd9eb5.png" alt="n(S) = 7"/> (Why?) Without taking into account the second part of the problem yet, the <a class="reference internal" href="00_INTRODUCTION.html#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a> yields the probability the ball she selected has the number 2 written it,</p>
 <div class="math">
 <p><img src="../../_images/math/9c1688ddb543de7a4ee4c9e4eb5ebeb21e9847fc.png" alt="P(A) = \frac{2}{7} \approx 0.286"/></p>
@@ -542,13 +542,15 @@ document.write(`
 </div><p>An equivalent formula is given in terms of the <a class="reference internal" href="../SET_THEORY.html#cardinality"><span class="std std-ref">Cardinality</span></a> of the sets <img class="math" src="../../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/> and <strong>B</strong>,</p>
 <div class="math">
 <p><img src="../../_images/math/5b7cd1a0ab9a994a8d9a706676c34428b9b35a58.png" alt="P(A \mid B) = \frac{n(A \cap B)}{n(B)}"/></p>
-</div><dl class="simple">
-<dt>Example</dt><dd><p>TODO</p>
-</dd>
-</dl>
-<details class="summary-solution">
-<summary>Solution</summary><p>TODO</p>
-</details><div class="admonition note">
+</div><div class="topic">
+<p class="topic-title">Example</p>
+<p>TODO</p>
+</div>
+<div class="topic">
+<p class="topic-title">Solution</p>
+<p>TODO</p>
+</div>
+<div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>It is important to keep in mind that conditional probability is a <em>definition</em>. It is not an <a class="reference internal" href="00_INTRODUCTION.html#axioms-of-probability"><span class="std std-ref">axiom of probability</span></a>.</p>
 <p>In mathematics, <em>axioms</em> represent the necessary assumptions for deriving a corpus of knowledge through syntactical rules: the initial <em>starting points</em> from which theorems are deduced.</p>
@@ -567,9 +569,8 @@ document.write(`
 <p class="topic-title">Example</p>
 <p>A fair, two-sided coin with heads and tails on either side is placed into a box alongside a double-sided coin that has heads on both sides. You select a coin at random from the box and, without looking at which coin you picked, flip it. If the coin lands on heads, what is the probability you selected the two-sided coin?</p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Solution #1: Application of Conditional Probability Formula</p>
+<div class="topic">
+<p class="topic-title">Solution #1: Application of Conditional Probability Formula</p>
 <p>Before solving the problem, first define the <a class="reference internal" href="00_INTRODUCTION.html#sample-space"><span class="std std-ref">sample space</span></a> and identify the events that correspond to its various outcomes.</p>
 <p>Let <img class="math" src="../../_images/math/db3b041d6222b5fe5fd26fa90cfb17219b7a1623.png" alt="(x, y)"/> represent the ordered pair of outcomes, where <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> represents the face of the coin observed and <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> represents the type of coin selected. The following table illustrates what is meant by this assignment,</p>
 <p>+————————-+—————————————–|
@@ -622,9 +623,8 @@ document.write(`
 <div class="math">
 <p><img src="../../_images/math/85069e4ae20c50ad6545873b792369dde2d48640.png" alt="P(D \mid H) = \frac{\frac{1}{2}}{\frac{3}{4}} = \frac{1}{2} \cdot \frac{4}{3} = \frac{2}{3}"/></p>
 </div></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Solution #2: Reduction of Sample Space Formula</p>
+<div class="topic">
+<p class="topic-title">Solution #2: Reduction of Sample Space Formula</p>
 <p>There is another way of looking at this problem. The fact that it is known the outcome of the coin flip was heads effectively <em>reduces</em> the sample space <strong>S</strong> from,</p>
 <div class="math">
 <p><img src="../../_images/math/5d6aa5b83ecb08baf99edc1ec50a3830869f97f5.png" alt="S = \{ (h,f), (t,f), (h_1, d), (h_2, d) \}"/></p>
@@ -712,8 +712,9 @@ document.write(`
 <div class="topic">
 <p class="topic-title">Complementary Intersections</p>
 <p>For any events <img class="math" src="../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/> and <img class="math" src="../../_images/math/3a7a214c98a4440c624d51173249c2fb0d99e2c4.png" alt="B"/>,</p>
-<p>P(A) = P(A cap B) + P (A cap B^c)</p>
-</div>
+<div class="math">
+<p><img src="../../_images/math/d607c629d454c74efb3d743ec87e1507219c12c2.png" alt="P(A) = P(A \cap B) + P (A \cap B^c)"/></p>
+</div></div>
 <p>In order to prove this corrollary, consider the following identity,</p>
 <div class="math">
 <p><img src="../../_images/math/5a05fa01c1874a84c61e327056e29431d276e99c.png" alt="A = (A \cap B) \cup (A \cap B^c)"/></p>
@@ -734,8 +735,9 @@ document.write(`
 </div><p>Plugging these definitions into the <em>Complementary Intersection</em> corrollary transforms the proposition into the Law of Total Probability,</p>
 <div class="topic">
 <p class="topic-title">Law of Total Probability</p>
-<p>P(A) = P(A mid B) cdot P(B) + P(A mid B^c) cdot P(B^c)</p>
-</div>
+<div class="math">
+<p><img src="../../_images/math/fc1a5a14eb599f899db6cd0c46c6d43e9c724f48.png" alt="P(A) = P(A \mid B) \cdot P(B) + P(A \mid B^c) \cdot P(B^c)"/></p>
+</div></div>
 <p>The following example illustrates an application of the <em>Law of Total Probability</em>,</p>
 <div class="topic">
 <p class="topic-title">Example</p>
