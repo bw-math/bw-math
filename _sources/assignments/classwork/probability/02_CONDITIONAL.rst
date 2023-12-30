@@ -58,7 +58,7 @@ Use this Venn Diagram to answer the following questions.
 
     b. If it lands heads up, what is the probability you have selected the double-sided coin?
 
-8. Paging through a magazine, you notice a interesting survey of randomly selected individuals who were each asked two questions. The first question was "Do you believe the Earth is flat or round?". The second question was, "Do you think Finland is a `real country <https://knowyourmeme.com/memes/finland-does-not-exist>`_ ?" The results are given in the table below, 
+5. Paging through a magazine, you notice a interesting survey of randomly selected individuals who were each asked two questions. The first question was "Do you believe the Earth is flat or round?". The second question was, "Do you think Finland is a `real country <https://knowyourmeme.com/memes/finland-does-not-exist>`_ ?" The results are given in the table below, 
 
 +---------+------+-------+
 |         | Flat | Round |
@@ -90,6 +90,12 @@ Use this table to answer the following problems.
 Sample Space Reduction
 ----------------------
 
+.. topic:: Reduction of Sample Space
+
+	.. math::
+	
+		P(B \mid A) = \frac{n(B \mid A)}{n(S \mid A)}
+
 1. A bag contains 3 red marbles and 4 blue marbles. Two marbles are drawn at random *without replacement*. If the first marble drawn is red, what is the probability the second marble is blue?
 
 2. Suppose two fair dice have been tossed.
@@ -108,26 +114,45 @@ Sample Space Reduction
 
     :ref:`Reduce the sample space <reduction_of_the_sample_space>` and then use :ref:`combinatorics`.
 
-Multiplication Law
-------------------
+Bayes' Laws
+-----------
 
-1. TODO
+.. topic:: Bayes' Multiplication Law
 
-2. 100 sci-fi fans were polled by the reporters at  *Imporant News Weekly*. 64 of those polled preferred *Star Wars* to *Star Trek*, while the rest of them, due to poor life choices, preferred *Star Trek* to *Star Wars*. Of the people who preferred *Star Wars*, 75% of them thought *The Empire Strikes Back* was the best of the film in the `ennealogy <https://en.wiktionary.org/wiki/ennealogy>`_. Of the people who preferred *Star Trek*, only half of them thought *The Empire Strike Back* was the best film in the series. 
+	.. math::
+	
+		P(A \cap B) = P(B \mid A) \cdot P(A)
+		
+.. topic:: Bayes' Law of Total Probability
+
+	.. math::
+	
+		P(B) = P(B \mid A) \cdot P(A) + P(B \mid A^c) \cdot P(A^c) 
+		
+1. 100 sci-fi fans were polled by the reporters at  *Imporant News Weekly*. 64 of those polled preferred *Star Wars* to *Star Trek*, while the rest of them, due to poor life choices, preferred *Star Trek* to *Star Wars*. Of the people who preferred *Star Wars*, 75% of them thought *The Empire Strikes Back* was the best of the film in the `ennealogy <https://en.wiktionary.org/wiki/ennealogy>`_. Of the people who preferred *Star Trek*, only half of them thought *The Empire Strike Back* was the best film in the series. 
 
     a. What percent of people preferred *Star Wars* over *Star Trek* and thought *The Empire Strikes Back* was the best film in the series?
 
     b. What percent of people preferred *Star Trek* over *Star Wars* and thought *The Empire Strikes Back* **wasn't** the best film in the series? 
 
+2. One of the cards of an ordinary deck of 52 cards is lost. What is the probability that a random card drawn from this deck is a spade? 
 
-ONE OR TWO MORE
+3. Of patients in a hospital, 20% of those with myocardial infarcation have had strokes and 35% of those without myocardial infarcation have had strokes. If 40% of the patients have had myocardial infarcation, what percent of the patients have had strokes?
+
+4. A factory produces its entire output with three machines. Each machine has an error rate that causes it to produce defective units. Machine I produces 50% of the output and has a 4% error rate. Machine II produces 30% of the output and has a 2% error rate. Machine III produces 20% of the output and has a 4% error rate. What percentage of the total output is defective? 
 
 Independence
 ------------
 
-1. **Concepts**
+.. topic:: Independence Multiplication Law
 
-Use conditional probability and independence to solve the following problems.
+	If **A** and **B** are independent events, then
+	
+	.. math::
+		
+		P(A \cap B) = P(A) \cdot P(B)
+		
+1. Use conditional probability and independence to solve the following problems.
 
 	a. You flip two fair coins. What is the probability of getting two heads?
 
@@ -135,14 +160,17 @@ Use conditional probability and independence to solve the following problems.
 
 	c. What is the probability of getting exactly three sixs in three die rolls?
  
+2. A fair die is rolled twice. Let **A** denote the event that the sum of the outcomes is odd. Let **B** denote the event that it lands 2 on the first toss. Are **A** and **B** independent? Why or why not?
+
+3. Suppose that two numbers are selected at random and independently from the interval :math:`(0,1)`. What is the probability that the first one is less than :math:`\frac{3}{4}`, and the second one is greater than :math:`\frac{1}{4}`?
+ 
 4. In a certain game, you perform three tasks. You flip a quarter, and win if you get heads. You roll a single die, and win if you get a six. You pick a card from a full playing-card deck, and win if you pick a card in the suit of spades. If any of these task are successful, then you win the game. What is the probability of winning?
 
 .. hint::
 
 	You win in the case you get a head or you get a six or you get a spade. Don't forget to account for the overlapping events!
 	
-TODO MORE
-
+5. In data communications, a message transmitted from one end is subject to various sources of distortion and may be received erroneously at the other end. A bit is the smallest unit of information transmitted, and is either 0 or 1. Suppose that a message of 64 bits is transmitted. If each bit is received incorrectly with a probability 0.0001 independently of the other bits, what is the probability the message is free of error?
 
 A.P. Exam Practice
 ------------------
