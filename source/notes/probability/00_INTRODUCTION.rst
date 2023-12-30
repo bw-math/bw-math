@@ -434,7 +434,7 @@ If the entire rectangle encompassing set **A** in the above diagram is identifie
 
     The converse of this theorem is *not* true, i.e. if two events **A** and **B** have probabilities that sum to *1*, this does not imply they are complements of one another. 
 
-To see any example of what that pesky warning is talking about, consider flipping a fair, two-sided coin twice. Let **A** be the event of getting a head in the first flip. Let **B** of getting exactly one head in both flips. 
+To see an example of what that pesky warning is talking about, consider flipping a fair, two-sided coin twice. Let **A** be the event of getting a head in the first flip. Let **B** of getting exactly one head in both flips. 
 
 The outcomes of **A** are given by,
 
