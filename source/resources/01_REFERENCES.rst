@@ -7,6 +7,13 @@ References
 Textbooks
 =========
 
+.. _libretext:
+
+LibreText
+---------
+
+- `Fundamental Methods of Logic <https://human.libretexts.org/Bookshelves/Philosophy/Fundamental_Methods_of_Logic_(Knachel)>`_
+
 .. _openstax:
 
 OpenStax

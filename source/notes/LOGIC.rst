@@ -19,6 +19,13 @@ Definition
 
 TODO
 
+.. _truth_values:
+
+Truth Values
+------------
+
+TODO
+
 .. _truth_tables:
 
 Truth Tables

@@ -129,7 +129,7 @@ Find the cardinality of each of the following sets.
 Relations
 =========
 
-7. **Membership** 
+1. **Membership** 
 
 Determine whether each of the following propositions is *true* or *false*.
 
@@ -143,7 +143,7 @@ Determine whether each of the following propositions is *true* or *false*.
 	
 	e. :math:`A \notin S`
 	
-8. **Equivalence and Equality**. 
+2. **Equivalence and Equality**. 
 
 Determine whether each of the following propositions is *true* or *false*.
 
@@ -155,7 +155,7 @@ Determine whether each of the following propositions is *true* or *false*.
 
     d. :math:`A \equiv B \implies A = B`
 
-9. **Subsets** 
+3. **Subsets** 
 
 Determine whether each of the following propositions is *true* or *false*.
 
@@ -165,7 +165,7 @@ Determine whether each of the following propositions is *true* or *false*.
 
     c. :math:`C^c \subseteq B^c`
 
-10. **Power Sets**
+4. **Power Sets**
 
 Write the following sets in list notation.
 
@@ -176,11 +176,36 @@ Write the following sets in list notation.
 	c. The set of all subsets of :math:`A`.
 	
 	d. In general, for a set **P** with *n* elements, how many subsets can be formed from **P**?
-	 
+	
+5. **Ordered Pairs**
+
+Set theory is the foundation of all modern mathematics. For example, `Kazimierz Kuratowski <https://en.wikipedia.org/wiki/Kazimierz_Kuratowski>`_, a Polish mathematician, proposed the following `definition of an ordered pair <https://math.stackexchange.com/questions/1767604/please-explain-kuratowski-definition-of-ordered-pairs>`_,
+
+.. topic:: Kuratowski's Definition of an Ordered Pair
+
+	Let :math:`(a,b)` represent the set, 
+	
+	.. math::
+		
+		\{ \{ a \}, \{ a, b \} \}
+		
+Use Kuratowski's definition of an ordered pair to decide which of the following propositions is true:
+
+	a. :math:`a \in (a,b)`
+	
+	b. :math:`\{ a \} \in (a,b)`
+	
+	c. :math:`(a,a)=\{ a \}`
+	
+	d. :math:`b \in (a,b)`
+	
+	e. :math:`\{ b \} \in (a,b)`
+	
+	f. :math:`\{ a, b \} \in (a,b)`
 Theorems
 ========
 
-11. **Symbolic Propositions**
+1. **Symbolic Propositions**
 
 Let **E**, **F** and **G** be three events. Determine which of the following statements are correct and which are incorrect. Justify your answers.
 
@@ -190,7 +215,7 @@ Let **E**, **F** and **G** be three events. Determine which of the following sta
 
 	c. :math:`((E \cap F) \cup (E \cap G) \cup (F \cap G)) \subset (E \cup F \cup G)`
 	 
-12. **Deductive Proofs** 
+2. **Deductive Proofs** 
 
 Suppose you are given two sets **E** and **F**. Using the properties of sets discussed in class and the ones covered in this classwork, derive an identity for each of the following expressions,
 
@@ -200,4 +225,4 @@ Suppose you are given two sets **E** and **F**. Using the properties of sets dis
 
 .. hint:: 
 
-    Use the distributive laws from #5 and then use the `Complement Theorems <complement_theorems>`
+    Use the distributive laws from #5 and then use the `Complement Theorem <complement_theorem>`
