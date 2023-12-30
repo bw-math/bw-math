@@ -1,6 +1,20 @@
 Symbolic Logic
 ==============
 
+Symbolic Arguments
+------------------
+
+1. Construct a :ref:`truth table <truth_tables>` to determine if the following arguments are tautologies, contradictions or contingent. 
+
+	a. TODO
+	
+	b. TODO
+	
+	c. TODO
+	
+	d. TODO
+	
+	e. TODO
 
 Aristotle's Square of Opposition
 --------------------------------
