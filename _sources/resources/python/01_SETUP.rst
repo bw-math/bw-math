@@ -6,6 +6,14 @@ Python Setup
 
 **Python** will run on virtually any device with a processor. It supports all operating systems: Windows, Mac and Linux.
 
+.. _python_links:
+
+Links
+=====
+
+- `Download <https://www.python.org/downloads/>`_
+- `Documentation <https://docs.python.org/3/index.html>`_
+
 Python Installation
 ===================
 

@@ -47,7 +47,7 @@ Notice the correlation coefficient is the average of a product of z-scores. In t
 Linear Regression Model
 -----------------------
 
-The *Linear Regression Model* is a special statistical method for modelling the linear relationship that exists between correlated variables. A regression model (not necessarily *linear*) applies to a sample of bivariate data,
+The *Linear Regression Model* is a special statistical method for modelling a linear relationship that exists between correlated variables. A regression model (not necessarily *linear*) applies to a sample of bivariate data,
 
 .. math::
 
@@ -59,42 +59,48 @@ Where :math:`n` is the total number of samples. The :math:`x_i` variable is refe
 
     \hat{y_i} = \mathcal{B}_1 \cdot x_i + \mathcal{B}_0 + \varepsilon_i
 
-Where the term :math:`\varepsilon_i` is a normally distributed error term centered around 0 with standard deviation equal to the *mean squared error* of the model,
+Where the term :math:`\varepsilon_i` is a normally distributed error term centered around 0 with standard deviation equal to the square root *mean squared error* of the model,
 
 .. math::
 
-    \varepsilon \sim \mathcal{N}(0, \text{MSE})
+    \varepsilon \sim \mathcal{N}(0, \sqrt{\text{MSE}})
 
 Residuals
 ---------
 
-The error term :`\varepsilon_i` is sometimes called a residual. The value of a residual for a given :math:`i` can be found by subtracing the actual value of :math:`y_i` from the *predicted value* :math:`\hat{y_i}`,
+The error term :`\varepsilon_i` is sometimes called a residual. The value of a residual for a given :math:`i` can be found by subtracting the *predicted value* :math:`\hat{y_i}` from the actual value of :math:`y_i`,
 
 .. math::
 	
-	\varepsilon_i = \hat{y_i} - y_i
+	\varepsilon_i = y_i - \hat{y_i} 
 
 A crucial assumption of the *Linear Regression Model* is the normality of the residuals. If this assumption is violated, then there is evidence to suggest the model is incomplete, i.e. there is another variable influencing the *response* variable. Moreover, if the normality assumption is violated, the model can no longer be used to extrapolate outside of the range of the *predictor variable*. 
 
 Datasets
 --------
 
-TODO 
+In this project, we will examine three datasets, each of which exemplifies a different feature of bivariate data and presents its only unique challenges.
 
 Old Faithful
-------------
+************
 
-TODO
+The first dataset we will look at is the Old Faithful dataset. This is a dataset we have seen many times and we finally have the tools to listen to what it is telling us. The individuals recorded in this dataset are eruptions of the Old Faithful geyser. Recall the two variables being measured are the length of an eruption and the waiting time until the next the eruption. Both variables are measured in minutes. 
 
 Spice Girls Songs
------------------
+*****************
 
-TODO 
+The second dataset we will consider is the Spice Girls dataset. The individuals in this datasets are song tracks on Spice Girl studio albums. The dataset contains many variables, but the two of interest for this project are song length in milliseconds and song order on the album. Song length should hopefully be self-explanatory; the song order refers to the order in which the song appears on the album when played from front to back. 
 
 Celebrity Twitter
------------------
+*****************
 
-TODO
+The third and final dataset in this project is the Celebrity Twitter dataset. This is another dataset we have seen several times already. The individuals recorded in this dataset are Twitter accounts. In this project, we will see the entire dataset, which contains many variables that do not interest us; the variables at which we will look are the number of followers and the number of tweets.
+
+.. warning::
+
+	This dataset is slightly different from the one we saw on our calculators. Our calculators have limited memory, so in order to get the data points imported, the values were scaled. In addition, some of the data was trimmed. 
+	
+	In other words, in this project, we will be working with the *full* dataset. 
 
 .. _project_four_bivariate_analysis:
 
@@ -231,11 +237,11 @@ If you are following along, you should see the following graph when you execute 
 Residuals
 ---------
 
-The final step of the regression process is validating the model assumptions; in other words, we must check to make the distribution of residuals is approximately normal. In order to do this, we must first create a list containing the residuals. To create the list of residuals, we will use the :ref:`python_zip_function`. The ``zip()`` function allows us to iterate over two list simultaneously. The following code snippet steps over the ``predicted_y`` and ``y_data`` lists *at the same time*, grabbing elements with the same index along the way,
+The final step of the regression process is validating the model assumptions; in other words, we must check to make sure the distribution of residuals is approximately normal. In order to do this, we must first create a list containing the residuals. To create the list of residuals, we will use the :ref:`python_zip_function`. The ``zip()`` function allows us to iterate over two list simultaneously. The following code snippet steps over the ``predicted_y`` and ``y_data`` lists *at the same time*, grabbing elements with the same index along the way,
 
 .. code:: python
 
-	residuals = [ yhat - y for (yhat, y) in zip(predicted_y, y_data) ]
+	residuals = [ y - yhat for (yhat, y) in zip(predicted_y, y_data) ]
 	
 .. note::
 
@@ -282,7 +288,7 @@ Scatter Plot
 
 1. Construct a scatter plot for this dataset using the **Eruption Length** as the *predictor* variable and the **Waiting Time** as the *response* variable. Ensure the graph is labelled appropriately.
 
-2. In your :ref:`python_docstring`, describe the correlation in this dataset. Is it positive, negative or neutral? Is it linear or non-linear? Is it strong or weak? 
+2. In your :ref:`python_docstring`, describe the correlation in this dataset. Is it positive or negative? Is it strong or weak?  Is it linear or non-linear? If it is non-linear, what type of functional form could be used to model the dataset?
 
 3. In your :ref:`python_docstring`, answer the following question: Based on your answer to the previous question, would a linear regression model be a good fit for this dataset?
 
@@ -336,7 +342,7 @@ Scatter Plot
 
 1. Construct a scatter plot for this dataset using the **Track Number** as the *predictor variable* and the **Song Length** as the *response* variable. Ensure the graph is labelled appropriately.
 
-2. In your :ref:`python_docstring`, describe the correlation in this dataset. Is it positive, negative or neutral? Is it linear or non-linear? Is it strong or weak? 
+2. In your :ref:`python_docstring`, describe the correlation in this dataset. Is it positive or negative? Is it strong or weak?  Is it linear or non-linear? If it is non-linear, what type of functional form could be used to model the dataset?
 
 3. In your :ref:`python_docstring`, answer the following question: Based on your answer to the previous question, would a linear regression model be a good fit for this dataset?
 
@@ -391,7 +397,7 @@ Scatter Plot
 
 1. Construct a scatter plot for this dataset using the **Tweet Count** as the *predictor* variable and the **Follower Count** as the *response* variable. Ensure the graph is labelled appropriately.
 
-2. In your :ref:`python_docstring`, describe the correlation in this dataset. Is it positive, negative or neutral? Is it linear or non-linear? Is it strong or weak? 
+2. In your :ref:`python_docstring`, describe the correlation in this dataset. Is it positive or negative? Is it strong or weak?  Is it linear or non-linear? If it is non-linear, what type of functional form could be used to model the dataset?
 
 3. In your :ref:`python_docstring`, answer the following question: Based on your answer to the previous question, would a linear regression model be a good fit for this dataset?
 
@@ -443,7 +449,7 @@ Conclusion
 Extra Credit: Data Transformations
 ==================================
 
-One of the three datasets we have examined in this lab has a non-linear correlation. In order to fit a *Linear Regression Model* to this dataset, one of the variables must be transformed before the model parameters are estimated. In your :ref:`python_docstring`, explain which of the calculated correlation is non-linear and then answer the following question:
+One of the three datasets we have examined in this project has a non-linear correlation. In order to fit a *Linear Regression Model* to this dataset, one of the variables must be transformed before the model parameters are estimated. In your :ref:`python_docstring`, explain which of the calculated correlations is non-linear and then answer the following question:
 
 1. What type of data transformation would make the relationship between the variables linear?  
 
@@ -453,7 +459,7 @@ Then, taking the transformation you have identified, transform the indicated dat
 
 .. _project_four_dataset:
 
-Data Sets
+Datasets
 =========
 
 .. _project_four_loading_data:
