@@ -10,8 +10,7 @@ Resources
 
    00_EXAMS
    01_REFERENCES
-   02_WORKSHEETS
-   03_TI84
+   calculator/index
    python/index
    tables/index
 

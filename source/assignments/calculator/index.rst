@@ -9,4 +9,5 @@ Calculator Projects
    :caption: Contents:
 
    00_CORRELATION
-   01_PI_ESTIMATION
+   01_COIN_FLIPS
+   02_PI_ESTIMATION
