@@ -1,4 +1,4 @@
-.. _calculator_project_two:
+.. _calculator_project_three:
 
 ==========
 Simulation
@@ -18,23 +18,43 @@ TODO
 	:target: https://www.youtube.com/watch?v=J9ILZhPYds4
 
 TODO
-	
-Estimating Pi With Simulation
-=============================
+
+.. _calculator_project_three_instructions:
+
+Instructions
+============
 
 TODO
+
+.. _calculator_project_three_background:
+
+Background
+==========
+
+TODO
+
+.. _calculator_project_three_control_structures:
 
 Control Structures
 ------------------
 
 TODO
 
+.. _calculator_project_three_graphing:
+
 Graphing
 --------
 
 TODO
 
+.. _calculator_project_three_monte_carlo:
+
 Monte Carlo Simulation
 ----------------------
+
+TODO
+
+Project
+=======
 
 TODO

@@ -43,7 +43,7 @@ TODO
 +-------------+----------------+
 |     T       |       F        |
 +-------------+----------------+
-|     F       |       T
+|     F       |       T        |
 +-------------+----------------+
 
 .. _conjunction:
@@ -135,7 +135,7 @@ TODO
 Logical Redundancy
 ******************
 
-Logical implication can be expressed in terms of the other logical connective introduced. Notice the range of the implication function assigns a value of `True` to three of the four value assignments. Logical disjunctions also assign a value of `True` to three of the four possible value assignments of its constituent propositions.
+Logical implication can be expressed in terms of the other logical connectiveS introduced. Notice the range of the implication function assigns a value of `True` to three of the four value assignments. Logical disjunctions also assigns a value of `True` to three of the four possible value assignments of its constituent propositions. It is a natural question whether implication can be reduced to disjunction or visa versa.
 
 
 TODO
@@ -194,7 +194,7 @@ TODO
 .. _universal_quantification:
 
 Universal Quantification
-************************
+------------------------
 
 Symbolic Expression 
     :math:`\forall p: q`
@@ -208,10 +208,12 @@ This type of proposition can be translated into English in the following ways,
 2. "for every *p*, *q*"
 3. "for each *p*, *q*"
 
+TODO
+
 .. _existential_quantification:
 
 Existential Quantification
-**************************
+--------------------------
 
 Symbolic Expression
     :math:`\exists p: q`

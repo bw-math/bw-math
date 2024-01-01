@@ -12,6 +12,13 @@ Manuals
 - `TI-Basic Programming Guide for the TI CE Family of Graphing Calculators <https://education.ti.com/download/en/ed-tech/3BBF042421644CE2AF713484B03A8B11/002C3004780F48C4A8B9C8D5F070235A/TI-ProgGuide_EN.pdf>`_
 - `TI-84 Plus CE Reference Guide <https://education.ti.com/download/en/ed-tech/3BBF042421644CE2AF713484B03A8B11/DA0D22E4BC924472A8E6D147FE76CC74/GRefGuide_84PlusCE_EN.pdf>`_
 
+.. _ti_programming:
+
+Programs
+--------
+
+- `TI Basic Dev <http://tibasicdev.wikidot.com/>`_
+
 .. _ti_worksheets:
 
 Worksheets

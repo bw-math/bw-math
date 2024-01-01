@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'bishop-walsh-math'
-copyright = '2023, Grant Moore'
+copyright = '2024, Grant Moore'
 author = 'Grant Moore'
 
 # -- General configuration ---------------------------------------------------

@@ -220,7 +220,7 @@ TODO
 
 .. topic:: Variance of a Sum
 
-	Suppose :math:`\mathcal{Y}` and :math:`\mathcal{Z}` are *independent* random variables. If :math:`\mathcal{X} = \mathcal{Y] + \mathcal{Z}`, then
+	Suppose :math:`\mathcal{Y}` and :math:`\mathcal{Z}` are *independent* random variables. If :math:`\mathcal{X} = \mathcal{Y} + \mathcal{Z}`, then
 	
 	.. math::
 	

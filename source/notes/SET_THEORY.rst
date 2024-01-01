@@ -945,7 +945,7 @@ Theorem 2
 
 Symbolic Expression
     .. math::
-
+    
         n(A) + n(A^c) = n(S)
 
 The number of elements in any set **A** plus the number of elements in its complement is equal to the number of elements in the univeral set.
