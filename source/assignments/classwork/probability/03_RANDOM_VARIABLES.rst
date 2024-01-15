@@ -7,7 +7,7 @@ Random Variables
 Definition
 ==========
 
-1. A random variable **X** is defined as the number of heads in three coin flips.
+1. A random variable :math:`\mathcal{X}` is defined as the number of heads in three coin flips.
 
 	a. List the elements of the sample space for this random variable.
 
@@ -26,7 +26,7 @@ Definition
 	h. Find the variance :math:`Var(\mathcal{X})` of the sum of two die rolls. 
 
 	
-2. A random variable **X** is defined as the sum of two six-sided die rolls. 
+2. A random variable :math:`\mathcal{X}` is defined as the sum of two six-sided die rolls. 
 
 	a. List the elements of the sample space for this random variable.
 
@@ -48,7 +48,7 @@ Theorems
 
 .. topic:: Expectation of a Sum
 
-	Suppose :math:`\mathcal{Y}` and :math:`\mathcal{Z}` are random variables, not necessarily independent. If :math:`\mathcal{X} = \mathcal{Y] + \mathcal{Z}`, then
+	Suppose :math:`\mathcal{Y}` and :math:`\mathcal{Z}` are random variables, not necessarily independent. If :math:`\mathcal{X} = \mathcal{Y} + \mathcal{Z}`, then
 	
 	.. math::
 	
