@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Random Variables &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/probability/03_RANDOM_VARIABLES';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Experimental Design" href="../experiments/index.html" />
     <link rel="prev" title="Conditional Probability" href="02_CONDITIONAL.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -490,7 +511,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation">Expectation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variance">Variance</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformation">Transformation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation-of-a-sum">Expectation of a Sum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linearity-of-expectations">Linearity of Expectations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variance-of-a-sum">Variance of a Sum</a></li>
 </ul>
 </li>
@@ -503,13 +524,13 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="random-variables">
-<span id="id1"></span><h1>Random Variables<a class="headerlink" href="#random-variables" title="Permalink to this headline">#</a></h1>
+<span id="id1"></span><h1>Random Variables<a class="headerlink" href="#random-variables" title="Permalink to this heading">#</a></h1>
 <p>Many things in life are <em>uncertain</em>. Nevertheless, <em>uncertainy</em> doesn’t equate to <em>unpredictability</em>. Even though events may be <em>uncertain</em>, we can still make <em>predictions</em> about their outcome based on our knowledge of the sample space. Before we can do that, we need to talk about <em>random variables</em> and how they can be used to model processes in the real world.</p>
 <section id="definition">
-<h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">#</a></h2>
+<h2>Definition<a class="headerlink" href="#definition" title="Permalink to this heading">#</a></h2>
 <p>The following sentences all say the same thing in slightly different ways.</p>
 <blockquote>
 <div><ol class="arabic simple">
@@ -518,11 +539,11 @@ document.write(`
 <li><p>A <em>random variable</em>  <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is a function whose input is determined by a random process.</p></li>
 </ol>
 </div></blockquote>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Example #1-A</p>
 <p>A friend flips a fair, two-sided coin. If it lands on heads, he will pay you five dollars. If it lands on tails, you have to pay him five dollars.</p>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title">Solution #1-A</p>
 <p>The sample space for this simple game is given by,</p>
 <div class="math">
@@ -535,10 +556,6 @@ document.write(`
                 \end{array}"/></p>
 </div><p>We can use a table to visualize the outcomes of this <em>random variable</em> and their associated probabilities,</p>
 <table class="table">
-<colgroup>
-<col style="width: 29%" />
-<col style="width: 71%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>x</p></td>
 <td><p>P(X = x)</p></td>
@@ -552,8 +569,8 @@ document.write(`
 </tbody>
 </table>
 <p>Notice this is similar in form and function to a <a class="reference internal" href="../statistics/00_GRAPHICAL_REPRESENTATIONS.html#frequency-distributions"><span class="std std-ref">frequency distribution</span></a>.</p>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title">Example #2</p>
 <p>Suppose you own a car that gets 30 miles per gallon of gasoline. Due to your commute, you drive your car approximately 120 miles every week. Describe the cost of operating your car as a random variable measured in dollars.</p>
 <p>Your weekly cost of keeping your tank full is given by the expression</p>
@@ -569,9 +586,9 @@ document.write(`
 <div class="math">
 <p><img src="../../_images/math/f423167351b822576217de03d3f2518016744b78.png" alt="\mathcal{X} \frac{\$}{gal} \cdot \text{4 gal }"/></p>
 </div><p>where <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is the price of gasoline measured in dollars per gallon.</p>
-</div>
+</aside>
 <section id="random-variable-or-random-function">
-<h3>Random Variable or Random Function?<a class="headerlink" href="#random-variable-or-random-function" title="Permalink to this headline">#</a></h3>
+<h3>Random Variable or Random Function?<a class="headerlink" href="#random-variable-or-random-function" title="Permalink to this heading">#</a></h3>
 <p>A <em>random variable</em> is not very well named.</p>
 <div class="admonition-reminder admonition">
 <p class="admonition-title">Reminder</p>
@@ -579,14 +596,14 @@ document.write(`
 </div>
 <p>A more suitable name would be <em>random function</em>. In this section, the reason for this will be explored. We will examine the connection between <em>random variables</em> and <em>functions</em>.</p>
 <section id="review-of-functions">
-<h4>Review of Functions<a class="headerlink" href="#review-of-functions" title="Permalink to this headline">#</a></h4>
+<h4>Review of Functions<a class="headerlink" href="#review-of-functions" title="Permalink to this heading">#</a></h4>
 <p>Recall the concept of a <em>function</em> from your other mathematics classes. You probably remember a definition along the lines, “A function <img class="math" src="../../_images/math/4d080e94aa171bc1bba13b38e72317a67bac38e2.png" alt="f(x)"/> receives an input <em>x</em> and assigns to it a value <em>y</em>.” This definition has served you in your mathematics career up to this point, but it will no longer suffice. This is not <em>precisely</em> what a function is, though it is a close approximation. In order to understand what a <em>random variable</em> is, the concept of a <em>function</em> must be extended and enlarged to encompass a larger <em>set</em> of ideas (pun intended).</p>
 <p>When the concept of <em>functions</em> is first taught, students are encouraged to treat a function as an algebraic expression, such as <img class="math" src="../../_images/math/43351c541e04e74c653d11d4c5b887b3412da6a9.png" alt="f(x) = x^2"/>. It’s an algebraic <em>thing</em> that you plug numbers into and out of which you get numbers, which may or may not be the same numbers that were inputted (consider the output of  <img class="math" src="../../_images/math/f20854b57b3a7b7382133baffa9c696eb54c91ed.png" alt="f(x) = x"/> versus <img class="math" src="../../_images/math/43351c541e04e74c653d11d4c5b887b3412da6a9.png" alt="f(x) = x^2"/>; what is the difference between the set of things output by each of these function?). When <cite>f(x)=x^2</cite>, we put <cite>x = 5</cite> and get <cite>f(5) = 25</cite>, which describes an ordered pair in the <strong>Cartesian</strong> plane, <img class="math" src="../../_images/math/a5a48337ef6222a0c85235bc3dee17044c1cd46d.png" alt="(5, f(5))"/>. Students are told about the <em>domain</em> and <em>range</em>; The <a class="reference internal" href="../SET_THEORY.html#sets"><span class="std std-ref">set</span></a> of all values that are input into a function is called the <em>domain</em>. Likewise, the set of all values that is output by the function is called the <em>range</em>. You probably remember seeing a diagram to help you visualize this idea and it probably looked like this,</p>
 <img alt="../../_images/function.png" src="../../_images/function.png" />
 <p>And then you studied various types of algebraic functions, such as logs and sines. You learned about the joy of factoring and finding roots. You plotted curves and found inflection points. Life was idyllic; It seemed as though nothing could ever shatter the peace and serenity you were blessed with amidst the glory of algebra. However, this is not the whole story.</p>
 </section>
 <section id="extension-of-the-concept-of-a-function">
-<h4>Extension of The Concept of a Function<a class="headerlink" href="#extension-of-the-concept-of-a-function" title="Permalink to this headline">#</a></h4>
+<h4>Extension of The Concept of a Function<a class="headerlink" href="#extension-of-the-concept-of-a-function" title="Permalink to this heading">#</a></h4>
 <p>The concept of a <em>function</em> underwent a radical change in the early 20 <sup>th</sup> century as set theory was developed by people with names like <a class="reference external" href="https://en.wikipedia.org/wiki/Giuseppe_Peano">Guiseppe Peano</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Ernst_Zermelo">Ernst Zermelo</a> to formalize the foundation of mathematics and make it so rigorous it was beyond reproach. To see why the notion of a function had to be extended, consider the following propositions,</p>
 <blockquote>
 <div><p>The set of all unicorns has zero elements.</p>
@@ -617,7 +634,7 @@ document.write(`
 </div><p>This is getting closer to the truth. However, this picture is not yet complete; it doesn’t include probability. The outcomes in the sample space are <em>uncertain</em>.</p>
 </section>
 <section id="random-variables-and-events">
-<h4>Random Variables and Events<a class="headerlink" href="#random-variables-and-events" title="Permalink to this headline">#</a></h4>
+<h4>Random Variables and Events<a class="headerlink" href="#random-variables-and-events" title="Permalink to this heading">#</a></h4>
 <p>The outcomes in a event determine the value of the random variable in the same way the values inputted into a function determine the output of the function. However, the input to a random variable is uncertain, therefore the output is likewise uncertain. The probability of an event occuring in the sample space is transferred, through the outcomes that determine the random variable, into the probability of a random variable assuming a particular value. An event (set) of outcomes in the <em>sample space</em> becomes an assignment of a particular value to a <em>random variable</em>,</p>
 <img alt="../../_images/random_variable_events.png" class="align-center" src="../../_images/random_variable_events.png" />
 <p>A random variable shows how events from the sample space (the domain) are transformed into events of the random variable (the range).</p>
@@ -625,134 +642,67 @@ document.write(`
 </section>
 </section>
 <section id="properties">
-<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">#</a></h2>
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this heading">#</a></h2>
 <section id="probability-density-function">
-<span id="pdf"></span><h3>Probability Density Function<a class="headerlink" href="#probability-density-function" title="Permalink to this headline">#</a></h3>
+<span id="pdf"></span><h3>Probability Density Function<a class="headerlink" href="#probability-density-function" title="Permalink to this heading">#</a></h3>
 <p>The <em>density function</em> should be familiar. We have already encountered its statistical analogue, <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#frequency"><span class="std std-ref">Frequency</span></a>. The probability density of a random variable at a certain value is analogous to the <em>frequency</em> of an observation in a sample of data.</p>
 <p>TODO</p>
 </section>
 <section id="cumulative-distribution-function">
-<span id="cdf"></span><h3>Cumulative Distribution Function<a class="headerlink" href="#cumulative-distribution-function" title="Permalink to this headline">#</a></h3>
+<span id="cdf"></span><h3>Cumulative Distribution Function<a class="headerlink" href="#cumulative-distribution-function" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 </section>
 </section>
 <section id="expectation">
-<span id="id2"></span><h2>Expectation<a class="headerlink" href="#expectation" title="Permalink to this headline">#</a></h2>
+<span id="id2"></span><h2>Expectation<a class="headerlink" href="#expectation" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Expectation of a Discrete Random Variable</p>
+<p>Let <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> be a discrete random variable that takes on the values <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> for <img class="math" src="../../_images/math/a481b68cca2dd2ec91961f41999ae31343d16aea.png" alt="i = 1, 2, 3, ..., n"/>. The <a href="#id3"><span class="problematic" id="id4">*</span></a>expectation of <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is defined,</p>
+<div class="math">
+<p><img src="../../_images/math/c1aa3d1ca1b7a157033c2b14f892c8448f734752.png" alt="E(\mathcal{X}) = sum_{i=1}^{n}{x_i \ cdot P(\mathcal{X} = x_i) }"/></p>
+</div></aside>
+<p>TODO</p>
+<p>The <em>expectation</em> of a Random Variable <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is the weighted sum of its outcome. The <em>weight</em> of each outcome is exactly the probability of that outcome occuring.</p>
+<p>TODO</p>
+<p>Here the subject matter is sample spaces and probability, but the current discussion bares a striking similarity of the discussion of the <span class="xref std std-ref">sample_mean</span>. The reader may wonder if there is a connection between the <em>expectation of a random variable</em> and the <em>mean of a sample randomly drawn from the same underlying population</em> (if the reader does not wonder this, this sentence is meant to elicit said wonder, so start wondering). In fact, the formulae for expectations and sample means share a connection through the <span class="xref std std-ref">law_of_larger_numbers</span>.</p>
+<p>Recall the formula for the sample mean is written,</p>
+<div class="math">
+<p><img src="../../_images/math/1d8ec349413fcfddd35b3d576c58f2c237acf3d6.png" alt="\bar{x} = \frac{sum_{i=1}^{n} x_i }{n}"/></p>
+</div><p>However, when it is written like this, the connection to <em>expectations</em> is not so obvious. The index of this summation, <em>i</em>, is taken over the individual observations, rather than the <em>unique</em> observations. We may rewrite this formula, with the concept of <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#relative-frequency"><span class="std std-ref">Relative Frequency</span></a>, <img class="math" src="../../_images/math/76e10db9dd752386950db7836acd81283328092c.png" alt="p(x_i)"/>,</p>
+<div class="math">
+<p><img src="../../_images/math/cebf0ddfc3ae2566ceef4eab79da5cf2c7ec7e69.png" alt="\bar{x} = sum_{x_i \in S} {x_i \cdot p(x_i)}"/></p>
+</div><p>The connection is now more apparent. In the limit, as the number of observations in the sample <em>S</em> approaches the number of individuals in the population, the <em>relative frequency</em> of an observation becomes the <em>probability</em> of the individual occuring in the population.</p>
 </section>
 <section id="variance">
-<span id="id3"></span><h2>Variance<a class="headerlink" href="#variance" title="Permalink to this headline">#</a></h2>
+<span id="id5"></span><h2>Variance<a class="headerlink" href="#variance" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
 </section>
 <section id="transformation">
-<h2>Transformation<a class="headerlink" href="#transformation" title="Permalink to this headline">#</a></h2>
-<section id="expectation-of-a-sum">
-<h3>Expectation of a Sum<a class="headerlink" href="#expectation-of-a-sum" title="Permalink to this headline">#</a></h3>
+<h2>Transformation<a class="headerlink" href="#transformation" title="Permalink to this heading">#</a></h2>
+<section id="linearity-of-expectations">
+<span id="id6"></span><h3>Linearity of Expectations<a class="headerlink" href="#linearity-of-expectations" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Expectation of a Sum</p>
-<p>Suppose <img class="math" src="../../_images/math/ad6daa2629cc37a5667723358ec601482bea795c.png" alt="\mathcal{Y}"/> and <img class="math" src="../../_images/math/1d74e5da619d26fe1722fa453097be62e18ce3ce.png" alt="\mathcal{Z}"/> are random variables, not necessarily independent. If <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\mathcal{X} = \mathcal{Y] + \mathcal{Z}</span>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2021-11-15&gt; patch level 1
-L3 programming layer &lt;2022-01-21&gt;
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
-(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd))
-Runaway argument?
-{Y] + \mathcal {Z}$ \end {document} 
-! File ended while scanning use of \math&#64;egroup.
-&lt;inserted text&gt; 
-                \par 
-&lt;*&gt; math.tex
-            
-! Emergency stop.
-&lt;*&gt; math.tex
-            
-No pages of output.
-Transcript written on math.log.
-</p>
-</div>
-, then</p>
+<p>Suppose <img class="math" src="../../_images/math/ad6daa2629cc37a5667723358ec601482bea795c.png" alt="\mathcal{Y}"/> and <img class="math" src="../../_images/math/1d74e5da619d26fe1722fa453097be62e18ce3ce.png" alt="\mathcal{Z}"/> are random variables, not necessarily independent. If <img class="math" src="../../_images/math/9cd16ce1fd19665cf157d196cb786e06a25a0b48.png" alt="\mathcal{X} = \mathcal{Y} + \mathcal{Z}"/>, then</p>
 <div class="math">
 <p><img src="../../_images/math/4e72d6fafb90045a13178b32d2045ca918e06760.png" alt="E(\mathcal{X}) = E(\mathcal{Y}) + E(\mathcal{Z})"/></p>
-</div></div>
+</div></aside>
 <p>TODO</p>
 </section>
 <section id="variance-of-a-sum">
-<h3>Variance of a Sum<a class="headerlink" href="#variance-of-a-sum" title="Permalink to this headline">#</a></h3>
+<h3>Variance of a Sum<a class="headerlink" href="#variance-of-a-sum" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Variance of a Sum</p>
-<p>Suppose <img class="math" src="../../_images/math/ad6daa2629cc37a5667723358ec601482bea795c.png" alt="\mathcal{Y}"/> and <img class="math" src="../../_images/math/1d74e5da619d26fe1722fa453097be62e18ce3ce.png" alt="\mathcal{Z}"/> are <em>independent</em> random variables. If <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\mathcal{X} = \mathcal{Y] + \mathcal{Z}</span>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2021-11-15&gt; patch level 1
-L3 programming layer &lt;2022-01-21&gt;
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
-(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd))
-Runaway argument?
-{Y] + \mathcal {Z}$ \end {document} 
-! File ended while scanning use of \math&#64;egroup.
-&lt;inserted text&gt; 
-                \par 
-&lt;*&gt; math.tex
-            
-! Emergency stop.
-&lt;*&gt; math.tex
-            
-No pages of output.
-Transcript written on math.log.
-</p>
-</div>
-, then</p>
+<p>Suppose <img class="math" src="../../_images/math/ad6daa2629cc37a5667723358ec601482bea795c.png" alt="\mathcal{Y}"/> and <img class="math" src="../../_images/math/1d74e5da619d26fe1722fa453097be62e18ce3ce.png" alt="\mathcal{Z}"/> are <em>independent</em> random variables. If <img class="math" src="../../_images/math/9cd16ce1fd19665cf157d196cb786e06a25a0b48.png" alt="\mathcal{X} = \mathcal{Y} + \mathcal{Z}"/>, then</p>
 <div class="math">
 <p><img src="../../_images/math/fb7718aa8ae32b87baad8a070ad86b7119ca72b7.png" alt="Var(\mathcal{X}) = Var(\mathcal{Y}) + Var(\mathcal{Z})"/></p>
 </div><p>Or, in terms of standard deviations,</p>
 <div class="math">
 <p><img src="../../_images/math/b12f565bc0427b19c1bb4fdffe88f520a88720da.png" alt="\sigma_x = sqrt{\sigma_y^2 + \sigma_z^2}"/></p>
-</div></div>
+</div></aside>
 </section>
 </section>
 </section>
@@ -763,11 +713,10 @@ Transcript written on math.log.
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="02_CONDITIONAL.html"
@@ -787,10 +736,7 @@ Transcript written on math.log.
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -798,6 +744,7 @@ Transcript written on math.log.
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -822,7 +769,7 @@ Transcript written on math.log.
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation">Expectation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variance">Variance</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformation">Transformation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation-of-a-sum">Expectation of a Sum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linearity-of-expectations">Linearity of Expectations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variance-of-a-sum">Variance of a Sum</a></li>
 </ul>
 </li>
@@ -847,9 +794,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -873,8 +821,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

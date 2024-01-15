@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Basics &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'resources/calculator/00_BASICS';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Statistics" href="01_STATISTICS.html" />
     <link rel="prev" title="TI-84 Calculator" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -473,11 +494,20 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistics-diagnostics-mode">Statistics Diagnostics Mode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#initialize-lists">Initialize Lists</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create">Create</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#edit">Edit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-and-editing">Creating and Editing</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spreadsheet">Spreadsheet</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#store">Store</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delete">Delete</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-all-lists">Clear All Lists</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clrlist">ClrList</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clralllists">ClrAllLists</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operations">Operations</a><ul class="nav section-nav flex-column">
@@ -508,7 +538,7 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rand">rand</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#npr">nPr</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ncr">nCr</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">!</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#calculator-factorial-function">!</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#randint">randInt</a></li>
 </ul>
 </li>
@@ -523,113 +553,439 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="basics">
-<span id="calculator-basics"></span><h1>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">#</a></h1>
-<section id="lists">
-<span id="calculator-lists"></span><h2>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">#</a></h2>
-<p>TODO</p>
-<section id="create">
-<span id="calculator-list-create"></span><h3>Create<a class="headerlink" href="#create" title="Permalink to this headline">#</a></h3>
-<p>TODO</p>
+<span id="calculator-basics"></span><h1>Basics<a class="headerlink" href="#basics" title="Permalink to this heading">#</a></h1>
+<aside class="topic">
+<p class="topic-title">Command Syntax</p>
+<p>Sequences of commands on your calculator are written using the following syntax,</p>
+<blockquote>
+<div><p>&lt;type (mode)&gt; : &lt;selection&gt;</p>
+</div></blockquote>
+<p><em>type</em> will either be <code class="docutils literal notranslate"><span class="pre">BUTTON</span></code>, <code class="docutils literal notranslate"><span class="pre">MENU</span></code> or <code class="docutils literal notranslate"><span class="pre">NUMBER</span></code>. The optional <code class="docutils literal notranslate"><span class="pre">mode</span></code> argument indicates which mode on the calculator should be set, <strong>2ND</strong> or <strong>ALPHA</strong>, if any.</p>
+<p><code class="docutils literal notranslate"><span class="pre">BUTTON</span></code> indicates that button after the colon should be entered.</p>
+<p><code class="docutils literal notranslate"><span class="pre">MENU</span></code> indicates the menu after the colon should be selected using the arrow keys.</p>
+<p><code class="docutils literal notranslate"><span class="pre">NUMBER</span></code> indicates which selection from a menu should be made.</p>
+<p>Each command in a sequence of commands is written as an item in a list. For example,</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/81f7bb72c23c0ba6513b168293bb8af2290e1b0e.png" alt="\text{BUTTON (2ND)} : \text{MATH}"/></p></li>
+<li><p><img class="math" src="../../_images/math/c5440bcbbf841b3dc559ae3c44a83b05c17bc7cb.png" alt="\text{MENU} : \text{PRB}"/></p></li>
+<li><p><img class="math" src="../../_images/math/a92d32f552ff941b16553066656c734c31cc3b83.png" alt="4 : \text{RAND}"/></p></li>
+</ul>
+<p>Means to type the buttons <strong>2ND</strong> and then <strong>MATH</strong>, navigate to the <strong>PRB</strong> menu and finally select the <strong>RAND</strong> function.</p>
+</aside>
+<section id="setup">
+<span id="setup-checklist"></span><h2>Setup<a class="headerlink" href="#setup" title="Permalink to this heading">#</a></h2>
+<section id="statistics-diagnostics-mode">
+<span id="stat-diagnostics-mode"></span><h3>Statistics Diagnostics Mode<a class="headerlink" href="#statistics-diagnostics-mode" title="Permalink to this heading">#</a></h3>
+<p>Some output that will be useful in this class is suppressed by default. To ensure all relevant information is output, go to the <strong>MODE</strong> menu,</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/8d558996055ffd5d4a774540cbdce2112dd3565d.png" alt="\text{BUTTON} : \text{MODE}"/></p></li>
+</ul>
+<p>Scroll down to <code class="docutils literal notranslate"><span class="pre">Stat</span> <span class="pre">Diagnostics</span></code>. If necessary, switch <code class="docutils literal notranslate"><span class="pre">Stat</span> <span class="pre">Diagnostics</span></code> mode to <code class="docutils literal notranslate"><span class="pre">on</span></code>.</p>
 </section>
-<section id="edit">
-<span id="calculator-list-editing"></span><h3>Edit<a class="headerlink" href="#edit" title="Permalink to this headline">#</a></h3>
-<p>TODO</p>
+<section id="initialize-lists">
+<h3>Initialize Lists<a class="headerlink" href="#initialize-lists" title="Permalink to this heading">#</a></h3>
+<p>Sometimes lists are deleted from the calculator’s memory (intentionally or otherwise) and will need restored. To do this, execute the following,</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/5494e52b8dbea19bb2a6a29d96cebe88048f72cb.png" alt="\text{BUTTON} : \text{STAT}"/></p></li>
+<li><p><img class="math" src="../../_images/math/11d9df4f8b04a4d70125761415de661602cd67a7.png" alt="5 : \text{SETUPEDITOR}"/></p></li>
+</ul>
+</section>
+</section>
+<section id="lists">
+<span id="calculator-lists"></span><h2>Lists<a class="headerlink" href="#lists" title="Permalink to this heading">#</a></h2>
+<p>A <em>list</em> variable is the TI-83/84 family’s way of representing <a class="reference internal" href="../../notes/SET_THEORY.html#set-theory"><span class="std std-ref">sets</span></a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Technically, mathematical <em>sets</em> do not allow for duplicated values. A list on your TI is an <em>ordered</em> set, meaning duplicate values are distinguished by the order in which they occur, i.e. the following list on a TI</p>
+<div class="math">
+<p><img src="../../_images/math/38df10e99cedf96ec8a1bd0cdcbf9f80acd2758b.png" alt="L_1 = \{ 10, 10 \}"/></p>
+</div><p>has two elements, because each <em>10</em> also has an order associated with it. In pure set theory, both <em>10</em>’s would be considered the same element.</p>
+</div>
+<section id="creating-and-editing">
+<span id="calculator-list-create-edit"></span><h3>Creating and Editing<a class="headerlink" href="#creating-and-editing" title="Permalink to this heading">#</a></h3>
+<section id="spreadsheet">
+<span id="calculator-list-spreadsheet"></span><h4>Spreadsheet<a class="headerlink" href="#spreadsheet" title="Permalink to this heading">#</a></h4>
+<p>The easiest way to edit lists through the <em>Spreadsheet Editor</em>. The <em>Spreadsheet Editor</em> can be accessed with the following command sequence,</p>
+<aside class="topic">
+<p class="topic-title">List Editor</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/5494e52b8dbea19bb2a6a29d96cebe88048f72cb.png" alt="\text{BUTTON} : \text{STAT}"/></p></li>
+<li><p><img class="math" src="../../_images/math/1f887a0ad8e97f75ce2798feb7ef5593a488fb27.png" alt="1 : \text{EDIT}"/></p></li>
+</ul>
+</aside>
+<p>TODO: insert some pictures</p>
+<p>The first row of the list spreadsheet is a row of headers that identify which list corresponds to which column. Data can be entered directly into the lists by using the arrow keys and the <strong>ENTER</strong> button.</p>
+</section>
+<section id="store">
+<span id="calculator-list-store"></span><h4>Store<a class="headerlink" href="#store" title="Permalink to this heading">#</a></h4>
+<p>Alternatively, lists can be stored into list variables using the <img class="math" src="../../_images/math/2ec5326764235c4235a701cf3b5c5eb8bb724a93.png" alt="\implies"/> button.</p>
+<aside class="topic">
+<p class="topic-title">Store A List</p>
+<p>The following command sequence will store the numbers “<em>1</em>”, “<em>2</em>” and “<em>3</em>” in the <img class="math" src="../../_images/math/c996a9cf74053aef3abc50a074e4114264fc461f.png" alt="L_1"/> list,</p>
+<ul class="simple">
+<li><p><aside class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\text{BUTTON (2ND) } : \text{ { }</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd))
+Runaway argument?
+{ { }$ \end {document} 
+! File ended while scanning use of \text&#64;.
+&lt;inserted text&gt; 
+                \par 
+&lt;*&gt; math.tex
+            
+! Emergency stop.
+&lt;*&gt; math.tex
+            
+No pages of output.
+Transcript written on math.log.
+</p>
+</aside>
+</p></li>
+<li><p><img class="math" src="../../_images/math/82ec0fb8456fdd434c42a39c55b7ea03ec2f66b1.png" alt="\text{BUTTON} : \text{ 1 }"/></p></li>
+<li><p><img class="math" src="../../_images/math/d075d3e25e792eecd9c2311b49daf0ae206a2e95.png" alt="\text{BUTTON} : \text{ , }"/></p></li>
+<li><p><img class="math" src="../../_images/math/9578dd8a01d8cb33ce260f0e1eced4e6ab324a2b.png" alt="\text{BUTTON} : \text{ 2 }"/></p></li>
+<li><p><img class="math" src="../../_images/math/d075d3e25e792eecd9c2311b49daf0ae206a2e95.png" alt="\text{BUTTON} : \text{ , }"/></p></li>
+<li><p><img class="math" src="../../_images/math/2207ce9086e4981389bf0d1b3e27925342e23fb2.png" alt="\text{BUTTON} : \text{ 3 }"/></p></li>
+<li><p><img class="math" src="../../_images/math/d075d3e25e792eecd9c2311b49daf0ae206a2e95.png" alt="\text{BUTTON} : \text{ , }"/></p></li>
+<li><p><aside class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\text{BUTTON (2ND) } : \text{ } }</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Extra }, or forgotten $.
+l.15 ...ectfont $\text{BUTTON (2ND) } : \text{ } }
+                                                  $
+[1] (./math.aux) )
+(see the transcript file for additional information)
+Output written on math.dvi (1 page, 260 bytes).
+Transcript written on math.log.
+</p>
+</aside>
+</p></li>
+<li><p>:math:<a href="#id1"><span class="problematic" id="id2">`</span></a>text{BUTTON} : implies</p></li>
+<li><p><img class="math" src="../../_images/math/7e0487c261eea119699ca908280ba9477d60c977.png" alt="\text{BUTTON} : L_1"/></p></li>
+</ul>
+</aside>
+<p>Entering this sequence of buttons will be shown on the main screen of the calculator as follows,</p>
+<div class="math">
+<p><img src="../../_images/math/bb9e83a3d7c889396f734fcf8ed795eb6551f492.png" alt="\{ 1, 2, 3 \} \implies L_1"/></p>
+</div></section>
 </section>
 <section id="delete">
-<span id="calculator-list-deleting"></span><h3>Delete<a class="headerlink" href="#delete" title="Permalink to this headline">#</a></h3>
+<span id="calculator-list-deleting"></span><h3>Delete<a class="headerlink" href="#delete" title="Permalink to this heading">#</a></h3>
+<section id="clrlist">
+<h4>ClrList<a class="headerlink" href="#clrlist" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
-<section id="clear-all-lists">
-<h4>Clear All Lists<a class="headerlink" href="#clear-all-lists" title="Permalink to this headline">#</a></h4>
+<aside class="topic">
+<p class="topic-title">Clear A Single List</p>
+<p>The following command sequence will clear the values stored in <img class="math" src="../../_images/math/c996a9cf74053aef3abc50a074e4114264fc461f.png" alt="L_1"/>,</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/5494e52b8dbea19bb2a6a29d96cebe88048f72cb.png" alt="\text{BUTTON} : \text{STAT}"/></p></li>
+<li><p><img class="math" src="../../_images/math/6278c0f1e2fa1b94fa6b0ae9791cc0fd84b09b93.png" alt="4 : CLRLIST"/></p></li>
+<li><p><img class="math" src="../../_images/math/429269a95ec9f0b3afc27d7a250228ddbf639046.png" alt="\text{BUTTON (2ND)} : L_1"/></p></li>
+</ul>
+</aside>
+</section>
+<section id="clralllists">
+<h4>ClrAllLists<a class="headerlink" href="#clralllists" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Clear All Lists</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/d15c086195e4c5428746bf724fca6ca10a9ca583.png" alt="\text{BUTTON (2ND)} : \text{MEM}"/></p></li>
+<li><p><img class="math" src="../../_images/math/ad419ea52ab12b0151d8d2118bea1c2045ebe48c.png" alt="4 : \text{CLRALLLISTS}"/></p></li>
+</ul>
+</aside>
 </section>
 </section>
 <section id="operations">
-<span id="calculator-list-operations"></span><h3>Operations<a class="headerlink" href="#operations" title="Permalink to this headline">#</a></h3>
+<span id="calculator-list-operations"></span><h3>Operations<a class="headerlink" href="#operations" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 <section id="dim">
-<span id="calculator-dim-operation"></span><h4>dim<a class="headerlink" href="#dim" title="Permalink to this headline">#</a></h4>
+<span id="calculator-dim-operation"></span><h4>dim<a class="headerlink" href="#dim" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>dim</em> stands for <em>dimension</em>. In other words, it tells you the <em>dimension</em> of the list.</p>
+</div>
+<aside class="topic">
+<p class="topic-title">Calculate List Length</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/c09bebb31aba6534d0ec9118eac0b736b3013f76.png" alt="\text{BUTTON (2ND)} : \text{LIST}"/></p></li>
+<li><p><img class="math" src="../../_images/math/979ca3e6d201fdf7f99dfda8b1a43722174e8f34.png" alt="\text{MENU} : \text{OPS}"/></p></li>
+<li><p><img class="math" src="../../_images/math/4cb1ca9005c93ee6efa53b464e4e43284fa011fa.png" alt="3 : \text{DIM}"/></p></li>
+</ul>
+</aside>
 </section>
 <section id="seq">
-<span id="calculator-seq-operation"></span><h4>seq<a class="headerlink" href="#seq" title="Permalink to this headline">#</a></h4>
+<span id="calculator-seq-operation"></span><h4>seq<a class="headerlink" href="#seq" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Sequence Editor</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/c09bebb31aba6534d0ec9118eac0b736b3013f76.png" alt="\text{BUTTON (2ND)} : \text{LIST}"/></p></li>
+<li><p><img class="math" src="../../_images/math/979ca3e6d201fdf7f99dfda8b1a43722174e8f34.png" alt="\text{MENU} : \text{OPS}"/></p></li>
+<li><p><aside class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">5 : \Text{SEQ(}</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Undefined control sequence.
+l.15 \fontsize{12}{14}\selectfont $5 : \Text
+                                            {SEQ(}$
+[1] (./math.aux) )
+(see the transcript file for additional information)
+Output written on math.dvi (1 page, 304 bytes).
+Transcript written on math.log.
+</p>
+</aside>
+</p></li>
+</ul>
+</aside>
+<p>This will bring up the
+.. _calculator_cumsum_operation:</p>
 </section>
 <section id="cumsum">
-<span id="calculator-cumsum-operation"></span><h4>cumSum<a class="headerlink" href="#cumsum" title="Permalink to this headline">#</a></h4>
+<h4>cumSum<a class="headerlink" href="#cumsum" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Cumulative Sum</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/c09bebb31aba6534d0ec9118eac0b736b3013f76.png" alt="\text{BUTTON (2ND)} : \text{LIST}"/></p></li>
+<li><p><img class="math" src="../../_images/math/979ca3e6d201fdf7f99dfda8b1a43722174e8f34.png" alt="\text{MENU} : \text{OPS}"/></p></li>
+<li><p><aside class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">6 : \Text{SEQ(}</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Undefined control sequence.
+l.15 \fontsize{12}{14}\selectfont $6 : \Text
+                                            {SEQ(}$
+[1] (./math.aux) )
+(see the transcript file for additional information)
+Output written on math.dvi (1 page, 304 bytes).
+Transcript written on math.log.
+</p>
+</aside>
+</p></li>
+<li><p><img class="math" src="../../_images/math/429269a95ec9f0b3afc27d7a250228ddbf639046.png" alt="\text{BUTTON (2ND)} : L_1"/></p></li>
+</ul>
+</aside>
 </section>
 <section id="augment">
-<span id="calculator-augment-operation"></span><h4>augment<a class="headerlink" href="#augment" title="Permalink to this headline">#</a></h4>
+<span id="calculator-augment-operation"></span><h4>augment<a class="headerlink" href="#augment" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Augment A List</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/c09bebb31aba6534d0ec9118eac0b736b3013f76.png" alt="\text{BUTTON (2ND)} : \text{LIST}"/></p></li>
+<li><p><img class="math" src="../../_images/math/979ca3e6d201fdf7f99dfda8b1a43722174e8f34.png" alt="\text{MENU} : \text{OPS}"/></p></li>
+<li><p><aside class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">9 : \Text{AUGMENT(}</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Undefined control sequence.
+l.15 \fontsize{12}{14}\selectfont $9 : \Text
+                                            {AUGMENT(}$
+[1] (./math.aux) )
+(see the transcript file for additional information)
+Output written on math.dvi (1 page, 312 bytes).
+Transcript written on math.log.
+</p>
+</aside>
+</p></li>
+<li><p><img class="math" src="../../_images/math/429269a95ec9f0b3afc27d7a250228ddbf639046.png" alt="\text{BUTTON (2ND)} : L_1"/></p></li>
+</ul>
+</aside>
 </section>
 </section>
 <section id="math">
-<span id="calculator-list-math"></span><h3>Math<a class="headerlink" href="#math" title="Permalink to this headline">#</a></h3>
+<span id="calculator-list-math"></span><h3>Math<a class="headerlink" href="#math" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
 <section id="min">
-<span id="calculator-min-math"></span><h4>min<a class="headerlink" href="#min" title="Permalink to this headline">#</a></h4>
+<span id="calculator-min-math"></span><h4>min<a class="headerlink" href="#min" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="max">
-<span id="calculator-max-math"></span><h4>max<a class="headerlink" href="#max" title="Permalink to this headline">#</a></h4>
+<span id="calculator-max-math"></span><h4>max<a class="headerlink" href="#max" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="mean">
-<span id="calculator-mean-math"></span><h4>mean<a class="headerlink" href="#mean" title="Permalink to this headline">#</a></h4>
+<span id="calculator-mean-math"></span><h4>mean<a class="headerlink" href="#mean" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="median">
-<span id="calculator-median-math"></span><h4>median<a class="headerlink" href="#median" title="Permalink to this headline">#</a></h4>
+<span id="calculator-median-math"></span><h4>median<a class="headerlink" href="#median" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="sum">
-<span id="calculator-sum-math"></span><h4>sum<a class="headerlink" href="#sum" title="Permalink to this headline">#</a></h4>
+<span id="calculator-sum-math"></span><h4>sum<a class="headerlink" href="#sum" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="stddev">
-<span id="calculator-stddev-math"></span><h4>stdDev<a class="headerlink" href="#stddev" title="Permalink to this headline">#</a></h4>
+<span id="calculator-stddev-math"></span><h4>stdDev<a class="headerlink" href="#stddev" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 </section>
 </section>
 <section id="variables">
-<span id="calculator-variables"></span><h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">#</a></h2>
+<span id="calculator-variables"></span><h2>Variables<a class="headerlink" href="#variables" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
 <section id="data-variables">
-<h3>Data Variables<a class="headerlink" href="#data-variables" title="Permalink to this headline">#</a></h3>
+<h3>Data Variables<a class="headerlink" href="#data-variables" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 </section>
 <section id="function-variables">
-<h3>Function Variables<a class="headerlink" href="#function-variables" title="Permalink to this headline">#</a></h3>
+<h3>Function Variables<a class="headerlink" href="#function-variables" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 </section>
 </section>
 <section id="functions">
-<span id="calculator-functions"></span><h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">#</a></h2>
+<span id="calculator-functions"></span><h2>Functions<a class="headerlink" href="#functions" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
 <section id="probability-functions">
-<span id="calculator-probability-functions"></span><h3>Probability Functions<a class="headerlink" href="#probability-functions" title="Permalink to this headline">#</a></h3>
+<span id="calculator-probability-functions"></span><h3>Probability Functions<a class="headerlink" href="#probability-functions" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 <section id="rand">
-<span id="calculator-rand-function"></span><h4>rand<a class="headerlink" href="#rand" title="Permalink to this headline">#</a></h4>
+<span id="calculator-rand-function"></span><h4>rand<a class="headerlink" href="#rand" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="npr">
-<span id="calculator-permutation-function"></span><h4>nPr<a class="headerlink" href="#npr" title="Permalink to this headline">#</a></h4>
+<span id="calculator-permutation-function"></span><h4>nPr<a class="headerlink" href="#npr" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="ncr">
-<span id="calculator-combination-function"></span><h4>nCr<a class="headerlink" href="#ncr" title="Permalink to this headline">#</a></h4>
+<span id="calculator-combination-function"></span><h4>nCr<a class="headerlink" href="#ncr" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
-<section id="id1">
-<h4>!<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h4>
+<section id="calculator-factorial-function">
+<span id="id3"></span><h4>!<a class="headerlink" href="#calculator-factorial-function" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="randint">
-<span id="calculator-randint-function"></span><h4>randInt<a class="headerlink" href="#randint" title="Permalink to this headline">#</a></h4>
+<span id="calculator-randint-function"></span><h4>randInt<a class="headerlink" href="#randint" title="Permalink to this heading">#</a></h4>
+<p>TODO</p>
 </section>
 </section>
 </section>
@@ -641,11 +997,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="index.html"
@@ -665,10 +1020,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -677,17 +1029,27 @@ document.write(`
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistics-diagnostics-mode">Statistics Diagnostics Mode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#initialize-lists">Initialize Lists</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create">Create</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#edit">Edit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-and-editing">Creating and Editing</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spreadsheet">Spreadsheet</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#store">Store</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delete">Delete</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-all-lists">Clear All Lists</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clrlist">ClrList</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clralllists">ClrAllLists</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operations">Operations</a><ul class="nav section-nav flex-column">
@@ -718,7 +1080,7 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rand">rand</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#npr">nPr</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ncr">nCr</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">!</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#calculator-factorial-function">!</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#randint">randInt</a></li>
 </ul>
 </li>
@@ -745,9 +1107,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -771,8 +1134,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Normal Distribution &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/distributions/04_NORMAL';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Hypothesis Testing" href="../hypotheses/index.html" />
     <link rel="prev" title="Uniform Distribution" href="03_UNIFORM.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -515,15 +536,15 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="normal-distribution">
-<span id="id1"></span><h1>Normal Distribution<a class="headerlink" href="#normal-distribution" title="Permalink to this headline">#</a></h1>
+<span id="id1"></span><h1>Normal Distribution<a class="headerlink" href="#normal-distribution" title="Permalink to this heading">#</a></h1>
 <p>The <strong>Normal Distribution</strong> is the foundation of <a class="reference internal" href="../experiments/03_DATA.html#inferential-statistic"><span class="std std-ref">inferential statistics</span></a>. The <strong>Normal Distribution</strong> represents the <em>ideal population</em> distribution for a sample that is approximately normal.</p>
 <section id="normality">
-<span id="id2"></span><h2>Normality<a class="headerlink" href="#normality" title="Permalink to this headline">#</a></h2>
+<span id="id2"></span><h2>Normality<a class="headerlink" href="#normality" title="Permalink to this heading">#</a></h2>
 <section id="introduction">
-<span id="normality-introduction"></span><h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h3>
+<span id="normality-introduction"></span><h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h3>
 <p>Normality arises when observations being randomly drawn from a <a class="reference internal" href="../experiments/00_INTRODUCTION.html#population"><span class="std std-ref">Population</span></a> are <em>independent</em> and <em>identically distributed</em>. In other words, if a series of experiments are performed where each experiment is the same as the last in every respect, then the outcomes of all the experiments taken together should be approximately normal.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -551,7 +572,7 @@ document.write(`
 </ol>
 </section>
 <section id="normal-calculations">
-<span id="id3"></span><h3>Normal Calculations<a class="headerlink" href="#normal-calculations" title="Permalink to this headline">#</a></h3>
+<span id="id3"></span><h3>Normal Calculations<a class="headerlink" href="#normal-calculations" title="Permalink to this heading">#</a></h3>
 <p>When we calculate Normal probabilities, we usually work with <em>Z distributions</em>, where each observation <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> has been converted into a <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#z-score"><span class="std std-ref">Z Score</span></a> <img class="math" src="../../_images/math/9b48cf83ba01291162ac7d5298ce9a45261a900d.png" alt="z_i"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/9d48a5caf4fb1daed5e32d1ce236b58475e84f12.png" alt="z_i = \frac{x_i - \mu}{\sigma}"/></p>
@@ -564,7 +585,7 @@ document.write(`
 <p><img src="../../_images/math/22eda12b5ac2abfe54aa4637c28615784a9ca62d.png" alt="\mathcal{Z} \sim \mathcal{N}(0, 1)"/></p>
 </div><p>TODO</p>
 <section id="cumulative-distribution-function">
-<span id="normal-cdf"></span><h4>Cumulative Distribution Function<a class="headerlink" href="#cumulative-distribution-function" title="Permalink to this headline">#</a></h4>
+<span id="normal-cdf"></span><h4>Cumulative Distribution Function<a class="headerlink" href="#cumulative-distribution-function" title="Permalink to this heading">#</a></h4>
 <p>The cumulative distribution function (CDF) for the Normal distribution is an extremely important function in mathematics. Symbolically, it is written,</p>
 <div class="math">
 <p><img src="../../_images/math/b59e0fa425f21cdfcff06dbf6797308c416177c0.png" alt="\Phi(z) = P(\mathcal{Z} \leq z) = p"/></p>
@@ -576,7 +597,7 @@ document.write(`
 </figure>
 </section>
 <section id="inverse-cumulative-distribution-function">
-<span id="normal-inverse-cdf"></span><h4>Inverse Cumulative Distribution Function<a class="headerlink" href="#inverse-cumulative-distribution-function" title="Permalink to this headline">#</a></h4>
+<span id="normal-inverse-cdf"></span><h4>Inverse Cumulative Distribution Function<a class="headerlink" href="#inverse-cumulative-distribution-function" title="Permalink to this heading">#</a></h4>
 <p>Every well-behaved function has an inverse. The CDF of the Normal Distribution is no different. The inverse CDF is denoted,</p>
 <div class="math">
 <p><img src="../../_images/math/4abed2f7b1ac148ea8365881bca883dc03037359.png" alt="\Phi^{-1}(p) = z"/></p>
@@ -589,12 +610,12 @@ document.write(`
 </section>
 </section>
 <section id="symmetry">
-<span id="normal-symmetry"></span><h3>Symmetry<a class="headerlink" href="#symmetry" title="Permalink to this headline">#</a></h3>
+<span id="normal-symmetry"></span><h3>Symmetry<a class="headerlink" href="#symmetry" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 </section>
 </section>
 <section id="z-tables">
-<span id="z-table-reference"></span><h2>Z-Tables<a class="headerlink" href="#z-tables" title="Permalink to this headline">#</a></h2>
+<span id="z-table-reference"></span><h2>Z-Tables<a class="headerlink" href="#z-tables" title="Permalink to this heading">#</a></h2>
 <p>These days we have calculators that can perform almost any calculation you can imagine, but back in the old days, aspiring mathematicians needed to be familiar with <em>tables</em>. Many functions in trigonometry and algebra do not have closed form algorithms for their exact calculation, so their values must be looked up in a <em>table</em>.</p>
 <p>For example, <img class="math" src="../../_images/math/fb982de8f45c7385e7ddfd680b2456e77d320f72.png" alt="sin(x)"/> is a trigonometric quantity defined as the ratio of sides in a right triangle. It is, in general, impossible to calculate the exact value of <img class="math" src="../../_images/math/fb982de8f45c7385e7ddfd680b2456e77d320f72.png" alt="sin(x)"/> for an arbitrary <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> without more advanced techniques introduced in Calculus. For this reason, before the advent of modern computing, values of <em>sin</em> were tabulated in tables like the following,</p>
 <p>(TODO: insert picture)</p>
@@ -610,22 +631,22 @@ document.write(`
 <p>This tells us that <cite>92.65%</cite> of the Standard Normal distribution has a distance less than or equal to 1.45 standard deviations from the mean.</p>
 </section>
 <section id="empirical-rule">
-<span id="id4"></span><h2>Empirical Rule<a class="headerlink" href="#empirical-rule" title="Permalink to this headline">#</a></h2>
+<span id="id4"></span><h2>Empirical Rule<a class="headerlink" href="#empirical-rule" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Empirical Rule</p>
 <p>68% of a distribution is within one standard deviation of the mean.</p>
 <p>95% of a distribution is within two standard deviations of the mean.</p>
 <p>99% of a distribution is within three standard deviations of the mean.</p>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title">Empirical Rule (Mathematical Version, x Distributions)</p>
 <div class="math">
 <p><img src="../../_images/math/2d97dc69d0eef9a613c9395c65cb8663ad0332aa.png" alt="P(\bar{x} - \sigma \leq \mathcal{X} \leq \bar{x} + \sigma) = 0.68"/></p>
 </div><div class="math">
 <p><img src="../../_images/math/a8ef109d3a66ae0cd051b6f13cedaf2d720fc064.png" alt="P(\bar{x} - 2 \cdot \sigma \leq \mathcal{X} \leq \bar{x} + 2 \cdot \sigma) = 0.95"/></p>
-</div></div>
-<div class="topic">
+</div></aside>
+<aside class="topic">
 <p class="topic-title">Empirical Rule (Mathematical Version, z Distributions)</p>
 <div class="math">
 <p><img src="../../_images/math/237870855f2746e9b5496289a5f82b119c4b3f83.png" alt="P(-1 \leq \mathcal{Z} \leq 1) = 0.68"/></p>
@@ -633,25 +654,25 @@ document.write(`
 <p><img src="../../_images/math/7805e2bae072c61235c1f3d57730803ffa88d581.png" alt="P(-2 \leq \mathcal{Z} \leq 2) = 0.95"/></p>
 </div><div class="math">
 <p><img src="../../_images/math/dbfba8a4d12ac272f366d7872fef560937192c53.png" alt="P(-3 \leq \mathcal{Z} \leq 3) = 0.99"/></p>
-</div></div>
+</div></aside>
 <p>The <em>Empirical Rule</em> can be visualized through the area underneath the Normal curve,</p>
 <img alt="../../_images/normal_distribution_empirical_rule.png" class="align-center" src="../../_images/normal_distribution_empirical_rule.png" />
 <p>TODO</p>
 </section>
 <section id="parameters">
-<span id="normal-parameters"></span><h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">#</a></h2>
+<span id="normal-parameters"></span><h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">#</a></h2>
 <section id="mean">
-<h3>Mean<a class="headerlink" href="#mean" title="Permalink to this headline">#</a></h3>
+<h3>Mean<a class="headerlink" href="#mean" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 <section id="varying-the-mean-parameter">
-<h4>Varying the Mean Parameter<a class="headerlink" href="#varying-the-mean-parameter" title="Permalink to this headline">#</a></h4>
+<h4>Varying the Mean Parameter<a class="headerlink" href="#varying-the-mean-parameter" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 </section>
 <section id="standard-deviation">
-<h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">#</a></h3>
+<h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this heading">#</a></h3>
 <section id="varying-the-standard-deviation-parameter">
-<h4>Varying the Standard Deviation Parameter<a class="headerlink" href="#varying-the-standard-deviation-parameter" title="Permalink to this headline">#</a></h4>
+<h4>Varying the Standard Deviation Parameter<a class="headerlink" href="#varying-the-standard-deviation-parameter" title="Permalink to this heading">#</a></h4>
 <p>By changing the <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#standard-deviation"><span class="std std-ref">Standard Deviation</span></a>, the shape of the distribution changes. As the <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#standard-deviation"><span class="std std-ref">Standard Deviation</span></a> increase, the graph spreads out. This is because <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#standard-deviation"><span class="std std-ref">Standard Deviation</span></a> is a <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#measures-of-variation"><span class="std std-ref">measure of variation</span></a>. In other words, <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#standard-deviation"><span class="std std-ref">Standard Deviation</span></a> quantifies how the distribution is spread out along the <em>x</em>-axis.</p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/3d3051ca9623335482f2e77b110810ce/normal_distribution_parameters.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/5daa779cc6596fe3f03024eb483ab286/normal_distribution_parameters.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/056e28716a2fdab553980ab47daddf63/normal_distribution_parameters.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f1c2894c5824918a9a8e8fda0b9e34d3/normal_distribution_parameters.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
@@ -660,9 +681,9 @@ document.write(`
 </section>
 </section>
 <section id="summary">
-<h3>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">#</a></h3>
+<h3>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h3>
 <p>To summarize,</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Effects of Varying The Normal Parameters</p>
 <ol class="arabic">
 <li><p>By changing the mean of the <em>Normal distribution</em>, the <em>location</em> of the distribution changes.</p>
@@ -682,14 +703,14 @@ document.write(`
 </div></blockquote>
 </li>
 </ol>
-</div>
+</aside>
 </section>
 </section>
 <section id="assessing-normality">
-<span id="id5"></span><h2>Assessing Normality<a class="headerlink" href="#assessing-normality" title="Permalink to this headline">#</a></h2>
+<span id="id5"></span><h2>Assessing Normality<a class="headerlink" href="#assessing-normality" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
 <section id="qq-plots">
-<span id="id6"></span><h3>QQ Plots<a class="headerlink" href="#qq-plots" title="Permalink to this headline">#</a></h3>
+<span id="id6"></span><h3>QQ Plots<a class="headerlink" href="#qq-plots" title="Permalink to this heading">#</a></h3>
 <p>A common technique for assessing the <em>normality</em> of a sample distribution is to generate a <em>Quantile-Quantile Plot</em>, or <em>QQ Plot</em> for short. QQ plots provide a visual representation of a sample’s <em>normality</em> by plotting the percentiles of a sample distribution against the percentiles of the theoretical Normal Distribution.</p>
 <p>The exact steps for generating a QQ plot are given below,</p>
 <ol class="arabic simple">
@@ -718,7 +739,7 @@ document.write(`
 </div><p>Then, we construct the theoretical percentiles of the Standard Normal distribution for a sample of size <img class="math" src="../../_images/math/3c11a2cfe6a421231b6c392290b07d68a6c08dbc.png" alt="n = 4"/>. To do so, we take the inverse CDF of the sample percentile,</p>
 <div class="math">
 <p><img src="../../_images/math/a8984bd885ec3a035a10d3489698957cca5aa1fb.png" alt="\Phi^{-1}(\frac{i}{n+1})"/></p>
-</div><p>For <img class="math" src="../../_images/math/ca9f4615f9bf38f29bde55132f27ea64cded5f2a.png" alt="i = 1, 2, ... , n"/>. If it is surprising the denominator is <img class="math" src="../../_images/math/3257ff5f24446ed5552c93f0804681a7ec8d3920.png" alt="n+1"/> instead of <cite>n</cite>, read through the <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#id22"><span class="std std-ref">order statistics section</span></a>. There are <em>n</em> observations, but these values divide the number line into <em>n + 1</em> intervals.</p>
+</div><p>For <img class="math" src="../../_images/math/3fdf6c97b36e53be4bb07666e971099ba1e50b15.png" alt="i = 1, 2, ... , n `. Note the denominator of :math:`n+1"/>. If it is surprising the denominator is <img class="math" src="../../_images/math/3257ff5f24446ed5552c93f0804681a7ec8d3920.png" alt="n+1"/> instead of <cite>n</cite>, read through the <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#id22"><span class="std std-ref">order statistics section</span></a>. There are <em>n</em> observations, but these values divide the number line into <em>n + 1</em> intervals.</p>
 <p>In this example, we would find,</p>
 <div class="math">
 <p><img src="../../_images/math/67d990cbc8e386f85e87973fd1814452c9dc1d49.png" alt="Z_{ \text{theoretical} } = \{ \Phi^{-1}(\frac{1}{5}), \Phi^{-1}(\frac{2}{5}), \Phi^{-1}(\frac{3}{5}), \Phi^{-1}(\frac{4}{5}) \}"/></p>
@@ -741,24 +762,24 @@ document.write(`
 </section>
 </section>
 <section id="relation-to-other-distributions">
-<h2>Relation To Other Distributions<a class="headerlink" href="#relation-to-other-distributions" title="Permalink to this headline">#</a></h2>
+<h2>Relation To Other Distributions<a class="headerlink" href="#relation-to-other-distributions" title="Permalink to this heading">#</a></h2>
 <p>The <a class="reference internal" href="#normal-distribution"><span class="std std-ref">Normal Distribution</span></a> is deeply connected with many different areas of mathematics. It pops up everywhere, from <a class="reference external" href="https://en.wikipedia.org/wiki/Wave_packet">quantum mechanics</a> to <a class="reference external" href="https://www.investopedia.com/articles/investing/102014/lognormal-and-normal-distribution.asp#:~:text=When%20the%20investor%20continuously%20compounds,time%20in%20a%20normal%20distribution.">finance</a>. The reach of the <em>normal distribution</em> is far and wide.</p>
 <section id="normal-as-an-approximation-of-the-binomial">
-<span id="normal-binomial-approximation"></span><h3>Normal As An Approximation of the Binomial<a class="headerlink" href="#normal-as-an-approximation-of-the-binomial" title="Permalink to this headline">#</a></h3>
+<span id="normal-binomial-approximation"></span><h3>Normal As An Approximation of the Binomial<a class="headerlink" href="#normal-as-an-approximation-of-the-binomial" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Conditions for Approximation</p>
 <p><img class="math" src="../../_images/math/6b30de0e332b92010da2762c839988229faa518e.png" alt="n \cdot p \geq 10"/></p>
 <p><img class="math" src="../../_images/math/9c2f23d9afa387a8e41ff4fdbc09d4cd3383bd14.png" alt="n \cdot (1 - p) \geq 10"/></p>
-</div>
+</aside>
 </section>
 <section id="poisson-as-an-approximation-of-the-normal">
-<span id="normal-poisson-approximation"></span><h3>Poisson As An Approximation of the Normal<a class="headerlink" href="#poisson-as-an-approximation-of-the-normal" title="Permalink to this headline">#</a></h3>
+<span id="normal-poisson-approximation"></span><h3>Poisson As An Approximation of the Normal<a class="headerlink" href="#poisson-as-an-approximation-of-the-normal" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Conditions for Approximation</p>
 <p>:math:`     lambda leq leq 0`</p>
-</div>
+</aside>
 </section>
 </section>
 </section>
@@ -769,11 +790,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="03_UNIFORM.html"
@@ -793,10 +813,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -804,6 +821,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -865,9 +883,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -891,8 +910,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

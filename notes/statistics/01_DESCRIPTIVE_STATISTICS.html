@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Point Estimation &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/statistics/01_DESCRIPTIVE_STATISTICS';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Sampling Distributions" href="02_SAMPLING_DISTRIBUTIONS.html" />
     <link rel="prev" title="Graphical Representations of Data" href="00_GRAPHICAL_REPRESENTATIONS.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -570,22 +591,18 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="point-estimation">
-<span id="id1"></span><h1>Point Estimation<a class="headerlink" href="#point-estimation" title="Permalink to this headline">#</a></h1>
+<span id="id1"></span><h1>Point Estimation<a class="headerlink" href="#point-estimation" title="Permalink to this heading">#</a></h1>
 <p>A sample of data is characterized numerically by <em>point estimates</em> of <em>sample statistics</em>.</p>
 <section id="motivation">
-<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h2>
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this heading">#</a></h2>
 <p>In the first few sections, we discussed the idea of <em>drawing a sample</em> and using it to make inferences about the <em>population</em> . Now we begin the study of how to apply these ideas quantitatively and make them more exact.</p>
 <p>We want to know the <em>parameters</em> of a population, but we do not have the entire population on hand to determine the values of these <em>parameters</em>. So, we <em>sample</em> the population and then calculate <em>point estimates</em>. <em>Point estimates</em> are <em>sample statistics</em> that represent our best guess of the <em>true</em> value of population <em>parameters</em>.</p>
 <p>For example, in this section, we will introduce the idea of the <em>sample mean</em>, <img class="math" src="../../_images/math/2cd6777983e1466983489d7c6b879128472f5485.png" alt="\bar{x}"/>. The <em>sample mean</em> is a <em>sample statistic</em>; It is an <em>estimate</em>. This in contrast to the <em>population mean</em>, <img class="math" src="../../_images/math/18b19e5f315a11447a2f609580b5706d0feb0e26.png" alt="\mu"/>, the <em>true</em> value of <img class="math" src="../../_images/math/2cd6777983e1466983489d7c6b879128472f5485.png" alt="\bar{x}"/> we would get if we had access to entire population.</p>
 <p>In general, as we move through this section, keep in mind the following table,</p>
 <table class="table">
-<colgroup>
-<col style="width: 55%" />
-<col style="width: 45%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Population Parameter</p></td>
 <td><p>Sample Statistic</p></td>
@@ -600,19 +617,19 @@ document.write(`
 </table>
 <p>The left hand column of this table represents the <em>true</em> value of a quantity that describes the population <em>distribution</em>. The right hand column represents the <em>estimated</em> value of this quantity as derived from the sample <em>distribution</em>.</p>
 <p>As we go through this section, keep in mind all the point estimators we introduce are sample statistics, not population parameters. In general, the population paramter is <em>never</em> known. We must always <em>estimate</em> its value.</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Population Parameter</p>
 <p>The true value of a population characteristic.</p>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title">Sample Statistic</p>
 <p>An estimated value of a population characteristic calculated from a sample of the population.</p>
-</div>
+</aside>
 </section>
 <section id="definitions">
-<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
+<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this heading">#</a></h2>
 <section id="observation">
-<span id="id2"></span><h3>Observation<a class="headerlink" href="#observation" title="Permalink to this headline">#</a></h3>
+<span id="id2"></span><h3>Observation<a class="headerlink" href="#observation" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/></p>
 </dd>
@@ -622,7 +639,7 @@ document.write(`
 <p>The subscript <em>i</em> is called the <em>index</em> of the observation. If the sample is ordered, the <em>index</em> corresponds to the order in which the observation was made, i.e. <img class="math" src="../../_images/math/e564d43fd97a8499ef8ceb6167286e4ae267704d.png" alt="x_1"/> is the first observation, <img class="math" src="../../_images/math/3f72613f77d1720ad07cc485a55e4a2fd2a96947.png" alt="x_2"/> is the second observation, etc.</p>
 </section>
 <section id="sample">
-<span id="id3"></span><h3>Sample<a class="headerlink" href="#sample" title="Permalink to this headline">#</a></h3>
+<span id="id3"></span><h3>Sample<a class="headerlink" href="#sample" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/ed7e253563629bdf08774a59384b6111fd049323.png" alt="S = \{ x_1, x_2, ..., x_{n-1}, x_n \}"/></p>
 </dd>
@@ -632,7 +649,7 @@ document.write(`
 <p>The number of samples, <em>n</em>, is called the <em>sample size</em>.</p>
 </section>
 <section id="frequency">
-<span id="id4"></span><h3>Frequency<a class="headerlink" href="#frequency" title="Permalink to this headline">#</a></h3>
+<span id="id4"></span><h3>Frequency<a class="headerlink" href="#frequency" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/905bd3c0445049b5e64f182e7238f2da96ada209.png" alt="f(x_i)"/></p>
 </dd>
@@ -641,7 +658,7 @@ document.write(`
 </dl>
 </section>
 <section id="relative-frequency">
-<span id="id5"></span><h3>Relative Frequency<a class="headerlink" href="#relative-frequency" title="Permalink to this headline">#</a></h3>
+<span id="id5"></span><h3>Relative Frequency<a class="headerlink" href="#relative-frequency" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/76e10db9dd752386950db7836acd81283328092c.png" alt="p(x_i)"/></p>
 </dd>
@@ -653,7 +670,7 @@ document.write(`
 <p><img src="../../_images/math/1acef7cc99c1d5498bbd3358da41e1c821653ca1.png" alt="p(x_i) = \frac{f(x_i)}{n}"/></p>
 </div></section>
 <section id="cumulative-frequency">
-<span id="id6"></span><h3>Cumulative Frequency<a class="headerlink" href="#cumulative-frequency" title="Permalink to this headline">#</a></h3>
+<span id="id6"></span><h3>Cumulative Frequency<a class="headerlink" href="#cumulative-frequency" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/4e31378f88556ebbcb6f7c1f026b7d04c17b2ffe.png" alt="F(x_i)"/></p>
 </dd>
@@ -672,7 +689,7 @@ document.write(`
 <p><img src="../../_images/math/1b61b4e64aa06c88be9141339405699fbf7e1743.png" alt="F( max(S) ) = n"/></p>
 </div></section>
 <section id="cumulative-relative-frequency">
-<span id="id7"></span><h3>Cumulative Relative Frequency<a class="headerlink" href="#cumulative-relative-frequency" title="Permalink to this headline">#</a></h3>
+<span id="id7"></span><h3>Cumulative Relative Frequency<a class="headerlink" href="#cumulative-relative-frequency" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/17ce81d1038a19f94fed3d7e9779923f9a245514.png" alt="P(x_i)"/></p>
 </dd>
@@ -694,7 +711,7 @@ document.write(`
 <p><img src="../../_images/math/2341d9a77f1b1fc694e9d5a89776de583fe71805.png" alt="P( max(S) ) = 1"/></p>
 </div></section>
 <section id="joint-frequency">
-<span id="id8"></span><h3>Joint Frequency<a class="headerlink" href="#joint-frequency" title="Permalink to this headline">#</a></h3>
+<span id="id8"></span><h3>Joint Frequency<a class="headerlink" href="#joint-frequency" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/e170e793a87c18a182fddf5c3d7e26758d3f2a8e.png" alt="f(x_i \cap y_i)"/></p>
 </dd>
@@ -707,7 +724,7 @@ document.write(`
 </div>
 </section>
 <section id="conditional-relative-frequency">
-<h3>Conditional Relative Frequency<a class="headerlink" href="#conditional-relative-frequency" title="Permalink to this headline">#</a></h3>
+<h3>Conditional Relative Frequency<a class="headerlink" href="#conditional-relative-frequency" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/baf05c30f49d9da57aec1c805be39c791d1fd8d6.png" alt="P(x_i | y_i)"/></p>
 </dd>
@@ -723,7 +740,7 @@ document.write(`
 </div>
 </section>
 <section id="minimum">
-<span id="id9"></span><h3>Minimum<a class="headerlink" href="#minimum" title="Permalink to this headline">#</a></h3>
+<span id="id9"></span><h3>Minimum<a class="headerlink" href="#minimum" title="Permalink to this heading">#</a></h3>
 <dl>
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/00772ab0121709ef7685a2e0b9ec74702855933c.png" alt="min(\{ x_i \})"/></p>
 <p><img class="math" src="../../_images/math/107d3d35dae4c5b280707109792b266d90aee74a.png" alt="min(S)"/></p>
@@ -734,7 +751,7 @@ document.write(`
 </dl>
 </section>
 <section id="maximum">
-<span id="id10"></span><h3>Maximum<a class="headerlink" href="#maximum" title="Permalink to this headline">#</a></h3>
+<span id="id10"></span><h3>Maximum<a class="headerlink" href="#maximum" title="Permalink to this heading">#</a></h3>
 <dl>
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/c0c9254bff1cbeb2e982c1cd9cb6a1e3216267e8.png" alt="max(\{ x_i \})"/></p>
 <p><img class="math" src="../../_images/math/cb526221ddda56fd2808ca1991e2f9077b0deaf9.png" alt="max(S)"/></p>
@@ -745,7 +762,7 @@ document.write(`
 </dl>
 </section>
 <section id="outliers">
-<span id="id11"></span><h3>Outliers<a class="headerlink" href="#outliers" title="Permalink to this headline">#</a></h3>
+<span id="id11"></span><h3>Outliers<a class="headerlink" href="#outliers" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>Definition</dt><dd><p>An unusual observation.</p>
 </dd>
@@ -755,7 +772,7 @@ document.write(`
 <p>If we are measuring <a class="reference internal" href="../experiments/03_DATA.html#data-characteristic"><span class="std std-ref">categorical data</span></a>, this might mean an observation is in infrequent.</p>
 </section>
 <section id="floor-function">
-<span id="id12"></span><h3>Floor Function<a class="headerlink" href="#floor-function" title="Permalink to this headline">#</a></h3>
+<span id="id12"></span><h3>Floor Function<a class="headerlink" href="#floor-function" title="Permalink to this heading">#</a></h3>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../../_images/math/784b25f566e8b973531fd0d08c1eab83dc65d2a0.png" alt="\lfloor x \rfloor"/></p>
@@ -768,7 +785,7 @@ document.write(`
 </dl>
 </section>
 <section id="ceiling-function">
-<span id="id13"></span><h3>Ceiling Function<a class="headerlink" href="#ceiling-function" title="Permalink to this headline">#</a></h3>
+<span id="id13"></span><h3>Ceiling Function<a class="headerlink" href="#ceiling-function" title="Permalink to this heading">#</a></h3>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../../_images/math/1777c259a796409953b8b89e0c9b48fb0e7e2d0d.png" alt="\lceil x \rceil"/></p>
@@ -782,14 +799,14 @@ document.write(`
 </section>
 </section>
 <section id="measures-of-centrality">
-<span id="id14"></span><h2>Measures of Centrality<a class="headerlink" href="#measures-of-centrality" title="Permalink to this headline">#</a></h2>
+<span id="id14"></span><h2>Measures of Centrality<a class="headerlink" href="#measures-of-centrality" title="Permalink to this heading">#</a></h2>
 <p><em>Measures of centrality</em>, sometimes known as <em>measures of central tendency</em>, describe <em>where</em> the “<em>center</em>” of a sample of data is located. What we mean by “<em>center</em>” is, in some sense, left to the reader’s intuition. A good analogy for the statistical conception of <em>centrality</em> comes from the field of physics: the idea of <a class="reference external" href="https://en.wikipedia.org/wiki/Center_of_mass">center of mass</a>. The <em>center of mass</em> is the <em>balance point</em>, the point around which a body of mass is distributed so the torque generated by gravity is held is equilibrium. In this analogy, the <em>mass</em> is the <em>sample of data</em>. <em>Centrality</em> in a <em>sample</em> is a measure of its “<em>center of mass</em>”, so to speak.</p>
 <section id="arithmetic-mean">
-<span id="id15"></span><h3>Arithmetic Mean<a class="headerlink" href="#arithmetic-mean" title="Permalink to this headline">#</a></h3>
+<span id="id15"></span><h3>Arithmetic Mean<a class="headerlink" href="#arithmetic-mean" title="Permalink to this heading">#</a></h3>
 <p>The <em>arithmetic</em> mean is a sample statistic you have probably seen before; what you probably didn’t know is it is not the <em>only</em> way of calculating the mean. You will see in the next few sections alternate ways of calculating a quantity that is meant to represent the <em>mean</em> of a sample. Each of these <em>sample statistics</em> represents a way of quantifying the notion of “<em>central tendency</em>”</p>
 <p>Before getting to the good stuff, let’s review the <em>arithmetic</em> mean. There are two equivalent ways of defining the <em>sample mean</em>.</p>
 <section id="sample-formula">
-<span id="sample-mean-formula"></span><h4>Sample Formula<a class="headerlink" href="#sample-formula" title="Permalink to this headline">#</a></h4>
+<span id="sample-mean-formula"></span><h4>Sample Formula<a class="headerlink" href="#sample-formula" title="Permalink to this heading">#</a></h4>
 <p>If the sample of data is specified as a set or list of data as in the following,</p>
 <div class="math">
 <p><img src="../../_images/math/96e63224bad5af018a81dada12df852a6ad4f18c.png" alt="S = \{ x_1, x_2, ... , x_n \}"/></p>
@@ -814,17 +831,13 @@ document.write(`
 </div>
 </section>
 <section id="interlude">
-<h4>Interlude<a class="headerlink" href="#interlude" title="Permalink to this headline">#</a></h4>
+<h4>Interlude<a class="headerlink" href="#interlude" title="Permalink to this heading">#</a></h4>
 <p>Suppose in a sample of data <strong>S</strong>, some of the observations have identical values, such as in the following dataset that represents the age in years of an A.P Statistics student,</p>
 <blockquote>
 <div><p>S = { 16, 16, 17, 18, 16, 17, 17, 17 }</p>
 </div></blockquote>
 <p>Before moving on to calculate the sample mean, let us represent this sample <strong>S</strong> in an equivalent way using a table,</p>
 <table class="table">
-<colgroup>
-<col style="width: 47%" />
-<col style="width: 53%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/></p></td>
 <td><p><img class="math" src="../../_images/math/905bd3c0445049b5e64f182e7238f2da96ada209.png" alt="f(x_i)"/></p></td>
@@ -854,13 +867,9 @@ document.write(`
 </div><p>This recognization leads the following formula that comes in handy when sample distributions are given in terms of <a class="reference internal" href="00_GRAPHICAL_REPRESENTATIONS.html#frequency-distributions"><span class="std std-ref">frequency distributions</span></a></p>
 </section>
 <section id="frequency-formula">
-<span id="sample-mean-frequency-formula"></span><h4>Frequency Formula<a class="headerlink" href="#frequency-formula" title="Permalink to this headline">#</a></h4>
+<span id="sample-mean-frequency-formula"></span><h4>Frequency Formula<a class="headerlink" href="#frequency-formula" title="Permalink to this heading">#</a></h4>
 <p>If the sample of data is specified as a frequency distribution as in the following,</p>
 <table class="table">
-<colgroup>
-<col style="width: 41%" />
-<col style="width: 59%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>x</p></th>
 <th class="head"><p>f(x)</p></th>
@@ -893,11 +902,6 @@ document.write(`
 </div></blockquote>
 <p>We summarize the sample with a <a class="reference internal" href="00_GRAPHICAL_REPRESENTATIONS.html#ungrouped-frequency-distributions"><span class="std std-ref">Ungrouped Distributions</span></a>, adding a column to it that represents the <em>product</em> of the first two columns,</p>
 <table class="table">
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 29%" />
-<col style="width: 46%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/></p></td>
 <td><p><img class="math" src="../../_images/math/905bd3c0445049b5e64f182e7238f2da96ada209.png" alt="f(x_i)"/></p></td>
@@ -953,7 +957,7 @@ document.write(`
 </div><p>This idea, that the product of the observation and its frequency represent the <em>weight</em> of an observed value in the calculation of the sample mean leads directly to the next section.</p>
 </section>
 <section id="weighted-mean">
-<h4>Weighted Mean<a class="headerlink" href="#weighted-mean" title="Permalink to this headline">#</a></h4>
+<h4>Weighted Mean<a class="headerlink" href="#weighted-mean" title="Permalink to this heading">#</a></h4>
 <p>If the sample is broken up into groups, then the mean of the overall sample can be computed by weighting the mean of each group by the proportion of the overall sample it represents.</p>
 <dl>
 <dt>Example</dt><dd><p>The following datasets represent the heights (in feet) of male and female students in a statistics class,</p>
@@ -996,7 +1000,7 @@ document.write(`
 <p><img src="../../_images/math/b020ead5c8cc3020906de091472d468d93d34969.png" alt="\implies \approx 5.72 \text{ ft}"/></p>
 </div></section>
 <section id="formula">
-<h4>Formula<a class="headerlink" href="#formula" title="Permalink to this headline">#</a></h4>
+<h4>Formula<a class="headerlink" href="#formula" title="Permalink to this heading">#</a></h4>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>We are dropping the <em>A</em> subscript from the sample mean formula in this section to provide a confusion of superscripts and subscripts. Keep in mind, even though it is not explicitly written, the sample means in this section refer to the <em>arithmetic</em> sample mean.</p>
@@ -1064,7 +1068,7 @@ document.write(`
 </div></section>
 </section>
 <section id="geometric-mean">
-<span id="id16"></span><h3>Geometric Mean<a class="headerlink" href="#geometric-mean" title="Permalink to this headline">#</a></h3>
+<span id="id16"></span><h3>Geometric Mean<a class="headerlink" href="#geometric-mean" title="Permalink to this heading">#</a></h3>
 <p>Let us consider <em>why</em> the arithmetic mean yields a measure of centrality. From the prior discussion of the weighted mean, it is apparent the sample mean formula is a measure of the <em>additive</em> center of a sample. We take <em>n</em> data points, add them up (perform <em>n</em> operations) and then divide by <em>n</em> (average). Each observation contributes its <em>weight</em> by adding to the total in the numerator of the arithmetic mean formula. Observations with more <em>weight</em> (higher values) contribute more heavily to the overall value of the arithmetic mean.</p>
 <p>There are, however, other ways of characterizing the <em>center</em> of a sample of data with other types of <em>sample statistics</em>.</p>
 <p>The <em>geometric mean</em> is such an alternate way of defining the <em>mean</em> of a sample data.</p>
@@ -1087,14 +1091,14 @@ document.write(`
 <p><img src="../../_images/math/b40d93bf39f69959fc2b3a9d5b5a111e25c4df51.png" alt="\bar{x}_G = (10 \cdot 12 \cdot 14)^{\frac{1}{3}} \approx 11.89"/></p>
 </div><p>Notice: the geometric mean is <em>less</em> than the arithmetic mean.</p>
 <section id="geometric-vs-arithmetic-mean">
-<span id="id17"></span><h4>Geometric vs. Arithmetic Mean<a class="headerlink" href="#geometric-vs-arithmetic-mean" title="Permalink to this headline">#</a></h4>
+<span id="id17"></span><h4>Geometric vs. Arithmetic Mean<a class="headerlink" href="#geometric-vs-arithmetic-mean" title="Permalink to this heading">#</a></h4>
 <p>So, which point estimate of centrality do we use? The arithmetic mean or the geometric mean?</p>
 <p>There are several reasons to prefer the arithmetic mean. Perhaps the simplest to understand at this point in your study of statistics is its simplicity: it is easy to calculate and easy to interpret.</p>
 <p>The geometric mean, on the other hand, is not <em>as</em> easy to calculate.</p>
 <p>Beyond that, there are more philosophical reasons for preferring the arithmetic mean over the geometric mean. These reasons we are not yet ready to discuss, as they require a deeper understanding of probability, <a class="reference internal" href="../probability/03_RANDOM_VARIABLES.html#random-variables"><span class="std std-ref">Random Variables</span></a> and <a class="reference internal" href="02_SAMPLING_DISTRIBUTIONS.html#central-limit-theorem"><span class="std std-ref">Central Limit Theorem</span></a>. Suffice to say, the arithmetic mean has very nice properties that lend themselves to statistical inference easier than the geometric mean do.</p>
 </section>
 <section id="the-moral-of-the-story">
-<h4>The Moral of the Story<a class="headerlink" href="#the-moral-of-the-story" title="Permalink to this headline">#</a></h4>
+<h4>The Moral of the Story<a class="headerlink" href="#the-moral-of-the-story" title="Permalink to this heading">#</a></h4>
 <p>There are other variants of the <em>mean</em> that sometimes appear in the literature. For example, when dealing with certain types of data, the <a class="reference external" href="https://en.wikipedia.org/wiki/Harmonic_mean">harmonic mean</a> is often the most appropriate measure for <em>central tendency</em>.</p>
 <p>We talk about these other variants only to make you aware of them. In this class, we will exclusively be dealing with the <em>arithmetic mean</em>.</p>
 <p>Nevertheless, before moving on, there is an important point to make: <em>central tendency</em> is not an absolute measure of a sample; its value depends on the <em>way</em> we calculate it.</p>
@@ -1104,17 +1108,17 @@ document.write(`
 </section>
 </section>
 <section id="categorical-measures">
-<h3>Categorical Measures<a class="headerlink" href="#categorical-measures" title="Permalink to this headline">#</a></h3>
+<h3>Categorical Measures<a class="headerlink" href="#categorical-measures" title="Permalink to this heading">#</a></h3>
 <p>The <a class="reference internal" href="#arithmetic-mean"><span class="std std-ref">Arithmetic Mean</span></a> and the <a class="reference internal" href="#geometric-mean"><span class="std std-ref">Geometric Mean</span></a> only apply if the data being measured is <a class="reference internal" href="../experiments/03_DATA.html#data-characteristic"><span class="std std-ref">quantitative data</span></a>. If, however, the data being measured is categorical is nature, we do not have these tools available to us. Instead, we use the next two measures of central tendency to get a picture of the distribution shape.</p>
 <section id="mode">
-<span id="id18"></span><h4>Mode<a class="headerlink" href="#mode" title="Permalink to this headline">#</a></h4>
+<span id="id18"></span><h4>Mode<a class="headerlink" href="#mode" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt>Definition</dt><dd><p>The <em>mode</em> is the most frequent of observation in a sample of data.</p>
 </dd>
 </dl>
 </section>
 <section id="sample-proportion">
-<h4>Sample Proportion<a class="headerlink" href="#sample-proportion" title="Permalink to this headline">#</a></h4>
+<h4>Sample Proportion<a class="headerlink" href="#sample-proportion" title="Permalink to this heading">#</a></h4>
 <dl>
 <dt>Definition</dt><dd><div class="math">
 <p><img src="../../_images/math/7bc812494d636dbd1220d9b8ae02058c498ca467.png" alt="\hat{p} = \frac{f(x_i)}{n}"/></p>
@@ -1125,7 +1129,7 @@ document.write(`
 </section>
 </section>
 <section id="measures-of-location">
-<span id="id19"></span><h2>Measures of Location<a class="headerlink" href="#measures-of-location" title="Permalink to this headline">#</a></h2>
+<span id="id19"></span><h2>Measures of Location<a class="headerlink" href="#measures-of-location" title="Permalink to this heading">#</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Your book does not do a good job of covering this topic.</p>
@@ -1137,7 +1141,7 @@ document.write(`
 <p>Extending the analogy, the center of mass is not enough to specify the <em>distribution of mass</em> in a body. We also need information about the volume (e.g. <img class="math" src="../../_images/math/0cdf3005947d4eea4ecea85c2253d9aba50df352.png" alt="cm^3"/>) enclosed by the body and the density of the matter (e.g. <img class="math" src="../../_images/math/f009285824ab54e8951b04f1a7ccdbcc3ee07f82.png" alt="\frac{gm}{cm^3}"/>) it contains.</p>
 <p>Likewise, <em>measures of centrality</em> do not tell us the whole story about a sample. We need additional information in order to get a clearer picture of the distribution of data. <em>Measures of location</em> are a type of sample statistics that provide this information.</p>
 <section id="order-statistics">
-<h3>Order Statistics<a class="headerlink" href="#order-statistics" title="Permalink to this headline">#</a></h3>
+<h3>Order Statistics<a class="headerlink" href="#order-statistics" title="Permalink to this heading">#</a></h3>
 <p>An <em>order</em> statistic gives you information about the <em>ordinality</em> of a sample. The term “<em>ordinality</em>” refers to the <em>structural</em> or <em>sequential</em> nature of a sample.</p>
 <p>To see what is meant by the term <em>ordinality</em>, suppose you have a sample of <a class="reference internal" href="../experiments/03_DATA.html#data-characteristic"><span class="std std-ref">quantiative data</span></a> <img class="math" src="../../_images/math/42f6eba29127a8a12bce070ee5bec81d715bb94a.png" alt="\{ x_i \}"/>,</p>
 <div class="math">
@@ -1158,7 +1162,7 @@ document.write(`
 </div><p>The 1 <sup>st</sup> <em>order statistic</em> <img class="math" src="../../_images/math/7aa70a4ac203aa2ed9e0d040185bef92f3124ff4.png" alt="x_{(1)}"/> is <em>1.4 years</em>, the 2 <sup>nd</sup> <em>order statistic</em> <img class="math" src="../../_images/math/a80b5a6e88cbf3dc6b46afda81c9782c19ea1c3d.png" alt="x_{(2)}"/> is <em>3.3 years</em>, the 3 <sup>rd</sup> <em>order statistic</em> <img class="math" src="../../_images/math/39e7cee1481ddc7014c78ff87e86ef6eb058c23d.png" alt="x_{(3)}"/> is <em>5.1 years</em> and the 4 <sup>th</sup> <em>order statistic</em> <img class="math" src="../../_images/math/7ef1dbe8243c3bdcae773590e381306bfc7c1619.png" alt="x_{(4)}"/> is <em>6.7 years</em>. Another way of saying this would be the <em>order</em> of <em>1.4 years</em> is 1, the <em>order</em> of <em>3.3 years</em> is 2, the <em>order</em> of <em>5.1 years</em> is 3 and the <em>order</em> of <em>6 years</em> is 4.</p>
 <p><em>Order statistics</em> are important because they allows us to define more complex statistics in a precise manner.</p>
 <section id="range">
-<span id="id20"></span><h4>Range<a class="headerlink" href="#range" title="Permalink to this headline">#</a></h4>
+<span id="id20"></span><h4>Range<a class="headerlink" href="#range" title="Permalink to this heading">#</a></h4>
 <hr class="docutils" />
 <p>The range is a measure of the <em>total variation</em> of a sample of data.</p>
 <dl>
@@ -1169,11 +1173,11 @@ document.write(`
 </dl>
 </section>
 <section id="percentile">
-<span id="id21"></span><h4>Percentile<a class="headerlink" href="#percentile" title="Permalink to this headline">#</a></h4>
+<span id="id21"></span><h4>Percentile<a class="headerlink" href="#percentile" title="Permalink to this heading">#</a></h4>
 <hr class="docutils" />
 </section>
 <section id="id22">
-<span id="id23"></span><h4>Motivation<a class="headerlink" href="#id22" title="Permalink to this headline">#</a></h4>
+<span id="id23"></span><h4>Motivation<a class="headerlink" href="#id22" title="Permalink to this heading">#</a></h4>
 <p>The <img class="math" src="../../_images/math/5a370fe464b17da9be1d8a2676ab8d230c8cf781.png" alt="(p \cdot 100 \%)^{\text{th}}"/> <em>percentile</em> roughly means the observation in a sample with <img class="math" src="../../_images/math/a566ed8661544f8306fcf210a010daec074a1279.png" alt="(p \cdot 100 \%)"/> percent of the distribution below its value.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1236,7 +1240,7 @@ document.write(`
 <p><img src="../../_images/math/fc58601a660e64320d8e572186ebb87e820a9d76.png" alt="\pi_p = x_{(5)} = 3.0 \text{min}"/></p>
 </div></section>
 <section id="interpolation">
-<span id="percentile-interpolation"></span><h4>Interpolation<a class="headerlink" href="#interpolation" title="Permalink to this headline">#</a></h4>
+<span id="percentile-interpolation"></span><h4>Interpolation<a class="headerlink" href="#interpolation" title="Permalink to this heading">#</a></h4>
 <p>The previous example was contrived so the <em>order</em> of the sample percentile worked out to be a whole number, i.e. in both cases the formula <img class="math" src="../../_images/math/b8f2e4d07c8183684f4f764cc034739c2688de0a.png" alt="m = (n+1) \cdot p"/> gave us an integer value. What happens things are not so simple?</p>
 <dl>
 <dt>Example</dt><dd><p>Consider the same experiment of measuring bus waiting times, with the same sample data,</p>
@@ -1278,7 +1282,7 @@ document.write(`
 <p><img src="../../_images/math/bf835ee03acd49dd6686d4b910929b98fbc7be3b.png" alt="x_{(2.5)} = x_{(\lfloor 2.5 \rfloor)} + (x_{(\lceil 2.5 \rceil)} - x_{(\lfloor 2.5 \rfloor)}) \cdot (2.5 - \lfloor 2.5 \rfloor) \text{      Equation 2, Redux}"/></p>
 </div></section>
 <section id="general-formula">
-<span id="percentile-formula"></span><h4>General Formula<a class="headerlink" href="#general-formula" title="Permalink to this headline">#</a></h4>
+<span id="percentile-formula"></span><h4>General Formula<a class="headerlink" href="#general-formula" title="Permalink to this heading">#</a></h4>
 <p>We can abstract away the specifies from the previous example to arrive at the general formula for a <em>sample percentile</em>. The <img class="math" src="../../_images/math/5a370fe464b17da9be1d8a2676ab8d230c8cf781.png" alt="(p \cdot 100 \%)^{\text{th}}"/> percentile <img class="math" src="../../_images/math/feef0d56168a273f4d2b0aefb4c2b025aa9c358c.png" alt="\pi_p"/> is defined as the order statistic <img class="math" src="../../_images/math/5b7911294f5ce25e14a533686eb676195fc547f4.png" alt="x_{(m)}"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/7c12e3afc828b74c6baf044939ce4f4878c06ba8.png" alt="\pi_p = x_{(m)} = x_{(\lfloor m \rfloor)} + (x_{(\lceil m \rceil )} - x_{(\lfloor m \rfloor)})* (m - \lfloor m \rfloor)"/></p>
@@ -1297,13 +1301,9 @@ document.write(`
 </div>
 </section>
 <section id="special-percentiles">
-<span id="id24"></span><h4>Special Percentiles<a class="headerlink" href="#special-percentiles" title="Permalink to this headline">#</a></h4>
+<span id="id24"></span><h4>Special Percentiles<a class="headerlink" href="#special-percentiles" title="Permalink to this heading">#</a></h4>
 <p>The table below lists the names that have been given to special percentiles.</p>
 <table class="table">
-<colgroup>
-<col style="width: 29%" />
-<col style="width: 71%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Percentile</p></th>
 <th class="head"><p>Name</p></th>
@@ -1351,18 +1351,18 @@ document.write(`
 </section>
 </section>
 <section id="median">
-<span id="id25"></span><h3>Median<a class="headerlink" href="#median" title="Permalink to this headline">#</a></h3>
+<span id="id25"></span><h3>Median<a class="headerlink" href="#median" title="Permalink to this heading">#</a></h3>
 <p>The <em>median</em> of a dataset is the observation such that half of the sample is less than or equal to it and half of the sample is greater than or equal to it. In other words, the <em>median</em> is the point in a dataset where half of the sample is above it and half of the sample is below it. As the table in the previous section indicated, another way of saying this is the <em>median</em> is the <em>50</em> <sup>th</sup> percentile.</p>
 <p>In this section, we state a quick shortcut formula for the median that you are probably familiar with, although you may not have seen it stated as precisely.</p>
 <section id="shortcut">
-<h4>Shortcut<a class="headerlink" href="#shortcut" title="Permalink to this headline">#</a></h4>
+<h4>Shortcut<a class="headerlink" href="#shortcut" title="Permalink to this heading">#</a></h4>
 <p>Applying the <a class="reference internal" href="#percentile-formula"><span class="std std-ref">General Formula</span></a> to the special case of the median, i.e. <img class="math" src="../../_images/math/a18b3996a403dfc97e7c2db7cda1362e41caab6a.png" alt="p = 0.5"/>, we have <em>order</em> of the median as,</p>
 <div class="math">
 <p><img src="../../_images/math/8fb8d973b301ad1f22855e24a01bbb23db738505.png" alt="m = 0.5 \cdot (n+1) = \frac{n+1}{2}"/></p>
 </div><p>We must consider two cases: if <em>n</em> is odd or if <em>n</em> is even. Depending on the case, the <em>order m</em> of the median will be an integer value or an fractional value.</p>
 </section>
 <section id="sample-is-odd">
-<h4>Sample is Odd<a class="headerlink" href="#sample-is-odd" title="Permalink to this headline">#</a></h4>
+<h4>Sample is Odd<a class="headerlink" href="#sample-is-odd" title="Permalink to this heading">#</a></h4>
 <p>If <em>n</em> is odd, then <em>n+1</em> is even (<em>divisibly be 2</em>). If <em>n+1</em> is even, then <em>m</em> is an integer. If <em>m</em> is an integer, then <img class="math" src="../../_images/math/1daf16020d9f969df695e027db9f4fa83c9e5433.png" alt="\lfloor m \rfloor = m = \lceil m \rceil"/>,</p>
 <p>The percentile <img class="math" src="../../_images/math/d2de40790989e44dbfe6fd614ad87ad1e3f6b876.png" alt="\pi_{0.50}"/> is given by,</p>
 <div class="math">
@@ -1376,14 +1376,14 @@ document.write(`
 <div class="math">
 <p><img src="../../_images/math/4e4f76c94f61044c98d458591d8ae6670c12d4c7.png" alt="\implies \pi_0.50 = x_{(\frac{n+1}{2})}"/></p>
 </div><p>Recalling the meaning of the term <img class="math" src="../../_images/math/7b079881d836996f50ae7bfed891be959bbea84c.png" alt="x_{(\frac{n+1}{2})}"/>, we see if the number of samples is odd, then <em>median</em> is simply the <img class="math" src="../../_images/math/0df35ae86503d0bafec7ddba90e0ca0c9002db46.png" alt="\frac{n+1}{2}"/> <sup>th</sup> ordered observation.</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Odd Sample: Median Shortcut</p>
 <div class="math">
 <p><img src="../../_images/math/093cf87b5373ce8dd6a1e9ae0092989629fba59f.png" alt="\pi_{0.50} = x_{(\frac{n+1}{2})}"/></p>
-</div></div>
+</div></aside>
 </section>
 <section id="sample-is-even">
-<h4>Sample is Even<a class="headerlink" href="#sample-is-even" title="Permalink to this headline">#</a></h4>
+<h4>Sample is Even<a class="headerlink" href="#sample-is-even" title="Permalink to this heading">#</a></h4>
 <p>If <em>n</em> is even, then <em>n+1</em> is odd (<em>not divisible by 2</em>). If <em>n+1</em> is odd, then <em>m</em> is not an integer. Because <em>m</em> is being divided by 2 and it is not an integer,</p>
 <div class="math">
 <p><img src="../../_images/math/289f67c838e7a75c74ff750ff32a39e2b131c934.png" alt="m - \lfloor m \rfloor = 0.5 = \frac{1}{2}"/></p>
@@ -1402,14 +1402,14 @@ document.write(`
 <div class="math">
 <p><img src="../../_images/math/51b1636c39886c2f5fa413462257c0ea57e59eae.png" alt="\pi_{0.50} = \frac{x_{(\lceil \frac{n+1}{2} \rceil )} + x_{(\lfloor \frac{n+1}{2} \rfloor)}}{2}"/></p>
 </div><p>In other words, when the sample is even, the median is the <em>midpoint</em> of the middle two observations,</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Odd Sample: Median Shortcut</p>
 <div class="math">
 <p><img src="../../_images/math/51b1636c39886c2f5fa413462257c0ea57e59eae.png" alt="\pi_{0.50} = \frac{x_{(\lceil \frac{n+1}{2} \rceil )} + x_{(\lfloor \frac{n+1}{2} \rfloor)}}{2}"/></p>
-</div></div>
+</div></aside>
 </section>
 <section id="skewness">
-<span id="identifying-skewness"></span><h4>Identifying Skewness<a class="headerlink" href="#skewness" title="Permalink to this headline">#</a></h4>
+<span id="identifying-skewness"></span><h4>Identifying Skewness<a class="headerlink" href="#skewness" title="Permalink to this heading">#</a></h4>
 <p>The median is important for helping identify <em>skewness</em> in data. To see why, consider the following example.</p>
 <dl>
 <dt>Example</dt><dd><p>The annual income, measured to the nearest thousand, of a random sample of people is given below,</p>
@@ -1445,7 +1445,7 @@ document.write(`
 <p>This idea will allow us to develop a general rule of thumb for identifying the presence of <em>skew</em> in samples.</p>
 </section>
 <section id="rule-of-thumb">
-<h4>Rule of Thumb<a class="headerlink" href="#rule-of-thumb" title="Permalink to this headline">#</a></h4>
+<h4>Rule of Thumb<a class="headerlink" href="#rule-of-thumb" title="Permalink to this heading">#</a></h4>
 <p>Consider a symmetrical sample distribution,</p>
 <div class="math">
 <p><img src="../../_images/math/ede7c3c75e8ff9bc8c1dc6f7911107fb7513cd79.png" alt="S = \{ 1, 5, 5, 5, 9 \}"/></p>
@@ -1476,26 +1476,26 @@ document.write(`
 </figure>
 <p>As in the previous case, the presence of a <em>tails</em> acts like a sink towards which the mean is drawn.</p>
 <p>These results are summarized with the following rule of thumb,</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Rule of Thumb for Skew</p>
 <ol class="arabic simple">
 <li><p>If median is much greater than mean, then the data are skewed to the left. In this case, we say the distribution has a “<em>left hand tail</em>”.</p></li>
 <li><p>If the median is much less than the mean, then the data are skewed to right. In this case, we say the distribution has a “<em>right hand tail</em>”.</p></li>
 </ol>
-</div>
+</aside>
 </section>
 </section>
 <section id="z-score">
-<span id="id26"></span><h3>Z Score<a class="headerlink" href="#z-score" title="Permalink to this headline">#</a></h3>
+<span id="id26"></span><h3>Z Score<a class="headerlink" href="#z-score" title="Permalink to this heading">#</a></h3>
 <p><em>Percentiles</em> are one way of describing location, but they are not the only way. We can also use <em>Z-Scores</em> to talk about the location of data points in a sample.</p>
 <p><em>Z-scores</em> arise by inquiring into how we compare two different samples of data.</p>
 <p>For example, the SAT and the ACT are two different tests that are meant to measure the aptitude of graduating high school seniors before they are granted entry to college. Both tests are measuring the same variable, the analytical ability of a student, but both tests use different scales to measure the observable.</p>
 <section id="id27">
-<h4>Motivation<a class="headerlink" href="#id27" title="Permalink to this headline">#</a></h4>
+<h4>Motivation<a class="headerlink" href="#id27" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="id28">
-<h4>Formula<a class="headerlink" href="#id28" title="Permalink to this headline">#</a></h4>
+<h4>Formula<a class="headerlink" href="#id28" title="Permalink to this heading">#</a></h4>
 <dl>
 <dt>Definition</dt><dd><div class="math">
 <p><img src="../../_images/math/355911cc4d9fcf781150b979f8764a3876731f10.png" alt="z = \frac{x_i - \bar{x}}{s}"/></p>
@@ -1510,10 +1510,10 @@ document.write(`
 </section>
 </section>
 <section id="measures-of-variation">
-<span id="id29"></span><h2>Measures of Variation<a class="headerlink" href="#measures-of-variation" title="Permalink to this headline">#</a></h2>
+<span id="id29"></span><h2>Measures of Variation<a class="headerlink" href="#measures-of-variation" title="Permalink to this heading">#</a></h2>
 <p><em>Measures of variation</em> characterize the <em>spread</em> and <em>dispersion</em> of a sample of data.</p>
 <section id="id30">
-<h3>Motivation<a class="headerlink" href="#id30" title="Permalink to this headline">#</a></h3>
+<h3>Motivation<a class="headerlink" href="#id30" title="Permalink to this heading">#</a></h3>
 <p>Consider these two samples of data <img class="math" src="../../_images/math/08dae650aba750710b182a0e7b1e63c09404075b.png" alt="S_1"/> and <img class="math" src="../../_images/math/7a01e66959cdf273b6b3c5541280a7402771722e.png" alt="S_2"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/754cdb6148d139ef3ccd106ede07d0a517a3998d.png" alt="S_1 = \{ 4, 5, 6 \}"/></p>
@@ -1535,15 +1535,15 @@ document.write(`
 <p>The goal of the next few sections is to come up with a way of quantifying and measuring this <em>variation</em>.</p>
 </section>
 <section id="interquartile-range">
-<span id="id31"></span><h3>Interquartile Range<a class="headerlink" href="#interquartile-range" title="Permalink to this headline">#</a></h3>
+<span id="id31"></span><h3>Interquartile Range<a class="headerlink" href="#interquartile-range" title="Permalink to this heading">#</a></h3>
 <p>First up, we have the <em>interquartile range</em>. The interquartile range is defined as the difference between the third quartile and the first quartiile,</p>
 <div class="math">
 <p><img src="../../_images/math/cd1593bc7c6a533e44fabec870f158486e68fdfe.png" alt="\text{IQR} = \pi_{0.75} - \pi_{0.50}"/></p>
 </div><p>This statistic, by definition, tells us the range between which 50% of the distribution is contained. Moreover, the 50% of the distribution contained in the <em>IQR</em> is centered around the median, since the median falls exactly in the middle of the first and third quartile.</p>
 <section id="rule-of-thumb-for-outliers">
-<h4>Rule of Thumb for Outliers<a class="headerlink" href="#rule-of-thumb-for-outliers" title="Permalink to this headline">#</a></h4>
+<h4>Rule of Thumb for Outliers<a class="headerlink" href="#rule-of-thumb-for-outliers" title="Permalink to this heading">#</a></h4>
 <p>A general rule of thumb for identifying <em>outlying</em> observations with the <em>IQR</em> is given below,</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title"><em>IQR</em> Rule for Outliers</p>
 <p>Any observation <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> that satisfies the following two conditions may be an outlier.</p>
 <blockquote>
@@ -1552,7 +1552,7 @@ document.write(`
 </div><p>x_i geq Q_3 + 1.5 cdot IQR</p>
 <p>x_i leq Q_1 - 1.5 codt IQR</p>
 </div></blockquote>
-</div>
+</aside>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>The cutoff point for <em>outliers</em> determined the <em>IQR</em> rule is arbitrary. Beyond the idea that most of the distribution is contained within the <em>IQR</em> and the insight any observation well outside this range probably qualifies as an outlyer, there is no hard justification for this rule of thumb. It is merely a <a class="reference external" href="https://en.wikipedia.org/wiki/Heuristic">heuristic</a> developed by professionals to aid in developing intuition about data.</p>
@@ -1560,32 +1560,32 @@ document.write(`
 </section>
 </section>
 <section id="absolute-variation">
-<span id="id32"></span><h3>Absolute Variation<a class="headerlink" href="#absolute-variation" title="Permalink to this headline">#</a></h3>
+<span id="id32"></span><h3>Absolute Variation<a class="headerlink" href="#absolute-variation" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 </section>
 <section id="variance">
-<span id="sample-variance"></span><h3>Variance<a class="headerlink" href="#variance" title="Permalink to this headline">#</a></h3>
+<span id="sample-variance"></span><h3>Variance<a class="headerlink" href="#variance" title="Permalink to this heading">#</a></h3>
 <section id="id33">
-<h4>Motivation<a class="headerlink" href="#id33" title="Permalink to this headline">#</a></h4>
+<h4>Motivation<a class="headerlink" href="#id33" title="Permalink to this heading">#</a></h4>
 <p>Let us consider a rather contrived example that is nevertheless instructive. Suppose <strong>S</strong> a sample of data represents</p>
 <p>TODO</p>
 </section>
 </section>
 <section id="standard-deviation">
-<span id="id34"></span><h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">#</a></h3>
+<span id="id34"></span><h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 <section id="id35">
-<h4>Formula<a class="headerlink" href="#id35" title="Permalink to this headline">#</a></h4>
+<h4>Formula<a class="headerlink" href="#id35" title="Permalink to this heading">#</a></h4>
 <div class="math">
 <p><img src="../../_images/math/487d682c0c66f24d7a60f26cdc589ab4ededf79f.png" alt="s = \sqrt{  \frac{\sum^{n}_{i=1} (x_i - \bar{x})^2}{n-1} }"/></p>
 </div></section>
 <section id="degrees-of-freedom">
-<h4>Degrees of Freedom<a class="headerlink" href="#degrees-of-freedom" title="Permalink to this headline">#</a></h4>
+<h4>Degrees of Freedom<a class="headerlink" href="#degrees-of-freedom" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 </section>
 <section id="coefficient-of-variation">
-<h3>Coefficient of Variation<a class="headerlink" href="#coefficient-of-variation" title="Permalink to this headline">#</a></h3>
+<h3>Coefficient of Variation<a class="headerlink" href="#coefficient-of-variation" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 <div class="math">
 <p><img src="../../_images/math/61398da91807467e647170bb363cf563959f7dad.png" alt="v = \frac{s}{\bar{x}} \cdot 100"/></p>
@@ -1593,18 +1593,18 @@ document.write(`
 </section>
 </section>
 <section id="chebyshev-s-theorem">
-<span id="chebyshevs-theorem"></span><h2>Chebyshev’s Theorem<a class="headerlink" href="#chebyshev-s-theorem" title="Permalink to this headline">#</a></h2>
+<span id="chebyshevs-theorem"></span><h2>Chebyshev’s Theorem<a class="headerlink" href="#chebyshev-s-theorem" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
 </section>
 <section id="data-transformations">
-<span id="id36"></span><h2>Data Transformations<a class="headerlink" href="#data-transformations" title="Permalink to this headline">#</a></h2>
+<span id="id36"></span><h2>Data Transformations<a class="headerlink" href="#data-transformations" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
 <section id="adding-or-subtracting-a-constant">
-<h3>Adding or Subtracting A Constant<a class="headerlink" href="#adding-or-subtracting-a-constant" title="Permalink to this headline">#</a></h3>
+<h3>Adding or Subtracting A Constant<a class="headerlink" href="#adding-or-subtracting-a-constant" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 </section>
 <section id="multiplying-or-dividing-by-a-constant">
-<h3>Multiplying Or Dividing By A Constant<a class="headerlink" href="#multiplying-or-dividing-by-a-constant" title="Permalink to this headline">#</a></h3>
+<h3>Multiplying Or Dividing By A Constant<a class="headerlink" href="#multiplying-or-dividing-by-a-constant" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 </section>
 </section>
@@ -1616,11 +1616,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="00_GRAPHICAL_REPRESENTATIONS.html"
@@ -1640,10 +1639,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1651,6 +1647,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1767,9 +1764,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -1793,8 +1791,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

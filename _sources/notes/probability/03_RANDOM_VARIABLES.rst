@@ -188,6 +188,36 @@ Expectation
 
 TODO
 
+.. topic:: Expectation of a Discrete Random Variable
+
+	Let :math:`\mathcal{X}` be a discrete random variable that takes on the values :math:`x_i` for :math:`i = 1, 2, 3, ..., n`. The *expectation of :math:`\mathcal{X}` is defined,
+	
+	.. math::
+	
+		E(\mathcal{X}) = sum_{i=1}^{n}{x_i \ cdot P(\mathcal{X} = x_i) }
+		
+TODO
+
+The *expectation* of a Random Variable :math:`\mathcal{X}` is the weighted sum of its outcome. The *weight* of each outcome is exactly the probability of that outcome occuring.
+
+TODO
+
+Here the subject matter is sample spaces and probability, but the current discussion bares a striking similarity of the discussion of the :ref:`sample_mean`. The reader may wonder if there is a connection between the *expectation of a random variable* and the *mean of a sample randomly drawn from the same underlying population* (if the reader does not wonder this, this sentence is meant to elicit said wonder, so start wondering). In fact, the formulae for expectations and sample means share a connection through the :ref:`law_of_larger_numbers`. 
+
+Recall the formula for the sample mean is written,
+
+.. math::
+
+	\bar{x} = \frac{sum_{i=1}^{n} x_i }{n}
+	
+However, when it is written like this, the connection to *expectations* is not so obvious. The index of this summation, *i*, is taken over the individual observations, rather than the *unique* observations. We may rewrite this formula, with the concept of :ref:`relative_frequency`, :math:`p(x_i)`, 
+
+.. math::
+
+	\bar{x} = sum_{x_i \in S} {x_i \cdot p(x_i)} 
+	
+The connection is now more apparent. In the limit, as the number of observations in the sample *S* approaches the number of individuals in the population, the *relative frequency* of an observation becomes the *probability* of the individual occuring in the population.
+
 .. _variance:
 
 Variance
@@ -198,14 +228,16 @@ TODO
 Transformation
 ==============
 
-Expectation of a Sum
---------------------
+.. _linearity_of_expectations:
+
+Linearity of Expectations
+-------------------------
 
 TODO
 
 .. topic:: Expectation of a Sum
 
-	Suppose :math:`\mathcal{Y}` and :math:`\mathcal{Z}` are random variables, not necessarily independent. If :math:`\mathcal{X} = \mathcal{Y] + \mathcal{Z}`, then
+	Suppose :math:`\mathcal{Y}` and :math:`\mathcal{Z}` are random variables, not necessarily independent. If :math:`\mathcal{X} = \mathcal{Y} + \mathcal{Z}`, then
 	
 	.. math::
 	
@@ -220,7 +252,7 @@ TODO
 
 .. topic:: Variance of a Sum
 
-	Suppose :math:`\mathcal{Y}` and :math:`\mathcal{Z}` are *independent* random variables. If :math:`\mathcal{X} = \mathcal{Y] + \mathcal{Z}`, then
+	Suppose :math:`\mathcal{Y}` and :math:`\mathcal{Z}` are *independent* random variables. If :math:`\mathcal{X} = \mathcal{Y} + \mathcal{Z}`, then
 	
 	.. math::
 	

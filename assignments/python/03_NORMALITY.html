@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Normality &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/python/03_NORMALITY';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Linear Regression" href="04_REGRESSION.html" />
     <link rel="prev" title="Histograms and Boxplots" href="02_QUANTITATIVE.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -521,10 +542,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="normality">
-<span id="project-three"></span><h1>Normality<a class="headerlink" href="#normality" title="Permalink to this headline">#</a></h1>
+<span id="project-three"></span><h1>Normality<a class="headerlink" href="#normality" title="Permalink to this heading">#</a></h1>
 <blockquote class="epigraph">
 <div><p>All models are wrong, but some are useful.</p>
 <p class="attribution">—George Box</p>
@@ -533,7 +554,7 @@ document.write(`
 <p>The averaging effect of the <strong>Central Limit Theorem</strong> is more pronounced when the population being sampled is itself Normal (in mathematical terms, we say the <em>sample distribution converges to the population distribution</em> more quickly when the population is Normal); This assumption is not required, though. Any population distribution can be transformed into a Normal distribution by averaging observations drawn from its pool of outcomes. Recall the die roll simulation from class, where a uniformly distributed population became Normal when observations were averaged.</p>
 <p>For this reason, we are often interested in determining whether a given population is normally distributed. In this project, we will learn how to perform <a class="reference internal" href="../../notes/distributions/04_NORMAL.html#normal-calculations"><span class="std std-ref">Normal Calculations</span></a> using <strong>Python</strong>. Using these techniques, we will compare theoretically determined population parameters to empirically determined sample statistics in order to see how the Normal Distribution can be used to model population distributions.</p>
 <section id="instructions">
-<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Download <strong>both</strong> <em>csv</em> datasets in the <a class="reference internal" href="#project-three-dataset"><span class="std std-ref">Datasets</span></a> section and place them in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system where you save your <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts.</p></li>
 </ol>
@@ -552,7 +573,7 @@ document.write(`
 </ol>
 </section>
 <section id="background">
-<span id="project-three-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<span id="project-three-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
 <p>Normality arises when observations being randomly drawn from a population are <em>independent</em> and <em>identically distributed</em>. In other words, if a series of experiments are performed where each experiment is the same as the last in every respect, then the outcomes of all the experiments taken together should be approximately normal.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
@@ -565,7 +586,7 @@ document.write(`
 <li><p>The observations are not being drawn from the same population.</p></li>
 </ol>
 <section id="normal-distribution">
-<h3>Normal Distribution<a class="headerlink" href="#normal-distribution" title="Permalink to this headline">#</a></h3>
+<h3>Normal Distribution<a class="headerlink" href="#normal-distribution" title="Permalink to this heading">#</a></h3>
 <p>A Normal Distribution is <em>parameterized</em> by its mean, <img class="math" src="../../_images/math/18b19e5f315a11447a2f609580b5706d0feb0e26.png" alt="\mu"/>, and its standard deviation, <img class="math" src="../../_images/math/3c6db7079834573bbfc4f914a807e23ebd2079f2.png" alt="\sigma"/>. If a single observation is being drawn from this Normal Distribution, we write,</p>
 <div class="math">
 <p><img src="../../_images/math/405870b29dbba679c3670e702055c7a30f2056b7.png" alt="\mathcal{X} \sim \mathcal{N}(\mu, \sigma)"/></p>
@@ -576,14 +597,14 @@ document.write(`
 <div class="math">
 <p><img src="../../_images/math/22eda12b5ac2abfe54aa4637c28615784a9ca62d.png" alt="\mathcal{Z} \sim \mathcal{N}(0, 1)"/></p>
 </div><section id="cumulative-distribution-function">
-<h4>Cumulative Distribution Function<a class="headerlink" href="#cumulative-distribution-function" title="Permalink to this headline">#</a></h4>
+<h4>Cumulative Distribution Function<a class="headerlink" href="#cumulative-distribution-function" title="Permalink to this heading">#</a></h4>
 <p>The cumulative distribution function (CDF) for the Standard Normal distribution is an extremely important function in mathematics. Symbolically, it is written,</p>
 <div class="math">
 <p><img src="../../_images/math/b59e0fa425f21cdfcff06dbf6797308c416177c0.png" alt="\Phi(z) = P(\mathcal{Z} \leq z) = p"/></p>
 </div><p>This function, recall, represents the area of the density curve below the point <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/>. In other words, this function tells us the <em>percentage</em> <img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/> of the Standard Normal distribution that is less than or equal to the point <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/>. To put it yet another way, it tells us what percentage <img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/> of the original Normal distribution is less than or equal to <img class="math" src="../../_images/math/50440f733956adf50c65455f01b8cde6d337adfe.png" alt="z"/> standard deviations away from the mean.</p>
 </section>
 <section id="inverse-cumulative-distribution-function">
-<h4>Inverse Cumulative Distribution Function<a class="headerlink" href="#inverse-cumulative-distribution-function" title="Permalink to this headline">#</a></h4>
+<h4>Inverse Cumulative Distribution Function<a class="headerlink" href="#inverse-cumulative-distribution-function" title="Permalink to this heading">#</a></h4>
 <p>Every well-behaved function has an inverse. The CDF of the Normal Distribution is no different. The inverse CDF is denoted,</p>
 <div class="math">
 <p><img src="../../_images/math/4abed2f7b1ac148ea8365881bca883dc03037359.png" alt="\Phi^{-1}(p) = z"/></p>
@@ -592,7 +613,7 @@ document.write(`
 </section>
 </section>
 <section id="normal-objects">
-<span id="project-three-normal-objects"></span><h2>Normal Objects<a class="headerlink" href="#normal-objects" title="Permalink to this headline">#</a></h2>
+<span id="project-three-normal-objects"></span><h2>Normal Objects<a class="headerlink" href="#normal-objects" title="Permalink to this heading">#</a></h2>
 <p>The following code snippet illustrates how to create and use a <em>Normal Distribution</em> <code class="docutils literal notranslate"><span class="pre">object</span></code> in <strong>Python</strong>,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span>
 
@@ -619,7 +640,7 @@ document.write(`
 </div></blockquote>
 <p>For a more comprehensive explanation of <code class="docutils literal notranslate"><span class="pre">NormalDist()</span></code> from the <code class="docutils literal notranslate"><span class="pre">statistics</span></code> package and its various uses, refer to the <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-normal-distribution"><span class="std std-ref">Python Normal Distribution page</span></a>.</p>
 <section id="project-three-ideal-plots">
-<span id="ideal-plots"></span><h3>Ideal Plots<a class="headerlink" href="#project-three-ideal-plots" title="Permalink to this headline">#</a></h3>
+<span id="ideal-plots"></span><h3>Ideal Plots<a class="headerlink" href="#project-three-ideal-plots" title="Permalink to this heading">#</a></h3>
 <p>The <em>ideal</em> distribution is another word for the <em>population</em> distribution. The Normal <code class="docutils literal notranslate"><span class="pre">object</span></code> in <strong>Python</strong> has a function for calculating the density of the Normal curve at a point. This allows us to plot the <em>ideal</em> distribution over top of the sample distribution to see how they compare.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 <span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">stat</span>
@@ -676,7 +697,7 @@ document.write(`
 <p>This gives us a way of seeing how well the Normal density curve fits the data. This can be useful for <em>assessing</em> the normality of a distribution. However, a more foolproof method of checking the normality of a sample is given in the next section.</p>
 </section>
 <section id="qq-plots">
-<span id="project-three-qq-plots"></span><h3>QQ Plots<a class="headerlink" href="#qq-plots" title="Permalink to this headline">#</a></h3>
+<span id="project-three-qq-plots"></span><h3>QQ Plots<a class="headerlink" href="#qq-plots" title="Permalink to this heading">#</a></h3>
 <p>A common technique for assessing the <em>normality</em> of a sample distribution is to generate a <em>Quantile-Quantile Plot</em>, or <em>QQ Plot</em> for short. QQ plots provide a visual representation of a sample’s <em>normality</em> by plotting the percentiles of a sample distribution against the percentiles of the theoretical Normal Distribution from which it was drawn.</p>
 <p>The exact steps for generating a QQ plot are given below,</p>
 <ol class="arabic simple">
@@ -733,9 +754,9 @@ document.write(`
 </section>
 </section>
 <section id="project">
-<span id="project-three-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
+<span id="project-three-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this heading">#</a></h2>
 <section id="normal-calculations">
-<h3>Normal Calculations<a class="headerlink" href="#normal-calculations" title="Permalink to this headline">#</a></h3>
+<h3>Normal Calculations<a class="headerlink" href="#normal-calculations" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Create a Standard Normal Distribution <code class="docutils literal notranslate"><span class="pre">object</span></code>. Use this <code class="docutils literal notranslate"><span class="pre">object</span></code> to answer the following questions.</p></li>
 </ol>
@@ -760,9 +781,9 @@ document.write(`
 </ol>
 </section>
 <section id="measuring-normality">
-<h3>Measuring Normality<a class="headerlink" href="#measuring-normality" title="Permalink to this headline">#</a></h3>
+<h3>Measuring Normality<a class="headerlink" href="#measuring-normality" title="Permalink to this heading">#</a></h3>
 <section id="velocity-of-light">
-<h4>Velocity of Light<a class="headerlink" href="#velocity-of-light" title="Permalink to this headline">#</a></h4>
+<h4>Velocity of Light<a class="headerlink" href="#velocity-of-light" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Find the following sample percentiles in Michelson’s Velocity of Light sample distribution.</p></li>
 </ol>
@@ -789,7 +810,7 @@ document.write(`
 </ol>
 </section>
 <section id="old-faithful">
-<h4>Old Faithful<a class="headerlink" href="#old-faithful" title="Permalink to this headline">#</a></h4>
+<h4>Old Faithful<a class="headerlink" href="#old-faithful" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Find the following sample percentiles in the Old Faithful <strong>eruption duration</strong> sample distribution.</p></li>
 </ol>
@@ -821,9 +842,9 @@ document.write(`
 </section>
 </section>
 <section id="graphing-normality">
-<h3>Graphing Normality<a class="headerlink" href="#graphing-normality" title="Permalink to this headline">#</a></h3>
+<h3>Graphing Normality<a class="headerlink" href="#graphing-normality" title="Permalink to this heading">#</a></h3>
 <section id="id1">
-<h4>Velocity of Light<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h4>
+<h4>Velocity of Light<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Create a histogram with 10 classes for the Velocity of Light data. Ensure the axes are appropriately labeled and the tick marks are set to the class limits. Use <code class="docutils literal notranslate"><span class="pre">density=True</span></code> to convert the histogram into a density (recall density is defined as <img class="math" src="../../_images/math/66f1920ac3c64c16d293f28d55a46f73701f7a53.png" alt="\rho=\frac{p}{\delta x }"/>).</p></li>
 </ol>
@@ -837,7 +858,7 @@ document.write(`
 </ol>
 </section>
 <section id="id2">
-<h4>Old Faithful<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h4>
+<h4>Old Faithful<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Create a histogram with 10 classes for the Old Faithful duration data. Ensure the axes are appropriately labeled and the tick marks are set to the class limits. Use <code class="docutils literal notranslate"><span class="pre">density=True</span></code> to convert the histogram into a density (recall density is defined as <img class="math" src="../../_images/math/66f1920ac3c64c16d293f28d55a46f73701f7a53.png" alt="\rho=\frac{p}{\delta x }"/>).</p></li>
 </ol>
@@ -856,16 +877,16 @@ document.write(`
 </section>
 </section>
 <section id="assessing-normality">
-<h3>Assessing Normality<a class="headerlink" href="#assessing-normality" title="Permalink to this headline">#</a></h3>
+<h3>Assessing Normality<a class="headerlink" href="#assessing-normality" title="Permalink to this heading">#</a></h3>
 <section id="id3">
-<h4>Velocity of Light<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h4>
+<h4>Velocity of Light<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Create a QQ plot for Michelson’s Velocity of Light distribution.</p></li>
 <li><p>In your <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: Based on the QQ plot, is Michelson’s distribution approximately normal? Why or why not?</p></li>
 </ol>
 </section>
 <section id="id4">
-<h4>Old Faithful<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h4>
+<h4>Old Faithful<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Create a QQ plot for Old Faithful’s eruption duration.</p></li>
 </ol>
@@ -880,9 +901,9 @@ document.write(`
 </section>
 </section>
 <section id="datasets">
-<span id="project-three-dataset"></span><h2>Datasets<a class="headerlink" href="#datasets" title="Permalink to this headline">#</a></h2>
+<span id="project-three-dataset"></span><h2>Datasets<a class="headerlink" href="#datasets" title="Permalink to this heading">#</a></h2>
 <section id="loading-data">
-<span id="project-three-loading-data"></span><h3>Loading Data<a class="headerlink" href="#loading-data" title="Permalink to this headline">#</a></h3>
+<span id="project-three-loading-data"></span><h3>Loading Data<a class="headerlink" href="#loading-data" title="Permalink to this heading">#</a></h3>
 <p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="02_QUANTITATIVE.html#project-two-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 
@@ -903,7 +924,7 @@ document.write(`
 </div>
 </section>
 <section id="velocity-of-light-data">
-<h3>Velocity of Light Data<a class="headerlink" href="#velocity-of-light-data" title="Permalink to this headline">#</a></h3>
+<h3>Velocity of Light Data<a class="headerlink" href="#velocity-of-light-data" title="Permalink to this heading">#</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You may already have this dataset downloaded into your <em>Linux Files</em> directory from when we did <a class="reference internal" href="02_QUANTITATIVE.html#project-two"><span class="std std-ref">Histograms and Boxplots</span></a>.</p>
@@ -912,9 +933,6 @@ document.write(`
 <p>The following table is the a preview of the data you will be using for this project.</p>
 <table class="table" id="id6">
 <caption><span class="caption-text">Michelson’s Velocity of Light Data</span><a class="headerlink" href="#id6" title="Permalink to this table">#</a></caption>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Velocity ( km/s )</p></td>
 </tr>
@@ -939,15 +957,11 @@ document.write(`
 <p>The meaning of the column is clear from the column header: each observation measures the speed of light in meters per second, <img class="math" src="../../_images/math/5ae5e370f87dbb343d8b2a860c4c15c185ad158b.png" alt="\frac{km}{s}"/>.</p>
 </section>
 <section id="id5">
-<h3>Old Faithful<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
+<h3>Old Faithful<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/1b98a8ccfb60a79a975a96e2eca8a57a/old_faithful_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
 <table class="table" id="id7">
 <caption><span class="caption-text">Old Faithful Geyser Duration and Wait Time</span><a class="headerlink" href="#id7" title="Permalink to this table">#</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>eruptions</p></td>
 <td><p>waiting</p></td>
@@ -1013,11 +1027,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="02_QUANTITATIVE.html"
@@ -1037,10 +1050,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1048,6 +1058,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1115,9 +1126,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -1141,8 +1153,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

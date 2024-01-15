@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>LaTex Reference &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'maintenance/LATEX';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Sphinx" href="SPHINX.html" />
     <link rel="prev" title="Maintenance" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -488,19 +509,19 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="latex-reference">
-<h1>LaTex Reference<a class="headerlink" href="#latex-reference" title="Permalink to this headline">#</a></h1>
+<h1>LaTex Reference<a class="headerlink" href="#latex-reference" title="Permalink to this heading">#</a></h1>
 <p>The equations on this site were created using <a class="reference external" href="https://www.latex-project.org/">LaTex</a>, a type-setting program for rendering mathematical symbols. On this page you will find the syntax for creating symbols that frequently occur in this class.</p>
 <section id="arithmetic">
-<h2>Arithmetic<a class="headerlink" href="#arithmetic" title="Permalink to this headline">#</a></h2>
+<h2>Arithmetic<a class="headerlink" href="#arithmetic" title="Permalink to this heading">#</a></h2>
 <p><strong>Fractions</strong>: <code class="docutils literal notranslate"><span class="pre">\frac{a}{b}</span></code></p>
 <div class="math">
 <p><img src="../_images/math/a0875cc8dff1ccc1052ec897288d711888654c68.png" alt="\frac{a}{b}"/></p>
 </div></section>
 <section id="relations">
-<h2>Relations<a class="headerlink" href="#relations" title="Permalink to this headline">#</a></h2>
+<h2>Relations<a class="headerlink" href="#relations" title="Permalink to this heading">#</a></h2>
 <p><strong>Inclusion</strong>: <code class="docutils literal notranslate"><span class="pre">\in</span></code></p>
 <div class="math">
 <p><img src="../_images/math/62caf3c2b2baf17b77f99eb269f8f50597eb9c24.png" alt="\in"/></p>
@@ -524,7 +545,7 @@ document.write(`
 <p><img src="../_images/math/ab8a60c0b16fdb9d4515a8d2cd7738a6d84a3ef7.png" alt="\approx"/></p>
 </div></section>
 <section id="operations">
-<h2>Operations<a class="headerlink" href="#operations" title="Permalink to this headline">#</a></h2>
+<h2>Operations<a class="headerlink" href="#operations" title="Permalink to this heading">#</a></h2>
 <p><strong>Union</strong>: <code class="docutils literal notranslate"><span class="pre">\cup</span></code></p>
 <div class="math">
 <p><img src="../_images/math/b3d08eedc4829183f74a0783f6af4f54ffcb5f7e.png" alt="\cup"/></p>
@@ -536,7 +557,7 @@ document.write(`
 <p><img src="../_images/math/84db59007eaa73ad24760b9b1dbf8c2025e4cca6.png" alt="\sum_{i=0}^n i"/></p>
 </div></section>
 <section id="sets">
-<h2>Sets<a class="headerlink" href="#sets" title="Permalink to this headline">#</a></h2>
+<h2>Sets<a class="headerlink" href="#sets" title="Permalink to this heading">#</a></h2>
 <p><strong>Null Set</strong> : <code class="docutils literal notranslate"><span class="pre">\varnothing</span></code></p>
 <div class="math">
 <p><img src="../_images/math/93745b56b78d77cc2eee9b718a94ed55f0fb3117.png" alt="\varnothing"/></p>
@@ -545,7 +566,7 @@ document.write(`
 <p><img src="../_images/math/bb3a8724e8d509849d6a412d97b121958f070e1f.png" alt="\mathbb{N}"/></p>
 </div></section>
 <section id="logic">
-<h2>Logic<a class="headerlink" href="#logic" title="Permalink to this headline">#</a></h2>
+<h2>Logic<a class="headerlink" href="#logic" title="Permalink to this heading">#</a></h2>
 <p><strong>Equivalence</strong>: <code class="docutils literal notranslate"><span class="pre">\equiv</span></code></p>
 <div class="math">
 <p><img src="../_images/math/1fa891979ee39505662a071b8c59a053f37f485a.png" alt="\equiv"/></p>
@@ -569,7 +590,7 @@ document.write(`
 <p><img src="../_images/math/64531aead8b1b309db3c3ebea6f9263d58312096.png" alt="\lor"/></p>
 </div></section>
 <section id="grammatical">
-<h2>Grammatical<a class="headerlink" href="#grammatical" title="Permalink to this headline">#</a></h2>
+<h2>Grammatical<a class="headerlink" href="#grammatical" title="Permalink to this heading">#</a></h2>
 <p><strong>Vertical Delimiter</strong>: <code class="docutils literal notranslate"><span class="pre">\mid</span></code></p>
 <div class="math">
 <p><img src="../_images/math/514e67c3530d3359b64e4c2d47ee0e0119b0a031.png" alt="\mid"/></p>
@@ -582,11 +603,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="index.html"
@@ -606,10 +626,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -617,6 +634,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -651,9 +669,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -677,8 +696,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

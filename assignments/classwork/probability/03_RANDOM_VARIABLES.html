@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Random Variables &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/classwork/probability/03_RANDOM_VARIABLES';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Experiments" href="../experiments/index.html" />
     <link rel="prev" title="Conditional Probability" href="02_CONDITIONAL.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -474,7 +495,9 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
 </ul>
             </nav>
         </div>
@@ -484,14 +507,14 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="random-variables">
-<span id="random-variable-classwork"></span><h1>Random Variables<a class="headerlink" href="#random-variables" title="Permalink to this headline">#</a></h1>
+<span id="random-variable-classwork"></span><h1>Random Variables<a class="headerlink" href="#random-variables" title="Permalink to this heading">#</a></h1>
 <section id="definition">
-<h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">#</a></h2>
+<h2>Definition<a class="headerlink" href="#definition" title="Permalink to this heading">#</a></h2>
 <ol class="arabic">
-<li><p>A random variable <strong>X</strong> is defined as the number of heads in three coin flips.</p>
+<li><p>A random variable <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is defined as the number of heads in three coin flips.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
 <li><p>List the elements of the sample space for this random variable.</p></li>
@@ -500,12 +523,12 @@ document.write(`
 <li><p>Write the elements of the sample space that belong to the event <img class="math" src="../../../_images/math/67a419c2bc1fc04057575b495a8daeb9aaf8aca6.png" alt="\mathcal{X}=2"/> in set notation.</p></li>
 <li><p>Write the elements of the sample space that belong to the event <img class="math" src="../../../_images/math/7f8fd1880b1e75fb556c66168f0465821c6f6fae.png" alt="\mathcal{X}=3"/> in set notation.</p></li>
 <li><p>Find the probability distribution <img class="math" src="../../../_images/math/a86bd8516cb55815fcc9371db063f1eb6795d9b4.png" alt="P(\mathcal{X}=x)"/> for all values of <em>x</em>.</p></li>
-<li><p>Find the expectation <img class="math" src="../../../_images/math/3353061d7e0843bdfb6c20f234dfa5e35fccb171.png" alt="E(\mathcal{X})"/> of the sum of two die rolls.</p></li>
-<li><p>Find the variance <img class="math" src="../../../_images/math/26cc350b477c68dfe426f7543ada145c166a1add.png" alt="Var(\mathcal{X})"/> of the sum of two die rolls.</p></li>
+<li><p>Using the probability distribution derived in <em>part e</em>, find the expectation <img class="math" src="../../../_images/math/3353061d7e0843bdfb6c20f234dfa5e35fccb171.png" alt="E(\mathcal{X})"/> of the sum of two die rolls.</p></li>
+<li><p>Using the probability distribution derived in <em>part e</em>, find the variance <img class="math" src="../../../_images/math/26cc350b477c68dfe426f7543ada145c166a1add.png" alt="Var(\mathcal{X})"/> of the sum of two die rolls.</p></li>
 </ol>
 </div></blockquote>
 </li>
-<li><p>A random variable <strong>X</strong> is defined as the sum of two six-sided die rolls.</p>
+<li><p>A random variable <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is defined as the sum of two six-sided die rolls.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
 <li><p>List the elements of the sample space for this random variable.</p></li>
@@ -513,69 +536,50 @@ document.write(`
 <li><p>Write the elements of the sample space that belong to the event <img class="math" src="../../../_images/math/8d63e298dcbf2a9841083f51a586de996c50ef18.png" alt="\mathcal{X}=7"/> in set notation.</p></li>
 <li><p>Write the elements of the sample space that belong to the event <img class="math" src="../../../_images/math/c2075915afc13fbcc98b44456119df584225321f.png" alt="\mathcal{X}=8"/> in set notation.</p></li>
 <li><p>Find the probability distribution <img class="math" src="../../../_images/math/a86bd8516cb55815fcc9371db063f1eb6795d9b4.png" alt="P(\mathcal{X}=x)"/> for all values of <em>x</em>.</p></li>
-<li><p>Find the expectation <img class="math" src="../../../_images/math/3353061d7e0843bdfb6c20f234dfa5e35fccb171.png" alt="E(\mathcal{X})"/> of the sum of two die rolls.</p></li>
-<li><p>Find the variance <img class="math" src="../../../_images/math/26cc350b477c68dfe426f7543ada145c166a1add.png" alt="Var(\mathcal{X})"/> of the sum of two die rolls.</p></li>
+<li><p>Using the probability distribution derived in <em>part e</em>, find the expectation <img class="math" src="../../../_images/math/3353061d7e0843bdfb6c20f234dfa5e35fccb171.png" alt="E(\mathcal{X})"/> of the sum of two die rolls.</p></li>
+<li><p>Using the probability distribution derived in <em>part e</em>, find the variance <img class="math" src="../../../_images/math/26cc350b477c68dfe426f7543ada145c166a1add.png" alt="Var(\mathcal{X})"/> of the sum of two die rolls.</p></li>
 </ol>
 </div></blockquote>
 </li>
 </ol>
 </section>
-<section id="theorems">
-<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">#</a></h2>
-<div class="topic">
-<p class="topic-title">Expectation of a Sum</p>
-<p>Suppose <img class="math" src="../../../_images/math/ad6daa2629cc37a5667723358ec601482bea795c.png" alt="\mathcal{Y}"/> and <img class="math" src="../../../_images/math/1d74e5da619d26fe1722fa453097be62e18ce3ce.png" alt="\mathcal{Z}"/> are random variables, not necessarily independent. If <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\mathcal{X} = \mathcal{Y] + \mathcal{Z}</span>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2021-11-15&gt; patch level 1
-L3 programming layer &lt;2022-01-21&gt;
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
-(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd))
-Runaway argument?
-{Y] + \mathcal {Z}$ \end {document} 
-! File ended while scanning use of \math&#64;egroup.
-&lt;inserted text&gt; 
-                \par 
-&lt;*&gt; math.tex
-            
-! Emergency stop.
-&lt;*&gt; math.tex
-            
-No pages of output.
-Transcript written on math.log.
-</p>
-</div>
-, then</p>
-<div class="math">
-<p><img src="../../../_images/math/4e72d6fafb90045a13178b32d2045ca918e06760.png" alt="E(\mathcal{X}) = E(\mathcal{Y}) + E(\mathcal{Z})"/></p>
-</div></div>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>TODO</p></li>
+<li><p>TODO</p></li>
 </ol>
-<p>2. TODO
-A.P. Exam Practice
-==================</p>
+</section>
+<section id="theorems">
+<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Linearity of Expectations</p>
+<p>Suppose <img class="math" src="../../../_images/math/ad6daa2629cc37a5667723358ec601482bea795c.png" alt="\mathcal{Y}"/> and <img class="math" src="../../../_images/math/1d74e5da619d26fe1722fa453097be62e18ce3ce.png" alt="\mathcal{Z}"/> are random variables, not necessarily independent. If <img class="math" src="../../../_images/math/9cd16ce1fd19665cf157d196cb786e06a25a0b48.png" alt="\mathcal{X} = \mathcal{Y} + \mathcal{Z}"/>, then</p>
+<div class="math">
+<p><img src="../../../_images/math/4e72d6fafb90045a13178b32d2045ca918e06760.png" alt="E(\mathcal{X}) = E(\mathcal{Y}) + E(\mathcal{Z})"/></p>
+</div></aside>
+<ol class="arabic">
+<li><p>Use the linearity of expectations to solve the following problems.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the expected number of heads in three coin flips?</p></li>
+<li><p>What is the expected sum of outcomes for two die rolls?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Clavius Hecklesnotz is playing a game of chance where he flips 10 fair coins. If Clavius Hecklesnotz gets 1 head, he will be paid $1. If Clavius Hecklesnotz gets 2 heads, he will be paid $2. In general, if Clavius Hecklesnotz gets <em>n</em> heads, he will be paid $*n*. What is the expected value of Clavius Hecklesnotz’ payout?</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>This problem can be solved with a <a class="reference internal" href="../../../notes/distributions/02_BINOMIAL.html#binomial-distribution"><span class="std std-ref">Binomial Distribution</span></a>, but it is much easier to understand through the <a class="reference internal" href="../../../notes/probability/03_RANDOM_VARIABLES.html#linearity-of-expectations"><span class="std std-ref">Linearity of Expectations</span></a>.</p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>A box contains a yellow ball, an orange ball, a green ball, and a blue ball. Matilda Weierstrauss randomly selects 4 balls from the box (with replacement). What is the expected value for the number of distinct colored balls Matilda Weierstrauss will select?</p></li>
+<li><p>Every time one of the AP Statistics students buys a Happy Meal from McDonalds, they receive a <a href="#id1"><span class="problematic" id="id2">:ref:`Strawberry Shortcake &lt;https://en.wikipedia.org/wiki/Strawberry_Shortcake&gt;`_</span></a> plush doll. There are five dolls in total: Strawberry Shortcake, Cherry Jam, Raspberry Torte, Blueberry Muffin and Lemon Meringue. The toys in every Happy Meal are awarded at random. What is the expected number of Happy Meals an AP Statistics Students must buy in order to get all the <em>Strawberry Shortcake</em> plush dolls?</p></li>
+</ol>
+</section>
+<section id="a-p-exam-practice">
+<h2>A.P. Exam Practice<a class="headerlink" href="#a-p-exam-practice" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple" start="3">
 <li><p><strong>2019, Free Response, #5</strong></p></li>
 </ol>
@@ -632,16 +636,9 @@ standard deviation of 10.5 students.</p>
 </ol>
 <p>A local arcade is hosting a tournament in which contestants play an arcade game with possible scores ranging from 0 to 20. The arcade has set up multiple game tables so that all contestants can play the game at the same time; thus contestant scores are independent. Each contestant’s score will be recorded as he or she finishes, and the contestant with the highest score is the winner.</p>
 <p>After practicing the game many times, Josephine, one of the contestants, has established the probability distribution of her scores, shown in the table below.</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Josephine’s Distribution</p>
 <table class="table">
-<colgroup>
-<col style="width: 35%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Score</p></td>
 <td><p>16</p></td>
@@ -657,17 +654,11 @@ standard deviation of 10.5 students.</p>
 </tr>
 </tbody>
 </table>
-</div>
+</aside>
 <p>Crystal, another contestant, has also practiced many times. The probability distribution for her scores is shown in the table below.</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Crystal’s Distribution</p>
 <table class="table">
-<colgroup>
-<col style="width: 42%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Score</p></td>
 <td><p>17</p></td>
@@ -681,25 +672,16 @@ standard deviation of 10.5 students.</p>
 </tr>
 </tbody>
 </table>
-</div>
+</aside>
 <ol class="loweralpha simple">
 <li><p>Calculate the expected score for each player.</p></li>
 <li><p>Suppose that Josephine scores 16 and Crystal scores 17. The difference (Josephine minus Crystal) of their scores is -1. List all combinations of possible scores for Josephine and Crystal that will produce a difference (Josephine minus Crystal) of -1, and calculate the probability for each combination.</p></li>
 <li><p>Find the probability that the difference (Josephine minus Crystal) in their scores is -1.</p></li>
 <li><p>The table below lists all the possible differences in the scores between Josephine and Crystal and some associated probabilities.</p></li>
 </ol>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Distribution (Josephine minus Crystal)</p>
 <table class="table">
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 12%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Difference</p></td>
 <td><p>-3</p></td>
@@ -719,7 +701,7 @@ standard deviation of 10.5 students.</p>
 </tr>
 </tbody>
 </table>
-</div>
+</aside>
 <p>Complete the table and calculate the probability that Crystal’s score will be higher than Josephine’s score.</p>
 <ol class="arabic simple" start="9">
 <li><p><strong>2010, Free Response Form B, #3</strong></p></li>
@@ -753,12 +735,6 @@ formula.</p>
 <li><p>Let X represent the net contribution to the charity when one person plays the game once. Complete the table for the probability distribution of X.</p></li>
 </ol>
 <table class="table">
-<colgroup>
-<col style="width: 52%" />
-<col style="width: 15%" />
-<col style="width: 15%" />
-<col style="width: 19%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>x</p></td>
 <td><p>$2</p></td>
@@ -786,11 +762,10 @@ formula.</p>
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="02_CONDITIONAL.html"
@@ -810,10 +785,7 @@ formula.</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -822,6 +794,7 @@ formula.</p>
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
@@ -829,7 +802,9 @@ formula.</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
 </ul>
   </nav></div>
 
@@ -851,9 +826,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -877,8 +853,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

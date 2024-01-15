@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Binomial Distribution &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/distributions/02_BINOMIAL';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Uniform Distribution" href="03_UNIFORM.html" />
     <link rel="prev" title="Geometric Distribution" href="01_GEOMETRIC.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -495,14 +516,14 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="binomial-distribution">
-<span id="id1"></span><h1>Binomial Distribution<a class="headerlink" href="#binomial-distribution" title="Permalink to this headline">#</a></h1>
+<span id="id1"></span><h1>Binomial Distribution<a class="headerlink" href="#binomial-distribution" title="Permalink to this heading">#</a></h1>
 <section id="binomial-random-variable">
-<span id="id2"></span><h2>Binomial Random Variable<a class="headerlink" href="#binomial-random-variable" title="Permalink to this headline">#</a></h2>
+<span id="id2"></span><h2>Binomial Random Variable<a class="headerlink" href="#binomial-random-variable" title="Permalink to this heading">#</a></h2>
 <section id="definition">
-<h3>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">#</a></h3>
+<h3>Definition<a class="headerlink" href="#definition" title="Permalink to this heading">#</a></h3>
 <p>Recall a <a class="reference internal" href="00_BERNOULLI.html#bernoulli-random-variable"><span class="std std-ref">Bernoulli Random Variable</span></a> is defined over a sample space of binary outcomes, a success <code class="docutils literal notranslate"><span class="pre">s</span></code> that occurs with probability <img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/> of success and a failure <code class="docutils literal notranslate"><span class="pre">f</span></code> that occurs with probability <img class="math" src="../../_images/math/be2e833b4c758ac181423d98ee2ea9e75e3ce6d1.png" alt="1-p"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/ad4f8b0dccaba7438c93f8148d4996136d2fed80.png" alt="Y = \begin{array}{ c l }
@@ -520,9 +541,9 @@ document.write(`
 </div><p>TODO</p>
 </section>
 <section id="conditions">
-<span id="binomial-conditions"></span><h3>Conditions<a class="headerlink" href="#conditions" title="Permalink to this headline">#</a></h3>
+<span id="binomial-conditions"></span><h3>Conditions<a class="headerlink" href="#conditions" title="Permalink to this heading">#</a></h3>
 <p>In order for an experiment to be <em>Binomial</em>, the experiment must the conditions just discussed. The summary below provides a list of each condition.</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Binomial Conditions</p>
 <ol class="arabic simple">
 <li><p>The number of trials <img class="math" src="../../_images/math/a455464b27e42f679d79e9d14de742704e595a2e.png" alt="n"/> must be fixed.</p></li>
@@ -530,18 +551,18 @@ document.write(`
 <li><p>Each trial must have a binary outcome, usually denoted success or failure.</p></li>
 <li><p>The probability of success is the same in each trial.</p></li>
 </ol>
-</div>
+</aside>
 </section>
 <section id="parameters">
-<h3>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">#</a></h3>
+<h3>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading">#</a></h3>
 <p>The Binomial Distribution has two parameters.</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Binomial Parameters</p>
 <ol class="arabic simple">
 <li><p><img class="math" src="../../_images/math/a455464b27e42f679d79e9d14de742704e595a2e.png" alt="n"/>: The number of trials.</p></li>
 <li><p><img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/>: The probability of success in a single trial.</p></li>
 </ol>
-</div>
+</aside>
 <p>TODO</p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/720dd2d45a933889101d0ce9d00632c5/binomial_distribution_01.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/77a50413f6ded6b536c03368a8c6353b/binomial_distribution_01.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f261afea5b6ec6ad2f84a29095331391/binomial_distribution_01.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/3f9bb6c368b85480cf55c0f03bdaddcb/binomial_distribution_01.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
@@ -562,25 +583,25 @@ document.write(`
 </section>
 </section>
 <section id="probabilitiy-distribution">
-<h2>Probabilitiy Distribution<a class="headerlink" href="#probabilitiy-distribution" title="Permalink to this headline">#</a></h2>
+<h2>Probabilitiy Distribution<a class="headerlink" href="#probabilitiy-distribution" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
 <section id="probability-density-function">
-<span id="binomial-pdf"></span><h3>Probability Density Function<a class="headerlink" href="#probability-density-function" title="Permalink to this headline">#</a></h3>
+<span id="binomial-pdf"></span><h3>Probability Density Function<a class="headerlink" href="#probability-density-function" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 <div class="math">
 <p><img src="../../_images/math/de66976eb35426ad797bfc7da9e4cb343c6794f0.png" alt="p(x; n, p) = C^{n}_x \cdot p^{x} \cdot (1 - p)^{n-x}"/></p>
 </div></section>
 <section id="cumulative-distribution-function">
-<span id="binomial-cdf"></span><h3>Cumulative Distribution Function<a class="headerlink" href="#cumulative-distribution-function" title="Permalink to this headline">#</a></h3>
+<span id="binomial-cdf"></span><h3>Cumulative Distribution Function<a class="headerlink" href="#cumulative-distribution-function" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 </section>
 <section id="expectation">
-<span id="binomial-expectation"></span><h3>Expectation<a class="headerlink" href="#expectation" title="Permalink to this headline">#</a></h3>
+<span id="binomial-expectation"></span><h3>Expectation<a class="headerlink" href="#expectation" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 <p>derive through rules of independent random variable sums</p>
 </section>
 <section id="standard-deviation">
-<span id="binomial-standard-deviation"></span><h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">#</a></h3>
+<span id="binomial-standard-deviation"></span><h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 <p>derive through rules of independent random variable sums</p>
 </section>
@@ -593,11 +614,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="01_GEOMETRIC.html"
@@ -617,10 +637,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -628,6 +645,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -669,9 +687,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -695,8 +714,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Bar Charts &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/python/01_CATEGORICAL';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Histograms and Boxplots" href="02_QUANTITATIVE.html" />
     <link rel="prev" title="Python" href="00_PYTHON.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -510,17 +531,17 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="bar-charts">
-<span id="project-one"></span><h1>Bar Charts<a class="headerlink" href="#bar-charts" title="Permalink to this headline">#</a></h1>
+<span id="project-one"></span><h1>Bar Charts<a class="headerlink" href="#bar-charts" title="Permalink to this heading">#</a></h1>
 <blockquote class="epigraph">
 <div><p>The picture is a model of reality.</p>
 <p class="attribution">—Ludwig Wittgenstein</p>
 </div></blockquote>
 <p>In this lab, you will get familiar with the statistical plotting features of <strong>Python</strong> using a dataset we have already seen. We will explore the association between two categorical variables and determine if a relationship exists.</p>
 <section id="instructions">
-<span id="project-one-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
+<span id="project-one-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Download the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> dataset in the <a class="reference internal" href="#project-one-dataset"><span class="std std-ref">Datasets</span></a> section and place it in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your ChromeBook’s file system where you save your <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts.</p></li>
 <li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">NAME_project_one.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">NAME</span></code> with your name.</p></li>
@@ -538,7 +559,7 @@ document.write(`
 </ol>
 </section>
 <section id="prerequisites">
-<span id="project-one-installs"></span><h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
+<span id="project-one-installs"></span><h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>We will do this in class together.</p>
@@ -581,9 +602,9 @@ document.write(`
 <p>That’s it! You are ready to plot some sweet statistical graphs.</p>
 </section>
 <section id="background">
-<span id="project-one-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<span id="project-one-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
 <section id="electric-vehicles-in-washington-state">
-<h3>Electric Vehicles in Washington State<a class="headerlink" href="#electric-vehicles-in-washington-state" title="Permalink to this headline">#</a></h3>
+<h3>Electric Vehicles in Washington State<a class="headerlink" href="#electric-vehicles-in-washington-state" title="Permalink to this heading">#</a></h3>
 <p>Recall the dataset we used in <a class="reference internal" href="../classwork/statistics/00_GRAPHICAL_REPRESENTATIONS.html#graphical-representations-of-data-classwork"><span class="std std-ref">#1 From the Classwork</span></a>,</p>
 <blockquote>
 <div><p>The United States Government General Services Administration maintains a huge database of public available information. One of the datasets they publish is the <a class="reference external" href="https://catalog.data.gov/dataset/electric-vehicle-population-data">Battery Electric Vehicles (BEVs) and Plug-in Hybrid Electric Vehicles (PHEVs) that are currently registered through Washington State Department of Licensing</a></p>
@@ -592,7 +613,7 @@ document.write(`
 <p>We examined the <em>electric vehicle</em> dataset a little bit in class on the first week. We are now prepared to do a little more in-depth analysis.</p>
 <p>First, let’s take a look at some of the variables being observed in this dataset.</p>
 <section id="make">
-<h4>Make<a class="headerlink" href="#make" title="Permalink to this headline">#</a></h4>
+<h4>Make<a class="headerlink" href="#make" title="Permalink to this heading">#</a></h4>
 <p>The <strong>Make</strong> variable represents the manufacturer of the car. The possible values for this variable are listed below,</p>
 <ul class="simple">
 <li><p>FIAT</p></li>
@@ -635,7 +656,7 @@ document.write(`
 </ul>
 </section>
 <section id="clean-alternative-fuel-vehicle-cafv-eligibility">
-<h4>Clean Alternative Fuel Vehicle (CAFV) Eligibility<a class="headerlink" href="#clean-alternative-fuel-vehicle-cafv-eligibility" title="Permalink to this headline">#</a></h4>
+<h4>Clean Alternative Fuel Vehicle (CAFV) Eligibility<a class="headerlink" href="#clean-alternative-fuel-vehicle-cafv-eligibility" title="Permalink to this heading">#</a></h4>
 <p><a class="reference external" href="https://www.dol.wa.gov/vehicles-and-boats/taxes-fuel-tax-and-other-fees/tax-exemptions-alternative-fuel-vehicles-and-plug-hybrids">The state of Washington offers many incentives for vehicle owners to invest in an electric vehicle</a>,</p>
 <blockquote>
 <div><p>In 2019, Washington State reinstated the sales and use tax exemption for the sales of vehicles powered by a clean alternative fuel and certain plug-in hybrids.</p>
@@ -649,7 +670,7 @@ document.write(`
 </ul>
 </section>
 <section id="electric-vehicle-type">
-<h4>Electric Vehicle Type<a class="headerlink" href="#electric-vehicle-type" title="Permalink to this headline">#</a></h4>
+<h4>Electric Vehicle Type<a class="headerlink" href="#electric-vehicle-type" title="Permalink to this heading">#</a></h4>
 <p>Electric vehicles come in two varieties: vehicles that are fully electric and hybrid vehicles that revert to a gasoline engine when they run out of electric power. This <a class="reference external" href="https://www.pcmag.com/how-to/ev-vs-hev-vs-phev-what-are-the-types-of-electric-vehicles">article from PC Magazine goes into greater detail about the differences between these two types of electric vehicles</a></p>
 <p>The <strong>Electric Vehicle Type</strong> variable records what <em>type</em> of electric vehicle was registered with Washington State. The possible values of this variable are:</p>
 <ul class="simple">
@@ -661,13 +682,13 @@ document.write(`
 </section>
 </section>
 <section id="project-one-bar-charts">
-<span id="id2"></span><h2>Bar Charts<a class="headerlink" href="#project-one-bar-charts" title="Permalink to this headline">#</a></h2>
+<span id="id2"></span><h2>Bar Charts<a class="headerlink" href="#project-one-bar-charts" title="Permalink to this heading">#</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Refer to <a class="reference internal" href="../../resources/python/05_PLOTS.html#python-plotting"><span class="std std-ref">Plots</span></a> section for a more in-depth look at the various features of <a class="reference internal" href="../../resources/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a>, the library we are using to create graphs.</p>
 </div>
 <section id="no-frills">
-<span id="project-one-standard-bar-charts"></span><h3>No Frills<a class="headerlink" href="#no-frills" title="Permalink to this headline">#</a></h3>
+<span id="project-one-standard-bar-charts"></span><h3>No Frills<a class="headerlink" href="#no-frills" title="Permalink to this heading">#</a></h3>
 <p>Recall a standard bar chart is a way of visually representing the marginal frequency distribution for a sample of categorical data,</p>
 <div class="math">
 <p><img src="../../_images/math/34ba842f8e489b81065ff45c7d6371927e8b6a51.png" alt="P(A) = \frac{n(A)}{n(S)}"/></p>
@@ -713,7 +734,7 @@ document.write(`
 <p>This script is annotated with lots of comments for you to read. Give them a peak, and then let’s meet over in the next section.</p>
 </section>
 <section id="stacked">
-<span id="project-one-stacked-bar-charts"></span><h3>Stacked<a class="headerlink" href="#stacked" title="Permalink to this headline">#</a></h3>
+<span id="project-one-stacked-bar-charts"></span><h3>Stacked<a class="headerlink" href="#stacked" title="Permalink to this heading">#</a></h3>
 <p>Recall a <em>stacked bar chart</em> is a way of visually representing a <em>conditional distribution</em> of one categorical variable with respect to another,</p>
 <div class="math">
 <p><img src="../../_images/math/5b7cd1a0ab9a994a8d9a706676c34428b9b35a58.png" alt="P(A \mid B) = \frac{n(A \cap B)}{n(B)}"/></p>
@@ -748,7 +769,7 @@ document.write(`
 </section>
 </section>
 <section id="set-operations">
-<span id="project-one-set-operations"></span><h2>Set Operations<a class="headerlink" href="#set-operations" title="Permalink to this headline">#</a></h2>
+<span id="project-one-set-operations"></span><h2>Set Operations<a class="headerlink" href="#set-operations" title="Permalink to this heading">#</a></h2>
 <p>A set in <strong>Python</strong> is defined with a pair of curly brackets <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">}</span></code>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">emperors</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;Augustus&quot;</span><span class="p">,</span> <span class="s2">&quot;Commodus&quot;</span><span class="p">,</span> <span class="s2">&quot;Nero&quot;</span><span class="p">,</span> <span class="s2">&quot;Hadrian&quot;</span> <span class="p">}</span>
 </pre></div>
@@ -779,9 +800,9 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="project">
-<span id="project-one-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
+<span id="project-one-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this heading">#</a></h2>
 <section id="id5">
-<h3>No Frills<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
+<h3>No Frills<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Calculate the relative frequency of the following <strong>Makes</strong> of <em>Electric Vehicles</em>,</p></li>
 </ol>
@@ -804,11 +825,6 @@ document.write(`
 <li><p>Find the <em>joint frequency distribution</em> of <strong>Make</strong> and <strong>Electric Vehicle Type</strong> for the same <strong>Makes</strong> as in <em>#1</em> and <em>#2</em>. In other words, fill out the following table,</p></li>
 </ol>
 <table class="table">
-<colgroup>
-<col style="width: 15%" />
-<col style="width: 38%" />
-<col style="width: 47%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td></td>
 <td><p>Battery Electric Vehicle (BEV)</p></td>
@@ -842,7 +858,7 @@ document.write(`
 </ol>
 </section>
 <section id="id6">
-<h3>Stacked<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
+<h3>Stacked<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Before starting this part of project, answer the following in a <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>: Based on the information provided in the <a class="reference internal" href="#project-one-background"><span class="std std-ref">Background</span></a> section, how would you expect the <em>conditional distribution</em> of <strong>Clean Alternative Fuel Vehicle (CAFV) Eligibility</strong> given the <strong>Electric Vehicle Type</strong> to look? Do you expect fully electric vehicles to have greater eligibility for tax credits than hybrid vehicles? Why or why not?</p></li>
 <li><p>Answer the following questions. Label any commands you use to solve the problem with comments. Write your answers in the <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a> at the top of the script.</p></li>
@@ -871,9 +887,9 @@ document.write(`
 </section>
 </section>
 <section id="datasets">
-<span id="project-one-dataset"></span><h2>Datasets<a class="headerlink" href="#datasets" title="Permalink to this headline">#</a></h2>
+<span id="project-one-dataset"></span><h2>Datasets<a class="headerlink" href="#datasets" title="Permalink to this heading">#</a></h2>
 <section id="loading-data">
-<span id="project-one-loading-data"></span><h3>Loading Data<a class="headerlink" href="#loading-data" title="Permalink to this headline">#</a></h3>
+<span id="project-one-loading-data"></span><h3>Loading Data<a class="headerlink" href="#loading-data" title="Permalink to this heading">#</a></h3>
 <p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="#project-one-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 
@@ -898,30 +914,11 @@ document.write(`
 </div>
 </section>
 <section id="electric-vehicle-dataset">
-<h3>Electric Vehicle Dataset<a class="headerlink" href="#electric-vehicle-dataset" title="Permalink to this headline">#</a></h3>
+<h3>Electric Vehicle Dataset<a class="headerlink" href="#electric-vehicle-dataset" title="Permalink to this heading">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/38b9a9c95bf197232fea6cd4646dd2da/electric_vehicle_population_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
 <table class="table" id="id7">
 <caption><span class="caption-text">Electric Vehicles in Washington State</span><a class="headerlink" href="#id7" title="Permalink to this table">#</a></caption>
-<colgroup>
-<col style="width: 6%" />
-<col style="width: 6%" />
-<col style="width: 6%" />
-<col style="width: 6%" />
-<col style="width: 6%" />
-<col style="width: 6%" />
-<col style="width: 6%" />
-<col style="width: 6%" />
-<col style="width: 6%" />
-<col style="width: 6%" />
-<col style="width: 6%" />
-<col style="width: 6%" />
-<col style="width: 6%" />
-<col style="width: 6%" />
-<col style="width: 6%" />
-<col style="width: 6%" />
-<col style="width: 6%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>VIN (1-10)</p></td>
 <td><p>County</p></td>
@@ -1001,7 +998,7 @@ document.write(`
 </section>
 </section>
 <section id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html">matplotlib bar charts</a></p></li>
 <li><p><a class="reference external" href="https://matplotlib.org/stable/gallery/color/named_colors.html">matplotlib colors</a></p></li>
@@ -1017,11 +1014,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="00_PYTHON.html"
@@ -1041,10 +1037,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1052,6 +1045,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1108,9 +1102,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -1134,8 +1129,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

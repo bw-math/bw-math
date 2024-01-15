@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Introduction &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/probability/00_INTRODUCTION';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Combinatorics" href="01_COMBINATORICS.html" />
     <link rel="prev" title="Probability" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -510,15 +531,15 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="introduction">
-<span id="probability-introduction"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
+<span id="probability-introduction"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
 <p>Probability is the study of the properties of random events.</p>
 <section id="preliminaries">
-<h2>Preliminaries<a class="headerlink" href="#preliminaries" title="Permalink to this headline">#</a></h2>
+<h2>Preliminaries<a class="headerlink" href="#preliminaries" title="Permalink to this heading">#</a></h2>
 <section id="compound-union">
-<span id="id1"></span><h3>Compound Union<a class="headerlink" href="#compound-union" title="Permalink to this headline">#</a></h3>
+<span id="id1"></span><h3>Compound Union<a class="headerlink" href="#compound-union" title="Permalink to this heading">#</a></h3>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../../_images/math/c357d0fee8868aa7c07d870be486f0849961e0a0.png" alt="\bigcup\limits_{i=1}^{n} A_{i} = A_1 \cup A_2 \cup ... \cup A_{n-1} \cup A_n"/></p>
@@ -571,7 +592,7 @@ document.write(`
 </section>
 </section>
 <section id="definitions">
-<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
+<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this heading">#</a></h2>
 <dl class="simple" id="experiment">
 <dt>Experiment</dt><dd><p>An <em>uncertain</em> event.</p>
 </dd>
@@ -611,10 +632,10 @@ document.write(`
 <p>A numerical measure of the <em>likelihood</em>, or <em>chance</em>, that an event <strong>A</strong> occurs.</p>
 </section>
 <section id="sample-spaces-and-events">
-<span id="sample-spaces"></span><h2>Sample Spaces and Events<a class="headerlink" href="#sample-spaces-and-events" title="Permalink to this headline">#</a></h2>
+<span id="sample-spaces"></span><h2>Sample Spaces and Events<a class="headerlink" href="#sample-spaces-and-events" title="Permalink to this heading">#</a></h2>
 <p>The <em>sample space</em> for an experiment is the set of everything that could possibly happen.</p>
 <section id="motivation">
-<h3>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h3>
+<h3>Motivation<a class="headerlink" href="#motivation" title="Permalink to this heading">#</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>By “<em>fair</em>”, we mean the probability of all outcomes are <em>equally likely</em>.</p>
@@ -647,7 +668,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="compound-events">
-<span id="id2"></span><h3>Compound Events<a class="headerlink" href="#compound-events" title="Permalink to this headline">#</a></h3>
+<span id="id2"></span><h3>Compound Events<a class="headerlink" href="#compound-events" title="Permalink to this heading">#</a></h3>
 <p>A <em>compound</em> event is formed by composing simpler events with <a class="reference internal" href="../SET_THEORY.html#set-operations"><span class="std std-ref">Operations</span></a>.</p>
 <dl class="simple">
 <dt>Example</dt><dd><p>Consider the experiment of drawing a single card at random from a well-shuffled, standard playing deck. Let <strong>A</strong> represent the event of drawing a 2. Let <strong>B</strong> represent the event of drawing a heart.</p>
@@ -662,7 +683,7 @@ document.write(`
 </ol>
 </section>
 <section id="classical-definition-of-probability">
-<span id="classical-definition"></span><h3>Classical Definition of Probability<a class="headerlink" href="#classical-definition-of-probability" title="Permalink to this headline">#</a></h3>
+<span id="classical-definition"></span><h3>Classical Definition of Probability<a class="headerlink" href="#classical-definition-of-probability" title="Permalink to this heading">#</a></h3>
 <p>Returning to the experiment of flipping a fair coin once, we have a sample space and two events, <strong>H</strong> and <strong>T</strong>, defined on that sample space,</p>
 <div class="math">
 <p><img src="../../_images/math/7302e9835f241c03dd9de7319669b28b9a9fd614.png" alt="S = \{ h, t \}"/></p>
@@ -695,7 +716,7 @@ document.write(`
 </div></section>
 </section>
 <section id="axioms-of-probability">
-<span id="id3"></span><h2>Axioms of Probability<a class="headerlink" href="#axioms-of-probability" title="Permalink to this headline">#</a></h2>
+<span id="id3"></span><h2>Axioms of Probability<a class="headerlink" href="#axioms-of-probability" title="Permalink to this heading">#</a></h2>
 <p>The <em>classical definition of probability</em> suffices for a general understanding of probability, but there are cases where it fails to account for every feature we would expect a definition of probability to satisfy.</p>
 <p>To see this, consider the experiment of spinning a dial on a clock with radius <em>r</em>,</p>
 <p>(INSERT PICTURE)</p>
@@ -706,23 +727,23 @@ document.write(`
 <p>We will see in a subsequent section, when we discuss <span class="xref std std-ref">the uniform distribution</span>, while we cannot calculate the probability of the dial exactly landing on a given number, we can calculate the probability the dial lands within a certain interval (that is to say, a certain <a class="reference external" href="https://en.wikipedia.org/wiki/Arc_length">arc length</a> of the clock’s circumference).</p>
 </div>
 <section id="axioms">
-<h3>Axioms<a class="headerlink" href="#axioms" title="Permalink to this headline">#</a></h3>
+<h3>Axioms<a class="headerlink" href="#axioms" title="Permalink to this heading">#</a></h3>
 <section id="axiom-1">
-<span id="id4"></span><h4>Axiom 1<a class="headerlink" href="#axiom-1" title="Permalink to this headline">#</a></h4>
+<span id="id4"></span><h4>Axiom 1<a class="headerlink" href="#axiom-1" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><img class="math" src="../../_images/math/c760f70670616c60a6fd2cc21b724ee5b1b12d9e.png" alt="P(A)&gt;=0"/></dt><dd><p>All probabilities are positive; No probabilities are negative.</p>
 </dd>
 </dl>
 </section>
 <section id="axiom-2">
-<span id="id5"></span><h4>Axiom 2<a class="headerlink" href="#axiom-2" title="Permalink to this headline">#</a></h4>
+<span id="id5"></span><h4>Axiom 2<a class="headerlink" href="#axiom-2" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><img class="math" src="../../_images/math/7e54cdab4f141cf48960cbaee92eccf6a3748b43.png" alt="P(S)=1"/></dt><dd><p>The probability of <em>some</em> outcome from the sample space <strong>S</strong> occuring is equal to 1.</p>
 </dd>
 </dl>
 </section>
 <section id="axiom-3">
-<span id="id6"></span><h4>Axiom 3<a class="headerlink" href="#axiom-3" title="Permalink to this headline">#</a></h4>
+<span id="id6"></span><h4>Axiom 3<a class="headerlink" href="#axiom-3" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><img class="math" src="../../_images/math/965a3d90886aed05e7df54dedb739f4e80e47b98.png" alt="\forall i \neq j: A_i \cap A_j = \varnothing \implies P(\bigcup\limits_{i=1}^{n} A_i) = \sum_{i=1}^n P(A_i)"/></dt><dd><p>If each event <sub>i</sub> <strong>A</strong> in the sample space <strong>S</strong> is <em>mutually exclusive</em> with every other event <img class="math" src="../../_images/math/9a11671202df534a2f7165a42f74cf7e7f38a11b.png" alt="\forall i \neq j: A_i"/>, then the probability of the union of all of these events is equal to the sum of the probabilities of each individual event.</p>
 </dd>
@@ -795,10 +816,10 @@ document.write(`
 </section>
 </section>
 <section id="theorems">
-<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this headline">#</a></h2>
+<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this heading">#</a></h2>
 <p>We can use these <em>axioms</em>, along with the <cite>theorems of set theory &lt;set_theorems&gt;</cite> to prove various things about probability.</p>
 <section id="law-of-complements">
-<span id="id7"></span><h3>Law of Complements<a class="headerlink" href="#law-of-complements" title="Permalink to this headline">#</a></h3>
+<span id="id7"></span><h3>Law of Complements<a class="headerlink" href="#law-of-complements" title="Permalink to this heading">#</a></h3>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../../_images/math/ab7b4e33f3d0e27ea39baf70b27b1cc3cc8af0d6.png" alt="P(A) + P(A^c) = 1"/></p>
@@ -874,7 +895,7 @@ document.write(`
 <p>TODO</p>
 </section>
 <section id="law-of-unions">
-<span id="id8"></span><h3>Law of Unions<a class="headerlink" href="#law-of-unions" title="Permalink to this headline">#</a></h3>
+<span id="id8"></span><h3>Law of Unions<a class="headerlink" href="#law-of-unions" title="Permalink to this heading">#</a></h3>
 <dl>
 <dt>Symbolic Expression</dt><dd><div class="math">
 <p><img src="../../_images/math/71af65e11df7477b3ea176375daf5adc8dc01dfb.png" alt="P(A \cup B) = P(A) + P(B) - P(A \cap B)"/></p>
@@ -918,15 +939,9 @@ document.write(`
 </div><div class="math">
 <p><img src="../../_images/math/ca4415e19854e914de6b354842c35cfa11631df9.png" alt="= \frac{4}{52} + \frac{13}{52} - \frac{1}{52} = \frac{16}{52} = \frac{4}{13} \approx 0.31"/></p>
 </div><section id="probability-tables">
-<span id="id9"></span><h4>Probability Tables<a class="headerlink" href="#probability-tables" title="Permalink to this headline">#</a></h4>
+<span id="id9"></span><h4>Probability Tables<a class="headerlink" href="#probability-tables" title="Permalink to this heading">#</a></h4>
 <p>If you have two events, <img class="math" src="../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/> and <img class="math" src="../../_images/math/3a7a214c98a4440c624d51173249c2fb0d99e2c4.png" alt="B"/>, then you can form a <em>two-way</em> probability table by partitioning the sample space into <img class="math" src="../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/> and <img class="math" src="../../_images/math/2ef75eec66003e588055d751eaddd391b6eccea0.png" alt="A^c"/> and then simultaneously partitioning the sample space into <img class="math" src="../../_images/math/3a7a214c98a4440c624d51173249c2fb0d99e2c4.png" alt="B"/> and <img class="math" src="../../_images/math/8baf415367bb142a93d04eba8007d3e5cd02bdad.png" alt="B^c"/>,</p>
 <table class="table">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 30%" />
-<col style="width: 28%" />
-<col style="width: 23%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Events</p></td>
 <td><p><img class="math" src="../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/></p></td>
@@ -961,11 +976,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="index.html"
@@ -985,10 +999,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -996,6 +1007,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1052,9 +1064,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -1078,8 +1091,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

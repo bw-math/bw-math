@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Combinatorics &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/probability/01_COMBINATORICS';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Conditional Probability" href="02_CONDITIONAL.html" />
     <link rel="prev" title="Introduction" href="00_INTRODUCTION.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -510,15 +531,15 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="combinatorics">
-<span id="id1"></span><h1>Combinatorics<a class="headerlink" href="#combinatorics" title="Permalink to this headline">#</a></h1>
+<span id="id1"></span><h1>Combinatorics<a class="headerlink" href="#combinatorics" title="Permalink to this heading">#</a></h1>
 <p><strong>Combinatorics</strong> is the study of sequences and the order in which they occur.</p>
 <section id="definitions">
-<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
+<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this heading">#</a></h2>
 <section id="factorial">
-<span id="id2"></span><h3>Factorial<a class="headerlink" href="#factorial" title="Permalink to this headline">#</a></h3>
+<span id="id2"></span><h3>Factorial<a class="headerlink" href="#factorial" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/7e451da68a24c1d66570895ec95c4e54480e6920.png" alt="n!"/></p>
 </dd>
@@ -529,7 +550,7 @@ document.write(`
 </div><p><em>0!</em> is undefined and taken to be <em>1</em> by convention.</p>
 </section>
 <section id="power-set">
-<span id="id3"></span><h3>Power Set<a class="headerlink" href="#power-set" title="Permalink to this headline">#</a></h3>
+<span id="id3"></span><h3>Power Set<a class="headerlink" href="#power-set" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/61f9d38fb54ff541f7a0d570f34e4da2c7847931.png" alt="\mathcal{P}(A)"/></p>
 </dd>
@@ -546,9 +567,9 @@ document.write(`
 </section>
 </section>
 <section id="counting-principles">
-<span id="id4"></span><h2>Counting Principles<a class="headerlink" href="#counting-principles" title="Permalink to this headline">#</a></h2>
+<span id="id4"></span><h2>Counting Principles<a class="headerlink" href="#counting-principles" title="Permalink to this heading">#</a></h2>
 <section id="motivation">
-<h3>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h3>
+<h3>Motivation<a class="headerlink" href="#motivation" title="Permalink to this heading">#</a></h3>
 <p>Suppose you live in the aptly named <em>Town A</em> and are planing a road trip to the similarly uninspired <em>Town C</em>. You plan on stopping at <em>Town B</em> to fill up your gas tank before proceeding to <em>Town C</em>.</p>
 <p>Suppose further there are two routes from <em>Town A</em> to <em>Town B</em>, and there are three routes from <em>Town B</em> to <em>Town C</em>. Let us call the routes from <em>Town A</em> to <em>Town B</em> <em>a</em> <sub>1</sub> and <em>a</em> <sub>2</sub>, respectively. Let us call the routes from <em>Town B</em> to <em>Town C</em> <em>b</em> <sub>1</sub>, <em>b</em> <sub>2</sub>, and <em>b</em> <sub>3</sub>, respectively. This setup is depicted in the following diagram,</p>
 <a class="reference internal image-reference" href="../../_images/combinatorics_road_trip.png"><img alt="../../_images/combinatorics_road_trip.png" class="align-center" src="../../_images/combinatorics_road_trip.png" style="width: 60%;" /></a>
@@ -566,7 +587,7 @@ document.write(`
 <p><img src="../../_images/math/b8afb34da241ddaa347f79047308ffa6231f8f4a.png" alt="\implies n(G) = 6"/></p>
 </div></details></section>
 <section id="the-fundamental-counting-principle">
-<span id="counting-principle"></span><h3>The Fundamental Counting Principle<a class="headerlink" href="#the-fundamental-counting-principle" title="Permalink to this headline">#</a></h3>
+<span id="counting-principle"></span><h3>The Fundamental Counting Principle<a class="headerlink" href="#the-fundamental-counting-principle" title="Permalink to this heading">#</a></h3>
 <p>We now generalize the example in the previous section into the <em>Counting Principle</em> in three steps: first, we give an intuitive explanation fo the <em>Counting Principle</em>, then we state it in <a class="reference internal" href="../LOGIC.html#proposition"><span class="std std-ref">propositional</span></a> form using the language of <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">Set Theory</span></a> and finally, we state it entirely symbolically.</p>
 <p><strong>Heuristic</strong></p>
 <blockquote>
@@ -606,15 +627,15 @@ document.write(`
 </div>
 </section>
 <section id="tree-diagrams">
-<span id="id5"></span><h3>Tree Diagrams<a class="headerlink" href="#tree-diagrams" title="Permalink to this headline">#</a></h3>
+<span id="id5"></span><h3>Tree Diagrams<a class="headerlink" href="#tree-diagrams" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 </section>
 <section id="generalized-counting-principle">
-<span id="id6"></span><h3>Generalized Counting Principle<a class="headerlink" href="#generalized-counting-principle" title="Permalink to this headline">#</a></h3>
+<span id="id6"></span><h3>Generalized Counting Principle<a class="headerlink" href="#generalized-counting-principle" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 </section>
 <section id="corollaries">
-<h3>Corollaries<a class="headerlink" href="#corollaries" title="Permalink to this headline">#</a></h3>
+<h3>Corollaries<a class="headerlink" href="#corollaries" title="Permalink to this heading">#</a></h3>
 <p>Before stating the first important corollary that follows from the <em>Generalized Counting Principle</em>, we look at an instructive example.</p>
 <dl>
 <dt><strong>Example</strong></dt><dd><p>A pizza shop lets their customers make any kind of pizza they want from the following ingredients: pepperoni, sausage, green peppers, mushrooms and onions.</p>
@@ -657,13 +678,13 @@ document.write(`
 </section>
 </section>
 <section id="permutations">
-<span id="id7"></span><h2>Permutations<a class="headerlink" href="#permutations" title="Permalink to this headline">#</a></h2>
+<span id="id7"></span><h2>Permutations<a class="headerlink" href="#permutations" title="Permalink to this heading">#</a></h2>
 <dl class="simple">
 <dt>Permutation</dt><dd><p>An <em>r</em>-element permutation of <em>n</em> things is an ordered selection or arrangement of <em>r</em> of them.</p>
 </dd>
 </dl>
 <section id="id8">
-<h3>Motivation<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h3>
+<h3>Motivation<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
 <p>Three friends, Aletheia, Bertha and Cornelius, are running a foot race to determine who is the fastest. As a diligent statistician, rather than participate in the festitivities, you decide to turn bookie and take bets from your other friends on who is going to win the race. In order to assign odds to each outcome, you first have to know <em>how many ways</em> the race can finish.</p>
 <p><em>Well</em>, my fellow statistician, how many ways <em>can</em> this race between Aletheia, Bertha and Cornelius finish? Before toggling the solution below, try and figure out the answer by listing each possible outcome and then totaling the number of results.</p>
 <details class="summary-solution-the-key-to-understanding-this-problem-is-to-recognize-the-order-in-which-these-three-friends-finish-the-race-matters-if-we-let-a-represent-aletheia-finishing-the-race-b-represent-bertha-finishing-the-race-and-c-represent-cornelius-finishing-the-face-we-can-enumerate-the-possible-outcomes-of-the-race-as-permutations-of-the-sequence-abc">
@@ -686,27 +707,27 @@ The key to understanding this problem is to recognize the *order* in which these
 <summary>Solution</summary><p>TODO</p>
 </details></section>
 <section id="formula">
-<span id="permutation-formula"></span><h3>Formula<a class="headerlink" href="#formula" title="Permalink to this headline">#</a></h3>
+<span id="permutation-formula"></span><h3>Formula<a class="headerlink" href="#formula" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 <div class="math">
 <p><img src="../../_images/math/db0721f1524ff698f71eccbcf5e719f8d772ec41.png" alt="P_r^n = \frac{n!}{(n-r)!}"/></p>
 </div></section>
 </section>
 <section id="combinations">
-<span id="id9"></span><h2>Combinations<a class="headerlink" href="#combinations" title="Permalink to this headline">#</a></h2>
+<span id="id9"></span><h2>Combinations<a class="headerlink" href="#combinations" title="Permalink to this heading">#</a></h2>
 <dl class="simple">
 <dt>Combination</dt><dd><p>An <em>r</em>-element combination of <em>n</em> things is an unordered selection of <em>r</em> of them.</p>
 </dd>
 </dl>
 <section id="id10">
-<h3>Motivation<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h3>
+<h3>Motivation<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
 <p>The same three friends from the permutation section, Aletheia, Bertha and Cornelius, have tossed their sneakers aside and decided their talents would be better served enriching the school culture. They each put their names into the running for Prom Committee. Unfortunately, there are only two open positions on the committee. How many ways can these open positions be filled by the three friends?</p>
 <details class="summary-solution">
 <summary>Solution</summary><p>TODO</p>
 </details><p><strong>Example</strong></p>
 </section>
 <section id="combination-formula">
-<span id="id11"></span><h3>Formula<a class="headerlink" href="#combination-formula" title="Permalink to this headline">#</a></h3>
+<span id="id11"></span><h3>Formula<a class="headerlink" href="#combination-formula" title="Permalink to this heading">#</a></h3>
 <div class="math">
 <p><img src="../../_images/math/8c18c5a5c4934f8a0c72e3222ce17e3829d3c872.png" alt="{C}_{r}^n = \frac{n!}{r! \cdot (n-r)!}"/></p>
 </div><p><img class="math" src="../../_images/math/07c5d19012c72a6d0f708ff09b8bad9853ce846d.png" alt="{n \atop r}"/> is another notation you will often encounter for combinations of <em>n</em> objects taken <em>r</em> at a time..</p>
@@ -740,9 +761,9 @@ Let **Z** represent the event of selecting all six winning numbers. Let **Y** re
 <p><img src="../../_images/math/9758a1e4a86e139d948288893155dc0113832517.png" alt="P(A)"/></p>
 </div></details></section>
 <section id="the-connection-between-permutations-and-combinations">
-<h3>The Connection Between Permutations and Combinations<a class="headerlink" href="#the-connection-between-permutations-and-combinations" title="Permalink to this headline">#</a></h3>
+<h3>The Connection Between Permutations and Combinations<a class="headerlink" href="#the-connection-between-permutations-and-combinations" title="Permalink to this heading">#</a></h3>
 <section id="combined-permutations">
-<h4>Combined Permutations<a class="headerlink" href="#combined-permutations" title="Permalink to this headline">#</a></h4>
+<h4>Combined Permutations<a class="headerlink" href="#combined-permutations" title="Permalink to this heading">#</a></h4>
 <p>Let <strong>O</strong> be the set of objects,</p>
 <blockquote>
 <div><div class="math">
@@ -759,7 +780,7 @@ Let **Z** represent the event of selecting all six winning numbers. Let **Y** re
 <a class="reference internal image-reference" href="../../_images/combinatorics_connection.png"><img alt="../../_images/combinatorics_connection.png" class="align-center" src="../../_images/combinatorics_connection.png" style="width: 60%;" /></a>
 </section>
 <section id="permuted-combinations">
-<h4>Permuted Combinations<a class="headerlink" href="#permuted-combinations" title="Permalink to this headline">#</a></h4>
+<h4>Permuted Combinations<a class="headerlink" href="#permuted-combinations" title="Permalink to this heading">#</a></h4>
 <p>Suppose now a similar set of objects <strong>P</strong> is given as,</p>
 <blockquote>
 <div><div class="math">
@@ -781,11 +802,10 @@ Let **Z** represent the event of selecting all six winning numbers. Let **Y** re
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="00_INTRODUCTION.html"
@@ -805,10 +825,7 @@ Let **Z** represent the event of selecting all six winning numbers. Let **Y** re
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -816,6 +833,7 @@ Let **Z** represent the event of selecting all six winning numbers. Let **Y** re
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -872,9 +890,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -898,8 +917,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

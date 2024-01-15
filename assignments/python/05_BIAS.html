@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Bias &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/python/05_BIAS';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Simulation" href="06_SIMULATION.html" />
     <link rel="prev" title="Linear Regression" href="04_REGRESSION.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -499,17 +520,17 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="bias">
-<span id="project-five"></span><h1>Bias<a class="headerlink" href="#bias" title="Permalink to this headline">#</a></h1>
+<span id="project-five"></span><h1>Bias<a class="headerlink" href="#bias" title="Permalink to this heading">#</a></h1>
 <blockquote class="epigraph">
 <div><p>There’s something happening here, but what it is ain’t exactly clear.</p>
 <p class="attribution">—Buffalo Springfield</p>
 </div></blockquote>
 <p>In this lab, you will perform some graphical analysis on a famously biased data set and use statistical reasoning to draw conclusions about the method of observation used to generate the data.</p>
 <section id="instructions">
-<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Download the <em>csv</em> dataset in the <a class="reference internal" href="#project-five-dataset"><span class="std std-ref">Dataset</span></a> section and place it in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your folder system where you save your <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts.</p></li>
 <li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">NAME_project_five.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">NAME</span></code> with your name.</p></li>
@@ -523,11 +544,11 @@ document.write(`
 </ol>
 </section>
 <section id="background">
-<span id="project-five-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<span id="project-five-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Draft_lottery_(1969)">In the years 1969, 1970, 1971 and 1972, the Selective Service System in the United States held a draft lottery by order of President Lyndon B. Johnson for men born between the dates of January 1, 1944 and December 31, 1950</a>.</p>
 <p>Individuals born between these dates were to be selected at random and drafted into military service to fight in the Vietnam War.</p>
 <section id="method-of-selection">
-<h3>Method of Selection<a class="headerlink" href="#method-of-selection" title="Permalink to this headline">#</a></h3>
+<h3>Method of Selection<a class="headerlink" href="#method-of-selection" title="Permalink to this heading">#</a></h3>
 <p>The method used to select individuals for service is highly controversial. Many argued it was not truly random and unfairly selected certain groups of individuals over others. In this project we are going to investigate these claims and see if there is any statistical evidence to suggest they are true.</p>
 <p>To do this, we will need to understand how draftees were selected.</p>
 <p>In an attempt to randomize the selection, the Selective Service System held a draft lottery. 365 days of the year were printed on sheets of paper and placed in a shoebox,</p>
@@ -538,9 +559,9 @@ document.write(`
 </section>
 </section>
 <section id="python">
-<span id="project-five-python"></span><h2>Python<a class="headerlink" href="#python" title="Permalink to this headline">#</a></h2>
+<span id="project-five-python"></span><h2>Python<a class="headerlink" href="#python" title="Permalink to this heading">#</a></h2>
 <section id="loops">
-<h3>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">#</a></h3>
+<h3>Loops<a class="headerlink" href="#loops" title="Permalink to this heading">#</a></h3>
 <p>Loops are a <a class="reference internal" href="../../resources/python/07_CONTROLS.html#python-control-structures"><span class="std std-ref">control structure</span></a> that allow us to organize the flow a program. We have actually encountered loops many times already. We are using loops whenever we write,</p>
 <div class="highlight-python: notranslate"><div class="highlight"><pre><span></span>data = [ (0,1), (1,2), (2,3), (3,4) ]
 x_var = [ obs[0] for obs in data ]
@@ -566,7 +587,7 @@ print(x_var)
 </div></blockquote>
 </section>
 <section id="enumeration">
-<h3>Enumeration<a class="headerlink" href="#enumeration" title="Permalink to this headline">#</a></h3>
+<h3>Enumeration<a class="headerlink" href="#enumeration" title="Permalink to this heading">#</a></h3>
 <p>In <strong>Python</strong>, we have been dealing with lists of data, such as,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">some_data</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;Rory&quot;</span><span class="p">,</span> <span class="s2">&quot;Lydia&quot;</span><span class="p">,</span> <span class="s2">&quot;Sophia&quot;</span><span class="p">,</span> <span class="s2">&quot;Rachael&quot;</span><span class="p">,</span> <span class="s2">&quot;Sejal&quot;</span> <span class="p">]</span>
 </pre></div>
@@ -586,7 +607,7 @@ print(x_var)
 #3 : Rachael
 #4 : Sejal</p>
 </div></blockquote>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Easter Egg</p>
 <blockquote>
 <div><p>Add the following line underneath the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement in the code snippet above for a fun Easter Egg!</p>
@@ -597,12 +618,12 @@ print(x_var)
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2"> Boo!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
+</aside>
 <p>The <code class="docutils literal notranslate"><span class="pre">enumerate()</span></code> function allows us to <em>step</em> over each element of a list and grab the index while we do it.</p>
 </section>
 </section>
 <section id="project">
-<span id="project-five-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
+<span id="project-five-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this heading">#</a></h2>
 <ol class="arabic">
 <li><p>Discuss the following questions. Save your answer in the <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a></p>
 <blockquote>
@@ -644,9 +665,9 @@ print(x_var)
 </ol>
 </section>
 <section id="dataset">
-<span id="project-five-dataset"></span><h2>Dataset<a class="headerlink" href="#dataset" title="Permalink to this headline">#</a></h2>
+<span id="project-five-dataset"></span><h2>Dataset<a class="headerlink" href="#dataset" title="Permalink to this heading">#</a></h2>
 <section id="loading-data">
-<span id="project-five-loading-data"></span><h3>Loading Data<a class="headerlink" href="#loading-data" title="Permalink to this headline">#</a></h3>
+<span id="project-five-loading-data"></span><h3>Loading Data<a class="headerlink" href="#loading-data" title="Permalink to this heading">#</a></h3>
 <p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="02_QUANTITATIVE.html#project-two-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 
@@ -667,19 +688,11 @@ print(x_var)
 </div>
 </section>
 <section id="vietnam-draft-lottery-data">
-<h3>Vietnam Draft Lottery Data<a class="headerlink" href="#vietnam-draft-lottery-data" title="Permalink to this headline">#</a></h3>
+<h3>Vietnam Draft Lottery Data<a class="headerlink" href="#vietnam-draft-lottery-data" title="Permalink to this heading">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/257993626c7a7bafe318b70290252148/vietnam_draft_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
 <table class="table" id="id1">
 <caption><span class="caption-text">Vietnam Draft Lottery Data</span><a class="headerlink" href="#id1" title="Permalink to this table">#</a></caption>
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>M</p></td>
 <td><p>D</p></td>
@@ -828,7 +841,7 @@ print(x_var)
 <p>And <em>N69</em>, <em>N70</em>, <em>N71</em> and <em>N72</em> represent the number of individuals selected with a given birth date in the years 1969, 1970, 1971 and 1972, respectively.</p>
 </section>
 <section id="cleaning-the-data-set">
-<h3>Cleaning the Data Set<a class="headerlink" href="#cleaning-the-data-set" title="Permalink to this headline">#</a></h3>
+<h3>Cleaning the Data Set<a class="headerlink" href="#cleaning-the-data-set" title="Permalink to this heading">#</a></h3>
 <p>The <em>experimental unit</em> in this lab is a date. Each entry in the datasets corresponds to a particular birthdate, i.e. a month and day. For example, the first row of the dataset looks like,</p>
 <div class="line-block">
 <div class="line">M | D | N69 | N70 | N71 | N72 |</div>
@@ -863,11 +876,10 @@ print(x_var)
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="04_REGRESSION.html"
@@ -887,10 +899,7 @@ print(x_var)
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -898,6 +907,7 @@ print(x_var)
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -943,9 +953,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -969,8 +980,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

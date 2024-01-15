@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Plots &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'resources/python/05_PLOTS';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Files" href="06_FILES.html" />
     <link rel="prev" title="Functions" href="04_FUNCTIONS.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -525,24 +546,24 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="plots">
-<span id="python-plotting"></span><h1>Plots<a class="headerlink" href="#plots" title="Permalink to this headline">#</a></h1>
+<span id="python-plotting"></span><h1>Plots<a class="headerlink" href="#plots" title="Permalink to this heading">#</a></h1>
 <p>We will be using <strong>Python</strong> to generate graphs. Lots and lots of graphs. So many graphs, you might say it’s <em>graphic</em>.</p>
 <p>This section serves as a gallery for all the different sorts of graphs you can create with <strong>Python</strong>. However, before we get to that point, we need to make sure our computers are setup with graphing capabilities. If you followed along with the <a class="reference internal" href="01_SETUP.html#python-setup"><span class="std std-ref">Python Setup</span></a> and completed all the steps on that page, you should be good to go. You may skip the next section in that case, or read through as a refresher (re-installing the graphics library won’t break anything).</p>
 <p>By default, <strong>Python</strong> does not have statistical graphing capabilities. You must install two addition packages to supplement this deficiency, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> and <code class="docutils literal notranslate"><span class="pre">tk</span></code>.</p>
 <section id="prerequisites">
-<span id="python-plotting-prerequisites"></span><h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
+<span id="python-plotting-prerequisites"></span><h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">#</a></h2>
 <section id="matplotlib">
-<span id="id1"></span><h3>matplotlib<a class="headerlink" href="#matplotlib" title="Permalink to this headline">#</a></h3>
+<span id="id1"></span><h3>matplotlib<a class="headerlink" href="#matplotlib" title="Permalink to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> is a versatile library for generating just about any sort of mathematical graph you can imagine. To install it, open up the Linux Terminal on your ChromeBook and type,</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip3<span class="w"> </span>install<span class="w"> </span>matplotlib
 </pre></div>
 </div>
 </section>
 <section id="tkinter">
-<h3>tkinter<a class="headerlink" href="#tkinter" title="Permalink to this headline">#</a></h3>
+<h3>tkinter<a class="headerlink" href="#tkinter" title="Permalink to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">tkinter</span></code>, or just <code class="docutils literal notranslate"><span class="pre">tk</span></code>, is a library for processing the results of <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> into pretty JPEGs and PNGs. You can also install it through the Linux terminal,</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip3<span class="w"> </span>install<span class="w"> </span>tk
 </pre></div>
@@ -551,7 +572,7 @@ document.write(`
 </section>
 </section>
 <section id="importing">
-<span id="python-plotting-imports"></span><h2>Importing<a class="headerlink" href="#importing" title="Permalink to this headline">#</a></h2>
+<span id="python-plotting-imports"></span><h2>Importing<a class="headerlink" href="#importing" title="Permalink to this heading">#</a></h2>
 <p>When you import <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> into your scripts, the very first thing you should do is <em>tell it to use the</em> <code class="docutils literal notranslate"><span class="pre">tk</span></code> <em>library</em> to create graphs.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib</span>
 
@@ -561,7 +582,7 @@ document.write(`
 <p>This step is not, strictly speaking, necessary as most systems will default to using this library, but if your plots aren’t showing up or you experience other weird errors, this is the likely culprit. In the event something goes wrong and you can’t figure why, try adjusting this setting.</p>
 </section>
 <section id="creating-the-axes">
-<h2>Creating the Axes<a class="headerlink" href="#creating-the-axes" title="Permalink to this headline">#</a></h2>
+<h2>Creating the Axes<a class="headerlink" href="#creating-the-axes" title="Permalink to this heading">#</a></h2>
 <p>To create a plot, we use the <code class="docutils literal notranslate"><span class="pre">pyplot</span></code> library within <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> package. The <code class="docutils literal notranslate"><span class="pre">subplots()</span></code> function within the <code class="docutils literal notranslate"><span class="pre">pyplot</span></code> library will generate an <em>x-y</em> plane canvas, called the <em>axes</em>.</p>
 <p>The following code will create a <em>figure</em> and a set of <em>axes</em> on which we can graph.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># note: the `as` gives the library a short-cut name we can use.</span>
@@ -575,9 +596,9 @@ document.write(`
 <p><code class="docutils literal notranslate"><span class="pre">fig</span></code>, which stands for <em>figure</em>, is for drawing directly onto a 2D image using pixels. We will not use <em>figures</em> in this class to generate images. We are only interested in the <code class="docutils literal notranslate"><span class="pre">axes</span></code>, which allow us to graph things in the <em>x-y</em> plane.</p>
 </div>
 <section id="labelling">
-<h3>Labelling<a class="headerlink" href="#labelling" title="Permalink to this headline">#</a></h3>
+<h3>Labelling<a class="headerlink" href="#labelling" title="Permalink to this heading">#</a></h3>
 <section id="titles">
-<h4>Titles<a class="headerlink" href="#titles" title="Permalink to this headline">#</a></h4>
+<h4>Titles<a class="headerlink" href="#titles" title="Permalink to this heading">#</a></h4>
 <p>The following code adds a title to a plot,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
 
@@ -588,7 +609,7 @@ document.write(`
 </div>
 </section>
 <section id="subtitles">
-<h4>Subtitles<a class="headerlink" href="#subtitles" title="Permalink to this headline">#</a></h4>
+<h4>Subtitles<a class="headerlink" href="#subtitles" title="Permalink to this heading">#</a></h4>
 <p>The following code adds a subtitle to a plot,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
 
@@ -599,7 +620,7 @@ document.write(`
 </div>
 </section>
 <section id="axes">
-<h4>Axes<a class="headerlink" href="#axes" title="Permalink to this headline">#</a></h4>
+<h4>Axes<a class="headerlink" href="#axes" title="Permalink to this heading">#</a></h4>
 <p>The following code labels both the <em>x</em> and <em>y</em> axes in a plot,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
 
@@ -612,7 +633,7 @@ document.write(`
 </section>
 </section>
 <section id="multiple-graphs">
-<h3>Multiple Graphs<a class="headerlink" href="#multiple-graphs" title="Permalink to this headline">#</a></h3>
+<h3>Multiple Graphs<a class="headerlink" href="#multiple-graphs" title="Permalink to this heading">#</a></h3>
 <p>You can add multiple graphs to the same image by creating additional axes. You can create more axes by passing an argument into the <code class="docutils literal notranslate"><span class="pre">subplots()</span></code> function.</p>
 <p>When you pass in arguments to <code class="docutils literal notranslate"><span class="pre">subplots</span></code>, it will return a <em>list</em> of axes. You can then access the individual axes by using their <em>index</em>,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
@@ -633,7 +654,7 @@ document.write(`
 </section>
 </section>
 <section id="showing-the-plot">
-<h2>Showing The Plot<a class="headerlink" href="#showing-the-plot" title="Permalink to this headline">#</a></h2>
+<h2>Showing The Plot<a class="headerlink" href="#showing-the-plot" title="Permalink to this heading">#</a></h2>
 <p>Once you have plotted something on the <code class="docutils literal notranslate"><span class="pre">axes</span></code>, you can display the plot with the <code class="docutils literal notranslate"><span class="pre">show()</span></code> function.</p>
 <p>This example will plot the ordered pairs <img class="math" src="../../_images/math/d8f984479028d739ef9a97d3777f3f99534444fc.png" alt="(1, 8), (2, 9), (3, 7)"/></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
@@ -651,7 +672,7 @@ document.write(`
 </div>
 </section>
 <section id="styling-the-graph">
-<h2>Styling The Graph<a class="headerlink" href="#styling-the-graph" title="Permalink to this headline">#</a></h2>
+<h2>Styling The Graph<a class="headerlink" href="#styling-the-graph" title="Permalink to this heading">#</a></h2>
 <p>All graphing functions in <strong>matplotlib</strong> accept <code class="docutils literal notranslate"><span class="pre">color</span></code> and <code class="docutils literal notranslate"><span class="pre">ec</span></code> arguments. These arguments will determine the fill color and outline color of the graph, respectively. For instance, the following code will generate a histogram with light blue bars outlined in red,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
@@ -670,10 +691,10 @@ document.write(`
 <img alt="../../_images/matplotlib_colors.png" class="align-center" src="../../_images/matplotlib_colors.png" />
 </section>
 <section id="gallery">
-<h2>Gallery<a class="headerlink" href="#gallery" title="Permalink to this headline">#</a></h2>
+<h2>Gallery<a class="headerlink" href="#gallery" title="Permalink to this heading">#</a></h2>
 <p>You can download the scripts used to generate any of these examples by clicking on the “<em>source</em>” link in the top right corner of the image.</p>
 <section id="boxplot">
-<span id="matplotlib-boxplot"></span><h3>Boxplot<a class="headerlink" href="#boxplot" title="Permalink to this headline">#</a></h3>
+<span id="matplotlib-boxplot"></span><h3>Boxplot<a class="headerlink" href="#boxplot" title="Permalink to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">plot.boxplot()</span></code></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
 
@@ -687,25 +708,21 @@ document.write(`
 <span class="n">plot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Boxplot Example</p>
 <p>Below is an example of a boxplot, unrelated to the above code snippet.</p>
-</div>
+</aside>
 <p>(<a class="reference download internal" download="" href="../../_downloads/96f6eae3fd5f0f31966bfdd55748b732/boxplot_normal.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/02cd14e26dd9dfd968ebaac6deb6edc0/boxplot_normal.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/e86491f6d04807b92f3a5b3763800529/boxplot_normal.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/8a8e9884227a1ed601c1cc58abef4988/boxplot_normal.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/boxplot_normal.png" class="plot-directive" src="../../_images/boxplot_normal.png" />
 </figure>
 </section>
 <section id="bar-chart">
-<span id="matplotlib-barchart"></span><h3>Bar Chart<a class="headerlink" href="#bar-chart" title="Permalink to this headline">#</a></h3>
+<span id="matplotlib-barchart"></span><h3>Bar Chart<a class="headerlink" href="#bar-chart" title="Permalink to this heading">#</a></h3>
 <section id="no-frills">
-<span id="matplotlib-standard-barchart"></span><h4>No Frills<a class="headerlink" href="#no-frills" title="Permalink to this headline">#</a></h4>
+<span id="matplotlib-standard-barchart"></span><h4>No Frills<a class="headerlink" href="#no-frills" title="Permalink to this heading">#</a></h4>
 <p>The code snippet below will generate a bar chart for the following frequency distribution,</p>
 <table class="table">
-<colgroup>
-<col style="width: 45%" />
-<col style="width: 55%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>x</p></td>
 <td><p>f(x)</p></td>
@@ -730,17 +747,17 @@ document.write(`
 <span class="n">plot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Barchart Example</p>
 <p>Below is an example of a barchart, unrelated to the above code snippet.</p>
-</div>
+</aside>
 <p>(<a class="reference download internal" download="" href="../../_downloads/7348413fe5c5573da59530320b27e9a6/bar_chart.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/4bd9aa85b9a89f6d28630b82b751b167/bar_chart.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/bdbc74d5a1ce962504a577d3b760d336/bar_chart.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/6194ec86cb8460bde27176bd1580e59e/bar_chart.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/bar_chart.png" class="plot-directive" src="../../_images/bar_chart.png" />
 </figure>
 </section>
 <section id="stacked">
-<h4>Stacked<a class="headerlink" href="#stacked" title="Permalink to this headline">#</a></h4>
+<h4>Stacked<a class="headerlink" href="#stacked" title="Permalink to this heading">#</a></h4>
 <p>Suppose we have a sample of <em>bivarate categorical data</em>,</p>
 <div class="math">
 <p><img src="../../_images/math/9d0040b9c7b5cd70975c3a423413941cf6825451.png" alt="S = \{ (x_i, y_i) \}"/></p>
@@ -749,10 +766,6 @@ document.write(`
 </div><p>where <em>x</em> can take on the values <code class="docutils literal notranslate"><span class="pre">A</span></code> and <code class="docutils literal notranslate"><span class="pre">B</span></code> and <em>y</em> can take on the values <code class="docutils literal notranslate"><span class="pre">C</span></code> and <code class="docutils literal notranslate"><span class="pre">D</span></code>.</p>
 <p>Suppose further we have the <em>conditional distributions</em> for the variable <em>x</em> conditioned on the other variable <em>y</em>.</p>
 <table class="table">
-<colgroup>
-<col style="width: 19%" />
-<col style="width: 81%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>x</p></td>
 <td><p><img class="math" src="../../_images/math/ed020facae0081deba08a62a0499c15b2dfca322.png" alt="P(x \mid C)"/></p></td>
@@ -766,10 +779,6 @@ document.write(`
 </tbody>
 </table>
 <table class="table">
-<colgroup>
-<col style="width: 19%" />
-<col style="width: 81%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>x</p></td>
 <td><p><img class="math" src="../../_images/math/921b1b5a8e4dbbdffe67899416f82c65dd019202.png" alt="P(x \mid D)"/></p></td>
@@ -801,10 +810,10 @@ document.write(`
 <span class="n">plot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Stacked Bar Chart Example</p>
 <p>Below is an example of a stacked bar chart, unrelated to above code snippet.</p>
-</div>
+</aside>
 <p>(<a class="reference download internal" download="" href="../../_downloads/efb8867c6facab1ecff134e53389a36b/stacked_bar_chart.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/9d903cc99407aa942431920fd38dda93/stacked_bar_chart.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/eb1f2c474e77b707c270c791fd6a9880/stacked_bar_chart.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/04521609867dd7cdf63c9f36afbd50a6/stacked_bar_chart.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/stacked_bar_chart.png" class="plot-directive" src="../../_images/stacked_bar_chart.png" />
@@ -812,30 +821,30 @@ document.write(`
 </section>
 </section>
 <section id="dot-plot">
-<h3>Dot Plot<a class="headerlink" href="#dot-plot" title="Permalink to this headline">#</a></h3>
+<h3>Dot Plot<a class="headerlink" href="#dot-plot" title="Permalink to this heading">#</a></h3>
 <p>(<a class="reference download internal" download="" href="../../_downloads/efcffe134cff6c4384959dff6fcc614f/dot_plot.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/7c4b87c96e84437293de8e0708b6ec26/dot_plot.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/11cf7b240d9ef8a01b1a36f8bc01d950/dot_plot.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/0a279d8fc41b974a180599a6612fe81c/dot_plot.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/dot_plot.png" class="plot-directive" src="../../_images/dot_plot.png" />
 </figure>
 </section>
 <section id="pie-chart">
-<h3>Pie Chart<a class="headerlink" href="#pie-chart" title="Permalink to this headline">#</a></h3>
+<h3>Pie Chart<a class="headerlink" href="#pie-chart" title="Permalink to this heading">#</a></h3>
 <p>(<a class="reference download internal" download="" href="../../_downloads/1181b72530fe09e40e18ed0b3cdd6bd2/pie_chart.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/8dbdf21a511392d216d50c9db40ab585/pie_chart.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/72d187ae33fb5c5d2b5df176dccb38a8/pie_chart.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/34ead42b119ffa608a52887da6690522/pie_chart.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/pie_chart.png" class="plot-directive" src="../../_images/pie_chart.png" />
 </figure>
 </section>
 <section id="histogram">
-<h3>Histogram<a class="headerlink" href="#histogram" title="Permalink to this headline">#</a></h3>
+<h3>Histogram<a class="headerlink" href="#histogram" title="Permalink to this heading">#</a></h3>
 <section id="normal">
-<h4>Normal<a class="headerlink" href="#normal" title="Permalink to this headline">#</a></h4>
+<h4>Normal<a class="headerlink" href="#normal" title="Permalink to this heading">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/af4741c2ca0dbe02296d6d69fbbb9543/histogram_normal.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/ace234f281e95d0ffe906dc5b5776507/histogram_normal.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/896988df4e6cc053d5d908c4e15065c2/histogram_normal.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/69aea2c2d783043412d307c1c1f6f235/histogram_normal.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/histogram_normal.png" class="plot-directive" src="../../_images/histogram_normal.png" />
 </figure>
 </section>
 <section id="relative">
-<h4>Relative<a class="headerlink" href="#relative" title="Permalink to this headline">#</a></h4>
+<h4>Relative<a class="headerlink" href="#relative" title="Permalink to this heading">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/c83bf7bdcc559a7e55bbf2ade6c995e7/histogram_relative.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/76f8f39b85e7d600b1b245d2b5d4dd96/histogram_relative.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/b942ef4f52a0629b407c8233b2ffc1b3/histogram_relative.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/fac3f6cde0802bd436b6e68416aa4de5/histogram_relative.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/histogram_relative.png" class="plot-directive" src="../../_images/histogram_relative.png" />
@@ -843,28 +852,28 @@ document.write(`
 </section>
 </section>
 <section id="ogives">
-<h3>Ogives<a class="headerlink" href="#ogives" title="Permalink to this headline">#</a></h3>
+<h3>Ogives<a class="headerlink" href="#ogives" title="Permalink to this heading">#</a></h3>
 <p>(<a class="reference download internal" download="" href="../../_downloads/6d9c2688f6b56401b31ba732b2a3f093/ogive_normal.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/1ba699d407e46a10113569128dee6591/ogive_normal.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/715b349d56782eca8b0a92e86423fa2f/ogive_normal.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/df6567eedb419390f4f287397da6cfcf/ogive_normal.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/ogive_normal.png" class="plot-directive" src="../../_images/ogive_normal.png" />
 </figure>
 </section>
 <section id="scatterplot">
-<h3>Scatterplot<a class="headerlink" href="#scatterplot" title="Permalink to this headline">#</a></h3>
+<h3>Scatterplot<a class="headerlink" href="#scatterplot" title="Permalink to this heading">#</a></h3>
 <p>(<a class="reference download internal" download="" href="../../_downloads/17c2f52e958097c3c536d017ad440b19/scatterplot_no_correlation.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/9388f7667548c31b865aefc453d7f769/scatterplot_no_correlation.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f7f19cc8a16a8d1967fe7aac0d71cebb/scatterplot_no_correlation.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d3582693e2a20ddb42c3cec0b29ded9c/scatterplot_no_correlation.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/scatterplot_no_correlation.png" class="plot-directive" src="../../_images/scatterplot_no_correlation.png" />
 </figure>
 <section id="line-of-best-fit">
-<h4>Line Of Best Fit<a class="headerlink" href="#line-of-best-fit" title="Permalink to this headline">#</a></h4>
+<h4>Line Of Best Fit<a class="headerlink" href="#line-of-best-fit" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="error-bars">
-<h4>Error Bars<a class="headerlink" href="#error-bars" title="Permalink to this headline">#</a></h4>
+<h4>Error Bars<a class="headerlink" href="#error-bars" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="qq-plots">
-<h4>QQ Plots<a class="headerlink" href="#qq-plots" title="Permalink to this headline">#</a></h4>
+<h4>QQ Plots<a class="headerlink" href="#qq-plots" title="Permalink to this heading">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/b5b46f80d13aa63090a0ca9e93f297b2/qq_plot.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/dc0a38ad4e633661b4572d73fe7bbdcb/qq_plot.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/5d6dd886aa2e361b996655382e3eda2b/qq_plot.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/23cc87a04429c27e9299a46a49666d9b/qq_plot.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/qq_plot.png" class="plot-directive" src="../../_images/qq_plot.png" />
@@ -872,7 +881,7 @@ document.write(`
 </section>
 </section>
 <section id="time-series">
-<h3>Time Series<a class="headerlink" href="#time-series" title="Permalink to this headline">#</a></h3>
+<h3>Time Series<a class="headerlink" href="#time-series" title="Permalink to this heading">#</a></h3>
 <p>(<a class="reference download internal" download="" href="../../_downloads/c8e21425f590d9587251e769270ff76a/timeseries_no_trend.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/4a9acb3fc7cf75952d1d01a5e381f51b/timeseries_no_trend.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/6ccdf25a94363b2969eb6f2a8047dc15/timeseries_no_trend.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/945bd32773ef59c7f178be0e61d5e1af/timeseries_no_trend.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/timeseries_no_trend.png" class="plot-directive" src="../../_images/timeseries_no_trend.png" />
@@ -880,7 +889,7 @@ document.write(`
 </section>
 </section>
 <section id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://matplotlib.org/">matplotlib documentation</a></p></li>
 <li><p><a class="reference external" href="https://matplotlib.org/stable/gallery/index">matplotlib examples</a></p></li>
@@ -899,11 +908,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="04_FUNCTIONS.html"
@@ -923,10 +931,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -934,6 +939,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1005,9 +1011,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -1031,8 +1038,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

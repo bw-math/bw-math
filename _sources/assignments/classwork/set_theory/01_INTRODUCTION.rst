@@ -202,6 +202,7 @@ Use Kuratowski's definition of an ordered pair to decide which of the following 
 	e. :math:`\{ b \} \in (a,b)`
 	
 	f. :math:`\{ a, b \} \in (a,b)`
+	
 Theorems
 ========
 

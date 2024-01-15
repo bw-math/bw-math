@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Conditional Probability &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/classwork/probability/02_CONDITIONAL';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Random Variables" href="03_RANDOM_VARIABLES.html" />
     <link rel="prev" title="Combinatorics" href="01_COMBINATORICS.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -487,14 +508,14 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="conditional-probability">
-<span id="conditional-classwork"></span><h1>Conditional Probability<a class="headerlink" href="#conditional-probability" title="Permalink to this headline">#</a></h1>
+<span id="conditional-classwork"></span><h1>Conditional Probability<a class="headerlink" href="#conditional-probability" title="Permalink to this heading">#</a></h1>
 <section id="definition">
-<h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">#</a></h2>
+<h2>Definition<a class="headerlink" href="#definition" title="Permalink to this heading">#</a></h2>
 <p>Recall the definition <a class="reference internal" href="../../../notes/probability/02_CONDITIONAL.html#conditional-probability"><span class="std std-ref">Conditional Probability</span></a> is given by,</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Conditional Probability Definition</p>
 <p>In terms of probabilities,</p>
 <div class="math">
@@ -502,7 +523,7 @@ document.write(`
 </div><p>In terms of cardinalities,</p>
 <div class="math">
 <p><img src="../../../_images/math/5b7cd1a0ab9a994a8d9a706676c34428b9b35a58.png" alt="P(A \mid B) = \frac{n(A \cap B)}{n(B)}"/></p>
-</div></div>
+</div></aside>
 <p>Use this definition to solve the following problems.</p>
 <ol class="arabic simple">
 <li><p>In a highschool, there are 287 students. 92 of the students play football. 50 of them play football <em>and</em> basketball. What is the probability a randomly selected football player also plays basketball?</p></li>
@@ -542,11 +563,6 @@ document.write(`
 <li><p>Paging through a magazine, you notice a interesting survey of randomly selected individuals who were each asked two questions. The first question was “Do you believe the Earth is flat or round?”. The second question was, “Do you think Finland is a <a class="reference external" href="https://knowyourmeme.com/memes/finland-does-not-exist">real country</a> ?” The results are given in the table below,</p></li>
 </ol>
 <table class="table">
-<colgroup>
-<col style="width: 41%" />
-<col style="width: 27%" />
-<col style="width: 32%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td></td>
 <td><p>Flat</p></td>
@@ -577,12 +593,12 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="sample-space-reduction">
-<h2>Sample Space Reduction<a class="headerlink" href="#sample-space-reduction" title="Permalink to this headline">#</a></h2>
-<div class="topic">
+<h2>Sample Space Reduction<a class="headerlink" href="#sample-space-reduction" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
 <p class="topic-title">Reduction of Sample Space</p>
 <div class="math">
 <p><img src="../../../_images/math/4a5cc247c9861df5b2284a3f844c1ba02c919fc6.png" alt="P(B \mid A) = \frac{n(B \mid A)}{n(S \mid A)}"/></p>
-</div></div>
+</div></aside>
 <ol class="arabic">
 <li><p>A bag contains 3 red marbles and 4 blue marbles. Two marbles are drawn at random <em>without replacement</em>. If the first marble drawn is red, what is the probability the second marble is blue?</p></li>
 <li><p>Suppose two fair dice have been tossed.</p>
@@ -607,17 +623,17 @@ document.write(`
 </div>
 </section>
 <section id="bayes-laws">
-<h2>Bayes’ Laws<a class="headerlink" href="#bayes-laws" title="Permalink to this headline">#</a></h2>
-<div class="topic">
+<h2>Bayes’ Laws<a class="headerlink" href="#bayes-laws" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
 <p class="topic-title">Bayes’ Multiplication Law</p>
 <div class="math">
 <p><img src="../../../_images/math/5a89c8136b24e00d6029ce2702517a33134383b5.png" alt="P(A \cap B) = P(B \mid A) \cdot P(A)"/></p>
-</div></div>
-<div class="topic">
+</div></aside>
+<aside class="topic">
 <p class="topic-title">Bayes’ Law of Total Probability</p>
 <div class="math">
 <p><img src="../../../_images/math/603fcffc16f46192c7df965be4f835012f747b5f.png" alt="P(B) = P(B \mid A) \cdot P(A) + P(B \mid A^c) \cdot P(A^c)"/></p>
-</div></div>
+</div></aside>
 <ol class="arabic">
 <li><p>100 sci-fi fans were polled by the reporters at  <em>Imporant News Weekly</em>. 64 of those polled preferred <em>Star Wars</em> to <em>Star Trek</em>, while the rest of them, due to poor life choices, preferred <em>Star Trek</em> to <em>Star Wars</em>. Of the people who preferred <em>Star Wars</em>, 75% of them thought <em>The Empire Strikes Back</em> was the best of the film in the <a class="reference external" href="https://en.wiktionary.org/wiki/ennealogy">ennealogy</a>. Of the people who preferred <em>Star Trek</em>, only half of them thought <em>The Empire Strike Back</em> was the best film in the series.</p>
 <blockquote>
@@ -633,13 +649,13 @@ document.write(`
 </ol>
 </section>
 <section id="independence">
-<h2>Independence<a class="headerlink" href="#independence" title="Permalink to this headline">#</a></h2>
-<div class="topic">
+<h2>Independence<a class="headerlink" href="#independence" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
 <p class="topic-title">Independence Multiplication Law</p>
 <p>If <strong>A</strong> and <strong>B</strong> are independent events, then</p>
 <div class="math">
 <p><img src="../../../_images/math/758e88bf826c2920344ea5f44b9d15e06ed2b8e2.png" alt="P(A \cap B) = P(A) \cdot P(B)"/></p>
-</div></div>
+</div></aside>
 <ol class="arabic">
 <li><p>Use conditional probability and independence to solve the following problems.</p>
 <blockquote>
@@ -663,7 +679,7 @@ document.write(`
 </ol>
 </section>
 <section id="a-p-exam-practice">
-<h2>A.P. Exam Practice<a class="headerlink" href="#a-p-exam-practice" title="Permalink to this headline">#</a></h2>
+<h2>A.P. Exam Practice<a class="headerlink" href="#a-p-exam-practice" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p><strong>2018 Free Response, #3</strong></p></li>
 </ol>
@@ -701,13 +717,6 @@ document.write(`
 </ol>
 <p>A simple random sample of adults living in a suburb of a large city was selected. The age and annual income of each adult in the sample were recorded. The resulting data are summarized in the table below, where the rows represent the number in that age group and the columns represent the number in that income bracket,</p>
 <table class="table">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 28%" />
-<col style="width: 28%" />
-<col style="width: 20%" />
-<col style="width: 10%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td></td>
 <td><p>$25,000 - $35,000</p></td>
@@ -769,11 +778,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="01_COMBINATORICS.html"
@@ -793,10 +801,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -804,6 +809,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -837,9 +843,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -863,8 +870,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

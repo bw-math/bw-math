@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Sums &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/classwork/algebra/01_SUMS';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Differentiation" href="../differentiation/index.html" />
     <link rel="prev" title="Algebra" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -496,16 +517,16 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="sums">
-<span id="summations"></span><h1>Sums<a class="headerlink" href="#sums" title="Permalink to this headline">#</a></h1>
+<span id="summations"></span><h1>Sums<a class="headerlink" href="#sums" title="Permalink to this heading">#</a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>There will be many obligatory <em>sum</em> puns on this page.</p>
 </div>
 <section id="something-about-sums">
-<h2>Something About Sums<a class="headerlink" href="#something-about-sums" title="Permalink to this headline">#</a></h2>
+<h2>Something About Sums<a class="headerlink" href="#something-about-sums" title="Permalink to this heading">#</a></h2>
 <p><em>Some</em> mathematical expressions are <em>sums</em>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -513,7 +534,7 @@ document.write(`
 </div>
 <p>A <em>sum</em> is a type of operation, like <em>+</em>, <em>-</em>, <em>x</em> and <em>%</em> (addition, subtraction, multiplication, division), but there is a key difference. The arithmetic operations mentioned in the previous sentence <em>operate</em> on <em>numbers</em>. The <em>sum</em> symbol operates on <em>sets</em>.</p>
 <section id="some-anatomy-of-sums">
-<h3>Some Anatomy of Sums<a class="headerlink" href="#some-anatomy-of-sums" title="Permalink to this headline">#</a></h3>
+<h3>Some Anatomy of Sums<a class="headerlink" href="#some-anatomy-of-sums" title="Permalink to this heading">#</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><img class="math" src="../../../_images/math/92ae9cf12c36c88c900769f206e89cf45347ccab.png" alt="\sum"/> is the capital Greek letter, <em>epsilon</em>.</p>
@@ -527,9 +548,9 @@ document.write(`
 </ol>
 </section>
 <section id="some-examples-of-sums">
-<h3>Some Examples of Sums<a class="headerlink" href="#some-examples-of-sums" title="Permalink to this headline">#</a></h3>
+<h3>Some Examples of Sums<a class="headerlink" href="#some-examples-of-sums" title="Permalink to this heading">#</a></h3>
 <section id="example-1">
-<h4>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">#</a></h4>
+<h4>Example 1<a class="headerlink" href="#example-1" title="Permalink to this heading">#</a></h4>
 <div class="math">
 <p><img src="../../../_images/math/9f0230bb243de61d1f74a04fbf98484794d5fabb.png" alt="\sum_{i=1}^{5} i"/></p>
 </div><p>Let’s break it down, term by term. The first set of instructions a <em>sum</em> gives us is instructions on how to construct each <em>term</em> of the <em>sum</em>. The <em>index</em> tells us to look at the numbers <img class="math" src="../../../_images/math/2a4c76bb6bcb16276d7e2d97c60499f87104f066.png" alt="i = 1, 2, 3, 4, 5"/> and then create the term <img class="math" src="../../../_images/math/25417a5e102a0e11d442f6e4865508e47cf4b0aa.png" alt="i"/> for each one. We start at <img class="math" src="../../../_images/math/9148ef3121220ecfc8b23f0954d00c7e528b0b7b.png" alt="1"/> because the <em>lower limit</em> is <img class="math" src="../../../_images/math/d96801db5d46bf3176acd407b88f9bd1572bddac.png" alt="i = 1"/>. We go up to <img class="math" src="../../../_images/math/3dbaa3608d1eff9aabab1c710e034597bdc910b0.png" alt="5"/> because the <em>upper limit</em> is <img class="math" src="../../../_images/math/3dbaa3608d1eff9aabab1c710e034597bdc910b0.png" alt="5"/>.</p>
@@ -539,14 +560,6 @@ document.write(`
 </div>
 <p>A table will help visualize this,</p>
 <table class="table">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Index</p></td>
 <td><p>1</p></td>
@@ -570,20 +583,12 @@ document.write(`
 <p><img src="../../../_images/math/a23770b28a571c2a51b005c9fabc175b05df3db5.png" alt="\sum_{i=1}^5 i = 1 + 2 + 3 + 4 + 5 = 15"/></p>
 </div></section>
 <section id="example-2">
-<h4>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">#</a></h4>
+<h4>Example 2<a class="headerlink" href="#example-2" title="Permalink to this heading">#</a></h4>
 <p>Let’s make it more complicated. Suppose you were given the expression,</p>
 <div class="math">
 <p><img src="../../../_images/math/6605016a60aed73aa4140dea4711e8164e478620.png" alt="\sum_{i=1}^{4} \frac{i^2}{4}"/></p>
 </div><p>In the same fashion, we first determine the terms of the sum by looking at the values of the index for <img class="math" src="../../../_images/math/825da7b1b08cd21efb3f57fe36d45cc737728881.png" alt="i=1,2,3,4"/> (from the <em>lower limit</em> to the <em>upper limit</em>)</p>
 <table class="table">
-<colgroup>
-<col style="width: 4%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Index</p></td>
 <td><p>1</p></td>
@@ -607,10 +612,10 @@ document.write(`
 </div></section>
 </section>
 <section id="sum-complications">
-<h3>Sum Complications<a class="headerlink" href="#sum-complications" title="Permalink to this headline">#</a></h3>
+<h3>Sum Complications<a class="headerlink" href="#sum-complications" title="Permalink to this heading">#</a></h3>
 <p>Sometimes <em>sums</em> do not tell us <em>how</em> to make the terms of the summation; sometimes they tell us <em>what</em> the terms are. In other words, rather than giving us a <em>formula</em> involving the index, sometimes a sum will tell you to take <em>terms</em> from a particular <em>sample</em> (also known mathematically as a <em>set</em>).</p>
 <section id="example-3">
-<h4>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">#</a></h4>
+<h4>Example 3<a class="headerlink" href="#example-3" title="Permalink to this heading">#</a></h4>
 <p>Suppose you were given the following <em>sample</em> (<em>set</em>),</p>
 <div class="math">
 <p><img src="../../../_images/math/74892eec31e5695aca9ec62e12879d945504828e.png" alt="S = \{ 15, 12, 13, 17, 18 \}"/></p>
@@ -619,10 +624,6 @@ document.write(`
 <p><img src="../../../_images/math/57fdc6a2f6b5d37ab1dc888fab98f769f62b730c.png" alt="S = \{ x_1, x_2, x_3, x_4, x_5 \}"/></p>
 </div><p>Where we have <em>indexed</em> each observation according to the scheme,</p>
 <table class="table">
-<colgroup>
-<col style="width: 46%" />
-<col style="width: 54%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><img class="math" src="../../../_images/math/25417a5e102a0e11d442f6e4865508e47cf4b0aa.png" alt="i"/></p></td>
 <td><p><img class="math" src="../../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/></p></td>
@@ -657,7 +658,7 @@ document.write(`
 </div></section>
 </section>
 <section id="problems">
-<h3>Problems<a class="headerlink" href="#problems" title="Permalink to this headline">#</a></h3>
+<h3>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Given</p></li>
 </ol>
@@ -667,14 +668,6 @@ document.write(`
 <li><p>Find the terms of the <em>summation</em> by filling out the table,</p>
 <blockquote>
 <div><table class="table">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Index</p></td>
 <td><p>1</p></td>
@@ -705,14 +698,6 @@ document.write(`
 <li><p>Find the terms of the <em>summation</em> by filling out the table,</p>
 <blockquote>
 <div><table class="table">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Index</p></td>
 <td><p>1</p></td>
@@ -743,14 +728,6 @@ document.write(`
 <li><p>Find the terms of the <em>summation</em> by filling out the table,</p>
 <blockquote>
 <div><table class="table">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Index</p></td>
 <td><p>1</p></td>
@@ -783,14 +760,6 @@ document.write(`
 <li><p>Find the terms of the <em>sumation</em> by filling out the table,</p>
 <blockquote>
 <div><table class="table">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Index</p></td>
 <td><p>1</p></td>
@@ -823,14 +792,6 @@ document.write(`
 <li><p>Find the terms of the <em>sumation</em> by filling out the table,</p>
 <blockquote>
 <div><table class="table">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Index</p></td>
 <td><p>1</p></td>
@@ -862,11 +823,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="index.html"
@@ -886,10 +846,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -897,6 +854,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -939,9 +897,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -965,8 +924,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Basics &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'resources/python/02_BASIC';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Sets" href="03_SETS.html" />
     <link rel="prev" title="Python Setup" href="01_SETUP.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -516,17 +537,17 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="basics">
-<span id="python-basics"></span><h1>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">#</a></h1>
+<span id="python-basics"></span><h1>Basics<a class="headerlink" href="#basics" title="Permalink to this heading">#</a></h1>
 <p><strong>Python</strong> is made up of <em>functions</em> and <em>variables</em>. Everything in <strong>Python</strong> is either one or the other.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>As you read through this page, open an <a class="reference internal" href="01_SETUP.html#python-idle"><span class="std std-ref">IDLE shell</span></a> and try out the commands yourself.</p>
 </div>
 <section id="comments">
-<span id="python-comments"></span><h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">#</a></h2>
+<span id="python-comments"></span><h2>Comments<a class="headerlink" href="#comments" title="Permalink to this heading">#</a></h2>
 <p><em>Comments</em> are code that doesn’t get interpretted by the <strong>Python</strong> shell. They allow you to annotate your actual program with explanations geared towards an audience that is trying to understand what your program is doing. For example,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># this is a comment, it won&#39;t have any effect on this script</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;this a command, it will be interpretted by Python&quot;</span><span class="p">)</span>
@@ -538,18 +559,18 @@ document.write(`
 </div></blockquote>
 <p>Any line that starts with a hashtag <code class="docutils literal notranslate"><span class="pre">#</span></code> is skipped over by <strong>Python</strong> when it is executing your script.</p>
 <p>Comments should provide clear and precise explanations for the code it is annotating.</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Bad Comments</p>
 <p>The following is an example of a bad comment. The code below it is complicated and hard to understand and the comment provides no insight.</p>
-</div>
+</aside>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># this is a bad comment</span>
 <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)]</span>
 </pre></div>
 </div>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Good Comments</p>
 <p>The following is an example of a good comment. It explains what the code it is attached to is doing and allows the reader to gain insight in your program.</p>
-</div>
+</aside>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># this will step through the numbers 1 through 100. Then it will either,</span>
 <span class="c1"># add 1 to a list if the number is divisible by 5</span>
 <span class="c1"># add 0 to a list if the number is not divisible by 5</span>
@@ -559,7 +580,7 @@ document.write(`
 <p>When you create scripts for the projects in this class, be sure to add comments where appropriate, especially if your code is complicated.</p>
 </section>
 <section id="docstrings">
-<span id="python-docstring"></span><h2>Docstrings<a class="headerlink" href="#docstrings" title="Permalink to this headline">#</a></h2>
+<span id="python-docstring"></span><h2>Docstrings<a class="headerlink" href="#docstrings" title="Permalink to this heading">#</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Anytime a lab asks you to answer a question that requires a written response, write your answer in a docstring! <em>All</em> of your work should be done in the <em>py</em> file.</p>
@@ -607,7 +628,7 @@ document.write(`
 </div>
 </section>
 <section id="variables">
-<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">#</a></h2>
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this heading">#</a></h2>
 <p>A variable is a stored piece of data. A variable has a <em>type</em> that is determined by the form of the data, called the <em>data type</em>.</p>
 <p>Every variable must be <em>assigned</em> a value in order to be used. A value assignment occurs when you type an expression of the form,</p>
 <blockquote>
@@ -619,7 +640,7 @@ document.write(`
 <p>The assignment operator <code class="docutils literal notranslate"><span class="pre">=</span></code> is not <em>exactly</em> the same as the equals signs from <strong>Algebra</strong>, but it is similar. With an assignment, we are not <em>equating</em> two expressions. Instead, we are <em>assigning</em> the value of the right hand side to the left hand side.</p>
 </div>
 <section id="strings">
-<span id="python-strings"></span><h3>Strings<a class="headerlink" href="#strings" title="Permalink to this headline">#</a></h3>
+<span id="python-strings"></span><h3>Strings<a class="headerlink" href="#strings" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>Definition</dt><dd><p>Data that represents text are called <em>strings</em>. A string is enclosed by double quotes “” or single quotes ‘’,</p>
 </dd>
@@ -635,7 +656,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="integers">
-<span id="python-integers"></span><h3>Integers<a class="headerlink" href="#integers" title="Permalink to this headline">#</a></h3>
+<span id="python-integers"></span><h3>Integers<a class="headerlink" href="#integers" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>Definition</dt><dd><p>Data that represents whole numbered quantities are called <em>integers</em>.</p>
 </dd>
@@ -651,7 +672,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="floats">
-<span id="python-floats"></span><h3>Floats<a class="headerlink" href="#floats" title="Permalink to this headline">#</a></h3>
+<span id="python-floats"></span><h3>Floats<a class="headerlink" href="#floats" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>Definition</dt><dd><p>Data that represents numerical quantities with decimals are called <em>floats</em>.</p>
 </dd>
@@ -667,7 +688,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="tuples">
-<span id="python-tuples"></span><h3>Tuples<a class="headerlink" href="#tuples" title="Permalink to this headline">#</a></h3>
+<span id="python-tuples"></span><h3>Tuples<a class="headerlink" href="#tuples" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>Definition</dt><dd><p>Tuples are <em>ordered pairs</em> of variables.</p>
 </dd>
@@ -696,7 +717,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="lists">
-<span id="python-lists"></span><h3>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">#</a></h3>
+<span id="python-lists"></span><h3>Lists<a class="headerlink" href="#lists" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt>Definition</dt><dd><p>Lists are ordered collections of variables.</p>
 </dd>
@@ -741,10 +762,10 @@ document.write(`
 </section>
 </section>
 <section id="arithmetical-operations">
-<h2>Arithmetical Operations<a class="headerlink" href="#arithmetical-operations" title="Permalink to this headline">#</a></h2>
+<h2>Arithmetical Operations<a class="headerlink" href="#arithmetical-operations" title="Permalink to this heading">#</a></h2>
 <p>Most of the arithmetical operations in <strong>Python</strong> are exactly what you would expect them to be. The only operation whose symbol may be surprising is <a class="reference internal" href="#python-exponentiation"><span class="std std-ref">Exponentiation</span></a>.</p>
 <section id="addition">
-<span id="python-addition"></span><h3>Addition<a class="headerlink" href="#addition" title="Permalink to this headline">#</a></h3>
+<span id="python-addition"></span><h3>Addition<a class="headerlink" href="#addition" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">7</span> <span class="o">+</span> <span class="mi">3</span>
 </pre></div>
 </div>
@@ -754,7 +775,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="subtraction">
-<span id="python-subtraction"></span><h3>Subtraction<a class="headerlink" href="#subtraction" title="Permalink to this headline">#</a></h3>
+<span id="python-subtraction"></span><h3>Subtraction<a class="headerlink" href="#subtraction" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mf">10.45</span> <span class="o">-</span> <span class="mf">3.2</span>
 </pre></div>
 </div>
@@ -769,7 +790,7 @@ document.write(`
 </div>
 </section>
 <section id="multiplication">
-<span id="python-multiplication"></span><h3>Multiplication<a class="headerlink" href="#multiplication" title="Permalink to this headline">#</a></h3>
+<span id="python-multiplication"></span><h3>Multiplication<a class="headerlink" href="#multiplication" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">*</span> <span class="mi">76</span>
 </pre></div>
 </div>
@@ -779,7 +800,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="division">
-<span id="python-division"></span><h3>Division<a class="headerlink" href="#division" title="Permalink to this headline">#</a></h3>
+<span id="python-division"></span><h3>Division<a class="headerlink" href="#division" title="Permalink to this heading">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">68</span> <span class="o">/</span> <span class="mi">5</span>
 </pre></div>
 </div>
@@ -789,7 +810,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="exponentiation">
-<span id="python-exponentiation"></span><h3>Exponentiation<a class="headerlink" href="#exponentiation" title="Permalink to this headline">#</a></h3>
+<span id="python-exponentiation"></span><h3>Exponentiation<a class="headerlink" href="#exponentiation" title="Permalink to this heading">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">**</span> <span class="mi">2</span>
 </pre></div>
 </div>
@@ -800,9 +821,9 @@ document.write(`
 </section>
 </section>
 <section id="logical-operations">
-<span id="python-logical-operations"></span><h2>Logical Operations<a class="headerlink" href="#logical-operations" title="Permalink to this headline">#</a></h2>
+<span id="python-logical-operations"></span><h2>Logical Operations<a class="headerlink" href="#logical-operations" title="Permalink to this heading">#</a></h2>
 <section id="equivalence">
-<h3>Equivalence<a class="headerlink" href="#equivalence" title="Permalink to this headline">#</a></h3>
+<h3>Equivalence<a class="headerlink" href="#equivalence" title="Permalink to this heading">#</a></h3>
 <p>The <em>equivalence</em> operator is used to test the <em>truth-value</em> of expressions. The syntax for using it is,</p>
 <blockquote>
 <div><p>&lt;expression A&gt; == &lt;expression B&gt;</p>
@@ -828,10 +849,10 @@ document.write(`
 </section>
 </section>
 <section id="list-operations">
-<span id="python-list-operations"></span><h2>List Operations<a class="headerlink" href="#list-operations" title="Permalink to this headline">#</a></h2>
+<span id="python-list-operations"></span><h2>List Operations<a class="headerlink" href="#list-operations" title="Permalink to this heading">#</a></h2>
 <p>The operations in the previous section dealt with <a class="reference internal" href="#python-floats"><span class="std std-ref">Floats</span></a> and <a class="reference internal" href="#python-integers"><span class="std std-ref">Integers</span></a>. In other words, the operations in the last section applied to numbers. <strong>Python</strong> has many operations that can be applied specifically to <a class="reference internal" href="#python-lists"><span class="std std-ref">Lists</span></a>.</p>
 <section id="slicing">
-<span id="python-list-slicing"></span><h3>Slicing<a class="headerlink" href="#slicing" title="Permalink to this headline">#</a></h3>
+<span id="python-list-slicing"></span><h3>Slicing<a class="headerlink" href="#slicing" title="Permalink to this heading">#</a></h3>
 <p>Slicing a list is <strong>Python</strong>’s way of breaking a list into a smaller sub-list (an especially useful technique in the domain of statistics!). The general syntax of slicing is given below,</p>
 <blockquote>
 <div><p>list[&lt;start index : optional&gt; : &lt;end index : optional&gt;]</p>
@@ -899,7 +920,7 @@ document.write(`
 <div><p>[3, 4, 5, 6, 7, 8]</p>
 </div></blockquote>
 <section id="special-slicing-techniques">
-<h4>Special Slicing Techniques<a class="headerlink" href="#special-slicing-techniques" title="Permalink to this headline">#</a></h4>
+<h4>Special Slicing Techniques<a class="headerlink" href="#special-slicing-techniques" title="Permalink to this heading">#</a></h4>
 <p>There is another type of slicing that allows you extract elements from a list according to a rule. First we give the syntax and then go through a few examples,</p>
 <blockquote>
 <div><p>list[ &lt;start_index : optional&gt; :: &lt;step : required&gt;]</p>
@@ -931,7 +952,7 @@ document.write(`
 </section>
 </section>
 <section id="comprehension">
-<span id="python-list-comprehension"></span><h3>Comprehension<a class="headerlink" href="#comprehension" title="Permalink to this headline">#</a></h3>
+<span id="python-list-comprehension"></span><h3>Comprehension<a class="headerlink" href="#comprehension" title="Permalink to this heading">#</a></h3>
 <p><em>List comprehension</em> is a way of applying an algebraic expression to every element in a list. In other words, <em>list comprehension</em> allows us to generate a list of data according to a formula. For this reason, <em>list comprehension</em> is sometimes called <em>list generation</em>. The general syntax is given below,</p>
 <blockquote>
 <div><p>list = [ &lt;expr : required&gt; for &lt;element : required&gt; in &lt;list: requied&gt; ]</p>
@@ -952,7 +973,7 @@ document.write(`
 </div></blockquote>
 <p><em>List comprehension</em> is usually used in conjunction with the <a class="reference internal" href="04_FUNCTIONS.html#python-builtin-functions"><span class="std std-ref">range() built-in function</span></a>. Hop over to that section, take a look at <code class="docutils literal notranslate"><span class="pre">range()</span></code> to see more examples.</p>
 <section id="filtering">
-<span id="python-list-filtering"></span><h4>Filtering<a class="headerlink" href="#filtering" title="Permalink to this headline">#</a></h4>
+<span id="python-list-filtering"></span><h4>Filtering<a class="headerlink" href="#filtering" title="Permalink to this heading">#</a></h4>
 <p>Suppose you had the a dataset that represented a group of men and women’s average height, where each observation in the sample is an ordered pair <img class="math" src="../../_images/math/db3b041d6222b5fe5fd26fa90cfb17219b7a1623.png" alt="(x, y)"/>
 with <em>x</em> corresponding the gender of the individual and <em>y</em> corresponding to their height measured in feet,</p>
 <div class="math">
@@ -984,7 +1005,7 @@ with <em>x</em> corresponding the gender of the individual and <em>y</em> corres
 </section>
 </section>
 <section id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://peps.python.org/pep-0257/">docstrings</a></p></li>
 </ul>
@@ -997,11 +1018,10 @@ with <em>x</em> corresponding the gender of the individual and <em>y</em> corres
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="01_SETUP.html"
@@ -1021,10 +1041,7 @@ with <em>x</em> corresponding the gender of the individual and <em>y</em> corres
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1032,6 +1049,7 @@ with <em>x</em> corresponding the gender of the individual and <em>y</em> corres
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1094,9 +1112,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -1120,8 +1139,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

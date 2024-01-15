@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Monte Carlo Simulation &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/python/08_MONTE_CARLO';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Binomial Distribution" href="09_BINOMIAL.html" />
     <link rel="prev" title="Sample Spaces" href="07_SETS.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -492,17 +513,17 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="monte-carlo-simulation">
-<span id="project-eight"></span><h1>Monte Carlo Simulation<a class="headerlink" href="#monte-carlo-simulation" title="Permalink to this headline">#</a></h1>
+<span id="project-eight"></span><h1>Monte Carlo Simulation<a class="headerlink" href="#monte-carlo-simulation" title="Permalink to this heading">#</a></h1>
 <blockquote class="epigraph">
 <div><p>‘Tis but fortune. All is fortune.</p>
 <p class="attribution">—William Shakespeare, The Twelfeth Night</p>
 </div></blockquote>
 <p><em>Monte Carlo Simulation</em> is a modelling technique from statistics with many applications in different fields. The essence of <em>Monte Carlo Simulation</em> lies in interpretting randomly generated numbers as outcomes in an experiment. In this project, we will take a look at several ways of using the interpretation of random numbers to model physical processes in order to estimate quantities of interest.</p>
 <section id="instructions">
-<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this heading">#</a></h2>
 <p>1. Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_eight.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">LASTNAME</span></code> and <code class="docutils literal notranslate"><span class="pre">FIRSTNAME</span></code> with your last and first name, respectively.
 3. Create a <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.
 4. Read the <a class="reference internal" href="#project-eight-background"><span class="std std-ref">Background</span></a> section.
@@ -511,16 +532,16 @@ document.write(`
 7. Upload the zip file to the Google Classroom Project Four Assignment.</p>
 </section>
 <section id="background">
-<span id="project-eight-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<span id="project-eight-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
 <section id="integration">
-<h3>Integration<a class="headerlink" href="#integration" title="Permalink to this headline">#</a></h3>
+<h3>Integration<a class="headerlink" href="#integration" title="Permalink to this heading">#</a></h3>
 <p>In calculus, <em>integration</em> is a technique for finding the area under a curve <img class="math" src="../../_images/math/4d080e94aa171bc1bba13b38e72317a67bac38e2.png" alt="f(x)"/>. <em>Monte Carlo Simulation</em> gives us an alternative way of approaching the same set of problems. According to the <a class="reference internal" href="../../notes/probability/00_INTRODUCTION.html#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a>,</p>
 <div class="math">
 <p><img src="../../_images/math/34ba842f8e489b81065ff45c7d6371927e8b6a51.png" alt="P(A) = \frac{n(A)}{n(S)}"/></p>
 </div><p>Where <img class="math" src="../../_images/math/534ec862789190f4e1c0ee776c13e4f478f5e83f.png" alt="n(A)"/> is the total number of outcomes that belong to the event <img class="math" src="../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/> and <img class="math" src="../../_images/math/cf90e0c29ef4a62a7df7e7e01dc977d6d0f6b908.png" alt="n(S)"/> is the total number of outcomes in the entire <em>sample space</em>. This definition applies to <em>discrete</em> events. When the events in question are continuous, we adjust the interpretation of <img class="math" src="../../_images/math/534ec862789190f4e1c0ee776c13e4f478f5e83f.png" alt="n(A)"/> to mean the relative <em>area</em> of the event <img class="math" src="../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/> as compared to the area of the total sample space <img class="math" src="../../_images/math/cf90e0c29ef4a62a7df7e7e01dc977d6d0f6b908.png" alt="n(S)"/>.</p>
 <p>By simulating all the outcomes in <img class="math" src="../../_images/math/23298f92ca8dc2a1ce6332eb7a21d5f2e9ae0bd8.png" alt="S"/> and determining which belong to <img class="math" src="../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/>, we can estimate the <em>area</em> of the event <img class="math" src="../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/>. This simple idea underlies everything that follows.</p>
 <section id="estimating-pi">
-<h4>Estimating Pi<a class="headerlink" href="#estimating-pi" title="Permalink to this headline">#</a></h4>
+<h4>Estimating Pi<a class="headerlink" href="#estimating-pi" title="Permalink to this heading">#</a></h4>
 <p>To see this technique in action, let’s look at a simple example. Consider a cirlce inscribed in a square of with a side of length 1, centered at the origin <img class="math" src="../../_images/math/31bf821aab9bc165f96beb2232d40c7731bfffd7.png" alt="(0,0)"/>.</p>
 <p>TODO</p>
 <p>Due to the Law of Large Numbers, as the number of simulations increases, the approximation of <img class="math" src="../../_images/math/d09fee429254e78bb7496d8ad79b073269af9e61.png" alt="\pi"/> converges to its true value.</p>
@@ -529,7 +550,7 @@ document.write(`
 <img alt="../../_images/monte_carlo_pi_10000.png" class="align-center" src="../../_images/monte_carlo_pi_10000.png" />
 </section>
 <section id="areas-under-curves">
-<h4>Areas Under Curves<a class="headerlink" href="#areas-under-curves" title="Permalink to this headline">#</a></h4>
+<h4>Areas Under Curves<a class="headerlink" href="#areas-under-curves" title="Permalink to this heading">#</a></h4>
 <p>The same technique used to estimate <img class="math" src="../../_images/math/d09fee429254e78bb7496d8ad79b073269af9e61.png" alt="\pi"/> can be applied to an arbitrary curve <img class="math" src="../../_images/math/4d080e94aa171bc1bba13b38e72317a67bac38e2.png" alt="f(x)"/>. Take the example of the following linear function on the interval <img class="math" src="../../_images/math/a05f4eae491f5062b09f3c1b0e391f8c6f3d4b02.png" alt="[0,1]"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/dd998a73218c5e5edf7c0a7d3a33e88611fcd12d.png" alt="f(x) = 0.5 \cdot x"/></p>
@@ -543,7 +564,7 @@ document.write(`
 </section>
 </section>
 <section id="project">
-<span id="project-eight-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
+<span id="project-eight-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
 <ol class="arabic simple">
 <li><p>Use Monte Carlo Integration to estimate the area under the curve <img class="math" src="../../_images/math/43351c541e04e74c653d11d4c5b887b3412da6a9.png" alt="f(x) = x^2"/> from <img class="math" src="../../_images/math/98610ffc249b51ce9f3bef4b3ba75573b055e97f.png" alt="x = 0"/> to <img class="math" src="../../_images/math/08ef539ad9669bdfc49deb9fd0ca8e262e0c8550.png" alt="x = 1"/>.</p></li>
@@ -576,11 +597,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="07_SETS.html"
@@ -600,10 +620,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -611,6 +628,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -649,9 +667,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -675,8 +694,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Correlation &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/calculator/00_CORRELATION';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Simulation" href="01_COIN_FLIPS.html" />
     <link rel="prev" title="Calculator Projects" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -497,16 +518,16 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="correlation">
-<span id="calculator-project-one"></span><h1>Correlation<a class="headerlink" href="#correlation" title="Permalink to this headline">#</a></h1>
+<span id="calculator-project-one"></span><h1>Correlation<a class="headerlink" href="#correlation" title="Permalink to this heading">#</a></h1>
 <blockquote class="epigraph">
 <div><p>If, in an expression (whose content need not be a judgeable content), a simple or complex symbol occurs in one or more places, and we think of it as replaceable at all or some of its occurrences by another symbol (but everywhere by the same symbol), then we call the part of the expression that on this occasion appears invariant the function, and the replaceable part its argument.</p>
 <p class="attribution">—Gottlob Frege, Begriffsschrift</p>
 </div></blockquote>
 <section id="instructions">
-<span id="calculator-project-one-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
+<span id="calculator-project-one-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Read the <a class="reference internal" href="#calculator-project-one-background"><span class="std std-ref">Background</span></a> section.</p></li>
 <li><p>Read the <a class="reference internal" href="#calculator-project-one-correlation-function"><span class="std std-ref">Correlation Function</span></a> section. Follow along with the instructions in that section. Watch the accompanying video at the end of the section. Type each command as shown into your calculator to create the <strong>CORREL</strong> function.</p></li>
@@ -515,24 +536,24 @@ document.write(`
 </ol>
 </section>
 <section id="background">
-<span id="calculator-project-one-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<span id="calculator-project-one-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
 <section id="ti-basic">
-<span id="calculator-project-one-ti-basic"></span><h3>TI Basic<a class="headerlink" href="#ti-basic" title="Permalink to this headline">#</a></h3>
+<span id="calculator-project-one-ti-basic"></span><h3>TI Basic<a class="headerlink" href="#ti-basic" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 </section>
 <section id="bivariate-statistics">
-<span id="calculator-project-one-bivariate-statistics"></span><h3>Bivariate Statistics<a class="headerlink" href="#bivariate-statistics" title="Permalink to this headline">#</a></h3>
+<span id="calculator-project-one-bivariate-statistics"></span><h3>Bivariate Statistics<a class="headerlink" href="#bivariate-statistics" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 <section id="calculator-project-one-correlation">
-<span id="id1"></span><h4>Correlation<a class="headerlink" href="#calculator-project-one-correlation" title="Permalink to this headline">#</a></h4>
+<span id="id1"></span><h4>Correlation<a class="headerlink" href="#calculator-project-one-correlation" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 <div class="math">
 <p><img src="../../_images/math/5f4bab82700fe337c1d8be33015a93ec66bc9df3.png" alt="r_{xy} = \frac{1}{n-1} sum^{n}_{i=1} z^{x}_i \cdot z^{y}_i"/></p>
 </div><p>TODO</p>
 </section>
 <section id="sse">
-<span id="calculator-project-one-sse"></span><h4>SSE<a class="headerlink" href="#sse" title="Permalink to this headline">#</a></h4>
+<span id="calculator-project-one-sse"></span><h4>SSE<a class="headerlink" href="#sse" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 <div class="math">
 <p><img src="../../_images/math/d9489c242f3d966637a1a765415c5a0593fff758.png" alt="SSE = sum^{n}_{i=1} (y_i - \hat{y_i})^2"/></p>
@@ -541,18 +562,18 @@ document.write(`
 </section>
 </section>
 <section id="correlation-function">
-<span id="calculator-project-one-correlation-function"></span><h2>Correlation Function<a class="headerlink" href="#correlation-function" title="Permalink to this headline">#</a></h2>
+<span id="calculator-project-one-correlation-function"></span><h2>Correlation Function<a class="headerlink" href="#correlation-function" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
 <section id="video">
-<span id="calculator-project-one-video"></span><h3>Video<a class="headerlink" href="#video" title="Permalink to this headline">#</a></h3>
+<span id="calculator-project-one-video"></span><h3>Video<a class="headerlink" href="#video" title="Permalink to this heading">#</a></h3>
 <p>The following video walks you through creating the <strong>CORREL</strong> function on your calculator.</p>
 <a class="reference external image-reference" href="https://www.youtube.com/watch?v=6xtN2i2FbsQ"><img alt="Correlation" src="https://img.youtube.com/vi/6xtN2i2FbsQ/maxresdefault.jpg" /></a>
 </section>
 </section>
 <section id="sse-function">
-<span id="calculator-project-one-sse-function"></span><h2>SSE Function<a class="headerlink" href="#sse-function" title="Permalink to this headline">#</a></h2>
+<span id="calculator-project-one-sse-function"></span><h2>SSE Function<a class="headerlink" href="#sse-function" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">SSE Function Requirements</p>
 <ol class="arabic simple">
 <li><p>The function should run the <span class="xref std std-ref">calculator_linreq</span> program and store the line of best fit.</p></li>
@@ -560,8 +581,8 @@ document.write(`
 <li><p>The function should calculate the sum squared of the residuals.</p></li>
 <li><p>The function should display the results of the calculation back to the user in a readable format.</p></li>
 </ol>
-</div>
-<div class="topic">
+</aside>
+<aside class="topic">
 <p class="topic-title">Extra Credit</p>
 <p>You have an opportunity to get 5% Extra Credit on your overall Project grade if your <strong>SSE</strong> function also accomplishes the following:</p>
 <ol class="arabic simple">
@@ -569,7 +590,7 @@ document.write(`
 <li><p>The function prints SST to screen in a readable format.</p></li>
 <li><p>The function prints the coefficient of determination, <img class="math" src="../../_images/math/68e708b5370ad8d6f03275d52ffcb304559a1b46.png" alt="R^2"/>, to screen.</p></li>
 </ol>
-</div>
+</aside>
 </section>
 </section>
 
@@ -579,11 +600,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="index.html"
@@ -603,10 +623,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -614,6 +631,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -657,9 +675,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -683,8 +702,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

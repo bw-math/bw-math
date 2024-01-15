@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Python Setup &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'resources/python/01_SETUP';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Basics" href="02_BASIC.html" />
     <link rel="prev" title="Online Python Shell" href="00_SHELL.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -502,33 +523,33 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="python-setup">
-<span id="id1"></span><h1>Python Setup<a class="headerlink" href="#python-setup" title="Permalink to this headline">#</a></h1>
+<span id="id1"></span><h1>Python Setup<a class="headerlink" href="#python-setup" title="Permalink to this heading">#</a></h1>
 <p><strong>Python</strong> will run on virtually any device with a processor. It supports all operating systems: Windows, Mac and Linux.</p>
 <section id="links">
-<span id="python-links"></span><h2>Links<a class="headerlink" href="#links" title="Permalink to this headline">#</a></h2>
+<span id="python-links"></span><h2>Links<a class="headerlink" href="#links" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.python.org/downloads/">Download</a></p></li>
 <li><p><a class="reference external" href="https://docs.python.org/3/index.html">Documentation</a></p></li>
 </ul>
 </section>
 <section id="python-installation">
-<h2>Python Installation<a class="headerlink" href="#python-installation" title="Permalink to this headline">#</a></h2>
+<h2>Python Installation<a class="headerlink" href="#python-installation" title="Permalink to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Ensure you are connected to the internet before attempting any of the commands on this page, especially <a class="reference internal" href="#python-packages"><span class="std std-ref">Packages</span></a> section. When you install third-party libraries into <strong>Python</strong>, your computer needs to reach out to the <a class="reference external" href="https://pypi.org/">Python Package Index (PyPi)</a>, where all of the extra libraries are stored.</p>
 </div>
 <section id="chromeos">
-<h3>ChromeOS<a class="headerlink" href="#chromeos" title="Permalink to this headline">#</a></h3>
+<h3>ChromeOS<a class="headerlink" href="#chromeos" title="Permalink to this heading">#</a></h3>
 <section id="step-1-update-chromeos">
-<h4>Step 1: Update ChromeOS<a class="headerlink" href="#step-1-update-chromeos" title="Permalink to this headline">#</a></h4>
+<h4>Step 1: Update ChromeOS<a class="headerlink" href="#step-1-update-chromeos" title="Permalink to this heading">#</a></h4>
 <p>Ensure you are on the latest version of the ChromeOS operating system.</p>
 <img alt="../../_images/update_chrome_os.png" class="align-center" src="../../_images/update_chrome_os.png" />
 </section>
 <section id="step-2-enable-linux-subsystem">
-<h4>Step 2: Enable Linux Subsystem<a class="headerlink" href="#step-2-enable-linux-subsystem" title="Permalink to this headline">#</a></h4>
+<h4>Step 2: Enable Linux Subsystem<a class="headerlink" href="#step-2-enable-linux-subsystem" title="Permalink to this heading">#</a></h4>
 <a class="reference external image-reference" href="https://www.youtube.com/watch?v=LauMdnSRWa8"><img alt="Enable Linux Subsystem" src="https://img.youtube.com/vi/LauMdnSRWa8/maxresdefault.jpg" /></a>
 <div class="admonition-enable-linux-subsystem-video admonition">
 <p class="admonition-title">Enable Linux Subsystem Video</p>
@@ -539,7 +560,7 @@ document.write(`
 <p>This will give you access to something called the <em>command line</em> (sometimes called a <em>terminal</em> or a <em>shell</em>). The <em>command line</em> is a direct interface to the operating system of your laptop. Let’s take a look.</p>
 </section>
 <section id="step-3-explore-a-little">
-<h4>Step 3: Explore A Little<a class="headerlink" href="#step-3-explore-a-little" title="Permalink to this headline">#</a></h4>
+<h4>Step 3: Explore A Little<a class="headerlink" href="#step-3-explore-a-little" title="Permalink to this heading">#</a></h4>
 <p>A new world has now opened up to you, the world of <em>Linux</em>. Let’s take a little while to familiarize ourselves with it before moving on to <strong>Python</strong>. Open Linux command line (<em>terminal</em>),</p>
 <img alt="../../_images/terminal.png" class="align-center" src="../../_images/terminal.png" />
 <div class="admonition note">
@@ -597,7 +618,7 @@ document.write(`
 <p>Alright, that was fun. However, this class isn’t about learning the ins and outs of <em>Linux</em>. This section was merely to show you for what the terminal is used: issuing commands.</p>
 </section>
 <section id="step-3-install-python">
-<h4>Step 3: Install Python<a class="headerlink" href="#step-3-install-python" title="Permalink to this headline">#</a></h4>
+<h4>Step 3: Install Python<a class="headerlink" href="#step-3-install-python" title="Permalink to this heading">#</a></h4>
 <p><strong>Python</strong> <em>should</em> come pre-installed in most <em>Linux</em> distributions. Open a terminal and verify your installation with the following command,</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>--version
 </pre></div>
@@ -629,7 +650,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="step-4-install-libraries">
-<h4>Step 4: Install Libraries<a class="headerlink" href="#step-4-install-libraries" title="Permalink to this headline">#</a></h4>
+<h4>Step 4: Install Libraries<a class="headerlink" href="#step-4-install-libraries" title="Permalink to this heading">#</a></h4>
 <a class="reference external image-reference" href="https://www.youtube.com/watch?v=Wm7KgJcts8s"><img alt="Installing Libraries" src="https://img.youtube.com/vi/Wm7KgJcts8s/maxresdefault.jpg" /></a>
 <div class="admonition-install-libraries admonition">
 <p class="admonition-title">Install Libraries</p>
@@ -654,7 +675,7 @@ document.write(`
 </section>
 </section>
 <section id="other-operating-systems">
-<h3>Other Operating Systems<a class="headerlink" href="#other-operating-systems" title="Permalink to this headline">#</a></h3>
+<h3>Other Operating Systems<a class="headerlink" href="#other-operating-systems" title="Permalink to this heading">#</a></h3>
 <p>If you want to install <strong>Python</strong> on your home PC or laptop, you can download the official installer on found the <a class="reference external" href="https://www.python.org/downloads/">Python website</a> and follow the steps in this section,</p>
 <ol class="arabic simple">
 <li><p>Go to <em>https://www.python.org/downloads*</em> and click the <strong>Download</strong> button,</p></li>
@@ -678,7 +699,7 @@ document.write(`
 </section>
 </section>
 <section id="interpretter">
-<span id="python-interpretter"></span><h2>Interpretter<a class="headerlink" href="#interpretter" title="Permalink to this headline">#</a></h2>
+<span id="python-interpretter"></span><h2>Interpretter<a class="headerlink" href="#interpretter" title="Permalink to this heading">#</a></h2>
 <a class="reference external image-reference" href="https://www.youtube.com/watch?v=lHqt-dLR8iU"><img alt="Python Interpretter and IDLE" src="https://img.youtube.com/vi/lHqt-dLR8iU/maxresdefault.jpg" /></a>
 <div class="admonition-python-interpretter-and-idle admonition">
 <p class="admonition-title">Python Interpretter and IDLE</p>
@@ -742,7 +763,7 @@ document.write(`
 </div>
 </section>
 <section id="scripts">
-<span id="python-scripts"></span><h2>Scripts<a class="headerlink" href="#scripts" title="Permalink to this headline">#</a></h2>
+<span id="python-scripts"></span><h2>Scripts<a class="headerlink" href="#scripts" title="Permalink to this heading">#</a></h2>
 <p><strong>Python</strong> scripts are files that have a <code class="docutils literal notranslate"><span class="pre">.py</span></code> extension. <code class="docutils literal notranslate"><span class="pre">.py</span></code> files are just files containing plain text, but anything that ends in <code class="docutils literal notranslate"><span class="pre">.py</span></code> will be understood by the <strong>Python</strong> <a class="reference internal" href="#python-interpretter"><span class="std std-ref">Interpretter</span></a> as a set of executable instrutions, so you can’t write just any text in this file. You have to write words that exist in the <a class="reference external" href="https://docs.python.org/3/reference/index.html">Python language</a>. Anytime we do a lab in this class, you will be writing a <em>script</em>.</p>
 <p>As an example, create a new file named <code class="docutils literal notranslate"><span class="pre">test.py</span></code> and open it in a text editor (actually, you will want to use <a class="reference internal" href="#python-idle"><span class="std std-ref">IDLE</span></a>, but we haven’t gotten to that part yet, so any old text editor will do for now)</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">the_meaning_of_life</span> <span class="o">=</span> <span class="mi">42</span>
@@ -767,7 +788,7 @@ document.write(`
 <p>However, <em>IDLE</em> will make this whole process much less painful, so continue onto the next section, dear reader.</p>
 </section>
 <section id="python-idle">
-<span id="idle"></span><h2>IDLE<a class="headerlink" href="#python-idle" title="Permalink to this headline">#</a></h2>
+<span id="idle"></span><h2>IDLE<a class="headerlink" href="#python-idle" title="Permalink to this heading">#</a></h2>
 <p><strong>Python</strong> (usually) ships with a program named <em>IDLE</em>. <a class="reference external" href="https://docs.python.org/3/library/idle.html">IDLE</a> stands for <em>Integrated Development and Learning Environment</em>. <em>IDLE</em> is a text editor integrated with a <strong>Python</strong> interpretter. It provides <a class="reference external" href="https://en.wikipedia.org/wiki/Syntax_highlighting#Support_in_text_editors">syntax highlighting</a>, the ability to save and execute scripts, and a debugger for stepping through the programs. In other words, it’s got what we need.</p>
 <p>Open up an <em>IDLE</em> session,</p>
 <img alt="../../_images/idle_shell.png" src="../../_images/idle_shell.png" />
@@ -780,7 +801,7 @@ document.write(`
 <p>We will sometimes call the <em>IDLE</em> text editor a <em>notebook</em>.</p>
 </section>
 <section id="packages">
-<span id="python-packages"></span><h2>Packages<a class="headerlink" href="#packages" title="Permalink to this headline">#</a></h2>
+<span id="python-packages"></span><h2>Packages<a class="headerlink" href="#packages" title="Permalink to this heading">#</a></h2>
 <p>By default, Python comes installed with the <a class="reference external" href="https://docs.python.org/3/library/index.html">Standard Library</a>. The <strong>Standard Library</strong> is a collection of common functions and utilities. For instance, the <cite>math</cite> library is part of the <strong>Standard Library</strong>. <cite>math</cite> contains functions for computing trigonemtric ratios, calculating powers and roots, etc. You can use <cite>math</cite> functions by first <cite>import</cite>-ing the library and accessing its content with <em>dot notation</em>. Start an interpretter session and type,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
@@ -794,7 +815,7 @@ document.write(`
 </dl>
 <p>This sequence of commands imports the <cite>math</cite> library, calls the factorial function with <em>dot notation</em> to compute <img class="math" src="../../_images/math/7e451da68a24c1d66570895ec95c4e54480e6920.png" alt="n!"/>, stores the answer in the variable <cite>answer</cite>, and then prints it to screen.</p>
 <section id="third-party-packages">
-<span id="python-third-party"></span><h3>Third-Party Packages<a class="headerlink" href="#third-party-packages" title="Permalink to this headline">#</a></h3>
+<span id="python-third-party"></span><h3>Third-Party Packages<a class="headerlink" href="#third-party-packages" title="Permalink to this heading">#</a></h3>
 <p><cite>math</cite> has plenty of functions that will be useful in this class, but it doesn’t have <em>everything</em> we need. Luckily, <strong>Python</strong> has a <em>package manager</em> that allows you to install third-party libraries. You use the <code class="docutils literal notranslate"><span class="pre">pip</span></code> command anytime you need to install any additional libraries or pacakges into <strong>Python</strong>. Open up a Linux Terminal and type,</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip3<span class="w"> </span>--version
 </pre></div>
@@ -848,11 +869,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="00_SHELL.html"
@@ -872,10 +892,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -883,6 +900,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -931,9 +949,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -957,8 +976,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -98,11 +98,11 @@ c. Consider the following scatterplots,
 .. image:: ../../../assets/imgs/classwork/2021_apstats_frp_06c.png
 	:align: center
 
-Use these graphs to answer the following questions.
+Use these graphs to answer the following question,
 
 	i. Graph I shows the average attendance versus number of games won for each year. Describe the
 relationship between the variables.
+
 	ii. Graph II shows the same information as Graph I, but also indicates the old and new stadiums. Does Graph II suggest that the rate at which attendance changes as number of games won increases is different in the new stadium compared to the old stadium? Explain your reasoning. 
 
 d. Consider the three variables: number of games won, year, and stadium. Based on the graphs, explain how one of those variables could be a confounding variable in the relationship between average attendance and the other variables.
-

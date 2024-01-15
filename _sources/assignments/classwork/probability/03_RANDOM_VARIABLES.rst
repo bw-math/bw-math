@@ -7,7 +7,7 @@ Random Variables
 Definition
 ==========
 
-1. A random variable **X** is defined as the number of heads in three coin flips.
+1. A random variable :math:`\mathcal{X}` is defined as the number of heads in three coin flips.
 
 	a. List the elements of the sample space for this random variable.
 
@@ -21,12 +21,12 @@ Definition
 
 	f. Find the probability distribution :math:`P(\mathcal{X}=x)` for all values of *x*. 
 
-	g. Find the expectation :math:`E(\mathcal{X})` of the sum of two die rolls.
+	g. Using the probability distribution derived in *part e*, find the expectation :math:`E(\mathcal{X})` of the sum of two die rolls.
 
-	h. Find the variance :math:`Var(\mathcal{X})` of the sum of two die rolls. 
+	h. Using the probability distribution derived in *part e*, find the variance :math:`Var(\mathcal{X})` of the sum of two die rolls. 
 
 	
-2. A random variable **X** is defined as the sum of two six-sided die rolls. 
+2. A random variable :math:`\mathcal{X}` is defined as the sum of two six-sided die rolls. 
 
 	a. List the elements of the sample space for this random variable.
 
@@ -38,25 +38,44 @@ Definition
 
 	e. Find the probability distribution :math:`P(\mathcal{X}=x)` for all values of *x*.
 
-	f. Find the expectation :math:`E(\mathcal{X})` of the sum of two die rolls.
+	f. Using the probability distribution derived in *part e*, find the expectation :math:`E(\mathcal{X})` of the sum of two die rolls.
 
-	g. Find the variance :math:`Var(\mathcal{X})` of the sum of two die rolls. 
+	g. Using the probability distribution derived in *part e*, find the variance :math:`Var(\mathcal{X})` of the sum of two die rolls. 
 
+Examples
+========
 
+1. TODO
+
+2. TODO 
+ 
 Theorems
 ========
 
-.. topic:: Expectation of a Sum
+.. topic:: Linearity of Expectations
 
-	Suppose :math:`\mathcal{Y}` and :math:`\mathcal{Z}` are random variables, not necessarily independent. If :math:`\mathcal{X} = \mathcal{Y] + \mathcal{Z}`, then
+	Suppose :math:`\mathcal{Y}` and :math:`\mathcal{Z}` are random variables, not necessarily independent. If :math:`\mathcal{X} = \mathcal{Y} + \mathcal{Z}`, then
 	
 	.. math::
 	
 		E(\mathcal{X}) = E(\mathcal{Y}) + E(\mathcal{Z})
 		
-1. TODO
+1. Use the linearity of expectations to solve the following problems.
 
-2. TODO
+	a. What is the expected number of heads in three coin flips?
+	
+	b. What is the expected sum of outcomes for two die rolls?
+	
+2. Clavius Hecklesnotz is playing a game of chance where he flips 10 fair coins. If Clavius Hecklesnotz gets 1 head, he will be paid $1. If Clavius Hecklesnotz gets 2 heads, he will be paid $2. In general, if Clavius Hecklesnotz gets *n* heads, he will be paid $*n*. What is the expected value of Clavius Hecklesnotz' payout? 
+
+.. hint::
+
+	This problem can be solved with a :ref:`binomial_distribution`, but it is much easier to understand through the :ref:`linearity_of_expectations`.
+	
+3. A box contains a yellow ball, an orange ball, a green ball, and a blue ball. Matilda Weierstrauss randomly selects 4 balls from the box (with replacement). What is the expected value for the number of distinct colored balls Matilda Weierstrauss will select?
+
+4. Every time one of the AP Statistics students buys a Happy Meal from McDonalds, they receive a :ref:`Strawberry Shortcake <https://en.wikipedia.org/wiki/Strawberry_Shortcake>`_ plush doll. There are five dolls in total: Strawberry Shortcake, Cherry Jam, Raspberry Torte, Blueberry Muffin and Lemon Meringue. The toys in every Happy Meal are awarded at random. What is the expected number of Happy Meals an AP Statistics Students must buy in order to get all the *Strawberry Shortcake* plush dolls?
+
 A.P. Exam Practice
 ==================
 

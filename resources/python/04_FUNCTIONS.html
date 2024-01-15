@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Functions &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'resources/python/04_FUNCTIONS';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Plots" href="05_PLOTS.html" />
     <link rel="prev" title="Sets" href="03_SETS.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -525,10 +546,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="functions">
-<span id="python-functions"></span><h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">#</a></h1>
+<span id="python-functions"></span><h1>Functions<a class="headerlink" href="#functions" title="Permalink to this heading">#</a></h1>
 <p>This page details <strong>Python</strong> functions we will frequently need to use.</p>
 <p>The arguments of functions are specified between angular brackets <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code>, with the name of the argument on the left hand side and the type of argument on the right hand side. For example, the definition,</p>
 <blockquote>
@@ -536,9 +557,9 @@ document.write(`
 </div></blockquote>
 <p>Says the function <code class="docutils literal notranslate"><span class="pre">my_function</span></code> has a <em>required</em> argument named <code class="docutils literal notranslate"><span class="pre">this_argument</span></code> and an <em>optional</em> argument named <code class="docutils literal notranslate"><span class="pre">that_argument</span></code>.</p>
 <section id="built-in-functions">
-<span id="python-builtin-functions"></span><h2>Built-In Functions<a class="headerlink" href="#built-in-functions" title="Permalink to this headline">#</a></h2>
+<span id="python-builtin-functions"></span><h2>Built-In Functions<a class="headerlink" href="#built-in-functions" title="Permalink to this heading">#</a></h2>
 <section id="length-function">
-<span id="python-length-function"></span><h3>Length Function<a class="headerlink" href="#length-function" title="Permalink to this headline">#</a></h3>
+<span id="python-length-function"></span><h3>Length Function<a class="headerlink" href="#length-function" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">len(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>length</em> function is used to find how many elements are in a list.</p>
 </dd>
@@ -554,7 +575,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="sum-function">
-<span id="python-sum-function"></span><h3>Sum Function<a class="headerlink" href="#sum-function" title="Permalink to this headline">#</a></h3>
+<span id="python-sum-function"></span><h3>Sum Function<a class="headerlink" href="#sum-function" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">sum(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The sum function totals all the elements in a list.</p>
 </dd>
@@ -574,7 +595,7 @@ document.write(`
 </div>
 </section>
 <section id="max-function">
-<span id="python-max-function"></span><h3>Max Function<a class="headerlink" href="#max-function" title="Permalink to this headline">#</a></h3>
+<span id="python-max-function"></span><h3>Max Function<a class="headerlink" href="#max-function" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">max(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>max</em> function finds the largest element in a list.</p>
 </dd>
@@ -590,7 +611,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="min-function">
-<span id="python-min-function"></span><h3>Min Function<a class="headerlink" href="#min-function" title="Permalink to this headline">#</a></h3>
+<span id="python-min-function"></span><h3>Min Function<a class="headerlink" href="#min-function" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">min(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>min</em> function returns the smallest element in a list.</p>
 </dd>
@@ -606,7 +627,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="range-function">
-<span id="python-range-function"></span><h3>Range Function<a class="headerlink" href="#range-function" title="Permalink to this headline">#</a></h3>
+<span id="python-range-function"></span><h3>Range Function<a class="headerlink" href="#range-function" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">range(&lt;start</span> <span class="pre">:</span> <span class="pre">optional&gt;,</span> <span class="pre">&lt;stop</span> <span class="pre">:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;step</span> <span class="pre">:</span> <span class="pre">optional&gt;)</span></code></dt><dd><p>The <em>range</em> function generates an <em>iterable</em> sequence of numbers.</p>
 </dd>
@@ -644,7 +665,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="enumerate-function">
-<span id="python-enumerate-function"></span><h3>Enumerate Function<a class="headerlink" href="#enumerate-function" title="Permalink to this headline">#</a></h3>
+<span id="python-enumerate-function"></span><h3>Enumerate Function<a class="headerlink" href="#enumerate-function" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">enumerate(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>enumerate</em> function allows you to <em>index</em> the elements in a list.</p>
 </dd>
@@ -669,7 +690,7 @@ document.write(`
 <p><code class="docutils literal notranslate"><span class="pre">enumerate()</span></code> pulls the index of the observation from the list and allows you to use it in the <code class="docutils literal notranslate"><span class="pre">&lt;expr&gt;</span></code> of <a class="reference internal" href="02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a>. This is especially useful for time series data, as this example illustrates.</p>
 </section>
 <section id="zip-function">
-<span id="python-zip-function"></span><h3>Zip Function<a class="headerlink" href="#zip-function" title="Permalink to this headline">#</a></h3>
+<span id="python-zip-function"></span><h3>Zip Function<a class="headerlink" href="#zip-function" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">zip(&lt;list_one:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;list_two:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>zip</em> function allows you to iterate over two lists simultaneously.</p>
 </dd>
@@ -697,7 +718,7 @@ document.write(`
 </section>
 </section>
 <section id="standard-library-functions">
-<span id="python-standard-library"></span><h2>Standard Library Functions<a class="headerlink" href="#standard-library-functions" title="Permalink to this headline">#</a></h2>
+<span id="python-standard-library"></span><h2>Standard Library Functions<a class="headerlink" href="#standard-library-functions" title="Permalink to this heading">#</a></h2>
 <p>In addition to the functions accessible by default in <strong>Python</strong>, there are also a large number of functions you can <code class="docutils literal notranslate"><span class="pre">import</span></code> to extend the basic functionality of <strong>Python</strong>. These functions reside in the <em>Standard Library</em>.</p>
 <p>The syntax for importing an additional package is simply,</p>
 <blockquote>
@@ -731,10 +752,10 @@ document.write(`
 </div></blockquote>
 <p>We will be using two packages in particular from the <em>Standard Library</em> over and over again in this class, <code class="docutils literal notranslate"><span class="pre">math</span></code> and <code class="docutils literal notranslate"><span class="pre">random</span></code>.</p>
 <section id="math">
-<span id="python-math-package"></span><h3>Math<a class="headerlink" href="#math" title="Permalink to this headline">#</a></h3>
+<span id="python-math-package"></span><h3>Math<a class="headerlink" href="#math" title="Permalink to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">math</span></code> has all sorts of goodies in it. Unfortunately, we won’t need most of them. The ones we will need are detailed below.</p>
 <section id="square-root">
-<span id="python-square-root-function"></span><h4>Square Root<a class="headerlink" href="#square-root" title="Permalink to this headline">#</a></h4>
+<span id="python-square-root-function"></span><h4>Square Root<a class="headerlink" href="#square-root" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">sqrt(&lt;</span> <span class="pre">value</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>square root</em> function calculates the square root of a number.</p>
 </dd>
@@ -754,7 +775,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="natural-base-e">
-<span id="python-e-function"></span><h4>Natural Base e<a class="headerlink" href="#natural-base-e" title="Permalink to this headline">#</a></h4>
+<span id="python-e-function"></span><h4>Natural Base e<a class="headerlink" href="#natural-base-e" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">exp(&lt;exponent</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>e</em> function raises the number <em>e</em> to the given exponent.</p>
 </dd>
@@ -778,7 +799,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="ceil">
-<span id="python-ceiling-function"></span><h4>Ceil<a class="headerlink" href="#ceil" title="Permalink to this headline">#</a></h4>
+<span id="python-ceiling-function"></span><h4>Ceil<a class="headerlink" href="#ceil" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">ceil(&lt;value</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>ceiling</em> function always rounds a number up to the next integer (whole-number)</p>
 </dd>
@@ -803,7 +824,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="floor">
-<span id="python-floor-function"></span><h4>Floor<a class="headerlink" href="#floor" title="Permalink to this headline">#</a></h4>
+<span id="python-floor-function"></span><h4>Floor<a class="headerlink" href="#floor" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">floor(&lt;value</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>floor</em> function always rounds a number down to the previous integer (whole-number)</p>
 </dd>
@@ -829,7 +850,7 @@ document.write(`
 </section>
 </section>
 <section id="random">
-<span id="python-random-package"></span><h3>Random<a class="headerlink" href="#random" title="Permalink to this headline">#</a></h3>
+<span id="python-random-package"></span><h3>Random<a class="headerlink" href="#random" title="Permalink to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">random</span></code> package is very appropriately named. It is used to generate random data of all types. Let’s take a look.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -842,7 +863,7 @@ document.write(`
 <p>Due to the nature of the <code class="docutils literal notranslate"><span class="pre">random</span></code> package, if you are following along on your ChromeBook, you will get different output than the examples.</p>
 </div>
 <section id="random-function">
-<span id="python-random-function"></span><h4>Random Function<a class="headerlink" href="#random-function" title="Permalink to this headline">#</a></h4>
+<span id="python-random-function"></span><h4>Random Function<a class="headerlink" href="#random-function" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">random()</span></code></dt><dd><p>The <em>random</em> function returns a random number between 0 and 1.</p>
 </dd>
@@ -864,7 +885,7 @@ document.write(`
 </div>
 </section>
 <section id="random-integer-function">
-<span id="python-randint-function"></span><h4>Random Integer Function<a class="headerlink" href="#random-integer-function" title="Permalink to this headline">#</a></h4>
+<span id="python-randint-function"></span><h4>Random Integer Function<a class="headerlink" href="#random-integer-function" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">randint(&lt;start:</span> <span class="pre">required,</span> <span class="pre">stop</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p><code class="docutils literal notranslate"><span class="pre">randint</span></code> returns a random integer between <code class="docutils literal notranslate"><span class="pre">&lt;start&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;stop&gt;</span></code>, including both endpoints.</p>
 </dd>
@@ -882,7 +903,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="random-choice-function">
-<span id="python-choice-function"></span><h4>Random Choice Function<a class="headerlink" href="#random-choice-function" title="Permalink to this headline">#</a></h4>
+<span id="python-choice-function"></span><h4>Random Choice Function<a class="headerlink" href="#random-choice-function" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">choice(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>choice</em> function returns a random selection for a list.</p>
 </dd>
@@ -903,7 +924,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="shuffle">
-<h4>Shuffle<a class="headerlink" href="#shuffle" title="Permalink to this headline">#</a></h4>
+<h4>Shuffle<a class="headerlink" href="#shuffle" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">shuffle(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>shuffle</em> functions randomly orders a list into a new list.</p>
 </dd>
@@ -923,7 +944,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="normal-variate">
-<span id="python-normal-variate-function"></span><h4>Normal Variate<a class="headerlink" href="#normal-variate" title="Permalink to this headline">#</a></h4>
+<span id="python-normal-variate-function"></span><h4>Normal Variate<a class="headerlink" href="#normal-variate" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">normalvariate(&lt;mean</span> <span class="pre">:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;standard</span> <span class="pre">deviation</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>normal variate</em> functions simulates a random draw from the <a class="reference internal" href="../../notes/distributions/04_NORMAL.html#normal-distribution"><span class="std std-ref">Normal Distribution</span></a>.</p>
 </dd>
@@ -939,10 +960,10 @@ document.write(`
 </section>
 </section>
 <section id="statistics">
-<span id="python-stats-package"></span><h3>Statistics<a class="headerlink" href="#statistics" title="Permalink to this headline">#</a></h3>
+<span id="python-stats-package"></span><h3>Statistics<a class="headerlink" href="#statistics" title="Permalink to this heading">#</a></h3>
 <p><strong>Python</strong> also has a dedicated package specifically for statistical functions, named <code class="docutils literal notranslate"><span class="pre">statistics</span></code>.</p>
 <section id="mean">
-<span id="python-sample-mean"></span><h4>Mean<a class="headerlink" href="#mean" title="Permalink to this headline">#</a></h4>
+<span id="python-sample-mean"></span><h4>Mean<a class="headerlink" href="#mean" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">mean(&lt;list:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>Calculates the sample mean of a univariate dataset passed in through <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
 </dd>
@@ -966,7 +987,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="median">
-<span id="python-sample-median"></span><h4>Median<a class="headerlink" href="#median" title="Permalink to this headline">#</a></h4>
+<span id="python-sample-median"></span><h4>Median<a class="headerlink" href="#median" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">median(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>Calculates the sample median of a univariate dataset passed in through <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
 </dd>
@@ -990,7 +1011,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="standard-deviation">
-<span id="python-standard-deviation"></span><h4>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this headline">#</a></h4>
+<span id="python-standard-deviation"></span><h4>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">stdev(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>Calculates the sample standard deviation of a univariate dataset passed in through <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
 </dd>
@@ -1014,7 +1035,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="quantiles">
-<span id="python-quantiles"></span><h4>Quantiles<a class="headerlink" href="#quantiles" title="Permalink to this headline">#</a></h4>
+<span id="python-quantiles"></span><h4>Quantiles<a class="headerlink" href="#quantiles" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">quantiles(&lt;list</span> <span class="pre">:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;n:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>Divides the sample of data contained in <code class="docutils literal notranslate"><span class="pre">list</span></code> into a number of equally distributed groups determined by <code class="docutils literal notranslate"><span class="pre">groupings</span></code>.</p>
 </dd>
@@ -1050,7 +1071,7 @@ document.write(`
 </div>
 </section>
 <section id="normal-distribution">
-<span id="python-normal-distribution"></span><h4>Normal Distribution<a class="headerlink" href="#normal-distribution" title="Permalink to this headline">#</a></h4>
+<span id="python-normal-distribution"></span><h4>Normal Distribution<a class="headerlink" href="#normal-distribution" title="Permalink to this heading">#</a></h4>
 <p><strong>Python</strong> provides a way of calculating normal probabilities and percentiles, but it is a bit different from the other functions we have encountered so far. <strong>Python</strong> represents a normal distribution with an <code class="docutils literal notranslate"><span class="pre">object</span></code>. An <code class="docutils literal notranslate"><span class="pre">object</span></code> is a type of <strong>Python</strong> variable. The variables we have dealt with heretofore have been <em>literal</em> variables, meaning they are simply bits of raw data. An <code class="docutils literal notranslate"><span class="pre">object</span></code> is a different type of variable; an object has <em>properties</em> that can be accessed and <em>functions</em> that can be called.</p>
 <p>An example will make this clearer.</p>
 <p>First, we need to create a <em>normal distribution</em> with a certain <code class="docutils literal notranslate"><span class="pre">mean</span></code> and <code class="docutils literal notranslate"><span class="pre">std_dev</span></code> (standard deviation). These are properties of the <em>normal distribution</em> object,</p>
@@ -1108,7 +1129,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="correlation">
-<span id="python-correlation"></span><h4>Correlation<a class="headerlink" href="#correlation" title="Permalink to this headline">#</a></h4>
+<span id="python-correlation"></span><h4>Correlation<a class="headerlink" href="#correlation" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">correlation(&lt;x_list:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;y_list:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>correlation</em> functions returns the sample correlation coefficient for a sample of bivariate data.</p>
 </dd>
@@ -1116,7 +1137,7 @@ document.write(`
 <p>TODO</p>
 </section>
 <section id="linear-regression">
-<span id="python-linear-regression"></span><h4>Linear Regression<a class="headerlink" href="#linear-regression" title="Permalink to this headline">#</a></h4>
+<span id="python-linear-regression"></span><h4>Linear Regression<a class="headerlink" href="#linear-regression" title="Permalink to this heading">#</a></h4>
 <dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">linear_regression(&lt;x_list:</span> <span class="pre">required&gt;,</span> <span class="pre">&lt;y_list:</span> <span class="pre">required&gt;)</span></code></dt><dd><p>The <em>linear regression</em> function returns the regression model parameters for a sample of bivariate data.</p>
 </dd>
@@ -1130,10 +1151,10 @@ document.write(`
 </section>
 </section>
 <section id="creating-functions">
-<span id="python-creating-functions"></span><h2>Creating Functions<a class="headerlink" href="#creating-functions" title="Permalink to this headline">#</a></h2>
+<span id="python-creating-functions"></span><h2>Creating Functions<a class="headerlink" href="#creating-functions" title="Permalink to this heading">#</a></h2>
 <p>Occassionally, the <em>Standard Library</em> will not be enough to do what we need to do. In those cases, we have no other options but to define our own function.</p>
 <section id="function-signatures">
-<h3>Function Signatures<a class="headerlink" href="#function-signatures" title="Permalink to this headline">#</a></h3>
+<h3>Function Signatures<a class="headerlink" href="#function-signatures" title="Permalink to this heading">#</a></h3>
 <p>A function in <strong>Python</strong> has four components its <code class="docutils literal notranslate"><span class="pre">def</span></code>, its <em>name</em>, its <em>arguments</em> and its <code class="docutils literal notranslate"><span class="pre">return</span></code> value. The following list breaks each of these components down,</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">def</span></code> is a <em>keyword</em> that informs <strong>Python</strong> you are about to define a function. You must <em>always</em> precede a function with <code class="docutils literal notranslate"><span class="pre">def</span></code>.</p></li>
@@ -1143,7 +1164,7 @@ document.write(`
 </ol>
 </section>
 <section id="function-example">
-<h3>Function Example<a class="headerlink" href="#function-example" title="Permalink to this headline">#</a></h3>
+<h3>Function Example<a class="headerlink" href="#function-example" title="Permalink to this heading">#</a></h3>
 <p>Putting all four of these pieces together, let’s create a simple function.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fancy</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
     <span class="n">sentence</span> <span class="o">=</span> <span class="n">word</span> <span class="o">+</span> <span class="s2">&quot; is fancy!&quot;</span>
@@ -1174,11 +1195,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="03_SETS.html"
@@ -1198,10 +1218,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1209,6 +1226,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1280,9 +1298,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -1306,8 +1325,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

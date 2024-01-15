@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Histograms and Boxplots &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/python/02_QUANTITATIVE';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Normality" href="03_NORMALITY.html" />
     <link rel="prev" title="Bar Charts" href="01_CATEGORICAL.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -516,10 +537,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="histograms-and-boxplots">
-<span id="project-two"></span><h1>Histograms and Boxplots<a class="headerlink" href="#histograms-and-boxplots" title="Permalink to this headline">#</a></h1>
+<span id="project-two"></span><h1>Histograms and Boxplots<a class="headerlink" href="#histograms-and-boxplots" title="Permalink to this heading">#</a></h1>
 <blockquote class="epigraph">
 <div><p>What can be shown, cannot be said.</p>
 <ul class="simple">
@@ -528,7 +549,7 @@ document.write(`
 </div></blockquote>
 <p>In this lab, you will get <em>even more</em> familiar with the statistical plotting features of <strong>Python</strong> using several famous datasets from the history of science. We will create histograms and boxplots to visualize the distributions of experimental data, and calculate sample statistics to summarize the data.</p>
 <section id="instructions">
-<span id="project-two-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
+<span id="project-two-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Download <strong>both</strong> <em>csv</em> datasets in the <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">Datasets</span></a> section and place them in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system where you save your <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts.</p></li>
 <li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">NAME_project_two.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">NAME</span></code> with your name.</p></li>
@@ -544,19 +565,19 @@ document.write(`
 </ol>
 </section>
 <section id="formulae">
-<h2>Formulae<a class="headerlink" href="#formulae" title="Permalink to this headline">#</a></h2>
+<h2>Formulae<a class="headerlink" href="#formulae" title="Permalink to this heading">#</a></h2>
 <section id="percent-error">
-<h3>Percent Error<a class="headerlink" href="#percent-error" title="Permalink to this headline">#</a></h3>
+<h3>Percent Error<a class="headerlink" href="#percent-error" title="Permalink to this heading">#</a></h3>
 <div class="math">
 <p><img src="../../_images/math/17d14ef48d395f9775a26d2741ea4b725f4815f0.png" alt="\text{percent error} = \frac{ \text{estimated - actual} }{ \text{actual} } \cdot 100"/></p>
 </div></section>
 <section id="coefficient-of-variation">
-<h3>Coefficient of Variation<a class="headerlink" href="#coefficient-of-variation" title="Permalink to this headline">#</a></h3>
+<h3>Coefficient of Variation<a class="headerlink" href="#coefficient-of-variation" title="Permalink to this heading">#</a></h3>
 <div class="math">
 <p><img src="../../_images/math/262c615e4c9674755786459a6eb5eea0a0f01efc.png" alt="\text{CV} = \frac{s}{\bar{x}}"/></p>
 </div></section>
 <section id="iqr-rule-for-outliers">
-<h3>IQR Rule for Outliers<a class="headerlink" href="#iqr-rule-for-outliers" title="Permalink to this headline">#</a></h3>
+<h3>IQR Rule for Outliers<a class="headerlink" href="#iqr-rule-for-outliers" title="Permalink to this heading">#</a></h3>
 <p>If <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> satisfies either of the following conditions, then it is considered an <em>outlier</em>,</p>
 <div class="math">
 <p><img src="../../_images/math/98d376c39274d1c822479b25ef34ec9b524e10d7.png" alt="x_i \geq Q_3 + 1.5 \cdot IQR"/></p>
@@ -565,37 +586,37 @@ document.write(`
 </div></section>
 </section>
 <section id="background">
-<span id="project-two-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<span id="project-two-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
 <section id="the-michelson-velocity-of-light-experiment">
-<h3>The Michelson Velocity of Light Experiment<a class="headerlink" href="#the-michelson-velocity-of-light-experiment" title="Permalink to this headline">#</a></h3>
+<h3>The Michelson Velocity of Light Experiment<a class="headerlink" href="#the-michelson-velocity-of-light-experiment" title="Permalink to this heading">#</a></h3>
 <p>The <a class="reference external" href="https://www.gutenberg.org/files/11753/11753-h/11753-h.htm">Michelson Velocity of Light Experiment</a> conducted in 1879 was the first time <a class="reference external" href="https://en.wikipedia.org/wiki/Albert_A._Michelson">Albert A. Michelson</a> successfully measured the speed of light. He would go on to do so several more times, eventually teaming up with <a class="reference external" href="https://en.wikipedia.org/wiki/Edward_W._Morley">Edward Morley</a>. Together, using the principles Michelson first developed in 1879, Michelson and Morley would demonstrate in 1887 the speed of light was the same value regardless of the state of motion of the emitting body. This would go on to have profound effects for physics in the early twentieth century; It would lead <a class="reference external" href="https://en.wikipedia.org/wiki/Albert_Einstein">Albert Einstein</a> to propose the <a class="reference external" href="https://en.wikipedia.org/wiki/Theory_of_relativity">theory of relativity</a>, one of the most significant intellectual developments in the history of humanity.</p>
 <p>Michelson’s 1879 experimental results remained one of most accurate estimations of the speed of light until modern times. Using a series of mirrors depicted below, Michelson was able to divert light rays emitting from a common source along separate paths and then measure the fractional time difference it took for the rays to reach the same location.</p>
 <a class="reference internal image-reference" href="../../_images/michelson_experiment.png"><img alt="../../_images/michelson_experiment.png" class="align-center" src="../../_images/michelson_experiment.png" style="width: 60%;" /></a>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Experimental Design</p>
 <p>The experiment is conducted within a closed and darkened small building at the U.S. Naval Academy. Light enters the building from one corner passing through a slit <code class="docutils literal notranslate"><span class="pre">S</span></code> whose location is precisely determined using a micrometer.</p>
 <p>The light then proceeds to hit a rotating mirror at the other end of the building’s interior, <code class="docutils literal notranslate"><span class="pre">R</span></code>, from whence it is reflected out of the building through an opening in a corner different from that of the source, <code class="docutils literal notranslate"><span class="pre">L</span></code>.</p>
 <p>The light beam travels outside to strike another (stationary) mirror, <code class="docutils literal notranslate"><span class="pre">M</span></code> which reflects it back into the building through the same corner it exited whereupon it then strikes the rotating mirror.</p>
 <p><a class="reference external" href="https://great-northern-diver.github.io/loon.data/reference/michelson_1879.html">Source: Michelson Experiment</a></p>
-</div>
+</aside>
 <p>In this lab, we will analyze the dataset produced by Michelson in order to study typical distributions shapes encountered in science.</p>
 </section>
 <section id="the-cavendish-density-of-the-earth-experiment">
-<h3>The Cavendish Density of the Earth Experiment<a class="headerlink" href="#the-cavendish-density-of-the-earth-experiment" title="Permalink to this headline">#</a></h3>
+<h3>The Cavendish Density of the Earth Experiment<a class="headerlink" href="#the-cavendish-density-of-the-earth-experiment" title="Permalink to this heading">#</a></h3>
 <p>Henry Cavendish performed the first modern, scientific experiment to measure the density of the Earth in 1797, which allowed humans to calculate the mass of the Earth for the first time.</p>
 <p>Using the mutual gravitational attraction of two heavy metal balls attached to a <a class="reference external" href="https://en.wikipedia.org/wiki/Torsion_spring#Torsion_balance">torsion balanace</a> to twist a fiber of string, Cavendish measured the force of the tension produced.</p>
 <a class="reference internal image-reference" href="../../_images/cavendish_torsion_balance.png"><img alt="../../_images/cavendish_torsion_balance.png" class="align-center" src="../../_images/cavendish_torsion_balance.png" style="width: 60%;" /></a>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Experimental Design</p>
 <p>Diagram viewed from above of the torsion pendulum used in the 1798 Cavendish experiment, the first accurate measurement of the density of the Earth, by Henry Cavendish. The pendulum consists of two small lead weights (h, h) hanging from a 6 foot horizontal wooden beam supported in the center by a fine torsion thread. The beam is protected from air currents inside a wooden box (A, A, A, A). The two large weights (W, W) attached to a separate suspension attract the small weights, causing the beam to rotate slightly. The rotation is read off of vernier scales (S) at either end of the rod. The large weights can be rotated to the other side of the torsion beam (w, w), causing the beam to rotate in the opposite direction.</p>
 <p><a class="reference external" href="https://commons.wikimedia.org/wiki/File:Cavendish_experiment_schematic.png">Source: Cavendish Experiment</a></p>
-</div>
+</aside>
 <p>With <a class="reference external" href="https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion">Newton’s Laws of Motion</a> , he was able to derive an expression that related this force to the mass of the Earth.</p>
 <p>Cavendish’s dataset is an excellent historical example of using statistical inference to produce new knowledge about the world around us.</p>
 </section>
 </section>
 <section id="required-imports">
-<span id="project-two-required-imports"></span><h2>Required Imports<a class="headerlink" href="#required-imports" title="Permalink to this headline">#</a></h2>
+<span id="project-two-required-imports"></span><h2>Required Imports<a class="headerlink" href="#required-imports" title="Permalink to this heading">#</a></h2>
 <p>You will need to import the following libraries to complete this project,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plot</span>
@@ -604,9 +625,9 @@ document.write(`
 </div>
 </section>
 <section id="graphical-representations">
-<span id="project-two-graphs"></span><h2>Graphical Representations<a class="headerlink" href="#graphical-representations" title="Permalink to this headline">#</a></h2>
+<span id="project-two-graphs"></span><h2>Graphical Representations<a class="headerlink" href="#graphical-representations" title="Permalink to this heading">#</a></h2>
 <section id="histogram">
-<span id="project-two-histograms"></span><h3>Histogram<a class="headerlink" href="#histogram" title="Permalink to this headline">#</a></h3>
+<span id="project-two-histograms"></span><h3>Histogram<a class="headerlink" href="#histogram" title="Permalink to this heading">#</a></h3>
 <p>Recall a <em>histogram</em> is a way of visualizing the frequency distribution of a sample of data,</p>
 <div class="math">
 <p><img src="../../_images/math/ca6428d0234b10b10c633701fe96d453e82b7383.png" alt="f(x_i) \sim \text{number of times } x_i \text{ occurs}"/></p>
@@ -671,7 +692,7 @@ document.write(`
 <p>As you can see, there are lots of options to make your graph nice and pretty.</p>
 </section>
 <section id="cumulative-frequency-histograms">
-<span id="project-two-cumulative-frequency-histograms"></span><h3>Cumulative Frequency Histograms<a class="headerlink" href="#cumulative-frequency-histograms" title="Permalink to this headline">#</a></h3>
+<span id="project-two-cumulative-frequency-histograms"></span><h3>Cumulative Frequency Histograms<a class="headerlink" href="#cumulative-frequency-histograms" title="Permalink to this heading">#</a></h3>
 <p>Recall the <em>cumulative</em> frequency of a distribution is defined as the sum of frequencies up to a certain observation,</p>
 <div class="math">
 <p><img src="../../_images/math/36599f261f4c34ca21670dbd8c3cd025e47055bf.png" alt="F(x_i) = \sum_{x_1}^{x_i} \frac{f(x_j)}{n}"/></p>
@@ -709,7 +730,7 @@ document.write(`
 <p>To create a <strong>CDF</strong>, all we have to do is pass in two extra arguments to <code class="docutils literal notranslate"><span class="pre">hist()</span></code>, the <code class="docutils literal notranslate"><span class="pre">cumulative</span></code> argument and <code class="docutils literal notranslate"><span class="pre">density</span></code> argument. For <strong>CDFs</strong>, both of these arguments are set to <code class="docutils literal notranslate"><span class="pre">True</span></code>. <code class="docutils literal notranslate"><span class="pre">cumulative</span></code> tells <em>matplotlib</em> to accumulate the frequencies and stack them as it graphs the frequency distribution. <code class="docutils literal notranslate"><span class="pre">density</span></code> tells <em>matplotlib*</em> to scale the vertical axis to 1.</p>
 </section>
 <section id="boxplots">
-<span id="project-two-boxplots"></span><h3>Boxplots<a class="headerlink" href="#boxplots" title="Permalink to this headline">#</a></h3>
+<span id="project-two-boxplots"></span><h3>Boxplots<a class="headerlink" href="#boxplots" title="Permalink to this heading">#</a></h3>
 <p>Recall a <em>boxplot</em> is a way of visualizing the <em>spread</em>, or <em>variation</em> of a distribution. In order to create one, a boxplot requires the <a class="reference internal" href="../../notes/statistics/00_GRAPHICAL_REPRESENTATIONS.html#five-number-summary"><span class="std std-ref">Five Number Summary</span></a> of the distribution. The five sample statistics that are required are as follows,</p>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="../../notes/statistics/01_DESCRIPTIVE_STATISTICS.html#maximum"><span class="std std-ref">maximum</span></a></p></li>
@@ -753,7 +774,7 @@ document.write(`
 <p>The third argument, <code class="docutils literal notranslate"><span class="pre">whis</span></code>, is an ordered pair that controls where the whiskers of the boxplot are drawn. The first number in the ordered paired is the lower percentile you wish to graph; the second number in the ordered pair is the upper percentile you wish to graph. We have passed in <code class="docutils literal notranslate"><span class="pre">`(0,100)`</span></code> to indicate the whiskers will be drawn at the 0 <sup>th</sup> and the 100 <sup>th</sup> percentile; in other words, at the minimum and maximum values of the distribution.</p>
 </section>
 <section id="simultaneous-plots">
-<span id="project-two-simultaneous-plots"></span><h3>Simultaneous Plots<a class="headerlink" href="#simultaneous-plots" title="Permalink to this headline">#</a></h3>
+<span id="project-two-simultaneous-plots"></span><h3>Simultaneous Plots<a class="headerlink" href="#simultaneous-plots" title="Permalink to this heading">#</a></h3>
 <p><em>matplotlib</em> is capable of graphing multiple plots at once. To do this, we create multiple sets of <code class="docutils literal notranslate"><span class="pre">axes</span></code>. We control the number of <code class="docutils literal notranslate"><span class="pre">axes</span></code> <em>matplotlib</em> creates by passing in arguments to the <code class="docutils literal notranslate"><span class="pre">subplot()</span></code>.</p>
 <p>The following code snippet will create a histogram and boxplot on the plot and then display it to the user,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">code</span><span class="p">::</span> <span class="n">python</span>
@@ -793,14 +814,14 @@ document.write(`
 </section>
 </section>
 <section id="sample-statistics">
-<span id="project-two-sample-statistics"></span><h2>Sample Statistics<a class="headerlink" href="#sample-statistics" title="Permalink to this headline">#</a></h2>
+<span id="project-two-sample-statistics"></span><h2>Sample Statistics<a class="headerlink" href="#sample-statistics" title="Permalink to this heading">#</a></h2>
 <p>Python has a <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-stats-package"><span class="std std-ref">Statistics</span></a> library that provides functions for calculating common sample statistics. Hope over to the <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-stats-package"><span class="std std-ref">Statistics</span></a> page and read through the list of functions that can be imported into your script.</p>
 <p>For this lab, we will need the <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-sample-mean"><span class="std std-ref">Mean</span></a> function, the <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-quantiles"><span class="std std-ref">Quantiles</span></a> function` and the <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-standard-deviation"><span class="std std-ref">Standard Deviation</span></a> function. The rest can be ignored until later sections in the class.</p>
 </section>
 <section id="project">
-<span id="project-two-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
+<span id="project-two-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this heading">#</a></h2>
 <section id="velocity-of-light">
-<h3>Velocity of Light<a class="headerlink" href="#velocity-of-light" title="Permalink to this headline">#</a></h3>
+<h3>Velocity of Light<a class="headerlink" href="#velocity-of-light" title="Permalink to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Load the <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">Velocity of Light</span></a> data into a <a class="reference internal" href="../../resources/python/01_SETUP.html#python-scripts"><span class="std std-ref">Python Script</span></a> using the technique outlined in the <a class="reference internal" href="#project-two-loading-data"><span class="std std-ref">Loading Data</span></a> section.</p></li>
 <li><p>Construct a histogram plot for this dataset using eight classes. Answer the following questions in the body of your <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>.</p>
@@ -861,7 +882,7 @@ document.write(`
 </ol>
 </section>
 <section id="density-of-the-earth">
-<h3>Density of the Earth<a class="headerlink" href="#density-of-the-earth" title="Permalink to this headline">#</a></h3>
+<h3>Density of the Earth<a class="headerlink" href="#density-of-the-earth" title="Permalink to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Load the <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">Density of the Earth</span></a> data into a <a class="reference internal" href="../../resources/python/01_SETUP.html#python-scripts"><span class="std std-ref">Python Script</span></a> using the tecnique outlined in the <a class="reference internal" href="#project-two-loading-data"><span class="std std-ref">Loading Data</span></a> section.</p></li>
 <li><p>Construct a histogram plot for this dataset using eight classes. Answer the following questions in the body of your <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>.</p>
@@ -926,7 +947,7 @@ document.write(`
 </ol>
 </section>
 <section id="comparative-analysis">
-<h3>Comparative Analysis<a class="headerlink" href="#comparative-analysis" title="Permalink to this headline">#</a></h3>
+<h3>Comparative Analysis<a class="headerlink" href="#comparative-analysis" title="Permalink to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Answer the following questions in your <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>.</p>
 <blockquote>
@@ -942,9 +963,9 @@ document.write(`
 </section>
 </section>
 <section id="datasets">
-<span id="project-two-dataset"></span><h2>Datasets<a class="headerlink" href="#datasets" title="Permalink to this headline">#</a></h2>
+<span id="project-two-dataset"></span><h2>Datasets<a class="headerlink" href="#datasets" title="Permalink to this heading">#</a></h2>
 <section id="loading-data">
-<span id="project-two-loading-data"></span><h3>Loading Data<a class="headerlink" href="#loading-data" title="Permalink to this headline">#</a></h3>
+<span id="project-two-loading-data"></span><h3>Loading Data<a class="headerlink" href="#loading-data" title="Permalink to this heading">#</a></h3>
 <p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="#project-two-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 
@@ -969,14 +990,11 @@ document.write(`
 </div>
 </section>
 <section id="velocity-of-light-data">
-<h3>Velocity of Light Data<a class="headerlink" href="#velocity-of-light-data" title="Permalink to this headline">#</a></h3>
+<h3>Velocity of Light Data<a class="headerlink" href="#velocity-of-light-data" title="Permalink to this heading">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/5aa18cd2c2ca04b7636763fca781ca72/velocity_of_light_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
 <table class="table" id="id1">
 <caption><span class="caption-text">Michelson’s Velocity of Light Data</span><a class="headerlink" href="#id1" title="Permalink to this table">#</a></caption>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Velocity ( km/s )</p></td>
 </tr>
@@ -1001,14 +1019,11 @@ document.write(`
 <p>The meaning of the column is clear from the column header: each observation measures the speed of light in meters per second, <img class="math" src="../../_images/math/5ae5e370f87dbb343d8b2a860c4c15c185ad158b.png" alt="\frac{km}{s}"/>.</p>
 </section>
 <section id="density-of-the-earth-data">
-<h3>Density of the Earth Data<a class="headerlink" href="#density-of-the-earth-data" title="Permalink to this headline">#</a></h3>
+<h3>Density of the Earth Data<a class="headerlink" href="#density-of-the-earth-data" title="Permalink to this heading">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/cdfabab0d4b760ba1033cb33c1adaac8/earth_density_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
 <table class="table" id="id2">
 <caption><span class="caption-text">Cavendish’s Density of the Earth Data</span><a class="headerlink" href="#id2" title="Permalink to this table">#</a></caption>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Density</p></td>
 </tr>
@@ -1040,7 +1055,7 @@ document.write(`
 </section>
 </section>
 <section id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://matplotlib.org/stable/gallery/color/named_colors.html">matplotlib colors</a></p></li>
 <li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html">matplotlib boxplot function</a></p></li>
@@ -1056,11 +1071,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="01_CATEGORICAL.html"
@@ -1080,10 +1094,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1091,6 +1102,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1153,9 +1165,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -1179,8 +1192,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Simulation &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/python/06_SIMULATION';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Sample Spaces" href="07_SETS.html" />
     <link rel="prev" title="Bias" href="05_BIAS.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -493,10 +514,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="simulation">
-<span id="project-six"></span><h1>Simulation<a class="headerlink" href="#simulation" title="Permalink to this headline">#</a></h1>
+<span id="project-six"></span><h1>Simulation<a class="headerlink" href="#simulation" title="Permalink to this heading">#</a></h1>
 <blockquote class="epigraph">
 <div><p>Your mind makes it real.</p>
 <p class="attribution">—Morpheus, The Matrix</p>
@@ -504,7 +525,7 @@ document.write(`
 <p><em>Simulation</em> is a way of modelling random real-world processes. The idea relies on interpretting the results of random number generation as outcomes in an experiment. We have encountered this idea a few times in class already, but now that we have the concepts of probability in our catalogue of knowledge, we are ready to study simulation in detail.</p>
 <p><strong>Python</strong> has all the tools necessary to simulate experiments that would otherwise be tedious to perform. In this lab, we will explore a few techniques for conducting <em>simulations</em> to model the outcomes of random processes.</p>
 <section id="instructions">
-<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">LASTNAME_FIRSTNAME_project_six.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">LASTNAME</span></code> and <code class="docutils literal notranslate"><span class="pre">FIRSTNAME</span></code> with your last and first name, respectively.</p></li>
 <li><p>Create a <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">docstring</span></a> at the very top of the script file. Keep all written answers in this area of the script.</p></li>
@@ -515,9 +536,9 @@ document.write(`
 </ol>
 </section>
 <section id="background">
-<span id="project-six-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<span id="project-six-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
 <section id="loops">
-<h3>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">#</a></h3>
+<h3>Loops<a class="headerlink" href="#loops" title="Permalink to this heading">#</a></h3>
 <p>Loops are essential to the concept of <em>simulation</em>. A loop is a programmatic construct for repeating a block of instructions. As with many things in computer science and mathematics, this is easier to see than to say. Consider the following example,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">pet</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;hippopotamus&quot;</span><span class="p">]:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">pet</span><span class="p">)</span>
@@ -571,14 +592,14 @@ document.write(`
 <p>The order of operations in a <em>nested</em> loop is important! For each iteration of the <em>outer</em> loop (the one iterating over pets), the <em>inner</em> loop (the one iterating over owners) is executed in its entirety.</p>
 </section>
 <section id="law-of-large-numbers">
-<h3>Law of Large Numbers<a class="headerlink" href="#law-of-large-numbers" title="Permalink to this headline">#</a></h3>
+<h3>Law of Large Numbers<a class="headerlink" href="#law-of-large-numbers" title="Permalink to this heading">#</a></h3>
 <section id="definition">
-<h4>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">#</a></h4>
+<h4>Definition<a class="headerlink" href="#definition" title="Permalink to this heading">#</a></h4>
 <p>Consider the experiment of flipping a fair coin ten times. We intuitively understand that, if the coin is truly fair, we should get an approximately even amount of heads and tails. However, the chances of getting exactly five heads and exactly five tails in one sequence of ten coin flips is small. Since each flip of the coin is <a class="reference internal" href="../../notes/probability/02_CONDITIONAL.html#independence"><span class="std std-ref">independent</span></a> of the previous coin flip, the fact we get a head on the first flip in no way influences the probability of getting a head on the second flip. The second coin flip has no responsibility to come out as tails if the first flip was heads.</p>
 <p>The <em>Law of Large Numbers</em> gives a tool for understanding this result. First, we take the experiment of flipping a fair coin ten times and perform this experiment itself a large number of times, let us say 100 times. For each experiment of ten coin flips, we count the number of heads and the number of tails. If we then take the result of each repetition of the experiment and average them all together, the average value will be close to the true population value of five heads. The more times we repeat the experiment, i.e. the more samples we create to pool into the average value, the closer and closer the overall average becomes. In the limit, as the number of repetitions becomes infinite, the average value of the experiment equals its true value. In other words, if we replicate our experiment enough times, the average result will approximate its true population value. In this case, we should observe, after a large number of repetitions, the approximate proportion of heads to be 50% and the approximate proportion of tails to be 50%.</p>
 </section>
 <section id="python">
-<h4>Python<a class="headerlink" href="#python" title="Permalink to this headline">#</a></h4>
+<h4>Python<a class="headerlink" href="#python" title="Permalink to this heading">#</a></h4>
 <p>Using the <a class="reference internal" href="../../resources/python/07_CONTROLS.html#python-control-structures"><span class="std std-ref">Control Structures</span></a> introduced in the preceding section and a few <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-builtin-functions"><span class="std std-ref">Built-In Functions</span></a> we have used in previous projects, we can simulate the outcomes of random experiments and see the <em>Law of Large Numbers</em> in action.</p>
 <p>The key idea is using random numbers to represent observations drawn from a given population. If we think of a random number between 0 and 1 as an observation, i.e. an outcome in an experiment, then we can use the random numbers to model the distribution of the experiment.</p>
 <p>For example, let the event of getting a random number less than 0.5 correspond to the event of getting heads in a coin flip. Let the event of getting number between 0.5 and 1 correspond to the event of getting a tail. Then, by simulating random numbers between 0 and 1 and interpretting the results as outcomes of flipping a coin, we can derive a probability distribution for the experiment of flipping a single coin.</p>
@@ -629,7 +650,7 @@ document.write(`
 </section>
 </section>
 <section id="project">
-<span id="project-six-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
+<span id="project-six-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this heading">#</a></h2>
 <ol class="arabic">
 <li><p>Consider the experiment of flipping 10 fair coins. Using the techniques described in the <a class="reference internal" href="#project-six-background"><span class="std std-ref">Background</span></a> section, simulate flipping 10 coins. Perform the simulation 200 times.</p>
 <blockquote>
@@ -700,11 +721,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="05_BIAS.html"
@@ -724,10 +744,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -735,6 +752,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -774,9 +792,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -800,8 +819,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Linear Regression &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/regression/03_LINEAR_REGRESSION';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Residual Analysis" href="04_RESIDUAL_ANALYSIS.html" />
     <link rel="prev" title="Correlation" href="02_CORRELATION.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -490,13 +511,13 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="linear-regression">
-<span id="id1"></span><h1>Linear Regression<a class="headerlink" href="#linear-regression" title="Permalink to this headline">#</a></h1>
+<span id="id1"></span><h1>Linear Regression<a class="headerlink" href="#linear-regression" title="Permalink to this heading">#</a></h1>
 <p>TODO</p>
 <section id="regression-model">
-<span id="id2"></span><h2>Regression Model<a class="headerlink" href="#regression-model" title="Permalink to this headline">#</a></h2>
+<span id="id2"></span><h2>Regression Model<a class="headerlink" href="#regression-model" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
 <div class="math">
 <p><img src="../../_images/math/bec62f9554f9f4a8ec67c33753064a81601568f1.png" alt="\hat{y_i} = \mathcal{B}_1 \cdot x_i + \mathcal{B}_0 + \varepsilon"/></p>
@@ -506,18 +527,18 @@ document.write(`
 </div><p>TODO</p>
 </section>
 <section id="mean-squared-error">
-<span id="id3"></span><h2>Mean Squared Error<a class="headerlink" href="#mean-squared-error" title="Permalink to this headline">#</a></h2>
+<span id="id3"></span><h2>Mean Squared Error<a class="headerlink" href="#mean-squared-error" title="Permalink to this heading">#</a></h2>
 <p>The term <img class="math" src="../../_images/math/05e9139b5dc36ae95afe50a18ed79f86836f2377.png" alt="\hat{y}"/> is <strong>not</strong> the observed value of <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> in the bivariate sample of data that was used to calibrate the model. It is the <em>predicted</em> value of <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> given the <em>observed</em> value of <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/>. This is an <em>extremely</em> important point when talking about regression. The <em>model</em> equation is a <em>prediction</em>, and the prediction is not <em>exact</em>. Each <em>predicted value</em> of <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/>, <img class="math" src="../../_images/math/05e9139b5dc36ae95afe50a18ed79f86836f2377.png" alt="\hat{y}"/>, will deviate from the <em>observed</em> value of <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/>. The deviation, if the model is a good fit, should be <em>normally distributed</em> around 0.</p>
 <p>TODO</p>
 <section id="sse-sum-squared-error">
-<h3>SSE: Sum Squared Error<a class="headerlink" href="#sse-sum-squared-error" title="Permalink to this headline">#</a></h3>
+<h3>SSE: Sum Squared Error<a class="headerlink" href="#sse-sum-squared-error" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 <div class="math">
 <p><img src="../../_images/math/fdcef0abfcd2b8ac17230a4ba04a9228bb29afb9.png" alt="\sum_{i=1}^{n} (\hat{y}_i - y_i)^2"/></p>
 </div><p>TODO</p>
 </section>
 <section id="mse-mean-squared-error">
-<h3>MSE: Mean Squared Error<a class="headerlink" href="#mse-mean-squared-error" title="Permalink to this headline">#</a></h3>
+<h3>MSE: Mean Squared Error<a class="headerlink" href="#mse-mean-squared-error" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 <div class="math">
 <p><img src="../../_images/math/5d3506fbbd9f5e08d43578c9c99261d5c7d63b17.png" alt="\frac{\sum_{i=1}^n (\hat{y}_i - y_i)^2}{n-2}"/></p>
@@ -525,7 +546,7 @@ document.write(`
 </section>
 </section>
 <section id="model-coefficients">
-<h2>Model Coefficients<a class="headerlink" href="#model-coefficients" title="Permalink to this headline">#</a></h2>
+<h2>Model Coefficients<a class="headerlink" href="#model-coefficients" title="Permalink to this heading">#</a></h2>
 <p>The regression model coefficients can be estimated by finding the values of <img class="math" src="../../_images/math/35a855c84cd1a67d98280e59ffe4eccf2cdb4e02.png" alt="\mathcal{B}_0"/> and <img class="math" src="../../_images/math/1d649dc63c66354071b3941d5d5dd0be062beb03.png" alt="\mathcal{B}_1"/> that <em>minimize</em> the MSE of the model.</p>
 <p>In other words,</p>
 <blockquote>
@@ -545,7 +566,7 @@ document.write(`
 </div></blockquote>
 </section>
 <section id="line-of-best-fit">
-<h2>Line of Best Fit<a class="headerlink" href="#line-of-best-fit" title="Permalink to this headline">#</a></h2>
+<h2>Line of Best Fit<a class="headerlink" href="#line-of-best-fit" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
 </section>
 </section>
@@ -556,11 +577,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="02_CORRELATION.html"
@@ -580,10 +600,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -591,6 +608,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -627,9 +645,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -653,8 +672,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

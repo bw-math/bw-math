@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Linear Regression &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/python/04_REGRESSION';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Bias" href="05_BIAS.html" />
     <link rel="prev" title="Normality" href="03_NORMALITY.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -539,10 +560,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="linear-regression">
-<span id="project-four"></span><h1>Linear Regression<a class="headerlink" href="#linear-regression" title="Permalink to this headline">#</a></h1>
+<span id="project-four"></span><h1>Linear Regression<a class="headerlink" href="#linear-regression" title="Permalink to this heading">#</a></h1>
 <blockquote class="epigraph">
 <div><p>Mathematicians do not study objects, but relations among objects; they are indifferent to the replacement of objects by others as long as relations do not change. Matter is not imporant, only form interests them.</p>
 <p class="attribution">—Henri Poincare</p>
@@ -550,7 +571,7 @@ document.write(`
 <p>In this project, we will take the techniques we have learned for bivariate data analysis and apply to them to three datasets from real life. We will examine and classify the correlation between variables and then use sample statistics to determine whether the relationship observed between the variables is significant. We will fit a <a class="reference internal" href="../../notes/regression/03_LINEAR_REGRESSION.html#linear-regression"><span class="std std-ref">Linear Regression Model</span></a> to the data and use the model parameters to make predictions and extrapolations.</p>
 <p>In order to do this, as you may have guessed, we will use <strong>Python</strong>; <strong>Python</strong> provides several functions that make bivariate analysis a quick and painless process.</p>
 <section id="instructions">
-<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Download all <strong>three</strong> <em>csv</em> datasets in the <a class="reference internal" href="#project-four-dataset"><span class="std std-ref">Datasets</span></a> section and place them in the <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your folder system where you save your <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts.</p></li>
 <li><p>Create a Python <code class="docutils literal notranslate"><span class="pre">.py</span></code> script named <code class="docutils literal notranslate"><span class="pre">NAME_project_four.py</span></code> in your <code class="docutils literal notranslate"><span class="pre">Linux</span> <span class="pre">Files</span></code> folder on your file system. You can do this by opening an IDLE session, creating a new file and then saving it. Replace <code class="docutils literal notranslate"><span class="pre">NAME</span></code> with your name.</p></li>
@@ -565,16 +586,16 @@ document.write(`
 </ol>
 </section>
 <section id="background">
-<span id="project-four-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">#</a></h2>
+<span id="project-four-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
 <section id="correlation">
-<h3>Correlation<a class="headerlink" href="#correlation" title="Permalink to this headline">#</a></h3>
+<h3>Correlation<a class="headerlink" href="#correlation" title="Permalink to this heading">#</a></h3>
 <p>The correlation coefficient is defined by the formula,</p>
 <div class="math">
 <p><img src="../../_images/math/864d75bd74be8ac9fe820f1e5d4db601c99c7faa.png" alt="r_xy = \frac{1}{n-1} \cdot \sum_{i=1}^{n} (\frac{x_i - \bar{x}}{s_x}) \cdot (\frac{y_i - \bar{y}}{s_y})"/></p>
 </div><p>Notice the correlation coefficient is the average of a product of z-scores. In this formula, both the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> and <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variable are standardized and the product of each z-score is summed and then divided by <img class="math" src="../../_images/math/ec53ca5d93c2168c1d1e781814461402465ea2b1.png" alt="n-1"/> to find the average. When the z-scores of the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> and <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variable are simultaneously positive or simultaneously negative, this results in a positive correlation. When the z-scores of the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> and <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variable simultaneously take on opposite signs (i.e. when one is negative, the other is positive and visa versa), this results in a negative correlation.</p>
 </section>
 <section id="linear-regression-model">
-<h3>Linear Regression Model<a class="headerlink" href="#linear-regression-model" title="Permalink to this headline">#</a></h3>
+<h3>Linear Regression Model<a class="headerlink" href="#linear-regression-model" title="Permalink to this heading">#</a></h3>
 <p>The <em>Linear Regression Model</em> is a special statistical method for modelling a linear relationship that exists between correlated variables. A regression model (not necessarily <em>linear</em>) applies to a sample of bivariate data,</p>
 <div class="math">
 <p><img src="../../_images/math/7f5b1e10900b59ac952f409eed14a57c3471bd65.png" alt="S = \{ (x_1, y_1), (x_2, y_2), ... , (x_n, y_n) \}"/></p>
@@ -586,25 +607,25 @@ document.write(`
 <p><img src="../../_images/math/61ee122bbf7da3eb62ae11294636832d6ffae2f5.png" alt="\varepsilon \sim \mathcal{N}(0, \sqrt{\text{MSE}})"/></p>
 </div></section>
 <section id="residuals">
-<h3>Residuals<a class="headerlink" href="#residuals" title="Permalink to this headline">#</a></h3>
+<h3>Residuals<a class="headerlink" href="#residuals" title="Permalink to this heading">#</a></h3>
 <p>The error term :<cite>varepsilon_i</cite> is sometimes called a residual. The value of a residual for a given <img class="math" src="../../_images/math/25417a5e102a0e11d442f6e4865508e47cf4b0aa.png" alt="i"/> can be found by subtracting the <em>predicted value</em> <img class="math" src="../../_images/math/2b43834c8aeeab767b1745588c23952867da39c5.png" alt="\hat{y_i}"/> from the actual value of <img class="math" src="../../_images/math/a6a65e11c7738a1100ce9f9b28c005bcd8906f60.png" alt="y_i"/>,</p>
 <div class="math">
 <p><img src="../../_images/math/434020e698cdc69eb2fbb5cb3810e535c9f1590c.png" alt="\varepsilon_i = y_i - \hat{y_i}"/></p>
 </div><p>A crucial assumption of the <em>Linear Regression Model</em> is the normality of the residuals. If this assumption is violated, then there is evidence to suggest the model is incomplete, i.e. there is another variable influencing the <em>response</em> variable. Moreover, if the normality assumption is violated, the model can no longer be used to extrapolate outside of the range of the <em>predictor variable</em>.</p>
 </section>
 <section id="datasets">
-<h3>Datasets<a class="headerlink" href="#datasets" title="Permalink to this headline">#</a></h3>
+<h3>Datasets<a class="headerlink" href="#datasets" title="Permalink to this heading">#</a></h3>
 <p>In this project, we will examine three datasets, each of which exemplifies a different feature of bivariate data and presents its only unique challenges.</p>
 <section id="old-faithful">
-<h4>Old Faithful<a class="headerlink" href="#old-faithful" title="Permalink to this headline">#</a></h4>
+<h4>Old Faithful<a class="headerlink" href="#old-faithful" title="Permalink to this heading">#</a></h4>
 <p>The first dataset we will look at is the Old Faithful dataset. This is a dataset we have seen many times and we finally have the tools to listen to what it is telling us. The individuals recorded in this dataset are eruptions of the Old Faithful geyser. Recall the two variables being measured are the length of an eruption and the waiting time until the next the eruption. Both variables are measured in minutes.</p>
 </section>
 <section id="spice-girls-songs">
-<h4>Spice Girls Songs<a class="headerlink" href="#spice-girls-songs" title="Permalink to this headline">#</a></h4>
+<h4>Spice Girls Songs<a class="headerlink" href="#spice-girls-songs" title="Permalink to this heading">#</a></h4>
 <p>The second dataset we will consider is the Spice Girls dataset. The individuals in this datasets are song tracks on Spice Girl studio albums. The dataset contains many variables, but the two of interest for this project are song length in milliseconds and song order on the album. Song length should hopefully be self-explanatory; the song order refers to the order in which the song appears on the album when played from front to back.</p>
 </section>
 <section id="celebrity-twitter">
-<h4>Celebrity Twitter<a class="headerlink" href="#celebrity-twitter" title="Permalink to this headline">#</a></h4>
+<h4>Celebrity Twitter<a class="headerlink" href="#celebrity-twitter" title="Permalink to this heading">#</a></h4>
 <p>The third and final dataset in this project is the Celebrity Twitter dataset. This is another dataset we have seen several times already. The individuals recorded in this dataset are Twitter accounts. In this project, we will see the entire dataset, which contains many variables that do not interest us; the variables at which we will look are the number of followers and the number of tweets.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -615,7 +636,7 @@ document.write(`
 </section>
 </section>
 <section id="bivariate-analysis">
-<span id="project-four-bivariate-analysis"></span><h2>Bivariate Analysis<a class="headerlink" href="#bivariate-analysis" title="Permalink to this headline">#</a></h2>
+<span id="project-four-bivariate-analysis"></span><h2>Bivariate Analysis<a class="headerlink" href="#bivariate-analysis" title="Permalink to this heading">#</a></h2>
 <p>Before we begin, let’s import all the appropriate libraries and create some dummy data to test out the bivariate functions Python’s <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-stats-package"><span class="std std-ref">statistics</span></a> package has available,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">mpl</span>
 <span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">stat</span>
@@ -634,7 +655,7 @@ document.write(`
 </div>
 <p>The sections that follow assume you have these lines added to the top of your script.</p>
 <section id="scatter-plots">
-<h3>Scatter Plots<a class="headerlink" href="#scatter-plots" title="Permalink to this headline">#</a></h3>
+<h3>Scatter Plots<a class="headerlink" href="#scatter-plots" title="Permalink to this heading">#</a></h3>
 <p>A scatterplot is a very simple and easy to understand graphical representation of data. The predictor variable is plotted on the horizontal axis versus the response variable on the vertical axis. A scatterplot can be created in <a class="reference internal" href="../../resources/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a> using the <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html">scatter()</a> function,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># separate x and y data</span>
 <span class="n">x_data</span> <span class="o">=</span> <span class="p">[</span> <span class="n">obs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">obs</span> <span class="ow">in</span> <span class="n">bivariate_data</span> <span class="p">]</span>
@@ -662,7 +683,7 @@ document.write(`
 <p>Inspecting a scatterplot is often a good first step in determining whether a correlation exists between two variables. For example, the dummy data we created in the previous section has an obvious <em>positive</em>, <em>linear</em> relationship. When a linear relationship exists between variables, the correlation coefficient can be used to quantify the strength of the relationship.</p>
 </section>
 <section id="id2">
-<h3>Correlation<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
+<h3>Correlation<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
 <p>The correlation coefficient can be easily calculated using the <code class="docutils literal notranslate"><span class="pre">statistics</span></code> package in <strong>Python</strong>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -681,7 +702,7 @@ document.write(`
 <p>We will explore <em>why</em> we compare the sample correlation to the table in a later chapter, we start talking about <a class="reference internal" href="../../notes/statistics/02_SAMPLING_DISTRIBUTIONS.html#sampling-distributions"><span class="std std-ref">Sampling Distributions</span></a> and <span class="xref std std-ref">statistical_significance</span>.</p>
 </section>
 <section id="regression-parameters">
-<h3>Regression Parameters<a class="headerlink" href="#regression-parameters" title="Permalink to this headline">#</a></h3>
+<h3>Regression Parameters<a class="headerlink" href="#regression-parameters" title="Permalink to this heading">#</a></h3>
 <p>The regression parameters, <img class="math" src="../../_images/math/35a855c84cd1a67d98280e59ffe4eccf2cdb4e02.png" alt="\mathcal{B}_0"/> and <img class="math" src="../../_images/math/1d649dc63c66354071b3941d5d5dd0be062beb03.png" alt="\mathcal{B}_1"/>, can also be easily calculated using the <code class="docutils literal notranslate"><span class="pre">statistics</span></code> package in <strong>Python</strong>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -700,7 +721,7 @@ document.write(`
 <p>Notice the output of the <code class="docutils literal notranslate"><span class="pre">linear_regression</span></code> function is an ordered pair (in <strong>Python</strong>, ordered pairs are called <a class="reference internal" href="../../resources/python/02_BASIC.html#python-tuples"><span class="std std-ref">Tuples</span></a>). The first element of the ordered pair is the <code class="docutils literal notranslate"><span class="pre">slope</span></code> of the <em>Linear Regression Model</em>, or symbolically <img class="math" src="../../_images/math/1d649dc63c66354071b3941d5d5dd0be062beb03.png" alt="\mathcal{B}_1"/>; the second element of the ordered pair is the <code class="docutils literal notranslate"><span class="pre">intercept</span></code> of the <em>Linear Regression Model</em>, or symbolically <img class="math" src="../../_images/math/35a855c84cd1a67d98280e59ffe4eccf2cdb4e02.png" alt="\mathcal{B}_0"/>.</p>
 </section>
 <section id="line-of-best-fit">
-<h3>Line of Best Fit<a class="headerlink" href="#line-of-best-fit" title="Permalink to this headline">#</a></h3>
+<h3>Line of Best Fit<a class="headerlink" href="#line-of-best-fit" title="Permalink to this heading">#</a></h3>
 <p>The Regression line can be plotted over top the scatter plot using the <code class="docutils literal notranslate"><span class="pre">plot()</span></code> function from <a class="reference internal" href="../../resources/python/05_PLOTS.html#matplotlib"><span class="std std-ref">matplotlib</span></a>. In order to use the <code class="docutils literal notranslate"><span class="pre">plot()</span></code> function, we will need to create a list of data representing <img class="math" src="../../_images/math/05e9139b5dc36ae95afe50a18ed79f86836f2377.png" alt="\hat{y}"/>. This can be done by iterating over the <code class="docutils literal notranslate"><span class="pre">x_data</span></code> list with <a class="reference internal" href="../../resources/python/02_BASIC.html#python-list-comprehension"><span class="std std-ref">Comprehension</span></a>,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">predicted_y</span> <span class="o">=</span> <span class="p">[</span> <span class="n">slope</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">intercept</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">x_data</span> <span class="p">]</span>
 </pre></div>
@@ -724,7 +745,7 @@ document.write(`
 </figure>
 </section>
 <section id="id3">
-<h3>Residuals<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<h3>Residuals<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
 <p>The final step of the regression process is validating the model assumptions; in other words, we must check to make sure the distribution of residuals is approximately normal. In order to do this, we must first create a list containing the residuals. To create the list of residuals, we will use the <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-zip-function"><span class="std std-ref">Zip Function</span></a>. The <code class="docutils literal notranslate"><span class="pre">zip()</span></code> function allows us to iterate over two list simultaneously. The following code snippet steps over the <code class="docutils literal notranslate"><span class="pre">predicted_y</span></code> and <code class="docutils literal notranslate"><span class="pre">y_data</span></code> lists <em>at the same time</em>, grabbing elements with the same index along the way,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">residuals</span> <span class="o">=</span> <span class="p">[</span> <span class="n">y</span> <span class="o">-</span> <span class="n">yhat</span> <span class="k">for</span> <span class="p">(</span><span class="n">yhat</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">predicted_y</span><span class="p">,</span> <span class="n">y_data</span><span class="p">)</span> <span class="p">]</span>
 </pre></div>
@@ -757,11 +778,11 @@ document.write(`
 </section>
 </section>
 <section id="project">
-<span id="project-four-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">#</a></h2>
+<span id="project-four-project"></span><h2>Project<a class="headerlink" href="#project" title="Permalink to this heading">#</a></h2>
 <section id="id4">
-<h3>Old Faithful<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
+<h3>Old Faithful<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
 <section id="scatter-plot">
-<h4>Scatter Plot<a class="headerlink" href="#scatter-plot" title="Permalink to this headline">#</a></h4>
+<h4>Scatter Plot<a class="headerlink" href="#scatter-plot" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Construct a scatter plot for this dataset using the <strong>Eruption Length</strong> as the <em>predictor</em> variable and the <strong>Waiting Time</strong> as the <em>response</em> variable. Ensure the graph is labelled appropriately.</p></li>
 <li><p>In your <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, describe the correlation in this dataset. Is it positive or negative? Is it strong or weak?  Is it linear or non-linear? If it is non-linear, what type of functional form could be used to model the dataset?</p></li>
@@ -769,7 +790,7 @@ document.write(`
 </ol>
 </section>
 <section id="id5">
-<h4>Correlation<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h4>
+<h4>Correlation<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Using the <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-correlation"><span class="std std-ref">Correlation</span></a> function, calculate the correlation between the <strong>Eruption Length</strong> and the <strong>Waiting Time</strong>. Label the calculation with a comment and print the correlation to screen.</p></li>
 <li><p>Calculate the total number of samples using the <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-length-function"><span class="std std-ref">Length Function</span></a>. Label the calculation with a comment and print the number of samples to screen.</p></li>
@@ -777,7 +798,7 @@ document.write(`
 </ol>
 </section>
 <section id="regression">
-<h4>Regression<a class="headerlink" href="#regression" title="Permalink to this headline">#</a></h4>
+<h4>Regression<a class="headerlink" href="#regression" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Using the <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-linear-regression"><span class="std std-ref">Linear Regression</span></a> function, calculate the model parameters for the Linear Regression Model. Label the calculations with comments and print the model coefficients to screen.</p></li>
 <li><p>In your <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, interpret the meaning of the regression parameters in terms of the variables being observed.</p></li>
@@ -799,23 +820,23 @@ document.write(`
 </ol>
 </section>
 <section id="residual-analysis">
-<h4>Residual Analysis<a class="headerlink" href="#residual-analysis" title="Permalink to this headline">#</a></h4>
+<h4>Residual Analysis<a class="headerlink" href="#residual-analysis" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Create a <em>histogram</em> for the distribution of residuals for the <em>Linear Regression Model</em>. In your <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, describe the distribution residuals in a few sentence. Be sure to include descriptions of: shape, location, variation and outliers.</p></li>
 <li><p>Create a <em>QQ plot</em> for the distribution of residuals for the <em>Linear Regression Model</em>. In your <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: does the <em>QQ Plot</em> for the residuals support or contradict the model assumption of normality?</p></li>
 </ol>
 </section>
 <section id="conclusion">
-<h4>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">#</a></h4>
+<h4>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Are the assumptions of the <em>Linear Regression Model</em> satisifed by this dataset? In other words, is the <em>Linear Regression Model</em> a good way of modelling the relationship between the two variables? Why or why not?</p></li>
 </ol>
 </section>
 </section>
 <section id="spice-girl-song-length">
-<h3>Spice Girl Song Length<a class="headerlink" href="#spice-girl-song-length" title="Permalink to this headline">#</a></h3>
+<h3>Spice Girl Song Length<a class="headerlink" href="#spice-girl-song-length" title="Permalink to this heading">#</a></h3>
 <section id="id6">
-<h4>Scatter Plot<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h4>
+<h4>Scatter Plot<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Construct a scatter plot for this dataset using the <strong>Track Number</strong> as the <em>predictor variable</em> and the <strong>Song Length</strong> as the <em>response</em> variable. Ensure the graph is labelled appropriately.</p></li>
 <li><p>In your <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, describe the correlation in this dataset. Is it positive or negative? Is it strong or weak?  Is it linear or non-linear? If it is non-linear, what type of functional form could be used to model the dataset?</p></li>
@@ -823,7 +844,7 @@ document.write(`
 </ol>
 </section>
 <section id="id7">
-<h4>Correlation<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h4>
+<h4>Correlation<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Using the <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-correlation"><span class="std std-ref">Correlation</span></a> function, calculate the correlation between the <strong>Track Number</strong> and the <strong>Song Length</strong>. Label the calculation with a comment and print the correlation to screen.</p></li>
 <li><p>Calculate the total number of samples using the <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-length-function"><span class="std std-ref">Length Function</span></a>. Label the calculation with a comment and print the number of samples to screen.</p></li>
@@ -831,7 +852,7 @@ document.write(`
 </ol>
 </section>
 <section id="id8">
-<h4>Regression<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h4>
+<h4>Regression<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Using the <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-linear-regression"><span class="std std-ref">Linear Regression</span></a> function, calculate the model parameters for the Linear Regression Model. Label the calculations with comments and print the model coefficients to screen.</p></li>
 <li><p>In your <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, interpret the meaning of the regression parameters in terms of the variables being observed.</p></li>
@@ -853,23 +874,23 @@ document.write(`
 </ol>
 </section>
 <section id="id9">
-<h4>Residual Analysis<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h4>
+<h4>Residual Analysis<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Create a <em>histogram</em> for the distribution of residuals for the <em>Linear Regression Model</em>. In your <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, describe the distribution residuals in a few sentence. Be sure to include descriptions of: shape, location, variation and outliers.</p></li>
 <li><p>Create a <em>QQ plot</em> for the distribution of residuals for the <em>Linear Regression Model</em>. In your <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: does the <em>QQ Plot</em> for the residuals support or contradict the model assumption of normality?</p></li>
 </ol>
 </section>
 <section id="id10">
-<h4>Conclusion<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h4>
+<h4>Conclusion<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Are the assumptions of the <em>Linear Regression Model</em> satisifed by this dataset? In other words, is the <em>Linear Regression Model</em> a good way of modelling the relationship between the two variables? Why or why not?</p></li>
 </ol>
 </section>
 </section>
 <section id="id11">
-<h3>Celebrity Twitter<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h3>
+<h3>Celebrity Twitter<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
 <section id="id12">
-<h4>Scatter Plot<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h4>
+<h4>Scatter Plot<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Construct a scatter plot for this dataset using the <strong>Tweet Count</strong> as the <em>predictor</em> variable and the <strong>Follower Count</strong> as the <em>response</em> variable. Ensure the graph is labelled appropriately.</p></li>
 <li><p>In your <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, describe the correlation in this dataset. Is it positive or negative? Is it strong or weak?  Is it linear or non-linear? If it is non-linear, what type of functional form could be used to model the dataset?</p></li>
@@ -877,7 +898,7 @@ document.write(`
 </ol>
 </section>
 <section id="id13">
-<h4>Correlation<a class="headerlink" href="#id13" title="Permalink to this headline">#</a></h4>
+<h4>Correlation<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Using the <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-correlation"><span class="std std-ref">Correlation</span></a> function, calculate the correlation between the <strong>Tweet Count</strong> and the <strong>Follower Count</strong>. Label the calculation with a comment and print the correlation to screen.</p></li>
 <li><p>Calculate the total number of samples using the <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-length-function"><span class="std std-ref">Length Function</span></a>. Label the calculation with a comment and print the number of samples to screen.</p></li>
@@ -885,7 +906,7 @@ document.write(`
 </ol>
 </section>
 <section id="id14">
-<h4>Regression<a class="headerlink" href="#id14" title="Permalink to this headline">#</a></h4>
+<h4>Regression<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Using the <a class="reference internal" href="../../resources/python/04_FUNCTIONS.html#python-linear-regression"><span class="std std-ref">Linear Regression</span></a> function, calculate the model parameters for the Linear Regression Model. Label the calculations with comments and print the model coefficients to screen.</p></li>
 <li><p>In your <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, interpret the meaning of the regression parameters in terms of the variables being observed.</p></li>
@@ -907,14 +928,14 @@ document.write(`
 </ol>
 </section>
 <section id="id15">
-<h4>Residual Analysis<a class="headerlink" href="#id15" title="Permalink to this headline">#</a></h4>
+<h4>Residual Analysis<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Create a <em>histogram</em> for the distribution of residuals for the <em>Linear Regression Model</em>. In your <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, describe the distribution residuals in a few sentence. Be sure to include descriptions of: shape, location, variation and outliers.</p></li>
 <li><p>Create a <em>QQ plot</em> for the distribution of residuals for the <em>Linear Regression Model</em>. In your <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, answer the following question: does the <em>QQ Plot</em> for the residuals support or contradict the model assumption of normality?</p></li>
 </ol>
 </section>
 <section id="id16">
-<h4>Conclusion<a class="headerlink" href="#id16" title="Permalink to this headline">#</a></h4>
+<h4>Conclusion<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Are the assumptions of the <em>Linear Regression Model</em> satisifed by this dataset? In other words, is the <em>Linear Regression Model</em> a good way of modelling the relationship between the two variables? Why or why not?</p></li>
 </ol>
@@ -922,7 +943,7 @@ document.write(`
 </section>
 </section>
 <section id="extra-credit-data-transformations">
-<span id="project-four-extra-credit"></span><h2>Extra Credit: Data Transformations<a class="headerlink" href="#extra-credit-data-transformations" title="Permalink to this headline">#</a></h2>
+<span id="project-four-extra-credit"></span><h2>Extra Credit: Data Transformations<a class="headerlink" href="#extra-credit-data-transformations" title="Permalink to this heading">#</a></h2>
 <p>One of the three datasets we have examined in this project has a non-linear correlation. In order to fit a <em>Linear Regression Model</em> to this dataset, one of the variables must be transformed before the model parameters are estimated. In your <a class="reference internal" href="../../resources/python/02_BASIC.html#python-docstring"><span class="std std-ref">Docstrings</span></a>, explain which of the calculated correlations is non-linear and then answer the following question:</p>
 <ol class="arabic simple">
 <li><p>What type of data transformation would make the relationship between the variables linear?</p></li>
@@ -933,9 +954,9 @@ document.write(`
 </ol>
 </section>
 <section id="project-four-dataset">
-<span id="id17"></span><h2>Datasets<a class="headerlink" href="#project-four-dataset" title="Permalink to this headline">#</a></h2>
+<span id="id17"></span><h2>Datasets<a class="headerlink" href="#project-four-dataset" title="Permalink to this heading">#</a></h2>
 <section id="loading-data">
-<span id="project-four-loading-data"></span><h3>Loading Data<a class="headerlink" href="#loading-data" title="Permalink to this headline">#</a></h3>
+<span id="project-four-loading-data"></span><h3>Loading Data<a class="headerlink" href="#loading-data" title="Permalink to this heading">#</a></h3>
 <p>The following code snippet will load in a <em>CSV</em> spreadsheet named <code class="docutils literal notranslate"><span class="pre">example.csv</span></code>, parse it into a list and then print it to screen, assuming that <em>CSV</em> file is saved in the same folder as your script. Modify this code snippet to fit the datasets in this lab and then use it to load in the provided datasets in <a class="reference internal" href="02_QUANTITATIVE.html#project-two-dataset"><span class="std std-ref">Datasets</span></a> section.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 
@@ -956,19 +977,11 @@ document.write(`
 </div>
 </section>
 <section id="id18">
-<h3>Celebrity Twitter<a class="headerlink" href="#id18" title="Permalink to this headline">#</a></h3>
+<h3>Celebrity Twitter<a class="headerlink" href="#id18" title="Permalink to this heading">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/2572aadc823c943b2c11cfa5442f0098/celebrity_twitter_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></p>
 <p>The following table is a preview of the data you will be using for this project.</p>
 <table class="table" id="id20">
 <caption><span class="caption-text">Celebrity Twitter Followers and Tweet Count</span><a class="headerlink" href="#id20" title="Permalink to this table">#</a></caption>
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 17%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>twitter_username</p></td>
 <td><p>twitter_userid</p></td>
@@ -1045,15 +1058,11 @@ document.write(`
 <p>The fifth column represents the number of followers for a given Twitter user. The sixth column represents the number of tweets for a given Twitter user.</p>
 </section>
 <section id="id19">
-<h3>Old Faithful<a class="headerlink" href="#id19" title="Permalink to this headline">#</a></h3>
+<h3>Old Faithful<a class="headerlink" href="#id19" title="Permalink to this heading">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/1b98a8ccfb60a79a975a96e2eca8a57a/old_faithful_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is a preview of the data you will be using for this project.</p>
 <table class="table" id="id21">
 <caption><span class="caption-text">Old Faithful Eruption and Waiting Times</span><a class="headerlink" href="#id21" title="Permalink to this table">#</a></caption>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>eruptions</p></td>
 <td><p>waiting</p></td>
@@ -1111,22 +1120,11 @@ document.write(`
 <p>The first column represents the length of the eruption in minutes. The second column represents the waiting time in minutes until the next eruption.</p>
 </section>
 <section id="spice-girls-song-length">
-<h3>Spice Girls Song Length<a class="headerlink" href="#spice-girls-song-length" title="Permalink to this headline">#</a></h3>
+<h3>Spice Girls Song Length<a class="headerlink" href="#spice-girls-song-length" title="Permalink to this heading">#</a></h3>
 <p>You can download the full dataset <a class="reference download internal" download="" href="../../_downloads/ec128fe272bc5b68fdc4e964e15babb1/spice_girls_song_data.csv"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
 <table class="table" id="id22">
 <caption><span class="caption-text">Spice Girl Song Lengths</span><a class="headerlink" href="#id22" title="Permalink to this table">#</a></caption>
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>album_release_date</p></td>
 <td><p>album_release_year</p></td>
@@ -1204,7 +1202,7 @@ document.write(`
 </section>
 </section>
 <section id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h2>
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html">matplotlib: hist()</a></p></li>
 <li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html">matplotlib: plot()</a></p></li>
@@ -1220,11 +1218,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="03_NORMALITY.html"
@@ -1244,10 +1241,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1255,6 +1249,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1340,9 +1335,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -1366,8 +1362,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

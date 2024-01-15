@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Introduction &#8212; bishop-walsh-math  documentation</title>
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -35,12 +35,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/regression/01_INTRODUCTION';</script>
@@ -49,7 +51,7 @@
     <link rel="next" title="Correlation" href="02_CORRELATION.html" />
     <link rel="prev" title="Regression" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -57,7 +59,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -91,12 +102,18 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -111,9 +128,11 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../index.html">
+  
   
   
   
@@ -433,20 +452,22 @@
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -511,15 +532,15 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="introduction">
-<span id="bivariate-introduction"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
+<span id="bivariate-introduction"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
 <p>Up to now we have been dealing with <em>univariate</em> data. In this section, we begin the study of <em>bivariate data</em>.</p>
 <section id="definitions">
-<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
+<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this heading">#</a></h2>
 <section id="bivariate-data">
-<h3>Bivariate Data<a class="headerlink" href="#bivariate-data" title="Permalink to this headline">#</a></h3>
+<h3>Bivariate Data<a class="headerlink" href="#bivariate-data" title="Permalink to this heading">#</a></h3>
 <dl class="simple">
 <dt><img class="math" src="../../_images/math/2e522020f6728b691e3cf36a36055c439147b9e0.png" alt="S = \{ (x_1, y_1), (x_2, y_2), ... , (x_n, y_n) \}"/></dt><dd><p>When two variables are measured on one individual, we call such data <em>bivariate</em>.</p>
 </dd>
@@ -532,12 +553,12 @@ document.write(`
 </section>
 </section>
 <section id="scatter-plots">
-<span id="id1"></span><h2>Scatter Plots<a class="headerlink" href="#scatter-plots" title="Permalink to this headline">#</a></h2>
+<span id="id1"></span><h2>Scatter Plots<a class="headerlink" href="#scatter-plots" title="Permalink to this heading">#</a></h2>
 <p>A scatterplot is a very simple and easy to understand graphical representation of bivariate data. The <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> variable is plotted on the horizontal axis versus the <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variable on the vertical axis. Graphs of <em>scatterplots</em> are classified based on the <em>direction</em> of the relationship observed, the <em>strength</em> of the relationship observed and the <em>linearity</em> of the relationship observed.</p>
 <section id="direction">
-<span id="correlation-direction"></span><h3>Direction<a class="headerlink" href="#direction" title="Permalink to this headline">#</a></h3>
+<span id="correlation-direction"></span><h3>Direction<a class="headerlink" href="#direction" title="Permalink to this heading">#</a></h3>
 <section id="no-correlation">
-<span id="id2"></span><h4>No Correlation<a class="headerlink" href="#no-correlation" title="Permalink to this headline">#</a></h4>
+<span id="id2"></span><h4>No Correlation<a class="headerlink" href="#no-correlation" title="Permalink to this heading">#</a></h4>
 <p>A scatterplot with no correlation between the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> and <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variables should appear random,</p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/17c2f52e958097c3c536d017ad440b19/scatterplot_no_correlation.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/9388f7667548c31b865aefc453d7f769/scatterplot_no_correlation.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f7f19cc8a16a8d1967fe7aac0d71cebb/scatterplot_no_correlation.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d3582693e2a20ddb42c3cec0b29ded9c/scatterplot_no_correlation.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
@@ -545,7 +566,7 @@ document.write(`
 </figure>
 </section>
 <section id="positive-correlation">
-<span id="id3"></span><h4>Positive Correlation<a class="headerlink" href="#positive-correlation" title="Permalink to this headline">#</a></h4>
+<span id="id3"></span><h4>Positive Correlation<a class="headerlink" href="#positive-correlation" title="Permalink to this heading">#</a></h4>
 <p>A scatterplot with a positive correlation betwen the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> and <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variables should have a general upward trend,</p>
 <p>(<a class="reference download internal" download="" href="../../_downloads/a6508ba1cd622e6ab5aab92e7640d8e4/scatterplot_positive_correlation.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/14f7b3899ebc3df9de5a82ece9bc51e7/scatterplot_positive_correlation.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/4098c5961b91de6b53e72cca3bd836f4/scatterplot_positive_correlation.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/eff9abc8b2471c8055a0da1f6f2db95a/scatterplot_positive_correlation.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
@@ -553,7 +574,7 @@ document.write(`
 </figure>
 </section>
 <section id="negative-correlation">
-<span id="id4"></span><h4>Negative Correlation<a class="headerlink" href="#negative-correlation" title="Permalink to this headline">#</a></h4>
+<span id="id4"></span><h4>Negative Correlation<a class="headerlink" href="#negative-correlation" title="Permalink to this heading">#</a></h4>
 <p>(<a class="reference download internal" download="" href="../../_downloads/3d5865cf124884d8df5bd091f0f4b904/scatterplot_negative_correlation.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/86237a02d3c9588b0f6c2005aa6e871e/scatterplot_negative_correlation.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/55e230353863c130e0ad3c7a98d15beb/scatterplot_negative_correlation.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/750fd82ef14724b99aba124f7782bdc7/scatterplot_negative_correlation.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/scatterplot_negative_correlation.png" class="plot-directive" src="../../_images/scatterplot_negative_correlation.png" />
@@ -561,47 +582,47 @@ document.write(`
 </section>
 </section>
 <section id="strength">
-<span id="correlation-strength"></span><h3>Strength<a class="headerlink" href="#strength" title="Permalink to this headline">#</a></h3>
+<span id="correlation-strength"></span><h3>Strength<a class="headerlink" href="#strength" title="Permalink to this heading">#</a></h3>
 <section id="strong">
-<span id="strong-correlation"></span><h4>Strong<a class="headerlink" href="#strong" title="Permalink to this headline">#</a></h4>
+<span id="strong-correlation"></span><h4>Strong<a class="headerlink" href="#strong" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="weak">
-<span id="weak-correlation"></span><h4>Weak<a class="headerlink" href="#weak" title="Permalink to this headline">#</a></h4>
+<span id="weak-correlation"></span><h4>Weak<a class="headerlink" href="#weak" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 </section>
 <section id="linearity">
-<span id="correlation-linearity"></span><h3>Linearity<a class="headerlink" href="#linearity" title="Permalink to this headline">#</a></h3>
+<span id="correlation-linearity"></span><h3>Linearity<a class="headerlink" href="#linearity" title="Permalink to this heading">#</a></h3>
 <section id="linear">
-<span id="linear-correlation"></span><h4>Linear<a class="headerlink" href="#linear" title="Permalink to this headline">#</a></h4>
+<span id="linear-correlation"></span><h4>Linear<a class="headerlink" href="#linear" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 <section id="non-linear">
-<span id="nonlinear-correlation"></span><h4>Non-Linear<a class="headerlink" href="#non-linear" title="Permalink to this headline">#</a></h4>
+<span id="nonlinear-correlation"></span><h4>Non-Linear<a class="headerlink" href="#non-linear" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 </section>
 </section>
 </section>
 <section id="time-series">
-<span id="id5"></span><h2>Time Series<a class="headerlink" href="#time-series" title="Permalink to this headline">#</a></h2>
+<span id="id5"></span><h2>Time Series<a class="headerlink" href="#time-series" title="Permalink to this heading">#</a></h2>
 <p>A <em>time series</em> is similar to a <em>scatter plot</em> in almost all ways, except the <em>independent</em> variable in a <em>time series</em> is always a unit of time. A <em>correlation</em> for a <em>time series</em> is called a <em>trend</em>.</p>
 <section id="positive-trend">
-<h3>Positive Trend<a class="headerlink" href="#positive-trend" title="Permalink to this headline">#</a></h3>
+<h3>Positive Trend<a class="headerlink" href="#positive-trend" title="Permalink to this heading">#</a></h3>
 <p>(<a class="reference download internal" download="" href="../../_downloads/32667871ec4f51c6a0a9f81f9731ccea/timeseries_positive_trend.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/8a33cdbf487ccb2f9918e389418a459f/timeseries_positive_trend.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/a9a53241e38c1b97e30139b12788f2cc/timeseries_positive_trend.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/76c355bf66a060c742285e69a42e198d/timeseries_positive_trend.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/timeseries_positive_trend.png" class="plot-directive" src="../../_images/timeseries_positive_trend.png" />
 </figure>
 </section>
 <section id="negative-trend">
-<h3>Negative Trend<a class="headerlink" href="#negative-trend" title="Permalink to this headline">#</a></h3>
+<h3>Negative Trend<a class="headerlink" href="#negative-trend" title="Permalink to this heading">#</a></h3>
 <p>(<a class="reference download internal" download="" href="../../_downloads/2d343b86e373eff52b9d4b207496176b/timeseries_negative_trend.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/b4105e586cbf07ce38859635050d0759/timeseries_negative_trend.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d5a11697861215f27efbfdf8a36a6253/timeseries_negative_trend.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/5dc8b872c505b84b4320e37781f4ec0e/timeseries_negative_trend.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/timeseries_negative_trend.png" class="plot-directive" src="../../_images/timeseries_negative_trend.png" />
 </figure>
 </section>
 <section id="no-trend">
-<h3>No Trend<a class="headerlink" href="#no-trend" title="Permalink to this headline">#</a></h3>
+<h3>No Trend<a class="headerlink" href="#no-trend" title="Permalink to this heading">#</a></h3>
 <p>(<a class="reference download internal" download="" href="../../_downloads/c8e21425f590d9587251e769270ff76a/timeseries_no_trend.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/4a9acb3fc7cf75952d1d01a5e381f51b/timeseries_no_trend.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/6ccdf25a94363b2969eb6f2a8047dc15/timeseries_no_trend.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/945bd32773ef59c7f178be0e61d5e1af/timeseries_no_trend.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
 <figure class="align-default">
 <img alt="../../_images/timeseries_no_trend.png" class="plot-directive" src="../../_images/timeseries_no_trend.png" />
@@ -616,11 +637,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="index.html"
@@ -640,10 +660,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -651,6 +668,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -708,9 +726,10 @@ By Grant Moore
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023, Grant Moore.
+      © Copyright 2024, Grant Moore.
       <br/>
     
   </p>
@@ -734,8 +753,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>
