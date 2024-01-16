@@ -45,12 +45,59 @@ Definition
 Examples
 ========
 
-1. TODO
+1. In a lottery every week, :math:`2,000,000` tickets are sold for $1 apiece. If 4000 of these tickets pay off $30 each, 500 pay off $800 each, one ticket pays off :math:`\text{$}1,200,000`, and no ticket pays off more than one prize, what is the expected value of the winning amount for a player with a single ticket?
 
-2. TODO 
+2. In the Maryland Lottery, players pick six different integers between 1 and 49, the order of selection being irrelevant. The lottery commission then selects six of these numbers at random as the winning numbers. A player wins the grand prize of $1,200,000 if all six numbers that he or she has selected match the winning numbers. The second and third prizes of $800 and $35, respectively, are awarded if exactly five and four of the selected numbers match the winning numbers. Lottery tickets cost $5. What is the expected value of the amount a player wins in one game?
+
+3. An urn contains five balls, two of which are marked $1 , two marked $5 and one marked $15. A game is played by paying $10 for winning the sum of the amounts marked on two balls selected randomly from the urn. Is this a fair game?
+
  
 Theorems
 ========
+
+Scalar Properties
+-----------------
+
+
+.. topic:: Additive Property of Expectations
+
+	Let :math:`\mathcal{X}` be a random variable. Let *a* be any real number. Then,
+	
+	.. math::
+	
+		E(\mathcal{X} + a) = E(\mathcal{X}) + a 
+
+
+.. topic:: Multiplicative Property of Expectations
+
+	Let :math:`\mathcal{X}` be a random variable. Let *a* be any real number. Then,
+	
+	.. math::
+	
+		E(a \cdot \mathcal{X}) = a \cdot E(\mathcal{X})
+
+1. A box contains 10 frisbes of radii 1, 2, ..., 10, respectively. What is the expected value of the circumference of a frisbee selected at random from this box?
+
+2. Margaret Margot owns the boutique bakery *Cupcake Connoisseur*. She makes cupcakes and sells them for $15 a piece (they are really good cupcakes). After several years of tracking the seasonal variations in cupcake sales, she has estimated the following probability distribution for the number of cupcakes she sells a day.
+
++--------------------+---------------------------+
+| Number of Cupcakes |  :math:P(\mathcal{X}=x_i) |
++--------------------+---------------------------+
+|        15          |            0.2            |
++--------------------+---------------------------+ 
+|        25          |            0.3            |
++--------------------+---------------------------+ 
+|        35          |            0.4            |
++--------------------+---------------------------+
+|        45          |            0.1            |
++--------------------+---------------------------+ 
+             
+a. Use this table to find Margaret's expected *revenue over the next month*. Assume a month is *30 days*. 
+
+b. The monthly cost of running a bakery is $2000. What is Margaret's expected *profit over the next month*? 
+ 
+Linearity of Expectations
+-------------------------
 
 .. topic:: Linearity of Expectations
 
@@ -128,15 +175,67 @@ c. The company has a gain of $50 for each customer who purchases a warranty but 
 
 5. **2003, Free Response Form B, #5**
 
-TODO
+.. image:: ../../../assets/imgs/classwork/2003_apstats_frp_formb_05.png
+    :align: center
+
+Contestants on a game show spin a wheel like the one shown in the figure above. Each of the four outcomes on this wheel is equally likely and outcomes are independent from one spin to the next.
+
+- The contestant spins the wheel.
+- If the result is a skunk, no money is won and the contestant’s turn is finished.
+- If the result is a number, the corresponding amount in dollars is won. The contestant can then stop with those winnings or can choose to spin again, and his or her turn continues.
+- If the contestant spins again and the result is a skunk, all of the money earned on that turn is lost and the turn ends.
+- The contestant may continue adding to his or her winnings until he or she chooses to stop or until a spin results in a skunk.
+
+a. What is the probability that the result will be a number on all of the first three spins of the wheel?
+
+b. Suppose a contestant has earned $800 on his or her first three spins and chooses to spin the wheel again. What is the expected value of his or her total winnings for the four spins?
+
+c. A contestant who lost at this game alleges that the wheel is not fair. In order to check on the fairness of the wheel, the data in the table below were collected for 100 spins of this wheel.
+
++-----------+--------+-------+------+------+
+| Result    | Skunk  |  $100 | $200 | $500 |
++-----------+--------+-------+------+------+
+| Frequency |   33   |   21  |  20  |  26  |
++-----------+--------+-------+------+------+
+
+Based on these data, can you conclude that the four outcomes on this wheel are not equally likely? Give appropriate statistical evidence to support your answer.
 
 6. **2005, Free Response Form B, #2**
 
-TODO
+For an upcoming concert, each customer may purchase up to 3 child tickets and 3 adult tickets. Let **C** be the number of child tickets purchased by a single customer. The probability distribution of the number of child tickets purchased by a single customer is given in the table below.
+
++--------+-----+-----+-----+-----+
+|    c   |  0  |  1  |  2  | 3   |
++--------+-----+-----+-----+-----+
+|  p(c)  | 0.4 | 0.3 | 0.2 | 0.1 | 
++--------+-----+-----+-----+-----+
+
+a. Compute the mean and the standard deviation of **C**.
+
+b. Suppose the mean and the standard deviation for the number of adult tickets purchased by a single customer are 2 and 1.2, respectively. Assume that the numbers of child tickets and adult tickets purchased are independent random variables. Compute the mean and the standard deviation of the total number of adult and child tickets purchased by a single customer.
+
+c. Suppose each child ticket costs $15 and each adult ticket costs $25. Compute the mean and the standard deviation of the total amount spent per purchase.
 
 7. **2008, Free Response Form B, #5**
 
-TODO
+Flooding has washed out one of the tracks of the Snake Gulch Railroad. The railroad has two parallel tracks from Bullsnake to Copperhead, but only one usable track from Copperhead to Diamondback, as shown in the figure below. Having only one usable track disrupts the usual schedule. Until it is repaired, the washed-out track will remain unusable. If the train leaving Bullsnake arrives at Copperhead first, it has to wait until the train leaving Diamondback arrives at Copperhead.
+
+.. image:: ../../../assets/imgs/classwork/2008_apstats_frp_formb_05.png
+    :align: center
+    
+Every day at noon a train leaves Bullsnake heading for Diamondback and another leaves Diamondback heading for Bullsnake.
+
+Assume that the length of time, **X**, it takes the train leaving Bullsnake to get to Copperhead is normally distributed with a mean of 170 minutes and a standard deviation of 20 minutes.
+
+Assume that the length of time, **Y**, it takes the train leaving Diamondback to get to Copperhead is normally distributed with a mean of 200 minutes and a standard deviation of 10 minutes.
+
+These two travel times are independent.
+
+a. What is the distribution of **Y** - **X**?
+
+b. Over the long run, what proportion of the days will the train from Bullsnake have to wait at Copperhead for the train from Diamondback to arrive?
+
+c. How long should the Snake Gulch Railroad delay the departure of the train from Bullsnake so that the probability that it has to wait is only 0.01?
 
 8. **2008, Free Response, #3**
 

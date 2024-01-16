@@ -496,7 +496,11 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scalar-properties">Scalar Properties</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linearity-of-expectations">Linearity of Expectations</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
 </ul>
             </nav>
@@ -546,12 +550,276 @@ document.write(`
 <section id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>TODO</p></li>
-<li><p>TODO</p></li>
+<li><p>In a lottery every week, <img class="math" src="../../../_images/math/a7b277c143a1fe9f75117112bdc78d0c239da7a0.png" alt="2,000,000"/> tickets are sold for $1 apiece. If 4000 of these tickets pay off $30 each, 500 pay off $800 each, one ticket pays off <aside class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\text{$}1,200,000</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.15 \fontsize{12}{14}\selectfont $\text{$}
+                                           1,200,000$
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.15 \fontsize{12}{14}\selectfont $\text{$}
+                                           1,200,000$
+! Extra }, or forgotten $.
+\text&#64; ...e {\textdef&#64; \displaystyle \f&#64;size {#1}}
+                                                  {\textdef&#64; \textstyle \f&#64;s...
+l.15 \fontsize{12}{14}\selectfont $\text{$}
+                                           1,200,000$
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.15 \fontsize{12}{14}\selectfont $\text{$}
+                                           1,200,000$
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.15 \fontsize{12}{14}\selectfont $\text{$}
+                                           1,200,000$
+! Extra }, or forgotten $.
+\text&#64; ...xtstyle \f&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \sf&#64;...
+l.15 \fontsize{12}{14}\selectfont $\text{$}
+                                           1,200,000$
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.15 \fontsize{12}{14}\selectfont $\text{$}
+                                           1,200,000$
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.15 \fontsize{12}{14}\selectfont $\text{$}
+                                           1,200,000$
+! Extra }, or forgotten $.
+\text&#64; ...tstyle \sf&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \ssf...
+l.15 \fontsize{12}{14}\selectfont $\text{$}
+                                           1,200,000$
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.15 \fontsize{12}{14}\selectfont $\text{$}
+                                           1,200,000$
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.15 \fontsize{12}{14}\selectfont $\text{$}
+                                           1,200,000$
+! Extra }, or forgotten $.
+\text&#64; ...style \ssf&#64;size {\firstchoice&#64;false #1}}
+                                                  \check&#64;mathfonts }
+l.15 \fontsize{12}{14}\selectfont $\text{$}
+                                           1,200,000$
+! Extra }, or forgotten $.
+\text&#64; ...firstchoice&#64;false #1}}\check&#64;mathfonts }
+                                                  
+l.15 \fontsize{12}{14}\selectfont $\text{$}
+                                           1,200,000$
+! Improper \prevdepth.
+\newpage ...everypar {}\fi \par \ifdim \prevdepth 
+                                                  &gt;\z&#64; \vskip -\ifdim \prevd...
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   $
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   $
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   $
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 \end{document}
+                   
+[1] (./math.aux) )
+(see the transcript file for additional information)
+Output written on math.dvi (1 page, 188 bytes).
+Transcript written on math.log.
+</p>
+</aside>
+, and no ticket pays off more than one prize, what is the expected value of the winning amount for a player with a single ticket?</p></li>
+<li><p>In the Maryland Lottery, players pick six different integers between 1 and 49, the order of selection being irrelevant. The lottery commission then selects six of these numbers at random as the winning numbers. A player wins the grand prize of $1,200,000 if all six numbers that he or she has selected match the winning numbers. The second and third prizes of $800 and $35, respectively, are awarded if exactly five and four of the selected numbers match the winning numbers. Lottery tickets cost $5. What is the expected value of the amount a player wins in one game?</p></li>
+<li><p>An urn contains five balls, two of which are marked $1 , two marked $5 and one marked $15. A game is played by paying $10 for winning the sum of the amounts marked on two balls selected randomly from the urn. Is this a fair game?</p></li>
 </ol>
 </section>
 <section id="theorems">
 <h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this heading">#</a></h2>
+<section id="scalar-properties">
+<h3>Scalar Properties<a class="headerlink" href="#scalar-properties" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
+<p class="topic-title">Additive Property of Expectations</p>
+<p>Let <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> be a random variable. Let <em>a</em> be any real number. Then,</p>
+<div class="math">
+<p><img src="../../../_images/math/1796ae999ebb9da27b93842a2900430f39efeac6.png" alt="E(\mathcal{X} + a) = E(\mathcal{X}) + a"/></p>
+</div></aside>
+<aside class="topic">
+<p class="topic-title">Multiplicative Property of Expectations</p>
+<p>Let <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> be a random variable. Let <em>a</em> be any real number. Then,</p>
+<div class="math">
+<p><img src="../../../_images/math/eb2c155ed4923a43d3de9e8d97c3cdea55879b1a.png" alt="E(a \cdot \mathcal{X}) = a \cdot E(\mathcal{X})"/></p>
+</div></aside>
+<ol class="arabic simple">
+<li><p>A box contains 10 frisbes of radii 1, 2, …, 10, respectively. What is the expected value of the circumference of a frisbee selected at random from this box?</p></li>
+<li><p>Margaret Margot owns the boutique bakery <em>Cupcake Connoisseur</em>. She makes cupcakes and sells them for $15 a piece (they are really good cupcakes). After several years of tracking the seasonal variations in cupcake sales, she has estimated the following probability distribution for the number of cupcakes she sells a day.</p></li>
+</ol>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p>Number of Cupcakes</p></td>
+<td><p>:math:P(mathcal{X}=x_i)</p></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>0.2</p></td>
+</tr>
+<tr class="row-odd"><td><p>25</p></td>
+<td><p>0.3</p></td>
+</tr>
+<tr class="row-even"><td><p>35</p></td>
+<td><p>0.4</p></td>
+</tr>
+<tr class="row-odd"><td><p>45</p></td>
+<td><p>0.1</p></td>
+</tr>
+</tbody>
+</table>
+<ol class="loweralpha simple">
+<li><p>Use this table to find Margaret’s expected <em>revenue over the next month</em>. Assume a month is <em>30 days</em>.</p></li>
+<li><p>The monthly cost of running a bakery is $2000. What is Margaret’s expected <em>profit over the next month</em>?</p></li>
+</ol>
+</section>
+<section id="linearity-of-expectations">
+<h3>Linearity of Expectations<a class="headerlink" href="#linearity-of-expectations" title="Permalink to this heading">#</a></h3>
 <aside class="topic">
 <p class="topic-title">Linearity of Expectations</p>
 <p>Suppose <img class="math" src="../../../_images/math/ad6daa2629cc37a5667723358ec601482bea795c.png" alt="\mathcal{Y}"/> and <img class="math" src="../../../_images/math/1d74e5da619d26fe1722fa453097be62e18ce3ce.png" alt="\mathcal{Z}"/> are random variables, not necessarily independent. If <img class="math" src="../../../_images/math/9cd16ce1fd19665cf157d196cb786e06a25a0b48.png" alt="\mathcal{X} = \mathcal{Y} + \mathcal{Z}"/>, then</p>
@@ -577,6 +845,7 @@ document.write(`
 <li><p>A box contains a yellow ball, an orange ball, a green ball, and a blue ball. Matilda Weierstrauss randomly selects 4 balls from the box (with replacement). What is the expected value for the number of distinct colored balls Matilda Weierstrauss will select?</p></li>
 <li><p>Every time one of the AP Statistics students buys a Happy Meal from McDonalds, they receive a <a href="#id1"><span class="problematic" id="id2">:ref:`Strawberry Shortcake &lt;https://en.wikipedia.org/wiki/Strawberry_Shortcake&gt;`_</span></a> plush doll. There are five dolls in total: Strawberry Shortcake, Cherry Jam, Raspberry Torte, Blueberry Muffin and Lemon Meringue. The toys in every Happy Meal are awarded at random. What is the expected number of Happy Meals an AP Statistics Students must buy in order to get all the <em>Strawberry Shortcake</em> plush dolls?</p></li>
 </ol>
+</section>
 </section>
 <section id="a-p-exam-practice">
 <h2>A.P. Exam Practice<a class="headerlink" href="#a-p-exam-practice" title="Permalink to this heading">#</a></h2>
@@ -622,15 +891,76 @@ standard deviation of 10.5 students.</p>
 <ol class="arabic simple" start="5">
 <li><p><strong>2003, Free Response Form B, #5</strong></p></li>
 </ol>
-<p>TODO</p>
+<img alt="../../../_images/2003_apstats_frp_formb_05.png" class="align-center" src="../../../_images/2003_apstats_frp_formb_05.png" />
+<p>Contestants on a game show spin a wheel like the one shown in the figure above. Each of the four outcomes on this wheel is equally likely and outcomes are independent from one spin to the next.</p>
+<ul class="simple">
+<li><p>The contestant spins the wheel.</p></li>
+<li><p>If the result is a skunk, no money is won and the contestant’s turn is finished.</p></li>
+<li><p>If the result is a number, the corresponding amount in dollars is won. The contestant can then stop with those winnings or can choose to spin again, and his or her turn continues.</p></li>
+<li><p>If the contestant spins again and the result is a skunk, all of the money earned on that turn is lost and the turn ends.</p></li>
+<li><p>The contestant may continue adding to his or her winnings until he or she chooses to stop or until a spin results in a skunk.</p></li>
+</ul>
+<ol class="loweralpha simple">
+<li><p>What is the probability that the result will be a number on all of the first three spins of the wheel?</p></li>
+<li><p>Suppose a contestant has earned $800 on his or her first three spins and chooses to spin the wheel again. What is the expected value of his or her total winnings for the four spins?</p></li>
+<li><p>A contestant who lost at this game alleges that the wheel is not fair. In order to check on the fairness of the wheel, the data in the table below were collected for 100 spins of this wheel.</p></li>
+</ol>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p>Result</p></td>
+<td><p>Skunk</p></td>
+<td><p>$100</p></td>
+<td><p>$200</p></td>
+<td><p>$500</p></td>
+</tr>
+<tr class="row-even"><td><p>Frequency</p></td>
+<td><p>33</p></td>
+<td><p>21</p></td>
+<td><p>20</p></td>
+<td><p>26</p></td>
+</tr>
+</tbody>
+</table>
+<p>Based on these data, can you conclude that the four outcomes on this wheel are not equally likely? Give appropriate statistical evidence to support your answer.</p>
 <ol class="arabic simple" start="6">
 <li><p><strong>2005, Free Response Form B, #2</strong></p></li>
 </ol>
-<p>TODO</p>
+<p>For an upcoming concert, each customer may purchase up to 3 child tickets and 3 adult tickets. Let <strong>C</strong> be the number of child tickets purchased by a single customer. The probability distribution of the number of child tickets purchased by a single customer is given in the table below.</p>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p>c</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>p(c)</p></td>
+<td><p>0.4</p></td>
+<td><p>0.3</p></td>
+<td><p>0.2</p></td>
+<td><p>0.1</p></td>
+</tr>
+</tbody>
+</table>
+<ol class="loweralpha simple">
+<li><p>Compute the mean and the standard deviation of <strong>C</strong>.</p></li>
+<li><p>Suppose the mean and the standard deviation for the number of adult tickets purchased by a single customer are 2 and 1.2, respectively. Assume that the numbers of child tickets and adult tickets purchased are independent random variables. Compute the mean and the standard deviation of the total number of adult and child tickets purchased by a single customer.</p></li>
+<li><p>Suppose each child ticket costs $15 and each adult ticket costs $25. Compute the mean and the standard deviation of the total amount spent per purchase.</p></li>
+</ol>
 <ol class="arabic simple" start="7">
 <li><p><strong>2008, Free Response Form B, #5</strong></p></li>
 </ol>
-<p>TODO</p>
+<p>Flooding has washed out one of the tracks of the Snake Gulch Railroad. The railroad has two parallel tracks from Bullsnake to Copperhead, but only one usable track from Copperhead to Diamondback, as shown in the figure below. Having only one usable track disrupts the usual schedule. Until it is repaired, the washed-out track will remain unusable. If the train leaving Bullsnake arrives at Copperhead first, it has to wait until the train leaving Diamondback arrives at Copperhead.</p>
+<img alt="assets/imgs/classwork/2008_apstats_frp_formb_05.png" class="align-center" src="assets/imgs/classwork/2008_apstats_frp_formb_05.png" />
+<p>Every day at noon a train leaves Bullsnake heading for Diamondback and another leaves Diamondback heading for Bullsnake.</p>
+<p>Assume that the length of time, <strong>X</strong>, it takes the train leaving Bullsnake to get to Copperhead is normally distributed with a mean of 170 minutes and a standard deviation of 20 minutes.</p>
+<p>Assume that the length of time, <strong>Y</strong>, it takes the train leaving Diamondback to get to Copperhead is normally distributed with a mean of 200 minutes and a standard deviation of 10 minutes.</p>
+<p>These two travel times are independent.</p>
+<ol class="loweralpha simple">
+<li><p>What is the distribution of <strong>Y</strong> - <strong>X</strong>?</p></li>
+<li><p>Over the long run, what proportion of the days will the train from Bullsnake have to wait at Copperhead for the train from Diamondback to arrive?</p></li>
+<li><p>How long should the Snake Gulch Railroad delay the departure of the train from Bullsnake so that the probability that it has to wait is only 0.01?</p></li>
+</ol>
 <ol class="arabic simple" start="8">
 <li><p><strong>2008, Free Response, #3</strong></p></li>
 </ol>
@@ -803,7 +1133,11 @@ formula.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scalar-properties">Scalar Properties</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linearity-of-expectations">Linearity of Expectations</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
 </ul>
   </nav></div>

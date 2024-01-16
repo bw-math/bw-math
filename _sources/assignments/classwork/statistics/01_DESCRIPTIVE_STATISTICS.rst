@@ -146,7 +146,11 @@ stay. Justify your answer.
 	
 c. Explain why method A might identify more data points as potential outliers than method B for a distribution that is strongly skewed to the right.
 
-8. **Question Bank**
+8. **2005, Free Response Form B, #1**
+
+TODO
+
+9. **Question Bank**
 
 To determine the amount of sugar in a typical serving of breakfast cereal, a student randomly selected 60 boxes of different types of cereal from the shelves of a large grocery store.
 

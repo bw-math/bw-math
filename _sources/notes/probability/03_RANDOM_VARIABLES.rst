@@ -51,10 +51,12 @@ The following sentences all say the same thing in slightly different ways.
 
 	Notice this is similar in form and function to a :ref:`frequency distribution <frequency_distributions>`.
 
-.. topic:: Example #2
+.. topic:: Example #1-B
 
 	Suppose you own a car that gets 30 miles per gallon of gasoline. Due to your commute, you drive your car approximately 120 miles every week. Describe the cost of operating your car as a random variable measured in dollars.
-    
+   
+.. topic:: Solution #1-B
+ 
 	Your weekly cost of keeping your tank full is given by the expression
 
 		(Weekly Cost of Gas) = (Price per Gallon of Gasoline) :math:`\cdot` (Gallons Used)
@@ -218,22 +220,51 @@ However, when it is written like this, the connection to *expectations* is not s
 	
 The connection is now more apparent. In the limit, as the number of observations in the sample *S* approaches the number of individuals in the population, the *relative frequency* of an observation becomes the *probability* of the individual occuring in the population.
 
-.. _variance:
+.. _random_variable_variance:
 
 Variance
 ========
 
 TODO 
 
-Transformation
-==============
+.. _random_variable_theorems:
 
+Theorems
+========
+
+TODO
+
+.. _scalar_properties:
+
+Scalar Properties
+-----------------
+
+The results in this section will be used as building blocks to construct complex Random Variables from simple foundations. The following properties of Random Variables state how the expectation of a given :math:`\mathcal{X}` is shifted and scaled by a constant factor of *a*
+
+.. topic:: Additive Property of Expectations
+
+	Let :math:`\mathcal{X}` be a random variable. Let *a* be any real number. Then,
+	
+	.. math::
+	
+		E(\mathcal{X} + a) = E(\mathcal{X}) + a 
+
+
+.. topic:: Multiplicative Property of Expectations
+
+	Let :math:`\mathcal{X}` be a random variable. Let *a* be any real number. Then,
+	
+	.. math::
+	
+		E(a \cdot \mathcal{X}) = a \cdot E(\mathcal{X})
+
+	
 .. _linearity_of_expectations:
 
 Linearity of Expectations
 -------------------------
 
-TODO
+The :ref:`scalar_properties` detail how the expectation of a Random Variable is modified by a constant value. The results of this section extend this idea to the composition of Random Variables. In other words, the following theorem describes how the expectation of a sum of Random Variables can be decomposed into the expectation of each individual Random Variable in the sum,
 
 .. topic:: Expectation of a Sum
 
@@ -244,6 +275,54 @@ TODO
 		E(\mathcal{X}) = E(\mathcal{Y}) + E(\mathcal{Z})
 
 TODO
+
+.. topic:: Example #2-C
+
+	Suppose you play a game where you roll a die and then flip a coin. If you roll a 6, you win $1. If the coin lands on a head, you win an additional $1. What is the expected value of your winnings?
+	
+.. topic:: Solution #2-C
+
+	In this example there are two random processes: the amount of money you win from rolling the die and the amount of money you win from flipping the coin. Call the former :math:`\mathcal{X}` and call the latter :math:`\mathcal{Y}`. The quantity of interest in this problem is then given by,
+	
+	.. math::
+		
+		E(\mathcal{X} + \mathcal{Y})
+		
+	By the *linearity of expectations*, this can be broken down into the individual expectations,
+	
+	.. math::
+	
+		E(\mathcal{X}) + E(\mathcal{Y})
+		
+	For :math:`\mathcal{X}`, note the outcome of winning $1 has a probability of :math:`\frac{1}{6}` and the outcome of winning $0 has a probability of :math:`\frac{5}{6}`. Therefore,
+	
+	.. math::
+	
+		E(\mathcal{X}) = \text{$}1 \cdot  \frac{1}{6} + \text{$}0 \cdot \frac{5}{6}
+		
+	.. math::
+	
+		E(\mathcal{X}) \approx \text{$}0.17
+		
+	Similary, the expectation of :math:`\mathcal{Y}` is found by,
+	
+	.. math:: 
+	
+		E(\mathcal{Y}) = \text{$}1 \ cdot 0.5 + \text{$}0 \cdot
+		
+	.. math::
+	
+		E(\mathcal{Y}) = \text{$}0.50
+		
+	Therefore, the expected value of the winnings in this game is,
+	
+	.. math::
+	
+		E(\mathcal{X} + \mathcal{Y}) = \text{$}0.17 + \text{$}0.50 = \text{$}0.67 
+		
+.. note::
+
+	This problem is not so simple without the *linearity of expectations*! You would need to account for all possible outcomes and find the probability distribution for the sample space! 
 
 Variance of a Sum
 -----------------
@@ -261,4 +340,12 @@ TODO
 	Or, in terms of standard deviations,
 	
 	.. math::
+	
+		\sigma_{x}^2= \sigma_y^2 + \sigma_z^2
+		
+	Solving for :math:`\sigma_{x}` by taking the square root and throwing away the negative root (because standard deviation cannot be negative!),
+	
+	.. math::
+	
 		\sigma_x = sqrt{\sigma_y^2 + \sigma_z^2}
+		

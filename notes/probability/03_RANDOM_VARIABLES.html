@@ -510,7 +510,8 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation">Expectation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variance">Variance</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformation">Transformation</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scalar-properties">Scalar Properties</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linearity-of-expectations">Linearity of Expectations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variance-of-a-sum">Variance of a Sum</a></li>
 </ul>
@@ -571,8 +572,11 @@ document.write(`
 <p>Notice this is similar in form and function to a <a class="reference internal" href="../statistics/00_GRAPHICAL_REPRESENTATIONS.html#frequency-distributions"><span class="std std-ref">frequency distribution</span></a>.</p>
 </aside>
 <aside class="topic">
-<p class="topic-title">Example #2</p>
+<p class="topic-title">Example #1-B</p>
 <p>Suppose you own a car that gets 30 miles per gallon of gasoline. Due to your commute, you drive your car approximately 120 miles every week. Describe the cost of operating your car as a random variable measured in dollars.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title">Solution #1-B</p>
 <p>Your weekly cost of keeping your tank full is given by the expression</p>
 <blockquote>
 <div><p>(Weekly Cost of Gas) = (Price per Gallon of Gasoline) <img class="math" src="../../_images/math/2156a0dcbe4c12655fe2dfbb127fe8f6b443412a.png" alt="\cdot"/> (Gallons Used)</p>
@@ -675,14 +679,31 @@ document.write(`
 </div><p>The connection is now more apparent. In the limit, as the number of observations in the sample <em>S</em> approaches the number of individuals in the population, the <em>relative frequency</em> of an observation becomes the <em>probability</em> of the individual occuring in the population.</p>
 </section>
 <section id="variance">
-<span id="id5"></span><h2>Variance<a class="headerlink" href="#variance" title="Permalink to this heading">#</a></h2>
+<span id="random-variable-variance"></span><h2>Variance<a class="headerlink" href="#variance" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
 </section>
-<section id="transformation">
-<h2>Transformation<a class="headerlink" href="#transformation" title="Permalink to this heading">#</a></h2>
+<section id="theorems">
+<span id="random-variable-theorems"></span><h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this heading">#</a></h2>
+<p>TODO</p>
+<section id="scalar-properties">
+<span id="id5"></span><h3>Scalar Properties<a class="headerlink" href="#scalar-properties" title="Permalink to this heading">#</a></h3>
+<p>The results in this section will be used as building blocks to construct complex Random Variables from simple foundations. The following properties of Random Variables state how the expectation of a given <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is shifted and scaled by a constant factor of <em>a</em></p>
+<aside class="topic">
+<p class="topic-title">Additive Property of Expectations</p>
+<p>Let <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> be a random variable. Let <em>a</em> be any real number. Then,</p>
+<div class="math">
+<p><img src="../../_images/math/1796ae999ebb9da27b93842a2900430f39efeac6.png" alt="E(\mathcal{X} + a) = E(\mathcal{X}) + a"/></p>
+</div></aside>
+<aside class="topic">
+<p class="topic-title">Multiplicative Property of Expectations</p>
+<p>Let <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> be a random variable. Let <em>a</em> be any real number. Then,</p>
+<div class="math">
+<p><img src="../../_images/math/eb2c155ed4923a43d3de9e8d97c3cdea55879b1a.png" alt="E(a \cdot \mathcal{X}) = a \cdot E(\mathcal{X})"/></p>
+</div></aside>
+</section>
 <section id="linearity-of-expectations">
 <span id="id6"></span><h3>Linearity of Expectations<a class="headerlink" href="#linearity-of-expectations" title="Permalink to this heading">#</a></h3>
-<p>TODO</p>
+<p>The <a class="reference internal" href="#scalar-properties"><span class="std std-ref">Scalar Properties</span></a> detail how the expectation of a Random Variable is modified by a constant value. The results of this section extend this idea to the composition of Random Variables. In other words, the following theorem describes how the expectation of a sum of Random Variables can be decomposed into the expectation of each individual Random Variable in the sum,</p>
 <aside class="topic">
 <p class="topic-title">Expectation of a Sum</p>
 <p>Suppose <img class="math" src="../../_images/math/ad6daa2629cc37a5667723358ec601482bea795c.png" alt="\mathcal{Y}"/> and <img class="math" src="../../_images/math/1d74e5da619d26fe1722fa453097be62e18ce3ce.png" alt="\mathcal{Z}"/> are random variables, not necessarily independent. If <img class="math" src="../../_images/math/9cd16ce1fd19665cf157d196cb786e06a25a0b48.png" alt="\mathcal{X} = \mathcal{Y} + \mathcal{Z}"/>, then</p>
@@ -690,6 +711,2691 @@ document.write(`
 <p><img src="../../_images/math/4e72d6fafb90045a13178b32d2045ca918e06760.png" alt="E(\mathcal{X}) = E(\mathcal{Y}) + E(\mathcal{Z})"/></p>
 </div></aside>
 <p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Example #2-C</p>
+<p>Suppose you play a game where you roll a die and then flip a coin. If you roll a 6, you win $1. If the coin lands on a head, you win an additional $1. What is the expected value of your winnings?</p>
+</aside>
+<aside class="topic">
+<p class="topic-title">Solution #2-C</p>
+<p>In this example there are two random processes: the amount of money you win from rolling the die and the amount of money you win from flipping the coin. Call the former <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> and call the latter <img class="math" src="../../_images/math/ad6daa2629cc37a5667723358ec601482bea795c.png" alt="\mathcal{Y}"/>. The quantity of interest in this problem is then given by,</p>
+<div class="math">
+<p><img src="../../_images/math/13b322202d11037e0bb8fa94cc9916709419c5e2.png" alt="E(\mathcal{X} + \mathcal{Y})"/></p>
+</div><p>By the <em>linearity of expectations</em>, this can be broken down into the individual expectations,</p>
+<div class="math">
+<p><img src="../../_images/math/38557965316bf7379118efa343650c0b86de1125.png" alt="E(\mathcal{X}) + E(\mathcal{Y})"/></p>
+</div><p>For <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/>, note the outcome of winning $1 has a probability of <img class="math" src="../../_images/math/a4ab89274e9c797380bb6999ca05fb914445cb7e.png" alt="\frac{1}{6}"/> and the outcome of winning $0 has a probability of <img class="math" src="../../_images/math/5f26cff68183dc184416f359fae16bd3d4b25b6c.png" alt="\frac{5}{6}"/>. Therefore,</p>
+<aside class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">E(\mathcal{X}) = \text{$}1 \cdot  \frac{1}{6} + \text{$}0 \cdot \frac{5}{6}</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...e {\textdef&#64; \displaystyle \f&#64;size {#1}}
+                                                  {\textdef&#64; \textstyle \f&#64;s...
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...xtstyle \f&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \sf&#64;...
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...tstyle \sf&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \ssf...
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...style \ssf&#64;size {\firstchoice&#64;false #1}}
+                                                  \check&#64;mathfonts }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...firstchoice&#64;false #1}}\check&#64;mathfonts }
+                                                  
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...e {\textdef&#64; \displaystyle \f&#64;size {#1}}
+                                                  {\textdef&#64; \textstyle \f&#64;s...
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...xtstyle \f&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \sf&#64;...
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...tstyle \sf&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \ssf...
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...style \ssf&#64;size {\firstchoice&#64;false #1}}
+                                                  \check&#64;mathfonts }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...firstchoice&#64;false #1}}\check&#64;mathfonts }
+                                                  
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Misplaced \crcr.
+\endsplit -&gt;\crcr 
+                  \egroup \egroup \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\endsplit -&gt;\crcr \egroup 
+                          \egroup \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Extra }, or forgotten $.
+\endsplit -&gt;\crcr \egroup \egroup 
+                                  \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...} + \text{$}0 \cdot \frac{5}{6}\end{split}
+                                                  
+(That makes 100 errors; please try again.)
+No pages of output.
+Transcript written on math.log.
+</p>
+</aside>
+<aside class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">E(\mathcal{X}) \approx \text{$}0.17</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...e {\textdef&#64; \displaystyle \f&#64;size {#1}}
+                                                  {\textdef&#64; \textstyle \f&#64;s...
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...xtstyle \f&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \sf&#64;...
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...tstyle \sf&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \ssf...
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...style \ssf&#64;size {\firstchoice&#64;false #1}}
+                                                  \check&#64;mathfonts }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...firstchoice&#64;false #1}}\check&#64;mathfonts }
+                                                  
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Misplaced \crcr.
+\endsplit -&gt;\crcr 
+                  \egroup \egroup \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Extra }, or forgotten $.
+\endsplit -&gt;\crcr \egroup 
+                          \egroup \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Extra }, or forgotten $.
+\endsplit -&gt;\crcr \egroup \egroup 
+                                  \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...athcal{X}) \approx \text{$}0.17\end{split}
+                                                  
+(That makes 100 errors; please try again.)
+No pages of output.
+Transcript written on math.log.
+</p>
+</aside>
+<p>Similary, the expectation of <img class="math" src="../../_images/math/ad6daa2629cc37a5667723358ec601482bea795c.png" alt="\mathcal{Y}"/> is found by,</p>
+<aside class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">E(\mathcal{Y}) = \text{$}1 \ cdot 0.5 + \text{$}0 \cdot</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...e {\textdef&#64; \displaystyle \f&#64;size {#1}}
+                                                  {\textdef&#64; \textstyle \f&#64;s...
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...xtstyle \f&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \sf&#64;...
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...tstyle \sf&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \ssf...
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...style \ssf&#64;size {\firstchoice&#64;false #1}}
+                                                  \check&#64;mathfonts }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...firstchoice&#64;false #1}}\check&#64;mathfonts }
+                                                  
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...e {\textdef&#64; \displaystyle \f&#64;size {#1}}
+                                                  {\textdef&#64; \textstyle \f&#64;s...
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...xtstyle \f&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \sf&#64;...
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...tstyle \sf&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \ssf...
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...style \ssf&#64;size {\firstchoice&#64;false #1}}
+                                                  \check&#64;mathfonts }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...firstchoice&#64;false #1}}\check&#64;mathfonts }
+                                                  
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Misplaced \crcr.
+\endsplit -&gt;\crcr 
+                  \egroup \egroup \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\endsplit -&gt;\crcr \egroup 
+                          \egroup \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Extra }, or forgotten $.
+\endsplit -&gt;\crcr \egroup \egroup 
+                                  \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...}1 \ cdot 0.5 + \text{$}0 \cdot\end{split}
+                                                  
+(That makes 100 errors; please try again.)
+No pages of output.
+Transcript written on math.log.
+</p>
+</aside>
+<aside class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">E(\mathcal{Y}) = \text{$}0.50</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...e {\textdef&#64; \displaystyle \f&#64;size {#1}}
+                                                  {\textdef&#64; \textstyle \f&#64;s...
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...xtstyle \f&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \sf&#64;...
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...tstyle \sf&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \ssf...
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...style \ssf&#64;size {\firstchoice&#64;false #1}}
+                                                  \check&#64;mathfonts }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...firstchoice&#64;false #1}}\check&#64;mathfonts }
+                                                  
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Misplaced \crcr.
+\endsplit -&gt;\crcr 
+                  \egroup \egroup \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Extra }, or forgotten $.
+\endsplit -&gt;\crcr \egroup 
+                          \egroup \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Extra }, or forgotten $.
+\endsplit -&gt;\crcr \egroup \egroup 
+                                  \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing \cr inserted.
+&lt;inserted text&gt; 
+                \cr 
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...t}E(\mathcal{Y}) = \text{$}0.50\end{split}
+                                                  
+(That makes 100 errors; please try again.)
+No pages of output.
+Transcript written on math.log.
+</p>
+</aside>
+<p>Therefore, the expected value of the winnings in this game is,</p>
+<aside class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">E(\mathcal{X} + \mathcal{Y}) = \text{$}0.17 + \text{$}0.50 = \text{$}0.67</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...e {\textdef&#64; \displaystyle \f&#64;size {#1}}
+                                                  {\textdef&#64; \textstyle \f&#64;s...
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...xtstyle \f&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \sf&#64;...
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...tstyle \sf&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \ssf...
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...style \ssf&#64;size {\firstchoice&#64;false #1}}
+                                                  \check&#64;mathfonts }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...firstchoice&#64;false #1}}\check&#64;mathfonts }
+                                                  
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...e {\textdef&#64; \displaystyle \f&#64;size {#1}}
+                                                  {\textdef&#64; \textstyle \f&#64;s...
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...xtstyle \f&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \sf&#64;...
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...tstyle \sf&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \ssf...
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...style \ssf&#64;size {\firstchoice&#64;false #1}}
+                                                  \check&#64;mathfonts }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...firstchoice&#64;false #1}}\check&#64;mathfonts }
+                                                  
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...e {\textdef&#64; \displaystyle \f&#64;size {#1}}
+                                                  {\textdef&#64; \textstyle \f&#64;s...
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...xtstyle \f&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \sf&#64;...
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...tstyle \sf&#64;size {\firstchoice&#64;false #1}}
+                                                  {\textdef&#64; \textstyle \ssf...
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+&lt;recently read&gt; }
+                 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\textdef&#64; ...h {#1}\let \f&#64;size #2\selectfont #3}}
+                                                  
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...style \ssf&#64;size {\firstchoice&#64;false #1}}
+                                                  \check&#64;mathfonts }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\text&#64; ...firstchoice&#64;false #1}}\check&#64;mathfonts }
+                                                  
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Misplaced \crcr.
+\endsplit -&gt;\crcr 
+                  \egroup \egroup \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\endsplit -&gt;\crcr \egroup 
+                          \egroup \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Extra }, or forgotten $.
+\endsplit -&gt;\crcr \egroup \egroup 
+                                  \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing { inserted.
+&lt;to be read again&gt; 
+                   \endgroup 
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+! Missing } inserted.
+&lt;inserted text&gt; 
+                }
+l.16 ...7 + \text{$}0.50 = \text{$}0.67\end{split}
+                                                  
+(That makes 100 errors; please try again.)
+No pages of output.
+Transcript written on math.log.
+</p>
+</aside>
+</aside>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This problem is not so simple without the <em>linearity of expectations</em>! You would need to account for all possible outcomes and find the probability distribution for the sample space!</p>
+</div>
 </section>
 <section id="variance-of-a-sum">
 <h3>Variance of a Sum<a class="headerlink" href="#variance-of-a-sum" title="Permalink to this heading">#</a></h3>
@@ -700,6 +3406,9 @@ document.write(`
 <div class="math">
 <p><img src="../../_images/math/fb7718aa8ae32b87baad8a070ad86b7119ca72b7.png" alt="Var(\mathcal{X}) = Var(\mathcal{Y}) + Var(\mathcal{Z})"/></p>
 </div><p>Or, in terms of standard deviations,</p>
+<div class="math">
+<p><img src="../../_images/math/05d5c05276f5fbf685d798e9539090d49efcf52b.png" alt="\sigma_{x}^2= \sigma_y^2 + \sigma_z^2"/></p>
+</div><p>Solving for <img class="math" src="../../_images/math/fce4747efbcb089fadfeb80d9deb4ace2af3c784.png" alt="\sigma_{x}"/> by taking the square root and throwing away the negative root (because standard deviation cannot be negative!),</p>
 <div class="math">
 <p><img src="../../_images/math/b12f565bc0427b19c1bb4fdffe88f520a88720da.png" alt="\sigma_x = sqrt{\sigma_y^2 + \sigma_z^2}"/></p>
 </div></aside>
@@ -768,7 +3477,8 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation">Expectation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variance">Variance</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformation">Transformation</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scalar-properties">Scalar Properties</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linearity-of-expectations">Linearity of Expectations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variance-of-a-sum">Variance of a Sum</a></li>
 </ul>
