@@ -298,27 +298,27 @@ TODO
 	
 	.. math::
 	
-		E(\mathcal{X}) = \text{$}1 \cdot  \frac{1}{6} + \text{$}0 \cdot \frac{5}{6}
+		E(\mathcal{X}) = \$ 1 \cdot  \frac{1}{6} + \$ 0 \cdot \frac{5}{6}
 		
 	.. math::
 	
-		E(\mathcal{X}) \approx \text{$}0.17
+		E(\mathcal{X}) \approx \$0.17
 		
 	Similary, the expectation of :math:`\mathcal{Y}` is found by,
 	
 	.. math:: 
 	
-		E(\mathcal{Y}) = \text{$}1 \ cdot 0.5 + \text{$}0 \cdot
+		E(\mathcal{Y}) = \$ 1 \ cdot 0.5 + $ 0 \cdot
 		
 	.. math::
 	
-		E(\mathcal{Y}) = \text{$}0.50
+		E(\mathcal{Y}) = \$ 0.50
 		
 	Therefore, the expected value of the winnings in this game is,
 	
 	.. math::
 	
-		E(\mathcal{X} + \mathcal{Y}) = \text{$}0.17 + \text{$}0.50 = \text{$}0.67 
+		E(\mathcal{X} + \mathcal{Y}) = 0.17 + 0.50 = \$ 0.67 
 		
 .. note::
 
@@ -347,5 +347,5 @@ TODO
 	
 	.. math::
 	
-		\sigma_x = sqrt{\sigma_y^2 + \sigma_z^2}
+		\sigma_x = \sqrt{\sigma_y^2 + \sigma_z^2}
 		
