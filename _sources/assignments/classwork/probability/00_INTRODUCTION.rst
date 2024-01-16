@@ -34,13 +34,13 @@ Sample Spaces and Events
 	e. :math:`E \cup F^c`
 
 
-3. Three red balls and one green ball are placed into a box. Describe the sample spaces of the following experiments with a set using :ref:`list_notation`.
+3. Three red balls and one green ball are placed into a box. 
 
 .. hint:: 
 
 	Let *r* :sub:`1`, *r* :sub:`2` and *r* :sub:`3` represent the *outcome* of drawing each of the respective red balls. 
 
-Use this sample space to answer the following questions.
+Describe the sample spaces of the following experiments with a set using :ref:`list_notation`.
 
 	a. Selecting one ball at random.
 
