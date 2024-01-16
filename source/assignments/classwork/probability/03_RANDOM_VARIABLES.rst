@@ -45,7 +45,7 @@ Definition
 Examples
 ========
 
-1. In a lottery every week, :math:`2,000,000` tickets are sold for $1 apiece. If 4000 of these tickets pay off $30 each, 500 pay off $800 each, one ticket pays off :math:`\text{$}1,200,000`, and no ticket pays off more than one prize, what is the expected value of the winning amount for a player with a single ticket?
+1. In a lottery every week, :math:`2,000,000` tickets are sold for $1 apiece. If 4000 of these tickets pay off $30 each, 500 pay off $800 each, one ticket pays off :math:`\$ 1,200,000`, and no ticket pays off more than one prize, what is the expected value of the winning amount for a player with a single ticket?
 
 2. In the Maryland Lottery, players pick six different integers between 1 and 49, the order of selection being irrelevant. The lottery commission then selects six of these numbers at random as the winning numbers. A player wins the grand prize of $1,200,000 if all six numbers that he or she has selected match the winning numbers. The second and third prizes of $800 and $35, respectively, are awarded if exactly five and four of the selected numbers match the winning numbers. Lottery tickets cost $5. What is the expected value of the amount a player wins in one game?
 
@@ -80,17 +80,17 @@ Scalar Properties
 
 2. Margaret Margot owns the boutique bakery *Cupcake Connoisseur*. She makes cupcakes and sells them for $15 a piece (they are really good cupcakes). After several years of tracking the seasonal variations in cupcake sales, she has estimated the following probability distribution for the number of cupcakes she sells a day.
 
-+--------------------+---------------------------+
-| Number of Cupcakes |  :math:P(\mathcal{X}=x_i) |
-+--------------------+---------------------------+
-|        15          |            0.2            |
-+--------------------+---------------------------+ 
-|        25          |            0.3            |
-+--------------------+---------------------------+ 
-|        35          |            0.4            |
-+--------------------+---------------------------+
-|        45          |            0.1            |
-+--------------------+---------------------------+ 
++--------------------+----------------------------+
+| Number of Cupcakes | :math:`P(\mathcal{X}=x_i)` |
++--------------------+----------------------------+
+|        15          |            0.2             |
++--------------------+----------------------------+ 
+|        25          |            0.3             |
++--------------------+----------------------------+ 
+|        35          |            0.4             |
++--------------------+----------------------------+
+|        45          |            0.1             |
++--------------------+----------------------------+ 
              
 a. Use this table to find Margaret's expected *revenue over the next month*. Assume a month is *30 days*. 
 
@@ -121,7 +121,7 @@ Linearity of Expectations
 	
 3. A box contains a yellow ball, an orange ball, a green ball, and a blue ball. Matilda Weierstrauss randomly selects 4 balls from the box (with replacement). What is the expected value for the number of distinct colored balls Matilda Weierstrauss will select?
 
-4. Every time one of the AP Statistics students buys a Happy Meal from McDonalds, they receive a :ref:`Strawberry Shortcake <https://en.wikipedia.org/wiki/Strawberry_Shortcake>`_ plush doll. There are five dolls in total: Strawberry Shortcake, Cherry Jam, Raspberry Torte, Blueberry Muffin and Lemon Meringue. The toys in every Happy Meal are awarded at random. What is the expected number of Happy Meals an AP Statistics Students must buy in order to get all the *Strawberry Shortcake* plush dolls?
+4. Every time one of the AP Statistics students buys a Happy Meal from McDonalds, they receive a `Strawberry Shortcake <https://en.wikipedia.org/wiki/Strawberry_Shortcake>`_ plush doll. There are five dolls in total: Strawberry Shortcake, Cherry Jam, Raspberry Torte, Blueberry Muffin and Lemon Meringue. The toys in every Happy Meal are awarded at random. What is the expected number of Happy Meals an AP Statistics Students must buy in order to get all the *Strawberry Shortcake* plush dolls?
 
 A.P. Exam Practice
 ==================
