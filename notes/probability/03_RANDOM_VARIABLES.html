@@ -664,18 +664,18 @@ document.write(`
 <p class="topic-title">Expectation of a Discrete Random Variable</p>
 <p>Let <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> be a discrete random variable that takes on the values <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> for <img class="math" src="../../_images/math/a481b68cca2dd2ec91961f41999ae31343d16aea.png" alt="i = 1, 2, 3, ..., n"/>. The <a href="#id3"><span class="problematic" id="id4">*</span></a>expectation of <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is defined,</p>
 <div class="math">
-<p><img src="../../_images/math/c1aa3d1ca1b7a157033c2b14f892c8448f734752.png" alt="E(\mathcal{X}) = sum_{i=1}^{n}{x_i \ cdot P(\mathcal{X} = x_i) }"/></p>
+<p><img src="../../_images/math/31bc024a4e270416530d0620e1659777e916a8a9.png" alt="E(\mathcal{X}) = \sum_{i=1}^{n}{x_i \ cdot P(\mathcal{X} = x_i) }"/></p>
 </div></aside>
 <p>TODO</p>
 <p>The <em>expectation</em> of a Random Variable <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is the weighted sum of its outcome. The <em>weight</em> of each outcome is exactly the probability of that outcome occuring.</p>
 <p>TODO</p>
-<p>Here the subject matter is sample spaces and probability, but the current discussion bares a striking similarity of the discussion of the <span class="xref std std-ref">sample_mean</span>. The reader may wonder if there is a connection between the <em>expectation of a random variable</em> and the <em>mean of a sample randomly drawn from the same underlying population</em> (if the reader does not wonder this, this sentence is meant to elicit said wonder, so start wondering). In fact, the formulae for expectations and sample means share a connection through the <span class="xref std std-ref">law_of_larger_numbers</span>.</p>
+<p>Here the subject matter is sample spaces and probability, but the current discussion bares a striking similarity of the discussion of the <span class="xref std std-ref">sample_mean</span>. The reader may wonder if there is a connection between the <em>expectation of a random variable</em> and the <em>mean of a sample randomly drawn from the same underlying population</em> (if the reader does not wonder this, this sentence is meant to elicit said wonder, so start wondering). In fact, the formulae for expectations and sample means share a connection through the <span class="xref std std-ref">law_of_large_numbers</span>.</p>
 <p>Recall the formula for the sample mean is written,</p>
 <div class="math">
-<p><img src="../../_images/math/1d8ec349413fcfddd35b3d576c58f2c237acf3d6.png" alt="\bar{x} = \frac{sum_{i=1}^{n} x_i }{n}"/></p>
+<p><img src="../../_images/math/2a0f23002a4b7886f5528d873c1df899de936e52.png" alt="\bar{x} = \frac{ \sum_{i=1}^{n} x_i }{n}"/></p>
 </div><p>However, when it is written like this, the connection to <em>expectations</em> is not so obvious. The index of this summation, <em>i</em>, is taken over the individual observations, rather than the <em>unique</em> observations. We may rewrite this formula, with the concept of <a class="reference internal" href="../statistics/01_DESCRIPTIVE_STATISTICS.html#relative-frequency"><span class="std std-ref">Relative Frequency</span></a>, <img class="math" src="../../_images/math/76e10db9dd752386950db7836acd81283328092c.png" alt="p(x_i)"/>,</p>
 <div class="math">
-<p><img src="../../_images/math/cebf0ddfc3ae2566ceef4eab79da5cf2c7ec7e69.png" alt="\bar{x} = sum_{x_i \in S} {x_i \cdot p(x_i)}"/></p>
+<p><img src="../../_images/math/baf9a0c555dd01ae3bb85997212f1c74e6216073.png" alt="\bar{x} = \sum_{x_i \in S} {x_i \cdot p(x_i)}"/></p>
 </div><p>The connection is now more apparent. In the limit, as the number of observations in the sample <em>S</em> approaches the number of individuals in the population, the <em>relative frequency</em> of an observation becomes the <em>probability</em> of the individual occuring in the population.</p>
 </section>
 <section id="variance">
@@ -725,7 +725,7 @@ document.write(`
 <p><img src="../../_images/math/38557965316bf7379118efa343650c0b86de1125.png" alt="E(\mathcal{X}) + E(\mathcal{Y})"/></p>
 </div><p>For <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/>, note the outcome of winning $1 has a probability of <img class="math" src="../../_images/math/a4ab89274e9c797380bb6999ca05fb914445cb7e.png" alt="\frac{1}{6}"/> and the outcome of winning $0 has a probability of <img class="math" src="../../_images/math/5f26cff68183dc184416f359fae16bd3d4b25b6c.png" alt="\frac{5}{6}"/>. Therefore,</p>
 <div class="math">
-<p><img src="../../_images/math/3724b9aa6c8fbfb18fdfa726a509c22526afe432.png" alt="E(\mathcal{X}) = \$ 1 \cdot  \frac{1}{6} + \$ 0 \cdot \frac{5}{6}"/></p>
+<p><img src="../../_images/math/b62ec4383a3f0c645bf2d0fb5c22b7ec05136768.png" alt=""/></p>
 </div><div class="math">
 <p><img src="../../_images/math/5a51936712c61c38f8ab849b7c967fe59790cf54.png" alt="E(\mathcal{X}) \approx \$0.17"/></p>
 </div><p>Similary, the expectation of <img class="math" src="../../_images/math/ad6daa2629cc37a5667723358ec601482bea795c.png" alt="\mathcal{Y}"/> is found by,</p>

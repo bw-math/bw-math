@@ -196,7 +196,7 @@ TODO
 	
 	.. math::
 	
-		E(\mathcal{X}) = sum_{i=1}^{n}{x_i \ cdot P(\mathcal{X} = x_i) }
+		E(\mathcal{X}) = \sum_{i=1}^{n}{x_i \ cdot P(\mathcal{X} = x_i) }
 		
 TODO
 
@@ -204,19 +204,19 @@ The *expectation* of a Random Variable :math:`\mathcal{X}` is the weighted sum o
 
 TODO
 
-Here the subject matter is sample spaces and probability, but the current discussion bares a striking similarity of the discussion of the :ref:`sample_mean`. The reader may wonder if there is a connection between the *expectation of a random variable* and the *mean of a sample randomly drawn from the same underlying population* (if the reader does not wonder this, this sentence is meant to elicit said wonder, so start wondering). In fact, the formulae for expectations and sample means share a connection through the :ref:`law_of_larger_numbers`. 
+Here the subject matter is sample spaces and probability, but the current discussion bares a striking similarity of the discussion of the :ref:`sample_mean`. The reader may wonder if there is a connection between the *expectation of a random variable* and the *mean of a sample randomly drawn from the same underlying population* (if the reader does not wonder this, this sentence is meant to elicit said wonder, so start wondering). In fact, the formulae for expectations and sample means share a connection through the :ref:`law_of_large_numbers`. 
 
 Recall the formula for the sample mean is written,
 
 .. math::
 
-	\bar{x} = \frac{sum_{i=1}^{n} x_i }{n}
+	\bar{x} = \frac{ \sum_{i=1}^{n} x_i }{n}
 	
 However, when it is written like this, the connection to *expectations* is not so obvious. The index of this summation, *i*, is taken over the individual observations, rather than the *unique* observations. We may rewrite this formula, with the concept of :ref:`relative_frequency`, :math:`p(x_i)`, 
 
 .. math::
 
-	\bar{x} = sum_{x_i \in S} {x_i \cdot p(x_i)} 
+	\bar{x} = \sum_{x_i \in S} {x_i \cdot p(x_i)} 
 	
 The connection is now more apparent. In the limit, as the number of observations in the sample *S* approaches the number of individuals in the population, the *relative frequency* of an observation becomes the *probability* of the individual occuring in the population.
 
@@ -298,7 +298,6 @@ TODO
 	
 	.. math::
 	
-		E(\mathcal{X}) = \$ 1 \cdot  \frac{1}{6} + \$ 0 \cdot \frac{5}{6}
 		
 	.. math::
 	
