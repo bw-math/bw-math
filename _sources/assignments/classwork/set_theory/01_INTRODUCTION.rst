@@ -1,8 +1,8 @@
 .. _set_theory_classwork:
 
-==========
-Set Theory
-==========
+============
+Introduction
+============
 
 .. topic:: Instructions
 
