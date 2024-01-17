@@ -1,6 +1,6 @@
-========================================
-Hypothesis Tests for the Population Mean
-========================================
+===============
+Population Mean
+===============
 
 1. **2009, Free Response Form B, #5**
 
@@ -13,7 +13,7 @@ a. Perform a test of significance to determine whether the mean amount of juice 
 b. To determine whether this sample of four bottles provides convincing evidence that the standard deviation of the amount of juice dispensed is greater than 0.05 ounce, a simulation study was performed. In the simulation study, 300 samples, each of size 4, were randomly generated from a normal population with a mean of 12.1 and a standard deviation of 0.05. The sample standard deviation was computed for each
 of the 300 samples. The dotplot below displays the values of the sample standard deviations.
 
-.. image:: ../../../assets/imgs/classwork/2009_apstats_frp_formb_05.png
+.. image:: ../../../../assets/imgs/classwork/2009_apstats_frp_formb_05.png
 	:align: center
 	
 Use the results of this simulation study to explain why you think the sample provides or does not provide
@@ -31,7 +31,7 @@ TODO
 
 The developers of a training program designed to improve manual dexterity claim that people who complete the 6-week program will increase their manual dexterity. A random sample of 12 people enrolled in the training program was selected. A measure of each person’s dexterity on a scale from 1 (lowest) to 9 (highest) was recorded just before the start of and just after the completion of the 6-week program. The data are shown in the table below.
 
-.. image:: ../../../assets/imgs/classwork/2006_apstats_frp_formb_04.png
+.. image:: ../../../../assets/imgs/classwork/2006_apstats_frp_formb_04.png
 	:align: center
 	
 Can one conclude that the mean manual dexterity for people who have completed the 6-week training program has significantly increased? Support your conclusion with appropriate statistical evidence.

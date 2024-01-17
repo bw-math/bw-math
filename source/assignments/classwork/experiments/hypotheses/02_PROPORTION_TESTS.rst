@@ -1,6 +1,6 @@
-==============================================
-Hypothesis Tests for the Population Proportion
-==============================================
+=====================
+Population Proportion
+=====================
 
 1. **2003, Free Response, #5**
 
@@ -10,7 +10,7 @@ A random sample of 200 students was selected from a large college in the United 
 
 Each response was recorded in one of five categories. The gender of each selected student was noted. The data are summarized in the table below.
 
-.. image:: ../../../assets/imgs/classwork/2003_apstats_frp_5.png
+.. image:: ../../../../assets/imgs/classwork/2003_apstats_frp_5.png
     :align: center
 
 Is there sufficient evidence to indicate that the response is dependent on gender? Provide statistical evidence to support your conclusion.
