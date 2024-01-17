@@ -14,5 +14,4 @@ Class Notes
    experiments/index
    statistics/index
    distributions/index
-   hypotheses/index
    regression/index

@@ -1,3 +1,3 @@
 =============================
-Tests for the Population Mean
+Population Standard Deviation
 =============================

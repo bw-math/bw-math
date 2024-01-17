@@ -12,3 +12,4 @@ Experimental Design
    02_DESIGN
    03_DATA
    04_INFERENCE
+   hypotheses/index
