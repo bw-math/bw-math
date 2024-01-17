@@ -1,8 +1,8 @@
-.. _symbolic_logic:
+.. _logic:
 
-==============
-Symbolic Logic
-==============
+=====
+Logic
+=====
 
 TODO
 
