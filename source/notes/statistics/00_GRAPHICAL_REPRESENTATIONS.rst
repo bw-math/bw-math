@@ -1,8 +1,8 @@
-.. _graphical_representations_of_data:
+.. _graphical_representations:
 
-=================================
-Graphical Representations of Data
-=================================
+=========================
+Graphical Representations
+=========================
 
 In this section we study various ways of representing data graphically. 
 

@@ -64,3 +64,69 @@ All possible samples **S**:sub:`i` are enumerated below in :ref:`list_notation`
     :math:`S_8 = \{ 2, 1 \}`
 
     :math:`S_9 = \{ 2, 2 \}`
+    
+    
+TODO
+
+.. _sampling_distributions_of_statistics:
+
+Distribution of Sample Statistics
+=================================
+
+.. _distribution_of_sample_proportion:
+
+Sample Proportion
+-----------------
+
+TODO
+
+.. _distribution_of_sample_mean:
+
+Sample Mean
+-----------
+
+TODO
+
+.. _distribution_of_sample_mean_known_sigma:
+
+Known Standard Deviation
+************************
+
+TODO 
+
+.. topic:: Distribution of Sample Mean, Standard Deviation Known, Version 1
+
+	Let each :math:`\mathcal{X_i}` for :math:`i = 1, 2, ..., n` be selected from the same population. If :math:`n \rightarrow \infty`, then 
+	
+	.. math::
+	
+		\bar{X} \sim \mathcal{N}(\mu, \frac{sigma}{\sqrt{n}})  
+	
+TODO
+
+.. topic:: Distribution of Sample Mean, Standard Deviation Known, Version 2
+
+	Let each :math:`\mathcal{X_i}` for :math:`i = 1, 2, ..., n` be selected from the same population. If :math:`n \rightarrow \infty`, then 
+	
+	.. math::
+	
+		\bar{X} \sim \mathcal{N}(\mu, \frac{sigma}{\sqrt{n}})  	
+TODO
+
+.. _distribution_of_sample_mean_unknown_sigma:
+
+Unknown Standard Deviation
+**************************
+
+TODO
+
+.. topic:: Distribution of Sample Mean, Standard Deviation Unknown
+
+	Let each :math:`\mathcal{X_i}` for :math:`i = 1, 2, ..., n` be selected from the same population. If :math:`n \rightarrow \infty`, then 
+	
+	.. math::
+	
+		\frac{ \bar{X} - \mu }{ \frac{s}{ \sqrt{n} } } \sim t(n-1) 
+		
+TODO
+

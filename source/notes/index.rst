@@ -13,5 +13,6 @@ Class Notes
    probability/index
    experiments/index
    statistics/index
-   distributions/index
    regression/index
+   distributions/index
+
