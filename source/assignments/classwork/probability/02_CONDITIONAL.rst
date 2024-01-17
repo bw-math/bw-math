@@ -144,6 +144,14 @@ Bayes' Laws
 Independence
 ------------
 
+0. You are dealt a single card from a standard deck of 52 cards, face down.
+
+a. Without any prior knowlesdge, what is the probability of the card being a spade?
+
+b. The dealer reveals to you the face of the card is a Jack. How does this information change your answer to *part a*?
+
+c. Based on your answers to the *parts a and b*, is the event of getting a Jack independent of the event of getting a spade?
+
 .. topic:: Independence Multiplication Law
 
 	If **A** and **B** are independent events, then
