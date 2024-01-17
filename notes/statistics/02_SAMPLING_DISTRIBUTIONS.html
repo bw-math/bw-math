@@ -181,25 +181,25 @@
 </ul>
 </li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Statistics</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="00_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations of Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="00_GRAPHICAL_REPRESENTATIONS.html">Graphical Representations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="01_DESCRIPTIVE_STATISTICS.html">Point Estimation</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Sampling Distributions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="03_CONFIDENCE_INTERVALS.html">Confidence Intervals</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../regression/index.html">Regression</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../regression/01_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../regression/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../regression/03_LINEAR_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../regression/04_RESIDUAL_ANALYSIS.html">Residual Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../distributions/00_BERNOULLI.html">Bernoulli Distribution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../distributions/02_BINOMIAL.html">Binomial Distribution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../distributions/03_UNIFORM.html">Uniform Distribution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../distributions/04_NORMAL.html">Normal Distribution</a></li>
-</ul>
-</li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../regression/index.html">Regression</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../regression/01_INTRODUCTION.html">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../regression/02_CORRELATION.html">Correlation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../regression/03_LINEAR_REGRESSION.html">Linear Regression</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../regression/04_RESIDUAL_ANALYSIS.html">Residual Analysis</a></li>
 </ul>
 </li>
 </ul>
@@ -259,7 +259,7 @@
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/00_GRAPHS.html">Graphical Representations of Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/00_GRAPHS.html">Graphical Representations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/01_ESTIMATION.html">Point Estimation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/02_CORRELATION.html">Correlation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/03_REGRESSION.html">Regression</a></li>
@@ -489,6 +489,15 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution-of-sample-statistics">Distribution of Sample Statistics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-proportion">Sample Proportion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-mean">Sample Mean</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#known-standard-deviation">Known Standard Deviation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#unknown-standard-deviation">Unknown Standard Deviation</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -549,6 +558,47 @@ document.write(`
 <p><img class="math" src="../../_images/math/01dae06aff6ad8954b5a4d746fe98aaaa0054970.png" alt="S_8 = \{ 2, 1 \}"/></p>
 <p><img class="math" src="../../_images/math/48ced86a93450461e1f6455fc8a67b0ae105e771.png" alt="S_9 = \{ 2, 2 \}"/></p>
 </div></blockquote>
+<p>TODO</p>
+</section>
+</section>
+<section id="distribution-of-sample-statistics">
+<span id="sampling-distributions-of-statistics"></span><h2>Distribution of Sample Statistics<a class="headerlink" href="#distribution-of-sample-statistics" title="Permalink to this heading">#</a></h2>
+<section id="sample-proportion">
+<span id="distribution-of-sample-proportion"></span><h3>Sample Proportion<a class="headerlink" href="#sample-proportion" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="sample-mean">
+<span id="distribution-of-sample-mean"></span><h3>Sample Mean<a class="headerlink" href="#sample-mean" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+<section id="known-standard-deviation">
+<span id="distribution-of-sample-mean-known-sigma"></span><h4>Known Standard Deviation<a class="headerlink" href="#known-standard-deviation" title="Permalink to this heading">#</a></h4>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Distribution of Sample Mean, Standard Deviation Known, Version 1</p>
+<p>Let each <img class="math" src="../../_images/math/e5b80215013a0a149747cac301917feff517adbd.png" alt="\mathcal{X_i}"/> for <img class="math" src="../../_images/math/ec4b4548e931e1aa29cb2b093a6646769e4869b0.png" alt="i = 1, 2, ..., n"/> be selected from the same population. If <img class="math" src="../../_images/math/9b6055b5b6daa5ddada6d07ddd37afc31a61ea4d.png" alt="n \rightarrow \infty"/>, then</p>
+<div class="math">
+<p><img src="../../_images/math/1ddee0201e23c1461800e12be3a33cef2a946349.png" alt="\bar{X} \sim \mathcal{N}(\mu, \frac{sigma}{\sqrt{n}})"/></p>
+</div></aside>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Distribution of Sample Mean, Standard Deviation Known, Version 2</p>
+<p>Let each <img class="math" src="../../_images/math/e5b80215013a0a149747cac301917feff517adbd.png" alt="\mathcal{X_i}"/> for <img class="math" src="../../_images/math/ec4b4548e931e1aa29cb2b093a6646769e4869b0.png" alt="i = 1, 2, ..., n"/> be selected from the same population. If <img class="math" src="../../_images/math/9b6055b5b6daa5ddada6d07ddd37afc31a61ea4d.png" alt="n \rightarrow \infty"/>, then</p>
+<div class="math">
+<p><img src="../../_images/math/1ddee0201e23c1461800e12be3a33cef2a946349.png" alt="\bar{X} \sim \mathcal{N}(\mu, \frac{sigma}{\sqrt{n}})"/></p>
+</div></aside>
+<p>TODO</p>
+</section>
+<section id="unknown-standard-deviation">
+<span id="distribution-of-sample-mean-unknown-sigma"></span><h4>Unknown Standard Deviation<a class="headerlink" href="#unknown-standard-deviation" title="Permalink to this heading">#</a></h4>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Distribution of Sample Mean, Standard Deviation Unknown</p>
+<p>Let each <img class="math" src="../../_images/math/e5b80215013a0a149747cac301917feff517adbd.png" alt="\mathcal{X_i}"/> for <img class="math" src="../../_images/math/ec4b4548e931e1aa29cb2b093a6646769e4869b0.png" alt="i = 1, 2, ..., n"/> be selected from the same population. If <img class="math" src="../../_images/math/9b6055b5b6daa5ddada6d07ddd37afc31a61ea4d.png" alt="n \rightarrow \infty"/>, then</p>
+<div class="math">
+<p><img src="../../_images/math/79d8df2a71993f86d4cd071c0229b139e6f489f0.png" alt="\frac{ \bar{X} - \mu }{ \frac{s}{ \sqrt{n} } } \sim t(n-1)"/></p>
+</div></aside>
+<p>TODO</p>
+</section>
 </section>
 </section>
 </section>
@@ -600,6 +650,15 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#central-limit-theorem">Central Limit Theorem</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution-of-sample-statistics">Distribution of Sample Statistics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-proportion">Sample Proportion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-mean">Sample Mean</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#known-standard-deviation">Known Standard Deviation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#unknown-standard-deviation">Unknown Standard Deviation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

@@ -1,8 +1,8 @@
-.. _graphical_representations_of_data_classwork:
+.. _graphical_representations_classwork:
 
-=================================
-Graphical Representations of Data
-=================================
+=========================
+Graphical Representations
+=========================
 
 .. topic:: Instructions
 
