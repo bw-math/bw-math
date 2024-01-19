@@ -43,7 +43,11 @@ Use the properties of probability and the Geometric Distribution to solve the fo
 	
 	b. A certain basketball player makes a foul shot 45% of the time. Suppose this player stands on the foul line and continues shooting until he makes two baskets. What is the probability that (i) the first basket occurs on the sixth shot? (ii) the first and second baskets occur on the fourth and eighth shots, respectively?
 	
-	c. TODO
+	c. The probability is 0.8 that Marty hits target *M* when he fires at it. The probability is 0.45 that Alvie hits target *A* when he fires at it. Marty and Alvie fire one shot each at their targets. If both of them hit their targets, they stop; otherwise, they will continue. 
+
+     i. What is the probability that they stop after 3 tries? 
+
+     ii. What is the expected number of times they fire before stopping?
 	
 A.P. Exam Practice
 ==================
