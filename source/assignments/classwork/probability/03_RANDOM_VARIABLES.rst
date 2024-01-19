@@ -7,6 +7,30 @@ Random Variables
 Definition
 ==========
 
+.. topic:: Expectation of a Discrete Random Variable
+
+	If :math:`\mathcal{X}` is a discrete random variable that takes on the values :math:`x_i` for :math:`i = 1, 2, 3, ..., n`, then *expectation* of :math:`\mathcal{X}` is defined as,
+	
+	.. math::
+	
+		E(\mathcal{X}) = \sum_{i=1}^{n}{x_i \ cdot P(\mathcal{X} = x_i) }
+		
+.. topic:: Definition of Variance
+
+	If :math:`\mathcal{X}` is a Random Variable, the Variance of :math:`\mathcal{X}` is given by,
+	
+	.. math::
+	
+		Var(\mathcal{X}) = E( (\mathcal{X} - E(\mathcal{X}))^2 )
+		
+.. topic:: Variance Shortcut Formula
+	
+	If :math:`\mathcal{X}` is a Random Variable, the Variance of :math:`\mathcal{X}` can be calculated with the formula,
+	
+	.. math::
+	
+		Var(\mathcal{X}) = E(\mathcal{X}^2) - (E(\mathcal{X})^2)
+		
 1. A random variable :math:`\mathcal{X}` is defined as the number of heads in three coin flips.
 
 	a. List the elements of the sample space for this random variable.
@@ -42,8 +66,35 @@ Definition
 
 	g. Using the probability distribution derived in *part e*, find the variance :math:`Var(\mathcal{X})` of the sum of two die rolls. 
 
-Examples
-========
+
+3. The probability distribution for :math:`\mathcal{X} = \text{number of major defects on a randomly selected toaster oven}` is given by the following table,
+
++-------+--------+
+|  x    |  p(x)  |
++-------+--------+
+|   0   |  0.08  |
++-------+--------+ 
+|   1   |  0.15  |
++-------+--------+ 
+|   2   |  0.45  |
++-------+--------+ 
+|   3   |  0.27  |
++-------+--------+ 
+|   4   |  0.05  |
++-------+--------+ 
+ 
+Compute the following:
+
+a. :math:`E(\mathcal{X})`
+
+b. :math:`Var(\mathcal{X})` directly from the definition.
+
+c. :math:`Var(\mathcal{X})` from the shortcut formula.
+
+d. :math:`sigma_{\mathcal{X}}`
+
+Expectations
+============
 
 1. In a lottery every week, :math:`2,000,000` tickets are sold for $1 apiece. If 4000 of these tickets pay off $30 each, 500 pay off $800 each, one ticket pays off :math:`\$ 1,200,000`, and no ticket pays off more than one prize, what is the expected value of the winning amount for a player with a single ticket?
 
@@ -96,6 +147,22 @@ a. Use this table to find Margaret's expected *revenue over the next month*. Ass
 
 b. The monthly cost of running a bakery is $2000. What is Margaret's expected *profit over the next month*? 
  
+3. A small market orders copies of a certain magazine for its magazine rack each week. Let :math:`\mathcal{X}` represent the number of magazine demanded by customers over the course of a week. The probability density for the magazine deman is given by,
+
++------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+|   x  |            1         |                   2  |                   3  |                   4  |                   5  |                   6  |
++------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+| p(x) | :math:`\frac{1}{15}` | :math:`\frac{2}{15}` | :math:`\frac{3}{15}` | :math:`\frac{4}{15}` | :math:`\frac{3}{15}` | :math:`\frac{2}{15}` |
++------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+
+Suppose the store owner actually pays $1.00 for each copy of the magazine and the price to the customers is $2.00. If the magazines left at the end of the week have no salvage value, is it better to order three or four copies of the magazine each week?
+
+.. hint::
+
+	For both three and four copies ordered, express net revenue as a function of demand :math:`\mathcal{X}` and then compute the expected revenue.
+	
+4. Let :math:`\mathcal{X}` be the amount of damage in dollars incurred due to flooding in a certain region every year. Possible :math:`\mathcal{X}` values are $0, $1000, $5000 and $10000, with probability 0.80, 0.1, 0.08 and 0.02, respectively. Seedy Insurance Company, Inc. offers a $500 deductible policy. If the company wishes its expected project to be $100 per policy, what premium amount should it charge?
+
 Linearity of Expectations
 -------------------------
 
