@@ -1,7 +1,7 @@
-.. _class_notes:
+.. _experiments_class_notes:
 
-Experimental Design
-===================
+Experiments
+===========
 
 .. toctree::
    :maxdepth: 2
