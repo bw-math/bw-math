@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
@@ -35,9 +35,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/stylesheet.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
-  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -62,7 +62,6 @@
   <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -102,13 +101,10 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <header>
   
-    <div class="bd-header navbar navbar-expand-lg bd-navbar">
-    </div>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
-  </header>
 
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
@@ -163,7 +159,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/experiments/index.html">Experimental Design</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/experiments/index.html">Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/00_INTRODUCTION.html">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/01_BIAS.html">Bias</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/02_DESIGN.html">Experimental Design</a></li>
@@ -514,36 +510,51 @@ document.write(`
 </aside>
 <p>Determine whether each of the following experiments satisfies the conditions for a Binomial Random Variable. If it does not satisfy the conditions for a Binomial Random Variable, state which condition is violated and why.</p>
 <blockquote>
-<div><ol class="loweralpha simple">
-<li><p>A student is taking a multiple choice quiz. The quiz has 10 questions, with four possible answers each. Each question has only one correct answer. The student randomly guesses on each question. Let</p></li>
-</ol>
-<div class="math">
+<div><ol class="loweralpha">
+<li><p>A student is taking a multiple choice quiz. The quiz has 10 questions, with four possible answers each. Each question has only one correct answer. The student randomly guesses on each question. Let</p>
+<blockquote>
+<div><div class="math">
 <p><img src="../../../_images/math/7c4cab75e4da087d6ecf3c23d6a9ab39feb6ff14.png" alt="\mathcal{X} = \text{number of correct guesses}"/></p>
-</div><p>Is <img class="math" src="../../../_images/math/421107933bec08756a10526ff90bfb2852b6b0ec.png" alt="mathcal{X}"/> a Binomial Random Variable”</p>
-<p>b. A manager oversees 11 female employees and 9 male employees. They need to pick 3 of these employees to go on a business trip, so the manager places all 20 names in a hat and chooses at random. Let
-.. math:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">mathcal</span><span class="p">{</span><span class="n">X</span><span class="p">}</span> <span class="o">=</span> \<span class="n">text</span><span class="p">{</span><span class="n">number</span> <span class="n">of</span> <span class="n">female</span> <span class="n">employees</span> <span class="n">chosen</span><span class="p">}</span>
-</pre></div>
-</div>
+</div></div></blockquote>
+</li>
+</ol>
+<p>Is <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> a Binomial Random Variable”</p>
+<ol class="loweralpha" start="2">
+<li><p>A manager oversees 11 female employees and 9 male employees. They need to pick 3 of these employees to go on a business trip, so the manager places all 20 names in a hat and chooses at random. Let</p>
+<blockquote>
+<div><div class="math">
+<p><img src="../../../_images/math/8d50db60bd8874a5d5f09b7b35dd7ab0e5ff583f.png" alt="\mathcal{X} = \text{number of female employees chosen}"/></p>
+</div></div></blockquote>
+</li>
+</ol>
 <p>Is <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> a Binomial Random Variable?</p>
-<ol class="loweralpha simple" start="3">
-<li><p>You deal yourself a hand of 5 cards from a standard deck of 52 cards. Let</p></li>
-</ol>
-<div class="math">
+<ol class="loweralpha" start="3">
+<li><p>You deal yourself a hand of 5 cards from a standard deck of 52 cards. Let</p>
+<blockquote>
+<div><div class="math">
 <p><img src="../../../_images/math/4c4c5bf08b1f5427f9121d4ae30c8307d3d897d7.png" alt="\mathcal{X} = \text{number of Aces dealt}"/></p>
-</div><p>Is <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> a Binomial Random Variable?</p>
-<ol class="loweralpha simple" start="4">
-<li><p>You deal yourself a single card from a standard deck of 52 cards, place it back into the deck and reshuffle. You repeat this process 10 times. Let</p></li>
+</div></div></blockquote>
+</li>
 </ol>
-<div class="math">
+<p>Is <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> a Binomial Random Variable?</p>
+<ol class="loweralpha" start="4">
+<li><p>You deal yourself a single card from a standard deck of 52 cards, place it back into the deck and reshuffle. You repeat this process 10 times. Let</p>
+<blockquote>
+<div><div class="math">
 <p><img src="../../../_images/math/4c4c5bf08b1f5427f9121d4ae30c8307d3d897d7.png" alt="\mathcal{X} = \text{number of Aces dealt}"/></p>
-</div><p>Is <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> a Binomial Random Variable?</p>
-<ol class="loweralpha simple" start="5">
-<li><p><a class="reference external" href="https://www.explainxkcd.com/wiki/index.php/1769:_Never_Seen_Star_Wars">15% of the world’s population has seen atleast one Star Wars film</a>. You ask 20 students whether or not they have seen a Star Wars film. Let</p></li>
+</div></div></blockquote>
+</li>
 </ol>
-<div class="math">
+<p>Is <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> a Binomial Random Variable?</p>
+<ol class="loweralpha" start="5">
+<li><p><a class="reference external" href="https://www.explainxkcd.com/wiki/index.php/1769:_Never_Seen_Star_Wars">15% of the world’s population has seen atleast one Star Wars film</a>. You ask 20 students whether or not they have seen a Star Wars film. Let</p>
+<blockquote>
+<div><div class="math">
 <p><img src="../../../_images/math/290c568117cf415dcfabac59ed3ef3b5414e9418.png" alt="\mathcal{X} = \text{number of people who have seen atleast one Star Wars film}"/></p>
-</div><p>Is <img class="math" src="../../../_images/math/421107933bec08756a10526ff90bfb2852b6b0ec.png" alt="mathcal{X}"/> a Binomial Random Variable?</p>
+</div></div></blockquote>
+</li>
+</ol>
+<p>Is <img class="math" src="../../../_images/math/421107933bec08756a10526ff90bfb2852b6b0ec.png" alt="mathcal{X}"/> a Binomial Random Variable?</p>
 </div></blockquote>
 <ol class="arabic simple" start="2">
 <li><p><strong>Probability Density</strong></p></li>
@@ -791,8 +802,8 @@ By Grant Moore
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>
