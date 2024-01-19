@@ -61,7 +61,7 @@ Determine whether each of the following experiments satisfies the conditions for
 		
 			\mathcal{X} = \text{number of people who have seen atleast one Star Wars film}
 		
-	Is :math:`mathcal{X}` a Binomial Random Variable?
+	Is :math:`\mathcal{X}` a Binomial Random Variable?
 	
 2. **Probability Density**
 
