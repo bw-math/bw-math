@@ -217,8 +217,10 @@
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Classwork</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l3 has-children"><a class="reference internal" href="../celebrations/index.html">Celebrations of Knowledge</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../celebrations/00_STATS_Q1.html">Statistics: Quarter One</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../celebrations/02_STATS_Q2.html">Statistics: Quarter Two</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../celebrations/03_CALC_Q2.html">Calculus: Quarter Two</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/01_STATS_Q2.html">Statistics: Quarter Two</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/02_STATS_Q3.html">Statistics: Quarter Three</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/03_STATS_Q4.html">Statistics: Quarter Four</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/04_CALC_Q2.html">Calculus: Quarter Two</a></li>
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../algebra/index.html">Algebra</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -559,10 +561,12 @@ document.write(`
 <ol class="arabic simple" start="2">
 <li><p><strong>Probability Density</strong></p></li>
 </ol>
-<p>Use the Binomial Probability Density Function,</p>
+<aside class="topic">
+<p class="topic-title">Binomial Probability Density Function</p>
 <div class="math">
-<p><img src="../../../_images/math/6e0c3b761d4b9942c6206f3ef8229f8f34936d14.png" alt="P(\mathcal{X}=x) = C^{n}_{r} \cdot p^x \cdot (1-p)^(n-x)"/></p>
-</div><p>to answer the following questions.</p>
+<p><img src="../../../_images/math/af107b77415332e17c27519437ea99b790018ed1.png" alt="P(\mathcal{X}=x) = C^{n}_{r} \cdot p^x \cdot (1-p)^{n-x}"/></p>
+</div></aside>
+<p>Use the Binomal Probability Density Function to answer the following questions.</p>
 <blockquote>
 <div><ol class="loweralpha">
 <li><p>Before performing any calculations, answer the following questions.</p>
@@ -664,35 +668,44 @@ document.write(`
 <ol class="arabic simple" start="5">
 <li><p><strong>2007, Free Response Form B, #2</strong></p></li>
 </ol>
-<p>TODO</p>
+<p>The graph below displays the relative frequency distribution for X, the total number of dogs and cats owned per household, for the households in a large suburban area. For instance, 14 percent of the households own 2 of these pets.</p>
+<img alt="../../../_images/2007_apstats_frp_formb_02.png" class="align-center" src="../../../_images/2007_apstats_frp_formb_02.png" />
+<p>Use this information to solve the following problems.</p>
+<ol class="loweralpha simple">
+<li><p>According to a local law, each household in this area is prohibited from owning more than 3 of these pets. If a household in this area is selected at random, what is the probability that the selected household will be in violation of this law? Show your work.</p></li>
+<li><p>If 10 households in this area are selected at random, what is the probability that exactly 2 of them will be in violation of this law? Show your work.</p></li>
+<li><p>The mean and standard deviation of X are 1.65 and 1.851, respectively. Suppose 150 households in this area are to be selected at random and X , the mean number of dogs and cats per household, is to be computed. Describe the sampling distribution of X , including its shape, center, and spread.</p></li>
+</ol>
 <ol class="arabic simple" start="6">
 <li><p><strong>2009, Free Response, #2</strong></p></li>
 </ol>
-<p>TODO: only a and b</p>
+<p>A tire manufacturer designed a new tread pattern for its all-weather tires. Repeated tests were conducted on cars of approximately the same weight traveling at 60 miles per hour. The tests showed that the new tread pattern enables the cars to stop completely in an average distance of 125 feet with a standard deviation of 6.5 feet and that the stopping distances are approximately normally distributed.</p>
+<ol class="loweralpha simple">
+<li><p>What is the 70th percentile of the distribution of stopping distances?</p></li>
+<li><p>What is the probability that at least 2 cars out of 5 randomly selected cars in the study will stop in a distance that is greater than the distance calculated in <em>part a</em> ?</p></li>
+<li><p>What is the probability that a randomly selected sample of 5 cars in the study will have a mean stopping distance of at least 130 feet?</p></li>
+</ol>
 <ol class="arabic simple" start="7">
 <li><p><strong>2022, Free Response, #3</strong></p></li>
 </ol>
 <p>A machine at a manufacturing company is programmed to fill shampoo bottles such that the amount of shampoo in each bottle is normally distributed with mean 0.60 liter and standard deviation 0.04 liter. Let the random variable <strong>A</strong> represent the amount of shampoo, in liters, that is inserted into a bottle by the filling machine.</p>
-<ol class="loweralpha simple">
+<ol class="loweralpha">
 <li><p>A bottle is considered to be underfilled if it has less than 0.50 liter of shampoo. Determine the probability that a randomly selected bottle of shampoo will be underfilled. Show your work.</p></li>
-<li><p>After the bottles are filled, they are placed in boxes of 10 bottles per box. After the bottles are placed in the boxes, several boxes are placed in a crate for shipping to a beauty supply warehouse. The manufacturing company’s contract with the beauty supply warehouse states that one box will be randomly selected from a crate. If 2 or more bottles in the selected box are underfilled, the entire crate will be rejected and sent back to the manufacturing company.</p></li>
-</ol>
-<p>The beauty supply warehouse manager is interested in the probability that a crate shipped to the warehouse will be rejected. Assume that the amounts of shampoo in the bottles are independent of each other.</p>
+<li><p>After the bottles are filled, they are placed in boxes of 10 bottles per box. After the bottles are placed in the boxes, several boxes are placed in a crate for shipping to a beauty supply warehouse. The manufacturing company’s contract with the beauty supply warehouse states that one box will be randomly selected from a crate. If 2 or more bottles in the selected box are underfilled, the entire crate will be rejected and sent back to the manufacturing company. The beauty supply warehouse manager is interested in the probability that a crate shipped to the warehouse will be rejected. Assume that the amounts of shampoo in the bottles are independent of each other.</p>
 <blockquote>
 <div><ol class="lowerroman simple">
 <li><p>Define the random variable of interest for the warehouse manager and state how the random variable is distributed.</p></li>
 <li><p>Determine the probability that a crate will be rejected by the warehouse manager. Show your work.</p></li>
 </ol>
 </div></blockquote>
-<ol class="loweralpha simple" start="3">
+</li>
 <li><p>To reduce the number of crates rejected by the beauty supply warehouse manager, the manufacturing company is considering adjusting the programming of the filling machine so that the amount of shampoo in each bottle is normally distributed with mean 0.56 liter and standard deviation 0.03 liter.</p></li>
 </ol>
 <p>Would you recommend that the manufacturing company use the original programming of the filling machine or the adjusted programming of the filling machine? Provide a statistical justification for your choice.</p>
 <ol class="arabic simple" start="8">
 <li><p><strong>2021, Free Response, #3</strong></p></li>
 </ol>
-<p>To increase morale among employees, a company began a program in which one employee is randomly
-selected each week to receive a gift card. Each of the company’s 200 employees is equally likely to be selected each week, and the same employee could be selected more than once. Each week’s selection is independent from every other week.</p>
+<p>To increase morale among employees, a company began a program in which one employee is randomly selected each week to receive a gift card. Each of the company’s 200 employees is equally likely to be selected each week, and the same employee could be selected more than once. Each week’s selection is independent from every other week.</p>
 <ol class="loweralpha">
 <li><p>Consider the probability that a particular employee receives at least one gift card in a 52 -week year.</p>
 <blockquote>

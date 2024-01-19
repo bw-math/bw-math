@@ -217,8 +217,10 @@
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/classwork/index.html">Classwork</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/celebrations/index.html">Celebrations of Knowledge</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/00_STATS_Q1.html">Statistics: Quarter One</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/02_STATS_Q2.html">Statistics: Quarter Two</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/03_CALC_Q2.html">Calculus: Quarter Two</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/01_STATS_Q2.html">Statistics: Quarter Two</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/02_STATS_Q3.html">Statistics: Quarter Three</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/03_STATS_Q4.html">Statistics: Quarter Four</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/04_CALC_Q2.html">Calculus: Quarter Two</a></li>
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/algebra/index.html">Algebra</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -496,7 +498,10 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation">Expectation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variance">Variance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variance">Variance</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scalar-properties">Scalar Properties</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linearity-of-expectations">Linearity of Expectations</a></li>
@@ -649,7 +654,7 @@ document.write(`
 <p>TODO</p>
 <aside class="topic">
 <p class="topic-title">Expectation of a Discrete Random Variable</p>
-<p>Let <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> be a discrete random variable that takes on the values <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> for <img class="math" src="../../_images/math/a481b68cca2dd2ec91961f41999ae31343d16aea.png" alt="i = 1, 2, 3, ..., n"/>. The <a href="#id3"><span class="problematic" id="id4">*</span></a>expectation of <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is defined,</p>
+<p>If <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is a discrete random variable that takes on the values <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> for <img class="math" src="../../_images/math/a481b68cca2dd2ec91961f41999ae31343d16aea.png" alt="i = 1, 2, 3, ..., n"/>, then <em>expectation</em> of <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is defined as,</p>
 <div class="math">
 <p><img src="../../_images/math/31bc024a4e270416530d0620e1659777e916a8a9.png" alt="E(\mathcal{X}) = \sum_{i=1}^{n}{x_i \ cdot P(\mathcal{X} = x_i) }"/></p>
 </div></aside>
@@ -664,16 +669,35 @@ document.write(`
 <div class="math">
 <p><img src="../../_images/math/baf9a0c555dd01ae3bb85997212f1c74e6216073.png" alt="\bar{x} = \sum_{x_i \in S} {x_i \cdot p(x_i)}"/></p>
 </div><p>The connection is now more apparent. In the limit, as the number of observations in the sample <em>S</em> approaches the number of individuals in the population, the <em>relative frequency</em> of an observation becomes the <em>probability</em> of the individual occuring in the population.</p>
+<p>TODO</p>
 </section>
 <section id="variance">
 <span id="random-variable-variance"></span><h2>Variance<a class="headerlink" href="#variance" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Variance of Random Variable</p>
+<p>If <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is a Random Variable, the Variance of <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is given by,</p>
+<div class="math">
+<p><img src="../../_images/math/14039845ccfff87b50138c1b1cd446c967b8c36a.png" alt="Var(\mathcal{X}) = E( (\mathcal{X} - E(\mathcal{X}))^2 )"/></p>
+</div></aside>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Variance Shortcut Formula</p>
+<p>If <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is a Random Variable, the Variance of <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> can be calculated with the formula,</p>
+<div class="math">
+<p><img src="../../_images/math/9ef2c33102aa7b2e8d16471dd366e63b8b04b95f.png" alt="Var(\mathcal{X}) = E(\mathcal{X}^2) - (E(\mathcal{X})^2)"/></p>
+</div></aside>
+<p>TODO</p>
+<section id="standard-deviation">
+<h3>Standard Deviation<a class="headerlink" href="#standard-deviation" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+</section>
 </section>
 <section id="theorems">
 <span id="random-variable-theorems"></span><h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
 <section id="scalar-properties">
-<span id="id5"></span><h3>Scalar Properties<a class="headerlink" href="#scalar-properties" title="Permalink to this heading">#</a></h3>
+<span id="id3"></span><h3>Scalar Properties<a class="headerlink" href="#scalar-properties" title="Permalink to this heading">#</a></h3>
 <p>The results in this section will be used as building blocks to construct complex Random Variables from simple foundations. The following properties of Random Variables state how the expectation of a given <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is shifted and scaled by a constant factor of <em>a</em></p>
 <aside class="topic">
 <p class="topic-title">Additive Property of Expectations</p>
@@ -689,7 +713,7 @@ document.write(`
 </div></aside>
 </section>
 <section id="linearity-of-expectations">
-<span id="id6"></span><h3>Linearity of Expectations<a class="headerlink" href="#linearity-of-expectations" title="Permalink to this heading">#</a></h3>
+<span id="id4"></span><h3>Linearity of Expectations<a class="headerlink" href="#linearity-of-expectations" title="Permalink to this heading">#</a></h3>
 <p>The <a class="reference internal" href="#scalar-properties"><span class="std std-ref">Scalar Properties</span></a> detail how the expectation of a Random Variable is modified by a constant value. The results of this section extend this idea to the composition of Random Variables. In other words, the following theorem describes how the expectation of a sum of Random Variables can be decomposed into the expectation of each individual Random Variable in the sum,</p>
 <aside class="topic">
 <p class="topic-title">Expectation of a Sum</p>
@@ -712,79 +736,15 @@ document.write(`
 <p><img src="../../_images/math/38557965316bf7379118efa343650c0b86de1125.png" alt="E(\mathcal{X}) + E(\mathcal{Y})"/></p>
 </div><p>For <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/>, note the outcome of winning $1 has a probability of <img class="math" src="../../_images/math/a4ab89274e9c797380bb6999ca05fb914445cb7e.png" alt="\frac{1}{6}"/> and the outcome of winning $0 has a probability of <img class="math" src="../../_images/math/5f26cff68183dc184416f359fae16bd3d4b25b6c.png" alt="\frac{5}{6}"/>. Therefore,</p>
 <div class="math">
-<p><img src="../../_images/math/b62ec4383a3f0c645bf2d0fb5c22b7ec05136768.png" alt=""/></p>
-</div><div class="math">
-<p><img src="../../_images/math/5a51936712c61c38f8ab849b7c967fe59790cf54.png" alt="E(\mathcal{X}) \approx \$0.17"/></p>
+<p><img src="../../_images/math/e63f2e77439cb71cf37d7038b9a3fa803e065532.png" alt="E(\mathcal{X}) \approx \$ 0.17"/></p>
 </div><p>Similary, the expectation of <img class="math" src="../../_images/math/ad6daa2629cc37a5667723358ec601482bea795c.png" alt="\mathcal{Y}"/> is found by,</p>
-<aside class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">E(\mathcal{Y}) = \$ 1 \ cdot 0.5 + $ 0 \cdot</span>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2021-11-15&gt; patch level 1
-L3 programming layer &lt;2022-01-21&gt;
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
-(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
-! Missing } inserted.
-&lt;inserted text&gt; 
-                }
-l.16 ...) = \$ 1 \ cdot 0.5 + $ 0 \cdot\end{split}
-                                                  
-! Missing $ inserted.
-&lt;inserted text&gt; 
-                $
-l.16 ...) = \$ 1 \ cdot 0.5 + $ 0 \cdot\end{split}
-                                                  
-! Missing { inserted.
-&lt;inserted text&gt; 
-                {
-l.16 ...) = \$ 1 \ cdot 0.5 + $ 0 \cdot\end{split}
-                                                  
-! Missing } inserted.
-&lt;inserted text&gt; 
-                }
-l.16 ...) = \$ 1 \ cdot 0.5 + $ 0 \cdot\end{split}
-                                                  
-! Missing $ inserted.
-&lt;inserted text&gt; 
-                $
-l.16 ...) = \$ 1 \ cdot 0.5 + $ 0 \cdot\end{split}
-                                                  
-! Missing { inserted.
-&lt;inserted text&gt; 
-                {
-l.16 ...) = \$ 1 \ cdot 0.5 + $ 0 \cdot\end{split}
-                                                  
-[1] (./math.aux) )
-(see the transcript file for additional information)
-Output written on math.dvi (1 page, 408 bytes).
-Transcript written on math.log.
-</p>
-</aside>
 <div class="math">
+<p><img src="../../_images/math/79e3d5bd192e039fb7d60bec45915abf13e455dd.png" alt="E(\mathcal{Y}) = \$ 1 \ cdot 0.5 + \$ 0 \cdot"/></p>
+</div><div class="math">
 <p><img src="../../_images/math/02d80670c06900eb58aed66e7765b506f130ad29.png" alt="E(\mathcal{Y}) = \$ 0.50"/></p>
 </div><p>Therefore, the expected value of the winnings in this game is,</p>
 <div class="math">
-<p><img src="../../_images/math/8eeb9e8ebc722033dc2ac4aacae1d3a2bd793c84.png" alt="E(\mathcal{X} + \mathcal{Y}) = 0.17 + 0.50 = \$ 0.67"/></p>
+<p><img src="../../_images/math/0fb38cac324112da282180da7e339978b892051e.png" alt="E(\mathcal{X} + \mathcal{Y}) = \$ 0.17 + \$ 0.50 = \$ 0.67"/></p>
 </div></aside>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -870,7 +830,10 @@ Transcript written on math.log.
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expectation">Expectation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variance">Variance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variance">Variance</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-deviation">Standard Deviation</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scalar-properties">Scalar Properties</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linearity-of-expectations">Linearity of Expectations</a></li>

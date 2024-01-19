@@ -89,6 +89,7 @@ Probability Density Function
 TODO 
 
 .. math:: 
+
     p(x; n, p) = C^{n}_x \cdot p^{x} \cdot (1 - p)^{n-x}
 
 .. _binomial_cdf:
@@ -97,6 +98,13 @@ Cumulative Distribution Function
 --------------------------------
 
 TODO
+
+By definition,
+
+
+.. math:: 
+
+    F(x; n, p) = \sum^{x}_{i=0} C^{n}_i \cdot p^{i} \cdot (1 - p)^{n-i}
 
 .. _binomial_expectation:
 
@@ -107,11 +115,40 @@ TODO
 
 derive through rules of independent random variable sums
 
+.. topic:: Expectation of Binomial Random Variable
+
+	If :math:`\mathcal{X}` is the number of successes in *n* independent trials, each with probability *p*, then the expectation of :math:`\mathcal{X}`, :math:`E(\mathcal{X})`, is given by,
+	
+	.. math::
+	
+		E(\mathcal{X}) = n \ cdot p
+		
+TODO
+
 .. _binomial_standard_deviation:
 
 Standard Deviation
 ------------------
 
+TODO
+
+.. topic:: Variance of Binomial Random Variable
+
+	If :math:`\mathcal{X}` is the number of successes in *n* independent trials, each with probability *p*, then the variance of :math:`\mathcal{X}`, :math:`Var(\mathcal{X})`, is given by,
+	
+	.. math::
+	
+		Var(\mathcal{X}) = n \ cdot p \cdot (1 - p)
+	
+TODO
+	
+.. topic:: Standard Deviation of Binomial Random Variable
+
+	If :math:`\mathcal{X}` is the number of successes in *n* independent trials, each with probability *p*, then the standard deviation of :math:`\mathcal{X}`, :math:`\sigma_{Bin(n,p)}`, is given by,
+	
+	.. math::
+	
+		\sigma_{Bin(n,p)} = n \ cdot p
 TODO
 
 derive through rules of independent random variable sums

@@ -65,13 +65,13 @@ Determine whether each of the following experiments satisfies the conditions for
 	
 2. **Probability Density**
 
-Use the Binomial Probability Density Function,
+.. topic:: Binomial Probability Density Function
 
-.. math::
+	.. math::
 
-	P(\mathcal{X}=x) = C^{n}_{r} \cdot p^x \cdot (1-p)^(n-x)
-	
-to answer the following questions.
+		P(\mathcal{X}=x) = C^{n}_{r} \cdot p^x \cdot (1-p)^{n-x}
+		
+Use the Binomal Probability Density Function to answer the following questions.
 
 	a. Before performing any calculations, answer the following questions. 
 	
@@ -185,11 +185,28 @@ Does the proposed process correctly simulate the random selection of 3 women fro
 
 5. **2007, Free Response Form B, #2**
 
-TODO
+The graph below displays the relative frequency distribution for X, the total number of dogs and cats owned per household, for the households in a large suburban area. For instance, 14 percent of the households own 2 of these pets.
+
+.. image:: ../../../assets/imgs/classwork/2007_apstats_frp_formb_02.png
+	:align: center
+
+Use this information to solve the following problems.
+
+a. According to a local law, each household in this area is prohibited from owning more than 3 of these pets. If a household in this area is selected at random, what is the probability that the selected household will be in violation of this law? Show your work.
+
+b. If 10 households in this area are selected at random, what is the probability that exactly 2 of them will be in violation of this law? Show your work.
+
+c. The mean and standard deviation of X are 1.65 and 1.851, respectively. Suppose 150 households in this area are to be selected at random and X , the mean number of dogs and cats per household, is to be computed. Describe the sampling distribution of X , including its shape, center, and spread.
 
 6. **2009, Free Response, #2**
 
-TODO: only a and b
+A tire manufacturer designed a new tread pattern for its all-weather tires. Repeated tests were conducted on cars of approximately the same weight traveling at 60 miles per hour. The tests showed that the new tread pattern enables the cars to stop completely in an average distance of 125 feet with a standard deviation of 6.5 feet and that the stopping distances are approximately normally distributed.
+
+a. What is the 70th percentile of the distribution of stopping distances?
+
+b. What is the probability that at least 2 cars out of 5 randomly selected cars in the study will stop in a distance that is greater than the distance calculated in *part a* ?
+
+c. What is the probability that a randomly selected sample of 5 cars in the study will have a mean stopping distance of at least 130 feet?
 
 
 7. **2022, Free Response, #3** 
@@ -198,14 +215,11 @@ A machine at a manufacturing company is programmed to fill shampoo bottles such 
 
 a. A bottle is considered to be underfilled if it has less than 0.50 liter of shampoo. Determine the probability that a randomly selected bottle of shampoo will be underfilled. Show your work.
 
+b. After the bottles are filled, they are placed in boxes of 10 bottles per box. After the bottles are placed in the boxes, several boxes are placed in a crate for shipping to a beauty supply warehouse. The manufacturing company's contract with the beauty supply warehouse states that one box will be randomly selected from a crate. If 2 or more bottles in the selected box are underfilled, the entire crate will be rejected and sent back to the manufacturing company. The beauty supply warehouse manager is interested in the probability that a crate shipped to the warehouse will be rejected. Assume that the amounts of shampoo in the bottles are independent of each other.
 
-b. After the bottles are filled, they are placed in boxes of 10 bottles per box. After the bottles are placed in the boxes, several boxes are placed in a crate for shipping to a beauty supply warehouse. The manufacturing company's contract with the beauty supply warehouse states that one box will be randomly selected from a crate. If 2 or more bottles in the selected box are underfilled, the entire crate will be rejected and sent back to the manufacturing company.
+	i. Define the random variable of interest for the warehouse manager and state how the random variable is distributed.
 
-The beauty supply warehouse manager is interested in the probability that a crate shipped to the warehouse will be rejected. Assume that the amounts of shampoo in the bottles are independent of each other.
-
-    i. Define the random variable of interest for the warehouse manager and state how the random variable is distributed.
-
-    ii. Determine the probability that a crate will be rejected by the warehouse manager. Show your work.
+	ii. Determine the probability that a crate will be rejected by the warehouse manager. Show your work.
 
 c. To reduce the number of crates rejected by the beauty supply warehouse manager, the manufacturing company is considering adjusting the programming of the filling machine so that the amount of shampoo in each bottle is normally distributed with mean 0.56 liter and standard deviation 0.03 liter.
 
@@ -213,14 +227,13 @@ Would you recommend that the manufacturing company use the original programming 
 
 8. **2021, Free Response, #3**
 
-To increase morale among employees, a company began a program in which one employee is randomly
-selected each week to receive a gift card. Each of the company's 200 employees is equally likely to be selected each week, and the same employee could be selected more than once. Each week’s selection is independent from every other week.
+To increase morale among employees, a company began a program in which one employee is randomly selected each week to receive a gift card. Each of the company's 200 employees is equally likely to be selected each week, and the same employee could be selected more than once. Each week’s selection is independent from every other week.
 
 a. Consider the probability that a particular employee receives at least one gift card in a 52 -week year.
 
-    i. Define the random variable of interest and state how the random variable is distributed.
-
-    ii. Determine the probability that a particular employee receives at least one gift card in a 52 -week year. Show your work.
+	i. Define the random variable of interest and state how the random variable is distributed.
+	
+	ii. Determine the probability that a particular employee receives at least one gift card in a 52 -week year. Show your work.
 
 b. Calculate and interpret the expected value for the number of gift cards a particular employee will receive in a 52 -week year. Show your work.
 

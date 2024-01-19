@@ -192,7 +192,7 @@ TODO
 
 .. topic:: Expectation of a Discrete Random Variable
 
-	Let :math:`\mathcal{X}` be a discrete random variable that takes on the values :math:`x_i` for :math:`i = 1, 2, 3, ..., n`. The *expectation of :math:`\mathcal{X}` is defined,
+	If :math:`\mathcal{X}` is a discrete random variable that takes on the values :math:`x_i` for :math:`i = 1, 2, 3, ..., n`, then *expectation* of :math:`\mathcal{X}` is defined as,
 	
 	.. math::
 	
@@ -220,12 +220,39 @@ However, when it is written like this, the connection to *expectations* is not s
 	
 The connection is now more apparent. In the limit, as the number of observations in the sample *S* approaches the number of individuals in the population, the *relative frequency* of an observation becomes the *probability* of the individual occuring in the population.
 
+TODO
+
 .. _random_variable_variance:
 
 Variance
 ========
 
 TODO 
+
+.. topic:: Variance of Random Variable
+
+	If :math:`\mathcal{X}` is a Random Variable, the Variance of :math:`\mathcal{X}` is given by,
+	
+	.. math::
+	
+		Var(\mathcal{X}) = E( (\mathcal{X} - E(\mathcal{X}))^2 )
+		
+TODO
+
+.. topic:: Variance Shortcut Formula
+	
+	If :math:`\mathcal{X}` is a Random Variable, the Variance of :math:`\mathcal{X}` can be calculated with the formula,
+	
+	.. math::
+	
+		Var(\mathcal{X}) = E(\mathcal{X}^2) - (E(\mathcal{X})^2)
+
+TODO
+
+Standard Deviation
+------------------
+
+TODO
 
 .. _random_variable_theorems:
 
@@ -298,16 +325,13 @@ TODO
 	
 	.. math::
 	
-		
-	.. math::
-	
-		E(\mathcal{X}) \approx \$0.17
+		E(\mathcal{X}) \approx \$ 0.17
 		
 	Similary, the expectation of :math:`\mathcal{Y}` is found by,
 	
 	.. math:: 
 	
-		E(\mathcal{Y}) = \$ 1 \ cdot 0.5 + $ 0 \cdot
+		E(\mathcal{Y}) = \$ 1 \ cdot 0.5 + \$ 0 \cdot
 		
 	.. math::
 	
@@ -317,7 +341,7 @@ TODO
 	
 	.. math::
 	
-		E(\mathcal{X} + \mathcal{Y}) = 0.17 + 0.50 = \$ 0.67 
+		E(\mathcal{X} + \mathcal{Y}) = \$ 0.17 + \$ 0.50 = \$ 0.67 
 		
 .. note::
 
