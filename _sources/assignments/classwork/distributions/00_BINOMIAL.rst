@@ -61,7 +61,7 @@ Determine whether each of the following experiments satisfies the conditions for
 		
 			\mathcal{X} = \text{number of people who have seen atleast one Star Wars film}
 		
-	Is :math:`mathcal{X}` a Binomial Random Variable?
+	Is :math:`\mathcal{X}` a Binomial Random Variable?
 	
 2. **Probability Density**
 
@@ -93,8 +93,16 @@ Use the Binomal Probability Density Function to answer the following questions.
 
 3. **Applications**
 
-	a. TODO
+	a. Suppose that only 25% of all drivers come to a complete stop at an intersection having flashing red lights in all directions when no other cars are visible. You stand at the intersection and randomly sample 20 cars as they pass through the intersection.
+
+		i. What is the probability at most 6 will come to a complete stop?
+		
+		ii. What is the probability exactly 6 will come to a complete stop?
 	
+		iii. What is the probability at least 6 will come to a complete stop?
+		
+		iv. How many drivers in your sample do you expect to come to a complete stop?
+		
 	b. TODO
 	
 	c. TODO
