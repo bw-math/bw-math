@@ -204,7 +204,7 @@ An equivalent way of defining a *proper subset* is given by,
 .. math::
     \forall x: x \in A \implies x \in B \text{ and } n(A) < n(B)
 
-This is an equivalent formulation because saying the cardinality of **A** is less than the cardinality of **B** is logically equivalent to saying **A** is not identical to **B**.
+This is an equivalent formulation because saying cthe cardinality of **A** is less than the cardinality of **B** *and* all members of **A** are members of **B**" is logically equivalent to saying "**A** is not identical to **B** *and* all members of **A** are members of **B**".
 
 .. _set_equivalence:
 
