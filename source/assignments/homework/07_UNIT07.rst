@@ -3,9 +3,5 @@
 ===============
 Unit 7 Homework 
 ===============
-
-.. note:: 
-    
-    From the *Starnes and Tabor* textbook.
-    
+ 
 TBA 
