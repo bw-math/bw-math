@@ -431,7 +431,7 @@ a. Events are *mutually exclusive* if they share no outcomes. If the first card 
 
 b. This part is a bit trickier to see. Recall that the union of complements is equal to the sample space (:ref:`universal set <universal_set>`),
 
-.. image:: ../../../assets/imgs/sets/sets_complement.jpg
+.. image:: ../../../../assets/imgs/sets/sets_complement.jpg
 	:align: center 
 
 If you take all of the outcomes in an event **A** and add to them the outcomes *not* in event **A**, then you will have all of the outcomes of the sample space. 
