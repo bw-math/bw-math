@@ -21,11 +21,9 @@ b. How many five-digit numbers can be formed using the digits *0, 1, 2, 3, 4, 5,
 
 3. **Tree Diagrams**
 
-Augustus Octavian Romero has $4. He decides to bet $1 to win $1 on the flip of a fair coin four times. What is the probability of Augustus Octavian Romero breaking even?
+a. Tabitha and Vivienne St. Clair keep playing chess until one of them wins two games in a row or three games altogether. In what percent of all possible cases does the game end because Tabitha wins three games without winning two in a row?
 
-.. hint::
-
-     Draw a :ref:`tree diagram <tree_diagrams>`!
+b. Augustus Octavian Romero has $4. He decides to bet $1 to win $1 on the flip of a fair coin four times. What is the probability of Augustus Octavian Romero breaking even?
 
 Permutations
 ============
