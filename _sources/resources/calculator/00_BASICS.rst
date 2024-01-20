@@ -99,14 +99,14 @@ Alternatively, lists can be stored into list variables using the :math:`\implies
 
 	The following command sequence will store the numbers "*1*", "*2*" and "*3*" in the :math:`L_1` list,
 	
-	- :math:`\text{BUTTON (2ND) } : \text{ { }`
+	- :math:`\text{BUTTON (2ND) } : \{ `
 	- :math:`\text{BUTTON} : \text{ 1 }`
 	- :math:`\text{BUTTON} : \text{ , }`
 	- :math:`\text{BUTTON} : \text{ 2 }`
 	- :math:`\text{BUTTON} : \text{ , }`
 	- :math:`\text{BUTTON} : \text{ 3 }`
 	- :math:`\text{BUTTON} : \text{ , }`
-	- :math:`\text{BUTTON (2ND) } : \text{ } }`
+	- :math:`\text{BUTTON (2ND) } : \}`
 	- :math:`\text{BUTTON} : \implies
 	- :math:`\text{BUTTON} : L_1`
 	
@@ -193,7 +193,7 @@ TODO
 
 	- :math:`\text{BUTTON (2ND)} : \text{LIST}`
 	- :math:`\text{MENU} : \text{OPS}`
-	- :math:`6 : \Text{SEQ(}`
+	- :math:`6 : \text{SEQ(}`
 	- :math:`\text{BUTTON (2ND)} : L_1`
 
 .. _calculator_augment_operation:
@@ -207,7 +207,7 @@ TODO
 
 	- :math:`\text{BUTTON (2ND)} : \text{LIST}`
 	- :math:`\text{MENU} : \text{OPS}`
-	- :math:`9 : \Text{AUGMENT(}`
+	- :math:`9 : \text{AUGMENT(}`
 	- :math:`\text{BUTTON (2ND)} : L_1`
 
 .. _calculator_list_math:
