@@ -19,6 +19,14 @@ a. How many four-digit numbers can be formed using the digits *0, 1, 2, 3, 4, 5,
 	
 b. How many five-digit numbers can be formed using the digits *0, 1, 2, 3, 4, 5, 6, 7, 8* and *9* if the first digit cannot be 0 or 1? Repeated digits are still allowed.
 
+3. **Tree Diagrams**
+
+Augustus Octavian Romero has $4. He decides to bet $1 to win $1 on the flip of a fair coin four times. What is the probability of Augustus Octavian Romero breaking even?
+
+.. hint::
+
+     Draw a :ref:`tree diagram <tree_diagrams>`!
+
 Permutations
 ============
 
