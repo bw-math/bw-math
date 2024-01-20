@@ -1,11 +1,5 @@
-# Bishop Walsh A.P. Stats
+# Bishop Walsh Mathematics
 
-## Prerequisites
+Welcome to Bishop Walsh High School's Github page. There's not much here right now, but that will soon change!
 
-```shell
-sudo apt-get install python3-tk
-```
-
-```shell
-pip3 install -r requirements.txt
-```
+In the meantime, visit our mathematics webpage at [bishopwalshmath.org](https://bishopwalshmath.org).
