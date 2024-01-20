@@ -209,7 +209,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/05_UNIT05.html">Unit 5 Homework</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/06_UNIT06.html">Unit 6 Homework</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/07_UNIT07.html">Unit 7 Homework</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/08_UNIT08.html">Unit 9 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/08_UNIT08.html">Unit 8 Homework</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/09_UNIT09.html">Unit 9 Homework</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/10_CHAP01_OS.html">Chapter 1 Homework (OpenStax Text)</a></li>
 </ul>
@@ -604,8 +604,8 @@ document.write(`
 <summary>Solution</summary><p>We have two sets in this problem: the set of shirts in our closet, and the set of pants in our dresser.</p>
 <a class="reference internal image-reference" href="../../_images/combinatorics_example.png"><img alt="../../_images/combinatorics_example.png" class="align-center" src="../../_images/combinatorics_example.png" style="width: 60%;" /></a>
 <p>The outfits we can pick are formed by first picking a shirt from the set of shirts, and then picking a pair of pants from the set of pants. The first set contains four elements and the second set contains three elements. Therefore, by the <strong>Counting Principle</strong>, the total number of outfits is the product of the two cardinalities, <img class="math" src="../../_images/math/a42af35ef1d9232ad1a42cdebc4592c322515b48.png" alt="4 \cdot 3 = 12"/>.</p>
-</details><div class="admonition warning">
-<p class="admonition-title">Warning</p>
+</details><aside class="topic">
+<p class="topic-title">The Fundamental Counting Principle</p>
 <p>We state the hypothesis and conclusion of the <strong>Counting Principle</strong> in precise symbols below,</p>
 <blockquote>
 <div><div class="math">
@@ -617,7 +617,7 @@ document.write(`
 </div><div class="math">
 <p><img src="../../_images/math/39eb05dd460540b01081df376d43d2bd0b3c520c.png" alt="\implies n(G) = n(E) \cdot n(F)"/></p>
 </div></div></blockquote>
-</div>
+</aside>
 <section id="replacement">
 <h4>Replacement<a class="headerlink" href="#replacement" title="Permalink to this heading">#</a></h4>
 <aside class="topic" id="with-replacement">
@@ -643,7 +643,7 @@ document.write(`
 </dd>
 </dl>
 <p>TODO</p>
-<img alt="../assets/imgs/combinatorics/combinatorics_tree_diagram_coinflips.png" class="align-center" src="../assets/imgs/combinatorics/combinatorics_tree_diagram_coinflips.png" />
+<img alt="../../_images/combinatorics_tree_diagram_coinflips.png" class="align-center" src="../../_images/combinatorics_tree_diagram_coinflips.png" />
 <p>TODO</p>
 </section>
 <section id="generalized-counting-principle">
@@ -655,7 +655,7 @@ document.write(`
 <p>Before stating the first important corollary that follows from the <em>Generalized Counting Principle</em>, we look at an instructive example.</p>
 <dl>
 <dt><strong>Example</strong></dt><dd><p>A pizza shop lets their customers make any kind of pizza they want from the following ingredients: pepperoni, sausage, green peppers, mushrooms and onions.</p>
-<p>How many different pizzas can you order from this restaurant? Try listing out every possible sequence of toppings a customer could order.</p>
+<p>How many different pizzas can you order from this restaurant?</p>
 </dd>
 </dl>
 <div class="admonition note">
@@ -703,9 +703,9 @@ document.write(`
 <h3>Motivation<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
 <p>Three friends, Aletheia, Bertha and Cornelius, are running a foot race to determine who is the fastest. As a diligent statistician, rather than participate in the festitivities, you decide to turn bookie and take bets from your other friends on who is going to win the race. In order to assign odds to each outcome, you first have to know <em>how many ways</em> the race can finish.</p>
 <p><em>Well</em>, my fellow statistician, how many ways <em>can</em> this race between Aletheia, Bertha and Cornelius finish? Before toggling the solution below, try and figure out the answer by listing each possible outcome and then totaling the number of results.</p>
-<details class="summary-solution-the-key-to-understanding-this-problem-is-to-recognize-the-order-in-which-these-three-friends-finish-the-race-matters-if-we-let-a-represent-aletheia-finishing-the-race-b-represent-bertha-finishing-the-race-and-c-represent-cornelius-finishing-the-face-we-can-enumerate-the-possible-outcomes-of-the-race-as-permutations-of-the-sequence-abc">
-<summary>Solution
-The key to understanding this problem is to recognize the *order* in which these three friends finish the race matters. If we let *a* represent Aletheia finishing the race, *b* represent Bertha finishing the race and *c* represent Cornelius finishing the face, we can enumerate the possible outcomes of the race as *permutations* of the sequence *abc*,</summary><blockquote>
+<details class="summary-solution">
+<summary>Solution</summary><p>The key to understanding this problem is to recognize the <em>order</em> in which these three friends finish the race matters. If we let <em>a</em> represent Aletheia finishing the race, <em>b</em> represent Bertha finishing the race and <em>c</em> represent Cornelius finishing the face, we can enumerate the possible outcomes of the race as <em>permutations</em> of the sequence <em>abc</em>,</p>
+<blockquote>
 <div><p>abc acb bac bca cab cab</p>
 </div></blockquote>
 <p>For example, <em>abc</em> represents the outcome of Alethia finishing first, Bertha second and Cornelius third, whereas <em>cab</em> would represent Cornelius finishing first, Bertha finishing second and Alethia finishing third, etc. From this we see there are 6 ways to <em>permute</em> the sequence <em>abc</em>.</p>
@@ -727,7 +727,8 @@ The key to understanding this problem is to recognize the *order* in which these
 <p>TODO</p>
 <div class="math">
 <p><img src="../../_images/math/db0721f1524ff698f71eccbcf5e719f8d772ec41.png" alt="P_r^n = \frac{n!}{(n-r)!}"/></p>
-</div></section>
+</div><p>TODO</p>
+</section>
 </section>
 <section id="combinations">
 <span id="id9"></span><h2>Combinations<a class="headerlink" href="#combinations" title="Permalink to this heading">#</a></h2>
@@ -746,21 +747,24 @@ The key to understanding this problem is to recognize the *order* in which these
 <span id="id11"></span><h3>Formula<a class="headerlink" href="#combination-formula" title="Permalink to this heading">#</a></h3>
 <div class="math">
 <p><img src="../../_images/math/8c18c5a5c4934f8a0c72e3222ce17e3829d3c872.png" alt="{C}_{r}^n = \frac{n!}{r! \cdot (n-r)!}"/></p>
-</div><p><img class="math" src="../../_images/math/07c5d19012c72a6d0f708ff09b8bad9853ce846d.png" alt="{n \atop r}"/> is another notation you will often encounter for combinations of <em>n</em> objects taken <em>r</em> at a time..</p>
+</div><div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><img class="math" src="../../_images/math/07c5d19012c72a6d0f708ff09b8bad9853ce846d.png" alt="{n \atop r}"/> is another notation often encountered for combinations of <em>n</em> objects taken <em>r</em> at a time..</p>
+</div>
 <p><strong>Example</strong></p>
 <blockquote>
 <div><p>In Maryland’s lottery, players pick six different (<em>natural</em>) numbers between 1 and 49, order of selection being irrelevant. The lottery commission then randomly selects six of these as the <em>winning numbers</em>. A player wins the grand prize if all six numbers that he or she has selected match the winning numbers. He or she wins the second prize if exactly five match, and the third prize if exactly four of the six numbers chosen match with the winning ones. Find the probability that a certain choice of a bettor wins the grand prize, the second prize and the third prize.</p>
 </div></blockquote>
-<details class="summary-solution-let-z-represent-the-event-of-selecting-all-six-winning-numbers-let-y-represent-the-event-of-selecting-five-winning-numbers-let-x-represent-the-event-of-selecting-four-winning-numbers">
-<summary>Solution
-Let **Z** represent the event of selecting all six winning numbers. Let **Y** represent the event of selecting five winning numbers. Let **X** represent the event of selecting four winning numbers.</summary><p>The <a class="reference internal" href="00_INTRODUCTION.html#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a> states,</p>
+<details class="summary-solution">
+<summary>Solution</summary><p>Let <strong>Z</strong> represent the event of selecting all six winning numbers. Let <strong>Y</strong> represent the event of selecting five winning numbers. Let <strong>X</strong> represent the event of selecting four winning numbers.</p>
+<p>The <a class="reference internal" href="00_INTRODUCTION.html#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a> states,</p>
 <div class="math">
 <p><img src="../../_images/math/34ba842f8e489b81065ff45c7d6371927e8b6a51.png" alt="P(A) = \frac{n(A)}{n(S)}"/></p>
 </div><p>In the context of the given problem, this translates to,</p>
 <blockquote>
-<div><p>P(Z) = (# of ways to match a 6-element sequence with 6 elements) / (# of 6-element sequences)</p>
-<p>P(Y) = (# of ways to match a 6-element sequence with 5 elements) / (# of 6-element sequences)</p>
-<p>P(X) = (# of ways to match a 6-element sequence with 4 elements) / (# of 6-element sequences)</p>
+<div><p><img class="math" src="../../_images/math/3748b73873a9b087e6f6459bacdb744884042fc2.png" alt="P(Z)"/> = (# of ways to match a 6-element sequence with 6 elements) / (# of 6-element sequences)</p>
+<p><img class="math" src="../../_images/math/5ac07b8b8e25c41c22bb9e1f374121fbd01f3b4a.png" alt="P(Y)"/> = (# of ways to match a 6-element sequence with 5 elements) / (# of 6-element sequences)</p>
+<p><img class="math" src="../../_images/math/ffe4f99bae936d256b0c073c77fcbbf6beb4d00f.png" alt="P(X)"/> = (# of ways to match a 6-element sequence with 4 elements) / (# of 6-element sequences)</p>
 </div></blockquote>
 <p>In order to calculate the desired probability, each calculation requires the total number of 6-element sequences, where each element of the sequence is an integer between 1 and 49. Furthermore, the selection of one element in the sequence removes it from the pool of possible selections. In other words, there can be no repetitions of any of the integers between 1 and 49 in any sequence of winning numbers. For instance the sequence <code class="docutils literal notranslate"><span class="pre">15</span> <span class="pre">15</span> <span class="pre">37</span> <span class="pre">42</span> <span class="pre">32</span> <span class="pre">27</span></code> is not allowed, because <em>15</em> occurs twice. This is what is meant by the phrase “<em>pick six different integers</em>”. This is an example of <a class="reference internal" href="#without-replacement"><span class="std std-ref">selection without replacement</span></a>.</p>
 <p>TODO</p>

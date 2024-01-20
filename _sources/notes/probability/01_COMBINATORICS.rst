@@ -127,7 +127,7 @@ You are trying to figure out what to outfit to wear. In your closet, you have a 
 
     The outfits we can pick are formed by first picking a shirt from the set of shirts, and then picking a pair of pants from the set of pants. The first set contains four elements and the second set contains three elements. Therefore, by the **Counting Principle**, the total number of outfits is the product of the two cardinalities, :math:`4 \cdot 3 = 12`.
 
-.. warning::
+.. topic:: The Fundamental Counting Principle
 
     We state the hypothesis and conclusion of the **Counting Principle** in precise symbols below,
 
@@ -184,7 +184,7 @@ Example
 	
 TODO
 
-.. image:: ../../../assets/imgs/combinatorics/combinatorics_tree_diagram_coinflips.png
+.. image:: ../../assets/imgs/combinatorics/combinatorics_tree_diagram_coinflips.png
     :align: center
 
 TODO
@@ -204,8 +204,8 @@ Before stating the first important corollary that follows from the *Generalized 
 **Example**
     A pizza shop lets their customers make any kind of pizza they want from the following ingredients: pepperoni, sausage, green peppers, mushrooms and onions. 
 
-    How many different pizzas can you order from this restaurant? Try listing out every possible sequence of toppings a customer could order. 
-
+    How many different pizzas can you order from this restaurant? 
+    
 .. note:: 
     This example can be rephrased in a more general way using the language of :ref:`Set Theory<set_theory>`: *how many subsets can be formed from the set* **A**? 
     
@@ -270,6 +270,7 @@ Three friends, Aletheia, Bertha and Cornelius, are running a foot race to determ
 *Well*, my fellow statistician, how many ways *can* this race between Aletheia, Bertha and Cornelius finish? Before toggling the solution below, try and figure out the answer by listing each possible outcome and then totaling the number of results.
 
 .. collapse:: Solution
+
     The key to understanding this problem is to recognize the *order* in which these three friends finish the race matters. If we let *a* represent Aletheia finishing the race, *b* represent Bertha finishing the race and *c* represent Cornelius finishing the face, we can enumerate the possible outcomes of the race as *permutations* of the sequence *abc*,
 
         abc acb bac bca cab cab
@@ -308,6 +309,7 @@ TODO
 .. math::
     P_r^n = \frac{n!}{(n-r)!}
 
+TODO
 
 .. _combinations:
 
@@ -334,29 +336,34 @@ Formula
 -------
 
 .. math:: 
+
     {C}_{r}^n = \frac{n!}{r! \cdot (n-r)!}
 
-:math:`{n \atop r}` is another notation you will often encounter for combinations of *n* objects taken *r* at a time.. 
+.. warning::
+
+	:math:`{n \atop r}` is another notation often encountered for combinations of *n* objects taken *r* at a time.. 
 
 **Example**
 
     In Maryland's lottery, players pick six different (*natural*) numbers between 1 and 49, order of selection being irrelevant. The lottery commission then randomly selects six of these as the *winning numbers*. A player wins the grand prize if all six numbers that he or she has selected match the winning numbers. He or she wins the second prize if exactly five match, and the third prize if exactly four of the six numbers chosen match with the winning ones. Find the probability that a certain choice of a bettor wins the grand prize, the second prize and the third prize. 
 
 .. collapse:: Solution 
+
     Let **Z** represent the event of selecting all six winning numbers. Let **Y** represent the event of selecting five winning numbers. Let **X** represent the event of selecting four winning numbers.  
 
     The :ref:`Classical Definition of Probability <classical_definition>` states,
 
     .. math::
+    
         P(A) = \frac{n(A)}{n(S)}
 
     In the context of the given problem, this translates to,
 
-        P(Z) = (# of ways to match a 6-element sequence with 6 elements) / (# of 6-element sequences)
+        :math:`P(Z)` = (# of ways to match a 6-element sequence with 6 elements) / (# of 6-element sequences)
 
-        P(Y) = (# of ways to match a 6-element sequence with 5 elements) / (# of 6-element sequences)
+        :math:`P(Y)` = (# of ways to match a 6-element sequence with 5 elements) / (# of 6-element sequences)
 
-        P(X) = (# of ways to match a 6-element sequence with 4 elements) / (# of 6-element sequences)
+        :math:`P(X)` = (# of ways to match a 6-element sequence with 4 elements) / (# of 6-element sequences)
 
     In order to calculate the desired probability, each calculation requires the total number of 6-element sequences, where each element of the sequence is an integer between 1 and 49. Furthermore, the selection of one element in the sequence removes it from the pool of possible selections. In other words, there can be no repetitions of any of the integers between 1 and 49 in any sequence of winning numbers. For instance the sequence ``15 15 37 42 32 27`` is not allowed, because *15* occurs twice. This is what is meant by the phrase "*pick six different integers*". This is an example of :ref:`selection without replacement <without_replacement>`.
 
@@ -373,6 +380,7 @@ Formula
     Your choice is still considered *matching*; That is what is meant in the example by the phrase "*order of selection being irrelevant*". Therefore the probability of selecting all six winning numbers is simply,
 
     .. math::
+    
         P(A)
 
 The Connection Between Permutations and Combinations
@@ -384,6 +392,7 @@ Combined Permutations
 Let **O** be the set of objects,
 
     .. math::
+    
         O = \{ a, b, c \}
 
 and consider all the two-element permutations that can be formed from this set, that is to say, all the possible ways two objects can be selected from this set, where the order of elements is important,
@@ -404,6 +413,7 @@ Permuted Combinations
 Suppose now a similar set of objects **P** is given as,
 
     .. math::
+    
         P = \{ a, b, c, d \}
 
 and all two-element *combinations* (not *permutations*) are required, that is to say, all the possible ways two objects can be selected from this set, where order is important. Careful enumeration of every possibility yields the list of combination as follows,
