@@ -490,7 +490,10 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-principles">Counting Principles</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fundamental-counting-principle">The Fundamental Counting Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fundamental-counting-principle">The Fundamental Counting Principle</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#replacement">Replacement</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tree-diagrams">Tree Diagrams</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalized-counting-principle">Generalized Counting Principle</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
@@ -614,9 +617,32 @@ document.write(`
 <p><img src="../../_images/math/39eb05dd460540b01081df376d43d2bd0b3c520c.png" alt="\implies n(G) = n(E) \cdot n(F)"/></p>
 </div></div></blockquote>
 </div>
+<section id="replacement">
+<h4>Replacement<a class="headerlink" href="#replacement" title="Permalink to this heading">#</a></h4>
+<aside class="topic" id="with-replacement">
+<p class="topic-title">With Replacement</p>
+<p>An object selected <em>with replacement</em> is put back into the set from which it was selected after being selected.</p>
+</aside>
+<p><em>With replacement</em> means exactly what it says: <em>with replacement</em>. Suppose you are given a box filled with three red balls and three blue balls. If you select a ball from the box and then put the ball back into the box after selecting it, you have selected an objected <em>with replacement</em>.</p>
+<p>TODO</p>
+<aside class="topic" id="without-replacement">
+<p class="topic-title">Without Replacement</p>
+<p>An object selected <em>without replacement</em> is taken out of the set from which it was selected after being selected.</p>
+</aside>
+<p>A hand of cards in a card game such as poker is dealt from the deck <em>without replacement</em>.</p>
+<p>TODO</p>
+</section>
 </section>
 <section id="tree-diagrams">
 <span id="id5"></span><h3>Tree Diagrams<a class="headerlink" href="#tree-diagrams" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+<p>A <em>tree diagram</em> is a way of representing a multi-step random process, where each step in the process is drawn from a finite number of choices (i.e., a <a class="reference internal" href="../SET_THEORY.html#set-theory"><span class="std std-ref">set</span></a> of outcomes) . A <em>tree diagram</em> is composed of <em>nodes</em> and <em>branches</em>. Each node of a <em>tree diagram</em> represents an outcome of one step in the random process and each branch of the tree diagram represents the paths available after one step has concluded. An example will make this laborious description more clear.</p>
+<dl class="simple">
+<dt>Example</dt><dd><p>A coin is flipped three times. Use a tree diagram to find the sample space.</p>
+</dd>
+</dl>
+<p>TODO</p>
+<img alt="../assets/imgs/combinatorics/combinatorics_tree_diagram_coinflips.png" class="align-center" src="../assets/imgs/combinatorics/combinatorics_tree_diagram_coinflips.png" />
 <p>TODO</p>
 </section>
 <section id="generalized-counting-principle">
@@ -688,7 +714,7 @@ The key to understanding this problem is to recognize the *order* in which these
 <blockquote>
 <div><a class="reference internal image-reference" href="../../_images/combinatorics_permuted_tree_diagram.png"><img alt="../../_images/combinatorics_permuted_tree_diagram.png" class="align-center" src="../../_images/combinatorics_permuted_tree_diagram.png" style="width: 60%;" /></a>
 </div></blockquote>
-<p>Notice at each step of the diagram, a choice is lost, representing the selection of an individual to fill the given position along the given branch. This type of selection is called <a class="reference internal" href="../experiments/00_INTRODUCTION.html#without-replacement"><span class="std std-ref">selection without replacement</span></a>.</p>
+<p>Notice at each step of the diagram, a choice is lost, representing the selection of an individual to fill the given position along the given branch. This type of selection is called <a class="reference internal" href="#without-replacement"><span class="std std-ref">selection without replacement</span></a>.</p>
 <p>By counting up the endpoints of the graph, the answer is again found to be there are <em>6</em> ways to finish the race.</p>
 <p>This can be rephrased with the new terminology introduced in this section: <em>there are 6 permutations of 3 objects taken 3 at time</em>.</p>
 </details><p><strong>Example</strong></p>
@@ -735,7 +761,7 @@ Let **Z** represent the event of selecting all six winning numbers. Let **Y** re
 <p>P(Y) = (# of ways to match a 6-element sequence with 5 elements) / (# of 6-element sequences)</p>
 <p>P(X) = (# of ways to match a 6-element sequence with 4 elements) / (# of 6-element sequences)</p>
 </div></blockquote>
-<p>In order to calculate the desired probability, each calculation requires the total number of 6-element sequences, where each element of the sequence is an integer between 1 and 49. Furthermore, the selection of one element in the sequence removes it from the pool of possible selections. In other words, there can be no repetitions of any of the integers between 1 and 49 in any sequence of winning numbers. For instance the sequence <code class="docutils literal notranslate"><span class="pre">15</span> <span class="pre">15</span> <span class="pre">37</span> <span class="pre">42</span> <span class="pre">32</span> <span class="pre">27</span></code> is not allowed, because <em>15</em> occurs twice. This is what is meant by the phrase “<em>pick six different integers</em>”. This is an example of <a class="reference internal" href="../experiments/00_INTRODUCTION.html#without-replacement"><span class="std std-ref">selection without replacement</span></a>.</p>
+<p>In order to calculate the desired probability, each calculation requires the total number of 6-element sequences, where each element of the sequence is an integer between 1 and 49. Furthermore, the selection of one element in the sequence removes it from the pool of possible selections. In other words, there can be no repetitions of any of the integers between 1 and 49 in any sequence of winning numbers. For instance the sequence <code class="docutils literal notranslate"><span class="pre">15</span> <span class="pre">15</span> <span class="pre">37</span> <span class="pre">42</span> <span class="pre">32</span> <span class="pre">27</span></code> is not allowed, because <em>15</em> occurs twice. This is what is meant by the phrase “<em>pick six different integers</em>”. This is an example of <a class="reference internal" href="#without-replacement"><span class="std std-ref">selection without replacement</span></a>.</p>
 <p>TODO</p>
 <p>Notice first there is only one to select all six of the winning numbers. If, for instance, the lottery commission selected the numbers</p>
 <blockquote>
@@ -837,7 +863,10 @@ Let **Z** represent the event of selecting all six winning numbers. Let **Y** re
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-principles">Counting Principles</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fundamental-counting-principle">The Fundamental Counting Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fundamental-counting-principle">The Fundamental Counting Principle</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#replacement">Replacement</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tree-diagrams">Tree Diagrams</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalized-counting-principle">Generalized Counting Principle</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>

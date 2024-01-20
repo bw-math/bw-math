@@ -9,3 +9,4 @@ Probability
    01_COMBINATORICS
    02_CONDITIONAL
    03_RANDOM_VARIABLES
+   index/solutions

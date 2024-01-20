@@ -46,7 +46,6 @@ We can define the *Power Set* of a set **A** formally by quantifying over all se
 
 In English, "for all *B*, if *B* is a subset of *A*, then *B* belongs to the *Power Set of A*"
 
-
 .. _counting_principles:
 
 Counting Principles
@@ -133,20 +132,62 @@ You are trying to figure out what to outfit to wear. In your closet, you have a 
     We state the hypothesis and conclusion of the **Counting Principle** in precise symbols below,
 
         .. math::
+            
             n(E) = n
+            
         .. math::
+            
             n(F) = m
+        
         .. math::
+        
             G = \{ \forall x \in E \land y \in F: xy \}
+        
         .. math::
+        
             \implies n(G) = n(E) \cdot n(F)
+
+Replacement
+***********
+
+.. _with_replacement:
+
+.. topic:: With Replacement
+
+	An object selected *with replacement* is put back into the set from which it was selected after being selected. 
+	
+*With replacement* means exactly what it says: *with replacement*. Suppose you are given a box filled with three red balls and three blue balls. If you select a ball from the box and then put the ball back into the box after selecting it, you have selected an objected *with replacement*.
+
+TODO
+
+.. _without_replacement:
+
+.. topic:: Without Replacement
+
+	An object selected *without replacement* is taken out of the set from which it was selected after being selected.
+	
+A hand of cards in a card game such as poker is dealt from the deck *without replacement*.
+
+TODO
 
 .. _tree_diagrams:
 
 Tree Diagrams
 -------------
 
-TODO 
+TODO
+
+A *tree diagram* is a way of representing a multi-step random process, where each step in the process is drawn from a finite number of choices (i.e., a :ref:`set <set_theory>` of outcomes) . A *tree diagram* is composed of *nodes* and *branches*. Each node of a *tree diagram* represents an outcome of one step in the random process and each branch of the tree diagram represents the paths available after one step has concluded. An example will make this laborious description more clear.
+
+Example
+	A coin is flipped three times. Use a tree diagram to find the sample space.
+	
+TODO
+
+.. image:: ../../../assets/imgs/combinatorics/combinatorics_tree_diagram_coinflips.png
+    :align: center
+
+TODO
 
 .. _generalized_counting_principle:
 
@@ -317,7 +358,7 @@ Formula
 
         P(X) = (# of ways to match a 6-element sequence with 4 elements) / (# of 6-element sequences)
 
-    In order to calculate the desired probability, each calculation requires the total number of 6-element sequences, where each element of the sequence is an integer between 1 and 49. Furthermore, the selection of one element in the sequence removes it from the pool of possible selections. In other words, there can be no repetitions of any of the integers between 1 and 49 in any sequence of winning numbers. For instance the sequence ``15 15 37 42 32 27`` is not allowed, because *15* occurs twice. This is what is meant by the phrase "*pick six different integers*". This is an example of :ref:`selection without replacement<without_replacement>`.
+    In order to calculate the desired probability, each calculation requires the total number of 6-element sequences, where each element of the sequence is an integer between 1 and 49. Furthermore, the selection of one element in the sequence removes it from the pool of possible selections. In other words, there can be no repetitions of any of the integers between 1 and 49 in any sequence of winning numbers. For instance the sequence ``15 15 37 42 32 27`` is not allowed, because *15* occurs twice. This is what is meant by the phrase "*pick six different integers*". This is an example of :ref:`selection without replacement <without_replacement>`.
 
     TODO 
 
