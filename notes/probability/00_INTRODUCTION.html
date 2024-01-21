@@ -838,7 +838,7 @@ document.write(`
 <dt>Proof #1</dt><dd><p>By the <a class="reference internal" href="#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a>, the probability of <img class="math" src="../../_images/math/8c493c3bf203d9cd345df1dc5108114313389984.png" alt="A \cup A^c"/> is given by,</p>
 <div class="math">
 <p><img src="../../_images/math/98383499462e7bde496f4fcbf200feeedf91bbdb.png" alt="P(A \cup A^c) = \frac{n(A \cup A^c)}{n(S)}"/></p>
-</div><p>By <a class="reference internal" href="../foundations/02_SET_THEORY.html#counting-theorem-one"><span class="std std-ref">Counting Theorem 1</span></a>,</p>
+</div><p>By <span class="xref std std-ref">Counting Theorem 1</span>,</p>
 <div class="math">
 <p><img src="../../_images/math/24255235d9a6d2310f5e4ff6aaac7289ff312b41.png" alt="n(A \cup A^c) = n(A) + n(A^c)"/></p>
 </div><p>So, the probability of <img class="math" src="../../_images/math/8c493c3bf203d9cd345df1dc5108114313389984.png" alt="A \cup A^c"/> is,</p>
@@ -850,7 +850,7 @@ document.write(`
 </div><p>Applying the <a class="reference internal" href="#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a> to both terms on the right hand side of the equation,</p>
 <div class="math">
 <p><img src="../../_images/math/91fdb192453cf5e699ca92e034d750dd323ba2ba.png" alt="= P(A) + P(A^c)"/></p>
-</div><p>On the other hand, by <a class="reference internal" href="../foundations/02_SET_THEORY.html#complement-theorem-two"><span class="std std-ref">Complement Theorem 2</span></a>,</p>
+</div><p>On the other hand, by <span class="xref std std-ref">Complement Theorem 2</span>,</p>
 <div class="math">
 <p><img src="../../_images/math/552d663abb1f8f281fc10954101d3c82bd91d294.png" alt="P(A \cup A^c) = P(S)"/></p>
 </div><p>By <a class="reference internal" href="#axiom-2"><span class="std std-ref">Axiom 2</span></a>,</p>
@@ -860,13 +860,13 @@ document.write(`
 <div class="math">
 <p><img src="../../_images/math/689ddbd464afd6a00474bec7fbafee1b7ff7825c.png" alt="1 = P(A) + P(A^C)"/></p>
 </div></dd>
-<dt>Proof #2</dt><dd><p>By <a class="reference internal" href="../foundations/02_SET_THEORY.html#complement-theorem-three"><span class="std std-ref">Complement Theorem 3</span></a>,</p>
+<dt>Proof #2</dt><dd><p>By <span class="xref std std-ref">Complement Theorem 3</span>,</p>
 <div class="math">
 <p><img src="../../_images/math/4c7a979e497521caa61eb325248056ca39a8730e.png" alt="A \cap A^c = \varnothing"/></p>
 </div><p>Therefore, <img class="math" src="../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/> and <img class="math" src="../../_images/math/2ef75eec66003e588055d751eaddd391b6eccea0.png" alt="A^c"/> are <em>mutually exclusive</em>. So by <a class="reference internal" href="#axiom-3"><span class="std std-ref">Axiom 3</span></a>, we can say,</p>
 <div class="math">
 <p><img src="../../_images/math/e96a93dc8e0db7df191cf77257205ff946325fc9.png" alt="P(A \cup A^c) = P(A) + P(A^c)"/></p>
-</div><p>But, by <a class="reference internal" href="../foundations/02_SET_THEORY.html#complement-theorem-two"><span class="std std-ref">Complement Theorem TWo</span></a>,</p>
+</div><p>But, by <span class="xref std std-ref">Complement Theorem TWo</span>,</p>
 <div class="math">
 <p><img src="../../_images/math/1bfdea2655c561dc3eb5427c22f98c21cb0912a0.png" alt="A \cup A^c = S"/></p>
 </div><p>And by <a class="reference internal" href="#axiom-2"><span class="std std-ref">Axiom 2</span></a>,</p>
@@ -891,12 +891,12 @@ document.write(`
 <p>Again, from inspection of a <a class="reference internal" href="../foundations/02_SET_THEORY.html#venn-diagrams"><span class="std std-ref">Venn Diagram</span></a> of <em>overlappying</em> sets, this theorem should be obvious,</p>
 <img alt="../../_images/sets_union_overlapping.jpg" src="../../_images/sets_union_overlapping.jpg" />
 <p>The union is the area encompassed by bother circles. When we add the probability of <strong>A</strong> (area of circle <strong>A</strong>) to the probability of <strong>B</strong> (area of circle <strong>B</strong>), we double-count the area <img class="math" src="../../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/>, so to correct the overcount, we must subtract once by the offending area.</p>
-<p>The formal proof <strong>Law of Unions</strong> follows directly from <a class="reference internal" href="../foundations/02_SET_THEORY.html#counting-theorem-one"><span class="std std-ref">Counting Theorem 1</span></a> and the <a class="reference internal" href="#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a>. The proof is given below.</p>
+<p>The formal proof <strong>Law of Unions</strong> follows directly from <span class="xref std std-ref">Counting Theorem 1</span> and the <a class="reference internal" href="#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a>. The proof is given below.</p>
 <dl>
 <dt>Proof</dt><dd><p>By the <a class="reference internal" href="#classical-definition"><span class="std std-ref">Classical Definition of Probability</span></a>,</p>
 <div class="math">
 <p><img src="../../_images/math/cdcdad509d898ec02e65eff1b1f7955920f46d76.png" alt="P(A \cup B) = \frac{n(A \cup B)}{n(S)}"/></p>
-</div><p>By <a class="reference internal" href="../foundations/02_SET_THEORY.html#counting-theorem-one"><span class="std std-ref">Counting Teorem 1</span></a>,</p>
+</div><p>By <span class="xref std std-ref">Counting Teorem 1</span>,</p>
 <div class="math">
 <p><img src="../../_images/math/028e148af63506134f24ac337a00550b04da63fc.png" alt="P(A \cup B) = \frac{n(A) + n(B) - n(A \cap B)}/{n(S)}"/></p>
 </div><p>Distributing <img class="math" src="../../_images/math/6b88ff087c7af4bff36ae170e991cf8e380ced2b.png" alt="\frac{1}{n(S)}"/>,</p>
