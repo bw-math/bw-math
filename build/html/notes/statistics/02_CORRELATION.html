@@ -1,0 +1,799 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Correlation &#8212; bishop-walsh-math  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notes/statistics/02_CORRELATION';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Linear Regression" href="03_REGRESSION.html" />
+    <link rel="prev" title="Point Estimation" href="01_ESTIMATION.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">bishop-walsh-math  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../00_SPLASH.html">Bishop Walsh Math</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../01_DATASETS.html">Datasets</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../syllabi/index.html">Course Syllabi</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../syllabi/00_STATS_SYLLABUS.html">AP Statistics Course Syllabus</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Class Notes</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../foundations/index.html">Class Notes</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../foundations/00_HISTORY.html">Knowledge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../foundations/01_LOGIC.html">Logic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../foundations/02_SET_THEORY.html">Set Theory</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../experiments/index.html">Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../experiments/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../experiments/01_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../experiments/02_DESIGN.html">Experimental Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../experiments/03_DATA.html">Data</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../experiments/04_INFERENCE.html">Inference</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../experiments/hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/hypotheses/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/hypotheses/01_MEAN_TESTS.html">Population Mean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/hypotheses/02_PROPORTION_TESTS.html">Population Proportion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/hypotheses/03_STDDEV_TESTS.html">Population Standard Deviation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Statistics</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="00_GRAPHS.html">Graphical Representations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_ESTIMATION.html">Point Estimation</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_SAMPLING.html">Sampling Distributions</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../distributions/00_BERNOULLI.html">Bernoulli Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../distributions/02_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../distributions/03_UNIFORM.html">Uniform Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../distributions/04_NORMAL.html">Normal Distribution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../assignments/index.html">Assignments</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/homework/index.html">Homework</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/01_UNIT01.html">Unit 1 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/02_UNIT02.html">Unit 2 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/03_UNIT03.html">Unit 3 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/04_UNIT04.html">Unit 4 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/05_UNIT05.html">Unit 5 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/06_UNIT06.html">Unit 6 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/07_UNIT07.html">Unit 7 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/08_UNIT08.html">Unit 8 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/09_UNIT09.html">Unit 9 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/10_CHAP01_OS.html">Chapter 1 Homework (OpenStax Text)</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/classwork/index.html">Classwork</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/celebrations/index.html">Celebrations of Knowledge</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/00_STATS_Q1.html">Statistics: Quarter One</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/01_STATS_Q2.html">Statistics: Quarter Two</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/02_STATS_Q3.html">Statistics: Quarter Three</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/03_STATS_Q4.html">Statistics: Quarter Four</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/04_CALC_Q2.html">Calculus: Quarter Two</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/algebra/index.html">Algebra</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/algebra/01_SUMS.html">Sums</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/differentiation/index.html">Differentiation</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/00_CHAIN_RULE.html">Chain Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/01_IMPLICIT_DIFFERENTIATION.html">Implicit Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/02_GRAPHING.html">Graphing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/03_RELATED_RATES.html">Related Rates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/04_OPTIMIZATION.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/05_THEOREMS.html">Theorems</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/set_theory/index.html">Set Theory</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/set_theory/01_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/set_theory/02_VENN_DIAGRAMS.html">Venn Diagrams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/set_theory/03_LOGIC.html">Symbolic Logic</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/solutions/index.html">Solutions</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/experiments/index.html">Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/experiments/00_DESIGN.html">Design</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/experiments/01_INFERENCE.html">Inference</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/experiments/02_BIAS.html">Bias</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/experiments/hypotheses/index.html">Hypothesis Testing</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/00_GRAPHS.html">Graphical Representations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/01_ESTIMATION.html">Point Estimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/03_REGRESSION.html">Regression</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/04_SAMPLING.html">Sampling Distributions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/05_CONFIDENCE.html">Confidence Intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/distributions/00_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/distributions/02_NORMAL.html">Normal Distribution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/python/index.html">Python Projects</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/00_PYTHON.html">Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/01_CATEGORICAL.html">Bar Charts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/02_QUANTITATIVE.html">Histograms and Boxplots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/03_NORMALITY.html">Normality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/04_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/05_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/06_SIMULATION.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/07_SETS.html">Sample Spaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/08_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/09_BINOMIAL.html">Binomial Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/calculator/index.html">Calculator Projects</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/00_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/01_COIN_FLIPS.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/02_PI_ESTIMATION.html">Simulation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../resources/index.html">Resources</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/00_EXAMS.html">A.P. Statistics Exam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/01_REFERENCES.html">References</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../resources/calculator/index.html">TI-84 Calculator</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/00_BASICS.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/01_STATISTICS.html">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/02_PROBABILITY.html">Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/03_GRAPHING.html">Graphing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/04_PROGRAM.html">Programs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/05_VIDEOS.html">TI-84</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/06_WORKSHEETS.html">Worksheets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/07_REFERENCES.html">Calculator References</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../resources/python/index.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/00_SHELL.html">Online Python Shell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/01_SETUP.html">Python Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/02_BASIC.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/03_SETS.html">Sets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/04_FUNCTIONS.html">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/05_PLOTS.html">Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/06_FILES.html">Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/07_CONTROLS.html">Control Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/08_WEB.html">The Internet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/09_DEMOS.html">Demonstrations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../resources/tables/index.html">Statistical Tables</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/tables/01_Z_TABLE.html">Z Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/tables/02_CHI_SQUARED_TABLE.html"><img alt="\chi^2" class="math" src="../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/tables/03_T_TABLE.html">T Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/tables/04_PEARSON_TABLE.html">Pearson Correlation Coefficient Table</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../maintenance/index.html">Maintenance</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../maintenance/LATEX.html">LaTex Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maintenance/SPHINX.html">Sphinx</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/notes/statistics/02_CORRELATION.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Correlation</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bivariate-data">Bivariate Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Correlation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#univariate-statistics">Univariate Statistics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scatter-plots">Scatter Plots</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#direction">Direction</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#no-correlation">No Correlation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#positive-correlation">Positive Correlation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#negative-correlation">Negative Correlation</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strength">Strength</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#strong">Strong</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#weak">Weak</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linearity">Linearity</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#linear">Linear</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#non-linear">Non-Linear</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-series">Time Series</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#positive-trend">Positive Trend</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#negative-trend">Negative Trend</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-trend">No Trend</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="correlation">
+<span id="id1"></span><h1>Correlation<a class="headerlink" href="#correlation" title="Permalink to this heading">#</a></h1>
+<p>Up to now we have been dealing with <em>univariate</em> data. In this section, we begin the study of <em>bivariate data</em>.</p>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this heading">#</a></h2>
+<section id="bivariate-data">
+<h3>Bivariate Data<a class="headerlink" href="#bivariate-data" title="Permalink to this heading">#</a></h3>
+<dl class="simple">
+<dt><img class="math" src="../../_images/math/2e522020f6728b691e3cf36a36055c439147b9e0.png" alt="S = \{ (x_1, y_1), (x_2, y_2), ... , (x_n, y_n) \}"/></dt><dd><p>When two variables are measured on one individual, we call such data <em>bivariate</em>.</p>
+</dd>
+</dl>
+<p>The <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> variable is sometimes called the <em>independent</em> or <em>predictor</em> variable. The <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variable is sometimes called the <em>dependent</em> or <em>response</em> variable. It is important to understand this terminology is only used in the context of the <a class="reference internal" href="03_REGRESSION.html#linear-regression"><span class="std std-ref">Linear Regression</span></a> model introduced in the next section. Before the <em>statistical significance</em> of the relationship is established, this terminology is misleading, as it implies a relationship between the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> and <cite>y</cite> variable when none may exist. Correlation can be measured between variables that have no relationship whatsoever; in such instance we call the variables <em>uncorrelated</em>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Because we are dealing with randomness, <em>uncorrelated</em> variables will not necessarily have a correlation of 0. In fact, correlations of 0 are never observed in practice. There will always be a non-zero correlation between any given variables; the task of statistics is to determine whether or not this correlation is significant enough to use the outcome of one variable to make predictions about the outcome of the other variable.</p>
+</div>
+</section>
+<section id="id2">
+<h3>Correlation<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<p>Correlation is a measure of the strength of a relationship that exists between two observable variables. Before we can begin our study of <em>correlation</em>, let’s make some preliminary defintions that will help us keep everything clear and precise.</p>
+<section id="univariate-statistics">
+<h4>Univariate Statistics<a class="headerlink" href="#univariate-statistics" title="Permalink to this heading">#</a></h4>
+<p>In order to differentiate between the statistics relationing to the <em>x</em> and <em>y</em> variables, we introduce some notation.</p>
+<p><img class="math" src="../../_images/math/2cd6777983e1466983489d7c6b879128472f5485.png" alt="\bar{x}"/> and <img class="math" src="../../_images/math/c04180d4fb46d6ae1eba4669c448d832cbcfcb91.png" alt="\bar{y}"/> are defined as the <em>univariate</em> sample means of the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> and <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variables. In other words, <img class="math" src="../../_images/math/c04180d4fb46d6ae1eba4669c448d832cbcfcb91.png" alt="\bar{y}"/> is the sample mean of the <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variable, as if we were observing the <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variable in isolation. Similarly for <img class="math" src="../../_images/math/2cd6777983e1466983489d7c6b879128472f5485.png" alt="\bar{x}"/>.</p>
+<p><img class="math" src="../../_images/math/d4667135ddb1a33d4cce8f5cd3ae4dae323dafab.png" alt="s_x"/> and <img class="math" src="../../_images/math/45c9dfe8f20ea3dd341efd0f46a0a34044b7b883.png" alt="s_y"/> are defined as the <em>univariate</em> standard deviations of the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> and <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variables. In other words, <img class="math" src="../../_images/math/d4667135ddb1a33d4cce8f5cd3ae4dae323dafab.png" alt="s_x"/> is the standard deviation of the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> variable, as if we were observing the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> variable in isolation. Similarly, for <img class="math" src="../../_images/math/45c9dfe8f20ea3dd341efd0f46a0a34044b7b883.png" alt="s_y"/>.</p>
+<div class="math">
+<p><img src="../../_images/math/e9982190634bf121c373b971ad9df19616b62620.png" alt="s_{x}^2 = \frac{1}{n-1} \cdot \sum_{i=1}^{n} (x_i - \bar{x})^2"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/952fa3f43dcd63fadb27f1569011cfc9f58b8aaa.png" alt="s_{y}^2 = \frac{1}{n-1} \cdot \sum_{i=1}^{n} (y_i - \bar{y})^2"/></p>
+</div><p>TODO</p>
+<p><img class="math" src="../../_images/math/d4667135ddb1a33d4cce8f5cd3ae4dae323dafab.png" alt="s_x"/> and <img class="math" src="../../_images/math/45c9dfe8f20ea3dd341efd0f46a0a34044b7b883.png" alt="s_y"/> are defined as the <em>univariate</em> standard deviations of the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> and <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variables. In other words, <img class="math" src="../../_images/math/d4667135ddb1a33d4cce8f5cd3ae4dae323dafab.png" alt="s_x"/> is the standard deviation of the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> variable, as if we were observing only <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> alone. Similarly, for <img class="math" src="../../_images/math/45c9dfe8f20ea3dd341efd0f46a0a34044b7b883.png" alt="s_y"/>.</p>
+<div class="math">
+<p><img src="../../_images/math/e9982190634bf121c373b971ad9df19616b62620.png" alt="s_{x}^2 = \frac{1}{n-1} \cdot \sum_{i=1}^{n} (x_i - \bar{x})^2"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/3470fbdc17c556b2189c1a11ad8aefbd2646ec5e.png" alt="s_{y}^2 = \frac{1}{n-1} \cdot \sum{i=1}^{n} (y_i - \bar{y})^2"/></p>
+</div><p>TODO</p>
+</section>
+<section id="definition">
+<h4>Definition<a class="headerlink" href="#definition" title="Permalink to this heading">#</a></h4>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Correlation, Version 1</p>
+<div class="math">
+<p><img src="../../_images/math/30635f475d9b3ad1e21500313c24e05936b5a1b1.png" alt="r_{xy} = \frac{1}{n-1} \cdot \sum_{i=1}^{n} z^{x}_i \cdot z^{y}_i"/></p>
+</div></aside>
+<p>TODO: justification. make some plots.</p>
+<aside class="topic">
+<p class="topic-title">Correlation, Version 2</p>
+<div class="math">
+<p><img src="../../_images/math/e5e9c574f4836f6b9062359606f57f15a626df16.png" alt="r_{xy} = \frac{1}{n-1} \cdot \sum_{i=1}^{n} (\frac{x_i - \bar{x}}{s_x}) \cdot (\frac{y_i - \bar{y}}{s_y})"/></p>
+</div></aside>
+<aside class="topic">
+<p class="topic-title">Correlation “Shortcut” Formula</p>
+<p>TODO</p>
+</aside>
+</section>
+</section>
+</section>
+<section id="scatter-plots">
+<span id="id3"></span><h2>Scatter Plots<a class="headerlink" href="#scatter-plots" title="Permalink to this heading">#</a></h2>
+<p>A scatterplot is a very simple and easy to understand graphical representation of bivariate data. The <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> variable is plotted on the horizontal axis versus the <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variable on the vertical axis. Graphs of <em>scatterplots</em> are classified based on the <em>direction</em> of the relationship observed, the <em>strength</em> of the relationship observed and the <em>linearity</em> of the relationship observed.</p>
+<section id="direction">
+<span id="correlation-direction"></span><h3>Direction<a class="headerlink" href="#direction" title="Permalink to this heading">#</a></h3>
+<section id="no-correlation">
+<span id="id4"></span><h4>No Correlation<a class="headerlink" href="#no-correlation" title="Permalink to this heading">#</a></h4>
+<p>A scatterplot with no correlation between the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> and <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variables should appear random,</p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/17c2f52e958097c3c536d017ad440b19/scatterplot_no_correlation.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/9388f7667548c31b865aefc453d7f769/scatterplot_no_correlation.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/f7f19cc8a16a8d1967fe7aac0d71cebb/scatterplot_no_correlation.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d3582693e2a20ddb42c3cec0b29ded9c/scatterplot_no_correlation.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/scatterplot_no_correlation.png" class="plot-directive" src="../../_images/scatterplot_no_correlation.png" />
+</figure>
+</section>
+<section id="positive-correlation">
+<span id="id5"></span><h4>Positive Correlation<a class="headerlink" href="#positive-correlation" title="Permalink to this heading">#</a></h4>
+<p>A scatterplot with a positive correlation betwen the <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/> and <img class="math" src="../../_images/math/dac67908471d275f39d18dcd55dec3f0984ed07f.png" alt="y"/> variables should have a general upward trend,</p>
+<p>(<a class="reference download internal" download="" href="../../_downloads/a6508ba1cd622e6ab5aab92e7640d8e4/scatterplot_positive_correlation.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/14f7b3899ebc3df9de5a82ece9bc51e7/scatterplot_positive_correlation.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/4098c5961b91de6b53e72cca3bd836f4/scatterplot_positive_correlation.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/eff9abc8b2471c8055a0da1f6f2db95a/scatterplot_positive_correlation.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/scatterplot_positive_correlation.png" class="plot-directive" src="../../_images/scatterplot_positive_correlation.png" />
+</figure>
+</section>
+<section id="negative-correlation">
+<span id="id6"></span><h4>Negative Correlation<a class="headerlink" href="#negative-correlation" title="Permalink to this heading">#</a></h4>
+<p>(<a class="reference download internal" download="" href="../../_downloads/3d5865cf124884d8df5bd091f0f4b904/scatterplot_negative_correlation.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/86237a02d3c9588b0f6c2005aa6e871e/scatterplot_negative_correlation.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/55e230353863c130e0ad3c7a98d15beb/scatterplot_negative_correlation.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/750fd82ef14724b99aba124f7782bdc7/scatterplot_negative_correlation.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/scatterplot_negative_correlation.png" class="plot-directive" src="../../_images/scatterplot_negative_correlation.png" />
+</figure>
+</section>
+</section>
+<section id="strength">
+<span id="correlation-strength"></span><h3>Strength<a class="headerlink" href="#strength" title="Permalink to this heading">#</a></h3>
+<section id="strong">
+<span id="strong-correlation"></span><h4>Strong<a class="headerlink" href="#strong" title="Permalink to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="weak">
+<span id="weak-correlation"></span><h4>Weak<a class="headerlink" href="#weak" title="Permalink to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+</section>
+<section id="linearity">
+<span id="correlation-linearity"></span><h3>Linearity<a class="headerlink" href="#linearity" title="Permalink to this heading">#</a></h3>
+<section id="linear">
+<span id="linear-correlation"></span><h4>Linear<a class="headerlink" href="#linear" title="Permalink to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="non-linear">
+<span id="nonlinear-correlation"></span><h4>Non-Linear<a class="headerlink" href="#non-linear" title="Permalink to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+</section>
+</section>
+<section id="time-series">
+<span id="id7"></span><h2>Time Series<a class="headerlink" href="#time-series" title="Permalink to this heading">#</a></h2>
+<p>A <em>time series</em> is similar to a <em>scatter plot</em> in almost all ways, except the <em>independent</em> variable in a <em>time series</em> is always a unit of time. A <em>correlation</em> for a <em>time series</em> is called a <em>trend</em>.</p>
+<section id="positive-trend">
+<h3>Positive Trend<a class="headerlink" href="#positive-trend" title="Permalink to this heading">#</a></h3>
+<p>(<a class="reference download internal" download="" href="../../_downloads/32667871ec4f51c6a0a9f81f9731ccea/timeseries_positive_trend.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/8a33cdbf487ccb2f9918e389418a459f/timeseries_positive_trend.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/a9a53241e38c1b97e30139b12788f2cc/timeseries_positive_trend.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/76c355bf66a060c742285e69a42e198d/timeseries_positive_trend.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/timeseries_positive_trend.png" class="plot-directive" src="../../_images/timeseries_positive_trend.png" />
+</figure>
+</section>
+<section id="negative-trend">
+<h3>Negative Trend<a class="headerlink" href="#negative-trend" title="Permalink to this heading">#</a></h3>
+<p>(<a class="reference download internal" download="" href="../../_downloads/2d343b86e373eff52b9d4b207496176b/timeseries_negative_trend.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/b4105e586cbf07ce38859635050d0759/timeseries_negative_trend.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/d5a11697861215f27efbfdf8a36a6253/timeseries_negative_trend.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/5dc8b872c505b84b4320e37781f4ec0e/timeseries_negative_trend.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/timeseries_negative_trend.png" class="plot-directive" src="../../_images/timeseries_negative_trend.png" />
+</figure>
+</section>
+<section id="no-trend">
+<h3>No Trend<a class="headerlink" href="#no-trend" title="Permalink to this heading">#</a></h3>
+<p>(<a class="reference download internal" download="" href="../../_downloads/c8e21425f590d9587251e769270ff76a/timeseries_no_trend.py"><code class="xref download docutils literal notranslate"><span class="pre">Source</span> <span class="pre">code</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/4a9acb3fc7cf75952d1d01a5e381f51b/timeseries_no_trend.png"><code class="xref download docutils literal notranslate"><span class="pre">png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/6ccdf25a94363b2969eb6f2a8047dc15/timeseries_no_trend.hires.png"><code class="xref download docutils literal notranslate"><span class="pre">hires.png</span></code></a>, <a class="reference download internal" download="" href="../../_downloads/945bd32773ef59c7f178be0e61d5e1af/timeseries_no_trend.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pdf</span></code></a>)</p>
+<figure class="align-default">
+<img alt="../../_images/timeseries_no_trend.png" class="plot-directive" src="../../_images/timeseries_no_trend.png" />
+</figure>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="01_ESTIMATION.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Point Estimation</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="03_REGRESSION.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Linear Regression</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bivariate-data">Bivariate Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Correlation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#univariate-statistics">Univariate Statistics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scatter-plots">Scatter Plots</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#direction">Direction</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#no-correlation">No Correlation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#positive-correlation">Positive Correlation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#negative-correlation">Negative Correlation</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strength">Strength</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#strong">Strong</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#weak">Weak</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linearity">Linearity</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#linear">Linear</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#non-linear">Non-Linear</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-series">Time Series</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#positive-trend">Positive Trend</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#negative-trend">Negative Trend</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-trend">No Trend</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Grant Moore
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Grant Moore.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

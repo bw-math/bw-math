@@ -1,0 +1,1546 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Set Theory &#8212; bishop-walsh-math  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notes/foundations/02_SET_THEORY';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Probability" href="../probability/index.html" />
+    <link rel="prev" title="Logic" href="01_LOGIC.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">bishop-walsh-math  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../00_SPLASH.html">Bishop Walsh Math</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../01_DATASETS.html">Datasets</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../syllabi/index.html">Course Syllabi</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../syllabi/00_STATS_SYLLABUS.html">AP Statistics Course Syllabus</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Class Notes</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Class Notes</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="00_HISTORY.html">Knowledge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_LOGIC.html">Logic</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Set Theory</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../experiments/index.html">Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../experiments/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../experiments/01_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../experiments/02_DESIGN.html">Experimental Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../experiments/03_DATA.html">Data</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../experiments/04_INFERENCE.html">Inference</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../experiments/hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/hypotheses/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/hypotheses/01_MEAN_TESTS.html">Population Mean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/hypotheses/02_PROPORTION_TESTS.html">Population Proportion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/hypotheses/03_STDDEV_TESTS.html">Population Standard Deviation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../statistics/00_GRAPHS.html">Graphical Representations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../statistics/01_ESTIMATION.html">Point Estimation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../statistics/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../statistics/03_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../statistics/04_SAMPLING.html">Sampling Distributions</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../distributions/00_BERNOULLI.html">Bernoulli Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../distributions/02_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../distributions/03_UNIFORM.html">Uniform Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../distributions/04_NORMAL.html">Normal Distribution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../assignments/index.html">Assignments</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/homework/index.html">Homework</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/01_UNIT01.html">Unit 1 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/02_UNIT02.html">Unit 2 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/03_UNIT03.html">Unit 3 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/04_UNIT04.html">Unit 4 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/05_UNIT05.html">Unit 5 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/06_UNIT06.html">Unit 6 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/07_UNIT07.html">Unit 7 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/08_UNIT08.html">Unit 8 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/09_UNIT09.html">Unit 9 Homework</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/homework/10_CHAP01_OS.html">Chapter 1 Homework (OpenStax Text)</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/classwork/index.html">Classwork</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/celebrations/index.html">Celebrations of Knowledge</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/00_STATS_Q1.html">Statistics: Quarter One</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/01_STATS_Q2.html">Statistics: Quarter Two</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/02_STATS_Q3.html">Statistics: Quarter Three</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/03_STATS_Q4.html">Statistics: Quarter Four</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/celebrations/04_CALC_Q2.html">Calculus: Quarter Two</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/algebra/index.html">Algebra</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/algebra/01_SUMS.html">Sums</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/differentiation/index.html">Differentiation</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/00_CHAIN_RULE.html">Chain Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/01_IMPLICIT_DIFFERENTIATION.html">Implicit Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/02_GRAPHING.html">Graphing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/03_RELATED_RATES.html">Related Rates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/04_OPTIMIZATION.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/differentiation/05_THEOREMS.html">Theorems</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/set_theory/index.html">Set Theory</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/set_theory/01_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/set_theory/02_VENN_DIAGRAMS.html">Venn Diagrams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/set_theory/03_LOGIC.html">Symbolic Logic</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/probability/solutions/index.html">Solutions</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/experiments/index.html">Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/experiments/00_DESIGN.html">Design</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/experiments/01_INFERENCE.html">Inference</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/experiments/02_BIAS.html">Bias</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/experiments/hypotheses/index.html">Hypothesis Testing</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/00_GRAPHS.html">Graphical Representations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/01_ESTIMATION.html">Point Estimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/03_REGRESSION.html">Regression</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/04_SAMPLING.html">Sampling Distributions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/statistics/05_CONFIDENCE.html">Confidence Intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/classwork/distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/distributions/00_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/classwork/distributions/02_NORMAL.html">Normal Distribution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/python/index.html">Python Projects</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/00_PYTHON.html">Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/01_CATEGORICAL.html">Bar Charts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/02_QUANTITATIVE.html">Histograms and Boxplots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/03_NORMALITY.html">Normality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/04_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/05_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/06_SIMULATION.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/07_SETS.html">Sample Spaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/08_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/python/09_BINOMIAL.html">Binomial Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/calculator/index.html">Calculator Projects</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/00_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/01_COIN_FLIPS.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/02_PI_ESTIMATION.html">Simulation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../resources/index.html">Resources</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/00_EXAMS.html">A.P. Statistics Exam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/01_REFERENCES.html">References</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../resources/calculator/index.html">TI-84 Calculator</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/00_BASICS.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/01_STATISTICS.html">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/02_PROBABILITY.html">Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/03_GRAPHING.html">Graphing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/04_PROGRAM.html">Programs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/05_VIDEOS.html">TI-84</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/06_WORKSHEETS.html">Worksheets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/07_REFERENCES.html">Calculator References</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../resources/python/index.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/00_SHELL.html">Online Python Shell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/01_SETUP.html">Python Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/02_BASIC.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/03_SETS.html">Sets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/04_FUNCTIONS.html">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/05_PLOTS.html">Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/06_FILES.html">Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/07_CONTROLS.html">Control Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/08_WEB.html">The Internet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/09_DEMOS.html">Demonstrations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../resources/tables/index.html">Statistical Tables</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/tables/01_Z_TABLE.html">Z Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/tables/02_CHI_SQUARED_TABLE.html"><img alt="\chi^2" class="math" src="../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/tables/03_T_TABLE.html">T Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/tables/04_PEARSON_TABLE.html">Pearson Correlation Coefficient Table</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../maintenance/index.html">Maintenance</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../maintenance/LATEX.html">LaTex Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maintenance/SPHINX.html">Sphinx</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/notes/foundations/02_SET_THEORY.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Set Theory</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#domain-of-discourse">Domain of Discourse</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elements">Elements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sets">Sets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cardinality">Cardinality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#universal-set">Universal Set</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#null-set">Null Set</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#natural-numbers">Natural Numbers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#real-numbers">Real Numbers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">Notation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#list-notation">List Notation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantifier-notation">Quantifier Notation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#venn-diagrams">Venn Diagrams</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations">Relations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subset">Subset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proper-subset">Proper Subset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equivalence">Equivalence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equality">Equality</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operations">Operations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complement">Complement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#union">Union</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intersection">Intersection</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference">Difference</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identity-theorems">Identity Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-1">Theorem 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-2">Theorem 2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-3">Theorem 3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-4">Theorem 4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-5">Theorem 5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-6">Theorem 6</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorems">Subset Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-one">Theorem 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-two">Theorem 2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-three">Theorem 3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-four">Theorem 4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-five">Theorem 5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-six">Theorem 6</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-theorems">Complement Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-theorem-one">Theorem 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-theorem-two">Theorem 2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-theorem-three">Theorem 3</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-theorems">Counting Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-theorem-one">Theorem 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-theorem-two">Theorem 2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aristotle-s-square-of-opposition">Aristotle’s Square of Opposition</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#derivation">Derivation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#universal-positive-case">Universal Positive Case</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#universal-negative-case">Universal Negative Case</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#existential-positive-case">Existential Positive Case</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#existential-negative-case">Existential Negative Case</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">Square of Opposition</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="set-theory">
+<span id="id1"></span><h1>Set Theory<a class="headerlink" href="#set-theory" title="Permalink to this heading">#</a></h1>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this heading">#</a></h2>
+<section id="domain-of-discourse">
+<span id="id2"></span><h3>Domain of Discourse<a class="headerlink" href="#domain-of-discourse" title="Permalink to this heading">#</a></h3>
+<dl class="simple">
+<dt>Definition</dt><dd><p>The <em>domain of discourse</em> is subject matter we are treating.</p>
+</dd>
+</dl>
+</section>
+<section id="elements">
+<span id="id3"></span><h3>Elements<a class="headerlink" href="#elements" title="Permalink to this heading">#</a></h3>
+<dl>
+<dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/20d6a1c77137e7fc63db49a2186054b269af01c1.png" alt="x,y,x"/> (<em>lowercase letters</em>)</p>
+<p><img class="math" src="../../_images/math/3b27c6bfd0a0830505b6509e8b3e867ba65cea30.png" alt="x_1, x_2, ... , x_n"/> (<em>lowercase letters with subscripts</em>)</p>
+</dd>
+<dt>Definition</dt><dd><p>The individuals, or objects, in the <em>domain of discourse</em>; The “<em>things</em>” being counted.</p>
+</dd>
+</dl>
+</section>
+<section id="sets">
+<span id="id4"></span><h3>Sets<a class="headerlink" href="#sets" title="Permalink to this heading">#</a></h3>
+<dl>
+<dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/c1aa5e31bee7731e9792fb0b9760c002197de969.png" alt="A,B,C"/> (<em>upper case letters</em>)</p>
+<p><img class="math" src="../../_images/math/ee2574d3596b3553624606616f77d378b51dea21.png" alt="A_1, A_2, ... , A_n"/> (<em>uppercase letters with subscripts</em>)</p>
+</dd>
+<dt>Definition</dt><dd><p>Groups of elements that share a common property.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>Sets</em> are sometimes referred to as <em>classes</em> or <em>collections</em>.</p>
+</div>
+</section>
+<section id="cardinality">
+<span id="id5"></span><h3>Cardinality<a class="headerlink" href="#cardinality" title="Permalink to this heading">#</a></h3>
+<dl class="simple">
+<dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/534ec862789190f4e1c0ee776c13e4f478f5e83f.png" alt="n(A)"/></p>
+</dd>
+<dt>Definition</dt><dd><p>The number of <em>distinct</em> elements in a set.</p>
+</dd>
+</dl>
+</section>
+<section id="universal-set">
+<span id="id6"></span><h3>Universal Set<a class="headerlink" href="#universal-set" title="Permalink to this heading">#</a></h3>
+<dl class="simple">
+<dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/23298f92ca8dc2a1ce6332eb7a21d5f2e9ae0bd8.png" alt="S"/></p>
+</dd>
+<dt>Definition</dt><dd><p>The universal set <em>S</em> is set of all elements in the <em>domain of discourse</em>.</p>
+</dd>
+</dl>
+</section>
+<section id="null-set">
+<span id="id7"></span><h3>Null Set<a class="headerlink" href="#null-set" title="Permalink to this heading">#</a></h3>
+<dl class="simple">
+<dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/4d7ffaeaa90a71e9aedb567d46ba48bcb8c4ec80.png" alt="\varnothing"/></p>
+</dd>
+<dt>Definition</dt><dd><p>The unique set which contains nothing, i.e. no elements.</p>
+</dd>
+</dl>
+</section>
+<section id="natural-numbers">
+<span id="id8"></span><h3>Natural Numbers<a class="headerlink" href="#natural-numbers" title="Permalink to this heading">#</a></h3>
+<dl class="simple">
+<dt>Symbolic Expresison</dt><dd><p><img class="math" src="../../_images/math/453896d96e7397619da7c8d46796c4904cfc2a5c.png" alt="\mathbb{N}"/></p>
+</dd>
+<dt>Definition</dt><dd><p>The set of all counting numbers starting at <img class="math" src="../../_images/math/ed871b77658649aee54fd910b4468044caaa1be3.png" alt="1, 2, 3, ..."/></p>
+</dd>
+</dl>
+</section>
+<section id="real-numbers">
+<span id="id9"></span><h3>Real Numbers<a class="headerlink" href="#real-numbers" title="Permalink to this heading">#</a></h3>
+<dl class="simple">
+<dt>Symbolic Expression</dt><dd><p><img class="math" src="../../_images/math/1483d3014b3dd6403a406685ba29142ee3a9c764.png" alt="\mathbb{R}"/></p>
+</dd>
+<dt>Definition</dt><dd><p>The set of all decimal numbers, <img class="math" src="../../_images/math/fec97f5e5fb869ebee1edc0ad58eba6d98939fad.png" alt="1, 1.01, 1.001, ..."/></p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="notation">
+<h2>Notation<a class="headerlink" href="#notation" title="Permalink to this heading">#</a></h2>
+<section id="list-notation">
+<span id="id10"></span><h3>List Notation<a class="headerlink" href="#list-notation" title="Permalink to this heading">#</a></h3>
+<div class="math">
+<p><img src="../../_images/math/9d9d56d6853698c59a59a322b9a3883a0b1c8c15.png" alt="A = \{ a, b, c, ... \}"/></p>
+</div><p>In <em>list notation</em>, all of the elements that belong to <strong>A</strong> are <em>explicitly</em> written between a pair of brackets with commas separating each element.</p>
+</section>
+<section id="quantifier-notation">
+<span id="id11"></span><h3>Quantifier Notation<a class="headerlink" href="#quantifier-notation" title="Permalink to this heading">#</a></h3>
+<div class="math">
+<p><img src="../../_images/math/1f406e8380dff5a3efc3f81b1e66c978dcaa302e.png" alt="A = \{ \forall x: F(x) \}"/></p>
+</div><p>In <em>quantifier notation</em>, all of the elements that belong to <strong>A</strong> are <em>implicitly</em> written between a pair of brackets with a formula that specifies the conditions for membership.</p>
+<p><em>Quantifier notation</em> is sometimes referred to as <em>set builder notation</em>.</p>
+</section>
+</section>
+<section id="corollaries">
+<h2>Corollaries<a class="headerlink" href="#corollaries" title="Permalink to this heading">#</a></h2>
+<dl class="simple">
+<dt><img class="math" src="../../_images/math/30cba53fbe29860d43e85f2440483ed1c3df17b4.png" alt="n(\varnothing)=0"/></dt><dd><p>The number of elements in the <em>null set</em> (the <em>cardinality</em> of the <em>null set</em>) is 0.</p>
+</dd>
+<dt><img class="math" src="../../_images/math/a6b3472fda60cb182d58ad572b7334eec5633573.png" alt="\forall x: x \notin \varnothing"/></dt><dd><p>Nothing belongs to the <em>null set</em></p>
+</dd>
+<dt><img class="math" src="../../_images/math/6ae9ebdfb1d8e80340e65171d33df1572d6589c3.png" alt="\forall x: x \in S"/></dt><dd><p>Everything belongs to the <em>unverisal set</em></p>
+</dd>
+</dl>
+</section>
+<section id="venn-diagrams">
+<span id="id12"></span><h2>Venn Diagrams<a class="headerlink" href="#venn-diagrams" title="Permalink to this heading">#</a></h2>
+<p>A <em>Venn Diagram</em> is a visual representation of sets. The universal set is represent as rectangle and sets are represented as circles within this rectangle. The simplest <em>Venn Diagram</em> is a graphic of a single set <strong>A</strong> shown against the universal set <strong>S</strong>,</p>
+<img alt="notes/assets/imgs/sets/sets_simple.jpg" class="align-center" src="notes/assets/imgs/sets/sets_simple.jpg" />
+<p>You will sometimes set <em>Venn Diagrams</em> with the elements of the sets written in, as in the following picture,</p>
+<img alt="notes/assets/imgs/sets/sets_simple_with_elements.jpg" class="align-center" src="notes/assets/imgs/sets/sets_simple_with_elements.jpg" />
+<p><em>Venn Diagrams</em> are useful for visualizing <a class="reference internal" href="#set-relations"><span class="std std-ref">Relations</span></a>. For this reason, we will see more complex examples of <em>Venn Diagrams</em> in the next section.</p>
+</section>
+<section id="relations">
+<span id="set-relations"></span><h2>Relations<a class="headerlink" href="#relations" title="Permalink to this heading">#</a></h2>
+<section id="subset">
+<span id="id13"></span><h3>Subset<a class="headerlink" href="#subset" title="Permalink to this heading">#</a></h3>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/de2b893138da1f4032fea64eade1533eed5eb60e.png" alt="A \subseteq B"/></p>
+</div></dd>
+</dl>
+<p><strong>A</strong> is a subset of <strong>B</strong> if all of <strong>A</strong>’s elements are contained in <strong>B</strong>.</p>
+<p>To say the same thing in a different way, if the element <em>x</em> belongs to <strong>A</strong>, then the element <em>x</em> also belongs to <strong>B</strong></p>
+<div class="math">
+<p><img src="../../_images/math/e49f839a15be4555eb6cee194a9102937c56fb4e.png" alt="\forall x : x \in A \implies x \in B"/></p>
+</div><p>The relation of <em>subset</em> can be seen in the following <em>Venn Diagram</em>,</p>
+<img alt="notes/assets/imgs/sets/sets_subset.jpg" src="notes/assets/imgs/sets/sets_subset.jpg" />
+<p>This diagram represents the relationship <img class="math" src="../../_images/math/d47d4abd77f8c220c227bb878ecc832f9ea96a52.png" alt="A \subseteq B"/>.</p>
+</section>
+<section id="proper-subset">
+<span id="id14"></span><h3>Proper Subset<a class="headerlink" href="#proper-subset" title="Permalink to this heading">#</a></h3>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/b0130aeceff05f789b654788662dc910994114ca.png" alt="A \subset B"/></p>
+</div></dd>
+</dl>
+<p><strong>A</strong> is a subset of <strong>B</strong> and <img class="math" src="../../_images/math/0e1ac9039591736dc2d721dcac6dd0372721ca48.png" alt="A \neq B"/>. To say the same thing in a different way, <strong>A</strong> is wholly contained in <strong>B</strong>.</p>
+<div class="math">
+<p><img src="../../_images/math/0de37654f0bacf303cad72990e831346a2e742dc.png" alt="\forall x: x \in A \implies x \in B \text{ and } A \neq B"/></p>
+</div><p>An equivalent way of defining a <em>proper subset</em> is given by,</p>
+<div class="math">
+<p><img src="../../_images/math/5e140de15581ff7925d8c6f1955e3e8f245aed20.png" alt="\forall x: x \in A \implies x \in B \text{ and } n(A) &lt; n(B)"/></p>
+</div><p>This is an equivalent formulation because saying cthe cardinality of <strong>A</strong> is less than the cardinality of <strong>B</strong> <em>and</em> all members of <strong>A</strong> are members of <strong>B</strong>” is logically equivalent to saying “<strong>A</strong> is not identical to <strong>B</strong> <em>and</em> all members of <strong>A</strong> are members of <strong>B</strong>”.</p>
+</section>
+<section id="equivalence">
+<span id="set-equivalence"></span><h3>Equivalence<a class="headerlink" href="#equivalence" title="Permalink to this heading">#</a></h3>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/eb87029094d8ad8dad7a3d3611e54911ea6e9909.png" alt="A \equiv B"/></p>
+</div></dd>
+</dl>
+<p>Two sets <strong>A</strong> and <strong>B</strong> are <em>equivalent</em> if the number of elements in <strong>A</strong> is equal to the number of elements <strong>B</strong>, i.e.,</p>
+<div class="math">
+<p><img src="../../_images/math/d59c27c501c3a96b4274541cd07710f6e833ad4a.png" alt="n(A) = n(B) \implies A \equiv B"/></p>
+</div></section>
+<section id="equality">
+<span id="set-equality"></span><h3>Equality<a class="headerlink" href="#equality" title="Permalink to this heading">#</a></h3>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/862f3d4bf1c34c9cae21171572ff1c79d43f3be8.png" alt="A = B"/></p>
+</div></dd>
+</dl>
+<p>Two sets <strong>A</strong> and <strong>B</strong> are <em>equal</em> if they contain the same elements. In other words, two sets are equal if they are the same set.</p>
+<div class="math">
+<p><img src="../../_images/math/5fed91e379f5a03cd37df32c0043561804ee81b5.png" alt="\forall x: x \in A \implies x \in B \text{ and } x \in B \implies x \in A"/></p>
+</div><p>An equivalent way of defining the equality of sets is given by,</p>
+<div class="math">
+<p><img src="../../_images/math/060436e9788ea6d5bed7175b27650719c7334ffe.png" alt="A \subseteq B \text { and } B \subseteq A"/></p>
+</div><p>In other words, if <strong>A</strong> is wholly contained in <strong>B</strong> and <strong>B</strong> is wholly contained in <strong>A</strong>, then the only way this can occur is if <img class="math" src="../../_images/math/b20b0b13ae1d51af6e0bcc6477b498dd3db052a0.png" alt="A = B"/>.</p>
+<p><em>Equality</em> is a stricter condition than <em>equivalence</em>. Two sets that are equal are equivalent, but two sets that equivalent are not necessarily equal. Consider the sets,</p>
+<div class="math">
+<p><img src="../../_images/math/b29de7093f82946d98d4cf0ae72ba120f0450526.png" alt="A = \{ \text{dog}, \text{cat} \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/88fdff88da83d1cbaabcc34efea2068289cd9398.png" alt="B = \{ \text{Vietnam War}, \text{Russo-Japanese War} \}"/></p>
+</div><p>Both of these sets are equivalent because <img class="math" src="../../_images/math/747adc5850644682016036f2b719aaf6ef2c4827.png" alt="n(A) = n(B) = 2"/>, but they are not equal. If we add <strong>C</strong> to the mix,</p>
+<div class="math">
+<p><img src="../../_images/math/2b055ea090141eacb7778b44beaceed168429437.png" alt="C = \{ &quot;cat&quot;, &quot;dog&quot; \}"/></p>
+</div><p>Then not only do we have <img class="math" src="../../_images/math/804b4795bdfb21ab4befb1742cb8194080c9a654.png" alt="n(A) = n(C) = 2"/>, but we also have <img class="math" src="../../_images/math/3796f5198dfbac32a980f9f3d75012b7409007e7.png" alt="C = A"/>, since they both contain the same elements.</p>
+<p>In order words, from equality we can infer equivalence, but from equivalence, we <em>cannot</em> infer equality.</p>
+<div class="math">
+<p><img src="../../_images/math/a94a382f4fcae2205d1c0ddbbb469c9911cac5a6.png" alt="A = B \implies A \equiv B"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/4b153daf42b9e4a4e292bd3ce4af9f746424fa0e.png" alt="A \equiv B \not \Rightarrow A = B"/></p>
+</div></section>
+</section>
+<section id="operations">
+<span id="set-operations"></span><h2>Operations<a class="headerlink" href="#operations" title="Permalink to this heading">#</a></h2>
+<section id="complement">
+<span id="id15"></span><h3>Complement<a class="headerlink" href="#complement" title="Permalink to this heading">#</a></h3>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/081ad39e649541259707f03e1dece0849a3b5572.png" alt="A^c"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/8e74e7d70332a1d98790820b78a3cf912d242312.png" alt="\sim  A"/></p>
+</div></dd>
+</dl>
+<p>The set containing elements that do not belong to the set <strong>A</strong>.</p>
+<div class="math">
+<p><img src="../../_images/math/9c795cf193833c9f6b9b983e831c3378462c7311.png" alt="A^c = \{ \forall x: x \notin A \}"/></p>
+</div><p>The complement can be visualized with the following <em>Venn Diagram</em>,</p>
+<img alt="notes/assets/imgs/sets/sets_complement.jpg" src="notes/assets/imgs/sets/sets_complement.jpg" />
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The complement of a set corresponds to the English word “<em>not</em>”.</p>
+<dl class="simple">
+<dt>Example</dt><dd><p>Let <strong>S</strong> be the set of animals and let <strong>A</strong> be the set of dogs. Then <img class="math" src="../../_images/math/2ef75eec66003e588055d751eaddd391b6eccea0.png" alt="A^c"/> is the set of animals that are <em>not</em> dogs.</p>
+</dd>
+</dl>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The complement is always taken <em>relative to the universal set</em>. In other words, you cannot find the complement if you do not have the universal set.</p>
+</div>
+<p>Example</p>
+<blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/5e409a9075b32b2dae598c29338ab7016deb1537.png" alt="S = \{ \text{ red }, \text{ blue }, \text{ green } \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/220444f2f4e922b35249cc54b50923140e36df99.png" alt="A = \{ \text{ blue } \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/2f9ecb9f8e868094181f68af9c31844db280f116.png" alt="A^c = \{ \text{ red }, \text{ green } \}"/></p>
+</div></div></blockquote>
+</section>
+<section id="union">
+<span id="id16"></span><h3>Union<a class="headerlink" href="#union" title="Permalink to this heading">#</a></h3>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/888ddb12ea65a9e5fb8d5232a34f768ddf4f5306.png" alt="A \cup B"/></p>
+</div></dd>
+</dl>
+<p>The set containing elements that belong to either the set <strong>A</strong> or the set <strong>B</strong>.</p>
+<div class="math">
+<p><img src="../../_images/math/b8851eaf5aaef73d70a3d5746260e385d126e682.png" alt="A \cup B = \{ \forall x: x \in A \text{ or } x \in B \}"/></p>
+</div><p>We have to be careful with <em>Venn Diagrams</em> that represent unions, because the two sets <strong>A</strong> and <strong>B</strong> might have elements in common, or they may not have elements in common.</p>
+<p>The first case, where the two sets have no elements in common is shown below,</p>
+<img alt="notes/assets/imgs/sets/sets_union_disjoint.jpg" src="notes/assets/imgs/sets/sets_union_disjoint.jpg" />
+<p>The union would be represented by <em>both</em> circles. Notice the circles do not touch. Sets that have no elements in common are called <em>disjoint</em>.</p>
+<p>The second case, where the two sets have elements in common is shown in the next diagram,</p>
+<img alt="notes/assets/imgs/sets/sets_union_overlapping.jpg" src="notes/assets/imgs/sets/sets_union_overlapping.jpg" />
+<p>The union would be represented by the entire area of both circles. Notice the circles share some elements in this case. Sets that have elements in common, but are not subsets in either direction (i.e. neither <img class="math" src="../../_images/math/d47d4abd77f8c220c227bb878ecc832f9ea96a52.png" alt="A \subseteq B"/> nor <img class="math" src="../../_images/math/3035400ac38c7d070615ee5aa48248937a105b2d.png" alt="B \subseteq A"/>), are called <em>overlapping</em>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The union of two sets corresponds to the English “<em>or</em>”.</p>
+<dl class="simple">
+<dt>Example</dt><dd><p>Let <strong>A</strong> be the set of calculators. Let <strong>B</strong> represent the set of <em>pencils</em>. Then <img class="math" src="../../_images/math/47b7d7c58a0d8fba34b3e6c9b40a295769c86482.png" alt="A \cup B"/> represents the set of <em>calculators</em> or <em>pencils</em>.</p>
+</dd>
+</dl>
+</div>
+<p>Example</p>
+<blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/9bcb364ce9a1327bb6068fc8c0378df0bfaa9ef8.png" alt="A = \{ a, b, c \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/fb164dba70d0f379849c0e4fac3ea695fee49578.png" alt="B = \{ b, c, d \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/586908ab23d535f7e6dcff43f49fabe50c07c292.png" alt="A \cup B = \{ a, b, c, d \}"/></p>
+</div></div></blockquote>
+</section>
+<section id="intersection">
+<span id="id17"></span><h3>Intersection<a class="headerlink" href="#intersection" title="Permalink to this heading">#</a></h3>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/4a09bf76fbfe7fd3ac1878768a4895e92f25df75.png" alt="A \cap B"/></p>
+</div></dd>
+</dl>
+<p>The set containing elements that to both the set <strong>A</strong> and the set <strong>B</strong>.</p>
+<div class="math">
+<p><img src="../../_images/math/829dfd841627af6300ebc90c8153725409bd562a.png" alt="A \cap B = \{ \forall x: x \in A \text{ and } x \in B \}"/></p>
+</div><p>As in the union, there are two cases we need to consider when representing the interesection of two sets with a <em>Venn Diagram</em>. Either the sets have elements in common, or they do not.</p>
+<p>The first case, where the two sets have elements in common is shown in the next diagram,</p>
+<img alt="notes/assets/imgs/sets/sets_union_overlapping.jpg" src="notes/assets/imgs/sets/sets_union_overlapping.jpg" />
+<p>The intersection is represented by where the circles meet. In the case of <em>overlapping</em> sets, this is non-empty,</p>
+<div class="math">
+<p><img src="../../_images/math/2f17aeadbb82646a9c4242983c0b9a445dec3d55.png" alt="A \cap B \neq \varnothing"/></p>
+</div><p>The second case, where the two sets have no elements in common is shown below,</p>
+<img alt="notes/assets/imgs/sets/sets_union_disjoint.jpg" src="notes/assets/imgs/sets/sets_union_disjoint.jpg" />
+<p>The intersection is represented by where the circles meet. In the case of <em>disjoint sets</em>, the circles do not meet. Thus,</p>
+<div class="math">
+<p><img src="../../_images/math/ad08384ab7d641cd5fb74a25df89ac9fcea6ea96.png" alt="A \cap B = \varnothing"/></p>
+</div><div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The intersection of two sets corresponds to the English “<em>and</em>”.</p>
+<dl class="simple">
+<dt>Example</dt><dd><p>Let <strong>A</strong> be the set of United States Senators. Let <strong>B</strong> the set of people over the age of 70. Then, <img class="math" src="../../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/> represents the set of people who are both United States Senators and over the age of 70.</p>
+</dd>
+</dl>
+</div>
+<p>Example</p>
+<blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/9bcb364ce9a1327bb6068fc8c0378df0bfaa9ef8.png" alt="A = \{ a, b, c \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/fb164dba70d0f379849c0e4fac3ea695fee49578.png" alt="B = \{ b, c, d \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/319fb515f3b838cb9b3037c72f738d0461b343c8.png" alt="A \cap B = \{ b, c \}"/></p>
+</div></div></blockquote>
+</section>
+<section id="difference">
+<span id="set-difference"></span><h3>Difference<a class="headerlink" href="#difference" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+<p>The operation of subtracting a set <img class="math" src="../../_images/math/3a7a214c98a4440c624d51173249c2fb0d99e2c4.png" alt="B"/> from a set <img class="math" src="../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/> is equivalent to taking the intersection the sets <img class="math" src="../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/> and <img class="math" src="../../_images/math/8baf415367bb142a93d04eba8007d3e5cd02bdad.png" alt="B^c"/>,</p>
+<div class="math">
+<p><img src="../../_images/math/686a509170313aa1dbf7558cd8c0d8fba1e3a2fb.png" alt="A - B = A \cap B^c"/></p>
+</div></section>
+</section>
+<section id="theorems">
+<span id="set-theorems"></span><h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this heading">#</a></h2>
+<p>All of the theorems of Set Theory can be proven in one of two ways:</p>
+<ol class="arabic simple">
+<li><p>By drawing a <a class="reference internal" href="#venn-diagrams"><span class="std std-ref">Venn Diagram</span></a> of the sets in question and working out the relations between them graphically.</p></li>
+<li><p>Writing example sets in <a class="reference internal" href="#list-notation"><span class="std std-ref">List Notation</span></a> and then applying the definitions of <a class="reference internal" href="#set-operations"><span class="std std-ref">Operations</span></a> to both sides of the equation.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Most of the set theorems can be phrased in terms of sets, or in terms of cardinalities. We can do this because all of the following theorems are theorems about <em>equality</em> of sets. Recall that from equality we can infer equivalence,</p>
+<div class="math">
+<p><img src="../../_images/math/a94a382f4fcae2205d1c0ddbbb469c9911cac5a6.png" alt="A = B \implies A \equiv B"/></p>
+</div><p>This will be important when we apply these ideas to <a class="reference internal" href="../probability/index.html#probability"><span class="std std-ref">Probability</span></a>. For this reason, we will give two versions of each theorem, when possible. One version will be phrased in terms of sets and the other version will be phrased in terms of cardinalities.</p>
+</div>
+<section id="identity-theorems">
+<span id="id18"></span><h3>Identity Theorems<a class="headerlink" href="#identity-theorems" title="Permalink to this heading">#</a></h3>
+<section id="theorem-1">
+<span id="identity-theorem-one"></span><h4>Theorem 1<a class="headerlink" href="#theorem-1" title="Permalink to this heading">#</a></h4>
+<dl>
+<dt>Symbolc Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/599edcab9ce7123f384220111c824466e960c7fe.png" alt="A \cap \varnothing = \varnothing"/></p>
+</div><p>Or equivalently,</p>
+<div class="math">
+<p><img src="../../_images/math/ac809f8942acdd287ec9965a080b8d80d9e4293a.png" alt="n(A \cap \varnothing) = n(\varnothing)"/></p>
+</div></dd>
+</dl>
+<p>The intersection of any set <strong>A</strong> with the empty set is the empty set.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Notice the resemblance to <em>zero property of multiplication</em>,</p>
+<div class="math">
+<p><img src="../../_images/math/e2f9cc86cb62e7b21ba62f972b69816bb105c28a.png" alt="a \cdot 0 = 0"/></p>
+</div></div>
+</section>
+<section id="theorem-2">
+<span id="identity-theorem-two"></span><h4>Theorem 2<a class="headerlink" href="#theorem-2" title="Permalink to this heading">#</a></h4>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/87ec295e7ac6ac2207eb0f1ec24acf706bba6132.png" alt="A \cup \varnothing = A"/></p>
+</div><p>Or equivalently,</p>
+<div class="math">
+<p><img src="../../_images/math/351c7af7da45f3d7f5b70ff208a597dbc2516b20.png" alt="n(A \cup \varnothing) = n(A)"/></p>
+</div></dd>
+</dl>
+<p>The union of any set <strong>A</strong> with the empty set is itself.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Notice the resembalnce to the <em>identity property of addition</em>,</p>
+<div class="math">
+<p><img src="../../_images/math/a4ef85c95fcca51bcc639358dbd4ae914bbb303b.png" alt="a + 0 = a"/></p>
+</div></div>
+</section>
+<section id="theorem-3">
+<span id="identity-theorem-three"></span><h4>Theorem 3<a class="headerlink" href="#theorem-3" title="Permalink to this heading">#</a></h4>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/a23262a8a80159336b111c74ba7378c932a63175.png" alt="A \cap S = A"/></p>
+</div><p>Or equivalently,</p>
+<div class="math">
+<p><img src="../../_images/math/a947cdbc87c50c88bb4a0255e9898c5e52f12778.png" alt="n(A \cap S) = n(A)"/></p>
+</div></dd>
+</dl>
+<p>The intersection of any set <strong>A</strong> with the universal set is itself.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Notice the resemblance to the <em>identity property of multiplication</em>,</p>
+<div class="math">
+<p><img src="../../_images/math/8aecf79fa387d95027a1653fb27a60124bfe1953.png" alt="a \cdot 1 = a"/></p>
+</div></div>
+</section>
+<section id="theorem-4">
+<span id="identity-theorem-four"></span><h4>Theorem 4<a class="headerlink" href="#theorem-4" title="Permalink to this heading">#</a></h4>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/aed48397aff16b989bdda910435207bc80b1f878.png" alt="A \cup S = S"/></p>
+</div><p>Or equivalently,</p>
+<div class="math">
+<p><img src="../../_images/math/94122912a0e84ece3e9b5f11c09fa64267c34d85.png" alt="n(A \cup S) = n(S)"/></p>
+</div></dd>
+</dl>
+<p>The union of any set <strong>A</strong> with the universal set is the universal set.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This theorem does not have an analogous algebraic property. This is where <em>set theory</em> starts to diverge from ordinary algebra.</p>
+</div>
+</section>
+<section id="theorem-5">
+<span id="identity-theorem-five"></span><h4>Theorem 5<a class="headerlink" href="#theorem-5" title="Permalink to this heading">#</a></h4>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/dfe27d66378c2b16284826d75978d92ab39d46a3.png" alt="A \cup A = A"/></p>
+</div></dd>
+</dl>
+<p>The union of any set <strong>A</strong> with itself is itself.</p>
+</section>
+<section id="theorem-6">
+<span id="identity-theorem-six"></span><h4>Theorem 6<a class="headerlink" href="#theorem-6" title="Permalink to this heading">#</a></h4>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/d1f39df0606799002692d8679be2e404bb019213.png" alt="A \cap A = A"/></p>
+</div></dd>
+</dl>
+<p>The intersection of any set <strong>A</strong> with itself is itself.</p>
+</section>
+</section>
+<section id="subset-theorems">
+<span id="id19"></span><h3>Subset Theorems<a class="headerlink" href="#subset-theorems" title="Permalink to this heading">#</a></h3>
+<section id="subset-theorem-one">
+<span id="id20"></span><h4>Theorem 1<a class="headerlink" href="#subset-theorem-one" title="Permalink to this heading">#</a></h4>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/8f1e7a5f69f7a28a1b39a33ae369154b03c951e5.png" alt="A \cap B \subseteq A"/></p>
+</div><p>Or equivalently,</p>
+<div class="math">
+<p><img src="../../_images/math/bc1207cb6ac5952e9e6abb54a2e34720bd77b38f.png" alt="n(A \cap B) &lt;= n(A)"/></p>
+</div></dd>
+</dl>
+<p>The intersection of <strong>A</strong> and <strong>B</strong> is a subset of <strong>A</strong>.</p>
+</section>
+<section id="subset-theorem-two">
+<span id="id21"></span><h4>Theorem 2<a class="headerlink" href="#subset-theorem-two" title="Permalink to this heading">#</a></h4>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/541b2db7263cad6154970693bca5bcca4ca80e87.png" alt="A \subseteq A \cup B"/></p>
+</div><p>Or equivalently,</p>
+<div class="math">
+<p><img src="../../_images/math/b08e16e8e521dc57b6c934a779a9a86e4a234fb4.png" alt="n(A) &lt;= n(A \cup B)"/></p>
+</div></dd>
+</dl>
+<p><strong>A</strong> is a subset of the union of <strong>A</strong> and <strong>B</strong>.</p>
+</section>
+<section id="subset-theorem-three">
+<span id="id22"></span><h4>Theorem 3<a class="headerlink" href="#subset-theorem-three" title="Permalink to this heading">#</a></h4>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/d666d0b08acaff4f5583afe43535444e057b1fc6.png" alt="A \cap B \subseteq A \cup B"/></p>
+</div><p>Or equivalently,</p>
+<div class="math">
+<p><img src="../../_images/math/630a791739907633b903a5caec2f133d0cb17ef7.png" alt="n(A \cap B) &lt;= n(A \cup B)"/></p>
+</div></dd>
+</dl>
+<p>The intersection of two sets <strong>A</strong> and <strong>B</strong> is a subset of the union of those same two sets.</p>
+</section>
+<section id="subset-theorem-four">
+<span id="id23"></span><h4>Theorem 4<a class="headerlink" href="#subset-theorem-four" title="Permalink to this heading">#</a></h4>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/a88239fa9fc705130917443468208494728642f4.png" alt="A \subseteq B \implies A \cap B = A"/></p>
+</div><p>Or equivalently,</p>
+<div class="math">
+<p><img src="../../_images/math/afa673d67d672b7e56fcd9e6ef8c916cabdca8c4.png" alt="A \subseteq B \implies n(A \cap B) = n(A)"/></p>
+</div></dd>
+</dl>
+<p>If <strong>A</strong> is a subset of <strong>B</strong>, then the intersection of <strong>A</strong> and <strong>B</strong> is equal to <strong>A</strong>.</p>
+<p>The hypothesis of this theorem, that <strong>A</strong> is a subset of <strong>B</strong>, cannot be written simply in terms of cardinalities. To see why, consider the sets,</p>
+<div class="math">
+<p><img src="../../_images/math/99cfc94f27c0426015c8a271e7cee670401cf675.png" alt="A = \{ \text{red}, \text{blue}, \text{yellow} \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/9d67215335724e1cdd4d4ed838421b1e4cc32fcf.png" alt="B = \{ \text{red}, \text{blue} \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/18f31faee0d6246550dd9be8837f7e9d460647b9.png" alt="C = \{ \text{orange}, \text{black} \}"/></p>
+</div><p>Here we have,</p>
+<div class="math">
+<p><img src="../../_images/math/5a08823b79eebb096f2fe2e8b6b32dbf4cef0384.png" alt="B \subseteq A"/></p>
+</div><p>From this and the theorem taken together, we are able to infer the intersection of <strong>B</strong> and <strong>A</strong> is <strong>B</strong>,</p>
+<div class="math">
+<p><img src="../../_images/math/da9a6ca48abff79e38a10f616e368b439bab1bd2.png" alt="B \cap A = \{ \text{red}, \text{blue} \} = B"/></p>
+</div><p>If we try to apply the same logic to <strong>C</strong> and <strong>A</strong>, we run into a problem. Namely,</p>
+<div class="math">
+<p><img src="../../_images/math/a2a042817d11390281723c7a5fd86261002d2e27.png" alt="C \nsubseteq A"/></p>
+</div><p>However, we do have,</p>
+<div class="math">
+<p><img src="../../_images/math/8d5598528dfbbcd00cb4f3928d864a81979fd6ad.png" alt="n(C) &lt;= n(A)"/></p>
+</div><p>But this doesn’t help us, because from it, we <strong>cannot</strong> infer,</p>
+<div class="math">
+<p><img src="../../_images/math/f1c1709a662d7a19b5647885d0a9c162314f174c.png" alt="n(C \cap A) = n(C)"/></p>
+</div><p>In fact, not only can we <em>not</em> infer it, it’s <em>not</em> true. In this example,</p>
+<div class="math">
+<p><img src="../../_images/math/4503e6fb8caab0812d530954abde16abaa9b3532.png" alt="C \cap A = \varnothing"/></p>
+</div><p>So,</p>
+<div class="math">
+<p><img src="../../_images/math/fd8b1638565d6e55bfbb1d14e68396b9554f640d.png" alt="n(C \cap A) = 0"/></p>
+</div><p>Whereas,</p>
+<div class="math">
+<p><img src="../../_images/math/54fb4b491362054477cf4a9651abb5de2522b16f.png" alt="n(A) = 3 \neq 0"/></p>
+</div><p>The lesson here is: the relation of “<em>less than or equal to</em>” between cardinalities does not equate to the relation of “<em>subset of</em>” between two sets. While the concepts are related, this theorem illustrates they must regarded as separate <em>ideas</em>.</p>
+</section>
+<section id="subset-theorem-five">
+<span id="id24"></span><h4>Theorem 5<a class="headerlink" href="#subset-theorem-five" title="Permalink to this heading">#</a></h4>
+<blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/45292bbb37c0b9ad99cb48f48e3e1e74ab20ae17.png" alt="A \subseteq B \implies A \cup B = B"/></p>
+</div></div></blockquote>
+<p>If <strong>A</strong> is a subset of <strong>B</strong>, then the union of <strong>A</strong> and <strong>B</strong> is equal to <strong>B</strong></p>
+</section>
+<section id="subset-theorem-six">
+<span id="id25"></span><h4>Theorem 6<a class="headerlink" href="#subset-theorem-six" title="Permalink to this heading">#</a></h4>
+<blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/18197d5d03e75d448a3f05c1eb35da16a60e6368.png" alt="A \subseteq B \text{ and } B \subset C \implies A \subseteq C"/></p>
+</div></div></blockquote>
+<p>If <strong>A</strong> is a subset of <strong>B</strong> and <strong>B</strong> is a subset of <strong>C</strong>, then <strong>A</strong> is a subset of <strong>C</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This theorem is a type of <a class="reference external" href="https://en.wikipedia.org/wiki/Syllogism">syllogism</a>. Refer to the <a class="reference internal" href="00_HISTORY.html#knowledge"><span class="std std-ref">Knowledge</span></a> section for more details on <em>syllogisms</em>.</p>
+</div>
+</section>
+</section>
+<section id="complement-theorems">
+<span id="id26"></span><h3>Complement Theorems<a class="headerlink" href="#complement-theorems" title="Permalink to this heading">#</a></h3>
+<section id="complement-theorem-one">
+<span id="id27"></span><h4>Theorem 1<a class="headerlink" href="#complement-theorem-one" title="Permalink to this heading">#</a></h4>
+<blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/2314c220fa6ccf93ee4d1b97a984d413286d53b1.png" alt="(A^c)^c = A"/></p>
+</div></div></blockquote>
+<p>The complement of a set <strong>A</strong>’s complement is the set <strong>a</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Think of this theorem in terms of “<em>double negative</em>”.</p>
+<dl class="simple">
+<dt>Example</dt><dd><p>If a crayon isn’t <em>not red</em>, then it <em>is</em> red.</p>
+</dd>
+</dl>
+</div>
+<p>Example</p>
+<blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/17b03bfbedb8c25ca9cd9910b5f67d6f9880dbbd.png" alt="S = \{ 1, 2, 3 \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/1aa5c0a0fab72522fa4baac70e0f45794b46ea1b.png" alt="A = \{ 1, 2 \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/1bbf87f2e304e899a2d2aac5ede29d8399910193.png" alt="A^c = \{ 3 \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/30479171ca47cf7ab9bfc27f3adbeae7edf62c4d.png" alt="(A^c)^c = \{ 1, 2 \}"/></p>
+</div></div></blockquote>
+</section>
+<section id="complement-theorem-two">
+<span id="id28"></span><h4>Theorem 2<a class="headerlink" href="#complement-theorem-two" title="Permalink to this heading">#</a></h4>
+<blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/1bfdea2655c561dc3eb5427c22f98c21cb0912a0.png" alt="A \cup A^c = S"/></p>
+</div><p>Or equivalently,</p>
+<div class="math">
+<p><img src="../../_images/math/e77c9decea175854b7e1fa9d24700546e4e9b0de.png" alt="n(A \cup A^c) = n(S)"/></p>
+</div></div></blockquote>
+<p>The union of a set <strong>A</strong> with its complement is the universal set.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This theorem is sometimes known as the <a class="reference external" href="https://simple.wikipedia.org/wiki/Law_of_the_excluded_middle">law of the excluded middle</a>.</p>
+</div>
+<p>Example</p>
+<blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/31357efae00c2cfce48da8253bb4e8e6456d3a15.png" alt="S = \{ \text{ heads }, \text{ tails } \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/d766d46ec062fa74883d3c00da090d75495e7b3b.png" alt="A = \{ \text{ heads } \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/36cbbdbee71138954599bdaa984fd6a5f7fe5642.png" alt="A^c = \{ \text{ tails } \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/135b88968a9327171f81e5295998cd6141ea011b.png" alt="A \cup A^c = \{ \text{ heads }, \text{ tails } \} = S"/></p>
+</div></div></blockquote>
+</section>
+<section id="complement-theorem-three">
+<span id="id29"></span><h4>Theorem 3<a class="headerlink" href="#complement-theorem-three" title="Permalink to this heading">#</a></h4>
+<blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/ecd164bcc81a3f25076e11c0863bcc41c2a263f2.png" alt="A \cap A ^c = \varnothing"/></p>
+</div></div></blockquote>
+<p>The intersection of a set <strong>A</strong> its complement is the empty set.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This theorem is sometimes known as the <a class="reference external" href="https://simple.wikipedia.org/wiki/Law_of_noncontradiction">law of non-contradiction</a>.</p>
+</div>
+<p>Example</p>
+<blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/219d77bda313710bbb3944d425c2ab0930d189fa.png" alt="S = \{ \text{jack}, \text{queen}, \text{king}, \text{ace} \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/3aaaca274d27d5ec85163f37bb9a034f78d10dc1.png" alt="A = \{ \text{jack}, \text{queen}, \text{king} \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/306e2ddc62ca62c687e9cf272216ffc61e23b116.png" alt="A^c = \{ \text{ace} \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/e76b9a1d4d8e0b31d92f89cf063798c978340428.png" alt="A \cap A^c = \{ \} = \varnothing"/></p>
+</div></div></blockquote>
+</section>
+</section>
+<section id="counting-theorems">
+<span id="id30"></span><h3>Counting Theorems<a class="headerlink" href="#counting-theorems" title="Permalink to this heading">#</a></h3>
+<section id="counting-theorem-one">
+<span id="id31"></span><h4>Theorem 1<a class="headerlink" href="#counting-theorem-one" title="Permalink to this heading">#</a></h4>
+<p>Symbolic Expression</p>
+<blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/6bc17668bcfa8e67d816e45b951dad3a11193f88.png" alt="n(A \cup B) = n(A) + n(B) - n(A \cap B)"/></p>
+</div></div></blockquote>
+<p>The number of elements in <strong>A</strong> or <strong>B</strong> is equal to the number of elements in <strong>A</strong> plus the number of elements in <strong>B</strong>, minus the elements <strong>A</strong> and <strong>B</strong> have in common.</p>
+<p>This is another theorem most easily understood by considering the following <a class="reference internal" href="#venn-diagrams"><span class="std std-ref">venn diagram</span></a>,</p>
+<img alt="notes/assets/imgs/sets/sets_union_overlapping.jpg" class="align-center" src="notes/assets/imgs/sets/sets_union_overlapping.jpg" />
+<p>The area encompassed by both circles is the union <img class="math" src="../../_images/math/47b7d7c58a0d8fba34b3e6c9b40a295769c86482.png" alt="A \cup B"/>. The overlap in the circles is intersection <img class="math" src="../../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/>.</p>
+<p>Consider how we count up elements in <strong>A</strong> or <strong>B</strong>. We first count up the elements in <strong>A</strong>, including the elemetns in the overlap. We then count up the elements in <strong>B</strong>, which includes the overlap again. In other words, by calculating <img class="math" src="../../_images/math/277334ce14621a0893a2881b4e0ab79816e71e54.png" alt="n(A) + n(B)"/>, we have counted up the elements in <img class="math" src="../../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/> <em>twice</em>. To fix this overcount, we need to subtract the number elements of in <img class="math" src="../../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/>. Whence we arrive at the theorem.</p>
+<p>Example</p>
+<blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/b5ec35c45410ca4946db438890dcb2b8f0593917.png" alt="A = \{ \text{ google }, \text{ facebook }, \text{ apple } \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/340cad1e295430dfd919d86cff20582b8dadbd12.png" alt="n(A) = 3"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/5108ba2672ed19737841a32bcb3890a05069b727.png" alt="B = \{ \text{ banana }, \text{ apple } \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/ce96ec2e74f5776e519a310382b8f2acb590a9eb.png" alt="n(B) = 2"/></p>
+</div><p>Note, when the elements of <strong>A</strong> are totaled, <code class="docutils literal notranslate"><span class="pre">apple</span></code> is counted once. When the elements of <strong>B</strong> are totaled, the element <code class="docutils literal notranslate"><span class="pre">apple</span></code> is counted again. We have thus doubled-counted this element, which is exactly the intersection <img class="math" src="../../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/>,</p>
+<div class="math">
+<p><img src="../../_images/math/ddce8a1009bdf74f2911091e96a950694c4e42d7.png" alt="A \cap B = \{ text{ apple } \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/73dc386e73eea409c6f37bd236594996108220ec.png" alt="n(A \cap B) = 1"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/85a1ad413e80664ecebad2cbcc6c810aa6b717e4.png" alt="A \cup B = \{ \text{ google }, \text{ facebook }, \text{ apple }, \text{ banana } \}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/59f27397aa690b76dcd88623c831063563756745.png" alt="n(A \cup B) = 4"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/0b5267ed7e9f2bbbc48291882ffc263a8d0a8be2.png" alt="n(A) + n(B) - n(A \cap B) = 2 + 3 - 1 = 4"/></p>
+</div></div></blockquote>
+</section>
+<section id="counting-theorem-two">
+<span id="id32"></span><h4>Theorem 2<a class="headerlink" href="#counting-theorem-two" title="Permalink to this heading">#</a></h4>
+<dl>
+<dt>Symbolic Expression</dt><dd><div class="math">
+<p><img src="../../_images/math/533cc2357067e3f6df865e09478b7a316ba572f4.png" alt="n(A) + n(A^c) = n(S)"/></p>
+</div></dd>
+</dl>
+<p>The number of elements in any set <strong>A</strong> plus the number of elements in its complement is equal to the number of elements in the univeral set.</p>
+<p>This theorem follows from the <a class="reference internal" href="#venn-diagrams"><span class="std std-ref">venn diagram</span></a> of a set with its complement,</p>
+<img alt="notes/assets/imgs/sets/sets_complement.jpg" class="align-center" src="notes/assets/imgs/sets/sets_complement.jpg" />
+<p>It can proved formally as follows,</p>
+<dl>
+<dt>Proof</dt><dd><p>By <a class="reference internal" href="#complement-theorem-three"><span class="std std-ref">Complement Theorem 3</span></a>,</p>
+<div class="math">
+<p><img src="../../_images/math/4c7a979e497521caa61eb325248056ca39a8730e.png" alt="A \cap A^c = \varnothing"/></p>
+</div><p>By definition,</p>
+<div class="math">
+<p><img src="../../_images/math/44837af3c2950117a3cb5ecda5aa8685870a889c.png" alt="n(\varnothing) = 0"/></p>
+</div><p>So, it follows,</p>
+<div class="math">
+<p><img src="../../_images/math/d662bc8bf7f2deceb39f4edd5070073ec511856f.png" alt="n(A \cap A ^c) = 0"/></p>
+</div><p>By <a class="reference internal" href="#counting-theorem-one"><span class="std std-ref">Counting Theoreom 1</span></a>,</p>
+<div class="math">
+<p><img src="../../_images/math/9cf64f98d4d90b235a3d084b79455c8f11b4471d.png" alt="n(A \cup A^c) = n(A) + n(A^c) - n(A \cap A^c)"/></p>
+</div><p>But, as noted, the last term on the righthand side of this equation is <code class="docutils literal notranslate"><span class="pre">0</span></code>, so</p>
+<div class="math">
+<p><img src="../../_images/math/24255235d9a6d2310f5e4ff6aaac7289ff312b41.png" alt="n(A \cup A^c) = n(A) + n(A^c)"/></p>
+</div><p>On the other hand, by <a class="reference internal" href="#complement-theorem-two"><span class="std std-ref">Complement Theorem 2</span></a>,</p>
+<div class="math">
+<p><img src="../../_images/math/1bfdea2655c561dc3eb5427c22f98c21cb0912a0.png" alt="A \cup A^c = S"/></p>
+</div><p>So, it follows,</p>
+<div class="math">
+<p><img src="../../_images/math/e77c9decea175854b7e1fa9d24700546e4e9b0de.png" alt="n(A \cup A^c) = n(S)"/></p>
+</div><p>Putting it altogether,</p>
+<div class="math">
+<p><img src="../../_images/math/e40743f409904287a2b939514bb275babae0ef38.png" alt="n(S) = n(A) + n(A^c)"/></p>
+</div></dd>
+</dl>
+</section>
+</section>
+</section>
+<section id="aristotle-s-square-of-opposition">
+<span id="square-of-opposition"></span><h2>Aristotle’s Square of Opposition<a class="headerlink" href="#aristotle-s-square-of-opposition" title="Permalink to this heading">#</a></h2>
+<p>The <em>square of opposition</em> is a famous logical device for remembering how different propositions involving sets are related to one another. To be more specific, the <em>square of opposition</em> shows how negation affects sets. Before we show you the <em>square of opposition</em>, let us take a look at the logic behidn it.</p>
+<p>In ordinary <em>first-order</em> logic, the <em>negation</em> of proposition simply means negating its truth value. For example, the negation of the proposition,</p>
+<blockquote>
+<div><p>p = it is raining</p>
+</div></blockquote>
+<p>Can be found by inserting the word “<em>not</em>”,</p>
+<blockquote>
+<div><p>~ p = it is not raining</p>
+</div></blockquote>
+<p>However, when we are talking about sets, it is more complicated, because we must <em>quantify</em> over which elements in the set proposition is true.</p>
+<section id="derivation">
+<h3>Derivation<a class="headerlink" href="#derivation" title="Permalink to this heading">#</a></h3>
+<p>Consider the algebraic proposition,</p>
+<div class="math">
+<p><img src="../../_images/math/ab2b9af18aaed1d50672cb7a5d7ff4564435903c.png" alt="2 \cdot x = x + x"/></p>
+</div><p>This type of statement is obviously true no matter what we insert for <em>x</em>. Whatever number we plug into the equation, a true statement will always result. Symbolically, we can express this idea with the <img class="math" src="../../_images/math/55f1b2416df87eca07ff0f8d7db7552931a0adcd.png" alt="\forall"/> symbol,</p>
+<div class="math">
+<p><img src="../../_images/math/a03632f64688007518e30f573ec228d636efb3f5.png" alt="\forall x \in \mathbb{R}: 2 \cdot x = x + x"/></p>
+</div><p>We read this is as, “for all x, doubling x is equal to adding x twice”.</p>
+<p>Contrast this against the proposition,</p>
+<div class="math">
+<p><img src="../../_images/math/019bea4a14d8b8657f83f60466bd2ca2e582311a.png" alt="2x + 1 = 5"/></p>
+</div><p>We are not free to plug just any value of <em>x</em> into this equation. Only a <em>particular</em> value of <em>x</em> will satisfy it, i.e. make it true (in this case <img class="math" src="../../_images/math/2934bf74a886f3142685875c0d794ad1f883993d.png" alt="x = 2"/>). Anything else we plug into the equation will result in a <em>contradiction</em>, a statement that is obviously not true (try plugging in <img class="math" src="../../_images/math/9cfde9192e0c5ccf5b5813fbef737e0794b5cf1b.png" alt="x = 3"/> and see what you get). We can express this idea with the <img class="math" src="../../_images/math/1682b7e79eb04ea4f8799cedb437ebe4236ae8d1.png" alt="\exists"/> symbol,</p>
+<div class="math">
+<p><img src="../../_images/math/5002567e1f5f365c6673784afd40813e1f20eab3.png" alt="\exists x \in \mathbb{R}: 2x + 1 = 5"/></p>
+</div><p>We read this as, “there exists an <em>x</em> such that <img class="math" src="../../_images/math/5116603a2acee9460e1c9dc8d519190befbb5d4c.png" alt="2x +1 = 5"/>” or “some <em>x</em> satisifies <img class="math" src="../../_images/math/20f4658fcbe661139c1794960631a8d6821bd4cf.png" alt="2x + 1 = 5"/>.</p>
+<p>When dealing with sets, we have two types of propositions to consider, <em>universal</em> propositions, denoted by the <img class="math" src="../../_images/math/55f1b2416df87eca07ff0f8d7db7552931a0adcd.png" alt="\forall"/> symbol, and <em>existential</em> propositions, denoted by the <img class="math" src="../../_images/math/1682b7e79eb04ea4f8799cedb437ebe4236ae8d1.png" alt="\exists"/> symbol.</p>
+<dl class="simple">
+<dt>Then, in order to understand negation with respect to sets, we must answer to questions:</dt><dd><ol class="arabic simple">
+<li><p>How do we negate a <em>universal</em> proposition?</p></li>
+<li><p>How do we negate an <em>existential</em> proposition?</p></li>
+</ol>
+</dd>
+</dl>
+<p>In order to answer these question, we have to break each case into two further cases: the <em>positive</em> case and the <em>negative</em> case.</p>
+<p>For universal propositions: In the <em>positive</em> case, we take a universal proposition that asserts something of all elements in a set. In the <em>negative</em> case, we take a universal proposition that denies something of all elements in a set.</p>
+<p>For existential propositions: In the <em>positive</em> case, we take an exisential proposition that asserts something of some element in a set. In the <em>negative</em> case, we take an existential proposition that denies something of some element in a set.</p>
+<section id="universal-positive-case">
+<h4>Universal Positive Case<a class="headerlink" href="#universal-positive-case" title="Permalink to this heading">#</a></h4>
+<p>Consider the proposition</p>
+<blockquote>
+<div><p>All dogs are brown.</p>
+</div></blockquote>
+<p>In order to show this proposition is false, it would be sufficient to show at least one dog existed that was not brown. For, if all dogs are brown, then it cannot be the case there is one dog that is not brown. Therefore, the negation of this proposition is,</p>
+<blockquote>
+<div><p>Some dog is not brown.</p>
+</div></blockquote>
+<p>To express this symbollically, let <strong>D</strong> represent the set of dogs and let <strong>B</strong> represent the set of brown things. Then the first proposition can be represented as,</p>
+<div class="math">
+<p><img src="../../_images/math/753d972f708a058a30fdd0a78c800afe7ddcc902.png" alt="\forall x \in D: x \in B"/></p>
+</div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is equivalent to saying,</p>
+<div class="math">
+<p><img src="../../_images/math/90429d8d1d40a8537ebfc8c03744df522848d432.png" alt="D \subseteq B"/></p>
+</div></div>
+<p>In order to negate this, we must show there is some element in D that is <em>not</em> in B. In other words, we switch the <img class="math" src="../../_images/math/55f1b2416df87eca07ff0f8d7db7552931a0adcd.png" alt="\forall"/> to a <img class="math" src="../../_images/math/1682b7e79eb04ea4f8799cedb437ebe4236ae8d1.png" alt="\exists"/> and negate the proposition being quantified,</p>
+<div class="math">
+<p><img src="../../_images/math/831843dcda90f6231643ee44daa17931a76e4210.png" alt="\exists x \in D: x \notin B"/></p>
+</div><p>Thus, we arrive at the formal definition of the negativion of a universal affirmative proposition,</p>
+<div class="math">
+<p><img src="../../_images/math/d7953e850953e05dc1e70ab6673437266841b572.png" alt="( \text{ not } \forall x \in A: x \in B) \equiv (\exists x \in A: x \notin B)"/></p>
+</div></section>
+<section id="universal-negative-case">
+<h4>Universal Negative Case<a class="headerlink" href="#universal-negative-case" title="Permalink to this heading">#</a></h4>
+<p>Consider the proposition,</p>
+<blockquote>
+<div><p>Some cars are fast.</p>
+</div></blockquote>
+<p>In order to negative this we must show <em>all</em> cars are <em>not*fast. It is *not</em> sufficient to show <em>only</em> some cars are <em>not</em> fast, because there may exist cars in the <em>some</em> we have not considered that may yet be fast, which would coincide with the truth of the original proposition. Therefore, the negation of this proposition is,</p>
+<blockquote>
+<div><p>All cars not fast.</p>
+</div></blockquote>
+<p>To express this symbollically, let <strong>C</strong> be the set of all cars and let <strong>F</strong> be the set of all fast things. Then, the original proposition can be written with the <img class="math" src="../../_images/math/1682b7e79eb04ea4f8799cedb437ebe4236ae8d1.png" alt="\exists"/> symbol,</p>
+<div class="math">
+<p><img src="../../_images/math/586ae79892cf4a61d7efc1c6884887ed0ecf16a4.png" alt="\exists x \in C: x \in F"/></p>
+</div><p>To negate this, we switch the <img class="math" src="../../_images/math/1682b7e79eb04ea4f8799cedb437ebe4236ae8d1.png" alt="\exists"/> to a <img class="math" src="../../_images/math/55f1b2416df87eca07ff0f8d7db7552931a0adcd.png" alt="\forall"/> and negate the quantified proposition,</p>
+<div class="math">
+<p><img src="../../_images/math/49c979fd6a4be5227dcb1770fb0ad602ce3b153e.png" alt="\forall x \in C: x \notin F"/></p>
+</div><p>Thus, we arrive at the formal definition of the negation of a <em>universal negative proposition</em>,</p>
+<div class="math">
+<p><img src="../../_images/math/63b1d738dca17efcf7c5394b583e8c7a2322200a.png" alt="(\exists x \in C: x \in F) \equiv (\text {not} \forall x \in C: \notin F)"/></p>
+</div></section>
+<section id="existential-positive-case">
+<h4>Existential Positive Case<a class="headerlink" href="#existential-positive-case" title="Permalink to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="existential-negative-case">
+<h4>Existential Negative Case<a class="headerlink" href="#existential-negative-case" title="Permalink to this heading">#</a></h4>
+<p>TODO</p>
+</section>
+<section id="id33">
+<h4>Square of Opposition<a class="headerlink" href="#id33" title="Permalink to this heading">#</a></h4>
+<p>Finally, we come to the <em>square of opposition</em>, a visual device for remembering everything that has been covered in this section.</p>
+<p>The <em>square of opposition</em> is constructed by first drawing a table,</p>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>existential</p></td>
+<td><p>universal</p></td>
+</tr>
+<tr class="row-even"><td><p>positive</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>negative</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>In the entries of this table, you draw <a class="reference internal" href="#venn-diagrams"><span class="std std-ref">Venn Diagrams</span></a> that represent the intersection of the row and column. Putting the results together, we get the following picture,</p>
+<img alt="notes/assets/imgs/sets/square_of_opposition.jpg" src="notes/assets/imgs/sets/square_of_opposition.jpg" />
+<p>Notice the diagonals of the picture, the line that connects the top left to the bottom right and the line that connects the top right to the bottom left, form the contradictory pairs of propositions, namely,</p>
+<blockquote>
+<div><p>universal positive &lt;– contradicts –&gt; existential negative</p>
+</div></blockquote>
+<p>And,</p>
+<blockquote>
+<div><p>universal negative &lt;– contradictis –&gt; existential positive</p>
+</div></blockquote>
+</section>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="01_LOGIC.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Logic</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../probability/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Probability</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#domain-of-discourse">Domain of Discourse</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elements">Elements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sets">Sets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cardinality">Cardinality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#universal-set">Universal Set</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#null-set">Null Set</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#natural-numbers">Natural Numbers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#real-numbers">Real Numbers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notation">Notation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#list-notation">List Notation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantifier-notation">Quantifier Notation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#corollaries">Corollaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#venn-diagrams">Venn Diagrams</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations">Relations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subset">Subset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proper-subset">Proper Subset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equivalence">Equivalence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equality">Equality</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operations">Operations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complement">Complement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#union">Union</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intersection">Intersection</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference">Difference</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identity-theorems">Identity Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-1">Theorem 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-2">Theorem 2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-3">Theorem 3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-4">Theorem 4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-5">Theorem 5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#theorem-6">Theorem 6</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorems">Subset Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-one">Theorem 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-two">Theorem 2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-three">Theorem 3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-four">Theorem 4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-five">Theorem 5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subset-theorem-six">Theorem 6</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-theorems">Complement Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-theorem-one">Theorem 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-theorem-two">Theorem 2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-theorem-three">Theorem 3</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-theorems">Counting Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-theorem-one">Theorem 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#counting-theorem-two">Theorem 2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aristotle-s-square-of-opposition">Aristotle’s Square of Opposition</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#derivation">Derivation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#universal-positive-case">Universal Positive Case</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#universal-negative-case">Universal Negative Case</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#existential-positive-case">Existential Positive Case</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#existential-negative-case">Existential Negative Case</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">Square of Opposition</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Grant Moore
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Grant Moore.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

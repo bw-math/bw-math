@@ -7,12 +7,9 @@ Class Notes
    :maxdepth: 2
    :caption: Contents:
 
-   HISTORY
-   LOGIC
-   SET_THEORY
+   foundations/index
    probability/index
    experiments/index
    statistics/index
-   regression/index
    distributions/index
 
