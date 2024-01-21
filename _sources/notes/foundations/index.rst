@@ -1,6 +1,6 @@
-.. _class_notes:
+.. _foundations:
 
-Class Notes
+Foundations
 ===========
 
 .. toctree::
