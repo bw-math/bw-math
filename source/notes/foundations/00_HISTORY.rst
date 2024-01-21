@@ -24,27 +24,27 @@ Read through an excerpt of *Thaetetus* below,
 
 .. topic:: Thaetetus, Plato, 4th Centry BC
 
-    **Socrates**: Have you heard what they say nowadays that knowing is?
+	**Socrates**: Have you heard what they say nowadays that knowing is?
 
-    **Theatetus**: Perhaps; however, I do not remember just at this moment.
+	**Theatetus**: Perhaps; however, I do not remember just at this moment.
 
-    **Socrates**: They say it is having knowledge.
+	**Socrates**: They say it is having knowledge.
 
-    **Theatetus**: True.
+	**Theatetus**: True.
 
-    **Socrates**: Let us make a slight change and say possessing knowledge.
+	**Socrates**: Let us make a slight change and say possessing knowledge.
 
-    **Theatetus**: Why, how will you claim that the one differs from the other?
+	**Theatetus**: Why, how will you claim that the one differs from the other?
 
-    **Socrates**: Well, then, having does not seem to me the same as possessing. For instance, if a man bought a cloak and had it under his control, but did not wear it, we should certainly not say that he had it, but that possessed it.
+	**Socrates**: Well, then, having does not seem to me the same as possessing. For instance, if a man bought a cloak and had it under his control, but did not wear it, we should certainly not say that he had it, but that possessed it.
 
-    **Theatetus**: And rightly.
+	**Theatetus**: And rightly.
 
-    **Socrates**: Now see whether it is possible in the same way for one who possesses knowledge not to have it, as, for instance, if a man should catch wild birds--pigeons or the like--and should arrange an aviary at home and keep them in it, we might in a way assert that he always has them because he possesses them, might we not?
+	**Socrates**: Now see whether it is possible in the same way for one who possesses knowledge not to have it, as, for instance, if a man should catch wild birds--pigeons or the like--and should arrange an aviary at home and keep them in it, we might in a way assert that he always has them because he possesses them, might we not?
 
-    **Theatetus**: Yes.
+	**Theatetus**: Yes.
 
-    **Socrates**: And yet in another way that he has none of them, but that he has acquired power over them, since he has brought them under his control in his own enclosure, to take them and hold them whenever he likes, by catching whichever bird he pleases, and to let them go again; and he can do this as often as he pleases.
+	**Socrates**: And yet in another way that he has none of them, but that he has acquired power over them, since he has brought them under his control in his own enclosure, to take them and hold them whenever he likes, by catching whichever bird he pleases, and to let them go again; and he can do this as often as he pleases.
 
 The contents of Plato's *Theatetus* have greatly influenced the development of scientific thought in the subsequent centuries, so it is worth understanding why Plato thought what Socrates was saying was so important it should be written down for future generations. 
 
@@ -66,11 +66,11 @@ Aristotle viewed knowledge as a two-fold process. You start with *prior* assumpt
 
 .. topic:: Prior Analytics, Aristotle, 3rd Century BC
 
-    A deduction is a speech in which, certain things having been supposed, something different from those supposed results of necessity because of their being so.
+	A deduction is a speech in which, certain things having been supposed, something different from those supposed results of necessity because of their being so.
 
-The *things supposed* are now more commonly known as the "hypothesis" or the "premise", and the *results of necessity* are now more commonly known as the "conclusion" or the "consequence". A more modern phrasing of the same idea might therefore read,
+	The *things supposed* are now more commonly known as the "hypothesis" or the "premise", and the *results of necessity* are now more commonly known as the "conclusion" or the "consequence". A more modern phrasing of the same idea might therefore read,
 
-    A deduction consists in assuming a hypothesis implies a conclusion and then inferring the truth of the conclusion from the truth of the hypothesis.
+	A deduction consists in assuming a hypothesis implies a conclusion and then inferring the truth of the conclusion from the truth of the hypothesis.
 
 In anticipation of what is to come, we might be so bold as to *symbolize* this definition,
 
@@ -86,7 +86,7 @@ Read the excerpt below, taken from a passage of Aristotle's *Prior Analytics* wh
 
 .. topic:: Prior Analytics, Aristotle, 3rd Century BC
 
-    In particular syllogisms, if the universal premiss is necessary, then the conclusion will be necessary. First let the universal be necessary, and let A belong to all B necessarily, but let B simply belong to some C: it is necessary then that A belongs to some C necessarily; for C falls under B, and A was assumed to belong necessarily to all B.
+	In particular syllogisms, if the universal premiss is necessary, then the conclusion will be necessary. First let the universal be necessary, and let A belong to all B necessarily, but let B simply belong to some C: it is necessary then that A belongs to some C necessarily; for C falls under B, and A was assumed to belong necessarily to all B.
 
 Aristotle is making an important point here that can still be found in the field of statistics today. Let us try to understand what he is saying by breaking it down.
 
@@ -110,7 +110,7 @@ In other words, *knowledge* is the process of inferring.
 
 We can visualize this argument with a :ref:`Venn diagram <venn_diagrams>`,
 
-.. image:: ../assets/imgs/context/syllogism.jpg
+.. image:: ../../assets/imgs/context/syllogism.jpg
 
 In later sections, we will define the relation shown here more precisely as one of *containment* between two sets, i.e. the relation of one set **A** being wholly contained in another set **B**.
 
@@ -124,7 +124,7 @@ This process, of inferring the *universal* from the *particular* cases in front 
  
 .. topic:: Posterior Analytics, Aristotle, 3rd Century BC
 
-    All instructions given or received by way of argument proceeds from pre-existent knowledge. This becomes evident upon a survey of all the species of such instruction. The mathematical sciences and all other speculative displicines are acquired in this way, and so are the two forms of dialetical reasoning, syllogistic and inductive; for each of these latter make use of old knowledge to impart new, the syllogism assuming an audience that accepts its premises, induction exhibiting the universal as implicit in the clearly known particular.
+	All instructions given or received by way of argument proceeds from pre-existent knowledge. This becomes evident upon a survey of all the species of such instruction. The mathematical sciences and all other speculative displicines are acquired in this way, and so are the two forms of dialetical reasoning, syllogistic and inductive; for each of these latter make use of old knowledge to impart new, the syllogism assuming an audience that accepts its premises, induction exhibiting the universal as implicit in the clearly known particular.
 
 We all implicitly use *induction* in our everyday life, even if we do not call it induction. For example, we know when it gets dark and cloudy, the likelihood of rain is much greater and so we pack an umbrella. We *know* this because whenever, in the past, it has gotten dark and cloudy, this usually leads to rain. By looking at all previous cases of bad weather and observing the conditions, we are able to *inductively* reason that "*if it is dark and cloudy, then it will probably rain*".
 
@@ -146,13 +146,13 @@ Cartesian Skepticism
 
 .. topic:: Meditations on First Philosophy, Rene Descartes, 17th Century AD
 
-    All that up to the present time I have accepted as most true and certain I have learned either from the senses or through the senses; but it is sometimes proved to me that these senses are deceptive, and it is wiser not to trust entirely to anything by which we have once been deceived.
+	All that up to the present time I have accepted as most true and certain I have learned either from the senses or through the senses; but it is sometimes proved to me that these senses are deceptive, and it is wiser not to trust entirely to anything by which we have once been deceived.
 
-    But it may be that although the senses sometimes deceive us concerning things which are hardly perceptible, or very far away, there are yet many others to be met with as to which we cannot reasonably have any doubt, although we recognize them by their means. For example, there is the fact that I am here, seated by the fire, attired in a dressing gown, having this paper in my hands and other similar matters. And how could I deny that these hands and this body are mine, were it not perhaps that I compare myself to certain persons, devoid of sense, whose cerebella are so troubled and clouded by violent vapours of black bile, that they constantly assure us that they think they are kings when they are really quite poor, or that they are clothed in purple when they are really without covering, or who imagine that they have an earthernware head or are nothing but pumpkins or are made of glass. But they are mad, and I should be any the less insane were I to follow examples so extravagant.
+	But it may be that although the senses sometimes deceive us concerning things which are hardly perceptible, or very far away, there are yet many others to be met with as to which we cannot reasonably have any doubt, although we recognize them by their means. For example, there is the fact that I am here, seated by the fire, attired in a dressing gown, having this paper in my hands and other similar matters. And how could I deny that these hands and this body are mine, were it not perhaps that I compare myself to certain persons, devoid of sense, whose cerebella are so troubled and clouded by violent vapours of black bile, that they constantly assure us that they think they are kings when they are really quite poor, or that they are clothed in purple when they are really without covering, or who imagine that they have an earthernware head or are nothing but pumpkins or are made of glass. But they are mad, and I should be any the less insane were I to follow examples so extravagant.
 
-    At the same time I must remember that I am a man, and that consequently I am in the habit of sleeping, and in my dreams representing to myself those same things or sometimes even less probable things, than do those who are insane in their waking moments. How often has it happened to me that in the night I dreamt that I found myself in this particular place, that I was dressed and seated near the fire, whilst in reality I was lying undressed in bed! At this moment it does indeed seem to me that it is with eyes awake that I am looking at this paper; that this head which I move is not asleep, that it is deliberately and of set purpose that I extend my hand and perceive it; what happens in sleep does not appear so clear nor so distinct as does all this. But in thinking over this I remind myself that on many occasions I have in sleep been deceived by similar illusions, and in dwelling carefully on this reflection I see so manifestly that there are no certain indications by which we may clearly distinguish wakefulness from sleep that I am lost in astonishment. And my astonishment is such that it is almost capable of persuading me that I now dream.
+	At the same time I must remember that I am a man, and that consequently I am in the habit of sleeping, and in my dreams representing to myself those same things or sometimes even less probable things, than do those who are insane in their waking moments. How often has it happened to me that in the night I dreamt that I found myself in this particular place, that I was dressed and seated near the fire, whilst in reality I was lying undressed in bed! At this moment it does indeed seem to me that it is with eyes awake that I am looking at this paper; that this head which I move is not asleep, that it is deliberately and of set purpose that I extend my hand and perceive it; what happens in sleep does not appear so clear nor so distinct as does all this. But in thinking over this I remind myself that on many occasions I have in sleep been deceived by similar illusions, and in dwelling carefully on this reflection I see so manifestly that there are no certain indications by which we may clearly distinguish wakefulness from sleep that I am lost in astonishment. And my astonishment is such that it is almost capable of persuading me that I now dream.
 
-    I suppose, then, that all the things I see are false; I persuade myself that nothing has ever existed of all that my fallacious memory represents to me. I consider that I possess no senses; I imagine that body, figure, extension, movement and place are but fictions of my mind. What, then, can be esteemed as true? Perhaps nothing at all, unless that there is nothing in this world that is certain.
+	I suppose, then, that all the things I see are false; I persuade myself that nothing has ever existed of all that my fallacious memory represents to me. I consider that I possess no senses; I imagine that body, figure, extension, movement and place are but fictions of my mind. What, then, can be esteemed as true? Perhaps nothing at all, unless that there is nothing in this world that is certain.
 
 Descartes is making a point here about *uncertainty*. He is saying: everything, the people we know and places we visit, the books we read and music to which we listen, all of it, might be an illusion. More than that, there is no way to be *certain* your waking life *is not* an illusion.
 
@@ -176,9 +176,9 @@ A Priori and A Posteriori
 
 .. topic:: A Critique of Pure Reason, Immanuel Kant, 18th Century AD
 
-    That all our knowledge begins with experience there can be no doubt. For how should the faculty of knowledge be called into activity, if not by objects which affect our senses and which, on the one hand, produce representations by themselves or on the other, rouse the activity of our understanding to compare, connect, or to separate them and thus to convert the raw material of our sensible impressions into knowledge of objects, which we call experience? With respect to time, therefore, no knowledge within us is antecedent to experience, but all knowledge begins with it.
+	That all our knowledge begins with experience there can be no doubt. For how should the faculty of knowledge be called into activity, if not by objects which affect our senses and which, on the one hand, produce representations by themselves or on the other, rouse the activity of our understanding to compare, connect, or to separate them and thus to convert the raw material of our sensible impressions into knowledge of objects, which we call experience? With respect to time, therefore, no knowledge within us is antecedent to experience, but all knowledge begins with it.
 
-    But though all our knowledge begins with experience, it does not follow that it all arises from experience. For it is quite possible that even our empirical knowledge is a compound of that which we perceive through impression, and of that which our own faculty of knowledge (incited by sense impressions) supplies from itself, a supplement which we do not distinguish from that raw material until long practice and rendered us capable of separating one from the other.  It is therefore a question which deserves at least closer investigation and cannot be disposed of at first sight: Whether there is any knowledge independent of all experience and even of all impressions of the senses? Such knowledge is called *"a priori*"and is distguished from empirical knowledge, which has its source "*a posteriori*", that is, in experience...
+	But though all our knowledge begins with experience, it does not follow that it all arises from experience. For it is quite possible that even our empirical knowledge is a compound of that which we perceive through impression, and of that which our own faculty of knowledge (incited by sense impressions) supplies from itself, a supplement which we do not distinguish from that raw material until long practice and rendered us capable of separating one from the other.  It is therefore a question which deserves at least closer investigation and cannot be disposed of at first sight: Whether there is any knowledge independent of all experience and even of all impressions of the senses? Such knowledge is called *"a priori*"and is distguished from empirical knowledge, which has its source "*a posteriori*", that is, in experience...
 
 According to Kant, there are two types of knowledge: *prior* knowledge and *posterior* knowledge. 
 
@@ -231,12 +231,12 @@ Below you will find the first formal definition of *probability* in the history 
 
 .. topic:: Philosophical Transactions of the Royal Society of London, Thomas Bayes, 18th Century
 
-    1. Several events are *inconsistent*, when if one of them happens, none of the rest can occur. 
-    2. Two events are *contrary* when one, or the other, must occur; and both cannot happen together. 
-    3. An event is said to *fail* when it cannot happen; or, which comes to the same thing, when its *contrary* has happened.
-    4. An event is said to be *determined* when it has either happened or *failed*.
-    5. The *probability of any event* is the ratio between the value at which an expectation depending on the happening of the event ought to be computed, and the value of the thing expected upon it's happening. 
-    6. Events are independent when the happening of any one of them does neither increase nor abate the probability of the rest. 
+	1. Several events are *inconsistent*, when if one of them happens, none of the rest can occur. 
+	2. Two events are *contrary* when one, or the other, must occur; and both cannot happen together. 
+	3. An event is said to *fail* when it cannot happen; or, which comes to the same thing, when its *contrary* has happened.
+	4. An event is said to be *determined* when it has either happened or *failed*.
+	5. The *probability of any event* is the ratio between the value at which an expectation depending on the happening of the event ought to be computed, and the value of the thing expected upon it's happening. 
+	6. Events are independent when the happening of any one of them does neither increase nor abate the probability of the rest. 
 
 At this point, we leave aside the historical narrative and take up the subject itself. 
 
