@@ -245,6 +245,7 @@ References
 ==========
 
 - `An essay towards solving a problem in the doctrine of chances, Thomas Bayes <https://royalsocietypublishing.org/doi/10.1098/rstl.1763.0053>`_
+- `A Budget of Paradoxes, Augustus De Morgan <https://www.gutenberg.org/files/23100/23100-h/23100-h.htm>`_
 - `Critique of Pure Reason, Immanuel Kant <https://www.gutenberg.org/files/4280/4280-h/4280-h.htm>`_ 
 - `Meditations on First Philosophy, Rene Descartes <http://www.classicallibrary.org/descartes/meditations/4.htm>`_
 - `Posterior Analytics, Aristotle <http://classics.mit.edu/Aristotle/posterior.1.i.html>`_
