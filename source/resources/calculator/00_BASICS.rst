@@ -179,9 +179,12 @@ TODO
 	
 	- :math:`\text{BUTTON (2ND)} : \text{LIST}`
 	- :math:`\text{MENU} : \text{OPS}`
-	- :math:`5 : \Text{SEQ(}`
+	- :math:`5 : \text{SEQ(}`
 
-This will bring up the 
+This will bring up the **SEQ** editor. 
+
+TODO
+
 .. _calculator_cumsum_operation:
 
 cumSum
