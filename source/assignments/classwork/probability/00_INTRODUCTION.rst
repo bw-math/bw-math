@@ -128,7 +128,17 @@ Classical Definition
 	g. The card is neither nor a queen.
 	
 
-4. You select a number randomly between 1 and 1000. What is the probability the number selected is divisible by 5?
+4. You select a number randomly between 1 and 1000. 
+
+     a. What is the probability the number selected is divisible by 3?
+
+     b. What is the probability the number selected is divisible by 5?
+
+     c. What is the probability the number selected is divisible by 15?
+
+.. hint:: 
+
+     Use the Law of Unions for *part c*
 
 5. Among 33 students in a class, 17 of them earned A's on the midterm exam, 14 earned A's on the final exam and 11 did not earn A's on either examination. What is the probability that a randomly selected student from this class earned an A on both exams?
 
