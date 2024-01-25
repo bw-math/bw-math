@@ -128,7 +128,7 @@ Using the :ref:`python_control_structures` introduced in the preceding section a
 
 The key idea is using random numbers to represent observations drawn from a given population. If we think of a random number between 0 and 1 as an observation, i.e. an outcome in an experiment, then we can use the random numbers to model the distribution of the experiment. 
 
-For example, let the event of getting a random number less than 0.5 correspond to the event of getting heads in a coin flip. Let the event of getting number between 0.5 and 1 correspond to the event of getting a tail. Then, by simulating random numbers between 0 and 1 and interpretting the results as outcomes of flipping a coin, we can derive a probability distribution for the experiment of flipping a single coin.
+For example, let the event of getting a random number less than 0.5 correspond to the event of getting heads in a coin flip. Let the event of getting number between 0.5 and 1 correspond to the event of getting a tail. Then, by simulating random numbers between 0 and 1 and interpretting the results as outcomes of flipping a coin, we can derive a probability distribution for the experiment of flipping a coin any number of times.
 
 The following code snippet simulates flipping a fair coin 10 times and stores the simulation in a list. It then takes the simulated distribution and displays a histogram to the user,
 
