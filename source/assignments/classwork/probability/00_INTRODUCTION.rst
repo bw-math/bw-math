@@ -136,9 +136,11 @@ Classical Definition
 
      c. What is the probability the number selected is divisible by 15?
 
+     d. What is the probability the number selected is divisible by 3 or 5?
+
 .. hint:: 
 
-     Use the Law of Unions for *part c*
+     Use the Law of Unions for *part d*
 
 5. Among 33 students in a class, 17 of them earned A's on the midterm exam, 14 earned A's on the final exam and 11 did not earn A's on either examination. What is the probability that a randomly selected student from this class earned an A on both exams?
 
