@@ -141,6 +141,8 @@ Bayes' Laws
 
 4. A factory produces its entire output with three machines. Each machine has an error rate that causes it to produce defective units. Machine I produces 50% of the output and has a 4% error rate. Machine II produces 30% of the output and has a 2% error rate. Machine III produces 20% of the output and has a 4% error rate. What percentage of the total output is defective? 
 
+5. Suppose 1% of the United States Population has a serious life-threatening condition that slowly turns their internal organs into goop and drives them insane before an extremely painful death, known as **Sejal's Disease**. A test is developed to help diagnose this awful curse on humanity. The test can determine whether an individual does or does not have **Sejal's Disease**. If the person has the disease, it will give a positive result 98% of the time. If the person does not have the disease, it will give a false positive 5% of the time. If you take the test and get a positive result, what is the probability you are afflicted with **Sejal's Disease**?
+
 Independence
 ------------
 
