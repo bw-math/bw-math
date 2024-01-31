@@ -38,9 +38,9 @@ a. Consider the set of objects,
 	
 Use this set for the following problems.
 
-	i. List all ordered arrangement these objects choosing 3 at a time without replacement. What is :math:`P^{3}_3`?
+	i. List all ordered arrangement of these objects choosing 3 at a time without replacement. What is :math:`P^{3}_3`?
 	
-	ii. List all ordered arrangement these objects choosing 2 at a time without replacement. What is :math:`P^{3}_2`?
+	ii. List all ordered arrangement of these objects choosing 2 at a time without replacement. What is :math:`P^{3}_2`?
 
 	iii. List all ordered arrangment of these objects choosing 1 at a time without replacement. What is :math:`P^{3}_1`?
 
@@ -52,15 +52,15 @@ b. Consider the set of objects,
 
 Use this set for the following problems:
 
-	i. List all ordered arrangement these objects choosing 5 at a time without replacement. What is :math:`P^{5}_5`?
+	i. List all ordered arrangement of these objects choosing 5 at a time without replacement. What is :math:`P^{5}_5`?
 
 	ii. List all ordered arrangment of these objects choosing 4 at a time without replacement. What is :math:`P^{5}_4`?
 	
-	iii. List all ordered arrangement these objects choosing 3 at a time without replacement. What is :math:`P^{5}_3`?
+	iii. List all ordered arrangement of these objects choosing 3 at a time without replacement. What is :math:`P^{5}_3`?
 
 	iv. List all ordered arrangment of these objects choosing 2 at a time without replacement. What is :math:`P^{5}_2`?
 	
-	v. List all ordered arrangement these objects choosing 1 at a time without replacement. What is :math:`P^{5}_1`?
+	v. List all ordered arrangement of these objects choosing 1 at a time without replacement. What is :math:`P^{5}_1`?
 	
 2. **Codes**
 
