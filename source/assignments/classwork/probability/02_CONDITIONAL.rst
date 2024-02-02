@@ -148,11 +148,15 @@ Independence
 
 0. You are dealt a single card from a standard deck of 52 cards, face down.
 
-a. Without any prior knowlesdge, what is the probability of the card being a spade?
+a. Without any prior knowlesdge, what is the probability of the card being a Jack?
 
-b. The dealer reveals to you the face of the card is a Jack. How does this information change your answer to *part a*?
+b. The dealer reveals to you the suit of the card is a spade. How does this information change your answer to *part a*?
 
 c. Based on your answers to the *parts a and b*, is the event of getting a Jack independent of the event of getting a spade?
+
+d. Suppose instead of revealing the card is a spade, the dealer reveals its rank is greater than 10. How does this information change your answer to *part b*
+
+e. Is the event of getting a card with a rank greater than 10 independent of the event of getting a Jack?
 
 .. topic:: Independence Multiplication Law
 
