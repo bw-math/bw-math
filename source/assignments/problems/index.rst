@@ -1,7 +1,7 @@
-.. _classwork:
+.. _problems:
 
-Classwork
-=========
+Problems
+========
 
 .. toctree::
    :maxdepth: 2

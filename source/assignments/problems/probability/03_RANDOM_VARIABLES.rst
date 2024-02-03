@@ -129,7 +129,7 @@ Scalar Properties
 
 1. A box contains 10 frisbes of radii 1, 2, ..., 10, respectively. What is the expected value of the circumference of a frisbee selected at random from this box?
 
-2. Margaret Margot owns the boutique bakery *Cupcake Connoisseur*. She makes cupcakes and sells them for $15 a piece (they are really good cupcakes). After several years of tracking the seasonal variations in cupcake sales, she has estimated the following probability distribution for the number of cupcakes she sells a day.
+2. Meredith Margaret Monsoon owns the boutique bakery *Cupcake Connoisseur*. She makes cupcakes and sells them for $15 a piece (they are really good cupcakes). After several years of tracking the seasonal variations in cupcake sales, she has estimated the following probability distribution for the number of cupcakes she sells a day.
 
 +--------------------+----------------------------+
 | Number of Cupcakes | :math:`P(\mathcal{X}=x_i)` |
@@ -143,9 +143,9 @@ Scalar Properties
 |        45          |            0.1             |
 +--------------------+----------------------------+ 
              
-a. Use this table to find Margaret's expected *revenue over the next month*. Assume a month is *30 days*. 
+a. Use this table to find Meredith's expected *revenue over the next month*. Assume a month is *30 days*. 
 
-b. The monthly cost of running a bakery is $2000. What is Margaret's expected *profit over the next month*? 
+b. The monthly cost of running a bakery is $2000. What is Meredith's expected *profit over the next month*? 
  
 3. A small market orders copies of a certain magazine for its magazine rack each week. Let :math:`\mathcal{X}` represent the number of magazine demanded by customers over the course of a week. The probability density for the magazine deman is given by,
 
@@ -193,15 +193,15 @@ Linearity of Expectations
 A.P. Exam Practice
 ==================
 
-3. **2019, Free Response, #5**
+1. **2019, Free Response, #5**
 
 A company that manufactures smartphones developed a new battery that has a longer life span than that of a traditional battery. From the date of purchase of a smartphone, the distribution of the life span of the new battery is approximately normal with mean 30 months and standard deviation 8 months. For the price of $50, the company offers a two-year warranty on the new battery for customers who purchase a smartphone. The warranty guarantees that the smartphone will be replaced at no cost to the customer if the battery no longer works within 24 months from the date of purchase.
 
-a. In how many months from the date of purchase is it expected that 25 percent of the batteries will no longer work? Justify your answer.
+	a. In how many months from the date of purchase is it expected that 25 percent of the batteries will no longer work? Justify your answer.
 
-b. Suppose one customer who purchases the warranty is selected at random. What is the probability that the customer selected will require a replacement within 24 months from the date of purchase because the battery no longer works?
+	b. Suppose one customer who purchases the warranty is selected at random. What is the probability that the customer selected will require a replacement within 24 months from the date of purchase because the battery no longer works?
 
-c. The company has a gain of $50 for each customer who purchases a warranty but does not require a replacement. The company has a loss (negative gain) of $150 for each customer who purchases a warranty and does require a replacement. What is the expected value of the gain for the company for each warranty purchased?
+	c. The company has a gain of $50 for each customer who purchases a warranty but does not require a replacement. The company has a loss (negative gain) of $150 for each customer who purchases a warranty and does require a replacement. What is the expected value of the gain for the company for each warranty purchased?
 
 
 2. **2015, Free Response, #3**
@@ -211,34 +211,36 @@ A shopping mall has three automated teller machines (ATMs). Because the machines
 .. image:: ../../../assets/imgs/classwork/2015_apstats_frp_3.png
     :align: center
 
-a. What is the probability that at least one ATM is working when the mall opens?
+Use this information to solve the following problems.
 
-b. What is the expected value of the number of ATMs that are working when the mall opens?
+	a. What is the probability that at least one ATM is working when the mall opens?
 
-c. What is the probability that all three ATMs are working when the mall opens, given that at least one ATM is working?
+	b. What is the expected value of the number of ATMs that are working when the mall opens?
 
-d. Given that at least one ATM is working when the mall opens, would the expected value of the number of ATMs that are working be less than, equal to, or greater than the expected value from part *b*? Explain.
+	c. What is the probability that all three ATMs are working when the mall opens, given that at least one ATM is working?
+
+	d. Given that at least one ATM is working when the mall opens, would the expected value of the number of ATMs that are working be less than, equal to, or greater than the expected value from part *b*? Explain.
 
 3. **2014, Free Response, #3**
 
 Schools in a certain state receive funding based on the number of students who attend the school. To determine the number of students who attend a school, one school day is selected at random and the number of students in attendance that day is counted and used for funding purposes. The daily number of absences at High School A in the state is approximately normally distributed with mean of 120 students and
 standard deviation of 10.5 students.
 
-a. If more than 140 students are absent on the day the attendance count is taken for funding purposes, the school will lose some of its state funding in the subsequent year. Approximately what is the probability that High School A will lose some state funding?
+	a. If more than 140 students are absent on the day the attendance count is taken for funding purposes, the school will lose some of its state funding in the subsequent year. Approximately what is the probability that High School A will lose some state funding?
 
-b. The principals’ association in the state suggests that instead of choosing one day at random, the state should choose 3 days at random. With the suggested plan, High School A would lose some of its state funding in the subsequent year if the mean number of students absent for the 3 days is greater than 140. Would High School A be more likely, less likely, or equally likely to lose funding using the suggested plan compared to the plan described in *part a*? Justify your choice.
+	b. The principals’ association in the state suggests that instead of choosing one day at random, the state should choose 3 days at random. With the suggested plan, High School A would lose some of its state funding in the subsequent year if the mean number of students absent for the 3 days is greater than 140. Would High School A be more likely, less likely, or equally likely to lose funding using the suggested plan compared to the plan described in *part a*? Justify your choice.
 
-c. A typical school week consists of the days Monday, Tuesday, Wednesday, Thursday, and Friday. The principal at High School A believes that the number of absences tends to be greater on Mondays and Fridays, and there is concern that the school will lose state funding if the attendance count occurs on a Monday or Friday. If one school day is chosen at random from each of 3 typical school weeks, what is the probability that none of the 3 days chosen is a Tuesday, Wednesday, or Thursday?
+	c. A typical school week consists of the days Monday, Tuesday, Wednesday, Thursday, and Friday. The principal at High School A believes that the number of absences tends to be greater on Mondays and Fridays, and there is concern that the school will lose state funding if the attendance count occurs on a Monday or Friday. If one school day is chosen at random from each of 3 typical school weeks, what is the probability that none of the 3 days chosen is a Tuesday, Wednesday, or Thursday?
 
 4. **2019, Free Response, #5**
 
 A company that manufactures smartphones developed a new battery that has a longer life span than that of a traditional battery. From the date of purchase of a smartphone, the distribution of the life span of the new battery is approximately normal with mean 30 months and standard deviation 8 months. For the price of $50, the company offers a two-year warranty on the new battery for customers who purchase a smartphone. The warranty guarantees that the smartphone will be replaced at no cost to the customer if the battery no longer works within 24 months from the date of purchase.
 
-a. In how many months from the date of purchase is it expected that 25 percent of the batteries will no longer work? Justify your answer.
+	a. In how many months from the date of purchase is it expected that 25 percent of the batteries will no longer work? Justify your answer.
 
-b. Suppose one customer who purchases the warranty is selected at random. What is the probability that the customer selected will require a replacement within 24 months from the date of purchase because the battery no longer works?
+	b. Suppose one customer who purchases the warranty is selected at random. What is the probability that the customer selected will require a replacement within 24 months from the date of purchase because the battery no longer works?
 
-c. The company has a gain of $50 for each customer who purchases a warranty but does not require a replacement. The company has a loss (negative gain) of $150 for each customer who purchases a warranty and does require a replacement. What is the expected value of the gain for the company for each warranty purchased?
+	c. The company has a gain of $50 for each customer who purchases a warranty but does not require a replacement. The company has a loss (negative gain) of $150 for each customer who purchases a warranty and does require a replacement. What is the expected value of the gain for the company for each warranty purchased?
 
 5. **2003, Free Response Form B, #5**
 
@@ -253,19 +255,19 @@ Contestants on a game show spin a wheel like the one shown in the figure above. 
 - If the contestant spins again and the result is a skunk, all of the money earned on that turn is lost and the turn ends.
 - The contestant may continue adding to his or her winnings until he or she chooses to stop or until a spin results in a skunk.
 
-a. What is the probability that the result will be a number on all of the first three spins of the wheel?
+Use this information to solve the following problems.
 
-b. Suppose a contestant has earned $800 on his or her first three spins and chooses to spin the wheel again. What is the expected value of his or her total winnings for the four spins?
+	a. What is the probability that the result will be a number on all of the first three spins of the wheel?
 
-c. A contestant who lost at this game alleges that the wheel is not fair. In order to check on the fairness of the wheel, the data in the table below were collected for 100 spins of this wheel.
+	b. Suppose a contestant has earned $800 on his or her first three spins and chooses to spin the wheel again. What is the expected value of his or her total winnings for the four spins?
+
+	c. A contestant who lost at this game alleges that the wheel is not fair. In order to check on the fairness of the wheel, the data in the table below were collected for 100 spins of this wheel. Based on these data, can you conclude that the four outcomes on this wheel are not equally likely? Give appropriate statistical evidence to support your answer.
 
 +-----------+--------+-------+------+------+
 | Result    | Skunk  |  $100 | $200 | $500 |
 +-----------+--------+-------+------+------+
 | Frequency |   33   |   21  |  20  |  26  |
 +-----------+--------+-------+------+------+
-
-Based on these data, can you conclude that the four outcomes on this wheel are not equally likely? Give appropriate statistical evidence to support your answer.
 
 6. **2005, Free Response Form B, #2**
 
@@ -277,11 +279,13 @@ For an upcoming concert, each customer may purchase up to 3 child tickets and 3 
 |  p(c)  | 0.4 | 0.3 | 0.2 | 0.1 | 
 +--------+-----+-----+-----+-----+
 
-a. Compute the mean and the standard deviation of **C**.
+Use this information to solve the following problems.
 
-b. Suppose the mean and the standard deviation for the number of adult tickets purchased by a single customer are 2 and 1.2, respectively. Assume that the numbers of child tickets and adult tickets purchased are independent random variables. Compute the mean and the standard deviation of the total number of adult and child tickets purchased by a single customer.
+	a. Compute the mean and the standard deviation of **C**.
 
-c. Suppose each child ticket costs $15 and each adult ticket costs $25. Compute the mean and the standard deviation of the total amount spent per purchase.
+	b. Suppose the mean and the standard deviation for the number of adult tickets purchased by a single customer are 2 and 1.2, respectively. Assume that the numbers of child tickets and adult tickets purchased are independent random variables. Compute the mean and the standard deviation of the total number of adult and child tickets purchased by a single customer.
+
+	c. Suppose each child ticket costs $15 and each adult ticket costs $25. Compute the mean and the standard deviation of the total amount spent per purchase.
 
 7. **2008, Free Response Form B, #5**
 
@@ -298,11 +302,11 @@ Assume that the length of time, **Y**, it takes the train leaving Diamondback to
 
 These two travel times are independent.
 
-a. What is the distribution of **Y** - **X**?
+	a. What is the distribution of **Y** - **X**?
 
-b. Over the long run, what proportion of the days will the train from Bullsnake have to wait at Copperhead for the train from Diamondback to arrive?
+	b. Over the long run, what proportion of the days will the train from Bullsnake have to wait at Copperhead for the train from Diamondback to arrive?
 
-c. How long should the Snake Gulch Railroad delay the departure of the train from Bullsnake so that the probability that it has to wait is only 0.01?
+	c. How long should the Snake Gulch Railroad delay the departure of the train from Bullsnake so that the probability that it has to wait is only 0.01?
 
 8. **2008, Free Response, #3**
 
@@ -327,14 +331,16 @@ Crystal, another contestant, has also practiced many times. The probability dist
  	+-------------+------+------+------+
  	| Probability | 0.45 | 0.40 | 0.15 |
  	+-------------+------+------+------+
- 	
-a. Calculate the expected score for each player.
+ 
+Use this information to answer the following questions.
+	
+	a. Calculate the expected score for each player.
 
-b. Suppose that Josephine scores 16 and Crystal scores 17. The difference (Josephine minus Crystal) of their scores is -1. List all combinations of possible scores for Josephine and Crystal that will produce a difference (Josephine minus Crystal) of -1, and calculate the probability for each combination.
+	b. Suppose that Josephine scores 16 and Crystal scores 17. The difference (Josephine minus Crystal) of their scores is -1. List all combinations of possible scores for Josephine and Crystal that will produce a difference (Josephine minus Crystal) of -1, and calculate the probability for each combination.
 
-c. Find the probability that the difference (Josephine minus Crystal) in their scores is -1.
+	c. Find the probability that the difference (Josephine minus Crystal) in their scores is -1.
 
-d. The table below lists all the possible differences in the scores between Josephine and Crystal and some associated probabilities.
+	d. The table below lists all the possible differences in the scores between Josephine and Crystal and some associated probabilities. Complete the table and calculate the probability that Crystal’s score will be higher than Josephine’s score.
 
 
 .. topic:: Distribution (Josephine minus Crystal)
@@ -344,14 +350,12 @@ d. The table below lists all the possible differences in the scores between Jose
 	+-------------+-------+--------+--------+--------+-------+-------+
 	| Probability | 0.015 |   ?    |   ?    | 0.325  | 0.260 | 0.090 |
 	+-------------+-------+--------+--------+--------+-------+-------+
-	
-Complete the table and calculate the probability that Crystal’s score will be higher than Josephine’s score.
 
 9. **2010, Free Response Form B, #3**
 
 A test consisting of 25 multiple-choice questions with 5 answer choices for each question is administered. For each question, there is only 1 correct answer.
 
-a. Let :math:`\mathcal{X}` be the number of correct answers if a student guesses randomly from the 5 choices for each of the 25 questions. What is the probability distribution of :math:`\mathcal{X}`?
+	a. Let :math:`\mathcal{X}` be the number of correct answers if a student guesses randomly from the 5 choices for each of the 25 questions. What is the probability distribution of :math:`\mathcal{X}`?
 
 This test, like many multiple-choice tests, is scored using a penalty for guessing. The test score is determined
 by awarding 1 point for each question answered correctly, deducting 0.25 point for each question answered
@@ -364,9 +368,11 @@ For example, the score for a student who answers 17 questions correctly, answers
 
 	Score = (1 x 17) - (0.25 x 3) + (0 x 5) = 16.25.
 	
-b. Suppose a student knows the correct answers for 18 questions, answers those 18 questions correctly, and chooses randomly from the 5 choices for each of the other 7 questions. Show that the expected value of the student’s score is 18 when using the scoring formula above.
+Use this information to answer the following questions.
 
-c. A score of at least 20 is needed to pass the test. Suppose a student knows the correct answers for 18 questions, answers those 18 questions correctly, and chooses randomly from the 5 choices for each of the other 7 questions. What is the probability that the student will pass the test?
+	b. Suppose a student knows the correct answers for 18 questions, answers those 18 questions correctly, and chooses randomly from the 5 choices for each of the other 7 questions. Show that the expected value of the student’s score is 18 when using the scoring formula above.
+
+	c. A score of at least 20 is needed to pass the test. Suppose a student knows the correct answers for 18 questions, answers those 18 questions correctly, and chooses randomly from the 5 choices for each of the other 7 questions. What is the probability that the student will pass the test?
 
 10. **2012, Free Response, #2**
 
@@ -377,7 +383,7 @@ A charity fundraiser has a Spin the Pointer game that uses a spinner like the on
 
 A donation of $2 is required to play the game. For each $2 donation, a player spins the pointer once and receives the amount of money indicated in the sector where the pointer lands on the wheel. The spinner has an equal probability of landing in each of the 10 sectors.
 
-a. Let X represent the net contribution to the charity when one person plays the game once. Complete the table for the probability distribution of X.
+	a. Let X represent the net contribution to the charity when one person plays the game once. Complete the table for the probability distribution of X.
 
 +--------------+----+----+-----+
 |   x          | $2 | $1 | -$8 |
@@ -385,9 +391,11 @@ a. Let X represent the net contribution to the charity when one person plays the
 | :math:`P(x)` |    |    |     |
 +--------------+----+----+-----+
 
-b. What is the expected value of the net contribution to the charity for one play of the game?
+Use this table to answer the following questions.
 
-c. The charity would like to receive a net contribution of $500 from this game. What is the fewest number of times the game must be played for the expected value of the net contribution to be at least $500 ?
+	b. What is the expected value of the net contribution to the charity for one play of the game?
 
-d. Based on last year’s event, the charity anticipates that the Spin the Pointer game will be played 1,000 times. The charity would like to know the probability of obtaining a net contribution of at least $500 in 1,000 plays of the game. The mean and standard deviation of the net contribution to the charity in 1,000 plays of the game are $700 and $92.79, respectively. Use the normal distribution to approximate the probability that the charity would obtain a net contribution of at least $500 in 1,000 plays of the game.
+	c. The charity would like to receive a net contribution of $500 from this game. What is the fewest number of times the game must be played for the expected value of the net contribution to be at least $500 ?
+
+	d. Based on last year’s event, the charity anticipates that the Spin the Pointer game will be played 1,000 times. The charity would like to know the probability of obtaining a net contribution of at least $500 in 1,000 plays of the game. The mean and standard deviation of the net contribution to the charity in 1,000 plays of the game are $700 and $92.79, respectively. Use the normal distribution to approximate the probability that the charity would obtain a net contribution of at least $500 in 1,000 plays of the game.
 
