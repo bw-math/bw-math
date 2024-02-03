@@ -1,0 +1,1058 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Random Variables &#8212; bishop-walsh-math  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/problems/probability/03_RANDOM_VARIABLES';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Solutions" href="solutions/index.html" />
+    <link rel="prev" title="Conditional Probability" href="02_CONDITIONAL.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">bishop-walsh-math  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../00_SPLASH.html">Bishop Walsh Math</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../../01_DATASETS.html">Datasets</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../syllabi/index.html">Course Syllabi</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../syllabi/00_STATS_SYLLABUS.html">AP Statistics Course Syllabus</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../notes/index.html">Class Notes</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/foundations/index.html">Foundations</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/foundations/00_HISTORY.html">Knowledge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/foundations/01_LOGIC.html">Logic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/foundations/02_SET_THEORY.html">Set Theory</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/experiments/index.html">Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/01_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/02_DESIGN.html">Experimental Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/03_DATA.html">Data</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/04_INFERENCE.html">Inference</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../notes/experiments/hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../notes/experiments/hypotheses/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../notes/experiments/hypotheses/01_MEAN_TESTS.html">Population Mean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../notes/experiments/hypotheses/02_PROPORTION_TESTS.html">Population Proportion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../notes/experiments/hypotheses/03_STDDEV_TESTS.html">Population Standard Deviation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/00_GRAPHS.html">Graphical Representations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/01_ESTIMATION.html">Point Estimation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/03_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/04_SAMPLING.html">Sampling Distributions</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/00_BERNOULLI.html">Bernoulli Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/02_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/03_UNIFORM.html">Uniform Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/04_NORMAL.html">Normal Distribution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">Assignments</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Problems</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../celebrations/index.html">Celebrations of Knowledge</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/00_STATS_Q1.html">Statistics: Quarter One</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/01_STATS_Q2.html">Statistics: Quarter Two</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/02_STATS_Q3.html">Statistics: Quarter Three</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/03_STATS_Q4.html">Statistics: Quarter Four</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/04_CALC_Q2.html">Calculus: Quarter Two</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../algebra/index.html">Algebra</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../algebra/01_SUMS.html">Sums</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../differentiation/index.html">Differentiation</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/00_CHAIN_RULE.html">Chain Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/01_IMPLICIT_DIFFERENTIATION.html">Implicit Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/02_GRAPHING.html">Graphing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/03_RELATED_RATES.html">Related Rates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/04_OPTIMIZATION.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/05_THEOREMS.html">Theorems</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../set_theory/index.html">Set Theory</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../set_theory/01_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../set_theory/02_VENN_DIAGRAMS.html">Venn Diagrams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../set_theory/03_LOGIC.html">Symbolic Logic</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current active has-children"><a class="reference internal" href="index.html">Probability</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l4 current active"><a class="current reference internal" href="#">Random Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="solutions/index.html">Solutions</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../experiments/index.html">Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/00_DESIGN.html">Design</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/01_INFERENCE.html">Inference</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/02_BIAS.html">Bias</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/hypotheses/index.html">Hypothesis Testing</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/00_GRAPHS.html">Graphical Representations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/01_ESTIMATION.html">Point Estimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/03_REGRESSION.html">Regression</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/04_SAMPLING.html">Sampling Distributions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/05_CONFIDENCE.html">Confidence Intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/00_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/02_NORMAL.html">Normal Distribution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../python/index.html">Python Projects</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../python/00_PYTHON.html">Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/01_CATEGORICAL.html">Bar Charts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/02_QUANTITATIVE.html">Histograms and Boxplots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/03_NORMALITY.html">Normality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/04_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/05_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/06_SIMULATION.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/07_SETS.html">Sample Spaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/08_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/09_BINOMIAL.html">Binomial Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../calculator/index.html">Calculator Projects</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../calculator/00_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../calculator/01_COIN_FLIPS.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../calculator/02_PI_ESTIMATION.html">Pi Estimation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../resources/index.html">Resources</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../resources/00_EXAMS.html">A.P. Statistics Exam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../resources/01_REFERENCES.html">References</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../resources/calculator/index.html">TI-84 Calculator</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/00_BASICS.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/01_STATISTICS.html">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/02_PROBABILITY.html">Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/03_GRAPHING.html">Graphing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/04_PROGRAM.html">Programs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/05_VIDEOS.html">TI-84</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/06_WORKSHEETS.html">Worksheets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/07_REFERENCES.html">Calculator References</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../resources/python/index.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/00_SHELL.html">Online Python Shell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/01_SETUP.html">Python Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/02_BASIC.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/03_SETS.html">Sets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/04_FUNCTIONS.html">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/05_PLOTS.html">Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/06_FILES.html">Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/07_CONTROLS.html">Control Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/08_WEB.html">The Internet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/09_DEMOS.html">Demonstrations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../resources/tables/index.html">Statistical Tables</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/tables/01_Z_TABLE.html">Z Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/tables/02_CHI_SQUARED_TABLE.html"><img alt="\chi^2" class="math" src="../../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/tables/03_T_TABLE.html">T Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/tables/04_PEARSON_TABLE.html">Pearson Correlation Coefficient Table</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../maintenance/index.html">Maintenance</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../maintenance/LATEX.html">LaTex Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../maintenance/SPHINX.html">Sphinx</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/assignments/problems/probability/03_RANDOM_VARIABLES.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Random Variables</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expectations">Expectations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scalar-properties">Scalar Properties</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linearity-of-expectations">Linearity of Expectations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="random-variables">
+<span id="random-variable-classwork"></span><h1>Random Variables<a class="headerlink" href="#random-variables" title="Permalink to this heading">#</a></h1>
+<section id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Expectation of a Discrete Random Variable</p>
+<p>If <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is a discrete random variable that takes on the values <img class="math" src="../../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> for <img class="math" src="../../../_images/math/a481b68cca2dd2ec91961f41999ae31343d16aea.png" alt="i = 1, 2, 3, ..., n"/>, then <em>expectation</em> of <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is defined as,</p>
+<div class="math">
+<p><img src="../../../_images/math/31bc024a4e270416530d0620e1659777e916a8a9.png" alt="E(\mathcal{X}) = \sum_{i=1}^{n}{x_i \ cdot P(\mathcal{X} = x_i) }"/></p>
+</div></aside>
+<aside class="topic">
+<p class="topic-title">Definition of Variance</p>
+<p>If <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is a Random Variable, the Variance of <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is given by,</p>
+<div class="math">
+<p><img src="../../../_images/math/14039845ccfff87b50138c1b1cd446c967b8c36a.png" alt="Var(\mathcal{X}) = E( (\mathcal{X} - E(\mathcal{X}))^2 )"/></p>
+</div></aside>
+<aside class="topic">
+<p class="topic-title">Variance Shortcut Formula</p>
+<p>If <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is a Random Variable, the Variance of <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> can be calculated with the formula,</p>
+<div class="math">
+<p><img src="../../../_images/math/9ef2c33102aa7b2e8d16471dd366e63b8b04b95f.png" alt="Var(\mathcal{X}) = E(\mathcal{X}^2) - (E(\mathcal{X})^2)"/></p>
+</div></aside>
+<ol class="arabic">
+<li><p>A random variable <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is defined as the number of heads in three coin flips.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>List the elements of the sample space for this random variable.</p></li>
+<li><p>Write the elements of the sample space that belong to the event <img class="math" src="../../../_images/math/976ed9723b3aa1c4e0f5b9c7fb3669e9f48dac92.png" alt="\mathcal{X}=0"/> in set notation.</p></li>
+<li><p>Write the elements of the sample space that belong to the event <img class="math" src="../../../_images/math/3b296b3e5593ce0876d5eebbacb501080557b576.png" alt="\mathcal{X}=1"/> in set notation.</p></li>
+<li><p>Write the elements of the sample space that belong to the event <img class="math" src="../../../_images/math/67a419c2bc1fc04057575b495a8daeb9aaf8aca6.png" alt="\mathcal{X}=2"/> in set notation.</p></li>
+<li><p>Write the elements of the sample space that belong to the event <img class="math" src="../../../_images/math/7f8fd1880b1e75fb556c66168f0465821c6f6fae.png" alt="\mathcal{X}=3"/> in set notation.</p></li>
+<li><p>Find the probability distribution <img class="math" src="../../../_images/math/a86bd8516cb55815fcc9371db063f1eb6795d9b4.png" alt="P(\mathcal{X}=x)"/> for all values of <em>x</em>.</p></li>
+<li><p>Using the probability distribution derived in <em>part e</em>, find the expectation <img class="math" src="../../../_images/math/3353061d7e0843bdfb6c20f234dfa5e35fccb171.png" alt="E(\mathcal{X})"/> of the sum of two die rolls.</p></li>
+<li><p>Using the probability distribution derived in <em>part e</em>, find the variance <img class="math" src="../../../_images/math/26cc350b477c68dfe426f7543ada145c166a1add.png" alt="Var(\mathcal{X})"/> of the sum of two die rolls.</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>A random variable <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is defined as the sum of two six-sided die rolls.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>List the elements of the sample space for this random variable.</p></li>
+<li><p>Write the elements of the sample space that belong to the event <img class="math" src="../../../_images/math/2dcbcc15c5d939c7e51d3c2cf9662b3476b1b190.png" alt="\mathcal{X}=6"/> in set notation.</p></li>
+<li><p>Write the elements of the sample space that belong to the event <img class="math" src="../../../_images/math/8d63e298dcbf2a9841083f51a586de996c50ef18.png" alt="\mathcal{X}=7"/> in set notation.</p></li>
+<li><p>Write the elements of the sample space that belong to the event <img class="math" src="../../../_images/math/c2075915afc13fbcc98b44456119df584225321f.png" alt="\mathcal{X}=8"/> in set notation.</p></li>
+<li><p>Find the probability distribution <img class="math" src="../../../_images/math/a86bd8516cb55815fcc9371db063f1eb6795d9b4.png" alt="P(\mathcal{X}=x)"/> for all values of <em>x</em>.</p></li>
+<li><p>Using the probability distribution derived in <em>part e</em>, find the expectation <img class="math" src="../../../_images/math/3353061d7e0843bdfb6c20f234dfa5e35fccb171.png" alt="E(\mathcal{X})"/> of the sum of two die rolls.</p></li>
+<li><p>Using the probability distribution derived in <em>part e</em>, find the variance <img class="math" src="../../../_images/math/26cc350b477c68dfe426f7543ada145c166a1add.png" alt="Var(\mathcal{X})"/> of the sum of two die rolls.</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>The probability distribution for <img class="math" src="../../../_images/math/530fb46c4403bcb9b87aa6b4d274bfb0e045102e.png" alt="\mathcal{X} = \text{number of major defects on a randomly selected toaster oven}"/> is given by the following table,</p></li>
+</ol>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p>x</p></td>
+<td><p>p(x)</p></td>
+</tr>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0.08</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0.15</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>0.45</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>0.27</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>0.05</p></td>
+</tr>
+</tbody>
+</table>
+<p>Compute the following:</p>
+<ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/3353061d7e0843bdfb6c20f234dfa5e35fccb171.png" alt="E(\mathcal{X})"/></p></li>
+<li><p><img class="math" src="../../../_images/math/26cc350b477c68dfe426f7543ada145c166a1add.png" alt="Var(\mathcal{X})"/> directly from the definition.</p></li>
+<li><p><img class="math" src="../../../_images/math/26cc350b477c68dfe426f7543ada145c166a1add.png" alt="Var(\mathcal{X})"/> from the shortcut formula.</p></li>
+<li><p><img class="math" src="../../../_images/math/0b4a60608db3d81d7e4b8eca32e6e746a5cfa5f4.png" alt="sigma_{\mathcal{X}}"/></p></li>
+</ol>
+</section>
+<section id="expectations">
+<h2>Expectations<a class="headerlink" href="#expectations" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>In a lottery every week, <img class="math" src="../../../_images/math/a7b277c143a1fe9f75117112bdc78d0c239da7a0.png" alt="2,000,000"/> tickets are sold for $1 apiece. If 4000 of these tickets pay off $30 each, 500 pay off $800 each, one ticket pays off <img class="math" src="../../../_images/math/ba8d1cc911e889d8b6c801b0646178279eaf5aa5.png" alt="\$ 1,200,000"/>, and no ticket pays off more than one prize, what is the expected value of the winning amount for a player with a single ticket?</p></li>
+<li><p>In the Maryland Lottery, players pick six different integers between 1 and 49, the order of selection being irrelevant. The lottery commission then selects six of these numbers at random as the winning numbers. A player wins the grand prize of $1,200,000 if all six numbers that he or she has selected match the winning numbers. The second and third prizes of $800 and $35, respectively, are awarded if exactly five and four of the selected numbers match the winning numbers. Lottery tickets cost $5. What is the expected value of the amount a player wins in one game?</p></li>
+<li><p>An urn contains five balls, two of which are marked $1 , two marked $5 and one marked $15. A game is played by paying $10 for winning the sum of the amounts marked on two balls selected randomly from the urn. Is this a fair game?</p></li>
+</ol>
+</section>
+<section id="theorems">
+<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this heading">#</a></h2>
+<section id="scalar-properties">
+<h3>Scalar Properties<a class="headerlink" href="#scalar-properties" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
+<p class="topic-title">Additive Property of Expectations</p>
+<p>Let <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> be a random variable. Let <em>a</em> be any real number. Then,</p>
+<div class="math">
+<p><img src="../../../_images/math/1796ae999ebb9da27b93842a2900430f39efeac6.png" alt="E(\mathcal{X} + a) = E(\mathcal{X}) + a"/></p>
+</div></aside>
+<aside class="topic">
+<p class="topic-title">Multiplicative Property of Expectations</p>
+<p>Let <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> be a random variable. Let <em>a</em> be any real number. Then,</p>
+<div class="math">
+<p><img src="../../../_images/math/eb2c155ed4923a43d3de9e8d97c3cdea55879b1a.png" alt="E(a \cdot \mathcal{X}) = a \cdot E(\mathcal{X})"/></p>
+</div></aside>
+<ol class="arabic simple">
+<li><p>A box contains 10 frisbes of radii 1, 2, …, 10, respectively. What is the expected value of the circumference of a frisbee selected at random from this box?</p></li>
+<li><p>Meredith Margaret Monsoon owns the boutique bakery <em>Cupcake Connoisseur</em>. She makes cupcakes and sells them for $15 a piece (they are really good cupcakes). After several years of tracking the seasonal variations in cupcake sales, she has estimated the following probability distribution for the number of cupcakes she sells a day.</p></li>
+</ol>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p>Number of Cupcakes</p></td>
+<td><p><img class="math" src="../../../_images/math/72e14926c2aaf2ca9aac4310eb59e4bc3bff5743.png" alt="P(\mathcal{X}=x_i)"/></p></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>0.2</p></td>
+</tr>
+<tr class="row-odd"><td><p>25</p></td>
+<td><p>0.3</p></td>
+</tr>
+<tr class="row-even"><td><p>35</p></td>
+<td><p>0.4</p></td>
+</tr>
+<tr class="row-odd"><td><p>45</p></td>
+<td><p>0.1</p></td>
+</tr>
+</tbody>
+</table>
+<ol class="loweralpha simple">
+<li><p>Use this table to find Meredith’s expected <em>revenue over the next month</em>. Assume a month is <em>30 days</em>.</p></li>
+<li><p>The monthly cost of running a bakery is $2000. What is Meredith’s expected <em>profit over the next month</em>?</p></li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p>A small market orders copies of a certain magazine for its magazine rack each week. Let <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> represent the number of magazine demanded by customers over the course of a week. The probability density for the magazine deman is given by,</p></li>
+</ol>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p>x</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-even"><td><p>p(x)</p></td>
+<td><p><img class="math" src="../../../_images/math/0703d6b33e4ee678c85027ee1b3548c5a8cdbd45.png" alt="\frac{1}{15}"/></p></td>
+<td><p><img class="math" src="../../../_images/math/7b89a488cefaaa7330978bccb0cd1d0f1eacc602.png" alt="\frac{2}{15}"/></p></td>
+<td><p><img class="math" src="../../../_images/math/17b49c897f7653e4567bc4e825f83ff26f4d8c12.png" alt="\frac{3}{15}"/></p></td>
+<td><p><img class="math" src="../../../_images/math/51c99c2ec4fb62a7995751fdedb90e9498236d52.png" alt="\frac{4}{15}"/></p></td>
+<td><p><img class="math" src="../../../_images/math/17b49c897f7653e4567bc4e825f83ff26f4d8c12.png" alt="\frac{3}{15}"/></p></td>
+<td><p><img class="math" src="../../../_images/math/7b89a488cefaaa7330978bccb0cd1d0f1eacc602.png" alt="\frac{2}{15}"/></p></td>
+</tr>
+</tbody>
+</table>
+<p>Suppose the store owner actually pays $1.00 for each copy of the magazine and the price to the customers is $2.00. If the magazines left at the end of the week have no salvage value, is it better to order three or four copies of the magazine each week?</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>For both three and four copies ordered, express net revenue as a function of demand <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> and then compute the expected revenue.</p>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Let <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> be the amount of damage in dollars incurred due to flooding in a certain region every year. Possible <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> values are $0, $1000, $5000 and $10000, with probability 0.80, 0.1, 0.08 and 0.02, respectively. Seedy Insurance Company, Inc. offers a $500 deductible policy. If the company wishes its expected project to be $100 per policy, what premium amount should it charge?</p></li>
+</ol>
+</section>
+<section id="linearity-of-expectations">
+<h3>Linearity of Expectations<a class="headerlink" href="#linearity-of-expectations" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
+<p class="topic-title">Linearity of Expectations</p>
+<p>Suppose <img class="math" src="../../../_images/math/ad6daa2629cc37a5667723358ec601482bea795c.png" alt="\mathcal{Y}"/> and <img class="math" src="../../../_images/math/1d74e5da619d26fe1722fa453097be62e18ce3ce.png" alt="\mathcal{Z}"/> are random variables, not necessarily independent. If <img class="math" src="../../../_images/math/9cd16ce1fd19665cf157d196cb786e06a25a0b48.png" alt="\mathcal{X} = \mathcal{Y} + \mathcal{Z}"/>, then</p>
+<div class="math">
+<p><img src="../../../_images/math/4e72d6fafb90045a13178b32d2045ca918e06760.png" alt="E(\mathcal{X}) = E(\mathcal{Y}) + E(\mathcal{Z})"/></p>
+</div></aside>
+<ol class="arabic">
+<li><p>Use the linearity of expectations to solve the following problems.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the expected number of heads in three coin flips?</p></li>
+<li><p>What is the expected sum of outcomes for two die rolls?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Clavius Hecklesnotz is playing a game of chance where he flips 10 fair coins. If Clavius Hecklesnotz gets 1 head, he will be paid $1. If Clavius Hecklesnotz gets 2 heads, he will be paid $2. In general, if Clavius Hecklesnotz gets <em>n</em> heads, he will be paid $*n*. What is the expected value of Clavius Hecklesnotz’ payout?</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>This problem can be solved with a <a class="reference internal" href="../../../notes/distributions/02_BINOMIAL.html#binomial-distribution"><span class="std std-ref">Binomial Distribution</span></a>, but it is much easier to understand through the <a class="reference internal" href="../../../notes/probability/03_RANDOM_VARIABLES.html#linearity-of-expectations"><span class="std std-ref">Linearity of Expectations</span></a>.</p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>A box contains a yellow ball, an orange ball, a green ball, and a blue ball. Matilda Weierstrauss randomly selects 4 balls from the box (with replacement). What is the expected value for the number of distinct colored balls Matilda Weierstrauss will select?</p></li>
+<li><p>Every time one of the AP Statistics students buys a Happy Meal from McDonalds, they receive a <a class="reference external" href="https://en.wikipedia.org/wiki/Strawberry_Shortcake">Strawberry Shortcake</a> plush doll. There are five dolls in total: Strawberry Shortcake, Cherry Jam, Raspberry Torte, Blueberry Muffin and Lemon Meringue. The toys in every Happy Meal are awarded at random. What is the expected number of Happy Meals an AP Statistics Students must buy in order to get all the <em>Strawberry Shortcake</em> plush dolls?</p></li>
+</ol>
+</section>
+</section>
+<section id="a-p-exam-practice">
+<h2>A.P. Exam Practice<a class="headerlink" href="#a-p-exam-practice" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>2019, Free Response, #5</strong></p></li>
+</ol>
+<p>A company that manufactures smartphones developed a new battery that has a longer life span than that of a traditional battery. From the date of purchase of a smartphone, the distribution of the life span of the new battery is approximately normal with mean 30 months and standard deviation 8 months. For the price of $50, the company offers a two-year warranty on the new battery for customers who purchase a smartphone. The warranty guarantees that the smartphone will be replaced at no cost to the customer if the battery no longer works within 24 months from the date of purchase.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>In how many months from the date of purchase is it expected that 25 percent of the batteries will no longer work? Justify your answer.</p></li>
+<li><p>Suppose one customer who purchases the warranty is selected at random. What is the probability that the customer selected will require a replacement within 24 months from the date of purchase because the battery no longer works?</p></li>
+<li><p>The company has a gain of $50 for each customer who purchases a warranty but does not require a replacement. The company has a loss (negative gain) of $150 for each customer who purchases a warranty and does require a replacement. What is the expected value of the gain for the company for each warranty purchased?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>2015, Free Response, #3</strong></p></li>
+</ol>
+<p>A shopping mall has three automated teller machines (ATMs). Because the machines receive heavy use, they sometimes stop working and need to be repaired. Let the random variable X represent the number of ATMs that are working when the mall opens on a randomly selected day. The table shows the probability distribution of X. Number of ATMs working when</p>
+<img alt="../../../_images/2015_apstats_frp_3.png" class="align-center" src="../../../_images/2015_apstats_frp_3.png" />
+<p>Use this information to solve the following problems.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the probability that at least one ATM is working when the mall opens?</p></li>
+<li><p>What is the expected value of the number of ATMs that are working when the mall opens?</p></li>
+<li><p>What is the probability that all three ATMs are working when the mall opens, given that at least one ATM is working?</p></li>
+<li><p>Given that at least one ATM is working when the mall opens, would the expected value of the number of ATMs that are working be less than, equal to, or greater than the expected value from part <em>b</em>? Explain.</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>2014, Free Response, #3</strong></p></li>
+</ol>
+<p>Schools in a certain state receive funding based on the number of students who attend the school. To determine the number of students who attend a school, one school day is selected at random and the number of students in attendance that day is counted and used for funding purposes. The daily number of absences at High School A in the state is approximately normally distributed with mean of 120 students and
+standard deviation of 10.5 students.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>If more than 140 students are absent on the day the attendance count is taken for funding purposes, the school will lose some of its state funding in the subsequent year. Approximately what is the probability that High School A will lose some state funding?</p></li>
+<li><p>The principals’ association in the state suggests that instead of choosing one day at random, the state should choose 3 days at random. With the suggested plan, High School A would lose some of its state funding in the subsequent year if the mean number of students absent for the 3 days is greater than 140. Would High School A be more likely, less likely, or equally likely to lose funding using the suggested plan compared to the plan described in <em>part a</em>? Justify your choice.</p></li>
+<li><p>A typical school week consists of the days Monday, Tuesday, Wednesday, Thursday, and Friday. The principal at High School A believes that the number of absences tends to be greater on Mondays and Fridays, and there is concern that the school will lose state funding if the attendance count occurs on a Monday or Friday. If one school day is chosen at random from each of 3 typical school weeks, what is the probability that none of the 3 days chosen is a Tuesday, Wednesday, or Thursday?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p><strong>2019, Free Response, #5</strong></p></li>
+</ol>
+<p>A company that manufactures smartphones developed a new battery that has a longer life span than that of a traditional battery. From the date of purchase of a smartphone, the distribution of the life span of the new battery is approximately normal with mean 30 months and standard deviation 8 months. For the price of $50, the company offers a two-year warranty on the new battery for customers who purchase a smartphone. The warranty guarantees that the smartphone will be replaced at no cost to the customer if the battery no longer works within 24 months from the date of purchase.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>In how many months from the date of purchase is it expected that 25 percent of the batteries will no longer work? Justify your answer.</p></li>
+<li><p>Suppose one customer who purchases the warranty is selected at random. What is the probability that the customer selected will require a replacement within 24 months from the date of purchase because the battery no longer works?</p></li>
+<li><p>The company has a gain of $50 for each customer who purchases a warranty but does not require a replacement. The company has a loss (negative gain) of $150 for each customer who purchases a warranty and does require a replacement. What is the expected value of the gain for the company for each warranty purchased?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p><strong>2003, Free Response Form B, #5</strong></p></li>
+</ol>
+<img alt="../../../_images/2003_apstats_frp_formb_05.png" class="align-center" src="../../../_images/2003_apstats_frp_formb_05.png" />
+<p>Contestants on a game show spin a wheel like the one shown in the figure above. Each of the four outcomes on this wheel is equally likely and outcomes are independent from one spin to the next.</p>
+<ul class="simple">
+<li><p>The contestant spins the wheel.</p></li>
+<li><p>If the result is a skunk, no money is won and the contestant’s turn is finished.</p></li>
+<li><p>If the result is a number, the corresponding amount in dollars is won. The contestant can then stop with those winnings or can choose to spin again, and his or her turn continues.</p></li>
+<li><p>If the contestant spins again and the result is a skunk, all of the money earned on that turn is lost and the turn ends.</p></li>
+<li><p>The contestant may continue adding to his or her winnings until he or she chooses to stop or until a spin results in a skunk.</p></li>
+</ul>
+<p>Use this information to solve the following problems.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the probability that the result will be a number on all of the first three spins of the wheel?</p></li>
+<li><p>Suppose a contestant has earned $800 on his or her first three spins and chooses to spin the wheel again. What is the expected value of his or her total winnings for the four spins?</p></li>
+<li><p>A contestant who lost at this game alleges that the wheel is not fair. In order to check on the fairness of the wheel, the data in the table below were collected for 100 spins of this wheel. Based on these data, can you conclude that the four outcomes on this wheel are not equally likely? Give appropriate statistical evidence to support your answer.</p></li>
+</ol>
+</div></blockquote>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p>Result</p></td>
+<td><p>Skunk</p></td>
+<td><p>$100</p></td>
+<td><p>$200</p></td>
+<td><p>$500</p></td>
+</tr>
+<tr class="row-even"><td><p>Frequency</p></td>
+<td><p>33</p></td>
+<td><p>21</p></td>
+<td><p>20</p></td>
+<td><p>26</p></td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="6">
+<li><p><strong>2005, Free Response Form B, #2</strong></p></li>
+</ol>
+<p>For an upcoming concert, each customer may purchase up to 3 child tickets and 3 adult tickets. Let <strong>C</strong> be the number of child tickets purchased by a single customer. The probability distribution of the number of child tickets purchased by a single customer is given in the table below.</p>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p>c</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>p(c)</p></td>
+<td><p>0.4</p></td>
+<td><p>0.3</p></td>
+<td><p>0.2</p></td>
+<td><p>0.1</p></td>
+</tr>
+</tbody>
+</table>
+<p>Use this information to solve the following problems.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Compute the mean and the standard deviation of <strong>C</strong>.</p></li>
+<li><p>Suppose the mean and the standard deviation for the number of adult tickets purchased by a single customer are 2 and 1.2, respectively. Assume that the numbers of child tickets and adult tickets purchased are independent random variables. Compute the mean and the standard deviation of the total number of adult and child tickets purchased by a single customer.</p></li>
+<li><p>Suppose each child ticket costs $15 and each adult ticket costs $25. Compute the mean and the standard deviation of the total amount spent per purchase.</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p><strong>2008, Free Response Form B, #5</strong></p></li>
+</ol>
+<p>Flooding has washed out one of the tracks of the Snake Gulch Railroad. The railroad has two parallel tracks from Bullsnake to Copperhead, but only one usable track from Copperhead to Diamondback, as shown in the figure below. Having only one usable track disrupts the usual schedule. Until it is repaired, the washed-out track will remain unusable. If the train leaving Bullsnake arrives at Copperhead first, it has to wait until the train leaving Diamondback arrives at Copperhead.</p>
+<img alt="../../../_images/2008_apstats_frp_formb_05.png" class="align-center" src="../../../_images/2008_apstats_frp_formb_05.png" />
+<p>Every day at noon a train leaves Bullsnake heading for Diamondback and another leaves Diamondback heading for Bullsnake.</p>
+<p>Assume that the length of time, <strong>X</strong>, it takes the train leaving Bullsnake to get to Copperhead is normally distributed with a mean of 170 minutes and a standard deviation of 20 minutes.</p>
+<p>Assume that the length of time, <strong>Y</strong>, it takes the train leaving Diamondback to get to Copperhead is normally distributed with a mean of 200 minutes and a standard deviation of 10 minutes.</p>
+<p>These two travel times are independent.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the distribution of <strong>Y</strong> - <strong>X</strong>?</p></li>
+<li><p>Over the long run, what proportion of the days will the train from Bullsnake have to wait at Copperhead for the train from Diamondback to arrive?</p></li>
+<li><p>How long should the Snake Gulch Railroad delay the departure of the train from Bullsnake so that the probability that it has to wait is only 0.01?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li><p><strong>2008, Free Response, #3</strong></p></li>
+</ol>
+<p>A local arcade is hosting a tournament in which contestants play an arcade game with possible scores ranging from 0 to 20. The arcade has set up multiple game tables so that all contestants can play the game at the same time; thus contestant scores are independent. Each contestant’s score will be recorded as he or she finishes, and the contestant with the highest score is the winner.</p>
+<p>After practicing the game many times, Josephine, one of the contestants, has established the probability distribution of her scores, shown in the table below.</p>
+<aside class="topic">
+<p class="topic-title">Josephine’s Distribution</p>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p>Score</p></td>
+<td><p>16</p></td>
+<td><p>17</p></td>
+<td><p>18</p></td>
+<td><p>19</p></td>
+</tr>
+<tr class="row-even"><td><p>Probability</p></td>
+<td><p>0.10</p></td>
+<td><p>0.30</p></td>
+<td><p>0.40</p></td>
+<td><p>0.20</p></td>
+</tr>
+</tbody>
+</table>
+</aside>
+<p>Crystal, another contestant, has also practiced many times. The probability distribution for her scores is shown in the table below.</p>
+<aside class="topic">
+<p class="topic-title">Crystal’s Distribution</p>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p>Score</p></td>
+<td><p>17</p></td>
+<td><p>18</p></td>
+<td><p>19</p></td>
+</tr>
+<tr class="row-even"><td><p>Probability</p></td>
+<td><p>0.45</p></td>
+<td><p>0.40</p></td>
+<td><p>0.15</p></td>
+</tr>
+</tbody>
+</table>
+</aside>
+<p>Use this information to answer the following questions.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Calculate the expected score for each player.</p></li>
+<li><p>Suppose that Josephine scores 16 and Crystal scores 17. The difference (Josephine minus Crystal) of their scores is -1. List all combinations of possible scores for Josephine and Crystal that will produce a difference (Josephine minus Crystal) of -1, and calculate the probability for each combination.</p></li>
+<li><p>Find the probability that the difference (Josephine minus Crystal) in their scores is -1.</p></li>
+<li><p>The table below lists all the possible differences in the scores between Josephine and Crystal and some associated probabilities. Complete the table and calculate the probability that Crystal’s score will be higher than Josephine’s score.</p></li>
+</ol>
+</div></blockquote>
+<aside class="topic">
+<p class="topic-title">Distribution (Josephine minus Crystal)</p>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p>Difference</p></td>
+<td><p>-3</p></td>
+<td><p>-2</p></td>
+<td><p>-1</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Probability</p></td>
+<td><p>0.015</p></td>
+<td><p>?</p></td>
+<td><p>?</p></td>
+<td><p>0.325</p></td>
+<td><p>0.260</p></td>
+<td><p>0.090</p></td>
+</tr>
+</tbody>
+</table>
+</aside>
+<ol class="arabic simple" start="9">
+<li><p><strong>2010, Free Response Form B, #3</strong></p></li>
+</ol>
+<p>A test consisting of 25 multiple-choice questions with 5 answer choices for each question is administered. For each question, there is only 1 correct answer.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Let <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> be the number of correct answers if a student guesses randomly from the 5 choices for each of the 25 questions. What is the probability distribution of <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/>?</p></li>
+</ol>
+</div></blockquote>
+<p>This test, like many multiple-choice tests, is scored using a penalty for guessing. The test score is determined
+by awarding 1 point for each question answered correctly, deducting 0.25 point for each question answered
+incorrectly, and ignoring any question that is omitted. That is, the test score is calculated using the following
+formula.</p>
+<blockquote>
+<div><p>Score = (1 x number of correct answers) – (0.25 x number of incorrect answers) + (0 x number of omits)</p>
+</div></blockquote>
+<p>For example, the score for a student who answers 17 questions correctly, answers 3 questions incorrectly, and omits 5 questions is</p>
+<blockquote>
+<div><p>Score = (1 x 17) - (0.25 x 3) + (0 x 5) = 16.25.</p>
+</div></blockquote>
+<p>Use this information to answer the following questions.</p>
+<blockquote>
+<div><ol class="loweralpha simple" start="2">
+<li><p>Suppose a student knows the correct answers for 18 questions, answers those 18 questions correctly, and chooses randomly from the 5 choices for each of the other 7 questions. Show that the expected value of the student’s score is 18 when using the scoring formula above.</p></li>
+<li><p>A score of at least 20 is needed to pass the test. Suppose a student knows the correct answers for 18 questions, answers those 18 questions correctly, and chooses randomly from the 5 choices for each of the other 7 questions. What is the probability that the student will pass the test?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="10">
+<li><p><strong>2012, Free Response, #2</strong></p></li>
+</ol>
+<p>A charity fundraiser has a Spin the Pointer game that uses a spinner like the one illustrated in the figure below.</p>
+<img alt="../../../_images/2012_apstats_frp_02.png" class="align-center" src="../../../_images/2012_apstats_frp_02.png" />
+<p>A donation of $2 is required to play the game. For each $2 donation, a player spins the pointer once and receives the amount of money indicated in the sector where the pointer lands on the wheel. The spinner has an equal probability of landing in each of the 10 sectors.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Let X represent the net contribution to the charity when one person plays the game once. Complete the table for the probability distribution of X.</p></li>
+</ol>
+</div></blockquote>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p>x</p></td>
+<td><p>$2</p></td>
+<td><p>$1</p></td>
+<td><p>-$8</p></td>
+</tr>
+<tr class="row-even"><td><p><img class="math" src="../../../_images/math/652efbcaf40b24cf553c4db408dcf27dc9f997bc.png" alt="P(x)"/></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Use this table to answer the following questions.</p>
+<blockquote>
+<div><ol class="loweralpha simple" start="2">
+<li><p>What is the expected value of the net contribution to the charity for one play of the game?</p></li>
+<li><p>The charity would like to receive a net contribution of $500 from this game. What is the fewest number of times the game must be played for the expected value of the net contribution to be at least $500 ?</p></li>
+<li><p>Based on last year’s event, the charity anticipates that the Spin the Pointer game will be played 1,000 times. The charity would like to know the probability of obtaining a net contribution of at least $500 in 1,000 plays of the game. The mean and standard deviation of the net contribution to the charity in 1,000 plays of the game are $700 and $92.79, respectively. Use the normal distribution to approximate the probability that the charity would obtain a net contribution of at least $500 in 1,000 plays of the game.</p></li>
+</ol>
+</div></blockquote>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="02_CONDITIONAL.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Conditional Probability</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="solutions/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Solutions</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expectations">Expectations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scalar-properties">Scalar Properties</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linearity-of-expectations">Linearity of Expectations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Grant Moore
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Grant Moore.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

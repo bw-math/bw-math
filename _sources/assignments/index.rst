@@ -6,7 +6,6 @@ Assignments
    :maxdepth: 2
    :caption: Contents:
 
-   homework/index
-   classwork/index
+   problems/index
    python/index
    calculator/index

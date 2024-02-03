@@ -1,0 +1,948 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Conditional Probability &#8212; bishop-walsh-math  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/problems/probability/02_CONDITIONAL';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Random Variables" href="03_RANDOM_VARIABLES.html" />
+    <link rel="prev" title="Combinatorics" href="01_COMBINATORICS.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">bishop-walsh-math  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../00_SPLASH.html">Bishop Walsh Math</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../../01_DATASETS.html">Datasets</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../syllabi/index.html">Course Syllabi</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../syllabi/00_STATS_SYLLABUS.html">AP Statistics Course Syllabus</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../notes/index.html">Class Notes</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/foundations/index.html">Foundations</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/foundations/00_HISTORY.html">Knowledge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/foundations/01_LOGIC.html">Logic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/foundations/02_SET_THEORY.html">Set Theory</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/experiments/index.html">Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/01_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/02_DESIGN.html">Experimental Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/03_DATA.html">Data</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/04_INFERENCE.html">Inference</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../notes/experiments/hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../notes/experiments/hypotheses/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../notes/experiments/hypotheses/01_MEAN_TESTS.html">Population Mean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../notes/experiments/hypotheses/02_PROPORTION_TESTS.html">Population Proportion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../notes/experiments/hypotheses/03_STDDEV_TESTS.html">Population Standard Deviation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/00_GRAPHS.html">Graphical Representations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/01_ESTIMATION.html">Point Estimation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/03_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/04_SAMPLING.html">Sampling Distributions</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/00_BERNOULLI.html">Bernoulli Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/02_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/03_UNIFORM.html">Uniform Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/04_NORMAL.html">Normal Distribution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">Assignments</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Problems</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../celebrations/index.html">Celebrations of Knowledge</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/00_STATS_Q1.html">Statistics: Quarter One</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/01_STATS_Q2.html">Statistics: Quarter Two</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/02_STATS_Q3.html">Statistics: Quarter Three</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/03_STATS_Q4.html">Statistics: Quarter Four</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/04_CALC_Q2.html">Calculus: Quarter Two</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../algebra/index.html">Algebra</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../algebra/01_SUMS.html">Sums</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../differentiation/index.html">Differentiation</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/00_CHAIN_RULE.html">Chain Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/01_IMPLICIT_DIFFERENTIATION.html">Implicit Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/02_GRAPHING.html">Graphing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/03_RELATED_RATES.html">Related Rates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/04_OPTIMIZATION.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/05_THEOREMS.html">Theorems</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../set_theory/index.html">Set Theory</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../set_theory/01_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../set_theory/02_VENN_DIAGRAMS.html">Venn Diagrams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../set_theory/03_LOGIC.html">Symbolic Logic</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current active has-children"><a class="reference internal" href="index.html">Probability</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l4 current active"><a class="current reference internal" href="#">Conditional Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_RANDOM_VARIABLES.html">Random Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="solutions/index.html">Solutions</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../experiments/index.html">Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/00_DESIGN.html">Design</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/01_INFERENCE.html">Inference</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/02_BIAS.html">Bias</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/hypotheses/index.html">Hypothesis Testing</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/00_GRAPHS.html">Graphical Representations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/01_ESTIMATION.html">Point Estimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/03_REGRESSION.html">Regression</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/04_SAMPLING.html">Sampling Distributions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/05_CONFIDENCE.html">Confidence Intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/00_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/02_NORMAL.html">Normal Distribution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../python/index.html">Python Projects</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../python/00_PYTHON.html">Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/01_CATEGORICAL.html">Bar Charts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/02_QUANTITATIVE.html">Histograms and Boxplots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/03_NORMALITY.html">Normality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/04_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/05_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/06_SIMULATION.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/07_SETS.html">Sample Spaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/08_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/09_BINOMIAL.html">Binomial Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../calculator/index.html">Calculator Projects</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../calculator/00_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../calculator/01_COIN_FLIPS.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../calculator/02_PI_ESTIMATION.html">Pi Estimation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../resources/index.html">Resources</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../resources/00_EXAMS.html">A.P. Statistics Exam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../resources/01_REFERENCES.html">References</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../resources/calculator/index.html">TI-84 Calculator</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/00_BASICS.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/01_STATISTICS.html">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/02_PROBABILITY.html">Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/03_GRAPHING.html">Graphing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/04_PROGRAM.html">Programs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/05_VIDEOS.html">TI-84</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/06_WORKSHEETS.html">Worksheets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/07_REFERENCES.html">Calculator References</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../resources/python/index.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/00_SHELL.html">Online Python Shell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/01_SETUP.html">Python Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/02_BASIC.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/03_SETS.html">Sets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/04_FUNCTIONS.html">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/05_PLOTS.html">Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/06_FILES.html">Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/07_CONTROLS.html">Control Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/08_WEB.html">The Internet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/09_DEMOS.html">Demonstrations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../resources/tables/index.html">Statistical Tables</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/tables/01_Z_TABLE.html">Z Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/tables/02_CHI_SQUARED_TABLE.html"><img alt="\chi^2" class="math" src="../../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/tables/03_T_TABLE.html">T Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/tables/04_PEARSON_TABLE.html">Pearson Correlation Coefficient Table</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../maintenance/index.html">Maintenance</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../maintenance/LATEX.html">LaTex Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../maintenance/SPHINX.html">Sphinx</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/assignments/problems/probability/02_CONDITIONAL.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Conditional Probability</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-space-reduction">Sample Space Reduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bayes-laws">Bayes’ Laws</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#independence">Independence</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="conditional-probability">
+<span id="conditional-classwork"></span><h1>Conditional Probability<a class="headerlink" href="#conditional-probability" title="Permalink to this heading">#</a></h1>
+<section id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Conditional Probability Definition</p>
+<p>In terms of probabilities,</p>
+<div class="math">
+<p><img src="../../../_images/math/e1777d91a3f43071e182c7b67e8f802cc7774280.png" alt="P(A \mid B) = \frac{P(A \cap B)}{P(B)}"/></p>
+</div><p>In terms of cardinalities,</p>
+<div class="math">
+<p><img src="../../../_images/math/5b7cd1a0ab9a994a8d9a706676c34428b9b35a58.png" alt="P(A \mid B) = \frac{n(A \cap B)}{n(B)}"/></p>
+</div></aside>
+<p>Use this definition to solve the following problems.</p>
+<ol class="arabic simple">
+<li><p>In a highschool, there are 287 students. 92 of the students play football. 50 of them play football <em>and</em> basketball. What is the probability a randomly selected football player also plays basketball?</p></li>
+<li><p>In a sample of 100 adults, 45 of them owned a dog, 30 of them owned a cat and 18 of them owned a dog and a cat. What percentage of those who have a dog also have a cat?</p></li>
+<li><p>Suppose 15% of the population of a country have auburn hair and are left-handed, while a total of 25% of the population have auburn hair.  What percent of those with auburn hair are left-handed?</p></li>
+<li><p>You are given the following <a class="reference internal" href="../../../notes/foundations/02_SET_THEORY.html#venn-diagrams"><span class="std std-ref">Venn Diagram</span></a>,</p></li>
+</ol>
+<img alt="../../../_images/conditional_probability_venn_diagram.jpg" class="align-center" src="../../../_images/conditional_probability_venn_diagram.jpg" />
+<p>Use this Venn Diagram to answer the following questions.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Find <img class="math" src="../../../_images/math/1bda804fd56f49078dfb6fd39fcb34645d7094cd.png" alt="P(A \mid B)"/></p></li>
+<li><p>Find <img class="math" src="../../../_images/math/bda5f2bce74ff4450585aa5bc4710ef8db08d89f.png" alt="P(B \mid A)"/></p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic" start="5">
+<li><p>You shuffle a deck of playing cards and deal yourself two cards at random.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the probability the first card is a king?</p></li>
+<li><p>What is the probability both cards are kings?</p></li>
+<li><p>If the first card is a king, what is the probability the second card is a king?</p></li>
+<li><p>What is the difference between the meanings of <em>part b</em> and <em>part c</em>?</p></li>
+<li><p>What is the connection between <em>part a</em>, <em>part b</em> and <em>part c</em>?</p></li>
+</ol>
+<ol class="loweralpha simple" start="5">
+<li><p>What is the probability of <em>not</em> getting a pair of kings?</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+<ol class="arabic" start="4">
+<li><p>A box contains three coins: two regular coins and a double-sided coin with heads on both sides. You select a coin at random and flip it.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the probability it lands heads up?</p></li>
+<li><p>If it lands heads up, what is the probability you have selected the double-sided coin?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Whilst paging through a magazine, you notice a interesting survey of randomly selected individuals who were each asked two questions. The first question was “Do you believe the Earth is flat or round?”. The second question was, “Do you think Finland is a <a class="reference external" href="https://knowyourmeme.com/memes/finland-does-not-exist">real country</a> ?” The results are given in the table below,</p></li>
+</ol>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>Flat</p></td>
+<td><p>Round</p></td>
+</tr>
+<tr class="row-even"><td><p>Exists</p></td>
+<td><p>15</p></td>
+<td><p>120</p></td>
+</tr>
+<tr class="row-odd"><td><p>Doesn’t</p></td>
+<td><p>12</p></td>
+<td><p>35</p></td>
+</tr>
+</tbody>
+</table>
+<p>Use this table to answer the following problems.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Draw a <a class="reference internal" href="../../../notes/foundations/02_SET_THEORY.html#venn-diagrams"><span class="std std-ref">Venn Diagram</span></a> that represents the results.</p></li>
+<li><p>How many people were included in this survey?</p></li>
+<li><p>What is the probability a randomly selected in this survey person believes the Earth is flat?</p></li>
+<li><p>What is the probability a randomly selected in this survey person believes Finland doesn’t exist?</p></li>
+<li><p>Of the people who believe the Earth is round, what percentage of them believe Finland exists?</p></li>
+<li><p>If a randomly selected person believes Finland doesn’t exist, what is the probability he or she believes the Earth is flat?</p></li>
+<li><p>If a randomly selected person believes the Earth is flat, what is the probability he or she doesn’t believe Finland exists?</p></li>
+<li><p><strong>Spoiler Alert</strong> Why is the answer to <em>part f</em> different from the answer to <em>part g</em>?</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="sample-space-reduction">
+<h2>Sample Space Reduction<a class="headerlink" href="#sample-space-reduction" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Reduction of Sample Space</p>
+<div class="math">
+<p><img src="../../../_images/math/4a5cc247c9861df5b2284a3f844c1ba02c919fc6.png" alt="P(B \mid A) = \frac{n(B \mid A)}{n(S \mid A)}"/></p>
+</div></aside>
+<ol class="arabic">
+<li><p>A bag contains 3 red marbles and 4 blue marbles. Two marbles are drawn at random <em>without replacement</em>. If the first marble drawn is red, what is the probability the second marble is blue?</p></li>
+<li><p>Suppose two fair dice have been tossed.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the probability of the faces sum to 5 if they land on different numbers?</p></li>
+<li><p>If the total of their top faces is found to be divisible by 5, what is the probability that both of them have landed on five?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Five people in a class of students believe math is awesome, while two people (losers) believe math is a blight upon humanity. Suppose you sample two people from this class <em>without replacement</em>.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>If the first person selected believes math is awesome, what is the probability the second person believes math is awesome?</p></li>
+<li><p>If the first person selected is a loser, what is the probability the second person believes math is awesome?</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Challenge Problem Ahead</p>
+</div>
+<ol class="arabic simple" start="4">
+<li><p><strong>Ghahramani, 2005</strong> In a small lake, it is estimated that there are approximately 105 fish, of which 40 are trout and 64 are carp. A fisherman caught eight fish. What is the probability that exactly two of them are trout if we know that at least three of them are not?</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><a class="reference internal" href="../../../notes/probability/02_CONDITIONAL.html#reduction-of-the-sample-space"><span class="std std-ref">Reduce the sample space</span></a> and then use <a class="reference internal" href="../../../notes/probability/01_COMBINATORICS.html#combinatorics"><span class="std std-ref">Combinatorics</span></a>.</p>
+</div>
+</section>
+<section id="bayes-laws">
+<h2>Bayes’ Laws<a class="headerlink" href="#bayes-laws" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Bayes’ Multiplication Law</p>
+<div class="math">
+<p><img src="../../../_images/math/5a89c8136b24e00d6029ce2702517a33134383b5.png" alt="P(A \cap B) = P(B \mid A) \cdot P(A)"/></p>
+</div></aside>
+<aside class="topic">
+<p class="topic-title">Bayes’ Law of Total Probability</p>
+<div class="math">
+<p><img src="../../../_images/math/603fcffc16f46192c7df965be4f835012f747b5f.png" alt="P(B) = P(B \mid A) \cdot P(A) + P(B \mid A^c) \cdot P(A^c)"/></p>
+</div></aside>
+<ol class="arabic">
+<li><p>100 sci-fi fans were polled by the reporters at  <em>Imporant News Weekly</em>. 64 of those polled preferred <em>Star Wars</em> to <em>Star Trek</em>, while the rest of them, due to poor life choices, preferred <em>Star Trek</em> to <em>Star Wars</em>. Of the people who preferred <em>Star Wars</em>, 75% of them thought <em>The Empire Strikes Back</em> was the best of the film in the <a class="reference external" href="https://en.wiktionary.org/wiki/ennealogy">ennealogy</a>. Of the people who preferred <em>Star Trek</em>, only half of them thought <em>The Empire Strike Back</em> was the best film in the series.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What percent of people preferred <em>Star Wars</em> over <em>Star Trek</em> and thought <em>The Empire Strikes Back</em> was the best film in the series?</p></li>
+<li><p>What percent of people preferred <em>Star Trek</em> over <em>Star Wars</em> and thought <em>The Empire Strikes Back</em> <strong>wasn’t</strong> the best film in the series?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p><strong>Missing Cards</strong></p></li>
+</ol>
+<p>Solve these problems about a standard deck of 52 cards.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Suppose one of the cards has been lost. What is the probability that a random card drawn from this deck is a heart?</p></li>
+<li><p>Suppose two of the cards have been lost. What is the probability that a random card drawn from this deck is a heart?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>Ghahramani, 2005</strong> Of patients in a hospital, 20% of those with myocardial infarcation have had strokes and 35% of those without myocardial infarcation have had strokes. If 40% of the patients have had myocardial infarcation, what percent of the patients have had strokes?</p></li>
+<li><p><strong>Ghahramani, 2005</strong> A factory produces its entire output with three machines. Each machine has an error rate that causes it to produce defective units. Machine I produces 50% of the output and has a 4% error rate. Machine II produces 30% of the output and has a 2% error rate. Machine III produces 20% of the output and has a 4% error rate. What percentage of the total output is defective?</p></li>
+<li><p>Suppose 1% of the United States Population has a serious life-threatening condition that slowly turns their internal organs into goop and drives them insane before an extremely painful death, known as <strong>Sejal’s Disease</strong>. A test is developed to help diagnose this awful curse on humanity. The test can determine whether an individual does or does not have <strong>Sejal’s Disease</strong>. If the person has the disease, it will give a positive result 98% of the time. If the person does not have the disease, it will give a false positive 5% of the time. If you take the test and get a positive result, what is the probability you are afflicted with <strong>Sejal’s Disease</strong>?</p></li>
+<li><p>Suppose 80% of seniors, 70% of juniors, 50% of sophomores and 30% of freshman use the Maker Space at Bishop Walsh. If 30% of all students are freshmen, 25% are sophomores, 25% are juniors and 20% are seniors, what percent of all students use the Maker Space?</p></li>
+</ol>
+</section>
+<section id="independence">
+<h2>Independence<a class="headerlink" href="#independence" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Independence Multiplication Law</p>
+<p>If <strong>A</strong> and <strong>B</strong> are independent events, then</p>
+<div class="math">
+<p><img src="../../../_images/math/758e88bf826c2920344ea5f44b9d15e06ed2b8e2.png" alt="P(A \cap B) = P(A) \cdot P(B)"/></p>
+</div></aside>
+<ol class="arabic simple">
+<li><p><strong>Cards, Single Draw</strong></p></li>
+</ol>
+<p>You are dealt a single card from a standard deck of 52 cards, face down.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Without any prior knowlesdge, what is the probability of the card being a spade?</p></li>
+<li><p>The dealer reveals to you the face of the card is a Jack. How does this information change your answer to <em>part a</em>?</p></li>
+<li><p>Based on your answers to the <em>parts a and b</em>, is the event of getting a Jack independent of the event of getting a spade?</p></li>
+</ol>
+</div></blockquote>
+<p>2 <strong>Balls, With Replacement</strong></p>
+<p>Five red balls and two balls are placed into a magical probability box. Two balls are selected <em>with</em> replacement.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Without any prior knowledge, what is the probability the first ball is red?</p></li>
+<li><p>Without any prior knowledge, what is the probability the second ball is red?</p></li>
+<li><p>Without any prior knowledge, what is the probability the first ball is blue?</p></li>
+<li><p>Without any prior knowledge, what is the probability the second ball is blue?</p></li>
+<li><p>If the first ball is blue, what is the probability the second ball is red?</p></li>
+<li><p>If the first ball is red, what is the probability the second ball is red?</p></li>
+<li><p>If the first ball is blue, what is the probability the second ball is blue?</p></li>
+<li><p>If the first ball is red, what is the probability the second ball is blue?</p></li>
+<li><p>Based on your answers to <em>part a</em> through <em>part h</em>, is the event of getting a red ball on the first draw independent of the event of getting a blue ball on the second draw? Is the event of getting a blue ball on the first draw independent of the event of getting a red ball on the second draw?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>Balls, Without Replacement</strong></p></li>
+</ol>
+<p>Five red balls and two balls are placed into a magical probability box. Two balls are selected <em>without</em> replacement.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Without any prior knowledge, what is the probability the first ball is red?</p></li>
+<li><p>Without any prior knowledge, what is the probability the second ball is red?</p></li>
+<li><p>Without any prior knowledge, what is the probability the first ball is blue?</p></li>
+<li><p>Without any prior knowledge, what is the probability the second ball is blue?</p></li>
+<li><p>If the first ball is blue, what is the probability the second ball is red?</p></li>
+<li><p>If the first ball is red, what is the probability the second ball is red?</p></li>
+<li><p>If the first ball is blue, what is the probability the second ball is blue?</p></li>
+<li><p>If the first ball is red, what is the probability the second ball is blue?</p></li>
+<li><p>Based on your answers to <em>part a</em> through <em>part h</em>, is the event of getting a red ball on the first draw independent of the event of getting a blue ball on the second draw? Is the event of getting a blue ball on the first draw independent of the event of getting a red ball on the second draw?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>Coins</strong></p></li>
+</ol>
+<p>Solve these problems about flipping a fair coin.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Suppose you flip a fair coin twice. What is the probability of getting two heads?</p></li>
+<li><p>Suppose you flip a fair coin three times. What is the probability of getting three heads?</p></li>
+<li><p>Suppose you flip a fair coin <em>n</em> times. What is the probability of getting <em>n</em> heads?</p></li>
+<li><p>Suppose you flip a fair coin three times. What is the probability of getting two heads?</p></li>
+<li><p>Suppose you flip a fair coin <em>n</em> times. What is the probability of getting two heads?</p></li>
+</ol>
+</div></blockquote>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><em>part d</em> and <em>part e</em> require <a class="reference internal" href="../../../notes/probability/01_COMBINATORICS.html#combinatorics"><span class="std std-ref">Combinatorics</span></a>!</p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p><strong>Dice</strong></p></li>
+</ol>
+<p>Solve these problems about rolling a six-sided die.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the probability of getting exactly three 6’s in three die rolls?</p></li>
+<li><p>What is the probability of getting atleast one 5 in four rolls?</p></li>
+</ol>
+</div></blockquote>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>For <em>part b</em>, first find the probability of getting <em>no</em> 5’s in four rolls and then use the <a class="reference internal" href="../../../notes/probability/00_INTRODUCTION.html#law-of-complements"><span class="std std-ref">Law of Complements</span></a> to find the desired probability.</p>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>A fair six-sided die is rolled twice. Let <strong>A</strong> denote the event that the sum of the outcomes is odd. Let <strong>B</strong> denote the event that it lands on 2 on the first toss. Are <strong>A</strong> and <strong>B</strong> independent? Why or why not?</p></li>
+<li><p><strong>Ghahramani, 2005</strong> Suppose that two numbers are selected at random and independently from the interval <img class="math" src="../../../_images/math/54f172ebec0b1716123893b56a926bc850757230.png" alt="(0,1)"/>. What is the probability that the first one is less than <img class="math" src="../../../_images/math/24bcf479c22dae8919292be1ebc60ab0bea1e905.png" alt="\frac{3}{4}"/>, and the second one is greater than <img class="math" src="../../../_images/math/257106b0a6ce8b89b1ab9336c0d00a73a4f303a4.png" alt="\frac{1}{4}"/>?</p></li>
+<li><p><strong>Ghahramani, 2005</strong> In a certain game, you perform three tasks. You flip a quarter, and win if you get heads. You roll a single die, and win if you get a six. You pick a card from a full playing-card deck, and win if you pick a card in the suit of spades. If any of these task are successful, then you win the game. What is the probability of winning?</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You win in the case you get a head or you get a six or you get a spade. Don’t forget to account for the overlapping events!</p>
+</div>
+<ol class="arabic simple" start="7">
+<li><p><strong>Ghahramani, 2005</strong> In data communications, a message transmitted from one end is subject to various sources of distortion and may be received erroneously at the other end. A bit is the smallest unit of information transmitted, and is either 0 or 1. Suppose that a message of 64 bits is transmitted. If each bit is received incorrectly with a probability 0.0001 independently of the other bits, what is the probability the message is free of error?</p></li>
+</ol>
+</section>
+<section id="a-p-exam-practice">
+<h2>A.P. Exam Practice<a class="headerlink" href="#a-p-exam-practice" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>2018 Free Response, #3</strong></p></li>
+</ol>
+<p>Approximately 3.5 percent of all children born in a certain region are from multiple births (that is, twins, triplets, etc.). Of the children born in the region who are from multiple births, 22 percent are left-handed. Of the children born in the region who are from single births, 11 percent are left-handed.</p>
+<ol class="loweralpha simple">
+<li><p>What is the probability that a randomly selected child born in the region is left-handed?</p></li>
+<li><p>What is the probability that a randomly selected child born in the region is a child from a multiple birth, given that the child selected is left-handed?</p></li>
+<li><p>A random sample of 20 children born in the region will be selected. What is the probability that the sample will have at least 3 children who are left-handed?</p></li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><p><strong>2016, Free Response, #3</strong></p></li>
+</ol>
+<p>A medical researcher surveyed a large group of men and women about whether they take medicine as prescribed. The responses were categorized as never, sometimes, or always. The relative frequency of each category is shown in the table.</p>
+<img alt="../../../_images/2019_apstats_frp_3.png" class="align-center" src="../../../_images/2019_apstats_frp_3.png" />
+<p>One person from those surveyed will be selected at random.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the probability that the person selected will be someone whose response is never and who is a woman?</p></li>
+<li><p>What is the probability that the person selected will be someone whose response is never or who is a woman?</p></li>
+<li><p>What is the probability that the person selected will be someone whose response is never given that the person is a woman?</p></li>
+<li><p>For the people surveyed, are the events of being a person whose response is never and being a woman independent? Justify your answer.</p></li>
+<li><p>Assume that, in a large population, the probability that a person will always take medicine as prescribed is 0.54. If 5 people are selected at random from the population, what is the probability that at least 4 of the people selected will always take medicine as prescribed? Support your answer.</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>2009, Free Response Form B, #2</strong></p></li>
+</ol>
+<p>The ELISA tests whether a patient has contracted HIV. The ELISA is said to be positive if it indicates that HIV is present in a blood sample, and the ELISA is said to be negative if it does not indicate that HIV is present in a blood sample. Instead of directly measuring the presence of HIV, the ELISA measures levels of antibodies in the blood that should be elevated if HIV is present. Because of variability in antibody levels among human patients, the ELISA does not always indicate the correct result.</p>
+<p>As part of a training program, staff at a testing lab applied the ELISA to 500 blood samples known to contain HIV. The ELISA was positive for 489 of those blood samples and negative for the other 11 samples. As part of the same training program, the staff also applied the ELISA to 500 other blood samples known to not contain HIV. The ELISA was positive for 37 of those blood samples and negative for the other 463 samples.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>When a new blood sample arrives at the lab, it will be tested to determine whether HIV is present. Using the data from the training program, estimate the probability that the ELISA would be positive when it is applied to a blood sample that does not contain HIV.</p></li>
+<li><p>Among the blood samples examined in the training program that provided positive ELISA results for HIV, what proportion actually contained HIV?</p></li>
+<li><p>When a blood sample yields a positive ELISA result, two more ELISAs are performed on the same blood sample. If at least one of the two additional ELISAs is positive, the blood sample is subjected to a more expensive and more accurate test to make a definitive determination of whether HIV is present in the sample. Repeated ELISAs on the same sample are generally assumed to be independent. Under the assumption of independence, what is the probability that a new blood sample that comes into the lab will be subjected to the more expensive test if that sample does not contain HIV?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p><strong>2003, Free Response Form B, #2</strong></p></li>
+</ol>
+<p>A simple random sample of adults living in a suburb of a large city was selected. The age and annual income of each adult in the sample were recorded. The resulting data are summarized in the table below, where the rows represent the number in that age group and the columns represent the number in that income bracket,</p>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>$25,000 - $35,000</p></td>
+<td><p>$35,001 - $50,000</p></td>
+<td><p>Over $50,000</p></td>
+<td><p>Total</p></td>
+</tr>
+<tr class="row-even"><td><p>21 - 30</p></td>
+<td><p>8</p></td>
+<td><p>15</p></td>
+<td><p>27</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-odd"><td><p>31 - 45</p></td>
+<td><p>22</p></td>
+<td><p>32</p></td>
+<td><p>35</p></td>
+<td><p>89</p></td>
+</tr>
+<tr class="row-even"><td><p>46 - 60</p></td>
+<td><p>12</p></td>
+<td><p>14</p></td>
+<td><p>27</p></td>
+<td><p>53</p></td>
+</tr>
+<tr class="row-odd"><td><p>Over 60</p></td>
+<td><p>5</p></td>
+<td><p>3</p></td>
+<td><p>7</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-even"><td><p>Total</p></td>
+<td><p>47</p></td>
+<td><p>64</p></td>
+<td><p>96</p></td>
+<td><p>207</p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the probability that a person chosen at random from those in this sample will be in the 31-45 age category?</p></li>
+<li><p>What is the probability that a person chosen at random from those in this sample whose incomes are over $50,000 will be in the 31-45 age category? Show your work.</p></li>
+<li><p>Based on your answers to <em>part a</em> and <em>part b</em>, is annual income independent of age category for those in this sample? Explain.</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p><strong>2018, Free Response, #3</strong></p></li>
+</ol>
+<p>Approximately 3.5 percent of all children born in a certain region are from multiple births (that is, twins, triplets, etc.). Of the children born in the region who are from multiple births, 22 percent are left-handed. Of the children born in the region who are from single births, 11 percent are left-handed.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the probability that a randomly selected child born in the region is left-handed?</p></li>
+<li><p>What is the probability that a randomly selected child born in the region is a child from a multiple birth, given that the child selected is left-handed?</p></li>
+</ol>
+</div></blockquote>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="01_COMBINATORICS.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Combinatorics</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="03_RANDOM_VARIABLES.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Random Variables</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-space-reduction">Sample Space Reduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bayes-laws">Bayes’ Laws</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#independence">Independence</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Grant Moore
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Grant Moore.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,795 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Introduction &#8212; bishop-walsh-math  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/problems/set_theory/01_INTRODUCTION';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Venn Diagrams" href="02_VENN_DIAGRAMS.html" />
+    <link rel="prev" title="Set Theory" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">bishop-walsh-math  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../00_SPLASH.html">Bishop Walsh Math</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../../01_DATASETS.html">Datasets</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../syllabi/index.html">Course Syllabi</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../syllabi/00_STATS_SYLLABUS.html">AP Statistics Course Syllabus</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../notes/index.html">Class Notes</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/foundations/index.html">Foundations</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/foundations/00_HISTORY.html">Knowledge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/foundations/01_LOGIC.html">Logic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/foundations/02_SET_THEORY.html">Set Theory</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/experiments/index.html">Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/01_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/02_DESIGN.html">Experimental Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/03_DATA.html">Data</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/experiments/04_INFERENCE.html">Inference</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../notes/experiments/hypotheses/index.html">Hypothesis Testing</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../notes/experiments/hypotheses/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../notes/experiments/hypotheses/01_MEAN_TESTS.html">Population Mean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../notes/experiments/hypotheses/02_PROPORTION_TESTS.html">Population Proportion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../notes/experiments/hypotheses/03_STDDEV_TESTS.html">Population Standard Deviation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/00_GRAPHS.html">Graphical Representations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/01_ESTIMATION.html">Point Estimation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/03_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/statistics/04_SAMPLING.html">Sampling Distributions</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../notes/distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/00_BERNOULLI.html">Bernoulli Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/02_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/03_UNIFORM.html">Uniform Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../notes/distributions/04_NORMAL.html">Normal Distribution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">Assignments</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Problems</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../celebrations/index.html">Celebrations of Knowledge</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/00_STATS_Q1.html">Statistics: Quarter One</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/01_STATS_Q2.html">Statistics: Quarter Two</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/02_STATS_Q3.html">Statistics: Quarter Three</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/03_STATS_Q4.html">Statistics: Quarter Four</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../celebrations/04_CALC_Q2.html">Calculus: Quarter Two</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../algebra/index.html">Algebra</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../algebra/01_SUMS.html">Sums</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../differentiation/index.html">Differentiation</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/00_CHAIN_RULE.html">Chain Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/01_IMPLICIT_DIFFERENTIATION.html">Implicit Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/02_GRAPHING.html">Graphing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/03_RELATED_RATES.html">Related Rates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/04_OPTIMIZATION.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../differentiation/05_THEOREMS.html">Theorems</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current active has-children"><a class="reference internal" href="index.html">Set Theory</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l4 current active"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="02_VENN_DIAGRAMS.html">Venn Diagrams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_LOGIC.html">Symbolic Logic</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../probability/solutions/index.html">Solutions</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../experiments/index.html">Experiments</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/00_DESIGN.html">Design</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/01_INFERENCE.html">Inference</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/02_BIAS.html">Bias</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../experiments/hypotheses/index.html">Hypothesis Testing</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/00_GRAPHS.html">Graphical Representations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/01_ESTIMATION.html">Point Estimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/03_REGRESSION.html">Regression</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/04_SAMPLING.html">Sampling Distributions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../statistics/05_CONFIDENCE.html">Confidence Intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/00_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../distributions/02_NORMAL.html">Normal Distribution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../python/index.html">Python Projects</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../python/00_PYTHON.html">Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/01_CATEGORICAL.html">Bar Charts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/02_QUANTITATIVE.html">Histograms and Boxplots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/03_NORMALITY.html">Normality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/04_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/05_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/06_SIMULATION.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/07_SETS.html">Sample Spaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/08_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/09_BINOMIAL.html">Binomial Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../calculator/index.html">Calculator Projects</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../calculator/00_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../calculator/01_COIN_FLIPS.html">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../calculator/02_PI_ESTIMATION.html">Pi Estimation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../resources/index.html">Resources</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../resources/00_EXAMS.html">A.P. Statistics Exam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../resources/01_REFERENCES.html">References</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../resources/calculator/index.html">TI-84 Calculator</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/00_BASICS.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/01_STATISTICS.html">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/02_PROBABILITY.html">Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/03_GRAPHING.html">Graphing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/04_PROGRAM.html">Programs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/05_VIDEOS.html">TI-84</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/06_WORKSHEETS.html">Worksheets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/calculator/07_REFERENCES.html">Calculator References</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../resources/python/index.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/00_SHELL.html">Online Python Shell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/01_SETUP.html">Python Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/02_BASIC.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/03_SETS.html">Sets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/04_FUNCTIONS.html">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/05_PLOTS.html">Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/06_FILES.html">Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/07_CONTROLS.html">Control Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/08_WEB.html">The Internet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/python/09_DEMOS.html">Demonstrations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../resources/tables/index.html">Statistical Tables</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/tables/01_Z_TABLE.html">Z Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/tables/02_CHI_SQUARED_TABLE.html"><img alt="\chi^2" class="math" src="../../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/tables/03_T_TABLE.html">T Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../resources/tables/04_PEARSON_TABLE.html">Pearson Correlation Coefficient Table</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../maintenance/index.html">Maintenance</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../maintenance/LATEX.html">LaTex Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../maintenance/SPHINX.html">Sphinx</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/assignments/problems/set_theory/01_INTRODUCTION.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introduction</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#defintions">Defintions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laws">Laws</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations">Relations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="introduction">
+<span id="set-theory-classwork"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
+<aside class="topic">
+<p class="topic-title">Instructions</p>
+<p>Start a fresh page in your classwork notebook. Write today’s date in the margin of the page. Clearly label and solve each of the following. Show your work and circle the anwer.</p>
+</aside>
+<p>For the problems #1 -9, you are given,</p>
+<div class="math">
+<p><img src="../../../_images/math/3adcffc6b6b2b0ebae3d5391755ae2d20987cce2.png" alt="S = \{ 1, 2, 3, 5, 7, 12, 19, 31, 50, 81 \}"/></p>
+</div><div class="math">
+<p><img src="../../../_images/math/7f02a62309fb9b1104c400a1cc6fd8d315cad624.png" alt="A = \{ 1, 2, 3, 19 \}"/></p>
+</div><div class="math">
+<p><img src="../../../_images/math/47e869a329b7e98e6a68b9d53904a2961596fa94.png" alt="B = \{ 19, 50, 81 \}"/></p>
+</div><div class="math">
+<p><img src="../../../_images/math/85cf4031211d2221b55c147e981d327c5b9a9753.png" alt="C = \{ 2, 12, 19, 50, 81 \}"/></p>
+</div><div class="math">
+<p><img src="../../../_images/math/0a1d638427b4eaa468db76233e099434e43ecc45.png" alt="D = \{ 31, 50 \}"/></p>
+</div><p>Where <strong>S</strong> is the universal set and <strong>A</strong>, <strong>B</strong>, <strong>C</strong> and <strong>D</strong> are subsets of <strong>S</strong>.</p>
+<section id="defintions">
+<h2>Defintions<a class="headerlink" href="#defintions" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Set Operations</strong></p></li>
+</ol>
+<p>Write the elements of each of the following sets in <a class="reference internal" href="../../../notes/foundations/02_SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a>,</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/2ef75eec66003e588055d751eaddd391b6eccea0.png" alt="A^c"/></p></li>
+<li><p><img class="math" src="../../../_images/math/8baf415367bb142a93d04eba8007d3e5cd02bdad.png" alt="B^c"/></p></li>
+<li><p><img class="math" src="../../../_images/math/146328b10362ea6e90842441210a2a66dcc35016.png" alt="A \cap B"/></p></li>
+<li><p><img class="math" src="../../../_images/math/47b7d7c58a0d8fba34b3e6c9b40a295769c86482.png" alt="A \cup B"/></p></li>
+<li><p><img class="math" src="../../../_images/math/9e6b4dd4cfa1f0ac33d0566dcaba53d734e3e75e.png" alt="C \cup A"/></p></li>
+<li><p><img class="math" src="../../../_images/math/a5de231c15081b365a6c200bb6c52f374fe1a5cf.png" alt="C \cup B"/></p></li>
+<li><p><img class="math" src="../../../_images/math/d4666b5ee81691c7ecbd12bef86d2672928a2705.png" alt="C \cap A"/></p></li>
+<li><p><img class="math" src="../../../_images/math/448c731d535beb3ca68f5b8b6fc5f6d8c924b789.png" alt="C \cap B"/></p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="laws">
+<h2>Laws<a class="headerlink" href="#laws" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple" start="2">
+<li><p><strong>Cardinality Laws</strong></p></li>
+</ol>
+<p>Answer each of the following problems,</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/f117c7775e5127b1e1957a30104db1ac6d1f16b4.png" alt="n(C)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/c1fd680dba552f3b9b74b8aa501cfbe09b0ce09d.png" alt="n(C^c)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/cf90e0c29ef4a62a7df7e7e01dc977d6d0f6b908.png" alt="n(S)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/04c443d69f9011c51a180e38df8017fc3bbc621f.png" alt="n(S) - n(C^c)"/></p></li>
+<li><p><strong>Spoiler Alert</strong> Why does <em>part d</em> equal <em>part a</em>?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>De Morgan’s Laws</strong>.</p></li>
+</ol>
+<p>Write the elements of each of the following sets in <a class="reference internal" href="../../../notes/foundations/02_SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a>. Use the answers from #1 where appriopriate.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/4813e782041de407f13d5227285d7e6db1274b4d.png" alt="(A^c) \cup (B^c)`"/></p></li>
+<li><p><img class="math" src="../../../_images/math/49231157518d3e86c2364d085f588c56b6f2ad0e.png" alt="(A \cup B)^c"/></p></li>
+<li><p><img class="math" src="../../../_images/math/679394566d6429b0cf1ada6e84f28ddcaf4e782b.png" alt="(A^c) \cap (B^c)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/a749ae8311d57637f940b9fe6b7b4ed1a63746fd.png" alt="(A \cap B)^c"/></p></li>
+<li><p>Based on the answers to <em>part a - d</em>, what conclusions can you draw about the relationship that exists between the operations of <em>complementation</em>, <em>intersection</em> and <em>union</em>?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p><strong>Absorption Laws</strong></p></li>
+</ol>
+<p>Write the elements of each of the following sets in <a class="reference internal" href="../../../notes/foundations/02_SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a>. Use the answers from #1 where appriopriate.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/45f0095aef7245260ba732e87a6b3e5c35f7acfd.png" alt="A \cup (A \cap B)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/7590271a778b4eeac5f0c07b94137ff36ff34a1c.png" alt="B \cap (A \cup B)"/></p></li>
+<li><p>Based on the answers to <em>part a - b</em>, what conclusions can you draw about the relationship that exists between the operations of <em>intersection</em> and <em>union</em>?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p><strong>Distributive Laws</strong></p></li>
+</ol>
+<p>Write the elements of each of the following sets in <a class="reference internal" href="../../../notes/foundations/02_SET_THEORY.html#list-notation"><span class="std std-ref">List Notation</span></a>. User the answers from #1 where appriopriate.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/07da9a21c98340a23dde0c618d58ca910b4c5fe9.png" alt="C \cup (A \cap B)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/ac00db9436dfb09ddbc9abadcb9bd11c270a721e.png" alt="C \cap (A \cup B)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/ed494bdca84fedd770870af663dd6ab40b9ed8ec.png" alt="(C \cup A) \cap (C \cup B)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/60aac53bfbf2abbdf9e67c4edc9041357fae0ac1.png" alt="(C \cap A) \cup (C \cap B)"/></p></li>
+<li><p>Based on the answers to <em>part a - d</em>, what conclusions can you draw about the relationship that exists between the operations of <em>intersection</em> and <em>union</em>?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p><strong>Counting Laws</strong>.</p></li>
+</ol>
+<p>Find the cardinality of each of the following sets.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/2a58167c7fb41c284d1f5172ee71592a24429f87.png" alt="n(D)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/f117c7775e5127b1e1957a30104db1ac6d1f16b4.png" alt="n(C)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/447df7efa44cac9e3a362ef5cf36e52e672dd2d8.png" alt="D \cap C"/></p></li>
+<li><p><img class="math" src="../../../_images/math/50757c25142cf5e7836fa68a5d30539a95b614c9.png" alt="(D \cap C)^c"/></p></li>
+<li><p><img class="math" src="../../../_images/math/0099dc736eadc9d531a80463cc4e2ea32ca51fff.png" alt="n(D \cup C)"/></p></li>
+<li><p>Why does <img class="math" src="../../../_images/math/b82ea979802198436a02181590c1cc3eca4325a2.png" alt="n(D) + n(C) \neq n(D \cup C)"/>?</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="relations">
+<h2>Relations<a class="headerlink" href="#relations" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Membership</strong></p></li>
+</ol>
+<p>Determine whether each of the following propositions is <em>true</em> or <em>false</em>.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/d2ab1e43c217d48888ac6ea20f95435b1e71e379.png" alt="2 \in A"/></p></li>
+<li><p><img class="math" src="../../../_images/math/82790c476b92889008b125e4b9341c415f47f0a1.png" alt="5 \notin B"/></p></li>
+<li><p><img class="math" src="../../../_images/math/a9210ee7c85173b9e39da4d1aa30a51ba1c88fb2.png" alt="3 \in D"/></p></li>
+<li><p><img class="math" src="../../../_images/math/b1a40e822b4ad59954018842e70c06070e568234.png" alt="A \in S"/></p></li>
+<li><p><img class="math" src="../../../_images/math/07a6b3b606a64039432cec5196204b46aab697eb.png" alt="A \notin S"/></p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Equivalence and Equality</strong>.</p></li>
+</ol>
+<p>Determine whether each of the following propositions is <em>true</em> or <em>false</em>.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/b20b0b13ae1d51af6e0bcc6477b498dd3db052a0.png" alt="A = B"/></p></li>
+<li><p><img class="math" src="../../../_images/math/831191fc4ae36fafd93c7a23ea718db20c35e94c.png" alt="A \equiv B"/></p></li>
+<li><p><img class="math" src="../../../_images/math/ae56156c3181058969f6cb9317bd12a7dbd18214.png" alt="A = B \implies A \equiv B"/></p></li>
+<li><p><img class="math" src="../../../_images/math/e776ca7fe72a78ab2e431d0036e7a0686589cfb6.png" alt="A \equiv B \implies A = B"/></p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>Subsets</strong></p></li>
+</ol>
+<p>Determine whether each of the following propositions is <em>true</em> or <em>false</em>.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/27317cca69c2b08f6d776e40da70a12c1e5d7086.png" alt="B \subseteq C"/></p></li>
+<li><p><img class="math" src="../../../_images/math/34aa9acdd619a395c83a6c1001e1c89a0f3b99cd.png" alt="B^c \subseteq C^c"/></p></li>
+<li><p><img class="math" src="../../../_images/math/84672e2ccab318c2ef11d647d76c0062aae07f28.png" alt="C^c \subseteq B^c"/></p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p><strong>Power Sets</strong></p></li>
+</ol>
+<p>Write the following sets in list notation.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>The set of all subsets of <img class="math" src="../../../_images/math/f3e0934201efbb32db343299944572dec5cbd93a.png" alt="D"/>.</p></li>
+<li><p>The set of all subsets of <img class="math" src="../../../_images/math/3a7a214c98a4440c624d51173249c2fb0d99e2c4.png" alt="B"/>.</p></li>
+<li><p>The set of all subsets of <img class="math" src="../../../_images/math/5773ffd7de0ac2767b94c7bd6983bb1c37ad267f.png" alt="A"/>.</p></li>
+<li><p>In general, for a set <strong>P</strong> with <em>n</em> elements, how many subsets can be formed from <strong>P</strong>?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p><strong>Ordered Pairs</strong></p></li>
+</ol>
+<p>Set theory is the foundation of all modern mathematics. For example, <a class="reference external" href="https://en.wikipedia.org/wiki/Kazimierz_Kuratowski">Kazimierz Kuratowski</a>, a Polish mathematician, proposed the following <a class="reference external" href="https://math.stackexchange.com/questions/1767604/please-explain-kuratowski-definition-of-ordered-pairs">definition of an ordered pair</a>,</p>
+<aside class="topic">
+<p class="topic-title">Kuratowski’s Definition of an Ordered Pair</p>
+<p>Let <img class="math" src="../../../_images/math/e5e4b1dd5c8ce4c86eb038650a4fbecedd940570.png" alt="(a,b)"/> represent the set,</p>
+<div class="math">
+<p><img src="../../../_images/math/dc7a4696e8bf516a1a3f2b0baa40400314a622c8.png" alt="\{ \{ a \}, \{ a, b \} \}"/></p>
+</div></aside>
+<p>Use Kuratowski’s definition of an ordered pair to decide which of the following propositions is true:</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/9ca67335251c9f2985fa023fcb66959301b9cb0c.png" alt="a \in (a,b)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/19c58d2df6b06f4ea4680d52c9e3d11ceec4e675.png" alt="\{ a \} \in (a,b)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/41bb14c0d788ad3447a4c3677806a50a5965eb9e.png" alt="(a,a)=\{ a \}"/></p></li>
+<li><p><img class="math" src="../../../_images/math/78c96ab3d9160554e1a274bc3fdf8b1bc41c01e1.png" alt="b \in (a,b)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/7ecc7a2c067d1adb3b779f7545d6faf5d125c6dd.png" alt="\{ b \} \in (a,b)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/0a0fd6db97b63049e541526424f986b95b591d6f.png" alt="\{ a, b \} \in (a,b)"/></p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="theorems">
+<h2>Theorems<a class="headerlink" href="#theorems" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Symbolic Propositions</strong></p></li>
+</ol>
+<p>Let <strong>E</strong>, <strong>F</strong> and <strong>G</strong> be three events. Determine which of the following statements are correct and which are incorrect. Justify your answers.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/89aca1ba524ae27d1967b285277430955dd0d341.png" alt="(F^c \cap G) \cup (E^c \cap G) = G \cap ((F \cup E)^c)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/03d7f6058ceb98cdc363782569133f4c896c2610.png" alt="((E \cup F)^c) \cap G = (E^c) \cap (F^c) \cap (G)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/fa0b5b5dd9690ff3d988ac5fc1d7f3d22eb56495.png" alt="((E \cap F) \cup (E \cap G) \cup (F \cap G)) \subset (E \cup F \cup G)"/></p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Deductive Proofs</strong></p></li>
+</ol>
+<p>Suppose you are given two sets <strong>E</strong> and <strong>F</strong>. Using the properties of sets discussed in class and the ones covered in this classwork, derive an identity for each of the following expressions,</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p><img class="math" src="../../../_images/math/0451fd930701bc931c43461d02673f27b0248843.png" alt="(E \cap F^c) \cup (E \cap F)"/></p></li>
+<li><p><img class="math" src="../../../_images/math/17f93f20cfc2df8458935f16bebebb39d743154a.png" alt="(E \cup F^c) \cap (E \cup F)"/></p></li>
+</ol>
+</div></blockquote>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Use the distributive laws from #5 and then use the <cite>Complement Theorem &lt;complement_theorem&gt;</cite></p>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Set Theory</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="02_VENN_DIAGRAMS.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Venn Diagrams</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#defintions">Defintions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laws">Laws</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations">Relations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Grant Moore
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Grant Moore.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
