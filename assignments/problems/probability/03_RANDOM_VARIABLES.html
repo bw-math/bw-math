@@ -495,13 +495,16 @@ document.write(`
 <p class="topic-title">Expectation of a Discrete Random Variable</p>
 <p>If <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is a discrete random variable that takes on the values <img class="math" src="../../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> for <img class="math" src="../../../_images/math/a481b68cca2dd2ec91961f41999ae31343d16aea.png" alt="i = 1, 2, 3, ..., n"/>, then <em>expectation</em> of <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is defined as,</p>
 <div class="math">
-<p><img src="../../../_images/math/31bc024a4e270416530d0620e1659777e916a8a9.png" alt="E(\mathcal{X}) = \sum_{i=1}^{n}{x_i \ cdot P(\mathcal{X} = x_i) }"/></p>
+<p><img src="../../../_images/math/0bdde44d2e37658b96842d45bf99eb92b4c0427c.png" alt="E(\mathcal{X}) = \sum_{x_i \in S}{x_i \ \cdot P(\mathcal{X} = x_i) }"/></p>
 </div></aside>
 <aside class="topic">
 <p class="topic-title">Definition of Variance</p>
 <p>If <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is a Random Variable, the Variance of <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is given by,</p>
 <div class="math">
 <p><img src="../../../_images/math/14039845ccfff87b50138c1b1cd446c967b8c36a.png" alt="Var(\mathcal{X}) = E( (\mathcal{X} - E(\mathcal{X}))^2 )"/></p>
+</div><p>Expanding the <em>outer</em> expectation, this can be rewritten,</p>
+<div class="math">
+<p><img src="../../../_images/math/d77981105b5dfa8a1c8486a6788fb7c4d0480f86.png" alt="Var(\mathcal{X}) = \sum_{x_i \in S}{(x_i - E(\mathcal{X}))^2  \cdot P(\mathcal{X} = x_i) }"/></p>
 </div></aside>
 <aside class="topic">
 <p class="topic-title">Variance Shortcut Formula</p>
@@ -566,7 +569,7 @@ document.write(`
 <li><p><img class="math" src="../../../_images/math/3353061d7e0843bdfb6c20f234dfa5e35fccb171.png" alt="E(\mathcal{X})"/></p></li>
 <li><p><img class="math" src="../../../_images/math/26cc350b477c68dfe426f7543ada145c166a1add.png" alt="Var(\mathcal{X})"/> directly from the definition.</p></li>
 <li><p><img class="math" src="../../../_images/math/26cc350b477c68dfe426f7543ada145c166a1add.png" alt="Var(\mathcal{X})"/> from the shortcut formula.</p></li>
-<li><p><img class="math" src="../../../_images/math/0b4a60608db3d81d7e4b8eca32e6e746a5cfa5f4.png" alt="sigma_{\mathcal{X}}"/></p></li>
+<li><p><img class="math" src="../../../_images/math/fe6b4653f46ae48e8c9dff8c537fd97d8b359c1f.png" alt="\sigma_{\mathcal{X}}"/></p></li>
 </ol>
 </section>
 <section id="expectations">
