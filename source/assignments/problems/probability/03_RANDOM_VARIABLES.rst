@@ -13,7 +13,7 @@ Definition
 	
 	.. math::
 	
-		E(\mathcal{X}) = \sum_{i=1}^{n}{x_i \ cdot P(\mathcal{X} = x_i) }
+		E(\mathcal{X}) = \sum_{x_i \in S}{x_i \ \cdot P(\mathcal{X} = x_i) }
 		
 .. topic:: Definition of Variance
 
@@ -22,6 +22,12 @@ Definition
 	.. math::
 	
 		Var(\mathcal{X}) = E( (\mathcal{X} - E(\mathcal{X}))^2 )
+		
+	Expanding the *outer* expectation, this can be rewritten,
+	
+	.. math::
+	
+		Var(\mathcal{X}) = \sum_{x_i \in S}{(x_i - E(\mathcal{X}))^2  \cdot P(\mathcal{X} = x_i) }
 		
 .. topic:: Variance Shortcut Formula
 	
@@ -91,7 +97,7 @@ b. :math:`Var(\mathcal{X})` directly from the definition.
 
 c. :math:`Var(\mathcal{X})` from the shortcut formula.
 
-d. :math:`sigma_{\mathcal{X}}`
+d. :math:`\sigma_{\mathcal{X}}`
 
 Expectations
 ============
