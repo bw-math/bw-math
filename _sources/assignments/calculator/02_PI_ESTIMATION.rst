@@ -8,8 +8,9 @@ Pi Estimation
 This mysterious Pi, which comes in at every door and window, and down every chimney, calling itself the circumference to a unit of diameter.
 
 -- August De Morgan,
-
 ```
+
+TODO
 
 .. _calculator_project_three_instructions:
 
@@ -20,9 +21,11 @@ Instructions
 
 2. Read through the :ref:`calculator_project_three_project` section. As you read through this section, follow along on your own calculator. 
 
-3. Complete the :ref:`calculator_project_three_questions` section. 
+3. Read through the :ref:`calculator_project_three_analysis`. As you read through, complete the questions in the :ref:`calculator_project_three_analysis` section in a document. When you completed the :ref:`calculator_project_three_analysis` section, upload the document to the Google Classroom assignment. 
 
-4. On the due date, bring your calculator to class and connect to the ViewSonic. Use the TIConnect software to export your simulation for grading. 
+4. On the due date, bring your calculator to class and connect to the ViewSonic. Use the **TIConnect** software to export your simulation for grading. 
+
+.. _calculator_project_three_videos:
 
 Videos
 ======
@@ -54,7 +57,6 @@ Background
 TI Basic
 --------
 
-In a previous project, we introduced `TI Basic <http://tibasicdev.wikidot.com/home>`_ and used it to write a relatively simple program for our *TI-84*s to calculate the :ref:`correlation` of two variables. 
 .. topic:: New Program
 
 	To start a new program on your *TI-84*, type the following,
@@ -63,8 +65,6 @@ In a previous project, we introduced `TI Basic <http://tibasicdev.wikidot.com/ho
 	- :math:`MENU : \text{NEW}`
 	
 	Title the program ``MONTEPI``.
-
-.. _calculator_project_three_control_structures:
 
 Control Structures
 ------------------
@@ -212,8 +212,6 @@ The following code block will generate a random number between 0 and 1. If the n
 	: ELSE
 	: DISP "WHOMP WHOMP"
 	: END
-	
-.. _calculator_project_three_graphing:
 
 Graphing
 --------
@@ -231,3 +229,8 @@ Monte Carlo Simulation
 ----------------------
 
 TODO: walk through it
+
+.. _calculator_project_three_analysis:
+
+Analysis
+========

@@ -468,10 +468,22 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-pi-with-simulation">Estimating Pi With Simulation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#control-structures">Control Structures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#augment">Augment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-basic">TI Basic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#control-structures">Control Structures</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#for-loop">For Loop</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-statement">Conditional Statement</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graphing">Graphing</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#monte-carlo-simulation">Monte Carlo Simulation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis">Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-structure">Logical Structure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Simulation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-distributions">Sampling Distributions</a></li>
 </ul>
 </li>
 </ul>
@@ -487,25 +499,354 @@ document.write(`
                   
   <section id="simulation">
 <span id="calculator-project-two"></span><h1>Simulation<a class="headerlink" href="#simulation" title="Permalink to this heading">#</a></h1>
-<p>TODO</p>
-<a class="reference external image-reference" href="https://www.youtube.com/watch?v=qSR0jIKeMmU"><img alt="Estimating Pi With Simulation 1/3" src="https://img.youtube.com/vi/qSR0jIKeMmU/maxresdefault.jpg" /></a>
-<p>TODO</p>
-<a class="reference external image-reference" href="https://www.youtube.com/watch?v=J9ILZhPYds4"><img alt="Estimating Pi With Simulation 2/3" src="https://img.youtube.com/vi/J9ILZhPYds4/maxresdefault.jpg" /></a>
-<p>TODO</p>
-<section id="estimating-pi-with-simulation">
-<h2>Estimating Pi With Simulation<a class="headerlink" href="#estimating-pi-with-simulation" title="Permalink to this heading">#</a></h2>
-<p>TODO</p>
+<p><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a>{epigraph}
+Your mind makes it real.</p>
+<p>– Morpheus, The Matrix
+<a href="#id5"><span class="problematic" id="id6">``</span></a><a href="#id7"><span class="problematic" id="id8">`</span></a></p>
+<p>In this project, a program is created on a <em>TI-83/84/85</em> calculator that simulates flipping a fixed amount of coins. The user will be able to adjust the probability of a getting heads or tails, in order to simulate fair and unfair conditions. The simulation will be performed a prescribed amount of times. These three values will be the parameters of the simulation,</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><strong>n</strong>: Number of coins flips</p></li>
+<li><p><strong>p</strong>: Probability of a single successful coin flip</p></li>
+<li><p><strong>m</strong>: Number of simulations</p></li>
+</ol>
+</div></blockquote>
+<p>“<em>Successful</em>” is here defined to mean “<em>getting an outcome of heads</em>”.</p>
+<p>The output of the program will be a sampling distribution for the number of heads obtained when flipping a coin <em>n</em> times. The sampling distribution will have <em>m</em> data points.</p>
+<section id="instructions">
+<span id="calculator-project-two-instructions"></span><h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Read through the <a class="reference internal" href="#calculator-project-two-background"><span class="std std-ref">Background</span></a> section.</p></li>
+<li><p>Read through the <span class="xref std std-ref">calculator_project_two_project</span> section. As you read through this section, follow along on your own calculator.</p></li>
+<li><p>Read through the <a class="reference internal" href="#calculator-project-two-analysis"><span class="std std-ref">Analysis</span></a>. As you read through, complete the questions in the <a class="reference internal" href="#calculator-project-two-analysis"><span class="std std-ref">Analysis</span></a> section in a document. When you completed the <a class="reference internal" href="#calculator-project-two-analysis"><span class="std std-ref">Analysis</span></a> section, upload the document to the Google Classroom assignment.</p></li>
+<li><p>On the due date, bring your calculator to class and connect to the ViewSonic. Use the <strong>TIConnect</strong> software to export your simulation for grading.</p></li>
+</ol>
+</section>
+<section id="background">
+<span id="calculator-project-two-background"></span><h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
+<section id="augment">
+<h3>Augment<a class="headerlink" href="#augment" title="Permalink to this heading">#</a></h3>
+<p>AUGMENT is a list operation that takes a list as input and produces a new list as output. Execute the command,</p>
+<aside class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\{ 1, 2, 3 \} \rarrow L_1</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Undefined control sequence.
+&lt;argument&gt; ...\begin {split}\{ 1, 2, 3 \} \rarrow 
+                                                  L_1\end {split}
+l.16 ...split}\{ 1, 2, 3 \} \rarrow L_1\end{split}
+                                                  
+! Undefined control sequence.
+&lt;argument&gt; ...\begin {split}\{ 1, 2, 3 \} \rarrow 
+                                                  L_1\end {split}
+l.16 ...split}\{ 1, 2, 3 \} \rarrow L_1\end{split}
+                                                  
+[1] (./math.aux) )
+(see the transcript file for additional information)
+Output written on math.dvi (1 page, 424 bytes).
+Transcript written on math.log.
+</p>
+</aside>
+<p>In other words, store the list ﻿:math:<cite>{ 1, 2, 3 `} in :math:`L_1</cite>.</p>
+<p>That’s a nice list and all, but it needs more…list!  So, let’s say, you want to add 4 to the end of this list. In order to do this on your calculator without creating an entirely new list, you have to use AUGMENT.</p>
+<aside class="topic">
+<p class="topic-title">Augment</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/4e2d8724e7ef50b648a5b9cf0099d4357be8f5be.png" alt="\text{BUTTON} : \text{LIST}"/></p></li>
+<li><p><img class="math" src="../../_images/math/979ca3e6d201fdf7f99dfda8b1a43722174e8f34.png" alt="\text{MENU} : \text{OPS}"/></p></li>
+<li><p><img class="math" src="../../_images/math/55389420b71ca9040683fa24877741821740e6ad.png" alt="9 : \text{AUGMENT(}"/></p></li>
+</ul>
+</aside>
+<p>Execute the following command,</p>
+<aside class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\text{augment}(L_1, \{ 4 \}) \rarrow L_1</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Undefined control sequence.
+&lt;argument&gt; ...ext {augment}(L_1, \{ 4 \}) \rarrow 
+                                                  L_1\end {split}
+l.16 ...ment}(L_1, \{ 4 \}) \rarrow L_1\end{split}
+                                                  
+! Undefined control sequence.
+&lt;argument&gt; ...ext {augment}(L_1, \{ 4 \}) \rarrow 
+                                                  L_1\end {split}
+l.16 ...ment}(L_1, \{ 4 \}) \rarrow L_1\end{split}
+                                                  
+[1] (./math.aux) )
+(see the transcript file for additional information)
+Output written on math.dvi (1 page, 452 bytes).
+Transcript written on math.log.
+</p>
+</aside>
+<p>With AUGMENT, we have told our calculators to take the current list stored in ﻿:math:<cite>L_1</cite>, merge it with the list ﻿:math:<cite>{ 4 }</cite> and then store the result back in ﻿:math:<cite>L_1</cite>
+﻿
+This will be useful in what follows! This function will be integral in the simulation created in this project.</p>
+</section>
+<section id="ti-basic">
+<h3>TI Basic<a class="headerlink" href="#ti-basic" title="Permalink to this heading">#</a></h3>
+<p>In a previous project, we introduced <a class="reference external" href="http://tibasicdev.wikidot.com/home">TI Basic</a> and used it to write a relatively simple program for our <a href="#id10"><span class="problematic" id="id11">*</span></a>TI-84*s to calculate the <a class="reference internal" href="../../notes/statistics/02_CORRELATION.html#correlation"><span class="std std-ref">Correlation</span></a> of two variables.</p>
+<aside class="topic">
+<p class="topic-title">New Program</p>
+<p>To start a new program on your <em>TI-84</em>, type the following,</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/9138f1ea3136e6725d9ef5c99de9a427482ce129.png" alt="\text{BUTTON} : \text{PRGM}"/></p></li>
+<li><p><img class="math" src="../../_images/math/e8a7e270b34dbc848a15d976ea6666e01c4d6a9f.png" alt="MENU : \text{NEW}"/></p></li>
+</ul>
+<p>Title the program <code class="docutils literal notranslate"><span class="pre">COINSIM</span></code>.</p>
+</aside>
+</section>
 <section id="control-structures">
 <h3>Control Structures<a class="headerlink" href="#control-structures" title="Permalink to this heading">#</a></h3>
-<p>TODO</p>
+<p>A <em>control structure</em> is a programmatic construct for controlling the logical flow of a program. This project will require the use of two fundamental control structures: <strong>FOR</strong> loops and <strong>IF-THEN</strong> statements.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>IF-THEN</strong> statements are often called “<em>conditional statements</em>”</p>
+</div>
+<section id="for-loop">
+<h4>For Loop<a class="headerlink" href="#for-loop" title="Permalink to this heading">#</a></h4>
+<p>A <strong>FOR</strong> loop is a programmatic construct for repeating a block of instructions; The <em>body</em> of the <strong>FOR</strong> loop is the block of repeating instructions. The arguments provided to a <strong>FOR</strong> loop determine how many times the block of instructions execute.</p>
+<aside class="topic">
+<p class="topic-title">For Loop</p>
+<p>While in <strong>PRGM</strong> editor, type</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/9138f1ea3136e6725d9ef5c99de9a427482ce129.png" alt="\text{BUTTON} : \text{PRGM}"/></p></li>
+<li><p><img class="math" src="../../_images/math/f98292645e7c957dba93d42b9f00bdf9a097a9e2.png" alt="\text{MENU} : \text{CTL}"/></p></li>
+<li><p><img class="math" src="../../_images/math/570757867c1eecc943a0721b63616384a4abafa0.png" alt="4 : \text{FOR(}"/></p></li>
+</ul>
+<p>To insert a <strong>FOR</strong> loop into a program.</p>
+</aside>
+<p>Whenever a control structure is started, it must <em>always</em> be accompanied with a corresponding <strong>END</strong> statement.</p>
+<aside class="topic">
+<p class="topic-title">End Statement</p>
+<p>While in <strong>PRGM</strong> editor, type</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/9138f1ea3136e6725d9ef5c99de9a427482ce129.png" alt="\text{BUTTON} : \text{PRGM}"/></p></li>
+<li><p><img class="math" src="../../_images/math/f98292645e7c957dba93d42b9f00bdf9a097a9e2.png" alt="\text{MENU} : \text{CTL}"/></p></li>
+<li><p><img class="math" src="../../_images/math/2a18a1de7a351203975841b119dd56e9c292c216.png" alt="7 : \text{END}"/></p></li>
+</ul>
+<p>To insert an <strong>END</strong> command into a program.</p>
+</aside>
+<p>Once a <strong>FOR</strong> has been inserted into a program and closed with an <strong>END</strong>, it must be supplied with appropriate arguments. A <strong>FOR</strong> has <em>four</em> arguments,</p>
+<blockquote>
+<div><p>FOR(&lt;INDEX&gt;, &lt;START&gt;, &lt;END&gt;, &lt;STEP&gt;)</p>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The name of each argument is written between angle brackets, <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code>, but the angle brackets are not part of the syntax. See below for an example.</p>
+</div>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">INDEX</span></code> assigns a variable to be used as the <em>index</em> of the loop.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">START</span></code> sets the starting value for the index.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">END</span></code> sets the ending value for the index.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">STEP</span></code> sets the increment added to the index at the end of the loop.</p></li>
+</ol>
+<p>As an example, the following code block will prompt the user to enter a value for <code class="docutils literal notranslate"><span class="pre">N</span></code>. Then it use the index <code class="docutils literal notranslate"><span class="pre">I</span></code> to iterate  from <img class="math" src="../../_images/math/1524a35026b23188fc27e8ec0d8cebde34b11575.png" alt="I = 1, 2, 3, ..., N"/> in steps of <em>1</em>. For each value of <code class="docutils literal notranslate"><span class="pre">I</span></code>, it will print that value to screen,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span> <span class="n">INPUT</span> <span class="s2">&quot;ITERATIONS: &quot;</span><span class="p">,</span> <span class="n">N</span>
+
+<span class="p">:</span> <span class="n">FOR</span><span class="p">(</span><span class="n">I</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="p">:</span> <span class="n">DISP</span> <span class="n">I</span>
+
+<span class="p">:</span> <span class="n">END</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Recall the <strong>DISP</strong> function can be found from the <strong>PRGM</strong> editor,</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/9138f1ea3136e6725d9ef5c99de9a427482ce129.png" alt="\text{BUTTON} : \text{PRGM}"/></p></li>
+<li><p><img class="math" src="../../_images/math/451c811c6915d5a92eb6f965bc9fef6b88af14e4.png" alt="\text{MENU} : \text{I/O}"/></p></li>
+<li><p><img class="math" src="../../_images/math/74e2ea6983f7b6d176afbc8d9e81ea73fc4190f5.png" alt="3 : \text{DISP}"/></p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Recall the <strong>INPUT</strong> function can be found from the <strong>PRGM</strong> editor,</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/9138f1ea3136e6725d9ef5c99de9a427482ce129.png" alt="\text{BUTTON} : \text{PRGM}"/></p></li>
+<li><p><img class="math" src="../../_images/math/451c811c6915d5a92eb6f965bc9fef6b88af14e4.png" alt="\text{MENU} : \text{I/O}"/></p></li>
+<li><p><img class="math" src="../../_images/math/ca8aca13779f8adb5bc84181a717a3554d1406eb.png" alt="1 : \text{INPUT}"/></p></li>
+</ul>
+</div>
+</section>
+<section id="conditional-statement">
+<h4>Conditional Statement<a class="headerlink" href="#conditional-statement" title="Permalink to this heading">#</a></h4>
+<p>A conditional statement provides a way of gating certain blocks of code behind a logical condition. Consider the instructions,</p>
+<blockquote>
+<div><p>If it rains, take an umbrella. Otherwise, pack a lunch.</p>
+</div></blockquote>
+<p>The <em>condition</em> of this proposition is the actual event of rain. If it is raining, then the <em>condition</em> has been met and the <em>operation</em> of <em>taking an umbrella</em> is performed. In the event it does <em>not</em> rain, the operation of <em>taking an umbrella</em> is replaced with the operation of <em>packing a lunch</em>.</p>
+<p>An <strong>IF-THEN-ELSE</strong> idiom provides exactly this sort of control structure for programs on <strong>TI</strong> calculators. If a condition is met, a certain operation is performed while if the condition is not met, a different operation is performed.</p>
+<aside class="topic">
+<p class="topic-title">If Statement</p>
+<p>While in <strong>PRGM</strong> editor, type</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/9138f1ea3136e6725d9ef5c99de9a427482ce129.png" alt="\text{BUTTON} : \text{PRGM}"/></p></li>
+<li><p><img class="math" src="../../_images/math/f98292645e7c957dba93d42b9f00bdf9a097a9e2.png" alt="\text{MENU} : \text{CTL}"/></p></li>
+<li><p><img class="math" src="../../_images/math/a170f3959588d495e244ae31860a98915ff00500.png" alt="1 : \text{IF}"/></p></li>
+</ul>
+<p>To insert an <strong>IF</strong> command into a program.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title">Then Statement</p>
+<p>While in <strong>PRGM</strong> editor, type</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/9138f1ea3136e6725d9ef5c99de9a427482ce129.png" alt="\text{BUTTON} : \text{PRGM}"/></p></li>
+<li><p><img class="math" src="../../_images/math/f98292645e7c957dba93d42b9f00bdf9a097a9e2.png" alt="\text{MENU} : \text{CTL}"/></p></li>
+<li><p><img class="math" src="../../_images/math/98841bfc474f8d3aa7b82907cf9abfb5e80f1fc1.png" alt="2 : \text{THEN}"/></p></li>
+</ul>
+<p>To insert an <strong>THEN</strong> command into a program.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title">Else Statement</p>
+<p>While in <strong>PRGM</strong> editor, type</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/9138f1ea3136e6725d9ef5c99de9a427482ce129.png" alt="\text{BUTTON} : \text{PRGM}"/></p></li>
+<li><p><img class="math" src="../../_images/math/f98292645e7c957dba93d42b9f00bdf9a097a9e2.png" alt="\text{MENU} : \text{CTL}"/></p></li>
+<li><p><img class="math" src="../../_images/math/fa86440fb1a0f47eb617fcd0a5dbde233671c36c.png" alt="3 : \text{ELSE}"/></p></li>
+</ul>
+<p>To insert an <strong>ELSE</strong> command into a program.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title">End Statement</p>
+<p>While in <strong>PRGM</strong> editor, type</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/9138f1ea3136e6725d9ef5c99de9a427482ce129.png" alt="\text{BUTTON} : \text{PRGM}"/></p></li>
+<li><p><img class="math" src="../../_images/math/f98292645e7c957dba93d42b9f00bdf9a097a9e2.png" alt="\text{MENU} : \text{CTL}"/></p></li>
+<li><p><img class="math" src="../../_images/math/2a18a1de7a351203975841b119dd56e9c292c216.png" alt="7 : \text{END}"/></p></li>
+</ul>
+<p>To insert an <strong>END</strong> command into a program.</p>
+</aside>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The <strong>ELSE</strong> command is <em>optional</em>. Every conditional statement needs an <strong>IF</strong> and a <strong>THEN</strong>, but the inclusion of <strong>ELSE</strong> is not necessary.</p>
+</div>
+<p>The following code block will generate a random number between 0 and 1. If the number is greater than 0.5, it will print <code class="docutils literal notranslate"><span class="pre">YAHTZEE</span></code> to screen; otherwise, it will print <code class="docutils literal notranslate"><span class="pre">WHOMP</span> <span class="pre">WHOMP</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span> <span class="n">RAND</span> <span class="o">-&gt;</span> <span class="n">A</span>
+<span class="p">:</span> <span class="n">IF</span> <span class="n">A</span><span class="o">&gt;</span><span class="mf">0.5</span>
+<span class="p">:</span> <span class="n">THEN</span>
+<span class="p">:</span> <span class="n">DISP</span> <span class="s2">&quot;YAHTZEE&quot;</span>
+<span class="p">:</span> <span class="n">ELSE</span>
+<span class="p">:</span> <span class="n">DISP</span> <span class="s2">&quot;WHOMP WHOMP&quot;</span>
+<span class="p">:</span> <span class="n">END</span>
+</pre></div>
+</div>
+</section>
 </section>
 <section id="graphing">
 <h3>Graphing<a class="headerlink" href="#graphing" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 </section>
-<section id="monte-carlo-simulation">
-<h3>Monte Carlo Simulation<a class="headerlink" href="#monte-carlo-simulation" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="analysis">
+<span id="calculator-project-two-analysis"></span><h2>Analysis<a class="headerlink" href="#analysis" title="Permalink to this heading">#</a></h2>
+<section id="logical-structure">
+<h3>Logical Structure<a class="headerlink" href="#logical-structure" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Question #1</p>
+<p>Explains what happens when the COINSIM program is executed in its current form.</p>
+</aside>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Question #2</p>
+<p>Explains what happens when the COINSIM program is executed in its current form.</p>
+</aside>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Question #3</p>
+<p>Explains what happens when the COINSIM program is executed in its current form.</p>
+</aside>
+</section>
+<section id="id12">
+<h3>Simulation<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Question #4</p>
+<p>Explains what happens when the COINSIM program is executed in its current form.</p>
+</aside>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Question #5</p>
+<p>Explains what happens when the COINSIM program is executed in its current form.</p>
+</aside>
+<p>TODO</p>
+</section>
+<section id="sampling-distributions">
+<h3>Sampling Distributions<a class="headerlink" href="#sampling-distributions" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Question #6</p>
+<p>Write a few sentences describing the simulated sampling distribution. What value is the distribution centered around? What shape does the distribution have?</p>
+</aside>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Question #7</p>
+<p>Fix <strong>m</strong> = 5 and <strong>p**=0.5. Run the simulation with **n</strong> = 10, 30, 50 and 100. How does changing the number of trials (<em>coin flips</em>) affect the sampling distribution for the number of heads? What happens to the center of the distribution? What happens to the variability?</p>
+</aside>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Question #8</p>
+<p>Fix <strong>n</strong> = 30 and <strong>p**=0.5. Run the simulation with **m</strong> = 5, 10, 20 and 50. How does changing the number of simulations affect the sampling distribution for the number of heads? What happens to the center of the distribution? What happens to the variability?</p>
+</aside>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Question #9</p>
+<p>Fix <strong>n</strong> = 30 and <strong>m**=5. Run the simulation with **p</strong> = 0.1, 0.25, 0.75 and 0.9. How does changing the probability of success affect the sampling distribution for the number of heads? What happens to the center of the distribution? What happens to the variability?</p>
+</aside>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Question #10</p>
+<p>Summarize the results. How do the three parameters, <strong>n</strong>, <strong>m</strong> and <strong>p</strong>, affect the sampling distribution for the number of heads in a fixed number of coin flips?</p>
+</aside>
 </section>
 </section>
 </section>
@@ -555,10 +896,22 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-pi-with-simulation">Estimating Pi With Simulation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#control-structures">Control Structures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#augment">Augment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-basic">TI Basic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#control-structures">Control Structures</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#for-loop">For Loop</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-statement">Conditional Statement</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graphing">Graphing</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#monte-carlo-simulation">Monte Carlo Simulation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis">Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-structure">Logical Structure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Simulation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-distributions">Sampling Distributions</a></li>
 </ul>
 </li>
 </ul>
