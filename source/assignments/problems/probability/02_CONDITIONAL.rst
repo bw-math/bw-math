@@ -279,7 +279,7 @@ b. What is the probability that a randomly selected child born in the region is 
 
 c. A random sample of 20 children born in the region will be selected. What is the probability that the sample will have at least 3 children who are left-handed?
 
-2. **2016, Free Response, #3**
+2. **2018, Free Response, #3**
 
 A medical researcher surveyed a large group of men and women about whether they take medicine as prescribed. The responses were categorized as never, sometimes, or always. The relative frequency of each category is shown in the table.
 

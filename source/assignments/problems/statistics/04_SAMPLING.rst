@@ -71,7 +71,7 @@ Use the information to solve the following problems.
 	c. Which of statistics C or D would be a better estimator of the population parameter? Explain your choice.
 
 	
-5. **2009, Free Response, #2**
+6. **2009, Free Response, #2**
 
 A tire manufacturer designed a new tread pattern for its all-weather tires. Repeated tests were conducted on cars of approximately the same weight traveling at 60 miles per hour. The tests showed that the new tread pattern enables the cars to stop completely in an average distance of 125 feet with a standard deviation of 6.5 feet and that the stopping distances are approximately normally distributed.
 
@@ -81,14 +81,29 @@ A tire manufacturer designed a new tread pattern for its all-weather tires. Repe
 
 	c. What is the probability that a randomly selected sample of 5 cars in the study will have a mean stopping distance of at least 130 feet?
 
-6. **2010, Free Response, #2**
+7. **2010, Free Response, #2**
 
 A local radio station plays 40 rock-and-roll songs during each 4-hour show. The program director at the station needs to know the total amount of airtime for the 40 songs so that time can also be programmed during the show for news and advertisements. The distribution of the lengths of rock-and-roll songs, in minutes, is roughly symmetric with a mean length of 3.9 minutes and a standard deviation of 1.1 minutes.
 
-	a. Describe the sampling distribution of the sample mean song lengths for random samples of 40 rock-and-roll songs.\
+	a. Describe the sampling distribution of the sample mean song lengths for random samples of 40 rock-and-roll songs.
 
 	b. If the program manager schedules 80 minutes of news and advertisements for the 4-hour (240-minute) show, only 160 minutes are available for music. Approximately what is the probability that the total amount of time needed to play 40 randomly selected rock-and-roll songs exceeds the available airtime?
 
-7. **2019, Free Response, #6**
+8. **2007, Free Response Form B, #2**
+
+The graph below displays the relative frequency distribution for X, the total number of dogs and cats owned per household, for the households in a large suburban area. For instance, 14 percent of the households own 2 of these pets.
+
+.. image:: ../../../assets/imgs/classwork/2007_apstats_frp_formb_02.png
+	:align: center
+
+Use this information to solve the following problems.
+
+a. According to a local law, each household in this area is prohibited from owning more than 3 of these pets. If a household in this area is selected at random, what is the probability that the selected household will be in violation of this law? Show your work.
+
+b. If 10 households in this area are selected at random, what is the probability that exactly 2 of them will be in violation of this law? Show your work.
+
+c. The mean and standard deviation of X are 1.65 and 1.851, respectively. Suppose 150 households in this area are to be selected at random and X , the mean number of dogs and cats per household, is to be computed. Describe the sampling distribution of X , including its shape, center, and spread.
+
+9. **2019, Free Response, #6**
 
 TODO (THIS IS A GOOD ONE TO GO OVER IN GREAT DETAIL!)

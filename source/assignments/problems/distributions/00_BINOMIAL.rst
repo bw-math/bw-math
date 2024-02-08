@@ -79,15 +79,15 @@ Use the Binomal Probability Density Function to answer the following questions.
 		
 		ii. If you perform :math:`n` trials where each trial has a probability of success :math:`p`, how many successes do you expect to get on average? 
 	
-	b. If :math:`n=10` and :math:`p=0.5`, find :math:`P(X=3)`.
+	b. If :math:`n=10` and :math:`p=0.5`, find :math:`P(\mathcal{X}=3)`.
 	
-	c. If :math:`n=10` and :math:`p=0.5`, find :math:`P(X=4)`.
+	c. If :math:`n=10` and :math:`p=0.5`, find :math:`P(\mathcal{X}=4)`.
 	
-	d. If :math:`n=10` and :math:`p=0.5`, find :math:`P(X=5)`. 
+	d. If :math:`n=10` and :math:`p=0.5`, find :math:`P(\mathcal{X}=5)`. 
 	
-	e. If :math:`n=10` and :math:`p=0.5`, find :math:`P(X=6)`.
+	e. If :math:`n=10` and :math:`p=0.5`, find :math:`P(\mathcal{X}=6)`.
 	
-	f. If :math:`n=10` and :math:`p=0.5`, find :math:`P(X=7)`.
+	f. If :math:`n=10` and :math:`p=0.5`, find :math:`P(\mathcal{X}=7)`.
 	
 	g. Write a few sentence in plain English interpretting the results of *part b - f*. What happens to Binomial probabilities on either side of the *expected value* of the distribution as you move away from that point? What features of the distribution are apparent from the calculations performed in *parts b - f*? 
 
@@ -95,16 +95,24 @@ Use the Binomal Probability Density Function to answer the following questions.
 
 	a. Suppose that only 25% of all drivers come to a complete stop at an intersection having flashing red lights in all directions when no other cars are visible. You stand at the intersection and randomly sample 20 cars as they pass through the intersection.
 
-		i. What is the probability at most 6 will come to a complete stop?
+		i. What is the probability at most 5 will come to a complete stop?
 		
 		ii. What is the probability exactly 6 will come to a complete stop?
 	
-		iii. What is the probability at least 6 will come to a complete stop?
+		iii. What is the probability at least 7 will come to a complete stop?
 		
-		iv. How many drivers in your sample do you expect to come to a complete stop?
+		iv. What is the relationship between *part i - iii*? What property of probability does this illustrate?
 		
-	b. TODO
-	
+		v. How many drivers in your sample do you expect to come to a complete stop?
+		
+	b. A multiple choice quiz consists of 10 questions. Each question has five possible answers. After procrastinating for a week and not studying, you wake up the day of the quiz and realize you have no idea which of the answers are correct, so you guess at random on each question. 
+
+		i. What is your probability of scoring a 7 on this quiz?
+		
+		ii. What is your probability of passing the quiz, i.e. scoring *at least* a 7?
+		
+		iii. What is the expected number of answers that will be marked correct?	
+		
 	c. TODO
 
 	d. TODO
@@ -153,7 +161,7 @@ d. Is it reasonable to generalize your conclusion in part *c* pertaining to the 
 
 Sunshine Farms wants to know whether there is a difference in consumer preference for two new juice products—Citrus Fresh and Tropical Taste. In an initial blind taste test, 8 randomly selected consumers were given unmarked samples of the two juices. The product that each consumer tasted first was randomly decided by the flip of a coin. After tasting the two juices, each consumer was asked to choose which juice he or she preferred, and the results were recorded.
 
-a. Let p represent the population proportion of consumers who prefer Citrus Fresh. In terms of p, state the hypotheses that Sunshine Farms is interested in testing.
+a. Let *p* represent the population proportion of consumers who prefer Citrus Fresh. In terms of *p*, state the hypotheses that Sunshine Farms is interested in testing.
 
 b. One might consider using a one-proportion z-test to test the hypotheses in part *#a*. Explain why this would not be a reasonable procedure for this sample.
 
@@ -175,23 +183,7 @@ b. Using a sketch of a normal curve, illustrate the proportion of men whose shir
 
 c. Of 12 randomly selected customers, what is the probability that exactly 4 will request size M ? Show your work.
 
-4. **2014, Free Response, #2**
-
-Nine sales representatives, 6 men and 3 women, at a small company wanted to attend a national convention. There were only enough travel funds to send 3 people. The manager selected 3 people to attend and stated that the people were selected at random. The 3 people selected were women. There were concerns that no men were selected to attend the convention.
-
-a. Calculate the probability that randomly selecting 3 people from a group of 6 men and 3 women will result in selecting 3 women.
-
-b. Based on your answer to part *a*, is there reason to doubt the manager's claim that the 3 people were selected at random? Explain.
-
-c. An alternative to calculating the exact probability is to conduct a simulation to estimate the probability. A proposed simulation process is described below.
-
-.. topic:: Proposed Simulation
-
-    Each trial in the simulation consists of rolling three fair, six-sided dice, one die for each of the convention attendees. For each die, rolling a 1, 2, 3, or 4 represents selecting a man; rolling a 5 or 6 represents selecting a woman. After 1,000 trials, the number of times the dice indicate selecting 3 women is recorded.
-
-Does the proposed process correctly simulate the random selection of 3 women from a group of 9 people consisting of 6 men and 3 women? Explain why or why not.
-
-5. **2007, Free Response Form B, #2**
+4. **2007, Free Response Form B, #2**
 
 The graph below displays the relative frequency distribution for X, the total number of dogs and cats owned per household, for the households in a large suburban area. For instance, 14 percent of the households own 2 of these pets.
 
@@ -203,8 +195,6 @@ Use this information to solve the following problems.
 a. According to a local law, each household in this area is prohibited from owning more than 3 of these pets. If a household in this area is selected at random, what is the probability that the selected household will be in violation of this law? Show your work.
 
 b. If 10 households in this area are selected at random, what is the probability that exactly 2 of them will be in violation of this law? Show your work.
-
-c. The mean and standard deviation of X are 1.65 and 1.851, respectively. Suppose 150 households in this area are to be selected at random and X , the mean number of dogs and cats per household, is to be computed. Describe the sampling distribution of X , including its shape, center, and spread.
 
 6. **2009, Free Response, #2**
 
