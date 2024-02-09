@@ -273,11 +273,11 @@ A.P. Exam Practice
 
 Approximately 3.5 percent of all children born in a certain region are from multiple births (that is, twins, triplets, etc.). Of the children born in the region who are from multiple births, 22 percent are left-handed. Of the children born in the region who are from single births, 11 percent are left-handed.
 
-a. What is the probability that a randomly selected child born in the region is left-handed?
+	a. What is the probability that a randomly selected child born in the region is left-handed?
 
-b. What is the probability that a randomly selected child born in the region is a child from a multiple birth, given that the child selected is left-handed?
+	b. What is the probability that a randomly selected child born in the region is a child from a multiple birth, given that the child selected is left-handed?
 
-c. A random sample of 20 children born in the region will be selected. What is the probability that the sample will have at least 3 children who are left-handed?
+	c. A random sample of 20 children born in the region will be selected. What is the probability that the sample will have at least 3 children who are left-handed?
 
 2. **2018, Free Response, #3**
 
@@ -333,11 +333,3 @@ A simple random sample of adults living in a suburb of a large city was selected
 	b. What is the probability that a person chosen at random from those in this sample whose incomes are over $50,000 will be in the 31-45 age category? Show your work.
 
 	c. Based on your answers to *part a* and *part b*, is annual income independent of age category for those in this sample? Explain.
-
-5. **2018, Free Response, #3**
-
-Approximately 3.5 percent of all children born in a certain region are from multiple births (that is, twins, triplets, etc.). Of the children born in the region who are from multiple births, 22 percent are left-handed. Of the children born in the region who are from single births, 11 percent are left-handed.
-
-	a. What is the probability that a randomly selected child born in the region is left-handed?
-
-	b. What is the probability that a randomly selected child born in the region is a child from a multiple birth, given that the child selected is left-handed?

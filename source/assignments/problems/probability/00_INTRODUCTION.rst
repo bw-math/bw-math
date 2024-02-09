@@ -205,70 +205,7 @@ is called the *symmetric difference of* **A** *and* **B**. Prove the probability
 A.P. Exam Practice
 ==================
 
-1. **2019, Free Response, #3** 
-    
-A medical researcher surveyed a large group of men and women about whether they take medicine as prescribed.
-
-The responses were categorized as never, sometimes, or always. The relative frequency of each category is shown in the table.
-
-.. image:: ../../../assets/imgs/classwork/2019_apstats_frp_03.png
-    :align: center
-
-One person from those surveyed will be selected at random.
-
-	a. What is the probability that the person selected will be someone whose response is never and who is a woman?
-
-	b. What is the probability that the person selected will be someone whose response is never or who is a woman?
-
-	c. What is the probability that the person selected will be someone whose response is never given that the person is a woman?
-
-	d. For the people surveyed, are the events of being a person whose response is never and being a woman independent? Justify your answer.
-
-	e. Assume that, in a large population, the probability that a person will always take medicine as prescribed is 0.54. If 5 people are selected at random from the population, what is the probability that at least 4 of the people selected will always take medicine as prescribed? Support your answer.
-
-
-2. **2003, Free Response, Form B, #2**
-
-.. image:: ../../../assets/imgs/classwork/2003_apstats_frp_formb_3.png
-	:align: center 
-	
-A simple random sample of adults living in a suburb of a large city was selected. The age and annual income of each adult in the sample were recorded. The resulting data are summarized in the above table.
-
-	a. What is the probability that a person chosen at random from those in this sample will be in the 31-45 age category?
-
-	b. What is the probability that a person chosen at random from those in this sample whose incomes are over $50,000 will be in the 31-45 age category? Show your work.
-
-	c. Based on your answers to parts *#a* and *#b*, is annual income independent of age category for those in this sample? Explain.
-
-3.  **2015, Multplie Choice, #32**
-    
-A survey conducted by a national news network asked a random sample of U.S. adults whether they get most of their information about current events from newspapers, television, the internet, or some other source. The results, shown in the table below, are reported by age group of the respondents.
-
-+---------+------------+------------+----------+-------+-------+
-|         | Newspapers | Television | Internet | Other | Total |
-+---------+------------+------------+----------+-------+-------+
-| 18 -34  | 12         | 35         | 40       | 6     | 93    |
-+---------+------------+------------+----------+-------+-------+
-| 35 -54  | 16         | 55         | 20       | 8     | 99    |
-+---------+------------+------------+----------+-------+-------+
-| Over 55 | 33         | 60         | 5        | 5     | 103   |
-+---------+------------+------------+----------+-------+-------+
-| Total   | 61         | 150        | 65       | 19    | 295   |
-+---------+------------+------------+----------+-------+-------+
-
-If primary news source is independent of age group, which of the following expressions is equal to the expected number of respondents who are aged 35 to 54, inclusive, and get most of their information about current events from the internet?
-
-    (A) :math:`\frac{99 \cdot 65}{295}`
-
-    (B) :math:`\frac{99 \cdot 150}{295}`
-
-    (C) :math:`\frac{20 \cdot 65}{99}`
-
-    (D) :math:`\frac{20 \cdot 99}{295}`
-
-    (E) :math:`\frac{20 \cdot 65}{295}`
-
-4.  **2012, Practice Exam, #23** 
+1.  **2012, Practice Exam, #23** 
 
 A local company is interested in supporting environmentally friendly initiatives such as carpooling among employees. The company surveyed all of the 200 employees at the downtown offices. Employees responded as to whether or not they own a car and to the location of the home where they live. The results are shown in the table below.
 
