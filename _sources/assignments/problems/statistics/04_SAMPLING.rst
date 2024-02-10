@@ -4,6 +4,9 @@
 Sampling Distributions
 ======================
 
+A.P. Exam Practice
+==================
+
 1. **2014, Free Response, #3**
 
 Schools in a certain state receive funding based on the number of students who attend the school. To determine the number of students who attend a school, one school day is selected at random and the number of students in attendance that day is counted and used for funding purposes. The daily number of absences at High School A in the state is approximately normally distributed with mean of 120 students and Standard deviation of 10.5 students.
@@ -98,12 +101,61 @@ The graph below displays the relative frequency distribution for X, the total nu
 
 Use this information to solve the following problems.
 
-a. According to a local law, each household in this area is prohibited from owning more than 3 of these pets. If a household in this area is selected at random, what is the probability that the selected household will be in violation of this law? Show your work.
+	a. According to a local law, each household in this area is prohibited from owning more than 3 of these pets. If a household in this area is selected at random, what is the probability that the selected household will be in violation of this law? Show your work.
 
-b. If 10 households in this area are selected at random, what is the probability that exactly 2 of them will be in violation of this law? Show your work.
+	b. If 10 households in this area are selected at random, what is the probability that exactly 2 of them will be in violation of this law? Show your work.
 
-c. The mean and standard deviation of X are 1.65 and 1.851, respectively. Suppose 150 households in this area are to be selected at random and X , the mean number of dogs and cats per household, is to be computed. Describe the sampling distribution of X , including its shape, center, and spread.
+	c. The mean and standard deviation of X are 1.65 and 1.851, respectively. Suppose 150 households in this area are to be selected at random and X , the mean number of dogs and cats per household, is to be computed. Describe the sampling distribution of X , including its shape, center, and spread.
 
-9. **2019, Free Response, #6**
+9. **2004, Free Response, Form B, #3**
 
-TODO (THIS IS A GOOD ONE TO GO OVER IN GREAT DETAIL!)
+Trains carry bauxite ore from a mine in Canada to an aluminum processing plant in northern New York state in hopper cars. Filling equipment is used to load ore into the hopper cars. When functioning properly, the actual weights of ore loaded into each car by the filling equipment at the mine are approximately normally distributed
+with a mean of 70 tons and a standard deviation of 0.9 ton. If the mean is greater than 70 tons, the loading mechanism is overfilling.
+
+	a. If the filling equipment is functioning properly, what is the probability that the weight of the ore in a randomly selected car will be 70.7 tons or more? Show your work.
+
+	b.Suppose that the weight of ore in a randomly selected car is 70.7 tons. Would that fact make you suspect that the loading mechanism is overfilling the cars? Justify your answer.
+	
+	c. If the filling equipment is functioning properly, what is the probability that a random sample of 10 cars will have a mean ore weight of 70.7 tons or more? Show your work.
+
+	d. Based on your answer in *part c*, if a random sample of 10 cars had a mean ore weight of 70.7 tons, would you suspect that the loading mechanism was overfilling the cars? Justify your answer.
+
+10. **2019, Free Response, #6**
+
+Emma is moving to a large city and is investigating typical monthly rental prices of available one-bedroom apartments. She obtained a random sample of rental prices for 50 one-bedroom apartments taken from a Web site where people voluntarily list available apartments.
+
+	a. Describe the population for which it is appropriate for Emma to generalize the results from her sample.
+	
+The distribution of the 50 rental prices of the available apartments is shown in the following histogram.
+
+.. image:: ../../../assets/imgs/classwork/2019_apstats_frp_06a.png
+	:align: center
+	
+Use this histogram to answer the following questions.
+
+	b. Emma wants to estimate the typical rental price of a one-bedroom apartment in the city. Based on the distribution shown, what is a disadvantage of using the mean rather than the median as an estimate of the typical rental price?
+	
+	c. Instead of using the sample median as the point estimate for the population median, Emma wants to use an interval estimate. However, computing an interval estimate requires knowing the sampling distribution of the sample median for samples of size 50. Emma has one point, her sample median, in that sampling
+distribution. Using information about rental prices that are available on the Web site, describe how someone could develop a theoretical sampling distribution of the sample median for samples of size 50.
+
+Because Emma does not have the resources to develop the theoretical sampling distribution, she estimates the sampling distribution of the sample median using a process called bootstrapping. In the bootstrapping process, a computer program performs the following steps,
+
+- Take a random sample, with replacement, of size 50 from the original sample.
+- Calculate and record the median of the sample.
+- Repeat the process to obtain a total of 15,000 medians.
+
+Emma ran the bootstrap process, and the following frequency table is the bootstrap distribution showing her results of generating 15,000 medians.
+
+.. image:: ../../../assets/imgs/classwork/2019_apstats_frp_06b.png
+	:align: center
+	
+The bootstrap distribution provides an approximation of the sampling distribution of the sample median. A confidence interval for the median can be constructed using a percentage of the values in the middle of the bootstrap distribution.
+
+	d. Use the frequency table to find the following.
+		i. Value of the 5th percentile:
+		
+		ii. Value of the 95th percentile:
+
+	e. Find the percentage of bootstrap medians in the table that are equal to or between the values found in *part d*.
+	
+	f. Use your values from *parts d* and *e* to construct and interpret a confidence interval for the median rental price.

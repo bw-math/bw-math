@@ -4,12 +4,8 @@
 Bias
 ====
 
-.. topic:: Instructions
-
-    Start a fresh page in your classwork notebook. Write today's date in the margin of the page. Clearly label and solve each of the following. Show your work and circle the anwer. 
-
-Discussion Questions
---------------------
+A.P. Exam Practice
+==================
 
 1. **2012, Practice Exam, #12** 
 
@@ -54,17 +50,33 @@ A local school board plans to conduct a survey of parents’ opinions about year
 
 The school board received responses from 98 of the families, with 76 of the responses indicating support for year-round schools. Based on this outcome, the local school board concludes that most of the families with at least one child in elementary school prefer year-round schooling.
 
-a. What is a possible consequence of nonresponse bias for interpreting the results of this survey?
+	a. What is a possible consequence of nonresponse bias for interpreting the results of this survey?
 
-b. Someone advised the local school board to take an additional random sample of 500 families and to use the combined results to make their decision. Would this be a suitable solution to the issue raised in *part a* ? Explain.
+	b. Someone advised the local school board to take an additional random sample of 500 families and to use the combined results to make their decision. Would this be a suitable solution to the issue raised in *part a* ? Explain.
 
-c. Suggest a different follow-up step from the one suggested in part (b) that the local school board could take to address the issue raised in *part a*.
+	c. Suggest a different follow-up step from the one suggested in part (b) that the local school board could take to address the issue raised in *part a*.
 
 4. **2009, Free Response, #3**
 
 Before beginning a unit on frog anatomy, a seventh-grade biology teacher gives each of the 24 students in the class a pretest to assess their knowledge of frog anatomy. The teacher wants to compare the effectiveness of an instructional program in which students physically dissect frogs with the effectiveness of a different program in which students use computer software that only simulates the dissection of a frog. After completing one of the two programs, students will be given a posttest to assess their knowledge of frog anatomy. The teacher will then analyze the changes in the test scores (score on posttest minus score on pretest).
 
-a. Describe a method for assigning the 24 students to two groups of equal size that allows for a statistically valid comparison of the two instructional programs.
+	a. Describe a method for assigning the 24 students to two groups of equal size that allows for a statistically valid comparison of the two instructional programs.
 
-b. Suppose the teacher decided to allow the students in the class to select which instructional program on frog anatomy (physical dissection or computer simulation) they prefer to take, and 11 students choose actual dissection and 13 students choose computer simulation. How might that self-selection process jeopardize a statistically valid comparison of the changes in the test scores (score on posttest minus score on pretest) for the two instructional programs? Provide a specific example to support your answer.
+	b. Suppose the teacher decided to allow the students in the class to select which instructional program on frog anatomy (physical dissection or computer simulation) they prefer to take, and 11 students choose actual dissection and 13 students choose computer simulation. How might that self-selection process jeopardize a statistically valid comparison of the changes in the test scores (score on posttest minus score on pretest) for the two instructional programs? Provide a specific example to support your answer.
+	
+5. **2004, Free Response, Form B, #2**
+
+At a certain university, students who live in the dormitories eat at a common dining hall. Recently, some students have been complaining about the quality of the food served there. The dining hall manager decided to do a survey to estimate the proportion of students living in the dormitories who think that the quality of the food should be improved. One evening, the manager asked the first 100 students entering the dining hall to answer the following question.
+
+Many students believe that the food served in the dining hall needs improvement. Do you think that the quality of food served here needs improvement, even though that would increase the cost of the meal plan?
+	
+	- Yes
+	- No
+	- No Opinion
+
+Use this information to answer the following questions,
+
+	a. In this setting, explain how bias may have been introduced based on the way this convenience sample was selected and suggest how the sample could have been selected differently to avoid that bias.
+
+	b. In this setting, explain how bias may have been introduced based on the way the question was worded and suggest how it could have been worded differently to avoid that bias.
 

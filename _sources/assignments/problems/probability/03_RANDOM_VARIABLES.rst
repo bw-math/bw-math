@@ -4,8 +4,8 @@
 Random Variables
 ================
 
-Definition
-==========
+Definitions
+===========
 
 .. topic:: Expectation of a Discrete Random Variable
 
@@ -15,7 +15,7 @@ Definition
 	
 		E(\mathcal{X}) = \sum_{x_i \in S}{x_i \ \cdot P(\mathcal{X} = x_i) }
 		
-.. topic:: Definition of Variance
+.. topic:: Variance of a Random Variable
 
 	If :math:`\mathcal{X}` is a Random Variable, the Variance of :math:`\mathcal{X}` is given by,
 	
@@ -23,12 +23,13 @@ Definition
 	
 		Var(\mathcal{X}) = E( (\mathcal{X} - E(\mathcal{X}))^2 )
 		
-	Expanding the *outer* expectation, this can be rewritten,
+	If the additional constraint is added that :math:`\mathcal{X}` is discrete, the *outer* expectation can be expanded and rewritten,
 	
 	.. math::
 	
 		Var(\mathcal{X}) = \sum_{x_i \in S}{(x_i - E(\mathcal{X}))^2  \cdot P(\mathcal{X} = x_i) }
 		
+	
 .. topic:: Variance Shortcut Formula
 	
 	If :math:`\mathcal{X}` is a Random Variable, the Variance of :math:`\mathcal{X}` can be calculated with the formula,
@@ -36,6 +37,9 @@ Definition
 	.. math::
 	
 		Var(\mathcal{X}) = E(\mathcal{X}^2) - (E(\mathcal{X})^2)
+
+Introduction
+============
 		
 1. A random variable :math:`\mathcal{X}` is defined as the number of heads in three coin flips.
 
@@ -91,19 +95,21 @@ Definition
  
 Compute the following:
 
-a. :math:`E(\mathcal{X})`
+	a. :math:`E(\mathcal{X})`
 
-b. :math:`Var(\mathcal{X})` directly from the definition.
+	b. :math:`Var(\mathcal{X})` directly from the definition.
 
-c. :math:`Var(\mathcal{X})` from the shortcut formula.
+	c. :math:`Var(\mathcal{X})` from the shortcut formula.
 
-d. :math:`\sigma_{\mathcal{X}}`
+	d. :math:`\sigma_{\mathcal{X}}`
 
 5. Suppose three cards are drawn from an ordinary deck of 52 cards, one by one, at random and with replacement. Let the random variable :math:`\mathcal{X}` be defined as the number of spades drawn.
 
-a. Find the probability distribution for :math:`\mathcal{X}`.
+	a. Find the probability distribution for :math:`\mathcal{X}`.
 
-b. Find the expectation of :math:`\mathcal{X}`. Interpret the expectation in the context of the problem.
+	b. Find the expectation of :math:`\mathcal{X}`. Interpret the expectation in the context of the problem.
+	
+	c. Find the variance of :math:`\mathcal{X}`. Interpret the variance in the context of the problem.
 
 
 Expectations
@@ -115,7 +121,6 @@ Expectations
 
 3. An urn contains five balls, two of which are marked $1 , two marked $5 and one marked $15. A game is played by paying $10 for winning the sum of the amounts marked on two balls selected randomly from the urn. Is this a fair game?
 
- 
 Theorems
 ========
 
@@ -131,6 +136,7 @@ Scalar Properties
 	
 		E(\mathcal{X} + a) = E(\mathcal{X}) + a 
 
+	Note: this applies to both *discrete* and *continuous* random variables.
 
 .. topic:: Multiplicative Property of Expectations
 
@@ -139,10 +145,12 @@ Scalar Properties
 	.. math::
 	
 		E(a \cdot \mathcal{X}) = a \cdot E(\mathcal{X})
+	
+	Note: this applies to both *discrete* and *continuous* random variables.
 
 1. A box contains 10 frisbes of radii 1, 2, ..., 10, respectively. What is the expected value of the circumference of a frisbee selected at random from this box?
 
-2. Meredith Margaret Monsoon owns the boutique bakery *Cupcake Connoisseur*. She makes cupcakes and sells them for $15 a piece (they are really good cupcakes). After several years of tracking the seasonal variations in cupcake sales, she has estimated the following probability distribution for the number of cupcakes she sells a day.
+2. Meredith Margaret Mayflower owns the boutique bakery *Critical Cupcake Connoisseur* where she makes cupcakes and sells them for $25 a piece (they are really good cupcakes). After several years of tracking the seasonal variations in cupcake sales, she has estimated the following probability distribution for the number of cupcakes she sells a day.
 
 +--------------------+----------------------------+
 | Number of Cupcakes | :math:`P(\mathcal{X}=x_i)` |
@@ -155,10 +163,12 @@ Scalar Properties
 +--------------------+----------------------------+
 |        45          |            0.1             |
 +--------------------+----------------------------+ 
-             
-a. Use this table to find Meredith's expected *revenue over the next month*. Assume a month is *30 days*. 
+    
+Use this table to answer the following questions.
+         
+	a. Find Meredith's expected *revenue over the next month*. Assume a month is *30 days*. 
 
-b. The monthly cost of running a bakery is $2000. What is Meredith's expected *profit over the next month*? 
+	b. The monthly cost of running a bakery is $2000. What is Meredith's expected *profit over the next month*? 
  
 3. A small market orders copies of a certain magazine for its magazine rack each week. Let :math:`\mathcal{X}` represent the number of magazine demanded by customers over the course of a week. The probability density for the magazine deman is given by,
 

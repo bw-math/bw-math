@@ -468,7 +468,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expectations">Expectations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scalar-properties">Scalar Properties</a></li>
@@ -489,8 +490,8 @@ document.write(`
                   
   <section id="random-variables">
 <span id="random-variable-classwork"></span><h1>Random Variables<a class="headerlink" href="#random-variables" title="Permalink to this heading">#</a></h1>
-<section id="definition">
-<h2>Definition<a class="headerlink" href="#definition" title="Permalink to this heading">#</a></h2>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this heading">#</a></h2>
 <aside class="topic">
 <p class="topic-title">Expectation of a Discrete Random Variable</p>
 <p>If <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is a discrete random variable that takes on the values <img class="math" src="../../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> for <img class="math" src="../../../_images/math/a481b68cca2dd2ec91961f41999ae31343d16aea.png" alt="i = 1, 2, 3, ..., n"/>, then <em>expectation</em> of <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is defined as,</p>
@@ -498,11 +499,11 @@ document.write(`
 <p><img src="../../../_images/math/0bdde44d2e37658b96842d45bf99eb92b4c0427c.png" alt="E(\mathcal{X}) = \sum_{x_i \in S}{x_i \ \cdot P(\mathcal{X} = x_i) }"/></p>
 </div></aside>
 <aside class="topic">
-<p class="topic-title">Definition of Variance</p>
+<p class="topic-title">Variance of a Random Variable</p>
 <p>If <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is a Random Variable, the Variance of <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is given by,</p>
 <div class="math">
 <p><img src="../../../_images/math/14039845ccfff87b50138c1b1cd446c967b8c36a.png" alt="Var(\mathcal{X}) = E( (\mathcal{X} - E(\mathcal{X}))^2 )"/></p>
-</div><p>Expanding the <em>outer</em> expectation, this can be rewritten,</p>
+</div><p>If the additional constraint is added that <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is discrete, the <em>outer</em> expectation can be expanded and rewritten,</p>
 <div class="math">
 <p><img src="../../../_images/math/d77981105b5dfa8a1c8486a6788fb7c4d0480f86.png" alt="Var(\mathcal{X}) = \sum_{x_i \in S}{(x_i - E(\mathcal{X}))^2  \cdot P(\mathcal{X} = x_i) }"/></p>
 </div></aside>
@@ -512,6 +513,9 @@ document.write(`
 <div class="math">
 <p><img src="../../../_images/math/9ef2c33102aa7b2e8d16471dd366e63b8b04b95f.png" alt="Var(\mathcal{X}) = E(\mathcal{X}^2) - (E(\mathcal{X})^2)"/></p>
 </div></aside>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
 <ol class="arabic">
 <li><p>A random variable <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is defined as the number of heads in three coin flips.</p>
 <blockquote>
@@ -565,18 +569,24 @@ document.write(`
 </tbody>
 </table>
 <p>Compute the following:</p>
-<ol class="loweralpha simple">
+<blockquote>
+<div><ol class="loweralpha simple">
 <li><p><img class="math" src="../../../_images/math/3353061d7e0843bdfb6c20f234dfa5e35fccb171.png" alt="E(\mathcal{X})"/></p></li>
 <li><p><img class="math" src="../../../_images/math/26cc350b477c68dfe426f7543ada145c166a1add.png" alt="Var(\mathcal{X})"/> directly from the definition.</p></li>
 <li><p><img class="math" src="../../../_images/math/26cc350b477c68dfe426f7543ada145c166a1add.png" alt="Var(\mathcal{X})"/> from the shortcut formula.</p></li>
 <li><p><img class="math" src="../../../_images/math/fe6b4653f46ae48e8c9dff8c537fd97d8b359c1f.png" alt="\sigma_{\mathcal{X}}"/></p></li>
 </ol>
-<ol class="arabic simple" start="5">
-<li><p>Suppose three cards are drawn from an ordinary deck of 52 cards, one by one, at random and with replacement. Let the random variable <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> be defined as the number of spades drawn.</p></li>
-</ol>
-<ol class="loweralpha simple">
+</div></blockquote>
+<ol class="arabic" start="5">
+<li><p>Suppose three cards are drawn from an ordinary deck of 52 cards, one by one, at random and with replacement. Let the random variable <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> be defined as the number of spades drawn.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
 <li><p>Find the probability distribution for <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/>.</p></li>
 <li><p>Find the expectation of <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/>. Interpret the expectation in the context of the problem.</p></li>
+<li><p>Find the variance of <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/>. Interpret the variance in the context of the problem.</p></li>
+</ol>
+</div></blockquote>
+</li>
 </ol>
 </section>
 <section id="expectations">
@@ -596,16 +606,18 @@ document.write(`
 <p>Let <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> be a random variable. Let <em>a</em> be any real number. Then,</p>
 <div class="math">
 <p><img src="../../../_images/math/1796ae999ebb9da27b93842a2900430f39efeac6.png" alt="E(\mathcal{X} + a) = E(\mathcal{X}) + a"/></p>
-</div></aside>
+</div><p>Note: this applies to both <em>discrete</em> and <em>continuous</em> random variables.</p>
+</aside>
 <aside class="topic">
 <p class="topic-title">Multiplicative Property of Expectations</p>
 <p>Let <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> be a random variable. Let <em>a</em> be any real number. Then,</p>
 <div class="math">
 <p><img src="../../../_images/math/eb2c155ed4923a43d3de9e8d97c3cdea55879b1a.png" alt="E(a \cdot \mathcal{X}) = a \cdot E(\mathcal{X})"/></p>
-</div></aside>
+</div><p>Note: this applies to both <em>discrete</em> and <em>continuous</em> random variables.</p>
+</aside>
 <ol class="arabic simple">
 <li><p>A box contains 10 frisbes of radii 1, 2, …, 10, respectively. What is the expected value of the circumference of a frisbee selected at random from this box?</p></li>
-<li><p>Meredith Margaret Monsoon owns the boutique bakery <em>Cupcake Connoisseur</em>. She makes cupcakes and sells them for $15 a piece (they are really good cupcakes). After several years of tracking the seasonal variations in cupcake sales, she has estimated the following probability distribution for the number of cupcakes she sells a day.</p></li>
+<li><p>Meredith Margaret Mayflower owns the boutique bakery <em>Critical Cupcake Connoisseur</em> where she makes cupcakes and sells them for $25 a piece (they are really good cupcakes). After several years of tracking the seasonal variations in cupcake sales, she has estimated the following probability distribution for the number of cupcakes she sells a day.</p></li>
 </ol>
 <table class="table">
 <tbody>
@@ -626,10 +638,13 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<ol class="loweralpha simple">
-<li><p>Use this table to find Meredith’s expected <em>revenue over the next month</em>. Assume a month is <em>30 days</em>.</p></li>
+<p>Use this table to answer the following questions.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Find Meredith’s expected <em>revenue over the next month</em>. Assume a month is <em>30 days</em>.</p></li>
 <li><p>The monthly cost of running a bakery is $2000. What is Meredith’s expected <em>profit over the next month</em>?</p></li>
 </ol>
+</div></blockquote>
 <ol class="arabic simple" start="3">
 <li><p>A small market orders copies of a certain magazine for its magazine rack each week. Let <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> represent the number of magazine demanded by customers over the course of a week. The probability density for the magazine deman is given by,</p></li>
 </ol>
@@ -1056,7 +1071,8 @@ formula.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expectations">Expectations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theorems">Theorems</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scalar-properties">Scalar Properties</a></li>

@@ -4,6 +4,9 @@
 Normal Distribution
 ===================
 
+Introduction
+============
+
 1. Sketch a Standard Normal distribution in the x-y plane. Shade in the areas indicated in the problems below. Label the axes. Label each area with the percentage of the distribution that corresponds to the shaded region. Use a :ref:`z_table` to find the exact percentage.
 
 	a. :math:`P(\mathcal{Z} \leq -1.62)`
@@ -38,6 +41,7 @@ Normal Distribution
 	e. :math:`P(0.33 \leq \mathcal{Z} \leq 1.05)`
 
 	f. :math:`P(-1.17 \leq \mathcal{Z} \leq 2.21)`
+	
 3. Sketch a Standard Normal distribution in the x-y plane. Find the values of Z which correspond to the areas given below. Shade in the areas and label the axes with the value found. Use a :ref:`z_table` to solve the problem.
 
 	a. 0.90
@@ -85,6 +89,18 @@ The *Empirical Rule* is an approximation, meant for quick calculations. It is no
 	b. Use a :ref:`z_table` to find the exact value of :math:`P(-2 \leq \mathcal{Z} \leq 2)`
 	
 	c. Use a :ref:`z_table` to find the exact value of :math:`P(-3 \leq \mathcal{Z} \leq 3)`
+
+A.P. Exam Practice
+==================
+
+1. **2004, Free Response, Form B, #3**
+
+Trains carry bauxite ore from a mine in Canada to an aluminum processing plant in northern New York state in hopper cars. Filling equipment is used to load ore into the hopper cars. When functioning properly, the actual weights of ore loaded into each car by the filling equipment at the mine are approximately normally distributed
+with a mean of 70 tons and a standard deviation of 0.9 ton. If the mean is greater than 70 tons, the loading mechanism is overfilling.
+
+	a. If the filling equipment is functioning properly, what is the probability that the weight of the ore in a randomly selected car will be 70.7 tons or more? Show your work.
+
+	b. Suppose that the weight of ore in a randomly selected car is 70.7 tons. Would that fact make you suspect that the loading mechanism is overfilling the cars? Justify your answer.
 
 5. **2017, Free Response, #3**
 

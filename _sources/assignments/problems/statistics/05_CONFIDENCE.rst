@@ -7,12 +7,31 @@ Confidence Intervals
 Means
 =====
 
+.. topic:: Confidence Interval for Population Mean
+
+	TODO
+	
+.. topic:: Confidence Interval for Difference of Population Means
+
+	TODO
+	
 1. **2004, Free Response Form B, #4**
 
-TODO
+The principal at Crest Middle School, which enrolls only sixth-grade students and seventh-grade students, is interested in determining how much time students at that school spend on homework each night. The table below shows the mean and standard deviation of the amount of time spent on homework each night (in minutes) for a random sample of 20 sixth-grade students and a separate random sample of 20 seventh-grade students at this school.
 
-Difference of Two Means
-=======================
++------------------------+--------------+--------------------+
+|                        |     Mean     | Standard Deviation |
++------------------------+--------------+--------------------+
+| Sixth-grade students   |      27.3    |       10.8         |
++------------------------+--------------+--------------------+
+| Seventh-grade students |      47.0    |       12.4         |
++------------------------+--------------+--------------------+
+
+Based on dotplots of these data, it is not unreasonable to assume that the distribution of times for each grade were approximately normally distributed.
+
+	a. Estimate the difference in mean times spent on homework for all sixth- and seventh-grade students in this school using an interval. Be sure to interpret your interval.
+
+	b. An assistant principal reasoned that a much narrower confidence interval could be obtained if the students were paired based on their responses; for example, pairing the sixth-grade student and the seventh-grade student with the highest number of minutes spent on homework, the sixth-grade student and seventh-grade student with the next highest number of minutes spent on homework, and so on. Is the assistant principal correct in thinking that matching students in this way and then computing a matched-pairs confidence interval for the mean difference in time spent on homework is a better procedure than the one used in *part a* ? Explain why or why not.
 
 2. **2009, Free Response, #4**
 
@@ -27,6 +46,14 @@ Data were collected to investigate whether the council member’s belief is corr
 Proportions
 ===========
 
+.. topic:: Confidence Interval for Population Proportion
+
+	TODO
+	
+.. topic:: Confidence Interval for Difference of Two Population Proportions
+
+	TODO
+	
 1. **2010, Free Response Form B, #4**
 
 A husband and wife, Mike and Lori, share a digital music player that has a feature that randomly selects which song to play. A total of 2,384 songs were loaded onto the player, some by Mike and the rest by Lori. Suppose that when the player was in the random-selection mode, 13 of the first 50 songs selected were songs loaded by Lori.
@@ -39,7 +66,7 @@ A husband and wife, Mike and Lori, share a digital music player that has a featu
 
 A humane society wanted to estimate with 95 percent confidence the proportion of households in its county that own at least one dog.
 
-a. Interpret the 95 percent confidence level in this context.
+	a. Interpret the 95 percent confidence level in this context.
 
 The humane society selected a random sample of households in its county and used the sample to estimate the proportion of all households that own at least one dog. The conditions for calculating a 95 percent confidence interval for the proportion of households in this county that own at least one dog were checked and verified, and the resulting confidence interval was 0.417 ± 0.119.
 
@@ -78,7 +105,6 @@ Based on the responses, a 95 percent confidence interval for the proportion of a
 
 	ii. The results of the sample showed that 213 of the 300 selected students responded no. Based on the results of the sample, give a point estimate for the proportion of all students at the high school who would respond yes to the question.
 	
-Difference of Two Proportions
-=============================
+5. **2017, Free Response, #2**
 
 TODO

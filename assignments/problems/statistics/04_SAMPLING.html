@@ -445,7 +445,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -461,6 +463,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -472,6 +482,8 @@ document.write(`
                   
   <section id="sampling-distributions">
 <span id="sampling-distribution-classwork"></span><h1>Sampling Distributions<a class="headerlink" href="#sampling-distributions" title="Permalink to this heading">#</a></h1>
+<section id="a-p-exam-practice">
+<h2>A.P. Exam Practice<a class="headerlink" href="#a-p-exam-practice" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p><strong>2014, Free Response, #3</strong></p></li>
 </ol>
@@ -568,15 +580,71 @@ document.write(`
 <p>The graph below displays the relative frequency distribution for X, the total number of dogs and cats owned per household, for the households in a large suburban area. For instance, 14 percent of the households own 2 of these pets.</p>
 <img alt="../../../_images/2007_apstats_frp_formb_02.png" class="align-center" src="../../../_images/2007_apstats_frp_formb_02.png" />
 <p>Use this information to solve the following problems.</p>
-<ol class="loweralpha simple">
+<blockquote>
+<div><ol class="loweralpha simple">
 <li><p>According to a local law, each household in this area is prohibited from owning more than 3 of these pets. If a household in this area is selected at random, what is the probability that the selected household will be in violation of this law? Show your work.</p></li>
 <li><p>If 10 households in this area are selected at random, what is the probability that exactly 2 of them will be in violation of this law? Show your work.</p></li>
 <li><p>The mean and standard deviation of X are 1.65 and 1.851, respectively. Suppose 150 households in this area are to be selected at random and X , the mean number of dogs and cats per household, is to be computed. Describe the sampling distribution of X , including its shape, center, and spread.</p></li>
 </ol>
+</div></blockquote>
 <ol class="arabic simple" start="9">
+<li><p><strong>2004, Free Response, Form B, #3</strong></p></li>
+</ol>
+<p>Trains carry bauxite ore from a mine in Canada to an aluminum processing plant in northern New York state in hopper cars. Filling equipment is used to load ore into the hopper cars. When functioning properly, the actual weights of ore loaded into each car by the filling equipment at the mine are approximately normally distributed
+with a mean of 70 tons and a standard deviation of 0.9 ton. If the mean is greater than 70 tons, the loading mechanism is overfilling.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>If the filling equipment is functioning properly, what is the probability that the weight of the ore in a randomly selected car will be 70.7 tons or more? Show your work.</p></li>
+</ol>
+<p>b.Suppose that the weight of ore in a randomly selected car is 70.7 tons. Would that fact make you suspect that the loading mechanism is overfilling the cars? Justify your answer.</p>
+<ol class="loweralpha simple" start="3">
+<li><p>If the filling equipment is functioning properly, what is the probability that a random sample of 10 cars will have a mean ore weight of 70.7 tons or more? Show your work.</p></li>
+<li><p>Based on your answer in <em>part c</em>, if a random sample of 10 cars had a mean ore weight of 70.7 tons, would you suspect that the loading mechanism was overfilling the cars? Justify your answer.</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="10">
 <li><p><strong>2019, Free Response, #6</strong></p></li>
 </ol>
-<p>TODO (THIS IS A GOOD ONE TO GO OVER IN GREAT DETAIL!)</p>
+<p>Emma is moving to a large city and is investigating typical monthly rental prices of available one-bedroom apartments. She obtained a random sample of rental prices for 50 one-bedroom apartments taken from a Web site where people voluntarily list available apartments.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Describe the population for which it is appropriate for Emma to generalize the results from her sample.</p></li>
+</ol>
+</div></blockquote>
+<p>The distribution of the 50 rental prices of the available apartments is shown in the following histogram.</p>
+<img alt="../../../_images/2019_apstats_frp_06a.png" class="align-center" src="../../../_images/2019_apstats_frp_06a.png" />
+<p>Use this histogram to answer the following questions.</p>
+<blockquote>
+<div><ol class="loweralpha simple" start="2">
+<li><p>Emma wants to estimate the typical rental price of a one-bedroom apartment in the city. Based on the distribution shown, what is a disadvantage of using the mean rather than the median as an estimate of the typical rental price?</p></li>
+<li><p>Instead of using the sample median as the point estimate for the population median, Emma wants to use an interval estimate. However, computing an interval estimate requires knowing the sampling distribution of the sample median for samples of size 50. Emma has one point, her sample median, in that sampling</p></li>
+</ol>
+</div></blockquote>
+<p>distribution. Using information about rental prices that are available on the Web site, describe how someone could develop a theoretical sampling distribution of the sample median for samples of size 50.</p>
+<p>Because Emma does not have the resources to develop the theoretical sampling distribution, she estimates the sampling distribution of the sample median using a process called bootstrapping. In the bootstrapping process, a computer program performs the following steps,</p>
+<ul class="simple">
+<li><p>Take a random sample, with replacement, of size 50 from the original sample.</p></li>
+<li><p>Calculate and record the median of the sample.</p></li>
+<li><p>Repeat the process to obtain a total of 15,000 medians.</p></li>
+</ul>
+<p>Emma ran the bootstrap process, and the following frequency table is the bootstrap distribution showing her results of generating 15,000 medians.</p>
+<img alt="../../../_images/2019_apstats_frp_06b.png" class="align-center" src="../../../_images/2019_apstats_frp_06b.png" />
+<p>The bootstrap distribution provides an approximation of the sampling distribution of the sample median. A confidence interval for the median can be constructed using a percentage of the values in the middle of the bootstrap distribution.</p>
+<blockquote>
+<div><ol class="loweralpha simple" start="4">
+<li><dl class="simple">
+<dt>Use the frequency table to find the following.</dt><dd><ol class="lowerroman simple">
+<li><p>Value of the 5th percentile:</p></li>
+<li><p>Value of the 95th percentile:</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p>Find the percentage of bootstrap medians in the table that are equal to or between the values found in <em>part d</em>.</p></li>
+<li><p>Use your values from <em>parts d</em> and <em>e</em> to construct and interpret a confidence interval for the median rental price.</p></li>
+</ol>
+</div></blockquote>
+</section>
 </section>
 
 
@@ -615,7 +683,20 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
