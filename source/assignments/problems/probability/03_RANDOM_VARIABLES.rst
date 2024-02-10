@@ -99,6 +99,13 @@ c. :math:`Var(\mathcal{X})` from the shortcut formula.
 
 d. :math:`\sigma_{\mathcal{X}}`
 
+5. Suppose three cards are drawn from an ordinary deck of 52 cards, one by one, at random and with replacement. Let the random variable :math:`\mathcal{X}` be defined as the number of spades drawn.
+
+a. Find the probability distribution for :math:`\mathcal{X}`.
+
+b. Find the expectation of :math:`\mathcal{X}`. Interpret the expectation in the context of the problem.
+
+
 Expectations
 ============
 
