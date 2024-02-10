@@ -3,7 +3,7 @@ Bishop Walsh Mathematics
 ========================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
    00_SPLASH
