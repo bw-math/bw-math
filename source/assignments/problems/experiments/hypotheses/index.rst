@@ -9,4 +9,3 @@ Hypothesis Testing
      00_INTRODUCTION
      01_MEAN
      02_PROPORTION
-     03_STDDEV
