@@ -25,7 +25,9 @@ TODO
 
 	1. The trials must be independent.
 	
-	2. The probability of each trial must be the same. 
+	2. Each trial must be either a success or failure.
+	
+	3. The probability of each trial must be the same across trials. 
 	
 
 TODO

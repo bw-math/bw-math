@@ -483,23 +483,35 @@ document.write(`
   <section id="geometric-distribution">
 <span id="geometric-distribution-classwork"></span><h1>Geometric Distribution<a class="headerlink" href="#geometric-distribution" title="Permalink to this heading">#</a></h1>
 <ol class="arabic simple">
-<li><p><strong>Conditions for Geometric Random Variable</strong></p></li>
+<li><p><strong>Conditions</strong></p></li>
 </ol>
+<aside class="topic">
+<p class="topic-title">Conditions for Geometric Random Variable</p>
+<ol class="arabic simple">
+<li><p>The trials must be independent.</p></li>
+<li><p>Each trial must be either a success or failure.</p></li>
+<li><p>The probability of each trial must be the same across trials.</p></li>
+</ol>
+</aside>
 <p>Determine whether each of the following experiments satisfy the conditions for a Geometric Random Variable.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
-<li><p>TODO</p></li>
-<li><p>TODO</p></li>
-<li><p>TODO</p></li>
+<li><p>A basketball player takes shots from the foul line and the number of shots is counted until he misses a basket.</p></li>
+<li><p>The number of cards drawn from a standard deck of 52 cards <em>without</em> replacement is counted until a Queen is drawn.</p></li>
+<li><p>The number of cards drawn from a standard deck of 52 cards <em>with</em> replacement is counted until a Queen is drawn.</p></li>
+<li><p>You count the number of random people you have to survey before someone says <em>Yes</em> to the question, “Have you seen the science faction magnum opus from film autuer Ridley Scott, <em>Blade Runner</em>?”</p></li>
+<li><p>Suppose two chess players keep playing until one of them wins three games in a row. You count the number of games they have to play until the match is over.</p></li>
 </ol>
 </div></blockquote>
 <ol class="arabic simple" start="2">
-<li><p><strong>Probability Density</strong></p></li>
+<li><p><strong>Density</strong></p></li>
 </ol>
-<p>Use the Geometric Probability Density Function,</p>
+<aside class="topic">
+<p class="topic-title">Geometric Probability Density</p>
 <div class="math">
 <p><img src="../../../_images/math/011f336efe583b9a6762779fd4886eb3e9f8f569.png" alt="P(\mathcal{X}=x) = (1-p)^{x-1} \cdot p"/></p>
-</div><p>to answer the following questions.</p>
+</div></aside>
+<p>Use the Geometric Probability Density Function to answer the following questions.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
 <li><p>If <img class="math" src="../../../_images/math/e98db293eeae178ec4a55b5504a0616927221e0c.png" alt="p=0.1"/>, what is <img class="math" src="../../../_images/math/7d1a3b6350171ea5fae2f8116a51120acf824f2b.png" alt="P(\mathcal{X}=1)"/>?</p></li>
@@ -510,20 +522,29 @@ document.write(`
 </ol>
 </div></blockquote>
 <ol class="arabic simple" start="3">
-<li><p><strong>Applications</strong></p></li>
+<li><p><strong>Histogram</strong></p></li>
+</ol>
+<p>Let the probability of success for a Geometric Random Variable be <img class="math" src="../../../_images/math/3a2cc34a59ca4aaa207fb12283660df96a5d32bc.png" alt="p = 0.3"/>. Create a probability distribution (i.e. a table) for <img class="math" src="../../../_images/math/464a0b3fb1dfa9e6a0c5c70607b2993471169f8c.png" alt="\mathcal{X}=0,1,2,...,10"/>. Use this table to create and label histogram. Describe the distribution of a Geometric Random Variable wth <img class="math" src="../../../_images/math/3a2cc34a59ca4aaa207fb12283660df96a5d32bc.png" alt="p = 0.3"/>.</p>
+<ol class="arabic simple" start="4">
+<li><p><strong>Probability</strong></p></li>
 </ol>
 <p>Use the properties of probability and the Geometric Distribution to solve the following problems.</p>
 <blockquote>
-<div><blockquote>
 <div><ol class="loweralpha simple">
 <li><p>From an ordinary deck of 52 cards, you draw cards at random and with replacement, until the first ace is drawn. what is the probability that atleast five draws are needed?</p></li>
 <li><p>A certain basketball player makes a foul shot 45% of the time. Suppose this player stands on the foul line and continues shooting until he makes two baskets. What is the probability that (i) the first basket occurs on the sixth shot? (ii) the first and second baskets occur on the fourth and eighth shots, respectively?</p></li>
-<li><p>The probability is 0.8 that Marty hits target <em>M</em> when he fires at it. The probability is 0.45 that Alvie hits target <em>A</em> when he fires at it. Marty and Alvie fire one shot each at their targets. If both of them hit their targets, they stop; otherwise, they will continue.</p></li>
+<li><p>The probability is 0.8 that Marty hits target <em>M</em> when he fires at it. The probability is 0.45 that Alvie hits target <em>A</em> when he fires at it. Marty and Alvie fire one shot each at their targets. If both of them hit their targets, they stop; otherwise, they will continue. What is the probability that they stop after 3 tries?</p></li>
 </ol>
 </div></blockquote>
-<ol class="lowerroman simple">
-<li><p>What is the probability that they stop after 3 tries?</p></li>
-<li><p>What is the expected number of times they fire before stopping?</p></li>
+<ol class="arabic simple" start="5">
+<li><p><strong>Expectations</strong></p></li>
+</ol>
+<p>Solve the following problems.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Refer to <em>#4a</em>. What is the expected value for the number of cards drawn before an ace is drawn?</p></li>
+<li><p>Refer to <em>#4b</em>. How many shots on average will it take the basketball player before the shot goes in?</p></li>
+<li><p>Refer to <em>#4c</em>. What is the expected number of times Marty and Alvie fire before stopping?</p></li>
 </ol>
 </div></blockquote>
 <section id="a-p-exam-practice">
@@ -546,7 +567,7 @@ document.write(`
 <li><p>Given that the first 30 super igniters successfully launch rockets, is it reasonable to believe that the failure rate of the super igniters is less than 15 percent? Explain.</p></li>
 </ol>
 </div></blockquote>
-<ol class="arabic simple" start="3">
+<ol class="arabic simple" start="2">
 <li><p><strong>2011, Free Response, #3</strong></p></li>
 </ol>
 <div class="admonition warning">
