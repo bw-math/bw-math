@@ -4,25 +4,37 @@
 Geometric Distribution 
 ======================
 
-1. **Conditions for Geometric Random Variable**
+1. **Conditions**
+
+.. topic:: Conditions for Geometric Random Variable
+
+	1. The trials must be independent.
+	
+	2. Each trial must be either a success or failure.
+	
+	3. The probability of each trial must be the same across trials.
 
 Determine whether each of the following experiments satisfy the conditions for a Geometric Random Variable.
 
-	a. TODO
+	a. A basketball player takes shots from the foul line and the number of shots is counted until he misses a basket. 
 	
-	b. TODO
+	b. The number of cards drawn from a standard deck of 52 cards *without* replacement is counted until a Queen is drawn. 
 	
-	c. TODO
+	c. The number of cards drawn from a standard deck of 52 cards *with* replacement is counted until a Queen is drawn.
 	
-2. **Probability Density**
+	d. You count the number of random people you have to survey before someone says *Yes* to the question, "Have you seen the science faction magnum opus from film autuer Ridley Scott, *Blade Runner*?"
+	
+	e. Suppose two chess players keep playing until one of them wins three games in a row. You count the number of games they have to play until the match is over.
+	
+2. **Density**
 
-Use the Geometric Probability Density Function,
-
-.. math::
-
-	P(\mathcal{X}=x) = (1-p)^{x-1} \cdot p
+.. topic:: Geometric Probability Density
 	
-to answer the following questions.
+	.. math::
+
+		P(\mathcal{X}=x) = (1-p)^{x-1} \cdot p
+
+Use the Geometric Probability Density Function to answer the following questions.
 
 	a. If :math:`p=0.1`, what is :math:`P(\mathcal{X}=1)`?
 	
@@ -34,7 +46,11 @@ to answer the following questions.
 	
 	e. Write a few sentences in plain English that explains how changing the parameter *p* of the Geometric Distribution affects the probability of its outcomes.
 
-3. **Applications**
+3. **Histogram**
+
+Let the probability of success for a Geometric Random Variable be :math:`p = 0.3`. Create a probability distribution (i.e. a table) for :math:`\mathcal{X}=0,1,2,...,10`. Use this table to create and label histogram. Describe the distribution of a Geometric Random Variable wth :math:`p = 0.3`. 
+
+4. **Probability**
 
 Use the properties of probability and the Geometric Distribution to solve the following problems.
 
@@ -43,12 +59,18 @@ Use the properties of probability and the Geometric Distribution to solve the fo
 	
 	b. A certain basketball player makes a foul shot 45% of the time. Suppose this player stands on the foul line and continues shooting until he makes two baskets. What is the probability that (i) the first basket occurs on the sixth shot? (ii) the first and second baskets occur on the fourth and eighth shots, respectively?
 	
-	c. The probability is 0.8 that Marty hits target *M* when he fires at it. The probability is 0.45 that Alvie hits target *A* when he fires at it. Marty and Alvie fire one shot each at their targets. If both of them hit their targets, they stop; otherwise, they will continue. 
+	c. The probability is 0.8 that Marty hits target *M* when he fires at it. The probability is 0.45 that Alvie hits target *A* when he fires at it. Marty and Alvie fire one shot each at their targets. If both of them hit their targets, they stop; otherwise, they will continue. What is the probability that they stop after 3 tries? 
 
-     i. What is the probability that they stop after 3 tries? 
-
-     ii. What is the expected number of times they fire before stopping?
 	
+5. **Expectations**
+
+Solve the following problems.
+
+	a. Refer to *#4a*. What is the expected value for the number of cards drawn before an ace is drawn?
+	
+	b. Refer to *#4b*. How many shots on average will it take the basketball player before the shot goes in? 
+	
+	c. Refer to *#4c*. What is the expected number of times Marty and Alvie fire before stopping?
 A.P. Exam Practice
 ==================
 
@@ -72,7 +94,7 @@ Step 2 is repeated until the process stops. The process stops when a super ignit
 
 	c. Given that the first 30 super igniters successfully launch rockets, is it reasonable to believe that the failure rate of the super igniters is less than 15 percent? Explain.
 
-3. **2011, Free Response, #3**
+2. **2011, Free Response, #3**
 
 .. warning::
 
