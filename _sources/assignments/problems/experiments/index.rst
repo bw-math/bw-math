@@ -10,4 +10,4 @@ Experiments
    00_DESIGN
    01_INFERENCE
    02_BIAS
-   hypotheses/index 
+   hypotheses/index
