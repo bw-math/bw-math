@@ -1,4 +1,4 @@
-sphinx==4.3.0
+sphinx==5.0
 sphinx-toolbox==3.5.0
 sphinx-book-theme==1.0.1
 matplotlib==3.7.2
