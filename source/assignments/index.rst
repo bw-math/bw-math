@@ -7,7 +7,7 @@ Assignments
 	:caption: Contents:
 
 
-	activies/index
+	activities/index
 	calculator/index
 	problems/index
 	projects/index
