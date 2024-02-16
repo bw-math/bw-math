@@ -10,6 +10,12 @@ project = 'bishop-walsh-math'
 copyright = '2024, Grant Moore'
 author = 'Grant Moore'
 
+# -- Theme configuration -----------------------------------------------------
+
+html_theme_options = {
+    "max_navbar_depth": 5
+}
+
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
