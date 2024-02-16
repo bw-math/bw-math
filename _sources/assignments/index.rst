@@ -7,5 +7,4 @@ Assignments
    :caption: Contents:
 
    problems/index
-   python/index
-   calculator/index
+   projects/index
