@@ -3,8 +3,11 @@ Assignments
 ===========
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+	:maxdepth: 2
+	:caption: Contents:
 
-   problems/index
-   projects/index
+
+	activies/index
+	calculator/index
+	problems/index
+	projects/index

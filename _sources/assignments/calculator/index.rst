@@ -6,5 +6,9 @@ Calculator Problems
    :maxdepth: 2
    :caption: Contents:
 
-   problems/index
-   projects/index
+   00_HISTOGRAMS
+   01_OGIVES
+   02_BOXPLOTS
+   03_SCATTERPLOTS
+   04_1VAR_STATS
+   05_2VAR_STATS
