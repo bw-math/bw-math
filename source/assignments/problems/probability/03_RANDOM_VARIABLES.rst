@@ -13,11 +13,11 @@ Definitions
 	
 	.. math::
 	
-		E(\mathcal{X}) = \sum_{x_i \in S}{x_i \ \cdot P(\mathcal{X} = x_i) }
+		E(\mathcal{X}) = \sum_{x_i \in S}{x_i \cdot P(\mathcal{X} = x_i) }
 		
 .. topic:: Variance of a Random Variable
 
-	If :math:`\mathcal{X}` is a Random Variable, the Variance of :math:`\mathcal{X}` is given by,
+	If :math:`\mathcal{X}` is a Random Variable, the Variance of :math:`\mathcal{X}` is defined as,
 	
 	.. math::
 	
@@ -36,7 +36,7 @@ Definitions
 	
 	.. math::
 	
-		Var(\mathcal{X}) = E(\mathcal{X}^2) - (E(\mathcal{X})^2)
+		Var(\mathcal{X}) = E(\mathcal{X}^2) - (E(\mathcal{X}))^2
 
 Introduction
 ============
