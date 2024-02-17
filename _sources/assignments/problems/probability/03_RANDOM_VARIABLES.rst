@@ -13,11 +13,11 @@ Definitions
 	
 	.. math::
 	
-		E(\mathcal{X}) = \sum_{x_i \in S}{x_i \cdot P(\mathcal{X} = x_i) }
+		E(\mathcal{X}) = \sum_{x_i \in S}{x_i \ \cdot P(\mathcal{X} = x_i) }
 		
 .. topic:: Variance of a Random Variable
 
-	If :math:`\mathcal{X}` is a Random Variable, the Variance of :math:`\mathcal{X}` is defined as,
+	If :math:`\mathcal{X}` is a Random Variable, the Variance of :math:`\mathcal{X}` is given by,
 	
 	.. math::
 	
@@ -36,7 +36,7 @@ Definitions
 	
 	.. math::
 	
-		Var(\mathcal{X}) = E(\mathcal{X}^2) - (E(\mathcal{X}))^2
+		Var(\mathcal{X}) = E(\mathcal{X}^2) - (E(\mathcal{X})^2)
 
 Introduction
 ============
@@ -101,7 +101,7 @@ Compute the following:
 
 	c. :math:`Var(\mathcal{X})` from the shortcut formula.
 
-	d. :math:`{\sigma}_{\mathcal{X}}`
+	d. :math:`\sigma_{\mathcal{X}}`
 
 5. Suppose three cards are drawn from an ordinary deck of 52 cards, one by one, at random and with replacement. Let the random variable :math:`\mathcal{X}` be defined as the number of spades drawn.
 
