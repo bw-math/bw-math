@@ -205,7 +205,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/activities/03_PROBABILITY_PICTIONARY.html">Probability Pictionary</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/calculator/index.html">Calculator Problems</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/calculator/index.html">Calculator</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/00_HISTOGRAMS.html">STATPLOT: Histogram</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/01_OGIVES.html">STAT PLOT: Ogives</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/02_BOXPLOTS.html">STATPLOT: Boxplots</a></li>
@@ -464,7 +464,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -480,6 +482,18 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#means">Means</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#known-standard-deviation">Known Standard Deviation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unknown-standard-deviation">Unknown Standard Deviation</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -492,6 +506,40 @@ document.write(`
   <section id="confidence-intervals">
 <span id="id1"></span><h1>Confidence Intervals<a class="headerlink" href="#confidence-intervals" title="Permalink to this heading">#</a></h1>
 <p>TODO</p>
+<section id="means">
+<h2>Means<a class="headerlink" href="#means" title="Permalink to this heading">#</a></h2>
+<section id="known-standard-deviation">
+<h3>Known Standard Deviation<a class="headerlink" href="#known-standard-deviation" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
+<p class="topic-title">Critical Value</p>
+<div class="math">
+<p><img src="../../_images/math/7a0709755a227dd1c6e9b4c741517410a6272923.png" alt="z_{p} \equiv P(\mathcal{Z}&lt;z_{p}) = \frac{p}{100}"/></p>
+</div></aside>
+<aside class="topic">
+<p class="topic-title">Margin of Error</p>
+<div class="math">
+<p><img src="../../_images/math/b4e69d4f03dcca254378dc9103fcdae76df40a5f.png" alt="\text{MOE} = \lvert z_{1-\frac{\alpha}{2}} \rvert \cdot \frac{s}{sqrt{n}}"/></p>
+</div></aside>
+<aside class="topic">
+<p class="topic-title">Confidence Interval for Population Mean, Version 1</p>
+<div class="math">
+<p><img src="../../_images/math/2301583132081f1a4fb939f65b89368bdeb4ca02.png" alt="\bar{x} - z_{1-\frac{\alpha}{2}} \cdot \frac{s}{sqrt{n} } \leq \mu \leq \bar{x} - z_{\frac{\alpha}{2}} \cdot \frac{s}{sqrt{n} }"/></p>
+</div></aside>
+<aside class="topic">
+<p class="topic-title">Confidence Interval For Population Mean, Version 2</p>
+<div class="math">
+<p><img src="../../_images/math/970ba9395a059ee5e1ed0145a48930834f256155.png" alt="\bar{x} - \text{MOE} \leq \mu \leq \bar{x} + \text{MOE}"/></p>
+</div></aside>
+<aside class="topic">
+<p class="topic-title">Confidence Interval for Difference of Population Means</p>
+<p>TODO</p>
+</aside>
+</section>
+<section id="unknown-standard-deviation">
+<h3>Unknown Standard Deviation<a class="headerlink" href="#unknown-standard-deviation" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
 </section>
 
 
@@ -512,7 +560,24 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#means">Means</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#known-standard-deviation">Known Standard Deviation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unknown-standard-deviation">Unknown Standard Deviation</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

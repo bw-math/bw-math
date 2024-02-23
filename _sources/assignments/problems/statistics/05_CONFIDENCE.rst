@@ -7,14 +7,42 @@ Confidence Intervals
 Means
 =====
 
-.. topic:: Confidence Interval for Population Mean
+Known Standard Deviation 
+------------------------
 
-	TODO
+.. topic:: Critical Value
+
+	.. math::
 	
+		z_{p} \equiv P(\mathcal{Z}<z_{p}) = \frac{p}{100}
+	
+.. topic:: Margin of Error
+
+	.. math::
+	
+		\text{MOE} = \lvert z_{1-\frac{\alpha}{2}} \rvert \cdot \frac{s}{sqrt{n}}	
+
+.. topic:: Confidence Interval for Population Mean, Version 1
+
+	.. math::
+	
+		\bar{x} - z_{1-\frac{\alpha}{2}} \cdot \frac{s}{sqrt{n} } \leq \mu \leq \bar{x} - z_{\frac{\alpha}{2}} \cdot \frac{s}{sqrt{n} } 
+		
+.. topic:: Confidence Interval For Population Mean, Version 2
+
+	.. math::
+	
+		\bar{x} - \text{MOE} \leq \mu \leq \bar{x} + \text{MOE}
+
 .. topic:: Confidence Interval for Difference of Population Means
 
 	TODO
-	
+		
+Unknown Standard Deviation
+--------------------------
+
+TODO
+
 1. **2004, Free Response Form B, #4**
 
 The principal at Crest Middle School, which enrolls only sixth-grade students and seventh-grade students, is interested in determining how much time students at that school spend on homework each night. The table below shows the mean and standard deviation of the amount of time spent on homework each night (in minutes) for a random sample of 20 sixth-grade students and a separate random sample of 20 seventh-grade students at this school.
