@@ -8,7 +8,25 @@ Statistics: Quarter Three
 Celebration of Knowledge
 ========================
 
-1. **2009, Free Response Form B, #2**
+1. **2005, Free Response Form B, #2**
+
+For an upcoming concert, each customer may purchase up to 3 child tickets and 3 adult tickets. Let **C** be the number of child tickets purchased by a single customer. The probability distribution of the number of child tickets purchased by a single customer is given in the table below.
+
++--------+-----+-----+-----+-----+
+|    c   |  0  |  1  |  2  | 3   |
++--------+-----+-----+-----+-----+
+|  p(c)  | 0.4 | 0.3 | 0.2 | 0.1 | 
++--------+-----+-----+-----+-----+
+
+Use this information to solve the following problems.
+
+	a. Compute the mean and the standard deviation of **C**.
+
+	b. Suppose the mean and the standard deviation for the number of adult tickets purchased by a single customer are 2 and 1.2, respectively. Assume that the numbers of child tickets and adult tickets purchased are independent random variables. Compute the mean and the standard deviation of the total number of adult and child tickets purchased by a single customer.
+
+	c. Suppose each child ticket costs $15 and each adult ticket costs $25. Compute the mean and the standard deviation of the total amount spent per purchase.
+	
+2. **2009, Free Response Form B, #2**
 
 The ELISA tests whether a patient has contracted HIV. The ELISA is said to be positive if it indicates that HIV is present in a blood sample, and the ELISA is said to be negative if it does not indicate that HIV is present in a blood sample. Instead of directly measuring the presence of HIV, the ELISA measures levels of antibodies in the blood that should be elevated if HIV is present. Because of variability in antibody levels among human patients, the ELISA does not always indicate the correct result.
 
@@ -20,15 +38,7 @@ As part of a training program, staff at a testing lab applied the ELISA to 500 b
 
 	c. When a blood sample yields a positive ELISA result, two more ELISAs are performed on the same blood sample. If at least one of the two additional ELISAs is positive, the blood sample is subjected to a more expensive and more accurate test to make a definitive determination of whether HIV is present in the sample. Repeated ELISAs on the same sample are generally assumed to be independent. Under the assumption of independence, what is the probability that a new blood sample that comes into the lab will be subjected to the more expensive test if that sample does not contain HIV?
 
-.. hint:: 
-
-	Draw a conditional tree diagram and then remember the :ref:`law_of_total_probability`,
-	
-	.. math::
-	
-		P(A) = P(A \mid B) \cdot P(B) + P(A \mid B^c) \cdot P(B^c)	
-
-2. **2018, Free Response, #6**
+3. **2018, Free Response, #6**
 
 Consider an experiment in which two men and two women will be randomly assigned to either a treatment group or a control group in such a way that each group has two people. The people are identified as Man 1, Man 2, Woman 1, and Woman 2. The six possible arrangements are shown below.	
 
@@ -49,27 +59,28 @@ Use this information to complete the following problems.
 
 	a. Complete the table below by calculating the probability of each arrangement occurring if the sequential coin flip method is used.
 
-+-------------+---------+---------+---------+---------+---------+---------+
-| Arrangement |     A   |     B   |     C   |     D   |     E   |     F   |
-+-------------+---------+---------+---------+---------+---------+---------+
-|             |         |         |         |         |         |         |
-+-------------+---------+---------+---------+---------+---------+---------+
++----------------+---------+---------+---------+---------+---------+---------+
+| Arrangement    |     A   |     B   |     C   |     D   |     E   |     F   |
++----------------+---------+---------+---------+---------+---------+---------+
+| P(Arrangement) |         |         |         |         |         |         |
++----------------+---------+---------+---------+---------+---------+---------+
 
 	b. Complete the table below by calculating the probability of each arrangement occurring if the chip method is used.
 
-+-------------+---------+---------+---------+---------+---------+---------+
-| Arrangement |     A   |     B   |     C   |     D   |     E   |     F   |
-+-------------+---------+---------+---------+---------+---------+---------+
-|             |         |         |         |         |         |         |
-+-------------+---------+---------+---------+---------+---------+---------+
++----------------+---------+---------+---------+---------+---------+---------+
+| Arrangement    |     A   |     B   |     C   |     D   |     E   |     F   |
++----------------+---------+---------+---------+---------+---------+---------+
+| P(Arrangement) |         |         |         |         |         |         |
++----------------+---------+---------+---------+---------+---------+---------+
 
 	c. For the sequential coin flip method, what is the probability that Man 1 and Man 2 are assigned to the same group?
 	
 	d. For the chip method, what is the probability that Man 1 and Man 2 are assigned to the same group?
 	
 	e. Sixteen participants consisting of 10 students and 6 teachers at an elementary school will be used for an experiment to determine lunch preference for the school population of students and teachers. As the participants enter the school cafeteria for lunch, they will be randomly assigned to receive one of two lunches so that 8 will receive a salad, and 8 will receive a grilled cheese sandwich. The students will enter the cafeteria first, and the teachers will enter next. Which method, the sequential coin flip method or the chip method, should be used to assign the treatments? Justify your choice
-	
-3. **2022, Free Response, #6**
+
+
+4. **2022, Free Response, #6**
 
 To compare success rates for treating allergies at two clinics that specialize in treating allergy sufferers, researchers selected random samples of patient records from the two clinics. The following table summarizes the data.
 
