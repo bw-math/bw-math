@@ -283,17 +283,8 @@ standard deviation of 10.5 students.
 
 	c. A typical school week consists of the days Monday, Tuesday, Wednesday, Thursday, and Friday. The principal at High School A believes that the number of absences tends to be greater on Mondays and Fridays, and there is concern that the school will lose state funding if the attendance count occurs on a Monday or Friday. If one school day is chosen at random from each of 3 typical school weeks, what is the probability that none of the 3 days chosen is a Tuesday, Wednesday, or Thursday?
 
-5. **2019, Free Response, #5**
 
-A company that manufactures smartphones developed a new battery that has a longer life span than that of a traditional battery. From the date of purchase of a smartphone, the distribution of the life span of the new battery is approximately normal with mean 30 months and standard deviation 8 months. For the price of $50, the company offers a two-year warranty on the new battery for customers who purchase a smartphone. The warranty guarantees that the smartphone will be replaced at no cost to the customer if the battery no longer works within 24 months from the date of purchase.
-
-	a. In how many months from the date of purchase is it expected that 25 percent of the batteries will no longer work? Justify your answer.
-
-	b. Suppose one customer who purchases the warranty is selected at random. What is the probability that the customer selected will require a replacement within 24 months from the date of purchase because the battery no longer works?
-
-	c. The company has a gain of $50 for each customer who purchases a warranty but does not require a replacement. The company has a loss (negative gain) of $150 for each customer who purchases a warranty and does require a replacement. What is the expected value of the gain for the company for each warranty purchased?
-
-6. **2003, Free Response Form B, #5**
+5. **2003, Free Response Form B, #5**
 
 .. image:: ../../../assets/imgs/classwork/2003_apstats_frp_formb_05.png
     :align: center
@@ -320,7 +311,7 @@ Use this information to solve the following problems.
 | Frequency |   33   |   21  |  20  |  26  |
 +-----------+--------+-------+------+------+
 
-7. **2005, Free Response Form B, #2**
+6. **2005, Free Response Form B, #2**
 
 For an upcoming concert, each customer may purchase up to 3 child tickets and 3 adult tickets. Let **C** be the number of child tickets purchased by a single customer. The probability distribution of the number of child tickets purchased by a single customer is given in the table below.
 
@@ -338,7 +329,7 @@ Use this information to solve the following problems.
 
 	c. Suppose each child ticket costs $15 and each adult ticket costs $25. Compute the mean and the standard deviation of the total amount spent per purchase.
 
-8. **2008, Free Response Form B, #5**
+7. **2008, Free Response Form B, #5**
 
 Flooding has washed out one of the tracks of the Snake Gulch Railroad. The railroad has two parallel tracks from Bullsnake to Copperhead, but only one usable track from Copperhead to Diamondback, as shown in the figure below. Having only one usable track disrupts the usual schedule. Until it is repaired, the washed-out track will remain unusable. If the train leaving Bullsnake arrives at Copperhead first, it has to wait until the train leaving Diamondback arrives at Copperhead.
 
@@ -359,7 +350,7 @@ These two travel times are independent.
 
 	c. How long should the Snake Gulch Railroad delay the departure of the train from Bullsnake so that the probability that it has to wait is only 0.01?
 
-9. **2008, Free Response, #3**
+8. **2008, Free Response, #3**
 
 A local arcade is hosting a tournament in which contestants play an arcade game with possible scores ranging from 0 to 20. The arcade has set up multiple game tables so that all contestants can play the game at the same time; thus contestant scores are independent. Each contestant’s score will be recorded as he or she finishes, and the contestant with the highest score is the winner.
 
@@ -402,7 +393,7 @@ Use this information to answer the following questions.
 	| Probability | 0.015 |   ?    |   ?    | 0.325  | 0.260 | 0.090 |
 	+-------------+-------+--------+--------+--------+-------+-------+
 
-10. **2010, Free Response Form B, #3**
+9. **2010, Free Response Form B, #3**
 
 A test consisting of 25 multiple-choice questions with 5 answer choices for each question is administered. For each question, there is only 1 correct answer.
 
@@ -425,7 +416,7 @@ Use this information to answer the following questions.
 
 	c. A score of at least 20 is needed to pass the test. Suppose a student knows the correct answers for 18 questions, answers those 18 questions correctly, and chooses randomly from the 5 choices for each of the other 7 questions. What is the probability that the student will pass the test?
 
-11. **2012, Free Response, #2**
+10. **2012, Free Response, #2**
 
 A charity fundraiser has a Spin the Pointer game that uses a spinner like the one illustrated in the figure below.
 
