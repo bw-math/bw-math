@@ -1,6 +1,6 @@
-===================
-Calculator Problems
-===================
+==========
+Calculator
+==========
 
 .. toctree::
    :maxdepth: 2
@@ -12,3 +12,4 @@ Calculator Problems
    03_SCATTERPLOTS
    04_1VAR_STATS
    05_2VAR_STATS
+   06_QQPLOTS
