@@ -464,7 +464,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -480,6 +482,17 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rules">Rules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teacher-notes">Teacher Notes</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -491,7 +504,57 @@ document.write(`
                   
   <section id="probability-bingo">
 <span id="id1"></span><h1>Probability Bingo<a class="headerlink" href="#probability-bingo" title="Permalink to this heading">#</a></h1>
-<p>TODO</p>
+<section id="introduction">
+<span id="probability-bingo-introduction"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<p>Probability Bingo is a fun way to get students thinking about randomness. While the outcomes in probability may indeed be random, that does not mean there are not patterns to be found.</p>
+<aside class="topic">
+<p class="topic-title">Required Materials</p>
+<ul class="simple">
+<li><p>Various kinds of dice (3-sided, 6-sided, 12-sided, 24-sided, 30-sided, 50-sided, etc.)</p></li>
+<li><p>Paper</p></li>
+<li><p>Pencil</p></li>
+</ul>
+</aside>
+</section>
+<section id="rules">
+<span id="probability-bingo-rules"></span><h2>Rules<a class="headerlink" href="#rules" title="Permalink to this heading">#</a></h2>
+<p>Each player should construct a 5 by 5 bingo square on a sheet of paper,</p>
+<p>(TODO: INSERT PICTURE)</p>
+<p>Once all the game cards have been created, the host will reveal the dice being used for the round. The players will then be given the opportunity to fill in their bingo squares. The players may fill in the squares with any numbers they wish.</p>
+<p>The host will then roll the dice he or she has selected. The sum of the faces on both die will be counted as the bingo call for that draw. The players will check their game cards for matches. If any of their numbers match the called number, they will cross out <em>one square</em> per turn.</p>
+<p>For example, if the host rolls a 4 and 3, the bingo call will be 4 + 3 = 7. Any player with a 7 on their card will cross out that 7. If a player has more than one 7 on their card, they can <em>only</em> cross out one. In other words, players may only cross out a single number each time a number is called.</p>
+<p>When a player forms a row, column or diagonal with crossed out numbers, he or she will yell “Bingo!” and be crowned the winner.</p>
+</section>
+<section id="problems">
+<span id="probability-bingo-problems"></span><h2>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Draw the sample space for each round of probability bingo. How is the sample space affected by the number of faces on the die chosen by the host?</p></li>
+<li><p>An optimal strategy is a player strategy that is most likely to win.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>If the host chooses two 6-sided die, what is the optimal strategy? Why is this the optimal strategy?</p></li>
+<li><p>If the host chooses a 3-sided die and a 12-sided die, what is the optimal strategy? <em>Is</em> there an optimal strategy? Why or why not?</p></li>
+<li><p>How is the optimal strategy affected by the number of faces on each die? What happens when each die has the same number of faces? What happens when each die has a different number of faces?</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Keep track of the bingo calls and collect them in a sample.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>After a few rounds, create a dot plot of the bingo calls. Describe the distribution. What type of shape does it have? Where is it centered?</p></li>
+<li><p>Play a few more founds. Add the results to the dot plot. How has this altered the distribution from <em>part a</em>?</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="teacher-notes">
+<h2>Teacher Notes<a class="headerlink" href="#teacher-notes" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>For the first round, allow students to judge the constraints of the problems themselves. When rolling two 6-sided die, the only possible values are <img class="math" src="../../_images/math/2f674231d21400cae3f2e375ab3361dd9de259fe.png" alt="\{2, 3, 4, ... , 12 \}"/>. If students choose numbers outside of this range, have them draw the sample space the sample space with a tabl or tree diagram.</p></li>
+<li><p>Probability Bingo should be played initially with two 6-sided die. When each die has the same number of faces, the symmetry in the outcomes makes the optimal strategy easy to understand. After a few rounds, once the students start to understand the logic of the game, change it up by using different combinations of dice (i.e., a 3-sided die and a 12 sided die).</p></li>
+</ul>
+</section>
 </section>
 
 
@@ -530,7 +593,23 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rules">Rules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teacher-notes">Teacher Notes</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
