@@ -188,7 +188,7 @@ Use this information to solve the following problems.
 
 	b. If 10 households in this area are selected at random, what is the probability that exactly 2 of them will be in violation of this law? Show your work.
 
-6. **2009, Free Response, #2**
+5. **2009, Free Response, #2**
 
 A tire manufacturer designed a new tread pattern for its all-weather tires. Repeated tests were conducted on cars of approximately the same weight traveling at 60 miles per hour. The tests showed that the new tread pattern enables the cars to stop completely in an average distance of 125 feet with a standard deviation of 6.5 feet and that the stopping distances are approximately normally distributed.
 
@@ -199,7 +199,7 @@ A tire manufacturer designed a new tread pattern for its all-weather tires. Repe
 	c. What is the probability that a randomly selected sample of 5 cars in the study will have a mean stopping distance of at least 130 feet?
 
 
-7. **2022, Free Response, #3** 
+6. **2022, Free Response, #3** 
 
 A machine at a manufacturing company is programmed to fill shampoo bottles such that the amount of shampoo in each bottle is normally distributed with mean 0.60 liter and standard deviation 0.04 liter. Let the random variable **A** represent the amount of shampoo, in liters, that is inserted into a bottle by the filling machine.
 
@@ -213,7 +213,7 @@ A machine at a manufacturing company is programmed to fill shampoo bottles such 
 
 	c. To reduce the number of crates rejected by the beauty supply warehouse manager, the manufacturing company is considering adjusting the programming of the filling machine so that the amount of shampoo in each bottle is normally distributed with mean 0.56 liter and standard deviation 0.03 liter. Would you recommend that the manufacturing company use the original programming of the filling machine or the adjusted programming of the filling machine? Provide a statistical justification for your choice.
 
-8. **2021, Free Response, #3**
+7. **2021, Free Response, #3**
 
 To increase morale among employees, a company began a program in which one employee is randomly selected each week to receive a gift card. Each of the company's 200 employees is equally likely to be selected each week, and the same employee could be selected more than once. Each week’s selection is independent from every other week.
 
@@ -226,3 +226,26 @@ To increase morale among employees, a company began a program in which one emplo
 	b. Calculate and interpret the expected value for the number of gift cards a particular employee will receive in a 52 -week year. Show your work.
 
 	c. Suppose that Agatha, an employee at the company, never receives a gift card for an entire 52 -week year. Based on her experience, does Agatha have a strong argument that the selection process was not truly random? Explain your answer.
+	
+8. **2010, Free Response Form B, #3**
+
+A test consisting of 25 multiple-choice questions with 5 answer choices for each question is administered. For each question, there is only 1 correct answer.
+
+	a. Let :math:`\mathcal{X}` be the number of correct answers if a student guesses randomly from the 5 choices for each of the 25 questions. What is the probability distribution of :math:`\mathcal{X}`?
+
+This test, like many multiple-choice tests, is scored using a penalty for guessing. The test score is determined
+by awarding 1 point for each question answered correctly, deducting 0.25 point for each question answered
+incorrectly, and ignoring any question that is omitted. That is, the test score is calculated using the following
+formula.
+
+	Score = (1 x number of correct answers) – (0.25 x number of incorrect answers) + (0 x number of omits)
+
+For example, the score for a student who answers 17 questions correctly, answers 3 questions incorrectly, and omits 5 questions is
+
+	Score = (1 x 17) - (0.25 x 3) + (0 x 5) = 16.25.
+	
+Use this information to answer the following questions.
+
+	b. Suppose a student knows the correct answers for 18 questions, answers those 18 questions correctly, and chooses randomly from the 5 choices for each of the other 7 questions. Show that the expected value of the student’s score is 18 when using the scoring formula above.
+
+	c. A score of at least 20 is needed to pass the test. Suppose a student knows the correct answers for 18 questions, answers those 18 questions correctly, and chooses randomly from the 5 choices for each of the other 7 questions. What is the probability that the student will pass the test?
