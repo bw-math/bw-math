@@ -4,18 +4,14 @@
 Probability Bingo
 =================
 
-.. _probability_bingo_introduction:
-
-Introduction
-------------
-
-Probability Bingo is a fun way to get students thinking about randomness. While the outcomes in probability may indeed be random, that does not mean there are not patterns to be found. 
+Probability Bingo is a fun way to think about randomness!
 
 .. topic:: Required Materials
 	
 	- Various kinds of dice (3-sided, 6-sided, 12-sided, 24-sided, 30-sided, 50-sided, etc.)
 	- Paper
 	- Pencil
+	- *Optional*: Prize for winner
 
 .. _probability_bingo_rules:
 
@@ -26,11 +22,11 @@ Each player should construct a 5 by 5 bingo square on a sheet of paper,
 
 (TODO: INSERT PICTURE)
 
-Once all the game cards have been created, the host will reveal the dice being used for the round. The players will then be given the opportunity to fill in their bingo squares. The players may fill in the squares with any numbers they wish. 
+Once all the game cards have been created, the host will reveal a pair of dice being used for the round. The players will then be given the opportunity to fill in their bingo squares. The players may fill in the squares with any numbers they wish. 
 
 The host will then roll the dice he or she has selected. The sum of the faces on both die will be counted as the bingo call for that draw. The players will check their game cards for matches. If any of their numbers match the called number, they will cross out *one square* per turn. 
 
-For example, if the host rolls a 4 and 3, the bingo call will be 4 + 3 = 7. Any player with a 7 on their card will cross out that 7. If a player has more than one 7 on their card, they can *only* cross out one. In other words, players may only cross out a single number each time a number is called.
+For example, if the host rolls a 4 and a 3, the bingo call will be 4 + 3 = 7. Any player with a 7 on their card will cross out that 7. If a player has more than one 7 on their card, they can *only* cross out one. In other words, players may only cross out a single number each time a number is called.
 
 When a player forms a row, column or diagonal with crossed out numbers, he or she will yell "Bingo!" and be crowned the winner. 
 
