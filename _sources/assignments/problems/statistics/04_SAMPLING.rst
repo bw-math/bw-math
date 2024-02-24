@@ -62,7 +62,7 @@ Big Town Fisheries recently stocked a new lake in a city park with 2,000 fish of
 
 Four different statistics have been proposed as estimators of a population parameter. To investigate the behavior of these estimators, 500 random samples are selected from a known population and each statistic is calculated for each sample. The true value of the population parameter is 75. The graphs below show the distribution of values for each statistic.
 
-.. image:: ../../../assets/imgs/classwork/2006_apstats_frp_formb_04.png
+.. image:: ../../../assets/imgs/classwork/2008_apstats_frp_formb_02.png
 	:align: center
 	
 Use the information to solve the following problems.
