@@ -201,8 +201,11 @@ Linearity of Expectations
 
 	a. What is the expected number of heads in three coin flips?
 	
-	b. What is the expected sum of outcomes for two die rolls?
+        b. What is the expected number of heads in ten coin flips?
+
+	c. What is the expected sum of outcomes for three die rolls?
 	
+        d. What is the expected sum of outcomes for ten die rolls?
 2. Clavius Hecklesnotz is playing a game of chance where he flips 10 fair coins. If Clavius Hecklesnotz gets 1 head, he will be paid $1. If Clavius Hecklesnotz gets 2 heads, he will be paid $2. In general, if Clavius Hecklesnotz gets *n* heads, he will be paid $*n*. What is the expected value of Clavius Hecklesnotz' payout? 
 
 .. hint::
