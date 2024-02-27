@@ -24,3 +24,15 @@ Foul Shot
 
 TODO: explain
 
+Coin Flips
+==========
+
+Binomial
+--------
+
+TODO: explain
+
+Geometric
+---------
+
+TODO: explain
