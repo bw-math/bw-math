@@ -12,4 +12,15 @@ No statistician's tool belt is complete without an absurd number of Rubber Ducks
 	- Coins
 	- Calculators
 	- Tables of Random Digits
+	- Skittles	
+	
+Skittles
+========
+
+TODO: explain
+
+Foul Shot
+=========
+
+TODO: explain
 

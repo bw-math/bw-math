@@ -48,7 +48,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/calculator/index';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="STATPLOT: Histogram" href="00_HISTOGRAMS.html" />
+    <link rel="next" title="STATPLOT: Histogram" href="00_STATPLOT_HISTOGRAM.html" />
     <link rel="prev" title="Duck Quackery" href="../activities/05_DUCK_QUACKERY.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -208,14 +208,18 @@
 </ul>
 </li>
 <li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Calculator</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="00_HISTOGRAMS.html">STATPLOT: Histogram</a></li>
-<li class="toctree-l3"><a class="reference internal" href="01_OGIVES.html">STAT PLOT: Ogives</a></li>
-<li class="toctree-l3"><a class="reference internal" href="02_BOXPLOTS.html">STATPLOT: Boxplots</a></li>
-<li class="toctree-l3"><a class="reference internal" href="03_SCATTERPLOTS.html">STATPLOT: Scatter Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="00_STATPLOT_HISTOGRAM.html">STATPLOT: Histogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_STATPLOT_OGIVE.html">STATPLOT: Ogives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_STATPLOT_BOXPLOT.html">STATPLOT: Boxplots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_STATPLOT_SCATTERPLOT.html">STATPLOT: Scatter Plots</a></li>
 <li class="toctree-l3"><a class="reference internal" href="04_1VAR_STATS.html">1VARSTATS: Univariate Sample Statistics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="05_2VAR_STATS.html">2VARSTATS: Bivariate Sample Statistics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="07_GEOMETPDF.html">GEOMETPDF: Geometric Probabilities</a></li>
-<li class="toctree-l3"><a class="reference internal" href="08_GEOMETCDF.html">GEOMETCDF: Geometric Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08_NPR.html">NPR: Permutations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_NCR.html">NCR: Combinations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_GEOMETPDF.html">GEOMETPDF: Geometric Probabilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="11_GEOMETCDF.html">GEOMETCDF: Geometric Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="12_GEOMET_HISTOGRAM.html">GEOMETPDF: Geometric Probabilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="13_BINOMPDF.html">BINOMPDF: Binomial Probabilities</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../problems/index.html">Problems</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -495,24 +499,50 @@ document.write(`
 <div class="toctree-wrapper compound">
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="00_HISTOGRAMS.html">STATPLOT: Histogram</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_OGIVES.html">STAT PLOT: Ogives</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_BOXPLOTS.html">STATPLOT: Boxplots</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_SCATTERPLOTS.html">STATPLOT: Scatter Plots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_STATPLOT_HISTOGRAM.html">STATPLOT: Histogram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_STATPLOT_OGIVE.html">STATPLOT: Ogives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_STATPLOT_BOXPLOT.html">STATPLOT: Boxplots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_STATPLOT_SCATTERPLOT.html">STATPLOT: Scatter Plots</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_1VAR_STATS.html">1VARSTATS: Univariate Sample Statistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_2VAR_STATS.html">2VARSTATS: Bivariate Sample Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07_GEOMETPDF.html">GEOMETPDF: Geometric Probabilities</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="07_GEOMETPDF.html#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="07_GEOMETPDF.html#calculator">Calculator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="07_GEOMETPDF.html#problems">Problems</a></li>
-<li class="toctree-l2"><a class="reference internal" href="07_GEOMETPDF.html#solutions">Solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_NPR.html">NPR: Permutations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="08_NPR.html#calculator">Calculator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_NPR.html#problems">Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_NPR.html#solutions">Solutions</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="08_GEOMETCDF.html">GEOMETCDF: Geometric Distribution</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="08_GEOMETCDF.html#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="08_GEOMETCDF.html#calculator">Calculator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="08_GEOMETCDF.html#problems">Problems</a></li>
-<li class="toctree-l2"><a class="reference internal" href="08_GEOMETCDF.html#solutions">Solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_NCR.html">NCR: Combinations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="09_NCR.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_NCR.html#calculator">Calculator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_NCR.html#problems">Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_NCR.html#solutions">Solutions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="10_GEOMETPDF.html">GEOMETPDF: Geometric Probabilities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="10_GEOMETPDF.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_GEOMETPDF.html#calculator">Calculator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_GEOMETPDF.html#problems">Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_GEOMETPDF.html#solutions">Solutions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="11_GEOMETCDF.html">GEOMETCDF: Geometric Distribution</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="11_GEOMETCDF.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_GEOMETCDF.html#calculator">Calculator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_GEOMETCDF.html#problems">Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_GEOMETCDF.html#solutions">Solutions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="12_GEOMET_HISTOGRAM.html">GEOMETPDF: Geometric Probabilities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="12_GEOMET_HISTOGRAM.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_GEOMET_HISTOGRAM.html#activity">Activity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_GEOMET_HISTOGRAM.html#solutions">Solutions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="13_BINOMPDF.html">BINOMPDF: Binomial Probabilities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="13_BINOMPDF.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_BINOMPDF.html#calculator">Calculator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_BINOMPDF.html#problems">Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_BINOMPDF.html#solutions">Solutions</a></li>
 </ul>
 </li>
 </ul>
@@ -540,7 +570,7 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="00_HISTOGRAMS.html"
+       href="00_STATPLOT_HISTOGRAM.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
