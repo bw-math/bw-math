@@ -1,5 +1,5 @@
 =================
-STAT PLOT: Ogives
+STATPLOT: Ogives
 =================
 
 TODO: copy over
