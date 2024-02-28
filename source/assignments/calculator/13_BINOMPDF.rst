@@ -50,7 +50,7 @@ Calculator
 
 .. topic:: Binomial Probability Density Function
 
-	To calculator a Binomial probability on a *TI-83/84* calculator, type in the following commands,
+	To calculate a Binomial probability on a *TI-83/84* calculator, type in the following commands,
 	 
 	- :math:`\text{BUTTON}: \text{DISTR}`
 	- :math:`\text{MENU}: \text{DISTR}`

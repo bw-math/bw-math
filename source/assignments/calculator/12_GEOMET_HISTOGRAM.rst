@@ -29,8 +29,8 @@ Create a sequence of the first 50 natural numbers starting at 1 and store the re
 	To insert a sequence into :math:`L_1`, type in the following commands into a *TI-83/84* calculator.
 	 
 	- :math:`\text{BUTTON}: \text{STAT}`
-	- :math:`\text{MENU}: \text{EDIT}
-	- :math:`\text{1}: \text{EDIT}
+	- :math:`\text{MENU}: \text{EDIT}`
+	- :math:`\text{1}: \text{EDIT}`
 
 	This will bring up the List Editor. Use the arrow keys to navigate to the formula bar and press **ENTER** to start typing a formula,
 
