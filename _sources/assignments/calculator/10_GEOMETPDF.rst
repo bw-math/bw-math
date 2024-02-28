@@ -55,7 +55,11 @@ Calculator
 	- :math:`\text{MENU}: \text{DISTR}`
 	- :math:`\text{E}: \text{GEOMETPDF}`
 	
-The **geometPDF** menu requires a probability of success for a single trial and the number of trials whose probability is sought. 
+The **geometPDF** menu requires two arguments,
+
+1. ``p``: a probability of success for a single trial.
+
+2. ``x``: the number of trials whose probability is sought.
 
 (TODO: insert picture of GEOMETPDF menu)
 

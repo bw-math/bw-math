@@ -29,7 +29,8 @@ Calculator
 	- :math:`\text{MENU}: \text{DISTR}`
 	- :math:`\text{F}: \text{GEOMETCDF}`
 	
-The **geometCDF** menu requires a probability of success for a single trial and the number of trials whose probability of being less than the indicated value is sought. 
+1. ``p``: a probability of success for a single trial.
+2. ``x``: the number of trials whose probability of being less than the indicated value is sought. 
 
 (TODO: insert picture of GEOMETCDF menu)
 
