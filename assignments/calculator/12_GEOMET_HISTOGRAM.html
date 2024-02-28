@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>GEOMETPDF: Geometric Probabilities &#8212; bishop-walsh-math  documentation</title>
+    <title>STATPLOT: Geometric Histogram &#8212; bishop-walsh-math  documentation</title>
   
   
   
@@ -219,7 +219,7 @@
 <li class="toctree-l3"><a class="reference internal" href="09_NCR.html">NCR: Combinations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="10_GEOMETPDF.html">GEOMETPDF: Geometric Probabilities</a></li>
 <li class="toctree-l3"><a class="reference internal" href="11_GEOMETCDF.html">GEOMETCDF: Geometric Distribution</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">GEOMETPDF: Geometric Probabilities</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">STATPLOT: Geometric Histogram</a></li>
 <li class="toctree-l3"><a class="reference internal" href="13_BINOMPDF.html">BINOMPDF: Binomial Probabilities</a></li>
 </ul>
 </li>
@@ -483,7 +483,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>GEOMETPDF: Geometric Probabilities</h1>
+    <h1>STATPLOT: Geometric Histogram</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -507,8 +507,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="geometpdf-geometric-probabilities">
-<span id="ti-geomet-histogram-problems"></span><h1>GEOMETPDF: Geometric Probabilities<a class="headerlink" href="#geometpdf-geometric-probabilities" title="Permalink to this heading">#</a></h1>
+  <section id="statplot-geometric-histogram">
+<span id="ti-geomet-histogram-problems"></span><h1>STATPLOT: Geometric Histogram<a class="headerlink" href="#statplot-geometric-histogram" title="Permalink to this heading">#</a></h1>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
 <p>In a previous section (TODO: link), we introduced the Geometric Distribution. We took a look at the <strong>geometPDF</strong> function, the probability density function, and the <strong>geometCDF</strong>, the cumulative distribution function on our <em>TI-83/84</em> family of calculator. These functions give us quick ways of calculating probabilites for a Geometric Random Variable.</p>
@@ -527,12 +527,16 @@ document.write(`
 <div><p>To insert a sequence into <img class="math" src="../../_images/math/c996a9cf74053aef3abc50a074e4114264fc461f.png" alt="L_1"/>, type in the following commands into a <em>TI-83/84</em> calculator.</p>
 <ul class="simple">
 <li><p><img class="math" src="../../_images/math/cca5a60e747075ed06288905e556a5058452701b.png" alt="\text{BUTTON}: \text{STAT}"/></p></li>
+<li><p>:math:<a href="#id1"><span class="problematic" id="id2">`</span></a>text{MENU}: text{EDIT}</p></li>
+<li><p>:math:<a href="#id3"><span class="problematic" id="id4">`</span></a>text{1}: text{EDIT}</p></li>
 </ul>
-<p>TODO
-- <img class="math" src="../../_images/math/a2eb9b7d13adfcda15600221a726b1b83d0cff81.png" alt="\text{BUTTON}: \text{2ND}"/>
-- <img class="math" src="../../_images/math/2944454b2675f6298450d0b56ab60eea02f341d7.png" alt="\text{BUTTON}: \text{LIST}"/>
-- <img class="math" src="../../_images/math/bc31e0484b320c3111ebf589e862b6d5a5dfd46e.png" alt="\text{MENU}: \text{OPS}"/>
-- <img class="math" src="../../_images/math/d82223b7fc02e59ab1efcf2fd9cc7a20b49dc82d.png" alt="\text{5}: \text{seq}"/></p>
+<p>This will bring up the List Editor. Use the arrow keys to navigate to the formula bar and press <strong>ENTER</strong> to start typing a formula,</p>
+<ul class="simple">
+<li><p><img class="math" src="../../_images/math/a2eb9b7d13adfcda15600221a726b1b83d0cff81.png" alt="\text{BUTTON}: \text{2ND}"/></p></li>
+<li><p><img class="math" src="../../_images/math/2944454b2675f6298450d0b56ab60eea02f341d7.png" alt="\text{BUTTON}: \text{LIST}"/></p></li>
+<li><p><img class="math" src="../../_images/math/bc31e0484b320c3111ebf589e862b6d5a5dfd46e.png" alt="\text{MENU}: \text{OPS}"/></p></li>
+<li><p><img class="math" src="../../_images/math/d82223b7fc02e59ab1efcf2fd9cc7a20b49dc82d.png" alt="\text{5}: \text{seq}"/></p></li>
+</ul>
 </div></blockquote>
 <p>(insert picture of sequence editor)</p>
 <div class="admonition-question-1 admonition">
@@ -546,10 +550,13 @@ document.write(`
 <p>Excellent. This list will represent the (truncated) domain of the Geometric Random Variable. Let’s start with <img class="math" src="../../_images/math/1e67845f9858418ae8d6ac79876d92e59725c741.png" alt="p = 0.25"/>. We need to compute the value of the Geometric PDF for every element of the list we just generated.</p>
 <p>Go to STAT &gt; EDIT and select the formula bar for ﻿
 ﻿. Go to 2ND &gt; DISTR &gt; E: GEOMETPDF to  bring up the Geometric Probability Density Function editor. Pass in the following arguments,</p>
-<blockquote>
-<div><p>p:              0.25</p>
-<p>x value:    ﻿:math:<cite>L_1</cite></p>
-</div></blockquote>
+<aside class="topic">
+<p class="topic-title">GEOMETPDF arguments</p>
+<div class="math">
+<p><img src="../../_images/math/80131e3d744c07f25490df884f3bd87e0bb30eaf.png" alt="p: 0.25"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/75ff9802eee3cb21f9ff18cf52755cf59cbf679d.png" alt="x \text{value}:  L_1"/></p>
+</div></aside>
 <p>﻿</p>
 <div class="admonition-question-2 admonition">
 <p class="admonition-title">Question #2</p>
@@ -563,12 +570,12 @@ document.write(`
 <p class="admonition-title">Hint</p>
 <p>Ensure you have a viewing <strong>WINDOW</strong> set to,</p>
 <blockquote>
-<div><p><strong>XMIN</strong>: 0
-<strong>XMAX</strong>: 25
-<strong>XSCL</strong>: 1
-<strong>YMIN</strong>: 0
-<strong>YMAX</strong>: 0.5
-<strong>YSCL</strong>: 1</p>
+<div><p><strong>XMIN</strong>: 0</p>
+<p><strong>XMAX</strong>: 25</p>
+<p><strong>XSCL</strong>: 1</p>
+<p><strong>YMIN</strong>: 0</p>
+<p><strong>YMAX</strong>: 0.5</p>
+<p><strong>YSCL</strong>: 1</p>
 </div></blockquote>
 </div>
 <div class="admonition-question-3 admonition">

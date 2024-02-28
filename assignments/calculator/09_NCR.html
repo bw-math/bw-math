@@ -219,7 +219,7 @@
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">NCR: Combinations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="10_GEOMETPDF.html">GEOMETPDF: Geometric Probabilities</a></li>
 <li class="toctree-l3"><a class="reference internal" href="11_GEOMETCDF.html">GEOMETCDF: Geometric Distribution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="12_GEOMET_HISTOGRAM.html">GEOMETPDF: Geometric Probabilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="12_GEOMET_HISTOGRAM.html">STATPLOT: Geometric Histogram</a></li>
 <li class="toctree-l3"><a class="reference internal" href="13_BINOMPDF.html">BINOMPDF: Binomial Probabilities</a></li>
 </ul>
 </li>
@@ -513,50 +513,10 @@ document.write(`
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
 <p>The number of combinations ﻿is defined as the number of ways <code class="docutils literal notranslate"><span class="pre">r</span></code> objects can be selected from <code class="docutils literal notranslate"><span class="pre">n</span></code> objects, where order is not important. The number of combinations can be calculated using the following formula,</p>
-<aside class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">C(n,r)  = \frac{n!}{(n-r)! \cdot r!</span>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2021-11-15&gt; patch level 1
-L3 programming layer &lt;2022-01-21&gt;
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
-(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd))
-Runaway argument?
-C(n,r) = \frac {n!}{(n-r)! \cdot r!\end {split} \end {equation*} \end \ETC.
-! File ended while scanning use of \split.
-&lt;inserted text&gt; 
-                \par 
-&lt;*&gt; math.tex
-            
-! Emergency stop.
-&lt;*&gt; math.tex
-            
-No pages of output.
-Transcript written on math.log.
-</p>
-</aside>
-<p>It is important to note the sequence of letters <em>ab</em> and <em>ba</em> would be considered the same combination of the objects <em>a</em> and <em>b</em>. This is in distinction to <em>permutations</em>, where <em>ab</em> and <em>ba</em> would be considered distinct sequences because <em>a</em> and <em>b</em> appear in different orders. In fact, there is a connection between the number of permutations and the number of combinations of <em>r</em> objects selected from <em>n</em> objects.</p>
-<p>From the formula, notice <img class="math" src="../../_images/math/7a56b81fa75232ae5ca4e4bf0f80b04870bea50f.png" alt="C(n,r) = \frac{P(n,r)}{r!}, or rewriting, :math:`r! \cdot C(n,r) = P(n,r)"/>. In other words, for a given combination <img class="math" src="../../_images/math/d17c2a783c434bc8804bec3d97b5807a2a15b7f2.png" alt="C(n,r)"/> of <code class="docutils literal notranslate"><span class="pre">r</span></code> objects, we need to permute this combination <img class="math" src="../../_images/math/9370a844407c6f1c7faf738a9c5ac0e582e3ee98.png" alt="r!"/> times to account for all the different ways the <code class="docutils literal notranslate"><span class="pre">r</span></code> objects can be <em>ordered</em>.</p>
+<div class="math">
+<p><img src="../../_images/math/4eb0ec17357fb2762b860635dcf624da4b4f73e9.png" alt="C(n,r)  = \frac{n!}{(n-r)! \cdot r!}"/></p>
+</div><p>It is important to note the sequence of letters <em>ab</em> and <em>ba</em> would be considered the same combination of the objects <em>a</em> and <em>b</em>. This is in distinction to <em>permutations</em>, where <em>ab</em> and <em>ba</em> would be considered distinct sequences because <em>a</em> and <em>b</em> appear in different orders. In fact, there is a connection between the number of permutations and the number of combinations of <em>r</em> objects selected from <em>n</em> objects.</p>
+<p>From the formula, notice <img class="math" src="../../_images/math/655e2c108a6b4a56ddd791a98067deb0c45e2631.png" alt="C(n,r) = \frac{P(n,r)}{r!}"/>, or rewriting, <img class="math" src="../../_images/math/491253a2c0f25c58f0584fcc016bb3d4fce48691.png" alt="r! \cdot C(n,r) = P(n,r)"/>. In other words, for a given combination <img class="math" src="../../_images/math/d17c2a783c434bc8804bec3d97b5807a2a15b7f2.png" alt="C(n,r)"/> of <code class="docutils literal notranslate"><span class="pre">r</span></code> objects, we need to permute this combination <img class="math" src="../../_images/math/9370a844407c6f1c7faf738a9c5ac0e582e3ee98.png" alt="r!"/> times to account for all the different ways the <code class="docutils literal notranslate"><span class="pre">r</span></code> objects can be <em>ordered</em>.</p>
 </section>
 <section id="calculator">
 <h2>Calculator<a class="headerlink" href="#calculator" title="Permalink to this heading">#</a></h2>

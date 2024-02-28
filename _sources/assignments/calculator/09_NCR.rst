@@ -12,11 +12,11 @@ The number of combinations ﻿is defined as the number of ways ``r`` objects can
 
 .. math:: 
 
-	C(n,r)  = \frac{n!}{(n-r)! \cdot r!
+	C(n,r)  = \frac{n!}{(n-r)! \cdot r!}
 	
 It is important to note the sequence of letters *ab* and *ba* would be considered the same combination of the objects *a* and *b*. This is in distinction to *permutations*, where *ab* and *ba* would be considered distinct sequences because *a* and *b* appear in different orders. In fact, there is a connection between the number of permutations and the number of combinations of *r* objects selected from *n* objects.
 
-From the formula, notice :math:`C(n,r) = \frac{P(n,r)}{r!}, or rewriting, :math:`r! \cdot C(n,r) = P(n,r)`. In other words, for a given combination :math:`C(n,r)` of ``r`` objects, we need to permute this combination :math:`r!` times to account for all the different ways the ``r`` objects can be *ordered*.
+From the formula, notice :math:`C(n,r) = \frac{P(n,r)}{r!}`, or rewriting, :math:`r! \cdot C(n,r) = P(n,r)`. In other words, for a given combination :math:`C(n,r)` of ``r`` objects, we need to permute this combination :math:`r!` times to account for all the different ways the ``r`` objects can be *ordered*.
 
 Calculator
 ==========
