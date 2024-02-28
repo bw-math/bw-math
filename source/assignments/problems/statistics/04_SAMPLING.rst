@@ -58,11 +58,11 @@ Big Town Fisheries recently stocked a new lake in a city park with 2,000 fish of
 	c. Suppose the distribution of fish lengths in this lake was nonnormal but had the same mean and standard deviation. Would it still be appropriate to use the normal distribution to compute the probability in *part b* ? Justify your answer.
 
 
-5. **2008, Free Response Form B, #2**
+5. **2008, Free Response, #2**
 
 Four different statistics have been proposed as estimators of a population parameter. To investigate the behavior of these estimators, 500 random samples are selected from a known population and each statistic is calculated for each sample. The true value of the population parameter is 75. The graphs below show the distribution of values for each statistic.
 
-.. image:: ../../../assets/imgs/classwork/2008_apstats_frp_formb_02.png
+.. image:: ../../../assets/imgs/classwork/2008_apstats_frp_02.png
 	:align: center
 	
 Use the information to solve the following problems.
@@ -107,20 +107,7 @@ Use this information to solve the following problems.
 
 	c. The mean and standard deviation of X are 1.65 and 1.851, respectively. Suppose 150 households in this area are to be selected at random and X , the mean number of dogs and cats per household, is to be computed. Describe the sampling distribution of X , including its shape, center, and spread.
 
-9. **2004, Free Response, Form B, #3**
-
-Trains carry bauxite ore from a mine in Canada to an aluminum processing plant in northern New York state in hopper cars. Filling equipment is used to load ore into the hopper cars. When functioning properly, the actual weights of ore loaded into each car by the filling equipment at the mine are approximately normally distributed
-with a mean of 70 tons and a standard deviation of 0.9 ton. If the mean is greater than 70 tons, the loading mechanism is overfilling.
-
-	a. If the filling equipment is functioning properly, what is the probability that the weight of the ore in a randomly selected car will be 70.7 tons or more? Show your work.
-
-	b.Suppose that the weight of ore in a randomly selected car is 70.7 tons. Would that fact make you suspect that the loading mechanism is overfilling the cars? Justify your answer.
-	
-	c. If the filling equipment is functioning properly, what is the probability that a random sample of 10 cars will have a mean ore weight of 70.7 tons or more? Show your work.
-
-	d. Based on your answer in *part c*, if a random sample of 10 cars had a mean ore weight of 70.7 tons, would you suspect that the loading mechanism was overfilling the cars? Justify your answer.
-
-10. **2019, Free Response, #6**
+9. **2019, Free Response, #6**
 
 Emma is moving to a large city and is investigating typical monthly rental prices of available one-bedroom apartments. She obtained a random sample of rental prices for 50 one-bedroom apartments taken from a Web site where people voluntarily list available apartments.
 

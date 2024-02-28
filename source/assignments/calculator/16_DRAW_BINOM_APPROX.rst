@@ -34,5 +34,5 @@ Turn on your **STATPLOT** and create a histogram using :math:`L_1` as your **XLI
 	Describe the shape of the histogram. Explain why the Normal Distribution would not be a good approximation to Binomial Distribution with n = 10 and p = 0.1.
  
  
-TODO
+TODO: the rest
 ﻿.
