@@ -38,11 +38,11 @@ As part of a training program, staff at a testing lab applied the ELISA to 500 b
 
 	c. When a blood sample yields a positive ELISA result, two more ELISAs are performed on the same blood sample. If at least one of the two additional ELISAs is positive, the blood sample is subjected to a more expensive and more accurate test to make a definitive determination of whether HIV is present in the sample. Repeated ELISAs on the same sample are generally assumed to be independent. Under the assumption of independence, what is the probability that a new blood sample that comes into the lab will be subjected to the more expensive test if that sample does not contain HIV?
 
-3. **2018, Free Response, #6**
+3. **2017, Free Response, #6**
 
 Consider an experiment in which two men and two women will be randomly assigned to either a treatment group or a control group in such a way that each group has two people. The people are identified as Man 1, Man 2, Woman 1, and Woman 2. The six possible arrangements are shown below.	
 
-.. image:: ../../../assets/imgs/classwork/2018_apstats_frp_06a.png
+.. image:: ../../../assets/imgs/classwork/2017_apstats_frp_06a.png
 	:align: center
 	
 Two possible methods of assignment are being considered: the sequential coin flip method and the chip method. For each method, the order of the assignment will be Man 1, Man 2, Woman 1, Woman 2.
