@@ -1,8 +1,8 @@
 .. _ti_geomet_histogram_problems:
 
-==================================
-GEOMETPDF: Geometric Probabilities
-==================================
+=============================
+STATPLOT: Geometric Histogram
+=============================
 
 Introduction
 ============
@@ -29,7 +29,11 @@ Create a sequence of the first 50 natural numbers starting at 1 and store the re
 	To insert a sequence into :math:`L_1`, type in the following commands into a *TI-83/84* calculator.
 	 
 	- :math:`\text{BUTTON}: \text{STAT}`
-	TODO
+	- :math:`\text{MENU}: \text{EDIT}
+	- :math:`\text{1}: \text{EDIT}
+
+	This will bring up the List Editor. Use the arrow keys to navigate to the formula bar and press **ENTER** to start typing a formula,
+
 	- :math:`\text{BUTTON}: \text{2ND}`
 	- :math:`\text{BUTTON}: \text{LIST}`
 	- :math:`\text{MENU}: \text{OPS}`
@@ -50,9 +54,16 @@ Excellent. This list will represent the (truncated) domain of the Geometric Rand
 
 Go to STAT > EDIT and select the formula bar for ﻿
 ﻿. Go to 2ND > DISTR > E: GEOMETPDF to  bring up the Geometric Probability Density Function editor. Pass in the following arguments,
-              p:              0.25
 
-              x value:    ﻿:math:`L_1`
+.. topic:: GEOMETPDF arguments
+
+	.. math::
+
+		p: 0.25
+	
+	.. math::
+
+		x \text{value}:  L_1
 ﻿
 
 .. admonition:: Question #2
@@ -67,10 +78,15 @@ Create a relative frequency histogram using :math:`L_1` as your **XLIST** and :m
 	Ensure you have a viewing **WINDOW** set to,
 	
 		**XMIN**: 0
+
 		**XMAX**: 25
+
 		**XSCL**: 1
+
 		**YMIN**: 0
+
 		**YMAX**: 0.5
+
 		**YSCL**: 1
 		
 .. admonition:: Question #3
