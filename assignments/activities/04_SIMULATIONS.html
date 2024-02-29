@@ -500,7 +500,12 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foul-shot">Foul Shot</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coin-flips">Coin Flips</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binomial">Binomial</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric">Geometric</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric">Geometric</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#coin-flip">Coin Flip</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#die-roll">Die Roll</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis">Analysis</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -543,7 +548,80 @@ document.write(`
 </section>
 <section id="geometric">
 <h3>Geometric<a class="headerlink" href="#geometric" title="Permalink to this heading">#</a></h3>
-<p>TODO: explain</p>
+<p>The following two demonstrations should be performed one after another. This will allow the students to see the differences in the two dot plots.</p>
+<section id="coin-flip">
+<h4>Coin Flip<a class="headerlink" href="#coin-flip" title="Permalink to this heading">#</a></h4>
+<p>In this demonstrations, students will be flipping a coin and counting the number of flips it takes until they get their first head. A <em>success</em> in this experiment corresponds to the outcome of the coin landing on heads.</p>
+<div class="admonition-discussion-question admonition">
+<p class="admonition-title">Discussion Question</p>
+<p>What is the probability of success in this Geometric experiment?</p>
+</div>
+<ol class="arabic simple">
+<li><p>Draw a dot plot on the board, as shown below. Note the horizontal axis should extend to 10 or more, to account for extreme outcomes.</p></li>
+</ol>
+<p>(TODO: insert graph)</p>
+<ol class="arabic simple" start="2">
+<li><p>Give each student a coin.</p></li>
+<li><p>Have each student flip the coin, counting the number of flips as they go. When it lands on heads the first time, the experiment is over.</p></li>
+<li><p>For each experiment they perform, have each student add a dot to the dot plot. The dot should be placed at the number corresponding to the total number of flips in the experiment.</p></li>
+<li><p>Repeat the process until the dot plot has 30 or more data points.</p></li>
+<li><p>Once the dot plot is constructed, have the students create a relative frequency distribution.</p></li>
+</ol>
+<div class="admonition-discussion-question admonition">
+<p class="admonition-title">Discussion Question</p>
+<p>How is the sample mean of the distribution related to the probability of success?</p>
+</div>
+</section>
+<section id="die-roll">
+<h4>Die Roll<a class="headerlink" href="#die-roll" title="Permalink to this heading">#</a></h4>
+<p>In this demonstrations, students will be rolling a die and counting the number of rolls it takes until they get their first 5. A <em>success</em> in this experiment corresponds to the outcome of rolling a 5.</p>
+<div class="admonition-discussion-question admonition">
+<p class="admonition-title">Discussion Question</p>
+<p>What is the probability of success in this Geometric experiment?</p>
+</div>
+<ol class="arabic simple">
+<li><p>Draw a dot plots on the board, as shown below. Note the horizontal axis should extend to 20 or more, to account for extreme outcomes.</p></li>
+</ol>
+<p>(TODO: insert graph)</p>
+<ol class="arabic simple" start="2">
+<li><p>Give each student a six-sided die.</p></li>
+<li><p>Have each student flip the coin, counting the number of flips as they go. When it lands on heads the first time, the experiment is over.</p></li>
+<li><p>For each experiment they perform, have each student add a dot to the dot plot. The dot should be placed at the number corresponding to the total number of flips in the experiment.</p></li>
+<li><p>Repeat the process until the dot plot has 30 or more data points.</p></li>
+<li><p>After the dot plot is constructed, have the students create a relative frequency distribution.</p></li>
+</ol>
+<div class="admonition-discussion-question admonition">
+<p class="admonition-title">Discussion Question</p>
+<p>How is the sample mean of the distribution related to the probability of success?</p>
+</div>
+</section>
+<section id="analysis">
+<h4>Analysis<a class="headerlink" href="#analysis" title="Permalink to this heading">#</a></h4>
+<p>Have the students answer the following questions.</p>
+<ol class="arabic simple">
+<li><p>Compare and contrast the distribution of coin flips with the distribution of die rolls. How do measures of center compare? How do measures of variation of compare?</p></li>
+<li><p>Based on the answer to #1, what is the relationship between the probabiltiy of success, <img class="math" src="../../_images/math/8fa594e7c303da82d04542357b99f0c8d2dbfa41.png" alt="p"/>, and the standard deviation, <img class="math" src="../../_images/math/3c6db7079834573bbfc4f914a807e23ebd2079f2.png" alt="\sigma"/>, of the distribution?</p></li>
+</ol>
+<aside class="topic">
+<p class="topic-title">Geometric Expectation and Variance</p>
+<p>If <img class="math" src="../../_images/math/76f807b85508d7c0c6f19def9d36194402fefca0.png" alt="\mathcal{X} \mid \text{Geom}(p)"/>, then,</p>
+<div class="math">
+<p><img src="../../_images/math/870cebe3a7773f88a14f5900216676963c92bdd0.png" alt="E(\mathcal{X}) = \frac{1}{p}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/14ec0127347f9055c5a97db612e402e1c879bebc.png" alt="Var(\mathcal{X}) = \frac{1-p}{p^2}"/></p>
+</div></aside>
+<ol class="arabic" start="3">
+<li><p>Using a graphing utility, plot the variance of a Geometric distribution as function of the probability of success, <img class="math" src="../../_images/math/3cdfd33a7d3a0fe30e08027c6f92d2f8c47aa097.png" alt="f(x)=\frac{1-x}{x^2}. Ensure the graping window is set to :math:`0 \leq x \leq 1"/> and <img class="math" src="../../_images/math/8cfe0c23507b5e780e5f746261178246a80ef526.png" alt="0 \leq y \leq 100"/>.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Why is it necessary to set the view window to <img class="math" src="../../_images/math/b37150c6f734b9db64fe4b57b9235e6fbc3c2e5d.png" alt="0 \leq x \leq 1"/>?</p></li>
+<li><p>What happens to the variance as the probability of success approaches 1? Interpret this result in context.</p></li>
+<li><p>What happens to the variance as the probability of success approaches 0? Interpret this result in context.</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+</section>
 </section>
 </section>
 </section>
@@ -597,7 +675,12 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foul-shot">Foul Shot</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coin-flips">Coin Flips</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binomial">Binomial</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric">Geometric</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric">Geometric</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#coin-flip">Coin Flip</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#die-roll">Die Roll</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis">Analysis</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
