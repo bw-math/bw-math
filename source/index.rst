@@ -10,6 +10,7 @@ Bishop Walsh Mathematics
    01_DATASETS
    syllabi/index
    notes/index
+   activities/index
    assignments/index
    resources/index
    maintenance/index
