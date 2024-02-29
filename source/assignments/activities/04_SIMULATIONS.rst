@@ -6,14 +6,6 @@ Simulations
 
 The simulations in this section are meant to give students hands-on experience with randomness and uncertainty, and to get familiar with arguments involving probability. Each simulation and demonstration relies on an understanding of the Law of Large Numbers (todo: link). Before tackling any of these demos, it is recommended to discuss this concept in class beforehand.
 
-.. topic:: Required Materials
-	
-	- Dice (6-sided, 12-sided, 24-sided, etc.)
-	- Coins
-	- Calculators
-	- Tables of Random Digits
-	- Skittles
-
 Rice
 ====
 
@@ -74,11 +66,22 @@ TODO: explain
 Foul Shot
 =========
 
+.. topic:: Required Materials
+
+	- Table of Random Digits
+	- Access to the school gym
+	- Basketballs
+	
 TODO: explain
 
 Binomial 
 ========
 
+.. topic:: Required Materials
+
+	- Coins
+	- Dice
+	
 Coin Flip
 ---------
 
@@ -92,6 +95,11 @@ TODO: explain
 Geometric
 =========
 
+.. topic:: Required Materials
+
+	- Coins
+	- Dice
+	
 The experiments in this section are meant to demonstrate the distribution shape of a Geometric Random Variable. These demonstrations should be performed one after another. This will allow the students to see the differences in the two dot plots that are generated and internalize the meaning of the parameter ``p``, the probability of success, for the Geometric Distribution.
 
 Coin Flip
@@ -159,7 +167,7 @@ Have the students answer the following questions.
 
 .. topic:: Geometric Expectation and Variance
 
-	If :math:`\mathcal{X} \mid \text{Geom}(p)`, then,
+	If :math:`\mathcal{X} \sim \text{Geom}(p)`, then,
 	
 	.. math::
 	
@@ -169,7 +177,7 @@ Have the students answer the following questions.
 	
 		Var(\mathcal{X}) = \frac{1-p}{p^2}
 		
-3. Using a graphing utility, plot the variance of a Geometric distribution as function of the probability of success, :math:`f(x)=\frac{1-x}{x^2}. Ensure the graping window is set to :math:`0 \leq x \leq 1` and :math:`0 \leq y \leq 100`.
+3. Using a graphing utility, plot the variance of a Geometric distribution as function of the probability of success, :math:`f(x)=\frac{1-x}{x^2}`. Ensure the graping window is set to :math:`0 \leq x \leq 1` and :math:`0 \leq y \leq 100`.
 
 	a. Why is it necessary to set the view window to :math:`0 \leq x \leq 1`? 
 	
