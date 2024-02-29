@@ -496,18 +496,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rice">Rice</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skittles">Skittles</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foul-shot">Foul Shot</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coin-flips">Coin Flips</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binomial">Binomial</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric">Geometric</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#coin-flip">Coin Flip</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#die-roll">Die Roll</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis">Analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#binomial">Binomial</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coin-flip">Coin Flip</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#die-roll">Die Roll</a></li>
 </ul>
 </li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric">Geometric</a></li>
 </ul>
             </nav>
         </div>
@@ -521,7 +518,7 @@ document.write(`
                   
   <section id="simulations">
 <span id="simulation-activities"></span><h1>Simulations<a class="headerlink" href="#simulations" title="Permalink to this heading">#</a></h1>
-<p>No statistician’s tool belt is complete without an absurd number of Rubber Ducks! Rubber Ducks provide countless opportunities for statistics and probability demonstrations!</p>
+<p>The simulations in this section are meant to give students hands-on experience with randomness and uncertainty, and to get familiar with arguments involving probability. Each simulation and demonstration relies on an understanding of the Law of Large Numbers (todo: link). Before tackling any of these demos, it is recommended to discuss this concept in class beforehand.</p>
 <aside class="topic">
 <p class="topic-title">Required Materials</p>
 <ul class="simple">
@@ -532,25 +529,66 @@ document.write(`
 <li><p>Skittles</p></li>
 </ul>
 </aside>
+<section id="rice">
+<h2>Rice<a class="headerlink" href="#rice" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Required Materials</p>
+<ul class="simple">
+<li><p>Lots of Rice</p></li>
+<li><p>1 Funnel</p></li>
+<li><p>1 Tray</p></li>
+<li><p>1 Tape Measure (Or Meter Stick)</p></li>
+<li><p>2 Volumetric Flasks</p></li>
+</ul>
+</aside>
+<p>The experiment in this section provides an intuitive understanding of the Central Limit Theorem. Students will create a Normal distribution using grains of rice and then estimate its standard deviation using the Empirical Rule (TODO: link).</p>
+<p>Select two volunteers. One student will hold a funnel above a large cafeteria tray. Another student will be given a large container of dry rice. The student with the container of rice will then begin to slowly pour the rice into the funnel.</p>
+<p>It is important the student with the funnel hold it absolutely still. In addition, this experiment works best if the student dispensing the rice dispenses it <em>extremely</em> slowly in a circular motion around the rim, so as to give the rice enough time to clear the funnel. Otherwise, the rice is liable to become stuck in the funnel and lead to inaccurate results.</p>
+<p>(TODO: diagram)</p>
+<p>If everything goes according to plan, the rice should form a three dimensional Normal curve on the tray. As the Normal curve begins to accumulate, start a discussion about <em>why</em> the curve is Normal.</p>
+<p>This can be explained as follows: The grains of rice satisfy the conditions of the Central Limit Theorem.</p>
+<p>The Central Limit Theorem requires the observations in a sample to be drawn from the same population. This condition is met by forcing the grains of rice to go through the funnel and travel roughly the same trajectory (as determined gravity). The trajectory travelled by each grain represents the population distribution.</p>
+<p>The Central Limit Theorem requires many observations. This condition is met by the numerous grains of rice. The grains represent a large sample.</p>
+<p>The Central Limit Theorem also requires the independence of each observation. This is often the hardest condition for the students to understand in this context, since it would appear each grain of rice is affected by the actions of its falling neighbors.</p>
+<p>The type of motion exhibited by the grains of rice is known as Brownian Motion (TODO: link). The best analogy to explain the independence of grains is a Plinko machine (TODO: link).</p>
+<p>(TODO: plinko machine)</p>
+<p>In Plinko, a ball is dropped and bounces off pegs at random as it descends towards the goal, sometimes falling to the right, sometimes falling to the left. The net effect of the bouncing, on average, cancels out and leads to the ball falling roughly where it was dropped. In other words, the best strategy in Plinko is to drop the ball right above the hole (assuming the peg sizes are uniform).</p>
+<p>Once the curve is formed, take out the tape measure. Measure the width of the curve from one end to the other. You will likely have to ignore a few outlying grains of rice.</p>
+<p>The Empirical Rule (todo: link) states 99.7% of a Normal distribution can be captured by moving a distance of 3 standard deviations, <img class="math" src="../../_images/math/f6d95a099d5f48887d0a1fae7cb68de9ff38dd88.png" alt="3 \cdot \sigma"/>, in either direction of the mean. In other words, the width you just measured should be roughly <img class="math" src="../../_images/math/d74c20ce32646f38050f5e8a748e791332fc51de.png" alt="6 \cdot sigma"/> wide. This allows the population standard deviation to be calculated, i.e. by dividing the width of the curve by 6.</p>
+<p>Approximate the center (mean) of the distribution by finding the midpoint of the curve width. Then mark off a distance of one standard deviation on either side of the center (mean). Separate the tails of the distribution from the middle of the distribution.</p>
+<p>(TODO: diagram)</p>
+<p>Collect the grains of rice in the tails in one of the volumetric flasks and collect the middle into the other volumetric flask. Level out the rice by shaking the flask and the measure the volume.</p>
+<p>The ratio of the volume of the middle to the total volume should be roughly 68%, by the Empirical Rule.</p>
+</section>
 <section id="skittles">
 <h2>Skittles<a class="headerlink" href="#skittles" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Required Materials</p>
+<ul class="simple">
+<li><p>Skittles</p></li>
+<li><p>Jar</p></li>
+</ul>
+</aside>
 <p>TODO: explain</p>
 </section>
 <section id="foul-shot">
 <h2>Foul Shot<a class="headerlink" href="#foul-shot" title="Permalink to this heading">#</a></h2>
 <p>TODO: explain</p>
 </section>
-<section id="coin-flips">
-<h2>Coin Flips<a class="headerlink" href="#coin-flips" title="Permalink to this heading">#</a></h2>
 <section id="binomial">
-<h3>Binomial<a class="headerlink" href="#binomial" title="Permalink to this heading">#</a></h3>
+<h2>Binomial<a class="headerlink" href="#binomial" title="Permalink to this heading">#</a></h2>
+<section id="coin-flip">
+<h3>Coin Flip<a class="headerlink" href="#coin-flip" title="Permalink to this heading">#</a></h3>
 <p>TODO: explain</p>
 </section>
+<section id="die-roll">
+<h3>Die Roll<a class="headerlink" href="#die-roll" title="Permalink to this heading">#</a></h3>
+<p>TODO: explain</p>
+</section>
+</section>
 <section id="geometric">
-<h3>Geometric<a class="headerlink" href="#geometric" title="Permalink to this heading">#</a></h3>
-<p>The following two demonstrations should be performed one after another. This will allow the students to see the differences in the two dot plots.</p>
-<section id="coin-flip">
-<h4>Coin Flip<a class="headerlink" href="#coin-flip" title="Permalink to this heading">#</a></h4>
+<h2>Geometric<a class="headerlink" href="#geometric" title="Permalink to this heading">#</a></h2>
+<p>The experiments in this section are meant to demonstrate the distribution shape of a Geometric Random Variable. These demonstrations should be performed one after another. This will allow the students to see the differences in the two dot plots that are generated and internalize the meaning of the parameter <code class="docutils literal notranslate"><span class="pre">p</span></code>, the probability of success, for the Geometric Distribution.</p>
 <p>In this demonstrations, students will be flipping a coin and counting the number of flips it takes until they get their first head. A <em>success</em> in this experiment corresponds to the outcome of the coin landing on heads.</p>
 <div class="admonition-discussion-question admonition">
 <p class="admonition-title">Discussion Question</p>
@@ -571,9 +609,6 @@ document.write(`
 <p class="admonition-title">Discussion Question</p>
 <p>How is the sample mean of the distribution related to the probability of success?</p>
 </div>
-</section>
-<section id="die-roll">
-<h4>Die Roll<a class="headerlink" href="#die-roll" title="Permalink to this heading">#</a></h4>
 <p>In this demonstrations, students will be rolling a die and counting the number of rolls it takes until they get their first 5. A <em>success</em> in this experiment corresponds to the outcome of rolling a 5.</p>
 <div class="admonition-discussion-question admonition">
 <p class="admonition-title">Discussion Question</p>
@@ -594,9 +629,6 @@ document.write(`
 <p class="admonition-title">Discussion Question</p>
 <p>How is the sample mean of the distribution related to the probability of success?</p>
 </div>
-</section>
-<section id="analysis">
-<h4>Analysis<a class="headerlink" href="#analysis" title="Permalink to this heading">#</a></h4>
 <p>Have the students answer the following questions.</p>
 <ol class="arabic simple">
 <li><p>Compare and contrast the distribution of coin flips with the distribution of die rolls. How do measures of center compare? How do measures of variation of compare?</p></li>
@@ -621,8 +653,6 @@ document.write(`
 </div></blockquote>
 </li>
 </ol>
-</section>
-</section>
 </section>
 </section>
 
@@ -671,18 +701,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rice">Rice</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skittles">Skittles</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foul-shot">Foul Shot</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coin-flips">Coin Flips</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binomial">Binomial</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric">Geometric</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#coin-flip">Coin Flip</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#die-roll">Die Roll</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis">Analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#binomial">Binomial</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coin-flip">Coin Flip</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#die-roll">Die Roll</a></li>
 </ul>
 </li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric">Geometric</a></li>
 </ul>
   </nav></div>
 
