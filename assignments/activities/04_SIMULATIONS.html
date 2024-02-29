@@ -519,16 +519,6 @@ document.write(`
   <section id="simulations">
 <span id="simulation-activities"></span><h1>Simulations<a class="headerlink" href="#simulations" title="Permalink to this heading">#</a></h1>
 <p>The simulations in this section are meant to give students hands-on experience with randomness and uncertainty, and to get familiar with arguments involving probability. Each simulation and demonstration relies on an understanding of the Law of Large Numbers (todo: link). Before tackling any of these demos, it is recommended to discuss this concept in class beforehand.</p>
-<aside class="topic">
-<p class="topic-title">Required Materials</p>
-<ul class="simple">
-<li><p>Dice (6-sided, 12-sided, 24-sided, etc.)</p></li>
-<li><p>Coins</p></li>
-<li><p>Calculators</p></li>
-<li><p>Tables of Random Digits</p></li>
-<li><p>Skittles</p></li>
-</ul>
-</aside>
 <section id="rice">
 <h2>Rice<a class="headerlink" href="#rice" title="Permalink to this heading">#</a></h2>
 <aside class="topic">
@@ -573,10 +563,25 @@ document.write(`
 </section>
 <section id="foul-shot">
 <h2>Foul Shot<a class="headerlink" href="#foul-shot" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Required Materials</p>
+<ul class="simple">
+<li><p>Table of Random Digits</p></li>
+<li><p>Access to the school gym</p></li>
+<li><p>Basketballs</p></li>
+</ul>
+</aside>
 <p>TODO: explain</p>
 </section>
 <section id="binomial">
 <h2>Binomial<a class="headerlink" href="#binomial" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Required Materials</p>
+<ul class="simple">
+<li><p>Coins</p></li>
+<li><p>Dice</p></li>
+</ul>
+</aside>
 <section id="coin-flip">
 <h3>Coin Flip<a class="headerlink" href="#coin-flip" title="Permalink to this heading">#</a></h3>
 <p>TODO: explain</p>
@@ -588,6 +593,13 @@ document.write(`
 </section>
 <section id="geometric">
 <h2>Geometric<a class="headerlink" href="#geometric" title="Permalink to this heading">#</a></h2>
+<aside class="topic">
+<p class="topic-title">Required Materials</p>
+<ul class="simple">
+<li><p>Coins</p></li>
+<li><p>Dice</p></li>
+</ul>
+</aside>
 <p>The experiments in this section are meant to demonstrate the distribution shape of a Geometric Random Variable. These demonstrations should be performed one after another. This will allow the students to see the differences in the two dot plots that are generated and internalize the meaning of the parameter <code class="docutils literal notranslate"><span class="pre">p</span></code>, the probability of success, for the Geometric Distribution.</p>
 <p>In this demonstrations, students will be flipping a coin and counting the number of flips it takes until they get their first head. A <em>success</em> in this experiment corresponds to the outcome of the coin landing on heads.</p>
 <div class="admonition-discussion-question admonition">
@@ -636,14 +648,14 @@ document.write(`
 </ol>
 <aside class="topic">
 <p class="topic-title">Geometric Expectation and Variance</p>
-<p>If <img class="math" src="../../_images/math/76f807b85508d7c0c6f19def9d36194402fefca0.png" alt="\mathcal{X} \mid \text{Geom}(p)"/>, then,</p>
+<p>If <img class="math" src="../../_images/math/799650dda31304f7ddb2435cf27145cc91bce692.png" alt="\mathcal{X} \sim \text{Geom}(p)"/>, then,</p>
 <div class="math">
 <p><img src="../../_images/math/870cebe3a7773f88a14f5900216676963c92bdd0.png" alt="E(\mathcal{X}) = \frac{1}{p}"/></p>
 </div><div class="math">
 <p><img src="../../_images/math/14ec0127347f9055c5a97db612e402e1c879bebc.png" alt="Var(\mathcal{X}) = \frac{1-p}{p^2}"/></p>
 </div></aside>
 <ol class="arabic" start="3">
-<li><p>Using a graphing utility, plot the variance of a Geometric distribution as function of the probability of success, <img class="math" src="../../_images/math/3cdfd33a7d3a0fe30e08027c6f92d2f8c47aa097.png" alt="f(x)=\frac{1-x}{x^2}. Ensure the graping window is set to :math:`0 \leq x \leq 1"/> and <img class="math" src="../../_images/math/8cfe0c23507b5e780e5f746261178246a80ef526.png" alt="0 \leq y \leq 100"/>.</p>
+<li><p>Using a graphing utility, plot the variance of a Geometric distribution as function of the probability of success, <img class="math" src="../../_images/math/ccfb066fddb9f0a3c9d33515a22780dace2c01c0.png" alt="f(x)=\frac{1-x}{x^2}"/>. Ensure the graping window is set to <img class="math" src="../../_images/math/b37150c6f734b9db64fe4b57b9235e6fbc3c2e5d.png" alt="0 \leq x \leq 1"/> and <img class="math" src="../../_images/math/8cfe0c23507b5e780e5f746261178246a80ef526.png" alt="0 \leq y \leq 100"/>.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
 <li><p>Why is it necessary to set the view window to <img class="math" src="../../_images/math/b37150c6f734b9db64fe4b57b9235e6fbc3c2e5d.png" alt="0 \leq x \leq 1"/>?</p></li>
