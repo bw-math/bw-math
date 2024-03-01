@@ -17,11 +17,11 @@ The following sentences all say the same thing in slightly different ways.
 	
 	3. A *random variable*  :math:`\mathcal{X}` is a function whose input is determined by a random process.
 
-.. topic:: Example #1-A
+.. admonition:: Example #1-A
 
 	A friend flips a fair, two-sided coin. If it lands on heads, he will pay you five dollars. If it lands on tails, you have to pay him five dollars. 
 
-.. topic:: Solution #1-A
+.. admonition:: Solution #1-A
 
 	The sample space for this simple game is given by,
     
@@ -51,11 +51,11 @@ The following sentences all say the same thing in slightly different ways.
 
 	Notice this is similar in form and function to a :ref:`frequency distribution <frequency_distributions>`.
 
-.. topic:: Example #1-B
+.. admonition:: Example #1-B
 
 	Suppose you own a car that gets 30 miles per gallon of gasoline. Due to your commute, you drive your car approximately 120 miles every week. Describe the cost of operating your car as a random variable measured in dollars.
    
-.. topic:: Solution #1-B
+.. admonition:: Solution #1-B
  
 	Your weekly cost of keeping your tank full is given by the expression
 
@@ -192,12 +192,11 @@ TODO
 
 .. topic:: Expectation of a Discrete Random Variable
 
-	If :math:`\mathcal{X}` is a discrete random variable that takes on the values :math:`x_i` for :math:`i = 1, 2, 3, ..., n`, then *expectation* of :math:`\mathcal{X}` is defined as,
+	If :math:`\mathcal{X}` is a discrete random variable that takes on the values :math:`x`, then *expectation* of :math:`\mathcal{X}` is defined as,
 	
 	.. math::
 	
-		E(\mathcal{X}) = \sum_{i=1}^{n}{x_i \ cdot P(\mathcal{X} = x_i) }
-		
+		E(\mathcal{X}) = \sum_{x \in \mathcal{X}(S)}{x \ \cdot P(\mathcal{X} = x) }
 TODO
 
 The *expectation* of a Random Variable :math:`\mathcal{X}` is the weighted sum of its outcome. The *weight* of each outcome is exactly the probability of that outcome occuring.
@@ -212,11 +211,11 @@ Recall the formula for the sample mean is written,
 
 	\bar{x} = \frac{ \sum_{i=1}^{n} x_i }{n}
 	
-However, when it is written like this, the connection to *expectations* is not so obvious. The index of this summation, *i*, is taken over the individual observations, rather than the *unique* observations. We may rewrite this formula, with the concept of :ref:`relative_frequency`, :math:`p(x_i)`, 
+However, when it is written like this, the connection to *expectations* is not so obvious. The index of this summation, *i*, is taken over the individual observations, rather than the *unique* observations. We may rewrite this formula, with the concept of :ref:`relative_frequency`, :math:`p(x)`, 
 
 .. math::
 
-	\bar{x} = \sum_{x_i \in S} {x_i \cdot p(x_i)} 
+	\bar{x} = \sum_{x \in S} {x \cdot p(x)} 
 	
 The connection is now more apparent. In the limit, as the number of observations in the sample *S* approaches the number of individuals in the population, the *relative frequency* of an observation becomes the *probability* of the individual occuring in the population.
 
@@ -237,6 +236,12 @@ TODO
 	
 		Var(\mathcal{X}) = E( (\mathcal{X} - E(\mathcal{X}))^2 )
 		
+If the additional constraint is added that :math:`\mathcal{X}` is discrete, the *outer* expectation can be expanded and rewritten,
+	
+	.. math::
+	
+		Var(\mathcal{X}) = \sum_{x \in \mathcal{X}(S)}{(x - E(\mathcal{X}))^2  \cdot P(\mathcal{X} = x) }
+
 TODO
 
 .. topic:: Variance Shortcut Formula
@@ -303,11 +308,11 @@ The :ref:`scalar_properties` detail how the expectation of a Random Variable is 
 
 TODO
 
-.. topic:: Example #2-C
+.. admonition:: Example #2-C
 
 	Suppose you play a game where you roll a die and then flip a coin. If you roll a 6, you win $1. If the coin lands on a head, you win an additional $1. What is the expected value of your winnings?
 	
-.. topic:: Solution #2-C
+.. admonition:: Solution #2-C
 
 	In this example there are two random processes: the amount of money you win from rolling the die and the amount of money you win from flipping the coin. Call the former :math:`\mathcal{X}` and call the latter :math:`\mathcal{Y}`. The quantity of interest in this problem is then given by,
 	

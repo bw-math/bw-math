@@ -9,11 +9,11 @@ Definitions
 
 .. topic:: Expectation of a Discrete Random Variable
 
-	If :math:`\mathcal{X}` is a discrete random variable that takes on the values :math:`x_i` for :math:`i = 1, 2, 3, ..., n`, then *expectation* of :math:`\mathcal{X}` is defined as,
+	If :math:`\mathcal{X}` is a discrete random variable that takes on the values :math:`x`, then *expectation* of :math:`\mathcal{X}` is defined as,
 	
 	.. math::
 	
-		E(\mathcal{X}) = \sum_{x_i \in \mathcal{X}(S)}{x_i \ \cdot P(\mathcal{X} = x_i) }
+		E(\mathcal{X}) = \sum_{x \in \mathcal{X}(S)}{x \ \cdot P(\mathcal{X} = x) }
 		
 .. topic:: Variance of a Random Variable
 
@@ -27,7 +27,7 @@ Definitions
 	
 	.. math::
 	
-		Var(\mathcal{X}) = \sum_{x_i \in \mathcal{X}(S)}{(x_i - E(\mathcal{X}))^2  \cdot P(\mathcal{X} = x_i) }
+		Var(\mathcal{X}) = \sum_{x \in \mathcal{X}(S)}{(x - E(\mathcal{X}))^2  \cdot P(\mathcal{X} = x) }
 		
 	
 .. topic:: Variance Shortcut Formula
