@@ -552,12 +552,12 @@ document.write(`
 <li><p>A <em>random variable</em>  <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is a function whose input is determined by a random process.</p></li>
 </ol>
 </div></blockquote>
-<aside class="topic">
-<p class="topic-title">Example #1-A</p>
+<div class="admonition-example-1-a admonition">
+<p class="admonition-title">Example #1-A</p>
 <p>A friend flips a fair, two-sided coin. If it lands on heads, he will pay you five dollars. If it lands on tails, you have to pay him five dollars.</p>
-</aside>
-<aside class="topic">
-<p class="topic-title">Solution #1-A</p>
+</div>
+<div class="admonition-solution-1-a admonition">
+<p class="admonition-title">Solution #1-A</p>
 <p>The sample space for this simple game is given by,</p>
 <div class="math">
 <p><img src="../../_images/math/7302e9835f241c03dd9de7319669b28b9a9fd614.png" alt="S = \{ h, t \}"/></p>
@@ -582,13 +582,13 @@ document.write(`
 </tbody>
 </table>
 <p>Notice this is similar in form and function to a <a class="reference internal" href="../statistics/00_GRAPHS.html#frequency-distributions"><span class="std std-ref">frequency distribution</span></a>.</p>
-</aside>
-<aside class="topic">
-<p class="topic-title">Example #1-B</p>
+</div>
+<div class="admonition-example-1-b admonition">
+<p class="admonition-title">Example #1-B</p>
 <p>Suppose you own a car that gets 30 miles per gallon of gasoline. Due to your commute, you drive your car approximately 120 miles every week. Describe the cost of operating your car as a random variable measured in dollars.</p>
-</aside>
-<aside class="topic">
-<p class="topic-title">Solution #1-B</p>
+</div>
+<div class="admonition-solution-1-b admonition">
+<p class="admonition-title">Solution #1-B</p>
 <p>Your weekly cost of keeping your tank full is given by the expression</p>
 <blockquote>
 <div><p>(Weekly Cost of Gas) = (Price per Gallon of Gasoline) <img class="math" src="../../_images/math/2156a0dcbe4c12655fe2dfbb127fe8f6b443412a.png" alt="\cdot"/> (Gallons Used)</p>
@@ -602,7 +602,7 @@ document.write(`
 <div class="math">
 <p><img src="../../_images/math/f423167351b822576217de03d3f2518016744b78.png" alt="\mathcal{X} \frac{\$}{gal} \cdot \text{4 gal }"/></p>
 </div><p>where <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is the price of gasoline measured in dollars per gallon.</p>
-</aside>
+</div>
 <section id="random-variable-or-random-function">
 <h3>Random Variable or Random Function?<a class="headerlink" href="#random-variable-or-random-function" title="Permalink to this heading">#</a></h3>
 <p>A <em>random variable</em> is not very well named.</p>
@@ -674,9 +674,9 @@ document.write(`
 <p>TODO</p>
 <aside class="topic">
 <p class="topic-title">Expectation of a Discrete Random Variable</p>
-<p>If <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is a discrete random variable that takes on the values <img class="math" src="../../_images/math/c868d77cf180f32ba90b687e49da690a0cabd93e.png" alt="x_i"/> for <img class="math" src="../../_images/math/a481b68cca2dd2ec91961f41999ae31343d16aea.png" alt="i = 1, 2, 3, ..., n"/>, then <em>expectation</em> of <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is defined as,</p>
+<p>If <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is a discrete random variable that takes on the values <img class="math" src="../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/>, then <em>expectation</em> of <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is defined as,</p>
 <div class="math">
-<p><img src="../../_images/math/31bc024a4e270416530d0620e1659777e916a8a9.png" alt="E(\mathcal{X}) = \sum_{i=1}^{n}{x_i \ cdot P(\mathcal{X} = x_i) }"/></p>
+<p><img src="../../_images/math/187efafb1cbe4c57014856443c5a3b638f9450ee.png" alt="E(\mathcal{X}) = \sum_{x \in \mathcal{X}(S)}{x \ \cdot P(\mathcal{X} = x) }"/></p>
 </div></aside>
 <p>TODO</p>
 <p>The <em>expectation</em> of a Random Variable <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is the weighted sum of its outcome. The <em>weight</em> of each outcome is exactly the probability of that outcome occuring.</p>
@@ -685,9 +685,9 @@ document.write(`
 <p>Recall the formula for the sample mean is written,</p>
 <div class="math">
 <p><img src="../../_images/math/2a0f23002a4b7886f5528d873c1df899de936e52.png" alt="\bar{x} = \frac{ \sum_{i=1}^{n} x_i }{n}"/></p>
-</div><p>However, when it is written like this, the connection to <em>expectations</em> is not so obvious. The index of this summation, <em>i</em>, is taken over the individual observations, rather than the <em>unique</em> observations. We may rewrite this formula, with the concept of <a class="reference internal" href="../statistics/01_ESTIMATION.html#relative-frequency"><span class="std std-ref">Relative Frequency</span></a>, <img class="math" src="../../_images/math/76e10db9dd752386950db7836acd81283328092c.png" alt="p(x_i)"/>,</p>
+</div><p>However, when it is written like this, the connection to <em>expectations</em> is not so obvious. The index of this summation, <em>i</em>, is taken over the individual observations, rather than the <em>unique</em> observations. We may rewrite this formula, with the concept of <a class="reference internal" href="../statistics/01_ESTIMATION.html#relative-frequency"><span class="std std-ref">Relative Frequency</span></a>, <img class="math" src="../../_images/math/633652ea58c4c7ea2613d5c06ae938b256497331.png" alt="p(x)"/>,</p>
 <div class="math">
-<p><img src="../../_images/math/baf9a0c555dd01ae3bb85997212f1c74e6216073.png" alt="\bar{x} = \sum_{x_i \in S} {x_i \cdot p(x_i)}"/></p>
+<p><img src="../../_images/math/e00d0733bb9152d78a93d707fa628871cf691d86.png" alt="\bar{x} = \sum_{x \in S} {x \cdot p(x)}"/></p>
 </div><p>The connection is now more apparent. In the limit, as the number of observations in the sample <em>S</em> approaches the number of individuals in the population, the <em>relative frequency</em> of an observation becomes the <em>probability</em> of the individual occuring in the population.</p>
 <p>TODO</p>
 </section>
@@ -700,6 +700,11 @@ document.write(`
 <div class="math">
 <p><img src="../../_images/math/14039845ccfff87b50138c1b1cd446c967b8c36a.png" alt="Var(\mathcal{X}) = E( (\mathcal{X} - E(\mathcal{X}))^2 )"/></p>
 </div></aside>
+<p>If the additional constraint is added that <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is discrete, the <em>outer</em> expectation can be expanded and rewritten,</p>
+<blockquote>
+<div><div class="math">
+<p><img src="../../_images/math/4cbe098da4a0416fe1f051591fff410e18b9c37b.png" alt="Var(\mathcal{X}) = \sum_{x \in \mathcal{X}(S)}{(x - E(\mathcal{X}))^2  \cdot P(\mathcal{X} = x) }"/></p>
+</div></div></blockquote>
 <p>TODO</p>
 <aside class="topic">
 <p class="topic-title">Variance Shortcut Formula</p>
@@ -742,12 +747,12 @@ document.write(`
 <p><img src="../../_images/math/4e72d6fafb90045a13178b32d2045ca918e06760.png" alt="E(\mathcal{X}) = E(\mathcal{Y}) + E(\mathcal{Z})"/></p>
 </div></aside>
 <p>TODO</p>
-<aside class="topic">
-<p class="topic-title">Example #2-C</p>
+<div class="admonition-example-2-c admonition">
+<p class="admonition-title">Example #2-C</p>
 <p>Suppose you play a game where you roll a die and then flip a coin. If you roll a 6, you win $1. If the coin lands on a head, you win an additional $1. What is the expected value of your winnings?</p>
-</aside>
-<aside class="topic">
-<p class="topic-title">Solution #2-C</p>
+</div>
+<div class="admonition-solution-2-c admonition">
+<p class="admonition-title">Solution #2-C</p>
 <p>In this example there are two random processes: the amount of money you win from rolling the die and the amount of money you win from flipping the coin. Call the former <img class="math" src="../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> and call the latter <img class="math" src="../../_images/math/ad6daa2629cc37a5667723358ec601482bea795c.png" alt="\mathcal{Y}"/>. The quantity of interest in this problem is then given by,</p>
 <div class="math">
 <p><img src="../../_images/math/13b322202d11037e0bb8fa94cc9916709419c5e2.png" alt="E(\mathcal{X} + \mathcal{Y})"/></p>
@@ -765,7 +770,7 @@ document.write(`
 </div><p>Therefore, the expected value of the winnings in this game is,</p>
 <div class="math">
 <p><img src="../../_images/math/0fb38cac324112da282180da7e339978b892051e.png" alt="E(\mathcal{X} + \mathcal{Y}) = \$ 0.17 + \$ 0.50 = \$ 0.67"/></p>
-</div></aside>
+</div></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This problem is not so simple without the <em>linearity of expectations</em>! You would need to account for all possible outcomes and find the probability distribution for the sample space!</p>
