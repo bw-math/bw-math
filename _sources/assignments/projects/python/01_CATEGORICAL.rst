@@ -72,7 +72,7 @@ Type the following command into your *Linux* terminal,
 
     pip3 install matplotlib tk
 
-.. image:: ../../assets/imgs/python/matplotlib_tk_install_done.png
+.. image:: ../../../assets/imgs/python/matplotlib_tk_install_done.png
     :align: center 
 
 Output:
@@ -88,7 +88,7 @@ Output:
 
     Successfully installed tk-0.1.0
 
-.. image:: ../../assets/imgs/python/matplotlib_tk_install_done.png
+.. image:: ../../../assets/imgs/python/matplotlib_tk_install_done.png
     :align: center 
 
 You should see the packages download and install into your system.
@@ -465,7 +465,7 @@ You can download the full dataset :download:`here <../../assets/datasets/electri
 The following table is the a preview of the data you will be using for this project. 
 
 .. csv-table:: Electric Vehicles in Washington State
-   :file: ../../assets/datasets/previews/electric_vehicle_population_data_preview.csv
+   :file: ../../../assets/datasets/previews/electric_vehicle_population_data_preview.csv
 
 The meaning of the columns was discussed in more detail in :ref:`project_one_background`. Refer to that section for further information on this dataset.
 

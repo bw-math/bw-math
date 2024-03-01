@@ -103,7 +103,7 @@ Geometric
 The experiments in this section are meant to demonstrate the distribution shape of a Geometric Random Variable. These demonstrations should be performed one after another. This will allow the students to see the differences in the two dot plots that are generated and internalize the meaning of the parameter ``p``, the probability of success, for the Geometric Distribution.
 
 Coin Flip
-*********
+---------
 
 In this demonstrations, students will be flipping a coin and counting the number of flips it takes until they get their first head. A *success* in this experiment corresponds to the outcome of the coin landing on heads.
 
@@ -130,7 +130,7 @@ In this demonstrations, students will be flipping a coin and counting the number
 	How is the sample mean of the distribution related to the probability of success?
 
 Die Roll
-********
+--------
 
 In this demonstrations, students will be rolling a die and counting the number of rolls it takes until they get their first 5. A *success* in this experiment corresponds to the outcome of rolling a 5.
 
@@ -157,7 +157,7 @@ In this demonstrations, students will be rolling a die and counting the number o
 	How is the sample mean of the distribution related to the probability of success?
 	
 Analysis
-********
+--------
 
 Have the students answer the following questions.
 

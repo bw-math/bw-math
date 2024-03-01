@@ -45,6 +45,7 @@
     <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/assets/js/app.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/projects/python/01_CATEGORICAL';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -593,7 +594,7 @@ document.write(`
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip3<span class="w"> </span>install<span class="w"> </span>matplotlib<span class="w"> </span>tk
 </pre></div>
 </div>
-<img alt="assignments/assets/imgs/python/matplotlib_tk_install_done.png" class="align-center" src="assignments/assets/imgs/python/matplotlib_tk_install_done.png" />
+<img alt="../../../_images/matplotlib_tk_install_done.png" class="align-center" src="../../../_images/matplotlib_tk_install_done.png" />
 <p>Output:</p>
 <blockquote>
 <div><p>Defaulting to user installation because normal site-packages is not writeable</p>
@@ -605,7 +606,7 @@ document.write(`
 <p>Installing collected packages: tk</p>
 <p>Successfully installed tk-0.1.0</p>
 </div></blockquote>
-<img alt="assignments/assets/imgs/python/matplotlib_tk_install_done.png" class="align-center" src="assignments/assets/imgs/python/matplotlib_tk_install_done.png" />
+<img alt="../../../_images/matplotlib_tk_install_done.png" class="align-center" src="../../../_images/matplotlib_tk_install_done.png" />
 <p>You should see the packages download and install into your system.</p>
 <p>That’s it! You are ready to plot some sweet statistical graphs.</p>
 </section>
@@ -925,6 +926,83 @@ document.write(`
 <h3>Electric Vehicle Dataset<a class="headerlink" href="#electric-vehicle-dataset" title="Permalink to this heading">#</a></h3>
 <p>You can download the full dataset <code class="xref download docutils literal notranslate"><span class="pre">here</span></code>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
+<table class="table" id="id7">
+<caption><span class="caption-text">Electric Vehicles in Washington State</span><a class="headerlink" href="#id7" title="Permalink to this table">#</a></caption>
+<tbody>
+<tr class="row-odd"><td><p>VIN (1-10)</p></td>
+<td><p>County</p></td>
+<td><p>City</p></td>
+<td><p>State</p></td>
+<td><p>Postal Code</p></td>
+<td><p>Model Year</p></td>
+<td><p>Make</p></td>
+<td><p>Model</p></td>
+<td><p>Electric Vehicle Type</p></td>
+<td><p>Clean Alternative Fuel Vehicle (CAFV) Eligibility</p></td>
+<td><p>Electric Range</p></td>
+<td><p>Base MSRP</p></td>
+<td><p>Legislative District</p></td>
+<td><p>DOL Vehicle ID</p></td>
+<td><p>Vehicle Location</p></td>
+<td><p>Electric Utility</p></td>
+<td><p>2020 Census Tract</p></td>
+</tr>
+<tr class="row-even"><td><p>5UXTA6C03P</p></td>
+<td><p>King</p></td>
+<td><p>Seattle</p></td>
+<td><p>WA</p></td>
+<td><p>98177</p></td>
+<td><p>2023</p></td>
+<td><p>BMW</p></td>
+<td><p>X5</p></td>
+<td><p>Plug-in Hybrid Electric Vehicle (PHEV)</p></td>
+<td><p>Clean Alternative Fuel Vehicle Eligible</p></td>
+<td><p>30</p></td>
+<td><p>0</p></td>
+<td><p>36</p></td>
+<td><p>218985539</p></td>
+<td><p>POINT (-122.38242499999996 47.77279000000004)</p></td>
+<td><p>CITY OF SEATTLE - (WA)|CITY OF TACOMA - (WA)</p></td>
+<td><p>53033001600</p></td>
+</tr>
+<tr class="row-odd"><td><p>1FMCU0EZXN</p></td>
+<td><p>Yakima</p></td>
+<td><p>Moxee</p></td>
+<td><p>WA</p></td>
+<td><p>98936</p></td>
+<td><p>2022</p></td>
+<td><p>FORD</p></td>
+<td><p>ESCAPE</p></td>
+<td><p>Plug-in Hybrid Electric Vehicle (PHEV)</p></td>
+<td><p>Clean Alternative Fuel Vehicle Eligible</p></td>
+<td><p>38</p></td>
+<td><p>0</p></td>
+<td><p>15</p></td>
+<td><p>197264322</p></td>
+<td><p>POINT (-120.37951169999997 46.55609000000004)</p></td>
+<td><p>PACIFICORP</p></td>
+<td><p>53077001702</p></td>
+</tr>
+<tr class="row-even"><td><p>1G1FW6S03J</p></td>
+<td><p>King</p></td>
+<td><p>Seattle</p></td>
+<td><p>WA</p></td>
+<td><p>98117</p></td>
+<td><p>2018</p></td>
+<td><p>CHEVROLET</p></td>
+<td><p>BOLT EV</p></td>
+<td><p>Battery Electric Vehicle (BEV)</p></td>
+<td><p>Clean Alternative Fuel Vehicle Eligible</p></td>
+<td><p>238</p></td>
+<td><p>0</p></td>
+<td><p>36</p></td>
+<td><p>168549727</p></td>
+<td><p>POINT (-122.37275999999997 47.689685000000054)</p></td>
+<td><p>CITY OF SEATTLE - (WA)|CITY OF TACOMA - (WA)</p></td>
+<td><p>53033003000</p></td>
+</tr>
+</tbody>
+</table>
 <p>The meaning of the columns was discussed in more detail in <a class="reference internal" href="#project-one-background"><span class="std std-ref">Background</span></a>. Refer to that section for further information on this dataset.</p>
 </section>
 </section>

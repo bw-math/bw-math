@@ -45,6 +45,7 @@
     <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/assets/js/app.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/foundations/02_SET_THEORY';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -1372,95 +1373,11 @@ document.write(`
 <p>In the entries of this table, you draw <a class="reference internal" href="#venn-diagrams"><span class="std std-ref">Venn Diagrams</span></a> that represent the intersection of the row and column. Putting the results together, we get the following picture,</p>
 <img alt="../../_images/square_of_opposition.jpg" src="../../_images/square_of_opposition.jpg" />
 <p>Notice the diagonals of the picture, the line that connects the top left to the bottom right and the line that connects the top right to the bottom left, form the contradictory pairs of propositions, namely,</p>
-<aside class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\text{universal positive} \nxrightarrow \text{existential negative}</span>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2021-11-15&gt; patch level 1
-L3 programming layer &lt;2022-01-21&gt;
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
-(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
-! Undefined control sequence.
-&lt;argument&gt; ... {universal positive} \nxrightarrow 
-                                                  \text {existential negativ...
-l.16 ...row \text{existential negative}\end{split}
-                                                  
-! Undefined control sequence.
-&lt;argument&gt; ... {universal positive} \nxrightarrow 
-                                                  \text {existential negativ...
-l.16 ...row \text{existential negative}\end{split}
-                                                  
-[1] (./math.aux) )
-(see the transcript file for additional information)
-Output written on math.dvi (1 page, 336 bytes).
-Transcript written on math.log.
-</p>
-</aside>
-<aside class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\text{universal negative} \nxrightarrow \text{existential positive}</span>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
- restricted \write18 enabled.
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2021-11-15&gt; patch level 1
-L3 programming layer &lt;2022-01-21&gt;
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
-(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
-! Undefined control sequence.
-&lt;argument&gt; ... {universal negative} \nxrightarrow 
-                                                  \text {existential positiv...
-l.16 ...row \text{existential positive}\end{split}
-                                                  
-! Undefined control sequence.
-&lt;argument&gt; ... {universal negative} \nxrightarrow 
-                                                  \text {existential positiv...
-l.16 ...row \text{existential positive}\end{split}
-                                                  
-[1] (./math.aux) )
-(see the transcript file for additional information)
-Output written on math.dvi (1 page, 336 bytes).
-Transcript written on math.log.
-</p>
-</aside>
-</section>
+<div class="math">
+<p><img src="../../_images/math/4f6742fa6384ce9895bf738e507bf2c64cc5151c.png" alt="\text{universal positive} \nrightarrow \text{existential negative}"/></p>
+</div><div class="math">
+<p><img src="../../_images/math/51ad9d33caeacbd2cc773907875165a16003058b.png" alt="\text{universal negative} \nrightarrow \text{existential positive}"/></p>
+</div></section>
 </section>
 </section>
 </section>

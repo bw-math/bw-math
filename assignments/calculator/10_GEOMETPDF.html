@@ -45,6 +45,7 @@
     <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/assets/js/app.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/calculator/10_GEOMETPDF';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -517,8 +518,38 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="geometpdf-geometric-probabilities">
-<span id="ti-geometpdf-problems"></span><h1>GEOMETPDF: Geometric Probabilities<a class="headerlink" href="#geometpdf-geometric-probabilities" title="Permalink to this heading">#</a></h1>
+  <p id="ti-geometpdf-problems">Try this in your .rst file:</p>
+const problems = [
+    {
+        id: "ti_geometpdf_01a",
+        answers: [
+            0.018
+        ]
+    }
+];
+
+function handleInput(event) {
+    console.log(event);
+
+    if(event.key == "Enter") {
+        event.preventDefault();
+        var corretAnswers = problems.filter( problem => problem.id === event.target.id).pop().answers
+        var userAnswer = document.getElementById(event.target.id).value
+        if (corretAnswers.includes(userAnswer)) {
+            console.log("happy fun time");
+        }
+        else {
+            console.log("awful bad time")
+        }
+    }
+
+}
+
+problems.forEach( problem => {
+    var input = document.getElementById(problem.id);
+    if(input) input.addEventListener("keypress", handleInput)
+});<section id="geometpdf-geometric-probabilities">
+<h1>GEOMETPDF: Geometric Probabilities<a class="headerlink" href="#geometpdf-geometric-probabilities" title="Permalink to this heading">#</a></h1>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
 <p>The Geometric Distribution is defined as the probability distribution for a Geometric Random Variable. A Geometric Random Variable coutns the number of trials until the first success.</p>
@@ -571,6 +602,8 @@ document.write(`
 <blockquote>
 <div><ol class="loweralpha simple">
 <li><p>Find the probability that the first defect is caused by the seventh component tested. Round to three decimal places.</p></li>
+</ol>
+<input type="number" id="ti_geometpdf_01a" /><ol class="loweralpha simple" start="2">
 <li><p>What is the probability the first defect is caused by the sixth or seventh component tested? Round to three decimal places.</p></li>
 <li><p>What is the probability of having to test at least three components before you find a defective one? Round to three decimal places.</p></li>
 </ol>

@@ -45,6 +45,7 @@
     <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/assets/js/app.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/projects/python/02_QUANTITATIVE';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -599,7 +600,7 @@ document.write(`
 <h3>The Michelson Velocity of Light Experiment<a class="headerlink" href="#the-michelson-velocity-of-light-experiment" title="Permalink to this heading">#</a></h3>
 <p>The <a class="reference external" href="https://www.gutenberg.org/files/11753/11753-h/11753-h.htm">Michelson Velocity of Light Experiment</a> conducted in 1879 was the first time <a class="reference external" href="https://en.wikipedia.org/wiki/Albert_A._Michelson">Albert A. Michelson</a> successfully measured the speed of light. He would go on to do so several more times, eventually teaming up with <a class="reference external" href="https://en.wikipedia.org/wiki/Edward_W._Morley">Edward Morley</a>. Together, using the principles Michelson first developed in 1879, Michelson and Morley would demonstrate in 1887 the speed of light was the same value regardless of the state of motion of the emitting body. This would go on to have profound effects for physics in the early twentieth century; It would lead <a class="reference external" href="https://en.wikipedia.org/wiki/Albert_Einstein">Albert Einstein</a> to propose the <a class="reference external" href="https://en.wikipedia.org/wiki/Theory_of_relativity">theory of relativity</a>, one of the most significant intellectual developments in the history of humanity.</p>
 <p>Michelson’s 1879 experimental results remained one of most accurate estimations of the speed of light until modern times. Using a series of mirrors depicted below, Michelson was able to divert light rays emitting from a common source along separate paths and then measure the fractional time difference it took for the rays to reach the same location.</p>
-<a class="reference internal image-reference" href="assignments/assets/imgs/context/michelson_experiment.png"><img alt="assignments/assets/imgs/context/michelson_experiment.png" class="align-center" src="assignments/assets/imgs/context/michelson_experiment.png" style="width: 60%;" /></a>
+<a class="reference internal image-reference" href="../../../_images/michelson_experiment.png"><img alt="../../../_images/michelson_experiment.png" class="align-center" src="../../../_images/michelson_experiment.png" style="width: 60%;" /></a>
 <aside class="topic">
 <p class="topic-title">Experimental Design</p>
 <p>The experiment is conducted within a closed and darkened small building at the U.S. Naval Academy. Light enters the building from one corner passing through a slit <code class="docutils literal notranslate"><span class="pre">S</span></code> whose location is precisely determined using a micrometer.</p>
@@ -613,7 +614,7 @@ document.write(`
 <h3>The Cavendish Density of the Earth Experiment<a class="headerlink" href="#the-cavendish-density-of-the-earth-experiment" title="Permalink to this heading">#</a></h3>
 <p>Henry Cavendish performed the first modern, scientific experiment to measure the density of the Earth in 1797, which allowed humans to calculate the mass of the Earth for the first time.</p>
 <p>Using the mutual gravitational attraction of two heavy metal balls attached to a <a class="reference external" href="https://en.wikipedia.org/wiki/Torsion_spring#Torsion_balance">torsion balanace</a> to twist a fiber of string, Cavendish measured the force of the tension produced.</p>
-<a class="reference internal image-reference" href="assignments/assets/imgs/context/cavendish_torsion_balance.png"><img alt="assignments/assets/imgs/context/cavendish_torsion_balance.png" class="align-center" src="assignments/assets/imgs/context/cavendish_torsion_balance.png" style="width: 60%;" /></a>
+<a class="reference internal image-reference" href="../../../_images/cavendish_torsion_balance.png"><img alt="../../../_images/cavendish_torsion_balance.png" class="align-center" src="../../../_images/cavendish_torsion_balance.png" style="width: 60%;" /></a>
 <aside class="topic">
 <p class="topic-title">Experimental Design</p>
 <p>Diagram viewed from above of the torsion pendulum used in the 1798 Cavendish experiment, the first accurate measurement of the density of the Earth, by Henry Cavendish. The pendulum consists of two small lead weights (h, h) hanging from a 6 foot horizontal wooden beam supported in the center by a fine torsion thread. The beam is protected from air currents inside a wooden box (A, A, A, A). The two large weights (W, W) attached to a separate suspension attract the small weights, causing the beam to rotate slightly. The rotation is read off of vernier scales (S) at either end of the rod. The large weights can be rotated to the other side of the torsion beam (w, w), causing the beam to rotate in the opposite direction.</p>
@@ -1001,12 +1002,64 @@ document.write(`
 <h3>Velocity of Light Data<a class="headerlink" href="#velocity-of-light-data" title="Permalink to this heading">#</a></h3>
 <p>You can download the full dataset <code class="xref download docutils literal notranslate"><span class="pre">here</span></code>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
+<table class="table" id="id1">
+<caption><span class="caption-text">Michelson’s Velocity of Light Data</span><a class="headerlink" href="#id1" title="Permalink to this table">#</a></caption>
+<tbody>
+<tr class="row-odd"><td><p>Velocity ( km/s )</p></td>
+</tr>
+<tr class="row-even"><td><p>299850</p></td>
+</tr>
+<tr class="row-odd"><td><p>299740</p></td>
+</tr>
+<tr class="row-even"><td><p>299900</p></td>
+</tr>
+<tr class="row-odd"><td><p>300070</p></td>
+</tr>
+<tr class="row-even"><td><p>299930</p></td>
+</tr>
+<tr class="row-odd"><td><p>299850</p></td>
+</tr>
+<tr class="row-even"><td><p>299950</p></td>
+</tr>
+<tr class="row-odd"><td><p>299980</p></td>
+</tr>
+</tbody>
+</table>
 <p>The meaning of the column is clear from the column header: each observation measures the speed of light in meters per second, <img class="math" src="../../../_images/math/5ae5e370f87dbb343d8b2a860c4c15c185ad158b.png" alt="\frac{km}{s}"/>.</p>
 </section>
 <section id="density-of-the-earth-data">
 <h3>Density of the Earth Data<a class="headerlink" href="#density-of-the-earth-data" title="Permalink to this heading">#</a></h3>
 <p>You can download the full dataset <code class="xref download docutils literal notranslate"><span class="pre">here</span></code>.</p>
 <p>The following table is the a preview of the data you will be using for this project.</p>
+<table class="table" id="id2">
+<caption><span class="caption-text">Cavendish’s Density of the Earth Data</span><a class="headerlink" href="#id2" title="Permalink to this table">#</a></caption>
+<tbody>
+<tr class="row-odd"><td><p>Density</p></td>
+</tr>
+<tr class="row-even"><td><p>5.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>5.61</p></td>
+</tr>
+<tr class="row-even"><td><p>4.88</p></td>
+</tr>
+<tr class="row-odd"><td><p>5.07</p></td>
+</tr>
+<tr class="row-even"><td><p>5.26</p></td>
+</tr>
+<tr class="row-odd"><td><p>5.55</p></td>
+</tr>
+<tr class="row-even"><td><p>5.36</p></td>
+</tr>
+<tr class="row-odd"><td><p>5.29</p></td>
+</tr>
+<tr class="row-even"><td><p>5.58</p></td>
+</tr>
+<tr class="row-odd"><td><p>5.65</p></td>
+</tr>
+<tr class="row-even"><td><p>5.57</p></td>
+</tr>
+</tbody>
+</table>
 <p>The first column corresponds to the experiment number (first, second, third, etc.). The second column is the <em>ratio of the density of Earth to the density of water</em>. Recall the density of water by definition is <img class="math" src="../../../_images/math/53fe61fc6b56ada57fe4981393b357d6008bccb3.png" alt="1 \frac{g}{cm^3}"/>.</p>
 </section>
 </section>

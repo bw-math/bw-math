@@ -1,5 +1,11 @@
 .. _ti_geometpdf_problems:
 
+
+Try this in your .rst file:
+
+.. raw:: html
+	:file: ../../assets/js/app.js
+    
 ==================================
 GEOMETPDF: Geometric Probabilities
 ==================================
@@ -70,6 +76,10 @@ Problems
 
 	a. Find the probability that the first defect is caused by the seventh component tested. Round to three decimal places.
 
+	.. raw:: html
+	
+		<input type="number" id="ti_geometpdf_01a" />
+		
 	b. What is the probability the first defect is caused by the sixth or seventh component tested? Round to three decimal places.
 	
 	c. What is the probability of having to test at least three components before you find a defective one? Round to three decimal places.

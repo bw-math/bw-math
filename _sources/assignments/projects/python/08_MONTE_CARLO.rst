@@ -51,13 +51,13 @@ TODO
 
 Due to the Law of Large Numbers, as the number of simulations increases, the approximation of :math:`\pi` converges to its true value. 
 
-.. image:: ../../assets/imgs/python/monte_carlo_pi_100.png
+.. image:: ../../../assets/imgs/python/monte_carlo_pi_100.png
     :align: center
    
-.. image:: ../../assets/imgs/python/monte_carlo_pi_1000.png
+.. image:: ../../../assets/imgs/python/monte_carlo_pi_1000.png
     :align: center
     
-.. image:: ../../assets/imgs/python/monte_carlo_pi_10000.png
+.. image:: ../../../assets/imgs/python/monte_carlo_pi_10000.png
     :align: center
     
 
