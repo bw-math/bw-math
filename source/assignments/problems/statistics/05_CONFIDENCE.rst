@@ -4,31 +4,35 @@
 Confidence Intervals
 ====================
 
-Means
-=====
-
-Known Standard Deviation 
-------------------------
-
-.. topic:: Critical Value
+.. topic:: Critical Z Value
 
 	.. math::
 	
 		z_{p} \equiv P(\mathcal{Z}<z_{p}) = \frac{p}{100}
-	
-.. topic:: Margin of Error
-
-	.. math::
-	
-		\text{MOE} = \lvert z_{1-\frac{\alpha}{2}} \rvert \cdot \frac{s}{sqrt{n}}	
-
-.. topic:: Confidence Interval for Population Mean, Version 1
-
-	.. math::
-	
-		\bar{x} - z_{1-\frac{\alpha}{2}} \cdot \frac{s}{sqrt{n} } \leq \mu \leq \bar{x} - z_{\frac{\alpha}{2}} \cdot \frac{s}{sqrt{n} } 
 		
-.. topic:: Confidence Interval For Population Mean, Version 2
+.. topic:: Critical T Value
+
+	TODO
+	
+.. topic:: Margin of Error, Known Standard Deviation
+
+	.. math::
+	
+		\text{MOE} = \lvert z_{1-\frac{\alpha}{2}} \rvert \cdot \frac{s}{sqrt{n}}
+
+.. topic:: Margin of Error, Unknown Standard Deviation
+
+	.. math::
+	
+		\text{MOE} = \lvert t_{1-\frac{\alpha}{2}} \rvert \cdot \frac{s}{sqrt{n}}		
+		
+Means
+=====
+
+Known Standard Deviation 
+------------------------	
+		
+.. topic:: Confidence Interval For Population Mean
 
 	.. math::
 	
@@ -42,6 +46,9 @@ Unknown Standard Deviation
 --------------------------
 
 TODO
+
+A.P. Exam Practice
+==================
 
 1. **2004, Free Response Form B, #4**
 
@@ -70,6 +77,29 @@ Data were collected to investigate whether the council member’s belief is corr
 	a. Construct and interpret a 95 percent confidence interval for the difference in mean response times between the two fire stations.
 
 	b. Does the confidence interval in part (a) support the council member’s belief that the two fire stations have different mean response times? Explain.
+
+3. **2006, Free Response, #4**
+
+Patients with heart-attack symptoms arrive at an emergency room either by ambulance or self-transportation provided by themselves, family, or friends. When a patient arrives at the emergency room, the time of arrival is recorded. The time when the patient’s diagnostic treatment begins is also recorded.
+
+An administrator of a large hospital wanted to determine whether the mean wait time (time between arrival and diagnostic treatment) for patients with heart-attack symptoms differs according to the mode of transportation. A random sample of 150 patients with heart-attack symptoms who had reported to the emergency room was selected. For each patient, the mode of transportation and wait time were recorded. Summary statistics for each mode of transportation are shown in the table below.
+
++------------------------+-------------+--------------------------+-------------------------------------------+
+| Mode of Transportation | Sample Size | Mean Wait Time (minutes) | Standard Deviation of Wait Time (minutes) |
++------------------------+-------------+--------------------------+-------------------------------------------+
+|      Ambulance         |    77       |       6.04               |              4.30                         | 
++------------------------+-------------+--------------------------+-------------------------------------------+
+|        Self            |    73       |       8.30               |              5.16                         |
++------------------------+-------------+--------------------------+-------------------------------------------+
+
+Use this information to solve the following problems.
+
+	a. Use a 99 percent confidence interval to estimate the difference between the mean wait times for ambulance-
+transported patients and self-transported patients at this emergency room.
+
+	b. Based only on this confidence interval, do you think the difference in the mean wait times is statistically
+significant? Justify your answer.
+
 
 Proportions
 ===========
@@ -125,14 +155,18 @@ Based on the responses, a 95 percent confidence interval for the proportion of a
 
 	c. The statistics teacher at the high school was concerned about the potential bias in the survey. To obtain a potentially less biased estimate of the proportion, the statistics teacher used an alternate method for collecting student responses. A random sample of 300 students was selected, and each student was given the following instructions on how to respond to the question.
 
-- In private, flip a fair coin.
-- If heads, you must respond no, regardless of whether you regularly recycle.
-- If tails, please truthfully respond yes or no.
+		- In private, flip a fair coin.
+		- If heads, you must respond no, regardless of whether you regularly recycle.
+		- If tails, please truthfully respond yes or no.
 
-	i. What is the expected number of students from the sample of 300 who would be required to respond no because the coin flip resulted in heads?
+		i. What is the expected number of students from the sample of 300 who would be required to respond no because the coin flip resulted in heads?
 
-	ii. The results of the sample showed that 213 of the 300 selected students responded no. Based on the results of the sample, give a point estimate for the proportion of all students at the high school who would respond yes to the question.
-	
+		ii. The results of the sample showed that 213 of the 300 selected students responded no. Based on the results of the sample, give a point estimate for the proportion of all students at the high school who would respond yes to the question.
+		
 5. **2017, Free Response, #2**
 
-TODO
+The manager of a local fast-food restaurant is concerned about customers who ask for a water cup when placing an order but fill the cup with a soft drink from the beverage fountain instead of filling the cup with water. The manager selected a random sample of 80 customers who asked for a water cup when placing an order and found that 23 of those customers filled the cup with a soft drink from the beverage fountain.
+
+	a. Construct and interpret a 95 percent confidence interval for the proportion of all customers who, having asked for a water cup when placing an order, will fill the cup with a soft drink from the beverage fountain.
+
+	b. The manager estimates that each customer who asks for a water cup but fills it with a soft drink costs the restaurant $0.25. Suppose that in the month of June 3,000 customers ask for a water cup when placing an order. Use the confidence interval constructed in part (a) to give an interval estimate for the cost to the restaurant for the month of June from the customers who ask for a water cup but fill the cup with a soft drink.

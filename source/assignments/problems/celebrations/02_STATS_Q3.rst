@@ -126,3 +126,7 @@ To compare success rates for treating allergies at two clinics that specialize i
 		ii. For each clinic, which allergy severity is more likely to be treated? Justify your answer.
 	
 	e. Using your answers from *part d*, give a reasonable explanation of why the more successful clinic identified in *part b* is the same as or different from the physician’s conclusion that Clinic B is more successful in treating both severe and mild allergies.
+	
+5. **2012, Free Response, #6**
+
+TODO
