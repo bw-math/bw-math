@@ -42,6 +42,9 @@ html_css_files = [
     'stylesheet.css',
 ]
 
+html_js_files = [
+    'assets/js/app.js',
+]
 
 imgmath_latex_preamble = r'''
     

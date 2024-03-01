@@ -49,7 +49,7 @@ The responses are summarized in the table below.
 +------------------------------------------------+------+--------+---------+
 | Had a part-time job but not only during summer |  12  |   8    |   20    |
 +------------------------------------------------+------+--------+---------+
-| Total					   | 48   |  52    |   100   |
+| Total                                          | 48   |  52    |   100   |
 +------------------------------------------------+------+--------+---------+
 
 Use this information to answer the following questions.

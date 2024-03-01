@@ -452,7 +452,7 @@ You can download the full dataset :download:`here <../../assets/datasets/velocit
 The following table is the a preview of the data you will be using for this project. 
 
 .. csv-table:: Michelson's Velocity of Light Data
-   :file: ../../assets/datasets/previews/velocity_of_light_data_preview.csv
+   :file: ../../../assets/datasets/previews/velocity_of_light_data_preview.csv
 
 The meaning of the column is clear from the column header: each observation measures the speed of light in meters per second, :math:`\frac{km}{s}`.
 
@@ -464,6 +464,6 @@ You can download the full dataset :download:`here <../../assets/datasets/old_fai
 The following table is the a preview of the data you will be using for this project. 
 
 .. csv-table:: Old Faithful Geyser Duration and Wait Time
-   :file: ../../assets/datasets/previews/old_faithful_data_preview.csv
+   :file: ../../../assets/datasets/previews/old_faithful_data_preview.csv
 
 The first column represents the length of the eruption in minutes. The second column represents the waiting time in minutes until the next eruption.

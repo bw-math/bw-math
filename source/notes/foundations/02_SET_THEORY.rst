@@ -1189,9 +1189,9 @@ Notice the diagonals of the picture, the line that connects the top left to the 
 
 .. math::
 
-	\text{universal positive} \nxrightarrow \text{existential negative}
+	\text{universal positive} \nrightarrow \text{existential negative}
 
 .. math::
 
-	\text{universal negative} \nxrightarrow \text{existential positive}
+	\text{universal negative} \nrightarrow \text{existential positive}
 

@@ -1,0 +1,760 @@
+Running Sphinx v5.0.0
+loading pickled environment... done
+building [mo]: targets for 0 po files that are out of date
+building [html]: targets for 150 source files that are out of date
+updating environment: 33 added, 85 changed, 22 removed
+reading sources... [  0%] activities/00_CEELO
+reading sources... [  1%] activities/01_QUACKERY
+reading sources... [  2%] activities/02_LIARS_DICE
+reading sources... [  3%] activities/03_PENNIES_GALORE
+reading sources... [  4%] activities/04_PROBABILITY_BINGO
+reading sources... [  5%] activities/05_PROBABILITY_PICTIONARY
+reading sources... [  5%] activities/06_SIMULATIONS
+reading sources... [  6%] activities/index
+reading sources... [  7%] assignments/calculator/00_STATPLOT_HISTOGRAM
+reading sources... [  8%] assignments/calculator/01_STATPLOT_OGIVE
+reading sources... [  9%] assignments/calculator/02_STATPLOT_BOXPLOT
+reading sources... [ 10%] assignments/calculator/03_STATPLOT_SCATTERPLOT
+reading sources... [ 11%] assignments/calculator/06_STATPLOT_QQ_PLOT
+reading sources... [ 11%] assignments/calculator/07_FACTORIAL
+reading sources... [ 12%] assignments/calculator/08_NPR
+reading sources... [ 13%] assignments/calculator/09_NCR
+reading sources... [ 14%] assignments/calculator/10_GEOMETPDF
+reading sources... [ 15%] assignments/calculator/11_GEOMETCDF
+reading sources... [ 16%] assignments/calculator/12_GEOMET_HISTOGRAM
+reading sources... [ 16%] assignments/calculator/13_BINOMPDF
+reading sources... [ 17%] assignments/calculator/14_BINOMCDF
+reading sources... [ 18%] assignments/calculator/15_BINOM_HISTOGRAM
+reading sources... [ 19%] assignments/calculator/16_DRAW_BINOM_APPROX
+reading sources... [ 20%] assignments/calculator/index
+reading sources... [ 21%] assignments/index
+reading sources... [ 22%] assignments/problems/celebrations/02_STATS_Q3
+reading sources... [ 22%] assignments/problems/celebrations/03_STATS_Q4
+reading sources... [ 23%] assignments/problems/distributions/02_NORMAL
+reading sources... [ 24%] assignments/problems/experiments/00_DESIGN
+reading sources... [ 25%] assignments/problems/hypotheses/00_INTRODUCTION
+reading sources... [ 26%] assignments/problems/hypotheses/01_MEAN
+reading sources... [ 27%] assignments/problems/hypotheses/02_PROPORTION
+reading sources... [ 27%] assignments/problems/hypotheses/index
+reading sources... [ 28%] assignments/problems/index
+reading sources... [ 29%] assignments/problems/probability/03_RANDOM_VARIABLES
+reading sources... [ 30%] assignments/problems/probability/solutions/01_COMBINATORICS
+reading sources... [ 31%] assignments/problems/statistics/04_SAMPLING
+reading sources... [ 32%] assignments/problems/statistics/05_CONFIDENCE
+reading sources... [ 33%] assignments/projects/python/00_PYTHON
+reading sources... [ 33%] assignments/projects/python/01_CATEGORICAL
+reading sources... [ 34%] assignments/projects/python/02_QUANTITATIVE
+reading sources... [ 35%] assignments/projects/python/03_NORMALITY
+reading sources... [ 36%] assignments/projects/python/04_REGRESSION
+reading sources... [ 37%] assignments/projects/python/05_BIAS
+reading sources... [ 38%] assignments/projects/python/06_SIMULATION
+reading sources... [ 38%] assignments/projects/python/07_SETS
+reading sources... [ 39%] assignments/projects/python/08_MONTE_CARLO
+reading sources... [ 40%] assignments/projects/python/09_BINOMIAL
+reading sources... [ 41%] assignments/projects/python/index
+reading sources... [ 42%] index
+reading sources... [ 43%] maintenance/LATEX
+reading sources... [ 44%] maintenance/SPHINX
+reading sources... [ 44%] maintenance/index
+reading sources... [ 45%] notes/distributions/00_BERNOULLI
+reading sources... [ 46%] notes/distributions/01_GEOMETRIC
+reading sources... [ 47%] notes/distributions/02_BINOMIAL
+reading sources... [ 48%] notes/distributions/03_UNIFORM
+reading sources... [ 49%] notes/distributions/04_NORMAL
+reading sources... [ 50%] notes/distributions/index
+reading sources... [ 50%] notes/experiments/00_INTRODUCTION
+reading sources... [ 51%] notes/experiments/01_BIAS
+reading sources... [ 52%] notes/experiments/02_DESIGN
+reading sources... [ 53%] notes/experiments/03_DATA
+reading sources... [ 54%] notes/experiments/04_INFERENCE
+reading sources... [ 55%] notes/experiments/index
+reading sources... [ 55%] notes/foundations/00_HISTORY
+reading sources... [ 56%] notes/foundations/01_LOGIC
+reading sources... [ 57%] notes/foundations/02_SET_THEORY
+reading sources... [ 58%] notes/foundations/index
+reading sources... [ 59%] notes/hypotheses/00_INTRODUCTION
+reading sources... [ 60%] notes/hypotheses/01_MEAN_TESTS
+reading sources... [ 61%] notes/hypotheses/02_PROPORTION_TESTS
+reading sources... [ 61%] notes/hypotheses/03_STDDEV_TESTS
+reading sources... [ 62%] notes/hypotheses/index
+reading sources... [ 63%] notes/index
+reading sources... [ 64%] notes/probability/00_INTRODUCTION
+reading sources... [ 65%] notes/probability/01_COMBINATORICS
+reading sources... [ 66%] notes/probability/02_CONDITIONAL
+reading sources... [ 66%] notes/probability/03_RANDOM_VARIABLES
+reading sources... [ 67%] notes/probability/index
+reading sources... [ 68%] notes/statistics/00_GRAPHS
+reading sources... [ 69%] notes/statistics/01_ESTIMATION
+reading sources... [ 70%] notes/statistics/02_CORRELATION
+reading sources... [ 71%] notes/statistics/03_REGRESSION
+reading sources... [ 72%] notes/statistics/04_SAMPLING
+reading sources... [ 72%] notes/statistics/05_CONFIDENCE
+reading sources... [ 73%] notes/statistics/index
+reading sources... [ 74%] resources/00_EXAMS
+reading sources... [ 75%] resources/01_REFERENCES
+reading sources... [ 76%] resources/calculator/00_BASICS
+reading sources... [ 77%] resources/calculator/01_STATISTICS
+reading sources... [ 77%] resources/calculator/02_PROBABILITY
+reading sources... [ 78%] resources/calculator/03_GRAPHING
+reading sources... [ 79%] resources/calculator/04_PROGRAM
+reading sources... [ 80%] resources/calculator/05_VIDEOS
+reading sources... [ 81%] resources/calculator/06_WORKSHEETS
+reading sources... [ 82%] resources/calculator/07_REFERENCES
+reading sources... [ 83%] resources/calculator/index
+reading sources... [ 83%] resources/index
+reading sources... [ 84%] resources/python/00_SHELL
+reading sources... [ 85%] resources/python/01_SETUP
+reading sources... [ 86%] resources/python/02_BASIC
+reading sources... [ 87%] resources/python/03_SETS
+reading sources... [ 88%] resources/python/04_FUNCTIONS
+reading sources... [ 88%] resources/python/05_PLOTS
+reading sources... [ 89%] resources/python/06_FILES
+reading sources... [ 90%] resources/python/07_CONTROLS
+reading sources... [ 91%] resources/python/08_WEB
+reading sources... [ 92%] resources/python/09_DEMOS
+reading sources... [ 93%] resources/python/index
+reading sources... [ 94%] resources/tables/01_RANDOM_DIGITS
+reading sources... [ 94%] resources/tables/01_Z_TABLE
+reading sources... [ 95%] resources/tables/02_CHI_SQUARED_TABLE
+reading sources... [ 96%] resources/tables/03_T_TABLE
+reading sources... [ 97%] resources/tables/04_PEARSON_TABLE
+reading sources... [ 98%] resources/tables/index
+reading sources... [ 99%] syllabi/00_STATS_SYLLABUS
+reading sources... [100%] syllabi/index
+
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [  0%] 00_SPLASH
+writing output... [  1%] 01_DATASETS
+writing output... [  1%] activities/00_CEELO
+writing output... [  2%] activities/01_QUACKERY
+writing output... [  3%] activities/02_LIARS_DICE
+writing output... [  3%] activities/03_PENNIES_GALORE
+writing output... [  4%] activities/04_PROBABILITY_BINGO
+writing output... [  4%] activities/05_PROBABILITY_PICTIONARY
+writing output... [  5%] activities/06_SIMULATIONS
+writing output... [  6%] activities/index
+writing output... [  6%] assignments/calculator/00_STATPLOT_HISTOGRAM
+writing output... [  7%] assignments/calculator/01_STATPLOT_OGIVE
+writing output... [  8%] assignments/calculator/02_STATPLOT_BOXPLOT
+writing output... [  8%] assignments/calculator/03_STATPLOT_SCATTERPLOT
+writing output... [  9%] assignments/calculator/04_1VAR_STATS
+writing output... [  9%] assignments/calculator/05_2VAR_STATS
+writing output... [ 10%] assignments/calculator/06_STATPLOT_QQ_PLOT
+writing output... [ 11%] assignments/calculator/07_FACTORIAL
+writing output... [ 11%] assignments/calculator/08_NPR
+writing output... [ 12%] assignments/calculator/09_NCR
+writing output... [ 13%] assignments/calculator/10_GEOMETPDF
+writing output... [ 13%] assignments/calculator/11_GEOMETCDF
+writing output... [ 14%] assignments/calculator/12_GEOMET_HISTOGRAM
+writing output... [ 14%] assignments/calculator/13_BINOMPDF
+writing output... [ 15%] assignments/calculator/14_BINOMCDF
+writing output... [ 16%] assignments/calculator/15_BINOM_HISTOGRAM
+writing output... [ 16%] assignments/calculator/16_DRAW_BINOM_APPROX
+writing output... [ 17%] assignments/calculator/index
+writing output... [ 18%] assignments/index
+writing output... [ 18%] assignments/problems/algebra/01_SUMS
+writing output... [ 19%] assignments/problems/algebra/index
+writing output... [ 19%] assignments/problems/celebrations/00_STATS_Q1
+writing output... [ 20%] assignments/problems/celebrations/01_STATS_Q2
+writing output... [ 21%] assignments/problems/celebrations/02_STATS_Q3
+writing output... [ 21%] assignments/problems/celebrations/03_STATS_Q4
+writing output... [ 22%] assignments/problems/celebrations/04_CALC_Q2
+writing output... [ 22%] assignments/problems/celebrations/index
+writing output... [ 23%] assignments/problems/differentiation/00_CHAIN_RULE
+writing output... [ 24%] assignments/problems/differentiation/01_IMPLICIT_DIFFERENTIATION
+writing output... [ 24%] assignments/problems/differentiation/02_GRAPHING
+writing output... [ 25%] assignments/problems/differentiation/03_RELATED_RATES
+writing output... [ 26%] assignments/problems/differentiation/04_OPTIMIZATION
+writing output... [ 26%] assignments/problems/differentiation/05_THEOREMS
+writing output... [ 27%] assignments/problems/differentiation/index
+writing output... [ 27%] assignments/problems/distributions/00_BINOMIAL
+writing output... [ 28%] assignments/problems/distributions/01_GEOMETRIC
+writing output... [ 29%] assignments/problems/distributions/02_NORMAL
+writing output... [ 29%] assignments/problems/distributions/index
+writing output... [ 30%] assignments/problems/experiments/00_DESIGN
+writing output... [ 31%] assignments/problems/experiments/01_INFERENCE
+writing output... [ 31%] assignments/problems/experiments/02_BIAS
+writing output... [ 32%] assignments/problems/experiments/index
+writing output... [ 32%] assignments/problems/hypotheses/00_INTRODUCTION
+writing output... [ 33%] assignments/problems/hypotheses/01_MEAN
+writing output... [ 34%] assignments/problems/hypotheses/02_PROPORTION
+writing output... [ 34%] assignments/problems/hypotheses/index
+writing output... [ 35%] assignments/problems/index
+writing output... [ 36%] assignments/problems/probability/00_INTRODUCTION
+writing output... [ 36%] assignments/problems/probability/01_COMBINATORICS
+writing output... [ 37%] assignments/problems/probability/02_CONDITIONAL
+writing output... [ 37%] assignments/problems/probability/03_RANDOM_VARIABLES
+writing output... [ 38%] assignments/problems/probability/index
+writing output... [ 39%] assignments/problems/probability/solutions/00_INTRODUCTION
+writing output... [ 39%] assignments/problems/probability/solutions/01_COMBINATORICS
+writing output... [ 40%] assignments/problems/probability/solutions/index
+writing output... [ 40%] assignments/problems/set_theory/01_INTRODUCTION
+writing output... [ 41%] assignments/problems/set_theory/02_VENN_DIAGRAMS
+writing output... [ 42%] assignments/problems/set_theory/03_LOGIC
+writing output... [ 42%] assignments/problems/set_theory/index
+writing output... [ 43%] assignments/problems/statistics/00_GRAPHS
+writing output... [ 44%] assignments/problems/statistics/01_ESTIMATION
+writing output... [ 44%] assignments/problems/statistics/02_CORRELATION
+writing output... [ 45%] assignments/problems/statistics/03_REGRESSION
+writing output... [ 45%] assignments/problems/statistics/04_SAMPLING
+writing output... [ 46%] assignments/problems/statistics/05_CONFIDENCE
+writing output... [ 47%] assignments/problems/statistics/index
+writing output... [ 47%] assignments/projects/calculator/00_CORRELATION
+writing output... [ 48%] assignments/projects/calculator/01_COIN_FLIPS
+writing output... [ 49%] assignments/projects/calculator/02_PI_ESTIMATION
+writing output... [ 49%] assignments/projects/calculator/index
+writing output... [ 50%] assignments/projects/index
+writing output... [ 50%] assignments/projects/python/00_PYTHON
+writing output... [ 51%] assignments/projects/python/01_CATEGORICAL
+writing output... [ 52%] assignments/projects/python/02_QUANTITATIVE
+writing output... [ 52%] assignments/projects/python/03_NORMALITY
+writing output... [ 53%] assignments/projects/python/04_REGRESSION
+writing output... [ 54%] assignments/projects/python/05_BIAS
+writing output... [ 54%] assignments/projects/python/06_SIMULATION
+writing output... [ 55%] assignments/projects/python/07_SETS
+writing output... [ 55%] assignments/projects/python/08_MONTE_CARLO
+writing output... [ 56%] assignments/projects/python/09_BINOMIAL
+writing output... [ 57%] assignments/projects/python/index
+writing output... [ 57%] index
+writing output... [ 58%] maintenance/LATEX
+writing output... [ 59%] maintenance/SPHINX
+writing output... [ 59%] maintenance/index
+writing output... [ 60%] notes/distributions/00_BERNOULLI
+writing output... [ 60%] notes/distributions/01_GEOMETRIC
+writing output... [ 61%] notes/distributions/02_BINOMIAL
+writing output... [ 62%] notes/distributions/03_UNIFORM
+writing output... [ 62%] notes/distributions/04_NORMAL
+writing output... [ 63%] notes/distributions/index
+writing output... [ 63%] notes/experiments/00_INTRODUCTION
+writing output... [ 64%] notes/experiments/01_BIAS
+writing output... [ 65%] notes/experiments/02_DESIGN
+writing output... [ 65%] notes/experiments/03_DATA
+writing output... [ 66%] notes/experiments/04_INFERENCE
+writing output... [ 67%] notes/experiments/index
+writing output... [ 67%] notes/foundations/00_HISTORY
+writing output... [ 68%] notes/foundations/01_LOGIC
+writing output... [ 68%] notes/foundations/02_SET_THEORY
+writing output... [ 69%] notes/foundations/index
+writing output... [ 70%] notes/hypotheses/00_INTRODUCTION
+writing output... [ 70%] notes/hypotheses/01_MEAN_TESTS
+writing output... [ 71%] notes/hypotheses/02_PROPORTION_TESTS
+writing output... [ 72%] notes/hypotheses/03_STDDEV_TESTS
+writing output... [ 72%] notes/hypotheses/index
+writing output... [ 73%] notes/index
+writing output... [ 73%] notes/probability/00_INTRODUCTION
+writing output... [ 74%] notes/probability/01_COMBINATORICS
+writing output... [ 75%] notes/probability/02_CONDITIONAL
+writing output... [ 75%] notes/probability/03_RANDOM_VARIABLES
+writing output... [ 76%] notes/probability/index
+writing output... [ 77%] notes/statistics/00_GRAPHS
+writing output... [ 77%] notes/statistics/01_ESTIMATION
+writing output... [ 78%] notes/statistics/02_CORRELATION
+writing output... [ 78%] notes/statistics/03_REGRESSION
+writing output... [ 79%] notes/statistics/04_SAMPLING
+writing output... [ 80%] notes/statistics/05_CONFIDENCE
+writing output... [ 80%] notes/statistics/index
+writing output... [ 81%] resources/00_EXAMS
+writing output... [ 81%] resources/01_REFERENCES
+writing output... [ 82%] resources/calculator/00_BASICS
+writing output... [ 83%] resources/calculator/01_STATISTICS
+writing output... [ 83%] resources/calculator/02_PROBABILITY
+writing output... [ 84%] resources/calculator/03_GRAPHING
+writing output... [ 85%] resources/calculator/04_PROGRAM
+writing output... [ 85%] resources/calculator/05_VIDEOS
+writing output... [ 86%] resources/calculator/06_WORKSHEETS
+writing output... [ 86%] resources/calculator/07_REFERENCES
+writing output... [ 87%] resources/calculator/index
+writing output... [ 88%] resources/index
+writing output... [ 88%] resources/python/00_SHELL
+writing output... [ 89%] resources/python/01_SETUP
+writing output... [ 90%] resources/python/02_BASIC
+writing output... [ 90%] resources/python/03_SETS
+writing output... [ 91%] resources/python/04_FUNCTIONS
+writing output... [ 91%] resources/python/05_PLOTS
+writing output... [ 92%] resources/python/06_FILES
+writing output... [ 93%] resources/python/07_CONTROLS
+writing output... [ 93%] resources/python/08_WEB
+writing output... [ 94%] resources/python/09_DEMOS
+writing output... [ 95%] resources/python/index
+writing output... [ 95%] resources/tables/01_RANDOM_DIGITS
+writing output... [ 96%] resources/tables/01_Z_TABLE
+writing output... [ 96%] resources/tables/02_CHI_SQUARED_TABLE
+writing output... [ 97%] resources/tables/03_T_TABLE
+writing output... [ 98%] resources/tables/04_PEARSON_TABLE
+writing output... [ 98%] resources/tables/index
+writing output... [ 99%] syllabi/00_STATS_SYLLABUS
+writing output... [100%] syllabi/index
+
+generating indices... genindex done
+writing additional pages... search done
+copying images... [  0%] assets/imgs/context/summation_symbol.png
+copying images... [  1%] assets/imgs/classwork/2021_apstats_frp_01.png
+copying images... [  1%] assets/imgs/classwork/2017_apstats_frp_04.png
+copying images... [  2%] assets/imgs/classwork/2014_apstats_frp_01a.png
+copying images... [  2%] assets/imgs/classwork/2014_apstats_frp_01b.png
+copying images... [  3%] assets/imgs/classwork/2011_apstats_frp_03.png
+copying images... [  4%] assets/imgs/classwork/2021_apstats_frp_06a.png
+copying images... [  4%] assets/imgs/classwork/2021_apstats_frp_06b.png
+copying images... [  5%] assets/imgs/classwork/2021_apstats_frp_06c.png
+copying images... [  5%] assets/imgs/classwork/2022_apstats_frp_01a.png
+copying images... [  6%] assets/imgs/classwork/2022_apstats_frp_01b.png
+copying images... [  6%] assets/imgs/classwork/2017_apstats_frp_06a.png
+copying images... [  7%] assets/imgs/classwork/2022_apstats_frp_06.png
+copying images... [  8%] assets/imgs/classwork/2009_apstats_frp_01.png
+copying images... [  8%] assets/imgs/classwork/2006_apcalc_frp_formb_02.png
+copying images... [  9%] assets/imgs/classwork/2017_apcalc_frp_06.png
+copying images... [  9%] assets/imgs/classwork/2015_apcalc_frp_05.png
+copying images... [ 10%] assets/imgs/classwork/2023_apcalc_frp_04.png
+copying images... [ 10%] assets/imgs/classwork/2022_apcalc_frp_03.png
+copying images... [ 11%] assets/imgs/classwork/2006_apcalc_frp_formb_03.png
+copying images... [ 12%] assets/imgs/classwork/2017_apcalc_frp_03.png
+copying images... [ 12%] assets/imgs/classwork/2018_apcalc_frp_05.png
+copying images... [ 13%] assets/imgs/classwork/jimbelk_hw4_03.png
+copying images... [ 13%] assets/imgs/classwork/custom_optimization_box.png
+copying images... [ 14%] assets/imgs/classwork/custom_optimization_river.png
+copying images... [ 14%] assets/imgs/classwork/2006_apstats_frp_formb_06.png
+copying images... [ 15%] assets/imgs/classwork/2003_apstats_frp_3.png
+copying images... [ 16%] assets/imgs/classwork/2007_apstats_frp_formb_02.png
+copying images... [ 16%] assets/imgs/classwork/2012_apstats_frp_03.png
+copying images... [ 17%] assets/imgs/classwork/2012_apstats_pe_23.png
+copying images... [ 17%] assets/imgs/problems/conditional_probability_venn_diagram.jpg
+copying images... [ 18%] assets/imgs/classwork/2019_apstats_frp_3.png
+copying images... [ 18%] assets/imgs/classwork/2015_apstats_frp_3.png
+copying images... [ 19%] assets/imgs/classwork/2003_apstats_frp_formb_05.png
+copying images... [ 20%] assets/imgs/classwork/2008_apstats_frp_formb_05.png
+copying images... [ 20%] assets/imgs/classwork/2012_apstats_frp_02.png
+copying images... [ 21%] assets/imgs/combinatorics/combinatorics_tree_diagram_coinflips.png
+copying images... [ 21%] assets/imgs/sets/sets_complement.jpg
+copying images... [ 22%] assets/imgs/classwork/2018_apstats_frp_05.png
+copying images... [ 22%] assets/imgs/classwork/2015_apstats_frp_1.png
+copying images... [ 23%] assets/imgs/classwork/2016_apstats_frp_02.png
+copying images... [ 24%] assets/imgs/classwork/2009_apstats_frp_formb_01.png
+copying images... [ 24%] assets/imgs/classwork/2019_apstats_frp_01a.png
+copying images... [ 25%] assets/imgs/classwork/2019_apstats_frp_01b.png
+copying images... [ 25%] assets/imgs/classwork/2019_apstats_frp_01c.png
+copying images... [ 26%] assets/imgs/classwork/2015_apstats_mc_08.png
+copying images... [ 26%] assets/imgs/classwork/2016_apstats_frp_01.png
+copying images... [ 27%] assets/imgs/classwork/2006_apstats_frp_1a.png
+copying images... [ 28%] assets/imgs/classwork/2006_apstats_frp_1b.png
+copying images... [ 28%] assets/imgs/classwork/2016_apstats_frp_formb_01.png
+copying images... [ 29%] assets/imgs/classwork/2007_apstats_frp_01.png
+copying images... [ 29%] assets/imgs/classwork/question_bank/data_transformations_01.png
+copying images... [ 30%] assets/imgs/context/cartesian_plane_blank.jpg
+copying images... [ 30%] assets/imgs/classwork/2012_apstats_frp_01_1.png
+copying images... [ 31%] assets/imgs/classwork/2012_apstats_frp_01_2.png
+copying images... [ 32%] assets/imgs/classwork/2016_apstats_frp_06a.png
+copying images... [ 32%] assets/imgs/classwork/2016_apstats_frp_06b.png
+copying images... [ 33%] assets/imgs/classwork/2016_apstats_frp_06c.png
+copying images... [ 33%] assets/imgs/classwork/2011_apstats_frp_05.png
+copying images... [ 34%] assets/imgs/classwork/2018_apstats_frp_01.png
+copying images... [ 34%] assets/imgs/classwork/2008_apstats_frp_02.png
+copying images... [ 35%] assets/imgs/classwork/2019_apstats_frp_06a.png
+copying images... [ 36%] assets/imgs/classwork/2019_apstats_frp_06b.png
+copying images... [ 36%] ../build/plot_directive/assets/plots/other/bar_chart.png
+copying images... [ 37%] ../build/plot_directive/assets/plots/other/stacked_bar_chart.png
+copying images... [ 37%] ../build/plot_directive/assets/plots/histograms/histogram_simple.png
+copying images... [ 38%] ../build/plot_directive/assets/plots/histograms/histogram_normal.png
+copying images... [ 38%] ../build/plot_directive/assets/plots/ogives/ogive_simple.png
+copying images... [ 39%] ../build/plot_directive/assets/plots/boxplots/boxplot_simple.png
+copying images... [ 40%] ../build/plot_directive/assets/plots/other/boxplot_and_histogram.png
+copying images... [ 40%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_pdf.png
+copying images... [ 41%] ../build/plot_directive/assets/plots/other/qq_plot_example.png
+copying images... [ 41%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_example.png
+copying images... [ 42%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_regression_line.png
+copying images... [ 42%] assets/imgs/context/geometric_series.png
+copying images... [ 43%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_01.png
+copying images... [ 44%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_02.png
+copying images... [ 44%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_03.png
+copying images... [ 45%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_04.png
+copying images... [ 45%] ../build/plot_directive/assets/plots/examples/04_ex01_die_roll.png
+copying images... [ 46%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_cdf.png
+copying images... [ 46%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_inverse.png
+copying images... [ 47%] assets/imgs/tables/table_positive_z.png
+copying images... [ 48%] assets/imgs/tables/table_positive_z_example_step1.png
+copying images... [ 48%] assets/imgs/tables/table_positive_z_example_step2.png
+copying images... [ 49%] assets/imgs/distributions/normal/normal_distribution_empirical_rule.png
+copying images... [ 49%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_parameters.png
+copying images... [ 50%] ../build/plot_directive/assets/plots/other/qq_plot_simple.png
+copying images... [ 50%] assets/imgs/statistics/sample_subset_population.jpg
+copying images... [ 51%] assets/imgs/context/wald_plane_armor.png
+copying images... [ 52%] assets/imgs/context/dewey_defeats_truman.jpg
+copying images... [ 52%] assets/imgs/context/spurious_correlation.jpeg
+copying images... [ 53%] assets/imgs/context/twins.jpg
+copying images... [ 53%] assets/imgs/statistics/randomized_blocks.png
+copying images... [ 54%] assets/imgs/statistics/measurement_scales.jpg
+copying images... [ 54%] assets/imgs/context/fuel_efficiency_null_versus_alternate.jpg
+copying images... [ 55%] assets/imgs/context/syllogism.jpg
+copying images... [ 56%] assets/imgs/sets/sets_simple.jpg
+copying images... [ 56%] assets/imgs/sets/sets_simple_with_elements.jpg
+copying images... [ 57%] assets/imgs/sets/sets_subset.jpg
+copying images... [ 57%] assets/imgs/sets/sets_union_disjoint.jpg
+copying images... [ 58%] assets/imgs/sets/sets_union_overlapping.jpg
+copying images... [ 58%] assets/imgs/sets/square_of_opposition.jpg
+copying images... [ 59%] assets/imgs/probability/sample_space_coin_flip.png
+copying images... [ 60%] assets/imgs/probability/playing_cards.jpg
+copying images... [ 60%] assets/imgs/combinatorics/combinatorics_road_trip.png
+copying images... [ 61%] assets/imgs/combinatorics/combinatorics_tree_diagram.png
+copying images... [ 61%] assets/imgs/combinatorics/combinatorics_example.png
+copying images... [ 62%] assets/imgs/combinatorics/combinatorics_permuted_tree_diagram.png
+copying images... [ 62%] assets/imgs/combinatorics/combinatorics_connection.png
+copying images... [ 63%] assets/imgs/probability/function.png
+copying images... [ 64%] assets/imgs/probability/random_variable.png
+copying images... [ 64%] assets/imgs/probability/random_variable_events.png
+copying images... [ 65%] ../build/plot_directive/assets/plots/histograms/histogram_random.png
+copying images... [ 65%] ../build/plot_directive/assets/plots/other/dot_plot.png
+copying images... [ 66%] ../build/plot_directive/assets/plots/histograms/histogram_relative.png
+copying images... [ 66%] ../build/plot_directive/assets/plots/other/pie_chart.png
+copying images... [ 67%] ../build/plot_directive/assets/plots/histograms/histogram_uniform.png
+copying images... [ 68%] assets/imgs/statistics/normal_distribution_graphic.jpg
+copying images... [ 68%] assets/imgs/context/old_faithful.jpg
+copying images... [ 69%] ../build/plot_directive/assets/plots/histograms/histogram_bimodal.png
+copying images... [ 69%] ../build/plot_directive/assets/plots/histograms/histogram_skewed_right.png
+copying images... [ 70%] ../build/plot_directive/assets/plots/histograms/histogram_skewed_left.png
+copying images... [ 70%] ../build/plot_directive/assets/plots/histograms/histogram_and_ogive.png
+copying images... [ 71%] ../build/plot_directive/assets/plots/ogives/ogive_uniform.png
+copying images... [ 72%] ../build/plot_directive/assets/plots/ogives/ogive_normal.png
+copying images... [ 72%] ../build/plot_directive/assets/plots/ogives/ogive_bimodal.png
+copying images... [ 73%] ../build/plot_directive/assets/plots/ogives/ogive_skewed_right.png
+copying images... [ 73%] ../build/plot_directive/assets/plots/ogives/ogive_skewed_left.png
+copying images... [ 74%] ../build/plot_directive/assets/plots/boxplots/boxplot_normal.png
+copying images... [ 74%] ../build/plot_directive/assets/plots/boxplots/boxplot_skewed_right.png
+copying images... [ 75%] ../build/plot_directive/assets/plots/boxplots/boxplot_skewed_left.png
+copying images... [ 76%] assets/imgs/statistics/order_statistics.jpg
+copying images... [ 76%] ../build/plot_directive/assets/plots/examples/03_ex01_unordered.png
+copying images... [ 77%] ../build/plot_directive/assets/plots/examples/03_ex02_ordered.png
+copying images... [ 77%] ../build/plot_directive/assets/plots/examples/03_ex03_skewed.png
+copying images... [ 78%] ../build/plot_directive/assets/plots/examples/03_ex04_symmetric.png
+copying images... [ 78%] ../build/plot_directive/assets/plots/examples/03_ex05_normal.png
+copying images... [ 79%] ../build/plot_directive/assets/plots/examples/03_ex07_right_skew.png
+copying images... [ 80%] ../build/plot_directive/assets/plots/examples/03_ex06_left_skew.png
+copying images... [ 80%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_no_correlation.png
+copying images... [ 81%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_positive_correlation.png
+copying images... [ 81%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_negative_correlation.png
+copying images... [ 82%] ../build/plot_directive/assets/plots/timeseries/timeseries_positive_trend.png
+copying images... [ 82%] ../build/plot_directive/assets/plots/timeseries/timeseries_negative_trend.png
+copying images... [ 83%] ../build/plot_directive/assets/plots/timeseries/timeseries_no_trend.png
+copying images... [ 84%] ../build/plot_directive/assets/plots/sampling/population_histogram.png
+copying images... [ 84%] assets/imgs/python/update_chrome_os.png
+copying images... [ 85%] assets/imgs/python/developer_mode.png
+copying images... [ 85%] assets/imgs/python/terminal.png
+copying images... [ 86%] assets/imgs/python/dock.png
+copying images... [ 86%] assets/imgs/python/pin.png
+copying images... [ 87%] assets/imgs/python/echo.png
+copying images... [ 88%] assets/imgs/python/df.png
+copying images... [ 88%] assets/imgs/python/folder_system.png
+copying images... [ 89%] assets/imgs/python/pwd.png
+copying images... [ 89%] assets/imgs/python/ls.png
+copying images... [ 90%] assets/imgs/python/python_version.png
+copying images... [ 90%] assets/imgs/python/install_step_1.png
+copying images... [ 91%] assets/imgs/python/install_step_2.png
+copying images... [ 92%] assets/imgs/python/install_step_3.png
+copying images... [ 92%] assets/imgs/python/install_step_4.png
+copying images... [ 93%] assets/imgs/python/idle_shell.png
+copying images... [ 93%] assets/imgs/python/idle_shell_command.png
+copying images... [ 94%] assets/imgs/python/idle_editor.png
+copying images... [ 94%] assets/imgs/python/idle_editor_results.png
+copying images... [ 95%] assets/imgs/python/matplotlib_tk_install_done.png
+copying images... [ 96%] assets/imgs/python/matplotlib_colors.png
+copying images... [ 96%] ../build/plot_directive/assets/plots/other/qq_plot.png
+copying images... [ 97%] ../build/plot_directive/assets/demos/least_squares.png
+copying images... [ 97%] assets/imgs/python/download_source.png
+copying images... [ 98%] assets/imgs/tables/table_negative_z.png
+copying images... [ 98%] assets/imgs/tables/table_chi_squared.jpg
+copying images... [ 99%] assets/imgs/tables/table_t.jpg
+copying images... [100%] assets/imgs/tables/table_pearson_correlation.png
+
+copying downloadable files... [  0%] assets/datasets/challenger_damage_data.csv
+copying downloadable files... [  0%] assets/datasets/challenger_erosion_data.csv
+copying downloadable files... [  1%] assets/datasets/titanic_survivors_data.csv
+copying downloadable files... [  1%] assets/datasets/roman_emperors_data.csv
+copying downloadable files... [  1%] assets/datasets/vietnam_draft_data.csv
+copying downloadable files... [  2%] assets/datasets/alpha_particle_emissions_data.csv
+copying downloadable files... [  2%] assets/datasets/geiger_counter_dc_data.csv
+copying downloadable files... [  2%] assets/datasets/geiger_freq_data.csv
+copying downloadable files... [  3%] assets/datasets/bird_collision_cleveland_data.csv
+copying downloadable files... [  3%] assets/datasets/bird_collision_chicago_data.csv
+copying downloadable files... [  3%] assets/datasets/cicada_data.csv
+copying downloadable files... [  4%] assets/datasets/bear_measurements_data.csv
+copying downloadable files... [  4%] assets/datasets/earth_density_data.csv
+copying downloadable files... [  4%] assets/datasets/lettuce_growth_data.csv
+copying downloadable files... [  5%] assets/datasets/london_weather_data.csv
+copying downloadable files... [  5%] assets/datasets/manatee_death_data.csv
+copying downloadable files... [  5%] assets/datasets/meteorite_landings_data.csv
+copying downloadable files... [  6%] assets/datasets/old_faithful_data.csv
+copying downloadable files... [  6%] assets/datasets/velocity_of_light_data.csv
+copying downloadable files... [  7%] assets/datasets/avocado_prices_data.csv
+copying downloadable files... [  7%] assets/datasets/billionaries_data.csv
+copying downloadable files... [  7%] assets/datasets/electric_vehicle_population_data.csv
+copying downloadable files... [  8%] assets/datasets/diamonds_data.csv
+copying downloadable files... [  8%] assets/datasets/celebrity_twitter_data.csv
+copying downloadable files... [  8%] assets/datasets/kentucky_derby_winners_data.csv
+copying downloadable files... [  9%] assets/datasets/mega_millions_data.csv
+copying downloadable files... [  9%] assets/datasets/plane_crash_data.csv
+copying downloadable files... [  9%] assets/datasets/pigeon_racing_times_data.csv
+copying downloadable files... [ 10%] assets/datasets/rainbow_road_world_record_data.csv
+copying downloadable files... [ 10%] assets/datasets/spice_girls_song_data.csv
+copying downloadable files... [ 10%] assets/datasets/wine_red_quality_data.csv
+copying downloadable files... [ 11%] assets/datasets/wine_white_quality_data.csv
+copying downloadable files... [ 11%] ../build/plot_directive/assets/plots/other/bar_chart.py
+copying downloadable files... [ 11%] ../build/plot_directive/assets/plots/other/bar_chart.png
+copying downloadable files... [ 12%] ../build/plot_directive/assets/plots/other/bar_chart.hires.png
+copying downloadable files... [ 12%] ../build/plot_directive/assets/plots/other/bar_chart.pdf
+copying downloadable files... [ 13%] ../build/plot_directive/assets/plots/other/stacked_bar_chart.py
+copying downloadable files... [ 13%] ../build/plot_directive/assets/plots/other/stacked_bar_chart.png
+copying downloadable files... [ 13%] ../build/plot_directive/assets/plots/other/stacked_bar_chart.hires.png
+copying downloadable files... [ 14%] ../build/plot_directive/assets/plots/other/stacked_bar_chart.pdf
+copying downloadable files... [ 14%] ../build/plot_directive/assets/plots/histograms/histogram_normal.py
+copying downloadable files... [ 14%] ../build/plot_directive/assets/plots/histograms/histogram_normal.png
+copying downloadable files... [ 15%] ../build/plot_directive/assets/plots/histograms/histogram_normal.hires.png
+copying downloadable files... [ 15%] ../build/plot_directive/assets/plots/histograms/histogram_normal.pdf
+copying downloadable files... [ 15%] ../build/plot_directive/assets/plots/other/dot_plot.py
+copying downloadable files... [ 16%] ../build/plot_directive/assets/plots/other/dot_plot.png
+copying downloadable files... [ 16%] ../build/plot_directive/assets/plots/other/dot_plot.hires.png
+copying downloadable files... [ 16%] ../build/plot_directive/assets/plots/other/dot_plot.pdf
+copying downloadable files... [ 17%] ../build/plot_directive/assets/plots/histograms/histogram_relative.py
+copying downloadable files... [ 17%] ../build/plot_directive/assets/plots/histograms/histogram_relative.png
+copying downloadable files... [ 17%] ../build/plot_directive/assets/plots/histograms/histogram_relative.hires.png
+copying downloadable files... [ 18%] ../build/plot_directive/assets/plots/histograms/histogram_relative.pdf
+copying downloadable files... [ 18%] ../build/plot_directive/assets/plots/other/pie_chart.py
+copying downloadable files... [ 19%] ../build/plot_directive/assets/plots/other/pie_chart.png
+copying downloadable files... [ 19%] ../build/plot_directive/assets/plots/other/pie_chart.hires.png
+copying downloadable files... [ 19%] ../build/plot_directive/assets/plots/other/pie_chart.pdf
+copying downloadable files... [ 20%] ../build/plot_directive/assets/plots/ogives/ogive_normal.py
+copying downloadable files... [ 20%] ../build/plot_directive/assets/plots/ogives/ogive_normal.png
+copying downloadable files... [ 20%] ../build/plot_directive/assets/plots/ogives/ogive_normal.hires.png
+copying downloadable files... [ 21%] ../build/plot_directive/assets/plots/ogives/ogive_normal.pdf
+copying downloadable files... [ 21%] ../build/plot_directive/assets/plots/boxplots/boxplot_normal.py
+copying downloadable files... [ 21%] ../build/plot_directive/assets/plots/boxplots/boxplot_normal.png
+copying downloadable files... [ 22%] ../build/plot_directive/assets/plots/boxplots/boxplot_normal.hires.png
+copying downloadable files... [ 22%] ../build/plot_directive/assets/plots/boxplots/boxplot_normal.pdf
+copying downloadable files... [ 22%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_no_correlation.py
+copying downloadable files... [ 23%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_no_correlation.png
+copying downloadable files... [ 23%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_no_correlation.hires.png
+copying downloadable files... [ 23%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_no_correlation.pdf
+copying downloadable files... [ 24%] ../build/plot_directive/assets/plots/timeseries/timeseries_no_trend.py
+copying downloadable files... [ 24%] ../build/plot_directive/assets/plots/timeseries/timeseries_no_trend.png
+copying downloadable files... [ 25%] ../build/plot_directive/assets/plots/timeseries/timeseries_no_trend.hires.png
+copying downloadable files... [ 25%] ../build/plot_directive/assets/plots/timeseries/timeseries_no_trend.pdf
+copying downloadable files... [ 25%] ../build/plot_directive/assets/plots/histograms/histogram_simple.py
+copying downloadable files... [ 26%] ../build/plot_directive/assets/plots/histograms/histogram_simple.png
+copying downloadable files... [ 26%] ../build/plot_directive/assets/plots/histograms/histogram_simple.hires.png
+copying downloadable files... [ 26%] ../build/plot_directive/assets/plots/histograms/histogram_simple.pdf
+copying downloadable files... [ 27%] ../build/plot_directive/assets/plots/ogives/ogive_simple.py
+copying downloadable files... [ 27%] ../build/plot_directive/assets/plots/ogives/ogive_simple.png
+copying downloadable files... [ 27%] ../build/plot_directive/assets/plots/ogives/ogive_simple.hires.png
+copying downloadable files... [ 28%] ../build/plot_directive/assets/plots/ogives/ogive_simple.pdf
+copying downloadable files... [ 28%] ../build/plot_directive/assets/plots/boxplots/boxplot_simple.py
+copying downloadable files... [ 28%] ../build/plot_directive/assets/plots/boxplots/boxplot_simple.png
+copying downloadable files... [ 29%] ../build/plot_directive/assets/plots/boxplots/boxplot_simple.hires.png
+copying downloadable files... [ 29%] ../build/plot_directive/assets/plots/boxplots/boxplot_simple.pdf
+copying downloadable files... [ 29%] ../build/plot_directive/assets/plots/other/boxplot_and_histogram.py
+copying downloadable files... [ 30%] ../build/plot_directive/assets/plots/other/boxplot_and_histogram.png
+copying downloadable files... [ 30%] ../build/plot_directive/assets/plots/other/boxplot_and_histogram.hires.png
+copying downloadable files... [ 30%] ../build/plot_directive/assets/plots/other/boxplot_and_histogram.pdf
+copying downloadable files... [ 31%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_pdf.py
+copying downloadable files... [ 31%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_pdf.png
+copying downloadable files... [ 32%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_pdf.hires.png
+copying downloadable files... [ 32%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_pdf.pdf
+copying downloadable files... [ 32%] ../build/plot_directive/assets/plots/other/qq_plot_example.py
+copying downloadable files... [ 33%] ../build/plot_directive/assets/plots/other/qq_plot_example.png
+copying downloadable files... [ 33%] ../build/plot_directive/assets/plots/other/qq_plot_example.hires.png
+copying downloadable files... [ 33%] ../build/plot_directive/assets/plots/other/qq_plot_example.pdf
+copying downloadable files... [ 34%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_example.py
+copying downloadable files... [ 34%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_example.png
+copying downloadable files... [ 34%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_example.hires.png
+copying downloadable files... [ 35%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_example.pdf
+copying downloadable files... [ 35%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_regression_line.py
+copying downloadable files... [ 35%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_regression_line.png
+copying downloadable files... [ 36%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_regression_line.hires.png
+copying downloadable files... [ 36%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_regression_line.pdf
+copying downloadable files... [ 36%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_01.py
+copying downloadable files... [ 37%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_01.png
+copying downloadable files... [ 37%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_01.hires.png
+copying downloadable files... [ 38%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_01.pdf
+copying downloadable files... [ 38%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_02.py
+copying downloadable files... [ 38%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_02.png
+copying downloadable files... [ 39%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_02.hires.png
+copying downloadable files... [ 39%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_02.pdf
+copying downloadable files... [ 39%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_03.py
+copying downloadable files... [ 40%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_03.png
+copying downloadable files... [ 40%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_03.hires.png
+copying downloadable files... [ 40%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_03.pdf
+copying downloadable files... [ 41%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_04.py
+copying downloadable files... [ 41%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_04.png
+copying downloadable files... [ 41%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_04.hires.png
+copying downloadable files... [ 42%] ../build/plot_directive/assets/plots/distributions/binomial/binomial_distribution_04.pdf
+copying downloadable files... [ 42%] ../build/plot_directive/assets/plots/examples/04_ex01_die_roll.py
+copying downloadable files... [ 42%] ../build/plot_directive/assets/plots/examples/04_ex01_die_roll.png
+copying downloadable files... [ 43%] ../build/plot_directive/assets/plots/examples/04_ex01_die_roll.hires.png
+copying downloadable files... [ 43%] ../build/plot_directive/assets/plots/examples/04_ex01_die_roll.pdf
+copying downloadable files... [ 44%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_cdf.py
+copying downloadable files... [ 44%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_cdf.png
+copying downloadable files... [ 44%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_cdf.hires.png
+copying downloadable files... [ 45%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_cdf.pdf
+copying downloadable files... [ 45%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_inverse.py
+copying downloadable files... [ 45%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_inverse.png
+copying downloadable files... [ 46%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_inverse.hires.png
+copying downloadable files... [ 46%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_inverse.pdf
+copying downloadable files... [ 46%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_parameters.py
+copying downloadable files... [ 47%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_parameters.png
+copying downloadable files... [ 47%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_parameters.hires.png
+copying downloadable files... [ 47%] ../build/plot_directive/assets/plots/distributions/normal/normal_distribution_parameters.pdf
+copying downloadable files... [ 48%] ../build/plot_directive/assets/plots/other/qq_plot_simple.py
+copying downloadable files... [ 48%] ../build/plot_directive/assets/plots/other/qq_plot_simple.png
+copying downloadable files... [ 48%] ../build/plot_directive/assets/plots/other/qq_plot_simple.hires.png
+copying downloadable files... [ 49%] ../build/plot_directive/assets/plots/other/qq_plot_simple.pdf
+copying downloadable files... [ 49%] ../build/plot_directive/assets/plots/histograms/histogram_random.py
+copying downloadable files... [ 50%] ../build/plot_directive/assets/plots/histograms/histogram_random.png
+copying downloadable files... [ 50%] ../build/plot_directive/assets/plots/histograms/histogram_random.hires.png
+copying downloadable files... [ 50%] ../build/plot_directive/assets/plots/histograms/histogram_random.pdf
+copying downloadable files... [ 51%] ../build/plot_directive/assets/plots/histograms/histogram_uniform.py
+copying downloadable files... [ 51%] ../build/plot_directive/assets/plots/histograms/histogram_uniform.png
+copying downloadable files... [ 51%] ../build/plot_directive/assets/plots/histograms/histogram_uniform.hires.png
+copying downloadable files... [ 52%] ../build/plot_directive/assets/plots/histograms/histogram_uniform.pdf
+copying downloadable files... [ 52%] ../build/plot_directive/assets/plots/histograms/histogram_bimodal.py
+copying downloadable files... [ 52%] ../build/plot_directive/assets/plots/histograms/histogram_bimodal.png
+copying downloadable files... [ 53%] ../build/plot_directive/assets/plots/histograms/histogram_bimodal.hires.png
+copying downloadable files... [ 53%] ../build/plot_directive/assets/plots/histograms/histogram_bimodal.pdf
+copying downloadable files... [ 53%] ../build/plot_directive/assets/plots/histograms/histogram_skewed_right.py
+copying downloadable files... [ 54%] ../build/plot_directive/assets/plots/histograms/histogram_skewed_right.png
+copying downloadable files... [ 54%] ../build/plot_directive/assets/plots/histograms/histogram_skewed_right.hires.png
+copying downloadable files... [ 54%] ../build/plot_directive/assets/plots/histograms/histogram_skewed_right.pdf
+copying downloadable files... [ 55%] ../build/plot_directive/assets/plots/histograms/histogram_skewed_left.py
+copying downloadable files... [ 55%] ../build/plot_directive/assets/plots/histograms/histogram_skewed_left.png
+copying downloadable files... [ 55%] ../build/plot_directive/assets/plots/histograms/histogram_skewed_left.hires.png
+copying downloadable files... [ 56%] ../build/plot_directive/assets/plots/histograms/histogram_skewed_left.pdf
+copying downloadable files... [ 56%] ../build/plot_directive/assets/plots/histograms/histogram_and_ogive.py
+copying downloadable files... [ 57%] ../build/plot_directive/assets/plots/histograms/histogram_and_ogive.png
+copying downloadable files... [ 57%] ../build/plot_directive/assets/plots/histograms/histogram_and_ogive.hires.png
+copying downloadable files... [ 57%] ../build/plot_directive/assets/plots/histograms/histogram_and_ogive.pdf
+copying downloadable files... [ 58%] ../build/plot_directive/assets/plots/ogives/ogive_uniform.py
+copying downloadable files... [ 58%] ../build/plot_directive/assets/plots/ogives/ogive_uniform.png
+copying downloadable files... [ 58%] ../build/plot_directive/assets/plots/ogives/ogive_uniform.hires.png
+copying downloadable files... [ 59%] ../build/plot_directive/assets/plots/ogives/ogive_uniform.pdf
+copying downloadable files... [ 59%] ../build/plot_directive/assets/plots/ogives/ogive_bimodal.py
+copying downloadable files... [ 59%] ../build/plot_directive/assets/plots/ogives/ogive_bimodal.png
+copying downloadable files... [ 60%] ../build/plot_directive/assets/plots/ogives/ogive_bimodal.hires.png
+copying downloadable files... [ 60%] ../build/plot_directive/assets/plots/ogives/ogive_bimodal.pdf
+copying downloadable files... [ 60%] ../build/plot_directive/assets/plots/ogives/ogive_skewed_right.py
+copying downloadable files... [ 61%] ../build/plot_directive/assets/plots/ogives/ogive_skewed_right.png
+copying downloadable files... [ 61%] ../build/plot_directive/assets/plots/ogives/ogive_skewed_right.hires.png
+copying downloadable files... [ 61%] ../build/plot_directive/assets/plots/ogives/ogive_skewed_right.pdf
+copying downloadable files... [ 62%] ../build/plot_directive/assets/plots/ogives/ogive_skewed_left.py
+copying downloadable files... [ 62%] ../build/plot_directive/assets/plots/ogives/ogive_skewed_left.png
+copying downloadable files... [ 63%] ../build/plot_directive/assets/plots/ogives/ogive_skewed_left.hires.png
+copying downloadable files... [ 63%] ../build/plot_directive/assets/plots/ogives/ogive_skewed_left.pdf
+copying downloadable files... [ 63%] ../build/plot_directive/assets/plots/boxplots/boxplot_skewed_right.py
+copying downloadable files... [ 64%] ../build/plot_directive/assets/plots/boxplots/boxplot_skewed_right.png
+copying downloadable files... [ 64%] ../build/plot_directive/assets/plots/boxplots/boxplot_skewed_right.hires.png
+copying downloadable files... [ 64%] ../build/plot_directive/assets/plots/boxplots/boxplot_skewed_right.pdf
+copying downloadable files... [ 65%] ../build/plot_directive/assets/plots/boxplots/boxplot_skewed_left.py
+copying downloadable files... [ 65%] ../build/plot_directive/assets/plots/boxplots/boxplot_skewed_left.png
+copying downloadable files... [ 65%] ../build/plot_directive/assets/plots/boxplots/boxplot_skewed_left.hires.png
+copying downloadable files... [ 66%] ../build/plot_directive/assets/plots/boxplots/boxplot_skewed_left.pdf
+copying downloadable files... [ 66%] ../build/plot_directive/assets/plots/examples/03_ex01_unordered.py
+copying downloadable files... [ 66%] ../build/plot_directive/assets/plots/examples/03_ex01_unordered.png
+copying downloadable files... [ 67%] ../build/plot_directive/assets/plots/examples/03_ex01_unordered.hires.png
+copying downloadable files... [ 67%] ../build/plot_directive/assets/plots/examples/03_ex01_unordered.pdf
+copying downloadable files... [ 67%] ../build/plot_directive/assets/plots/examples/03_ex02_ordered.py
+copying downloadable files... [ 68%] ../build/plot_directive/assets/plots/examples/03_ex02_ordered.png
+copying downloadable files... [ 68%] ../build/plot_directive/assets/plots/examples/03_ex02_ordered.hires.png
+copying downloadable files... [ 69%] ../build/plot_directive/assets/plots/examples/03_ex02_ordered.pdf
+copying downloadable files... [ 69%] ../build/plot_directive/assets/plots/examples/03_ex03_skewed.py
+copying downloadable files... [ 69%] ../build/plot_directive/assets/plots/examples/03_ex03_skewed.png
+copying downloadable files... [ 70%] ../build/plot_directive/assets/plots/examples/03_ex03_skewed.hires.png
+copying downloadable files... [ 70%] ../build/plot_directive/assets/plots/examples/03_ex03_skewed.pdf
+copying downloadable files... [ 70%] ../build/plot_directive/assets/plots/examples/03_ex04_symmetric.py
+copying downloadable files... [ 71%] ../build/plot_directive/assets/plots/examples/03_ex04_symmetric.png
+copying downloadable files... [ 71%] ../build/plot_directive/assets/plots/examples/03_ex04_symmetric.hires.png
+copying downloadable files... [ 71%] ../build/plot_directive/assets/plots/examples/03_ex04_symmetric.pdf
+copying downloadable files... [ 72%] ../build/plot_directive/assets/plots/examples/03_ex05_normal.py
+copying downloadable files... [ 72%] ../build/plot_directive/assets/plots/examples/03_ex05_normal.png
+copying downloadable files... [ 72%] ../build/plot_directive/assets/plots/examples/03_ex05_normal.hires.png
+copying downloadable files... [ 73%] ../build/plot_directive/assets/plots/examples/03_ex05_normal.pdf
+copying downloadable files... [ 73%] ../build/plot_directive/assets/plots/examples/03_ex07_right_skew.py
+copying downloadable files... [ 73%] ../build/plot_directive/assets/plots/examples/03_ex07_right_skew.png
+copying downloadable files... [ 74%] ../build/plot_directive/assets/plots/examples/03_ex07_right_skew.hires.png
+copying downloadable files... [ 74%] ../build/plot_directive/assets/plots/examples/03_ex07_right_skew.pdf
+copying downloadable files... [ 75%] ../build/plot_directive/assets/plots/examples/03_ex06_left_skew.py
+copying downloadable files... [ 75%] ../build/plot_directive/assets/plots/examples/03_ex06_left_skew.png
+copying downloadable files... [ 75%] ../build/plot_directive/assets/plots/examples/03_ex06_left_skew.hires.png
+copying downloadable files... [ 76%] ../build/plot_directive/assets/plots/examples/03_ex06_left_skew.pdf
+copying downloadable files... [ 76%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_positive_correlation.py
+copying downloadable files... [ 76%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_positive_correlation.png
+copying downloadable files... [ 77%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_positive_correlation.hires.png
+copying downloadable files... [ 77%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_positive_correlation.pdf
+copying downloadable files... [ 77%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_negative_correlation.py
+copying downloadable files... [ 78%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_negative_correlation.png
+copying downloadable files... [ 78%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_negative_correlation.hires.png
+copying downloadable files... [ 78%] ../build/plot_directive/assets/plots/scatterplots/scatterplot_negative_correlation.pdf
+copying downloadable files... [ 79%] ../build/plot_directive/assets/plots/timeseries/timeseries_positive_trend.py
+copying downloadable files... [ 79%] ../build/plot_directive/assets/plots/timeseries/timeseries_positive_trend.png
+copying downloadable files... [ 79%] ../build/plot_directive/assets/plots/timeseries/timeseries_positive_trend.hires.png
+copying downloadable files... [ 80%] ../build/plot_directive/assets/plots/timeseries/timeseries_positive_trend.pdf
+copying downloadable files... [ 80%] ../build/plot_directive/assets/plots/timeseries/timeseries_negative_trend.py
+copying downloadable files... [ 80%] ../build/plot_directive/assets/plots/timeseries/timeseries_negative_trend.png
+copying downloadable files... [ 81%] ../build/plot_directive/assets/plots/timeseries/timeseries_negative_trend.hires.png
+copying downloadable files... [ 81%] ../build/plot_directive/assets/plots/timeseries/timeseries_negative_trend.pdf
+copying downloadable files... [ 82%] ../build/plot_directive/assets/plots/sampling/population_histogram.py
+copying downloadable files... [ 82%] ../build/plot_directive/assets/plots/sampling/population_histogram.png
+copying downloadable files... [ 82%] ../build/plot_directive/assets/plots/sampling/population_histogram.hires.png
+copying downloadable files... [ 83%] ../build/plot_directive/assets/plots/sampling/population_histogram.pdf
+copying downloadable files... [ 83%] assets/worksheets/Student_BirthdayProblem.pdf
+copying downloadable files... [ 83%] assets/worksheets/Student_Dice.pdf
+copying downloadable files... [ 84%] assets/worksheets/Student_CountingPrinciple.pdf
+copying downloadable files... [ 84%] assets/worksheets/Student_Independence.pdf
+copying downloadable files... [ 84%] assets/worksheets/Student_Density.pdf
+copying downloadable files... [ 85%] assets/worksheets/Student_ProbabilitySimulations.pdf
+copying downloadable files... [ 85%] assets/worksheets/Student_TossSimulation.pdf
+copying downloadable files... [ 85%] assets/worksheets/Teacher_BirthdayProblem.pdf
+copying downloadable files... [ 86%] assets/worksheets/Teacher_Dice.pdf
+copying downloadable files... [ 86%] assets/worksheets/Teacher_CountingPrinciple.pdf
+copying downloadable files... [ 86%] assets/worksheets/Teacher_Independence.pdf
+copying downloadable files... [ 87%] assets/worksheets/Teacher_Density.pdf
+copying downloadable files... [ 87%] assets/worksheets/Teacher_ProbabilitySimulations.pdf
+copying downloadable files... [ 88%] assets/worksheets/Teacher_TossSimulation.pdf
+copying downloadable files... [ 88%] assets/worksheets/Student_Distributions.pdf
+copying downloadable files... [ 88%] assets/worksheets/data/P4.8xl
+copying downloadable files... [ 89%] assets/worksheets/data/P5.8xl
+copying downloadable files... [ 89%] assets/worksheets/Student_HistogramsBoxplots.pdf
+copying downloadable files... [ 89%] assets/worksheets/data/AVG.8xl
+copying downloadable files... [ 90%] assets/worksheets/data/LONG.8xl
+copying downloadable files... [ 90%] assets/worksheets/data/TDS.8xl
+copying downloadable files... [ 90%] assets/worksheets/data/YARDS.8xl
+copying downloadable files... [ 91%] assets/worksheets/Student_1and2VariableReview.pdf
+copying downloadable files... [ 91%] assets/worksheets/data/1and2VariableReview_HealthData.xls
+copying downloadable files... [ 91%] assets/worksheets/Student_StatTwoWay.pdf
+copying downloadable files... [ 92%] assets/worksheets/data/NUCLEAR.8xv
+copying downloadable files... [ 92%] assets/worksheets/data/TWOWAY.8xv
+copying downloadable files... [ 92%] assets/worksheets/Teacher_Distributions.pdf
+copying downloadable files... [ 93%] assets/worksheets/Teacher_HistogramsBoxplots.pdf
+copying downloadable files... [ 93%] assets/worksheets/Teacher_1and2VariableReview.pdf
+copying downloadable files... [ 94%] assets/worksheets/Teacher_StatTwoWay.pdf
+copying downloadable files... [ 94%] ../build/plot_directive/assets/plots/other/qq_plot.py
+copying downloadable files... [ 94%] ../build/plot_directive/assets/plots/other/qq_plot.png
+copying downloadable files... [ 95%] ../build/plot_directive/assets/plots/other/qq_plot.hires.png
+copying downloadable files... [ 95%] ../build/plot_directive/assets/plots/other/qq_plot.pdf
+copying downloadable files... [ 95%] assets/demos/conditional_distributions.py
+copying downloadable files... [ 96%] assets/demos/stats.py
+copying downloadable files... [ 96%] assets/demos/variation.py
+copying downloadable files... [ 96%] assets/demos/outliers.py
+copying downloadable files... [ 97%] assets/demos/scatter_plot.py
+copying downloadable files... [ 97%] assets/demos/die_rolls.py
+copying downloadable files... [ 97%] assets/demos/normal_probabilities.py
+copying downloadable files... [ 98%] assets/demos/qq_plot.py
+copying downloadable files... [ 98%] assets/demos/least_squares.py
+copying downloadable files... [ 98%] ../build/plot_directive/assets/demos/least_squares.py
+copying downloadable files... [ 99%] ../build/plot_directive/assets/demos/least_squares.png
+copying downloadable files... [ 99%] ../build/plot_directive/assets/demos/least_squares.hires.png
+copying downloadable files... [100%] ../build/plot_directive/assets/demos/least_squares.pdf
+
+copying static files... done
+copying extra files... done
+dumping search index in English (code: en)... done
+dumping object inventory... done
+build succeeded, 369 warnings.
+
+The HTML pages are in build/html.

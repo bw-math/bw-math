@@ -104,29 +104,8 @@ Use this information to answer the following problems.
 
 	b. An alternative sampling method would be to select a stratified random sample of eight apartments, where the strata are apartments with children and apartments with no children. A stratified random sample of size eight might include two randomly selected apartments with children and six randomly selected apartments with no children. In the context of this situation, give one statistical advantage of selecting such a stratified sample as opposed to a cluster sample of eight apartments using the floors as clusters.
 
-9. Students are designing an experiment to compare the productivity of two varieties of dwarf fruit trees. The site for the experiment is a field that is bordered by a densely forested area on the west side. The field has been divided into eight plots of approximately the same area. The students have decided that the test plots should be blocked. Four trees, each of two varieties, will be assigned at random to the
-four plots within each block, with one tree planted in each plot.
 
-The two blocking schemes shown below are under consideration. For each scheme, one block is identified by the white region and the other block indicated by the grey region in the figures.
-
-.. image:: ../../../assets/imgs/classwork/noblestatman_design_03.png
-	:align: center
-	
-	a. Which of the blocking schemes , A or B, is better for this experiment? Explain.
-
-	b. Even though the students have decided to block, they must randomly assign the varieties of the trees to the plots within each block. What is the purpose of this randomization in the context of the experiment?
-
-9. **Noble Statman** The dentists in a dental clinic would like to determine if there is a difference between the number of new cavities in people who eat an apple a day and in people who eat less than one apple a week. They are going to conduct a study with 50 people in each group.
-
-Fifty clinics patients who report that they routinely eat an apple a day and 50 clinic patients who report that they eat less than one apple a week will be identified. The dentists will examine the patients and their records to determine the number of new cavities the patients have had over the past two years. They will then compare the number of new cavities in the two groups.
-
-	a. Why is this an observational study and not an experiment?
-
-	b. Explain the concept of confounding in the context of this study. Include an example of a possible confounding variable.
-
-	c. If the mean number of new cavities for those who ate an apple a day was statistically significantly smaller than the mean number of new cavities for those who ate less than one apple a week, could one conclude that the lower number of new cavities can be attributed to eating an apple a day? Explain.
-
-10. **2006, Free Response, #5** 
+9. **2006, Free Response, #5** 
 
 A biologist is interested in studying the effect of growth-enhancing nutrients an different salinity (salt) levels in water on the growth of shrimps. The biologist has ordered a large shipment of young tiger shrimps from a supply house for use in the study. The experiment is to be conducted in a laboratory where 10 tiger shrimps are placed randomly into each of 12 similar tanks in a controlled environment.
 
@@ -141,12 +120,12 @@ salinity levels (low and high).
 
 	d. Give one statistical disadvantage to having only tiger shrimps in the experiment. Explain why this is a disadvantage.
 
-11. A manufacturer of boots plans to conduct an experiment to compare a new method of waterproofing to the current method. The appearance of the boots is not changed by either method. The company recruits 100 volunteers in Seattle, where it rains frequently, to wear the boots as they normally would for 6 months. At the end of the 6 months, the boots will be returned to the company to be evaluated for water damage.
+10. A manufacturer of boots plans to conduct an experiment to compare a new method of waterproofing to the current method. The appearance of the boots is not changed by either method. The company recruits 100 volunteers in Seattle, where it rains frequently, to wear the boots as they normally would for 6 months. At the end of the 6 months, the boots will be returned to the company to be evaluated for water damage.
 
 	a. Describe a design for this experiment that uses the 100 volunteers. Include a few sentences on how it would be implemented.
 
 	b. Could your design be double blind? Explain
 
-12. **2016, Free Response, #3**
+11. **2016, Free Response, #3**
 
 TODO

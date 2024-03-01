@@ -71,7 +71,7 @@ The `Michelson Velocity of Light Experiment <https://www.gutenberg.org/files/117
 
 Michelson's 1879 experimental results remained one of most accurate estimations of the speed of light until modern times. Using a series of mirrors depicted below, Michelson was able to divert light rays emitting from a common source along separate paths and then measure the fractional time difference it took for the rays to reach the same location.
 
-.. image:: ../../assets/imgs/context/michelson_experiment.png
+.. image:: ../../../assets/imgs/context/michelson_experiment.png
     :width: 60%
     :align: center
 
@@ -94,7 +94,7 @@ Henry Cavendish performed the first modern, scientific experiment to measure the
 
 Using the mutual gravitational attraction of two heavy metal balls attached to a `torsion balanace <https://en.wikipedia.org/wiki/Torsion_spring#Torsion_balance>`_ to twist a fiber of string, Cavendish measured the force of the tension produced. 
 
-.. image:: ../../assets/imgs/context/cavendish_torsion_balance.png
+.. image:: ../../../assets/imgs/context/cavendish_torsion_balance.png
 	:width: 60%
 	:align: center
 
@@ -561,7 +561,7 @@ You can download the full dataset :download:`here <../../assets/datasets/velocit
 The following table is the a preview of the data you will be using for this project. 
 
 .. csv-table:: Michelson's Velocity of Light Data
-   :file: ../../assets/datasets/previews/velocity_of_light_data_preview.csv
+   :file: ../../../assets/datasets/previews/velocity_of_light_data_preview.csv
 
 The meaning of the column is clear from the column header: each observation measures the speed of light in meters per second, :math:`\frac{km}{s}`.
 
@@ -573,7 +573,7 @@ You can download the full dataset :download:`here <../../assets/datasets/earth_d
 The following table is the a preview of the data you will be using for this project. 
 
 .. csv-table:: Cavendish's Density of the Earth Data
-   :file: ../../assets/datasets/previews/earth_density_data_preview.csv
+   :file: ../../../assets/datasets/previews/earth_density_data_preview.csv
 
 The first column corresponds to the experiment number (first, second, third, etc.). The second column is the *ratio of the density of Earth to the density of water*. Recall the density of water by definition is :math:`1 \frac{g}{cm^3}`.
 

@@ -14,15 +14,15 @@ Type I Errors
 
 TODO
 
-.. topic::
+.. topic:: Type I Error
 
-	TODO
+	A *Type I Error* is **rejecting** the null hypothesis when it is **true**. 
 	
 Type II Errors
 --------------
 
 TODO
 
-.. topic:: 
+.. topic:: Type II Error
 
-	TODO
+	A *Type II Error** is **not rejecting** the null hypothesis when it is **false**.

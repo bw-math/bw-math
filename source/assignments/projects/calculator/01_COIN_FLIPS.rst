@@ -45,7 +45,7 @@ AUGMENT is a list operation that takes a list as input and produces a new list a
 
 .. math::
 
-	\{ 1, 2, 3 \} \rarrow L_1
+	\{ 1, 2, 3 \} \rightarrow L_1
 	
 In other words, store the list ﻿:math:`\{ 1, 2, 3 `\} in :math:`L_1`. 
 
@@ -62,7 +62,7 @@ Execute the following command,
 
 .. math::
 
-	\text{augment}(L_1, \{ 4 \}) \rarrow L_1
+	\text{augment}(L_1, \{ 4 \}) \rightarrow L_1
 
 With AUGMENT, we have told our calculators to take the current list stored in ﻿:math:`L_1`, merge it with the list ﻿:math:`\{ 4 \}` and then store the result back in ﻿:math:`L_1`
 ﻿

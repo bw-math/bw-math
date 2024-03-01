@@ -496,7 +496,7 @@ You can download the full dataset :download:`here <../../assets/datasets/celebri
 The following table is a preview of the data you will be using for this project.
 
 .. csv-table:: Celebrity Twitter Followers and Tweet Count
-    :file: ../../assets/datasets/previews/celebrity_twitter_data_preview.csv
+    :file: ../../../assets/datasets/previews/celebrity_twitter_data_preview.csv
 
 The fifth column represents the number of followers for a given Twitter user. The sixth column represents the number of tweets for a given Twitter user.
 
@@ -508,7 +508,7 @@ You can download the full dataset :download:`here <../../assets/datasets/old_fai
 The following table is a preview of the data you will be using for this project. 
 
 .. csv-table:: Old Faithful Eruption and Waiting Times
-   :file: ../../assets/datasets/previews/old_faithful_data_preview.csv
+   :file: ../../../assets/datasets/previews/old_faithful_data_preview.csv
 
 The first column represents the length of the eruption in minutes. The second column represents the waiting time in minutes until the next eruption.
 
@@ -520,7 +520,7 @@ You can download the full dataset :download:`here <../../assets/datasets/spice_g
 The following table is the a preview of the data you will be using for this project. 
 
 .. csv-table:: Spice Girl Song Lengths
-   :file: ../../assets/datasets/previews/spice_girls_song_data_preview.csv
+   :file: ../../../assets/datasets/previews/spice_girls_song_data_preview.csv
 
 The third column represents the song length in milliseconds. The fifth column represents the track number of the song on the studio album on which it was released.
 
