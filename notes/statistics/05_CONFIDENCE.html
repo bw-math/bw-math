@@ -497,9 +497,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#means">Means</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#known-standard-deviation">Known Standard Deviation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unknown-standard-deviation">Unknown Standard Deviation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#critical-value">Critical Value</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-error">Standard Error</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#margin-of-error">Margin of Error</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intervals">Intervals</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population-mean">Population Mean</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-population-means">Difference of Population Means</a></li>
 </ul>
 </li>
 </ul>
@@ -515,38 +521,71 @@ document.write(`
                   
   <section id="confidence-intervals">
 <span id="id1"></span><h1>Confidence Intervals<a class="headerlink" href="#confidence-intervals" title="Permalink to this heading">#</a></h1>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this heading">#</a></h2>
+<section id="critical-value">
+<h3>Critical Value<a class="headerlink" href="#critical-value" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
-<section id="means">
-<h2>Means<a class="headerlink" href="#means" title="Permalink to this heading">#</a></h2>
-<section id="known-standard-deviation">
-<h3>Known Standard Deviation<a class="headerlink" href="#known-standard-deviation" title="Permalink to this heading">#</a></h3>
 <aside class="topic">
-<p class="topic-title">Critical Value</p>
+<p class="topic-title">Critical Z Value</p>
 <div class="math">
-<p><img src="../../_images/math/7a0709755a227dd1c6e9b4c741517410a6272923.png" alt="z_{p} \equiv P(\mathcal{Z}&lt;z_{p}) = \frac{p}{100}"/></p>
+<p><img src="../../_images/math/05e8e9271e2647b338ea9af3d964e63a6873dc4e.png" alt="z_{p} \equiv P(\mathcal{Z} \leq z_{p}) = \frac{p}{100}"/></p>
 </div></aside>
 <aside class="topic">
-<p class="topic-title">Margin of Error</p>
+<p class="topic-title">Critical T Value</p>
 <div class="math">
-<p><img src="../../_images/math/b4e69d4f03dcca254378dc9103fcdae76df40a5f.png" alt="\text{MOE} = \lvert z_{1-\frac{\alpha}{2}} \rvert \cdot \frac{s}{sqrt{n}}"/></p>
+<p><img src="../../_images/math/1f8ad540039f01d10cbac0450e47b793643ff33a.png" alt="t_{p} \equiv P(\frac{\bar{\mathcal{X}}-\mu}{\mathcal{S}} \leq t_p) = \frac{p}{100}"/></p>
+</div></aside>
+</section>
+<section id="standard-error">
+<h3>Standard Error<a class="headerlink" href="#standard-error" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Standard Error, Sample Mean</p>
+<div class="math">
+<p><img src="../../_images/math/41d737eb7c98b463f2fd2e062df0494d9451903b.png" alt="\text{SE}_{\bar{X}} = \frac{s}{\sqrt{n}}"/></p>
 </div></aside>
 <aside class="topic">
-<p class="topic-title">Confidence Interval for Population Mean, Version 1</p>
+<p class="topic-title">Standard Error, Difference of Means</p>
 <div class="math">
-<p><img src="../../_images/math/2301583132081f1a4fb939f65b89368bdeb4ca02.png" alt="\bar{x} - z_{1-\frac{\alpha}{2}} \cdot \frac{s}{sqrt{n} } \leq \mu \leq \bar{x} - z_{\frac{\alpha}{2}} \cdot \frac{s}{sqrt{n} }"/></p>
+<p><img src="../../_images/math/8d8a5a73f40d94dd83e58cbe31c934a1f52bdf6a.png" alt="\text{SE}_{\bar{X}_2 - \bar{X}_1} = \sqrt( \frac{ s_{ \bar{x}_1 } }{n_1} + \frac{ s_{ \bar{x}_2 } }{n_2} )"/></p>
+</div></aside>
+</section>
+<section id="margin-of-error">
+<h3>Margin of Error<a class="headerlink" href="#margin-of-error" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
+<p class="topic-title">Margin of Error, Known Standard Deviation</p>
+<div class="math">
+<p><img src="../../_images/math/758603a4d3b967c468d894b6b6f8fb0612294554.png" alt="\text{MOE} = \lvert z_{1-\frac{\alpha}{2}} \rvert \cdot \text{SE}"/></p>
 </div></aside>
 <aside class="topic">
-<p class="topic-title">Confidence Interval For Population Mean, Version 2</p>
+<p class="topic-title">Margin of Error, Unknown Standard Deviation</p>
+<div class="math">
+<p><img src="../../_images/math/72f2782b7bc4ba1fc30a0b77b503149a9771870a.png" alt="\text{MOE} = \lvert t_{1-\frac{\alpha}{2}} \rvert \cdot \text{SE}"/></p>
+</div></aside>
+</section>
+</section>
+<section id="intervals">
+<h2>Intervals<a class="headerlink" href="#intervals" title="Permalink to this heading">#</a></h2>
+<p>TODO</p>
+<section id="population-mean">
+<h3>Population Mean<a class="headerlink" href="#population-mean" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Confidence Interval For Population Mean</p>
 <div class="math">
 <p><img src="../../_images/math/970ba9395a059ee5e1ed0145a48930834f256155.png" alt="\bar{x} - \text{MOE} \leq \mu \leq \bar{x} + \text{MOE}"/></p>
 </div></aside>
+<p>TODO</p>
+</section>
+<section id="difference-of-population-means">
+<h3>Difference of Population Means<a class="headerlink" href="#difference-of-population-means" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
 <aside class="topic">
 <p class="topic-title">Confidence Interval for Difference of Population Means</p>
-<p>TODO</p>
-</aside>
-</section>
-<section id="unknown-standard-deviation">
-<h3>Unknown Standard Deviation<a class="headerlink" href="#unknown-standard-deviation" title="Permalink to this heading">#</a></h3>
+<div class="math">
+<p><img src="../../_images/math/ceec3d558020e3f8f25fff673204949aa8cdd41c.png" alt="(\bar{x_2} - \bar{x_1}) - \text{MOE} \leq \mu_2 - \mu_1 \leq (\bar{x_2} - \bar{x_1}) + \text{MOE}"/></p>
+</div></aside>
 <p>TODO</p>
 </section>
 </section>
@@ -579,9 +618,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#means">Means</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#known-standard-deviation">Known Standard Deviation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unknown-standard-deviation">Unknown Standard Deviation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#critical-value">Critical Value</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-error">Standard Error</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#margin-of-error">Margin of Error</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intervals">Intervals</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population-mean">Population Mean</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-population-means">Difference of Population Means</a></li>
 </ul>
 </li>
 </ul>

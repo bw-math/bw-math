@@ -102,7 +102,7 @@ with a mean of 70 tons and a standard deviation of 0.9 ton. If the mean is great
 
 	b. Suppose that the weight of ore in a randomly selected car is 70.7 tons. Would that fact make you suspect that the loading mechanism is overfilling the cars? Justify your answer.
 
-5. **2017, Free Response, #3**
+2. **2017, Free Response, #3**
 
 A grocery store purchases melons from two distributors, J and K. Distributor J provides melons from organic farms. The distribution of the diameters of the melons from Distributor J is approximately normal with mean 133 millimeters (mm) and standard deviation 5 mm.
 
@@ -114,7 +114,7 @@ A grocery store purchases melons from two distributors, J and K. Distributor J p
 
 		ii. Given that a melon selected at random from the grocery store has a diameter greater than 137 mm, what is the probability that the melon will be from Distributor J?
     
-6. **2011, Free Response, #1**
+3. **2011, Free Response, #1**
 
 A professional sports team evaluates potential players for a certain position based on two main characteristics, speed and strength.
 
@@ -144,7 +144,7 @@ A professional sports team evaluates potential players for a certain position ba
 
 	c. The characteristics of speed and strength are considered to be of equal importance to the team in selecting a player for the position. Based on the information about the means and standard deviations of the speed and strength data for all players and the measurements listed in the table below for Players A and B, which player should the team select if the team can only select one of the two players? Justify your answer.
 
-7. **2013, Free Response, #3**
+4. **2013, Free Response, #3**
 
 Each full carton of Grade A eggs consists of 1 randomly selected empty cardboard container and 12 randomly selected eggs. The weights of such full cartons are approximately normally distributed with a mean of 840 grams and a standard deviation of 7.9 grams.
 
