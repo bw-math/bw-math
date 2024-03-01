@@ -9,7 +9,8 @@ Class Notes
 
    foundations/index
    probability/index
-   experiments/index
    statistics/index
    distributions/index
+   experiments/index
+   hypotheses/index
 
