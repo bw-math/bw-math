@@ -23,24 +23,10 @@ a. The conditions for inference are satisfied in the study. State the conditions
 
 b. Perform a statistical test to determine whether the survival rate for patients treated with a cardiopump is significantly higher than the survival rate for patients treated with CPR.
 
-3. **2009, Free Response, #1**
-
-TODO
-
-4. **2003, Free Response Form B, #6**
-
-TODO
-
-5. **2012, Free Response, #4**
+3. **2012, Free Response, #4**
 
 A survey organization conducted telephone interviews in December 2008 in which 1,009 randomly selected adults in the United States responded to the following question.
 
 	At the present time, do you think television commercials are an effective way to promote a new product?
 
-Of the 1,009 adults surveyed, 676 responded “yes.” In December 2007, 622 of 1,020 randomly selected adults in the United States had responded “yes” to the same question. Do the data provide convincing evidence that the proportion of adults in the United States who would respond “yes” to the question changed from December 2007
-to December 2008 ?
-
-6. **2022, Free Response, #6**
-
-TODO
-
+Of the 1,009 adults surveyed, 676 responded “yes.” In December 2007, 622 of 1,020 randomly selected adults in the United States had responded “yes” to the same question. Do the data provide convincing evidence that the proportion of adults in the United States who would respond “yes” to the question changed from December 2007 to December 2008?

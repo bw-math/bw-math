@@ -23,10 +23,18 @@ The results are summarized in the following table,
 	
 Use this information to answer the following questions.
 
-a. Construct a graphical display that represents the association between gender and job experience for the students in the sample.
+	a. Construct a graphical display that represents the association between gender and job experience for the students in the sample.
 
-b. Write a few sentences summarizing what the display in part (a) reveals about the association between gender and job experience for the students in the sample.
+	b. Write a few sentences summarizing what the display in part (a) reveals about the association between gender and job experience for the students in the sample.
 
-c. Which test of significance should be used to test if there is an association between gender and job experience for the population of high school seniors in the district? State the null and alternative hypotheses for the test, but do not perform the test.
+	c. Which test of significance should be used to test if there is an association between gender and job experience for the population of high school seniors in the district? State the null and alternative hypotheses for the test, but do not perform the test.
 
-2. 
+2. **2007, Free Response, #6**
+
+TODO
+
+3. **2011, Free Response, #6**
+
+TODO
+
+
