@@ -129,4 +129,50 @@ To compare success rates for treating allergies at two clinics that specialize i
 	
 5. **2012, Free Response, #6**
 
-TODO
+Two students at a large high school, Peter and Rania, wanted to estimate :math:`\mu`, the mean number of soft drinks that a student at their school consumes in a week. A complete roster of the names and genders for the 2,000 students at their school was available. Peter selected a simple random sample of 100 students. Rania, knowing that 60 percent of the students at the school are female, selected a simple random sample of 60 females and an
+independent simple random sample of 40 males. Both asked all of the students in their samples how many soft drinks they typically consume in a week.
+
+	a. Describe a method Peter could have used to select a simple random sample of 100 students from the school.
+	
+Peter and Rania conducted their studies as described. Peter used the sample mean :math:`\bar{X}` as a point estimator for :math:`\mu`. Rania used :math:`\bar{X}_{\text{overall}} = (0.6) \cdot \bar{X}_{\text{female}} + (0.4) \cdot \bar{X}_{\text{male}}` as a point estimator for :math:`\mu`, where :math:`\bar{X}_{\text{female}}` is the mean of the sample of 60 females and math:`\bar{X}_{\text{male}}` is the mean of the sample of 40 males.
+
+Summary statistics for Peter’s data are shown in the table below.
+
++-----------------------+-----+------+--------------------+
+|    Variable           |  N  | Mean | Standard Deviation |
++-----------------------+-----+------+--------------------+
+| Number of soft drinks | 100 | 5.32 |        4.13        |
++-----------------------+-----+------+--------------------+
+
+Use this information to answer the following question.
+
+	b. Based on the summary statistics, calculate the estimated standard deviation of the sampling distribution (sometimes called the standard error) of Peter’s point estimator :math:`\bar{X}`.
+	
+Summary statistics for Rania’s data are shown in the table below.
+
++-------------+---------+-------+------+--------------------+
+| Variable    |  Gender |   N   | Mean | Standard Deviation |
++-------------+---------+-------+------+--------------------+
+| Number of   |  Female |  60   | 2.90 |        1.80        |
++-------------+---------+-------+------+--------------------+
+| Soft Drinks |   Male  |  40   | 7.45 |        2.22        |
++-------------+---------+-------+------+--------------------+
+
+Use this information to answer the following question.
+
+	c. Based on the summar statistics, calcualte the estimated standard deviation of the sampling distribution of Rania's point estimator :math:`\bar{X}_{\text{overall}} = (0.6) \cdot \bar{X}_{\text{female}} + (0.4) \cdot \bar{X}_{\text{male}}`
+	
+A dotplot of Peter's sample data is given below,
+
+.. image:: ../../../assets/imgs/classwork/2012_apstats_frp_06a.png
+    		:align: center
+
+Comparative dotplots of Rania's sample data are given below,
+
+.. image:: ../../../assets/imgs/classwork/2012_apstats_frp_06b.png
+    		:align: center
+
+Use this information to answer the following question.
+
+	d. Using the dotplots above, explain why Rania’s point estimator has a smaller estimated standard deviation than the estimated standard deviation of Peter’s point estimator.
+
