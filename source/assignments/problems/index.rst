@@ -7,6 +7,7 @@ Problems
 	:maxdepth: 3
 	:caption: Contents:
 
+	SEJAL.rst
 	celebrations/index
 	algebra/index
 	differentiation/index
