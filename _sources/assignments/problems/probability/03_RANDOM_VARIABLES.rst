@@ -170,7 +170,7 @@ Use this table to answer the following questions.
 
 	b. The monthly cost of running a bakery is $2000. What is Meredith's expected *profit over the next month*? 
  
-3. A small market orders copies of a certain magazine for its magazine rack each week. Let :math:`\mathcal{X}` represent the number of magazine demanded by customers over the course of a week. The probability density for the magazine deman is given by,
+3. A small market orders copies of a certain magazine for its magazine rack each week. Let :math:`\mathcal{X}` represent the number of magazine demanded by customers over the course of a week. The probability density for the magazine demand is given by,
 
 +------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
 |   x  |            1         |                   2  |                   3  |                   4  |                   5  |                   6  |
@@ -206,15 +206,14 @@ Linearity of Expectations
 	c. What is the expected sum of outcomes for three die rolls?
 	
         d. What is the expected sum of outcomes for ten die rolls?
+        
 2. Clavius Hecklesnotz is playing a game of chance where he flips 10 fair coins. If Clavius Hecklesnotz gets 1 head, he will be paid $1. If Clavius Hecklesnotz gets 2 heads, he will be paid $2. In general, if Clavius Hecklesnotz gets *n* heads, he will be paid $*n*. What is the expected value of Clavius Hecklesnotz' payout? 
 
 .. hint::
 
 	This problem can be solved with a :ref:`binomial_distribution`, but it is much easier to understand through the :ref:`linearity_of_expectations`.
-	
-3. A box contains a yellow ball, an orange ball, a green ball, and a blue ball. Matilda Weierstrauss randomly selects 4 balls from the box (with replacement). What is the expected value for the number of distinct colored balls Matilda Weierstrauss will select?
 
-4. Every time one of the AP Statistics students buys a Happy Meal from McDonalds, they receive a `Strawberry Shortcake <https://en.wikipedia.org/wiki/Strawberry_Shortcake>`_ plush doll. There are five dolls in total: Strawberry Shortcake, Cherry Jam, Raspberry Torte, Blueberry Muffin and Lemon Meringue. The toys in every Happy Meal are awarded at random. What is the expected number of Happy Meals an AP Statistics Students must buy in order to get all the *Strawberry Shortcake* plush dolls?
+3. Every time one of the AP Statistics students buys a Happy Meal from McDonalds, they receive a `Strawberry Shortcake <https://en.wikipedia.org/wiki/Strawberry_Shortcake>`_ plush doll. There are five dolls in total: Strawberry Shortcake, Cherry Jam, Raspberry Torte, Blueberry Muffin and Lemon Meringue. The toys in every Happy Meal are awarded at random. What is the expected number of Happy Meals an AP Statistics Students must buy in order to get all the *Strawberry Shortcake* plush dolls?
 
 A.P. Exam Practice
 ==================
