@@ -505,7 +505,12 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistics">Statistics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regression">Regression</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probability">Probability</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -534,14 +539,40 @@ document.write(`
 </section>
 <section id="problems">
 <h2>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
+<section id="statistics">
+<h3>Statistics<a class="headerlink" href="#statistics" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="regression">
+<h3>Regression<a class="headerlink" href="#regression" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="probability">
+<h3>Probability<a class="headerlink" href="#probability" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>Sejal places three coins into her magical probability box. Two of the coins are normal coins. The third coin is a double-sided coin with two heads. Sejal forces you to choose one of the coins at random and without looking at which coin you have chosen, flip it. If the coin lands on heads, what is the probability you have selected the double-sided coin?</p></li>
-<li><p>Sejal empties her magical probability box and readies it for the next experiment. In this experiment, the box contains a yellow ball, an orange ball, a green ball, and a blue ball. You are forced to randomly selects 4 balls from the box with replacement. What is the expected value for the number of distinct colored balls you will select?</p></li>
-<li><p>Sejal, now bored with her magical probability box, haphazardly discards it and decides everyone will have more fun if they play a game. <em>Sejal’s Folly</em> is a gambling game often played at the <em>Ghimire Statistics Gala</em>. Each player may bet on any of the numbers <img class="math" src="../../_images/math/30c5d36eaa79e9176c95dd8b6a9ebae22522f02f.png" alt="1,2,3,4,5,6"/>. Three dice are then rolled. If the player’s number appears on one, two or three of the dice, he or she receives respectively, one, two or three times their original bet, plus their original money back. Otherwise, the bet is lost. What is the player’s expected loss per bet?</p></li>
-<li><p>After the folly of <em>Sejal’s Folly</em>, Sejal decides to play a more traditional game with everyone, <em>Craps</em>. The rules for <em>Craps</em> are as follows: Two die are rolled and the sum of the outcomes is calculated for each roll. The player rolls the dice and wins at once if the sum for the first throw is 7 or 11. The player loses at once if the sum is 2, 3 or 12. Any other roll is called the <em>point</em>. If the first throw is a point, the player rolls the dice repeatedly until either winning by rolling the <em>point</em> again, or loses by rolling a 7. What is your probability of winning at Sejal’s Craps table?</p></li>
-<li><p>What luck! You won $10000 playing Craps! But now Sejal owes you $10000! Because you are good friends, you let her pay you back over time and devise a payment plan, where Sejal will pay you $100 a month for the next 100 months. Sejal, however, decides to cheat you out of your winnings by paying entirely in one dollar bills and inserting a single counterfeit bill into each payment (i.e. $99 is real and $1 is fake). Considering your long and storied history with Sejal, you immediately suspect deception. You randomly select a single dollar from each payment and subject it to rigorous counterfeit testing. If your counterfeit testing procedure works 100% of the time, what is the probability you will discover a counterfeit bill before Sejal completes her payments?</p></li>
-<li><p>Sejal puts a stop to the gambling, lest she lose more money. Instead, she decides everyone should play a more festive game. Three attendees of the Sejal’s <em>Statistics Gala</em> students are seated in a circle and made to play this fun probability game. Sejal flips a coin for each person and based on the outcome of the flip, places either a red or blue hat on each students’ head. No communication of any sort is allowed between the the contestants, except for an initial strategy session before the game begins. During this strategy session, they are not allowed to ask what color hat they are wearing. Once the strategy session is over, the players must <em>simultaneously</em> guess the color of their own hats or pass. What group strategy should they adopt to maximize the probability that atleast one person guesses correctly and no-one guesses incorrectly?</p></li>
+<li><p><strong>Double Sided Coins</strong></p></li>
 </ol>
+<p>Sejal places three coins into her magical probability box. Two of the coins are normal coins. The third coin is a double-sided coin with two heads. Sejal forces you to choose one of the coins at random and without looking at which coin you have chosen, flip it. If the coin lands on heads, what is the probability you have selected the double-sided coin?</p>
+<ol class="arabic simple" start="2">
+<li><p><strong>Colored Balls</strong></p></li>
+</ol>
+<p>Sejal empties her magical probability box and readies it for the next experiment. In this experiment, the box contains a yellow ball, an orange ball, a green ball, and a blue ball. You are forced to randomly selects 4 balls from the box with replacement. What is the expected value for the number of distinct colored balls you will select?</p>
+<ol class="arabic simple" start="3">
+<li><p><strong>Sejal’s Folly</strong></p></li>
+</ol>
+<p>Sejal, now bored with her magical probability box, haphazardly discards it and decides everyone will have more fun if they play a game. <em>Sejal’s Folly</em> is a gambling game often played at the <em>Ghimire Statistics Gala</em>. Each player may bet on any of the numbers <img class="math" src="../../_images/math/30c5d36eaa79e9176c95dd8b6a9ebae22522f02f.png" alt="1,2,3,4,5,6"/>. Three dice are then rolled. If the player’s number appears on one, two or three of the dice, he or she receives respectively, one, two or three times their original bet, plus their original money back. Otherwise, the bet is lost. What is the player’s expected loss per bet?</p>
+<ol class="arabic simple" start="4">
+<li><p><strong>Craps</strong></p></li>
+</ol>
+<p>After the folly of <em>Sejal’s Folly</em>, Sejal decides to play a more traditional game with everyone, <em>Craps</em>. The rules for <em>Craps</em> are as follows: Two die are rolled and the sum of the outcomes is calculated for each roll. The player rolls the dice and wins at once if the sum for the first throw is 7 or 11. The player loses at once if the sum is 2, 3 or 12. Any other roll is called the <em>point</em>. If the first throw is a point, the player rolls the dice repeatedly until either winning by rolling the <em>point</em> again, or loses by rolling a 7. What is your probability of winning at Sejal’s Craps table?</p>
+<ol class="arabic simple" start="5">
+<li><p><strong>Counterfeits</strong></p></li>
+</ol>
+<p>What luck! You won $10000 playing Craps! But now Sejal owes you $10000! Because you are good friends, you let her pay you back over time and devise a payment plan, where Sejal will pay you $100 a month for the next 100 months. Sejal, however, decides to cheat you out of your winnings by paying entirely in one dollar bills and inserting a single counterfeit bill into each payment (i.e. $99 is real and $1 is fake). Considering your long and storied history with Sejal, you immediately suspect deception. You randomly select a single dollar from each payment and subject it to rigorous counterfeit testing. If your counterfeit testing procedure works 100% of the time, what is the probability you will discover a counterfeit bill before Sejal completes her payments?</p>
+<ol class="arabic simple" start="6">
+<li><p><strong>The Hat Game</strong></p></li>
+</ol>
+<p>Sejal puts a stop to the gambling, lest she lose more money. Instead, she decides everyone should play a more festive game. Three attendees of the Sejal’s <em>Statistics Gala</em> students are seated in a circle and made to play this fun probability game. Sejal flips a coin for each person and based on the outcome of the flip, places either a red or blue hat on each students’ head. No communication of any sort is allowed between the the contestants, except for an initial strategy session before the game begins. During this strategy session, they are not allowed to ask what color hat they are wearing. Once the strategy session is over, the players must <em>simultaneously</em> guess the color of their own hats or pass. What group strategy should they adopt to maximize the probability that atleast one person guesses correctly and no-one guesses incorrectly?</p>
 <p>The naive strategy would be for the group to agree that one person should guess and the others pass. This would have probability 1/2 of success. Find a strategy with a greater chance for success. What is the probability of success with your strategy?</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
@@ -552,11 +583,13 @@ document.write(`
 <p>What are the possible sequences of hat colors?</p>
 </div>
 <ol class="arabic simple" start="7">
-<li><p>To conclude the annual <em>Ghimire Statistics Gala</em>, Sejal goes back to the basics and rolls out a chalkboard. She writes on the chalkboard the following equation,</p></li>
+<li><p><strong>Quadratic Equations</strong></p></li>
 </ol>
+<p>To conclude the annual <em>Ghimire Statistics Gala</em>, Sejal goes back to the basics and rolls out a chalkboard. She writes on the chalkboard the following equation,</p>
 <div class="math">
 <p><img src="../../_images/math/f36a41deb1b1d5cd975acc33888b7b962c81b681.png" alt="x^2 + b \cdot x + c = 0"/></p>
 </div><p>Then, Sejal rolls two die. The outcome of the first die roll is substituted into the above equation for <img class="math" src="../../_images/math/74a664f8d0ae1f1b75ec1ce5ea120087e04e7a0e.png" alt="b"/>. The outcome of the second die roll is substituted into the above equation for <img class="math" src="../../_images/math/f6fe93a24ea293d1b3b4e665370a5bae3ee44dbc.png" alt="c"/>. What is the probability this equation has a real root?</p>
+</section>
 </section>
 </section>
 
@@ -606,7 +639,12 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistics">Statistics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regression">Regression</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probability">Probability</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
