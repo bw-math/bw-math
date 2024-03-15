@@ -5,7 +5,7 @@ import matplotlib.pyplot as plot
 from matplotlib.widgets import Slider
 import matplotlib.patches as patches
 
-mpl.use("agg")
+mpl.use("tkagg")
 
 (fig, axes) = plot.subplots()
 
