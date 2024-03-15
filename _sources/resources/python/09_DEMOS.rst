@@ -76,3 +76,10 @@ This script illustrates how the regression parameters for the slope and intercep
 :download:`Least Squares <../../assets/demos/least_squares.py>`
 
 .. plot:: assets/demos/least_squares.py
+
+Sampling Distributions
+----------------------
+
+This script illustrates the difference between *biased* and *unbiased* estimators. It will simulate a sample from a Normal population and then calculate various statistics. The results of the simulation are shown in a histogram with the true value of the population parameter plotted as a vertical line.
+
+:download:`Sampling Distributions <.../../assets/demos/sampling_simulations.py>`
