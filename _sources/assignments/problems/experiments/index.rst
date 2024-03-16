@@ -8,5 +8,5 @@ Experiments
 	:caption: Contents:
 
 	00_DESIGN
-	01_INFERENCE
-	02_BIAS
+	01_BIAS
+	02_INFERENCE
