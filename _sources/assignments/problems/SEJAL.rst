@@ -23,12 +23,73 @@ Problems
 Statistics
 **********
 
-TODO
+1. **Skittles**
+
+The *Ghimire Statistics Gala* is known throughout the tristate region as a cultural epicenter for gourmet cuisine and fine food. Sejal is preparing the menu for this year's annual *Ghimire Statistics Gala*. Every year, the guests feast upon a smorgasboard of candy, cold pizza and soft drinks. As a diligent statistics student, Sejal wants to buy the correct amount of Skittles for all of her guests. The number of pounds of Skittles consumed each year by the attendees is given by the following table,
+
++----------+--------------------------------+
+|   Year   |   Pounds of Skittles Consumed  |
++----------+--------------------------------+
+|  2023    |            7.5                 |
++----------+--------------------------------+
+|  2022    |            6.9                 |
++----------+--------------------------------+
+|  2021    |            1.5                 |
++----------+--------------------------------+
+|  2020    |            1.2                 |
++----------+--------------------------------+
+|  2019    |            7.2                 |
++----------+--------------------------------+
+|  2018    |            6.8                 |
++----------+--------------------------------+
+|  2017    |            6.2                 |           
++----------+--------------------------------+
+|  2016    |            6.6                 |
++----------+--------------------------------+
+|  2015    |            6.5                 |
++----------+--------------------------------+
+|  2014    |            5.9                 |
++----------+--------------------------------+
+|  2013    |            6.3                 |
++----------+--------------------------------+
+
+Create a histogram and boxplot to visualize this distribution. Use 6 classes for the histogram. Describe the distribution in a few sentences. Based on the distribution, what is the best estimate for the amount of Skittles in pounds Sejal should purchase for this year's *Ghimire Statistics Gala*, the mean or median? Why? Justify your answer. 
+
+What feature of the distribution is missed by only considering these two graphical representations?
+
+2. z-score one
+
+3. data transformation one
+
+4. give them boxplot and ask to estimate iqr, then identify potential outliers with IQR rule.
+
+5. empirical rule one
+
+6. bias one
+
+7. sampling/randomization one
+
 
 Regression
 **********
 
 TODO
+
+1. scatter plot description one, interpretation
+
+2. regression line one, interpretation
+
+3. computer output one, interpretation
+
+4. correlation one, interpretation
+
+7. SSR, correlation one
+
+On her clipboard, Sejal keeps track of how many guests arrive each minute to the annual *Ghimire Statistics Gala*. 
+
+blah blah
+
+What is the standard deviation of the number of guests who arrive each minute? How much of this variation can be explained by its linear dependence on time? 
 
 Probability
 ***********
@@ -49,7 +110,7 @@ Sejal, now bored with her magical probability box, haphazardly discards it and d
 
 After the folly of *Sejal's Folly*, Sejal decides to play a more traditional game with everyone, *Craps*. The rules for *Craps* are as follows: Two die are rolled and the sum of the outcomes is calculated for each roll. The player rolls the dice and wins at once if the sum for the first throw is 7 or 11. The player loses at once if the sum is 2, 3 or 12. Any other roll is called the *point*. If the first throw is a point, the player rolls the dice repeatedly until either winning by rolling the *point* again, or loses by rolling a 7. What is your probability of winning at Sejal's Craps table?
 
-5. **Counterfeits**
+5. **Counterfeiting**
 
 What luck! You won $10000 playing Craps! But now Sejal owes you $10000! Because you are good friends, you let her pay you back over time and devise a payment plan, where Sejal will pay you $100 a month for the next 100 months. Sejal, however, decides to cheat you out of your winnings by paying entirely in one dollar bills and inserting a single counterfeit bill into each payment (i.e. $99 is real and $1 is fake). Considering your long and storied history with Sejal, you immediately suspect deception. You randomly select a single dollar from each payment and subject it to rigorous counterfeit testing. If your counterfeit testing procedure works 100% of the time, what is the probability you will discover a counterfeit bill before Sejal completes her payments?
 
@@ -67,7 +128,7 @@ The naive strategy would be for the group to agree that one person should guess 
 
 	What are the possible sequences of hat colors? 
 	
-7. **Quadratic Equations**
+7. **Quadratic Equation**
 
 To conclude the annual *Ghimire Statistics Gala*, Sejal goes back to the basics and rolls out a chalkboard. She writes on the chalkboard the following equation,
 
