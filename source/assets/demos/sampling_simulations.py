@@ -6,28 +6,39 @@ from matplotlib.widgets import Button, TextBox, RadioButtons
 
 mpl.use("tkagg")
 
+mu, s, n, m = 10, 3, 20, 100
+
+simulation_goal = "sample mean"
+
 (fig, axes) = plot.subplots()
 
-n, m = 20, 500
+fig.subplots_adjust(left=0.5, bottom=0.25)
 
-plot.suptitle(f"Simulated Sampling Distributions \n Observations Per Sim = {n}, Simulations = {m}")
 axes.set_xlabel("Simulated Statistic")
 axes.set_ylabel("Probability Density")
 
-fig.subplots_adjust(left=0.3, bottom=0.25)
+fig.text(0.05, 0.85, "Population Parameters")
+fig.text(0.05, 0.59, "Simulation Parameters")
+fig.text(0.05, 0.35, "Simulated Statistic")
 
 button_axes = fig.add_axes([0.81, 0.05, 0.1, 0.075])
 simulate_button = Button(button_axes, "Simulate")
 
-mtext_axes = fig.add_axes([0.1, 0.8, 0.10, 0.075])
-mean_text = TextBox(mtext_axes, "Pop. Mean", textalignment="center")
+mean_axis = fig.add_axes([0.15, 0.75, 0.25, 0.075])
+mean_text = TextBox(mean_axis, "μ: ", textalignment="center")
 
-stext_axes = fig.add_axes([0.1, 0.7, 0.10, 0.075])
-s_text = TextBox(stext_axes, "Pop. St. Dev", textalignment="center")
+stdev_axis = fig.add_axes([0.15, 0.65, 0.25, 0.075])
+stdev_text = TextBox(stdev_axis, "σ: ", textalignment="center")
 
-stat_axes = fig.add_axes([0.05, 0.35, 0.15, 0.3])
+n_axis = fig.add_axes([0.15, 0.5, 0.25, 0.075])
+n_text = TextBox(n_axis, "n: ", textalignment="center")
+
+m_axis = fig.add_axes([0.15, 0.4, 0.25, 0.075])
+m_text = TextBox(m_axis, "m: ", textalignment="center")
+
+stat_axis = fig.add_axes([0.05, 0.04, 0.35, 0.3])
 stat_radio = RadioButtons(
-    stat_axes,
+    stat_axis,
     (
         'sample mean',
         'sample median',
@@ -45,15 +56,6 @@ stat_radio = RadioButtons(
     }
 )
 
-default_mu, default_s = 10, 3
-
-mu, s = default_mu, default_s
-
-simulation_goal = "sample mean"
-
-def reset():
-    mu, s, n, m = default_mu, default_s, default_n, default_m
-
 def set_mean(new_mu):
     global mu
     mu = float(new_mu)
@@ -62,10 +64,21 @@ def set_standard_deviation(new_s):
     global s
     s = float(new_s)
 
+def set_n(new_n):
+    global n
+    n = int(new_n)
+
+def set_m(new_m):
+    global m
+    m = int(new_m)
+
 def set_simulation_goal(goal):
     global simulation_goal
     simulation_goal = goal
-    
+
+def set_title():
+    plot.suptitle(f"Simulated Sampling Distributions \n Obs Per Sim n = {n}, Sims m = {m}")
+
 def simulate(event):
     # simulate samples from a normal population
     
@@ -140,15 +153,22 @@ def simulate(event):
 
     axes.legend()
 
+    set_title()
+    
     fig.canvas.draw_idle()
 
 simulate_button.on_clicked(simulate)
 stat_radio.on_clicked(set_simulation_goal)
 
 mean_text.on_text_change(set_mean)
-s_text.on_text_change(set_standard_deviation)
+stdev_text.on_text_change(set_standard_deviation)
+n_text.on_text_change(set_n)
+m_text.on_text_change(set_m)
 
-mean_text.set_val(default_mu)
-s_text.set_val(default_s)
+mean_text.set_val(mu)
+stdev_text.set_val(s)
+n_text.set_val(n)
+m_text.set_val(m)
 
+set_title()
 plot.show()
