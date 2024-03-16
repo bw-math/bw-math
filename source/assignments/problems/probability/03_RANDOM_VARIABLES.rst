@@ -209,10 +209,6 @@ Linearity of Expectations
         
 2. Clavius Hecklesnotz is playing a game of chance where he flips 10 fair coins. If Clavius Hecklesnotz gets 1 head, he will be paid $1. If Clavius Hecklesnotz gets 2 heads, he will be paid $2. In general, if Clavius Hecklesnotz gets *n* heads, he will be paid $*n*. What is the expected value of Clavius Hecklesnotz' payout? 
 
-.. hint::
-
-	This problem can be solved with a :ref:`binomial_distribution`, but it is much easier to understand through the :ref:`linearity_of_expectations`.
-
 3. Every time one of the AP Statistics students buys a Happy Meal from McDonalds, they receive a `Strawberry Shortcake <https://en.wikipedia.org/wiki/Strawberry_Shortcake>`_ plush doll. There are five dolls in total: Strawberry Shortcake, Cherry Jam, Raspberry Torte, Blueberry Muffin and Lemon Meringue. The toys in every Happy Meal are awarded at random. What is the expected number of Happy Meals an AP Statistics Students must buy in order to get all the *Strawberry Shortcake* plush dolls?
 
 A.P. Exam Practice
@@ -284,25 +280,7 @@ Use this information to solve the following problems.
 | Frequency |   33   |   21  |  20  |  26  |
 +-----------+--------+-------+------+------+
 
-5. **2005, Free Response Form B, #2**
-
-For an upcoming concert, each customer may purchase up to 3 child tickets and 3 adult tickets. Let **C** be the number of child tickets purchased by a single customer. The probability distribution of the number of child tickets purchased by a single customer is given in the table below.
-
-+--------+-----+-----+-----+-----+
-|    c   |  0  |  1  |  2  | 3   |
-+--------+-----+-----+-----+-----+
-|  p(c)  | 0.4 | 0.3 | 0.2 | 0.1 | 
-+--------+-----+-----+-----+-----+
-
-Use this information to solve the following problems.
-
-	a. Compute the mean and the standard deviation of **C**.
-
-	b. Suppose the mean and the standard deviation for the number of adult tickets purchased by a single customer are 2 and 1.2, respectively. Assume that the numbers of child tickets and adult tickets purchased are independent random variables. Compute the mean and the standard deviation of the total number of adult and child tickets purchased by a single customer.
-
-	c. Suppose each child ticket costs $15 and each adult ticket costs $25. Compute the mean and the standard deviation of the total amount spent per purchase.
-
-6. **2008, Free Response Form B, #5**
+5. **2008, Free Response Form B, #5**
 
 Flooding has washed out one of the tracks of the Snake Gulch Railroad. The railroad has two parallel tracks from Bullsnake to Copperhead, but only one usable track from Copperhead to Diamondback, as shown in the figure below. Having only one usable track disrupts the usual schedule. Until it is repaired, the washed-out track will remain unusable. If the train leaving Bullsnake arrives at Copperhead first, it has to wait until the train leaving Diamondback arrives at Copperhead.
 
@@ -323,7 +301,7 @@ These two travel times are independent.
 
 	c. How long should the Snake Gulch Railroad delay the departure of the train from Bullsnake so that the probability that it has to wait is only 0.01?
 
-7. **2008, Free Response, #3**
+6. **2008, Free Response, #3**
 
 A local arcade is hosting a tournament in which contestants play an arcade game with possible scores ranging from 0 to 20. The arcade has set up multiple game tables so that all contestants can play the game at the same time; thus contestant scores are independent. Each contestant’s score will be recorded as he or she finishes, and the contestant with the highest score is the winner.
 
@@ -366,7 +344,7 @@ Use this information to answer the following questions.
 	| Probability | 0.015 |   ?    |   ?    | 0.325  | 0.260 | 0.090 |
 	+-------------+-------+--------+--------+--------+-------+-------+ 
 
-8. **2012, Free Response, #2**
+7. **2012, Free Response, #2**
 
 A charity fundraiser has a Spin the Pointer game that uses a spinner like the one illustrated in the figure below.
 
@@ -390,4 +368,18 @@ Use this table to answer the following questions.
 	c. The charity would like to receive a net contribution of $500 from this game. What is the fewest number of times the game must be played for the expected value of the net contribution to be at least $500 ?
 
 	d. Based on last year’s event, the charity anticipates that the Spin the Pointer game will be played 1,000 times. The charity would like to know the probability of obtaining a net contribution of at least $500 in 1,000 plays of the game. The mean and standard deviation of the net contribution to the charity in 1,000 plays of the game are $700 and $92.79, respectively. Use the normal distribution to approximate the probability that the charity would obtain a net contribution of at least $500 in 1,000 plays of the game.
+
+8. **2013, Free Response, #3**
+
+Each full carton of Grade A eggs consists of 1 randomly selected empty cardboard container and 12 randomly selected eggs. The weights of such full cartons are approximately normally distributed with a mean of 840 grams and a standard deviation of 7.9 grams.
+
+	a. What is the probability that a randomly selected full carton of Grade A eggs will weigh more than 850 grams?
+
+	b. The weights of the empty cardboard containers have a mean of 20 grams and a standard deviation of 1.7 grams. It is reasonable to assume independence between the weights of the empty cardboard containers and the weights of the eggs. It is also reasonable to assume independence among the weights of the 12 eggs that are randomly selected for a full carton.
+
+	Let the random variable **X** be the weight of a single randomly selected Grade A egg.
+
+	    i. What is the mean of **X**?
+	    
+	    ii. What is the standard deviation of **X** ?
 

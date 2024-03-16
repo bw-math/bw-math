@@ -11,37 +11,21 @@ The sizes, in square feet, of the 20 rooms in a student residence hall at a cert
 .. image:: ../../../assets/imgs/classwork/2019_apstats_frp_01a.png
     :align: center
 
-a. Based on the histogram, write a few sentences describing the distribution of room size in the residence hall.
+Use this information to answer the following questions.
 
-b. Summary statistics for the sizes are given in the following table.
+	a. Based on the histogram, write a few sentences describing the distribution of room size in the residence hall.
+
+	b. Summary statistics for the sizes are given in the following table.Determine whether there are potential outliers in the data. Then use the following grid to sketch a boxplot of room size.
 
 .. image:: ../../../assets/imgs/classwork/2019_apstats_frp_01b.png
     :align: center
 
-Determine whether there are potential outliers in the data. Then use the following grid to sketch a boxplot of room size.
-
 .. image:: ../../../assets/imgs/classwork/2019_apstats_frp_01c.png
     :align: center
     
-c. What characteristic of the shape of the distribution of room size is apparent from the histogram but not from the boxplot?
+Use the graph you created to answer the following question.
 
-2.  **2015, Multiple Choice #8**
-
-The 25 students in one professor's introductory statistics course at a large university were surveyed and asked to report the number of siblings that they have. The histogram below displays the data collected in the survey.
-
-.. image:: ../../../assets/imgs/classwork/2015_apstats_mc_08.png
-
-Which of the following is the median number of siblings for these 25 students?
-
-    (A) 1
-
-    (B) 1.5
-
-    (C) 2
-
-    (D) 2.5
-
-    (E) 3
+	c. What characteristic of the shape of the distribution of room size is apparent from the histogram but not from the boxplot?
     
 2. **2016, Free Response, #1**
 
@@ -50,16 +34,17 @@ Robin works as a server in a small restaurant, where she can earn a tip (extra m
 .. image:: ../../../assets/imgs/classwork/2016_apstats_frp_01.png
 	:align: center
 
-a. Write a few sentences to describe the distribution of tip amounts for the day shown.
+Use this information to answer the following questions.
 
-b. One of the tip amounts was $8. If the $8 tip had been $18, what effect would the increase have had on the following statistics? Justify your answers.
+	a. Write a few sentences to describe the distribution of tip amounts for the day shown.
 
-    The mean:
+	b. One of the tip amounts was $8. If the $8 tip had been $18, what effect would the increase have had on the following statistics? Justify your answers.
+
+		The mean:
 
 
-    
-    The median:
 
+		The median:
 
 
 3. **2006, Free Response, #1**
@@ -75,11 +60,13 @@ catapults before building additional ones. Under identical conditions, the paren
 .. image:: ../../../assets/imgs/classwork/2006_apstats_frp_1b.png
     :align: center
 
-a. Comment on any similarities and any differences in the two distributions of distances traveled by balls launched from catapult A and catapult B.
+Use this information to answer the following questions.
 
-b. If the parents want to maximize the percentage of having the Ping-Pong balls land within the band, which one of the two catapults, A or B, would be better to use than the other? Justify your choice.
+	a. Comment on any similarities and any differences in the two distributions of distances traveled by balls launched from catapult A and catapult B.
 
-c. Using the catapult that you chose in part *b*, how many centimeters from the target line should this catapult be placed? Explain why you chose this distance.
+	b. If the parents want to maximize the percentage of having the Ping-Pong balls land within the band, which one of the two catapults, A or B, would be better to use than the other? Justify your choice.
+
+	c. Using the catapult that you chose in part *b*, how many centimeters from the target line should this catapult be placed? Explain why you chose this distance.
 
 4. **2003, Free Response, #1**
 
@@ -92,9 +79,11 @@ Since Hill Valley High School eliminated the use of bells between classes, teach
 | Teachers | -2.0 | -1.5 | -1.5 | -1.0 | -1.0 | -0.5 | 0   | 0   | 0.5 |
 +----------+------+------+------+------+------+------+-----+-----+-----+
 
-a. Construct parallel boxplots using these data.
+Use this information to answer the following questions.
 
-b. Based on the boxplots in part *#a*, which of the two groups, students or teachers, tends to have watch times that are closer to the true time? Explain your choice.
+	a. Construct parallel boxplots using these data.
+
+	b. Based on the boxplots in part *#a*, which of the two groups, students or teachers, tends to have watch times that are closer to the true time? Explain your choice.
 
 5. **2006, Free Response Form B, #1**
 
@@ -103,13 +92,15 @@ A large regional real estate company keeps records of home sales for each of its
 .. image:: ../../../assets/imgs/classwork/2016_apstats_frp_formb_01.png
 	:align: center
 	
-a. In the context of this question, explain what information is conveyed by the circled point.
+Use this information to answer the following questions.
 
-b. What proportion of sales agents achieved monthly sales volumes between $700,000 and $800,000 ?
+	a. In the context of this question, explain what information is conveyed by the circled point.
 
-c. For values between 10 and 11 on the horizontal axis, the cumulative relative frequency plot is flat. In the context of this question, explain what this means.
+	b. What proportion of sales agents achieved monthly sales volumes between $700,000 and $800,000 ?
 
-d. A bonus is to be given to 20 percent of the sales agents. Those who achieved the highest monthly sales volume during the preceding month will receive a bonus. What is the minimum monthly sales volume an agent must have achieved to qualify for the bonus?
+	c. For values between 10 and 11 on the horizontal axis, the cumulative relative frequency plot is flat. In the context of this question, explain what this means.
+
+	d. A bonus is to be given to 20 percent of the sales agents. Those who achieved the highest monthly sales volume during the preceding month will receive a bonus. What is the minimum monthly sales volume an agent must have achieved to qualify for the bonus?
 
 6. **2007, Free Response, #1**
 
@@ -122,35 +113,15 @@ The dotplots below show the distributions of discoloration rating for the contro
 .. image:: ../../../assets/imgs/classwork/2007_apstats_frp_01.png
     :align: center
 
-a. Find the mean and median of both the test group and control group.
+Use this information to answer the following questions.
 
-b. Comment on the shape of the control distribution versus the shape of the test distribution. Justify your answer with calculations.
+	a. Find the mean and median of both the test group and control group.
 
-c. Based on the dotplots and your answers to part *#a* and *#b*, comment on the effectiveness of the preservative in lowering the amount of discoloration in strawberries.
+	b. Comment on the shape of the control distribution versus the shape of the test distribution. Justify your answer with calculations.
 
-7. **2021, Free Response, #1**
+	c. Based on the dotplots and your answers to part *#a* and *#b*, comment on the effectiveness of the preservative in lowering the amount of discoloration in strawberries.
 
-The length of stay in a hospital after receiving a particular treatment is of interest to the patient, the hospital, and insurance providers. Of particular interest are unusually short or long lengths of stay. A random sample of 50 patients who received the treatment was selected, and the length of stay, in number of days, was recorded for each patient. The results are summarized in the following table and are shown in the dotplot.
-
-.. image:: ../../../assets/imgs/classwork/2021_apstats_frp_01.png
-    :align: center
-    
-a. Determine the five-number summary of the distribution of length of stay.
-
-b. Consider two rules for identifying outliers, method A and method B. Let method A represent the 1.5 x IQR rule, and let method B represent the 2 standard deviations rule.
-
-	i. Using method A, determine any data points that are potential outliers in the distribution of length of
-stay. Justify your answer.
-
-	ii. The mean length of stay for the sample is 7.42 days with a standard deviation of 2.37 days. Using method B, determine any data points that are potential outliers in the distribution of length of stay. Justify your answer.
-	
-c. Explain why method A might identify more data points as potential outliers than method B for a distribution that is strongly skewed to the right.
-
-8. **2005, Free Response Form B, #1**
-
-TODO
-
-9. **Question Bank**
+7. **AP Question Bank**
 
 To determine the amount of sugar in a typical serving of breakfast cereal, a student randomly selected 60 boxes of different types of cereal from the shelves of a large grocery store.
 
@@ -161,7 +132,7 @@ The student noticed that the side panels of some of the cereal boxes showed suga
 
 Two box plots are shown using the same horizontal axis, which shows sugar content per serving in grams and is labeled from 0 to 22 in increments of 2. The bottom plot is for three quarters of a cup. The box extends from 8 to 12 with a vertical line at 10 dividing it into two regions. A horizontal line off the left of the box extends to 4 and a horizontal line off the right extends to 14. The top plot is for one cup. The box extends from 4 to 14 with a vertical line at 12 dividing it into two regions. A horizontal line off the left of the box extends to 0 and a horizontal line off the right extends to 20.
 
-a. Write a few sentences to compare the distributions of sugar content per serving for the two serving sizes of cereals.
+	a. Write a few sentences to compare the distributions of sugar content per serving for the two serving sizes of cereals.
 
 After analyzing the boxplots on the preceding page, the student decided that instead of a comparison of sugar content per recommended serving, it might be more appropriate to compare sugar content for equal-size servings. To compare the amount of sugar in serving sizes of one cup each, the amount of sugar in each of the cereals showing three-quarter-cup servings on their side panels was multiplied by 4/3. The bottom boxplot shown below displays sugar content (in grams) per cup for those cereals that showed a serving size of three-quarter-cup on their side panels.
 
@@ -170,6 +141,6 @@ After analyzing the boxplots on the preceding page, the student decided that ins
     
 Two box plots are shown using the same horizontal axis, which shows adjusted sugar content per serving in grams and is labeled from 0 to 22 in increments of 2. The bottom plot is for three quarters of a cup. The box extends from 10 to 16 with a vertical line at 13 dividing it into two regions. A horizontal line off the left of the box extends to 5 and a horizontal line off the right extends to 20. The top plot is for one cup. The box extends from 4 to 14 with a vertical line at 12 dividing it into two regions. A horizontal line off the left of the box extends to 0 and a horizontal line off the right extends to 20.
 
-b. What new information about sugar content do the boxplots above provide?
+	b. What new information about sugar content do the boxplots above provide?
 
-c. Based on the boxplots shown above on this page, how would you expect the mean amounts of sugar per cup to compare for the different recommended serving sizes? Explain.
+	c. Based on the boxplots shown above on this page, how would you expect the mean amounts of sugar per cup to compare for the different recommended serving sizes? Explain.

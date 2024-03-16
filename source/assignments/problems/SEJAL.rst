@@ -57,17 +57,15 @@ Create a histogram and boxplot to visualize this distribution. Use 6 classes for
 
 What feature of the distribution is missed by only considering these two graphical representations?
 
-2. z-score one
+2. z-score one, empirical rule one
 
 3. data transformation one
 
 4. give them boxplot and ask to estimate iqr, then identify potential outliers with IQR rule.
 
-5. empirical rule one
+5. cdf one
 
-6. bias one
-
-7. sampling/randomization one
+6. bias one/sampling/randomization one
 
 
 Regression
