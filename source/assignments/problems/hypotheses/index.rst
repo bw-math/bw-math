@@ -1,6 +1,6 @@
-==================
-Hypothesis Testing
-==================
+==========
+Hypotheses
+==========
 
 .. toctree::
 	:maxdepth: 2

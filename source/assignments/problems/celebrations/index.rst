@@ -1,8 +1,8 @@
 .. _celebration_classwork:
 
-=========================
-Celebrations of Knowledge
-=========================
+============
+Celebrations
+============
 
 .. toctree::
    :maxdepth: 2
