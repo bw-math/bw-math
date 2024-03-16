@@ -19,14 +19,16 @@ An experiment was conducted to study the effect of temperature on the reliabilit
 
 You may assume that the result for any single device is not influenced by the result for any other device.
 
-a. Using the information in the table, construct a scatterplot that would be useful for showing the effect of water temperature on the ability of the devices to work for at least 5,000 hours.
-
 .. image:: ../../../assets/imgs/context/cartesian_plane_blank.jpg
 	:align: center
 
-b. Comment on any trend or pattern that is revealed by the scatterplot you constructed.
+Use this graph to answer the following questions.
 
-c. An estimate of the proportion of devices that would work after 5,000 hours of submersion in 40 C seawater can be obtained by averaging the estimates at 30 C and 50 C. Compute this estimate and the associated standard error.
+	a. Using the information in the table, construct a scatterplot that would be useful for showing the effect of water temperature on the ability of the devices to work for at least 5,000 hours.
+
+	b. Comment on any trend or pattern that is revealed by the scatterplot you constructed.
+
+	c. An estimate of the proportion of devices that would work after 5,000 hours of submersion in 40 C seawater can be obtained by averaging the estimates at 30 C and 50 C. Compute this estimate and the associated standard error.
 
 2. **2010, Free Response, #1**
 
