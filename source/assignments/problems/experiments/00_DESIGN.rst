@@ -5,23 +5,9 @@ Design
 ======
 
 A.P. Exam Practice
-------------------
+==================
 
-1. **2012, Practice Exam, #11** 
-   
-The manager of a public swimming pool wants to compare the effectiveness of two laundry detergents, Detergent A and Detergent B, in cleaning the towels that are used daily. As each dirty towel is turned in, it is placed into the only washing machine on the premises. When the washing machine contains 20 towels, the manager flips a coin to determine whether Detergent A or Detergent B will be used for that load. The cleanliness of the load of towels is rated on a scale of 1 to 10 by a person who does not know which detergent was used. The manager continues this experiment for many days. Which of the following best describes the manager's study?
-
-    (A) A completely randomized design
-
-    (B) A randomized block design with Detergent A and Detergent B as blocks
-
-    (C) A randomized block design with the washing machine as the block
-
-    (D) A matched-pairs design with Detergent A and Detergent B as the pair
-
-    (E) An observational study
-
-2. **2006, Free Response, #5** 
+1. **2006, Free Response, #5** 
    
 When a tractor pulls a plow through an agricultural field, the energy needed to pull that plow is called the draft. The draft is affected by environmental conditions such as soil type, terrain, and moisture. 
 
@@ -41,17 +27,7 @@ After the plot was plowed, the hitch was changed from the standard one to the ne
 
 	f. Plot of land is a confounding variable in this experiment. Explain why. 
 
-3. **2019, Free Response, #2** 
-   
-Researchers are investigating the effectiveness of using a fungus to control the spread of an insect that destroys trees. The researchers will create four different concentrations of fungus mixtures: 0 milliliters per liter (ml/L), 1.25 ml/L, 2.5 ml/L, and 3.75 ml/L. An equal number of the insects will be placed into 20 individual containers. The group of insects in each container will be sprayed with one of the four mixtures, and the researchers will record the number of insects that are still alive in each container one week after spraying.
-
-	a. Identify the treatments, experimental units, and response variable of the experiment.
-
-	b. Does the experiment have a control group? Explain your answer.
-
-	c. Describe how the treatments can be randomly assigned to the experimental units so that each treatment has the same number of units.
-
-4. **2007, Free Response, #2**
+2. **2007, Free Response, #2**
 
 As dogs age, diminished joint and hip health may lead to joint pain and thus reduce a dog’s activity level. Such a reduction in activity can lead to other health concerns such as weight gain and lethargy due to lack of exercise. A study is to be conducted to see which of two dietary supplements, glucosamine or chondroitin, is more effective in promoting joint and hip health and reducing the onset of canine osteoarthritis. Researchers will randomly select a total of 300 dogs from ten different large veterinary practices around the country. All of the dogs are more than 6 years old, and their owners have given consent to participate in the study. Changes in joint and hip health will be evaluated after 6 months of treatment.
 
@@ -61,7 +37,7 @@ As dogs age, diminished joint and hip health may lead to joint pain and thus red
 
 	c. Rather than using a completely randomized design, one group of researchers proposes blocking on clinics, and another group of researchers proposes blocking on breed of dog. How would you decide which one of these two variables to use as a blocking variable?
 
-5. **2009, Free Response Form B, #4**
+3. **2009, Free Response Form B, #4**
 
 A manufacturer of toxic pesticide granules plans to use a dye to color the pesticide so that birds will avoid eating it. A series of experiments will be designed to find colors or patterns that three bird species (blackbirds, starlings, and geese) will avoid eating. Representative samples of birds will be captured to use in the experiments, and the response variable will be the amount of time a hungry bird will avoid eating food of a particular color or pattern.
 
@@ -77,7 +53,7 @@ A manufacturer of toxic pesticide granules plans to use a dye to color the pesti
 
 	b. Other than blocking, what could the researcher do to increase the power of detecting a difference in the two treatments in the analysis of the experiment? Explain how your approach would increase the power.
 
-7. **2010, Free Response Form B, #10**
+4. **2010, Free Response Form B, #10**
 
 In response to nutrition concerns raised last year about food served in school cafeterias, the Smallville School District entered into a one-year contract with the Healthy Alternative Meals (HAM) company. Under this contract, the company plans and prepares meals for 2,500 elementary, middle, and high school students, with a focus on good nutrition. The school administration would like to survey the students in the district to estimate the proportion of students who are satisfied with the food under this contract.
 
@@ -88,24 +64,8 @@ Two sampling plans for selecting the students to be surveyed are under considera
 	b. If a stratified random sampling procedure is used, give one example of an effective variable on which to stratify in this survey. Explain your reasoning.
 
 	c. Describe one statistical advantage of using a stratified random sample over a simple random sample in the context of this study.
-
-8. **2011, Free Response, #3**
-
-An apartment building has nine floors and each floor has four apartments. The building owner wants to install new carpeting in eight apartments to see how well it wears before she decides whether to replace the carpet in the entire building.
-
-The figure below shows the floors of apartments in the building with their apartment numbers. Only the nine apartments indicated with an asterisk have children in the apartment.
-
-.. image:: ../../../assets/imgs/classwork/2011_apstats_frp_03.png
-	:align: center
-
-Use this information to answer the following problems.
-
-	a. For convenience, the apartment building owner wants to use a cluster sampling method, in which the floors are clusters, to select the eight apartments. Describe a process for randomly selecting eight different apartments using this method.
-
-	b. An alternative sampling method would be to select a stratified random sample of eight apartments, where the strata are apartments with children and apartments with no children. A stratified random sample of size eight might include two randomly selected apartments with children and six randomly selected apartments with no children. In the context of this situation, give one statistical advantage of selecting such a stratified sample as opposed to a cluster sample of eight apartments using the floors as clusters.
-
-
-9. **2006, Free Response, #5** 
+	
+5. **2006, Free Response, #5** 
 
 A biologist is interested in studying the effect of growth-enhancing nutrients an different salinity (salt) levels in water on the growth of shrimps. The biologist has ordered a large shipment of young tiger shrimps from a supply house for use in the study. The experiment is to be conducted in a laboratory where 10 tiger shrimps are placed randomly into each of 12 similar tanks in a controlled environment.
 
@@ -119,13 +79,3 @@ salinity levels (low and high).
 	c. Give one statistical advantage to having only tiger shrimps in the experiment. Explain why this is an advantage.
 
 	d. Give one statistical disadvantage to having only tiger shrimps in the experiment. Explain why this is a disadvantage.
-
-10. A manufacturer of boots plans to conduct an experiment to compare a new method of waterproofing to the current method. The appearance of the boots is not changed by either method. The company recruits 100 volunteers in Seattle, where it rains frequently, to wear the boots as they normally would for 6 months. At the end of the 6 months, the boots will be returned to the company to be evaluated for water damage.
-
-	a. Describe a design for this experiment that uses the 100 volunteers. Include a few sentences on how it would be implemented.
-
-	b. Could your design be double blind? Explain
-
-11. **2016, Free Response, #3**
-
-TODO

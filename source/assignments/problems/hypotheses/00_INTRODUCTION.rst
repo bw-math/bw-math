@@ -122,3 +122,16 @@ A simulation was conducted to investigate whether there is a greater reduction o
 Use this information to answer the following question.
 
 	c. Use the results of the simulation to determine whether the results from the 25 participants in the study provide convincing statistical evidence, at a 5 percent level of significance, that adding dark chocolate to a daily diet will result in a greater reduction in blood pressure, on average, than adding white chocolate to a daily diet. Justify your answer.
+	
+7. **2012, Free Response, #3**
+
+Independent random samples of 500 households were taken from a large metropolitan area in the United States for the years 1950 and 2000. Histograms of household size (number of people in a household) for the years are shown below.
+
+.. image:: ../../../assets/imgs/classwork/2012_apstats_frp_03.png
+    :align: center
+    
+Use this information to answer the following questions.
+
+	a. Compare the distributions of household size in the metropolitan area for the years 1950 and 2000.
+
+	b. A researcher wants to use these data to construct a confidence interval to estimate the change in mean household size in the metropolitan area from the year 1950 to the year 2000. State the conditions for using a two-sample t-procedure, and explain whether the conditions for inference are met.

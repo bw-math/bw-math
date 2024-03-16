@@ -54,35 +54,7 @@ Use this information to answer the following questions.
 
 	d. Is there statistically convincing evidence that electricity production by the windmill is related to wind velocity? Explain.
 
-3. **2022, Free Response, #1**
-
-A biologist gathered data on the length, in millimeters (mm), and the mass, in grams (g) , for 11 bullfrogs. The data are shown in Plot 1.
-
-.. image:: ../../../assets/imgs/classwork/2022_apstats_frp_01a.png
-	:align: center
-
-Use this information to answer the following question.
-
-	a. Based on the scatterplot, describe the relationship between mass and length, in context.
-
-From the data, the biologist calculated the least-squares regression line for predicting mass from length. The least-squares regression line is shown in Plot 2 .
-
-.. image:: ../../../assets/imgs/classwork/2022_apstats_frp_01b.png
-	:align: center
-
-Use this information to answer the following questions.
-
-	b. Identify and interpret the slope of the least-squares regression line in context.
-
-	c. Interpret the coefficient of determination of the least-squares regression line, :math:`r^2 \approx 0.819`, in context.
-
-	d. From Plot 2 , consider the residuals of the 11 bullfrogs.
-
-		i. Based on the plot, approximately what is the length and mass of the bullfrog with the largest absolute value residual?
-
-		ii. Does the least-squares regression line overestimate or underestimate the mass of the bullfrog identified in part *d-i*? Explain your answer.
-		
-4. **2018, Free Response, #1**
+3. **2018, Free Response, #1**
 
 The manager of a grocery store selected a random sample of 11 customers to investigate the relationship between the number of customers in a checkout line and the time to finish checkout. As soon as the selected customer entered the end of a checkout line, data were collected on the number of customers in line who were in front of the selected customer and the time, in seconds, until the selected customer was finished with the checkout. The data are shown in the following scatterplot along with the corresponding least-squares regression line and computer output.
 
@@ -97,7 +69,7 @@ Use this information to answer the following questions.
 
 	c. One of the data points was determined to be an outlier. Circle the point on the scatterplot and explain why the point is considered an outlier.
 
-5. **2017, Free Response, #1**
+4. **2017, Free Response, #1**
 
 Researchers studying a pack of gray wolves in North America collected data on the length **x**, in meters, from nose to tip of tail, and the weight y, in kilograms, of the wolves. A scatterplot of weight versus length revealed a relationship between the two variables described as positive, linear, and strong.
 
@@ -112,7 +84,3 @@ Researchers studying a pack of gray wolves in North America collected data on th
 	b. The data collected from the wolves were used to create the least-squares equation :math:`hat{y}_i = -16.46 + 35.02 \cdot x_i`. Interpret the meaning of the slope of the least-squares regression line in context.
 
 	c. One wolf in the pack with a length of :math:`1.4` meters had a residual of :math:`-9.67` kilograms. What was the weight of the wolf?
-	
-6. **2004, Free Response, Form B, #1**
-
-TODO
