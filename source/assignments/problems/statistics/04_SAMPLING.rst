@@ -48,7 +48,13 @@ Difference of Means
 
 	TODO
 	
-TODO
+1. **Devore, Berk, 2007**
+
+Mr. Myers notices the chemistry students in his morning class are measuring different pH values for a chemical compound than the students in his afternoon class. There are 10 students in each class. Mr. Myers decides to calculate the average pH of each class and compare them.
+
+Suppose the pH measured by a randomly selected chemistry student is normally distributed with a mean pH of 5.00 and a standard deviation of 0.2. What is the probability the difference of the class averages for the pH will be within 0.1 of each other?
+
+
 
 A.P. Exam Practice
 ==================
