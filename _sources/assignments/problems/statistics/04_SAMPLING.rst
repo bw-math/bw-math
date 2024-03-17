@@ -35,7 +35,11 @@ The lifetime of a certain brand of battery is normally distributed with a mean o
 
 2. **Devore, Berk, 2007**
 
-There are five students in Mr. Moore's AP Statistics. On the basis of his many years of experience, Mr. Moore knows the time it takes to grade a randomly chosen examination paper is normally distributed with a mean of 10 minutes and a standard deviation of 2.5 minutes. What is the probability the average amount of time Mr. Moore spends grading the latest exams is less than 8 minutes?
+There are five students in Mr. Moore's AP Statistics. On the basis of his many years of experience, Mr. Moore knows the time it takes to grade a randomly chosen examination paper is normally distributed with a mean of 10 minutes and a standard deviation of 2.5 minutes. 
+
+     a. What is the probability the average amount of time Mr. Moore spends grading the latest exams is less than 8 minutes?
+
+     b. The latest Dragonball Z is on at 8 pm on the Cartoon Network. If Mr. Moore starts grading at 7:15 PM, what is the probability Mr. Moore misses part of the epic battle between Goku and Frieza?
 
 Difference of Means
 -------------------
