@@ -512,11 +512,15 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution-of-sample-statistics">Distribution of Sample Statistics</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-proportion">Sample Proportion</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-mean">Sample Mean</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#known-standard-deviation">Known Standard Deviation</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#unknown-standard-deviation">Unknown Standard Deviation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-proportion">Sample Proportion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-proportions">Difference of Proportions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-mean">Sample Mean</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#known-standard-deviation">Known Standard Deviation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unknown-standard-deviation">Unknown Standard Deviation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-sample-means">Difference of Sample Means</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution-of-sample-mean-difference-known-sigma">Known Standard Deviation</a></li>
 </ul>
 </li>
 </ul>
@@ -534,9 +538,10 @@ document.write(`
                   
   <section id="sampling-distributions">
 <span id="id1"></span><h1>Sampling Distributions<a class="headerlink" href="#sampling-distributions" title="Permalink to this heading">#</a></h1>
+<p>TODO</p>
 <section id="central-limit-theorem">
 <span id="id2"></span><h2>Central Limit Theorem<a class="headerlink" href="#central-limit-theorem" title="Permalink to this heading">#</a></h2>
-<p>The <strong>Central Limit Theorem</strong> is one of the most important theorems in statistics. The <strong>Central Limit Theorem</strong> is what allows us to use the <a class="reference internal" href="../distributions/04_NORMAL.html#normal-distribution"><span class="std std-ref">Normal Distribution</span></a> to make inferences about the <a class="reference internal" href="../experiments/00_INTRODUCTION.html#population"><span class="std std-ref">population</span></a></p>
+<p>The <strong>Central Limit Theorem</strong> is one of the most important theorems in statistics (if not mathematics). The <strong>Central Limit Theorem</strong> is what allows us to use the <a class="reference internal" href="../distributions/04_NORMAL.html#normal-distribution"><span class="std std-ref">Normal Distribution</span></a> to make inferences about the <a class="reference internal" href="../experiments/00_INTRODUCTION.html#population"><span class="std std-ref">population</span></a></p>
 <p>TODO</p>
 <section id="motivation">
 <span id="clt-motivation"></span><h3>Motivation<a class="headerlink" href="#motivation" title="Permalink to this heading">#</a></h3>
@@ -584,21 +589,19 @@ document.write(`
 <p>TODO</p>
 </section>
 </section>
-<section id="distribution-of-sample-statistics">
-<span id="sampling-distributions-of-statistics"></span><h2>Distribution of Sample Statistics<a class="headerlink" href="#distribution-of-sample-statistics" title="Permalink to this heading">#</a></h2>
 <section id="sample-proportion">
-<span id="distribution-of-sample-proportion"></span><h3>Sample Proportion<a class="headerlink" href="#sample-proportion" title="Permalink to this heading">#</a></h3>
+<span id="distribution-of-sample-proportion"></span><h2>Sample Proportion<a class="headerlink" href="#sample-proportion" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
 <aside class="topic">
 <p class="topic-title">Sample Proportion Sampling Distribution</p>
 <p>If <img class="math" src="../../_images/math/d8b2519d4f819affeeda8b1187028518379ce3af.png" alt="\mathcal{X}_i \sim \text{Bern}(p)"/> for <img class="math" src="../../_images/math/ec4b4548e931e1aa29cb2b093a6646769e4869b0.png" alt="i = 1, 2, ..., n"/> and the following conditions are met,</p>
 <ol class="arabic simple">
-<li><p><img class="math" src="../../_images/math/c3eb749e86d3a3e68b6d86af9b9fcb3708a1d773.png" alt="n cdot p \geq 10"/></p></li>
-<li><p><img class="math" src="../../_images/math/f27865e42475ca091d48c4e2d2b5f46569511487.png" alt="n cdot (1 - p) \geq 10"/></p></li>
+<li><p><img class="math" src="../../_images/math/6b30de0e332b92010da2762c839988229faa518e.png" alt="n \cdot p \geq 10"/></p></li>
+<li><p><img class="math" src="../../_images/math/9c2f23d9afa387a8e41ff4fdbc09d4cd3383bd14.png" alt="n \cdot (1 - p) \geq 10"/></p></li>
 </ol>
 <p>The random variable, <img class="math" src="../../_images/math/8cd54a2dc98748453b2377b077fa942a95157796.png" alt="\hat{p} = \frac{\mathcal{X}_1 + \mathcal{X}_2 + ... + \mathcal{X}_n}{n}"/> has the following distribution,</p>
 <aside class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\hat{p} \sim \mathcal{N}(n \cdot p, \sqrt{n \cdot p \cdot (1 - p))</span>)</p>
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\hat{p} \sim \mathcal{N}(n \cdot p, \sqrt{\frac{p \cdot (1 - p)}{n})</span>)</p>
 <p>latex exited with error
 [stdout]
 This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
@@ -626,7 +629,7 @@ For additional information on amsmath, use the `?' option.
 (./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd))
 Runaway argument?
-\hat {p} \sim \mathcal {N}(n \cdot p, \sqrt {n \cdot p \cdot (1 - p))\ETC.
+\hat {p} \sim \mathcal {N}(n \cdot p, \sqrt {\frac {p \cdot (1 - p)}{\ETC.
 ! File ended while scanning use of \split.
 &lt;inserted text&gt; 
                 \par 
@@ -640,36 +643,108 @@ Transcript written on math.log.
 </p>
 </aside>
 </aside>
+<p>TODO</p>
+<section id="difference-of-proportions">
+<h3>Difference of Proportions<a class="headerlink" href="#difference-of-proportions" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Sampling Distribution for Difference of Sample Proportions</p>
+<p>If <img class="math" src="../../_images/math/0ed13936ed488b320c8add7073252f1663ac8d43.png" alt="\mathcal{X}_i \sim \text{Bern}(p_x)"/> for <img class="math" src="../../_images/math/64eecc38c5a9d75031c96264e626d5a689ec533b.png" alt="i = 1, 2, ..., n_x"/> and the following conditions are met,</p>
+<ol class="arabic simple">
+<li><p><img class="math" src="../../_images/math/cb1e0fd9dce4416344ce7b9b5be4aa7cbafd0ee6.png" alt="n_x \cdot p_x \geq 10"/></p></li>
+<li><p><img class="math" src="../../_images/math/4f40dcbff58ed8544a70f4b916885bd053bcd1b7.png" alt="n_x \cdot (1 - p_x) \geq 10"/></p></li>
+<li><p><img class="math" src="../../_images/math/f0fe22a394fcbdafeadbfb2875428f8aeccc79b0.png" alt="n_y \cdot p_y \geq 10"/></p></li>
+<li><p><img class="math" src="../../_images/math/bd393d69d0612c0ba289489dc741e0cf15cdca8c.png" alt="n_y \cdot (1 - p_y) \geq 10"/></p></li>
+</ol>
+<p>The random variable, <img class="math" src="../../_images/math/5190db87f752f857ef94ec910606ddddbac99a00.png" alt="\hat{p}_x - \hat{p}_y"/> has the following distribution,</p>
+<div class="math">
+<p><img src="../../_images/math/f7d4d537a2634d9fe88b8ceb62c237341b70625b.png" alt="\hat{p} \sim \mathcal{N}(n_x \cdot p_x - n_y \cdot p_y, \sqrt{\frac{p_x \cdot (1 - p_x)}{n_x} + \frac{p_y \cdot (1 - p_y)}{n_y}} )"/></p>
+</div></aside>
+<p>TODO</p>
+</section>
 </section>
 <section id="sample-mean">
-<span id="distribution-of-sample-mean"></span><h3>Sample Mean<a class="headerlink" href="#sample-mean" title="Permalink to this heading">#</a></h3>
+<span id="distribution-of-sample-mean"></span><h2>Sample Mean<a class="headerlink" href="#sample-mean" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
 <section id="known-standard-deviation">
-<span id="distribution-of-sample-mean-known-sigma"></span><h4>Known Standard Deviation<a class="headerlink" href="#known-standard-deviation" title="Permalink to this heading">#</a></h4>
+<span id="distribution-of-sample-mean-known-sigma"></span><h3>Known Standard Deviation<a class="headerlink" href="#known-standard-deviation" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 <aside class="topic">
 <p class="topic-title">Distribution of Sample Mean, Standard Deviation Known, Version 1</p>
-<p>Let each <img class="math" src="../../_images/math/e5b80215013a0a149747cac301917feff517adbd.png" alt="\mathcal{X_i}"/> for <img class="math" src="../../_images/math/ec4b4548e931e1aa29cb2b093a6646769e4869b0.png" alt="i = 1, 2, ..., n"/> be selected from the same population. If <img class="math" src="../../_images/math/9b6055b5b6daa5ddada6d07ddd37afc31a61ea4d.png" alt="n \rightarrow \infty"/>, then</p>
+<p>Let each <img class="math" src="../../_images/math/e5b80215013a0a149747cac301917feff517adbd.png" alt="\mathcal{X_i}"/> for <img class="math" src="../../_images/math/ec4b4548e931e1aa29cb2b093a6646769e4869b0.png" alt="i = 1, 2, ..., n"/> be selected from the same population. If <img class="math" src="../../_images/math/e8f0ee17442ee2c477314489a6489da55fe813a0.png" alt="n \geq 30"/>, then</p>
 <div class="math">
 <p><img src="../../_images/math/1ddee0201e23c1461800e12be3a33cef2a946349.png" alt="\bar{X} \sim \mathcal{N}(\mu, \frac{sigma}{\sqrt{n}})"/></p>
 </div></aside>
 <p>TODO</p>
 <aside class="topic">
 <p class="topic-title">Distribution of Sample Mean, Standard Deviation Known, Version 2</p>
-<p>Let each <img class="math" src="../../_images/math/e5b80215013a0a149747cac301917feff517adbd.png" alt="\mathcal{X_i}"/> for <img class="math" src="../../_images/math/ec4b4548e931e1aa29cb2b093a6646769e4869b0.png" alt="i = 1, 2, ..., n"/> be selected from the same population. If <img class="math" src="../../_images/math/9b6055b5b6daa5ddada6d07ddd37afc31a61ea4d.png" alt="n \rightarrow \infty"/>, then</p>
-<div class="math">
-<p><img src="../../_images/math/1ddee0201e23c1461800e12be3a33cef2a946349.png" alt="\bar{X} \sim \mathcal{N}(\mu, \frac{sigma}{\sqrt{n}})"/></p>
-</div></aside>
+<p>Let each <img class="math" src="../../_images/math/e5b80215013a0a149747cac301917feff517adbd.png" alt="\mathcal{X_i}"/> for <img class="math" src="../../_images/math/ec4b4548e931e1aa29cb2b093a6646769e4869b0.png" alt="i = 1, 2, ..., n"/> be selected from the same population. If <img class="math" src="../../_images/math/e8f0ee17442ee2c477314489a6489da55fe813a0.png" alt="n \geq 30"/>, then</p>
+<aside class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\frac{\bar{X} - \mu}{ \frac{\sigma}{\sqrt{n}} \sim \mathcal{N}(0, 1)</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd))
+Runaway argument?
+\frac {\bar {X} - \mu }{ \frac {\sigma }{\sqrt {n}} \sim \mathcal {N}\ETC.
+! File ended while scanning use of \split.
+&lt;inserted text&gt; 
+                \par 
+&lt;*&gt; math.tex
+            
+! Emergency stop.
+&lt;*&gt; math.tex
+            
+No pages of output.
+Transcript written on math.log.
+</p>
+</aside>
+</aside>
 <p>TODO</p>
 </section>
 <section id="unknown-standard-deviation">
-<span id="distribution-of-sample-mean-unknown-sigma"></span><h4>Unknown Standard Deviation<a class="headerlink" href="#unknown-standard-deviation" title="Permalink to this heading">#</a></h4>
+<span id="distribution-of-sample-mean-unknown-sigma"></span><h3>Unknown Standard Deviation<a class="headerlink" href="#unknown-standard-deviation" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 <aside class="topic">
 <p class="topic-title">Distribution of Sample Mean, Standard Deviation Unknown</p>
-<p>Let each <img class="math" src="../../_images/math/e5b80215013a0a149747cac301917feff517adbd.png" alt="\mathcal{X_i}"/> for <img class="math" src="../../_images/math/ec4b4548e931e1aa29cb2b093a6646769e4869b0.png" alt="i = 1, 2, ..., n"/> be selected from the same population. If <img class="math" src="../../_images/math/9b6055b5b6daa5ddada6d07ddd37afc31a61ea4d.png" alt="n \rightarrow \infty"/>, then</p>
+<p>Let each <img class="math" src="../../_images/math/e5b80215013a0a149747cac301917feff517adbd.png" alt="\mathcal{X_i}"/> for <img class="math" src="../../_images/math/ec4b4548e931e1aa29cb2b093a6646769e4869b0.png" alt="i = 1, 2, ..., n"/> be selected from the same population. If <img class="math" src="../../_images/math/e8f0ee17442ee2c477314489a6489da55fe813a0.png" alt="n \geq 30"/>, then</p>
 <div class="math">
 <p><img src="../../_images/math/79d8df2a71993f86d4cd071c0229b139e6f489f0.png" alt="\frac{ \bar{X} - \mu }{ \frac{s}{ \sqrt{n} } } \sim t(n-1)"/></p>
+</div></aside>
+<p>TODO</p>
+</section>
+<section id="difference-of-sample-means">
+<h3>Difference of Sample Means<a class="headerlink" href="#difference-of-sample-means" title="Permalink to this heading">#</a></h3>
+<section id="distribution-of-sample-mean-difference-known-sigma">
+<span id="id3"></span><h4>Known Standard Deviation<a class="headerlink" href="#distribution-of-sample-mean-difference-known-sigma" title="Permalink to this heading">#</a></h4>
+<p>TODO</p>
+<aside class="topic">
+<p class="topic-title">Sampling Distribution for Difference of Sample Means, Standard Deviation Known</p>
+<p>If <img class="math" src="../../_images/math/de4c41e5599717001141885eb553341d8ec98114.png" alt="\mathcal{X}_i \sim \mathcal{N}(\mu_x, \sigma_y)"/> for <img class="math" src="../../_images/math/64eecc38c5a9d75031c96264e626d5a689ec533b.png" alt="i = 1, 2, ..., n_x"/>, <img class="math" src="../../_images/math/15034ef0c404a705021dd010482d7d32e210c4f8.png" alt="\mathcal{Y}_i \sim \mathcal{N}(\mu_y, \sigma_x)"/> for <img class="math" src="../../_images/math/574862d6d5c18d3476778960db49b9be2abe75a3.png" alt="i = 1, 2, ..., n_y"/> <strong>and</strong> <img class="math" src="../../_images/math/62074cae7f5713387e516e09d92d2b218d4fd45b.png" alt="min(n_1, n_2) \geq 30"/>, then the random variable <img class="math" src="../../_images/math/fdb2f50f5d2ace1b9868ca4d0e2abb52ecc021e3.png" alt="\bar{\mathcal{X}} - \bar{\mathcal{Y}}"/> has the following distribution,</p>
+<div class="math">
+<p><img src="../../_images/math/ea4cb0eb4a23da734b704bdae6c41669afa21982.png" alt="\bar{\mathcal{X}} - \bar{\mathcal{Y}} \sim \mathcal{N}(\mu_x - \mu_y, \sqrt{ \frac{{\sigma_x}^2}{n_x} + \frac{{\sigma_y}^2}{n_y}})"/></p>
 </div></aside>
 <p>TODO</p>
 </section>
@@ -726,11 +801,15 @@ Transcript written on math.log.
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution-of-sample-statistics">Distribution of Sample Statistics</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-proportion">Sample Proportion</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-mean">Sample Mean</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#known-standard-deviation">Known Standard Deviation</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#unknown-standard-deviation">Unknown Standard Deviation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-proportion">Sample Proportion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-proportions">Difference of Proportions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-mean">Sample Mean</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#known-standard-deviation">Known Standard Deviation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unknown-standard-deviation">Unknown Standard Deviation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-sample-means">Difference of Sample Means</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution-of-sample-mean-difference-known-sigma">Known Standard Deviation</a></li>
 </ul>
 </li>
 </ul>

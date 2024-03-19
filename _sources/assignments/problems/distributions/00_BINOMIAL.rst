@@ -188,18 +188,8 @@ Use this information to solve the following problems.
 
 	b. If 10 households in this area are selected at random, what is the probability that exactly 2 of them will be in violation of this law? Show your work.
 
-5. **2009, Free Response, #2**
 
-A tire manufacturer designed a new tread pattern for its all-weather tires. Repeated tests were conducted on cars of approximately the same weight traveling at 60 miles per hour. The tests showed that the new tread pattern enables the cars to stop completely in an average distance of 125 feet with a standard deviation of 6.5 feet and that the stopping distances are approximately normally distributed.
-
-	a. What is the 70th percentile of the distribution of stopping distances?
-
-	b. What is the probability that at least 2 cars out of 5 randomly selected cars in the study will stop in a distance that is greater than the distance calculated in *part a* ?
-
-	c. What is the probability that a randomly selected sample of 5 cars in the study will have a mean stopping distance of at least 130 feet?
-
-
-6. **2022, Free Response, #3** 
+5. **2022, Free Response, #3** 
 
 A machine at a manufacturing company is programmed to fill shampoo bottles such that the amount of shampoo in each bottle is normally distributed with mean 0.60 liter and standard deviation 0.04 liter. Let the random variable **A** represent the amount of shampoo, in liters, that is inserted into a bottle by the filling machine.
 
@@ -213,7 +203,7 @@ A machine at a manufacturing company is programmed to fill shampoo bottles such 
 
 	c. To reduce the number of crates rejected by the beauty supply warehouse manager, the manufacturing company is considering adjusting the programming of the filling machine so that the amount of shampoo in each bottle is normally distributed with mean 0.56 liter and standard deviation 0.03 liter. Would you recommend that the manufacturing company use the original programming of the filling machine or the adjusted programming of the filling machine? Provide a statistical justification for your choice.
 
-7. **2021, Free Response, #3**
+6. **2021, Free Response, #3**
 
 To increase morale among employees, a company began a program in which one employee is randomly selected each week to receive a gift card. Each of the company's 200 employees is equally likely to be selected each week, and the same employee could be selected more than once. Each week’s selection is independent from every other week.
 
@@ -227,7 +217,7 @@ To increase morale among employees, a company began a program in which one emplo
 
 	c. Suppose that Agatha, an employee at the company, never receives a gift card for an entire 52 -week year. Based on her experience, does Agatha have a strong argument that the selection process was not truly random? Explain your answer.
 	
-8. **2010, Free Response Form B, #3**
+7. **2010, Free Response Form B, #3**
 
 A test consisting of 25 multiple-choice questions with 5 answer choices for each question is administered. For each question, there is only 1 correct answer.
 

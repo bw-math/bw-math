@@ -7,29 +7,37 @@ Sampling Distributions
 Sample Proportion
 =================
 
-.. topic:: Sample Proportion Sampling Distribution
+.. topic:: Sampling Distribution for Sample Proportion
 
 	If :math:`\mathcal{X}_i \sim \text{Bern}(p)` for :math:`i = 1, 2, ..., n` and the following conditions are met,
 	
-	1. :math:`n cdot p \geq 10`
-	2. :math:`n cdot (1 - p) \geq 10`
+	1. :math:`n \cdot p \geq 10`
+	2. :math:`n \cdot (1 - p) \geq 10`
 	
 	The random variable, :math:`\hat{p} = \frac{\mathcal{X}_1 + \mathcal{X}_2 + ... + \mathcal{X}_n}{n}` has the following distribution,
 	
 	.. math::
 	
-		\hat{p} \sim \mathcal{N}(n \cdot p, \sqrt{n \cdot p \cdot (1 - p)) 
-	
-TODO
+		\hat{p} \sim \mathcal{N}(n \cdot p, \sqrt{\frac{p \cdot (1 - p)}{n}) 
 
 Difference of Proportions
 -------------------------
 
-.. topic:: Difference of Sample Proportions Sampling Distribution
+.. topic:: Sampling Distribution for Difference of Sample Proportions
 
-	TODO
+	If :math:`\mathcal{X}_i \sim \text{Bern}(p_x)` for :math:`i = 1, 2, ..., n_x` and the following conditions are met,
 	
-TODO
+	1. :math:`n_x \cdot p_x \geq 10`
+	2. :math:`n_x \cdot (1 - p_x) \geq 10`
+	3. :math:`n_y \cdot p_y \geq 10`
+	4. :math:`n_y \cdot (1 - p_y) \geq 10`
+	
+	The random variable, :math:`\hat{p}_x - \hat{p}_y` has the following distribution,
+	
+	.. math::
+	
+		\hat{p} \sim \mathcal{N}(n_x \cdot p_x - n_y \cdot p_y, \sqrt{\frac{p_x \cdot (1 - p_x)}{n_x} + \frac{p_y \cdot (1 - p_y)}{n_y}} ) 
+	
 
 Sample Mean
 ===========
@@ -41,6 +49,60 @@ Sample Mean
 	.. math::
 	
 		\bar{\mathcal{X}} \sim \mathcal{N}(\mu, \frac{\sigma}{\sqrt{n}})
+		
+Difference of Means
+-------------------
+
+.. topic:: Sampling Distribution for Difference of Sample Means
+
+	If :math:`\mathcal{X}_i \sim \mathcal{N}(\mu_x, \sigma_y)` for :math:`i = 1, 2, ..., n_x`, :math:`\mathcal{Y}_i \sim \mathcal{N}(\mu_y, \sigma_x)` for :math:`i = 1, 2, ..., n_y` **and** :math:`min(n_1, n_2) \geq 30`, then the random variable :math:`\bar{\mathcal{X}} - \bar{\mathcal{Y}}` has the following distribution, 
+	
+	.. math::
+	
+		\bar{\mathcal{X}} - \bar{\mathcal{Y}} \sim \mathcal{N}(\mu_x - \mu_y, \sqrt{ \frac{{\sigma_x}^2}{n_x} + \frac{{\sigma_y}^2}{n_y}})
+	
+Introduction
+============
+
+1. **Devore, Berk, 2007**
+
+There are two traffice lights on the way to work. Let :math:`\mathcal{X}_1` be the number of lights that are red, requiring a stop, and suppose the distribution of :math:`\mathcal{X}_1` is as follows,
+
++----------------+--------+---------+--------+
+| :math:`x_1`    |   0    |    1    |    2   |
++----------------+--------+---------+--------+
+| :math:`p(x_1)` |  0.2   |   0.5   |   0.3  |
++----------------+--------+---------+--------+
+
+Let :math:`\mathcal{X}_2` be the numebr of lights that are red on the way home; :math:`\mathcal{X}_2` is independent of :math:`\mathcal{X}_1`. Assume that :math:`\mathcal{X}_2` has the same distribution as :math:`mathcal{X}_1`, so that :math:`\mathcal{X}_1` and :math:`\mathcal{X}_2` is a random sample of size :math:`n=2`.
+
+	a. Let :math:`\mathcal{T} = \mathcal{X}_1 + \mathcal{X}_2`. Find the probability distribution of :math:`\mathcal{T}`. 
+	
+	b. Calculate :math:`\mu_{T}`. How does it relate to :math:`\mu`, the population mean?
+	
+	c. Calculate :math:`{\sigma_T}^2`. How does it relate to :math:`\sigma^2`, the population variance?
+	
+2. **Moore, 2007**
+
+Let :math:`\mathcal{X}` be the number of students absent from AP Statistics on a given day. Suppose the distribution of :math:`\mathcal{X}` is as follows,
+
++--------------+--------+---------+--------+---------+
+| :math:`x`    |   1    |    2    |    3   |    4    |
++--------------+--------+---------+--------+---------+
+| :math:`p(x)` |  0.4   |   0.3   |   0.2  |   0.1   |
++--------------+--------+---------+--------+---------+
+
+	a. Consider a random sample of size :math:`n=2` (two days), and let :math:`\bar{\mathcal{X}}` be the sample mean of the number of absent students. Obtain the probability distribution of :math:`\bar{\mathcal{X}}`.
+	
+	b. What is the probability the average number of absent students in a sample of 2 is atleast 3 absent students?
+	
+	c. Is the sample mean an unbiased estimator?
+	
+	d. Consider again a random sample of size :math:`n=2`, and let :math:`\mathcal{R}` be the sample range of the number of absent students. Obtain the probability distribution of :math:`\mathcal{R}`.
+
+	e. What is the probability the sample range in a sample of 2 is at most 2 absent students? 
+	
+	e. Is the sample range an unbiased estimator?
 	
 1. **Devore, Berk, 2007**
 

@@ -516,6 +516,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-means">Difference of Means</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Difference of Means</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
 </ul>
             </nav>
@@ -533,15 +537,15 @@ document.write(`
 <section id="sample-proportion">
 <h2>Sample Proportion<a class="headerlink" href="#sample-proportion" title="Permalink to this heading">#</a></h2>
 <aside class="topic">
-<p class="topic-title">Sample Proportion Sampling Distribution</p>
+<p class="topic-title">Sampling Distribution for Sample Proportion</p>
 <p>If <img class="math" src="../../../_images/math/d8b2519d4f819affeeda8b1187028518379ce3af.png" alt="\mathcal{X}_i \sim \text{Bern}(p)"/> for <img class="math" src="../../../_images/math/ec4b4548e931e1aa29cb2b093a6646769e4869b0.png" alt="i = 1, 2, ..., n"/> and the following conditions are met,</p>
 <ol class="arabic simple">
-<li><p><img class="math" src="../../../_images/math/c3eb749e86d3a3e68b6d86af9b9fcb3708a1d773.png" alt="n cdot p \geq 10"/></p></li>
-<li><p><img class="math" src="../../../_images/math/f27865e42475ca091d48c4e2d2b5f46569511487.png" alt="n cdot (1 - p) \geq 10"/></p></li>
+<li><p><img class="math" src="../../../_images/math/6b30de0e332b92010da2762c839988229faa518e.png" alt="n \cdot p \geq 10"/></p></li>
+<li><p><img class="math" src="../../../_images/math/9c2f23d9afa387a8e41ff4fdbc09d4cd3383bd14.png" alt="n \cdot (1 - p) \geq 10"/></p></li>
 </ol>
 <p>The random variable, <img class="math" src="../../../_images/math/8cd54a2dc98748453b2377b077fa942a95157796.png" alt="\hat{p} = \frac{\mathcal{X}_1 + \mathcal{X}_2 + ... + \mathcal{X}_n}{n}"/> has the following distribution,</p>
 <aside class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\hat{p} \sim \mathcal{N}(n \cdot p, \sqrt{n \cdot p \cdot (1 - p))</span>)</p>
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\hat{p} \sim \mathcal{N}(n \cdot p, \sqrt{\frac{p \cdot (1 - p)}{n})</span>)</p>
 <p>latex exited with error
 [stdout]
 This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
@@ -569,7 +573,7 @@ For additional information on amsmath, use the `?' option.
 (./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd))
 Runaway argument?
-\hat {p} \sim \mathcal {N}(n \cdot p, \sqrt {n \cdot p \cdot (1 - p))\ETC.
+\hat {p} \sim \mathcal {N}(n \cdot p, \sqrt {\frac {p \cdot (1 - p)}{\ETC.
 ! File ended while scanning use of \split.
 &lt;inserted text&gt; 
                 \par 
@@ -583,14 +587,21 @@ Transcript written on math.log.
 </p>
 </aside>
 </aside>
-<p>TODO</p>
 <section id="difference-of-proportions">
 <h3>Difference of Proportions<a class="headerlink" href="#difference-of-proportions" title="Permalink to this heading">#</a></h3>
 <aside class="topic">
-<p class="topic-title">Difference of Sample Proportions Sampling Distribution</p>
-<p>TODO</p>
-</aside>
-<p>TODO</p>
+<p class="topic-title">Sampling Distribution for Difference of Sample Proportions</p>
+<p>If <img class="math" src="../../../_images/math/0ed13936ed488b320c8add7073252f1663ac8d43.png" alt="\mathcal{X}_i \sim \text{Bern}(p_x)"/> for <img class="math" src="../../../_images/math/64eecc38c5a9d75031c96264e626d5a689ec533b.png" alt="i = 1, 2, ..., n_x"/> and the following conditions are met,</p>
+<ol class="arabic simple">
+<li><p><img class="math" src="../../../_images/math/cb1e0fd9dce4416344ce7b9b5be4aa7cbafd0ee6.png" alt="n_x \cdot p_x \geq 10"/></p></li>
+<li><p><img class="math" src="../../../_images/math/4f40dcbff58ed8544a70f4b916885bd053bcd1b7.png" alt="n_x \cdot (1 - p_x) \geq 10"/></p></li>
+<li><p><img class="math" src="../../../_images/math/f0fe22a394fcbdafeadbfb2875428f8aeccc79b0.png" alt="n_y \cdot p_y \geq 10"/></p></li>
+<li><p><img class="math" src="../../../_images/math/bd393d69d0612c0ba289489dc741e0cf15cdca8c.png" alt="n_y \cdot (1 - p_y) \geq 10"/></p></li>
+</ol>
+<p>The random variable, <img class="math" src="../../../_images/math/5190db87f752f857ef94ec910606ddddbac99a00.png" alt="\hat{p}_x - \hat{p}_y"/> has the following distribution,</p>
+<div class="math">
+<p><img src="../../../_images/math/f7d4d537a2634d9fe88b8ceb62c237341b70625b.png" alt="\hat{p} \sim \mathcal{N}(n_x \cdot p_x - n_y \cdot p_y, \sqrt{\frac{p_x \cdot (1 - p_x)}{n_x} + \frac{p_y \cdot (1 - p_y)}{n_y}} )"/></p>
+</div></aside>
 </section>
 </section>
 <section id="sample-mean">
@@ -601,6 +612,76 @@ Transcript written on math.log.
 <div class="math">
 <p><img src="../../../_images/math/2866c9731f6d67a559f45ddf8d3aded627e2bc0e.png" alt="\bar{\mathcal{X}} \sim \mathcal{N}(\mu, \frac{\sigma}{\sqrt{n}})"/></p>
 </div></aside>
+<section id="difference-of-means">
+<h3>Difference of Means<a class="headerlink" href="#difference-of-means" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
+<p class="topic-title">Sampling Distribution for Difference of Sample Means</p>
+<p>If <img class="math" src="../../../_images/math/de4c41e5599717001141885eb553341d8ec98114.png" alt="\mathcal{X}_i \sim \mathcal{N}(\mu_x, \sigma_y)"/> for <img class="math" src="../../../_images/math/64eecc38c5a9d75031c96264e626d5a689ec533b.png" alt="i = 1, 2, ..., n_x"/>, <img class="math" src="../../../_images/math/15034ef0c404a705021dd010482d7d32e210c4f8.png" alt="\mathcal{Y}_i \sim \mathcal{N}(\mu_y, \sigma_x)"/> for <img class="math" src="../../../_images/math/574862d6d5c18d3476778960db49b9be2abe75a3.png" alt="i = 1, 2, ..., n_y"/> <strong>and</strong> <img class="math" src="../../../_images/math/62074cae7f5713387e516e09d92d2b218d4fd45b.png" alt="min(n_1, n_2) \geq 30"/>, then the random variable <img class="math" src="../../../_images/math/fdb2f50f5d2ace1b9868ca4d0e2abb52ecc021e3.png" alt="\bar{\mathcal{X}} - \bar{\mathcal{Y}}"/> has the following distribution,</p>
+<div class="math">
+<p><img src="../../../_images/math/ea4cb0eb4a23da734b704bdae6c41669afa21982.png" alt="\bar{\mathcal{X}} - \bar{\mathcal{Y}} \sim \mathcal{N}(\mu_x - \mu_y, \sqrt{ \frac{{\sigma_x}^2}{n_x} + \frac{{\sigma_y}^2}{n_y}})"/></p>
+</div></aside>
+</section>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Devore, Berk, 2007</strong></p></li>
+</ol>
+<p>There are two traffice lights on the way to work. Let <img class="math" src="../../../_images/math/9cda13763662fc25767720c443b12eddcf8f95db.png" alt="\mathcal{X}_1"/> be the number of lights that are red, requiring a stop, and suppose the distribution of <img class="math" src="../../../_images/math/9cda13763662fc25767720c443b12eddcf8f95db.png" alt="\mathcal{X}_1"/> is as follows,</p>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p><img class="math" src="../../../_images/math/e564d43fd97a8499ef8ceb6167286e4ae267704d.png" alt="x_1"/></p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p><img class="math" src="../../../_images/math/14f78e5f0a2161287c5f903c22b6f42bafe55ade.png" alt="p(x_1)"/></p></td>
+<td><p>0.2</p></td>
+<td><p>0.5</p></td>
+<td><p>0.3</p></td>
+</tr>
+</tbody>
+</table>
+<p>Let <img class="math" src="../../../_images/math/c5acf59807ad59f4d2701e4479db3900d27af2ba.png" alt="\mathcal{X}_2"/> be the numebr of lights that are red on the way home; <img class="math" src="../../../_images/math/c5acf59807ad59f4d2701e4479db3900d27af2ba.png" alt="\mathcal{X}_2"/> is independent of <img class="math" src="../../../_images/math/9cda13763662fc25767720c443b12eddcf8f95db.png" alt="\mathcal{X}_1"/>. Assume that <img class="math" src="../../../_images/math/c5acf59807ad59f4d2701e4479db3900d27af2ba.png" alt="\mathcal{X}_2"/> has the same distribution as <img class="math" src="../../../_images/math/7ec937ebf8a00c10c37427794f4881afbe1175a7.png" alt="mathcal{X}_1"/>, so that <img class="math" src="../../../_images/math/9cda13763662fc25767720c443b12eddcf8f95db.png" alt="\mathcal{X}_1"/> and <img class="math" src="../../../_images/math/c5acf59807ad59f4d2701e4479db3900d27af2ba.png" alt="\mathcal{X}_2"/> is a random sample of size <img class="math" src="../../../_images/math/e3400946477dcc7a8d7481c94d0c3f05927b55fa.png" alt="n=2"/>.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Let <img class="math" src="../../../_images/math/131179d61df8e28731c6643f86cce10f8a293b80.png" alt="\mathcal{T} = \mathcal{X}_1 + \mathcal{X}_2"/>. Find the probability distribution of <img class="math" src="../../../_images/math/b49b3000768772d1e262d52d47c387b1c2192ff9.png" alt="\mathcal{T}"/>.</p></li>
+<li><p>Calculate <img class="math" src="../../../_images/math/82538295a5dc3c61428e80b9802d4b6d0387f0c1.png" alt="\mu_{T}"/>. How does it relate to <img class="math" src="../../../_images/math/18b19e5f315a11447a2f609580b5706d0feb0e26.png" alt="\mu"/>, the population mean?</p></li>
+<li><p>Calculate <img class="math" src="../../../_images/math/581dfa5b1071a4f18f273d619b3890701e03cc5a.png" alt="{\sigma_T}^2"/>. How does it relate to <img class="math" src="../../../_images/math/6c581090dd2dcb97291d755af821103513f02348.png" alt="\sigma^2"/>, the population variance?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Moore, 2007</strong></p></li>
+</ol>
+<p>Let <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> be the number of students absent from AP Statistics on a given day. Suppose the distribution of <img class="math" src="../../../_images/math/29e77bcb463b91a01f20a669eadb8579dac4814f.png" alt="\mathcal{X}"/> is as follows,</p>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p><img class="math" src="../../../_images/math/13b82fb6fc3d2327db49962e88bde460e7365261.png" alt="x"/></p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p><img class="math" src="../../../_images/math/633652ea58c4c7ea2613d5c06ae938b256497331.png" alt="p(x)"/></p></td>
+<td><p>0.4</p></td>
+<td><p>0.3</p></td>
+<td><p>0.2</p></td>
+<td><p>0.1</p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Consider a random sample of size <img class="math" src="../../../_images/math/e3400946477dcc7a8d7481c94d0c3f05927b55fa.png" alt="n=2"/> (two days), and let <img class="math" src="../../../_images/math/f850b2e426a531fad08e21df179aeb2e97780e93.png" alt="\bar{\mathcal{X}}"/> be the sample mean of the number of absent students. Obtain the probability distribution of <img class="math" src="../../../_images/math/f850b2e426a531fad08e21df179aeb2e97780e93.png" alt="\bar{\mathcal{X}}"/>.</p></li>
+<li><p>What is the probability the average number of absent students in a sample of 2 is atleast 3 absent students?</p></li>
+<li><p>Is the sample mean an unbiased estimator?</p></li>
+<li><p>Consider again a random sample of size <img class="math" src="../../../_images/math/e3400946477dcc7a8d7481c94d0c3f05927b55fa.png" alt="n=2"/>, and let <img class="math" src="../../../_images/math/d7cbed12e640fc3d178cd48f5ef7777c916c5c9c.png" alt="\mathcal{R}"/> be the sample range of the number of absent students. Obtain the probability distribution of <img class="math" src="../../../_images/math/d7cbed12e640fc3d178cd48f5ef7777c916c5c9c.png" alt="\mathcal{R}"/>.</p></li>
+<li><p>What is the probability the sample range in a sample of 2 is at most 2 absent students?</p></li>
+</ol>
+<ol class="loweralpha simple" start="5">
+<li><p>Is the sample range an unbiased estimator?</p></li>
+</ol>
+</div></blockquote>
 <ol class="arabic simple">
 <li><p><strong>Devore, Berk, 2007</strong></p></li>
 </ol>
@@ -615,8 +696,8 @@ Transcript written on math.log.
 <li><p>The latest Dragonball Z is on at 8 pm on the Cartoon Network. If Mr. Moore starts grading at 7:15 PM, what is the probability Mr. Moore misses part of the epic battle between Goku and Frieza?</p></li>
 </ol>
 </div></blockquote>
-<section id="difference-of-means">
-<h3>Difference of Means<a class="headerlink" href="#difference-of-means" title="Permalink to this heading">#</a></h3>
+<section id="id1">
+<h3>Difference of Means<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <aside class="topic">
 <p class="topic-title">Sampling Distribution for Difference of Sample Means</p>
 <p>TODO</p>
@@ -791,6 +872,10 @@ Transcript written on math.log.
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-mean">Sample Mean</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-means">Difference of Means</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Difference of Means</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
