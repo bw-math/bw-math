@@ -516,8 +516,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-means">Difference of Means</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Difference of Means</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Sampling Distributions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-proportions">Sample Proportions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-sample-proportions">Difference of Sample Proportions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Difference of Means</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
@@ -582,8 +585,10 @@ document.write(`
 </div></aside>
 </section>
 </section>
-<section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<section id="problems">
+<h2>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
+<section id="id1">
+<h3>Sampling Distributions<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p><strong>Devore, Berk, 2007</strong></p></li>
 </ol>
@@ -602,7 +607,7 @@ document.write(`
 </tr>
 </tbody>
 </table>
-<p>Let <img class="math" src="../../../_images/math/c5acf59807ad59f4d2701e4479db3900d27af2ba.png" alt="\mathcal{X}_2"/> be the numebr of lights that are red on the way home; <img class="math" src="../../../_images/math/c5acf59807ad59f4d2701e4479db3900d27af2ba.png" alt="\mathcal{X}_2"/> is independent of <img class="math" src="../../../_images/math/9cda13763662fc25767720c443b12eddcf8f95db.png" alt="\mathcal{X}_1"/>. Assume that <img class="math" src="../../../_images/math/c5acf59807ad59f4d2701e4479db3900d27af2ba.png" alt="\mathcal{X}_2"/> has the same distribution as <img class="math" src="../../../_images/math/7ec937ebf8a00c10c37427794f4881afbe1175a7.png" alt="mathcal{X}_1"/>, so that <img class="math" src="../../../_images/math/9cda13763662fc25767720c443b12eddcf8f95db.png" alt="\mathcal{X}_1"/> and <img class="math" src="../../../_images/math/c5acf59807ad59f4d2701e4479db3900d27af2ba.png" alt="\mathcal{X}_2"/> is a random sample of size <img class="math" src="../../../_images/math/e3400946477dcc7a8d7481c94d0c3f05927b55fa.png" alt="n=2"/>.</p>
+<p>Let <img class="math" src="../../../_images/math/c5acf59807ad59f4d2701e4479db3900d27af2ba.png" alt="\mathcal{X}_2"/> be the numebr of lights that are red on the way home; <img class="math" src="../../../_images/math/c5acf59807ad59f4d2701e4479db3900d27af2ba.png" alt="\mathcal{X}_2"/> is independent of <img class="math" src="../../../_images/math/9cda13763662fc25767720c443b12eddcf8f95db.png" alt="\mathcal{X}_1"/>. Assume that <img class="math" src="../../../_images/math/c5acf59807ad59f4d2701e4479db3900d27af2ba.png" alt="\mathcal{X}_2"/> has the same distribution as <img class="math" src="../../../_images/math/9cda13763662fc25767720c443b12eddcf8f95db.png" alt="\mathcal{X}_1"/>, so that <img class="math" src="../../../_images/math/9cda13763662fc25767720c443b12eddcf8f95db.png" alt="\mathcal{X}_1"/> and <img class="math" src="../../../_images/math/c5acf59807ad59f4d2701e4479db3900d27af2ba.png" alt="\mathcal{X}_2"/> is a random sample of size <img class="math" src="../../../_images/math/e3400946477dcc7a8d7481c94d0c3f05927b55fa.png" alt="n=2"/>.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
 <li><p>Let <img class="math" src="../../../_images/math/131179d61df8e28731c6643f86cce10f8a293b80.png" alt="\mathcal{T} = \mathcal{X}_1 + \mathcal{X}_2"/>. Find the probability distribution of <img class="math" src="../../../_images/math/b49b3000768772d1e262d52d47c387b1c2192ff9.png" alt="\mathcal{T}"/>.</p></li>
@@ -642,6 +647,100 @@ document.write(`
 <li><p>Is the sample range an unbiased estimator?</p></li>
 </ol>
 </div></blockquote>
+</section>
+<section id="sample-proportions">
+<h3>Sample Proportions<a class="headerlink" href="#sample-proportions" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Handedness</strong></p></li>
+</ol>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Handedness">Approximately 10% of the world’s population is left handed</a>. There are 347 students in the Bishop Walsh student body. Let <img class="math" src="../../../_images/math/71e79dff2f9b779810735b86e2c08ed0810840d8.png" alt="\hat{p}"/> represent the proportion of Bishop Walsh students who are left handed.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Calculate and interpret the mean and standard deviation of the sampling distribution of <img class="math" src="../../../_images/math/71e79dff2f9b779810735b86e2c08ed0810840d8.png" alt="\hat{p}"/>.</p></li>
+<li><p>Verify the conditions for inference are met.</p></li>
+<li><p>Describe the shape of the samping distribution of <aside class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\math{p}</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H &lt;return&gt;  for immediate help.
+ ...                                              
+                                                  
+l.15 \fontsize{12}{14}\selectfont $\math
+                                        {p}$
+[1] (./math.aux) )
+(see the transcript file for additional information)
+Output written on math.dvi (1 page, 240 bytes).
+Transcript written on math.log.
+</p>
+</aside>
+.</p></li>
+<li><p>Assuming the Wikipedia article referenced above is correct, what is the probability more than 40 students at Bishop Walsh are left-handed?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>DVD Players</strong></p></li>
+</ol>
+<p><a class="reference external" href="https://www.statista.com/statistics/369955/people-living-in-households-that-own-a-blu-ray-dvd-player-usa/">According to a survey conducted in 2022, 38% of 18-29 year olds from the United States live in a household that owns a DVD player</a>. Suppose you randomly sample 40 Americans between the ages of 18 and 29 years old. What is the probability the proportion of the people from this sample who live in a household with a DVD player will be greater than 45%?</p>
+<ol class="arabic simple" start="3">
+<li><p><strong>Illuminati</strong></p></li>
+</ol>
+<p><a class="reference external" href="https://www.businessinsider.com/over-1-in-10-registered-voters-believe-the-illuminati-exists-2019-7">According to a 2019 report by Business Insider, 15% of registered voters in the United States believe the Illuminati secretly controls world events</a>. Suppose you randomly sample 50 registered voters living in the US. How likely is it this sample will contain less than 10% of people who believe in the Illuminati?</p>
+<ol class="arabic simple" start="4">
+<li><p><strong>Coins</strong></p></li>
+</ol>
+<p>Suppose you flip a coin 100 times. If you allow for a 5% probability of being wrong, how many heads in a sample of 100 would you need to observe before you had convincing evidence the probability of heads for a single coin flip is greater than 50%?</p>
+</section>
+<section id="difference-of-sample-proportions">
+<h3>Difference of Sample Proportions<a class="headerlink" href="#difference-of-sample-proportions" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Athletics</strong></p></li>
+</ol>
+<p>At Bishop Walsh, the administration claims 75% of high school students participate in atleast one extra curricular activity, while 69% of middle students participate in atleast one extracurricular activity.</p>
+<p>During middle school lunch, Mr. Moore asks a random sample of 35 students whether or not they participate in atleast one extracurricular activity. During highschool lunch, Mr. Moore asks the same question to a random sample of 38 high school students.</p>
+<p>Let <img class="math" src="../../../_images/math/fb3637f58674c5842eaaca2396128b0b335d2ea0.png" alt="\hat{p}_{\text{hs}}"/> represent the proportion of high school students in Mr. Moore’s sample that participate in atleast one extracurricular activity. Let <img class="math" src="../../../_images/math/c55073c8eb1ad31f6aab746b830d42349e482fc8.png" alt="\hat{p}_{\text{ms}}"/> represent the proporition of middle school students in Mr. Moore’s sample that participate in atleast one extracurricular activity.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What is the shape of the sampling distribution <img class="math" src="../../../_images/math/418e3e17fce82b603429d525d3791d4b508c032f.png" alt="\hat{p}_{\text{hs}} - \hat{p}_{\text{ms}}"/>? Justify your answer.</p></li>
+<li><p>Find and interpret the mean of the sampling distribution.</p></li>
+<li><p>Find and interpret the standard deviation of the sampling distribution.</p></li>
+<li><p>Assuming the administration’s claim is true, what is the probability that the proportion of highschool students who participate in atleast one extracurricular is atleast 10% higher than the proportion of middle-school students who participate in  atleast one extracurricular?</p></li>
+<li><p>Suppose the difference in proportions is exactly 0.10. Based on your result to <em>part d</em> does this give you reason to doubt the administration’s claim?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Skittles and M&amp;Ms</strong></p></li>
+</ol>
+<p>The manufacturers of Skittles claim 20% of each bag of Skittles is red. The manufacturers of M&amp;M’s claim 25% of each bag of M&amp;Ms is red. Each bag of M&amp;Ms contains 56 pieces. Each bag of Skittles contains 54 pieces. Assuming the manufacturers’ claim to be true, what is the probability the proportion of red M&amp;Ms in a bag will exceed the proportion of red Skittles in a bag?
+Sample Means
+————</p>
 <ol class="arabic simple">
 <li><p><strong>Devore, Berk, 2007</strong></p></li>
 </ol>
@@ -656,14 +755,11 @@ document.write(`
 <li><p>The latest Dragonball Z is on at 8 pm on the Cartoon Network. If Mr. Moore starts grading at 7:15 PM, what is the probability Mr. Moore misses part of the epic battle between Goku and Frieza?</p></li>
 </ol>
 </div></blockquote>
-<section id="id1">
-<h3>Difference of Means<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
-<aside class="topic">
-<p class="topic-title">Sampling Distribution for Difference of Sample Means</p>
-<p>TODO</p>
-</aside>
+</section>
+<section id="id2">
+<h3>Difference of Means<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p><strong>Devore, Berk, 2007</strong></p></li>
+<li><p><strong>Chemistry</strong></p></li>
 </ol>
 <p>Mr. Myers notices the chemistry students in his morning class are measuring different pH values for a chemical compound than the students in his afternoon class. There are 10 students in each class. Mr. Myers decides to calculate the average pH of each class and compare them.</p>
 <p>Suppose the pH measured by a randomly selected chemistry student is normally distributed with a mean pH of 5.00 and a standard deviation of 0.2. What is the probability the difference of the class averages for the pH will be within 0.1 of each other?</p>
@@ -834,8 +930,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-means">Difference of Means</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Difference of Means</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Sampling Distributions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-proportions">Sample Proportions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-sample-proportions">Difference of Sample Proportions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Difference of Means</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-p-exam-practice">A.P. Exam Practice</a></li>
