@@ -42,7 +42,17 @@ Sample Mean
 	
 		\bar{\mathcal{X}} \sim \mathcal{N}(\mu, \frac{\sigma}{\sqrt{n}})
 	
-TODO
+1. **Devore, Berk, 2007**
+
+The lifetime of a certain brand of battery is normally distributed with a mean of 10 hours and a standard deviation of 1 hour. There are four batteries to a package. If you buy a single package, what is the probability the average lifetime of all of the batteries in the package exceeds 11 hours?
+
+2. **Devore, Berk, 2007**
+
+There are five students in Mr. Moore's AP Statistics. On the basis of his many years of experience, Mr. Moore knows the time it takes to grade a randomly chosen examination paper is normally distributed with a mean of 10 minutes and a standard deviation of 2.5 minutes. 
+
+     a. What is the probability the average amount of time Mr. Moore spends grading the latest exams is less than 8 minutes?
+
+     b. The latest Dragonball Z is on at 8 pm on the Cartoon Network. If Mr. Moore starts grading at 7:15 PM, what is the probability Mr. Moore misses part of the epic battle between Goku and Frieza?
 
 Difference of Means
 -------------------
@@ -51,7 +61,13 @@ Difference of Means
 
 	TODO
 	
-TODO
+1. **Devore, Berk, 2007**
+
+Mr. Myers notices the chemistry students in his morning class are measuring different pH values for a chemical compound than the students in his afternoon class. There are 10 students in each class. Mr. Myers decides to calculate the average pH of each class and compare them.
+
+Suppose the pH measured by a randomly selected chemistry student is normally distributed with a mean pH of 5.00 and a standard deviation of 0.2. What is the probability the difference of the class averages for the pH will be within 0.1 of each other?
+
+
 
 A.P. Exam Practice
 ==================
