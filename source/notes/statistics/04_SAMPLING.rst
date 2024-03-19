@@ -88,7 +88,7 @@ TODO
 	
 	.. math::
 	
-		\hat{p} \sim \mathcal{N}(n \cdot p, \sqrt{\frac{p \cdot (1 - p)}{n}) 
+		\hat{p} \sim \mathcal{N}(n \cdot p, \sqrt{\frac{p \cdot (1 - p)}{n}}) 
 
 TODO
 
