@@ -143,9 +143,9 @@ At an archaeological site that was an ancient swamp, the bones from 20 brontosau
 
 	b. Suppose that the group of 20 brontosaurs whose remains were found in the swamp had been made up of 10 males and 10 females. What is the probability that all 4 in the sample to be tested are male?
 
-	c. The DNA testing revealed that all 4 femurs tested were from males. Based on this result and your answer from part *b**, do you think that males and females were equally represented in the group of 20 brontosaurs stuck in the swamp? Explain.
+	c. The DNA testing revealed that all 4 femurs tested were from males. Based on this result and your answer from *part b*, do you think that males and females were equally represented in the group of 20 brontosaurs stuck in the swamp? Explain.
 
-	d. Is it reasonable to generalize your conclusion in part *c* pertaining to the group of 20 brontosaurs to the population of all brontosaurs? Explain why or why not.
+	d. Is it reasonable to generalize your conclusion in *part c* pertaining to the group of 20 brontosaurs to the population of all brontosaurs? Explain why or why not.
 
 2. **2006, Free Response Form B, #6**
 
