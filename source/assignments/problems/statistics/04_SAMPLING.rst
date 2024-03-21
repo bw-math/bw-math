@@ -7,28 +7,161 @@ Sampling Distributions
 Sample Proportion
 =================
 
-.. topic:: Sample Proportion Sampling Distribution
+.. topic:: Sampling Distribution for Sample Proportion
 
-	TODO
+	If :math:`\mathcal{X}_i \sim \text{Bern}(p)` for :math:`i = 1, 2, ..., n` and the following conditions are met,
 	
-TODO
+	1. :math:`n \cdot p \geq 10`
+	2. :math:`n \cdot (1 - p) \geq 10`
+	
+	The random variable, :math:`\hat{p} = \frac{\mathcal{X}_1 + \mathcal{X}_2 + ... + \mathcal{X}_n}{n}` has the following distribution,
+	
+	.. math::
+	
+		\hat{p} \sim \mathcal{N}(n \cdot p, \sqrt{\frac{p \cdot (1 - p)}{n}}) 
 
 Difference of Proportions
 -------------------------
 
-.. topic:: Difference of Sample Proportions Sampling Distribution
+.. topic:: Sampling Distribution for Difference of Sample Proportions
 
-	TODO
+	If :math:`\mathcal{X}_i \sim \text{Bern}(p_x)` for :math:`i = 1, 2, ..., n_x` and the following conditions are met,
 	
-TODO
+	1. :math:`n_x \cdot p_x \geq 10`
+	2. :math:`n_x \cdot (1 - p_x) \geq 10`
+	3. :math:`n_y \cdot p_y \geq 10`
+	4. :math:`n_y \cdot (1 - p_y) \geq 10`
+	
+	The random variable, :math:`\hat{p}_x - \hat{p}_y` has the following distribution,
+	
+	.. math::
+	
+		\hat{p} \sim \mathcal{N}(n_x \cdot p_x - n_y \cdot p_y, \sqrt{\frac{p_x \cdot (1 - p_x)}{n_x} + \frac{p_y \cdot (1 - p_y)}{n_y}} ) 
+	
 
 Sample Mean
 ===========
 
-.. topic:: Sample Mean Sampling Distribution
+.. topic:: Sampling Distribution for the Sample Mean
 
-	TODO
+	If :math:`\mathcal{X}_i \sim \mathcal{N}(\mu, \sigma)` for :math:`i = 1, 2, ..., n` **and** :math:`n \geq 30`, then the random variable :math:`\bar{\mathcal{X}} = \frac{\mathcal{X}_1 + \mathcal{X}_2 + ... + \mathcal{X}_n}{n}` has the following distribution, 
 	
+	.. math::
+	
+		\bar{\mathcal{X}} \sim \mathcal{N}(\mu, \frac{\sigma}{\sqrt{n}})
+		
+Difference of Means
+-------------------
+
+.. topic:: Sampling Distribution for Difference of Sample Means
+
+	If :math:`\mathcal{X}_i \sim \mathcal{N}(\mu_x, \sigma_y)` for :math:`i = 1, 2, ..., n_x`, :math:`\mathcal{Y}_i \sim \mathcal{N}(\mu_y, \sigma_x)` for :math:`i = 1, 2, ..., n_y` **and** :math:`min(n_1, n_2) \geq 30`, then the random variable :math:`\bar{\mathcal{X}} - \bar{\mathcal{Y}}` has the following distribution, 
+	
+	.. math::
+	
+		\bar{\mathcal{X}} - \bar{\mathcal{Y}} \sim \mathcal{N}(\mu_x - \mu_y, \sqrt{ \frac{{\sigma_x}^2}{n_x} + \frac{{\sigma_y}^2}{n_y}})
+	
+Problems
+========
+
+Sampling Distributions
+----------------------
+
+1. **Devore, Berk, 2007**
+
+There are two traffice lights on the way to work. Let :math:`\mathcal{X}_1` be the number of lights that are red, requiring a stop, and suppose the distribution of :math:`\mathcal{X}_1` is as follows,
+
++----------------+--------+---------+--------+
+| :math:`x_1`    |   0    |    1    |    2   |
++----------------+--------+---------+--------+
+| :math:`p(x_1)` |  0.2   |   0.5   |   0.3  |
++----------------+--------+---------+--------+
+
+Let :math:`\mathcal{X}_2` be the numebr of lights that are red on the way home; :math:`\mathcal{X}_2` is independent of :math:`\mathcal{X}_1`. Assume that :math:`\mathcal{X}_2` has the same distribution as :math:`\mathcal{X}_1`, so that :math:`\mathcal{X}_1` and :math:`\mathcal{X}_2` is a random sample of size :math:`n=2`.
+
+	a. Let :math:`\mathcal{T} = \mathcal{X}_1 + \mathcal{X}_2`. Find the probability distribution of :math:`\mathcal{T}`. 
+	
+	b. Calculate :math:`\mu_{T}`. How does it relate to :math:`\mu`, the population mean?
+	
+	c. Calculate :math:`{\sigma_T}^2`. How does it relate to :math:`\sigma^2`, the population variance?
+	
+2. **Moore, 2007**
+
+Let :math:`\mathcal{X}` be the number of students absent from AP Statistics on a given day. Suppose the distribution of :math:`\mathcal{X}` is as follows,
+
++--------------+--------+---------+--------+---------+
+| :math:`x`    |   1    |    2    |    3   |    4    |
++--------------+--------+---------+--------+---------+
+| :math:`p(x)` |  0.4   |   0.3   |   0.2  |   0.1   |
++--------------+--------+---------+--------+---------+
+
+	a. Consider a random sample of size :math:`n=2` (two days), and let :math:`\bar{\mathcal{X}}` be the sample mean of the number of absent students. Obtain the probability distribution of :math:`\bar{\mathcal{X}}`.
+	
+	b. What is the probability the average number of absent students in a sample of 2 is atleast 3 absent students?
+	
+	c. Is the sample mean an unbiased estimator?
+	
+	d. Consider again a random sample of size :math:`n=2`, and let :math:`\mathcal{R}` be the sample range of the number of absent students. Obtain the probability distribution of :math:`\mathcal{R}`.
+
+	e. What is the probability the sample range in a sample of 2 is at most 2 absent students? 
+	
+	e. Is the sample range an unbiased estimator?
+	
+Sample Proportions
+------------------
+
+1. **Handedness**
+
+`Approximately 10% of the world's population is left handed <https://en.wikipedia.org/wiki/Handedness>`_. There are 347 students in the Bishop Walsh student body. Let :math:`\hat{p}` represent the proportion of Bishop Walsh students who are left handed. 
+
+	a. Calculate and interpret the mean and standard deviation of the sampling distribution of :math:`\hat{p}`.
+	
+	b. Verify the conditions for inference are met. 
+	
+	c. Describe the shape of the samping distribution of :math:`\math{p}`.
+	
+	d. Assuming the Wikipedia article referenced above is correct, what is the probability more than 40 students at Bishop Walsh are left-handed?
+	
+2. **DVD Players**
+
+`According to a survey conducted in 2022, 38% of 18-29 year olds from the United States live in a household that owns a DVD player <https://www.statista.com/statistics/369955/people-living-in-households-that-own-a-blu-ray-dvd-player-usa/>`_. Suppose you randomly sample 40 Americans between the ages of 18 and 29 years old. What is the probability the proportion of the people from this sample who live in a household with a DVD player will be greater than 45%? 
+
+3. **Illuminati**
+
+`According to a 2019 report by Business Insider, 15% of registered voters in the United States believe the Illuminati secretly controls world events <https://www.businessinsider.com/over-1-in-10-registered-voters-believe-the-illuminati-exists-2019-7>`_. Suppose you randomly sample 50 registered voters living in the US. How likely is it this sample will contain less than 10% of people who believe in the Illuminati?
+
+4. **Coins**
+
+Suppose you flip a coin 100 times. If you allow for a 5% probability of being wrong, how many heads in a sample of 100 would you need to observe before you had convincing evidence the probability of heads for a single coin flip is greater than 50%?
+
+
+Difference of Sample Proportions
+--------------------------------
+
+1. **Athletics**
+
+At Bishop Walsh, the administration claims 75% of high school students participate in atleast one extra curricular activity, while 69% of middle students participate in atleast one extracurricular activity. 
+
+During middle school lunch, Mr. Moore asks a random sample of 35 students whether or not they participate in atleast one extracurricular activity. During highschool lunch, Mr. Moore asks the same question to a random sample of 38 high school students.
+ 
+Let :math:`\hat{p}_{\text{hs}}` represent the proportion of high school students in Mr. Moore's sample that participate in atleast one extracurricular activity. Let :math:`\hat{p}_{\text{ms}}` represent the proporition of middle school students in Mr. Moore's sample that participate in atleast one extracurricular activity.
+
+	a. What is the shape of the sampling distribution :math:`\hat{p}_{\text{hs}} - \hat{p}_{\text{ms}}`? Justify your answer.
+	
+	b. Find and interpret the mean of the sampling distribution.
+	
+	c. Find and interpret the standard deviation of the sampling distribution.
+	
+	d. Assuming the administration's claim is true, what is the probability that the proportion of highschool students who participate in atleast one extracurricular is atleast 10% higher than the proportion of middle-school students who participate in  atleast one extracurricular?
+	
+	e. Suppose the difference in proportions is exactly 0.10. Based on your result to *part d* does this give you reason to doubt the administration's claim?
+
+2. **Skittles and M&Ms**
+
+The manufacturers of Skittles claim 20% of each bag of Skittles is red. The manufacturers of M&M's claim 25% of each bag of M&Ms is red. Each bag of M&Ms contains 56 pieces. Each bag of Skittles contains 54 pieces. Assuming the manufacturers' claim to be true, what is the probability the proportion of red M&Ms in a bag will exceed the proportion of red Skittles in a bag?
+Sample Means
+------------
+
 1. **Devore, Berk, 2007**
 
 The lifetime of a certain brand of battery is normally distributed with a mean of 10 hours and a standard deviation of 1 hour. There are four batteries to a package. If you buy a single package, what is the probability the average lifetime of all of the batteries in the package exceeds 11 hours?
@@ -43,18 +176,12 @@ There are five students in Mr. Moore's AP Statistics. On the basis of his many y
 
 Difference of Means
 -------------------
-
-.. topic:: Difference of Sample Means Sampling Distribution
-
-	TODO
 	
-1. **Devore, Berk, 2007**
+1. **Chemistry**
 
 Mr. Myers notices the chemistry students in his morning class are measuring different pH values for a chemical compound than the students in his afternoon class. There are 10 students in each class. Mr. Myers decides to calculate the average pH of each class and compare them.
 
 Suppose the pH measured by a randomly selected chemistry student is normally distributed with a mean pH of 5.00 and a standard deviation of 0.2. What is the probability the difference of the class averages for the pH will be within 0.1 of each other?
-
-
 
 A.P. Exam Practice
 ==================
