@@ -118,7 +118,7 @@ Sample Proportions
 	
 	b. Verify the conditions for inference are met. 
 	
-	c. Describe the shape of the samping distribution of :math:`\math{p}`.
+	c. Describe the shape of the samping distribution of :math:`\hat{p}`.
 	
 	d. Assuming the Wikipedia article referenced above is correct, what is the probability more than 40 students at Bishop Walsh are left-handed?
 	
@@ -180,7 +180,7 @@ Difference of Means
 	
 1. **Chemistry**
 
-Mr. Myers notices the chemistry students in his morning class are measuring different pH values for a chemical compound than the students in his afternoon class. There are 10 students in each class. Mr. Myers decides to calculate the average pH of each class and compare them.
+Mr. Myers notices the chemistry students in his morning class are measuring different pH values for a chemical compound than the students in his afternoon class. There are 10 students in his morning class and 15 students in his afternoon class. Mr. Myers decides to calculate the average pH of each class and compare them.
 
 Suppose the pH measured by a randomly selected chemistry student is normally distributed with a mean pH of 5.00 and a standard deviation of 0.2. What is the probability the difference of the class averages for the pH will be within 0.1 of each other?
 
