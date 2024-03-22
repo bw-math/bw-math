@@ -22,8 +22,6 @@ Critical Value
 	
 		t_{p} \equiv P(\frac{\bar{\mathcal{X}}-\mu}{\mathcal{S}} \leq t_p) = \frac{p}{100}
 
-TODO: questions about critical values
-
 Standard Error
 --------------
 	
@@ -31,32 +29,40 @@ Standard Error
 
 	.. math::
 	
-		\text{SE}_{\bar{X}} = \frac{s}{\sqrt{n}}
+		\s_{\bar{X}} = \frac{s}{\sqrt{n}}
 	
-.. topic:: Standard Error, Difference of Means
+.. topic:: Standard Error, Difference of Sample Means
 
 	.. math::
 	
-		\text{SE}_{\bar{X}_2 - \bar{X}_1} = \sqrt( \frac{ s_{ \bar{x}_1 } }{n_1} + \frac{ s_{ \bar{x}_2 } }{n_2} )
-	
-TODO: questions about standard error
+		s_{\bar{X}_2 - \bar{X}_1} = \sqrt( \frac{ s_{ \bar{x}_1 } }{n_1} + \frac{ s_{ \bar{x}_2 } }{n_2} )
 
+.. topic:: Standard Error, Sample Proportion
+
+	.. math::
+	
+		\s_{\hat{p}} = \sqrt{ \frac{ \hat{p} \cdot (1-\hat{p}) }{n} }
+		
+.. topic:: Standard Error, Difference of Sample Proportions
+
+	.. math::
+	
+		\s_{\hat{p}_1 - \hat{p}_2} = \sqrt{ \frac{ \hat{p}_1 \cdot (1-\hat{p}_1) }{n_1} + \frac{ \hat{p}_2 \cdot (1-\hat{p}_2) }{n_2} }
+		
 Margin of Error
 ---------------
 	
-.. topic:: Margin of Error, Known Standard Deviation
+.. topic:: Margin of Error, Sample Mean, Known Standard Deviation
 
 	.. math::
 	
 		\text{MOE} = \lvert z_{1-\frac{\alpha}{2}} \rvert \cdot \text{SE}
 
-.. topic:: Margin of Error, Unknown Standard Deviation
+.. topic:: Margin of Error, Sample Mean, Unknown Standard Deviation
 
 	.. math::
 	
 		\text{MOE} = \lvert t_{1-\frac{\alpha}{2}} \rvert \cdot \text{SE}		
-	
-TODO: questions about margin of error
 	
 Intervals
 =========
@@ -70,8 +76,6 @@ Population Mean
 	
 		\bar{x} - \text{MOE} \leq \mu \leq \bar{x} + \text{MOE}
 
-TODO: questions about population mean
-
 Difference of Population Means
 ------------------------------
 
@@ -80,7 +84,35 @@ Difference of Population Means
 	.. math::
 	
 		(\bar{x_2} - \bar{x_1}) - \text{MOE} \leq \mu_2 - \mu_1 \leq (\bar{x_2} - \bar{x_1}) + \text{MOE}
+
+Population Proportion
+---------------------
+
+.. topic:: Confidence Interval for Population Proportion
+
+	.. math::
+	
+		\hat{p} - \text{MOE} \leq p \leq \hat{p} + \text{MOE}
 		
+Difference of Population Proportions
+------------------------------------
+
+.. topic:: Confidence Interval for Population Proportion
+
+	.. math::
+	
+		(\hat{p}_1 - \hat{p}_2) - \text{MOE} \leq p_1 - p_2 \leq (\hat{p}_1 - \hat{p}_2) + \text{MOE}
+Problems
+========
+
+TODO: questions about critical values
+
+TODO: questions about standard error
+
+TODO: questions about margin of error
+
+TODO: questions about population mean
+
 TODO: questions about difference of means
 
 A.P. Exam Practice
