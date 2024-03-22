@@ -159,6 +159,7 @@ Let :math:`\hat{p}_{\text{hs}}` represent the proportion of high school students
 2. **Skittles and M&Ms**
 
 The manufacturers of Skittles claim 20% of each bag of Skittles is red. The manufacturers of M&M's claim 25% of each bag of M&Ms is red. Each bag of M&Ms contains 56 pieces. Each bag of Skittles contains 54 pieces. Assuming the manufacturers' claim to be true, what is the probability the proportion of red M&Ms in a bag will exceed the proportion of red Skittles in a bag?
+
 Sample Means
 ------------
 

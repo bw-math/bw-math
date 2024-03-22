@@ -21,7 +21,7 @@ The school board received responses from 98 of the families, with 76 of the resp
 
 	c. Suggest a different follow-up step from the one suggested in part (b) that the local school board could take to address the issue raised in *part a*.
 
-5. **2004, Free Response, Form B, #2**
+2. **2004, Free Response, Form B, #2**
 
 At a certain university, students who live in the dormitories eat at a common dining hall. Recently, some students have been complaining about the quality of the food served there. The dining hall manager decided to do a survey to estimate the proportion of students living in the dormitories who think that the quality of the food should be improved. One evening, the manager asked the first 100 students entering the dining hall to answer the following question.
 
