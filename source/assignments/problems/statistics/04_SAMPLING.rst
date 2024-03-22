@@ -97,13 +97,13 @@ Let :math:`\mathcal{X}` be the number of students absent from AP Statistics on a
 
 	a. Consider a random sample of size :math:`n=2` (two days), and let :math:`\bar{\mathcal{X}}` be the sample mean of the number of absent students. Obtain the probability distribution of :math:`\bar{\mathcal{X}}`.
 	
-	b. What is the probability the average number of absent students in a sample of 2 is atleast 3 absent students?
+	b. What is the probability the average number of absent students for a sample of 2 is atleast 3 absent students?
 	
 	c. Is the sample mean an unbiased estimator?
 	
 	d. Consider again a random sample of size :math:`n=2`, and let :math:`\mathcal{R}` be the sample range of the number of absent students. Obtain the probability distribution of :math:`\mathcal{R}`.
 
-	e. What is the probability the sample range in a sample of 2 is at most 2 absent students? 
+	e. What is the probability the sample range for a sample of 2 is at most 2 absent students? 
 	
 	e. Is the sample range an unbiased estimator?
 	
@@ -148,9 +148,9 @@ Let :math:`\hat{p}_{\text{hs}}` represent the proportion of high school students
 
 	a. What is the shape of the sampling distribution :math:`\hat{p}_{\text{hs}} - \hat{p}_{\text{ms}}`? Justify your answer.
 	
-	b. Find and interpret the mean of the sampling distribution.
+	b. Find and interpret the mean of the sampling distribution for the difference of sample proportions.
 	
-	c. Find and interpret the standard deviation of the sampling distribution.
+	c. Find and interpret the standard deviation of the sampling distribution for the difference of sample proportions.
 	
 	d. Assuming the administration's claim is true, what is the probability that the proportion of highschool students who participate in atleast one extracurricular is atleast 10% higher than the proportion of middle-school students who participate in  atleast one extracurricular?
 	
