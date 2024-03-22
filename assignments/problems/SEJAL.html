@@ -510,9 +510,10 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistics">Statistics</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regression">Regression</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probability">Probability</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapters-1-2-4-statistics">Chapters 1, 2, 4: Statistics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-3-regression">Chapter 3: Regression</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-5-probability">Chapter 5: Probability</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-6-random-variables">Chapter 6: Random Variables</a></li>
 </ul>
 </li>
 </ul>
@@ -534,7 +535,11 @@ document.write(`
 </div>
 <section id="instructions">
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this heading">#</a></h2>
-<p>Sejal has invited you to attend the annual <em>Ghimire Statistics Gala</em>. Unfortunately, you cannot think of a good enough excuse on the spot to get out of going, so you have to attend. As part of the celebration, you are required to solve the following problems. Luckily, you brought your handy-dandy homework notebook, so be sure to complete the problems in there.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On March 14th, 2024, everyone bore witness to Sejal demanding more problems to do over Spring Break. I have obliged her request. Be sure to let her know how you feel about having to do these problems for homework!</p>
+</div>
+<p>Sejal has invited you to attend the annual <em>Ghimire Statistics Gala</em>. Unfortunately, you cannot think of a good enough excuse on the spot to get out of going, so you are obligated to attend. As part of the celebration, you are required to solve the following problems. Luckily, you brought your handy-dandy homework notebook, so be sure to complete the problems in there.</p>
 <aside class="topic">
 <p class="topic-title">Due Date</p>
 <p>April 8th, 2024</p>
@@ -543,12 +548,13 @@ document.write(`
 </section>
 <section id="problems">
 <h2>Problems<a class="headerlink" href="#problems" title="Permalink to this heading">#</a></h2>
-<section id="statistics">
-<h3>Statistics<a class="headerlink" href="#statistics" title="Permalink to this heading">#</a></h3>
+<section id="chapters-1-2-4-statistics">
+<h3>Chapters 1, 2, 4: Statistics<a class="headerlink" href="#chapters-1-2-4-statistics" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p><strong>Skittles</strong></p></li>
 </ol>
-<p>The <em>Ghimire Statistics Gala</em> is known throughout the tristate region as a cultural epicenter for gourmet cuisine and fine food. Sejal is preparing the menu for this year’s annual <em>Ghimire Statistics Gala</em>. Every year, the guests feast upon a smorgasboard of candy, cold pizza and soft drinks. As a diligent statistics student, Sejal wants to buy the correct amount of Skittles for all of her guests. The number of pounds of Skittles consumed each year by the attendees is given by the following table,</p>
+<p>The <em>Ghimire Statistics Gala</em> is known throughout the tristate region as a cultural epicenter for gourmet cuisine and fine food. Sejal is preparing the menu for this year’s gala.</p>
+<p>Every year, the guests feast upon a smorgasboard of candy, cold pizza and soft drinks. As a diligent statistics student, Sejal wants to buy the correct amount of Skittles for all of her guests. The amount in pounds of Skittles consumed each year by the attendees is given in the following table,</p>
 <table class="table">
 <tbody>
 <tr class="row-odd"><td><p>Year</p></td>
@@ -585,50 +591,165 @@ document.write(`
 <td><p>5.9</p></td>
 </tr>
 <tr class="row-even"><td><p>2013</p></td>
-<td><p>6.3</p></td>
+<td><p>5.8</p></td>
 </tr>
 </tbody>
 </table>
-<p>Create a histogram and boxplot to visualize this distribution. Use 6 classes for the histogram. Describe the distribution in a few sentences. Based on the distribution, what is the best estimate for the amount of Skittles in pounds Sejal should purchase for this year’s <em>Ghimire Statistics Gala</em>, the mean or median? Why? Justify your answer.</p>
-<p>What feature of the distribution is missed by only considering these two graphical representations?</p>
+<p>Use this information to answer the following questions.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Create a histogram and boxplot to visualize this distribution. Use 6 classes for the histogram. Describe the distribution in a few sentences.</p></li>
+<li><p>Create a cumulative frequency distribution and use it to create an ogive (i.e., a <em>cumulative distribution function</em>, or simply, <strong>CDF</strong>). Based on the CDF, approximately how many pounds of Skittles should Sejal order if she wants to be 70% sure she has ordered the correct amount?</p></li>
+<li><p>Find the mean and median for the amount of Skittles consumed every year at the <em>Ghimire Statistics Gala</em>.</p></li>
+<li><p>Which is the best estimate for the amount of Skittles in pounds Sejal should purchase for this year’s <em>Ghimire Statistics Gala</em>, the mean or median? Why? Justify your answer.</p></li>
+<li><p>Calculate and interpret the standard deviation of the amount of Skittles consumed every year at the <em>Ghimire Statistics Gala</em>.</p></li>
+<li><p>How many standard deviations away from the mean are the two observations from 2020 and 2021?</p></li>
+<li><p>Based on the IQR rule for outliers, are there any potential outliers in this sample?</p></li>
+<li><p>Unfortunately, Sejal discovers orders for the Mars Candy Company (the manufacturer of Skittles) must be submitted in ounces, not pounds! Therefore, Sejal has to convert all her estimates to ounces. If there are 16 ounces in a pound, how will this change the answers to <em>part c</em> and <em>part e</em>?</p></li>
+</ol>
+</div></blockquote>
 <ol class="arabic simple" start="2">
-<li><p>z-score one, empirical rule one</p></li>
-<li><p>data transformation one</p></li>
-<li><p>give them boxplot and ask to estimate iqr, then identify potential outliers with IQR rule.</p></li>
-<li><p>cdf one</p></li>
-<li><p>bias one/sampling/randomization one</p></li>
+<li><p><strong>Dinner Arrangements</strong></p></li>
 </ol>
+<p>Sejal wants to survey the guests at the annual <em>Ghimire Statistics Gala</em> to determine what proportion of people are enjoying the festivities. To accomplish this, she will leave 20 comment cards at random places on the dinner tables for people to fill out. The comment cards will read,</p>
+<blockquote>
+<div><p>Name: ___________</p>
+<p>Are you having fun at the <em>Ghimire Statistics Gala</em>?</p>
+<ul class="simple">
+<li><p>Yes</p></li>
+<li><p>No</p></li>
+</ul>
+</div></blockquote>
+<p>The diagram below shows the floor plan for the gala,</p>
+<img alt="../../_images/sejals_gala.png" class="align-center" src="../../_images/sejals_gala.png" />
+<p>The numbered blue circles represent tables. Each table seats 4 people. The seats are first come, first serve.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Describe step-by-step a sampling process Sejal could use to select a simple random sample of guests for her survey.</p></li>
+<li><p>Describe step-by-step a <em>stratified</em> sampling process Sejal could use to select a sample of guests for her survey. Give a statistical justification for the strata used.</p></li>
+<li><p>Describe a <em>clustered</em> sampling process Sejal could use to select a sample of guests for her survey. Give a statistical justification for the clusters used.</p></li>
+<li><p>Which sampling method, <em>part b</em> or <em>part c</em> would be better for the indicated floor plan? Why? Give a statistical justification.</p></li>
+<li><p>As Sejal’s trusted statistics advisor, she calls you up to discuss the experimental design of her survey. What are some potential sources of bias in Sejal’s survey? What suggestions would you make to improve the accuracy of her results?</p></li>
+</ol>
+</div></blockquote>
 </section>
-<section id="regression">
-<h3>Regression<a class="headerlink" href="#regression" title="Permalink to this heading">#</a></h3>
-<p>TODO</p>
+<section id="chapter-3-regression">
+<h3>Chapter 3: Regression<a class="headerlink" href="#chapter-3-regression" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p>scatter plot description one, interpretation</p></li>
-<li><p>regression line one, interpretation</p></li>
-<li><p>computer output one, interpretation</p></li>
-<li><p>correlation one, interpretation</p></li>
+<li><p><strong>Competition</strong></p></li>
 </ol>
-<ol class="arabic simple" start="7">
-<li><p>SSR, correlation one</p></li>
+<p>Mr. Moore’s competing <em>Not For Losers Statistics Gala</em> has been a thorn in the side of the annual <em>Ghimire Statistics Gala</em> since it began several years ago, stealing guests who prefer Mr. Moore’s chef catered buffet, where guests may dine on such delicacies as escargo and ratatouille, among other dishes.</p>
+<p>To combat Mr. Moore’s upstart gala, Sejal budgets a certain amount of money to advertising in order to promote awareness of the <em>Ghimire Statistics Gala</em>. She has been tracking the amount of money she spends on advertising versus the number of attendees at Mr. Moore’s Gala since it began. Her data are given in the table below,</p>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p>Sejal’s Advertising Budget</p></td>
+<td><p>Mr. Moore’s Gala Attendance</p></td>
+</tr>
+<tr class="row-even"><td><p>$25</p></td>
+<td><p>76</p></td>
+</tr>
+<tr class="row-odd"><td><p>$275</p></td>
+<td><p>42</p></td>
+</tr>
+<tr class="row-even"><td><p>$100</p></td>
+<td><p>55</p></td>
+</tr>
+<tr class="row-odd"><td><p>$320</p></td>
+<td><p>36</p></td>
+</tr>
+<tr class="row-even"><td><p>$56</p></td>
+<td><p>67</p></td>
+</tr>
+</tbody>
+</table>
+<p>Use this information to answer the following questions.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Create a scatter plot of this data. Describe the relationship you observe.</p></li>
+<li><p>Find the linear regression equation. Plot it on top of the scatter plot you created in <em>part a</em>.</p></li>
+<li><p>Interpret the slope of the linear regression model in the context of the problem.</p></li>
+<li><p>Does the intercept of the linear regression model have an interpretation for this problem? If so, what is that interpretation? If not, why not?</p></li>
+<li><p>If Sejal spends $150 on advertising this year, how many guests should she expect to attend Mr. Moore’s <em>Not For Losers Statistics Gala</em>?</p></li>
+<li><p>If Sejal spends $400 on advertising this year, how many guests should she expect to attend Mr. Moore’s <em>Not For Losers Statistics Gala</em>?</p></li>
+<li><p>Which prediction, <em>part d</em> or <em>part e</em>, is more reasonable? Why?</p></li>
+<li><p>What is the correlation between Mr. Moore’s attendance and Sejal’s advertising budget?</p></li>
+<li><p>How much of the variation in Mr. Moore’s attendance is explained by Sejal’s advertising budget?</p></li>
 </ol>
-<p>On her clipboard, Sejal keeps track of how many guests arrive each minute to the annual <em>Ghimire Statistics Gala</em>.</p>
-<p>blah blah</p>
-<p>What is the standard deviation of the number of guests who arrive each minute? How much of this variation can be explained by its linear dependence on time?</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Arrival</strong></p></li>
+</ol>
+<p>The doors for the annual <em>Ghimire Statistics Gala</em> open at precisely 7 pm. On her clipboard, Sejal keeps track of how many guests arrive each minute after opening the door,</p>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p>Minutes After Door Opens</p></td>
+<td><p>Guests Arriving</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>24</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>20</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>13</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+<p>For example, the first row says 24 guests arrived in the first minute, the second row says 20 guests arrived in the second minute, etc.</p>
+<p>The table below gives the output from running <em>minitab</em>’s linear regression program on this data,</p>
+<blockquote>
+<div><p>(TODO)</p>
+</div></blockquote>
+<p>Use this information to answer the following questions.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>How much of the variation in the guests’ arrival can be explained by the number of arriving guests’ linear dependence on time?</p></li>
+<li><p>How much of the variation in the guests’ arrival can <em>not</em> be explained by the number of arriving guests’ linear dependence on time?</p></li>
+<li><p>What is the slope of the linear regression model? Interpret the slope in context.</p></li>
+<li><p>Find the residual for the number of guests arriving during the second minute after the doors open. Interpret this residual in the context of the problem.</p></li>
+</ol>
+</div></blockquote>
 </section>
-<section id="probability">
-<h3>Probability<a class="headerlink" href="#probability" title="Permalink to this heading">#</a></h3>
+<section id="chapter-5-probability">
+<h3>Chapter 5: Probability<a class="headerlink" href="#chapter-5-probability" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p><strong>Double Sided Coins</strong></p></li>
 </ol>
-<p>Sejal places three coins into her magical probability box. Two of the coins are normal coins. The third coin is a double-sided coin with two heads. Sejal forces you to choose one of the coins at random and without looking at which coin you have chosen, flip it. If the coin lands on heads, what is the probability you have selected the double-sided coin?</p>
+<p>Once all the guests have arrived and seated themselves, the festivities begin. Sejal saunters onto stage and picks you out of the audience to assist in her show.</p>
+<p>Sejal places three coins into a magical probability box. Two of the coins are normal coins. The third coin is a double-sided coin with two heads. Sejal forces you to choose one of the coins at random and without looking at which coin you have chosen, flip it. If the coin lands on heads, what is the probability you have selected the double-sided coin?</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Draw a <em>conditional probability</em> tree diagram!</p>
+</div>
 <ol class="arabic simple" start="2">
 <li><p><strong>Colored Balls</strong></p></li>
 </ol>
-<p>Sejal empties her magical probability box and readies it for the next experiment. In this experiment, the box contains a yellow ball, an orange ball, a green ball, and a blue ball. You are forced to randomly selects 4 balls from the box with replacement. What is the expected value for the number of distinct colored balls you will select?</p>
+<p>Sejal empties her magical probability box and readies it for the next experiment. In this experiment, the box contains a yellow ball, an orange ball, a green ball, and a blue ball. You are forced to randomly select 4 balls from the box with replacement. What is the expected number of distinct colored balls you will select?</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Consider the random variable,</p>
+<div class="math">
+<p><img src="../../_images/math/c1c52d8a8a9fa22aa5cfbd2cf80668efc7d2abbb.png" alt="\mathcal{X}_\text{yellow} \sim \text{number of yellow balls drawn}"/></p>
+</div><p>What type of distribution does <img class="math" src="../../_images/math/bc55589dbce6928bf6a936f4ddacea0445508ab9.png" alt="\mathcal{X}_\text{yellow}"/> have? Based on this distribution, what is <img class="math" src="../../_images/math/c20a59dab93f6990a619da96014d624487778491.png" alt="E(\mathcal{X}_\text{yellow})"/>?</p>
+<p>Then consider the random variable,</p>
+<div class="math">
+<p><img src="../../_images/math/969e04abcdf49b522fdfe16dd35aad9d01a8ba2e.png" alt="\mathcal{T} =  \mathcal{X}_\text{yellow} + \mathcal{X}_\text{orange} + \mathcal{X}_\text{green} + \mathcal{X}_\text{blue}"/></p>
+</div><p>What is <img class="math" src="../../_images/math/c0d622f4d67134862c0e1a82bd0c5117115c82cf.png" alt="E(\mathcal{T})"/>?</p>
+</div>
 <ol class="arabic simple" start="3">
 <li><p><strong>Sejal’s Folly</strong></p></li>
 </ol>
-<p>Sejal, now bored with her magical probability box, haphazardly discards it and decides everyone will have more fun if they play a game. <em>Sejal’s Folly</em> is a gambling game often played at the <em>Ghimire Statistics Gala</em>. Each player may bet on any of the numbers <img class="math" src="../../_images/math/30c5d36eaa79e9176c95dd8b6a9ebae22522f02f.png" alt="1,2,3,4,5,6"/>. Three dice are then rolled. If the player’s number appears on one, two or three of the dice, he or she receives respectively, one, two or three times their original bet, plus their original money back. Otherwise, the bet is lost. What is the player’s expected loss per bet?</p>
+<p>Sejal, now bored with her magical probability box, haphazardly discards it and decides everyone will have more fun if they all play a game together. <em>Sejal’s Folly</em> is a gambling game often played at the <em>Ghimire Statistics Gala</em>. Each player may bet on any of the numbers <img class="math" src="../../_images/math/30c5d36eaa79e9176c95dd8b6a9ebae22522f02f.png" alt="1,2,3,4,5,6"/>. Three dice are then rolled. If the player’s number appears on one, two or three of the dice, he or she receives respectively, one, two or three times their original bet, plus their original money back. Otherwise, the bet is lost. What is the player’s expected loss per bet?</p>
 <ol class="arabic simple" start="4">
 <li><p><strong>Craps</strong></p></li>
 </ol>
@@ -640,8 +761,8 @@ document.write(`
 <ol class="arabic simple" start="6">
 <li><p><strong>The Hat Game</strong></p></li>
 </ol>
-<p>Sejal puts a stop to the gambling, lest she lose more money. Instead, she decides everyone should play a more festive game. Three attendees of the Sejal’s <em>Statistics Gala</em> students are seated in a circle and made to play this fun probability game. Sejal flips a coin for each person and based on the outcome of the flip, places either a red or blue hat on each students’ head. No communication of any sort is allowed between the the contestants, except for an initial strategy session before the game begins. During this strategy session, they are not allowed to ask what color hat they are wearing. Once the strategy session is over, the players must <em>simultaneously</em> guess the color of their own hats or pass. What group strategy should they adopt to maximize the probability that atleast one person guesses correctly and no-one guesses incorrectly?</p>
-<p>The naive strategy would be for the group to agree that one person should guess and the others pass. This would have probability 1/2 of success. Find a strategy with a greater chance for success. What is the probability of success with your strategy?</p>
+<p>Sejal puts a stop to the gambling, lest she lose more money. Instead, she decides everyone should play a more festive game. Three attendees of the Sejal’s <em>Statistics Gala</em> students are seated in a circle and made to play this fun probability game. Sejal flips a coin for each person and based on the outcome of the flip, places either a red or blue hat on each participants’ head. No communication of any sort is allowed between the the participants, except for an initial strategy session before the game begins. During this strategy session, they are not allowed to ask what color hat they are wearing or tell the others what color hat they are wearing. Once the strategy session is over, the players must <em>simultaneously</em> guess the color of their own hats or pass. What group strategy should they adopt to maximize the probability that atleast one person guesses correctly and no-one guesses incorrectly?</p>
+<p>The naive strategy would be for the group to agree that one person should guess and the others should pass. This would have probability of success equal to <img class="math" src="../../_images/math/ba97e16c7f9569bc9ec9fb7e38da7355fb167ea5.png" alt="\frac{1}{2}"/>. Find a strategy with a greater chance for success. What is the probability of success with your strategy?</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>This is a famous probability problem from a column entitled <em>Why Mathematicians Now Care About Their Hat Color</em>, New York Times, Science Times, D5, April 10, 2001.</p>
@@ -650,13 +771,59 @@ document.write(`
 <p class="admonition-title">Hint</p>
 <p>What are the possible sequences of hat colors?</p>
 </div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>This one is quite hard. I suggest organizing an impromptu gathering to actually play this game. It will help you understand what types of strategies work and do not work.</p>
+</div>
 <ol class="arabic simple" start="7">
 <li><p><strong>Quadratic Equation</strong></p></li>
 </ol>
-<p>To conclude the annual <em>Ghimire Statistics Gala</em>, Sejal goes back to the basics and rolls out a chalkboard. She writes on the chalkboard the following equation,</p>
+<p>After several complaints from distraught guests about the complexity of the games on offer, Sejal goes back to the basics and rolls out a chalkboard. She writes on the chalkboard the following equation,</p>
 <div class="math">
 <p><img src="../../_images/math/f36a41deb1b1d5cd975acc33888b7b962c81b681.png" alt="x^2 + b \cdot x + c = 0"/></p>
 </div><p>Then, Sejal rolls two die. The outcome of the first die roll is substituted into the above equation for <img class="math" src="../../_images/math/74a664f8d0ae1f1b75ec1ce5ea120087e04e7a0e.png" alt="b"/>. The outcome of the second die roll is substituted into the above equation for <img class="math" src="../../_images/math/f6fe93a24ea293d1b3b4e665370a5bae3ee44dbc.png" alt="c"/>. What is the probability this equation has a real root?</p>
+</section>
+<section id="chapter-6-random-variables">
+<h3>Chapter 6: Random Variables<a class="headerlink" href="#chapter-6-random-variables" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Dubious Claims</strong></p></li>
+</ol>
+<p>After tallying up the results of her survey from #2 in the <strong>Chapter 1, 2 &amp; 4: Statistics</strong> section (by herself, without any witnesses), Sejal claims 90% of people who attended the annual <em>Ghimire Statistics Gala</em> have a fun time. You decide to test this claim by asking attendees whether or not they are having fun. Assume each attendee’s having of “fun” is independent from all other attendees.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>If Sejal’s claim is true, what is the probability the first person who is having fun will be the third person you ask?</p></li>
+</ol>
+<ol class="loweralpha simple">
+<li><p>You ask a total of 10 attendees whether or not they are having fun. If Sejal’s claim is true, what is the probability of observing at most 3 people in your sample that are having fun?</p></li>
+<li><p>After tallying up your sample, you discover exactly 3 people are having fun. Does this provide convincing evidence Sejal’s claim is not true? Why or why not?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Showdown</strong></p></li>
+</ol>
+<p>300 people have been invited to the annual <em>Ghimire Statistics Gala</em>. From past data, Sejal estimates the probability a single invited person will attend the gala is 0.25.</p>
+<p>350 people have been invited to the Mr. Moore’s <em>Not For Losers Statistics Gala</em>. From past data, Sejal estimates the probability a single invited person will attend the gala is 0.20.</p>
+<p>Let <img class="math" src="../../_images/math/02c1da4582469f1d8fe843dcd017a760ae98dd2d.png" alt="\mathcal{S}"/> represent the number of people who attend the annual <em>Ghimire Statistics Gala</em>.</p>
+<p>Let <img class="math" src="../../_images/math/733dc958a97b3828e6a1898d73bfd044d834c562.png" alt="\mathcal{M}"/> represent the number of people who attend Mr. Moore’s <em>Not For Losers Statistics Gala</em>.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>What type of distribution does <img class="math" src="../../_images/math/02c1da4582469f1d8fe843dcd017a760ae98dd2d.png" alt="\mathcal{S}"/> have? What are the parameters of this distribution?</p></li>
+<li><p>What type of distribution does <img class="math" src="../../_images/math/733dc958a97b3828e6a1898d73bfd044d834c562.png" alt="\mathcal{M}"/> have? What are the parameters of this distribution?</p></li>
+<li><p>Verify <img class="math" src="../../_images/math/02c1da4582469f1d8fe843dcd017a760ae98dd2d.png" alt="\mathcal{S}"/> and <img class="math" src="../../_images/math/733dc958a97b3828e6a1898d73bfd044d834c562.png" alt="\mathcal{M}"/> can be approximated with the Normal Distribution.</p></li>
+<li><p>What are the parameters of the distribution <img class="math" src="../../_images/math/e54daeabf2d54ebf77f9c94c7602723cd02ad102.png" alt="\mathcal{S} - \mathcal{M}"/>?</p></li>
+<li><p>What is the probability the annual <em>Ghimire Statistics Gala</em> will have more attendees than Mr. Moore’s <em>Not For Loser Statistics Gala</em>?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>Irish Goodbyes</strong></p></li>
+</ol>
+<p>The amount of time a randomly selected guest at the <em>Ghimire Statistics Gala</em> spends at the gala before going home is normally distributed with a mean of 75 minutes and a standard deviation of 10 minutes. You and your entourage of three friends have just arrived at the gala.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Find the mean and standard deviation for the average amount of time the four of you will spend at the <em>Ghimire Statistics Gala</em>.</p></li>
+<li><p>What is the probability the average amount of time all four of you will spend at the <em>Ghimire Statistics Gala</em> exceeds 80 minutes?</p></li>
+</ol>
+</div></blockquote>
 </section>
 </section>
 </section>
@@ -708,9 +875,10 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems">Problems</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistics">Statistics</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regression">Regression</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probability">Probability</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapters-1-2-4-statistics">Chapters 1, 2, 4: Statistics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-3-regression">Chapter 3: Regression</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-5-probability">Chapter 5: Probability</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-6-random-variables">Chapter 6: Random Variables</a></li>
 </ul>
 </li>
 </ul>
