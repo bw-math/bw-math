@@ -18,7 +18,7 @@ Sample Proportion
 	
 	.. math::
 	
-		\hat{p} \sim \mathcal{N}(n \cdot p, \sqrt{\frac{p \cdot (1 - p)}{n}}) 
+		\hat{p} \sim \mathcal{N}(p, \sqrt{\frac{p \cdot (1 - p)}{n}}) 
 
 Difference of Proportions
 -------------------------
@@ -36,7 +36,7 @@ Difference of Proportions
 	
 	.. math::
 	
-		\hat{p} \sim \mathcal{N}(n_x \cdot p_x - n_y \cdot p_y, \sqrt{\frac{p_x \cdot (1 - p_x)}{n_x} + \frac{p_y \cdot (1 - p_y)}{n_y}} ) 
+		\hat{p} \sim \mathcal{N}(p_x - p_y, \sqrt{\frac{p_x \cdot (1 - p_x)}{n_x} + \frac{p_y \cdot (1 - p_y)}{n_y}} ) 
 	
 
 Sample Mean
