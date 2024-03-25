@@ -172,7 +172,8 @@ For example, the first row says 24 guests arrived in the first minute, the secon
 
 The table below gives the output from running *minitab*'s linear regression program on this data,
 	
-	(TODO) 
+.. image:: ../../assets/imgs/context/sejals_regression_output.png
+    :align: center
 
 Use this information to answer the following questions.
 
