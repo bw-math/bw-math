@@ -110,7 +110,7 @@ Chapter 3: Regression
 
 1. **Competition**
 
-Mr. Moore's competing *Not For Losers Statistics Gala* has been a thorn in the side of the annual *Ghimire Statistics Gala* since it began several years ago, stealing guests who prefer Mr. Moore's chef catered buffet, where guests may dine on such delicacies as escargo and ratatouille, among other dishes. 
+Mr. Moore's competing *Not For Losers Statistics Gala* has been a thorn in the side of the annual *Ghimire Statistics Gala* since it began several years ago, stealing guests who prefer Mr. Moore's chef catered buffet, where guests may dine on such delicacies as escargo and ratatouille and those tiny quiche things, among other dishes. 
 
 To combat Mr. Moore's upstart gala, Sejal budgets a certain amount of money to advertising in order to promote awareness of the *Ghimire Statistics Gala*. She has been tracking the amount of money she spends on advertising versus the number of attendees at Mr. Moore's Gala since it began. Her data are given in the table below,
 
