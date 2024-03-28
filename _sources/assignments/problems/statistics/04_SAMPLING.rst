@@ -187,7 +187,22 @@ Suppose the pH measured by a randomly selected chemistry student is normally dis
 A.P. Exam Practice
 ==================
 
-1. **2006, Free Response, #3**
+1. **2008, Free Response, #2**
+
+Four different statistics have been proposed as estimators of a population parameter. To investigate the behavior of these estimators, 500 random samples are selected from a known population and each statistic is calculated for each sample. The true value of the population parameter is 75. The graphs below show the distribution of values for each statistic.
+
+.. image:: ../../../assets/imgs/classwork/2008_apstats_frp_02.png
+	:align: center
+	
+Use the information to solve the following problems.
+
+	a. Which of the statistics appear to be unbiased estimators of the population parameter? How can you tell?
+
+	b. Which of statistics A or B would be a better estimator of the population parameter? Explain your choice.
+
+	c. Which of statistics C or D would be a better estimator of the population parameter? Explain your choice.
+	
+2. **2006, Free Response, #3**
 
 The depth from the surface of Earth to a refracting layer beneath the surface can be estimated using methods developed by seismologists. One method is based on the time required for vibrations to travel from a distant explosion to a receiving point. The depth measurement **M** is the sum of the true depth **D** and the random measurement error **E**. That is, :math:`M = D + E`. The measurement error **E** is assumed to be normally distributed with mean 0 feet and standard deviation 1.5 feet.
 
@@ -197,7 +212,7 @@ The depth from the surface of Earth to a refracting layer beneath the surface ca
 
 	c. What is the probability that the mean of the three independent depth measurements taken at the point where the true depth is 2 feet will be negative?
 
-2. **2004, Free Response Form B, #3**
+3. **2004, Free Response Form B, #3**
 
 Trains carry bauxite ore from a mine in Canada to an aluminum processing plant in northern New York state in hopper cars. Filling equipment is used to load ore into the hopper cars. When functioning properly, the actual weights of ore loaded into each car by the filling equipment at the mine are approximately normally distributed with a mean of 70 tons and a standard deviation of 0.9 ton. If the mean is greater than 70 tons, the loading mechanism is overfilling.
 
@@ -209,7 +224,7 @@ Trains carry bauxite ore from a mine in Canada to an aluminum processing plant i
 
 	d. Based on your answer in part (c), if a random sample of 10 cars had a mean ore weight of 70.7 tons, would you suspect that the loading mechanism was overfilling the cars? Justify your answer.
 
-3. **2007, Free Response, #3**
+4. **2007, Free Response, #3**
 
 Big Town Fisheries recently stocked a new lake in a city park with 2,000 fish of various sizes. The distribution of the lengths of these fish is approximately normal.
 
