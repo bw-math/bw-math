@@ -83,3 +83,12 @@ Sampling Distributions
 This script illustrates the difference between *biased* and *unbiased* estimators. It will simulate a sample from a Normal population and then calculate various statistics. The results of the simulation are shown in a histogram with the true value of the population parameter plotted as a vertical line.
 
 :download:`Sampling Distributions <.../../assets/demos/sampling_simulations.py>`
+
+Confidence Intervals
+--------------------
+
+This script illustrates the frequentist interpretation of a Confidence Interval. Under the frequentist interpretation, the Confidence Interval can be thought of as an interval that will contain the true value of the population parameter with a certain probability. In other words, at a 95% confidence level, 5% of the time a Confidence Interval will **not** contain the true value of the population parameter.
+
+This script will simulate a fixed number of sample from a Normal population and then calculate the indicated confidence interval for each sample. The results are plotted as stacked error bars. The true mean is plotted a black vertical line. Intervals that contain the true value of the population mean will be shown in green whereas intervals that do not contain the true value of the population mean will be shown in red.
+
+:download:`Sampling Distributions <.../../assets/demos/confidence_intervals.py>`
