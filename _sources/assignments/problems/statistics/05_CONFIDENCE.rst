@@ -105,6 +105,9 @@ Difference of Population Proportions
 Problems
 ========
 
+Introduction
+------------
+
 1. **Critical Values** 
 
 A population of Twirly Deedles is normally distributed with a mean of 50 zoomies and a standard deviation of 5 zoomies. Suppose you sample 25 Twirly Deedles and calculate the average amount of zoomies. 
@@ -123,12 +126,26 @@ A population of Twirly Deedles is normally distributed with a mean of 50 zoomies
 	
 	c. Using the graphs from *part b*, what conclusion can you draw about the relationship between the width of the estimation interval (i.e., the *precision* of the estimate) and the confidence level
 	
+2. **Error**
 
-TODO: questions about standard error
+According to the most recent estimates, approximately 8% of males are born colorblind. 
 
-TODO: questions about margin of error
+	a. Find the standard error for the proportion of males that are color blind in a sample of 100 men. 
+	
+	b. Find the standard error for the proportion of males that are color blind in a sample of 150 men.
+	
+	c. Find the standard error for the proportion of males that are color blind in a sample of 200 men.
+	
+	d. How large of a sample would you need to get a margin of error that is no more than 0.04?
+	
+	e. How large of a sample would you need to get a margin of error that is no more than 0.01?
+	
+	f. How large of a sample would you need to get a margin of error that is no more than 0.001?
+	
 
-3. After careful measurement over the school year, Mr. Moore is 95% confident the average amount of time Sejal spends studying over the week is between 0.10 hours and 0.55 hours. 
+3. **Estimates**
+
+After careful measurement over the school year, Mr. Moore is 95% confident the average amount of time Sejal spends studying over the week is between 0.10 hours and 0.55 hours. 
 
 	a. What is the margin of error on Mr. Moore's estimate for Sejal's study time?
 	
@@ -136,9 +153,24 @@ TODO: questions about margin of error
 	
 	c. What is the standard error associated with Mr. Moore's estimation interval?
 	
-TODO: questions about population mean
+Population Proportion
+---------------------
 
-TODO: questions about difference of means
+TODO
+
+Difference of Proportions
+*************************
+
+
+Population Mean
+---------------
+
+TODO 
+
+Difference of Means
+*******************
+
+TODO
 
 A.P. Exam Practice
 ==================
