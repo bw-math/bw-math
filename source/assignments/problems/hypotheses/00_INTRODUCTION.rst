@@ -4,6 +4,73 @@
 Hypotheses
 ==========
 
+Introduction
+============
+
+1. **Formulation**
+
+State the null and alternate hypotheses for each of the following problems.
+
+	a. TODO.
+	
+	b. TODO.
+	
+	c. TODO.
+	
+	d. TODO.
+	
+2. **Errors**
+
+Answer the following questions about Hypothesis Testing errors.
+
+	a. TODO 
+	
+		i. Explain what a **Type I** Error would be in the context of this problem.
+	
+		ii. Explain what a **Type II** Error would be in the context of this problem.
+		
+	b. TODO 
+	
+		i. Explain what a **Type I** Error would be in the context of this problem.
+	
+		ii. Explain what a **Type II** Error would be in the context of this problem.
+		
+	c. TODO 
+	
+		i. Explain what a **Type I** Error would be in the context of this problem.
+	
+		ii. Explain what a **Type II** Error would be in the context of this problem.
+
+3. **Test Statistics**
+
+TODO
+
+	a. TODO
+	
+	b. TODO
+	
+	c. TODO
+		
+4. **Decision Rules**
+
+TODO
+
+	a. TODO
+	
+	b. TODO
+	
+	c. TODO
+
+5. **P-Values**
+
+TODO
+
+	a. TODO
+	
+	b. TODO
+	
+	c. TODO
+
 A.P. Exam Practice
 ==================
 
