@@ -14,13 +14,13 @@ Critical Value
 
 	.. math::
 	
-		z_{p} \equiv P(\mathcal{Z} \leq z_{p}) = \frac{p}{100}
+		z_{p} \equiv P(\mathcal{Z} \leq z_{p}) = p
 		
 .. topic:: Critical T Value
 
 	.. math::
 	
-		t_{p} \equiv P(\frac{\bar{\mathcal{X}}-\mu}{\mathcal{S}} \leq t_p) = \frac{p}{100}
+		t_{p} \equiv P(\frac{\bar{\mathcal{X}}-\mu}{\mathcal{S}} \leq t_p) = p
 
 Standard Error
 --------------
@@ -29,7 +29,7 @@ Standard Error
 
 	.. math::
 	
-		\s_{\bar{X}} = \frac{s}{\sqrt{n}}
+		s_{\bar{X}} = \frac{s}{\sqrt{n}}
 	
 .. topic:: Standard Error, Difference of Sample Means
 
@@ -41,13 +41,13 @@ Standard Error
 
 	.. math::
 	
-		\s_{\hat{p}} = \sqrt{ \frac{ \hat{p} \cdot (1-\hat{p}) }{n} }
+		s_{\hat{p}} = \sqrt{ \frac{ \hat{p} \cdot (1-\hat{p}) }{n} }
 		
 .. topic:: Standard Error, Difference of Sample Proportions
 
 	.. math::
 	
-		\s_{\hat{p}_1 - \hat{p}_2} = \sqrt{ \frac{ \hat{p}_1 \cdot (1-\hat{p}_1) }{n_1} + \frac{ \hat{p}_2 \cdot (1-\hat{p}_2) }{n_2} }
+		s_{\hat{p}_1 - \hat{p}_2} = \sqrt{ \frac{ \hat{p}_1 \cdot (1-\hat{p}_1) }{n_1} + \frac{ \hat{p}_2 \cdot (1-\hat{p}_2) }{n_2} }
 		
 Margin of Error
 ---------------
