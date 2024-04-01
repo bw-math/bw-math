@@ -105,18 +105,46 @@ Difference of Population Proportions
 Problems
 ========
 
-TODO: questions about critical values
+1. **Critical Values** 
+
+A population of Twirly Deedles is normally distributed with a mean of 50 zoomies and a standard deviation of 5 zoomies. Suppose you sample 25 Twirly Deedles and calculate the average amount of zoomies. 
+
+	a. Describe the sampling distribution for the mean amount of zoomies. 
+
+	b. Find the critical values for the following confidence levels:
+	
+		i. 90%
+		
+		ii. 95%
+		
+		ii. 99%
+		
+	b. Draw three Normal curves for the mean zoomies sampling distribution. For each confidence level in *part b*, label the critical values on the horizontal axis of one of the graphs. Shade in the area that corresponds to the given confidence level on that graph.
+	
+	c. Using the graphs from *part b*, what conclusion can you draw about the relationship between the width of the estimation interval (i.e., the *precision* of the estimate) and the confidence level
+	
 
 TODO: questions about standard error
 
 TODO: questions about margin of error
 
+3. After careful measurement over the school year, Mr. Moore is 95% confident the average amount of time Sejal spends studying over the week is between 0.10 hours and 0.55 hours. 
+
+	a. What is the margin of error on Mr. Moore's estimate for Sejal's study time?
+	
+	b. What is Mr. Moore's point estimate for the average amount of time Sejal spends studying a week?
+	
+	c. What is the standard error associated with Mr. Moore's estimation interval?
+	
 TODO: questions about population mean
 
 TODO: questions about difference of means
 
 A.P. Exam Practice
 ==================
+
+Means
+=====
 
 1. **2004, Free Response Form B, #4**
 
@@ -171,14 +199,6 @@ significant? Justify your answer.
 
 Proportions
 ===========
-
-.. topic:: Confidence Interval for Population Proportion
-
-	TODO
-	
-.. topic:: Confidence Interval for Difference of Two Population Proportions
-
-	TODO
 	
 1. **2010, Free Response Form B, #4**
 
