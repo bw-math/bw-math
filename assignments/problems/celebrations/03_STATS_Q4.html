@@ -552,6 +552,47 @@ document.write(`
 <li><p><strong>2011, Free Response, #6</strong></p></li>
 </ol>
 <p>TODO</p>
+<ol class="arabic simple" start="4">
+<li><p><strong>2019, Free Response, #6</strong></p></li>
+</ol>
+<p>Emma is moving to a large city and is investigating typical monthly rental prices of available one-bedroom apartments. She obtained a random sample of rental prices for 50 one-bedroom apartments taken from a Web site where people voluntarily list available apartments.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Describe the population for which it is appropriate for Emma to generalize the results from her sample.</p></li>
+</ol>
+</div></blockquote>
+<p>The distribution of the 50 rental prices of the available apartments is shown in the following histogram.</p>
+<img alt="../../../_images/2019_apstats_frp_06a.png" class="align-center" src="../../../_images/2019_apstats_frp_06a.png" />
+<p>Use this histogram to answer the following questions.</p>
+<blockquote>
+<div><ol class="loweralpha simple" start="2">
+<li><p>Emma wants to estimate the typical rental price of a one-bedroom apartment in the city. Based on the distribution shown, what is a disadvantage of using the mean rather than the median as an estimate of the typical rental price?</p></li>
+<li><p>Instead of using the sample median as the point estimate for the population median, Emma wants to use an interval estimate. However, computing an interval estimate requires knowing the sampling distribution of the sample median for samples of size 50. Emma has one point, her sample median, in that sampling distribution. Using information about rental prices that are available on the Web site, describe how someone could develop a theoretical sampling distribution of the sample median for samples of size 50.</p></li>
+</ol>
+</div></blockquote>
+<p>Because Emma does not have the resources to develop the theoretical sampling distribution, she estimates the sampling distribution of the sample median using a process called bootstrapping. In the bootstrapping process, a computer program performs the following steps,</p>
+<ul class="simple">
+<li><p>Take a random sample, with replacement, of size 50 from the original sample.</p></li>
+<li><p>Calculate and record the median of the sample.</p></li>
+<li><p>Repeat the process to obtain a total of 15,000 medians.</p></li>
+</ul>
+<p>Emma ran the bootstrap process, and the following frequency table is the bootstrap distribution showing her results of generating 15,000 medians.</p>
+<img alt="../../../_images/2019_apstats_frp_06b.png" class="align-center" src="../../../_images/2019_apstats_frp_06b.png" />
+<p>The bootstrap distribution provides an approximation of the sampling distribution of the sample median. A confidence interval for the median can be constructed using a percentage of the values in the middle of the bootstrap distribution.</p>
+<blockquote>
+<div><ol class="loweralpha" start="4">
+<li><p>Use the frequency table to find the following.</p>
+<blockquote>
+<div><ol class="lowerroman simple">
+<li><p>Value of the 5th percentile:</p></li>
+<li><p>Value of the 95th percentile:</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Find the percentage of bootstrap medians in the table that are equal to or between the values found in <em>part d</em>.</p></li>
+<li><p>Use your values from <em>parts d</em> and <em>e</em> to construct and interpret a confidence interval for the median rental price.</p></li>
+</ol>
+</div></blockquote>
 </section>
 </section>
 
