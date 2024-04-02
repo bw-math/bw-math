@@ -35,7 +35,7 @@ Standard Error
 
 	.. math::
 	
-		s_{\bar{X}_2 - \bar{X}_1} = \sqrt( \frac{ s_{ \bar{x}_1 } }{n_1} + \frac{ s_{ \bar{x}_2 } }{n_2} )
+		s_{\bar{X}_2 - \bar{X}_1} = \sqrt( \frac{ {s_{ \bar{x}_1 }}^2 }{n_1} + \frac{ {s_{ \bar{x}_2 }}^2 }{n_2} )
 
 .. topic:: Standard Error, Sample Proportion
 
