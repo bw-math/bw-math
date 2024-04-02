@@ -153,6 +153,33 @@ After careful measurement over the school year, Mr. Moore is 95% confident the a
 	
 	c. What is the standard error associated with Mr. Moore's estimation interval?
 	
+4. **Devore & Berk, 2007, Chapter 8.1 #2**
+
+Each of the following is a confidence interval for :math:`\mu`, the true average (i.e., population mean) resonance frequency (Hz) for all tennis rackets of a certain type
+
+	(114.4, 115.6)
+	
+	(144.1, 115.9)
+	
+Use this information to answer the following questions.
+
+	a. What is the value of the sample mean resonance frequency?
+	
+	b. Both intervals were calculated from the same sample data. The confidence level for one of these intervals is 90% and for the other is 99%. Which of the intervals has the 90% confidence level, and why?
+	
+5. **Devore & Berk, 2007, Chapter 8.1 #3**
+
+Suppose that a random sample of 50 bottles of a particular brand of cough syrup is selected and the alcohol content of each bottle is determined. Let :math:`\mu` denote the average alcohol content for the population of all bottles of the brand under study. Suppose that the resulting 95% confidence interval is :math`(7.8, 94)`.
+
+	a. Would a 90% confidence interval calculated from this same sample have been narrower or wider than the given interval? Explain your reasoning.
+	
+	b. Consider the following statement: There is a 95% chance that :math:`\mu` is between 7.8 and 9.4. Is this statement correct? Why or why not?
+	
+	c. Consider the following statement: We can be highly confident that 95% of all bottles of this type of cough syrup have an alcohol content that is between 7.8 and 9.4. Is this statement correct? Why or why not?
+	
+	d. Consider the following statement: If the process of selecting a sample of size 50 and then computing the corresponding 95% interval is repeated 100 times, approximately 95 of the resulting intervals will include :math:`\mu`. Is this statement correct? Why or why not?
+
+
 Population Proportion
 ---------------------
 
@@ -165,8 +192,14 @@ Difference of Proportions
 Population Mean
 ---------------
 
-TODO 
+1. **Devore & Berk, 2007, Chapter 8.1 #6**
 
+On the basis of extensive tests, the yield point of a particular type of mild steel reinforcing bar is known to be normally distributed with :math:`\sigma = 100 \text{lbs}`. The composition of the bar has been slightly modified, but the modification is not believed to have affected either the normality of the value of :math:`\sigma`
+
+	a. Assuming this to be the case, if a sample of 25 modified bars resulted in a sample average yield of 8439 lbs, compute a 90% Confidence Interval for the true average yield poitn of the modified bar. 
+	
+	b. How would you modify the interval in *part a* to obtain a confidence of 92%?
+	 
 Difference of Means
 *******************
 
