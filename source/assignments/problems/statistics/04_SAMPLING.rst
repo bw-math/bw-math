@@ -87,7 +87,7 @@ Problems
 Sampling Distributions
 ----------------------
 
-1. **Devore, Berk, 2007**
+1. **Devore & Berk, 2007, Chapter 6.1 #2**
 
 There are two traffic lights on the way to work. Let :math:`\mathcal{X}_1` be the number of lights that are red, requiring a stop, and suppose the distribution of :math:`\mathcal{X}_1` is as follows,
 
@@ -105,7 +105,7 @@ Let :math:`\mathcal{X}_2` be the numebr of lights that are red on the way home; 
 	
 	c. Calculate :math:`{\sigma_T}^2`. How does it relate to :math:`\sigma^2`, the population variance?
 	
-2. **Moore, 2007**
+2. **Absence Makes The Heart Grow Fonder**
 
 Let :math:`\mathcal{X}` be the number of students absent from AP Statistics on a given day. Suppose the distribution of :math:`\mathcal{X}` is as follows,
 
@@ -183,11 +183,11 @@ The manufacturers of Skittles claim 20% of each bag of Skittles is red. The manu
 Sample Means
 ------------
 
-1. **Devore, Berk, 2007**
+1. **Devore & Berk, 2007, Chapter 6.2 #17**
 
 The lifetime of a certain brand of battery is normally distributed with a mean of 10 hours and a standard deviation of 1 hour. There are four batteries to a package. If you buy a single package, what is the probability the average lifetime of all of the batteries in the package exceeds 11 hours?
 
-2. **Devore, Berk, 2007**
+2. **Exams**
 
 There are five students in Mr. Moore's AP Statistics. On the basis of his many years of experience, Mr. Moore knows the time it takes to grade a randomly chosen examination paper is normally distributed with a mean of 10 minutes and a standard deviation of 2.5 minutes. 
 
