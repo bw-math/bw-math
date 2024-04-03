@@ -56,7 +56,7 @@ Suppose you select a random sample of 25 individuals. Let :math:`\mathcal{X}` de
 	
 	c. What is the probability distribution of the test statistic :math:`\mathcal{X}` when :math:`H_0` is true? Use it to compute the probability of a Type I error.
 	
-	d. COmpute the probability of a type II error for the selected region when :math:`p = 0.3, 0.4, 0.6, 0.7`. 
+	d. Compute the probability of a type II error for the selected region when :math:`p = 0.3, 0.4, 0.6, 0.7`. 
 	
 	e. Using the selected region, what would you conclude if 6 of the 25 queried customers favored the first company?
 
@@ -114,8 +114,6 @@ A researcher wants to conduct a study to test whether listening to soothing musi
 	b. The null hypothesis for this study is that there is no difference in the mean reduction of diastolic blood pressure for the two treatments and the alternative hypothesis is that the mean reduction in diastolic blood pressure is greater for the music treatment. If the null hypothesis is rejected, the clinic will offer this music therapy as a free service to their patients with high blood pressure. Describe Type I and Type II errors and the consequences of each in the context of this study, and discuss which one you think is more serious.
 
 3. **2009, Free Response, #1**
-
-TODO
 
 A simple random sample of 100 high school seniors was selected from a large school district. The gender of each student was recorded, and each student was asked the following questions.
 
@@ -188,7 +186,7 @@ Studies have shown that foods rich in compounds known as flavonoids help lower b
 
 The reduction in blood pressure (before minus after) for each of the participants in the two groups is shown in the dotplots below.
 
-.. image:: ../../../../assets/imgs/classwork/2022_apstats_frp_05a.png
+.. image:: ../../../assets/imgs/classwork/2022_apstats_frp_05a.png
     :align: center
 
 Use this information to answer the following question.
@@ -201,7 +199,7 @@ The researchers found the mean reduction in blood pressure for those who consume
 	
 A simulation was conducted to investigate whether there is a greater reduction of blood pressure for those who consume dark chocolate than for those who consume white chocolate. The simulation was conducted under the assumption that no difference exists. The results of 120 trials of the simulation are shown in the following dotplot.
 
-.. image:: ../../../../assets/imgs/classwork/2022_apstats_frp_05b.png
+.. image:: ../../../assets/imgs/classwork/2022_apstats_frp_05b.png
     :align: center
     
 Use this information to answer the following question.
