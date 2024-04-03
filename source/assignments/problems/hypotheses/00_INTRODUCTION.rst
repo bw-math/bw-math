@@ -1,45 +1,64 @@
 .. _statistics_hypotheses_classwork:
 
-==========
-Hypotheses
-==========
-
+============
 Introduction
 ============
 
-1. **Formulation**
+1. **Devore & Berk, 2007, Chapter 9.1 #6**
 
-State the null and alternate hypotheses for each of the following problems.
+Many older homes have electrical systems that use fuses rather than circuit breakers. A manufacturer of 40-amp fuses wants to make sure that the mean amperage at which its fuses burn out is in fact 40. If the mean amperage is lower than 40, customers will complain because the fuses require replacement too often. If the mean amperage is higher than 40, the manufacturer might be liable for damage to an electrical system due to fuse malfunction. To verify the amperage of the fuses, a sample of fuses is to be selected and inspected.
 
-	a. TODO.
+	a. If a hypothesis test were to be performed, what null and alternate hypotheses would be of interest to the manufacturer?
 	
-	b. TODO.
+	b. Describe the Type I and Type II errors in this situation.
 	
-	c. TODO.
-	
-	d. TODO.
-	
-2. **Errors**
+2. **Devore & Berk, 2007, Chapter 9.1 #7**
 
-Answer the following questions about Hypothesis Testing errors.
+Water samples are taken from water used for cooling as it is being discharged from a power plant into a river. It has been determined that as long as the mean temperature of the discharged water is at most :math:`150^{\circ} \text{F}`, there will be no negative effects on the river's ecosystem. To investigate whether the plant is in compliance with the regulations that prohibit a mean discharge water temperature of above :math:`150^{\circ} \text{F}`, 50 water samples will be taken at randomly selected times, and the temperature of each sample recorded.
 
-	a. TODO 
+	a. State the null and alternate hypotheses that could be used to test whether the company was in violation of the regulation.
 	
-		i. Explain what a **Type I** Error would be in the context of this problem.
+	b. Describe what a Type I and a Type II error would be in the context of this problem. 
 	
-		ii. Explain what a **Type II** Error would be in the context of this problem.
+	c. Which error would you consider more serious? Explain.
+	
+3. **Devore & Berk, 2007, Chapter 9.1 #9**
+
+Two different companies have applied to provide cable television service in a certain region. Let *p* denote the proportion of all potential subscribers who favor the first company over the second. Consider testing the null hypothesis,
+
+.. math::
+
+	H_0: p = 0.5
 		
-	b. TODO 
+versus the alternate hypothesis,
+
+.. math::
+
+	H_a: p \neq 0.5
 	
-		i. Explain what a **Type I** Error would be in the context of this problem.
+Suppose you select a random sample of 25 individuals. Let :math:`\mathcal{X}` denote the number in the sample who favor the first company and ``x`` represent the observed value of :math:`\mathcal{X}`.
+
+	a. Which of the following rejection regions is most appropriate and why?
 	
-		ii. Explain what a **Type II** Error would be in the context of this problem.
+		.. math::
+	
+			R_1 = \{ x \mid x \leq 7 \text{ or } x \geq 18 \}
 		
-	c. TODO 
+		.. math::
+		
+			R_2 = \{ x \mid x \leq 8 \}
+			
+		.. math::
+		
+			R_3 = \{ x \mid x \geq 17 \}
 	
-		i. Explain what a **Type I** Error would be in the context of this problem.
+	b. In the context of this problem, describe what Type I and Type II errors would be.
 	
-		ii. Explain what a **Type II** Error would be in the context of this problem.
+	c. What is the probability distribution of the test statistic :math:`\mathcal{X}` when :math:`H_0` is true? Use it to compute the probability of a Type I error.
+	
+	d. COmpute the probability of a type II error for the selected region when :math:`p = 0.3, 0.4, 0.6, 0.7`. 
+	
+	e. Using the selected region, what would you conclude if 6 of the 25 queried customers favored the first company?
 
 3. **Test Statistics**
 

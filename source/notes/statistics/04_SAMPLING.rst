@@ -77,9 +77,9 @@ Sample Proportion
 
 TODO
 
-.. topic:: Sample Proportion Sampling Distribution
+.. topic:: Sampling Distribution for Sample Proportion
 
-	If :math:`\mathcal{X}_i \sim \text{Bern}(p)` for :math:`i = 1, 2, ..., n` and the following conditions are met,
+	If :math:`\mathcal{X}_i \sim \text{Bern}(p)` for :math:`i = 1, 2, ..., n` and the following **conditions for inference** are met,
 	
 	1. :math:`n \cdot p \geq 10`
 	2. :math:`n \cdot (1 - p) \geq 10`
@@ -88,8 +88,7 @@ TODO
 	
 	.. math::
 	
-		\hat{p} \sim \mathcal{N}(p, \sqrt{\frac{p \cdot (1 - p)}{n}}) 
-
+		\hat{p} \sim \mathcal{N}(p, \sqrt{\frac{p \cdot (1 - p)}{n}})
 TODO
 
 Difference of Proportions
@@ -99,19 +98,21 @@ TODO
 
 .. topic:: Sampling Distribution for Difference of Sample Proportions
 
-	If :math:`\mathcal{X}_i \sim \text{Bern}(p_x)` for :math:`i = 1, 2, ..., n_x` and the following conditions are met,
+	If :math:`\mathcal{X}_i \sim \text{Bern}(p_x)` for :math:`i = 1, 2, ..., n_x` and the following **conditions for inference** are met,
 	
 	1. :math:`n_x \cdot p_x \geq 10`
 	2. :math:`n_x \cdot (1 - p_x) \geq 10`
+	
+	**And** if :math:`\mathcal{Y}_i \sim \text{Bern}(p_y)` for :math:`i = 1, 2, ..., n_y` and the following **conditions for inference** are met,
+	
 	3. :math:`n_y \cdot p_y \geq 10`
 	4. :math:`n_y \cdot (1 - p_y) \geq 10`
 	
-	The random variable, :math:`\hat{p}_x - \hat{p}_y` has the following distribution,
+	Then the random variable :math:`\hat{p}_x - \hat{p}_y` has the following distribution,
 	
 	.. math::
 	
 		\hat{p} \sim \mathcal{N}(p_x - p_y, \sqrt{\frac{p_x \cdot (1 - p_x)}{n_x} + \frac{p_y \cdot (1 - p_y)}{n_y}} ) 
-		
 TODO
 
 .. _distribution_of_sample_mean:
@@ -128,19 +129,33 @@ Known Standard Deviation
 
 TODO 
 
-.. topic:: Distribution of Sample Mean, Standard Deviation Known, Version 1
+.. topic:: Sampling Distribution for the Sample Mean, Known Standard Deviation, Version 1
 
-	Let each :math:`\mathcal{X_i}` for :math:`i = 1, 2, ..., n` be selected from the same population. If :math:`n \geq 30`, then 
+	If 
+		1. :math:`\mathcal{X}_i \sim \mathcal{N}(\mu, \sigma)` for :math:`i = 1, 2, ..., n` 
+	
+	**And** the following **conditions for inference** is met,
+	
+		2. :math:`n \geq 30`
+		
+	Then the random variable :math:`\bar{\mathcal{X}} = \frac{\mathcal{X}_1 + \mathcal{X}_2 + ... + \mathcal{X}_n}{n}` has the following distribution, 
 	
 	.. math::
 	
-		\bar{X} \sim \mathcal{N}(\mu, \frac{sigma}{\sqrt{n}})  
+		\bar{\mathcal{X}} \sim \mathcal{N}(\mu, \frac{\sigma}{\sqrt{n}})
 	
 TODO
 
-.. topic:: Distribution of Sample Mean, Standard Deviation Known, Version 2
+.. topic:: Sampling Distribution for the Sample Mean
 
-	Let each :math:`\mathcal{X_i}` for :math:`i = 1, 2, ..., n` be selected from the same population. If :math:`n \geq 30`, then 
+	If 
+		1. :math:`\mathcal{X}_i \sim \mathcal{N}(\mu, \sigma)` for :math:`i = 1, 2, ..., n` 
+	
+	**And** the following **conditions for inference** is met,
+	
+		2. :math:`n \geq 30`
+		
+	Then the standardized value :math:`\mathcal{Z}` of the random variable :math:`\bar{\mathcal{X}} = \frac{\mathcal{X}_1 + \mathcal{X}_2 + ... + \mathcal{X}_n}{n}` has the following distribution, 
 	
 	.. math::
 	
@@ -177,11 +192,20 @@ TODO
 
 .. topic:: Sampling Distribution for Difference of Sample Means, Standard Deviation Known
 
-	If :math:`\mathcal{X}_i \sim \mathcal{N}(\mu_x, \sigma_y)` for :math:`i = 1, 2, ..., n_x`, :math:`\mathcal{Y}_i \sim \mathcal{N}(\mu_y, \sigma_x)` for :math:`i = 1, 2, ..., n_y` **and** :math:`min(n_1, n_2) \geq 30`, then the random variable :math:`\bar{\mathcal{X}} - \bar{\mathcal{Y}}` has the following distribution, 
+	If 
+	
+		1. :math:`\mathcal{X}_i \sim \mathcal{N}(\mu_x, \sigma_y)` for :math:`i = 1, 2, ..., n_x`
+		
+		2. :math:`\mathcal{Y}_i \sim \mathcal{N}(\mu_y, \sigma_x)` for :math:`i = 1, 2, ..., n_y` 
+		
+	And the following **conditions for inference** is met,
+	
+		3. :math:`min(n_1, n_2) \geq 30`
+		
+	Then the random variable :math:`\bar{\mathcal{X}} - \bar{\mathcal{Y}}` has the following distribution, 
 	
 	.. math::
 	
 		\bar{\mathcal{X}} - \bar{\mathcal{Y}} \sim \mathcal{N}(\mu_x - \mu_y, \sqrt{ \frac{{\sigma_x}^2}{n_x} + \frac{{\sigma_y}^2}{n_y}})
-		
 TODO
 
