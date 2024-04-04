@@ -82,6 +82,13 @@ This script illustrates the difference between *biased* and *unbiased* estimator
 
 :download:`Biased Estimators <../../assets/demos/sampling_simulations.py>`
 
+Central Limit Theorem
+---------------------
+
+This script illustrates the Central Limit Theorem. The user may specify a population distribution and then select a simple random sample from the specified population. The distribution of the sampling distribution for the mean when a sample of this size is selected is then calculated. The results are plotted on side-by-side histograms. The user may adjust the number of samples drawn and then recalculate the sampling distribution to see how increasing the number of samples induces normality in the sampling distribution, no matter how the underlying population is distributed.
+
+:download:`Biased Estimators <../../assets/demos/central_limit_theorem.py>`
+
 Confidence Intervals
 --------------------
 
