@@ -12,38 +12,42 @@ Critical Value
 
 .. topic:: Critical Z Value
 
+	A value :math:`z_{\alpha}` from the Standard Normal distribution is defined as,
+	
 	.. math::
 	
-		z_{p} \equiv P(\mathcal{Z} \leq z_{p}) = p
+		P(\mathcal{Z} \leq z_{\alpha}) = 1 - \alpha
 		
 .. topic:: Critical T Value
 
+	A value :math:`t_{\alpha}` from Student's T Distribution is defined as,
+	
 	.. math::
 	
-		t_{p} \equiv P(\frac{\bar{\mathcal{X}}-\mu}{\mathcal{S}} \leq t_p) = p
+		P(\frac{\bar{\mathcal{X}}-\mu}{\mathcal{S}} \leq t_{\alpha}) = 1 - \alpha
 
 Standard Error
 --------------
-	
-.. topic:: Standard Error, Sample Mean
+
+.. topic:: Sample Mean Standard Error
 
 	.. math::
 	
-		s_{\bar{X}} = \frac{s}{\sqrt{n}}
+		\text{s}_{\bar{x}} = \frac{s}{\sqrt{n}}
 	
-.. topic:: Standard Error, Difference of Sample Means
+.. topic:: Difference of Means Standard Error
 
 	.. math::
 	
-		s_{\bar{X}_2 - \bar{X}_1} = \sqrt( \frac{ {s_{ \bar{x}_1 }}^2 }{n_1} + \frac{ {s_{ \bar{x}_2 }}^2 }{n_2} )
+		\text{s}_{\bar{x_2}_2 - \bar{x_1}} = \sqrt( \frac{ s_{ \bar{x_1} } }{n_1} + \frac{ s_{ \bar{x_2}} }{n_2} )
 
-.. topic:: Standard Error, Sample Proportion
+.. topic:: Sample Proportion Standard Error
 
 	.. math::
 	
 		s_{\hat{p}} = \sqrt{ \frac{ \hat{p} \cdot (1-\hat{p}) }{n} }
 		
-.. topic:: Standard Error, Difference of Sample Proportions
+.. topic:: Difference of Sample Proportions Standard Error
 
 	.. math::
 	
@@ -52,56 +56,24 @@ Standard Error
 Margin of Error
 ---------------
 	
-.. topic:: Margin of Error, Sample Mean, Known Standard Deviation
+.. topic:: Margin of Error
 
+	If c is a critical value from a point estimator :math:`\theta`'s sampling distribution and :math:`s_{\theta}` is the standard error of that estimator, then the margin of error for that point estimator is given by,
+	
 	.. math::
 	
-		\text{MOE} = \lvert z_{1-\frac{\alpha}{2}} \rvert \cdot \text{SE}
+		\text{MOE} = c \rvert \cdot s_{\theta}}
 
-.. topic:: Margin of Error, Sample Mean, Unknown Standard Deviation
-
-	.. math::
-	
-		\text{MOE} = \lvert t_{1-\frac{\alpha}{2}} \rvert \cdot \text{SE}		
 	
 Intervals
-=========
+---------
 
-Population Mean
----------------
+.. topic:: Confidence Intervals
 
-.. topic:: Confidence Interval For Population Mean
-
-	.. math::
+	If :math:`\theta` is a population parameter, :math:`\hat{\theta}` is a point estimator of :math:`\theta` and :math:`\text{MOE}_{\theta}` is the margin of error for that estimator, the confidence interval for :math:`\theta` is given by,
 	
-		\bar{x} - \text{MOE} \leq \mu \leq \bar{x} + \text{MOE}
+	\hat{\theta} - \text{MOE}_{\theta} \leq \theta \leq \hat{\theta} - \text{MOE}_{\theta}
 
-Difference of Population Means
-------------------------------
-
-.. topic:: Confidence Interval for Difference of Population Means
-
-	.. math::
-	
-		(\bar{x_2} - \bar{x_1}) - \text{MOE} \leq \mu_2 - \mu_1 \leq (\bar{x_2} - \bar{x_1}) + \text{MOE}
-
-Population Proportion
----------------------
-
-.. topic:: Confidence Interval for Population Proportion
-
-	.. math::
-	
-		\hat{p} - \text{MOE} \leq p \leq \hat{p} + \text{MOE}
-		
-Difference of Population Proportions
-------------------------------------
-
-.. topic:: Confidence Interval for Population Proportion
-
-	.. math::
-	
-		(\hat{p}_1 - \hat{p}_2) - \text{MOE} \leq p_1 - p_2 \leq (\hat{p}_1 - \hat{p}_2) + \text{MOE}
 Problems
 ========
 
