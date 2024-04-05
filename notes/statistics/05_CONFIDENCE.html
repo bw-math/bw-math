@@ -514,11 +514,28 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#critical-value">Critical Value</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-error">Standard Error</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#margin-of-error">Margin of Error</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intervals">Intervals</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intervals">Intervals</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population-mean">Population Mean</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-population-means">Difference of Population Means</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#population-proportion">Population Proportion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Standard Error</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-two-proportions">Difference of Two Proportions</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Margin of Error</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Intervals</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#population-mean">Population Mean</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Standard Error</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-two-means">Difference of Two Means</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Margin of Error</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Intervals</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Difference of Two Means</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -541,58 +558,233 @@ document.write(`
 <p>TODO</p>
 <aside class="topic">
 <p class="topic-title">Critical Z Value</p>
+<p>A value <img class="math" src="../../_images/math/8bebae840968c55b0a226dd27d1ac535179ca68d.png" alt="z_{\alpha}"/> from the Standard Normal distribution is defined as,</p>
 <div class="math">
-<p><img src="../../_images/math/05e8e9271e2647b338ea9af3d964e63a6873dc4e.png" alt="z_{p} \equiv P(\mathcal{Z} \leq z_{p}) = \frac{p}{100}"/></p>
+<p><img src="../../_images/math/fa5559ab41cbf342a979c6a778f0be790e6c0edc.png" alt="P(\mathcal{Z} \leq z_{\alpha}) = 1 - \alpha"/></p>
 </div></aside>
 <aside class="topic">
 <p class="topic-title">Critical T Value</p>
+<p>A value <img class="math" src="../../_images/math/4a4cd30b270ea3a5c6d904a1fab70be1f4433285.png" alt="t_{\alpha}"/> from Student’s T Distribution is defined as,</p>
 <div class="math">
-<p><img src="../../_images/math/1f8ad540039f01d10cbac0450e47b793643ff33a.png" alt="t_{p} \equiv P(\frac{\bar{\mathcal{X}}-\mu}{\mathcal{S}} \leq t_p) = \frac{p}{100}"/></p>
+<p><img src="../../_images/math/0bb803a684bd8af8d6d2eb857f66fc662d0532e3.png" alt="P(\frac{\bar{\mathcal{X}}-\mu}{\mathcal{S}} \leq t_{\alpha}) = 1 - \alpha"/></p>
 </div></aside>
 </section>
 <section id="standard-error">
 <h3>Standard Error<a class="headerlink" href="#standard-error" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
 <aside class="topic">
-<p class="topic-title">Standard Error, Sample Mean</p>
+<p class="topic-title">Standard Error</p>
+<p>The standard error of an estimator <img class="math" src="../../_images/math/c6355eb34c07e7f8c28f97e25575c5124a7a560d.png" alt="\hat{\theta}"/> is defined as,</p>
 <div class="math">
-<p><img src="../../_images/math/41d737eb7c98b463f2fd2e062df0494d9451903b.png" alt="\text{SE}_{\bar{X}} = \frac{s}{\sqrt{n}}"/></p>
-</div></aside>
-<aside class="topic">
-<p class="topic-title">Standard Error, Difference of Means</p>
-<div class="math">
-<p><img src="../../_images/math/8d8a5a73f40d94dd83e58cbe31c934a1f52bdf6a.png" alt="\text{SE}_{\bar{X}_2 - \bar{X}_1} = \sqrt( \frac{ s_{ \bar{x}_1 } }{n_1} + \frac{ s_{ \bar{x}_2 } }{n_2} )"/></p>
+<p><img src="../../_images/math/9f148f81c62d1fc623c76c09906330aa1eb43d6c.png" alt="s_{\theta} = E( (\theta - E(\hat{\theta}))^2 )"/></p>
 </div></aside>
 </section>
 <section id="margin-of-error">
 <h3>Margin of Error<a class="headerlink" href="#margin-of-error" title="Permalink to this heading">#</a></h3>
 <aside class="topic">
-<p class="topic-title">Margin of Error, Known Standard Deviation</p>
-<div class="math">
-<p><img src="../../_images/math/758603a4d3b967c468d894b6b6f8fb0612294554.png" alt="\text{MOE} = \lvert z_{1-\frac{\alpha}{2}} \rvert \cdot \text{SE}"/></p>
-</div></aside>
-<aside class="topic">
-<p class="topic-title">Margin of Error, Unknown Standard Deviation</p>
-<div class="math">
-<p><img src="../../_images/math/72f2782b7bc4ba1fc30a0b77b503149a9771870a.png" alt="\text{MOE} = \lvert t_{1-\frac{\alpha}{2}} \rvert \cdot \text{SE}"/></p>
-</div></aside>
-</section>
+<p class="topic-title">Margin of Error</p>
+<p>If <em>c</em> is a critical value from a point estimator <img class="math" src="../../_images/math/8c66148b49dfb2c9f095f24acccbd4ac4fc09b41.png" alt="\theta"/>’s sampling distribution and <img class="math" src="../../_images/math/0b204dd7a66a7dd8e359c9f4240fab19824c1002.png" alt="s_{\theta}"/> is the standard error of that estimator, then the margin of error for that point estimator is given by,</p>
+<aside class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">\text{MOE} = c \rvert \cdot s_{\theta}}</span>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2021-11-15&gt; patch level 1
+L3 programming layer &lt;2022-01-21&gt;
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def)
+(./math.aux) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Argument of \split has an extra }.
+&lt;inserted text&gt; 
+                \par 
+l.16 ...it}\text{MOE} = c \rvert \cdot s_{\theta}}
+                                                  \end{split}
+Runaway argument?
+\text {MOE} = c \rvert \cdot s_{\theta }
+! Paragraph ended before \split was complete.
+&lt;to be read again&gt; 
+                   \par 
+l.16 ...it}\text{MOE} = c \rvert \cdot s_{\theta}}
+                                                  \end{split}
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...it}\text{MOE} = c \rvert \cdot s_{\theta}}
+                                                  \end{split}
+! Missing \endgroup inserted.
+&lt;inserted text&gt; 
+                \endgroup 
+l.16 ...it}\text{MOE} = c \rvert \cdot s_{\theta}}
+                                                  \end{split}
+! Missing \endgroup inserted.
+&lt;inserted text&gt; 
+                \endgroup 
+l.16 ...it}\text{MOE} = c \rvert \cdot s_{\theta}}
+                                                  \end{split}
+! Display math should end with $$.
+&lt;to be read again&gt; 
+                   \tex_par:D 
+l.16 ...it}\text{MOE} = c \rvert \cdot s_{\theta}}
+                                                  \end{split}
+! Extra }, or forgotten \endgroup.
+&lt;recently read&gt; }
+                 
+l.16 ...it}\text{MOE} = c \rvert \cdot s_{\theta}}
+                                                  \end{split}
+! Misplaced \crcr.
+\endsplit -&gt;\crcr 
+                  \egroup \egroup \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...E} = c \rvert \cdot s_{\theta}}\end{split}
+                                                  
+! Extra }, or forgotten \endgroup.
+\endsplit -&gt;\crcr \egroup 
+                          \egroup \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...E} = c \rvert \cdot s_{\theta}}\end{split}
+                                                  
+! Extra }, or forgotten \endgroup.
+\endsplit -&gt;\crcr \egroup \egroup 
+                                  \iftagsleft&#64; \&#64;xp \lendsplit&#64; \else \&#64;xp \...
+l.16 ...E} = c \rvert \cdot s_{\theta}}\end{split}
+                                                  
+
+! LaTeX Error: \begin{equation*} on input line 15 ended by \end{split}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H &lt;return&gt;  for immediate help.
+ ...                                              
+                                                  
+l.16 ...E} = c \rvert \cdot s_{\theta}}\end{split}
+                                                  
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.16 ...E} = c \rvert \cdot s_{\theta}}\end{split}
+                                                  
+
+! LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H &lt;return&gt;  for immediate help.
+ ...                                              
+                                                  
+l.17 \end{equation*}
+                    
+! Missing $ inserted.
+&lt;inserted text&gt; 
+                $
+l.17 \end{equation*}
+                    
+! Extra \endgroup.
+&lt;recently read&gt; \endgroup 
+                          
+l.17 \end{equation*}
+                    
+[1] (./math.aux) )
+(see the transcript file for additional information)
+Output written on math.dvi (1 page, 192 bytes).
+Transcript written on math.log.
+</p>
+</aside>
+</aside>
 </section>
 <section id="intervals">
-<h2>Intervals<a class="headerlink" href="#intervals" title="Permalink to this heading">#</a></h2>
+<h3>Intervals<a class="headerlink" href="#intervals" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
+<p class="topic-title">Confidence Intervals</p>
+<p>If <img class="math" src="../../_images/math/8c66148b49dfb2c9f095f24acccbd4ac4fc09b41.png" alt="\theta"/> is a population parameter, <img class="math" src="../../_images/math/c6355eb34c07e7f8c28f97e25575c5124a7a560d.png" alt="\hat{\theta}"/> is a point estimator of <img class="math" src="../../_images/math/8c66148b49dfb2c9f095f24acccbd4ac4fc09b41.png" alt="\theta"/> and <img class="math" src="../../_images/math/9050cd92e9db7acfbd8a0dfd1f794ebafc79d56f.png" alt="\text{MOE}_{\theta}"/> is the margin of error for that estimator, the confidence interval for <img class="math" src="../../_images/math/8c66148b49dfb2c9f095f24acccbd4ac4fc09b41.png" alt="\theta"/> is given by,</p>
+<p>hat{theta} - text{MOE}_{theta} leq theta leq hat{theta} - text{MOE}_{theta}</p>
+</aside>
 <p>TODO</p>
+</section>
+</section>
+<section id="population-proportion">
+<h2>Population Proportion<a class="headerlink" href="#population-proportion" title="Permalink to this heading">#</a></h2>
+<section id="id2">
+<h3>Standard Error<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
+<p class="topic-title">Sample Proportion Standard Error</p>
+<div class="math">
+<p><img src="../../_images/math/bf4b8bebd078d20962e0326a51ac700df6d19de9.png" alt="s_{\hat{p}} = \sqrt{ \frac{ \hat{p} \cdot (1-\hat{p}) }{n} }"/></p>
+</div></aside>
+<section id="difference-of-two-proportions">
+<h4>Difference of Two Proportions<a class="headerlink" href="#difference-of-two-proportions" title="Permalink to this heading">#</a></h4>
+<aside class="topic">
+<p class="topic-title">Difference of Sample Proportions Standard Error</p>
+<div class="math">
+<p><img src="../../_images/math/af92d3debc1885f2de6c2244c07037aaf6905440.png" alt="s_{\hat{p}_1 - \hat{p}_2} = \sqrt{ \frac{ \hat{p}_1 \cdot (1-\hat{p}_1) }{n_1} + \frac{ \hat{p}_2 \cdot (1-\hat{p}_2) }{n_2} }"/></p>
+</div></aside>
+<p>TODO</p>
+</section>
+</section>
+<section id="id3">
+<h3>Margin of Error<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="id4">
+<h3>Intervals<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
 <section id="population-mean">
-<h3>Population Mean<a class="headerlink" href="#population-mean" title="Permalink to this heading">#</a></h3>
+<h2>Population Mean<a class="headerlink" href="#population-mean" title="Permalink to this heading">#</a></h2>
+<section id="id5">
+<h3>Standard Error<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
+<p class="topic-title">Sample Mean Standard Error</p>
+<div class="math">
+<p><img src="../../_images/math/2de933bfe4e92654ac3e8977e5e5a5af4399b7f3.png" alt="\text{s}_{\bar{x}} = \frac{s}{\sqrt{n}}"/></p>
+</div></aside>
+<section id="difference-of-two-means">
+<h4>Difference of Two Means<a class="headerlink" href="#difference-of-two-means" title="Permalink to this heading">#</a></h4>
+<aside class="topic">
+<p class="topic-title">Difference of Means Standard Error</p>
+<div class="math">
+<p><img src="../../_images/math/398930fa50361c1aae2cebc1ee119ef14ac99e76.png" alt="\text{s}_{\bar{x_2}_2 - \bar{x_1}} = \sqrt( \frac{ s_{ \bar{x_1} } }{n_1} + \frac{ s_{ \bar{x_2}} }{n_2} )"/></p>
+</div></aside>
+</section>
+</section>
+<section id="id6">
+<h3>Margin of Error<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<aside class="topic">
+<p class="topic-title">Population Mean Margin of Error, Known Standard Deviation</p>
+<div class="math">
+<p><img src="../../_images/math/dd2cbc17921cf5e027631cac16205f3965836867.png" alt="\text{MOE} = \lvert z_{1-\frac{\alpha}{2}} \rvert \cdot s_{\bar{x}}"/></p>
+</div></aside>
+<aside class="topic">
+<p class="topic-title">Population Mean Margin of Error, Unknown Standard Deviation</p>
+<div class="math">
+<p><img src="../../_images/math/cfaaa4388f7eb52beea7e34abd16241307c2ee77.png" alt="\text{MOE} = \lvert t_{1-\frac{\alpha}{2}} \rvert \cdot s_{\bar{x}}"/></p>
+</div></aside>
 <p>TODO</p>
+</section>
+<section id="id7">
+<h3>Intervals<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
 <aside class="topic">
 <p class="topic-title">Confidence Interval For Population Mean</p>
 <div class="math">
 <p><img src="../../_images/math/970ba9395a059ee5e1ed0145a48930834f256155.png" alt="\bar{x} - \text{MOE} \leq \mu \leq \bar{x} + \text{MOE}"/></p>
 </div></aside>
 <p>TODO</p>
-</section>
-<section id="difference-of-population-means">
-<h3>Difference of Population Means<a class="headerlink" href="#difference-of-population-means" title="Permalink to this heading">#</a></h3>
+<section id="id8">
+<h4>Difference of Two Means<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h4>
 <p>TODO</p>
 <aside class="topic">
 <p class="topic-title">Confidence Interval for Difference of Population Means</p>
@@ -600,6 +792,7 @@ document.write(`
 <p><img src="../../_images/math/ceec3d558020e3f8f25fff673204949aa8cdd41c.png" alt="(\bar{x_2} - \bar{x_1}) - \text{MOE} \leq \mu_2 - \mu_1 \leq (\bar{x_2} - \bar{x_1}) + \text{MOE}"/></p>
 </div></aside>
 <p>TODO</p>
+</section>
 </section>
 </section>
 </section>
@@ -635,11 +828,28 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#critical-value">Critical Value</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-error">Standard Error</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#margin-of-error">Margin of Error</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#intervals">Intervals</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intervals">Intervals</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population-mean">Population Mean</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-population-means">Difference of Population Means</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#population-proportion">Population Proportion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Standard Error</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-two-proportions">Difference of Two Proportions</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Margin of Error</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Intervals</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#population-mean">Population Mean</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Standard Error</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-of-two-means">Difference of Two Means</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Margin of Error</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Intervals</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Difference of Two Means</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
