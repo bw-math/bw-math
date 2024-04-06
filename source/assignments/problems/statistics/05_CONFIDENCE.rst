@@ -171,7 +171,23 @@ Suppose that a random sample of 50 bottles of a particular brand of cough syrup 
 Population Proportion
 ---------------------
 
-TODO
+1. **OpenStax, Statistics, Chapter 8: #118**
+
+Suppose that the insurance companies did conduct a survey. They randomly surveyed 400 drivers and found that 320 claimed they always buckle up. We are interested in the population proportion of drivers who claim they always buckle up.
+
+	a. Define the random variables :math:`\mathcal{X}` and :math:`\hat{p}` in words.
+	
+	b. Which distribution should you use for this problem? Explain your choice.
+	
+	c.  Construct a 95 percent confidence interval for the population proportion who claim they always buckle up.
+	
+		i. Find the standard error.
+		
+		ii. Find the margin of error.
+		
+		iii. State the confidence interval
+		
+		iv. Sketch the graph. Label the interval limits and confidence level on the graph.
 
 Difference of Proportions
 *************************
@@ -184,10 +200,35 @@ Population Mean
 
 On the basis of extensive tests, the yield point of a particular type of mild steel reinforcing bar is known to be normally distributed with :math:`\sigma = 100 \text{lbs}`. The composition of the bar has been slightly modified, but the modification is not believed to have affected either the normality of the value of :math:`\sigma`
 
-	a. Assuming this to be the case, if a sample of 25 modified bars resulted in a sample average yield of 8439 lbs, compute a 90% Confidence Interval for the true average yield poitn of the modified bar. 
+	a. Assuming this to be the case, if a sample of 25 modified bars resulted in a sample average yield of 8439 lbs, compute a 90% Confidence Interval for the true average yield point of the modified bar. 
 	
 	b. How would you modify the interval in *part a* to obtain a confidence of 92%?
 	 
+
+1. **OpenStax, Statistics, Chapter 8: #2**
+
+Suppose that an accounting firm does a study to determine the time needed to complete one person’s tax forms. It randomly surveys 100 people. The sample mean is 23.6 hours. There is a known population standard deviation of 7.0 hours. Moreover, the population distribution is assumed to be normal.
+
+	a. Define the random variables :math:`\mathcal{X}` and  :math:`\mathcal{\bar{X}}`
+
+	b. Which distribution should you use for this problem? Explain your choice.
+
+	c. Construct a 90 percent confidence interval for the population mean time to complete the tax forms.
+	
+		i. Find the standard error.
+		
+		ii. Calculate the margin of error.
+		
+		iii. State the confidence interval.
+		
+		iv. Sketch the graph. Label the interval limits and confidence level on the graph.
+		
+	d. If the firm wished to increase its level of confidence and keep the error bound the same by taking another survey, which changes should it make?
+	
+	e. If the firm did another survey, kept the error bound the same, and only surveyed 49 people, what would happen to the level of confidence? Why?
+	
+	f. Suppose that the firm decided that it needed to be at least 96 percent confident of the population mean length of time to within one hour. How would the number of people the firm surveys change? Why?
+	
 Difference of Means
 *******************
 
