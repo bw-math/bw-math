@@ -72,7 +72,9 @@ Intervals
 
 	If :math:`\theta` is a population parameter, :math:`\hat{\theta}` is a point estimator of :math:`\theta` and :math:`\text{MOE}_{\theta}` is the margin of error for that estimator, the confidence interval for :math:`\theta` is given by,
 	
-	\hat{\theta} - \text{MOE}_{\theta} \leq \theta \leq \hat{\theta} - \text{MOE}_{\theta}
+	.. math::
+	
+		\hat{\theta} - \text{MOE}_{\theta} \leq \theta \leq \hat{\theta} - \text{MOE}_{\theta}
 
 Problems
 ========
@@ -82,37 +84,51 @@ Introduction
 
 1. **Critical Values** 
 
-A population of Twirly Deedles is normally distributed with a mean of 50 zoomies and a standard deviation of 5 zoomies. Suppose you sample 25 Twirly Deedles and calculate the average amount of zoomies. 
+The time it takes a given AP Statistics student to finish one of Mr. Moore's exams is Normally distributed with a mean of 50 minutes and a standard deviation of 10 minutes. You draw a simple random sample of 30 AP Statistics students and force them to take one of Mr. Moore's exams. You record the time it takes each individual in your sample to complete the exam and calculate the average.
 
-	a. Describe the sampling distribution for the mean amount of zoomies. 
+	a. Describe the sampling distribution for the average amount of time it takes a sample of this many AP statistics students to complete Mr. Moore's exam. What are the mean and standard deviation of the sampling distribution? 
 
-	b. Find the critical values for the following confidence levels:
+	b. Find the standardized critical values for the following confidence levels:
 	
 		i. 90%
 		
 		ii. 95%
 		
-		ii. 99%
-		
-	b. Draw three Normal curves for the mean zoomies sampling distribution. For each confidence level in *part b*, label the critical values on the horizontal axis of one of the graphs. Shade in the area that corresponds to the given confidence level on that graph.
+		iii. 99%
 	
-	c. Using the graphs from *part b*, what conclusion can you draw about the relationship between the width of the estimation interval (i.e., the *precision* of the estimate) and the confidence level
+	c. Using the Z-score formula :math:`z = \frac{ \bar{x} - \mu }{ \frac{s}{\sqrt{n}} }`, find the values of the sample mean that correspond to the following confidence levels:
+	
+		i. 90%
+		
+		ii. 95%
+		
+		iii. 99%
+		
+	d. Draw three Normal curves for the mean zoomies sampling distribution. For each confidence level in *part b*, label the critical values on the horizontal axis of one of the graphs. Shade in the area that corresponds to the given confidence level on that graph.
+	
+	e. Using the graphs from *part d*, write a few sentences interpretting the calculated values from *part c*.
+	
+	f. Using the graphs from *part d*, what conclusion can you draw about the relationship between the width of the estimation interval (i.e., the *precision* of the estimate) and the confidence level.
 	
 2. **Error**
 
-According to the most recent estimates, approximately 8% of males are born colorblind. 
+According to the most recent estimates (by which I mean, whatever the top result on Google said), approximately 8% of males are born colorblind. 
 
-	a. Find the standard error for the proportion of males that are color blind in a sample of 100 men. 
+	a. Find the standard error for the proportion of males that are color blind in a sample of 100 males. 
 	
-	b. Find the standard error for the proportion of males that are color blind in a sample of 150 men.
+	b. Find the standard error for the proportion of males that are color blind in a sample of 150 males.
 	
-	c. Find the standard error for the proportion of males that are color blind in a sample of 200 men.
+	c. Find the standard error for the proportion of males that are color blind in a sample of 200 males.
 	
-	d. How large of a sample would you need to get a margin of error that is no more than 0.04?
+	d. What is the relationship between the standard error and the number of samples? What does this tell you about the shape of the sampling distribution as n increases? 
 	
-	e. How large of a sample would you need to get a margin of error that is no more than 0.01?
+	e. How large of a sample would you need to get a margin of error that is no more than 0.04?
 	
-	f. How large of a sample would you need to get a margin of error that is no more than 0.001?
+	f. How large of a sample would you need to get a margin of error that is no more than 0.01?
+	
+	g. How large of a sample would you need to get a margin of error that is no more than 0.001?
+	
+	h. What is the relationship between the width of the margin of error and the number of samples? How many samples would you need to get a margin of error equal to 0?
 	
 
 3. **Estimates**
