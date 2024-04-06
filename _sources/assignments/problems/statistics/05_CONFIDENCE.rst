@@ -141,7 +141,7 @@ After careful measurement over the school year, Mr. Moore is 95% confident the a
 	
 	c. What is the standard error associated with Mr. Moore's estimation interval?
 	
-4. **Devore & Berk, 2007, Chapter 8.1 #2**
+4. **Modern Mathematical Statistics, Devore & Berk, 2007, Chapter 8.1 #2**
 
 Each of the following is a confidence interval for :math:`\mu`, the true average (i.e., population mean) resonance frequency (Hz) for all tennis rackets of a certain type
 
@@ -155,7 +155,7 @@ Use this information to answer the following questions.
 	
 	b. Both intervals were calculated from the same sample data. The confidence level for one of these intervals is 90% and for the other is 99%. Which of the intervals has the 90% confidence level, and why?
 	
-5. **Devore & Berk, 2007, Chapter 8.1 #3**
+5. **Modern Mathematical Statistics, Devore & Berk, 2007, Chapter 8.1 #3**
 
 Suppose that a random sample of 50 bottles of a particular brand of cough syrup is selected and the alcohol content of each bottle is determined. Let :math:`\mu` denote the average alcohol content for the population of all bottles of the brand under study. Suppose that the resulting 95% confidence interval is :math`(7.8, 94)`.
 
@@ -192,11 +192,39 @@ Suppose that the insurance companies did conduct a survey. They randomly surveye
 Difference of Proportions
 *************************
 
+1. **Introductory Statistics, Shafer & Zhang, Chapter 7.3: 18**
+
+A survey of 21,250 households concerning telephone service gave the results shown in the following table,
+
++--------------+----------+-------------+
+|              | Landline | No Landline |
++--------------+----------+-------------+
+| Cellphone    |  12,474  |     5,844   |
++--------------+----------+-------------+
+| No Cellphone |   2,529  |       403   |
++--------------+----------+-------------+
+
+Use this information to answer the following questions.
+
+	a. Give a point estimate for the proportion *of households with landlines* that also own a cellphone.
+	
+	b. Give a point estimate for the proportion *of households without landlines* that also own a cellphone.
+	
+	c. Verify the conditions for inference have been met for the sampling distribution of the difference of sample proportions.
+	
+	d. Find the standard error for the sampling distribution.
+	
+	e. Construct a 95% confidence interval for the difference in the proportion of households with landlines that use cellphones and the proportion of households without landlines that use cellphones.
+	
+	f. Write a few sentences interpretting the results in *part e*.
+	
+	g. Based on the answers to *part e* and *part f*, is there evidence to support the conclusion households without landlines are more likely to own cellphones than households with landlines? Justify your answer.
+
 
 Population Mean
 ---------------
 
-1. **Devore & Berk, 2007, Chapter 8.1 #6**
+1. **Modern Mathematical Statistics, Devore & Berk, 2007, Chapter 8.1 #6**
 
 On the basis of extensive tests, the yield point of a particular type of mild steel reinforcing bar is known to be normally distributed with :math:`\sigma = 100 \text{lbs}`. The composition of the bar has been slightly modified, but the modification is not believed to have affected either the normality of the value of :math:`\sigma`
 
