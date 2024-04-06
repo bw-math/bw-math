@@ -39,7 +39,7 @@ Difference of Proportions
 	
 	.. math::
 	
-		\hat{p} \sim \mathcal{N}(p_x - p_y, \sqrt{\frac{p_x \cdot (1 - p_x)}{n_x} + \frac{p_y \cdot (1 - p_y)}{n_y}} ) 
+		\hat{p}_{x} - \hat{p}_y \sim \mathcal{N}(p_x - p_y, \sqrt{\frac{p_x \cdot (1 - p_x)}{n_x} + \frac{p_y \cdot (1 - p_y)}{n_y}} ) 
 	
 
 Sample Mean
@@ -132,23 +132,33 @@ Sample Proportions
 
 1. **Handedness**
 
-`Approximately 10% of the world's population is left handed <https://en.wikipedia.org/wiki/Handedness>`_. There are 347 students in the Bishop Walsh student body. Let :math:`\hat{p}` represent the proportion of Bishop Walsh students who are left handed. 
+`Approximately 10% of the world's population is left handed <https://en.wikipedia.org/wiki/Handedness>`_. There are 347 students in the Bishop Walsh student body. Let us assume the Bishop Walsh student body is an exact representative sample of the population, i.e. 10% of the 347 students are left-handed. You decide to draw a simple random sample of students from the study body and measure whether or not they are left-handed.
 
-	a. Calculate and interpret the mean and standard deviation of the sampling distribution of :math:`\hat{p}`.
+	a. What are the parameters (expected value and standard deviation) of the population distribution?
+
+	b. How many samples do you need to make to ensure the conditions for inference are met?
 	
-	b. Verify the conditions for inference are met. 
+	c. What are the parameters (expected value and standard deviation) of the sampling distribution?
 	
-	c. Describe the shape of the samping distribution of :math:`\hat{p}`.
+	d. Describe the shape of the samping distribution for :math:`\hat{p}`.
 	
-	d. Assuming the Wikipedia article referenced above is correct, what is the probability more than 40 students at Bishop Walsh are left-handed?
+	e. Assuming the Wikipedia article referenced above is correct, what is the probability more than half of your sample of Bishop Walsh students are left-handed?
 	
-2. **DVD Players**
+	f. Based on the answer to *part b* and *part e*, if you drew a sample of this size and estimated a value of :math:`\hat{p} = 0.5` for this sample, how would this evidence affect your belief in the claim from the Wikipedia article?
+	
+2. **Illuminati**
+
+`According to a 2019 report by Business Insider, 15% of registered voters in the United States believe the Illuminati secretly controls world events <https://www.businessinsider.com/over-1-in-10-registered-voters-believe-the-illuminati-exists-2019-7>`_. 
+
+	a. How many samples do you need to ensure the conditions for inference are met? 
+	
+	b. Suppose you randomly sample 50 registered voters living in the US. How likely is it this sample will contain less than 10% of people who believe in the Illuminati?
+
+	c. In a sample of 50 registered voters, how many people who believe in the Illuminati do you need to observe before you can be reasonably convinced the percentage of registered voters who believe in the Illuminati is not equal to the claimed percentage?
+	
+3. **DVD Players**
 
 `According to a survey conducted in 2022, 38% of 18-29 year olds from the United States live in a household that owns a DVD player <https://www.statista.com/statistics/369955/people-living-in-households-that-own-a-blu-ray-dvd-player-usa/>`_. Suppose you randomly sample 40 Americans between the ages of 18 and 29 years old. What is the probability the proportion of the people from this sample who live in a household with a DVD player will be greater than 45%? 
-
-3. **Illuminati**
-
-`According to a 2019 report by Business Insider, 15% of registered voters in the United States believe the Illuminati secretly controls world events <https://www.businessinsider.com/over-1-in-10-registered-voters-believe-the-illuminati-exists-2019-7>`_. Suppose you randomly sample 50 registered voters living in the US. How likely is it this sample will contain less than 10% of people who believe in the Illuminati?
 
 4. **Coins**
 
@@ -168,11 +178,11 @@ Let :math:`\hat{p}_{\text{hs}}` represent the proportion of high school students
 
 	a. What is the shape of the sampling distribution :math:`\hat{p}_{\text{hs}} - \hat{p}_{\text{ms}}`? Justify your answer.
 	
-	b. Find and interpret the mean of the sampling distribution for the difference of sample proportions.
+	b. If the administration's claim is true, find and interpret the mean of the sampling distribution for the difference of sample proportions between highschool and middleschool.
 	
-	c. Find and interpret the standard deviation of the sampling distribution for the difference of sample proportions.
+	c. If the administration's claim is true, find and interpret the standard deviation of the sampling distribution for the difference of sample proportions between highschool and middleschool.
 	
-	d. Assuming the administration's claim is true, what is the probability that the proportion of highschool students who participate in atleast one extracurricular is atleast 10% higher than the proportion of middle-school students who participate in  atleast one extracurricular?
+	d. Assuming the administration's claim is true, what is the probability that the proportion of highschool students who participate in atleast one extracurricular is atleast 10% higher than the proportion of middle-school students who participate in atleast one extracurricular?
 	
 	e. Suppose the difference in proportions is exactly 0.10. Based on your result to *part d* does this give you reason to doubt the administration's claim?
 
