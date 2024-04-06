@@ -112,7 +112,7 @@ TODO
 	
 	.. math::
 	
-		\hat{p} \sim \mathcal{N}(p_x - p_y, \sqrt{\frac{p_x \cdot (1 - p_x)}{n_x} + \frac{p_y \cdot (1 - p_y)}{n_y}} ) 
+		\hat{p}_{x} - \hat{p}_y \sim \mathcal{N}(p_x - p_y, \sqrt{\frac{p_x \cdot (1 - p_x)}{n_x} + \frac{p_y \cdot (1 - p_y)}{n_y}} ) 
 TODO
 
 .. _distribution_of_sample_mean:

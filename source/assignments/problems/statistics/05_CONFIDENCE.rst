@@ -12,7 +12,7 @@ Critical Value
 
 .. topic:: Critical Z Value
 
-	A value :math:`z_{\alpha}` from the Standard Normal distribution is defined as,
+	A critical value :math:`z_{\alpha}` from the Standard Normal distribution is defined as,
 	
 	.. math::
 	
@@ -20,7 +20,7 @@ Critical Value
 		
 .. topic:: Critical T Value
 
-	A value :math:`t_{\alpha}` from Student's T Distribution is defined as,
+	A critical value :math:`t_{\alpha}` from Student's T Distribution is defined as,
 	
 	.. math::
 	
@@ -39,7 +39,7 @@ Standard Error
 
 	.. math::
 	
-		\text{s}_{\bar{x_2}_2 - \bar{x_1}} = \sqrt( \frac{ s_{ \bar{x_1} } }{n_1} + \frac{ s_{ \bar{x_2}} }{n_2} )
+		\text{s}_{\bar{x_2} - \bar{x_1}} = \sqrt{ \frac{ s_{ \bar{x_1} } }{n_1} + \frac{ s_{ \bar{x_2}} }{n_2} }
 
 .. topic:: Sample Proportion Standard Error
 
@@ -62,7 +62,7 @@ Margin of Error
 	
 	.. math::
 	
-		\text{MOE} = c \rvert \cdot s_{\theta}}
+		\text{MOE} = c \rvert \cdot s_{\theta}
 
 	
 Intervals
