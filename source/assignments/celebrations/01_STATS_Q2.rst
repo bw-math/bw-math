@@ -14,7 +14,7 @@ An apartment building has nine floors and each floor has four apartments. The bu
 
 The figure below shows the floors of apartments in the building with their apartment numbers. Only the nine apartments indicated with an asterisk have children in the apartment.
 
-.. image:: ../../../assets/imgs/classwork/2011_apstats_frp_03.png
+.. image:: ../../assets/imgs/classwork/2011_apstats_frp_03.png
 	:align: center
 
 a. For convenience, the apartment building owner wants to use a cluster sampling method, in which the floors are clusters, to select the eight apartments. Describe a process for randomly selecting eight different apartments using this method.
@@ -43,21 +43,21 @@ b. Suppose the teacher decided to allow the students in the class to select whic
 
 Attendance at games for a certain baseball team is being investigated by the team owner. The following boxplots summarize the attendance, measured as average number of attendees per game, for 47 years of the team's existence. The boxplots include the 30 years of games played in the old stadium and the 17 years played in the new stadium.
 
-.. image:: ../../../assets/imgs/classwork/2021_apstats_frp_06a.png
+.. image:: ../../assets/imgs/classwork/2021_apstats_frp_06a.png
 	:align: center
 
 a. Compare the distributions of average attendance between the old and new stadiums.
 
 b. The following scatterplot shows average attendance versus year,
 
-.. image:: ../../../assets/imgs/classwork/2021_apstats_frp_06b.png
+.. image:: ../../assets/imgs/classwork/2021_apstats_frp_06b.png
 	:align: center
 
 Compare the trends in average attendance over time between the old and new stadium.
 
 c. Consider the following scatterplots,
 
-.. image:: ../../../assets/imgs/classwork/2021_apstats_frp_06c.png
+.. image:: ../../assets/imgs/classwork/2021_apstats_frp_06c.png
 	  :align: center
 
 Use this graph to answer the following questions.
@@ -72,7 +72,7 @@ d. Consider the three variables: number of games won, year, and stadium. Based o
 
 a. A biologist gathered data on the length, in millimeters (mm), and the mass, in grams (g) , for 11 bullfrogs. The data are shown in Plot 1.
 
-.. image:: ../../../assets/imgs/classwork/2022_apstats_frp_01a.png
+.. image:: ../../assets/imgs/classwork/2022_apstats_frp_01a.png
 	:align: center
 
 a. Based on the scatterplot, describe the relationship between mass and length, in context.

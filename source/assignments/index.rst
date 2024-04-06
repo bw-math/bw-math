@@ -7,5 +7,7 @@ Assignments
 	:caption: Contents:
 
 	calculator/index
+	celebrations/index
+	esoterica/index
 	problems/index
 	projects/index

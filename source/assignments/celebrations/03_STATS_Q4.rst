@@ -18,7 +18,7 @@ A simple random sample of 100 high school seniors was selected from a large scho
 
 The results are summarized in the following table,
 
-.. image:: ../../../assets/imgs/classwork/2009_apstats_frp_01.png
+.. image:: ../../assets/imgs/classwork/2009_apstats_frp_01.png
 	:align: center
 	
 Use this information to answer the following questions.
@@ -62,7 +62,7 @@ Because Emma does not have the resources to develop the theoretical sampling dis
 
 Emma ran the bootstrap process, and the following frequency table is the bootstrap distribution showing her results of generating 15,000 medians.
 
-.. image:: ../../../assets/imgs/classwork/2019_apstats_frp_06b.png
+.. image:: ../../assets/imgs/classwork/2019_apstats_frp_06b.png
 	:align: center
 	
 The bootstrap distribution provides an approximation of the sampling distribution of the sample median. A confidence interval for the median can be constructed using a percentage of the values in the middle of the bootstrap distribution.

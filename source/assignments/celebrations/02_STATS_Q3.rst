@@ -42,7 +42,7 @@ As part of a training program, staff at a testing lab applied the ELISA to 500 b
 
 Consider an experiment in which two men and two women will be randomly assigned to either a treatment group or a control group in such a way that each group has two people. The people are identified as Man 1, Man 2, Woman 1, and Woman 2. The six possible arrangements are shown below.	
 
-.. image:: ../../../assets/imgs/classwork/2017_apstats_frp_06a.png
+.. image:: ../../assets/imgs/classwork/2017_apstats_frp_06a.png
 	:align: center
 	
 Two possible methods of assignment are being considered: the sequential coin flip method and the chip method. For each method, the order of the assignment will be Man 1, Man 2, Woman 1, Woman 2.
@@ -110,7 +110,7 @@ To compare success rates for treating allergies at two clinics that specialize i
 	
 	d. A physician who worked at both clinics believed that it was important to separate the patients in the study by severity of the patient’s allergy (severe or mild). The physician constructed the following mosaic plot. The values in the mosaic plot represent the number of patients who were either successfully treated or unsuccessfully treated in each allergy severity group within each clinic. For example, the value 78 represents the number of patients successfully treated in the mild group within Clinic A.
 	
-	.. image:: ../../../assets/imgs/classwork/2022_apstats_frp_06.png
+	.. image:: ../../assets/imgs/classwork/2022_apstats_frp_06.png
     		:align: center
     
 	Based on the mosaic plot, the physician concluded the following:
@@ -164,13 +164,13 @@ Use this information to answer the following question.
 	
 A dotplot of Peter's sample data is given below,
 
-.. image:: ../../../assets/imgs/classwork/2012_apstats_frp_06a.png
-    		:align: center
+.. image:: ../../assets/imgs/classwork/2012_apstats_frp_06a.png
+	:align: center
 
 Comparative dotplots of Rania's sample data are given below,
 
-.. image:: ../../../assets/imgs/classwork/2012_apstats_frp_06b.png
-    		:align: center
+.. image:: ../../assets/imgs/classwork/2012_apstats_frp_06b.png
+	:align: center
 
 Use this information to answer the following question.
 

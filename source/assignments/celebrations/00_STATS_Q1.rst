@@ -12,7 +12,7 @@ Celebration of Knowledge
 
 The length of stay in a hospital after receiving a particular treatment is of interest to the patient, the hospital, and insurance providers. Of particular interest are unusually short or long lengths of stay. A random sample of 50 patients who received the treatment was selected, and the length of stay, in number of days, was recorded for each patient. The results are summarized in the following table and are shown in the dotplot.
 
-.. image:: ../../../assets/imgs/classwork/2021_apstats_frp_01.png
+.. image:: ../../assets/imgs/classwork/2021_apstats_frp_01.png
     :align: center
     
 a. Determine the five-number summary of the distribution of length of stay.
@@ -29,7 +29,7 @@ c. Explain why method A might identify more data points as potential outliers th
    
 The chemicals in clay used to make pottery can differ depending on the geographical region where the clay originated. Sometimes, archaeologists use a chemical analysis of clay to help identify where a piece of pottery originated. Such an analysis measures the amount of a chemical in the clay as a percent of the total weight of the piece of pottery. The boxplots below summarize analyses done for three chemicals—X, Y, and Z—on pieces of pottery that originated at one of three sites: I, II, or III.
 
-.. image:: ../../../assets/imgs/classwork/2017_apstats_frp_04.png
+.. image:: ../../assets/imgs/classwork/2017_apstats_frp_04.png
 
 Use this information to answer the following questions.
 
@@ -50,7 +50,7 @@ An administrator at a large university is interested in determining whether the 
 
 The responses of the 100 students are summarized in the frequency table shown.
 
-.. image:: ../../../assets/imgs/classwork/2014_apstats_frp_01a.png
+.. image:: ../../assets/imgs/classwork/2014_apstats_frp_01a.png
     :align: center 
 
 a. Calculate the proportion of on campus students in the sample who participate in at least one extracurricular activity and the proportion of off campus students in the sample who participate in at least one extracurricular activity.
@@ -61,7 +61,7 @@ a. Calculate the proportion of on campus students in the sample who participate 
 
 b. The responses of the 100 students are summarized in the segmented bar graph shown.
 
-.. image:: ../../../assets/imgs/classwork/2014_apstats_frp_01b.png
+.. image:: ../../assets/imgs/classwork/2014_apstats_frp_01b.png
     :align: center
 
 Write a few sentences summarizing what the graph reveals about the association between residential status and level of participation in extracurricular activities among the 100 students in the sample.

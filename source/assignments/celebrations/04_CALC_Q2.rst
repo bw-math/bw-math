@@ -9,7 +9,7 @@ Celebration of Knowledge
 
 1. **2006, Free Response, Form B, #2**
 
-.. image:: ../../../assets/imgs/classwork/2006_apcalc_frp_formb_02.png
+.. image:: ../../assets/imgs/classwork/2006_apcalc_frp_formb_02.png
 	:align: center
 
 Let :math:`f`` be the function defined for :math:`x \geq 0` with :math:`f (0) = 5` and :math:`f^{\prime}`, the first derivative of :math:`f`, given by :math:`f^{\prime}( x ) = e ^{ - \frac{x}{4} } \cdot \sin{x^2}`. The graph of :math:`y = f^{\prime}( x )` is shown above.
@@ -53,7 +53,7 @@ c. Evaluate :math:`\frac{d^2 y}{dx^2}` at the point on the curve where :math:`x 
 
 4.  **2017, Free Response, #6**
 
-.. image:: ../../../assets/imgs/classwork/2017_apcalc_frp_06.png
+.. image:: ../../assets/imgs/classwork/2017_apcalc_frp_06.png
 	:align: center
 	
 +-------+--------------+-----------------------+
@@ -86,7 +86,7 @@ c. Let :math:`m` be the function defined by :math:`m(x) = g(-2x) \cdot h(x)`. Fi
 
 5. **2015, Free Response, #5**
 
-.. image:: ../../../assets/imgs/classwork/2015_apcalc_frp_05.png
+.. image:: ../../assets/imgs/classwork/2015_apcalc_frp_05.png
 	:align: center
 	
 The figure above shows the graph of :math:`f^{\prime}`, the derivative of a twice-differentiable function :math:`f`, on the interval :math:`[-3,4]`. The graph of :math:`f^{\prime}` has horizontal tangents at :math:`x=-1`, :math:`x=1`, and :math:`x=3`.
