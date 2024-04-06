@@ -1,0 +1,933 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Introduction &#8212; bishop-walsh-math  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/stylesheet.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/assets/js/app.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notes/inference/00_INTRODUCTION';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Bias" href="01_BIAS.html" />
+    <link rel="prev" title="Inference" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">bishop-walsh-math  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../00_SPLASH.html">Bishop Walsh Math</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../01_DATASETS.html">Datasets</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../syllabi/index.html">Course Syllabi</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../syllabi/00_STATS_SYLLABUS.html">AP Statistics Course Syllabus</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Class Notes</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../foundations/index.html">Foundations</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../foundations/00_HISTORY.html">Knowledge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../foundations/01_LOGIC.html">Logic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../foundations/02_SET_THEORY.html">Set Theory</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../statistics/00_GRAPHS.html">Graphical Representations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../statistics/01_ESTIMATION.html">Point Estimation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../statistics/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../statistics/03_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../statistics/04_SAMPLING.html">Sampling Distributions</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../distributions/00_BERNOULLI.html">Bernoulli Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../distributions/02_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../distributions/03_UNIFORM.html">Uniform Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../distributions/04_NORMAL.html">Normal Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Inference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_DESIGN.html">Experimental Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_DATA.html">Data</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="04_HYPOTHESES.html">Hypothesis Testing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../activities/index.html">Activities</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../activities/00_CEELO.html">Cee-Lo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../activities/01_QUACKERY.html">Duck Quackery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../activities/02_LIARS_DICE.html">Liar’s Dice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../activities/03_PENNIES_GALORE.html">Pennies Galore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../activities/04_PROBABILITY_BINGO.html">Probability Bingo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../activities/05_PROBABILITY_PICTIONARY.html">Probability Pictionary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../activities/06_SIMULATIONS.html">Simulations</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../assignments/index.html">Assignments</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/calculator/index.html">Calculator</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/00_STATPLOT_HISTOGRAM.html">STATPLOT: Histogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/01_STATPLOT_OGIVE.html">STATPLOT: Ogives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/02_STATPLOT_BOXPLOT.html">STATPLOT: Boxplots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/03_STATPLOT_SCATTERPLOT.html">STATPLOT: Scatter Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/04_1VAR_STATS.html">1VARSTATS: Univariate Sample Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/05_2VAR_STATS.html">2VARSTATS: Bivariate Sample Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/07_FACTORIAL.html">!: Factorials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/08_NPR.html">NPR: Permutations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/09_NCR.html">NCR: Combinations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/10_GEOMETPDF.html">GEOMETPDF: Geometric Probabilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/11_GEOMETCDF.html">GEOMETCDF: Geometric Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/12_GEOMET_HISTOGRAM.html">STATPLOT: Geometric Histogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/13_BINOMPDF.html">BINOMPDF: Binomial Probabilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/14_BINOMCDF.html">BINOMCDF: Binomial Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/15_BINOM_HISTOGRAM.html">STATPLOT: Binomial Histogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/16_DRAW_BINOM_APPROX.html">DRAW: Normal Approximation to Binomial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/17_1PROP_ZINT.html">1-PropZInt: Sample Proportion Intervals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/calculator/18_2PROP_ZINT.html">2-PropZInt: Difference of Sample Proportion Intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/problems/index.html">Problems</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../assignments/problems/SEJAL.html">Sejal’s Sadistic Statistics</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/problems/celebrations/index.html">Celebrations</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/celebrations/00_STATS_Q1.html">Statistics: Quarter One</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/celebrations/01_STATS_Q2.html">Statistics: Quarter Two</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/celebrations/02_STATS_Q3.html">Statistics: Quarter Three</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/celebrations/03_STATS_Q4.html">Statistics: Quarter Four</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/celebrations/04_CALC_Q2.html">Calculus: Quarter Two</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/problems/algebra/index.html">Algebra</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/algebra/01_SUMS.html">Sums</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/problems/differentiation/index.html">Differentiation</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/differentiation/00_CHAIN_RULE.html">Chain Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/differentiation/01_IMPLICIT_DIFFERENTIATION.html">Implicit Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/differentiation/02_GRAPHING.html">Graphing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/differentiation/03_RELATED_RATES.html">Related Rates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/differentiation/04_OPTIMIZATION.html">Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/differentiation/05_THEOREMS.html">Theorems</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/problems/set_theory/index.html">Set Theory</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/set_theory/01_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/set_theory/02_VENN_DIAGRAMS.html">Venn Diagrams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/set_theory/03_LOGIC.html">Symbolic Logic</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/problems/probability/index.html">Probability</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/probability/00_INTRODUCTION.html">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/probability/01_COMBINATORICS.html">Combinatorics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/probability/02_CONDITIONAL.html">Conditional Probability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/probability/03_RANDOM_VARIABLES.html">Random Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/probability/solutions/index.html">Solutions</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/problems/statistics/index.html">Statistics</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/statistics/00_GRAPHS.html">Graphical Representations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/statistics/01_ESTIMATION.html">Point Estimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/statistics/02_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/statistics/03_REGRESSION.html">Regression</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/statistics/04_SAMPLING.html">Sampling Distributions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/statistics/05_CONFIDENCE.html">Confidence Intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/problems/distributions/index.html">Distributions</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/distributions/00_BINOMIAL.html">Binomial Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/distributions/01_GEOMETRIC.html">Geometric Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/distributions/02_NORMAL.html">Normal Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/problems/inference/index.html">Inference</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/00_DESIGN.html">Design</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/01_BIAS.html">Bias</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/02_HYPOTHESES.html">Hypothesis Testing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/03_MEAN.html">Population Mean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/04_PROPORTION.html">Population Proportion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../assignments/projects/index.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/projects/python/index.html">Python Projects</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/projects/python/00_PYTHON.html">Python</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/projects/python/01_CATEGORICAL.html">Bar Charts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/projects/python/02_QUANTITATIVE.html">Histograms and Boxplots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/projects/python/03_NORMALITY.html">Normality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/projects/python/04_REGRESSION.html">Linear Regression</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/projects/python/05_BIAS.html">Bias</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/projects/python/06_SIMULATION.html">Simulation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/projects/python/07_SETS.html">Sample Spaces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/projects/python/08_MONTE_CARLO.html">Monte Carlo Simulation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/projects/python/09_BINOMIAL.html">Binomial Distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/projects/calculator/index.html">Calculator Projects</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/projects/calculator/00_CORRELATION.html">Correlation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/projects/calculator/01_COIN_FLIPS.html">Simulation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/projects/calculator/02_PI_ESTIMATION.html">Pi Estimation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../resources/index.html">Resources</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/00_EXAMS.html">A.P. Statistics Exam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/01_REFERENCES.html">References</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../resources/calculator/index.html">TI-84 Calculator</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/00_BASICS.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/01_STATISTICS.html">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/02_PROBABILITY.html">Probability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/03_GRAPHING.html">Graphing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/04_PROGRAM.html">Programs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/05_VIDEOS.html">TI-84</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/06_WORKSHEETS.html">Worksheets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/calculator/07_REFERENCES.html">Calculator References</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../resources/python/index.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/00_SHELL.html">Online Python Shell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/01_SETUP.html">Python Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/02_BASIC.html">Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/03_SETS.html">Sets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/04_FUNCTIONS.html">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/05_PLOTS.html">Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/06_FILES.html">Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/07_CONTROLS.html">Control Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/08_WEB.html">The Internet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/python/09_DEMOS.html">Demonstrations</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../resources/tables/index.html">Statistical Tables</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/tables/00_RANDOM_DIGITS.html">Random Digits</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/tables/01_Z_TABLE.html">Z Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/tables/02_CHI_SQUARED_TABLE.html"><img alt="\chi^2" class="math" src="../../_images/math/d43e3d91e01612823aacff24fb229fce1378a531.png"/> Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/tables/03_T_TABLE.html">T Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../resources/tables/04_PEARSON_TABLE.html">Pearson Correlation Coefficient Table</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../maintenance/index.html">Maintenance</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../maintenance/LATEX.html">LaTex Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../maintenance/SPHINX.html">Sphinx</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/notes/inference/00_INTRODUCTION.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introduction</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment">Experiment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#individual">Individual</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population">Population</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample">Sample</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#population-vs-sample">Population vs. Sample</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-of-observation">Methods of Observation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-techniques">Sampling Techniques</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#random">Random</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#systematic">Systematic</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stratified">Stratified</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cluster">Cluster</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-terminology">Other Terminology</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
+<p>Statistics is the study of making general assertions from particular cases.</p>
+<section id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this heading">#</a></h2>
+<p>What is <em>science</em>? A rough definition of <em>science</em> might go: “<em>Science is a rational process used for deciding which propositions are true and which propositions are false.</em>”</p>
+<p>What this definition doesn’t say is what the “<em>decision process</em>” for sorting propositions into <em>true</em> or <em>false</em> looks like. That is where <em>statistics</em> comes in. <em>Statistics</em> is the study of this decision process; it is a way of understanding what we mean when we say something is <em>true</em> or something is <em>false</em>. <em>Statistics</em> is the study of how we do science, and since it is the study of science, it is also the study of <em>decision-making</em>.</p>
+<p>Our lives are filled with decisions. Life is, in some sense, nothing but a series of decisions. So, because we do it so often, we have a pretty good of idea of what we mean by “<em>deciding</em>” or “<em>making a decision</em>”. Every decision we make, we take into account the uncertainty in the various outcomes that might result, factor in their respective <em>likelihood</em> and then <em>decide</em> what course of action is the best. We <a class="reference internal" href="../foundations/00_HISTORY.html#knowledge"><span class="std std-ref">know</span></a> there is always a chance of the unexpected occuring anytime we take an action in the world and that our <em>decisions</em> are not always correct.</p>
+<p>Writers and philosophers have, throughout the ages, summarized this idea much more eloquently than the current author, so let’s hear what they have to say on the matter,</p>
+<aside class="topic">
+<p class="topic-title">Boethius, On the Consolation of Philosophy, 524 AD</p>
+<p>With domineering hand she moves the turning wheel,</p>
+<p>Like currents in a treacherous bay swept to and fro:</p>
+<p>Her ruthless will has just deposed once fearful kings</p>
+<p>While trustless still, from low she lifts a conquered head;</p>
+<p>No cries of misery she hears, no tears she heeds,</p>
+<p>But steely hearted laughs at groans her deeds have wrung.</p>
+<p>Such is a game she plays, and so she tests her strength;</p>
+<p>Of mighty power she makes parade when one short hour</p>
+<p>Sees happiness from utter desolation grow.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title">William Shakespeare, Hamlet, 1599</p>
+<p>Our wills and fates do so contrary run</p>
+<p>That our devices still are overthrown;</p>
+<p>Our thoughts are ours, their ends none of our own.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title">Robert Burns, To a Mouse, on Turning Her Up in Her Nest With the Plough, 1785</p>
+<p>But Mouse, you are not alone,</p>
+<p>In proving foresight may be vain:</p>
+<p>The best-laid schemes of mice and men</p>
+<p>Go oft awry,</p>
+<p>And leave us nothing but grief and pain,</p>
+<p>For promised joy!</p>
+</aside>
+<aside class="topic">
+<p class="topic-title">Han Solo, 1980</p>
+<p>Never tell me the odds!</p>
+</aside>
+<p>That’s all very enlightening, but it amounts to saying: there is always <em>uncertainty</em> in any assertion we make about the world around us. Our “<em>devices might be overthrown</em>” or “<em>go oft awry</em>”.</p>
+<p>In <em>statistics</em>, we are interested in how to <em>quantity this uncertainty</em>. Once we have quantified and measured it, rather than waxing poetical about its effervescence, we want to use that information to allow us to make the most informed decision we can possibly make.</p>
+<p>Before we can make these notions precise, we need to define some terms. On this page, we will define the general notions of <em>statistics</em> and give a brief overview of its ideas and concepts.</p>
+</section>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this heading">#</a></h2>
+<section id="experiment">
+<span id="id1"></span><h3>Experiment<a class="headerlink" href="#experiment" title="Permalink to this heading">#</a></h3>
+<p>An experiment is the quintessential foundation of statistics. By its universal nature, its definition is a bit hard to pin down; an <em>experiment</em> in statistics is an elementary concept, yet still multifaceted in its simplicity.</p>
+<p>The primary characteristic of an <em>experiment</em> is its randomness. Put another way, an <em>experiment</em> is an event with an uncertain outcome. It is the task of statistics to tell us how much of the uncertainty in an experiment’s outcome is due to lack of information and how much is due to random error.</p>
+<p>But an <em>experiment</em> is more than just randomness; an <em>experiment</em> also denotes an organized and controlled event being measured by human observers. An <em>experiment</em> is meant to exhibit some property of the natural world being studied. The phenomenon in question is isolated from all external effects, so that the only <em>variables</em> influencing the <em>outcome</em> of the <em>experiment</em> are the ones being measured.</p>
+<p>All of this is done so that humans (us) may learn the relationships that govern empirical quantities. We, as inquisitive beings inhabiting an existence apart from us, naturally objectify and quantify the world around us; we turn it into relations of space and time, mass and motion, temperature and pressure; we categorize it into genus and species, into maps and contours, into recognizable patterns. All of this is done so we may see the lines of interaction that connect concepts. The <em>experiment</em> is conducted to help us draw these lines.</p>
+<p>However, the <em>uncertainty</em> of the experimental outcome prevents, on a fundamental level, a direct line from being drawn from outcome to explanation. There is never <em>certainty</em> the observed outcome is due to explanatory power of a relationship with another observed variable, or if the outcome is due to random chance.</p>
+<p>For this reason, when we conduct experiments, the best we can do is make an assumption about the state of the universe and then make observations. If the observations made contradict the assumption we started with, then we should like to conclude the assumption is false and discard it from the corpus of knowledge. It is also the task of statistics to help us decide whether the evidence gathered from observations is sufficient and <em>statistically signficant</em> enough to draw the inference desired: that we should reject the prior assumption due to evidence found to the contrary.</p>
+</section>
+<section id="individual">
+<span id="id2"></span><h3>Individual<a class="headerlink" href="#individual" title="Permalink to this heading">#</a></h3>
+<dl class="simple">
+<dt>Definition</dt><dd><p>A single observation.</p>
+</dd>
+</dl>
+<p><em>Individuals</em> will mean different things depending on the experiment being conducted.</p>
+<p>If we are measuring how hot it is over the course of a week in the summer, then the <em>individuals</em> in the experiment will be the temperature measurements made on a thermometer. The <em>units</em> of each <em>individual observation</em> will be degrees Kelvin (or degrees celsius or degrees fahrenheit, depending on the <em>scale</em> of the <em>unit</em>).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Degress Kelvin is the standard <em>unit</em> for temperature the fields of physics, chemistry and biology.</p>
+</div>
+<p>If we are measuring what percent of the country’s population supports a certain government policy, then the <em>individuals</em> in the experiment will be the people sampled. The <em>unit</em> of each <em>individual observation</em> would be the binary units, <em>Y</em> or <em>N</em>, that represent the possible outcomes of answers, “<em>Yes</em>” or “<em>No</em>”</p>
+</section>
+<section id="population">
+<span id="id3"></span><h3>Population<a class="headerlink" href="#population" title="Permalink to this heading">#</a></h3>
+<dl class="simple">
+<dt>Definition</dt><dd><p>The <em>population</em> is the set of all possible individuals that can be observed in a given experiment.</p>
+</dd>
+</dl>
+</section>
+<section id="sample">
+<span id="sample-definition"></span><h3>Sample<a class="headerlink" href="#sample" title="Permalink to this heading">#</a></h3>
+<dl class="simple">
+<dt>Definition</dt><dd><p>A <em>sample</em> is a subset of individuals drawn from the population in a given experiment.</p>
+</dd>
+</dl>
+<section id="population-vs-sample">
+<span id="population-subset-sample"></span><h4>Population vs. Sample<a class="headerlink" href="#population-vs-sample" title="Permalink to this heading">#</a></h4>
+<p>The relationship between the <em>population</em> and the <em>sample</em> can be visualized with the following <a class="reference internal" href="../foundations/02_SET_THEORY.html#venn-diagrams"><span class="std std-ref">venn diagram</span></a>.</p>
+<img alt="../../_images/sample_subset_population.jpg" class="align-center" src="../../_images/sample_subset_population.jpg" />
+<p>The <em>sample</em> is contained in the <em>population</em>; it is the portion of the population we actually observe. The <em>sample</em> is the information we have available to us to draw conclusions about the population.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We will study <a class="reference internal" href="../foundations/02_SET_THEORY.html#venn-diagrams"><span class="std std-ref">venn diagrams</span></a> in more detail in later chapters.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="methods-of-observation">
+<span id="observation-methods"></span><h2>Methods of Observation<a class="headerlink" href="#methods-of-observation" title="Permalink to this heading">#</a></h2>
+<p>In statistics, “<em>observation</em>” is the name of the game. Without first making observations, there is nothing else to be done. There are several different ways and techniques of making observations.</p>
+<dl class="simple">
+<dt>Conducting Census</dt><dd><p>A <em>census</em> is a type of statistical study where each individual in the population is observed.</p>
+</dd>
+</dl>
+<p>In practice, we are never able to see entire population at once. A <em>census</em> is an <em>ideal</em>, like a <em>vacuum</em> or a <em>frictionless surface</em>. If we had infinite time and resources, we should always like to conduct a <em>census</em>, rather than drawing a <em>sample</em>, because it would tell us conclusively how the population looked.</p>
+<p>A <em>census</em> is conducted every ten years in the United States to accurately measure the population size. Even a massive and organized operation like this is likely to miss more than a few individuals in the population, whether due to undocumented citizens, errors in record-keeping or pure happenstance. The point being, a <em>census</em> is the <em>ideal</em> study, but <em>impossible</em> to obtain.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>A <em>census</em> may also refer to the entire population itself, rather than the method of observing the population. The use should always be clear from context.</p>
+</div>
+<dl class="simple">
+<dt>Drawing A Sample</dt><dd><p>A <em>sample</em> is a type of statistical study where a subset of the population is observed <em>at random</em>.</p>
+</dd>
+</dl>
+<p>When a sample is drawn from a population, we say, “<em>the population has been sampled</em>” or that we are “<em>sampling the population</em>”.</p>
+<p>Because we are not able to conduct a <em>census</em> whenever we want, we have to make do with a sample. It is usually the case the sample is much, much smaller than the actual population. For this reason, it is very important the sample is <em>random</em> and <em>representative</em> of the population.</p>
+<p>We need a <em>random</em> sample because we do not want the data to have any features in it (e.g., patterns) that would obscure the population we are trying to observe.</p>
+<p>At the same time, we need a <em>representative</em> sample because we do not want the data to give a false impression of the population we are trying to observe.</p>
+<p>Often, these two goals are at odds with one another. In order to make a sample <em>representative</em>, you must impose some sort of order on the way you sample the population, but doing so then affects the <em>randomness</em> of the sample. Finding the right balance between these two directives is the topic of the next section.</p>
+<section id="sampling-techniques">
+<span id="id4"></span><h3>Sampling Techniques<a class="headerlink" href="#sampling-techniques" title="Permalink to this heading">#</a></h3>
+<section id="random">
+<span id="random-sampling"></span><h4>Random<a class="headerlink" href="#random" title="Permalink to this heading">#</a></h4>
+<dl class="simple">
+<dt>Definition</dt><dd><p>A <em>random</em> sample is selected from a population without any pre-determined method.</p>
+</dd>
+</dl>
+<p>Examples</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Mixing names in a hat and picking three names without looking.</p></li>
+<li><p>Going through the phone book and flipping a coin to determine who to include in the sample and who to exclude.</p></li>
+<li><p>Assign every name a number and then draw random numbers.</p></li>
+</ul>
+</div></blockquote>
+<p>The last item in the list above is the most common technique in practice. A standard method in statistics for generating a random sample from a population is to <em>associate an index</em> to each <em>individual</em>. Consider the following table of names,</p>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p>Index</p></td>
+<td><p>Individual</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Jean-Paul Sartre</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Martin Heidegger</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Edmund Husserl</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Bertrand Russell</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Kurt Godel</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Gottlob Frege</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>Immanuel Kant</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>Rene Descarates</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>Ludwig Wittgenstein</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>Alain Badiou</p></td>
+</tr>
+</tbody>
+</table>
+<p>Once each individual in the population is associated with an <em>index</em>, random numbers are generated; the indices that are selected by the random number generator then tell us what individuals to select for the sample. For example, the random number generator might output <em>3</em>, <em>6</em>,  and <em>10</em>; from this, we would then construct a sample of individuals: <em>Edmund Husserl</em>, <em>Gottlob Frege</em>, <em>Alain Badiou</em>.</p>
+</section>
+<section id="systematic">
+<span id="systematic-sampling"></span><h4>Systematic<a class="headerlink" href="#systematic" title="Permalink to this heading">#</a></h4>
+<dl class="simple">
+<dt>Definition</dt><dd><p>A <em>systematic</em> sample is selected from a population according to some fixed rule.</p>
+</dd>
+<dt>Examples</dt><dd><ul class="simple">
+<li><p>Asking every 10 <sup>th</sup> person who enters a building if they are voting in the next election.</p></li>
+<li><p>Selecting ten people from every zipcode.</p></li>
+<li><p>Sending out surveys and using every 5 <sup>th</sup> one that is returned.</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="stratified">
+<span id="stratifed-sampling"></span><h4>Stratified<a class="headerlink" href="#stratified" title="Permalink to this heading">#</a></h4>
+<dl class="simple">
+<dt>Definition</dt><dd><p>To get <em>stratified</em> samples, the population is broken up into <a class="reference internal" href="../probability/00_INTRODUCTION.html#mutual-exclusion"><span class="std std-ref">mutually exclusive</span></a> groups. Then a <em>random</em> sample from every group is taken.</p>
+</dd>
+<dt>Example</dt><dd><ul class="simple">
+<li><p>Sampling a highschool by grouping the school into freshmen, sophomores, juniors and seniors.</p></li>
+<li><p>Separating the population by political affiliation and then drawing a sample from each group.</p></li>
+<li><p>Mailing surveys to 100 randomly selected residents of each state.</p></li>
+</ul>
+</dd>
+</dl>
+<p>The different groups of a stratified sample as sometimes known as <em>strata</em>.</p>
+<p><em>Stratified samples</em> are easily visualized with a table. As an example, suppose in the first example, we were sampling a population of highschool students to determine for whom they were voting in the student government elections.</p>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>Candidate 1</p></td>
+<td><p>Candidate 2</p></td>
+<td><p>Other</p></td>
+</tr>
+<tr class="row-even"><td><p>Freshmen</p></td>
+<td><p>25</p></td>
+<td><p>45</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sophomores</p></td>
+<td><p>30</p></td>
+<td><p>33</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Juniors</p></td>
+<td><p>15</p></td>
+<td><p>27</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Seniors</p></td>
+<td><p>23</p></td>
+<td><p>21</p></td>
+<td><p>2</p></td>
+</tr>
+</tbody>
+</table>
+<p>These tables will pop up in a later chapter under the name <a class="reference internal" href="../probability/00_INTRODUCTION.html#probability-tables"><span class="std std-ref">Probability Tables</span></a>.</p>
+</section>
+<section id="cluster">
+<span id="cluster-sampling"></span><h4>Cluster<a class="headerlink" href="#cluster" title="Permalink to this heading">#</a></h4>
+<dl class="simple">
+<dt>Defintion</dt><dd><p>To get a <em>clustered</em> sample, the population is broken up into <em>random</em> groups and then each group is randomly sampled.</p>
+</dd>
+<dt>Example</dt><dd><ul class="simple">
+<li><p>Looking at a map of a city and breaking it into grid of squares. Then, selecting a few squares and drawing a sample from each selected square.</p></li>
+<li><p>Surveying people entering supermarkets across a city.</p></li>
+<li><p>Looking at the employees of the top three local banks by revenue to determine the average salary of a bank employee.</p></li>
+</ul>
+</dd>
+</dl>
+<p>It is easy to confuse the method of <em>cluster</em> sampling with the method of <em>stratified</em> sampling. They seem to be saying the exact same thing at first glance, but upon closer inspection, there are subtle, but important differences.</p>
+<aside class="topic">
+<p class="topic-title">Difference #1: The groups are sampled differently.</p>
+<p>In a clustered sample, certain clusters are selected and sampled; the rest of the clusters are ignored.</p>
+<p>In a stratified sample, all of the <em>strata</em> are selected and sampled.</p>
+</aside>
+<aside class="topic">
+<p class="topic-title">Difference #2: The composition of the groups is different.</p>
+<p>In a clustered sample, each cluster is <em>hetergeneous</em>; Each group contains representatives of all subsets of the population.</p>
+<p>In a stratified sample, each strata is <em>homogeneous</em>; Each group contains representatives of a certain subset of the population.</p>
+</aside>
+</section>
+</section>
+<section id="other-terminology">
+<h3>Other Terminology<a class="headerlink" href="#other-terminology" title="Permalink to this heading">#</a></h3>
+<dl class="simple" id="with-replacement">
+<dt>With Replacement</dt><dd><p>An observation has been made <em>with replacement</em>, if after its selection, it is placed back into the population.</p>
+</dd>
+</dl>
+<p>Example</p>
+<blockquote>
+<div><p>Consider drawing a single card from a deck of cards, shuffling it back into the deck and then selecting another card. The event of getting the same card on both draws is a possible event because the card selected on the first draw is returned to the population of possible observation before making the second draw.</p>
+</div></blockquote>
+<dl class="simple" id="without-replacement">
+<dt>Without Replacement</dt><dd><p>An observation has been made <em>without replacement</em>, if after its selection, it is removed from the population and is no longer a possible observation.</p>
+</dd>
+</dl>
+<p>Example</p>
+<blockquote>
+<div><p>Consider drawing a single card from a deck of cards, setting it aside and then selecting another card. The event of getting the same card on both draws is an impossible event because the card selected on the first draw is no longer in the population of possible observation, and therefore cannot possible be selected again. In other words, when we sample data <em>without replacement</em>, we affect the <em>sample space</em> of subsequent experiments.</p>
+</div></blockquote>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Inference</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="01_BIAS.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Bias</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment">Experiment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#individual">Individual</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#population">Population</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample">Sample</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#population-vs-sample">Population vs. Sample</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-of-observation">Methods of Observation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-techniques">Sampling Techniques</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#random">Random</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#systematic">Systematic</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stratified">Stratified</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cluster">Cluster</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-terminology">Other Terminology</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Grant Moore
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Grant Moore.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

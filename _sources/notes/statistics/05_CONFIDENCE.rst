@@ -62,7 +62,7 @@ Intervals
 	
 	.. math::
 	
-		\hat{\theta} - \text{MOE}_{\theta} \leq \theta \leq \hat{\theta} - \text{MOE}_{\theta}
+		\hat{\theta} - \text{MOE}_{\theta} \leq \theta \leq \hat{\theta} + \text{MOE}_{\theta}
 
 TODO
 

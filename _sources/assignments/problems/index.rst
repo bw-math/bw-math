@@ -15,6 +15,5 @@ Problems
 	probability/index
 	statistics/index
 	distributions/index
-	experiments/index
-	hypotheses/index
+	inference/index
    
