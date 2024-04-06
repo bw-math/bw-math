@@ -220,7 +220,6 @@ Use this information to answer the following questions.
 	
 	g. Based on the answers to *part e* and *part f*, is there evidence to support the conclusion households without landlines are more likely to own cellphones than households with landlines? Justify your answer.
 
-
 Population Mean
 ---------------
 
