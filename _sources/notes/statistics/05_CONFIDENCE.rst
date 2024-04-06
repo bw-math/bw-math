@@ -60,7 +60,9 @@ Intervals
 
 	If :math:`\theta` is a population parameter, :math:`\hat{\theta}` is a point estimator of :math:`\theta` and :math:`\text{MOE}_{\theta}` is the margin of error for that estimator, the confidence interval for :math:`\theta` is given by,
 	
-	\hat{\theta} - \text{MOE}_{\theta} \leq \theta \leq \hat{\theta} - \text{MOE}_{\theta}
+	.. math::
+	
+		\hat{\theta} - \text{MOE}_{\theta} \leq \theta \leq \hat{\theta} - \text{MOE}_{\theta}
 
 TODO
 

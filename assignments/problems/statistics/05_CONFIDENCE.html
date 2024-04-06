@@ -599,8 +599,9 @@ document.write(`
 <aside class="topic">
 <p class="topic-title">Confidence Intervals</p>
 <p>If <img class="math" src="../../../_images/math/8c66148b49dfb2c9f095f24acccbd4ac4fc09b41.png" alt="\theta"/> is a population parameter, <img class="math" src="../../../_images/math/c6355eb34c07e7f8c28f97e25575c5124a7a560d.png" alt="\hat{\theta}"/> is a point estimator of <img class="math" src="../../../_images/math/8c66148b49dfb2c9f095f24acccbd4ac4fc09b41.png" alt="\theta"/> and <img class="math" src="../../../_images/math/9050cd92e9db7acfbd8a0dfd1f794ebafc79d56f.png" alt="\text{MOE}_{\theta}"/> is the margin of error for that estimator, the confidence interval for <img class="math" src="../../../_images/math/8c66148b49dfb2c9f095f24acccbd4ac4fc09b41.png" alt="\theta"/> is given by,</p>
-<p>hat{theta} - text{MOE}_{theta} leq theta leq hat{theta} - text{MOE}_{theta}</p>
-</aside>
+<div class="math">
+<p><img src="../../../_images/math/28acee5ed496ef971b7cace2937c0ea0c9bb3449.png" alt="\hat{\theta} - \text{MOE}_{\theta} \leq \theta \leq \hat{\theta} - \text{MOE}_{\theta}"/></p>
+</div></aside>
 </section>
 </section>
 <section id="problems">
@@ -610,39 +611,47 @@ document.write(`
 <ol class="arabic simple">
 <li><p><strong>Critical Values</strong></p></li>
 </ol>
-<p>A population of Twirly Deedles is normally distributed with a mean of 50 zoomies and a standard deviation of 5 zoomies. Suppose you sample 25 Twirly Deedles and calculate the average amount of zoomies.</p>
+<p>The time it takes a given AP Statistics student to finish one of Mr. Moore’s exams is Normally distributed with a mean of 50 minutes and a standard deviation of 10 minutes. You draw a simple random sample of 30 AP Statistics students and force them to take one of Mr. Moore’s exams. You record the time it takes each individual in your sample to complete the exam and calculate the average.</p>
 <blockquote>
 <div><ol class="loweralpha">
-<li><p>Describe the sampling distribution for the mean amount of zoomies.</p></li>
-<li><p>Find the critical values for the following confidence levels:</p>
+<li><p>Describe the sampling distribution for the average amount of time it takes a sample of this many AP statistics students to complete Mr. Moore’s exam. What are the mean and standard deviation of the sampling distribution?</p></li>
+<li><p>Find the standardized critical values for the following confidence levels:</p>
 <blockquote>
 <div><ol class="lowerroman simple">
 <li><p>90%</p></li>
 <li><p>95%</p></li>
-</ol>
-<ol class="lowerroman simple" start="2">
 <li><p>99%</p></li>
 </ol>
 </div></blockquote>
 </li>
+<li><p>Using the Z-score formula <img class="math" src="../../../_images/math/dda74a8842f84e602a580046d5bb2b16a7bace95.png" alt="z = \frac{ \bar{x} - \mu }{ \frac{s}{\sqrt{n}} }"/>, find the values of the sample mean that correspond to the following confidence levels:</p>
+<blockquote>
+<div><ol class="lowerroman simple">
+<li><p>90%</p></li>
+<li><p>95%</p></li>
+<li><p>99%</p></li>
 </ol>
-<ol class="loweralpha simple" start="2">
+</div></blockquote>
+</li>
 <li><p>Draw three Normal curves for the mean zoomies sampling distribution. For each confidence level in <em>part b</em>, label the critical values on the horizontal axis of one of the graphs. Shade in the area that corresponds to the given confidence level on that graph.</p></li>
-<li><p>Using the graphs from <em>part b</em>, what conclusion can you draw about the relationship between the width of the estimation interval (i.e., the <em>precision</em> of the estimate) and the confidence level</p></li>
+<li><p>Using the graphs from <em>part d</em>, write a few sentences interpretting the calculated values from <em>part c</em>.</p></li>
+<li><p>Using the graphs from <em>part d</em>, what conclusion can you draw about the relationship between the width of the estimation interval (i.e., the <em>precision</em> of the estimate) and the confidence level.</p></li>
 </ol>
 </div></blockquote>
 <ol class="arabic simple" start="2">
 <li><p><strong>Error</strong></p></li>
 </ol>
-<p>According to the most recent estimates, approximately 8% of males are born colorblind.</p>
+<p>According to the most recent estimates (by which I mean, whatever the top result on Google said), approximately 8% of males are born colorblind.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
-<li><p>Find the standard error for the proportion of males that are color blind in a sample of 100 men.</p></li>
-<li><p>Find the standard error for the proportion of males that are color blind in a sample of 150 men.</p></li>
-<li><p>Find the standard error for the proportion of males that are color blind in a sample of 200 men.</p></li>
+<li><p>Find the standard error for the proportion of males that are color blind in a sample of 100 males.</p></li>
+<li><p>Find the standard error for the proportion of males that are color blind in a sample of 150 males.</p></li>
+<li><p>Find the standard error for the proportion of males that are color blind in a sample of 200 males.</p></li>
+<li><p>What is the relationship between the standard error and the number of samples? What does this tell you about the shape of the sampling distribution as n increases?</p></li>
 <li><p>How large of a sample would you need to get a margin of error that is no more than 0.04?</p></li>
 <li><p>How large of a sample would you need to get a margin of error that is no more than 0.01?</p></li>
 <li><p>How large of a sample would you need to get a margin of error that is no more than 0.001?</p></li>
+<li><p>What is the relationship between the width of the margin of error and the number of samples? How many samples would you need to get a margin of error equal to 0?</p></li>
 </ol>
 </div></blockquote>
 <ol class="arabic simple" start="3">
