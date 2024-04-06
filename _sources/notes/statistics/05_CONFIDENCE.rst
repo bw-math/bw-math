@@ -51,7 +51,7 @@ Margin of Error
 	
 	.. math::
 	
-		\text{MOE} = c \rvert \cdot s_{\theta}}		
+		\text{MOE} = c \rvert \cdot s_{\theta}		
 		
 Intervals
 ---------
@@ -117,7 +117,7 @@ Difference of Two Means
 
 	.. math::
 	
-		\text{s}_{\bar{x_2}_2 - \bar{x_1}} = \sqrt( \frac{ s_{ \bar{x_1} } }{n_1} + \frac{ s_{ \bar{x_2}} }{n_2} )
+		\text{s}_{\bar{x_2}_2 - \bar{x_1}} = \sqrt{ \frac{ s_{ \bar{x_1} } }{n_1} + \frac{ s_{ \bar{x_2}} }{n_2} }
 
 Margin of Error
 --------------
