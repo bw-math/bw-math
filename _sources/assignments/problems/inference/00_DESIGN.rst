@@ -1,8 +1,8 @@
 .. _experimental_design_introduction_classwork:
 
-======
-Design
-======
+===================
+Experimental Design
+===================
 
 A.P. Exam Practice
 ==================

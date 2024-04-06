@@ -49,8 +49,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'notes/inference/02_DESIGN';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Data" href="03_DATA.html" />
-    <link rel="prev" title="Bias" href="01_BIAS.html" />
+    <link rel="next" title="Hypothesis Testing" href="03_HYPOTHESES.html" />
+    <link rel="prev" title="Statistical Bias" href="01_BIAS.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -181,12 +181,12 @@
 </li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Inference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="00_INTRODUCTION.html">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="01_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_BIAS.html">Statistical Bias</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Experimental Design</a></li>
-<li class="toctree-l3"><a class="reference internal" href="03_DATA.html">Data</a></li>
-
-
-<li class="toctree-l3"><a class="reference internal" href="04_HYPOTHESES.html">Hypothesis Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_HYPOTHESES.html">Hypothesis Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_MEAN.html">Population Mean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_PROPORTION.html">Population Proportion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_VARIANCE.html">Population Standard Deviation</a></li>
 </ul>
 </li>
 </ul>
@@ -276,8 +276,8 @@
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/problems/inference/index.html">Inference</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/00_DESIGN.html">Design</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/01_BIAS.html">Bias</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/00_DESIGN.html">Experimental Design</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/01_BIAS.html">Statistical Bias</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/02_HYPOTHESES.html">Hypothesis Testing</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/03_MEAN.html">Population Mean</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/04_PROPORTION.html">Population Proportion</a></li>
@@ -500,9 +500,25 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#blind-studies">Blind Studies</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matched-pairs">Matched Pairs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#randomized-blocks">Randomized Blocks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experiments">Experiments</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#blind-studies">Blind Studies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matched-pairs">Matched Pairs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#randomized-blocks">Randomized Blocks</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#randomization">Randomization</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-digit-tables">Random Digit Tables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pseudo-random-numbers">Pseudo-Random Numbers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications">Classifications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionality">Dimensionality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristic">Characteristic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scale">Scale</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-statistics">Types of Statistics</a></li>
 </ul>
             </nav>
         </div>
@@ -547,8 +563,10 @@ document.write(`
 </dl>
 <p>In this example, the <em>indicator</em> or <em>explanatory</em> variable is the <em>pH contentration</em>. The researcher is able to change the amount of acid or base that is added to the solution. The <em>response</em> variable is the temperature of the solution.</p>
 </section>
+<section id="experiments">
+<h2>Experiments<a class="headerlink" href="#experiments" title="Permalink to this heading">#</a></h2>
 <section id="blind-studies">
-<h2>Blind Studies<a class="headerlink" href="#blind-studies" title="Permalink to this heading">#</a></h2>
+<h3>Blind Studies<a class="headerlink" href="#blind-studies" title="Permalink to this heading">#</a></h3>
 <p>The concept of <em>blind studies</em> mainly applies to the areas of psychology and medicine. These sciences deal with human nature and humans are, if nothing else, peculiar creatures. Their expectations can influence the results of the experiment.</p>
 <p>In medical studies, the <em>test</em> group will receive the real treatment while the <em>control</em> group will receive a <em>placebo</em> treatment. For example, in testing whether a certain drug treats a medical condition, the <em>control</em> group would receive a sugar pill. Yet it sometimes occurs the <em>control</em> group experiences the effects of the <em>real treatment</em> simply by <em>expecting</em> the effect,</p>
 <a class="reference external image-reference" href="https://www.youtube.com/watch?v=mSEr3A-pMsw"><img alt="Placebo Effect" src="https://img.youtube.com/vi/mSEr3A-pMsw/maxresdefault.jpg" /></a>
@@ -569,19 +587,322 @@ document.write(`
 </dl>
 </section>
 <section id="matched-pairs">
-<h2>Matched Pairs<a class="headerlink" href="#matched-pairs" title="Permalink to this heading">#</a></h2>
+<h3>Matched Pairs<a class="headerlink" href="#matched-pairs" title="Permalink to this heading">#</a></h3>
 <p>A <em>matched pairs</em> design is an experimental design where researchers match pairs of participants by relevant characteristics. Then the researchers randomly assign one person from each pair to the treatment group and the other to the control group. This type of experiment is also known as a matching pairs design.</p>
 <p>An ideal example of a <em>matched pairs design</em> would be twins,</p>
 <img alt="../../_images/twins.jpg" class="align-center" src="../../_images/twins.jpg" />
 <p>If one of the twins is submitted to a <em>treatment</em>, their genetically identical counterpart serves as a nearly perfect <em>control</em>.</p>
 </section>
 <section id="randomized-blocks">
-<h2>Randomized Blocks<a class="headerlink" href="#randomized-blocks" title="Permalink to this heading">#</a></h2>
+<h3>Randomized Blocks<a class="headerlink" href="#randomized-blocks" title="Permalink to this heading">#</a></h3>
 <p>A <em>randomized block</em> experiment should be understood a series of identical experiments, where each <em>block</em> of the population sampled is composed of the same distribution of individuals.</p>
 <p>A <em>randomized block</em> design is commonly encountered in <em>agricultural</em> applications. Consider a farmer who wants to test a new type of seed against his usual stock to determine if the yield is higher. In a <em>randomized block</em> experiment, he would break his plots of land into <em>blocks</em>, and then partition each block into segments, call them <em>A</em>, <em>B</em>, <em>C</em> and <em>D</em>,</p>
 <img alt="../../_images/randomized_blocks.png" class="align-center" src="../../_images/randomized_blocks.png" />
 <p>The type of seed would be planted in the <em>A</em> segment of each block, i.e. the <em>A</em> segment would receive a <em>treatment</em>, while the other segments would be planted with the farmer’s usual stock. Data would then be collected from each block and analyzed in isolation to determine if the new type of seed has any benefits.</p>
 <p>In essence, each <em>block</em> represents a separate experiment, where the treated group is tested against the control group.</p>
+</section>
+</section>
+<section id="randomization">
+<span id="id2"></span><h2>Randomization<a class="headerlink" href="#randomization" title="Permalink to this heading">#</a></h2>
+<p>TODO</p>
+<section id="random-digit-tables">
+<h3>Random Digit Tables<a class="headerlink" href="#random-digit-tables" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="pseudo-random-numbers">
+<h3>Pseudo-Random Numbers<a class="headerlink" href="#pseudo-random-numbers" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
+<section id="data">
+<span id="id3"></span><h2>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h2>
+<section id="classifications">
+<h3>Classifications<a class="headerlink" href="#classifications" title="Permalink to this heading">#</a></h3>
+<p>The data we collect from an experiment is classified according to several factors.</p>
+</section>
+<section id="dimensionality">
+<span id="data-dimensionality"></span><h3>Dimensionality<a class="headerlink" href="#dimensionality" title="Permalink to this heading">#</a></h3>
+<p>Definition</p>
+<blockquote>
+<div><p>The <em>dimension</em> of a dataset is the number of values associated with a single observation.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Univariate</dt><dd><p><img class="math" src="../../_images/math/02ff3586e2dbe8a38e918ae4cbfbae022878a4e2.png" alt="\{ x_1, x_2, x_3 \}"/></p>
+</dd>
+</dl>
+<p><em>Univariate</em> data consists of observations that each contain a single value.</p>
+<dl class="simple">
+<dt>Example</dt><dd><p>Experimental data from Henri Cavendish’s density of the Earth experiments. Density is expressed as a ratio of the density of water. See <a class="reference internal" href="../../assignments/projects/python/01_CATEGORICAL.html#project-one"><span class="std std-ref">Bar Charts</span></a> for more information about this dataset.</p>
+</dd>
+</dl>
+<table class="table" id="id4">
+<caption><span class="caption-text">Density of the Earth</span><a class="headerlink" href="#id4" title="Permalink to this table">#</a></caption>
+<tbody>
+<tr class="row-odd"><td><p>Density</p></td>
+</tr>
+<tr class="row-even"><td><p>5.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>5.61</p></td>
+</tr>
+<tr class="row-even"><td><p>4.88</p></td>
+</tr>
+<tr class="row-odd"><td><p>5.07</p></td>
+</tr>
+<tr class="row-even"><td><p>5.26</p></td>
+</tr>
+<tr class="row-odd"><td><p>5.55</p></td>
+</tr>
+<tr class="row-even"><td><p>5.36</p></td>
+</tr>
+<tr class="row-odd"><td><p>5.29</p></td>
+</tr>
+<tr class="row-even"><td><p>5.58</p></td>
+</tr>
+<tr class="row-odd"><td><p>5.65</p></td>
+</tr>
+<tr class="row-even"><td><p>5.57</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="simple">
+<dt>Bivariate</dt><dd><p><img class="math" src="../../_images/math/167e4d5ca72db146183c8baacc90e6f72eff7044.png" alt="\{ (x_1, y_1), (x_2, y_2), ... , (x_n, y_n)\}"/></p>
+</dd>
+</dl>
+<p><em>Bivariate</em> data consists of observations that each contain two values (i.e. an <em>pair</em>)</p>
+<dl class="simple">
+<dt>Example</dt><dd><p>Data from the Challenger space shuttle explosion showing the atmospheric temperature versus the erosion index of the O-ring seal. The failure of the O-ring seal at lower temperatures was not accounted for prior to launch.</p>
+</dd>
+</dl>
+<table class="table" id="id5">
+<caption><span class="caption-text">Challenger Space Shuttle Erosion Data</span><a class="headerlink" href="#id5" title="Permalink to this table">#</a></caption>
+<tbody>
+<tr class="row-odd"><td><p>Temp</p></td>
+<td><p>Erosion</p></td>
+</tr>
+<tr class="row-even"><td><p>66.0</p></td>
+<td><p>0.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>70.0</p></td>
+<td><p>53.0</p></td>
+</tr>
+<tr class="row-even"><td><p>69.0</p></td>
+<td><p>0.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>68.0</p></td>
+<td><p>0.0</p></td>
+</tr>
+<tr class="row-even"><td><p>67.0</p></td>
+<td><p>0.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>63.0</p></td>
+<td><p>0.0</p></td>
+</tr>
+<tr class="row-even"><td><p>70.0</p></td>
+<td><p>28.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>78.0</p></td>
+<td><p>0.0</p></td>
+</tr>
+<tr class="row-even"><td><p>67.0</p></td>
+<td><p>0.0</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="simple">
+<dt>Multivariate</dt><dd><p><img class="math" src="../../_images/math/fbbdfa3f3d502368b86e9fae2abae1163ef1f8b8.png" alt="\{ (x_{1}^1, x_{2}^1, ... , x_{n}^1 ), (x_{1}^2, x_{2}^2, ... , x_{n}^2 ), ... ,(x_{1}^m, x_{2}^m, ... , x_{n}^m )"/></p>
+</dd>
+</dl>
+<p><em>Multivariate</em> data consists of observations that each contain an arbitrary number of values (i.e. a <em>vector</em>)</p>
+<dl class="simple">
+<dt>Example</dt><dd><p>Body measurements from a sample of grizzly bears.</p>
+</dd>
+</dl>
+<table class="table" id="id6">
+<caption><span class="caption-text">Bear Measurements</span><a class="headerlink" href="#id6" title="Permalink to this table">#</a></caption>
+<tbody>
+<tr class="row-odd"><td><p>AGE</p></td>
+<td><p>MONTH</p></td>
+<td><p>SEX (1=M)</p></td>
+<td><p>HEADLEN</p></td>
+<td><p>HEADWDTH</p></td>
+<td><p>NECK</p></td>
+<td><p>LENGTH</p></td>
+<td><p>CHEST</p></td>
+<td><p>WEIGHT</p></td>
+</tr>
+<tr class="row-even"><td><p>19</p></td>
+<td><p>7</p></td>
+<td><p>1</p></td>
+<td><p>11.0</p></td>
+<td><p>5.5</p></td>
+<td><p>16.0</p></td>
+<td><p>53.0</p></td>
+<td><p>26.0</p></td>
+<td><p>80</p></td>
+</tr>
+<tr class="row-odd"><td><p>55</p></td>
+<td><p>7</p></td>
+<td><p>1</p></td>
+<td><p>16.5</p></td>
+<td><p>9.0</p></td>
+<td><p>28.0</p></td>
+<td><p>67.5</p></td>
+<td><p>45.0</p></td>
+<td><p>344</p></td>
+</tr>
+<tr class="row-even"><td><p>81</p></td>
+<td><p>9</p></td>
+<td><p>1</p></td>
+<td><p>15.5</p></td>
+<td><p>8.0</p></td>
+<td><p>31.0</p></td>
+<td><p>72.0</p></td>
+<td><p>54.0</p></td>
+<td><p>416</p></td>
+</tr>
+<tr class="row-odd"><td><p>115</p></td>
+<td><p>7</p></td>
+<td><p>1</p></td>
+<td><p>17.0</p></td>
+<td><p>10.0</p></td>
+<td><p>31.5</p></td>
+<td><p>72.0</p></td>
+<td><p>49.0</p></td>
+<td><p>348</p></td>
+</tr>
+<tr class="row-even"><td><p>104</p></td>
+<td><p>8</p></td>
+<td><p>0</p></td>
+<td><p>15.5</p></td>
+<td><p>6.5</p></td>
+<td><p>22.0</p></td>
+<td><p>62.0</p></td>
+<td><p>35.0</p></td>
+<td><p>166</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="characteristic">
+<span id="data-characteristic"></span><h3>Characteristic<a class="headerlink" href="#characteristic" title="Permalink to this heading">#</a></h3>
+<dl class="simple">
+<dt>Definition</dt><dd><p>The <em>characteristic</em> of a dataset is the <em>type</em> of data being observed.</p>
+</dd>
+<dt>Qualitative</dt><dd><p><img class="math" src="../../_images/math/d221136315bf843518abf458398fd263e8b838dc.png" alt="\{ \text{red}, \text{blue}, \text{yellow} \}"/></p>
+</dd>
+</dl>
+<p>Qualitative data are categorical.</p>
+<dl class="simple">
+<dt>Example</dt><dd><ul class="simple">
+<li><p>The favorite color of a sample of people.</p></li>
+<li><p>A group of people’s answer to supporting a new tax reform law.</p></li>
+<li><p>Movies that feature Kevin Bacon.</p></li>
+<li><p>Words that appear in a novel.</p></li>
+</ul>
+</dd>
+<dt>Quantitative</dt><dd><p>Quantitative data are numerical.</p>
+</dd>
+</dl>
+<p>These are two types of <em>quantitative</em> data, <em>discrete</em> and <em>continuous</em>.</p>
+<dl class="simple">
+<dt>Discrete Quantitative</dt><dd><p><img class="math" src="../../_images/math/dff2242d6d91fa1f3c6719f5c232e81e9f532fd9.png" alt="\{ 1, 2, 3, 4, 5, ... \}"/></p>
+</dd>
+</dl>
+<p><em>Discrete quantitative</em> data are countable.</p>
+<dl class="simple">
+<dt>Example</dt><dd><ul class="simple">
+<li><p>Students in a class.</p></li>
+<li><p>Petals on a clover</p></li>
+<li><p>The championships won by a football team.</p></li>
+<li><p>M&amp;M’s in a bag.</p></li>
+</ul>
+</dd>
+<dt>Continuous Quantitative</dt><dd><p><img class="math" src="../../_images/math/b939635cce776f2bf5a93b9770b88ddc1ac8e084.png" alt="\{ 1.0, 1.01, 1.001, 1.0001, 1.00001, ... \}"/></p>
+</dd>
+</dl>
+<p><em>Continuous quantitative</em> data are infinitely divisible</p>
+<dl class="simple">
+<dt>Example</dt><dd><ul class="simple">
+<li><p>The temperature of a gallon of water under various pressures.</p></li>
+<li><p>The speed of a train.</p></li>
+<li><p>The weight of a coin.</p></li>
+<li><p>The amount of rainfall in a region.</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="scale">
+<h3>Scale<a class="headerlink" href="#scale" title="Permalink to this heading">#</a></h3>
+<img alt="../../_images/measurement_scales.jpg" class="align-center" src="../../_images/measurement_scales.jpg" />
+<dl class="simple">
+<dt>Nominal Level</dt><dd><p>Unordered, categorical data.</p>
+</dd>
+</dl>
+<p><em>Nominal data</em> is the simplest type of data. A <em>nominal scale</em> or <em>level</em> is a way of labelling and separating individuals in a sample into groups.</p>
+<dl class="simple">
+<dt>Example</dt><dd><ul class="simple">
+<li><p>The favorite color of each person in a sample of data.</p></li>
+<li><p>The political party affiliation of each person in a sample of data.</p></li>
+<li><p>The nationality of each person in a sample of data.</p></li>
+</ul>
+</dd>
+<dt>Ordinal Level</dt><dd><p>Ordered, categorical data.</p>
+</dd>
+</dl>
+<p><em>Ordinal data</em> is a step above <em>nominal data</em>. It is <em>categorical</em>, but an order can be imposed on it.</p>
+<dl class="simple">
+<dt>Example</dt><dd><ul class="simple">
+<li><p>Answers to a customer satisfaction survey: <code class="docutils literal notranslate"><span class="pre">DISSATISFIED</span></code>, <code class="docutils literal notranslate"><span class="pre">NEUTRAL</span></code>, <code class="docutils literal notranslate"><span class="pre">SATISIFED</span></code></p></li>
+<li><p>Grades on a quiz: <code class="docutils literal notranslate"><span class="pre">A</span></code>, <code class="docutils literal notranslate"><span class="pre">B</span></code>, <code class="docutils literal notranslate"><span class="pre">C</span></code>, <code class="docutils literal notranslate"><span class="pre">D</span></code>, <code class="docutils literal notranslate"><span class="pre">E</span></code>, <code class="docutils literal notranslate"><span class="pre">F</span></code>.</p></li>
+</ul>
+</dd>
+<dt>Interval Level</dt><dd><p>Ordered, numerical data.</p>
+</dd>
+</dl>
+<p><em>Interval level</em> is a step above <em>ordinal data</em>. The data are ordered, but now the <em>difference</em> between observations is defined. In other words, with an <em>interval level</em>, the distance between two observation <img class="math" src="../../_images/math/3f72613f77d1720ad07cc485a55e4a2fd2a96947.png" alt="x_2"/> and <img class="math" src="../../_images/math/e564d43fd97a8499ef8ceb6167286e4ae267704d.png" alt="x_1"/> can be defined as <img class="math" src="../../_images/math/f6c8b0671815b918f9d477e20dcd80c8651e170d.png" alt="x_2 - x_1"/></p>
+<dl class="simple">
+<dt>Example</dt><dd><ul class="simple">
+<li><p>A historical time series of the Consumer Price Index</p></li>
+<li><p>The IQs of a random sample of people.</p></li>
+<li><p>The SAT scores of the graduating class of seniors.</p></li>
+</ul>
+</dd>
+<dt>Ratio Level</dt><dd><p>Ordered, numerical data.</p>
+</dd>
+</dl>
+<p><em>Ratio level</em> is the final level of data. The data are ordered, the difference between two datapoints can be computed <img class="math" src="../../_images/math/f6c8b0671815b918f9d477e20dcd80c8651e170d.png" alt="x_2 - x_1"/> and there is a <em>true zero</em>. With a <em>ratio level</em>, it makes sense to have an observation of <em>0</em>.</p>
+<dl class="simple">
+<dt>Example</dt><dd><ul class="simple">
+<li><p>Measurements from a scale, i.e. the weight of a mass.</p></li>
+<li><p>Measurements from a thermometer, i.e the temperature of a body.</p></li>
+<li><p>The amount of rainfall in a region over a period of a week.</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+</section>
+<section id="types-of-statistics">
+<span id="statistics-defintions"></span><h2>Types of Statistics<a class="headerlink" href="#types-of-statistics" title="Permalink to this heading">#</a></h2>
+<dl class="simple" id="sample-statistic">
+<dt>Sample Statistic</dt><dd><p>A piece of information calculated from sample of data.</p>
+</dd>
+</dl>
+<p><em>Sample statistics</em> are used to summarize the characteristics of a dataset. They are broken down into two main categories.</p>
+<dl class="simple" id="descriptive-statistic">
+<dt>Descriptive Statistic</dt><dd><p>A sample statisic used to visualize and approximate the shape and spread of a population.</p>
+</dd>
+</dl>
+<dl class="simple" id="inferential-statistic">
+<dt>Inferential Statistic</dt><dd><p>A sample statistic used to make inferences about the population.</p>
+</dd>
+</dl>
+<p>One of the most important <em>descriptive statistics</em> is the <em>sample mean</em>,</p>
+<div class="math">
+<p><img src="../../_images/math/67460ba4e9f579743807de2c249b2dce331cf6ba.png" alt="\bar{x} = \frac{ \sum^n_{i = 1} x_i } {n}"/></p>
+</div><p>One of the most important <em>inferential statistics</em> is the <em>Z-score</em> of the <em>sample mean</em>,</p>
+<div class="math">
+<p><img src="../../_images/math/4db094222f440d20280f49086363e8c0e7b8aa84.png" alt="Z = \frac{ \bar{x} - \mu }{ \frac{ \sigma }{\sqrt n} }"/></p>
+</div><p>If these formulae make no sense yet, don’t worry! That is to be expected. They are listed here, so you can start forming a picture of the things to come. By the end of this class, these two formulae will become your best friends.</p>
 </section>
 </section>
 
@@ -602,15 +923,15 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Bias</p>
+        <p class="prev-next-title">Statistical Bias</p>
       </div>
     </a>
     <a class="right-next"
-       href="03_DATA.html"
+       href="03_HYPOTHESES.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Data</p>
+        <p class="prev-next-title">Hypothesis Testing</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -631,9 +952,25 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#blind-studies">Blind Studies</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matched-pairs">Matched Pairs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#randomized-blocks">Randomized Blocks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experiments">Experiments</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#blind-studies">Blind Studies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matched-pairs">Matched Pairs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#randomized-blocks">Randomized Blocks</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#randomization">Randomization</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-digit-tables">Random Digit Tables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pseudo-random-numbers">Pseudo-Random Numbers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classifications">Classifications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensionality">Dimensionality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristic">Characteristic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scale">Scale</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-statistics">Types of Statistics</a></li>
 </ul>
   </nav></div>
 

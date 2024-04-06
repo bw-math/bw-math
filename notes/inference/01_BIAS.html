@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Bias &#8212; bishop-walsh-math  documentation</title>
+    <title>Statistical Bias &#8212; bishop-walsh-math  documentation</title>
   
   
   
@@ -181,12 +181,12 @@
 </li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Inference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="00_INTRODUCTION.html">Introduction</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Bias</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Statistical Bias</a></li>
 <li class="toctree-l3"><a class="reference internal" href="02_DESIGN.html">Experimental Design</a></li>
-<li class="toctree-l3"><a class="reference internal" href="03_DATA.html">Data</a></li>
-
-
-<li class="toctree-l3"><a class="reference internal" href="04_HYPOTHESES.html">Hypothesis Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_HYPOTHESES.html">Hypothesis Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_MEAN.html">Population Mean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_PROPORTION.html">Population Proportion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_VARIANCE.html">Population Standard Deviation</a></li>
 </ul>
 </li>
 </ul>
@@ -276,8 +276,8 @@
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/problems/inference/index.html">Inference</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/00_DESIGN.html">Design</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/01_BIAS.html">Bias</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/00_DESIGN.html">Experimental Design</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/01_BIAS.html">Statistical Bias</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/02_HYPOTHESES.html">Hypothesis Testing</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/03_MEAN.html">Population Mean</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/04_PROPORTION.html">Population Proportion</a></li>
@@ -489,7 +489,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Bias</h1>
+    <h1>Statistical Bias</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -517,10 +517,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="bias">
-<span id="id1"></span><h1>Bias<a class="headerlink" href="#bias" title="Permalink to this heading">#</a></h1>
+  <section id="statistical-bias">
+<span id="bias"></span><h1>Statistical Bias<a class="headerlink" href="#statistical-bias" title="Permalink to this heading">#</a></h1>
+<p>TODO</p>
 <section id="classifications">
-<span id="id2"></span><h2>Classifications<a class="headerlink" href="#classifications" title="Permalink to this heading">#</a></h2>
+<h2>Classifications<a class="headerlink" href="#classifications" title="Permalink to this heading">#</a></h2>
 <p><em>Bias</em> is a type of systematic error that arises when the sample data that is used to draw conclusions about the population does not accurately reflect the population.</p>
 <section id="selection-bias">
 <h3>Selection Bias<a class="headerlink" href="#selection-bias" title="Permalink to this heading">#</a></h3>
@@ -542,10 +543,10 @@ document.write(`
 </dd>
 </dl>
 <p>A typical example of this kind of bias can be found in cold-calling telephone surveys. Most people are likely to ignore robo-calls for political polls, and the set of people who do answer the calls are likely not an accurate representation of the entire population.</p>
-<p>A famous example of this kind of bias is the <a class="reference external" href="https://en.wikipedia.org/wiki/Dewey_Defeats_Truman">1948 Election Between Thomas Dewey and Harry Truman</a>. The polling data the Chicago Tribune relied on showed Dewey winning by a huge margin <a class="footnote-reference brackets" href="#id4" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>*<span class="fn-bracket">]</span></a></p>
+<p>A famous example of this kind of bias is the <a class="reference external" href="https://en.wikipedia.org/wiki/Dewey_Defeats_Truman">1948 Election Between Thomas Dewey and Harry Truman</a>. The polling data the Chicago Tribune relied on showed Dewey winning by a huge margin <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>*<span class="fn-bracket">]</span></a></p>
 <p>The results of the polls versus the actual result of the election are shown below,</p>
-<aside class="footnote brackets" id="id4" role="note">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">*</a><span class="fn-bracket">]</span></span>
+<aside class="footnote brackets" id="id2" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">*</a><span class="fn-bracket">]</span></span>
 <p>The 1948 Presidential Election polls <a class="reference external" href="https://www.randomservices.org/random/data/Election1948.html">source</a></p>
 </aside>
 <table class="table">

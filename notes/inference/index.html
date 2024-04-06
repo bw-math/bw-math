@@ -181,12 +181,12 @@
 </li>
 <li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Inference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="00_INTRODUCTION.html">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="01_BIAS.html">Bias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_BIAS.html">Statistical Bias</a></li>
 <li class="toctree-l3"><a class="reference internal" href="02_DESIGN.html">Experimental Design</a></li>
-<li class="toctree-l3"><a class="reference internal" href="03_DATA.html">Data</a></li>
-
-
-<li class="toctree-l3"><a class="reference internal" href="04_HYPOTHESES.html">Hypothesis Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_HYPOTHESES.html">Hypothesis Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_MEAN.html">Population Mean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_PROPORTION.html">Population Proportion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_VARIANCE.html">Population Standard Deviation</a></li>
 </ul>
 </li>
 </ul>
@@ -276,8 +276,8 @@
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../assignments/problems/inference/index.html">Inference</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/00_DESIGN.html">Design</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/01_BIAS.html">Bias</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/00_DESIGN.html">Experimental Design</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/01_BIAS.html">Statistical Bias</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/02_HYPOTHESES.html">Hypothesis Testing</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/03_MEAN.html">Population Mean</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../assignments/problems/inference/04_PROPORTION.html">Population Proportion</a></li>
@@ -512,31 +512,27 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="00_INTRODUCTION.html#methods-of-observation">Methods of Observation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="01_BIAS.html">Bias</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="01_BIAS.html">Statistical Bias</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="01_BIAS.html#classifications">Classifications</a></li>
 <li class="toctree-l2"><a class="reference internal" href="01_BIAS.html#correlation-vs-causation">Correlation Vs. Causation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="02_DESIGN.html">Experimental Design</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="02_DESIGN.html#definitions">Definitions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="02_DESIGN.html#blind-studies">Blind Studies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="02_DESIGN.html#matched-pairs">Matched Pairs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="02_DESIGN.html#randomized-blocks">Randomized Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_DESIGN.html#experiments">Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_DESIGN.html#randomization">Randomization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_DESIGN.html#data">Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_DESIGN.html#types-of-statistics">Types of Statistics</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="03_DATA.html">Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_DATA.html#classifications">Classifications</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="03_DATA.html#dimensionality">Dimensionality</a></li>
-<li class="toctree-l2"><a class="reference internal" href="03_DATA.html#characteristic">Characteristic</a></li>
-<li class="toctree-l2"><a class="reference internal" href="03_DATA.html#scale">Scale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_HYPOTHESES.html">Hypothesis Testing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_HYPOTHESES.html#null-and-alternate-hypotheses">Null and Alternate Hypotheses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_HYPOTHESES.html#decisions">Decisions</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="03_DATA.html#types-of-statistics">Types of Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_HYPOTHESES.html">Hypothesis Testing</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="04_HYPOTHESES.html#null-and-alternate-hypotheses">Null and Alternate Hypotheses</a></li>
-<li class="toctree-l2"><a class="reference internal" href="04_HYPOTHESES.html#decisions">Decisions</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="04_MEAN.html">Population Mean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_PROPORTION.html">Population Proportion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_VARIANCE.html">Population Standard Deviation</a></li>
 </ul>
 </div>
 </section>

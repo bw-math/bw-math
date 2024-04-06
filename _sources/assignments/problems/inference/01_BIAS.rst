@@ -1,8 +1,8 @@
 .. _statistics_bias_classwork:
 
-====
-Bias
-====
+================
+Statistical Bias
+================
 
 A.P. Exam Practice
 ==================

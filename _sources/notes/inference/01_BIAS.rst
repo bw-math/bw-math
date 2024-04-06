@@ -1,9 +1,10 @@
 .. _bias:
 
-Bias
-====
+================
+Statistical Bias
+================
 
-.. _bias:
+TODO
 
 Classifications
 ---------------
