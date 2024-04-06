@@ -569,7 +569,7 @@ document.write(`
 </ol>
 <p>Then the random variable <img class="math" src="../../../_images/math/5190db87f752f857ef94ec910606ddddbac99a00.png" alt="\hat{p}_x - \hat{p}_y"/> has the following distribution,</p>
 <div class="math">
-<p><img src="../../../_images/math/27217e790537dd8b19cde24056d24f461b76aa32.png" alt="\hat{p} \sim \mathcal{N}(p_x - p_y, \sqrt{\frac{p_x \cdot (1 - p_x)}{n_x} + \frac{p_y \cdot (1 - p_y)}{n_y}} )"/></p>
+<p><img src="../../../_images/math/4308c065271175591a91d74d7816fd1c1a00993c.png" alt="\hat{p}_{x} - \hat{p}_y \sim \mathcal{N}(p_x - p_y, \sqrt{\frac{p_x \cdot (1 - p_x)}{n_x} + \frac{p_y \cdot (1 - p_y)}{n_y}} )"/></p>
 </div></aside>
 </section>
 </section>
@@ -684,23 +684,32 @@ document.write(`
 <ol class="arabic simple">
 <li><p><strong>Handedness</strong></p></li>
 </ol>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Handedness">Approximately 10% of the world’s population is left handed</a>. There are 347 students in the Bishop Walsh student body. Let <img class="math" src="../../../_images/math/71e79dff2f9b779810735b86e2c08ed0810840d8.png" alt="\hat{p}"/> represent the proportion of Bishop Walsh students who are left handed.</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Handedness">Approximately 10% of the world’s population is left handed</a>. There are 347 students in the Bishop Walsh student body. Let us assume the Bishop Walsh student body is an exact representative sample of the population, i.e. 10% of the 347 students are left-handed. You decide to draw a simple random sample of students from the study body and measure whether or not they are left-handed.</p>
 <blockquote>
 <div><ol class="loweralpha simple">
-<li><p>Calculate and interpret the mean and standard deviation of the sampling distribution of <img class="math" src="../../../_images/math/71e79dff2f9b779810735b86e2c08ed0810840d8.png" alt="\hat{p}"/>.</p></li>
-<li><p>Verify the conditions for inference are met.</p></li>
-<li><p>Describe the shape of the samping distribution of <img class="math" src="../../../_images/math/71e79dff2f9b779810735b86e2c08ed0810840d8.png" alt="\hat{p}"/>.</p></li>
-<li><p>Assuming the Wikipedia article referenced above is correct, what is the probability more than 40 students at Bishop Walsh are left-handed?</p></li>
+<li><p>What are the parameters (expected value and standard deviation) of the population distribution?</p></li>
+<li><p>How many samples do you need to make to ensure the conditions for inference are met?</p></li>
+<li><p>What are the parameters (expected value and standard deviation) of the sampling distribution?</p></li>
+<li><p>Describe the shape of the samping distribution for <img class="math" src="../../../_images/math/71e79dff2f9b779810735b86e2c08ed0810840d8.png" alt="\hat{p}"/>.</p></li>
+<li><p>Assuming the Wikipedia article referenced above is correct, what is the probability more than half of your sample of Bishop Walsh students are left-handed?</p></li>
+<li><p>Based on the answer to <em>part b</em> and <em>part e</em>, if you drew a sample of this size and estimated a value of <img class="math" src="../../../_images/math/191d2ca3ccfb7452756c1f0414a75327c331623a.png" alt="\hat{p} = 0.5"/> for this sample, how would this evidence affect your belief in the claim from the Wikipedia article?</p></li>
 </ol>
 </div></blockquote>
 <ol class="arabic simple" start="2">
+<li><p><strong>Illuminati</strong></p></li>
+</ol>
+<p><a class="reference external" href="https://www.businessinsider.com/over-1-in-10-registered-voters-believe-the-illuminati-exists-2019-7">According to a 2019 report by Business Insider, 15% of registered voters in the United States believe the Illuminati secretly controls world events</a>.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>How many samples do you need to ensure the conditions for inference are met?</p></li>
+<li><p>Suppose you randomly sample 50 registered voters living in the US. How likely is it this sample will contain less than 10% of people who believe in the Illuminati?</p></li>
+<li><p>In a sample of 50 registered voters, how many people who believe in the Illuminati do you need to observe before you can be reasonably convinced the percentage of registered voters who believe in the Illuminati is not equal to the claimed percentage?</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="3">
 <li><p><strong>DVD Players</strong></p></li>
 </ol>
 <p><a class="reference external" href="https://www.statista.com/statistics/369955/people-living-in-households-that-own-a-blu-ray-dvd-player-usa/">According to a survey conducted in 2022, 38% of 18-29 year olds from the United States live in a household that owns a DVD player</a>. Suppose you randomly sample 40 Americans between the ages of 18 and 29 years old. What is the probability the proportion of the people from this sample who live in a household with a DVD player will be greater than 45%?</p>
-<ol class="arabic simple" start="3">
-<li><p><strong>Illuminati</strong></p></li>
-</ol>
-<p><a class="reference external" href="https://www.businessinsider.com/over-1-in-10-registered-voters-believe-the-illuminati-exists-2019-7">According to a 2019 report by Business Insider, 15% of registered voters in the United States believe the Illuminati secretly controls world events</a>. Suppose you randomly sample 50 registered voters living in the US. How likely is it this sample will contain less than 10% of people who believe in the Illuminati?</p>
 <ol class="arabic simple" start="4">
 <li><p><strong>Coins</strong></p></li>
 </ol>
@@ -717,9 +726,9 @@ document.write(`
 <blockquote>
 <div><ol class="loweralpha simple">
 <li><p>What is the shape of the sampling distribution <img class="math" src="../../../_images/math/418e3e17fce82b603429d525d3791d4b508c032f.png" alt="\hat{p}_{\text{hs}} - \hat{p}_{\text{ms}}"/>? Justify your answer.</p></li>
-<li><p>Find and interpret the mean of the sampling distribution for the difference of sample proportions.</p></li>
-<li><p>Find and interpret the standard deviation of the sampling distribution for the difference of sample proportions.</p></li>
-<li><p>Assuming the administration’s claim is true, what is the probability that the proportion of highschool students who participate in atleast one extracurricular is atleast 10% higher than the proportion of middle-school students who participate in  atleast one extracurricular?</p></li>
+<li><p>If the administration’s claim is true, find and interpret the mean of the sampling distribution for the difference of sample proportions between highschool and middleschool.</p></li>
+<li><p>If the administration’s claim is true, find and interpret the standard deviation of the sampling distribution for the difference of sample proportions between highschool and middleschool.</p></li>
+<li><p>Assuming the administration’s claim is true, what is the probability that the proportion of highschool students who participate in atleast one extracurricular is atleast 10% higher than the proportion of middle-school students who participate in atleast one extracurricular?</p></li>
 <li><p>Suppose the difference in proportions is exactly 0.10. Based on your result to <em>part d</em> does this give you reason to doubt the administration’s claim?</p></li>
 </ol>
 </div></blockquote>
