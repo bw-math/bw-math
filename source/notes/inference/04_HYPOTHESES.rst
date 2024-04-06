@@ -1,13 +1,13 @@
-
-Inference
-=========
+==================
+Hypothesis Testing
+==================
 
 Once we have data to analyze, we apply the *statistical inference* to see what it tells us. 
 
 *Statistical inference* is the process of using a sample of data to reach new conclusions about the population from which it was drawn. 
 
 Null and Alternate Hypotheses
------------------------------
+=============================
 
 Usually in statistics we are concerned with *hypotheses* and whether or not, based on the available data, there is sufficient evidence to reject one hypothesis in favor of another.
 
@@ -61,3 +61,26 @@ A *confounding variable* is a variable that affects the experiment, but is not m
 To see what is meant by "*due to the nature of the interaction*", suppose the new type of fuel whose efficiency is being tested loses some of its potency at higher elevations (due to the effects of gravity on its chemical composition, let's say). If some of the data we collect from the cars using the new fuel type is collected from high-altitude locations, then the data will show the effects of this dependence, without our being aware. We might then erroneously conclude the new fuel does not possess the anticipated efficiency gains, call the experiment a wash and go home sad. 
 
 For this reason, we must be very careful to always consider what variables for which we haven't accounted might be influencing the samples we observe. In other words, we must always be mindful of *confounding variables* and their effects. 
+
+Decisions
+=========
+
+TODO
+
+Type I Errors
+-------------
+
+TODO
+
+.. topic:: Type I Error
+
+	A *Type I Error* is **rejecting** the null hypothesis when it is **true**. 
+	
+Type II Errors
+--------------
+
+TODO
+
+.. topic:: Type II Error
+
+	A *Type II Error** is **not rejecting** the null hypothesis when it is **false**.

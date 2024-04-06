@@ -1,7 +1,6 @@
-.. _experiments_classwork:
-
-Experiments
-===========
+=========
+Inference
+=========
 
 .. toctree::
 	:maxdepth: 2
@@ -9,4 +8,6 @@ Experiments
 
 	00_DESIGN
 	01_BIAS
-	02_INFERENCE
+	02_HYPOTHESES
+	03_MEAN
+	04_PROPORTION

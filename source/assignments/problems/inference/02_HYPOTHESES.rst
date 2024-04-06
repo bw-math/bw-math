@@ -1,8 +1,8 @@
-.. _statistics_hypotheses_classwork:
+.. _statistics_hypothesis_testing_classwork:
 
-============
-Introduction
-============
+==================
+Hypothesis Testing
+==================
 
 1. **Devore & Berk, 2007, Chapter 9.1 #6**
 

@@ -1,7 +1,8 @@
-.. _experiments_class_notes:
+.. _inference:
 
-Experiments
-===========
+=========
+Inference
+=========
 
 .. toctree::
    :maxdepth: 2
@@ -11,4 +12,7 @@ Experiments
    01_BIAS
    02_DESIGN
    03_DATA
-   04_INFERENCE
+   04_HYPOTHESES
+   01_MEAN
+   02_PROPORTION
+   03_VARIANCE
