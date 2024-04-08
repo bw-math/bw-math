@@ -173,7 +173,7 @@ Population Proportion
 
 1. **OpenStax, Statistics, Chapter 8: #118**
 
-Suppose that the insurance companies did conduct a survey. They randomly surveyed 400 drivers and found that 320 claimed they always buckle up. We are interested in the population proportion of drivers who claim they always buckle up.
+Suppose that insurance companies did conduct a survey. They randomly surveyed 400 drivers and found that 320 claimed they always buckle up. We are interested in the population proportion of drivers who claim they always buckle up.
 
 	a. Define the random variables :math:`\mathcal{X}` and :math:`\hat{p}` in words.
 	
@@ -259,8 +259,26 @@ Suppose that an accounting firm does a study to determine the time needed to com
 Difference of Means
 *******************
 
-TODO
+1. **Heights**
 
+The heights of males in the United States have a distribution with a standard deviation of 3 inches. The heights of females in the United States have a distribution with a standard deviation of 2 inches. 
+
+Suppose you randomly sample 30 females and 35 males from the United States. You calculate the sample mean for the females to be 64.3 inches and the sample mean for the males to be 67.5 inches.
+
+	a. Describe the sampling distribution for the sample mean of male heights, i.e. what are its expected value and variance?
+	
+	b. Describe the sampling distribution for the sample mean of female heights, i.e. what are its expected value and variance?
+	
+	c. What is the point estimate for the difference between the average male height and the average female height?
+
+	d. What is the standard error associated with the point estimate in *part c*?
+	
+	e. Assuming there is no difference between the average male height and the average female height, describe the sampling distribution for the difference of average male height and average female height.
+	
+	f. Construct a 95% confidence interval for the difference between the true mean of male heights and the true mean of female heights.
+	
+	g. Based on the answer to *part g*, do you have evidence to conclude the average height of males is greater than the average height of females? Justify your answer.
+	
 A.P. Exam Practice
 ==================
 
