@@ -62,7 +62,7 @@ Margin of Error
 	
 	.. math::
 	
-		\text{MOE} = c \rvert \cdot s_{\theta}
+		\text{MOE}_{\theta} = \lvert c \rvert \cdot s_{\theta}
 
 	
 Intervals
