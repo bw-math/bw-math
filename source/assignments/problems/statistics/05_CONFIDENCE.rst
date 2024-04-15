@@ -349,11 +349,9 @@ A husband and wife, Mike and Lori, share a digital music player that has a featu
 
 2. **2010, Free Response, #3**
 
-A humane society wanted to estimate with 95 percent confidence the proportion of households in its county that own at least one dog.
+A humane society wanted to estimate with 95 percent confidence the proportion of households in its county that own at least one dog. The humane society selected a random sample of households in its county and used the sample to estimate the proportion of all households that own at least one dog. The conditions for calculating a 95 percent confidence interval for the proportion of households in this county that own at least one dog were checked and verified, and the resulting confidence interval was 0.417 ± 0.119.
 
 	a. Interpret the 95 percent confidence level in this context.
-
-The humane society selected a random sample of households in its county and used the sample to estimate the proportion of all households that own at least one dog. The conditions for calculating a 95 percent confidence interval for the proportion of households in this county that own at least one dog were checked and verified, and the resulting confidence interval was 0.417 ± 0.119.
 
 	b. A national pet products association claimed that 39 percent of all American households owned at least one dog. Does the humane society's interval estimate provide evidence that the proportion of dog owners in its county is different from the claimed national proportion? Explain.
 
