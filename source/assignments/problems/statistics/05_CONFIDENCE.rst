@@ -104,7 +104,7 @@ The time it takes a given AP Statistics student to finish one of Mr. Moore's exa
 		
 		iii. 99%
 		
-	d. Draw three Normal curves for the mean zoomies sampling distribution. For each confidence level in *part b*, label the critical values on the horizontal axis of one of the graphs. Shade in the area that corresponds to the given confidence level on that graph.
+	d. Draw three Normal curves for the sampling distribution of the sample mean of exam times. For each confidence level in *part b*, label the critical values on the horizontal axis of one of the graphs. Shade in the area that corresponds to the given confidence level on that graph.
 	
 	e. Using the graphs from *part d*, write a few sentences interpretting the calculated values from *part c*.
 	
