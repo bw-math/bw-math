@@ -29,15 +29,42 @@ Use this information to answer the following questions.
 
 	c. Which test of significance should be used to test if there is an association between gender and job experience for the population of high school seniors in the district? State the null and alternative hypotheses for the test, but do not perform the test.
 
-2. **2007, Free Response, #6**
+2. **2011, Free Response, #6**
 
-TODO
+Every year, each student in a nationally representative sample is given tests in various subjects. Recently, a random sample of 9,600 twelfth-grade students from the United States were administered a multiple-choice United States history exam. One of the multiple-choice questions is below. (The correct answer is C.)
 
-3. **2011, Free Response, #6**
+.. topic:: United States History Exam Question
+	
+	In 1935 and 1936 the Supreme Court declared that important parts of the New Deal were unconstitutional. President Roosevelt responded by threatening to
 
-TODO
+		A. impeach several Supreme Court justices
 
-4. **2019, Free Response, #6**
+		B. eliminate the Supreme Court
+		
+		C. appoint additional Supreme Court justices who shared his views.
+		
+		D. override the Supreme Court's decision by gaining three-fourths majorities in both houses of Congress.
+
+Of the 9,600 students, 28 percent answered the multiple-choice question correctly.
+
+	a. Let *p* be the proportion of all United States twelfth-grade students who would answer the question correctly. Construct and interpret a 99 percent confidence interval for *p*.
+	
+Assume that students who actually know the correct answer have a 100 percent chance of answering the question correctly, and students who do not know the correct answer to the question guess completely at random from among the four options.
+
+Let *k* represent the proportion of all United States twelfth-grade students who actually know the correct answer to the question.
+
+	b. A tree diagram of the possible outcomes for a randomly selected twelfth-grade student is provided below. Write the correct probability in each of the five empty boxes. Some of the probabilities may be expressions in terms of *k*.
+	
+.. image:: ../../assets/imgs/classwork/2009_apstats_frp_01.png
+	:align: center
+
+Use the completed tree diagram to answer the following problems.
+
+	c. Based on the completed tree diagram, express the probability, in terms of *k*, that a randomly selected twelfth-grade student would correctly answer the history question.
+
+	d. Using your interval from *part a* and your answer to *part c*, calculate and interpret a 99 percent confidence interval for *k*, the proportion of all United States twelfth-grade students who actually know the answer to the history question. You may assume that the conditions for inference for the confidence interval have been checked and verified.
+	
+3. **2019, Free Response, #6**
 
 Emma is moving to a large city and is investigating typical monthly rental prices of available one-bedroom apartments. She obtained a random sample of rental prices for 50 one-bedroom apartments taken from a Web site where people voluntarily list available apartments.
 
@@ -45,7 +72,7 @@ Emma is moving to a large city and is investigating typical monthly rental price
 	
 The distribution of the 50 rental prices of the available apartments is shown in the following histogram.
 
-.. image:: ../../../assets/imgs/classwork/2019_apstats_frp_06a.png
+.. image:: ../../assets/imgs/classwork/2019_apstats_frp_06a.png
 	:align: center
 	
 Use this histogram to answer the following questions.
