@@ -4,7 +4,21 @@
 Hypothesis Testing
 ==================
 
-1. **Devore & Berk, 2007, Chapter 9.1 #6**
+1. **Titelbaum, 2022, Chapter 5**
+
+Suppose it is now 1 pm on a Monday. Mr. Moore informs you that over the weekend, he found a coin from a foreign country. Despite being foreign, one side of the coin is clearly the "Heads" side and the other is "Tails". Mr. Moore also tells you that he flipped the coin today at noon.
+
+Let **H** be the event the noon coin flip landed heads. Consider each of the propositions below one at a time, and decide what the probability in **H** would be if that proposition were *all** you knew about the coin in addition to the information in the previous paragraph:
+
+	**E1**: After discovering the coin, Mr. Moore spent the good part of his weekend flipping it, and out of the 100 weekend coin clips, 64 of them came up heads.
+	
+	**E2**: The coin was produced in a factory that advertises its coins as fair, but is currently embroiled in many lawsuits alleging its coin are actually unfair. Several of these lawsuits have already settled out of court.
+	
+	**E3**: The coin is fair.
+	
+	**E4**: Sejal witnessed Mr. Moore flip the coin at noon and, like, totally swears it was heads, *for real*.
+	 
+2. **Devore & Berk, 2007, Chapter 9.1 #6**
 
 Many older homes have electrical systems that use fuses rather than circuit breakers. A manufacturer of 40-amp fuses wants to make sure that the mean amperage at which its fuses burn out is in fact 40. If the mean amperage is lower than 40, customers will complain because the fuses require replacement too often. If the mean amperage is higher than 40, the manufacturer might be liable for damage to an electrical system due to fuse malfunction. To verify the amperage of the fuses, a sample of fuses is to be selected and inspected.
 
@@ -12,7 +26,7 @@ Many older homes have electrical systems that use fuses rather than circuit brea
 	
 	b. Describe the Type I and Type II errors in this situation.
 	
-2. **Devore & Berk, 2007, Chapter 9.1 #7**
+3. **Devore & Berk, 2007, Chapter 9.1 #7**
 
 Water samples are taken from water used for cooling as it is being discharged from a power plant into a river. It has been determined that as long as the mean temperature of the discharged water is at most :math:`150^{\circ} \text{F}`, there will be no negative effects on the river's ecosystem. To investigate whether the plant is in compliance with the regulations that prohibit a mean discharge water temperature of above :math:`150^{\circ} \text{F}`, 50 water samples will be taken at randomly selected times, and the temperature of each sample recorded.
 
@@ -22,7 +36,7 @@ Water samples are taken from water used for cooling as it is being discharged fr
 	
 	c. Which error would you consider more serious? Explain.
 	
-3. **Devore & Berk, 2007, Chapter 9.1 #9**
+4. **Devore & Berk, 2007, Chapter 9.1 #9**
 
 Two different companies have applied to provide cable television service in a certain region. Let *p* denote the proportion of all potential subscribers who favor the first company over the second. Consider testing the null hypothesis,
 
@@ -59,36 +73,6 @@ Suppose you select a random sample of 25 individuals. Let :math:`\mathcal{X}` de
 	d. Compute the probability of a type II error for the selected region when :math:`p = 0.3, 0.4, 0.6, 0.7`. 
 	
 	e. Using the selected region, what would you conclude if 6 of the 25 queried customers favored the first company?
-
-3. **Test Statistics**
-
-TODO
-
-	a. TODO
-	
-	b. TODO
-	
-	c. TODO
-		
-4. **Decision Rules**
-
-TODO
-
-	a. TODO
-	
-	b. TODO
-	
-	c. TODO
-
-5. **P-Values**
-
-TODO
-
-	a. TODO
-	
-	b. TODO
-	
-	c. TODO
 
 A.P. Exam Practice
 ==================

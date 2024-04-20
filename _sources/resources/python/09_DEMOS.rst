@@ -97,3 +97,12 @@ This script illustrates the frequentist interpretation of a Confidence Interval.
 This script will simulate a fixed number of sample from a Normal population and then calculate the indicated confidence interval for each sample. The results are plotted as stacked error bars. The true mean is plotted a black vertical line. Intervals that contain the true value of the population mean will be shown in green whereas intervals that do not contain the true value of the population mean will be shown in red.
 
 :download:`Confidence Intervals <../../assets/demos/confidence_intervals.py>`
+
+Power
+-----
+
+This script illustrates the idea of *Power* for hypothesis testing. The test being illustrated is a one-sided mean test. The null distribution is plotted along with its shaded rejection region; this area represents the probability of a Type I error under the null hypothesis. This is shown against the alternate distribution for various values of the population parameter. The area corresponding to the probability of a Type II error in the null distribution is plotted as a shaded region under the alternate distribution above the critical value. The relationship between Type I and Type II errors can be shown by adjusting the significance to see its effects on the *Power* of the hypothesis test.
+
+In addition, the number of samples can be adjusted to see how increasing or decreasing the given sample size affects the *Power* of the hypothesis test.
+
+:download:`Confidence Intervals <../../assets/demos/power.py>`
