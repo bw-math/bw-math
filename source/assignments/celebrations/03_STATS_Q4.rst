@@ -55,7 +55,7 @@ Let *k* represent the proportion of all United States twelfth-grade students who
 
 	b. A tree diagram of the possible outcomes for a randomly selected twelfth-grade student is provided below. Write the correct probability in each of the five empty boxes. Some of the probabilities may be expressions in terms of *k*.
 	
-.. image:: ../../assets/imgs/classwork/2009_apstats_frp_01.png
+.. image:: ../../assets/imgs/classwork/2011_apstats_frp_06.png
 	:align: center
 
 Use the completed tree diagram to answer the following problems.
