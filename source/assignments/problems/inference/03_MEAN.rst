@@ -108,7 +108,9 @@ Use these hypotheses to answer the following questions.
 
 	a. Describe a Type II error in the context of the hypothesis test.
 
-	b. Assume that :math:`\sigma`, the standard deviation of the systolic blood pressure of all employees at the corporation, is 15 mmHg. If :math:`\mu = 122`, the sampling distribution of :math:`\bar{x}` for samples of size 100 is approximately normal with a mean of 122 mmHg and a standard deviation of 1.5 mmHg. What values of the sample mean :math:`\bar{x}` would represent sufficient evidence to reject the null hypothesis at the significance level of :math:`\alpha = 0.05` ? The actual mean systolic blood pressure of all employees at the corporation is 125 mmHg, not the hypothesized value of 122 mmHg, and the standard deviation is 15 mmHg.
+	b. Assume that :math:`\sigma`, the standard deviation of the systolic blood pressure of all employees at the corporation, is 15 mmHg. If :math:`\mu = 122`, the sampling distribution of :math:`\bar{x}` for samples of size 100 is approximately normal with a mean of 122 mmHg and a standard deviation of 1.5 mmHg. What values of the sample mean :math:`\bar{x}` would represent sufficient evidence to reject the null hypothesis at the significance level of :math:`\alpha = 0.05` ? 
+
+The actual mean systolic blood pressure of all employees at the corporation is 125 mmHg, not the hypothesized value of 122 mmHg, and the standard deviation is 15 mmHg.
 
 	c. Using the actual mean of 125 mmHg and the results from *part b*, determine the probability that the null
 hypothesis will be rejected.
