@@ -112,8 +112,7 @@ Use these hypotheses to answer the following questions.
 
 The actual mean systolic blood pressure of all employees at the corporation is 125 mmHg, not the hypothesized value of 122 mmHg, and the standard deviation is 15 mmHg.
 
-	c. Using the actual mean of 125 mmHg and the results from *part b*, determine the probability that the null
-hypothesis will be rejected.
+	c. Using the actual mean of 125 mmHg and the results from *part b*, determine the probability that the null hypothesis will be rejected.
 	
 	d. What statistical term is used for the probability found in *part c*?
 
