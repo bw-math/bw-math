@@ -18,7 +18,7 @@ std_err = stdev / math.sqrt(n)
 axes.set_ylabel("Probability Density")
 axes.set_xlabel("Sample Mean")
 
-fig.subplots_adjust(left=0.5, bottom=0.25)
+fig.subplots_adjust(left=0.5, bottom=0.10)
 
 fig.text(0.05, 0.85, "Null Distribution")
 fig.text(0.05, 0.70, "Alternate Distribution")
@@ -59,7 +59,7 @@ error_text = TextBox(error_axis, "P(Type II Error): ", textalignment="center")
 
 def set_title():
     line = "Null vs Alternative Distribution \n"
-    line += f"Ho: μ = {round(null_mean,2)} vs Ha: μ = {round(alternate_mean,2)} \n"
+    line += f"Ho: μ = {round(null_mean,2)} vs Ha: μ < {round(null_mean,2)} when  μ = {round(alternate_mean,2)} \n"
     line += f"Known Std Dev σ of  = {stdev}, n = {n}"
     plot.suptitle(line)
 
